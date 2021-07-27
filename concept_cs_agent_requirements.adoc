@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_agent_requirements.html 
+summary: エージェントとして使用するサーバまたは VM が、最小要件を満たしている必要があります 
+keywords: agent, Linux, requirements, docker, browsers, permissions, Network 
+---
+= エージェントの要件
+
+
+[role="lead"]
+実行する必要があります link:task_cs_add_agent.html["エージェントをインストールします"] データコレクタから情報を取得します。Agent をインストールする前に、お使いの環境がオペレーティングシステム、 CPU 、メモリ、およびディスクスペースの要件を満たしていることを確認してください。
+
+[cols="36,60"]
+|===
+| コンポーネント | Linux 要件 
+
+
+| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ。 Red Hat Enterprise Linux 7.2 64 ビット Red Hat Enterprise Linux 7.2 64 ビット KVM Red Hat Enterprise Linux 7.5 64 ビット Red Hat Enterprise Linux 7.5 64 ビット KVM Red Hat Enterprise Linux 7.8 64 ビット Red Hat Enterprise Linux 7.8 64 ビット Red Hat Enterprise Linux 7.8 64 ビット KVM 7.2 64 ビット CentOS 7.5 64 ビット CentOS 7.5 64 ビット 7.5 64 ビット KVM CentOS 7.8 64 ビット KVM このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
+
+
+| コマンド | インストール、スクリプトの実行、およびアンインストールには 'Sudo su – ' コマンドが必要です。 
+
+
+| CPU | 4 個の CPU コア 
+
+
+| メモリ | 16GB の RAM 
+
+
+| 使用可能なディスクスペース | ディスクスペースは、 /opt/netapp25 GB のように割り当てます 
+
+
+| ネットワーク | 100Mbps ～ 1Gbps のイーサネット接続、静的 IP アドレス、すべてのデバイスへの IP 接続、および Cloud Secure インスタンスへの必要なポート（ 80 または 443 ） 
+|===
+注： Cloud Insights エージェントと Cloud Secure エージェントは同じマシンにインストールできます。ただし、別々のマシンにインストールすることを推奨します。両方のエージェントが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
+
+|===
+
+
+| 使用可能なディスクスペース | Linux の場合、ディスクスペースは /opt/netapp 25GB/var/log/netapp 25GB に設定する必要があります 
+|===
+
+
+=== その他の推奨事項
+
+* ONTAP システムとエージェントマシンの両方の時刻を、 *Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または *Simple Network Time Protocol （ SNTP ） * を使用して同期することを強くお勧めします。
+
+
+
+
+== Cloud Network Access Rules の略
+
+US ベース * Cloud Secure 環境の場合：
+
+[cols="5*"]
+|===
+| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+
+
+| TCP | 443 | < サイト名 > .cs01.cloudinsights.netapp.com < サイト名 > .c01.cloudinsights.netapp.com < サイト名 > .c02.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+
+
+| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+|===
+欧州 * ベースの Cloud Secure 環境の場合：
+
+[cols="5*"]
+|===
+| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+
+
+| TCP | 443 | < サイト名 > .cs01-eu-1.cloudinsights.netapp.com < サイト名 > .c01-eu-1.cloudinsights.netapp.com < サイト名 > .c02-eu-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+
+
+| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+|===
+APAC ベース * の Cloud Secure 環境の場合：
+
+[cols="5*"]
+|===
+| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+
+
+| TCP | 443 | < サイト名 > .cs01-ap-1.cloudinsights.netapp.com < サイト名 > .c01-ap-1.cloudinsights.netapp.com < サイト名 > .c02-ap-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+
+
+| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+|===
+
+
+== ネットワーク内ルール
+
+[cols="5*"]
+|===
+| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+
+
+| TCP | 389 （ LDAP ） 636 （ LDAPS / start-TLS ） | LDAP サーバ URL | アウトバウンド | LDAP に接続します 
+
+
+| TCP | 443 | SVM 管理 IP アドレス | アウトバウンド | ONTAP との API 通信 
+
+
+| TCP | 35000~55000 | SVM データ LIF の IP アドレス | インバウンド / アウトバウンド | FPolicy イベントのための ONTAP との通信 
+|===
+
+
+==== 関連：
+
+を参照してください link:concept_cs_event_rate_checker.html["イベントレートチェッカー"] サイジングに関する情報のドキュメント

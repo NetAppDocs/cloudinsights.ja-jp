@@ -1,0 +1,718 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_agent.html 
+keywords: telegraf, installation, install, agent, telegraf agent 
+summary: Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.14/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。 
+---
+= データを収集するエージェントの設定
+
+
+[role="lead"]
+Cloud Insights ではを使用します link:https://docs.influxdata.com/telegraf/v1.17/["Tegraf"] 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
+
+Cloud Insights の現在の Telegraf バージョンは *1.17.3 * です。
+
+
+NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
+
+
+
+== エージェントをインストールしています
+
+サービスデータコレクタをインストールしていて、エージェントをまだ設定していない場合は、最初に適切なオペレーティングシステム用のエージェントをインストールするように求められます。このトピックでは、 Tegraf エージェントを次のオペレーティングシステムにインストールする手順について説明します。
+
+* <<Windows>>
+* <<RHEL and CentOS>>
+* <<Ubuntu and Debian>>
+* <<macOS>>
+* <<Kubernetes>>
+
+
+エージェントをインストールするには、使用しているプラットフォームに関係なく、まず次の手順を実行する必要があります。
+
+. エージェントに使用するホストにログインします。
+. Cloud Insights サイトにログインし、 * Admin > Data Collectors * に移動します。
+. [*+Data Collector* ] をクリックして、インストールするデータコレクタを選択します。
+
+
+. ホストに適したプラットフォーム（ Windows 、 Linux 、 macOS など）を選択します
+. プラットフォームごとに、残りの手順を実行します。
+
+
+
+NOTE: ホストにエージェントをインストールしたら、そのホストに再度エージェントをインストールする必要はありません。
+
+
+TIP: サーバ /VM にエージェントをインストールすると、 Cloud Insights は、設定したデータコレクタからの収集に加えて、そのシステムからメトリックを収集します。これらの指標は、のように収集されます link:task_config_telegraf_node.html["「ノード」指標"]。
+
+
+NOTE: プロキシを使用している場合は、 Tegraf エージェントをインストールする前に、お使いのプラットフォームのプロキシの手順をお読みください。
+
+
+
+=== Windows の場合
+
+image:AgentInstallWindows.png["Windows Agent のインストール"]
+
+.前提条件
+* PowerShell がインストールされていること
+* プロキシの背後にいる場合は、「 Windows * 用プロキシ・サポートの構成」セクションの手順に従います。
+
+
+.Windows にエージェントをインストールする手順：
+. エージェントアクセスキーを選択します。
+. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
+. PowerShell ウィンドウを開きます
+. コマンドを PowerShell ウィンドウに貼り付け、 Enter キーを押します。
+. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
+. [ 完了 ] または [ 続行 ] をクリックします
+
+
+エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
+
+....
+Start-Service telegraf
+Stop-Service telegraf
+....
+
+
+==== Windows 向けプロキシサポートを設定しています
+
+プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に _https_proxy_ および /or_http_proxy_environment 変数 * を設定するには、次の手順を実行します。
+
+....
+[System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
+....
+
+
+==== エージェントをアンインストールしています
+
+Windows でエージェントをアンインストールするには、 PowerShell ウィンドウで次の手順を実行します。
+
+. Tegraf サービスを停止して削除します。
++
+....
+Stop-Service telegraf
+sc.exe delete telegraf
+....
+. バイナリ、ログ、およびコンフィグレーションファイルを削除するには、 _C ： \Program Files\テレ グラムフォルダを削除します
+. レジストリから _SYSTEM\CurrentControlSet\Services\EventLog\Application\テレ グラムキーを削除します
+
+
+
+
+==== Agent をアップグレードしています
+
+テレグラムエージェントをアップグレードするには、次の手順に従います。
+
+. テレグラムサービスを停止および削除します。
++
+....
+Stop-Service telegraf
+sc.exe delete telegraf
+....
+. レジストリから _SYSTEM\CurrentControlSet\Services\EventLog\Application\テレ グラムキーを削除します
+. DELETE_C ： \Program Files\テレ グラム \テレ グラム af.conf_
+. DELETE_C ： \Program Files\テレ グラム \テレ グラム af.exe_
+. link:#windows["新しいエージェントをインストールします"]。
+
+
+
+
+=== RHEL および CentOS
+
+image:AgentInstallRHELCentOS.png["RHEL / CentOS Agent のインストール"]
+
+.前提条件
+* cURL 、 sudo 、 ping 、および dmidecode の各コマンドを使用できる必要があります
+* プロキシの背後にある場合は、「 RHEL / CentOS * 用のプロキシサポートの設定」セクションの手順に従ってください。
+
+
+.RHEL または CentOS にエージェントをインストールする手順：
+. エージェントアクセスキーを選択します。
+. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
+. Bash ウィンドウを開きます
+. Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。
+. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
+. [ 完了 ] または [ 続行 ] をクリックします
+
+
+エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
+
+オペレーティングシステムで systemd （ CentOS 7+ および RHEL 7+ ）を使用している場合：
+
+....
+sudo systemctl start telegraf
+sudo systemctl stop telegraf
+....
+オペレーティングシステムで systemd （ CentOS 7+ および RHEL 7+ ）を使用していない場合：
+
+....
+sudo service telegraf start
+sudo service telegraf stop
+....
+
+
+==== RHEL / CentOS でのプロキシサポートの設定
+
+プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
+
+. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
++
+....
+export https_proxy=<proxy_server>:<proxy_port>
+....
+. /etc/default/テレ グラム af_ を作成し、 _https_proxy_/or_http_proxy_variable の定義を挿入します。
++
+....
+https_proxy=<proxy_server>:<proxy_port>
+....
+
+
+
+
+==== エージェントをアンインストールしています
+
+Bash 端末で RHEL または CentOS のエージェントをアンインストールするには、次の手順を実行します。
+
+. Telegraf サービスを停止します。
++
+....
+systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ and RHEL 7+)
+/etc/init.d/telegraf stop (for systems without systemd support)
+....
+. Tegraf エージェントを取り外します。
++
+....
+yum remove telegraf
+....
+. 残っている設定ファイルまたはログファイルを削除します。
++
+....
+rm -rf /etc/telegraf*
+rm -rf /var/log/telegraf*
+....
+
+
+
+
+==== Agent をアップグレードしています
+
+テレグラムエージェントをアップグレードするには、次の手順に従います。
+
+. テレグラムサービスを停止します。
++
+....
+systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ and RHEL 7+)
+/etc/init.d/telegraf stop (for systems without systemd support)
+....
+. 前のテレグラムエージェントを削除します。
++
+....
+yum remove telegraf
+....
+. link:#rhel-and-centos["新しいエージェントをインストールします"]。
+
+
+
+
+=== Ubuntu と Debian
+
+image:AgentInstallUbuntuDebian.png["Ubuntu / Debian Agent のインストール"]
+
+.前提条件
+* cURL 、 sudo 、 ping 、および dmidecode の各コマンドを使用できる必要があります
+* プロキシの背後にいる場合は、「 Ubuntu / Debian * 用のプロキシサポートの設定」セクションの手順に従ってください。
+
+
+.Debian または Ubuntu にエージェントをインストールする手順 :
+. エージェントアクセスキーを選択します。
+. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
+. Bash ウィンドウを開きます
+. Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。
+. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
+. [ 完了 ] または [ 続行 ] をクリックします
+
+
+エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
+
+オペレーティング・システムが systemd を使用している場合：
+
+....
+sudo systemctl start telegraf
+sudo systemctl stop telegraf
+....
+オペレーティングシステムが systemd を使用していない場合は、次の手順を実行します。
+
+....
+sudo service telegraf start
+sudo service telegraf stop
+....
+
+
+==== Ubuntu / Debian のプロキシサポートの設定
+
+プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
+
+. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
++
+....
+export https_proxy=<proxy_server>:<proxy_port>
+....
+. /etc/default/テレ グラムを作成し、 _https_proxy_/or_http_proxy_variable 以下の定義を挿入します。
++
+....
+https_proxy=<proxy_server>:<proxy_port>
+....
+
+
+
+
+==== エージェントをアンインストールしています
+
+Ubuntu または Debian でエージェントをアンインストールするには、 Bash ターミナルで次のコマンドを実行します。
+
+. Telegraf サービスを停止します。
++
+....
+systemctl stop telegraf (If your operating system is using systemd)
+/etc/init.d/telegraf stop (for systems without systemd support)
+....
+. Tegraf エージェントを取り外します。
++
+....
+dpkg -r telegraf
+....
+. 残っている設定ファイルまたはログファイルを削除します。
++
+....
+rm -rf /etc/telegraf*
+rm -rf /var/log/telegraf*
+....
+
+
+
+
+==== Agent をアップグレードしています
+
+テレグラムエージェントをアップグレードするには、次の手順に従います。
+
+. テレグラムサービスを停止します。
++
+....
+systemctl stop telegraf (If your operating system is using systemd)
+/etc/init.d/telegraf stop (for systems without systemd support)
+....
+. 前のテレグラムエージェントを削除します。
++
+....
+dpkg -r telegraf
+....
+. link:#ubuntu-and-debian["新しいエージェントをインストールします"]。
+
+
+
+
+=== MacOS
+
+image:AgentInstallMacOS.png["MacOS Agent のインストール"]
+
+.前提条件
+* 「 curl 」コマンドが使用可能である必要があります
+* プロキシの背後にいる場合は、「 MacOS* のプロキシサポートの設定」セクションの手順に従います。
+
+
+.エージェントを macOS にインストールする手順：
+. エージェントアクセスキーを選択します。
+. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
+. Bash ウィンドウを開きます
+. Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。
+. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
+. 前に Home醸造 を使用して Tegraf エージェントをインストールしていた場合は、アンインストールするように求められます。以前にインストールした Tegraf エージェントをアンインストールしたら、上記の手順 5 でコマンドを再実行します。
+. [ 完了 ] または [ 続行 ] をクリックします
+
+
+エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
+
+....
+sudo launchctl start telegraf
+sudo launchctl stop telegraf
+....
+
+
+==== macOS のプロキシサポートを設定しています
+
+プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
+
+https_proxy=<proxy_server> ： <proxy_port> をエクスポートします
+
+* Tegraf エージェントをインストールした後、次のアドレスに appropriate _https_proxy_ および / または _http_proxy_variable を追加して設定します。 _ アプリケーション /Telegraf .app/Contents/telegraf.plist_:
+
+....
+…
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>EnvironmentVariables</key>
+   <dict>
+          <key>https_proxy</key>
+          <string><proxy_server>:<proxy_port></string>
+   </dict>
+   <key>Program</key>
+   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
+   <key>Label</key>
+   <string>telegraf</string>
+   <key>ProgramArguments</key>
+   <array>
+     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
+     <string>--config</string>
+     <string>/usr/local/etc/telegraf.conf</string>
+     <string>--config-directory</string>
+     <string>/usr/local/etc/telegraf.d</string>
+   </array>
+   <key>RunAtLoad</key>
+   <true/>
+</dict>
+</plist>
+…
+....
+次に、上記の変更を読み込んだ後、 Tegraf を再起動します。
+
+....
+sudo launchctl stop telegraf
+sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
+sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
+sudo launchctl start telegraf
+....
+
+
+==== エージェントをアンインストールしています
+
+macOS でエージェントをアンインストールするには、 Bash 端末で次のコマンドを実行します。
+
+. Telegraf サービスを停止します。
++
+....
+sudo launchctl stop telegraf
+....
+. テレグラムエージェントをアンインストールします。
++
+....
+cp /Applications/telegraf.app/scripts/uninstall /tmp
+sudo /tmp/uninstall
+....
+. 残っている設定ファイルまたはログファイルを削除します。
++
+....
+rm -rf /usr/local/etc/telegraf*
+rm -rf /usr/local/var/log/telegraf.*
+....
+
+
+
+
+==== Agent をアップグレードしています
+
+テレグラムエージェントをアップグレードするには、次の手順に従います。
+
+. テレグラムサービスを停止します。
++
+....
+sudo launchctl stop telegraf
+....
+. 前のテレグラムエージェントをアンインストールします。
++
+....
+cp /Applications/telegraf.app/scripts/uninstall /tmp
+sudo /tmp/uninstall
+....
+. link:#macos["新しいエージェントをインストールします"]。
+
+
+
+
+=== Kubernetes
+
+image:Kubernetes_Install_Agent_screen.png["Kubernetes Agent のインストール"]
+
+.前提条件
+* cURL 、 sudo 、 kubectl などのコマンドを使用できる必要があります
++
+最適な結果を得るには、これらのコマンドをパスに追加してください。
+
+* kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。
+* プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。
+* セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。
+
+
+
+
+==== 監視は Linux ノードにのみインストールされます
+
+Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。
+
+|===
+| プラットフォーム | ラベル 
+
+
+| Kubernetes v1.14 以降 | Kubernetes の IO / OS = Linux 
+
+
+| Kubernetes v1.13 以下 | beta.Kubernetes IO / OS = Linux 
+
+
+| Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用 | catt.io/os=linux 
+|===
+
+
+==== インストール
+
+.Kubernetes にエージェントをインストールする手順：
+. エージェントアクセスキーを選択します。
+. インストールダイアログの * エージェントインストーラスニペットのコピー * ボタンをクリックします。コマンドブロックを表示する場合は、オプションで、 [__ Reveal Agent Installer Snippet_] ボタンをクリックします。
+. Bash ウィンドウを開きます。
+. Bash ウィンドウにコマンドを貼り付けます。
+. 必要に応じて、 install コマンドの一部として名前空間をオーバーライドしたり、クラスタ名を指定したりできます。そのためには、コマンドブロックを変更して final_./$installerNam_ の前に次のいずれかまたは両方を追加します
++
+** cluster_name = < クラスタ名 >
+** namespace = < 名前空間 >
++
+次の例をスクロールして、コマンドブロック内に目的のコマンドが配置されていることを確認します。
+
++
+....
+installerName=cloudinsights-kubernetes.sh && token=<token> && key=c642e336-91f4-4c6f-8086-72faabd6aff6 && domain=tenant1.testk8.cloudinsights-test.netapp.com && curl -k -X GET -H "Authorization: Bearer $token" -H "X-CloudInsights-ApiKey-Id: $key" -o $installerName https://$domain/rest/v1/lake/telegraf/platforms/installer?platform=kubernetes && chmod +x $installerName && sudo --preserve-env JWT=$token DOMAIN_NAME=$domain API_KEY_ID=$key CLUSTER_NAME=TEST_CLUSTER NAMESPACE=NEW-NAMESPACE ./$installerName
+....
++
+
+TIP: _cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指標を収集し、 _namespace_は Tegraf エージェントを導入するネームスペースです。指定したネームスペースがない場合は作成されます。
+
+
+
+. 準備ができたら、コマンドブロックを実行します。
+. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。明示的に _namespace__ を設定していない場合は、名前を入力するように求められます。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
+. 完了したら、 [* Complete Setup* （セットアップ完了） ] をクリックします。
+
+
+DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。
+
+エージェントの停止と再起動を容易にするには、次のコマンドを使用して Tegraf DemonSet YAML および ReplicaSet YAML を生成します。これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。
+
+独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。
+
+....
+kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml > /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml > /tmp/telegraf-rs.yaml
+....
+その後、次のコマンドを使用して Tegraf サービスを停止および開始できます。
+
+....
+kubectl --namespace ci-monitoring delete ds telegraf-ds
+kubectl --namespace ci-monitoring delete rs telegraf-rs
+....
+....
+kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
+....
+
+
+==== Kubernetes のプロキシサポートを設定する
+
+プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
+
+....
+export https_proxy=<proxy_server>:<proxy_port>
+....
+* Tegraf エージェントのインストール後に、 appropriate _https_proxy_ および / または _http_proxy_environment 変数を、 _TETRF -demonset および _TETR_replicaset に追加して設定します。
+
+....
+kubectl edit ds telegraf-ds
+....
+....
+…
+       env:
+       - name: https_proxy
+         value: <proxy_server>:<proxy_port>
+       - name: HOSTIP
+         valueFrom:
+           fieldRef:
+             apiVersion: v1
+             fieldPath: status.hostIP
+…
+....
+....
+kubectl edit rs telegraf-rs
+....
+....
+…
+       env:
+       - name: https_proxy
+         value: <proxy_server>:<proxy_port>
+       - name: HOSTIP
+         valueFrom:
+           fieldRef:
+             apiVersion: v1
+             fieldPath: status.hostIP
+…
+....
+次に Tegraf を再起動します。
+
+....
+kubectl delete pod telegraf-ds-*
+kubectl delete pod telegraf-rs-*
+....
+
+
+==== Kubernetes からデータを収集するようにエージェントを設定します
+
+Kubernetes 環境の場合、 Cloud Insights は Telegraf エージェントを DemonSet および ReplicaSet として導入します。エージェントが実行するポッドは、次の項目にアクセスできる必要があります。
+
+* ホストパス
+* ConfigMap
+* 秘密
+
+
+これらの Kubernetes オブジェクトは、 Cloud Insights UI に用意されている Kubernetes Agent インストールコマンドの一部として自動的に作成されます。OpenShift などの一部の Kubernetes タイプでは、これらのコンポーネントへのアクセスをブロックする追加のセキュリティレベルが実装されています。_SecurityContextConstraint_ は、 Cloud Insights UI に用意されている Kubernetes エージェントインストールコマンドの一部として作成されていないため、手動で作成する必要があります。作成したら、 Tegraf ポッドを再起動します。
+
+[listing]
+----
+    apiVersion: v1
+    kind: SecurityContextConstraints
+    metadata:
+      name: telegraf-hostaccess
+      creationTimestamp:
+      annotations:
+        kubernetes.io/description: telegraf-hostaccess allows hostpath volume mounts for restricted SAs.
+      labels:
+        app: ci-telegraf
+    priority: 10
+    allowPrivilegedContainer: false
+    defaultAddCapabilities: []
+    requiredDropCapabilities: []
+    allowedCapabilities: []
+    allowedFlexVolumes: []
+    allowHostDirVolumePlugin: true
+    volumes:
+    - hostPath
+    - configMap
+    - secret
+    allowHostNetwork: false
+    allowHostPorts: false
+    allowHostPID: false
+    allowHostIPC: false
+    seLinuxContext:
+      type: MustRunAs
+    runAsUser:
+      type: RunAsAny
+    supplementalGroups:
+      type: RunAsAny
+    fsGroup:
+      type: RunAsAny
+    readOnlyRootFilesystem: false
+    users:
+    - system:serviceaccount:ci-monitoring:telegraf-user
+    groups: []
+----
+
+
+==== kube-state-metrics サーバをインストールしています
+
+kube-state-metrics サーバをインストールすると、 StatefulSet 、 DemonSet 、 Deployment 、 PV 、 PVC 、 ReplicaSet 、 Service 、 Namespace 、 Secret 、 ConfigMap 、 PoD Volume 、入力。
+
+
+NOTE: Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。
+
+kube-state-metrics サーバをインストールするには、次の手順を実行します。
+
+.手順
+. 一時フォルダ（例えば、 /tmp/kube-state-yaml -files/_ ）を作成し、から .yaml ファイルをコピーします https://github.com/kubernetes/kube-state-metrics/tree/master/examples/standard[] をこのフォルダに追加します。
+. kube-state-metrics のインストールに必要な .yaml ファイルを適用するには、次のコマンドを実行します。
++
+....
+kubectl apply -f /tmp/kube-state-yaml-files/
+....
+
+
+
+
+==== kube-state-metrics カウンタ
+
+kubbe 状態メトリックカウンタの情報にアクセスするには、次のリンクを使用します。
+
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap メトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet メトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["導入メトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["入力メトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["ネームスペース指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["ノードのメトリックス"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["永続的ボリューム指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["永続的ボリューム要求の指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["ポッドのメトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet メトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["シークレットメトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["サービスメトリック"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["Stat助け Set メトリック"]
+
+
+
+
+==== エージェントをアンインストールしています
+
+これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+
+Kubernetes でエージェントをアンインストールするには、次の手順を実行します。
+
+モニタリングネームスペースが Telegraf 専用に使用されている場合：
+
+....
+kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+....
+....
+kubectl delete ns ci-monitoring
+....
+モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
+
+....
+kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+....
+
+
+==== Agent をアップグレードしています
+
+これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+
+テレグラムエージェントをアップグレードするには、次の手順に従います。
+
+. 既存の構成をバックアップします。
++
+....
+kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+....
+. Agent をアンインストールします（手順については、上記を参照）。
+. link:#kubernetes["新しいエージェントをインストールします"]。
+
+
+
+
+== エージェントインストールのトラブルシューティング
+
+エージェントの設定で問題が発生した場合の対処方法を次に示します。
+
+[cols="2*"]
+|===
+| 問題 | 次の操作を実行します 
+
+
+| すでに Cloud Insights を使用してエージェントをインストールしました | ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。 
+
+
+| すでにエージェントをインストールしていますが、 Cloud Insights インストーラを使用してインストールしていません | 前のエージェントを削除し、 Cloud Insights エージェントのインストールを実行して、適切なデフォルト設定ファイルを設定します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。 
+
+
+| Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。 
+
+
+| 次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781. | kube-state-metrics のバージョンが Kubernetes のバージョンよりも新しい場合に表示されます。たとえば、 Kubernetes バージョン 1.17 で kube-state-metrics バージョン 2.0.0 以上を実行しています。Kubernetes のバージョンを取得するには、次の手順を実行します。 _kubectl kube-state metrics バージョン： _kubectl deploy デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないように、 kube-state-metrics デプロイを修正して leasuting_matingwebvolumeconfigurations を無効にします。さらに具体的には、次の CLI 引数を使用できます。 resources= certificatesigningrequests 、 horizontalconfigmap 、 happjobs 、 demonsets 、 deployments 、 endpoints 、 hookalpodcalers 、 hookalpodcalers 、 hooklepodcalers 、 networkpolicies 
+|===
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

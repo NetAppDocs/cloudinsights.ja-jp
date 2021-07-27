@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: task_cs_user_management.html 
+keywords: Cloud Secure, User, Login, account 
+summary: Cloud Secure ユーザアカウントは、 Cloud Insights ユーザ管理を介して管理されます 
+---
+= ユーザ管理
+
+
+[role="lead"]
+Cloud Secure ユーザアカウントは、 Cloud Insights を使用して管理します。
+
+Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントが用意されています。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、 Cloud Secure にアクセスし、ユーザを作成または変更できます。
+
+.手順
+. Cloud Secure にログインします
+. メニューで、 [*Admin] > [User Management] をクリックします
++
+Cloud Insights の User Management ページに転送されます。
+
+
+
+ユーザアカウントとロールの詳細については、 Cloud Insights を参照してください link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["ユーザロール"] ドキュメント
