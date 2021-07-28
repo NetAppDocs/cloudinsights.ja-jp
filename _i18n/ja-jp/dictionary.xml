@@ -5255,8 +5255,6 @@
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights は 5 分ごとにログアウトします</block>
   <block id="8f65024231687a39efcddb86a1e9debb" category="cell">ブラウザの設定で、 _ [* 。 ] auth0.com からサードパーティのクッキーの受け入れを有効にします。たとえば、 Chrome の incognito モードでは、デフォルトのブラウザ設定によってサードパーティのクッキーがブロックされます。次のコマンドを実行してみます。ブラウザの URL に「 chrome ： //settings/cookies 」と入力します。「すべての Cookie を許可」オプションを選択します。</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。</block>
-  <block id="c7b5c69b88b615b5ffbd50c2abf7767f" category="inline-link-macro">NetApp Cloud Central のサポート</block>
-  <block id="0588b19c4e8ed78d9a6a07ed16644f59" category="cell">連絡先 <block ref="7a7ddcf557d43d3f87fc9d300eba8724" category="inline-link-macro-rx"></block></block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。</block>
   <block id="199017f1d912993f091b6b969d3442ad" category="cell">Cloud Central アカウントに登録していること、または組織が Cloud Central で SSO ログインを使用していることを確認します。Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
   <block id="176f8c6fa466059df49f2717c021d306" category="cell">Cloud Central または Cloud Secure からログアウトし、 Cloud Insights から自動的にログアウトされました。</block>
@@ -5266,14 +5264,12 @@
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">「ログインを許可されていません」というエラーメッセージが表示されます。</block>
   <block id="acf29dcaa06698c29122cba5402e3145" category="cell">アカウント管理者に連絡して、 Cloud Insights へのアクセスを確認してください。Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">その他のログインエラーです</block>
-  <block id="3d9f64f97a5fa2f93be7575a7227b5aa" category="cell">ブラウザの履歴、 Cookie 、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
   <block id="8e4250e46b39cafa83925c4406214353" category="paragraph">アクティブな Cloud Insights サブスクリプションがある場合は、次のサポートオプションを使用できます。</block>
   <block id="bcc254b55c4a1babdf1dcb82c207506b" category="inline-link-macro">電話</block>
   <block id="0af89698bf5d1150026d4fcbbcf784a6" category="inline-link-macro">サポートチケット</block>
   <block id="b0441ab0b89b994706e83faa77bbe107" category="paragraph"><block ref="5924baf98227cb4c4a870a2369035bbd" category="inline-link-macro-rx"></block>
 <block ref="de1cde84399fb2a6056b099cf302293f" category="inline-link-macro-rx"></block></block>
   <block id="b1dcce069d63ced71a6dcf2e76c2ac23" category="inline-link">Cloud Insights サポートドキュメント</block>
-  <block id="72dff50b0ed3324ddc4eee96368fc5ae" category="paragraph">詳細については、を参照してください<block ref="1bec10f1d366b365989be1df4a658dcb" category="inline-link-rx"></block>。</block>
   <block id="c7f969b5afde9ddd59008de6e90242fd" category="summary">このセクションでは、 Cloud Insights 環境の問題のトラブルシューティングに役立つヒントとアドバイスを紹介します。</block>
   <block id="1da3ee5df88bebf25333c76ca47fa680" category="doc">Cloud Insights の問題のトラブルシューティング</block>
   <block id="595d5a6ca6bc47b43d6f21ee94bcfc0e" category="paragraph">このセクションのトピックでは、 Cloud Insights 環境に問題が発生した場合のトラブルシューティングのアドバイスを提供します。</block>
@@ -7895,4 +7891,8 @@
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
   <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">ログインの問題：</block>
   <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">ネットアップサポート</block>
+  <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">saas.support@netapp.com にお問い合わせください。これは、 Cloud Central の問題や質問に特化したものです。その他の Cloud Insights の問題については、にお問い合わせください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4300936bf66917c778b4197c0a05315" category="cell">Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
+  <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">詳細については、を参照してください<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
 </blocks>
