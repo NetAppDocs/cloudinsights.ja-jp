@@ -78,6 +78,9 @@ Stop-Service telegraf
 
 ==== Windows 向けプロキシサポートを設定しています
 
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
+
 プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に _https_proxy_ および /or_http_proxy_environment 変数 * を設定するには、次の手順を実行します。
 
 ....
@@ -154,6 +157,9 @@ sudo service telegraf stop
 
 
 ==== RHEL / CentOS でのプロキシサポートの設定
+
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
 
 プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
 
@@ -252,6 +258,9 @@ sudo service telegraf stop
 
 ==== Ubuntu / Debian のプロキシサポートの設定
 
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
+
 プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
 
 . 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
@@ -342,10 +351,14 @@ sudo launchctl stop telegraf
 
 ==== macOS のプロキシサポートを設定しています
 
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
+
 プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
 
-https_proxy=<proxy_server> ： <proxy_port> をエクスポートします
-
+....
+export https_proxy=<proxy_server>:<proxy_port>
+....
 * Tegraf エージェントをインストールした後、次のアドレスに appropriate _https_proxy_ および / または _http_proxy_variable を追加して設定します。 _ アプリケーション /Telegraf .app/Contents/telegraf.plist_:
 
 ....
@@ -518,6 +531,9 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 
 
 ==== Kubernetes のプロキシサポートを設定する
+
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
 
 プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
 

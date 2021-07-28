@@ -6039,7 +6039,6 @@
   <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">前に Home醸造 を使用して Tegraf エージェントをインストールしていた場合は、アンインストールするように求められます。以前にインストールした Tegraf エージェントをアンインストールしたら、上記の手順 5 でコマンドを再実行します。</block>
   <block id="e747d1c9206ef290e765c44899e8276d" category="section-title">macOS のプロキシサポートを設定しています</block>
   <block id="86ca857cd13e48a665c06adacc3bc11c" category="paragraph">プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。</block>
-  <block id="cbfc0fd431f90278d0b6b3592211b73b" category="paragraph">https_proxy=&lt;proxy_server&gt; ： &lt;proxy_port&gt; をエクスポートします</block>
   <block id="b7811096d82a6677a2e9256752cdbc44" category="paragraph">* Tegraf エージェントをインストールした後、次のアドレスに appropriate _https_proxy_ および / または _http_proxy_variable を追加して設定します。 _ アプリケーション /Telegraf .app/Contents/telegraf.plist_:</block>
   <block id="8bbdd3c386723d33a3bfe476f361744c" category="paragraph">次に、上記の変更を読み込んだ後、 Tegraf を再起動します。</block>
   <block id="903f8d1093beeadb9d59b74d760a40e8" category="paragraph">macOS でエージェントをアンインストールするには、 Bash 端末で次のコマンドを実行します。</block>
@@ -7895,4 +7894,5 @@
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">パペット</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
   <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">ログインの問題：</block>
+  <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります</block>
 </blocks>
