@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_feature_tutorials.html 
 summary: Cloud Insights には、多くのタスクの実行方法を示すチュートリアルが用意されています。 
-keywords: onboarding, getting started, video, tutorial, 
+keywords: onboarding, getting started, video, tutorial, resolution, dashboard, query, troubleshooting 
 ---
 = 機能チュートリアル
 
@@ -25,7 +25,7 @@ video::howTo.mp4[]
 
 Cloud Insights サイトに表示される * スタートアップチェックリスト * には、いくつかの便利なタスクと概念が記載されています。チェックリストで項目を選択すると、その概念に適した Cloud Insights ページが表示されます。たとえば、 _ ダッシュボード項目の作成をクリックすると、 Cloud Insights * ダッシュボード * ページが開きます。
 
-image:TutorialProgress.png["チュートリアルチェックリストの進行状況"]
+image:OnboardingChecklist.png["チュートリアルチェックリストの進行状況"]
 
 ページの上部には、ダッシュボードの作成方法を示すビデオチュートリアルへのリンクがあります。ビデオは、 [got it （取得） ] をクリックするまで何度でも表示できます。このビデオには、この Again_link を表示しないでください。ビデオは、 [ ダッシュボード ] ページを閉じるまで、 [ ダッシュボード ] ページに移動するたびに使用できます。
 
@@ -61,3 +61,8 @@ video::Dashboards.mp4[]
 === トラブルシューティング
 
 video::Troubleshooting.mp4[]
+
+
+=== デバイスを解決します
+
+video::AHR_sm.mp4[]
