@@ -7272,8 +7272,6 @@
   <block id="a095544b81060891734744ad5bd2a5c3" category="section-title">[ エキスパートビュー（ Expert View ） ] セクションの使用</block>
   <block id="62329137e14077120c0de9e866ecae4b" category="paragraph">ストレージアセットページの Expert View セクションの例を次に示します。</block>
   <block id="beaa4bde61b31a115ee598bebfa3f120" category="inline-image-macro">Expert View の例</block>
-  <block id="c0a63668026cee5ab2f2a2f56ef05cbc" category="paragraph"><block ref="c0a63668026cee5ab2f2a2f56ef05cbc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9c44d4d64ec4bf523dbfd27c6a6eb2f2" category="paragraph">選択した期間について、パフォーマンスチャートで表示する指標を選択することができます。</block>
   <block id="52bba81eec3bcd739db5c4692bdb626d" category="paragraph">リソースセクションには、ベースアセットの名前とパフォーマンスチャートでの色が表示されます。「上位相関 * 」セクションにパフォーマンスチャートに表示したいアセットが含まれていない場合は、「その他のリソース」セクションの「アセットの検索」ボックスを使用してアセットを検索し、パフォーマンスチャートに追加できます。リソースを追加すると、 [ 追加リソース ] セクションにリソースが表示されます。</block>
   <block id="a6c58f8b0b99d3cf3c8cb8460dc02a17" category="paragraph">ベースアセットに関連するアセットがある場合、それらのアセットもリソースセクションに次のカテゴリ別に表示されます。</block>
   <block id="372457ae1ff6520e9685ae7d892510c0" category="list-text">関連性が高い</block>
@@ -7914,4 +7912,6 @@
   <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">新しいオブジェクトまたはグループ化属性を選択すると、自動名称が更新されます。</block>
   <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">自動ウィジェット名を使用しない場合は、単に新しい名前を入力します。</block>
+  <block id="2f9b84f8f04989f1fd035633789615c2" category="paragraph"><block ref="2f9b84f8f04989f1fd035633789615c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7063e6cc35eb537040e7e42725b0597" category="paragraph">選択した期間について、パフォーマンスチャートで表示する指標を選択することができます。[Display Metrics_] ドロップダウンをクリックし、表示されたメトリックから選択します。</block>
 </blocks>
