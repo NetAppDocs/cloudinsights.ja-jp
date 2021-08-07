@@ -1704,7 +1704,6 @@
   <block id="56ca607cd6f00ec4f229948d5883aa41" category="paragraph">識別されていないデバイスが多数あり、他のデバイスを正しく識別した複数のルールがある場合。</block>
   <block id="80417d99848bd3c6df64a373088d8feb" category="admonition">ソースにホスト名またはデバイス名の一部だけが含まれている場合は、正規表現のルールを使用して欠落しているテキストを追加するように形式を変更します。</block>
   <block id="3bdda4101b77ea3179807e0d80165c9d" category="list-text">Fibre Channel identify * タブをクリックします。</block>
-  <block id="5e338405fdce77f55a8730c3c46812c1" category="paragraph">識別されたデバイスと識別されていないデバイスが表示されます。</block>
   <block id="aadbb3e880e10f6a73da5cb562311ad3" category="list-text">識別されていない複数のデバイスを選択</block>
   <block id="a308c80622a7b6bb834fa15c63317707" category="list-text">[ * Bulk Actions * ] をクリックし、 [ * ホスト解決の設定 * ] または [ * テープ解決の設定 * ] を選択します。</block>
   <block id="d0fdbe1af4bd027dd42a711e4db3126e" category="paragraph">識別画面が表示され、デバイスを正しく識別したすべてのルールのリストが表示されます。</block>
@@ -4168,7 +4167,6 @@
   <block id="cb012b6dbcdc973d91bcab4bd8383bd2" category="cell">インベントリのポーリング間隔。デフォルトは 60 分です。</block>
   <block id="46d0b067f3ba692193c0773f225a42f2" category="doc">ファイバチャネルデバイスの解決</block>
   <block id="d3421dc80ccb8ce0c229fb4f0ddd16eb" category="paragraph">Fibre Channel identify （ファイバチャネル識別）画面には、自動デバイス解決でホストが識別されていないファイバチャネルデバイスの WWN と WWPN が表示されます。この画面には、手動デバイス解決で解決されたデバイスも表示されます。</block>
-  <block id="8430e906cc34598cee9d3efae35ed414" category="paragraph">手動解決で解決されたデバイスのステータスは _OK_ で、デバイスの識別に使用されたルールを識別します。欠落しているデバイスのステータスは _Unidentified_ です。このページには、デバイスの識別範囲の合計が表示されます。</block>
   <block id="d940a17e6eb011c7dd5f92ad40511b3c" category="paragraph">一括操作を実行するには、 Fibre Channel 識別画面の左側で複数のデバイスを選択します。1 つのデバイス上でアクションを実行するには、デバイスの上にカーソルを移動し、リストの右端にある _identified_or_Unidentified_buttons を選択します。</block>
   <block id="38ddbe749bcc1a3d6738b5da7ab18670" category="paragraph">_Total Coverage_link には、特定されたデバイスの数、または構成に使用可能なデバイスの数のリストが表示されます。</block>
   <block id="55704bfa757d6e25076487b4c57e8de5" category="list-text">SRM エイリアス</block>
@@ -6328,7 +6326,6 @@
   <block id="58c5f5cd89ff92b78324a2c742d56016" category="list-text">ホスト名にアンダースコアを使用できるようにすることも、標準のポートエイリアスの代わりに「接続先」のエイリアスを使用することもできます。</block>
   <block id="1138c307af29b241997f69e2c9cf73d3" category="section-title">ストレージやテープの特定のベンダーを含めるか、除外します</block>
   <block id="a30d6254f1988f303cc6f05bd5ffd41d" category="paragraph">ストレージやテープの特定のベンダーを自動解決の対象に含めたり除外したりできます。レガシーホストとなり、新しい環境から除外する必要があることがわかっているホストがある場合などは、特定のベンダーを除外することができます。除外したベンダーを再度追加することもできます。</block>
-  <block id="af4ea0abc14a78c763ab08ad28f8d1b2" category="admonition">テープのデバイス解決ルールは、 WWN のベンダーがテープとして設定されている WWN でのみ機能します。ベンダーの設定では、その WWN のベンダーがテープとしてのみ指定されています。</block>
   <block id="48efe9ecb0bd1de1d09e3291068bd38a" category="inline-link-macro">正規表現の例</block>
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">次も参照してください。 <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
   <block id="b9249fd328314d6a7d2f42e8e3c6b5d4" category="summary">VPLEX データコレクタを構成しています。</block>
@@ -7916,4 +7913,7 @@
   <block id="b7063e6cc35eb537040e7e42725b0597" category="paragraph">選択した期間について、パフォーマンスチャートで表示する指標を選択することができます。[Display Metrics_] ドロップダウンをクリックし、表示されたメトリックから選択します。</block>
   <block id="8d72a33fb7e1e81326ed633058c4c3c6" category="paragraph"><block ref="8d72a33fb7e1e81326ed633058c4c3c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="730fe644f1d87eaec727a65945705b30" category="section-title">デバイスを解決します</block>
+  <block id="6794b8d2d4895f94dbd5ad6796ba5257" category="paragraph">デバイスとその解決ステータスが表示されます。</block>
+  <block id="785ec09cddf9283f24922c1e4d3f399c" category="paragraph">手動解決で解決されたデバイスのステータスは _OK_ で、デバイスの識別に使用されたルールを識別します。欠落しているデバイスのステータスは _Unidentified_ です。識別から除外されたデバイスのステータスは、 _Excluded _ です。このページには、デバイスの識別範囲の合計が表示されます。</block>
+  <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">テープのデバイス解決ルールは、 WWN のベンダーがテープ専用に設定されている WWN でのみ機能します。ベンダーの環境設定では、その WWN のベンダーがテープ専用に設定されています。</block>
 </blocks>
