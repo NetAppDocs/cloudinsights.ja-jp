@@ -7902,4 +7902,10 @@
   <block id="6e8526c3709a72705e37b6942beed39a" category="admonition">選択できる機能とロールは、特定の管理者ロールでアクセスできる機能によって異なります。たとえば、 Reporting 専用の管理者ロールが割り当てられている場合、 Reporting で任意のロールにユーザを割り当てることはできますが、 Monitor and Optimize または Cloud Secure のロールを割り当てることはできません。</block>
   <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">ユーザロールの選択</block>
   <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="248f830b158797f9c038ea35ea266b89" category="section-title">2021年8月</block>
+  <block id="35c0ef8e82e5f124245cd4a182515707" category="section-title">ユーザロール管理の強化</block>
+  <block id="67d5547dc426dda2eb38c9f2cfbc7b4e" category="paragraph">Cloud Insights では、ユーザロールとアクセス制御をより自由に割り当てることができるようになりました。ユーザに、監視、レポート、および Cloud Secure に対する詳細な権限を個別に割り当てることができるようになりました。</block>
+  <block id="7eb14abb5476231afc532997fa6a50a4" category="paragraph">つまり、監視、最適化、レポート機能への管理アクセスをより多くのユーザに許可しながら、機密性の高い Cloud Secure 監査およびアクティビティデータへのアクセスを必要なユーザだけに制限できます。</block>
+  <block id="093ef2eaceae626b1d4dcb1a11bd70a2" category="inline-link-macro">詳細はこちら</block>
+  <block id="f5ef3def59ec03a725568ccb496ba619" category="paragraph"><block ref="e5cac74dba8477e0a100d4c693f32c03" category="inline-link-macro-rx"></block> Cloud Insights のドキュメントに記載されている各アクセスレベルについて</block>
 </blocks>

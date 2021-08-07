@@ -11,6 +11,21 @@ keywords: features
 
 
 
+=== 2021年8月
+
+
+
+==== ユーザロール管理の強化
+
+Cloud Insights では、ユーザロールとアクセス制御をより自由に割り当てることができるようになりました。ユーザに、監視、レポート、および Cloud Secure に対する詳細な権限を個別に割り当てることができるようになりました。
+
+つまり、監視、最適化、レポート機能への管理アクセスをより多くのユーザに許可しながら、機密性の高い Cloud Secure 監査およびアクティビティデータへのアクセスを必要なユーザだけに制限できます。
+
+link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["詳細はこちら"] Cloud Insights のドキュメントに記載されている各アクセスレベルについて
+
+'''
+
+
 === 2021年6月
 
 
@@ -103,6 +118,7 @@ image:CloudSecure_SnapshotPurgeSettings.png["消去設定"]
 
 1 つのデータコレクタエージェントシステムで、 Cloud Secure に 1 秒あたり最大 20,000 のイベントをポストできるようになりました。
 
+'''
 
 
 === 2021年5月
@@ -150,6 +166,7 @@ API アクセスがすべてのエディションの Cloud Insights で利用で
 |===
 API の使用方法の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API のドキュメント"]。
 
+'''
 
 
 === 2021年4月
@@ -213,6 +230,7 @@ image:CloudSecure_SetupChecklist.png["Cloud Secure チェックリスト"]
 
 いつものように、お客様のご提案をお待ちしております。ng-cloudinsights-customerfeedback@netapp.com に送信します。
 
+'''
 
 
 === 2021年2月
@@ -262,6 +280,7 @@ image:Filter_Null_Example.png["ドロップダウンに NULL フィルタがあ�
 
 をクリックします link:http://docs.netapp.com/us-en/cloudinsights/security_information_and_region.html["こちらをご覧ください"] を参照してください。
 
+'''
 
 
 === 2021年1月
@@ -417,6 +436,7 @@ Kubernetes 環境内のクラスタ、ノード、ポッド、コンテナ、ス
 
 image:Kubernetes_Cluster_Detail_Example.png["Kubernetes エクスプローラを使用します"]
 
+'''
 
 
 === 2020年12月
@@ -427,6 +447,7 @@ image:Kubernetes_Cluster_Detail_Example.png["Kubernetes エクスプローラを
 
 Kubernetes Agent のインストールは合理化され、ユーザの操作が少なくて済みます。 link:task_config_telegraf_agent.html#kubernetes["Kubernetes Agent をインストールします"] Kubernetes のデータ収集機能が追加されました。
 
+'''
 
 
 === 2020年11月
@@ -462,6 +483,7 @@ ONTAP に焦点を当てた次のダッシュボードがギャラリーに追�
 
 image:Table_Widget_Column_Rename.png["表ウィジェットの名前変更列"]
 
+'''
 
 
 === 2020年10月
@@ -484,6 +506,7 @@ Standard Edition および Premium Edition に加えて、 Cloud Insights Basic 
 
 Cloud Secure はをサポートします link:concept_cs_api.html["REST API"] アクティビティおよびアラート情報へのアクセス用。これは、 Cloud Secure 管理 UI で作成された API アクセストークンを使用して実行されます。 API アクセストークンは、 REST API にアクセスするために使用されます。Swagger の REST API のドキュメントは Cloud Secure と統合されています。
 
+'''
 
 
 === 2020年9月
@@ -550,6 +573,7 @@ IMPORTANT: 現在の Premium Edition のお客様で、レポートを保持し�
 
 Cloud Insights では、 * データの取り込み * API カテゴリが追加され、カスタムデータとエージェントをより詳細に制御できるようになりました。この API カテゴリおよびその他の API カテゴリの詳細なドキュメントは、 Cloud Insights で * Admin > API Access * に移動し、 _API Documentation_link をクリックすると参照できます。AU 詳細ページおよび AU リストページに表示される Note フィールドの AU にコメントを追加することもできます。
 
+'''
 
 
 === 2020年8月
@@ -562,6 +586,7 @@ Cloud Insights Standard Edition には、ストレージオブジェクト、 VM
 
 image:define_monitor_conditions_2.png["モニター条件"]
 
+'''
 
 
 === 2020 年 7 月
@@ -733,6 +758,7 @@ rules:
   - get
   - list            <== Add this line
 ----
+'''
 
 
 === 2020 年 6 月
@@ -761,6 +787,7 @@ image:Object_Metric_Chooser.png["オブジェクト / メトリックセレク�
 
 image:MultipleGroupsIntegrationLineChart.png["統合データを表示する際の複数のグループ化"]
 
+'''
 
 
 === 2020年5月
@@ -822,6 +849,7 @@ link:concept_dashboard_features.html#tv-mode-and-auto-refresh["TV モードと�
 
 TV モードと自動更新機能を組み合わせることで、 Cloud Insights データのライブビューが提供され、シームレスなデモンストレーションや社内モニタリングに最適です。
 
+'''
 
 
 === 2020年4月
@@ -886,6 +914,7 @@ image:api_assets_import.png["アノテーションのインポート"]
 
 image:NewWidgetPicker.png["新しいウィジェットセレクタ"]
 
+'''
 
 
 === 2020年2月
@@ -929,6 +958,7 @@ Cloud Insights Premium Edition では、管理者は * を有効にできますl
 
 NOTE: SSO は Cloud Insights Premium Edition でのみ使用可能で、 Cloud Insights で有効にする前に設定する必要があります。SSO 設定にはが含まれます link:https://services.cloud.netapp.com/misc/federation-support["アイデンティティフェデレーション"] NetApp Cloud Central を使用フェデレーションを使用すると、シングルサインオンユーザが、社内ディレクトリのクレデンシャルを使用して NetApp Cloud Central アカウントにアクセスできます。
 
+'''
 
 
 === 2020年1月
@@ -977,6 +1007,7 @@ image:Onboarding_Progress.png["進捗バー"]
 
 
 
+'''
 
 
 === 2019年12月
@@ -1011,6 +1042,7 @@ Cloud Insights の管理ユニット（ MU ）の計算が次のように変更�
 
 この変更により、既存の Cloud Insights サブスクリプションを使用して監視できる環境容量が 2 倍になります。
 
+'''
 
 
 === 2019年11月
@@ -1021,6 +1053,7 @@ Cloud Insights の管理ユニット（ MU ）の計算が次のように変更�
 
 [*Admin] > [Subscription*] ページ link:concept_subscribing_to_cloud_insights.html#key-features["比較表"] Cloud Insights の Basic 、 Standard 、および Premium Edition で使用できる機能セットのリストが更新されました。ネットアップでは常にクラウドサービスの改善に取り組んでいますので、このページを頻繁にチェックして、進化するビジネスニーズに最適なエディションをお探しください。
 
+'''
 
 
 === 2019年10月
@@ -1058,6 +1091,7 @@ Cloud Insights * Premium Edition * ではレポート作成が可能です。
 
 link:concept_activeiq.html["Active IQ のリスク"] ダッシュボードテーブルのウィジェットで使用するだけでなく、照会できるオブジェクトとしても使用できるようになりました。リスクオブジェクトには次の属性が含まれます。 * カテゴリ * 軽減カテゴリ * 潜在的影響 * リスクの詳細 * 重大度 * ソース * ストレージ * ストレージノード * UI カテゴリ
 
+'''
 
 
 === 2019 年 9 月
@@ -1091,6 +1125,7 @@ image:Single-Value Widgets - Formatted.png["書式設定された単一値ウィ
 
 データコレクタの詳細ページが改善され、読み取り可能な形式でエラーが表示されるようになりました。エラーがページ上の別のテーブルに表示されるようになりました。データコレクタで複数のエラーが発生した場合は、エラーがそれぞれ別の行に表示されます。
 
+'''
 
 
 === 2019年8月
@@ -1107,6 +1142,7 @@ image:Single-Value Widgets - Formatted.png["書式設定された単一値ウィ
 
 Cloud Insights は、ネットアップのお客様とそのハードウェア / ソフトウェアシステムに対し、可視化、分析、その他のサポート関連サービスを提供するネットアップ ActiveIQ からデータを収集します。Cloud Insights は、 ONTAP データ管理システムと統合されます。を参照してください link:concept_activeiq.html["Active IQ"] を参照してください。
 
+'''
 
 
 === 2019 年 7 月
@@ -1135,6 +1171,7 @@ Cloud Insights は、ネットアップのお客様とそのハードウェア /
 
 。 link:task_config_telegraf_kubernetes.html["Kubernetes Data Collector を実行します"] kube-state-metrics プラグインからオブジェクトとカウンタを収集し、 Cloud Insights で監視できる指標の数と範囲を大幅に拡大します。
 
+'''
 
 
 === 2019 年 6 月
@@ -1154,6 +1191,7 @@ Cloud Insights には、予算とビジネスニーズに合わせて、さま�
 
 HCI のデータコレクタが取得するのは HCI Virtual Center のみです。ストレージシステムからデータを収集するには、ネットアップも設定する必要があります link:task_dc_na_solidfire["SolidFire"] データコレクタ：
 
+'''
 
 
 === 2019 年 5 月
@@ -1213,6 +1251,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 
 | CentOS 7.3 64 ビット CentOS 7.4 64 ビット CentOS 7.6 64 ビット Debian 9 64 ビット Red Hat Enterprise Linux 7.3 64 ビット Red Hat Enterprise Linux 7.4 64 ビット Red Hat Enterprise Linux 7.6 64 ビット Ubuntu Server 18.04 LTS | Microsoft Windows 10 64 ビット Microsoft Windows Server 2008 R2 Microsoft Windows Server 2019 
 |===
+'''
 
 
 === 2019年4月
@@ -1228,6 +1267,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 * link:task_dc_google_cloud.html#advanced_configuration["Google Cloud Platform の 1 つです"]
 
 
+'''
 
 
 === 2019 年 3 月
@@ -1257,6 +1297,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 
 
 
+'''
 
 
 === 2019年2月
@@ -1282,6 +1323,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 * Cloud Insights Acquisition Unit は Windows サーバ / VM に設定できます。ウィンドウを確認します link:concept_acquisition_unit_requirements.html["前提条件"] をインストールする前に 。
 
 
+'''
 
 
 === 2019年1月
@@ -1300,6 +1342,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 * [*Admin] > [Subscription*] ページにリストされている各データコレクタについて、ホストとストレージの管理ユニット (MU) カウントの内訳と合計が表示されるようになりました。
 
 
+'''
 
 
 === 2018年12月
@@ -1328,6 +1371,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 * オンボーディングワークフロー中に、ヘルプ > サポート * ページと * 管理者 > サブスクリプション * ページに移動できます。このページから戻るとオンボーディングワークフローに戻りますが、ブラウザのタブを閉じていないことが条件です。
 
 
+'''
 
 
 === 2018年11月
