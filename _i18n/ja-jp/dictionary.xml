@@ -7908,4 +7908,10 @@
   <block id="7eb14abb5476231afc532997fa6a50a4" category="paragraph">つまり、監視、最適化、レポート機能への管理アクセスをより多くのユーザに許可しながら、機密性の高い Cloud Secure 監査およびアクティビティデータへのアクセスを必要なユーザだけに制限できます。</block>
   <block id="093ef2eaceae626b1d4dcb1a11bd70a2" category="inline-link-macro">詳細はこちら</block>
   <block id="f5ef3def59ec03a725568ccb496ba619" category="paragraph"><block ref="e5cac74dba8477e0a100d4c693f32c03" category="inline-link-macro-rx"></block> Cloud Insights のドキュメントに記載されている各アクセスレベルについて</block>
+  <block id="554c387b4cc54e5b15b7b9ce27d28df0" category="section-title">ウィジェットの命名</block>
+  <block id="59f8ad2450d81d69bb7178de28870ace" category="paragraph">ウィジェットの名前は、最初のクエリで選択したオブジェクト、指標、または属性に基づいて自動的に付けられます。ウィジェットのグループ化も選択すると、「グループ化」属性が自動命名（集計方法とメトリック）に含まれます。</block>
+  <block id="f311dd325e3f7f8553f9d8fda43458a7" category="inline-image-macro">ウィジェットの命名例</block>
+  <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">新しいオブジェクトまたはグループ化属性を選択すると、自動名称が更新されます。</block>
+  <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">自動ウィジェット名を使用しない場合は、単に新しい名前を入力します。</block>
 </blocks>
