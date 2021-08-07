@@ -827,18 +827,9 @@
   <block id="b63a1c6d2cba6eafec34be4992c1cbd7" category="cell">SMI-S プロバイダホストのパスワード</block>
   <block id="3f1b70a3ec875ea55e15beb4035704a0" category="cell">パフォーマンスのポーリング間隔デフォルトは 300 秒です。</block>
   <block id="350ff3e6edca65920342bf3e930281fd" category="summary">Cloud Insights には、さまざまな権限レベルを持つ複数のユーザアカウントがあります。</block>
-  <block id="e55adecd2f6d6a34c281c35189b654ed" category="doc">ユーザアカウント</block>
   <block id="0f9642bcff1dc3cd224f1f3e2f1ca629" category="inline-link-macro">招待済み</block>
-  <block id="9fce19546febdd9fe7f82ab3fb27efa0" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントが用意されています。各アカウントには、特定の権限レベルが割り当てられます。ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="ad5fb263849a72a8deb279dee2f51c3b" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
   <block id="4239d1a0d4b43b912ff81e4656377274" category="section-title">アクセス許可レベル</block>
-  <block id="90fa13c5a35a3b53cf6f6304e20cd18f" category="paragraph">ユーザアカウントを作成または変更するには、管理者権限を持つアカウントを使用します。各ユーザアカウントには、次のいずれかの権限レベルが割り当てられます。</block>
-  <block id="7b3facab682b4850162ca1bea28f2376" category="list-text">* ゲスト * は、アセットページ、ダッシュボード、クエリを表示し、クエリを実行できます。</block>
-  <block id="20f5d83d84f802c94fc0ae53d8dca92d" category="list-text">* ユーザー * はすべてのゲストレベルの権限を実行でき、ダッシュボード、クエリ、注釈、 アノテーションルール、およびアプリケーション</block>
-  <block id="5912555c04861ffef19f6f7ae12a4675" category="list-text">* 管理者 * と * アカウント所有者 * は、すべての機能を実行できるだけでなく、ポリシーの作成、変更、削除、ダッシュボードのインポート、すべてのユーザーとデータコレクターの管理も実行できます。</block>
-  <block id="1e22648f9649ba09f0f0c8e3255e1ba0" category="paragraph">Cloud Insights に登録すると、アカウント所有者が作成されます。</block>
   <block id="14c247a563d9d05855d0098eb6c48901" category="paragraph">ベストプラクティスとして、管理者権限を持つユーザの数を制限することを推奨します。アカウントの最大数は、ユーザアカウントまたはゲストアカウントです。</block>
-  <block id="44bebabde95299e9b772202a5079fef3" category="admonition">Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者を設定することを強くお勧めします。 </block>
-  <block id="6bc2f8b37482c5d1efbc6212d064fd25" category="section-title">ユーザロール別の権限</block>
   <block id="493f8916db2d1425825fe2b7b914f379" category="paragraph">次の表に、各ユーザロールに付与される Cloud Insights 権限を示します。</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">フィーチャー（ Feature ）</block>
   <block id="6072e63b8d5a9912977c211ab173fe58" category="cell">管理者 / アカウント所有者</block>
@@ -882,8 +873,6 @@
   <block id="b6a0e047e7e6ca00fb7aa5b12314c2c8" category="paragraph">ユーザーの招待 * 画面が表示されます。</block>
   <block id="1f8dd0c047e5f2c6c0d3267fff9f2bdb" category="list-text">招待状の電子メールアドレスまたは複数のアドレスを入力します。</block>
   <block id="b1e58a6582b4b8cf5f1631eac44903a9" category="paragraph">* 注： * 複数のアドレスを入力すると、すべて同じロールで作成されます。同じロールに設定できるユーザは複数だけです。</block>
-  <block id="a391767332f28333f275a87ca64adccf" category="list-text">ユーザの E メールアドレスを入力します。</block>
-  <block id="7d8df87ee0841d4f08b7606de8d90585" category="list-text">ユーザロールを選択します。</block>
   <block id="3b44544b9d947c143a9cfcb45be1aeff" category="list-text">[* 招待 * ] をクリックします</block>
   <block id="5f4c0be7b69ed6065ee66f5bb276c68b" category="paragraph">招待がユーザーに送信されます。ユーザーは 14 日以内に招待を承諾する必要があります。招待を受諾すると、 NetApp Cloud Portal に送られ、招待状の E メールアドレスを使用してサインアップされます。その E メールアドレス用の既存のアカウントがある場合は、サインインするだけで Cloud Insights 環境にアクセスできます。</block>
   <block id="ae34cecb877a210f81bf4d446541e619" category="section-title">シングルサインオン（ SSO ）とアイデンティティフェデレーション</block>
@@ -1498,7 +1487,6 @@
   <block id="5e5521164b1b5af65706898441efc15d" category="paragraph">アセットページにはデフォルトでは過去 24 時間のデータが表示されますが、他の一定の期間やカスタムの期間を選択して、その範囲のデータを表示することができます。</block>
   <block id="8c4cd8b70017d76d9f40fc77fd6c6f13" category="paragraph">アセットの種類に関係なく、すべてのアセットページに表示されるオプションを使用して、データを表示する期間を変更することができます。時間範囲を変更するには、トップバーに表示されている時間範囲をクリックし、次の時間セグメントから選択します。</block>
   <block id="a926f64f96f29ebfa9e64241032a55b2" category="list-text">最後の 15 分</block>
-  <block id="b6ffe31620582d08b5d07fc65eeb9fdc" category="list-text">過去 1 時間</block>
   <block id="c96fe014e6d0803a91c277c56a15524a" category="list-text">過去 3 時間（デフォルト）</block>
   <block id="91cffeca95beab0e4685fd8b11a50803" category="list-text">過去 24 時間</block>
   <block id="0ad331ed80e13a88f270d542cb3fbb40" category="list-text">過去 3 日間</block>
@@ -7895,4 +7883,23 @@
   <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">saas.support@netapp.com にお問い合わせください。これは、 Cloud Central の問題や質問に特化したものです。その他の Cloud Insights の問題については、にお問い合わせください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">詳細については、を参照してください<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
+  <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">シングルサインオン（ SSO ）許可</block>
+  <block id="ebbdc244249c4bebdb539839ef825e95" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。（ Cloud Secure 機能では、 _User_ROLES および _Guest_ROLES は使用できません）。ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
+  <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">ユーザアカウントを作成または変更するには、管理者権限を持つアカウントを使用します。各ユーザアカウントには、次の権限レベルの Cloud Insights 機能ごとにロールが割り当てられます。</block>
+  <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="cell">監視</block>
+  <block id="305de530147912d72a50568ee4d65d26" category="cell">アカウント所有者</block>
+  <block id="b754159e4e957eec4566aef2214ed483" category="cell">サブスクリプションの変更、課金情報および使用状況の表示、および Monitoring &amp; Optimization 、 Cloud Secure 、および Reporting のすべての管理者機能を実行できます。また、ユーザーを招待して管理したり、 SSO 認証とアイデンティティフェデレーションの設定を管理したりすることもできます。Cloud Insights に登録すると、最初のアカウント所有者が作成されます。Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者を設定することを強くお勧めします。 </block>
+  <block id="44b70724be7ec840b9d0d29c9f2451a3" category="cell">すべての Monitoring and Optimization 機能、すべてのユーザ機能、データコレクタ、 API キー、通知の管理を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Monitor ロールと Optimize ロールのみです。</block>
+  <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。</block>
+  <block id="844adbc2fbc9a63340cee63b3801153a" category="cell">すべての User/Author 機能を実行できるほか、レポートの構成、レポートタスクのシャットダウンと再起動など、すべての管理タスクを実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Reporting ロールのみです。</block>
+  <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">ダッシュボード、クエリ、アラート、アノテーション、アノテーションルール、 アプリケーションをサポートし、デバイス解決を管理できます。</block>
+  <block id="274b68192b056e268f128ff63bfcd4a4" category="cell">該当なし</block>
+  <block id="70fb52e38580a301b191eb366ac4d029" category="cell">すべてのゲスト / コンシューマ機能を実行できるほか、レポートとダッシュボードの作成と管理も可能です。</block>
+  <block id="76da35e3189c47f58355f9b7d58e7e97" category="cell">アセットページ、ダッシュボード、アラートへの読み取り専用アクセスが可能で、クエリの表示と実行が可能です。</block>
+  <block id="024adade9cb0061af998b7d3f3e85f0a" category="cell">レポートの表示、スケジュール設定、実行、および言語やタイムゾーンなどの個人設定を行うことができます。ゲスト / コンシューマは、レポートの作成や管理タスクの実行はできません。</block>
+  <block id="ec0921e40c81a97ba64c076f0ada5cc3" category="section-title">ユーザーロール別の Cloud Insights 権限</block>
+  <block id="83182dfe9652d91a9dff49ae5051115e" category="list-text">Cloud Insights の各機能に対するユーザのロールを選択します。</block>
+  <block id="6e8526c3709a72705e37b6942beed39a" category="admonition">選択できる機能とロールは、特定の管理者ロールでアクセスできる機能によって異なります。たとえば、 Reporting 専用の管理者ロールが割り当てられている場合、 Reporting で任意のロールにユーザを割り当てることはできますが、 Monitor and Optimize または Cloud Secure のロールを割り当てることはできません。</block>
+  <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">ユーザロールの選択</block>
+  <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
