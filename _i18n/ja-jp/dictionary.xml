@@ -7917,4 +7917,16 @@
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">テープのデバイス解決ルールは、 WWN のベンダーがテープ専用に設定されている WWN でのみ機能します。ベンダーの環境設定では、その WWN のベンダーがテープ専用に設定されています。</block>
   <block id="43523ef8cffdeaaafa0e6c8e15986699" category="doc">資産とアラートを検索するためのヒントとヒント</block>
   <block id="252a2cf622edba8a5638ad07b4ae60cc" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： * CentOS （ 64 ビット）： 7.2 から 7.9 、 8.1 から 8.3 * Debian （ 64 ビット）： 9 および 10 * Oracle Enterprise Linux （ 64 ビット）： 7.5 から 7.9 、 8.1 から 8.3 * Red Hat Enterprise Linux （ 64 ビット）： 7.2 ~ 7.9 、 8.1 ~ 8.3 * Ubuntu Server ： 18.04 および 20.04 LTS このコンピュータでは、他のアプリケーションレベルのソフトウェアは実行しないでください。専用のサーバを使用することを推奨します。</block>
+  <block id="55d1aacd9076657a9c3f2551a759f3f7" category="summary">Cloud Insights のアセットページの関連するアラートセクションの概要。</block>
+  <block id="1b7dc1deafc07ca39a6334e1152f20e6" category="doc">Asset Page Related Alerts セクション</block>
+  <block id="3608951e73671567ed9225929310279b" category="paragraph">アセットページの関連アラートセクションでは、アセットに割り当てられたモニタを実行した結果、環境で発生したアラートを確認できます。では、設定した条件に基づいてアラートが生成されます。予想される影響を特定し、問題の影響とルート原因を分析できるため、迅速かつ効果的に修正できます。</block>
+  <block id="1da67e7bef682d4c0fcc23895b1a2b8e" category="paragraph">次の例は、アセットページに表示される一般的な関連アラートのセクションを示しています。</block>
+  <block id="ec6d90c44091b0e7388a69c552bb2373" category="inline-image-macro">関連するアラートの表</block>
+  <block id="0378c8b9cb8856d2de86d1b0e39fda27" category="paragraph"><block ref="0378c8b9cb8856d2de86d1b0e39fda27" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15b718639bc71838d0ee4200ab331bff" category="paragraph">Related Alerts セクションでは、アセットに割り当てられた監視条件の結果としてネットワークで発生するアラートを表示および管理できます。</block>
+  <block id="b5363541d312dc24d8c6a6139091855c" category="paragraph">アセットページが表示されます。関連アラートセクションには、アラートがトリガーされた時刻と、アラートの現在のステータス、およびアラートをトリガーしたモニタが表示されます。アラート ID をクリックすると、アラートのランディングページを開いて詳しい調査を行うことができます。</block>
+  <block id="a7fd66167e9a4b5030676f8f2b2ad02f" category="section-title">エキスパートビューのアラート</block>
+  <block id="ce5f9e14bbd4a967c3c432f4319e1a01" category="paragraph">また、アセットランディングページのエキスパートビューセクションには、アラートをトリガーした時間と期間、およびアラートをトリガーした監視条件が表示されます。</block>
+  <block id="22d49532ff07c48997ea5c32826181db" category="paragraph"><block ref="22d49532ff07c48997ea5c32826181db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48ea80f3c83ef15f01fec95ea4b83ec8" category="sidebar">関連アラートセクション</block>
 </blocks>
