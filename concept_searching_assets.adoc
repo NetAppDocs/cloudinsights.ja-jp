@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_searching_assets.html 
 summary: 高度な検索手法を使用すると、探しているアセットを見つけることができます。 
-keywords: asset page, objects, search, advanced, 
+keywords: asset page, objects, search, advanced, alerts 
 ---
-= 資産を検索するためのヒントとヒント
+= 資産とアラートを検索するためのヒントとヒント
 
 
 [role="lead"]

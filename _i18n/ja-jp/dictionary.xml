@@ -7916,4 +7916,5 @@
   <block id="6794b8d2d4895f94dbd5ad6796ba5257" category="paragraph">デバイスとその解決ステータスが表示されます。</block>
   <block id="785ec09cddf9283f24922c1e4d3f399c" category="paragraph">手動解決で解決されたデバイスのステータスは _OK_ で、デバイスの識別に使用されたルールを識別します。欠落しているデバイスのステータスは _Unidentified_ です。識別から除外されたデバイスのステータスは、 _Excluded _ です。このページには、デバイスの識別範囲の合計が表示されます。</block>
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">テープのデバイス解決ルールは、 WWN のベンダーがテープ専用に設定されている WWN でのみ機能します。ベンダーの環境設定では、その WWN のベンダーがテープ専用に設定されています。</block>
+  <block id="43523ef8cffdeaaafa0e6c8e15986699" category="doc">資産とアラートを検索するためのヒントとヒント</block>
 </blocks>
