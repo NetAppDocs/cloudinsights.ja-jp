@@ -895,14 +895,9 @@
   <block id="d6034d333b0966edaeeea729724c4988" category="section-title">シングルサインオン（ SSO ）ユーザの自動プロビジョニング</block>
   <block id="6c59be6231105da08319ced12f4e659b" category="paragraph">管理者は、ユーザを招待するだけでなく、企業ドメイン内のすべてのユーザに対して * シングルサインオン（ SSO ）ユーザの自動プロビジョニング * アクセスを Cloud Insights に許可できます。個別に招待する必要はありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。</block>
   <block id="a4e769bbaabeca7372ca6634d43bf1a5" category="admonition">Cloud Insights Premium Edition では、 SSO ユーザーの自動プロビジョニング _ を使用できます。これを構成してから Cloud Insights で有効にする必要があります。SSO ユーザの自動プロビジョニング設定にはが含まれます <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 前述のセクションの説明に従って、 NetApp Cloud Central を使用します。フェデレーションを使用すると、 Security Assertion Markup Language 2.0 （ SAML ）や OpenID Connect （ OIDC ）などのオープン標準を使用して、社内ディレクトリのクレデンシャルを使用してシングルサインオンユーザが NetApp Cloud Central アカウントにアクセスできます。</block>
-  <block id="cb1e53c2e5a61103858f490826f50656" category="paragraph">_SSO ユーザーの自動プロビジョニングを設定するには、 [* Admin] &gt; [User Management] ページで、 [* SSO の設定 * ] ボタンをクリックします。設定が完了すると、管理者は SSO ユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。</block>
-  <block id="f195cf5607300293910fd98e7dccf666" category="inline-image-macro">SSO を使用したユーザ管理</block>
-  <block id="6069e8e5b0596ffcd915e407d5d354e9" category="paragraph"><block ref="6069e8e5b0596ffcd915e407d5d354e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8180ff7e185bcd2693971907be3065b6" category="paragraph">管理者が、デフォルトの SSO ロールから 1 人のユーザを昇格する場合（管理者に昇格する場合など）には、これは、ユーザの右側のメニューをクリックし、 _Assign Role_を 選択することにより、 [*Admin] &gt; [User Management] ページで実行できます。この方法で明示的なロールを割り当てられたユーザは、以降に _SSO ユーザの Auto-Provisioning_を 無効にしても、引き続き Cloud Insights にアクセスできます。</block>
   <block id="784219fd668203a8e5c8b86ac08efba1" category="paragraph">ユーザに昇格されたロールが不要になった場合は ' メニューをクリックしてユーザの削除を実行できますユーザがリストから削除されます。_SSO ユーザーの自動プロビジョニングが有効になっている場合、ユーザーはデフォルトの役割を使用して SSO 経由で Cloud Insights へのログインを続行できます。</block>
   <block id="5b838d1db2b0c90f3965d582815bd387" category="paragraph">SSO ユーザーを非表示にするには、 * SSO ユーザーを表示 * チェックボックスをオフにします。</block>
-  <block id="3c099038b85e4fdf6d4898b404fb70eb" category="inline-image-macro">SSO が有効です</block>
-  <block id="d288f498f6cd38806c24c28adc80ee7c" category="paragraph"><block ref="d288f498f6cd38806c24c28adc80ee7c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8ebf4409c7ad7b050814935893a9c1f" category="paragraph">ただし、次のいずれかに該当する場合は、 _SSO ユーザの自動プロビジョニング _ を有効にしないでください。</block>
   <block id="0a4ddee9467e17088a4ed61c86d33e29" category="list-text">組織に Cloud Insights テナントが複数ある</block>
   <block id="5fa16e988bd57824af7b89bb4e983aef" category="list-text">組織では、フェデレーテッドドメイン内のすべてのユーザに Cloud Insights テナントへの一定レベルの自動アクセスを付与することを望まない。_ この時点では、グループを使用してこのオプションでのロールアクセスを制御することはできません。</block>
@@ -7929,4 +7924,8 @@
   <block id="ce5f9e14bbd4a967c3c432f4319e1a01" category="paragraph">また、アセットランディングページのエキスパートビューセクションには、アラートをトリガーした時間と期間、およびアラートをトリガーした監視条件が表示されます。</block>
   <block id="22d49532ff07c48997ea5c32826181db" category="paragraph"><block ref="22d49532ff07c48997ea5c32826181db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48ea80f3c83ef15f01fec95ea4b83ec8" category="sidebar">関連アラートセクション</block>
+  <block id="5dfc56f9cd6a0615db0ca10f1fbbfe79" category="cell">デバイス解決</block>
+  <block id="8454d6429fbbbb85edb89463f6d1f0a6" category="paragraph">_SSO ユーザーの自動プロビジョニングを設定するには、 [* Admin] &gt; [User Management] ページで [* Request Federation] ボタンをクリックします。設定が完了すると、管理者は SSO ユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。</block>
+  <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">フェデレーションを使用したユーザー管理</block>
+  <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
