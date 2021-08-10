@@ -6686,34 +6686,9 @@
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8cddd68e9275728e34c400e58a9183d1" category="summary">監査では、 Cloud Insights システムのシステムアクティビティとユーザアクティビティが確認できます。</block>
   <block id="78f48b8a03facd61000db8f7ae6f9227" category="doc">監査</block>
-  <block id="383428b08db42063b918c95cd7e86d3d" category="paragraph">想定外の変更を特定するために、 Cloud Insights システムとそのユーザアクティビティの監査証跡を表示できます。</block>
-  <block id="0fdd668274c7e6e9405f0b461c5d2ab0" category="paragraph">Cloud Insights では、システムまたはユーザに影響する変更について監査エントリが生成されます。これらの変更には、次のもの</block>
-  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="list-text">ログインしています</block>
-  <block id="bae14673a8e0dfadef8ac3c958393b11" category="list-text">パスの許可または許可解除</block>
-  <block id="fd38170e3b6aab028a0d7ad24a137d75" category="list-text">許可されたパスの更新</block>
-  <block id="341f9b49b42c4f765af53a9c59d7534d" category="list-text">グローバルなポリシーまたはしきい値を設定します</block>
-  <block id="5dd1d7d6cf7e78d047c932258e93b51e" category="list-text">データコレクタの追加または削除</block>
-  <block id="7f79b62e589265799c67d80323c845ee" category="list-text">データコレクタの開始と停止</block>
-  <block id="9541662d7aaca919ed28e596d5bb6646" category="list-text">データコレクタのプロパティを更新して</block>
-  <block id="093c9fd1557bc4379f75a84f1d8f6519" category="list-text">タスクの追加、編集、または削除</block>
-  <block id="46599911849e4d9b42501e4b1f8cfb64" category="list-text">アプリケーショングループを削除しています</block>
-  <block id="a6f0abbf8bb5b2f8339e124e6c1036c2" category="list-text">デバイスの ID を識別または変更する</block>
-  <block id="5ea612112102d80a9585a25bec0c835a" category="paragraph">監査システムにアクセスするには、次の手順を実行します。</block>
-  <block id="6b4de57088425876af3198f9028aa98c" category="list-text">Cloud Insights メニューで、 * Admin &gt; Audit * をクリックします</block>
-  <block id="ae89f007bf11d002237f72b47f2337ff" category="paragraph">監査ページが表示され、各監査エントリについて次の詳細が示されます。</block>
-  <block id="410de27c1de24ac3025483a3f946964e" category="list-text">* Time * - 変更が行われた日時</block>
-  <block id="0c87ef2b4c32e4e9aee38ffbf7aaa08d" category="list-text">* User * - ユーザー・アカウントの役割（ guest 、ユーザー、または管理者）</block>
-  <block id="426f38c2c637a8299e56489281c1c61f" category="list-text">* ip * - 監査エントリに関連付けられた IP アドレス</block>
-  <block id="c3064cc3488066ec9776cac645a30e83" category="list-text">* Action * - 監査エントリのアクティビティのタイプ</block>
-  <block id="6b057e669f5e1969672291b5b4cf26c0" category="list-text">* Details * - 監査エントリの詳細</block>
-  <block id="10e43b8cce1c65acf85e80744c8164c8" category="paragraph">データコレクタやアプリケーションなどのリソースに影響するユーザアクティビティがある場合、それらのリソースのランディングページへのリンクが詳細に含まれます。</block>
-  <block id="3bd200db85f67e901200f4f50171dc31" category="paragraph">* 注 * データコレクタを削除すると、データコレクタに関連するユーザアクティビティの詳細にデータコレクタのランディングページへのリンクが表示されなくなります。</block>
   <block id="879d66cd75bfedef98a5f78c91d00905" category="section-title">監査エントリの表示</block>
   <block id="f117b445f62182f9fb78126941f7d60a" category="paragraph">監査エントリを表示する方法はいくつかあります。</block>
-  <block id="799922d02612e9908ebc313aa0b4ba0b" category="list-text">特定の期間（ 1 時間、 3 時間、 24 時間、 3 日間、 7 日間）を選択することで、監査エントリを表示できます。 Cloud Insights では、選択した期間について、最大 1 、 000 件の違反が表示されます。</block>
-  <block id="b9c9a86e10684ae346da56bc1f20ee34" category="list-text">列見出しで矢印をクリックすると、表内の列のソート順序を昇順（上矢印）または降順（下矢印）に変更できます。</block>
   <block id="5392e0033662acf4510f59d25c75cb77" category="paragraph">デフォルトでは、エントリが降順に表示されます。</block>
-  <block id="e8907ce89ed55a4e6d734b1727de64f8" category="list-text">フィルタボックスを使用して、テーブルに必要なエントリだけを表示できます。</block>
   <block id="4f64e4d2d0b40a09df727cdb00378860" category="summary">NetApp E シリーズのデータコレクタの設定</block>
   <block id="99f7508fc77f6415a72debd8f680d7cf" category="paragraph">NetApp E シリーズデータコレクタは、インベントリとパフォーマンスのデータを収集します。コレクタは、同じ設定を使用して同じデータを報告するファームウェア 7.x 以上をサポートしています。</block>
   <block id="20d1b58bf59d1451203fb42bdc412ad3" category="paragraph">Cloud Insight では、 NetApp E シリーズデータコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
@@ -7928,4 +7903,53 @@
   <block id="8454d6429fbbbb85edb89463f6d1f0a6" category="paragraph">_SSO ユーザーの自動プロビジョニングを設定するには、 [* Admin] &gt; [User Management] ページで [* Request Federation] ボタンをクリックします。設定が完了すると、管理者は SSO ユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。</block>
   <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">フェデレーションを使用したユーザー管理</block>
   <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新しい監査ページのユーザーインターフェイス</block>
+  <block id="50c786c9efcadf10b6b80a91b4bb98cf" category="inline-link-macro">監査ページ</block>
+  <block id="34da7615df3d3af56927cee9350f8197" category="paragraph">。 <block ref="0fc95413be1f4602f176a8d23796c479" category="inline-link-macro-rx"></block> よりシンプルなインターフェイスを提供し、監査イベントを .csv ファイルにエクスポートできるようになりました。</block>
+  <block id="96da8a4e581dd2bee953a91b4a726a87" category="paragraph">想定される変更（追跡用）と想定外の変更（トラブルシューティング用）を特定するために、 Cloud Insights のシステムイベントとユーザアクティビティの監査証跡を表示できます。</block>
+  <block id="651bba7950593ebb3a30ce056e02d435" category="section-title">監査済みイベントの表示</block>
+  <block id="50c2e307c62b6bdee9bab7a06a0f94bd" category="paragraph">[ 監査 ] ページを表示するには、メニューの [ 管理者 ] 、 [ 監査 *] の順にクリックします。監査ページが表示され、各監査エントリについて次の詳細が示されます。</block>
+  <block id="ddd4c9a31b3ca91ed60983b390c54a28" category="list-text">* Time * - イベントまたはアクティビティの日付と時刻</block>
+  <block id="328ce41e650b8ebabdfb846f83c36310" category="list-text">* ユーザー * - アクティビティを開始したユーザー</block>
+  <block id="d17a9db742265dcdd4ca05c00d1d0b96" category="list-text">* Role * - Cloud Insights でのユーザーの役割（ゲスト、ユーザー、管理者）</block>
+  <block id="2371d3134aba5e426570bddc2f309af4" category="list-text">*ip * - イベントに関連付けられた IP アドレス</block>
+  <block id="57a6064ecdf5f0ef23cc5dc68b3df3ed" category="list-text">* アクション * - ログイン、作成、更新などのアクティビティのタイプ</block>
+  <block id="5cfe8205bb7066b1f512040e2274a7ee" category="list-text">* カテゴリ * - アクティビティのカテゴリ</block>
+  <block id="e500c9df361735a56030989f0a9d4770" category="list-text">* Details * - アクティビティの詳細</block>
+  <block id="f659f1d9f9e712d51a9a5a26511d4467" category="list-text">特定の期間（ 1 時間、 24 時間、 3 日など）を選択することで、監査エントリを表示できます。</block>
+  <block id="55835b02eae4c7bba18d01b078777e60" category="list-text">列見出しで矢印をクリックすると、エントリのソート順序を昇順（上矢印）または降順（下矢印）に変更できます。</block>
+  <block id="00050359801f7074039fe9ab1b959b8a" category="list-text">フィルタフィールドを使用して、テーブルに必要なエントリのみを表示できます。[+] ボタンをクリックして、フィルタを追加します。</block>
+  <block id="223ca1cdcae3af8ac673f864fefdd7d7" category="inline-image-macro">監査フィルタ</block>
+  <block id="000328adbb5b305cbbe3545105632061" category="paragraph"><block ref="000328adbb5b305cbbe3545105632061" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="478ab967903ac7b240c1e1f179d06cce" category="cell">選択されているフィールドで空白 / NULL / なしを検索します</block>
+  <block id="aed6f1a48ccdaaad2f7867e33e36d188" category="cell">ターゲットフィールドが空でない場合に結果を返します</block>
+  <block id="680047555a70b7b321a371fdbc9de004" category="cell">_None_above と同様に ' このフォームを使用して _text-only_fields 内の NULL 値を検索することもできます</block>
+  <block id="aad080d144d75dcf74a31b9f11c82651" category="cell">ターゲットフィールドが空でない場合に結果を返します。</block>
+  <block id="9d4568c009d203ab10e33ea9953a0264" category="cell">""</block>
+  <block id="1716e0f2a2c2edb5d888b9267d905914" category="cell">完全一致を検索します</block>
+  <block id="048e5b41d504e581f9dfd5df04b0de4b" category="cell">「 NetApp * 」</block>
+  <block id="08612e5f3ea69a3841565d99fc760eed" category="cell">完全に一致するリテラル文字列 _netapp * _ を含む結果を返します</block>
+  <block id="e79313bfe03c4561628e01c7102ba5fb" category="section-title">監査済みイベントとアクション</block>
+  <block id="6fffa02826aca9a14ee11d85609b3e25" category="paragraph">Cloud Insights で監査されるイベントとアクションは、次の領域に分類できます。</block>
+  <block id="c5c594e685367681b202d84ba0c87407" category="list-text">* ユーザーアカウント * ：ログイン、ログアウト、ロール変更など</block>
+  <block id="5a3b3866ed7beab8b728614f1d33c0b5" category="paragraph">例： _ ユーザー * Tony Lavoie * が * 10.1.120.15 * 、ユーザーエージェント * Mozilla/5.0 （ Windows NT 10.0 、 Win64 、 x64 ） AppleWebKit/537.36 （ Gecko などの KHTML ） Chrome/85.0.4183.121 Safari/537.36 * 、ログイン方法（ s ） * Cloud Central Portal_Login * からログインしました</block>
+  <block id="f8c4f6c2455f59fa0c1cc9fed5a8c6c1" category="list-text">* Acquisition Unit * ：作成、削除など</block>
+  <block id="c1e8e78730ec648eeb7339e916d33231" category="paragraph">例： _ Acquisition Unit * AU-Boston-1 * removed_.</block>
+  <block id="fa421109b9971a24c53c504a4c5ef88d" category="list-text">* Data Collector * ：追加、削除、変更、延期 / 再開、 Acquisition Unit の変更、 スタート / ストップなど</block>
+  <block id="9f5749c99453bcb3a5efae0e6060f380" category="paragraph">例： _Datasource * FlexPod Lab * Removed 、 vendor * netapp * 、 model * ONTAP Data Management Software * 、 IP * 192.168.106.5_ * 。</block>
+  <block id="009305c3c48e6972cdc469ec8cbf945e" category="list-text">* アプリケーション *: 追加、オブジェクトへの割り当て、削除など</block>
+  <block id="63989304ab7763e03af58b6acb38623b" category="paragraph">例： _ 内部ボリューム * ocisedev ： t1appSVM01 ： t1appFlexVol01 * がアプリケーション * Test App_* に追加されました。</block>
+  <block id="229bb4b0ef4bf3003c00dbc9673a1297" category="list-text">* アノテーション * ：追加、割り当て、削除、アノテーションルールアクション、アノテーション値の変更、 など</block>
+  <block id="87a53abc11763ddea4f9371fc1e44370" category="paragraph">例： _Annotation Value * Boston * added to annotation type * SalesOffice_ * 。</block>
+  <block id="8a81dbcb513f42473a2a1624bcbd0075" category="list-text">* クエリ * ：追加、削除など</block>
+  <block id="60fbfec2bf13c71d5127945e1fc5924a" category="paragraph">例： _Query * TL Sales Query * が追加されました _ 。</block>
+  <block id="68a1dd6cd1601ee008ef1e9bf1d5f084" category="list-text">* モニター * ：追加、削除など</block>
+  <block id="01d32b03716f8341c6b9315ce7a62a79" category="paragraph">例： Monitor_Aggr サイズ -CI アラート通知 Dev_Updated</block>
+  <block id="b44079e3afc3ddd8b7e0eb6c349ff207" category="list-text">* 通知 * ：電子メールの変更など</block>
+  <block id="a7db7dc4150ec783edb2d63c007de590" category="paragraph">例： Recipient_ci -alerts-notifications-dl_created</block>
+  <block id="448e25eb5970504212b6d755b8adce41" category="section-title">監査イベントのエクスポート</block>
+  <block id="17d3fac6e64b0db4110d016480972d5a" category="paragraph">監査表示の結果を .csv ファイルにエクスポートして、データを分析したり、別のアプリケーションにインポートしたりできます。</block>
+  <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">[ 監査 ] ページで、目的の時間範囲と任意のフィルタを設定します。Cloud Insights は、設定したフィルタリングおよび時間範囲に一致する監査エントリのみをエクスポートします。</block>
+  <block id="81e9e10a5416438d2549dae075160792" category="list-text">[_Export_] ボタンをクリックします <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> をクリックします。</block>
+  <block id="7201440e51225680b60dccf28366c73d" category="paragraph">表示される監査イベントは、最大 10 、 000 行までの .csv ファイルにエクスポートされます。</block>
 </blocks>
