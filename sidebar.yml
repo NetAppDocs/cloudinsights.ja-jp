@@ -420,3 +420,5 @@ entries:
       url: task_config_telegraf_zookeeper.html
   - title: オブジェクトアイコンリファレンス
     url: "/reference_object_icons.html"
+- title: 法的通知
+  url: "/reference_legal_notices.html"
