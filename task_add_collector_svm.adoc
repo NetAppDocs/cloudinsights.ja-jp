@@ -214,5 +214,8 @@ image:CS_Data_Collector_Error.png[""]
 
 
 | コネクタでエラーが発生しています。サービス名： audit 。失敗の理由：（ SVM SVM 名のポリシー）を設定できませんでした。理由： 'fpolicy.scope-modify ： "federy" 内の 'shares-to-include' 要素に無効な値が指定されています | 共有名は、引用符を付けずに指定する必要があります。ONTAP SVM DSC 設定を編集して共有名を修正します。Include および exclude shares _ は、長い共有名のリストを対象としたものではありません。対象に含める共有や除外する共有が大量にある場合は、ボリュームでフィルタリングします。 
+
+
+| クラスタに未使用の既存のポリシーがあります。Cloud Secure をインストールする前に、これらのツールを使用して何を行う必要がありますか？ | 切断状態の場合でも、既存の未使用の FPolicy 設定をすべて削除することを推奨します。Cloud Secure は、「 cloudsecure_ 」というプレフィックスを付けて FPolicy を作成します。その他の未使用の FPolicy 設定はすべて削除できます。fpolicy list ： _fpolicy show_steps を表示して FPolicy 設定を削除する場合の CLI コマンド： _fpolicy disable -vserver <svmname> -policy -name <policy_name> _fpolicy policy scope delete -vserver <svmname> -policy name <policy_name> _fpolicy policy delete -vserver <svmname > -policy_name <policy_name> -policy_name>fpolicy_fpolicy_name> 
 |===
 それでも問題が解決しない場合は、 [ ヘルプ ]>[ サポート *] ページに記載されているサポートリンクにアクセスしてください。
