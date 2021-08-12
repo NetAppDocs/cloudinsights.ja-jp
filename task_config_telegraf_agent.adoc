@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.14/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。 
+summary: 'Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.14/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。' 
 ---
 = データを収集するエージェントの設定
 
