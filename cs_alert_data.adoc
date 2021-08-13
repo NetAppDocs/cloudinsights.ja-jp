@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: cs_alert_data.html 
 keywords: alert, attack, ransomware, activity, security, abnormal 
-summary: Cloud Secure は、異常なユーザアクティビティまたは潜在的な攻撃が発生した場合にアラートを作成します。[ アラート ] ページには、これらのアクティビティが一覧表示され、すばやく簡単に調査できます。 
+summary: 'Cloud Secure は、異常なユーザアクティビティまたは潜在的な攻撃が発生した場合にアラートを作成します。[ アラート ] ページには、これらのアクティビティが一覧表示され、すばやく簡単に調査できます。' 
 ---
 = アラート
 

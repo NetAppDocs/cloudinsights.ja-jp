@@ -4327,24 +4327,6 @@
   <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis 文書</block>
   <block id="ae042fc4879ccb38022624b37b7c15bd" category="paragraph">情報は、に記載されています <block ref="f84fd6d9d2467b4d3f4dd370ee4175c5" category="inline-link-macro-rx"></block>。</block>
   <block id="e111446745a1825b862f8727ae63bce4" category="cell">Redis</block>
-  <block id="73a89ddad6f271dfb9abc32f89a57045" category="doc">パフォーマンスのトラブルシューティング</block>
-  <block id="31224fc8dfdb9328f10dbd5f0f73feb7" category="paragraph">この FAQ では、 Cloud Insights のパフォーマンスのトラブルシューティングに関する一般的な質問を取り上げています</block>
-  <block id="98841a1c07ce00fcf821c5bf40b9f3ac" category="section-title">環境内のすべての Greedy リソースのリストを作成するにはどうすればよいですか。</block>
-  <block id="14ddd71c0500c986590418e5708664c5" category="paragraph">Cloud Insights の相関分析は、「指定された」サービスパスの Greedy リソースと劣化したリソースの特定に役立ちます。相関フィーチャーの生成された解析は ' 各オブジェクトを表示しながらリアルタイムで実行されます提供される分析によって、パフォーマンスの問題のトラブルシューティングやルート原因の特定に必要な時間が大幅に短縮されます。定義されたパフォーマンスポリシーで発生した違反の調査は、 Greedy リソースやパフォーマンスが低下したリソースを検出するためのエントリポイントの 1 つです。Cloud Insights の異常検出機能は、サービスの停止を招く前に、アプリケーションインフラで消費の多いリソースやデグレード状態のリソースを特定する、よりプロアクティブなアプローチとしても使用できます。最新のクエリ機能を使用しているウィジェットとダッシュボードのどちらも、想定 IOPS （ Greedy ）、利用率、レイテンシを超えるリソースのフィルタリング、ソート、可視化に役立ちます。</block>
-  <block id="4089cd1e996ba52d014e733947953738" category="section-title">Cloud Insights では、パフォーマンスの問題を 1 箇所で診断できますか。</block>
-  <block id="c1f235543621a35e007b47bb967e180a" category="paragraph">はい。Cloud Insights のパフォーマンスのトラブルシューティングには、さまざまな方法があります。Cloud Insights には、複数のアラート方法があります。SNMP 、 syslog 、 E メールで送信されるアラートがよく使用されます。E メールで送信されたアラートを使用すると、 Cloud Insights 内の影響を受けるリソースをクリックして起動できます。グローバル検索ウィンドウでは、リソース名を入力するだけで状況の分析を開始できます。</block>
-  <block id="5f8691f5a9063e74553ea023feffce50" category="paragraph">Cloud Insights の Violation Dashboard では、イベント数、期間、時刻に基づいて作業に優先順位を付けることができる。アラートの種類には、レイテンシ、 IOPS 、利用率、重大度、ビジネスユニット、アプリケーションなどがあります。</block>
-  <block id="b0fe456219bebfbba8a557218b55b7ab" category="paragraph">Cloud Insights の相関分析を使用すると、管理者は影響を受けたリソースとオブジェクトを比較して、 IOPS 、レイテンシ、利用率、 CPU 、 BB クレジットへの影響を判断できます。</block>
-  <block id="ce749c265d1e7bb24d28f752b1dcca13" category="paragraph">Cloud Insights の最新の異常検出機能とイーサネット監視機能は、サービスの停止や停止に発展する前にリソースの異常動作を検出するための積極的でプロアクティブなアプローチを提供します。</block>
-  <block id="480b5bf3800349b9653e4b0b404be613" category="paragraph">Cloud Insights のクエリテクノロジとウィジェットダッシュボードでは、データセンター内の問題領域を対象とした体系的なビューで詳細を特定できます。</block>
-  <block id="ab5c6b62dabfb05639fb90386c597f30" category="section-title">clustered Data ONTAP への 7-Mode の移行で、 Cloud Insights を使用できますか。</block>
-  <block id="4b4b7c33a4733274f98d0ef62a787c64" category="paragraph">はい。 Cloud Insights は、既存のワークロードの需要や移行後の検証を把握するのに非常に役立ちます。今日のデータセンターの最新化における Cloud Insights の役割により、変更管理シミュレーション、移行前の最適化計画、適切なサービス階層の定義が可能になります。Cloud Insights では、数回のクリックで、数千もの NFS 共有とファイバチャネルパスのビジネスへの影響を簡単に収集して関連付けます。Cloud Insights は、移行から機器更改に至るまで、適切な規模への移行を確実に実施し、計画外のサービス停止を軽減します。</block>
-  <block id="0211d0fa2fac4ee7391de9b5f29f83bf" category="section-title">Cloud Insights のパフォーマンス監視はどのような「リアルタイム」ですか。</block>
-  <block id="5a57e82d3cb6dbea258dc5986c414b1f" category="paragraph">Cloud Insights は、オンプレミスとハイブリッドクラウドの両方のデータセンター管理でほぼリアルタイムとみなされます。データソースのポーリングはより頻繁に実行されるように構成できますが、ほとんどのユーザーは、 5 分未満のほとんどのデバイスでパフォーマンス収集間隔を設定することで、分析上の大きなメリットを得ることができません。収集頻度を増やすと、管理対象のオブジェクトや実行される分析に不要な負荷がかかる可能性があります。もちろん、より詳細な収集が必要な場合もあります。 Cloud Insights では、構成可能なデバイスインベントリやパフォーマンスポーリング間隔など、お客様固有のデータセンター環境のニーズに合わせた完全な柔軟性を実現できます。</block>
-  <block id="ae51f3e4b7b1060a173feb169a620eeb" category="section-title">「合計」が「読み取り」と「書き込み」で異なるのはなぜですか？</block>
-  <block id="bcfe1cb353f7bdd6f21dd93826152bb3" category="paragraph">場合によっては、カウンタの合計が、そのカウンタの読み取りと書き込みの合計と等しくないことがあります。この問題が発生する可能性があるのは、いくつかの場合です。</block>
-  <block id="cd958f6c749a3e9af044cd09db06dcf9" category="paragraph">IOPS ：ストレージアレイやその他のアセットでは、読み取りと書き込みに加えて、ワークロードのデータフローとは関係のない内部処理も処理されます。「システム」、「メタデータ」、または単に「その他」の処理と呼ばれることもあり、 Snapshot 、重複排除、スペースの再割り当てなどの内部プロセスに起因することがあります。その場合は、特定のアセットのシステム処理量を確認するために、合計 IOPS から読み取り IOPS と書き込み IOPS の合計を引いて算出します。読み取り IOPS と書き込み IOPS の合計は、データフローに直接関連する合計 IOPS です。</block>
-  <block id="c84c694fe770a36a04c54d2d0f2b03a5" category="paragraph">Latency ：処理の合計応答時間（レイテンシ）は時間加重平均であるため、書き込み応答時間よりも短いと報告されることがあります。I/O ワークロードは多くの場合書き込み処理よりも多くの読み取り処理で構成され、書き込みでは一般にレイテンシが大きくなります。たとえば、平均レイテンシが 5 ミリ秒で 10 個の読み取り処理を実行したワークロードの場合、平均レイテンシが 10 ミリ秒の 5 つの書き込み処理を実行した場合、合計加重平均レイテンシは、読み取り回数と平均読み取りレイテンシの合計で計算されます。 書き込み数に平均書き込みレイテンシを掛けた値を、 I/O 処理の合計数で割った値。たとえば、（ 10 × 5 + 5 × 10 ） / （ 10 + 5 ） = 6.33 ミリ秒のようになります。</block>
   <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Cloud Insights のアセットページの概要セクション。</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">アセットページの概要セクション</block>
   <block id="e021c698cb903a9473be86e3d40217ed" category="paragraph">アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は、その指標またはパフォーマンスポリシーの横に赤い丸で示されます。</block>
@@ -7947,4 +7929,8 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights に関する注意事項を参照してください</block>
   <block id="5b6169d0d5d664ce4f07f6328cd547c6" category="list-text"><block ref="5b6169d0d5d664ce4f07f6328cd547c6" category="inline-link-macro-rx"></block></block>
+  <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">プロキシ URL の表示</block>
+  <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">オンボーディング中にデータコレクタを選択するときに [* プロキシ設定 * ] リンクをクリックするか、 [* ヘルプ &gt; サポート * ] ページの [_ プロキシ設定 _ ] の下のリンクをクリックすると、プロキシエンドポイントの URL を表示できます。次のようなテーブルが表示されます。</block>
+  <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">プロキシエンドポイントテーブル</block>
+  <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
