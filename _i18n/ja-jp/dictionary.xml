@@ -7934,4 +7934,6 @@
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">kube-state-metrics ドキュメント</block>
   <block id="755cdea554078bb6dfed008a027e421c" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">プロキシエンドポイントの表示</block>
+  <block id="711a1c1d22485d3da55bc2c4b91c710f" category="paragraph">プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help &gt; Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。</block>
 </blocks>
