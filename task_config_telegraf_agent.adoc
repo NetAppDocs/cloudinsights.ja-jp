@@ -637,7 +637,7 @@ Kubernetes 環境の場合、 Cloud Insights は Telegraf エージェントを 
 kube-state-metrics サーバをインストールすると、 StatefulSet 、 DemonSet 、 Deployment 、 PV 、 PVC 、 ReplicaSet 、 Service 、 Namespace 、 Secret 、 ConfigMap 、 PoD Volume 、入力。
 
 
-NOTE: Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。
+NOTE: Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください link:https://github.com/kubernetes/kube-state-metrics/blob/master/docs/cli-arguments.md["kube-state-metrics ドキュメント"]。
 
 kube-state-metrics サーバをインストールするには、次の手順を実行します。
 

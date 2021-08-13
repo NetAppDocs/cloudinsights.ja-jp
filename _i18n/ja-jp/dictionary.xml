@@ -6048,7 +6048,6 @@
   <block id="16fbf864377203e70ce04c9b7fbcef86" category="paragraph">これらの Kubernetes オブジェクトは、 Cloud Insights UI に用意されている Kubernetes Agent インストールコマンドの一部として自動的に作成されます。OpenShift などの一部の Kubernetes タイプでは、これらのコンポーネントへのアクセスをブロックする追加のセキュリティレベルが実装されています。_SecurityContextConstraint_ は、 Cloud Insights UI に用意されている Kubernetes エージェントインストールコマンドの一部として作成されていないため、手動で作成する必要があります。作成したら、 Tegraf ポッドを再起動します。</block>
   <block id="708b7f7f18eb293652df29349e867172" category="section-title">kube-state-metrics サーバをインストールしています</block>
   <block id="07472d5f2af611d646007b614784f7ee" category="paragraph">kube-state-metrics サーバをインストールすると、 StatefulSet 、 DemonSet 、 Deployment 、 PV 、 PVC 、 ReplicaSet 、 Service 、 Namespace 、 Secret 、 ConfigMap 、 PoD Volume 、入力。</block>
-  <block id="c3452e749c72d202ada66eb99e6c005e" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。</block>
   <block id="a2ad229e09caec752191079182a7adae" category="paragraph">kube-state-metrics サーバをインストールするには、次の手順を実行します。</block>
   <block id="ba86ea7c2dbdd3f6b9064aa53b496ca9" category="list-text">一時フォルダ（例えば、 /tmp/kube-state-yaml -files/_ ）を作成し、から .yaml ファイルをコピーします<block ref="6c1d035244e82592cca4953c7743d814" category="inline-link-rx"></block> をこのフォルダに追加します。</block>
   <block id="abcf7e32baf550db167b82496350d414" category="list-text">kube-state-metrics のインストールに必要な .yaml ファイルを適用するには、次のコマンドを実行します。</block>
@@ -7933,4 +7932,6 @@
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">オンボーディング中にデータコレクタを選択するときに [* プロキシ設定 * ] リンクをクリックするか、 [* ヘルプ &gt; サポート * ] ページの [_ プロキシ設定 _ ] の下のリンクをクリックすると、プロキシエンドポイントの URL を表示できます。次のようなテーブルが表示されます。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">プロキシエンドポイントテーブル</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">kube-state-metrics ドキュメント</block>
+  <block id="755cdea554078bb6dfed008a027e421c" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
 </blocks>
