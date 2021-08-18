@@ -15,7 +15,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | コンポーネント | Linux 要件 
 
 
-| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ。 Red Hat Enterprise Linux 7.2 64 ビット Red Hat Enterprise Linux 7.2 64 ビット KVM Red Hat Enterprise Linux 7.5 64 ビット Red Hat Enterprise Linux 7.5 64 ビット KVM Red Hat Enterprise Linux 7.8 64 ビット Red Hat Enterprise Linux 7.8 64 ビット Red Hat Enterprise Linux 7.8 64 ビット KVM 7.2 64 ビット CentOS 7.5 64 ビット CentOS 7.5 64 ビット 7.5 64 ビット KVM CentOS 7.8 64 ビット KVM このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
+| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ： Red Hat Enterprise Linux 7.x 、 8.x 64 ビット CentOS 7.x 、 8.x 64 ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
 
 
 | コマンド | インストール、スクリプトの実行、およびアンインストールには 'Sudo su – ' コマンドが必要です。 
@@ -27,7 +27,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | メモリ | 16GB の RAM 
 
 
-| 使用可能なディスクスペース | ディスクスペースは、 /opt/netapp25 GB のように割り当てます 
+| 使用可能なディスクスペース | ディスクスペースは、 /opt/netapp25-30GB のように割り当てられます 
 
 
 | ネットワーク | 100Mbps ～ 1Gbps のイーサネット接続、静的 IP アドレス、すべてのデバイスへの IP 接続、および Cloud Secure インスタンスへの必要なポート（ 80 または 443 ） 
@@ -37,7 +37,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-| 使用可能なディスクスペース | Linux の場合、ディスクスペースは /opt/netapp 25GB/var/log/netapp 25GB に設定する必要があります 
+| 使用可能なディスクスペース | Linux では 50 ～ 55 GB 、ディスクスペースは次のように割り当てます。 /opt/netapp 25-30 GB /var/log/netapp 25 GB 
 |===
 
 
