@@ -874,7 +874,6 @@
   <block id="1f8dd0c047e5f2c6c0d3267fff9f2bdb" category="list-text">招待状の電子メールアドレスまたは複数のアドレスを入力します。</block>
   <block id="b1e58a6582b4b8cf5f1631eac44903a9" category="paragraph">* 注： * 複数のアドレスを入力すると、すべて同じロールで作成されます。同じロールに設定できるユーザは複数だけです。</block>
   <block id="3b44544b9d947c143a9cfcb45be1aeff" category="list-text">[* 招待 * ] をクリックします</block>
-  <block id="5f4c0be7b69ed6065ee66f5bb276c68b" category="paragraph">招待がユーザーに送信されます。ユーザーは 14 日以内に招待を承諾する必要があります。招待を受諾すると、 NetApp Cloud Portal に送られ、招待状の E メールアドレスを使用してサインアップされます。その E メールアドレス用の既存のアカウントがある場合は、サインインするだけで Cloud Insights 環境にアクセスできます。</block>
   <block id="ae34cecb877a210f81bf4d446541e619" category="section-title">シングルサインオン（ SSO ）とアイデンティティフェデレーション</block>
   <block id="4743b9c396b4a51215bcc90cb20ea986" category="section-title">Cloud Insights で SSO のアイデンティティフェデレーションを有効にする</block>
   <block id="3c55703ac1b754437c4ca4d09b9083c0" category="paragraph">アイデンティティフェデレーションを使用：</block>
@@ -7960,4 +7959,5 @@
   <block id="8d27ed17859baac177ef9c6571d0c222" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： Red Hat Enterprise Linux 7.x 、 8.x 64 ビット CentOS 7.x 、 8.x 64 ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">ディスクスペースは、 /opt/netapp25-30GB のように割り当てられます</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">Linux では 50 ～ 55 GB 、ディスクスペースは次のように割り当てます。 /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
+  <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">招待がユーザーに送信されます。ユーザーは 14 日以内に招待を承諾する必要があります。招待を受諾すると、 NetApp Cloud Portal に送られ、招待状の E メールアドレスを使用してサインアップされます。その E メールアドレス用の既存のアカウントがある場合は、サインインするだけで Cloud Insights 環境にアクセスできます。</block>
 </blocks>
