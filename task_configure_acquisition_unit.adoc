@@ -78,9 +78,7 @@ Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証�
 
 最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。
 
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 
 NOTE: ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。
 
@@ -121,9 +119,7 @@ image::NewWindowsAUInstall.png[Windows AU のインストール]
 * Acquisition Unit のログには、 <install dir>\Cloud Insights \Acquisition Unit \log\acq.log からアクセスできます
 * Acquisition Unit のステータスを確認するには、次のスクリプトを使用します。
 +
-....
-cloudinsights-service.sh
-....
+ cloudinsights-service.sh
 
 
 
@@ -134,9 +130,7 @@ Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証�
 
 最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。
 
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 
 NOTE: ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。
 
@@ -164,14 +158,10 @@ Acquisition Unit ソフトウェアをアンインストールするには、次
 
 . Acquisition Unit サーバ / VM で、次のコマンドを実行します。
 +
-....
-sudo cloudinsights-uninstall.sh -p
-....
+ sudo cloudinsights-uninstall.sh -p
 . アンインストールのヘルプについては、次のコマンドを実行します。
 +
-....
-sudo cloudinsights-uninstall.sh --help
-....
+ sudo cloudinsights-uninstall.sh --help
 
 
 * 両方： *

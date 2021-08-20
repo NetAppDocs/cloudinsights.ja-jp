@@ -59,12 +59,8 @@ Telegraf の Apache の HTTP Server 用プラグインは 'OD _status' モジュ
 
 モジュールのロードは '/usr/local/apache/conf/httpd.conf ' の下の config ファイルによって制御されます。構成ファイルを編集し、次の行のコメントを解除します。
 
-....
-LoadModule status_module modules/mod_status.so
-....
-....
-Include conf/extra/httpd-info.conf
-....
+ LoadModule status_module modules/mod_status.so
+ Include conf/extra/httpd-info.conf
 
 
 ==== モジュールからの統計情報の公開：

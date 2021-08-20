@@ -86,9 +86,7 @@ NOTE: トークンは、クリップボードにコピーして作成プロセ�
 
 たとえば、次のようにしてストレージアセットを取得します。
 
-....
-curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
-....
+ curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
 _<API_Access_Token> _ は、 API アクセスキーの作成時に保存したトークンです。
 
 
@@ -125,23 +123,17 @@ Cloud Insights API はカテゴリベースであり、現在、次のカテゴ�
 
 API URL の一般的な形式は次のとおりです。
 
-....
-https://<tenant>/rest/v1/<category>/<object>
-....
+ https://<tenant>/rest/v1/<category>/<object>
 たとえば、 _mysite.c01.cloudinsights.netapp.com_ という名前のテナントからすべてのストレージを取得する場合、要求の URL は次のようになります。
 
-....
-https://mysite.c01.cloudinsights.netapp.com/rest/v1/assets/storages
-....
+ https://mysite.c01.cloudinsights.netapp.com/rest/v1/assets/storages
 
 
 === 子および関連オブジェクト
 
 ストレージなどの最上位のオブジェクトは、他の子や関連オブジェクトへのトラバースに使用できます。たとえば、特定のストレージのすべてのディスクを取得するには、ストレージの「 self 」 URL を「 /disks 」に連結します。次に例を示します。
 
-....
-https://<tenant>/rest/v1/assets/storages/4537/disks
-....
+ https://<tenant>/rest/v1/assets/storages/4537/disks
 
 
 == 展開します
@@ -152,18 +144,14 @@ https://<tenant>/rest/v1/assets/storages/4537/disks
 
 たとえば、次のように要求したとします。
 
-....
-https://<tenant>/rest/v1/assets/storages/2782?expand=_expands
-....
+ https://<tenant>/rest/v1/assets/storages/2782?expand=_expands
 API は、オブジェクトに対して使用可能なすべての拡張を次のように返します。
 
 image:expands.gif["例を展開します"]
 
 各展開には、データ、 URL 、またはその両方が含まれます。expand パラメータでは、次のような複数の属性とネストされた属性がサポートされます。
 
-....
-https://<tenant>/rest/v1/assets/storages/2782?expand=performance,storageResources.storage
-....
+ https://<tenant>/rest/v1/assets/storages/2782?expand=performance,storageResources.storage
 Expand を使用すると、関連するデータを 1 回の応答で大量に取り込むことができます。ネットアップでは、一度に大量の情報を要求しないことを推奨しています。これにより、原因のパフォーマンスが低下する可能性があります。
 
 これを防止するために、トップレベルのコレクションに対する要求は展開できません。たとえば、すべてのストレージオブジェクトの拡張データを一度に要求することはできません。クライアントは、オブジェクトのリストを取得し、特定のオブジェクトを選択して拡張する必要があります。

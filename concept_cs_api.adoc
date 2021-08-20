@@ -49,9 +49,7 @@ NOTE: トークンは、クリップボードにコピーして作成プロセ�
 
 たとえば、次のようにしてストレージアセットを取得します。
 
-....
-curl https://<tenant_host_name>/rest/v1/cloudsecure/activities -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
-....
+ curl https://<tenant_host_name>/rest/v1/cloudsecure/activities -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
 _<API_Access_Token> _ は、 API アクセスキーの作成時に保存したトークンです。
 
 詳細については、 _API Documentation_link の * Admin > API Access * を参照してください。

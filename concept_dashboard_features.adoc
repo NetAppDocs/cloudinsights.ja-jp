@@ -378,9 +378,7 @@ image::SecondaryAxisExplained.png[2 次軸の例]
 
 この例では、合計 IOPS に占める読み取り IOPS の割合をウィジェットに表示します。これは次の式と考えることができます。
 
-....
-Read Percentage = (Read IOPS / Total IOPS) x 100
-....
+ Read Percentage = (Read IOPS / Total IOPS) x 100
 このデータは、ダッシュボードに折れ線グラフで表示できます。これを行うには、次の手順を実行します。
 
 .手順
@@ -402,9 +400,7 @@ Read Percentage = (Read IOPS / Total IOPS) x 100
 
 . [*Expression*] フィールドでは、各変数に対応する文字を使用して式を作成します。読み取り IOPS の割合 = （読み取り IOPS / 合計 IOPS ） x 100 であることがわかっているので、次のように式を書きます。
 +
-....
-(b / a) * 100
-....
+ (b / a) * 100
 . *Label* フィールドは、式を識別します。ラベルを「 Read Percentage 」に変更するか、同様のわかりやすいものにします。
 . [ 単位 *] フィールドを "%" または "percent" に変更します。
 +
@@ -424,9 +420,7 @@ Read Percentage = (Read IOPS / Total IOPS) x 100
 
 これらのシステム I/O を表示するには、収集によって報告された合計 IOPS から読み取り IOPS と書き込み IOPS を差し引きます。式は次のようになります。
 
-....
-System IOPS = Total IOPS - (Read IOPS + Write IOPS)
-....
+ System IOPS = Total IOPS - (Read IOPS + Write IOPS)
 このデータは、ダッシュボードに折れ線グラフで表示できます。これを行うには、次の手順を実行します。
 
 .手順
@@ -454,9 +448,7 @@ System IOPS = Total IOPS - (Read IOPS + Write IOPS)
 . 「 * b * 」変数フィールドで、 * Select * をクリックし、 _iops-Write_. を選択します。
 . [*Expression*] フィールドでは、各変数に対応する文字を使用して式を作成します。ここでは、単純に次のように式を記述します。
 +
-....
-a + b
-....
+ a + b
 +
 [ 表示 ] セクションで、この式の [ グラフの領域 *] を選択します。
 

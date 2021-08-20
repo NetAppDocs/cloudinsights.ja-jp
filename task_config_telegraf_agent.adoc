@@ -83,9 +83,7 @@ NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定する
 
 プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に _https_proxy_ および /or_http_proxy_environment 変数 * を設定するには、次の手順を実行します。
 
-....
-[System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
-....
+ [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
 
 
 ==== エージェントをアンインストールしています
@@ -165,14 +163,10 @@ NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定する
 
 . 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
 +
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 . /etc/default/テレ グラム af_ を作成し、 _https_proxy_/or_http_proxy_variable の定義を挿入します。
 +
-....
-https_proxy=<proxy_server>:<proxy_port>
-....
+ https_proxy=<proxy_server>:<proxy_port>
 
 
 
@@ -189,9 +183,7 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 ....
 . Tegraf エージェントを取り外します。
 +
-....
-yum remove telegraf
-....
+ yum remove telegraf
 . 残っている設定ファイルまたはログファイルを削除します。
 +
 ....
@@ -214,9 +206,7 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 ....
 . 前のテレグラムエージェントを削除します。
 +
-....
-yum remove telegraf
-....
+ yum remove telegraf
 . link:#rhel-and-centos["新しいエージェントをインストールします"]。
 
 
@@ -265,14 +255,10 @@ NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定する
 
 . 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
 +
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 . /etc/default/テレ グラムを作成し、 _https_proxy_/or_http_proxy_variable 以下の定義を挿入します。
 +
-....
-https_proxy=<proxy_server>:<proxy_port>
-....
+ https_proxy=<proxy_server>:<proxy_port>
 
 
 
@@ -289,9 +275,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 ....
 . Tegraf エージェントを取り外します。
 +
-....
-dpkg -r telegraf
-....
+ dpkg -r telegraf
 . 残っている設定ファイルまたはログファイルを削除します。
 +
 ....
@@ -314,9 +298,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 ....
 . 前のテレグラムエージェントを削除します。
 +
-....
-dpkg -r telegraf
-....
+ dpkg -r telegraf
 . link:#ubuntu-and-debian["新しいエージェントをインストールします"]。
 
 
@@ -356,9 +338,7 @@ NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定する
 
 プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
 
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 * Tegraf エージェントをインストールした後、次のアドレスに appropriate _https_proxy_ および / または _http_proxy_variable を追加して設定します。 _ アプリケーション /Telegraf .app/Contents/telegraf.plist_:
 
 ....
@@ -406,9 +386,7 @@ macOS でエージェントをアンインストールするには、 Bash 端�
 
 . Telegraf サービスを停止します。
 +
-....
-sudo launchctl stop telegraf
-....
+ sudo launchctl stop telegraf
 . テレグラムエージェントをアンインストールします。
 +
 ....
@@ -431,9 +409,7 @@ rm -rf /usr/local/var/log/telegraf.*
 
 . テレグラムサービスを停止します。
 +
-....
-sudo launchctl stop telegraf
-....
+ sudo launchctl stop telegraf
 . 前のテレグラムエージェントをアンインストールします。
 +
 ....
@@ -494,9 +470,7 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 次の例をスクロールして、コマンドブロック内に目的のコマンドが配置されていることを確認します。
 
 +
-....
-installerName=cloudinsights-kubernetes.sh && token=<token> && key=c642e336-91f4-4c6f-8086-72faabd6aff6 && domain=tenant1.testk8.cloudinsights-test.netapp.com && curl -k -X GET -H "Authorization: Bearer $token" -H "X-CloudInsights-ApiKey-Id: $key" -o $installerName https://$domain/rest/v1/lake/telegraf/platforms/installer?platform=kubernetes && chmod +x $installerName && sudo --preserve-env JWT=$token DOMAIN_NAME=$domain API_KEY_ID=$key CLUSTER_NAME=TEST_CLUSTER NAMESPACE=NEW-NAMESPACE ./$installerName
-....
+ installerName=cloudinsights-kubernetes.sh && token=<token> && key=c642e336-91f4-4c6f-8086-72faabd6aff6 && domain=tenant1.testk8.cloudinsights-test.netapp.com && curl -k -X GET -H "Authorization: Bearer $token" -H "X-CloudInsights-ApiKey-Id: $key" -o $installerName https://$domain/rest/v1/lake/telegraf/platforms/installer?platform=kubernetes && chmod +x $installerName && sudo --preserve-env JWT=$token DOMAIN_NAME=$domain API_KEY_ID=$key CLUSTER_NAME=TEST_CLUSTER NAMESPACE=NEW-NAMESPACE ./$installerName
 +
 
 TIP: _cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指標を収集し、 _namespace_は Tegraf エージェントを導入するネームスペースです。指定したネームスペースがない場合は作成されます。
@@ -537,14 +511,10 @@ NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定する
 
 プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
 
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 * Tegraf エージェントのインストール後に、 appropriate _https_proxy_ および / または _http_proxy_environment 変数を、 _TETRF -demonset および _TETR_replicaset に追加して設定します。
 
-....
-kubectl edit ds telegraf-ds
-....
+ kubectl edit ds telegraf-ds
 ....
 …
        env:
@@ -557,9 +527,7 @@ kubectl edit ds telegraf-ds
              fieldPath: status.hostIP
 …
 ....
-....
-kubectl edit rs telegraf-rs
-....
+ kubectl edit rs telegraf-rs
 ....
 …
        env:
@@ -645,9 +613,7 @@ kube-state-metrics サーバをインストールするには、次の手順を�
 . 一時フォルダ（例えば、 /tmp/kube-state-yaml -files/_ ）を作成し、から .yaml ファイルをコピーします https://github.com/kubernetes/kube-state-metrics/tree/master/examples/standard[] をこのフォルダに追加します。
 . kube-state-metrics のインストールに必要な .yaml ファイルを適用するには、次のコマンドを実行します。
 +
-....
-kubectl apply -f /tmp/kube-state-yaml-files/
-....
+ kubectl apply -f /tmp/kube-state-yaml-files/
 
 
 
@@ -681,17 +647,11 @@ Kubernetes でエージェントをアンインストールするには、次の
 
 モニタリングネームスペースが Telegraf 専用に使用されている場合：
 
-....
-kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-....
-....
-kubectl delete ns ci-monitoring
-....
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+ kubectl delete ns ci-monitoring
 モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
 
-....
-kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-....
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
 
 
 ==== Agent をアップグレードしています
@@ -702,9 +662,7 @@ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebind
 
 . 既存の構成をバックアップします。
 +
-....
-kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
-....
+ kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 . Agent をアンインストールします（手順については、上記を参照）。
 . link:#kubernetes["新しいエージェントをインストールします"]。
 

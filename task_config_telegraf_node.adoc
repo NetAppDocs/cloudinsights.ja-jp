@@ -57,16 +57,12 @@ Cloud Insights (Telegraf 経由 ) と macOS は、メモリ使用量の異なる
 
 * Telegraf * は、次のようにして使用されているメモリーの合計 _ を計算します。
 
-....
-Memory Used Total = Memory Total - Memory Available Total
-....
+ Memory Used Total = Memory Total - Memory Available Total
 ここで、 _Memory Available Total_ は、 _VM_stat_ の「空きページ数」と「非アクティブページ数」の合計から算出されます。
 
 * Mac アクティビティモニタ * では、次のようにメモリ使用量が計算されます。
 
-....
-Memory Used = App Memory + Wired Memory + Compressed
-....
+ Memory Used = App Memory + Wired Memory + Compressed
 ここで、
 
 * _ アプリケーションメモリ _ は、 _vm_stat_ の「匿名ページ」と「パージ可能ページ」の違いから派生します。

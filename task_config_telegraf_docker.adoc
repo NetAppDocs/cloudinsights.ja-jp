@@ -48,9 +48,7 @@ Docker バージョン 1.12.6 に対して構成が開発されました。
 
 Tegraf エージェントが BareMetal 上で実行されている場合は、次のコマンドを実行して、テレグラフ UNIX ユーザを Docker UNIX グループに追加します。
 
-....
-sudo usermod -aG docker telegraf
-....
+ sudo usermod -aG docker telegraf
 Telegraf エージェントが Kubernetes ポッド内で実行されている場合は、ソケットをポッドにボリュームとしてマッピングし、そのボリュームを /var/run/docker.sock にマウントすることで、 Docker Unix ソケットを公開します。たとえば、 PodSpec に次の情報を追加します。
 
 [listing]

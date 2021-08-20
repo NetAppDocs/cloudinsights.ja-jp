@@ -24,30 +24,22 @@ NOTE: このスクリプトを実行するときは、イベント速度を確�
 . CloudSecure の指示に従って、 Agent をインストールします。
 . エージェントをインストールしたら、 sudo ユーザとして _server_data_rate_checker.sh_script を実行します。
 +
-....
-/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
-....
+ /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 . このスクリプトを使用するには、 Linux マシンに _sshpass_to をインストールする必要があります。インストール方法は 2 種類あります。
 +
 .. 次のコマンドを実行します。
 +
-....
-linux_prompt> yum install sshpass
-....
+ linux_prompt> yum install sshpass
 .. 表示されない場合は、 Web から Linux マシンに sshpass_to をダウンロードし、次のコマンドを実行します。
 +
-....
-linux_prompt> rpm -i sshpass
-....
+ linux_prompt> rpm -i sshpass
 
 
 . プロンプトが表示されたら、正しい値を指定します。例については、以下を参照してください。
 . スクリプトの実行には約 5 分かかります。
 . 実行が完了すると、 SVM からイベントレートが出力されます。コンソールの出力では、 SVM ごとのイベントレートを確認できます。
 +
-....
-“Svm svm_rate is generating 100 events/sec”.
-....
+ “Svm svm_rate is generating 100 events/sec”.
 
 
 . 各 ONTAP SVM データコレクタを 1 つの SVM に関連付けることができます。つまり、各データコレクタは、 1 つの SVM が生成するイベント数を受け取ることができます。
@@ -76,9 +68,7 @@ B+C は A 未満でなければなりません。そうしないと、 Agent マ
 
 つまり、 1 台のエージェントマシンに追加できるデータコレクタの数は、次の式に準拠する必要があります。
 
-....
-Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
-....
+ Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
 
 
 === 例
@@ -102,9 +92,7 @@ Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% <
 
 スクリプトの実行例を次に示します。
 
-....
-[root@ci-cs-data agent]# /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
-....
+ [root@ci-cs-data agent]# /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 ....
 Enter the cluster ip: 10.192.139.166
 Enter the username to SSH: admin
@@ -141,9 +129,7 @@ fpolicy stats of svm audit_svm is saved in fpolicy_stat_audit_svm.log
 Svm audit_svm is generating 200 SMB events/sec and 100 NFS events/sec
 Overall svm audit_svm is generating 300 events/sec
 ....
-....
-[root@ci-cs-data agent]#
-....
+ [root@ci-cs-data agent]#
 
 
 == トラブルシューティング
