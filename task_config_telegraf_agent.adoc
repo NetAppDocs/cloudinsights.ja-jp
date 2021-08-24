@@ -122,10 +122,10 @@ sc.exe delete telegraf
 
 === RHEL および CentOS
 
-image:AgentInstallRHELCentOS.png["RHEL / CentOS Agent のインストール"]
+image:Agent_Requirements_Rhel.png["RHEL / CentOS Agent のインストール"]
 
 .前提条件
-* cURL 、 sudo 、 ping 、および dmidecode の各コマンドを使用できる必要があります
+* CURL 、 sudo 、 ping 、 sha256sum 、 dmidecode の各コマンドを使用できる必要があります
 * プロキシの背後にある場合は、「 RHEL / CentOS * 用のプロキシサポートの設定」セクションの手順に従ってください。
 
 
@@ -214,10 +214,10 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 
 === Ubuntu と Debian
 
-image:AgentInstallUbuntuDebian.png["Ubuntu / Debian Agent のインストール"]
+image:Agent_Requirements_Ubuntu.png["Ubuntu / Debian Agent のインストール"]
 
 .前提条件
-* cURL 、 sudo 、 ping 、および dmidecode の各コマンドを使用できる必要があります
+* CURL 、 sudo 、 ping 、 sha256sum 、 dmidecode の各コマンドを使用できる必要があります
 * プロキシの背後にいる場合は、「 Ubuntu / Debian * 用のプロキシサポートの設定」セクションの手順に従ってください。
 
 
@@ -306,10 +306,10 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 === MacOS
 
-image:AgentInstallMacOS.png["MacOS Agent のインストール"]
+image:Agent_Requirements_Macos.png["MacOS Agent のインストール"]
 
 .前提条件
-* 「 curl 」コマンドが使用可能である必要があります
+* 次に示すコマンドは、 curl 、 sudo 、 shasum で使用できる必要があります
 * プロキシの背後にいる場合は、「 MacOS* のプロキシサポートの設定」セクションの手順に従います。
 
 
