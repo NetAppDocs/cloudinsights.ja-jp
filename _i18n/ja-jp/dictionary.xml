@@ -2903,69 +2903,13 @@
   <block id="a2786365bad51d811f1602d581fb9374" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
   <block id="11a8d5beba27513c507b302b1ef0545d" category="paragraph">モニタをコピーするには、メニューから「 * Duplicate （複製） * 」を選択します。その後、新しいモニタを変更して、オブジェクト / 指標、フィルタ、条件、 E メール受信者などを変更できます</block>
   <block id="785af682b2cf8712cbb6039f68f0b952" category="paragraph">モニタが不要になった場合は、メニューから * Delete * を選択して削除できます。</block>
-  <block id="d949f536805b6d868a713209ceaef01c" category="section-title">グループとシステム定義モニタを監視します</block>
   <block id="03beff1464928590c48c07d06198e305" category="paragraph">グループ化により、関連するモニタを表示および管理できます。たとえば、環境内のストレージ専用の監視グループを使用したり、特定の受信者リストに関連する監視を使用したりできます。</block>
-  <block id="902cd21e06ae1405c080afd5ab26ff9c" category="inline-image-macro">モニタグループリスト</block>
-  <block id="1465c5ebe3ecf2c67bf86d6526a84bcd" category="paragraph"><block ref="1465c5ebe3ecf2c67bf86d6526a84bcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0c3ceff1be949611a80f9a88d0ae7f3" category="paragraph">モニタは、次のカテゴリに分類されます。</block>
-  <block id="e8f4cd9cd57cfcd2264a2600d3e83a62" category="list-text">* すべてのモニター * ：ユーザー作成とシステム定義の両方のすべてのモニター</block>
-  <block id="dfde348b4a5197657e243b86ddeb4e5d" category="list-text">* カスタムモニター * ：ユーザーが作成したモニターが含まれます</block>
-  <block id="0e4ebfa9980eb252c08464de3062dd7b" category="list-text">*System Monitor グループ *: これらのグループには、システム定義モニタが含まれています。これらのモニタは、ご使用の環境内のデータコレクタに基づいています</block>
-  <block id="22ba4b6ac4d9ec56fd5a89a92d6260a5" category="list-text">* ユーザ作成モニタグループ *: これらは作成したモニタグループです</block>
   <block id="9c639a1450f6874f6897e1393bc7e090" category="paragraph">グループ名の横には、グループに含まれるモニタの数が表示されます。</block>
-  <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">カスタムモニタは、一時停止、再開、削除、または別のグループへの移動が可能です。システム定義のモニタは一時停止および再開できますが、削除または移動することはできません。</block>
-  <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="section-title">システム定義のモニター</block>
-  <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">システム定義のモニタは、事前に定義されたメトリックと条件に加えて、デフォルトの説明と修正アクションで構成されています。これらは変更できません。システム定義モニタの通知受信者リストを変更できます。メトリック、条件、概要、および修正アクションを表示したり、受信者リストを変更したりするには、システム定義のモニタグループを開き、リスト内のモニタ名をクリックします。</block>
-  <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">システム定義のモニタグループは変更または削除できません。</block>
-  <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下のシステム定義モニタは、記載されたグループで使用できます。</block>
-  <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">* ONTAP インフラストラクチャ * は、 ONTAP クラスタのインフラストラクチャ関連の問題を監視します。</block>
-  <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">* ONTAP ワークロードの例 * には、ワークロード関連の問題のモニターが含まれています。</block>
-  <block id="141e31818558b2f9c106f51987380a29" category="list-text">両方のグループのモニタのデフォルトは _Paused _ state です。</block>
-  <block id="72abf8aec41374681348ca7f6c410986" category="cell">概要を監視します</block>
-  <block id="32c3164a94bfcc777dde834487e62809" category="cell">ONTAP インフラ</block>
-  <block id="ceb1cc2256839013af7a760f6f0fb2b4" category="cell">ストレージ容量の制限</block>
-  <block id="b3849714e1ad79f2d16d461e15dca3a2" category="cell">ストレージプール（アグリゲート）がいっぱいになると、 I/O 処理が低速化し、最後にストレージ停止インシデントの原因となって I/O 処理が停止します。警告アラートは、最小限の空きスペースをリストアするために計画的な対処が必要であることを示しています。重大アラートは、サービスの停止が差し迫っていることを示しており、サービスの継続性を確保するためにスペースを解放するために緊急措置を講じる必要があることを示しています。</block>
-  <block id="f5ae90fdb331775a72189e50b3cf0431" category="cell">ストレージパフォーマンスの制限</block>
-  <block id="b991ec39b96c6e338cea2afcc68c860c" category="cell">ストレージプールのパフォーマンスが上限に達すると、処理速度が低下し、レイテンシが増大してワークロードやアプリケーションが停止する可能性があります。ONTAP は、ワークロードに起因するストレージプール利用率を評価して、パフォーマンスの消費率を推定します。警告アラートは、ワークロードのピークに対応できるだけの十分なストレージプールのパフォーマンスがなくなる可能性があるため、ストレージプールの負荷を軽減するために計画的なアクションを実行する必要があることを示しています。重大アラートは ' パフォーマンス低下が差し迫っていることを示し ' サービスの継続性を確保するためにストレージ・プールの負荷を軽減するために緊急措置を講じる必要があることを示します</block>
-  <block id="9a72a542d201595a0c69429633355dc6" category="cell">ファイバチャネルポートの高利用率</block>
-  <block id="5c7b84856003f9b9aa3c4efa82f60383" category="cell">ファイバチャネルプロトコルポートは、お客様のホストシステムと ONTAP LUN の間で SAN トラフィックを送受信するために使用されます。ポート利用率が高いとボトルネックになり、最終的にファイバチャネルプロトコルのワークロードのパフォーマンスに影響します。警告アラートは、ネットワークトラフィックを分散するために計画的なアクションを実行する必要があることを示します。重大アラートは、サービスの中断が差し迫っていることを示しており、サービスの継続性を確保するために、ネットワークトラフィックのバランスを取るために緊急措置を講じる必要があることを示しています。</block>
-  <block id="19047134aad7045d35d0da633e495b47" category="cell">ネットワークポートの高利用率</block>
-  <block id="87985bf6f86759284ec0fddecec96e27" category="cell">ネットワークポートは、 NFS 、 CIFS 、および iSCSI のプロトコルトラフィックを受信して、お客様のホストシステムと ONTAP の間で転送するために使用されます。ポート利用率が高いとボトルネックになり、最終的には NFS 、 CIFS 、および iSCSI のワークロードのパフォーマンスに影響します。警告アラートは、ネットワークトラフィックを分散するために計画的なアクションを実行する必要があることを示します。重大アラートは、サービスの中断が差し迫っていることを示しており、サービスの継続性を確保するために、ネットワークトラフィックのバランスを取るために緊急措置を講じる必要があることを示しています。</block>
-  <block id="5951ac71ce3e3a74d6315d409967bd7c" category="cell">ONTAP ワークロードの例</block>
-  <block id="fbc825226ae4d8f31c0f222df5d96f7a" category="cell">ボリュームの inode 制限</block>
-  <block id="441f03fbe64b22adf68601bd508c0e34" category="cell">ファイルを格納するボリュームでは、インデックスノード（ inode ）を使用してファイルメタデータが格納されます。ボリュームが inode の割り当てを使用しなくなると、そのボリュームにはこれ以上ファイルを追加できません。警告アラートは、使用可能な inode の数を増やすために計画的な処理が必要であることを示しています。重大アラートは、ファイル制限の枯渇が差し迫っていることを示し、サービスの継続性を確保するために inode を解放するための緊急対策を講じる必要があることを示しています。</block>
-  <block id="32eace249ad21e4aa459717fcc33485b" category="cell">qtree 容量がフルです</block>
-  <block id="433e6602b9c6d89dec1d50d40c438bb5" category="cell">qtree とは、論理的に定義されたファイルシステムで、ボリューム内のルートディレクトリに特別なサブディレクトリとして作成できます。各 qtree には、ボリュームの容量内でツリーに格納されるデータの量を制限するために、クォータポリシーによって定義されるデフォルトのスペースクォータまたはクォータがあります。警告アラートは、スペースを増やすために計画的な対処が必要であることを示します。重大アラートは、サービスの停止が差し迫っていることを示しており、サービスの継続性を確保するためにスペースを解放するために緊急措置を講じる必要があることを示しています。</block>
-  <block id="c3707091081e6eb8649650e62bc36b73" category="cell">LUN の高レイテンシ</block>
-  <block id="a99bd8f2f6a8c9aff3f73ac6ca155e54" category="cell">LUN は、 I/O トラフィックを処理するオブジェクトで、データベースなどのパフォーマンス重視のアプリケーションによって頻繁に駆動されます。LUN のレイテンシが高いと、アプリケーション自体に影響を及ぼし、タスクを実行できなくなる可能性があります。警告アラートは、 LUN を適切なノードまたはアグリゲートに移動するための計画的なアクションが必要であることを示しています。重大アラートは、サービスの停止が差し迫っていることを示しており、サービスの継続性を確保するために緊急措置を講じる必要があることを示しています。メディアタイプに基づく想定レイテンシは、最大 1 ～ 2 ミリ秒、 SAS は最大 8 ～ 10 ミリ秒、 SATA HDD は 17 ～ 20 ミリ秒です</block>
-  <block id="ed10a6b7e834968d466c125d820e777d" category="cell">NVMe ネームスペースの高レイテンシ</block>
-  <block id="ffd078a14328f161cf5786373205e452" category="cell">NVMe ネームスペースは、 I/O トラフィックを処理するオブジェクトで、多くの場合、データベースなどのパフォーマンス重視のアプリケーションによって駆動されます。NVMe ネームスペースのレイテンシが高いと、アプリケーション自体が影響を受け、タスクを実行できなくなる可能性があります。警告アラートは、 LUN を適切なノードまたはアグリゲートに移動するための計画的なアクションが必要であることを示しています。重大アラートは、サービスの停止が差し迫っていることを示しており、サービスの継続性を確保するために緊急措置を講じる必要があることを示しています。</block>
-  <block id="cb3585a56d4c0d533a416ccff0308ea5" category="cell">qtree のファイル数がソフトリミット</block>
-  <block id="645253a0bb6c972452a4096e8011ad88" category="cell">qtree とは、論理的に定義されたファイルシステムで、ボリューム内のルートディレクトリに特別なサブディレクトリとして作成できます。各 qtree には、ボリューム内の管理可能なファイルシステムサイズを維持するために、格納可能なファイル数のクォータがあります。qtree では、ソフトファイル番号クォータが維持されます。これにより、 qtree 内のファイル数の上限に達する前にユーザにプロアクティブにアラートを送信し、追加のファイルを格納できなくなります。qtree 内のファイル数を監視すると、ユーザには中断のないデータサービスが確実に提供されます。</block>
-  <block id="3a849e3a8e6ffdec2ee97f7288ddb7cb" category="cell">qtree のファイル数のハードリミット</block>
-  <block id="98770547b2bdfdcdc051602230349651" category="cell">qtree とは、論理的に定義されたファイルシステムで、ボリューム内のルートディレクトリに特別なサブディレクトリとして作成できます。各 qtree には、ボリューム内の管理可能なファイルシステムサイズを維持するために、格納可能なファイル数のクォータがあります。qtree は、ハードファイル番号のクォータを維持します。このクォータを超えると、ツリー内の新しいファイルは拒否されます。qtree 内のファイル数を監視すると、ユーザには中断のないデータサービスが確実に提供されます。</block>
-  <block id="5ee0fc799fda7fd7a07c81cd1d94046e" category="cell">qtree 容量のソフトリミット</block>
-  <block id="e3bd2fb3f4246f971186017eede42c69" category="cell">qtree とは、論理的に定義されたファイルシステムで、ボリューム内のルートディレクトリに特別なサブディレクトリとして作成できます。各 qtree には、ボリューム内のユーザデータの増加を制御し、合計容量を超えないようにするために、データの格納に使用できる容量クォータ（ KB ）が設定されています。qtree は、ストレージのソフト容量クォータを維持します。これにより、 qtree の合計容量クォータ制限に達する前にユーザにプロアクティブにアラートを送信し、データを格納できなくなります。qtree に格納されているデータ量を監視することで、ユーザに中断のないデータサービスを確実に提供できます。</block>
-  <block id="e2600ee10a370308a427638d9891da2a" category="cell">qtree 容量ハードリミット</block>
-  <block id="38b0d50f9e083e1f199ce38f31ddf19c" category="cell">qtree とは、論理的に定義されたファイルシステムで、ボリューム内のルートディレクトリに特別なサブディレクトリとして作成できます。各 qtree には、ボリューム内のユーザデータの増加を制御し、合計容量を超えないようにするために、データの格納に使用できる容量クォータ（ KB ）が設定されています。qtree ハードストレージ容量クォータは、 qtree への書き込みが拒否されるしきい値として機能します。qtree に格納されているデータ量を監視することで、ユーザに中断のないデータサービスを確実に提供できます。</block>
-  <block id="e89c167818c91da4b65948a699087631" category="cell">ユーザクォータ容量のソフトリミット</block>
-  <block id="87a3d8aa8300932148ee3d29711c5f21" category="cell">ONTAP は、ボリューム内のボリューム、ファイル、またはディレクトリにアクセスできる権限を持つ UNIX または Windows システムのユーザを認識します。その結果、ユーザやユーザグループが使用する Linux または Windows システムのストレージ容量を ONTAP で設定できるようになります。ユーザまたはグループのポリシークォータによって、ユーザが自身のデータに使用できるスペース量が制限されます。このクォータのソフトリミットを使用すると、ボリュームの使用済み容量が合計容量クォータに達したときにユーザにプロアクティブに通知できます。ユーザクォータまたはグループクォータに保存されているデータ量を監視することで、ユーザに中断のないデータサービスを確実に提供できます。</block>
-  <block id="6f020841b73e150f652a53c82807c34c" category="cell">ユーザクォータ容量のハードリミット</block>
-  <block id="62e99db53e433bbee6ce2b44aca6ab65" category="cell">ONTAP は、ボリューム内のボリューム、ファイル、またはディレクトリにアクセスできる権限を持つ UNIX または Windows システムのユーザを認識します。その結果、ユーザやユーザグループが使用する Linux または Windows システムのストレージ容量を ONTAP で設定できるようになります。ユーザまたはグループのポリシークォータによって、ユーザが自身のデータに使用できるスペース量が制限されます。このクォータのハードリミットによって、ボリューム内の使用済み容量が合計容量クォータに達する直前にユーザに通知できます。ユーザクォータまたはグループクォータに保存されているデータ量を監視することで、ユーザに中断のないデータサービスを確実に提供できます。</block>
-  <block id="37ae4fd86e75b4d79cca8e7f3b882fc5" category="cell">ボリュームの高レイテンシ</block>
-  <block id="e2ce6f22b72050332f9818afc321a703" category="cell">ボリュームとは、多くの場合、 DevOps アプリケーション、ホームディレクトリ、データベースなどのパフォーマンス重視のアプリケーションによって I/O トラフィックを処理するオブジェクトです。ボリュームのレイテンシが高いと、アプリケーション自体に影響を及ぼし、タスクを実行できなくなる可能性があります。ボリュームのレイテンシを監視することは、アプリケーションの整合性を維持するうえで非常に重要です。メディアタイプに基づく想定レイテンシは、最大 1 ～ 2 ミリ秒、 SAS は最大 8 ～ 10 ミリ秒、 SATA HDD は 17 ～ 20 ミリ秒です</block>
-  <block id="b7ff395c6ddc73655a4b2da28aebe1cc" category="cell">Snapshot リザーブ容量がフルです</block>
-  <block id="d6a2a00b450971f882ec854a09aad1eb" category="cell">アプリケーションとお客様のデータを格納するには、ボリュームのストレージ容量が必要です。スナップショット予約領域と呼ばれる領域の一部はスナップショットの保存に使用され、データをローカルで保護できます。ONTAP ボリュームに格納される新規データや更新データが多いほど、使用される Snapshot 容量は増えますが、今後追加または更新されるデータに使用できる Snapshot ストレージ容量は少なくなります。ボリューム内の Snapshot データ容量が Snapshot リザーブの合計スペースに達すると、新しい Snapshot データを格納できなくなり、ボリューム内のデータの保護レベルが低下する可能性があります。ボリュームの使用済み Snapshot 容量を監視して、データサービスの継続性を確保します。</block>
-  <block id="a2122ea859eba435f18c98c20037d48c" category="cell">ボリューム容量がフルです</block>
-  <block id="b4377e0135c3410c9594eae5882bfb8e" category="cell">アプリケーションとお客様のデータを格納するには、ボリュームのストレージ容量が必要です。ONTAP ボリュームに格納されるデータが多いほど、以降のデータで使用できるストレージ容量は少なくなります。ボリューム内のデータストレージ容量が合計ストレージ容量に達すると、ストレージ容量の不足によりデータを格納できなくなる可能性があります。ボリュームの使用済みストレージ容量を監視して、データサービスの継続性を確保します。</block>
-  <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">カスタムモニタグループ</block>
-  <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">新しいカスタムモニタグループを作成するには、「 + 」「新規モニタグループの作成 * 」ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
   <block id="7c886a234bf4d8691074a08c126c8625" category="paragraph">モニタをグループに追加するには、 _all Monitors グループ（推奨）に移動し、次のいずれかの操作を行います。</block>
   <block id="b1fff7b254bfcb153bd679158818bf82" category="list-text">単一のモニタを追加するには、モニタの右側にあるメニューをクリックし、 _ グループに追加 _ を選択します。モニタを追加するグループを選択します。</block>
   <block id="0afe02aafcb932fbc2c281b9036adebd" category="list-text">モニタ名をクリックしてモニタの編集ビューを開き '_Associate to a monitor group_ セクションでグループを選択します</block>
   <block id="850550000a544306e2d25d5b4ee17d9e" category="inline-image-macro">グループに関連付けます</block>
   <block id="e2bc4bcf0670da96e21e208bf6bcc766" category="paragraph"><block ref="e2bc4bcf0670da96e21e208bf6bcc766" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。モニタを _all Monitors _ または _Custom Monitors _ グループから削除することはできませんこれらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
   <block id="e30c931a1dd5474d9e4ca4e7c88580c7" category="admonition">グループからモニタを削除しても、モニタは Cloud Insights から削除されません。モニタを完全に削除するには、モニタを選択し、 _Delete_( 削除 ) をクリックします。これにより、その所有者であるグループからも削除され、どのユーザからも使用できなくなります。</block>
   <block id="cdd3916c98efbf8a767744185462ffec" category="paragraph">同様にモニタを別のグループに移動するには '_Move to Group_ を選択します</block>
   <block id="4cd1a4d2d0079954614c21e4318c8a2a" category="admonition">各モニタは、一度に 1 つのグループにしか所属できません。</block>
@@ -4875,9 +4819,6 @@
   <block id="f7e83685d25e3038170e83ca19c3cbf0" category="section-title">アラートの詳細ページ</block>
   <block id="b254b175b71c2c7dca19ba0dcbc5da07" category="paragraph">Alert Detail ページには ' アラートの詳細情報が表示されますこれには 'a_Summary_'a_Expert View_Showing Graphs related to the object' any_related Assets_'_Comments_entered by alert 博士が含まれます</block>
   <block id="1b489429111564ed0ac0109b22575d28" category="paragraph"><block ref="1b489429111564ed0ac0109b22575d28" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="910ba96085a400a51981e26de1f1777c" category="section-title">「 Permanently Active 」アラート</block>
-  <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">監視対象オブジェクトでは、条件を「常に * 」にするようにモニタを設定できます。たとえば、 IOPS&gt;1 や Latency &gt;0 などです。これらは頻繁に「テスト」モニターとして作成され、そして忘れられる。このような監視を実行すると、コンスティチュエントオブジェクトを永続的に開いたままにするアラートが作成されます。これにより、原因システムにかかる負荷や安定性の問題が時間の経過に</block>
-  <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">これを回避するために、 Cloud Insights は 7 日後に「 permanently active 」アラートを自動的に閉じます。基本的なモニタ状態が ( おそらく ) 継続して存在し、新しいアラートがほぼ即座に発行されることに注意してください。しかし、この「常時アクティブ」アラートを閉じることで、他の状況で発生する可能性のあるシステム負荷が軽減されます。</block>
   <block id="91b3f80f2945e60d6c3e3769a4e0e948" category="summary">System Storage DS8000 シリーズデータコレクタの設定</block>
   <block id="3f29caefc6c8f50acf9dfa8ec83f2119" category="doc">IBM System Storage DS8000 シリーズデータコレクタ</block>
   <block id="fb095a48fdd91339a182559490b78f3b" category="paragraph">IBM DS （ CLI ）データコレクタは、 DS6xxx および DS8xxx のデバイスのインベントリデータとパフォーマンスデータの収集をサポートします。</block>
@@ -7960,4 +7901,7 @@
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">MacOS Agent のインストール</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">次に示すコマンドは、 curl 、 sudo 、 shasum で使用できる必要があります</block>
+  <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">グループを監視します</block>
+  <block id="861cce966793d64acfe10deceab95b98" category="paragraph">新しいグループを作成するには、 [*"+" Create New Monitor Group*] ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
+  <block id="d5b99247687b3f87ffa28f0d709c14f9" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。すべてのモニタまたはカスタムモニタグループからモニタを削除することはできません。これらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
 </blocks>
