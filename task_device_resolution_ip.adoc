@@ -84,5 +84,6 @@ IP デバイスの識別情報を .csv ファイルにエクスポートする�
 
 
 
-関連： link ： task_device_resolution_fiber-channel.html [ ファイバチャネルデバイスの解決 ]link:task_creating_device_resolution_rules.html["デバイス解決ルールの作成"]
+関連：link:task_device_resolution_fibre_channel.html["ファイバチャネルデバイスの解決"]
+
 
