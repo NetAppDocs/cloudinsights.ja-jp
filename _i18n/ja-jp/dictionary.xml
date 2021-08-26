@@ -7905,4 +7905,5 @@
   <block id="ab9ecb106589bb37422c33e81b2e5e08" category="paragraph">関連：<block ref="280bfa8feb63e3ce80ec4f66b259f852" category="inline-link-macro-rx"></block>
 <block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
+  <block id="4262a364178344226a6201df72deaa22" category="paragraph">注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。</block>
 </blocks>

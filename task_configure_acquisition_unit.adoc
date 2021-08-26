@@ -170,6 +170,8 @@ Acquisition Unit ソフトウェアをアンインストールするには、次
 . アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。
 
 
+注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。
+
 
 
 == Acquisition Unit の再インストール
