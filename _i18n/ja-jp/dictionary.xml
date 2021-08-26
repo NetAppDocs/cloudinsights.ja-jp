@@ -7903,5 +7903,5 @@
   <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">次に示すコマンドは、 curl 、 sudo 、 shasum で使用できる必要があります</block>
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">グループを監視します</block>
   <block id="861cce966793d64acfe10deceab95b98" category="paragraph">新しいグループを作成するには、 [*"+" Create New Monitor Group*] ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
-  <block id="d5b99247687b3f87ffa28f0d709c14f9" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。すべてのモニタまたはカスタムモニタグループからモニタを削除することはできません。これらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
+  <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。モニタを _all Monitors _ または _Custom Monitors _ グループから削除することはできませんこれらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
 </blocks>
