@@ -7907,4 +7907,7 @@
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="4262a364178344226a6201df72deaa22" category="paragraph">注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。</block>
   <block id="943873dd443de1bb107661fec0ffddf6" category="section-title">ダッシュボードウィジェットのクエリでのフィルタリング</block>
+  <block id="910ba96085a400a51981e26de1f1777c" category="section-title">「 Permanently Active 」アラート</block>
+  <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">監視対象オブジェクトでは、条件を「常に * 」にするようにモニタを設定できます。たとえば、 IOPS&gt;1 や Latency &gt;0 などです。これらは頻繁に「テスト」モニターとして作成され、そして忘れられる。このような監視を実行すると、コンスティチュエントオブジェクトを永続的に開いたままにするアラートが作成されます。これにより、原因システムにかかる負荷や安定性の問題が時間の経過に</block>
+  <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">これを回避するために、 Cloud Insights は 7 日後に「 permanently active 」アラートを自動的に閉じます。基本的なモニタ状態が ( おそらく ) 継続して存在し、新しいアラートがほぼ即座に発行されることに注意してください。しかし、この「常時アクティブ」アラートを閉じることで、他の状況で発生する可能性のあるシステム負荷が軽減されます。</block>
 </blocks>
