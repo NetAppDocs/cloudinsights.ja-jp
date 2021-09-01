@@ -5938,7 +5938,6 @@
   <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="1414710b4943b74148ba07c3c051ac64" category="list-text">kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。</block>
-  <block id="69050ee5fbbc9a5032ccbfb2e3d03ee9" category="list-text">セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">監視は Linux ノードにのみインストールされます</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。</block>
   <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">プラットフォーム</block>
@@ -6023,7 +6022,6 @@
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。</block>
   <block id="87955a26e39fa43f43dbcb18a7dfa9f0" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781.</block>
-  <block id="c1ff4355d36a72adccd13da5ff1b12c1" category="cell">kube-state-metrics のバージョンが Kubernetes のバージョンよりも新しい場合に表示されます。たとえば、 Kubernetes バージョン 1.17 で kube-state-metrics バージョン 2.0.0 以上を実行しています。Kubernetes のバージョンを取得するには、次の手順を実行します。 _kubectl kube-state metrics バージョン： _kubectl deploy デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないように、 kube-state-metrics デプロイを修正して leasuting_matingwebvolumeconfigurations を無効にします。さらに具体的には、次の CLI 引数を使用できます。 resources= certificatesigningrequests 、 horizontalconfigmap 、 happjobs 、 demonsets 、 deployments 、 endpoints 、 hookalpodcalers 、 hookalpodcalers 、 hooklepodcalers 、 networkpolicies</block>
   <block id="5f06573aae905166447bf8d646c6bf89" category="summary">概要の照会</block>
   <block id="fadb076bccad39c075c50bfa7f81bc31" category="doc">クエリで使用するアセット</block>
   <block id="74e62ba1fb3e060a16a3310628a9de3e" category="paragraph">クエリを使用すると、ネットワークの監視やトラブルシューティングで環境内のアセットや指標を、ユーザが選択した条件（アノテーションなど）に基づいて細かいレベルで検索することができます。</block>
@@ -7833,7 +7831,6 @@
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">プロキシエンドポイントテーブル</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">kube-state-metrics ドキュメント</block>
-  <block id="755cdea554078bb6dfed008a027e421c" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">プロキシエンドポイントの表示</block>
   <block id="711a1c1d22485d3da55bc2c4b91c710f" category="paragraph">プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help &gt; Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。</block>
   <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新しい監査ページのユーザーインターフェイス</block>
@@ -7913,4 +7910,7 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">ユーザを削除します</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">管理者ロールを持つユーザーは ' ユーザーの名前をクリックして ' ダイアログの _Delete User_ をクリックすることにより ' ユーザー ( 会社に所属していないユーザーなど ) を削除できますユーザが Cloud Insights 環境から削除されます。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">ユーザが作成したダッシュボード、クエリなどは、削除しても Cloud Insights 環境で引き続き使用できます。</block>
+  <block id="29dda85c81caa16abcd4f195deac6098" category="list-text">セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。</block>
+  <block id="f15a3c589417e8499878c4798162a622" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="267ff646bbb6207d9a7e512acddc33ed" category="cell">kube-state-metrics のバージョンが Kubernetes のバージョンよりも新しい場合に表示されます。たとえば、 Kubernetes バージョン 1.17 で kube-state-metrics バージョン 2.0.0 以上を実行しています。Kubernetes のバージョンを取得するには、次の手順を実行します。 _kubectl kube-state metrics バージョン： _kubectl deploy デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないように、 kube-state-metrics デプロイを修正して leasuting_matingwebvolumeconfigurations を無効にします。さらに具体的には、次の CLI 引数を使用できます。 resources= certificatesigningrequests 、 horizontalconfigmap 、 happjobs 、 demonsets 、 deployments 、 endpoints 、 hookalpodcalers 、 hookalpodcalers 、 hooklepodcalers 、 networkpolicies</block>
 </blocks>
