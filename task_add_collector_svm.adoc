@@ -16,7 +16,7 @@ Cloud Secure では、データコレクタを使用して、デバイスから�
 
 * このデータコレクタは、次の機能でサポートされています。
 +
-** Data ONTAP 9.2 以降のバージョン
+** Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["この問題"] が固定されています
 ** SMB プロトコルバージョン 3.1 以前
 ** NFS プロトコルバージョン 4.0 以前
 
@@ -215,5 +215,8 @@ image:CS_Data_Collector_Error.png[""]
 
 
 | クラスタに未使用の既存のポリシーがあります。Cloud Secure をインストールする前に、これらのツールを使用して何を行う必要がありますか？ | 切断状態の場合でも、既存の未使用の FPolicy 設定をすべて削除することを推奨します。Cloud Secure は、「 cloudsecure_ 」というプレフィックスを付けて FPolicy を作成します。その他の未使用の FPolicy 設定はすべて削除できます。fpolicy list ： _fpolicy show_steps を表示して FPolicy 設定を削除する場合の CLI コマンド： _fpolicy disable -vserver <svmname> -policy -name <policy_name> _fpolicy policy scope delete -vserver <svmname> -policy name <policy_name> _fpolicy policy delete -vserver <svmname > -policy_name <policy_name> -policy_name>fpolicy_fpolicy_name> 
+
+
+| Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。 | Data ONTAP バージョンを使用していることを確認します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["この問題"] が固定されています 
 |===
 それでも問題が解決しない場合は、 [ ヘルプ ]>[ サポート *] ページに記載されているサポートリンクにアクセスしてください。

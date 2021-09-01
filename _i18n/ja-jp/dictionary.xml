@@ -4956,7 +4956,6 @@
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">ONTAP SVM Data Collector の設定</block>
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="paragraph">Cloud Secure では、データコレクタを使用して、デバイスからファイルとユーザのアクセスデータを収集します。</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">このデータコレクタは、次の機能でサポートされています。</block>
-  <block id="9a332239688fd3c582af23c98aae3202" category="list-text">Data ONTAP 9.2 以降のバージョン</block>
   <block id="e0f5635cfc022e85fc412c023e2e7759" category="list-text">SMB プロトコルバージョン 3.1 以前</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS プロトコルバージョン 4.0 以前</block>
   <block id="588ac47b76f53afe6880e6f9275995c3" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume / flexgroup ボリュームを含む SVM はサポートされていません</block>
@@ -6200,12 +6199,9 @@
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">unzip をインストールし、インストールコマンドを再度実行します。Yum がマシンにインストールされている場合は、「 yum install unzip 」を実行して解凍ソフトウェアをインストールしてください。その後、 Agent インストール UI からコマンドをコピーして CLI に貼り付け、再度インストールを実行します。</block>
   <block id="a387ff3584e009519afcccd4187aa537" category="cell">エージェントがインストールされ、実行されていました。しかし、エージェントは突然停止しました。</block>
   <block id="7fa0d72b0760b32930f653609b88d5ea" category="cell">Agent マシンに SSH 接続します。「 sudo systemctl status cloudsecure-agent.service` 」を使用して、エージェントサービスのステータスを確認します。1. ログに「 Failed to start Cloud Secure daemon service 」というメッセージが表示されるかどうかを確認します。2. cssys ユーザが Agent マシンに存在するかどうかを確認します。次のコマンドを root 権限で 1 つずつ実行し、 cssys ユーザとグループが存在するかどうかを確認します。「 UDO id cssys 」の UDO グループ cssys 3 。存在しない場合は、集中型モニタリングポリシーによって cssys ユーザが削除されている可能性があります。4. 次のコマンドを実行して、 cssys のユーザとグループを手動で作成します。'UDO useradd cssys'sudo groupadd cssys'5次のコマンド「 sudo systemctl restart cloudsecure-agent.service` 6 」を実行して、エージェントサービスを再起動します。まだ実行されていない場合は、他のトラブルシューティングオプションを確認してください。</block>
-  <block id="ef42f4350b0ad0d92159c5d45157f1c2" category="cell">エージェントに 10 個を超えるデータコレクタを追加できません。</block>
-  <block id="cbfbcd1e3824c57a84e719baec5aed01" category="cell">エージェントに追加できるデータコレクタは 10 個だけです。Active Directory 、 SVM 、その他のコレクタなど、すべてのコレクタタイプを組み合わせて使用できます。</block>
   <block id="29b7d313eba062e750ba2589739662d4" category="cell">Agent is in not_connected 状態であることが UI に表示されます。</block>
   <block id="231ea4a17f0b46cee074d79ff9eb3089" category="cell">エージェントを再起動する手順。1. エージェントマシンに SSH 接続します。2. 次のコマンドを実行して、エージェントサービスを再起動します。 'UDO systemctl restart cloudsecure-agent.service` 3.「 sudo systemctl status cloudsecure-agent.service` 」を使用して、エージェントサービスのステータスを確認します。4. エージェントは接続状態になります。</block>
   <block id="a2934bc245ba02e7c806a5703fdd3fd5" category="cell">エージェント VM が Zscaler プロキシの背後にあり、エージェントのインストールに失敗しています。Zscaler プロキシの SSL 検査により、 Cloud Secure 証明書は Zscaler CA によって署名されたため、エージェントが通信を信頼しないように提示されます。</block>
-  <block id="90cb2323bc4c975dd06387a0ee810b73" category="cell">問題を解決するには、次の手順を実行します。 1.Zscaler 、ブラウザ、または openssl のようなツールで使用されている CA 証明書を取得します。必要に応じて、中間 CA 証明書をすべてダウンロードします。2. 次のコマンドを使用して、 CA 証明書を Cloud Secure エージェントの信頼ストアにインポートします。/opt/NetApp/cloudsecure/agent/java64/bin/keytool -importcert -file &lt;ca_cert_path&gt; -keystore /opt/NetApp/cloudsecure/certs/client.keystore.alias &lt;alias_name&gt; 3 。次のコマンドを実行して、エージェントを再起動します。systemctl restart cloudsecure-agent.service 4.エージェントは今すぐ動作するはずです。5. エージェントで SSL エラーが発生したままの場合は、 openssl のようなブラウザまたはツールを使用して、テナント URL によって提示された即時証明書をインポートします。6. エージェントを再起動します。</block>
   <block id="05c6355a22bafa15e2cab398ecfbf462" category="doc">[ 環境設定 ] タブでオプションを設定します</block>
   <block id="917d188111877c49b60bd4365f643222" category="paragraph">デバイス解決のプリファレンスタブでは、自動解決スケジュールの作成、識別情報を含めるストレージベンダーやテープベンダーの指定、および DNS 検索オプションの設定を行うことができます。</block>
   <block id="7dbe7ad385c14ce22a1918469059c6b6" category="section-title">自動解決スケジュール</block>
@@ -7913,4 +7909,13 @@
   <block id="29dda85c81caa16abcd4f195deac6098" category="list-text">セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。</block>
   <block id="f15a3c589417e8499878c4798162a622" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="267ff646bbb6207d9a7e512acddc33ed" category="cell">kube-state-metrics のバージョンが Kubernetes のバージョンよりも新しい場合に表示されます。たとえば、 Kubernetes バージョン 1.17 で kube-state-metrics バージョン 2.0.0 以上を実行しています。Kubernetes のバージョンを取得するには、次の手順を実行します。 _kubectl kube-state metrics バージョン： _kubectl deploy デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないように、 kube-state-metrics デプロイを修正して leasuting_matingwebvolumeconfigurations を無効にします。さらに具体的には、次の CLI 引数を使用できます。 resources= certificatesigningrequests 、 horizontalconfigmap 、 happjobs 、 demonsets 、 deployments 、 endpoints 、 hookalpodcalers 、 hookalpodcalers 、 hooklepodcalers 、 networkpolicies</block>
+  <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">この問題</block>
+  <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
+  <block id="4d9921582b3bc6dc32845b40e4b4c522" category="cell">Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。</block>
+  <block id="36559f342f280f0538ba93b4f5b7a6da" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
+  <block id="7555bf5d0bf36ac15cb2b4123cb1b5f1" category="cell">エージェントに 20 個を超えるデータコレクタを追加できません。</block>
+  <block id="472592ad16d3986c536902056a791829" category="cell">エージェントに追加できるデータコレクタは 20 個だけです。Active Directory 、 SVM 、その他のコレクタなど、すべてのコレクタタイプを組み合わせて使用できます。</block>
+  <block id="941f6670886082a432b8033949c34311" category="cell">*.cloudinsights.netapp.com URL の Zscaler プロキシで SSL 検査をディセーブルにします。Zscaler が SSL 検査を行い、証明書を置き換えた場合、 Cloud Secure は動作しません。</block>
+  <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">エージェントのインストール中に、解凍後にインストールがハングします。</block>
+  <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">「 chmod 755 -rf 」コマンドが失敗しています。このコマンドは、別のユーザに属する作業ディレクトリ内のファイルを含む root 以外の sudo ユーザがエージェントのインストールコマンドを実行している場合は失敗し、それらのファイルの権限を変更することはできません。失敗した chmod コマンドのため、残りのインストールは実行されません。1. 「 cloudsecure 」という名前の新しいディレクトリを作成します。2. そのディレクトリに移動します。3. 完全な「 token=… …」をコピーして貼り付けます。 … ./cloudsecure-agent-install.sh インストールコマンドを実行し、 Enter キーを押します。4. インストールを続行できるはずです。</block>
 </blocks>
