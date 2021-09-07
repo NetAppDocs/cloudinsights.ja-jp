@@ -7918,4 +7918,28 @@
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">エージェントのインストール中に、解凍後にインストールがハングします。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">「 chmod 755 -rf 」コマンドが失敗しています。このコマンドは、別のユーザに属する作業ディレクトリ内のファイルを含む root 以外の sudo ユーザがエージェントのインストールコマンドを実行している場合は失敗し、それらのファイルの権限を変更することはできません。失敗した chmod コマンドのため、残りのインストールは実行されません。1. 「 cloudsecure 」という名前の新しいディレクトリを作成します。2. そのディレクトリに移動します。3. 完全な「 token=… …」をコピーして貼り付けます。 … ./cloudsecure-agent-install.sh インストールコマンドを実行し、 Enter キーを押します。4. インストールを続行できるはずです。</block>
   <block id="4d61d7f29cf85a233f556b1c4130ca43" category="cell">これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の手順を実行します。 _kubectl kube-state metrics バージョン： _kubectl deploy デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないように、 kube-state-metrics デプロイを修正して leasuting_matingwebvolumeconfigurations を無効にします。さらに具体的には、次の CLI 引数を使用できます。 resources= certificatesigningrequests 、 horizontalconfigmap 、 happjobs 、 demonsets 、 deployments 、 endpoints 、 hookalpodcalers 、 hookalpodcalers 、 hooklepodcalers 、 networkpolicies</block>
+  <block id="049a91683d521aa6961c9d61aa5dd97e" category="summary">ネットアップの Astra データストアを設定</block>
+  <block id="67d4d4df6543fc9b1d67546c146be6ad" category="doc">NetApp Astra データコレクタ</block>
+  <block id="683bbcd43dc9592630ea190b632d0c03" category="paragraph">ネットアップの Astra データストアデータソースは、 1 つの Astra データストア（ ADS ）クラスタの構成データとパフォーマンスデータを監視してレポートします。</block>
+  <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights は、このコレクタからインベントリとパフォーマンスのデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
+  <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraDSNodeInfo.status.drives</block>
+  <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraDSNodeInfo</block>
+  <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy の順にクリックします</block>
+  <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共有 / 共有イニシエータ</block>
+  <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
+  <block id="556bedb976dcb84829858a9acc896162" category="cell">Kubernetes API の IP アドレス</block>
+  <block id="a67af0c5c8cede5fa158c95c93fd237a" category="cell">Kubernetes API サーバの IP アドレス</block>
+  <block id="1e8aa97a1731c7d3e5e7121b93eacbaa" category="cell">Kubernetes API ポート</block>
+  <block id="3914b8c6357eda30ed5b898317939218" category="cell">Kubernetes API サーバのポート</block>
+  <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API トークン</block>
+  <block id="9b4c9e8da576a331cc15e2c7566aa96f" category="cell">Base64 でエンコードされた Kubernetes API トークン</block>
+  <block id="6df87d028cb86b6bcdf018f91b2d21c3" category="cell">クラスタ名を含める</block>
+  <block id="9cf7642a84a9974b1eb32542a6d225f5" category="cell">監視するクラスタ名をカンマで区切ったリスト。Empty = すべてのクラスタを監視します</block>
+  <block id="d8aad4b7acfa8db84fdf059fd2a51f34" category="cell">ADS メトリクスエンドポイント</block>
+  <block id="0d861a18c8e6662b624ecf03648a220a" category="cell">ADS クラスタメトリックエンドポイント（不要）</block>
+  <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">このデータソースの設定に関する要件は次のとおりです。</block>
+  <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">Metric Query ロールとテナントアクセスロールが割り当てられているユーザのユーザ名とパスワード</block>
+  <block id="1a978842f1e7a26f0c1b752970be58e5" category="inline-link-macro">ネットアップの Astra データストア</block>
+  <block id="bdbbf759f283aa7967b60fbeea087553" category="cell"><block ref="bdbbf759f283aa7967b60fbeea087553" category="inline-link-macro-rx"></block></block>
 </blocks>
