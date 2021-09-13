@@ -626,7 +626,6 @@
   <block id="de772959ff260628e0b3b7a40c31299d" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。</block>
   <block id="9f0bfcad9805fdb266c75890257a496e" category="section-title">モニタで [Webhook Notification] を選択します</block>
   <block id="08b5411f848a2581a41672a759c87380" category="inline-link-macro">モニタ</block>
-  <block id="7679ee036d38ec9489cb8bc4c5aa0547" category="paragraph">で webhook 通知を選択します <block ref="9f1b6ac9c8a94cb876f83c905e9abcdc" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
   <block id="7f44d407783e89c1aced666e867dd410" category="inline-image-macro">Webhook モニタの通知</block>
   <block id="4b43841fab74d16cf87af7d828515aa0" category="paragraph"><block ref="4b43841fab74d16cf87af7d828515aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41e96c412b3694cd49b21435dba2aa8b" category="section-title">Webhook の例：</block>
@@ -4389,25 +4388,17 @@
   <block id="0e07493de1ccce1a68aff3dbd2cd6cac" category="list-text"><block ref="0e07493de1ccce1a68aff3dbd2cd6cac" category="inline-link-macro-rx"></block></block>
   <block id="e87433704018842ba5eb9ad6c1a93e26" category="inline-link-macro">ネットアッププライバシーの原則</block>
   <block id="e56b6ba842252c40995f764b4ae57614" category="list-text"><block ref="e56b6ba842252c40995f764b4ae57614" category="inline-link-macro-rx"></block></block>
-  <block id="38c884e1d867a937b8413a5858358657" category="summary">ダッシュボードウィジェットのクエリとフィルタ。</block>
   <block id="9c03aeff3f0df812a2cff2cd25e5e8b0" category="doc">ダッシュボードウィジェットのクエリとフィルタ</block>
   <block id="cf43137803fb51915f84cbc5c3068d34" category="section-title">クエリ</block>
   <block id="6d691908e0846dc176f3bb1d0a3effd2" category="paragraph">ダッシュボードウィジェットのクエリは、データ表示を管理するための強力なツールです。ここでは、ウィジェットのクエリに関する注意事項を示します。</block>
   <block id="756a8962240493ebca6043dc6e8bf4f9" category="paragraph">一部のウィジェットでは、最大 5 つのクエリを設定できます。クエリごとに固有の折れ線などのグラフがウィジェットに出力されます。1 つのクエリに集計方法、グループ化、上位 / 下位などを設定しても、ウィジェットの他のクエリには影響しません。</block>
   <block id="578ad6a9c75727e78b8745b1d7745fd7" category="paragraph">目のアイコンをクリックすると、クエリが一時的に非表示になります。クエリの表示と非表示を切り替えると、ウィジェットに自動的に表示される情報が更新されます。これにより、ウィジェットの作成時に表示されるデータを個々のクエリで確認することができます。</block>
   <block id="72f55a3c85ed37b3ae5f1d57d5b61526" category="paragraph">次のタイプのウィジェットでは、複数のクエリを設定できます。</block>
-  <block id="f2d8526ef78f668bd3550d18c096c484" category="paragraph">面グラフ積み上げ面グラフ折れ線グラフスプライングラフ単一値ウィジェット</block>
   <block id="ac75cc2b8dcffd0377aaed3f9b53d77a" category="paragraph">残りのタイプのウィジェットでは、クエリを 1 つだけ設定できます。</block>
-  <block id="b5de6263dc8bd651f90cc4f8615cf764" category="paragraph">表棒グラフボックスプロット散布図</block>
-  <block id="b23b66260ad1d2fbd2536d1484ed51de" category="section-title">ダッシュボードのクエリでのフィルタリング</block>
   <block id="65702064f4934de2865add560bd35d1e" category="paragraph">次のいずれかを使用して、フィルタを絞り込むことができます。</block>
-  <block id="8500b51d012e09dafe8a98cb883ab91d" category="cell">BOS-PRD **_12_**-S12 、 BOS-PRD **_13_**-S12 などを返します</block>
-  <block id="ac82982f546845c8b9d99e679f468920" category="cell">指定したリソースのみを返します</block>
   <block id="4107b1f2124500c28e3fff7e81147f68" category="paragraph">フィルタ文字列を二重引用符で囲むと、 Insight では、最初と最後の引用符の間のすべての部分が完全に一致するものとして扱われます。引用符内の特殊文字または演算子は、リテラルとして扱われます。たとえば、「 * 」を指定した場合、リテラルアスタリスクである結果は返されますが、アスタリスクはワイルドカードとして扱われません。演算子 AND 、 OR 、および NOT は、二重引用符で囲まれた場合にもリテラル文字列として扱われます。</block>
   <block id="5962b59fee2f1092aea89c5d18aeaa84" category="section-title">クエリとフィルタで返されるオブジェクトを特定する</block>
   <block id="33b013de46ebfe3f233e12e26bb762a4" category="paragraph">クエリとフィルタで返されるオブジェクトは、次の図に示すようになります。「タグ」が割り当てられているオブジェクトはアノテーションであり、タグのないオブジェクトはパフォーマンスカウンタまたはオブジェクト属性です。</block>
-  <block id="a412b1c12cf9a0acd7695a4f578e5b78" category="image-alt">オブジェクト ReturnedByFilters</block>
-  <block id="2dd00a32ff223ca766c1a49defaf2c49" category="paragraph">ウィジェット内のオブジェクトの属性やタグでフィルタリングするだけでなく、指標に対してもフィルタリングすることができます。</block>
   <block id="8cc7620b98f53d4670d8d98f87e96bb6" category="summary">Acquisition Unit の問題に関するトラブルシューティングのヒント。</block>
   <block id="67714f40f76da8e998f34935a33be570" category="doc">Linux での Acquisition Unit の問題のトラブルシューティング</block>
   <block id="799af4349bd49a845da3921295bd9dbe" category="paragraph">ここでは、 Linux サーバの Acquisition Unit に関する問題のトラブルシューティングについて説明します。</block>
@@ -5626,7 +5617,6 @@
   <block id="72ef24c018bdda1f94bc3f159a543c04" category="section-title">ストレージおよびストレージプールの容量</block>
   <block id="f3b797f67d469dd37ce40731bcd8be54" category="paragraph"><block ref="f3b797f67d469dd37ce40731bcd8be54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69ba447dc5e9ab1619f330f106eabbf3" category="section-title">ボリューム容量</block>
-  <block id="9b22f33443efbd129de475d16dc7d7ee" category="paragraph"><block ref="9b22f33443efbd129de475d16dc7d7ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c407084b02a56538766fb242db0b4450" category="section-title">VM 容量</block>
   <block id="68e6551a1f63bb301cc7fca6362929c5" category="paragraph"><block ref="68e6551a1f63bb301cc7fca6362929c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca2219979432d21faba231a579345d08" category="section-title">内部ボリューム容量</block>
@@ -7920,4 +7910,6 @@
   <block id="b37e5afaddcc3a71b84e9c4dac7caba9" category="cell">これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">このデータソースの設定に関する要件は次のとおりです。</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">Metric Query ロールとテナントアクセスロールが割り当てられているユーザのユーザ名とパスワード</block>
+  <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">で webhook 通知を選択します <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
+  <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
