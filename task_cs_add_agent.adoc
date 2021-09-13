@@ -99,5 +99,5 @@ image::new-agent-detect.png[新しいエージェント検出]
 | エージェントのインストール中に、解凍後にインストールがハングします。 | 「 chmod 755 -rf 」コマンドが失敗しています。このコマンドは、別のユーザに属する作業ディレクトリ内のファイルを含む root 以外の sudo ユーザがエージェントのインストールコマンドを実行している場合は失敗し、それらのファイルの権限を変更することはできません。失敗した chmod コマンドのため、残りのインストールは実行されません。1. 「 cloudsecure 」という名前の新しいディレクトリを作成します。2. そのディレクトリに移動します。3. 完全な「 token=… …」をコピーして貼り付けます。 … ./cloudsecure-agent-install.sh インストールコマンドを実行し、 Enter キーを押します。4. インストールを続行できるはずです。 
 
 
-| エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insight のシリアル番号を入力してケースをオープンし、メモしたとおりにケースをオープンしながらログを添付してください。 | ネットアップのケースをオープンする際にログを添付1. root 権限を持つ次のスクリプトを実行し、出力 zip （ cloudsecure-agent-回 します。 zip ）を共有します。A/opt/NetApp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2 に設定します。次のコマンドを root 権限で 1 つずつ実行し、出力を共有します。AID cssys b.グループは cssys c. をCat /etc/os-release 
+| エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insights のシリアル番号を入力してケースをオープンし、メモしておいたケースにログを添付します。 | ケースにログを添付するには、次の手順を実行します。 1.次のスクリプトをルート権限で実行し、出力ファイル（ cloudsecure-agent-scripts.zip ）を共有します。A/opt/NetApp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2 に設定します。次のコマンドを root 権限で 1 つずつ実行し、出力を共有します。AID cssys b.グループは cssys c. をCat /etc/os-release 
 |===

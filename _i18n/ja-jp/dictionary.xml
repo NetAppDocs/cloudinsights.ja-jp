@@ -7912,6 +7912,6 @@
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">Metric Query ロールとテナントアクセスロールが割り当てられているユーザのユーザ名とパスワード</block>
   <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">で webhook 通知を選択します <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
   <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="414899beff8141a9eaddc6128c95494b" category="cell">エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insight のシリアル番号を入力してケースをオープンし、メモしたとおりにケースをオープンしながらログを添付してください。</block>
-  <block id="fb5123fb5b5c740dedfc3e8e1b971dc9" category="cell">ネットアップのケースをオープンする際にログを添付1. root 権限を持つ次のスクリプトを実行し、出力 zip （ cloudsecure-agent-回 します。 zip ）を共有します。A/opt/NetApp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2 に設定します。次のコマンドを root 権限で 1 つずつ実行し、出力を共有します。AID cssys b.グループは cssys c. をCat /etc/os-release</block>
+  <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insights のシリアル番号を入力してケースをオープンし、メモしておいたケースにログを添付します。</block>
+  <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">ケースにログを添付するには、次の手順を実行します。 1.次のスクリプトをルート権限で実行し、出力ファイル（ cloudsecure-agent-scripts.zip ）を共有します。A/opt/NetApp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2 に設定します。次のコマンドを root 権限で 1 つずつ実行し、出力を共有します。AID cssys b.グループは cssys c. をCat /etc/os-release</block>
 </blocks>
