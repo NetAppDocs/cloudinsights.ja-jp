@@ -72,9 +72,6 @@ Cloud Insights の強力な API にはこれまで以上にアクセス可能で
 
 
 | データの取り込み |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
-
-
-| Data Warehouse |  |  | image:SmallCheckMark.png[""] 
 |===
 
 
