@@ -45,6 +45,8 @@ toc::[]
 
 
 
+image:Widgets_All.png["利用可能なウィジェット"]
+
 
 
 == ウィジェットタイプ
@@ -87,7 +89,7 @@ image:Pie Chart.png["円グラフ"]
 +
 image:Note Widget.png["メモウィジェット"]
 
-* * Violations Table * ：パフォーマンスポリシー違反の最新 1 、 000 件までが表示されます。
+* * アラート・テーブル * ：過去 1 、 000 件のパフォーマンス・アラートを表示します。
 
 
 これらの機能およびその他のダッシュボード機能の詳細については、 link:concept_dashboard_features.html["ここをクリックしてください"]。

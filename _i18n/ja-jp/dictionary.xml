@@ -7097,7 +7097,6 @@
   <block id="2dc583e44ae8bb38c2d7e6793d5d7a0f" category="list-text">* メモウィジェット *: 最大 1000 文字のフリーテキスト。</block>
   <block id="ce287e5a43f4cff982d733255cd75a33" category="inline-image-macro">メモウィジェット</block>
   <block id="a40acf27d2cb90c20aa5d11ed16ef69a" category="paragraph"><block ref="a40acf27d2cb90c20aa5d11ed16ef69a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* Violations Table * ：パフォーマンスポリシー違反の最新 1 、 000 件までが表示されます。</block>
   <block id="a4ea91cd0d1ea33d8113457644dd6157" category="inline-link-macro">ここをクリックしてください</block>
   <block id="367b5f76f23230911b687579ada3a5ed" category="paragraph">これらの機能およびその他のダッシュボード機能の詳細については、 <block ref="5f5e44cd187dac84fc7db7a39eba8511" category="inline-link-macro-rx"></block>。</block>
   <block id="a37f9261af1410c0546f1e5542f832ef" category="section-title">ホームページとしてダッシュボードを設定する</block>
@@ -7917,4 +7916,10 @@
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">フィルタを調整しています</block>
   <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">フィルタ処理中に、入力を開始すると、現在のテキストに基づいて * ワイルドカードフィルタ * を作成するオプションが表示されます。このオプションを選択すると、ワイルドカード式に一致するすべての結果が返されます。また、 NOT または OR を使用して *expressions * を作成することもできます。また、「 None 」オプションを選択して、フィールドで null 値をフィルタリングすることもできます。</block>
   <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4ae5f63a46f8664d39fdcb2649f7245b" category="paragraph">時系列ウィジェット（折れ線、スプライン、面、積み上げ面）では、凡例にカーソルを合わせるとグラフ内の関連データが強調表示されます。逆に、グラフのデータポイントにカーソルを合わせると、対応する凡例が強調表示されます。データポイントをクリックすると、オブジェクトのランディングページが開きます。</block>
+  <block id="d2417309d3dbd441b2c0ae2ec69ead52" category="inline-image-macro">凡例のハイライト</block>
+  <block id="a577a8b01a7c0914557ded1aca9ce084" category="paragraph"><block ref="a577a8b01a7c0914557ded1aca9ce084" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4bc6c1367385625a07de47bbcf13d08b" category="inline-image-macro">利用可能なウィジェット</block>
+  <block id="d913272d1d72d646f584c46e2f98e40c" category="paragraph"><block ref="d913272d1d72d646f584c46e2f98e40c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c867c0e90aa97c787b5fd4550b6154b5" category="list-text">* アラート・テーブル * ：過去 1 、 000 件のパフォーマンス・アラートを表示します。</block>
 </blocks>
