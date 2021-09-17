@@ -1488,50 +1488,6 @@
   <block id="993bb582982b324ee6465cc1d0c1a2bd" category="paragraph">カスタム期間では、最大 31 日間連続で選択できます。この範囲に開始時間と終了時間を設定することもできます。デフォルトの開始時間は、最初に選択した日の午前 12 時、最後に選択した日のデフォルトの終了時間は午後 11 時 59 分です。適用をクリックすると、カスタムの期間がアセットページに適用されます。</block>
   <block id="4feea054535349a31f7c12b7dcbc4d2b" category="section-title">カスタムウィジェットを追加します</block>
   <block id="2c6503d76e77d1cf4b2836c66fb29d6e" category="paragraph">任意のアセットページに独自のウィジェットを追加できます。追加したウィジェットは、そのタイプのすべてのオブジェクトのアセットページに表示されます。たとえば、ストレージアセットページにカスタムウィジェットを追加すると、そのウィジェットがすべてのストレージアセットのアセットページに表示されます。</block>
-  <block id="cec12e8ff04bb0df8358a8824b00e931" category="summary">ストレージノードの利用率を表示するダッシュボードの例。</block>
-  <block id="ca4fc3bc2739a900a41348a989b46d95" category="doc">ダッシュボードの例：変数を使用したストレージノード利用率</block>
-  <block id="f01bd1e829d5f77d2c524fbd312d051f" category="paragraph">ストレージ、ストレージプール、ノード、階層、利用率、レイテンシに変数を使用する Storage Analysis 用のカスタムダッシュボードを作成します。</block>
-  <block id="405869fb758828129ec9233839f217ce" category="paragraph">ダッシュボードに精通していることを推奨しますが、必須ではありません</block>
-  <block id="4649f79f8682d7370d575f3c046da785" category="paragraph">次の手順では、ストレージ、ストレージプール、ノード、階層、利用率、およびレイテンシに変数を使用する、カスタムの Storage Analysis Overview ダッシュボードを作成します。次の例の変数を使用して、ダッシュボードで使用できる 1 つ以上のウィジェットで表示するアセットや指標をフィルタリングします。これらの変数をフィルタとして使用するウィジェットは、ダッシュボードの変数フィールドに入力した値に従ってフィルタされたコンテンツをオンデマンドで表示するように更新されます。これにより、複数のグラフやグラフをすばやくフィルタして、関心のある特定の領域にドリルダウンできます。</block>
-  <block id="f1b1d442a741f139538d681e6b05258d" category="paragraph">この例の手順に従って、次のようなダッシュボードを作成します。これらのウィジェットを変更したり、任意の数のウィジェットを追加して、選択したデータを強調表示することができます。</block>
-  <block id="5ba0e46b57f09f7983b2e0a08e359bfd" category="list-text">新しいダッシュボードを作成し、「 Analysis ： Storage Overview 」という名前を付けるか、同様に説明する名前を付けます。</block>
-  <block id="7429854dfe77f7783fcd07e239be782a" category="list-text">変数（ Variable ）ドロップダウンをクリックし、テキスト変数タイプ（ Text variable type ）を選択します。デフォルトでは、変数の名前は $var1 です。$var1 をクリックして名前を編集し、 $storage に変更してから、チェックマークをクリックして変数を保存します。$node 、 $pool 、および $volume のテキスト変数を作成する場合にも同じ手順を繰り返します。</block>
-  <block id="5db3d8df88f513d79e51c5ccd4647ecd" category="list-text">上記の手順を繰り返して、 $utilization および $latency という名前の数値タイプ変数を作成します。</block>
-  <block id="e543cf51114b9b7e58d27ca0ecda4829" category="list-text">変数（ Variable ）ドロップダウンをクリックし、階層（ Tier ）アノテーションを検索します。$tier という名前の変数を作成する場合に選択します。</block>
-  <block id="443b5d6be333d27aedaa6e37d3bfd44a" category="paragraph">変数はいつでも追加できますが、あらかじめ作成しておくと簡単に作成できるため、作成時にすべてのウィジェットで使用できるようになります。</block>
-  <block id="62c0b28c6f3133e767cf1610bba84fff" category="list-text">ウィジェットを追加するには、ウィジェットのドロップダウンをクリックし、折れ線グラフまたは面グラフウィジェットのいずれかを選択します。ウィジェットに「 Node Utilization 」という名前を付けます。ストレージアセットのタイプをクリックして、ストレージノードに変更します。グラフデータの使用状況 - 合計を選択します。</block>
-  <block id="b46f56d62ad60e31b5a2e7dcb8079889" category="list-text">フィルタを追加するには、 [Filter by+] ボタンをクリックします。ストレージを検索して選択し、任意のをクリックして $storage 変数を選択します。</block>
-  <block id="409482642783ef595c5c57fa83577355" category="list-text">[+] ボタンをクリックして、 [ 名前 ] に別のフィルタを追加します。変数を $node に設定します。</block>
-  <block id="e9d393958573ffa3bc59eea0c01b1e30" category="paragraph">アノテーション名フィルタには、さまざまな変数を割り当てることができます。ウィジェットのオブジェクトに応じて、名前と変数のペアを最下位レベルで使用します。例：</block>
-  <block id="4deda5954d2a2e1c320a1e66332f3806" category="list-text">ノードに焦点を当てたウィジェットの名前フィルタに $node 変数を割り当てることができます。</block>
-  <block id="287f52005c2e9ca7e19e7896d89c2cb9" category="list-text">プールに焦点を当てたウィジェットの名前フィルタに $pool 変数を割り当てることができます。</block>
-  <block id="97e68401c2324ecb680f48a2b8416c1a" category="list-text">[+] ボタンをクリックして、 [ 使用状況 - 合計（ % ） ] の別のフィルタを追加します。変数を $utilization に設定します。</block>
-  <block id="8a97018c309b8df8135912ef63825924" category="list-text">[ ロールアップ ] フィールドの後にある [X] をクリックして、フィールドを折りたたみます。</block>
-  <block id="c143a08ed5903043c651bed342e1d57b" category="list-text">[ トップ 5 を表示 ] を選択し、 [ 保存 ] をクリックしてウィジェットを保存し、ダッシュボードに戻ります。</block>
-  <block id="41db0f7bcc0cddf88b9790290da76271" category="paragraph">ウィジェットは次のようになります。</block>
-  <block id="8f41c91b5eeb97e40e1afc18100c2a94" category="paragraph">別の折れ線グラフウィジェットまたは面グラフウィジェットをダッシュボードに追加します。アセットのタイプとしてストレージノードを選択し、グラフ化する指標として Latency - Total を選択します。</block>
-  <block id="a8244103391ac63aa60d550e56909d0e" category="list-text">フィルタ条件 + ボタンをクリックして、ストレージ： $storage および名前： $node のフィルタを追加します。</block>
-  <block id="7dac634b9c502fb323a592900da207bb" category="list-text">Latency - Total のフィルタを追加して、 $latency 変数を選択します。</block>
-  <block id="cf623e454ed1332f1c4a9b057c85d507" category="list-text">ウィジェットに「 Node Latency 」と名前を付けて保存します。</block>
-  <block id="e1c43fe06202099b25c1e137fb59f1c4" category="paragraph">サポートテーブルを追加すると、作成したグラフの詳細（最大ノード利用率や平均ノード利用率など）を表示できます。ダッシュボードに表ウィジェットを追加し、アセットタイプとしてストレージノードを選択し、ストレージ用のフィルタを作成します。ストレージのフィルタ： $storage 、名前： $node 、利用率 - 合計： $utilization 。</block>
-  <block id="a449b93f53efa3e17f263d45abe5c483" category="list-text">Utilization - Max 、 Utilization - Total 、またはその他の目的の列の列をテーブルに追加します。</block>
-  <block id="b09ea45e70cd2e61c6c3f666a86295fd" category="list-text">ウィジェットに「 Node Peak and Avg Utilization 」という名前を付けて保存します。</block>
-  <block id="32e206383d6084be40536ab5e848e2ee" category="paragraph">同じ手順を繰り返して、必要に応じて Latency - Max 、 Latency - Total 、またはその他の列を表示するノードレイテンシの表を作成します。ダッシュボードを全体的に表示するには、次の一部またはすべてのグラフウィジェットと表ウィジェットを追加します。</block>
-  <block id="faad54269e8b5a9689580f94bac852c8" category="list-text">チャート表</block>
-  <block id="50e322591ffd0a984669adb2cc46a3b5" category="list-text">ストレージプール利用率ストレージプールのピークと平均利用率</block>
-  <block id="2cf74b6fabfb6357d4d86f12637c6d79" category="list-text">ストレージプールのスループットストレージプールの最大スループットと平均スループット</block>
-  <block id="60d1d925cc8c42bb5268cc3e8d38d963" category="list-text">ボリュームレイテンシボリュームのピークと平均レイテンシ</block>
-  <block id="81ff427ef204defdc4bc7c5154750503" category="list-text">ボリューム IOPS ボリュームの最大ピーク IOPS と平均 IOPS</block>
-  <block id="c638006732390e2a4f5b0634277922f2" category="paragraph">ウィジェットは、ダッシュボードのどの位置にでも移動したり、サイズを変更したりできます。完了したら、必ずダッシュボードを保存してください。</block>
-  <block id="a352fe39c54ee6fe4109ffc2eecdb4cb" category="paragraph">最後のダッシュボードは次のようになります。</block>
-  <block id="71a684e532f0ad390228a7b1829fa6e6" category="paragraph">変数を使用して、ダッシュボード内の特定のアセットに絞り込むことができます。変数フィールドに値を入力すると、ウィジェットが自動的に更新されて変数が反映されます。たとえば、 $utilization 変数フィールドに「 15 」を入力すると、その変数 update を使用するウィジェットは、合計利用率が 15% を超えるアセットのみを表示します。</block>
-  <block id="e124114b2e213b8f47d2994301fc1d26" category="paragraph">ノード利用率ウィジェットに表示されたすべてのノードのうち上位 5 つを表示：</block>
-  <block id="3c67286305cd10ca9b47e5e36f91bc5f" category="paragraph">ノード利用率ウィジェットに使用率が 15% 以上のノードが表示されている場合：</block>
-  <block id="0beb18af3a3e55bf0b613bf92f60eae2" category="paragraph">ウィジェットを作成する際は、次の点に注意してください。</block>
-  <block id="22110bb2a7e6a10443a907c3d49dacf8" category="list-text">階層変数 $tier は、 Tier アノテーションでアノテートされているリソースのみに影響します。</block>
-  <block id="0e3ec5da8adf808c126f572bfb483535" category="list-text">ウィジェットが指定した変数を受け入れるように設計されているかどうかによっては、すべてのフィルタがすべてのウィジェットに影響するわけではありません。</block>
-  <block id="17ec074ea402b128f9416ef1632d59a1" category="list-text">数値変数は、指定された値以上の値として適用されます。</block>
-  <block id="ff9593ff5aa8a1d136237f414d2e698e" category="paragraph">ストレージ階層のどのレベルのウィジェットでも、ウィジェットの実行元のアセットに対して変数が有効であれば、任意の変数をフィルタとして使用できます。ノードレベルからストレージプールからボリュームウィジェットに移動すると、フィルタとして割り当てる変数が増えます。たとえば、ストレージノードレベルのウィジェットでは、ストレージ変数と名前変数をフィルタとして割り当てることができます。ストレージプールレベルでは、ストレージ、ノード、ストレージプール、および名前のすべてを使用できます。必要に応じて変数を割り当て、スタック内の最下位レベルで $name 変数を使用します。これにより、ウィジェットを実行している実際のアセット名で $ name 変数をフィルタできます。</block>
   <block id="c98d332ba8a502696256ec21ebc2eab0" category="summary">NetApp StorageGRID のデータコレクタを設定する</block>
   <block id="40d661645d6b35dfe2c38e25507244ac" category="doc">NetApp StorageGRID データコレクタ</block>
   <block id="f9df060c8d375048604f19820f72d8cf" category="paragraph">NetApp StorageGRID データコレクタでは、 StorageGRID 構成からのインベントリやパフォーマンスの収集がサポートされます。</block>
@@ -4598,77 +4554,15 @@
   <block id="03df896fc71cd516fdcf44aa699c4933" category="section-title">変数（ variables ）</block>
   <block id="b4b0f4b96c62f1b25f5e8866a7d69ab6" category="paragraph">変数を使用すると、ダッシュボードの一部またはすべてのウィジェットに表示するデータを一度に変更できます。1 つ以上原因のウィジェットで共通の変数を使用するように設定すると、 1 箇所で変更を加え、各ウィジェットに表示されるデータが自動的に更新されます。</block>
   <block id="933e469cb306a0ea9faabd3e4235d3be" category="inline-link-macro">注釈</block>
-  <block id="21e649fef2937bbcd0b3e48d433c1e10" category="paragraph">次の例では、複数のストレージアセットに対して * City * アノテーション（ City 属性）を設定する必要があります。結果がはっきりわかるように、ストレージごとに異なる都市を設定します。を参照してください <block ref="a38b5364ba241b76b0f2b5f3268f2629" category="inline-link-macro-rx"></block> アノテーションの使用方法の詳細については、を参照してください。</block>
-  <block id="2ad7ca8cf5922ffac8171b9df4b04418" category="paragraph">変数を使用すると、カスタムダッシュボードの一部またはすべてのウィジェットでデータをすばやく簡単にフィルタできます。次の手順では、変数を使用するウィジェットを作成し、それらの変数をダッシュボードで使用する方法を示します。</block>
-  <block id="ec35cdf79df7bfbf1fad60a09aae829f" category="list-text">[ ダッシュボード（ Dashboards ） ] &gt; [ 新規ダッシュボード（ New Dashboard ） ] をクリックします。</block>
-  <block id="8ca72dcc65f97b8235a7da6da2d065fd" category="list-text">ウィジェットを追加する前に、ダッシュボードのデータをフィルタするための変数を定義する必要があります。[ 変数の追加（ Add Variable ） ] ボタンをクリックします。</block>
-  <block id="fbd09c176d9a94fcd8d77cf20457ff2e" category="paragraph">属性のリストが表示されます。</block>
-  <block id="272a559fda9e2ec6a456c1a2deb204c9" category="list-text">ここでは、「 City 」に基づいてフィルタするようにダッシュボードを設定します。リストから _City_attribute を選択します。</block>
-  <block id="bfbee1deb4505683565c575571685a37" category="paragraph">$city 変数フィールドが作成され、ダッシュボードに追加されます。ダッシュボードで使用される変数は、ウィジェットの上に表示されます。</block>
-  <block id="c04d812778aa68fa3a3ee1c4b86e8df5" category="list-text">次に、この変数を使用するようにウィジェットに指示します。この例では、 _City_column を示す表ウィジェットを追加します。[ ウィジェットを追加（ Add Widget ） ] * ボタンをクリックし、 _ 表 _ ウィジェットを選択します。</block>
-  <block id="a4682674577532c89e24d47c5a53b883" category="list-text">まず、「 gear 」ボタンから選択して、テーブルに _City_column を追加します。</block>
-  <block id="a72ec8ab221771a3b8bd4ebbeb10c6b7" category="paragraph">City はリストタイプの属性であるため、以前に定義された選択肢のリストが含まれています。テキスト、ブーリアン、日付タイプの属性を選択することもできます。</block>
-  <block id="9437f28a94674215a4a5a021b0529d80" category="list-text">次に、 [* Filter by +*] ボタンをクリックし、 [_City_] を選択します。</block>
-  <block id="669c96eed4e45d57ce2c572c3d4db86a" category="list-text">[_ON_] をクリックすると、 City で使用できるフィルタ選択肢が表示されます。このリストの一番上に「 * $city * 」が表示され、以前に利用可能だった選択肢も表示されます。$city を選択して、このダッシュボードの変数として使用します。</block>
-  <block id="43aa33e31448f6706b95126b3b6f5aa2" category="paragraph">_$city _choice は、メインのダッシュボードページで以前に定義したことがある場合にのみ表示されます。変数が以前に定義されていない場合は、フィルタの既存の選択肢のみが表示されます。選択した属性タイプに該当する変数のみが、そのフィルタのドロップダウンに表示されます。</block>
-  <block id="6d0d5c7098c1a31c3ff14a083c6955c2" category="list-text">* ウィジェットを保存します。</block>
-  <block id="6756de8d263a06de09973f82981fcf67" category="list-text">ダッシュボードページで、 _$city _variable の横の _any_ をクリックして、表示する都市を選択します。</block>
-  <block id="c41d22fd6d3c5649235645fb311238c6" category="paragraph">表ウィジェットが更新され、選択した都市のみが表示されます。変数 _$city の値は自由に変更でき、 $city を使用するように設定したダッシュボードのすべてのウィジェットが自動的に更新され、選択した変数のデータのみが表示されます。</block>
-  <block id="f454e897b6edaed9845e7083cdbb539f" category="paragraph">設定が完了したら、必ずダッシュボードを * 保存 * してください。</block>
-  <block id="11ee19e9bda197e69176b7e817fdb82f" category="section-title">ダッシュボードの変数の詳細</block>
   <block id="45430f654166211a655017eedb515347" category="paragraph">ダッシュボードの変数にはいくつかの種類があり、さまざまなフィールドで使用できます。また、命名規則もあります。ここでは、これらの概念について説明します。</block>
   <block id="e8196d2aa0d7c28cd131d991850f1cea" category="section-title">変数の型</block>
   <block id="f39814a3ff54979da6b688b16b8244e2" category="paragraph">変数には、次のタイプがあります。</block>
-  <block id="013468f5a5c6c88a9fd87ad0abc6d455" category="list-text">* テキスト * ：英数字の文字列。これがデフォルトの変数タイプです。</block>
-  <block id="7eba3ce6fc865969a20a8a5ab8069f70" category="list-text">* 数値 * ：数値または数値の範囲。</block>
-  <block id="c232c88704a2049e8fa0eb89bf1f0a0a" category="list-text">* ブール * ：値が True / False 、 Yes / No 、 0/1 などのフィールドに使用します。ブール変数の場合、選択肢は Yes 、 No 、 None 、 Any です。</block>
-  <block id="9af9474b188e99a7953457f8eafaef74" category="list-text">* 日付 * ：日付または日付の範囲。</block>
-  <block id="75b48bb74d9d62b90d34e888b5fba119" category="section-title">「汎用」変数</block>
-  <block id="50bb6b06ee635715972681ba0956f3f3" category="paragraph">汎用変数またはユニバーサル変数を設定するには、 * 変数を追加 * ボタンをクリックし、上記のいずれかのタイプを選択します。これらのタイプは常にドロップダウンリストの上部に表示されます。変数には「 $var1 」などのデフォルト名が割り当てられており、特定のアノテーションや属性には関連付けられていません。</block>
-  <block id="a4c3a7ac62e94db73aa3468c76c054c3" category="paragraph">汎用的な変数を設定すると、ウィジェットでその変数を使用して、そのタイプのすべてのフィールドをフィルタできます。たとえば、名前、エイリアス、ベンダー（すべてテキストタイプの属性）を表示する表ウィジェットがあり、「 $var1 」はテキストタイプの変数である場合、ウィジェットの各フィールドに $var1 変数を使用するようにフィルタを設定できます。他のウィジェットでも、テキストフィールドに $var1 を使用するように設定できます。</block>
-  <block id="207107972aa0b5063ce2f5fcf94a7ed3" category="paragraph">ダッシュボードページで、ある値（「 NetApp 」など）に $var1 を設定すると、その変数を使用するように設定されているすべてのウィジェットでこれらのフィールドがすべてフィルタされます。これにより、ダッシュボードで選択したデータを複数のウィジェットで一度に更新できます。</block>
-  <block id="5b94a19d50421298c62c68fb4cee8587" category="paragraph">汎用的な変数はその型のどのフィールドでも使用できるので、その機能を変更することなく汎用的な変数の名前を変更できます。</block>
-  <block id="df65b5248463dd22b65415741848f510" category="paragraph">注：すべての変数は「汎用」変数として扱われます。これは、特定の属性用に作成した変数でも同様です。これは、あるタイプの属性やアノテーションのフィルタを設定すると、そのタイプの設定済み変数がすべて表示されるためです。ただし、汎用的な変数は、上記の Name / Alias / Vendor など、複数のフィールドにわたって 1 つの値をフィルタリングする場合に作成することを推奨します。</block>
   <block id="2a46cb9b02abf484df12b645f3880ef6" category="section-title">変数の命名規則</block>
   <block id="5ea93eebddf3c0fcbea8b0186b4a73e6" category="paragraph">変数名：</block>
-  <block id="994981e153145ccccd72dd6a9297b9a2" category="list-text">先頭に必ず「 $ 」を付けます。これは、変数を設定するときに自動的に追加されます。</block>
-  <block id="11ffd765b1caf4a268b6bbd4bf3a25ec" category="list-text">特殊文字は使用できません。使用できるのは、 a~z のアルファベットと 0~9 の数字のみです。</block>
-  <block id="6d63d94cb2c39d43ab504adb5d661641" category="list-text">$ 記号を含め、 20 文字以下にする必要があります。</block>
   <block id="b21821f6ffb5a74109c6957fe4b62012" category="list-text">大文字と小文字が区別されます。 $CityName と $cityname は変数によって異なります。</block>
   <block id="2c197f6fb840731a100668adaf2fc960" category="list-text">既存の変数名と同じにすることはできません。</block>
-  <block id="7f8113c3f27eef2d507d4754d88bff62" category="list-text">$ 記号だけにすることはできません。</block>
-  <block id="3e9ad59672c6fdc3c31f6a3acd26eda6" category="section-title">変数を使用するウィジェット</block>
-  <block id="4e51509ff81e7fbaba8e43ddab304674" category="paragraph">変数は次のウィジェットで使用できます。</block>
-  <block id="4df3132c4492fa73c3a9e7289b4d8894" category="list-text">エリアチャート</block>
-  <block id="d00d3123db60d6cd9b71dc08d6c750bb" category="list-text">棒グラフ</block>
-  <block id="2d20bca6ce43e885b8204caed409c41d" category="list-text">ボックスプロットグラフ（ Box Plot Chart ）</block>
-  <block id="16bdf88c6b4485864755c6e60efd6308" category="list-text">折れ線グラフ</block>
-  <block id="77d4f55856ddeed8776dafc61cc248d3" category="list-text">散布図</block>
-  <block id="2223e156e1f4f71719c45d2462587f2d" category="list-text">単一値ウィジェット</block>
-  <block id="da5e7f71824d77bfa0ba1af04b87e67e" category="list-text">スプライングラフ（ Spline Chart ）</block>
-  <block id="ca2feae3b53b34a151b6041d9137823a" category="list-text">積み上げ面グラフ</block>
   <block id="a4e887565916ef8ad7cb90f7d4f3cd3c" category="list-text">表ウィジェット</block>
   <block id="6199bdbb3abd6dbb11893dc878ea2a32" category="list-text">円グラフ</block>
-  <block id="b68c1fe5a27f38fb20ddc4da37a38d8a" category="section-title">「 $this 」変数の概要</block>
-  <block id="61a03d699d269269a0e08ae01e3fae79" category="paragraph">アセットのランディングページにある特別な変数を使用すると、現在のアセットに直接関連付けられている追加情報を簡単に表示できます。これらの特殊な変数には「 $this 」で始まる名前が付けられます。</block>
-  <block id="cbca4591efd074dfc155a2ad71a8a831" category="list-text">アセットのランディングページのウィジェットで「 $this 」変数を使用するタスクについて、次の手順を実行します。この例では、 * 表ウィジェット * を追加します。</block>
-  <block id="1cd4cfbaba5e2e0e8ed83abcda708d41" category="admonition">「 $this 」変数は、アセットのランディングページでのみ有効です。他のダッシュボードでは使用できません。使用可能な「 $this 」変数は、アセットのタイプによって異なります。</block>
-  <block id="661b1a00e3e60c1ebb6bc641a5c968fd" category="list-text">選択したアセットのランディングページに移動します。この例では、仮想マシン（ VM ）のアセットページを選択します。クエリまたは検索を使用して VM を選択し、リンクをクリックしてその VM のアセットページに移動します。</block>
-  <block id="5571452d3f537a989eeada4d5a86222e" category="paragraph">VM のアセットページが開きます。</block>
-  <block id="ac48cb14d0958e35ace8e1673192a641" category="list-text">* 編集 * をクリックして編集モードに切り替え、 * ウィジェットを追加 * ボタンをクリックします。「 * 表 * 」ウィジェットを選択します。</block>
-  <block id="6ec1440a72a5413b5e235906cf4c492b" category="paragraph">編集用の表ウィジェットが開きます。デフォルトでは、すべてのストレージが表に表示されます。</block>
-  <block id="19799aded35256016f2b50fee428edde" category="list-text">すべての仮想マシンを表示します。アセットセレクタをクリックし、 _Storage_To] Virtual Machine _ を変更します。</block>
-  <block id="030195d80d5aa4527341979ec813de51" category="paragraph">これで、すべての仮想マシンが表に表示されます。</block>
-  <block id="15e69887123587d39cf387d32617932f" category="list-text">歯車ボタンをクリックし、 _HypervisorName_column をテーブルに追加します。</block>
-  <block id="aae1b2659903fc2036a9b32890b6329e" category="paragraph">表内の VM ごとにハイパーバイザー名が表示されます。</block>
-  <block id="224d363db76b5a466dcaa47cb7919c38" category="list-text">現在の VM をホストしているハイパーバイザーだけを表示します。[* Filter by * field's * +*] ボタンをクリックし、 [_Hypervisor Name_] を選択します。</block>
-  <block id="eb0ae7019f720939def9faa09a17daf0" category="list-text">_any_ をクリックし、 * $this.host.name * 変数を選択します。Enter キーを押すか、フィールドをクリックしてフィルタを適用します。</block>
-  <block id="7b7aaa5c351cef12d57dc18eb2e40225" category="paragraph">表に、現在の VM のハイパーバイザーがホストしているすべての VM が表示されます。</block>
-  <block id="5364f9840cc543b63c9dc7499783e473" category="list-text">保存 * をクリックしてウィジェットを保存します。</block>
-  <block id="8f2c70b0c35aa460a15da0146b97c99c" category="list-text">保存 * をクリックして、アセットページを保存します。</block>
-  <block id="727d6fcab174741a470cfcd341264440" category="paragraph">表示するすべての VM アセットページの、この VM アセットページ用に作成した表が表示されます。ウィジェットで _$this.host.name 変数を使用すると、現在のアセットの _hypervisor によって所有されている VM のみが表に表示されます。</block>
-  <block id="d707ceb2c4d776ccbc82707547a477c0" category="inline-link-macro">* コンテキスト内フィルタ *</block>
-  <block id="978af4812d3391f8407a59f4ca09e7f7" category="paragraph">適用することもできます <block ref="21751e7952e698c76a33595fbfd671e2" category="inline-link-macro-rx"></block> 同じような結果を得るためのアセットページウィジェット。</block>
   <block id="5f49d04559b317e0624673bd522e624e" category="section-title">ゲージウィジェットの書式設定</block>
   <block id="584265e9d9c83bd9cb0ea49fb162f99e" category="paragraph">固体および箇条書きウィジェットでは、 _Warning_ および / または _Critical_Levels のしきい値を設定し、指定したデータを明確に表現できます。</block>
   <block id="aefa521a4da54fd91cef4af086fa3b43" category="inline-image-macro">ゲージウィジェットのフォーマット設定</block>
@@ -7916,10 +7810,24 @@
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">フィルタを調整しています</block>
   <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">フィルタ処理中に、入力を開始すると、現在のテキストに基づいて * ワイルドカードフィルタ * を作成するオプションが表示されます。このオプションを選択すると、ワイルドカード式に一致するすべての結果が返されます。また、 NOT または OR を使用して *expressions * を作成することもできます。また、「 None 」オプションを選択して、フィールドで null 値をフィルタリングすることもできます。</block>
   <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4ae5f63a46f8664d39fdcb2649f7245b" category="paragraph">時系列ウィジェット（折れ線、スプライン、面、積み上げ面）では、凡例にカーソルを合わせるとグラフ内の関連データが強調表示されます。逆に、グラフのデータポイントにカーソルを合わせると、対応する凡例が強調表示されます。データポイントをクリックすると、オブジェクトのランディングページが開きます。</block>
-  <block id="d2417309d3dbd441b2c0ae2ec69ead52" category="inline-image-macro">凡例のハイライト</block>
-  <block id="a577a8b01a7c0914557ded1aca9ce084" category="paragraph"><block ref="a577a8b01a7c0914557ded1aca9ce084" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4bc6c1367385625a07de47bbcf13d08b" category="inline-image-macro">利用可能なウィジェット</block>
-  <block id="d913272d1d72d646f584c46e2f98e40c" category="paragraph"><block ref="d913272d1d72d646f584c46e2f98e40c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c867c0e90aa97c787b5fd4550b6154b5" category="list-text">* アラート・テーブル * ：過去 1 、 000 件のパフォーマンス・アラートを表示します。</block>
+  <block id="55f6611cb342565cf0f5002400f53a95" category="inline-link-macro">アノテーション</block>
+  <block id="bdc4d24d590d2c4f74d28cf65664af3f" category="list-text">* 注釈 * ：事前定義されたを使用します <block ref="bb75b560e5c64cb7dd473c74ae53e8f0" category="inline-link-macro-rx"></block> ウィジェットデータをフィルタリングします。</block>
+  <block id="23b7f3c5f273dff8dfc28b1d3d393075" category="list-text">* Text * ：英数字の文字列。</block>
+  <block id="e77ea662dc2d45a324194dca8b908bc3" category="list-text">* 数値 * ：数値。ウィジェットフィールドに応じて、単独で使用することも、「 From 」または「 To 」値として使用することもできます。</block>
+  <block id="087c14b96c9dccdfb944c17d359d937d" category="list-text">* Boolean * ： True / False 、 Yes / No などの値を持つフィールドに使用します。ブール変数の場合、選択肢は Yes 、 No 、 None 、 Any です。</block>
+  <block id="e8d8c9065d231417a82d017542ad50f6" category="list-text">* 日付 *: 日付値。ウィジェットフィールドに応じて、単独で使用することも、「 From 」または「 To 」値として使用することもできます。</block>
+  <block id="53cc3f1a4b0d0e434a93a7372b931ac6" category="inline-image-macro">変数の型</block>
+  <block id="916ee1d24159df2a85679ef0774f9828" category="paragraph"><block ref="916ee1d24159df2a85679ef0774f9828" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f4aa78e28bef68e621211c255de6e97" category="section-title">変数フィルタスコープ（ Variable Filter Scope ）</block>
+  <block id="38f9fe234760a4b03b85217374ec1bd5" category="paragraph">デフォルトでは、アノテーション変数をダッシュボードに追加すると、その変数がダッシュボードの _ALL_widgets に適用されます。つまり、ダッシュボードのすべてのウィジェットで、変数に設定した値に基づいてフィルタされた結果が表示されます。</block>
+  <block id="d0365c2d28a2b320782a5d2554e29461" category="inline-image-macro">自動フィルタ（ Automatic Filter ）</block>
+  <block id="d57164545a0388f20a8a7c16b4a505ee" category="paragraph"><block ref="d57164545a0388f20a8a7c16b4a505ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9a364b2beeb2d73119727d97ad842f0" category="paragraph">このような変数を使用して自動的にフィルタ処理できるのは、 _Text_ 、 _Boolean_ 、または _List_ タイプのアノテーションだけです。_ 数値や日付などのテキスト以外の Annotation_types は自動的にフィルタリングできません。また、 Annotation_variables （数値、日付、ブール）を使用することもできません。個々のウィジェットで、これらのタイプの変数を使用するように設定する必要があります。</block>
+  <block id="501d7d63535eac3f0b04a86a5c59a0fc" category="paragraph">自動フィルタを無効環境にして、特に設定したウィジェットのみをアノテートアイテム変数に表示するには、「自動的にフィルター」スライダーをクリックして無効にします。</block>
+  <block id="2e0d68aed2d95c1e5370cf57c66cdd6f" category="paragraph">個々のウィジェットでアノテーションタイプ変数を設定するには、ウィジェットを編集モードで開き、 _Filter By_Field で特定のアノテーションを選択します。アノテーション変数では、特定の値を 1 つ以上選択するか、変数名（先頭の「 $ 」で示されます）を選択することで、ダッシュボードレベルで変数を入力できます。変数を設定したウィジェットでのみ、フィルタされた結果が表示されます。</block>
+  <block id="db9429945479bdf8469ebfb0e45edfa4" category="paragraph">非アノテーション変数（数値、日付、ブーリアン）を同じように使用するようにウィジェットを設定できます。</block>
+  <block id="ede4219a6b2ff39b8d02b4bc0d9c4c21" category="list-text">特殊文字は使用できません。使用できる文字は a ~ z 、数字の 0 ~ 9 、ピリオド（ . ）、アンダースコア（ _ ）のみです。</block>
+  <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">20 文字以下にする必要があります。</block>
+  <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">空にすることはできません。</block>
+  <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* Violations Table * ：パフォーマンスポリシー違反の最新 1 、 000 件までが表示されます。</block>
 </blocks>
