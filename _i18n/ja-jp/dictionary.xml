@@ -289,25 +289,11 @@
   <block id="de4c464655d04aaaf8358ee2427b5c78" category="section-title">アノテーションルールではクエリが必要です</block>
   <block id="d33900b640b6dc7fb413a869f6adf259" category="inline-link-macro">アノテーションルール</block>
   <block id="aa74838358ad534ab462a543660f57a1" category="paragraph">を設定する場合 <block ref="e4c310fb06df0298e7dcaf91dedea80b" category="inline-link-macro-rx"></block>を使用するには、各ルールに基礎となるクエリが必要です。しかし、前述のように、クエリは必要に応じて広範囲に、または限定されています。</block>
-  <block id="bd91833aa08bef28116bc52ab85a2506" category="summary">アセットページの概要 Viol 、 Cloud Insights の「 ations 」セクション。</block>
-  <block id="8fda921bae205bad5b2528481307b9ca" category="doc">Asset Page Violations セクション</block>
-  <block id="ad71df612f01d2fa298b11355ac61129" category="paragraph">アセットに割り当てたパフォーマンスポリシーに対する違反が環境で見つかった場合、アセットページの Violations セクションを使用して違反を確認できます。パフォーマンスポリシーを使用してしきい値を監視すると、しきい値の違反をすぐに検出して予想される影響を特定し、問題の影響やルート原因を分析できるため、迅速かつ効率的に対処することが可能です。</block>
-  <block id="6d747b8fe76b5337827499a25f44de7e" category="paragraph">次の例は、ハイパーバイザーのアセットページに表示される Violations セクションを示しています。</block>
-  <block id="c8cc6df17ed27643764686d0fd42c510" category="inline-image-macro">Violation Table ( 違反テーブル</block>
-  <block id="fdf948c7fc1d9ae4d7ab0e763a95f951" category="paragraph"><block ref="fdf948c7fc1d9ae4d7ab0e763a95f951" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="921a7ab277b185dfdbb44095b69dd0ca" category="paragraph">Violations セクションでは、アセットに割り当てたパフォーマンスポリシーの結果としてネットワークで発生したすべての違反を表示し、管理することができます。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="f091c93ef2139cac2a83b2cebb156538" category="list-text">次のいずれかの方法でアセットページを検索します。</block>
   <block id="9c87453c8b019bb5636f35716c021e8b" category="list-text">検索領域にアセットの名前を入力し、リストからアセットを選択します。</block>
   <block id="a8a0c96234cbba0b8bdeffb59fc574c7" category="list-text">ダッシュボードウィジェットで、アセットの名前をクリックします。</block>
   <block id="4282e47440b4205380b1c7e1a0f9339c" category="list-text">一連のアセットを照会し、結果リストからオンを選択します。</block>
-  <block id="3a83a6a82307e97766028118b213d323" category="paragraph">アセットページが表示されます。Violations セクションには、違反が発生した時刻と、超過したしきい値の概要、および違反が発生したアセットへのハイパーリンクが表示されます（例： "2 violations for DS-30 with Latency - Total &gt; 50" ）。</block>
-  <block id="c7ddf06e868b25fc2b18247a71454cba" category="paragraph">次のオプションのタスクを実行できます。</block>
-  <block id="354999bf68febd17777b179dcec161c0" category="list-text">フィルタボックスを使用して、特定の違反のみを表示します。</block>
-  <block id="7449a21652b7bb35d95bc6d5c994614d" category="list-text">列見出しで矢印をクリックすると、表内の列のソート順序を昇順（上矢印）または降順（下矢印）に変更できます。</block>
-  <block id="fe36ec2498138eb53b520605aca3a51f" category="list-text">概要でアセット名をクリックすると、そのアセットページが表示されます。赤い丸は詳しい調査が必要な問題を示しています。</block>
-  <block id="cac2506fc11b4a155ac8f0dc35342e04" category="list-text">パフォーマンスポリシーをクリックすると、ポリシーの編集ダイアログボックスが表示されます。このダイアログボックスで、パフォーマンスポリシーを確認し、必要に応じて変更を加えることができます。</block>
-  <block id="77f68220e3dfca43391d0989463b0e93" category="paragraph">原因が問題に関連しないと判断した場合は、右側の [Three dots] メニューをクリックし、 [Dismiss Violation] を選択して違反をリストから削除します。</block>
   <block id="cfbf1d79d6b8c6542bc0c846048611fc" category="summary">ストレージサービスの日々の管理には、 Storage Manager のダッシュボードを使用できます。</block>
   <block id="662f8024f59fc1c2dd8a5286eea38232" category="doc">Storage Manager のダッシュボード</block>
   <block id="d74252d9dcf59266ed739f9e49821535" category="paragraph">Storage Manager Dashboard では、一定期間のリソース使用量をまとめて表示し、許容範囲および過去何日間かのアクティビティと比較することができます。ストレージサービスの主要なパフォーマンス指標だけが表示されるため、データセンターの管理方法についての決定を下すことができます。</block>
@@ -1666,35 +1652,6 @@
   <block id="ea4f37cdc61f22bab06bd53f38731b48" category="paragraph">関連：<block ref="9606d230686b3a54ef0c843c6a8d06ee" category="inline-link-macro-rx"></block>
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
-  <block id="135b10654d54349e84b06ece50e6ac40" category="summary">パフォーマンスポリシーを作成しています。</block>
-  <block id="fa5d0adc230f2993896f54d4fefc4c45" category="doc">パフォーマンスポリシーを使用してリソースを監視する方法</block>
-  <block id="27534223a667947df92565c82686f0ee" category="paragraph">パフォーマンスポリシーを作成して、ネットワーク内のリソースに関連する問題についてユーザに通知するアラートをトリガーするしきい値を設定します。</block>
-  <block id="7d9a2e16261da5f156def3158056b5f7" category="paragraph">たとえば、パフォーマンスポリシーを作成して、ストレージプールで使用されている合計容量が 60GB を超えたときにアラートを受け取ることができます。</block>
-  <block id="8509668c67befd4280c0d11e3b4be035" category="section-title">パフォーマンスポリシーを作成する</block>
-  <block id="cb3350cd44f8b08ef803c74e42096afd" category="paragraph">次の手順では、 Tier 1 データストアの使用容量が 600GB を超えた場合にアラートを送信するパフォーマンスポリシーを作成する方法について説明します。</block>
-  <block id="1801a6e2cc067796473e110fb73aa038" category="list-text">Cloud Insights を開きます</block>
-  <block id="7bae9a6d997e2c73d756fcba3886c5bf" category="list-text">[ * 管理 ] 、 [ パフォーマンスポリシー * ] の順にクリックします</block>
-  <block id="09cbd36e7743263072ed95a33085a006" category="paragraph">ポリシーはオブジェクト別に表示され、各オブジェクトのリストに表示されている順序で評価されます。</block>
-  <block id="766f8b141ab2409fe5fe34a73cc35a6a" category="list-text">[* + Performance Policy] をクリックします。</block>
-  <block id="99e1f68a35ad50194d068a464d2bbe10" category="list-text">ポリシー名を追加します</block>
-  <block id="9180b19202c7b40689c340edd8a3441c" category="list-text">オブジェクトタイプ（データストア）の追加</block>
-  <block id="583a88bd127efc654eea6eee48ed5765" category="list-text">アノテーション「 Tier 」と入力します</block>
-  <block id="4cf8d69efbc77c74eeb10fa7f8dd26d0" category="list-text">アノテーション値 = 階層 1</block>
-  <block id="1c404d5a2fe7aefe3672947f2dab3769" category="list-text">ウィンドウ = 最初のオカレンスの後に適用します</block>
-  <block id="cbac9c9b235dc322db1fd6342d3e767d" category="list-text">重大度 = 警告の場合</block>
-  <block id="c928183b74da0d0cc99593eca2fdc4bc" category="list-text">E メール受信者には、グローバルリストを使用することも、各ポリシーの特定のリストを使用することもできます</block>
-  <block id="4f5b46b0408ad975f90dab775ffe33da" category="list-text">しきい値を作成します。 Capacity Used &gt; 600 GB</block>
-  <block id="bbd672ddf9d28cd54c6d90809642e63d" category="list-text">最初のアラートのあとに処理を停止するようにポリシーを設定するには、このチェックボックスをオンにします。</block>
-  <block id="2c83c2dac11bf1b6d37b1aafc3b401f6" category="section-title">パフォーマンスポリシーの違反を監視する</block>
-  <block id="dbc5d498f08d8392d1699654ed4244cf" category="paragraph">パフォーマンスポリシー違反は、 Violations Dashboard を使用して表示できます。ダッシュボードには、ネットワークで発生したすべての違反が表示されるため、対処が必要な問題を簡単に特定できます。</block>
-  <block id="72fae61d5989f9eadb86d5603056f061" category="paragraph">ダッシュボード（ Dashboard ） &gt; 違反（ Violation ） * をクリックし、違反ダッシュボード（ Violations Dashboard ）にアクセスします。</block>
-  <block id="ae1f9c4a351a509685b823ffec1609bd" category="paragraph">違反をデバイス、ポリシー名、日付、時刻、重大度でフィルタリングできます。 など。</block>
-  <block id="a878a7beb1ce27488b30aa54e4e1f06b" category="paragraph">Time 列をクリックして、に移動します</block>
-  <block id="9fad82e12274e34d266e50f39e581ea5" category="paragraph">違反 ID または概要フィールドでハイライト表示されているデバイスをクリックすると、違反を生成したデバイスのアセットページが開きます。</block>
-  <block id="0ce9f9488093bc957d093f2f9e61c266" category="paragraph">アセットページの違反セクションには、アセットについて発生したすべての違反が表示されます。エキスパートビューで指標を選択すると、違反を視覚的に確認できます。</block>
-  <block id="fa12d87c7b14fa6b94621f7d49264e5c" category="section-title">違反の通知</block>
-  <block id="a46f10d244d8514729533dbbf3dfce39" category="paragraph">ポリシー違反が発生した場合に E メール通知を送信するようにパフォーマンスポリシーを設定できます。</block>
-  <block id="4ee1bca872bfdc5903f88ba3ca76e8ee" category="paragraph">グローバル E メールリストに受信者を追加するには、 [*Admin] &gt; [Notifications] の順にクリックし、受信者の E メールアドレスをカンマで区切って入力します。パフォーマンスポリシーのしきい値違反のアラートとして送信される E メールは、リスト内のすべての受信者に送信されます。ポリシーを設定するときに、特定のポリシーのグローバルリストを無効にすることができます。</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Cloud Insights で利用できる新機能と特徴。</block>
   <block id="9dbaba9eaf242fb8457fed4378ce0f93" category="doc">Cloud Insights の新機能</block>
   <block id="9cd1885267b8b63d53217c5f31b579c9" category="paragraph">ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、 Cloud Insights で利用できる最新の機能をいくつか紹介します。</block>
@@ -2801,14 +2758,6 @@
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">監視を作成して、ネットワーク内のリソースに関連する問題についてユーザに通知するアラートをトリガーするしきい値を設定します。たとえば、多数のプロトコルのいずれかに対して _node write latency _ に対してアラートを送信するモニタを作成できます。</block>
   <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">モニタとアラートは、 Cloud Insights Standard Edition 以降で使用できます。</block>
   <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">監視対象のしきい値と条件に達したとき、またはしきい値を超えたときに、 Cloud Insights はアラートを作成します。モニタには、 _Warning_threshold 、 a_Critical_threshold 、またはその両方を指定できます。</block>
-  <block id="daf2ae82a570eced51f8f73820e73147" category="section-title">監視とパフォーマンスポリシー</block>
-  <block id="3120b3f5d3d461cb4b516e3283b5da80" category="paragraph">パフォーマンスポリシー * と * モニター * の違いは何ですか？</block>
-  <block id="2eb71833d40e5fd7b36e97f5c508ed43" category="paragraph">_Policies _ では、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトにしきい値を設定できます。これらのポリシーは、しきい値に達したときや超えたときに違反をトリガーします。トラブルシューティングについては、違反ごとに調査できます。ポリシーの詳細については、このセクションの他の部分で説明します <block ref="1b8a477724c4aa8032c899801a449415" category="inline-link-macro-rx"></block>。</block>
-  <block id="a29bb98e7f56cb7027f1c0b83e6f1432" category="paragraph">_ モニタ _ は、 Kubernetes 、 ONTAP 高度なメトリックス、 Telegraf プラグイン用に収集されたデータや、しきい値を超えたときにアラートを生成するデータなど、「統合」データに類似した機能を提供します。モニタでは、警告レベルまたは重大レベルのアラートのしきい値、またはその両方を設定できます。</block>
-  <block id="c7ffad00052b6516b8fc92f115a99ed0" category="paragraph">ポリシーとモニターは、 * 警告 * メニューで使用できます。</block>
-  <block id="d5d7f126c02377e0f706721f4bd892ee" category="inline-image-macro">アラートメニュー</block>
-  <block id="8bb1844f03db65b530c4e2d3befad827" category="paragraph"><block ref="8bb1844f03db65b530c4e2d3befad827" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4f7079ad7309563ea299783e4ee80367" category="paragraph">ポリシーまたはモニタがトリガされたときに電子メールを送信できます。</block>
   <block id="839c283c68f2ef98e768a7975afd5e37" category="section-title">モニタの作成</block>
   <block id="dfbbb6ad7733d63b680f9238f7dce10b" category="paragraph">次の例では、 _Volume Node NFS Write Latency _reaches or exceeds 200ms 、および 400ms に達したか超えると Critical アラートを通知する監視を作成します。いずれかのしきい値を 15 分以上連続して超えた場合にのみ、アラートを表示する必要があります。</block>
   <block id="41072a21a5aa3d5e2d1c4423269fe77e" category="list-text">統合データを収集し、そのデータを収集するように Cloud Insights を設定する必要があります。</block>
@@ -2882,33 +2831,10 @@
   <block id="6590f621515d064417bb91bd8f6cb526" category="cell">Nutanix コンテナ</block>
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP ポート要件： 9440</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">アレイへの接続に使用する TCP ポート。デフォルトは 9440. です。</block>
-  <block id="ccbe8f0e2c53dd2f40016660abdce59d" category="summary">しきい値を設定するパフォーマンスポリシーを作成</block>
-  <block id="f8b44fb58e818cf177e7bb909954758a" category="doc">パフォーマンスポリシーによるアラート生成</block>
-  <block id="edb1bea2a7d7facba265387def9ca60b" category="paragraph">パフォーマンスポリシーを作成して、ネットワーク内のリソースに関連する問題についてユーザに通知するアラートをトリガーするしきい値を設定します。たとえば、ストレージプールの合計使用率が 60% を超えたときにアラートをトリガーするパフォーマンスポリシーを作成できます。</block>
-  <block id="54b593b3ae2f24acf66e33cef682f4cf" category="paragraph">次のオブジェクトのパフォーマンスポリシーを作成できます。</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="cell">ハイパーバイザー</block>
-  <block id="0b7e67b6cdcf0432b624d53588d520fb" category="cell">SVM</block>
   <block id="583a65df9db4119165f5ea0abaa50281" category="cell">VM</block>
-  <block id="bb23dde3c021f8b596c4577dd0f915f2" category="paragraph">監視しているオブジェクトに関連する指標のしきい値を設定したパフォーマンスポリシーを作成できます。デフォルトでは、パフォーマンスポリシーは作成時に指定したタイプのすべてのオブジェクトに適用されます。特定のアセットまたは一連のアセットのみをパフォーマンスポリシーに含める場合は、アノテーションを作成します。</block>
   <block id="46eff80b72ed7bce5ea093f9ee782eb6" category="paragraph">パフォーマンスポリシーでアノテーションを使用する場合、ポリシーを作成する前にアノテーションが存在している必要があります。</block>
-  <block id="9cb11562d8852cb48b6f28ab5cca2689" category="paragraph">監視している 1 つ以上のデバイスが設定したしきい値を超えたときに通知するパフォーマンスポリシーを作成します。システムに、要件を満たすグローバルポリシーがすでに含まれている場合や、アノテーションを使用したポリシーがデバイスにアノテーションを適用した場合でも機能する可能性があります。</block>
-  <block id="56ed60eef1732d1ee9b0df6dd72dab04" category="list-text">Cloud Insights メニューバーで、 * Manage &gt; Performance Policies * をクリックします</block>
-  <block id="b96d9e515d75802c7e709b920c765e64" category="paragraph">パフォーマンスポリシーページが表示されます。ポリシーはオブジェクト別に表示され、リストに表示されている順序で評価されます。</block>
-  <block id="f2053288ebaaea4b9ebd30f33cd6f093" category="list-text">パフォーマンスポリシーページで、 * + パフォーマンスポリシー * をクリックします</block>
-  <block id="5364c135d98473f7e31d836ca68bfd5f" category="paragraph">[ * ポリシーの追加 * ] ダイアログが表示されます。</block>
-  <block id="c08cad54d9fd5d18f9e28df74b4bdffd" category="list-text">［ * ポリシー名 * ］ フィールドに、ポリシーの名前を入力します。</block>
-  <block id="9ce1bdc850f140bda47d25c3260186e1" category="paragraph">オブジェクトのすべてのポリシー名で一意の名前を使用する必要があります。たとえば、内部ボリュームの「 Latency 」という名前の 2 つのポリシーを使用することはできませんが、内部ボリュームの「 Latency 」ポリシーと別のボリュームの「 Latency 」ポリシーを使用できます。ベストプラクティスとしては、オブジェクトタイプに関係なく、すべてのポリシーに一意の名前を常に使用することを推奨します。</block>
-  <block id="d91e7060e626c0719b4d5d00921de6ae" category="list-text">[ タイプ * のオブジェクトに適用（ Apply to Objects of Type * of type ） ] リストから、ポリシーが適用されるオブジェクトのタイプを選択する。</block>
-  <block id="fde455d6f5d676a4198fb0711c427475" category="paragraph">仮想マシン * を選択します。</block>
-  <block id="ce19d48c59e27dd929fc20af51d5c449" category="list-text">必要に応じて、 * とアノテーションリスト * からアノテーションタイプを選択し、 * アノテーション値 * ボックスにアノテーションの値を入力して、そのアノテーションが設定されたオブジェクトのみにポリシーを適用します。</block>
-  <block id="798ef89131c0c0c5b9403d4ba4ded92d" category="list-text">「 * Apply after a Window of * 」から、しきい値違反を示すアラートを生成するタイミングを選択します。</block>
-  <block id="4c55416d2b1a2a42fc6580a2a71cad34" category="paragraph">* 最初の発生 * しきい値を初めて超えたときにアラートをトリガーします。それ以外のオプションでは、しきい値を超えたあと、その状態のまま一定の時間を経過した時点でアラートがトリガーされます。</block>
-  <block id="92837519a20badfd9eccc766a262ccb5" category="list-text">[* with severity*] リストから、違反の重大度を選択します。</block>
   <block id="f3717fe39c26695a39a817b7e21f0c5b" category="paragraph">デフォルトでは、ポリシー違反に関する E メールアラートはグローバル E メールリストの受信者に送信されます。この設定を上書きして、特定のポリシーのアラートを特定の受信者に送信するように設定することができます。</block>
-  <block id="15c517f5d9d6d296f61dc7076b5c5640" category="list-text">Create alert if * セクションで、パフォーマンスカウンタとオペレータを選択し、値を入力してしきい値を作成します。</block>
-  <block id="40fbe6fbcfd2ffd70cdb2127f2f56493" category="paragraph">[* + しきい値 * ] をクリックして、ポリシーにカウンタを追加します。</block>
-  <block id="57db6d7559217a12ee8b05710fa3fecd" category="list-text">[ 保存（ Save ） ] をクリックして、新しいポリシーを保存します。</block>
-  <block id="a4fa46c40b23ef5f9492948fbf19f3b2" category="list-text">特定のアセットタイプに複数のポリシーがある場合は、ポリシーが評価される順序を変更できます。[ 編集 ] メニューを使用して、ポリシーの順序を変更します。</block>
   <block id="7e59305c585ffd6c40dfc23da8c99b10" category="summary">ビジネスエンティティのアノテーションは、ビジネス階層内のアセットの監視とレポートに使用できます</block>
   <block id="feeb52be3f50cf19c972dbe8bca2b5fd" category="doc">ビジネスエンティティのアノテーション</block>
   <block id="cc5bee20a21c1239fd0c62986099a877" category="paragraph">アノテーションタイプ * Business Entity * を使用して、企業環境のビジネスエンティティを作成、管理します。</block>
@@ -4224,8 +4150,6 @@
   <block id="e111446745a1825b862f8727ae63bce4" category="cell">Redis</block>
   <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Cloud Insights のアセットページの概要セクション。</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">アセットページの概要セクション</block>
-  <block id="e021c698cb903a9473be86e3d40217ed" category="paragraph">アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は、その指標またはパフォーマンスポリシーの横に赤い丸で示されます。</block>
-  <block id="5e5349ab0436f47c66334894023a0aae" category="paragraph"><block ref="5e5349ab0436f47c66334894023a0aae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ce7951793151a0f69487b414bdd8b498" category="paragraph">注：「概要」セクションに表示される情報は、表示しているアセットのタイプによって異なります。</block>
   <block id="77e5be94869a677b15024b30a6f71dbd" category="paragraph">いずれかのアセットのリンクをクリックすると、対応するアセットページを表示できます。たとえば、ストレージノードを表示している場合、リンクをクリックすると、関連付けられているストレージのアセットページを表示できます。</block>
   <block id="74202c0b51dce91cb2d7ff8a3db7b041" category="paragraph">アセットに関連付けられている指標を表示できます。指標の横に赤い丸が表示されている場合、診断や解決を要する潜在的な問題があることを示しています。</block>
@@ -7514,8 +7438,6 @@
   <block id="cdd0e837105d3238f7da72918d54613a" category="sidebar">モニタの作成</block>
   <block id="ad9a3a2d37a9151fd99385dc40e9ceb2" category="sidebar">通知受信者の設定</block>
   <block id="566ac423e0ab287a48ae088d16840ac5" category="sidebar">API の使用</block>
-  <block id="1519699a343e5821b121d67a58c4503e" category="sidebar">パフォーマンスポリシーとアラート</block>
-  <block id="d51112e4ad231aad36a6f89c7d54cc82" category="sidebar">パフォーマンスポリシーによるアラート生成</block>
   <block id="7808e188a885339f3f8e1e464ed4c37e" category="sidebar">Webhook 通知</block>
   <block id="f828d0c542b9e35bc1e04acdf228286c" category="sidebar">環境の監視</block>
   <block id="5aed3a2004d458b540a49bfa80187d68" category="sidebar">イベントの監査</block>
@@ -7524,7 +7446,6 @@
   <block id="4fff047134fd613268df82a3fa05b4f4" category="sidebar">オブジェクトのコンテキスト内フィルタリング</block>
   <block id="e718a563ac80582f7757e3df11c40de9" category="sidebar">Summary Topology セクション</block>
   <block id="aeddd81d4219f42f5592ea31912fb399" category="sidebar">Expert View セクシヨン</block>
-  <block id="28c0eb2e204196a9941152b0f21cabec" category="sidebar">Violation セクション</block>
   <block id="ebe085ef7e29214280a16ef989f4eddd" category="sidebar">レポート概要</block>
   <block id="1d140984e8baec02fa2faf26dd665a56" category="sidebar">事前定義済みレポートの使用</block>
   <block id="037017bd3cea5d1b35bfe243f7697965" category="sidebar">レポートの例の作成</block>
@@ -7829,7 +7750,6 @@
   <block id="ede4219a6b2ff39b8d02b4bc0d9c4c21" category="list-text">特殊文字は使用できません。使用できる文字は a ~ z 、数字の 0 ~ 9 、ピリオド（ . ）、アンダースコア（ _ ）のみです。</block>
   <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">20 文字以下にする必要があります。</block>
   <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">空にすることはできません。</block>
-  <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* Violations Table * ：パフォーマンスポリシー違反の最新 1 、 000 件までが表示されます。</block>
   <block id="d802637b72ebddd27cf9b28f9f198763" category="section-title">2021年9月</block>
   <block id="a4413391e48749ff74c546db2a59ee06" category="section-title">パフォーマンスポリシーが監視対象になりました</block>
   <block id="d6db008f3336978f78907dc7439f7208" category="paragraph">監視とアラートは、 Cloud Insights 全体でパフォーマンスポリシーと違反に取って代わるものです。 <block ref="f2add95ab51f678552422c58c3cbdf54" category="inline-link-macro-rx"></block> 環境内の潜在的な問題や傾向をより柔軟に把握できます。</block>
@@ -7853,4 +7773,8 @@
   <block id="186435169ab16121eaece4afe6efd0a1" category="list-text">ストレージノードと qtree の指標で EMC Isilon が強化されました</block>
   <block id="a5a5be00af4eb57319eff500ca9e8c27" category="list-text">EMC Symetrix のボリューム QoS 制限メトリックが強化されました</block>
   <block id="6737c67be3775177035b7486a3285000" category="list-text">ストレージノードの親シリアル番号を持つ強化された IBM SVC および EMC PowerStore</block>
+  <block id="de1246f2ba95371b711d65f46fa80725" category="paragraph">監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトや、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集された統合データなどの「インフラ」オブジェクトにしきい値を設定できます。しきい値を超えたときにアラートを監視し、警告レベルのアラート、重大レベルのアラート、またはその両方のしきい値を設定できます。</block>
+  <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は赤い丸で示されます。</block>
+  <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* アラート・テーブル * ：最新の 1 、 000 件のアラートを表示します。</block>
 </blocks>

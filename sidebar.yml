@@ -118,14 +118,6 @@ entries:
     url: "/concept_notifications_email.html"
 - title: API の使用
   url: "/API_Overview.html"
-- title: パフォーマンスポリシーとアラート
-  entries:
-  - title: パフォーマンスポリシーによるアラート生成
-    url: "/task_create_monitor.html"
-  - title: アラートの表示と管理
-    url: "/task_view_and_manage_alerts.html"
-  - title: 通知受信者の設定
-    url: "/concept_notifications_email.html"
 - title: Webhook 通知
   url: "/task_create_webhook.html"
 - title: 環境の監視
@@ -148,8 +140,6 @@ entries:
     url: "/concept_asset_user_data_section.html"
   - title: 関連アラートセクション
     url: "/concept_asset_alerts_section.html"
-  - title: Violation セクション
-    url: "/concept_asset_violation_section.html"
   - title: 資産を検索するためのヒントとヒント
     url: "/concept_searching_assets.html"
 - title: レポート作成
