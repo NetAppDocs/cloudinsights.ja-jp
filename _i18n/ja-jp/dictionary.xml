@@ -7830,4 +7830,27 @@
   <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">20 文字以下にする必要があります。</block>
   <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">空にすることはできません。</block>
   <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* Violations Table * ：パフォーマンスポリシー違反の最新 1 、 000 件までが表示されます。</block>
+  <block id="d802637b72ebddd27cf9b28f9f198763" category="section-title">2021年9月</block>
+  <block id="a4413391e48749ff74c546db2a59ee06" category="section-title">パフォーマンスポリシーが監視対象になりました</block>
+  <block id="d6db008f3336978f78907dc7439f7208" category="paragraph">監視とアラートは、 Cloud Insights 全体でパフォーマンスポリシーと違反に取って代わるものです。 <block ref="f2add95ab51f678552422c58c3cbdf54" category="inline-link-macro-rx"></block> 環境内の潜在的な問題や傾向をより柔軟に把握できます。</block>
+  <block id="f9e43a06d9912e66c01c1f17da3e7a74" category="section-title">モニタでのオートコンプリートの推奨事項、ワイルドカード、および式</block>
+  <block id="da1a0b10456bcebce92fc1c5743ec214" category="paragraph">アラートを監視するモニタを作成する際に、フィルタを入力すると予測が可能になり、モニタのメトリックや属性を簡単に検索して見つけることができます。また、入力したテキストに基づいてワイルドカードフィルタを作成することもできます。</block>
+  <block id="753f7c002bb4e46625d621a4771782f7" category="inline-image-macro">モニターのタイプアヘッドフィルター</block>
+  <block id="27bc8135f4ef84225ffdbb7a8cdaac6c" category="paragraph"><block ref="27bc8135f4ef84225ffdbb7a8cdaac6c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59495c5ad12d3e6fde7e57fa29f02978" category="paragraph">テレグラム統合データの取り込みのためのエージェントがバージョン * 1.19.3* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</block>
+  <block id="1f2d992e8780d587b579686194b5cd02" category="section-title">Data Collector のサポート</block>
+  <block id="8e6d421edf87c8de878155646b3c16a3" category="paragraph">Cloud Insights データコレクタにいくつかの改善を加えました。主な特長は次のとおりです。</block>
+  <block id="2061dec3bfaa38c2bcac9db25f15a705" category="list-text">Microsoft Hyper-V コレクタで、 WMI ではなく PowerShell が使用されるようになりました</block>
+  <block id="908ad574c2d5532ffa8271534573ed97" category="list-text">並行呼び出しのため、 Azure VM と VHD コレクタの処理速度が最大 10 倍になりました</block>
+  <block id="345ccae122d8e69d40277935daf9828a" category="list-text">HPE Nimble は、フェデレーテッド構成と iSCSI 構成をサポートしています</block>
+  <block id="4c54dac2c664d1c686c5ceedbd6db99d" category="paragraph">また、常にデータ収集を改善しているため、次のような最近の変更点があります。</block>
+  <block id="59ca380cb570f5dd9004cd3c2ca9cd74" category="list-text">EMC Powerstore の新しいコレクタ</block>
+  <block id="ba36b61a0a1b3b73db67f36047549607" category="list-text">Hitachi Ops Center の新しいコレクタです</block>
+  <block id="be587cd3ec8a4fa1c4df9554e51d4805" category="list-text">Hitachi Content Platform の新しいコレクタ</block>
+  <block id="5c19d53c722f2b706c4be3c9e86410d4" category="list-text">ONTAP コレクタを拡張して、ファブリックプールをレポートします</block>
+  <block id="72fcf9e6c9aed6284c89073e1f22979e" category="list-text">ストレージプールとボリュームのパフォーマンスで ANF を強化</block>
+  <block id="f4538372cb5da6bdc81464960f97a7fc" category="list-text">EMC ECS で、ストレージノードとストレージパフォーマンス、およびバケット内のオブジェクト数が強化されました</block>
+  <block id="186435169ab16121eaece4afe6efd0a1" category="list-text">ストレージノードと qtree の指標で EMC Isilon が強化されました</block>
+  <block id="a5a5be00af4eb57319eff500ca9e8c27" category="list-text">EMC Symetrix のボリューム QoS 制限メトリックが強化されました</block>
+  <block id="6737c67be3775177035b7486a3285000" category="list-text">ストレージノードの親シリアル番号を持つ強化された IBM SVC および EMC PowerStore</block>
 </blocks>
