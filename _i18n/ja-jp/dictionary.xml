@@ -823,8 +823,6 @@
   <block id="3215d767bcd86ea09bd6b7eadd24b35e" category="cell">Acquisition Unit ：追加 / 変更 / 削除</block>
   <block id="57cec4137b614c87cb4e24a3d003a3e0" category="cell">Y</block>
   <block id="8d9c307cb7f3c4a32822a51922d1ceaa" category="cell">N</block>
-  <block id="d56224acfacf1036e9b75ee2c27415d8" category="cell">アラート * / ポリシー：作成 / 変更 / 削除</block>
-  <block id="6b390affcb2cae8a90f317f5a9aa6ed8" category="cell">アラート * / ポリシー：表示</block>
   <block id="53ce6751453c6ad3acae8c125ab18eea" category="cell">アノテーションルール：作成、実行、変更、削除</block>
   <block id="3035f8f8041f08e89bacdce811e82811" category="cell">注釈：作成 / 修正 / 割り当て / 表示 / 削除 / 削除</block>
   <block id="ab233e1e014d1b880f39ee18e346f123" category="cell">API アクセス * ：作成 / 名前変更 / 無効化 / 無効化</block>
@@ -2833,8 +2831,6 @@
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">アレイへの接続に使用する TCP ポート。デフォルトは 9440. です。</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="cell">ハイパーバイザー</block>
   <block id="583a65df9db4119165f5ea0abaa50281" category="cell">VM</block>
-  <block id="46eff80b72ed7bce5ea093f9ee782eb6" category="paragraph">パフォーマンスポリシーでアノテーションを使用する場合、ポリシーを作成する前にアノテーションが存在している必要があります。</block>
-  <block id="f3717fe39c26695a39a817b7e21f0c5b" category="paragraph">デフォルトでは、ポリシー違反に関する E メールアラートはグローバル E メールリストの受信者に送信されます。この設定を上書きして、特定のポリシーのアラートを特定の受信者に送信するように設定することができます。</block>
   <block id="7e59305c585ffd6c40dfc23da8c99b10" category="summary">ビジネスエンティティのアノテーションは、ビジネス階層内のアセットの監視とレポートに使用できます</block>
   <block id="feeb52be3f50cf19c972dbe8bca2b5fd" category="doc">ビジネスエンティティのアノテーション</block>
   <block id="cc5bee20a21c1239fd0c62986099a877" category="paragraph">アノテーションタイプ * Business Entity * を使用して、企業環境のビジネスエンティティを作成、管理します。</block>
@@ -3822,88 +3818,6 @@
   <block id="b09b95fdf3a131d8cd1e62eca14f3c7d" category="cell">複数のアカウントで開いた Cloud Cost セッションは、同じブラウザではサポートされません。Cloud Insights からログアウトしてログインし直すと、アカウントのクラウドコスト情報を確認できます。</block>
   <block id="1e46d28a00235a5e640c2a81d0bdade0" category="cell">ログインしようとすると、「 Unauthorized 」というエラーが表示されます。無効なクレデンシャルです。 "</block>
   <block id="e4a2acf8eb6f077af0a6c0c59fbe6b64" category="cell">正しいクレデンシャルでログインしていることを確認します。問題が解決しない場合は、 NetApp Spot サポートにお問い合わせください。</block>
-  <block id="930d50aaff5c7f24d890062a7639c213" category="summary">シンプロビジョニングの処理を最小限に抑える。</block>
-  <block id="ecaaaf7a0654036f3dcc39c281d1f227" category="doc">シンプロビジョニングのリスクの最小化の概要</block>
-  <block id="9c6e46eb4f84256813ccf2190743f15d" category="paragraph">今日のハイブリッド IT データセンターでは、管理者は、シンプロビジョニングなどの容量効率化テクノロジを使用して割り当てを制御し、かつて使用できなかった容量を活用することで、物理的な範囲を超えたリソース利用率を拡大する必要があります。</block>
-  <block id="41150d348e446a515fcf5405dc1b6882" category="paragraph">Cloud Insights は、 IT サービススタック内の複数のシンプロビジョニングレイヤにおいて、従来からほぼリアルタイムの使用容量と利用率の詳細を提供します。オーバーサブスクリプションリスクを適切に管理できないと、ビジネスに不必要なダウンタイムが発生する可能性があります。</block>
-  <block id="43b3d82f7e4f634fbeff8312835ed6bd" category="section-title">ストレージプールを監視しています</block>
-  <block id="6621ebf76eace1c2f686b071db0df57c" category="paragraph">ストレージプールの各ランディングページには、オーバーサブスクリプション率、関連するリソース、 LUN とディスクの利用率、ストレージプールで発生したポリシー違反や違反が表示されます。</block>
-  <block id="2e9ab7c96aad4fb99de3232f369af2a0" category="paragraph">ストレージプールのランディングページを使用して、仮想インフラをサポートしている物理資産に潜在的な問題がないか確認します。容量と容量の比率のトレンドを 30 日間にわたって追跡したり、カスタムの期間を使用したりできます。ストレージプールのステータスを監視するには、以降のセクションのデータに注意してください。</block>
-  <block id="5aed49e5311bda7e1667be7005396df3" category="paragraph">「 * 概要 * 」セクションでは、以下について説明します。</block>
-  <block id="b56b570ab0fae14670a3585ec7d10748" category="list-text">ストレージプールの容量情報には、物理容量とオーバーコミット容量が含まれます。</block>
-  <block id="e5bd543d60cc5af739856ec41488f613" category="list-text">アグリゲートがオーバーサブスクライブされているかどうかと、その量による</block>
-  <block id="c2281898b251bb79074ecb90a854b73a" category="list-text">発生したポリシー違反</block>
-  <block id="7c4d33448bf6803a4cada261ebf66a42" category="list-text">LUN の利用率については、「ストレージリソース」セクションで確認してください</block>
-  <block id="f807ca0040d154b9fe47129c5cd7926e" category="list-text">「ディスク」セクションでは、ストレージプールを構成する個々のディスクについて説明します</block>
-  <block id="ee7aef2804fba832792e4dae5b321285" category="list-text">「リソース * 」セクションを使用して、 VMDK と LUN の相関関係を理解し、ストレージと VM 間のアプリケーションパスを把握します</block>
-  <block id="1ab050467093a2457080d53b0849717f" category="list-text">Violations * セクションを使用して、ストレージプールに設定されたパフォーマンスポリシーへの違反を特定します。</block>
-  <block id="a152c6ab7a04d02f68a98a60ccfab879" category="section-title">データストアの監視</block>
-  <block id="ca701875a06548278b2bf82d9e1b3dc7" category="paragraph">データストアランディングページでは、オーバーサブスクリプション率、 LUN とディスクの利用率、関連するリソース、データストアで発生したポリシーの違反を確認できます。</block>
-  <block id="d879a330b5e60381002df3d53834004c" category="paragraph">このランディングページでは、仮想インフラの問題を特定できます。容量と容量の比率のトレンドを追跡することで、容量の変化を予測できます。</block>
-  <block id="0f2879132cb28c7c9698622604470ce1" category="list-text">データストアの容量情報には、物理容量とオーバーコミット容量が含まれます。</block>
-  <block id="2973bae2269678f7bc76a3041b2cd67e" category="list-text">オーバーコミット容量の割合。</block>
-  <block id="a6760e5ac33c4ba3b6608aef30e0040e" category="list-text">レイテンシ、 IOPS 、およびスループットの指標。</block>
-  <block id="846f34ecd9badce6aba77bd80229b2b3" category="paragraph">「 * VMDKs * 」セクションには、仮想ディスクの容量とパフォーマンスが表示されます。「ストレージリソース」セクションには、データストアに関連する、内部ボリュームの使用済み容量とパフォーマンス指標が表示されます。「 * Resources 」セクションでは、 VMDK と LUN の相関関係を理解し、ストレージと VM のアプリケーションパスを把握できます。</block>
-  <block id="b4ffc2bf222b098620bce8fc24b7bdb1" category="section-title">シンプロビジョニング環境を監視するダッシュボードを作成する</block>
-  <block id="17facdb753e19462f5cf593e7317da44" category="paragraph">Loud Insights の柔軟性に優れたダッシュボードウィジェット設計とグラフ作成オプションにより、容量の使用状況と使用率を詳細に分析し、シンプロビジョニングされたデータセンターインフラストラクチャのリスクを最小限に抑えるための戦略的情報を入手できます。</block>
-  <block id="8dd78e671bbf3d5c897404e8efa327fe" category="paragraph">監視するデータストアとストレージプールの情報へのアクセスを提供するダッシュボードを作成できます。</block>
-  <block id="aba10d02a88624fc752a3d791738142a" category="section-title">ダッシュボードを使用したデータストア情報へのアクセス</block>
-  <block id="75f5b870a6e3735438e0f01b3adc67dc" category="paragraph">仮想インフラ内で監視するデータにすばやくアクセスできるダッシュボードの作成が必要になることがあります。ダッシュボードには、次のようなウィジェットを含めることができます。データストアのオーバーコミット率に基づく上位 10 個のデータストアを特定するウィジェットや、データストアの容量データを表示するウィジェットを指定することができます。ダッシュボードでは、変数を使用して、使用済み容量が 80% を超えているデータストアとオーバーコミットされたデータストアを表示します。</block>
-  <block id="937392ad2d983c7ac75e2387d56f7d6e" category="paragraph">画像： top_10_overcommit.png</block>
-  <block id="5b70e7bcfbb7d482c06405908db9d858" category="section-title">パフォーマンスポリシーを使用してシンプロビジョニングのリスクを軽減する</block>
-  <block id="7d55f47b045f60e09703a239e44b5bef" category="paragraph">仮想インフラのしきい値を超えたときにアラートを生成するには、パフォーマンスポリシーを作成する必要があります。アラートを使用すると、原因が処理を中断または停止する前に、環境内の変更に対応できます。</block>
-  <block id="d4b1d99cb1a1c53556c473c983112ce5" category="paragraph">仮想インフラの監視に役立つポリシーは次のとおりです。</block>
-  <block id="29fba95d387c49c49a887d423918a117" category="paragraph">* データストア * データストア容量を厳密に監視するポリシーを作成できます。</block>
-  <block id="c0a76aae8bdb951f2aba11cf199efc19" category="list-text">容量比率 - オーバーコミット</block>
-  <block id="76d75ce3e38e42c01c2a71593e10848c" category="list-text">容量比率 - 使用済み</block>
-  <block id="3492df1375c8a9356fd3ef9e48045ac3" category="list-text">Capacity - 使用済みです</block>
-  <block id="c75b63367ef1647971779ee8b85e6714" category="list-text">容量 - 合計</block>
-  <block id="286196922e43ff60fbe7b9d545c56c17" category="paragraph">* ストレージプール * シンプロビジョニング環境でストレージプール容量の停止から保護するポリシーを作成できます。</block>
-  <block id="b00f4a5c7bc127b4c557293c4bf13315" category="list-text">プロビジョニング済み容量</block>
-  <block id="2a58f5e6d4ffd39b79c8b0ec26f20c07" category="list-text">使用済みパフォーマンス容量</block>
-  <block id="ea0fe1579008c946a9111348ecf11b14" category="paragraph">これらのポリシーをさらに拡張して仮想インフラの容量を監視するには、次のアセット用のポリシーを追加で作成します。</block>
-  <block id="84095b57db9e53ee65f066cb01333604" category="list-text">内部ボリューム</block>
-  <block id="7b3c6a2d089eb1b6f8959e7e61a50c07" category="list-text">LUN</block>
-  <block id="2d4aef30a49a581a6ed89ce840054235" category="list-text">ディスク</block>
-  <block id="65efe0169a217dbc0a73864c15c55287" category="list-text">VMDK</block>
-  <block id="d3d9fdef0e91fc4aba18e57475fd74ea" category="list-text">仮想マシン</block>
-  <block id="3ba994ce2690462a63a535bd31702dde" category="paragraph">ポリシーはアノテーションを使用して設定できます。アプリケーションをサポートする特定のアセットに同じアノテーションを割り当てる。たとえば、データストアにアノテーションを割り当てたり、シンプロビジョニングアプリケーションのストレージプールにアノテーションを割り当てたりできます。</block>
-  <block id="6ae4d16d9755562ec366ac9a69b698cf" category="paragraph">本番環境用の Production というアノテーション、開発環境用の Development などのアノテーションを設定することができます。アセットがサポートしているアプリケーションのタイプに応じて、しきい値や警告の重要度を変更することができます。</block>
-  <block id="eaa8b1ccc5796728172f1db7499f4aff" category="paragraph">たとえば、本番環境アプリケーションのデータストアに対するしきい値の違反があった場合、重大な警告が表示される可能性があり、同じ開発環境への違反があった場合は警告しか表示されないことがあります。</block>
-  <block id="2b5eabe6229c33e4cfb2cf0a18bb766e" category="paragraph">定義済みのポリシーにアノテーションを組み込むことで、重要でない資産に関する不要なアラートの生成を軽減できます。</block>
-  <block id="1ad37349af5486e6cca4347825327153" category="section-title">ストレージプールのパフォーマンスポリシーの作成</block>
-  <block id="70017fc6fc0c4e43d495fdc0b69a8435" category="paragraph">パフォーマンスポリシーを作成して、ストレージプールのアセットのしきい値を超えたときに通知するアラートをトリガーすることができます。</block>
-  <block id="0cea2b9d4903bfcf70ea669fd98b1d1e" category="paragraph">この手順は、ストレージプールがシンプロビジョニングされていることを前提としています。</block>
-  <block id="bbe48fb854ea022537208eeeff822f91" category="list-text">このタスクについて</block>
-  <block id="736983f5330ecf1efdea70e93db4f546" category="paragraph">停止につながる可能性のあるストレージプールの変更を監視してレポートするポリシーを作成する。シンプロビジョニングされた物理ストレージプールの場合は、物理容量を監視してオーバーコミット率を監視する必要があります。</block>
-  <block id="85ae42d63ca7a8aae77a5d7246634711" category="list-text">Cloud Insights メニューで、 * Manage &gt; Performance Policies * の順にクリックします</block>
-  <block id="394ea37a7b4e0bf35a8b894c63db2db4" category="paragraph">パフォーマンスポリシーページが表示されます。ポリシーはオブジェクト別に表示され、リストに表示されている順序で評価されます。通知が有効になっている場合（ * Admin &gt; Notifications * ）、パフォーマンスポリシーに違反したときに E メールを送信するように Insight を設定できます。</block>
-  <block id="2132a02b5ff5c91688442e2e3ccb1749" category="list-text">パフォーマンスポリシーをクリックして新しいポリシーを作成します</block>
-  <block id="0b29dfaa80e9717ce439fc7622df9852" category="list-text">[ * ポリシー名 * ] に、ポリシーの一意の名前を入力します</block>
-  <block id="39529c33c3fc377978cb04c31dc1cabe" category="list-text">[ タイプ * のオブジェクトに適用 ] で [ ストレージプール ] を選択します</block>
-  <block id="ab5166c341a2ec5528f432b49de95fe7" category="list-text">[ * Apply after window of * ] に、最初のオカレンスを入力する。</block>
-  <block id="665217dd35d901c4bf37fef1aed73ee9" category="list-text">[* （ * ） ] に重大度 * を入力します</block>
-  <block id="78879c6f7086ed63e7362e367cea2daf" category="list-text">しきい値を超えたときに通知を受け取る E メール受信者を設定します。</block>
-  <block id="da01c1ed78b4a605687ff0bc8191401d" category="paragraph">リンクをクリックして受信者リストを開き、 [+] ボタンをクリックして受信者を追加します。このポリシーに関する違反のアラートがリスト内のすべての受信者に送信されます。</block>
-  <block id="e1f94c5a37efc667172cb4102cfd884e" category="list-text">* 次のいずれかに該当する場合はアラートを作成します。 * 容量比率を入力してください - 使用済み &gt;85%</block>
-  <block id="0c4fd143f30f9c2d58b96a0a5694eea9" category="paragraph">この構成では、ストレージプールの物理容量の 85% を超える容量が使用されている場合に、重大な警告メッセージが送信されます。物理メモリの 100% を使用すると、アプリケーションに障害が発生します。</block>
-  <block id="9f98cc1c75ec48d47ac4651cddb4e52c" category="section-title">データストアのパフォーマンスポリシーの作成</block>
-  <block id="ebd8312770e91afe952c0583d3e84feb" category="paragraph">監視しているストレージプールに関連するデータストアに関連付けられている指標のしきい値を設定したパフォーマンスポリシーを作成できます。</block>
-  <block id="ca8858da0deafeb197484984fd9739ef" category="paragraph">デフォルトでは、パフォーマンスポリシーは作成時に指定したタイプのすべてのデバイスに適用されます。特定のデバイスまたはデバイスセットのみをパフォーマンスポリシーに含める場合は、アノテーションを作成します。</block>
-  <block id="b0bccafc3d5458b50dae6db9bf0e250e" category="paragraph">監視しているデータストアが設定したしきい値を超えたときに通知するパフォーマンスポリシーを作成します。システムには、ニーズに合わせたグローバルポリシーがすでに含まれている場合があります。アノテーションを使用するポリシーでは、特定のデータストアに集中できます。</block>
-  <block id="a24b2328d744e510480891e7b310d782" category="list-text">Cloud Insights ツールバーで、 * 管理 &gt; パフォーマンスポリシー * をクリックします</block>
-  <block id="ad163281fbfffbef8b32448a74802902" category="list-text">[* + Performance Policy] をクリックします</block>
-  <block id="5aa9d741f429e7645dae7dc2ec0e4724" category="list-text">「ポリシー名」を追加</block>
-  <block id="6136e513c9e482647e178e5096ccbb76" category="paragraph">オブジェクトの他のすべてのポリシーとは異なる名前を使用する必要があります。たとえば、内部ボリュームの「 Latency 」という名前の 2 つのポリシーを使用することはできませんが、内部ボリュームの「 Latency 」ポリシーとデータストアの「 Latency 」ポリシーを使用できます。ベストプラクティスとしては、オブジェクトタイプに関係なく、すべてのポリシーに一意の名前を常に使用することを推奨します。</block>
-  <block id="d3bae688224512080700f4a0ff4ef9ff" category="list-text">オブジェクトタイプとして「 Datastore 」を選択します</block>
-  <block id="bb33f9fa8bc9bb9c3f6ac12382d772b5" category="list-text">[ 最初の発生 ] をクリックします。</block>
-  <block id="6d0075edf4252eb7758333b207f496e8" category="list-text">で * タイプ * のオブジェクトに適用する場合は、データストアを選択します</block>
-  <block id="d68c93a752bdb78fb479dce300c78517" category="list-text">注釈付き * （ With Annotation ）で、注釈の名前を選択します</block>
-  <block id="2d4f79f7357b528d3dc9f96338c74214" category="list-text">[ * 注釈値 * （ * Annotation Value * ） ] で目的の値を選択します</block>
-  <block id="1de8951d4b9cd06d9f7d81ad7fa0a0d4" category="list-text">[ * Apply after window of * ] に、最初のオカレンスを入力する</block>
-  <block id="01b17bf5323bdc03011c1d72b9286eda" category="list-text">E メール受信者を設定</block>
-  <block id="c95f9dca93f9cc1839d060216a2f870c" category="list-text">* Create alert * に Capacity Ratio over Commit &gt; 150 を入力します</block>
-  <block id="72b7715d52c8b37519ac8d971ecd5fea" category="list-text">しきい値を追加するには、 [* + しきい値 * （ * + Threshold ） ] をクリックします。これには、容量の合計や使用容量</block>
   <block id="53ce3d33a1c95868dbf8263124e5b551" category="summary">Discord のパフォーマンスや在庫のしきい値を警告するためのウェブフックを作成します</block>
   <block id="f053f7ee22dc353143571fe1d9a1c585" category="doc">Discord のウェブフックの例</block>
   <block id="4a4e6a83623dd6209332792d66f10386" category="paragraph">Webhook を使用すると、ユーザーはカスタマイズされた webhook チャネルを使用して、さまざまなアプリケーションにアラート通知を送信できます。このページでは、 Discord 用のウェブフックを設定する例を示します。</block>
@@ -4154,7 +4068,6 @@
   <block id="77e5be94869a677b15024b30a6f71dbd" category="paragraph">いずれかのアセットのリンクをクリックすると、対応するアセットページを表示できます。たとえば、ストレージノードを表示している場合、リンクをクリックすると、関連付けられているストレージのアセットページを表示できます。</block>
   <block id="74202c0b51dce91cb2d7ff8a3db7b041" category="paragraph">アセットに関連付けられている指標を表示できます。指標の横に赤い丸が表示されている場合、診断や解決を要する潜在的な問題があることを示しています。</block>
   <block id="0072ea3bfe0375786c34c557c30c3890" category="admonition">一部のストレージアセットについて、ボリュームの容量の表示が 100% を超えることがあります。これは、ボリュームの容量に関するメタデータが使用済み容量としてアセットから報告されるためです。</block>
-  <block id="a22b8082b1eac1183ffc77808fe62e39" category="paragraph">該当する場合、パフォーマンスポリシーのリンクをクリックして、アセットに関連付けられているパフォーマンスポリシーを表示できます。パフォーマンスポリシーの横に赤い丸が表示されている場合、アセットがパフォーマンスポリシーで定義されたしきい値を超えていることを示しています。パフォーマンスポリシーを調べて、問題を詳しく診断できます。</block>
   <block id="99571eecaa5c5d622bb0d1f855752d5f" category="section-title">トポロジ</block>
   <block id="aa2a179e15d11223c669195106a7e555" category="paragraph">一部のアセットページでは、概要セクションにアセットとその接続のトポロジを表示するためのリンクが表示されます。</block>
   <block id="575c9466566e751977f9292115eb4416" category="paragraph">トポロジは次のアセットタイプで使用できます。</block>
@@ -4888,11 +4801,6 @@
   <block id="23d12a9ef5970703cfffa4ef4c742d68" category="inline-link-macro">アセットの準備：アノテーション</block>
   <block id="d673c4f593dbf920c9f4bc8e56bf17d5" category="inline-link-macro">目的のアセットの検索：クエリ</block>
   <block id="381137dc478970e10f9007a45be6554a" category="inline-link-macro">必要なデータの表示：ダッシュボード</block>
-  <block id="0a38519a5862e820698ef2c50e36e4cd" category="inline-link-macro">アラート：パフォーマンスポリシーとしきい値</block>
-  <block id="4872952fbe9ec17bbad510394e334e0c" category="list-text">Cloud Insights を最大限に活用するにはどうすればよいですか？<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
-<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
-<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
-<block ref="b777338cf3a0d33ede33cdb6b48aac7d" category="inline-link-macro-rx"></block></block>
   <block id="d17aef0dcce543eeda80f0586306b127" category="inline-link-macro">* 予約購読 *</block>
   <block id="0cecfa140cecefa9da4e9bcfc9a4e42d" category="list-text">Cloud Insights を試したことがありますが、準備ができました <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
   <block id="81c7383b650665d348221da3b0b08e7f" category="summary">Cloud Insights には、多くのタスクの実行方法を示すチュートリアルが用意されています。</block>
@@ -7777,4 +7685,12 @@
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* アラート・テーブル * ：最新の 1 、 000 件のアラートを表示します。</block>
   <block id="863fe9f23689919336be1a2467bf51a4" category="paragraph">Cloud Insights ではを使用します <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
   <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。</block>
+  <block id="0a41ae2c369ec6839d428c359a9fa6c3" category="cell">アラート * ：作成 / 変更 / 削除</block>
+  <block id="856a71f1e469ce4d8cf0d9305027ea82" category="cell">アラート * ：表示</block>
+  <block id="bd7396064bde19099b129313d4e4960b" category="paragraph">該当する場合は、アラートのリンクをクリックして、アセットに関連付けられているアラートとモニタを表示できます。</block>
+  <block id="2d762a3bbc5cce9178bdcae87b203e7c" category="inline-link-macro">監視とアラート</block>
+  <block id="e0fbc74ad021275f0491ecc9a4b34363" category="list-text">Cloud Insights を最大限に活用するにはどうすればよいですか？<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
+<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
+<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
+<block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
 </blocks>
