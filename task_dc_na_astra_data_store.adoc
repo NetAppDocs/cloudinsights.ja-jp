@@ -1,0 +1,167 @@
+---
+sidebar: sidebar 
+permalink: task_dc_na_astra_data_store.html 
+summary: ネットアップの Astra データストアを設定 
+keywords: data collector, queries, create, astra, ads 
+---
+= NetApp Astra データコレクタ
+
+
+[role="lead"]
+ネットアップの Astra データストアデータソースは、 1 つの Astra データストア（ ADS ）クラスタの構成データとパフォーマンスデータを監視してレポートします。
+
+
+
+== 用語集
+
+Cloud Insights は、このコレクタからインベントリとパフォーマンスのデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+
+[cols="2*"]
+|===
+| ベンダー / モデルの用語 | Cloud Insights の用語 
+
+
+| AstraDSVolume | 内部ボリューム 
+
+
+| AstraDSNodeInfo.status.drives | ディスク 
+
+
+| AstraDSNodeInfo | ストレージノード 
+
+
+| AstraDSExportPolicy の順にクリックします | 共有 / 共有イニシエータ 
+
+
+| AstraDSCluster | ストレージ 
+|===
+
+
+== 要件
+
+* Acquisition Unit は、 Astra Data Store Kubernetes クラスタ内の Kubernetes ポッドで実行する必要があります。を参照してください link:task_configure_acquisition_unit.html["Acquisition Unit の設置"] 詳細：
++
+** Acquisition Unit をインストールするには、 Cloud Insights が必要です link:API_Overview.html["API キー"] 各カテゴリに対する読み取り / 書き込み権限： _ Acquisition Unit 、 Data Collection 、 Data Ingestion _
+** 使用する Kubernetes API トークンによって、 _astrads.netapp.io_ apiGroup に対する読み取り専用アクセスが付与される必要があります
+
+
+* astrads システムのデフォルトサービスアカウントの API トークンを取得するには、 bash シェルで次のコマンドを実行します。
++
+....
+SECRET_NAME=$(kubectl get secrets -n astrads-system| grep ^default| cut -f1 -d ' ' )
+kubectl describe secret $SECRET_NAME -n astrads-system | grep -E '^token' | cut -f2 -d':' | tr -d " "
+....
+
+
+
+
+== 設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| Kubernetes API サーバの IP アドレス | Kubernetes API サーバの IP アドレス 
+
+
+| Kubernetes API サーバポート | Kubernetes API サーバのポート 
+
+
+| Kubernetes API トークン | Base64 でエンコードされた Kubernetes API トークン 
+|===
+
+
+== 詳細設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 60 分です。 
+
+
+| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは 300 秒です。 
+
+
+| 含まれている ADS クラスタ名 | ポーリングの対象に含める ADS クラスタ名をカンマで区切ったリスト。すべてのクラスタを監視する場合は空欄のままにします。 
+|===
+
+
+== Acquisition Unit 、 Telegraf 、および Fluent ビットをインストールします
+
+NetApp Monitoring Operator は、 Astra データストアを使用して Kubernetes クラスタにインストールされます。Monitoring Operator は、 Acquisition Unit 、 Advanced Metrics の Telegraf エージェント、およびログの Fluent ビットエージェントのインストールと設定を管理します。
+
+オペレータを設定するには、次の手順を実行します。
+
+. 次のカスタムリソース定義スニペットをコピーします
++
+....
+spec:
+  au:
+    isEnabled: true
+    #storageClassName: ""
+  telegraf:
+  - name: "open-metric"
+    run-mode:
+    - ReplicaSet
+    substitutions:
+    - key: URLS
+      values:
+      - "http://astrads-metrics-service.astrads-system.svc.cluster.local:9341"
+    - key: METRIC_TYPE
+      value: "ads-metrics"
+    outputs:
+    - sink: CI
+  fluent-bit:
+  - name: "ads-tail-ci"
+    substitutions:
+    - key: TAG
+      value: "ads-logs"
+    - key: ADS_CLUSTER_NAME
+      value: "<INSERT_CLUSTER_NAME>"
+    - key: LOG_FILE
+      values:
+      - "/var/log/firetap/*/ems/ems"
+      - "/var/log/firetap/ems/*/ems/ems"
+    outputs:
+    - sink: CI
+  output-sink:
+  - api-key: "<INSERT_CI_API_KEY>"
+    domain-name: "<INSERT_CI_DOMAIN_NAME>"
+    name: CI
+....
+. Kubernetes クラスタに Storage Provisioner が設定されていない場合は、 _storageClassName_ のコメントを解除し、取得ユニットの PVS を含む StorageClass の名前を指定します。これらの PVS は作成済みである必要があります。デフォルトの StorageClass を使用する場合は、空白のままにします。
+. insert_cluster_name> を Astra Data Store クラスタの名前に置き換えます
+. INSERT_CI_API_KEY> を Cloud Insights API アクセストークンに置き換えます
+. insert_CI_domain_name > は、 Cloud Insights テナントドメイン名に置き換えられます
+. 次のコマンドを実行して、 Monitoring Operator Agent の仕様を編集します。
++
+ kubectl --namespace netapp-monitoring edit agent acc-monitoring
+. 上記のカスタムリソース定義スニペットを既存の Monitoring Operator エージェント仕様とマージします。
+. エディタウィンドウを保存して閉じます。
+
+
+モニタリングオペレータは、収集ユニット、 Telegraf 、および Fluent ビットをインストールします。この処理が完了するまでに数分かかることがあります。次のコマンドを定期的に実行して、ステータスが up になるまで Acquisition Unit のステータスを確認します。または、新しい Acquisition Unit が Cloud Insights UI に表示されるまで待つこともできます。
+
+ kubectl --namespace netapp-monitoring get agent -o jsonpath='{.status.au-pod-status}' acc-monitoring
+Acquisition Unit をインストールしたら、 Cloud Insights UI から Astra データストアコレクタを追加できます。
+
+
+
+== トラブルシューティング
+
+このデータコレクタで問題が発生した場合の対処方法を次に示します。
+
+[cols="2*"]
+|===
+| 問題 | 次の操作を実行します 
+
+
+| 「 Unauthorized 」というメッセージが表示されます | Kubernetes API トークンに、 _astrads.netapp.io_ apiGroup 内の API を呼び出す権限があることを確認します 
+
+
+| 不明なホスト : astrs-metric-service-astras-system.svc.cluster.local : 名前またはサービスが不明です | ADS Kubernetes クラスタ内で実行されている Acquisition Unit ポッドにコレクタがインストールされていることを確認します。astrs-metric-service が astrs-system 名前空間を実行していることを確認します。 
+|===
+この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
