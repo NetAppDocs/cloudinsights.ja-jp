@@ -109,6 +109,8 @@ Cloud Insights API はカテゴリベースであり、現在、次のカテゴ�
 
 その他のカテゴリや API は、時間の経過とともに利用できるようになる場合があります。最新の API 情報は、で確認できます link:#api-documentation-swagger["API Swagger のドキュメント"]。
 
+ユーザがアクセスできる API カテゴリは、によっても異なります link:concept_user_roles.html["ユーザロール"] 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。
+
 
 
 == 在庫移動
