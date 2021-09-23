@@ -7737,4 +7737,15 @@
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
   <block id="e192aac42870d4b95309597771e9a5fe" category="cell"><block ref="e192aac42870d4b95309597771e9a5fe" category="inline-link-macro-rx"></block></block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">ONTAP 9.9 以降のクラウド接続</block>
+  <block id="f41274c1ce20e5e73cc8aff93a484f51" category="inline-link-macro">FSx - ネットアップ</block>
+  <block id="47b5a4776ee0e5c60f02b4cbf9af7b50" category="cell"><block ref="47b5a4776ee0e5c60f02b4cbf9af7b50" category="inline-link-macro-rx"></block></block>
+  <block id="04cfeb854c88891dec7c9991ca350912" category="summary">NetApp ONTAP Data Collector 向けの Amazon FSX</block>
+  <block id="e9a83bb8e223f30a5b64c2f63410624e" category="doc">NetApp ONTAP データコレクタ用の Amazon FSX</block>
+  <block id="3f949888a1354566f0873f9ba5ab02fd" category="paragraph">このデータコレクタは、 Amazon FSX for NetApp ONTAP からインベントリデータとパフォーマンスデータを取得します。このデータコレクタは、 Cloud Insights サービスリージョン全体で段階的に利用可能になります。Cloud Insights 環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。</block>
+  <block id="cdad9ea129073a077b510b1984d0f835" category="paragraph">Cloud Insights は、 FSx-NetApp データコレクタからインベントリデータとパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="ff375e581f364889148467ea5e52a623" category="section-title">FSX - ネットアップの用語</block>
+  <block id="4fa58ee56d24ddf7d851b6745d93de64" category="paragraph">FSx-NetApp ストレージアセットランディングページにあるオブジェクトや参考資料に関連する用語を次に示します。これらの用語の多くは、他のデータコレクタにも適用されます。</block>
+  <block id="babe9919cc418959cabb293a6a0542be" category="list-text">model –このクラスタ内で一意のディスクリートモデル名をカンマで区切って指定します。</block>
+  <block id="10ba50408b6f39dc849eed2581112ddc" category="list-text">ベンダー– AWS （ Hitachi ）</block>
+  <block id="8e389fb3ac7d81dc69e2faaa1a45f7df" category="list-text">Serial Number –アレイのシリアル番号。</block>
 </blocks>

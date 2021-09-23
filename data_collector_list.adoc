@@ -215,6 +215,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_na_eseries.html["NetApp E-Series"] | インフラ 
 
 
+| link:task_dc_na_fsx-netapp.html["FSx - ネットアップ"] | インフラ 
+
+
 | link:task_dc_na_hci.html["NetApp HCI 仮想センター"] | インフラ 
 
 
