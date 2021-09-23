@@ -1,5 +1,5 @@
+---
 sidebar:
-  
   entries:
   - title: Cloud Insights のドキュメント
     url: "/index.html"
@@ -325,6 +325,8 @@ sidebar:
           url: "/task_dc_ms_hyperv.html"
       - title: ネットアップ
         entries:
+        - title: ONTAP 9.9 以降のクラウド接続
+          url: "/task_dc_na_cloud_agent.html"
         - title: Cloud Volumes ONTAP
           url: "/task_dc_na_cloud_volumes_ontap.html"
         - title: AWS 向け Cloud Volume サービス
