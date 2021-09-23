@@ -30,9 +30,6 @@ Cloud Insights API は、現在のエディションに基づいて提供され�
 
 
 | データの取り込み |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
-
-
-| Data Warehouse |  |  | image:SmallCheckMark.png[""] 
 |===
 
 
