@@ -7748,4 +7748,6 @@
   <block id="babe9919cc418959cabb293a6a0542be" category="list-text">model –このクラスタ内で一意のディスクリートモデル名をカンマで区切って指定します。</block>
   <block id="10ba50408b6f39dc849eed2581112ddc" category="list-text">ベンダー– AWS （ Hitachi ）</block>
   <block id="8e389fb3ac7d81dc69e2faaa1a45f7df" category="list-text">Serial Number –アレイのシリアル番号。</block>
+  <block id="d0dbaa8b32b0761ae3d382c5f69eec7e" category="inline-link-macro">NetApp ONTAP 対応の Amazon FSX</block>
+  <block id="29528f054166735f3e8a10f7fc97f3dd" category="cell"><block ref="29528f054166735f3e8a10f7fc97f3dd" category="inline-link-macro-rx"></block></block>
 </blocks>
