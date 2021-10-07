@@ -595,7 +595,7 @@ Kubernetes 環境の場合、 Cloud Insights は Telegraf エージェントを 
       type: RunAsAny
     readOnlyRootFilesystem: false
     users:
-    - system:serviceaccount:ci-monitoring:telegraf-user
+    - system:serviceaccount:ci-monitoring:monitoring-operator
     groups: []
 ----
 
