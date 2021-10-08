@@ -7674,9 +7674,6 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
-  <block id="049a91683d521aa6961c9d61aa5dd97e" category="summary">ネットアップの Astra データストアを設定</block>
-  <block id="67d4d4df6543fc9b1d67546c146be6ad" category="doc">NetApp Astra データコレクタ</block>
-  <block id="683bbcd43dc9592630ea190b632d0c03" category="paragraph">ネットアップの Astra データストアデータソースは、 1 つの Astra データストア（ ADS ）クラスタの構成データとパフォーマンスデータを監視してレポートします。</block>
   <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights は、このコレクタからインベントリとパフォーマンスのデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
   <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraDSNodeInfo.status.drives</block>
@@ -7690,11 +7687,8 @@
   <block id="d94f21371b1ddf718eac12a52a2c04d5" category="list-text">使用する Kubernetes API トークンによって、 _astrads.netapp.io_ apiGroup に対する読み取り専用アクセスが付与される必要があります</block>
   <block id="7fd42c59429dd49f7d8d2046c25561a2" category="list-text">astrads システムのデフォルトサービスアカウントの API トークンを取得するには、 bash シェルで次のコマンドを実行します。</block>
   <block id="cb058d58577afc1218e66a94de6c292d" category="cell">Kubernetes API サーバの IP アドレス</block>
-  <block id="9dca872f2c091f19598e310ff5fd7a2e" category="cell">Kubernetes API サーバの IP アドレス</block>
   <block id="6c78114b7032d73ba3ed6e8cbd74b060" category="cell">Kubernetes API サーバポート</block>
-  <block id="66ec2c94d71df69ff637dbdbc2def19e" category="cell">Kubernetes API サーバのポート</block>
   <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API トークン</block>
-  <block id="9b4c9e8da576a331cc15e2c7566aa96f" category="cell">Base64 でエンコードされた Kubernetes API トークン</block>
   <block id="cbf38915f7dd92dccde1fe3dad2469bf" category="cell">含まれている ADS クラスタ名</block>
   <block id="e0412bb84ea8e005d283cd9efaeeaafb" category="cell">ポーリングの対象に含める ADS クラスタ名をカンマで区切ったリスト。すべてのクラスタを監視する場合は空欄のままにします。</block>
   <block id="965c5c6eb8381e5b51445a5fbc3048b3" category="section-title">Acquisition Unit 、 Telegraf 、および Fluent ビットをインストールします</block>
@@ -7765,4 +7759,10 @@
   <block id="87e8a04e229031e564067b38ae8a72c8" category="sidebar">NetApp ONTAP コレクタ用の Amazon FSX の設定</block>
   <block id="d3dc1fc44d23379b3a3e3c6e5eaed716" category="list-text">この Acquisition Unit 上で、 2500 台を超える仮想マシン、または 10 台の大規模（ 2 ノード以上）の ONTAP クラスタ、 Symmetrix 、 HDS / HPE VSP/XP アレイを検出できるか？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">上記の「はい」回答ごとに、 8 GB のメモリと 50 GB のディスク容量を AU に追加することをお勧めします。たとえば、「はい」と答えた場合、 150GB 以上のディスクスペースを備えた 24GB のメモリシステムを導入する必要があります。Linux の場合、ログの場所に追加するディスクスペース。</block>
+  <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">ネットアップの Astra データストアを設定</block>
+  <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra データコレクタ</block>
+  <block id="c81d3de0d63693ca7ae8a4c83d9b9678" category="paragraph">ネットアップの Astra データストアデータコレクタは、単一の Astra データストア（ ADS ）クラスタの設定データとパフォーマンスデータを監視してレポートします。</block>
+  <block id="23d69dc5c46eb576cdde08fed5bdc4c7" category="cell">Kubernetes API サーバの IP アドレス</block>
+  <block id="f2e0eea4e8022b610a38c7ca5b2987f2" category="cell">Kubernetes API サーバのポートデフォルトは 6443. です</block>
+  <block id="ca4d8b2cea754e64a8db55441ca30fca" category="cell">Base64 でエンコードされた Kubernetes API トークン</block>
 </blocks>

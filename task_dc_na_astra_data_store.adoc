@@ -2,13 +2,13 @@
 sidebar: sidebar 
 permalink: task_dc_na_astra_data_store.html 
 summary: ネットアップの Astra データストアを設定 
-keywords: data collector, queries, create, astra, ads 
+keywords: data collector, queries, create, astra, ads, data, store, 
 ---
 = NetApp Astra データコレクタ
 
 
 [role="lead"]
-ネットアップの Astra データストアデータソースは、 1 つの Astra データストア（ ADS ）クラスタの構成データとパフォーマンスデータを監視してレポートします。
+ネットアップの Astra データストアデータコレクタは、単一の Astra データストア（ ADS ）クラスタの設定データとパフォーマンスデータを監視してレポートします。
 
 
 
@@ -65,7 +65,7 @@ kubectl describe secret $SECRET_NAME -n astrads-system | grep -E '^token' | cut 
 | Kubernetes API サーバの IP アドレス | Kubernetes API サーバの IP アドレス 
 
 
-| Kubernetes API サーバポート | Kubernetes API サーバのポート 
+| Kubernetes API サーバポート | Kubernetes API サーバのポートデフォルトは 6443. です 
 
 
 | Kubernetes API トークン | Base64 でエンコードされた Kubernetes API トークン 
