@@ -7765,4 +7765,5 @@
   <block id="23d69dc5c46eb576cdde08fed5bdc4c7" category="cell">Kubernetes API サーバの IP アドレス</block>
   <block id="f2e0eea4e8022b610a38c7ca5b2987f2" category="cell">Kubernetes API サーバのポートデフォルトは 6443. です</block>
   <block id="ca4d8b2cea754e64a8db55441ca30fca" category="cell">Base64 でエンコードされた Kubernetes API トークン</block>
+  <block id="bc593a7d4784d165423875d1c30b5ce3" category="cell">Kubernetes に Tegraf をインストールまたはアップグレードしましたが、 Tegraf ポッドは起動しません。Telegraf ReplicaSet または DemonSet は、次のような障害を報告しています。 Error creating ： PoD "Telegraf-RS" is forbidden ： Unable to validate against any security context constraint ： [spec.volumes [2] ： Invalid Value ： "hostPath" ： hostPath volumes are not allowed to be used]</block>
 </blocks>
