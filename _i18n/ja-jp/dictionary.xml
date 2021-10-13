@@ -7770,4 +7770,10 @@
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">この GitHub の記事</block>
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">これは問題と呼ばれています。を参照してください <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。</block>
   <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">Telegraf から次のようなエラーメッセージが表示されますが、 Telegraf は起動して実行されます。 Oct 11 14 ： 23 ： 41 IP-172-39-47 systemd[1] ： InfluxDB への指標の報告用に、プラグイン駆動型のサーバーエージェントを起動しました。10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/テレ グラム /.cache/snowflake 、 err: mkdir /etc/テレ グラム f/.ca che: 許可が拒否されました。ignored \n" func = "gosnowfleke. (*defaultLogger).Errorf" file="log. go:120" Oct 11 14:23:41 IP-172-21-39-47 TEテレ グラフ [1827]: time="2021 - 10-11T14:23:41Z" level=error.msg=" 失敗しました。無視されます。/etc/テレ グラム /.cache/snowflake/ocspa_response_cache.json を開きます。ファイルまたはディレクトリがありません \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"Oct. 1114:23:41 IP-172-41-39-47 テレグラム [1827:1127]~21-21Z: Telegraf 1.19.3 を起動しています</block>
+  <block id="ae5c20191cb62f32246efcf9d57ec771" category="section-title">ETL とは</block>
+  <block id="ed3737df147bb5e0883ec9917bb6de42" category="paragraph">Reporting では、「 Data Warehouse 」と「 ETL 」という用語が使用されます。ETL は、「抽出、変換、読み込み」の略です。ETL プロセスでは、 Cloud Insights で収集されたデータが取得されて、レポート用の形式に変換されます。「 Data Warehouse 」は、レポートに使用できる収集データを表します。</block>
+  <block id="59cfd65b8b6dc724aca0f9d1c7d41298" category="paragraph">ETL プロセスは、次の個別プロセスで構成されます。</block>
+  <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">* 抽出 *: Cloud Insights からデータを取得します。</block>
+  <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* Transform * ： Cloud Insights から抽出されたデータにビジネスロジックのルールまたは関数を適用します。</block>
+  <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">* ロード *: 変換されたデータをデータウェアハウスに保存して、レポート作成に使用します。</block>
 </blocks>
