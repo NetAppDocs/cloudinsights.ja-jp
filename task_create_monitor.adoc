@@ -118,9 +118,6 @@ image:email_monitor_alerts.png["E メールアラートの受信者"]
 image:Webhook_Monitor_Notifications.png["Webhook Alerting ( ウェブフック警告"]
 
 
-NOTE: Webhook はプレビュー機能と見なされるため、変更される場合があります。
-
-
 
 === モニタを保存します
 
