@@ -10,7 +10,7 @@ summary: Kubernetes ノードの詳細ページでは、バックエンドの PV
 [role="lead"]
 Kubernetes Explorer でノードアイコンをクリックすると、そのノードの詳細情報ページを開くことができます。このページでは、ノードに関する情報のほか、 VM 、ポッド、コンテナに関する情報を確認できます。
 
-image:Kubernetes_Node_Page.png["Kubernetes ノードページ"]
+image:KubernetesNodeFiltering.png["フィルタリングが表示された Kubernetes Node Detail ページ"]
 
 
 

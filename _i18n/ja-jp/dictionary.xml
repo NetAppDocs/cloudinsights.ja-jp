@@ -1341,8 +1341,6 @@
   <block id="23a0a69ba2da60844941129c97d32149" category="summary">Kubernetes ノードの詳細ページでは、バックエンドの PV ストレージとポッドストレージに関する情報を確認できます。</block>
   <block id="47e3b127c663c8b9509f25ef96d3c6be" category="doc">Kubernetes Node Detail ページ</block>
   <block id="e767946157d182cf237f259a3b6478c4" category="paragraph">Kubernetes Explorer でノードアイコンをクリックすると、そのノードの詳細情報ページを開くことができます。このページでは、ノードに関する情報のほか、 VM 、ポッド、コンテナに関する情報を確認できます。</block>
-  <block id="2dd4a201d2c01681a201bffc1ab75dcb" category="inline-image-macro">Kubernetes ノードページ</block>
-  <block id="22cdeb2bd209eeac77231f150422ffed" category="paragraph"><block ref="22cdeb2bd209eeac77231f150422ffed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="088972153fa4b405527a2376c07113eb" category="section-title">ノードのポッドと永続ボリュームを確認する</block>
   <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">Cloud Insights を使用すると、 Kubernetes 環境のバックエンドストレージを可視化し、 Kubernetes ポッドと永続的ボリューム（ PVS ）を把握できます。IOPS 、レイテンシ、スループットなどの PV カウンタは、単一ポッドでの使用量から PV カウンター、 PV 、バックエンドストレージデバイスへのすべての方法で追跡できます。</block>
   <block id="4f199152407556f59fa94af499f084e0" category="paragraph">PV レベルで Cloud Insights は、バックエンド（ PV タイプに応じて内部ボリュームまたはボリューム）の容量情報（合計、使用済み、使用済みの割合）および内部ボリュームの Snapshot 数が収集されます。ポッドからストレージレベルでは、バックエンドの容量と内部ボリュームの Snapshot 数を収集します。</block>
@@ -2792,7 +2790,6 @@
   <block id="28eb73d0f92882a1159f796ebff046f9" category="paragraph">アラート通知に使用する Web フックを指定します。必要に応じて、警告または重大なアラートに別のフックを選択できます。</block>
   <block id="f1e3e3e95ba9bc35dccbfc26dd4ce6c3" category="inline-image-macro">Webhook Alerting ( ウェブフック警告</block>
   <block id="5a66c8fa12fdbdf101ab8030b60f6e31" category="paragraph"><block ref="5a66c8fa12fdbdf101ab8030b60f6e31" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c1c354049f1e5c1a3ac483bf9b54d91c" category="admonition">Webhook はプレビュー機能と見なされるため、変更される場合があります。</block>
   <block id="442dfc0b50af1fca2df31c2705cff46f" category="section-title">モニタを保存します</block>
   <block id="36af2a8d878789b86ef8d08fc1afe14d" category="list-text">必要に応じて、モニタの概要を追加できます。</block>
   <block id="4b4662d4706eea3e8bbf2bb4c06888a9" category="list-text">モニターにわかりやすい名前を付け、 * 保存 * をクリックします。</block>
@@ -6955,10 +6952,6 @@
   <block id="47f35a3903fc398c5f8e7a6493d18e8c" category="cell">Nimble アレイのパスワード</block>
   <block id="504153dba55dae032aeb4a2bc21e177f" category="cell">Nimble REST API が使用するポート。デフォルトは 5392. です。</block>
   <block id="167f1c81881d9e3d3fe3e3defab73e75" category="paragraph">注：デフォルトのパフォーマンスのポーリング間隔は 300 秒で、変更することはできません。Nimble でサポートされている唯一の間隔はこれです。</block>
-  <block id="1e09eec410e42ff83e0e216eb0694513" category="doc">環境の管理</block>
-  <block id="f9c96c59bec6c65a88c1d215b06d2104" category="paragraph">この FAQ では、 Cloud Insights 環境の管理に関する一般的な質問に回答しています。</block>
-  <block id="57b8def897f0a2ea2ed2efe403327dad" category="section-title">特定のユーザに Cloud Insights へのアクセスを許可しながら、特定のリソース（例SVM と関連するボリューム、 VM 、サーバ）</block>
-  <block id="266cca43002133f86c8df667186c2499" category="paragraph">Cloud Insights は、ロールベースアクセスを提供します。たとえば、 Reporting へのアクセスは、 Cloud Insights の Data Warehouse のレポートによって制御されます。レポートは、スケジュール設定したり、 PDF 、 HTML 、 CSV 形式で電子メールで送信したり、ファイル共有や、表示する前にユーザーに認証を要求する URL に送信したりできます。ユーザベースのアクセス権は、 Admins 、 users 、および guests の形式で付与されます。Active Directory / LDAP のサポートも利用できます。</block>
   <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">DCOS コンフィギュレーション</block>
   <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">DC/OS データコレクタ</block>
   <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">Cloud Insights は、このデータコレクタを使用して DC/OS からのメトリックを収集します。</block>
@@ -7776,4 +7769,12 @@
   <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">* 抽出 *: Cloud Insights からデータを取得します。</block>
   <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* Transform * ： Cloud Insights から抽出されたデータにビジネスロジックのルールまたは関数を適用します。</block>
   <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">* ロード *: 変換されたデータをデータウェアハウスに保存して、レポート作成に使用します。</block>
+  <block id="4f29fd9657915b51e00ee112dd495873" category="inline-image-macro">フィルタリングが表示された Kubernetes Node Detail ページ</block>
+  <block id="ff9dcb7868c4ad1ee30492b12c57b9d3" category="paragraph"><block ref="ff9dcb7868c4ad1ee30492b12c57b9d3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="17296f4349896b7279e58a091c3a382d" category="paragraph">フィルタ処理中に、入力を開始すると、現在のテキストに基づいて * ワイルドカードフィルタ * を作成するオプションが表示されます。このオプションを選択すると、ワイルドカード式に一致するすべての結果が返されます。また、 NOT または AND を使用して *expressions * を作成することもできます。また、「 None 」オプションを選択して、フィールドで null 値をフィルタリングすることもできます。</block>
+  <block id="1d76e0ea81fa06876e48804ecf1f0d24" category="inline-image-macro">K8S Explorer でワイルドカードを使用したフィルタリング</block>
+  <block id="ee1f323bbcbb0afd9325abd475cf0090" category="paragraph"><block ref="ee1f323bbcbb0afd9325abd475cf0090" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48a056707ced77b5d50afec66c6d1fb0" category="paragraph">ワイルドカードまたは式に基づくフィルタ（例 フィルタフィールドには、「なし」などは濃い青で表示されます。リストから直接選択した項目は、水色で表示されます。</block>
+  <block id="4c2b4732517e1639ec049c545ac89dea" category="inline-image-macro">ワイルドカードおよび選択した項目を表示するフィルタ</block>
+  <block id="900a446c6bbff849c8592d8788be4d66" category="paragraph"><block ref="900a446c6bbff849c8592d8788be4d66" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

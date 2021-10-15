@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_landing_page.html 
-keywords: telegraf, installation, install, kubernetes, pods, clusters 
+keywords: telegraf, installation, install, kubernetes, pods, clusters, filters, filtering, k8s 
 summary: Kubernetes のランディングページで 
 ---
 = Kubernetes クラスタの概要
@@ -56,3 +56,17 @@ image:Kubernetes_Node_Pod_Status.png["ノードとポッドのステータス"]
 画面の右側には、各クラスタで使用されている上位 3 つのネームスペースのリストが表示されます。「 * all * 」リンクをクリックすると、クラスタのすべてのネームスペースが表示されます。
 
 image:Kubernetes_Namespaces.png["ネームスペース"]
+
+
+
+=== フィルタを調整しています
+
+フィルタ処理中に、入力を開始すると、現在のテキストに基づいて * ワイルドカードフィルタ * を作成するオプションが表示されます。このオプションを選択すると、ワイルドカード式に一致するすべての結果が返されます。また、 NOT または AND を使用して *expressions * を作成することもできます。また、「 None 」オプションを選択して、フィールドで null 値をフィルタリングすることもできます。
+
+image:Filter_Kubernetes_Explorer.png["K8S Explorer でワイルドカードを使用したフィルタリング"]
+
+ワイルドカードまたは式に基づくフィルタ（例 フィルタフィールドには、「なし」などは濃い青で表示されます。リストから直接選択した項目は、水色で表示されます。
+
+image:Filter_Kubernetes_Explorer_2.png["ワイルドカードおよび選択した項目を表示するフィルタ"]
+
+ワイルドカードおよび式フィルタリングは、テキストまたはリストでは機能しますが、数値、日付、またはブール値では機能しません。
