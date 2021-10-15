@@ -4514,7 +4514,6 @@
   <block id="7175b0a435baf1ba17f00b97c6cf5d14" category="paragraph">Cloud Insights には、アラートが表示されます <block ref="6237c321048ea1332593fdb4bbfce320" category="inline-link-macro-rx"></block> 超過しています。</block>
   <block id="66c4a1617e80afeb2335f5c047465edb" category="section-title">アラートの表示と管理</block>
   <block id="c2c8a0c7eb9ee3eecc0a42c64bcb2046" category="paragraph">アラートを表示および管理するには、次の手順を実行します。</block>
-  <block id="47ef8c903eaf6cd7a28209d0bb1b571d" category="list-text">[* アラート &gt; 統合アラート * ] ページに移動します。</block>
   <block id="2cbf36bc1e683ba8c9d04a00f2b5287f" category="list-text">最新の 1 、 000 個までのアラートのリストが表示されます。フィールドの列ヘッダーをクリックすると、任意のフィールドでこのリストをソートできます。リストには、次の情報が表示されます。デフォルトでは、すべての列が表示されるわけではありません。表示する列を選択するには、「歯車」アイコンをクリックします <block ref="cc215051337679eeb66ae441f05b909e" category="inline-image-macro-rx" type="image"></block>：</block>
   <block id="64fce6220915f409c8df78402bca6bda" category="list-text">* アラート ID* ：システムによって生成された一意のアラート ID</block>
   <block id="e2d5d5ebfc6031996760c84f1641da4e" category="list-text">* Triggered Time * ：該当するモニタがアラートをトリガーした時刻</block>
@@ -7777,4 +7776,7 @@
   <block id="48a056707ced77b5d50afec66c6d1fb0" category="paragraph">ワイルドカードまたは式に基づくフィルタ（例 フィルタフィールドには、「なし」などは濃い青で表示されます。リストから直接選択した項目は、水色で表示されます。</block>
   <block id="4c2b4732517e1639ec049c545ac89dea" category="inline-image-macro">ワイルドカードおよび選択した項目を表示するフィルタ</block>
   <block id="900a446c6bbff849c8592d8788be4d66" category="paragraph"><block ref="900a446c6bbff849c8592d8788be4d66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">モニタのアクティブなアラートを示すアイコン</block>
+  <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">モニタ名の横にある「ベル」アイコンをクリックすると、モニタに関連付けられているアクティブなアラートを表示できます。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
 </blocks>
