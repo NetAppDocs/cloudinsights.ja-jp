@@ -7779,4 +7779,7 @@
   <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">モニタのアクティブなアラートを示すアイコン</block>
   <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">モニタ名の横にある「ベル」アイコンをクリックすると、モニタに関連付けられているアクティブなアラートを表示できます。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
+  <block id="33d6981ebb390960e4f355a9c9d53054" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
+  <block id="41f078f53c9079fa0fee65e798eb0300" category="inline-image-macro">セットアップ中の Data Collector 通知</block>
+  <block id="c571d21cbf53176bfa722c73aea76689" category="paragraph"><block ref="c571d21cbf53176bfa722c73aea76689" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
