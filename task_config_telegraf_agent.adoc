@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: 'Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.14/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。' 
+summary: 'Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.19/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。' 
 ---
 = データを収集するエージェントの設定
 
@@ -14,6 +14,9 @@ Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。
 
 
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
+
+
+NOTE: エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <<Verifying Checksums>>。
 
 
 
@@ -95,6 +98,12 @@ Windows でエージェントをアンインストールするには、 PowerShe
 ....
 Stop-Service telegraf
 sc.exe delete telegraf
+....
+. 証明書を信頼ストアから削除します。
++
+....
+cd Cert:\CurrentUser\Root
+rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
 ....
 . バイナリ、ログ、およびコンフィグレーションファイルを削除するには、 _C ： \Program Files\テレ グラムフォルダを削除します
 . レジストリから _SYSTEM\CurrentControlSet\Services\EventLog\Application\テレ グラムキーを削除します
@@ -423,16 +432,29 @@ sudo /tmp/uninstall
 
 === Kubernetes
 
-image:Kubernetes_Install_Agent_screen.png["Kubernetes Agent のインストール"]
+Kubernetes では、次の 2 つの方法でデータを収集できます。
+
+* オペレータベースの設定。Kubernetes に推奨される機能です。
+* 従来のスクリプトベースのエージェントのインストール
+
+
+インストール手順は、選択したタイルによって異なります。
+
+image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方法の選択"]
+
+
+NOTE: オペレータベースのインストールは _Preview_feature と見なされるため、変更されることがあります。
 
 .前提条件
 * cURL 、 sudo 、 kubectl などのコマンドを使用できる必要があります
 +
 最適な結果を得るには、これらのコマンドをパスに追加してください。
 
-* kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。
+* kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。
 * プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。
-* セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。
+* セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。これはオペレータベースのインストールでインストールされます。
+* Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。
+* オペレータベースのインストールをテスト済みで、 AWS EKS 1.18 および OpenShift 3.11 と連携することが期待されています。
 
 
 
@@ -455,13 +477,28 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 |===
 
 
-==== インストール
+==== オペレータベースのインストール
 
-.Kubernetes にエージェントをインストールする手順：
+image:Kubernetes_Operator_Agent_Instructions.png["オペレータベースのインストール"]
+
+.Operator ベースのエージェントを Kubernetes にインストールする手順：
+. クラスタ名とネームスペースを入力します。
+. これらのコードを入力したら、エージェントインストーラスニペットをコピーできます
+. このスニペットをクリップボードにコピーするには、ボタンをクリックします。
+. スニペットを a_bash_window に貼り付け、実行します。
+. インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。
+
+
+
+
+==== スクリプトベースのインストール
+
+image:Kubernetes_Install_Agent_screen.png["スクリプトベースのインストール"]
+
+.Kubernetes にスクリプトベースのエージェントをインストールする手順：
 . エージェントアクセスキーを選択します。
 . インストールダイアログの * エージェントインストーラスニペットのコピー * ボタンをクリックします。コマンドブロックを表示する場合は、オプションで、 [__ Reveal Agent Installer Snippet_] ボタンをクリックします。
-. Bash ウィンドウを開きます。
-. Bash ウィンドウにコマンドを貼り付けます。
+. コマンドを次のようにして bash_window に貼り付けます。
 . 必要に応じて、 install コマンドの一部として名前空間をオーバーライドしたり、クラスタ名を指定したりできます。そのためには、コマンドブロックを変更して final_./$installerNam_ の前に次のいずれかまたは両方を追加します
 +
 ** cluster_name = < クラスタ名 >
@@ -481,6 +518,10 @@ TIP: _cluster_name _ は Cloud Insights から Kubernetes クラスタの名前�
 . コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。明示的に _namespace__ を設定していない場合は、名前を入力するように求められます。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
 . 完了したら、 [* Complete Setup* （セットアップ完了） ] をクリックします。
 
+
+
+
+==== DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動
 
 DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。
 
@@ -550,7 +591,9 @@ kubectl delete pod telegraf-rs-*
 
 ==== Kubernetes からデータを収集するようにエージェントを設定します
 
-Kubernetes 環境の場合、 Cloud Insights は Telegraf エージェントを DemonSet および ReplicaSet として導入します。エージェントが実行するポッドは、次の項目にアクセスできる必要があります。
+注：スクリプトベースのインストールのデフォルトの名前空間は、 _CI-MOCI_です 。オペレータベースのインストールの場合、デフォルトのネームスペースは _NetApp-monitoring _ です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。
+
+エージェントが実行するポッドは、次の項目にアクセスできる必要があります。
 
 * ホストパス
 * ConfigMap
@@ -602,12 +645,13 @@ Kubernetes 環境の場合、 Cloud Insights は Telegraf エージェントを 
 
 ==== kube-state-metrics サーバをインストールしています
 
-kube-state-metrics サーバをインストールすると、 StatefulSet 、 DemonSet 、 Deployment 、 PV 、 PVC 、 ReplicaSet 、 Service 、 Namespace 、 Secret 、 ConfigMap 、 PoD Volume 、入力。
+
+NOTE: オペレータベースのインストールでは、 kube-state-metrics のインストールを処理します。オペレータベースのインストールを実行する場合は、このセクションを省略してください。
 
 
 NOTE: Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください link:https://github.com/kubernetes/kube-state-metrics/blob/master/docs/cli-arguments.md["kube-state-metrics ドキュメント"]。
 
-kube-state-metrics サーバをインストールするには、次の手順を実行します。
+kube-state-metrics サーバをインストールするには、次の手順を実行します（スクリプトベースのインストールを実行する場合に必要です）。
 
 .手順
 . 一時フォルダ（例えば、 /tmp/kube-state-yaml -files/_ ）を作成し、から .yaml ファイルをコピーします https://github.com/kubernetes/kube-state-metrics/tree/master/examples/standard[] をこのフォルダに追加します。
@@ -643,7 +687,7 @@ kubbe 状態メトリックカウンタの情報にアクセスするには、�
 
 これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
-Kubernetes でエージェントをアンインストールするには、次の手順を実行します。
+Kubernetes 上のスクリプトベースのエージェントをアンインストールするには、次の手順を実行します。
 
 モニタリングネームスペースが Telegraf 専用に使用されている場合：
 
@@ -652,6 +696,16 @@ Kubernetes でエージェントをアンインストールするには、次の
 モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
 
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+オペレータベースのインストールの場合は、次のコマンドを実行します。
+
+....
+kubectl delete ns netapp-monitoring
+kubectl delete agent agent-monitoring-netapp
+kubectl delete crd agents.monitoring.netapp.com
+kubectl delete role agent-leader-election-role
+kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+....
 
 
 ==== Agent をアップグレードしています
@@ -663,10 +717,89 @@ Kubernetes でエージェントをアンインストールするには、次の
 . 既存の構成をバックアップします。
 +
  kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
 . Agent をアンインストールします（手順については、上記を参照）。
 . link:#kubernetes["新しいエージェントをインストールします"]。
 
 
+
+
+== チェックサムを検証する
+
+Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。
+
+次の手順を実行します。
+
+. 指示に従ってエージェントインストーラスニペットをコピーします。
+. スニペットをコマンドウィンドウに貼り付ける代わりに、テキストエディタに貼り付けます。
+. コマンドから末尾の「 --install 」（ Linux/Mac ）または「 -install 」（ Windows ）を削除します。
+. コマンド全体をテキストエディタからコピーします。
+. 次に、コマンドウィンドウ（作業ディレクトリ内）に貼り付けて実行します。
+
+
+Windows 以外：
+
+* Download and install （デフォルト）：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+* ダウンロードのみ：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+
+
+Windows の場合
+
+* Download and install （デフォルト）：
++
+ !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download -install)
+* ダウンロードのみ：
++
+ !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
+
+
+download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
+
+* インストールスクリプト
+* 環境ファイル
+* YAML ファイル
+* 署名済みチェックサムファイル（ SHA256 署名）
+* 署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）
+
+
+インストールスクリプト、環境ファイル、 YAML ファイルは、目視検査を使用して検証できます。
+
+PEM ファイルは、フィンガープリントが次のようになっていることを確認することで検証できます。
+
+ E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+具体的には、
+
+* Windows 以外：
++
+ openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
+* Windows の場合
++
+ Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
+
+
+署名済みチェックサムファイルは、 PEM ファイルを使用して確認できます。
+
+* Windows 以外：
++
+ openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+* Windows （上記の「証明書のインポート」を使用して証明書をインストールした後）：
++
+ Get-AuthenticodeSignature -FilePath .\sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
+
+
+すべてのアーティファクトが正常に検証されたら、次のコマンドを実行してエージェントのインストールを開始できます。
+
+Windows 以外：
+
+ sudo -E -H ./<installation_script_name> --install
+Windows の場合
+
+ .\ cloudinsights-windows.ps1 -install
 
 
 == エージェントインストールのトラブルシューティング
@@ -684,7 +817,7 @@ Kubernetes でエージェントをアンインストールするには、次の
 | すでにエージェントをインストールしていますが、 Cloud Insights インストーラを使用してインストールしていません | 前のエージェントを削除し、 Cloud Insights エージェントのインストールを実行して、適切なデフォルト設定ファイルを設定します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。 
 
 
-| Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。 
+| Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegraf バージョン 2.0 以降を使用している必要があります。 
 
 
 | 次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781. | これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル 

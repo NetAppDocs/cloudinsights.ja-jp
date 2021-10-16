@@ -5536,7 +5536,6 @@
   <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">Memcached</block>
   <block id="05345376e590de98cc623cdd4392065e" category="cell">接続処理認証要求の受け入れ失敗した認証バイト読み取り (1 秒あたり ) バイト書き込み (1 秒あたり ) CAS Badval CAS Hits CAS Mises Flush Reqs (1 秒あたり ) GET Reqs (1 秒あたり ) Touch Reqs (1 秒あたり ) Touch Reqs (1 秒あたり ) Connection Wrqs (1 秒あたり ) 接続構造未完了接続現在の保存済みアイテムの数減少リクエストヒット数 (1 秒あたり ) 削除リクエストヒット数 (1 秒あたり ) 削除リクエストミス回数 (1 秒あたり ) 削除リクエスト期限削除有効な削除アイテム期限切れアイテム取得ヒット数 (1 秒あたり ) 取得ミス回数 (1 秒あたり ) Used Hash Bytes Hash （使用済みハッシュバイトハッシュ）が拡張されています。要求ヒット（ 1 秒あたり）が含まれています。サーバ要求ミス（ 1 秒あたり）サーバ最大バイトリッスン無効な再要求されたワーカースレッド数再要求された数再要求されたワーカースレッド数合計開かれた接続数保存された</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Tegraf</block>
-  <block id="0eaadae7a1116194846bc062f12d3eaa" category="summary">Cloud Insights はをサポートします <block ref="5035b910ac2dcfd6f07336a0e7898d37" category="inline-link-macro-rx"></block> 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。</block>
   <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">データを収集するエージェントの設定</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">エージェントをインストールしています</block>
@@ -5624,11 +5623,8 @@
   <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">前のテレグラムエージェントをアンインストールします。</block>
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="b2257c8ee159c6db38a3a4db5f1bbb63" category="inline-image-macro">Kubernetes Agent のインストール</block>
-  <block id="9b46ce6c5d23752c2df12a37c9f7fd99" category="paragraph"><block ref="9b46ce6c5d23752c2df12a37c9f7fd99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8904cc29551e19496fd1ef88d03dbdb2" category="list-text">cURL 、 sudo 、 kubectl などのコマンドを使用できる必要があります</block>
   <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
-  <block id="1414710b4943b74148ba07c3c051ac64" category="list-text">kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">監視は Linux ノードにのみインストールされます</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。</block>
@@ -5640,10 +5636,7 @@
   <block id="25d70ab71729a44b7af3c8593c6ea423" category="cell">beta.Kubernetes IO / OS = Linux</block>
   <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用</block>
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">catt.io/os=linux</block>
-  <block id="89749f6127dbab76424cf1683e6f46e8" category="list-title">Kubernetes にエージェントをインストールする手順：</block>
   <block id="3c3ac08f88c7317ac9d41d3b669cbc27" category="list-text">インストールダイアログの * エージェントインストーラスニペットのコピー * ボタンをクリックします。コマンドブロックを表示する場合は、オプションで、 [__ Reveal Agent Installer Snippet_] ボタンをクリックします。</block>
-  <block id="3a0b4939c688d05edd3a0e10ec0d2e86" category="list-text">Bash ウィンドウを開きます。</block>
-  <block id="ada6dab7d7bfbffaf72122580fad35de" category="list-text">Bash ウィンドウにコマンドを貼り付けます。</block>
   <block id="c3e7ae0efafea510710a12fe0f0d609a" category="list-text">必要に応じて、 install コマンドの一部として名前空間をオーバーライドしたり、クラスタ名を指定したりできます。そのためには、コマンドブロックを変更して final_./$installerNam_ の前に次のいずれかまたは両方を追加します</block>
   <block id="e1a5dab3e4ad3574b29d38315af67877" category="list-text">cluster_name = &lt; クラスタ名 &gt;</block>
   <block id="8d452c9dd71946426462bb948da29ba1" category="list-text">namespace = &lt; 名前空間 &gt;</block>
@@ -5660,14 +5653,11 @@
   <block id="d3f2095232996254a1ce9d2dd9efc5b0" category="paragraph">* Tegraf エージェントのインストール後に、 appropriate _https_proxy_ および / または _http_proxy_environment 変数を、 _TETRF -demonset および _TETR_replicaset に追加して設定します。</block>
   <block id="fc8f446a9ea6e6bdd7e365563b8c3851" category="paragraph">次に Tegraf を再起動します。</block>
   <block id="1a2ec26374f8d36de076929c5ff28aa8" category="section-title">Kubernetes からデータを収集するようにエージェントを設定します</block>
-  <block id="e40b87cec56d11ac491fd844b7bb27d3" category="paragraph">Kubernetes 環境の場合、 Cloud Insights は Telegraf エージェントを DemonSet および ReplicaSet として導入します。エージェントが実行するポッドは、次の項目にアクセスできる必要があります。</block>
   <block id="f1e81401ee0afe2275193298ef588120" category="list-text">ホストパス</block>
   <block id="5eeadeea1e2bd82727f9a220408a5f2a" category="list-text">ConfigMap</block>
   <block id="7de38f3c3d3baa7ca58a366f09577586" category="list-text">秘密</block>
   <block id="16fbf864377203e70ce04c9b7fbcef86" category="paragraph">これらの Kubernetes オブジェクトは、 Cloud Insights UI に用意されている Kubernetes Agent インストールコマンドの一部として自動的に作成されます。OpenShift などの一部の Kubernetes タイプでは、これらのコンポーネントへのアクセスをブロックする追加のセキュリティレベルが実装されています。_SecurityContextConstraint_ は、 Cloud Insights UI に用意されている Kubernetes エージェントインストールコマンドの一部として作成されていないため、手動で作成する必要があります。作成したら、 Tegraf ポッドを再起動します。</block>
   <block id="708b7f7f18eb293652df29349e867172" category="section-title">kube-state-metrics サーバをインストールしています</block>
-  <block id="07472d5f2af611d646007b614784f7ee" category="paragraph">kube-state-metrics サーバをインストールすると、 StatefulSet 、 DemonSet 、 Deployment 、 PV 、 PVC 、 ReplicaSet 、 Service 、 Namespace 、 Secret 、 ConfigMap 、 PoD Volume 、入力。</block>
-  <block id="a2ad229e09caec752191079182a7adae" category="paragraph">kube-state-metrics サーバをインストールするには、次の手順を実行します。</block>
   <block id="ba86ea7c2dbdd3f6b9064aa53b496ca9" category="list-text">一時フォルダ（例えば、 /tmp/kube-state-yaml -files/_ ）を作成し、から .yaml ファイルをコピーします<block ref="6c1d035244e82592cca4953c7743d814" category="inline-link-rx"></block> をこのフォルダに追加します。</block>
   <block id="abcf7e32baf550db167b82496350d414" category="list-text">kube-state-metrics のインストールに必要な .yaml ファイルを適用するには、次のコマンドを実行します。</block>
   <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">kube-state-metrics カウンタ</block>
@@ -5699,7 +5689,6 @@
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">Stat助け Set メトリック</block>
   <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。</block>
-  <block id="7dc4fa7e87abeecb05988c4d2a77082d" category="paragraph">Kubernetes でエージェントをアンインストールするには、次の手順を実行します。</block>
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">モニタリングネームスペースが Telegraf 専用に使用されている場合：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：</block>
   <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">既存の構成をバックアップします。</block>
@@ -5712,7 +5701,6 @@
   <block id="eca45129c8446e68f5ce8f765f25b4c7" category="cell">すでにエージェントをインストールしていますが、 Cloud Insights インストーラを使用してインストールしていません</block>
   <block id="ceba88aab9e14c687ffb3ce263a229a1" category="cell">前のエージェントを削除し、 Cloud Insights エージェントのインストールを実行して、適切なデフォルト設定ファイルを設定します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。</block>
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。</block>
-  <block id="87955a26e39fa43f43dbcb18a7dfa9f0" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781.</block>
   <block id="5f06573aae905166447bf8d646c6bf89" category="summary">概要の照会</block>
   <block id="fadb076bccad39c075c50bfa7f81bc31" category="doc">クエリで使用するアセット</block>
@@ -7589,7 +7577,6 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">ユーザを削除します</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">管理者ロールを持つユーザーは ' ユーザーの名前をクリックして ' ダイアログの _Delete User_ をクリックすることにより ' ユーザー ( 会社に所属していないユーザーなど ) を削除できますユーザが Cloud Insights 環境から削除されます。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">ユーザが作成したダッシュボード、クエリなどは、削除しても Cloud Insights 環境で引き続き使用できます。</block>
-  <block id="29dda85c81caa16abcd4f195deac6098" category="list-text">セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。</block>
   <block id="f15a3c589417e8499878c4798162a622" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">この問題</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
@@ -7600,7 +7587,6 @@
   <block id="941f6670886082a432b8033949c34311" category="cell">*.cloudinsights.netapp.com URL の Zscaler プロキシで SSL 検査をディセーブルにします。Zscaler が SSL 検査を行い、証明書を置き換えた場合、 Cloud Secure は動作しません。</block>
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">エージェントのインストール中に、解凍後にインストールがハングします。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">「 chmod 755 -rf 」コマンドが失敗しています。このコマンドは、別のユーザに属する作業ディレクトリ内のファイルを含む root 以外の sudo ユーザがエージェントのインストールコマンドを実行している場合は失敗し、それらのファイルの権限を変更することはできません。失敗した chmod コマンドのため、残りのインストールは実行されません。1. 「 cloudsecure 」という名前の新しいディレクトリを作成します。2. そのディレクトリに移動します。3. 完全な「 token=… …」をコピーして貼り付けます。 … ./cloudsecure-agent-install.sh インストールコマンドを実行し、 Enter キーを押します。4. インストールを続行できるはずです。</block>
-  <block id="b37e5afaddcc3a71b84e9c4dac7caba9" category="cell">これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">このデータソースの設定に関する要件は次のとおりです。</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">Metric Query ロールとテナントアクセスロールが割り当てられているユーザのユーザ名とパスワード</block>
   <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">で webhook 通知を選択します <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
@@ -7782,4 +7768,65 @@
   <block id="33d6981ebb390960e4f355a9c9d53054" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
   <block id="41f078f53c9079fa0fee65e798eb0300" category="inline-image-macro">セットアップ中の Data Collector 通知</block>
   <block id="c571d21cbf53176bfa722c73aea76689" category="paragraph"><block ref="c571d21cbf53176bfa722c73aea76689" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights はをサポートします <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。</block>
+  <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">証明書を信頼ストアから削除します。</block>
+  <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes では、次の 2 つの方法でデータを収集できます。</block>
+  <block id="2f1de2d4cf0537bc6054605965911b29" category="list-text">オペレータベースの設定。Kubernetes に推奨される機能です。</block>
+  <block id="7b30b1516f4acc31dd26b0ee7b225209" category="list-text">従来のスクリプトベースのエージェントのインストール</block>
+  <block id="a320be9a73c79b20f24e64a06a11d19f" category="paragraph">インストール手順は、選択したタイルによって異なります。</block>
+  <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes のインストール方法の選択</block>
+  <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="81afb36611998eaaa0271156b5cdcf90" category="admonition">オペレータベースのインストールは _Preview_feature と見なされるため、変更されることがあります。</block>
+  <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。</block>
+  <block id="37c93461ccb3b9d32a460c02b4fc8ce6" category="list-text">セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。これはオペレータベースのインストールでインストールされます。</block>
+  <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。</block>
+  <block id="50cce61a9e4474feaef6870b764fdda9" category="list-text">オペレータベースのインストールをテスト済みで、 AWS EKS 1.18 および OpenShift 3.11 と連携することが期待されています。</block>
+  <block id="e34603ef348552f7a29cbb18d1ee78c0" category="section-title">オペレータベースのインストール</block>
+  <block id="640dbe189d66fa73b9cedb44a9424843" category="inline-image-macro">オペレータベースのインストール</block>
+  <block id="4a64a7036f6051830b5665f656513166" category="paragraph"><block ref="4a64a7036f6051830b5665f656513166" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f12ec4a5f81cdedf75b58fc93e3ab6a" category="list-title">Operator ベースのエージェントを Kubernetes にインストールする手順：</block>
+  <block id="bff23b25f3e125bae18792a45a51c015" category="list-text">クラスタ名とネームスペースを入力します。</block>
+  <block id="5b82931325db3333d72e29bd0c4c7b88" category="list-text">これらのコードを入力したら、エージェントインストーラスニペットをコピーできます</block>
+  <block id="69fe7b86f073ff27417a8bb4f40bf251" category="list-text">このスニペットをクリップボードにコピーするには、ボタンをクリックします。</block>
+  <block id="60359575c1541888619045ed924fc983" category="list-text">スニペットを a_bash_window に貼り付け、実行します。</block>
+  <block id="ecf5918b75414ec8e1874242a839d017" category="list-text">インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。</block>
+  <block id="54afcf6213f1a3b61770613a9ebc68df" category="section-title">スクリプトベースのインストール</block>
+  <block id="2c221df7e5c48bd54511af38bd07dbad" category="inline-image-macro">スクリプトベースのインストール</block>
+  <block id="ac80a29f37fb946121c0253c4976bde6" category="paragraph"><block ref="ac80a29f37fb946121c0253c4976bde6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b64f662cc5cf3d2e1684d86487aea6f6" category="list-title">Kubernetes にスクリプトベースのエージェントをインストールする手順：</block>
+  <block id="f5371c459cefaaee7b5b7685e956ff88" category="list-text">コマンドを次のようにして bash_window に貼り付けます。</block>
+  <block id="d3eca57feea30c8725375ed32c9285fd" category="section-title">DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動</block>
+  <block id="8c357155c34910d917ac705e248f3417" category="paragraph">注：スクリプトベースのインストールのデフォルトの名前空間は、 _CI-MOCI_です 。オペレータベースのインストールの場合、デフォルトのネームスペースは _NetApp-monitoring _ です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。</block>
+  <block id="d101f99762aa933eab885ac5a54fb726" category="paragraph">エージェントが実行するポッドは、次の項目にアクセスできる必要があります。</block>
+  <block id="e4f58bd0ebfcc73f188eead8e62fdd51" category="admonition">オペレータベースのインストールでは、 kube-state-metrics のインストールを処理します。オペレータベースのインストールを実行する場合は、このセクションを省略してください。</block>
+  <block id="85d9e7fafd4cca5a1545c9cbf16d8e80" category="paragraph">kube-state-metrics サーバをインストールするには、次の手順を実行します（スクリプトベースのインストールを実行する場合に必要です）。</block>
+  <block id="368e58ca73434aae8ab3a7bf3f6d2955" category="paragraph">Kubernetes 上のスクリプトベースのエージェントをアンインストールするには、次の手順を実行します。</block>
+  <block id="aca5f422c992e53669a31d99958653bc" category="paragraph">オペレータベースのインストールの場合は、次のコマンドを実行します。</block>
+  <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">チェックサムを検証する</block>
+  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。</block>
+  <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">次の手順を実行します。</block>
+  <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">指示に従ってエージェントインストーラスニペットをコピーします。</block>
+  <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">スニペットをコマンドウィンドウに貼り付ける代わりに、テキストエディタに貼り付けます。</block>
+  <block id="e596e19d0eb6c82c1aba63c3fd5cc626" category="list-text">コマンドから末尾の「 --install 」（ Linux/Mac ）または「 -install 」（ Windows ）を削除します。</block>
+  <block id="34e3334224025c0302c21ab69b535b6e" category="list-text">コマンド全体をテキストエディタからコピーします。</block>
+  <block id="d2a9c05594a3807487efd306f7e06ff5" category="list-text">次に、コマンドウィンドウ（作業ディレクトリ内）に貼り付けて実行します。</block>
+  <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="paragraph">Windows 以外：</block>
+  <block id="051ab73b0c77a3e60cd6e6de57fc9319" category="list-text">Download and install （デフォルト）：</block>
+  <block id="a3ef489d553e0422ea8926faf65bf77a" category="list-text">ダウンロードのみ：</block>
+  <block id="140710a8dd48496a1ea3b09f2799c408" category="paragraph">Windows の場合</block>
+  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。</block>
+  <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">インストールスクリプト</block>
+  <block id="b015398c226e1e3576258432ece31819" category="list-text">環境ファイル</block>
+  <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">YAML ファイル</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">署名済みチェックサムファイル（ SHA256 署名）</block>
+  <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）</block>
+  <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">インストールスクリプト、環境ファイル、 YAML ファイルは、目視検査を使用して検証できます。</block>
+  <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">PEM ファイルは、フィンガープリントが次のようになっていることを確認することで検証できます。</block>
+  <block id="7a2babd4fa48c9b0c07e4b865ff53efa" category="paragraph">具体的には、</block>
+  <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">署名済みチェックサムファイルは、 PEM ファイルを使用して確認できます。</block>
+  <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows （上記の「証明書のインポート」を使用して証明書をインストールした後）：</block>
+  <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">すべてのアーティファクトが正常に検証されたら、次のコマンドを実行してエージェントのインストールを開始できます。</block>
+  <block id="82de65b0bf7b606fd79ebba95608bb77" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegraf バージョン 2.0 以降を使用している必要があります。</block>
+  <block id="ad946bd62c8170d1ad5c5d5250abeb85" category="cell">これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル</block>
 </blocks>
