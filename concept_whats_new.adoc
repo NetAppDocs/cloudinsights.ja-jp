@@ -11,6 +11,43 @@ keywords: features
 
 
 
+=== 2021年10月
+
+
+
+==== K8S Explorer ページのフィルター
+
+link:kubernetes_landing_page.html["Kubernetes エクスプローラ"] ページフィルタを使用すると、 Kubernetes クラスタ、ノード、およびポッドの探索に表示されるデータを集中的に制御できます。
+
+image:Filter_Kubernetes_Explorer.png["Kubernetes Explorer のフィルタリングの例"]
+
+
+
+==== レポート用の K8s データ
+
+Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。
+
+image:Kubernetes_ETL_Example.png["チャージバックレポートに Kubernetes データが表示されます"]
+
+
+
+==== ダークテーマが到着しました
+
+あなたの多くは暗い主題を求め、 Cloud Insights は答えた。ライトテーマとダークテーマを切り替えるには、ユーザー名の横にあるドロップダウンをクリックします。image:DarkModeSwitch.png["[ ダークテーマに切り替える ] は、 [ ユーザー ] ドロップダウンから選択できます"]
+image:DarkModeDashboard.png["ダークテーマで表示される一般的なダッシュボードの画像"]
+
+
+
+==== Data Collector のサポート
+
+Cloud Insights データコレクタにいくつかの改善を加えました。主な特長は次のとおりです。
+
+* Amazon FSX for ONTAP の新しいコレクタ
+
+
+'''
+
+
 === 2021年9月
 
 
@@ -57,6 +94,7 @@ Cloud Insights データコレクタにいくつかの改善を加えました�
 * ストレージノードの親シリアル番号を持つ強化された IBM SVC および EMC PowerStore
 
 
+'''
 
 
 === 2021年8月

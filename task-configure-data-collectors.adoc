@@ -33,7 +33,16 @@ summary: データコレクタの一般的な手順
 . Configuration （設定）画面で必須フィールドを入力します。
 . 通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin > Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします
 +
-image:CollectorNotifications.png["セットアップ中の Data Collector 通知"]
+
+NOTE: コレクタレベルの通知はプレビュー機能であるため、変更される場合があります。
+
+
+
+image:CollectorNotifications.jpg["コレクタ通知"]
+
+データコレクタのランディングページを表示しているときは、データコレクタの概要セクションの「通知」フィールドで鉛筆のアイコンをクリックすることで通知を変更できます。
+
+image:CollectorNotifications_Edit.jpg["コレクタ通知の編集"]
 
 . [ 詳細構成 *] をクリックして、追加の構成フィールドを追加します。すべてのデータコレクタで高度な設定が必要となるわけで
 . Test Configuration* をクリックして、データコレクタが正しく設定されていることを確認します。

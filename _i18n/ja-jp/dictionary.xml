@@ -7765,9 +7765,6 @@
   <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">モニタのアクティブなアラートを示すアイコン</block>
   <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">モニタ名の横にある「ベル」アイコンをクリックすると、モニタに関連付けられているアクティブなアラートを表示できます。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
-  <block id="33d6981ebb390960e4f355a9c9d53054" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
-  <block id="41f078f53c9079fa0fee65e798eb0300" category="inline-image-macro">セットアップ中の Data Collector 通知</block>
-  <block id="c571d21cbf53176bfa722c73aea76689" category="paragraph"><block ref="c571d21cbf53176bfa722c73aea76689" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights はをサポートします <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">証明書を信頼ストアから削除します。</block>
@@ -7829,4 +7826,166 @@
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">すべてのアーティファクトが正常に検証されたら、次のコマンドを実行してエージェントのインストールを開始できます。</block>
   <block id="82de65b0bf7b606fd79ebba95608bb77" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegraf バージョン 2.0 以降を使用している必要があります。</block>
   <block id="ad946bd62c8170d1ad5c5d5250abeb85" category="cell">これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル</block>
+  <block id="98f1b16edd9c418c18f29042ee157677" category="summary">Telegraf データ表示オプション</block>
+  <block id="a5f3f63c2f6e1d6d4605650633b9ce8a" category="section-title">2021年10月</block>
+  <block id="2b8277dc59593a3beec619c816d77dc1" category="section-title">K8S Explorer ページのフィルター</block>
+  <block id="1cfce78051e23f0d9fc12410754424ee" category="paragraph"><block ref="40b10aa2345bc7500d58a69dfe0565c3" category="inline-link-macro-rx"></block> ページフィルタを使用すると、 Kubernetes クラスタ、ノード、およびポッドの探索に表示されるデータを集中的に制御できます。</block>
+  <block id="651ecedd8d25ab4ae212856320c2b07d" category="inline-image-macro">Kubernetes Explorer のフィルタリングの例</block>
+  <block id="3c66c495f12a25be56d72e7b3f6df498" category="paragraph"><block ref="3c66c495f12a25be56d72e7b3f6df498" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f99134a154434d88680184fbf03690c" category="section-title">レポート用の K8s データ</block>
+  <block id="b780477f78288d46124bd3fa35adcdf6" category="paragraph">Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。</block>
+  <block id="794bb0e615ad8cbde31e79e047b05977" category="inline-image-macro">チャージバックレポートに Kubernetes データが表示されます</block>
+  <block id="72cb1c8d0bd036efb577af713c14ee92" category="paragraph"><block ref="72cb1c8d0bd036efb577af713c14ee92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d358290cdffc932cfc83fc42f086cdfc" category="section-title">ダークテーマが到着しました</block>
+  <block id="8f91642da0d4bf72e0cf6415689f7c5c" category="inline-image-macro">[ ダークテーマに切り替える ] は、 [ ユーザー ] ドロップダウンから選択できます</block>
+  <block id="8c22ff9161ced6a775c88721bd6b5d26" category="inline-image-macro">ダークテーマで表示される一般的なダッシュボードの画像</block>
+  <block id="840d2d42752bca749d1766ad11c7592a" category="paragraph">あなたの多くは暗い主題を求め、 Cloud Insights は答えた。ライトテーマとダークテーマを切り替えるには、ユーザー名の横にあるドロップダウンをクリックします。<block ref="8eb4a7aca7d209ac2d8fd3e7d62c3442" category="inline-image-macro-rx" type="image"></block>
+<block ref="3f488cb6a8d73935352ae358a16b41fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89d2c05fd752bacd15546a3e7343e4ca" category="list-text">Amazon FSX for ONTAP の新しいコレクタ</block>
+  <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">システム定義のモニター</block>
+  <block id="571a4c7b2a21f7d5320e568101487965" category="paragraph">については以下を参照してください <block ref="336c342709e4378716804c9ce097a6ae" category="inline-link-macro-rx"></block> ドキュメントをプレビュー</block>
+  <block id="78f5442b44403af2b19916532d824297" category="section-title">システム定義モニタ（プレビュー）</block>
+  <block id="96243a9e9260d57336856a77aebc69e9" category="paragraph">2021 年 10 月から、 Cloud Insights は指標とログの両方についてシステム定義のモニタを多数プレビューします。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。</block>
+  <block id="48eb2cd1e9b8d7db7bb79328591d4368" category="admonition">システム定義モニタはプレビュー機能であるため、変更されることがあります。</block>
+  <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">既存のモニタを変更するには、リストでモニタ名をクリックします。</block>
+  <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">モニタを追加するには、 *+ モニタ * をクリックします。</block>
+  <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">システムモニタまたはログモニタを選択します</block>
+  <block id="3aff4942a9a35d98c6fdcb7dee853d59" category="paragraph"><block ref="3aff4942a9a35d98c6fdcb7dee853d59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c58ee317c84221459556bf1d8e52753f" category="paragraph">新しいモニタを追加すると、メトリックモニタまたはログモニタを作成するよう求められます。</block>
+  <block id="fc2f22eed1d01c032a18cfe4cba78d61" category="list-text">_Metric _ は、インフラまたはパフォーマンスに関連するトリガーに関するアラートを監視します</block>
+  <block id="a0974f4b9ee8ae7e61310df23d207909" category="list-text">ログ関連のアクティビティに関するアラートを監視します</block>
+  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">モニタタイプを選択すると、モニタ設定ダイアログが表示されます。</block>
+  <block id="269c9bcd9ea3883a3a121a1b88af9e34" category="section-title">メートル法モニタ（ Metric Monitor</block>
+  <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">ドロップダウンで、監視するオブジェクトタイプと指標を検索して選択します。</block>
+  <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">_Warning_level には、この例に 200 を入力します。この警告レベルを示す破線がグラフの例に表示されます。</block>
+  <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">モニタの条件を定義します</block>
+  <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">ログモニタ</block>
+  <block id="2537071834a07a838e1fbe450ad077ac" category="paragraph">*Log monitor * で、最初に使用可能なログリストから監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。</block>
+  <block id="92e0462f18b6159955eb265400fc3fac" category="paragraph">たとえば、 logs.netapp.ems ソースの「 object.stor.unavailabe 」メッセージタイプをフィルタリングするように選択できます。</block>
+  <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">ログモニタフィルタを空にすることはできません。</block>
+  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">監視するログを選択し、フィルタを設定します</block>
+  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="454176c970e70022beb38f8813bea495" category="section-title">アラートの動作を定義します</block>
+  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">ログアラートがトリガーされたときのアラートの送信方法を選択します。上で設定したフィルタ条件に基づいて、 _Warning_ 、 _Critical_ 、または _Informational_severity でアラートを生成するようにモニタを設定できます。</block>
+  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">監視するログ動作を定義します</block>
+  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">アラート解決の動作を定義します</block>
+  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">ログ監視アラートの解決方法を選択できます。次の 3 つの選択肢があります。</block>
+  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 即時解決 * ：このアラートは、対処不要で即座に解決されます</block>
+  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 時間に基づく解決 * ：アラートは指定した時間が経過すると解決されます</block>
+  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* ログエントリに基づいて解決 * ：このアラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
+  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">アラート解決</block>
+  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c1c354049f1e5c1a3ac483bf9b54d91c" category="admonition">Webhook はプレビュー機能と見なされるため、変更される場合があります。</block>
+  <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">カスタムモニタは、一時停止、再開、削除、または別のグループへの移動が可能です。システム定義のモニタは一時停止および再開できますが、削除または移動することはできません。</block>
+  <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">カスタムモニタグループ</block>
+  <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">新しいカスタムモニタグループを作成するには、「 + 」「新規モニタグループの作成 * 」ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
+  <block id="c98010a3b96739beb4d94394baec101e" category="admonition">各モニタは、一度に 1 つのグループのみに属することができます（「すべてのモニタ」および「カスタムモニタ」に属することもあります）。</block>
+  <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">システム定義のモニタは、事前に定義されたメトリックと条件に加えて、デフォルトの説明と修正アクションで構成されています。これらは変更できません。システム定義モニタの通知受信者リストを変更できます。メトリック、条件、概要、および修正アクションを表示したり、受信者リストを変更したりするには、システム定義のモニタグループを開き、リスト内のモニタ名をクリックします。</block>
+  <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">システム定義のモニタグループは変更または削除できません。</block>
+  <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下のシステム定義モニタは、記載されたグループで使用できます。</block>
+  <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">* ONTAP インフラストラクチャ * は、 ONTAP クラスタのインフラストラクチャ関連の問題を監視します。</block>
+  <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">* ONTAP ワークロードの例 * には、ワークロード関連の問題のモニターが含まれています。</block>
+  <block id="141e31818558b2f9c106f51987380a29" category="list-text">両方のグループのモニタのデフォルトは _Paused _ state です。</block>
+  <block id="007cc9547ae8884ad597cd92ba505422" category="cell">重大度</block>
+  <block id="72abf8aec41374681348ca7f6c410986" category="cell">概要を監視します</block>
+  <block id="7650364136ffbfe1cfd659068e6c1327" category="cell">対処方法</block>
+  <block id="7e07c1b11f24151c7ec5fb952780452c" category="cell">WAFL クォータの qtree を超えました</block>
+  <block id="551b723eafd6a31d444fcb2f5920fbd3" category="cell">情報</block>
+  <block id="2f27b54966acbd77fd99f77dd88d2303" category="cell">このイベントは、ボリュームでツリークォータを超えた場合に発生します。このイベントは、一定時間、または「クォータのサイズ変更」が実行されるまで、このツリーに対して繰り返されることはありません。時間は、「 quota logmsg 」コマンドで指定します。</block>
+  <block id="ef50e307d2e9be873ea2971a14d5b95b" category="cell">このツリーで使用量を減らすか、クォータを増やしてから、「 quota resize 」コマンドを実行してください。</block>
+  <block id="efc83f7260baf1b3eaf2a294710e5f7c" category="cell">ボリュームの自動サイズ変更に成功しました</block>
+  <block id="257622ffd7c34820865a6e53d852e0ec" category="cell">" このイベントは、ボリュームの自動サイズ変更が成功した場合に発生します。これは、「 autosize grow 」オプションを有効にし、ボリュームが grow しきい値に達した場合に発生します。</block>
+  <block id="983e45d9f14c8e4b92b207877e7cabb0" category="cell">なし</block>
+  <block id="5c944485181d1e268a758d9ab0938b45" category="cell">ボリュームの自動サイズ変更に失敗しました</block>
+  <block id="059e9861e0400dfbe05c98a841f3f96b" category="cell">警告</block>
+  <block id="5136aec052d7a6b07b4c2e8985d1c2bb" category="cell">ボリュームの自動サイズ変更に失敗しました。対処しないと、ボリュームのスペースが不足する可能性があります。</block>
+  <block id="e3e71a613c7224718e0cd05d1c6d7283" category="cell">ボリュームの自動サイズ変更が失敗した理由を分析します。ボリュームが最大容量に達したか。ストレージプール（アグリゲート）のスペースが不足していないか。ボリュームのサイズを自動的に変更するときに、ボリュームの最大容量を拡張します。</block>
+  <block id="705f553c53a10b3d987f138b81d9b95e" category="cell">SnapMirror 関係が同期されていません</block>
+  <block id="99cd1c61610c76a57cb8d10d6df6b870" category="cell">重要</block>
+  <block id="fab0b51172b44e603c713fb9fc5873b5" category="cell">このイベントは、 SnapMirror （ R ） Sync 関係のステータスが「 in-sync 」から「 out-of-sync 」に変わると発生します。レプリケーションモードに基づいて、ソースボリュームで I/O が制限されます。「 strict-sync-mirror 」ポリシータイプの関係では、ボリュームへのクライアントの読み取りまたは書き込みアクセスは許可されません。データ保護に影響します。</block>
+  <block id="3a3d51f180a8def13c29dadf3adcd379" category="cell">ソースボリュームとデスティネーションボリュームの間のネットワーク接続を確認します。「 snapmirror show 」コマンドを使用して、 SnapMirror Sync 関係のステータスを監視します。「自動再同期」では、関係のステータスが「同期中」に戻ります。</block>
+  <block id="b2d567ee5fee74ade7380c5d8ec61bf1" category="cell">SAN の「アクティブ / アクティブ」状態が変更されました</block>
+  <block id="d14e330b5ba5f38a60a83e8f959c8ff3" category="cell">「 SAN パスは対称ではなくなりました。AFF と FAS はどちらも非対称であるため、パスは ASA でのみ非対称にする必要があります。」</block>
+  <block id="aeaa319486c33f0820b5cbe313bbb45a" category="cell">「アクティブ / アクティブ」状態を試してから有効にしてください。問題が解決しない場合は、カスタマーサポートにお問い合わせください。」</block>
+  <block id="5afd7a3b86246d7571c9844e9b576764" category="cell">QoS 監視メモリの最大化</block>
+  <block id="f3ee7c32a9c1d087f309bd490e0d7a2d" category="cell">QoS サブシステムの動的メモリが現在のプラットフォームハードウェアの上限に達しました。一部の QoS 機能は、制限された容量で動作する場合があります。</block>
+  <block id="f5a8402275cb829f51457c302c84f68c" category="cell">" 一部のアクティブなワークロードまたはストリームを削除してメモリを解放します。「 statistics show -object workload -counter ops 」コマンドを使用して、アクティブなワークロードを確認します。アクティブなワークロードに対する処理がゼロ以外の処理を示しています。その後、「 workload delete &lt;workloads name&gt; 」コマンドを複数回使用して特定のワークロードを削除してください。また、「 tream delete -workload &lt;workload name&gt; * 」コマンドを使用して、アクティブなワークロードから関連付けられたストリームを削除することもできます。</block>
+  <block id="46b149ef7b2c99176c0ddf2261efc9b1" category="cell">NVMe ネームスペースはオンラインです</block>
+  <block id="5038f23a9607a6f0fd794ac78ad6bc2c" category="cell">このイベントは、 NVMe ネームスペースを手動でオンラインにした場合に発生します。</block>
+  <block id="664c37f0ecd058a31c6dcac229532d65" category="cell">NVMe ネームスペースはオフラインです</block>
+  <block id="1752bb5b659936090c8349f33b76c1be" category="cell">このイベントは、 NVMe ネームスペースが手動でオフラインになった場合に発生します。</block>
+  <block id="721fab84bff6414011f3779d88867b2d" category="cell">NVMe ネームスペースが破棄されました</block>
+  <block id="5e62f05db6de18d76e6a2980c16eb2ec" category="cell">NVMe ネームスペースが破棄されたときに発生します。</block>
+  <block id="b6414d5ea9e456f1d51aea104b6326db" category="cell">応答しないアンチウイルスサーバー</block>
+  <block id="03fcd847dc1726b2adf9d7caec2470f1" category="cell">ONTAP （ R ）が応答しない AV サーバを検出して強制的に Vscan 接続を閉じた場合に発生します。</block>
+  <block id="84d79cc8b76b1c87f14f6175d78e942a" category="cell">AV コネクタに設置されている AV サーバが Storage Virtual Machine （ SVM ）に接続してスキャン要求を受信できることを確認してください。</block>
+  <block id="62e125953adc91727621ebbd266a008d" category="cell">LUN が破棄されました</block>
+  <block id="76395740b26f78901b20dcc0394cf6b4" category="cell">LUN が破棄されたときに発生します。</block>
+  <block id="cf60233a7909687d8680857f1521b1f5" category="cell">FC ターゲットポートのコマンドを超過しました</block>
+  <block id="b07e4ebd90ef9f761db4a8092e019f2b" category="cell">物理 FC ターゲットポートで未処理のコマンド数が、サポートされている制限を超えています。未処理のコマンドを実行するための十分なバッファがポートにありません。イニシエータ I/O が過剰に使用しているため、オーバーランが発生しているか、ファンインが急すぎます。</block>
+  <block id="039d7531701e4faeb74a34d432afd9d9" category="cell">次の対処策を実行します：「 1 」ポートのホストのファンインを評価し、次のいずれかの操作を実行します。 "a..."このポートにログインするホストの数を減らしてください。Bこのポートにログインするホストがアクセスする LUN の数を減らしてください。c.ホストコマンドのキュー深度を減らします。2.「 fcp_port 」 CM オブジェクトの「 queue_full 」カウンタを監視し、カウンタが増加しないことを確認します。たとえば、「 statistics show -object fcp_port -counter queue_full -instance port.portname - raw 3 」と入力します。しきい値カウンタを監視して、増加しないことを確認します。たとえば、 statistics show -object fcp_port -counter threshold_full-instance port.portname -raw と指定します</block>
+  <block id="d4bd8d52d9f5248461eab65877c33cd4" category="cell">LUN はオフラインです</block>
+  <block id="c879db7459104a5347aa882f8638ec4e" category="cell">このイベントは、 LUN が手動でオフラインになった場合に発生します。</block>
+  <block id="03867f916783d279d2e18bebd13cd956" category="cell">LUN をオンラインに戻します。</block>
+  <block id="b8de81d6f52d224f773817fe81217dad" category="cell">AWS クレデンシャルが初期化されて</block>
+  <block id="1d66554c78febceda1243e001f9eb24a" category="cell">このイベントは、モジュールが初期化される前に、クラウドクレデンシャルスレッドから Amazon Web Services （ AWS ）の Identity and Access Management （ IAM ）ロールベースクレデンシャルにアクセスしようとした場合に発生します。</block>
+  <block id="359da6745ab4ceb004d767ea2a17723c" category="cell">" クラウドクレデンシャルのスレッドとシステムの初期化が完了するまで待ちます。"</block>
+  <block id="a146f13e0af345143ecc33ea983a5c06" category="cell">クラウド階層に到達不能です</block>
+  <block id="34cd9019bbd8c57317268ed06f95dc66" category="cell">ストレージノードからクラウド階層のオブジェクトストア API に接続することはできません。一部のデータにアクセスできません。</block>
+  <block id="1d2c365995cd335672fe069fb1198c52" category="cell">「社内製品を使用している場合は、以下の対応策を実施してください：」 1.「 network interface show 」コマンドを使用して、インタークラスタ LIF がオンラインで機能していることを確認します。 「 2.デスティネーションノードのクラスタ間 LIF で「 ping 」コマンドを使用して、オブジェクトストアサーバへのネットワーク接続を確認します。 3.次のことを確認してください。 a.オブジェクトストアの設定に変更はありません。Bログイン情報と接続情報は引き続き有効です。問題が解決しない場合は、ネットアップテクニカルサポートにお問い合わせください。Cloud Volumes ONTAP を使用している場合は、次の対処策を実施してください：「 1 」オブジェクトストアの設定が変更されていないことを確認します。2. ログイン情報と接続情報がまだ有効であることを確認します。問題が解決しない場合は、ネットアップテクニカルサポートにお問い合わせください。</block>
+  <block id="93ec7808a5f104bb53817af485a82bf5" category="cell">FlexGroup コンスティチュエントの inode が不明です</block>
+  <block id="df5f49430662785a6102f7231d4f9ea3" category="cell">「 FlexGroup ボリュームのコンスティチュエントの inode が不足しており、原因によってサービスが停止する可能性があります。この構成要素には新しいファイルを作成できません。これにより、 FlexGroup ボリューム間でコンテンツが全体的に不均衡な状態に分散される可能性があります。」</block>
+  <block id="ccf57afa1c3f5b02b340c44d6cbe237f" category="cell">「 volume modify -files + X 」コマンドを使用して、 FlexGroup ボリュームに容量を追加することを推奨します。 " または、 FlexGroup ボリュームからファイルを削除します。しかし、どのファイルがコンスティチュエントに置かれているかを特定するのは難しい」</block>
+  <block id="efc0cb7afd23cf91b4ebc52c3e2d8ed6" category="cell">FlexGroup コンスティチュエントの inode がほぼなくなっています</block>
+  <block id="92e5bc812a7bd4db7beec964ee6d2cfa" category="cell">「 FlexGroup ボリューム内のコンスティチュエントは inode がほとんどなくなっており、原因がサービスの停止を招く可能性があります。コンスティチュエントに平均よりも少ない作成要求が送信されます。FlexGroup ボリュームの全体的なパフォーマンスに影響することがあります。これは、 inode が多いコンスティチュエントに要求がルーティングされるためです。」</block>
+  <block id="04b8993945a972c4f74f19996bef05cb" category="cell">FlexGroup 構成要素がフルです</block>
+  <block id="ae8c663cc646802cec67c86d3da0c302" category="cell">「 FlexGroup ボリューム内のコンスティチュエントがいっぱいになっているため、原因がサービスを停止する可能性があります。この場合も、 FlexGroup ボリュームでファイルを作成または拡張できます。ただし、コンスティチュエントに格納されているファイルを変更することはできません。その結果、 FlexGroup ボリュームに対して書き込み処理を実行しようとしたときに、ランダムなスペース不足エラーが発生することがあります。」</block>
+  <block id="1c5e1ca65bf95c63d58c93315f4ae493" category="cell">FlexGroup コンスティチュエントがほぼフルです</block>
+  <block id="eb045b5c651ed69670b74a39e79b1da5" category="cell">「 FlexGroup ボリューム内のコンスティチュエントのスペースがほとんどなくなると、原因によってサービスが停止する可能性があります。ファイルを作成して展開できます。ただし、コンスティチュエントのスペースが不足すると、コンスティチュエントにファイルを追加したり変更したりできなくなる可能性があります。"</block>
+  <block id="9c6ad5ed6fb9625d863e1ec1e8ea9b78" category="cell">サービスプロセッサが設定されていません</block>
+  <block id="377950572a25b3c9bbed72ccb1d18db8" category="cell">「このイベントは毎週発生し、サービスプロセッサ（ SP ）の設定を通知するために使用されます。SP は、システムに組み込まれている物理デバイスであり、リモートアクセス機能とリモート管理機能を提供します。すべての機能を使用できるように SP を設定する必要があります。"</block>
+  <block id="c9bb9ccc463ac90e5e35fd29778c6f47" category="cell">次の対処策を実行します：「 1 」「 system service-processor network modify 」コマンドを使用して SP を設定します。 「 2.必要に応じて、「 system service-processor network show 」コマンドを使用して、 SP の MAC アドレスを取得します。 「 3.「 system service-processor network show 」コマンドを使用して、 SP のネットワーク設定を確認します。 「 4.「 system service-processor AutoSupport invoke 」コマンドを使用して、 SP が AutoSupport E メールを送信できることを確認します。 注 AutoSupport ：このコマンドを実行する前に、 ONTAP E メールホストと受信者を問題で設定する必要があります。</block>
+  <block id="0b7a641d1d319fdb4c77401df9d2f87c" category="cell">サービスプロセッサはオフラインです</block>
+  <block id="5b559ecd66459aaad69801dc328044f4" category="cell">「すべての SP リカバリアクションが実行されていても、 ONTAP はサービスプロセッサ（ SP ）からハートビートを受信しなくなりました。ONTAP では、 SP なしでハードウェアの健常性を監視できません。」</block>
+  <block id="05086fb01a99514da4238c9449a1b48c" category="cell">次の操作を実行して、システムの電源を再投入します。ハードウェアの損傷やデータの損失を防ぐため、システムはシャットダウンします。SP がオフラインになった場合にすぐに通知されるようにパニック・アラートを設定する1. コントローラをシャーシから引き出します。2. コントローラを元の状態に戻します。3. コントローラの電源を入れ直します。問題が解決しない場合は、コントローラモジュールを交換します。</block>
+  <block id="c3a767bd8fbb8085e22929b47fd36414" category="cell">未割り当てディスク</block>
+  <block id="254fb8d955e04a3313ad5e5301e71f5b" category="cell">システムに未割り当てのディスクがあります - 容量が無駄になっており、構成の設定ミスや部分的な変更がシステムに適用されている可能性があります。</block>
+  <block id="dfb062fedc80885c3861979b9af93620" category="cell">次の対処策を実行します：「 1 」「 disk show -n 」コマンドを使用して、割り当てられていないディスクを確認します。 「 2.「 disk assign 」コマンドを使用して、ディスクをシステムに割り当てます。</block>
+  <block id="58ccd5f37da2888cd8fd105a89e6f35d" category="cell">ファンの障害により、システムは動作できません</block>
+  <block id="acdf17d1700ef733e1bc9589658c3063" category="cell">「 1 つまたは複数のメインユニットファンで障害が発生し、システムの動作が中断しました。これにより、データが失われる可能性があります。"</block>
+  <block id="01be3ab019ddde1879838930070e7694" category="cell">障害が発生したファンを交換します。</block>
+  <block id="0e5494bb182fccf24e7aab7ae722aba3" category="cell">ファンで障害が発生しまし</block>
+  <block id="884fd32cdc7ec0e5ab2267febcd8775c" category="cell">1 つ以上のメインユニットファンで障害が発生しました。システムは引き続き動作します。</block>
+  <block id="867cfb3a6b7e5e6a70aa29bfda943c97" category="cell">" 障害が発生したファンを取り付け直します。エラーが解消されない場合は、交換してください。 " しかし、この状態が長く続くと、過熱によって自動シャットダウンがトリガーされることがあります。</block>
+  <block id="0fe57005c986e2a422f9e83cc0f40710" category="cell">ファンが警告状態です</block>
+  <block id="0ad8ab237e7a20839fa95565f0a01a10" category="cell">このイベントは、 1 つ以上のファンが警告状態のときに発生します。</block>
+  <block id="d102c04ae84b00d946f024f5a6fd34f0" category="cell">過熱を防ぐため、示されたファンを交換してください。</block>
+  <block id="fb973d4258ae588d5d24c45dddfdf7ca" category="cell">NVRAM バッテリ低下</block>
+  <block id="599c7fa10af5b0143462d3baae46ebf1" category="cell">NVRAM バッテリ容量が非常に少なくなっています。バッテリの電源が切れた場合、データが失われる可能性があります。</block>
+  <block id="bd330b49de1500792e5ddc0d32f10bc6" category="cell">次の対処策を実行します。「 Your system Generates and Transmits an AutoSupport or "call home" 」というメッセージがネットアップテクニカルサポートと、設定されている送信先（該当する場合）に送信されます。AutoSupport メッセージが正常に配信されると、問題の特定と解決方法が大幅に改善されます。」 「 1.「 system node environment sensors show 」コマンドを使用して、バッテリの現在のステータス、容量、および充電状態を表示します。 「 2.最近バッテリを交換した場合、またはシステムが長時間動作しない場合は、バッテリを監視して、バッテリが正しく充電されていることを確認してください。」 「 3.バッテリが引き続きクリティカルなレベルを下回っている場合は、ネットアップテクニカルサポートに連絡してください。ストレージシステムは自動的にシャットダウンします。」</block>
+  <block id="029f2c939400c57163aca6fd2dc822ba" category="cell">ディスクがサービスを停止しています</block>
+  <block id="bd9e124d4e0bd654de0467d9f03f0f2c" category="cell">「このイベントは、ディスクが障害としてマークされているか、完全消去中であるか、 Maintenance Center に入力されたためにサービスから削除された場合に発生します。」</block>
+  <block id="0be32396accd4c0553371f175fd39ca0" category="cell">ストレージスイッチのファンに障害が発生しました</block>
+  <block id="6dbee9dd4622f9aa274d58875a6b39a6" category="cell">" シェルフの冷却ファンまたはファンモジュールに障害が発生しました。シェルフ内のディスクに十分な通気による冷却が確保されないと、ディスク障害が発生する可能性があります。」</block>
+  <block id="1d9a5a4895ada00dc5149b2d3dfe35ed" category="cell">次の対処方法を実行します。 1.ファンモジュールが完全に装着され、固定されていることを確認します。メモ：一部のディスクシェルフの電源装置モジュールにファンが内蔵されています。2.問題が解消されない場合は、ファンモジュールを交換してください。」 「 3.それでも問題が解決されない場合は、ネットアップテクニカルサポートにお問い合わせください。」</block>
+  <block id="e1043b98a3cb90eb47cd13ebba153f39" category="section-title">ダークテーマ</block>
+  <block id="3165b1e68882eb4c8b5a4eb378f539a0" category="paragraph">Cloud Insights は、明るいテーマ ( デフォルト ) を使用して表示することもできます。このテーマでは、ほとんどの画面が暗いテキストの背景を使用して表示され、暗い背景を使用してほとんどの画面が明るいテキストで表示されます。</block>
+  <block id="13952a31cfc47a6b1bb37f7aa091cd46" category="paragraph">明るいテーマと暗いテーマを切り替えるには、画面の右上にあるユーザ名ボタンをクリックし、目的のテーマを選択します。</block>
+  <block id="c8fd30c576e80caca5481c6f50542358" category="inline-image-macro">明るいテーマと暗いテーマを切り替えます</block>
+  <block id="e0681ae9763ce64f8166eea32156ceb2" category="paragraph"><block ref="e0681ae9763ce64f8166eea32156ceb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b02986b7d5400aee269e6af8849ca3d" category="inline-image-macro">Dark Theme Dashboard の例</block>
+  <block id="0638e442525f22fb26d6c0e29817f16b" category="paragraph">ダークテーマのダッシュボードビュー：<block ref="c7e41c3dc1c39ed56713f00caef1f8c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d7ddf9b9a61df297a03c0ea168e07e1" category="inline-image-macro">ライトテーマダッシュボードの例</block>
+  <block id="27ca7f7d641b8f097d5abd88830c85ec" category="paragraph">ライトテーマダッシュボードビュー :<block ref="8331b94faa07667191361da3a9fe38d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34e5045f115b5836d80d9776d1d13dc9" category="admonition">一部のウィジェットグラフなどの画面領域では、暗いテーマで表示しているときでも、背景が明るい場合があります。</block>
+  <block id="013aa4ffc40507022dd1b0b1a936ff20" category="paragraph">Kubernetes フィルタはコンテキストに応じて表示されます。つまり、特定のノードページ上にある場合、 pod _name フィルタはそのノードに関連するポッドのみをリストします。さらに、特定のネームスペースにフィルタを適用すると、名前空間の名前空間ではポッドのみが表示されます。</block>
+  <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
+  <block id="923a4b017c0560e9f308c651b65fd92e" category="admonition">コレクタレベルの通知はプレビュー機能であるため、変更される場合があります。</block>
+  <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">コレクタ通知</block>
+  <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">データコレクタのランディングページを表示しているときは、データコレクタの概要セクションの「通知」フィールドで鉛筆のアイコンをクリックすることで通知を変更できます。</block>
+  <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">コレクタ通知の編集</block>
+  <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

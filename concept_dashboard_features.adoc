@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
 summary: ダッシュボードの機能と概念 
-keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility 
 ---
 = ダッシュボードの機能
 :toc: macro
@@ -746,3 +746,20 @@ NOTE: グループからダッシュボードを削除しても、 Cloud Insight
 ダッシュボードのピン / ピン解除は ' ダッシュボードが属するグループに依存しない ' 個別のユーザー設定です
 
 image:DashboardPin.png["ピン固定ダッシュボード"]
+
+
+
+== ダークテーマ
+
+Cloud Insights は、明るいテーマ ( デフォルト ) を使用して表示することもできます。このテーマでは、ほとんどの画面が暗いテキストの背景を使用して表示され、暗い背景を使用してほとんどの画面が明るいテキストで表示されます。
+
+明るいテーマと暗いテーマを切り替えるには、画面の右上にあるユーザ名ボタンをクリックし、目的のテーマを選択します。
+
+image:DarkThemeSwitch.png["明るいテーマと暗いテーマを切り替えます"]
+
+ダークテーマのダッシュボードビュー：image:DarkThemeDashboardExample.png["Dark Theme Dashboard の例"]
+
+ライトテーマダッシュボードビュー :image:LightThemeDashboardExample.png["ライトテーマダッシュボードの例"]
+
+
+NOTE: 一部のウィジェットグラフなどの画面領域では、暗いテーマで表示しているときでも、背景が明るい場合があります。
