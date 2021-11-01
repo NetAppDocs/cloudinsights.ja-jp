@@ -588,7 +588,6 @@
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名前</block>
   <block id="76aeab63a36298ab54940aa1b9114b6a" category="cell">一意の名前</block>
   <block id="e6b391a8d2c4d45902a23a8b6585703d" category="cell">URL</block>
-  <block id="c341276cddbe0142f1e9f7289d375a2c" category="cell">webhook のターゲット URL 。 _http ： // または _https ： // プレフィックスを含みます</block>
   <block id="4c3880bb027f159e801041b1021e88e8" category="cell">メソッド</block>
   <block id="d637b8284e88b5decabacf15da1813d0" category="cell">GET 、 POST-DEFAULT は POST です</block>
   <block id="e6e0d1a62695cc00641f3acf197aecf7" category="cell">カスタムヘッダー</block>
@@ -609,7 +608,6 @@
   <block id="0f85580ce6e6d044094ef0c2641ecb3a" category="paragraph"><block ref="0f85580ce6e6d044094ef0c2641ecb3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148ae64fb8adbd43176cf285dcc8110f" category="section-title">パラメータ：パラメータとは何ですか？また、パラメータの使用方法を教えてください。</block>
   <block id="f5733c88893536362c2727d1d77f6f0b" category="paragraph">アラートパラメータは、アラートごとに動的に設定される値です。たとえば、 %%TriggeredOn%% の _Parameter はアラートがトリガーされたオブジェクトで置き換えられます。</block>
-  <block id="de772959ff260628e0b3b7a40c31299d" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。</block>
   <block id="9f0bfcad9805fdb266c75890257a496e" category="section-title">モニタで [Webhook Notification] を選択します</block>
   <block id="08b5411f848a2581a41672a759c87380" category="inline-link-macro">モニタ</block>
   <block id="7f44d407783e89c1aced666e867dd410" category="inline-image-macro">Webhook モニタの通知</block>
@@ -7988,4 +7986,6 @@
   <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">データコレクタのランディングページを表示しているときは、データコレクタの概要セクションの「通知」フィールドで鉛筆のアイコンをクリックすることで通知を変更できます。</block>
   <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">コレクタ通知の編集</block>
   <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">URL パラメータとともに _http://_or_https:// _prefix を含む webhook ターゲット URL</block>
+  <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。URL/ ヘッダーのシークレットは、 %%&lt;secret_name&gt;%%_ として使用できます。</block>
 </blocks>
