@@ -1,14 +1,14 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_dell_xc_series.html 
-keywords: data collector, Dell, xc 
-summary: Dell XC Series データコレクタの設定。 
+keywords: data collector, Dell,EMC, xc 
+summary: Dell EMC XC シリーズデータコレクタの設定 
 ---
-= Dell XC シリーズデータコレクタ
+= Dell EMC XC シリーズデータコレクタ
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して、 Dell XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。
+Cloud Insights では、このデータコレクタを使用して、 Dell EMC XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。
 
 
 

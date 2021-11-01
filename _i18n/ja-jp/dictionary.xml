@@ -3884,9 +3884,6 @@
   <block id="057865fdced8cf279cb948d9a000b58a" category="paragraph">アプリケーションは、ユーザがアクセスの認証と許可に成功した後、ターゲット API を呼び出すときにアクセストークンをクレデンシャルとして渡します。渡されたトークンは、トークンのベアラに対して API へのアクセスが許可されていることを API に通知し、許可中に付与されたスコープに基づいて特定のアクションを実行します。</block>
   <block id="4885bebed0a488d050e9e3b9016b3fda" category="paragraph">アクセストークンが渡される HTTP ヘッダーは * X-CloudInsights - apiKey ： * です</block>
   <block id="b9250c46598db43daf799f07c7d996da" category="paragraph">詳細については、 _API Documentation_link の * Admin &gt; API Access * を参照してください。</block>
-  <block id="ed89f5ecd4fadaf5dc74eceb6fe89ad4" category="summary">Dell XC Series データコレクタの設定。</block>
-  <block id="10a06a8f7eef4f1e96bda13fdd3cbb44" category="doc">Dell XC シリーズデータコレクタ</block>
-  <block id="e1c9ce4acff77923a2d852216713d8d6" category="paragraph">Cloud Insights では、このデータコレクタを使用して、 Dell XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。</block>
   <block id="697692f9f37aff72a2e2f46815ab9e7c" category="cell">XC サーバの IP アドレス</block>
   <block id="934f1948bd404852ea3dc187b5787459" category="cell">XC サーバーのユーザー名</block>
   <block id="517175e83f63522981c0f643b5cb207b" category="cell">XC サーバのパスワード</block>
@@ -7989,4 +7986,7 @@
   <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">URL パラメータとともに _http://_or_https:// _prefix を含む webhook ターゲット URL</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。URL/ ヘッダーのシークレットは、 %%&lt;secret_name&gt;%%_ として使用できます。</block>
   <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">2021 年 11 月以降、 ONTAP Advanced Counter のデータ収集はデフォルトで有効になります。この機能は段階的に展開され、ダッシュボードには時間の経過とともに高度なデータが表示されます。高度なデータ収集を無効にするには、 ONTAP データコレクタを編集し、 [opt in for Advanced Counter Data Collection rolloution] チェックボックスをオフにします。</block>
+  <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">Dell EMC XC シリーズデータコレクタの設定</block>
+  <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC シリーズデータコレクタ</block>
+  <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights では、このデータコレクタを使用して、 Dell EMC XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。</block>
 </blocks>
