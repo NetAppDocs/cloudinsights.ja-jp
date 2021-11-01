@@ -7988,4 +7988,5 @@
   <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">URL パラメータとともに _http://_or_https:// _prefix を含む webhook ターゲット URL</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。URL/ ヘッダーのシークレットは、 %%&lt;secret_name&gt;%%_ として使用できます。</block>
+  <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">2021 年 11 月以降、 ONTAP Advanced Counter のデータ収集はデフォルトで有効になります。この機能は段階的に展開され、ダッシュボードには時間の経過とともに高度なデータが表示されます。高度なデータ収集を無効にするには、 ONTAP データコレクタを編集し、 [opt in for Advanced Counter Data Collection rolloution] チェックボックスをオフにします。</block>
 </blocks>
