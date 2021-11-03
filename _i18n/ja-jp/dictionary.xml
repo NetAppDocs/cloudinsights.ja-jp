@@ -5861,11 +5861,9 @@
   <block id="efb42161e6d534718356bdb292677612" category="list-text">を設定する必要があります <block ref="a207b7d2a96200a9b4b411f4896b3d1d" category="inline-link-macro-rx"></block>。</block>
   <block id="066439fec0176e1d7455c3e156a2140e" category="list-text">1 つ以上のデータコレクタを設定する必要があります。</block>
   <block id="dce011ea921230b4e3061bb70569c598" category="section-title">ネットワーク構成：</block>
-  <block id="5150e061841bdf157264cc03a5578e22" category="paragraph">ローカルシステムで次のコマンドを実行して、 Cloud Secure で使用するポートを開きます。</block>
   <block id="2639e25d9d81ec2fa03963e7278b760b" category="list-text">'UDO firewall-cmd --permanent--zone=public--add-port =35000-55000/tcp`</block>
   <block id="60329aa357bfa085f1ed3612c6b4a1d7" category="list-text">'sudo firewall-cmd -- reload'</block>
   <block id="ded4f1f8f5d9909122d1f0de13abe7c0" category="list-text">'UDO IPTables-save|grep 35000'</block>
-  <block id="04eccc4686137dc161be9a96de582b3d" category="paragraph">出力例： - a in_public_allow -p tcp -m tcp -- dport 35000 -m conntrack -ctstate new-j accept</block>
   <block id="04d265de0148836a00102bb171aa6456" category="section-title">エージェントエラーのトラブルシューティング</block>
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">エージェントのインストール時に /opt/NetApp/cloudsecure/agent/logs/agent.log フォルダが作成されず、 install.log ファイルに関連情報が記録されません。</block>
   <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">このエラーは、エージェントのブートストラップ中に発生します。ロガーが初期化される前に発生するため、エラーはログファイルに記録されません。エラーは標準出力にリダイレクトされ 'journalctl -u cloudsecure-agent.service` コマンドを使用してサービスログに表示されますこのコマンドを使用して、問題のトラブルシューティングをさらに行うことができます。</block>
@@ -7576,7 +7574,6 @@
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">この問題</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
   <block id="4d9921582b3bc6dc32845b40e4b4c522" category="cell">Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。</block>
-  <block id="36559f342f280f0538ba93b4f5b7a6da" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
   <block id="7555bf5d0bf36ac15cb2b4123cb1b5f1" category="cell">エージェントに 20 個を超えるデータコレクタを追加できません。</block>
   <block id="472592ad16d3986c536902056a791829" category="cell">エージェントに追加できるデータコレクタは 20 個だけです。Active Directory 、 SVM 、その他のコレクタなど、すべてのコレクタタイプを組み合わせて使用できます。</block>
   <block id="941f6670886082a432b8033949c34311" category="cell">*.cloudinsights.netapp.com URL の Zscaler プロキシで SSL 検査をディセーブルにします。Zscaler が SSL 検査を行い、証明書を置き換えた場合、 Cloud Secure は動作しません。</block>
@@ -7989,4 +7986,14 @@
   <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">Dell EMC XC シリーズデータコレクタの設定</block>
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC シリーズデータコレクタ</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights では、このデータコレクタを使用して、 Dell EMC XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。</block>
+  <block id="ff4d6902497a0527749455a3bab6c881" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> が固定されていますONTAP の最小バージョンは 9.8P7 です。</block>
+  <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">データコレクタでエラーが発生し、次のエラーメッセージが表示されます。「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「</block>
+  <block id="db45b764838c9131ffbab7063103f890" category="cell">NFS サービスのみが設定された新しい SVM から開始します。Cloud Secure に ONTAP SVM データコレクタを追加します。Cloud Secure に ONTAP SVM データコレクタを追加する際に、 CIFS が SVM で許可されるプロトコルとして設定されている。Cloud Secure のデータコレクタでエラーが表示されるまで待ちます。SVM で CIFS サーバが設定されていないため、左側にあるエラーは Cloud Secure で表示されます。ONTAP SVM データコレクタを編集し、許可されたプロトコルとして CIFS のチェックを解除します。データコレクタを保存します。NFS プロトコルのみが有効な状態で実行が開始されます。</block>
+  <block id="f2ca27a5a85ae2cd72b932650e54dc20" category="paragraph">Telegraf 用に以前に作成された Security Context Constraint （ Kubernetes からデータを収集するようにエージェントを設定するハイパーリンク）：</block>
+  <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">ローカルシステムで次のコマンドを実行して、 Cloud Secure で使用するポートを開きます。ポート範囲に関するセキュリティ上の問題がある場合は、 _35000 ： 35100_ のように小さいポート範囲を使用できます。各 SVM は 2 つのポートを使用します。</block>
+  <block id="cd97e5515b0cad32cadf2b0e90813f6d" category="paragraph">プラットフォームに応じて、次の手順を実行します。</block>
+  <block id="504510de5d7df6b369756702c8c3a365" category="paragraph">* CentOS 7.x/RHEL 7.x * ：</block>
+  <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">出力例：</block>
+  <block id="df8efe1c37f513ed79defb9aa3eafe5d" category="paragraph">* CentOS 8.x / RHEL 8.x * ：</block>
+  <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">'sudo firewall-cmd --zone=public--list-ports | grep 35000` (CentOS 8 の場合 )</block>
 </blocks>

@@ -53,17 +53,31 @@ image::new-agent-detect.png[新しいエージェント検出]
 
 == ネットワーク構成：
 
-ローカルシステムで次のコマンドを実行して、 Cloud Secure で使用するポートを開きます。
+ローカルシステムで次のコマンドを実行して、 Cloud Secure で使用するポートを開きます。ポート範囲に関するセキュリティ上の問題がある場合は、 _35000 ： 35100_ のように小さいポート範囲を使用できます。各 SVM は 2 つのポートを使用します。
 
 .手順
 . 'UDO firewall-cmd --permanent--zone=public--add-port =35000-55000/tcp`
 . 'sudo firewall-cmd -- reload'
+
+
+プラットフォームに応じて、次の手順を実行します。
+
+* CentOS 7.x/RHEL 7.x * ：
+
 . 'UDO IPTables-save|grep 35000'
-+
-出力例： - a in_public_allow -p tcp -m tcp -- dport 35000 -m conntrack -ctstate new-j accept
 
 
+出力例：
 
+ -A IN_public_allow -p tcp -m tcp --dport 35000:55000 -m conntrack -ctstate NEW,UNTRACKED -j ACCEPT
+* CentOS 8.x / RHEL 8.x * ：
+
+. 'sudo firewall-cmd --zone=public--list-ports | grep 35000` (CentOS 8 の場合 )
+
+
+出力例：
+
+ 35000-55000/tcp
 
 
 == エージェントエラーのトラブルシューティング

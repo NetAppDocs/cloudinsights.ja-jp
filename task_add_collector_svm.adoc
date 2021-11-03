@@ -217,6 +217,9 @@ image:CS_Data_Collector_Error.png[""]
 | クラスタに未使用の既存のポリシーがあります。Cloud Secure をインストールする前に、これらのツールを使用して何を行う必要がありますか？ | 切断状態の場合でも、既存の未使用の FPolicy 設定をすべて削除することを推奨します。Cloud Secure は、「 cloudsecure_ 」というプレフィックスを付けて FPolicy を作成します。その他の未使用の FPolicy 設定はすべて削除できます。fpolicy list ： _fpolicy show_steps を表示して FPolicy 設定を削除する場合の CLI コマンド： _fpolicy disable -vserver <svmname> -policy -name <policy_name> _fpolicy policy scope delete -vserver <svmname> -policy name <policy_name> _fpolicy policy delete -vserver <svmname > -policy_name <policy_name> -policy_name>fpolicy_fpolicy_name> 
 
 
-| Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。 | Data ONTAP バージョンを使用していることを確認します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["この問題"] が固定されています 
+| Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。 | Data ONTAP バージョンを使用していることを確認します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["この問題"] が固定されていますONTAP の最小バージョンは 9.8P7 です。 
+
+
+| データコレクタでエラーが発生し、次のエラーメッセージが表示されます。「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「 | NFS サービスのみが設定された新しい SVM から開始します。Cloud Secure に ONTAP SVM データコレクタを追加します。Cloud Secure に ONTAP SVM データコレクタを追加する際に、 CIFS が SVM で許可されるプロトコルとして設定されている。Cloud Secure のデータコレクタでエラーが表示されるまで待ちます。SVM で CIFS サーバが設定されていないため、左側にあるエラーは Cloud Secure で表示されます。ONTAP SVM データコレクタを編集し、許可されたプロトコルとして CIFS のチェックを解除します。データコレクタを保存します。NFS プロトコルのみが有効な状態で実行が開始されます。 
 |===
 それでも問題が解決しない場合は、 [ ヘルプ ]>[ サポート *] ページに記載されているサポートリンクにアクセスしてください。
