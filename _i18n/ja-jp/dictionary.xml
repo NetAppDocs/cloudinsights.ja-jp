@@ -5635,7 +5635,6 @@
   <block id="c3e7ae0efafea510710a12fe0f0d609a" category="list-text">必要に応じて、 install コマンドの一部として名前空間をオーバーライドしたり、クラスタ名を指定したりできます。そのためには、コマンドブロックを変更して final_./$installerNam_ の前に次のいずれかまたは両方を追加します</block>
   <block id="e1a5dab3e4ad3574b29d38315af67877" category="list-text">cluster_name = &lt; クラスタ名 &gt;</block>
   <block id="8d452c9dd71946426462bb948da29ba1" category="list-text">namespace = &lt; 名前空間 &gt;</block>
-  <block id="a3cf478bf3671fb508fdc9672df15a8c" category="paragraph">次の例をスクロールして、コマンドブロック内に目的のコマンドが配置されていることを確認します。</block>
   <block id="a16c56e9bf65ad3b7b874edee04a172d" category="admonition">_cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指標を収集し、 _namespace_は Tegraf エージェントを導入するネームスペースです。指定したネームスペースがない場合は作成されます。</block>
   <block id="a49846985b439fe0226db69fec5a37b3" category="list-text">準備ができたら、コマンドブロックを実行します。</block>
   <block id="f8dad256798b9f55db0111e9f6fa89aa" category="list-text">コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。明示的に _namespace__ を設定していない場合は、名前を入力するように求められます。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。</block>
@@ -7996,4 +7995,6 @@
   <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">出力例：</block>
   <block id="df8efe1c37f513ed79defb9aa3eafe5d" category="paragraph">* CentOS 8.x / RHEL 8.x * ：</block>
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">'sudo firewall-cmd --zone=public--list-ports | grep 35000` (CentOS 8 の場合 )</block>
+  <block id="2b88b6e768b59c582a319ed7678901c8" category="paragraph">コマンドブロックには、次のように配置されています。</block>
+  <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）</block>
 </blocks>

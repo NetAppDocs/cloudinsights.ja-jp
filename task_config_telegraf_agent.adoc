@@ -504,10 +504,10 @@ image:Kubernetes_Install_Agent_screen.png["スクリプトベースのインス�
 ** cluster_name = < クラスタ名 >
 ** namespace = < 名前空間 >
 +
-次の例をスクロールして、コマンドブロック内に目的のコマンドが配置されていることを確認します。
+コマンドブロックには、次のように配置されています。
 
 +
- installerName=cloudinsights-kubernetes.sh && token=<token> && key=c642e336-91f4-4c6f-8086-72faabd6aff6 && domain=tenant1.testk8.cloudinsights-test.netapp.com && curl -k -X GET -H "Authorization: Bearer $token" -H "X-CloudInsights-ApiKey-Id: $key" -o $installerName https://$domain/rest/v1/lake/telegraf/platforms/installer?platform=kubernetes && chmod +x $installerName && sudo --preserve-env JWT=$token DOMAIN_NAME=$domain API_KEY_ID=$key CLUSTER_NAME=TEST_CLUSTER NAMESPACE=NEW-NAMESPACE ./$installerName
+ installerName=cloudinsights-kubernetes.sh ... && CLUSTER_NAME=<cluster_name> NAMESPACE=<new_namespace> && sudo -E -H ./$installerName --download --install
 +
 
 TIP: _cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指標を収集し、 _namespace_は Tegraf エージェントを導入するネームスペースです。指定したネームスペースがない場合は作成されます。
@@ -741,7 +741,7 @@ Cloud Insights エージェントのインストーラで整合性チェック�
 . 次に、コマンドウィンドウ（作業ディレクトリ内）に貼り付けて実行します。
 
 
-Windows 以外：
+Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）
 
 * Download and install （デフォルト）：
 +
@@ -802,7 +802,7 @@ Windows 以外：
  sudo -E -H ./<installation_script_name> --install
 Windows の場合
 
- .\ cloudinsights-windows.ps1 -install
+ .\cloudinsights-windows.ps1 -install
 
 
 == エージェントインストールのトラブルシューティング
