@@ -8,7 +8,7 @@ keywords: data collector, NetApp, Cloud, agent, ONTAP
 
 
 [role="lead"]
-このデータコレクタは、 ONTAP 9.9 以降のシステムからのデータ収集をサポートするクラウド接続を作成します。
+このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。
 
 
 NOTE: このドキュメントは _Preview_documentation とみなされるため、変更される場合があります。
@@ -18,6 +18,8 @@ NOTE: このドキュメントは _Preview_documentation とみなされるた�
 == 設定
 
 Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。
+
+このデータコレクタは、 ONTAP 9.9 以上の CVO システム、 AFF システム、 FAS システムをサポートします。
 
 image:Cloud_Agent_DC.png["Cloud Agent Data Collector の設定"]
 

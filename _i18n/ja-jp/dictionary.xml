@@ -7680,7 +7680,6 @@
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
   <block id="ab94ba13e0011bb7ea0d255f086ced38" category="summary">ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">ONTAP 9.9 以上のデータコレクタ向けのネットアップクラウド接続</block>
-  <block id="03ed380a346e6e1e6da0653779eca74b" category="paragraph">このデータコレクタは、 ONTAP 9.9 以降のシステムからのデータ収集をサポートするクラウド接続を作成します。</block>
   <block id="86697e189a8abaad2c14305da76b6e58" category="admonition">このドキュメントは _Preview_documentation とみなされるため、変更される場合があります。</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector の設定</block>
@@ -7997,4 +7996,6 @@
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">'sudo firewall-cmd --zone=public--list-ports | grep 35000` (CentOS 8 の場合 )</block>
   <block id="2b88b6e768b59c582a319ed7678901c8" category="paragraph">コマンドブロックには、次のように配置されています。</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）</block>
+  <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。</block>
+  <block id="72c287aa31792e43cc71160178046540" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO システム、 AFF システム、 FAS システムをサポートします。</block>
 </blocks>
