@@ -78,6 +78,8 @@ Cloud Insights Acquisition Unit は、 Cloud Insights を使用して Web ブラ
 
 image:ProxyEndpoints_NewTable.png["プロキシエンドポイントテーブル"]
 
+Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。
+
 
 
 === リソース

@@ -61,7 +61,7 @@ Cloud Insights Acquisition Unit は、 Cloud Insights を使用して Web ブラ
 
 ==== プロキシエンドポイントの表示
 
-プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help > Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。
+プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help > Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。
 
 image:ProxyEndpoints_NewTable.png["プロキシエンドポイントテーブル"]
 

@@ -8124,4 +8124,6 @@
   <block id="aa8582c4c58c34070341b5960e4edc7c" category="cell">Vscan サーバからストレージシステムにエラーが報告されました。通常は、ウイルスが検出されたことを示します。ただし、 Vscan サーバでその他のエラーが発生すると、このイベントを原因できます。ファイルへのクライアントアクセスは拒否されます。Vscan サーバは、設定に応じて、ファイルをクリーンアップするか、ファイルを隔離するか、または削除する可能性があります。</block>
   <block id="39a107762943f2a3b73c54078d50973e" category="cell">「 syslog 」イベントで報告された Vscan サーバのログを調べて、感染ファイルのクリーンアップ、隔離、削除が正常に完了したかどうかを確認します。削除できなかった場合は、システム管理者が手動でファイルを削除しなければならないことがあります。</block>
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 対応処置あり * ：アラートで推奨される対処方法が提示されています。アラートページを開いて表示します。</block>
+  <block id="9de47b26bb491f5ab145336bb77b8aa0" category="paragraph">Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</block>
+  <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help &gt; Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</block>
 </blocks>
