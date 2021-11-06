@@ -11,6 +11,58 @@ keywords: features
 
 
 
+=== 2021年11月
+
+
+
+==== Adaptive Dashboards （アダプティブダッシュボード
+
+_ 属性の新しい変数と、ウィジェットで変数を使用する機能 _ 。
+
+ダッシュボードは、かつてないほど強力で柔軟性に優れています。属性変数を使用してアダプティブダッシュボードを構築することで、ダッシュボードを即座にフィルタリングできます。これらと既存の他のものを使用する link:concept_dashboard_features.html#variables["変数（ variables ）"] 環境全体の指標を確認するためのダッシュボードを 1 つ作成し、リソース名、タイプ、場所などでシームレスにフィルタリングダウンできるようになりました。ウィジェットの数値変数を使用して、ストレージサービスの GB あたりのコストなど、物理指標をコストに関連付けます。
+
+image:Variables_Drop_Down_Showing_Annotations.png[""]
+image:Variables_Attribute_Filtering.png[""]
+
+
+
+==== API 経由で Reporting Database にアクセスします
+
+サードパーティのレポート作成ツール、 ITSM ツール、自動化ツールとの統合機能が強化されました。 Cloud Insights の強力な機能です link:API_Overview.html["API"] Cognos Reporting 環境を使用せずに、 Cloud Insights Reporting データベースを直接照会できます。
+
+
+
+==== VM ランディングページのポッドテーブル
+
+VM と Kubernetes ポッド間のシームレスなナビゲーション：トラブルシューティングとパフォーマンスヘッドルーム管理を向上させるために、関連する Kubernetes ポッドの表が VM ランディングページに表示されるようになりました。
+
+image:Kubernetes_Pod_Table_on_VM_Page.png["VM ランディングページの Kubernetes ポッドの表"]
+
+
+
+==== Data Collector のアップデート
+
+* ECS で、ストレージとノードのファームウェアが報告されるようになりました
+* Isilon のプロンプト検出機能が向上しました
+* Azure NetApp Files は、パフォーマンスデータをより迅速に収集します
+* StorageGRID でシングルサインオン (SSO) がサポートされるようになりました。
+* Brocade CLI は、 X--4 のモデルを適切に報告します
+
+
+
+
+==== サポートされているその他のオペレーティングシステム
+
+Cloud Insights Acquisition Unit では、すでにサポートされている OS に加え、次のオペレーティングシステムがサポートされます。
+
+* CentOS （ 64 ビット） 8.4
+* Oracle Enterprise Linux （ 64 ビット） 8.4
+* Red Hat Enterprise Linux （ 64 ビット） 8.4
+
+
+'''
+
+
 === 2021年10月
 
 

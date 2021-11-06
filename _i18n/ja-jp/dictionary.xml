@@ -8207,4 +8207,28 @@
   <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">Cloud Insights サブスクリプションにエンタイトルメント ID を追加するには、 [* Admin] &gt; [Subscription] * ページで、 [_ + Entitlement ID_ ] をクリックします。</block>
   <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">サブスクリプションにエンタイトルメント ID を追加します</block>
   <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62783f5d69cb5d3cb22b077c1d2b8777" category="section-title">2021年11月</block>
+  <block id="d4debff8a7476e18245ba3de78caa64d" category="section-title">Adaptive Dashboards （アダプティブダッシュボード</block>
+  <block id="fa2e624f267fd72536c09f1bb81ca72e" category="paragraph">_ 属性の新しい変数と、ウィジェットで変数を使用する機能 _ 。</block>
+  <block id="87cd8b8808600624d8c590cfc2e6e94b" category="inline-link-macro">変数（ variables ）</block>
+  <block id="b9d6ed474c251dd95442fcafec00806b" category="paragraph">ダッシュボードは、かつてないほど強力で柔軟性に優れています。属性変数を使用してアダプティブダッシュボードを構築することで、ダッシュボードを即座にフィルタリングできます。これらと既存の他のものを使用する <block ref="1f4728a3536b8e2cc43013fb8f17db6c" category="inline-link-macro-rx"></block> 環境全体の指標を確認するためのダッシュボードを 1 つ作成し、リソース名、タイプ、場所などでシームレスにフィルタリングダウンできるようになりました。ウィジェットの数値変数を使用して、ストレージサービスの GB あたりのコストなど、物理指標をコストに関連付けます。</block>
+  <block id="3063e25af4e9f3b6080b388ac1aad070" category="paragraph"><block ref="3d859cfde5726d14af67cb7dbeb9e18a" category="inline-image-macro-rx" type="image"></block>
+<block ref="d1f7027beb3d94ad8ba6281c876e2b8a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="inline-link-macro">API</block>
+  <block id="252b86cd65deaa141a3f516e7ef483bd" category="paragraph">サードパーティのレポート作成ツール、 ITSM ツール、自動化ツールとの統合機能が強化されました。 Cloud Insights の強力な機能です <block ref="9591c9ad7e66434ec5fdd8eaa821cdd2" category="inline-link-macro-rx"></block> Cognos Reporting 環境を使用せずに、 Cloud Insights Reporting データベースを直接照会できます。</block>
+  <block id="6b492909f89fdcefb2c45d261f5ea471" category="section-title">VM ランディングページのポッドテーブル</block>
+  <block id="6b6c4aab5bc0e2484a08309b0c1e5f31" category="paragraph">VM と Kubernetes ポッド間のシームレスなナビゲーション：トラブルシューティングとパフォーマンスヘッドルーム管理を向上させるために、関連する Kubernetes ポッドの表が VM ランディングページに表示されるようになりました。</block>
+  <block id="af2a66e1036c187b3bace18be2866836" category="inline-image-macro">VM ランディングページの Kubernetes ポッドの表</block>
+  <block id="3a21826c39bfcd8733a49e6e9de6525b" category="paragraph"><block ref="3a21826c39bfcd8733a49e6e9de6525b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="91ca79ca741ad91b7dd2b433920a097a" category="section-title">Data Collector のアップデート</block>
+  <block id="a6c5eb874da424716e4f5f3222be3e71" category="list-text">ECS で、ストレージとノードのファームウェアが報告されるようになりました</block>
+  <block id="4f33e843b4af370653f6de5a827f5021" category="list-text">Isilon のプロンプト検出機能が向上しました</block>
+  <block id="9a4504a8cb556e25aa3abc16a8d8925f" category="list-text">Azure NetApp Files は、パフォーマンスデータをより迅速に収集します</block>
+  <block id="ea6c25d7c9478845679258058ce14a2e" category="list-text">StorageGRID でシングルサインオン (SSO) がサポートされるようになりました。</block>
+  <block id="a8ab5b6b0319f846449cbfc1f4e5d3af" category="list-text">Brocade CLI は、 X--4 のモデルを適切に報告します</block>
+  <block id="cca47683e1779f63f036209c47cfb008" category="section-title">サポートされているその他のオペレーティングシステム</block>
+  <block id="38f20b1b4b2d9880e398570c909f233b" category="paragraph">Cloud Insights Acquisition Unit では、すでにサポートされている OS に加え、次のオペレーティングシステムがサポートされます。</block>
+  <block id="8a9336b93fd9fdd4855b170bfda1938e" category="list-text">CentOS （ 64 ビット） 8.4</block>
+  <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 ビット） 8.4</block>
+  <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 ビット） 8.4</block>
 </blocks>
