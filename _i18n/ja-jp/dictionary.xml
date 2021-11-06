@@ -4344,7 +4344,6 @@
   <block id="ac60c998c7a8dc4dde987fedb05c0f55" category="paragraph">これで Latency の線が Latency 用の目盛りでグラフの右側に表示されます。</block>
   <block id="7dbc268ba4014394e1084d227d3b8b49" category="image-alt">2 次軸の例</block>
   <block id="05e5b67cad098092f46a63799fe75cca" category="section-title">ウィジェットの式</block>
-  <block id="5e688ca913b6ca9d60a85e2df86ab3ad" category="paragraph">ダッシュボードでは、任意の時系列ウィジェット（折れ線、スプライン、面、積み上げ面）を使用して選択した指標で式を作成し、その計算結果を 1 つのグラフに表示できます。次の例では、式を使用して特定の問題を解決します。最初の例は、環境内のすべてのストレージアセットの合計 IOPS に占める読み取り IOPS の割合を表示するウィジェットです。2 つ目の例では、環境内で発生した「システム」または「オーバーヘッド」の IOPS を可視化しています。これらの IOPS は、データの読み取りや書き込みから直接ではありません。</block>
   <block id="dba748e01f6c17fbbaa14a2441a39cb7" category="section-title">式の例：読み取り IOPS の割合</block>
   <block id="ce28af985b1b52bd86ddbc97a3281b27" category="paragraph">この例では、合計 IOPS に占める読み取り IOPS の割合をウィジェットに表示します。これは次の式と考えることができます。</block>
   <block id="3e1d30ddfb12b31902c9e219489955ba" category="paragraph">このデータは、ダッシュボードに折れ線グラフで表示できます。これを行うには、次の手順を実行します。</block>
@@ -7589,18 +7588,11 @@
   <block id="23b7f3c5f273dff8dfc28b1d3d393075" category="list-text">* Text * ：英数字の文字列。</block>
   <block id="e77ea662dc2d45a324194dca8b908bc3" category="list-text">* 数値 * ：数値。ウィジェットフィールドに応じて、単独で使用することも、「 From 」または「 To 」値として使用することもできます。</block>
   <block id="087c14b96c9dccdfb944c17d359d937d" category="list-text">* Boolean * ： True / False 、 Yes / No などの値を持つフィールドに使用します。ブール変数の場合、選択肢は Yes 、 No 、 None 、 Any です。</block>
-  <block id="e8d8c9065d231417a82d017542ad50f6" category="list-text">* 日付 *: 日付値。ウィジェットフィールドに応じて、単独で使用することも、「 From 」または「 To 」値として使用することもできます。</block>
   <block id="53cc3f1a4b0d0e434a93a7372b931ac6" category="inline-image-macro">変数の型</block>
   <block id="916ee1d24159df2a85679ef0774f9828" category="paragraph"><block ref="916ee1d24159df2a85679ef0774f9828" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f4aa78e28bef68e621211c255de6e97" category="section-title">変数フィルタスコープ（ Variable Filter Scope ）</block>
-  <block id="38f9fe234760a4b03b85217374ec1bd5" category="paragraph">デフォルトでは、アノテーション変数をダッシュボードに追加すると、その変数がダッシュボードの _ALL_widgets に適用されます。つまり、ダッシュボードのすべてのウィジェットで、変数に設定した値に基づいてフィルタされた結果が表示されます。</block>
   <block id="d0365c2d28a2b320782a5d2554e29461" category="inline-image-macro">自動フィルタ（ Automatic Filter ）</block>
   <block id="d57164545a0388f20a8a7c16b4a505ee" category="paragraph"><block ref="d57164545a0388f20a8a7c16b4a505ee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9a364b2beeb2d73119727d97ad842f0" category="paragraph">このような変数を使用して自動的にフィルタ処理できるのは、 _Text_ 、 _Boolean_ 、または _List_ タイプのアノテーションだけです。_ 数値や日付などのテキスト以外の Annotation_types は自動的にフィルタリングできません。また、 Annotation_variables （数値、日付、ブール）を使用することもできません。個々のウィジェットで、これらのタイプの変数を使用するように設定する必要があります。</block>
-  <block id="501d7d63535eac3f0b04a86a5c59a0fc" category="paragraph">自動フィルタを無効環境にして、特に設定したウィジェットのみをアノテートアイテム変数に表示するには、「自動的にフィルター」スライダーをクリックして無効にします。</block>
-  <block id="2e0d68aed2d95c1e5370cf57c66cdd6f" category="paragraph">個々のウィジェットでアノテーションタイプ変数を設定するには、ウィジェットを編集モードで開き、 _Filter By_Field で特定のアノテーションを選択します。アノテーション変数では、特定の値を 1 つ以上選択するか、変数名（先頭の「 $ 」で示されます）を選択することで、ダッシュボードレベルで変数を入力できます。変数を設定したウィジェットでのみ、フィルタされた結果が表示されます。</block>
-  <block id="db9429945479bdf8469ebfb0e45edfa4" category="paragraph">非アノテーション変数（数値、日付、ブーリアン）を同じように使用するようにウィジェットを設定できます。</block>
-  <block id="ede4219a6b2ff39b8d02b4bc0d9c4c21" category="list-text">特殊文字は使用できません。使用できる文字は a ~ z 、数字の 0 ~ 9 、ピリオド（ . ）、アンダースコア（ _ ）のみです。</block>
   <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">20 文字以下にする必要があります。</block>
   <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">空にすることはできません。</block>
   <block id="d802637b72ebddd27cf9b28f9f198763" category="section-title">2021年9月</block>
@@ -8125,4 +8117,40 @@
   <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help &gt; Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</block>
   <block id="763e7c73a838930a9b9e74b5d349cbd6" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： * CentOS （ 64 ビット）： 7.2 から 7.9 、 8.1 から 8.4 * Debian （ 64 ビット）： 9 および 10 * Oracle Enterprise Linux （ 64 ビット）： 7.5 から 7.9 、 8.1 から 8.4 * Red Hat Enterprise Linux （ 64 ビット）： 7.2 ~ 7.9 、 8.1 ~ 8.4 * Ubuntu Server ： 18.04 および 20.04 LTS このコンピュータでは、他のアプリケーションレベルのソフトウェアは実行しないでください。専用のサーバを使用することを推奨します。</block>
   <block id="35d156c90b71a0fab57ae717b06aecd8" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： * Microsoft Windows 10 64 ビット * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していません。専用のサーバを使用することを推奨します。</block>
+  <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">ダッシュボードでは、任意の時系列ウィジェット（折れ線、スプライン、面、積み上げ面）、単一値、 または Gauge Widget を使用すると、選択した指標で式を作成し、それらの式の結果を 1 つのグラフに表示できます。次の例では、式を使用して特定の問題を解決します。最初の例は、環境内のすべてのストレージアセットの合計 IOPS に占める読み取り IOPS の割合を表示するウィジェットです。2 つ目の例では、環境内で発生した「システム」または「オーバーヘッド」の IOPS を可視化しています。これらの IOPS は、データの読み取りや書き込みから直接ではありません。</block>
+  <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">式で変数を使用できます（例： _$var1 * 100_ ）。</block>
+  <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">式で変数を使用するには、変数名（例： _$var1 * 100_ ）を入力します。式で使用できるのは数値変数のみです。</block>
+  <block id="1634ed475d7378ae8b2f149b1a4c43e3" category="list-text">* 属性 * ：オブジェクトの属性またはメトリックを使用してフィルタリングします</block>
+  <block id="a33e4b0669b0dcd6c6727f25e8e1c46b" category="list-text">* 日付 *: 日付値。ウィジェットの構成に応じて、「 From 」または「 To 」の値として使用します。</block>
+  <block id="75514bc8f4a0fcfa4d6e233cf6293d4f" category="section-title">属性変数</block>
+  <block id="cdd0539c5f9ee15c61a20d8600fe7ca5" category="paragraph">属性タイプ変数を選択すると、指定した属性値を含むウィジェットデータをフィルタできます。次の例は、エージェントノードの空きメモリの傾向を表示する折れ線ウィジェットを示しています。エージェントノード IP の変数を作成しました。現在、すべての IP を表示するように設定されています。</block>
+  <block id="e3f9b576b0f66601c43decf70ddc3a40" category="inline-image-macro">可変フィルタの前のエージェントノード</block>
+  <block id="8e1962312d6932465c5534f5b70114c0" category="paragraph"><block ref="8e1962312d6932465c5534f5b70114c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c3953a499e26fb5cad07e67c40f3db25" category="paragraph">ただし、環境内の個々のサブネット上のノードだけを一時的に表示する場合は、その変数を特定のエージェントノード IP または IP に設定または変更できます。ここでは、「 123 」サブネット上のノードのみを表示しています。</block>
+  <block id="5246fe894302a8a0c6ddc8e1a8eabbac" category="inline-image-macro">可変フィルタ後のエージェントノード</block>
+  <block id="56fe99e38514c0cce0008ef626b7a0cf" category="paragraph"><block ref="56fe99e38514c0cce0008ef626b7a0cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef91a7cc72502b96c9cf6aab818dfd2d" category="paragraph">また、変数フィールドに「 vendor」 という属性を指定することにより、オブジェクトタイプに関係なく特定の属性で _all_objects をフィルタリングするように変数を設定することもできます。「 * 。」を入力する必要はありません。ワイルドカードオプションを選択した場合、 Cloud Insights はこれを指定します。</block>
+  <block id="ed7dd290eed78fda8a7e6e57c0454d62" category="inline-image-macro">ベンダーの属性変数</block>
+  <block id="bf22e0e1581a335446f830bdd58ad47d" category="paragraph"><block ref="bf22e0e1581a335446f830bdd58ad47d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88c2cb6ab02290c4fc8aef63c5b379a8" category="paragraph">変数値の選択肢のリストをドロップダウンすると、その結果がフィルタリングされ、ダッシュボード上のオブジェクトに基づいて使用可能なベンダーのみが表示されます。</block>
+  <block id="f4a39005b25ac84fc634debc8f4cbe5c" category="inline-image-macro">使用可能なベンダーのみを示す属性変数</block>
+  <block id="fd28faabd766aae1e084504d5c10cf4a" category="paragraph"><block ref="fd28faabd766aae1e084504d5c10cf4a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba6f53c32d52d02efcd2dfba8a0231d5" category="paragraph">属性フィルタが関連するダッシュボードでウィジェットを編集すると（つまり、ウィジェットのオブジェクトに _*.vendor 属性 _ が含まれている）、属性フィルタが自動的に適用されていることがわかります。</block>
+  <block id="9f4e7d91bfa478e05808ba1cfbbb3570" category="inline-image-macro">属性変数が自動的に適用されます</block>
+  <block id="f2875ccdf69b564c6d35e14d51c547c7" category="paragraph"><block ref="f2875ccdf69b564c6d35e14d51c547c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="111611046ca2e62af91c6a3b49b12fc3" category="paragraph">変数の適用は、選択した属性データを変更するだけで簡単です。</block>
+  <block id="04bdeda9cdd8fc15fd3f3ab8857bd58f" category="section-title">アノテーション変数</block>
+  <block id="31effee05032b02b685624c161070fbe" category="paragraph">アノテーション変数を選択すると、そのアノテーションに関連付けられているオブジェクト（同じデータセンターに属するオブジェクトなど）をフィルタできます。</block>
+  <block id="052dd0291ff86eb47b09d284fb13286f" category="inline-image-macro">変数を使用したアノテーションフィルタリング</block>
+  <block id="8b85c6131cb4766252f9b46d491f912a" category="paragraph"><block ref="8b85c6131cb4766252f9b46d491f912a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94c6931deb0190d81ed0646c35c8c5d9" category="section-title">テキスト、数値、日付、またはブール変数</block>
+  <block id="5908fcd083b5a6010603af57587a15c5" category="paragraph">特定の属性に関連付けられていない汎用変数を作成するには、 _Text_ 、 _Number_ 、 _Boolean_ 、または _Date__ の変数タイプを選択します。作成した変数は、ウィジェットフィルタフィールドで選択できます。ウィジェットでフィルタを設定する場合、フィルタに選択できる特定の値に加えて、ダッシュボード用に作成されたすべての変数がリストに表示されます。これらは、ドロップダウンの「変数」セクションの下にグループ化され、名前は「 $ 」で始まります。このフィルタで変数を選択すると、ダッシュボードの変数フィールドに入力した値を検索できます。フィルタでその変数を使用するウィジェットはすべて動的に更新されます。</block>
+  <block id="b91cd248a68eda4420f9e24801f43500" category="inline-image-macro">ウィジェットで変数を選択する</block>
+  <block id="efc036ec669d0a7c4d69953fdb5d2816" category="paragraph"><block ref="efc036ec669d0a7c4d69953fdb5d2816" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ad3f08cdc417752157181744937565a" category="paragraph">アノテーション変数または属性変数をダッシュボードに追加すると、ダッシュボードの _ALL_widgets に変数を適用できるため、ダッシュボードのすべてのウィジェットで、変数に設定した値に基づいてフィルタされた結果が表示されます。</block>
+  <block id="48a8dc187796007b2f7f8ef0f1df5f8f" category="paragraph">このように自動的にフィルタ処理できるのは属性変数とアノテーション変数だけです。Annotation または -Attribute 以外の変数は ' 自動的にフィルタできません個々のウィジェットで、これらのタイプの変数を使用するように設定する必要があります。</block>
+  <block id="1badbb2ce16697c2f2cc7b0ed794b0f0" category="paragraph">自動フィルタを無効にして、変数でウィジェットを設定したウィジェットのみを環境にするには、 [ 自動的にフィルタ ] スライダをクリックして無効にします。</block>
+  <block id="955733e6dd3ef01c7890d89e4ba3cf6a" category="paragraph">個々のウィジェットで変数を設定するには、ウィジェットを編集モードで開き、 _Filter by_field で特定のアノテーションまたは属性を選択します。アノテーション変数では、特定の値を 1 つ以上選択するか、変数名（先頭の「 $ 」で示されます）を選択することで、ダッシュボードレベルで変数を入力できます。同じ環境属性変数変数を設定したウィジェットでのみ、フィルタされた結果が表示されます。</block>
+  <block id="a0b6145fddba5dc1acba510c52493191" category="paragraph">式で変数を使用するには、式の一部として変数名を入力します。たとえば、 _$var1 * 100_ と入力します。式で使用できるのは数値変数のみです。式では、数値アノテーション変数または属性変数は使用できません。</block>
+  <block id="f54581bbcc974db12605038b8963649e" category="list-text">a~z 、 0~9 の数字、ピリオド（ . ）、アンダースコア（ _ ）、およびスペース（ . ）のみを使用してください。</block>
 </blocks>
