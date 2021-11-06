@@ -233,3 +233,13 @@ NOTE: 管理対象ユニットの合計は、ステータスセクションの�
 == 直接購読して、トライアルをスキップしてください
 
 から直接 Cloud Insights に登録することもできます link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["AWS Marketplace"]最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。
+
+
+
+== エンタイトルメント ID の追加
+
+Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、ネットアップの Astra を購入済みで、 Cloud Insights が Astra 案件にバンドルされている場合、 Astra ライセンスのシリアル番号を使用して、 Cloud Insights でサブスクリプションを識別できます。Cloud Insights は、この an Entitlement ID _ を参照します。
+
+Cloud Insights サブスクリプションにエンタイトルメント ID を追加するには、 [* Admin] > [Subscription] * ページで、 [_ + Entitlement ID_ ] をクリックします。
+
+image:Subscription_AddEntitlementID.png["サブスクリプションにエンタイトルメント ID を追加します"]
