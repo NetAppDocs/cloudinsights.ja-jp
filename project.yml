@@ -170,6 +170,8 @@ sidebar:
       url: "/reporting_creating_custom_reports.html"
     - title: データモデル
       url: "/reporting_creating_custom_reports.html#reporting-data-models"
+    - title: Reporting Database API の略
+      url: "/reporting_querying_database.html"
     - title: データ保持
       url: "/reporting_data_retention.html"
     - title: スキーマ図

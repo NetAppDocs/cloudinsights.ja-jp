@@ -8153,4 +8153,53 @@
   <block id="955733e6dd3ef01c7890d89e4ba3cf6a" category="paragraph">個々のウィジェットで変数を設定するには、ウィジェットを編集モードで開き、 _Filter by_field で特定のアノテーションまたは属性を選択します。アノテーション変数では、特定の値を 1 つ以上選択するか、変数名（先頭の「 $ 」で示されます）を選択することで、ダッシュボードレベルで変数を入力できます。同じ環境属性変数変数を設定したウィジェットでのみ、フィルタされた結果が表示されます。</block>
   <block id="a0b6145fddba5dc1acba510c52493191" category="paragraph">式で変数を使用するには、式の一部として変数名を入力します。たとえば、 _$var1 * 100_ と入力します。式で使用できるのは数値変数のみです。式では、数値アノテーション変数または属性変数は使用できません。</block>
   <block id="f54581bbcc974db12605038b8963649e" category="list-text">a~z 、 0~9 の数字、ピリオド（ . ）、アンダースコア（ _ ）、およびスペース（ . ）のみを使用してください。</block>
+  <block id="0899fcc28c04aa81ead738e68e460060" category="summary">Cloud Insights API を使用して Reporting DB を直接照会する。</block>
+  <block id="a6df26890e0a18d3e3ae4d3fdbfc8b83" category="doc">API 経由で Reporting Database にアクセスします</block>
+  <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">Cloud Insights の強力な API を使用すると、 Cognos Reporting 環境を介さずに、 Cloud Insights Reporting データベースを直接照会できます。</block>
+  <block id="839e9965620da680dac976910eb42800" category="admonition">このドキュメントでは、で使用できる Cloud Insights レポート機能について説明します <block ref="4403a1ad625c6a857c60069d4bc3b41a" category="inline-link-macro-rx"></block>。</block>
+  <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
+  <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4 の</block>
+  <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">このチュートリアルでは</block>
+  <block id="b82b439fceeed91eb6cf1e17ac845ee4" category="paragraph">Cloud Insights レポート API は、に従います <block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block> （ Open Data Protocol ）レポートデータベースの照会の標準。詳細や詳細については、をご覧ください <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block> OData の場合。</block>
+  <block id="3577e510a3f1c74a7bb3874de14515b5" category="paragraph">すべての要求は、 URL \\ https://&lt;Cloud Insights URL&gt;/rest/v1/dwh_management/OData から開始します</block>
+  <block id="125afb495c1f31ea312e38a98946b3a3" category="section-title">apiKey を生成します</block>
+  <block id="75fecb4e276dfa405fa92b53630b1a6c" category="inline-link-macro">Cloud Insights APIs の略</block>
+  <block id="f35f47be5754883ff13c19633478e116" category="paragraph">詳細については、をご覧ください <block ref="b08969031f7130627c2547d43f65cf8d" category="inline-link-macro-rx"></block>。</block>
+  <block id="3033424387de8a8ff6a929d95d0520cf" category="paragraph">API キーを生成するには、次の手順を実行します。</block>
+  <block id="daac61be276185790d79d2f7a9326d42" category="list-text">Cloud Insights 環境にログインし、 * Admin &gt; API Access * を選択します。</block>
+  <block id="1af9f192377d89a75177427725293c59" category="list-text">[+API Access Token] をクリックします。</block>
+  <block id="e7db5ae96f31544fc1ce8098ba62749d" category="list-text">名前と概要を入力します。</block>
+  <block id="2376f0f686e8de0393e5e1ddaeb4f7b6" category="list-text">タイプには、 Data Warehouse _ を選択します。</block>
+  <block id="b035f264e2d66667aac580634dbe607d" category="list-text">権限を読み取り / 書き込みに設定します。</block>
+  <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">要望の有効期限を設定します。</block>
+  <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">[ 保存 ] をクリックし、 * キーをコピーして安全な場所に保存します。あとでフルキーにアクセスすることはできません。</block>
+  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIkeys は、 _Sync_or_Async_&lt;TBD 詳細情報 &gt; に適しています</block>
+  <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">テーブルの直接クエリ</block>
+  <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長い URL は、完全な https://&lt;Cloud Insights URL &gt;/rest/v1/dw-damanagement/odata ではなく、表示目的で https://.../odata/ に簡略化される可能性があります</block>
+  <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">次のような簡単なクエリを試してください</block>
+  <block id="a46f2ca5771aa079cc7e5856afeaa757" category="list-text">\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/odata / dwh_custom</block>
+  <block id="0d34a983260a100641ecd9e249496394" category="list-text">\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/odata / dwh_inventory</block>
+  <block id="03ebeceea5ea916ef7b51a3a95a49d11" category="list-text">\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/odata / dwh_inventory/storage</block>
+  <block id="2ab0f9fbf7fd8c1c02b31fa8c169136a" category="list-text">\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/odata / dwh_inventory/disk</block>
+  <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\ https://.../odata/dwh_custom/custom_queries</block>
+  <block id="25de0257c507b6c736e10a9674011469" category="section-title">REST API の例</block>
+  <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">すべての呼び出しの URL は、 https://&lt;Cloud Insights URL&gt;/rest/v1/dwh_management/odat_ です。</block>
+  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">Get/{schema}/** - Reporting Database からデータを取得します。少なくとも _Guest_role が必要です。</block>
+  <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">形式： \\https://&lt;Cloud Insights URL&gt;/rest/v1/dw-management/odata /&lt;schema_name&gt;/&lt;query&gt;_</block>
+  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">例</block>
+  <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">結果</block>
+  <block id="9d0a9858786cdf7480d0249e4c00b68b" category="section-title">役に立つヒント</block>
+  <block id="622cc3cd255274a9efa2b5fab43cefab" category="paragraph">Reporting API クエリを使用する場合は、次の点に注意してください。</block>
+  <block id="5a03c61f1a0712e54da17d0ac8d82602" category="list-text">クエリペイロードには有効な JSON 文字列を指定する必要があります</block>
+  <block id="9553d82a7d1118dc4901d6486c74ba20" category="list-text">クエリペイロードは 1 行に含める必要があります</block>
+  <block id="d38246b0166d90788ce89df63b2bf0b3" category="list-text">二重引用符はエスケープする必要があります。</block>
+  <block id="63120938c0e559d26c98c9576a1d2ecb" category="list-text">タブは \t としてサポートされています</block>
+  <block id="cc93dd8699d557a2b66d1c5a5490d28f" category="list-text">コメントは避けてください</block>
+  <block id="4478764ebfa3eddbaccd1d177b34133a" category="list-text">小文字のテーブル名がサポートされています</block>
+  <block id="f018faa29d3a2ffeb961b60dfaa40a06" category="paragraph">さらに、</block>
+  <block id="0d6642fdc7f58abaa6abe00db247d66a" category="list-text">2 つのヘッダーが必要です。</block>
+  <block id="a06751273618aaa2a3136426034f3331" category="list-text">「 X-CloudInsights - apiKey 」という名前を付けます。</block>
+  <block id="f07ffec998a0d91a573274ae4a20cba9" category="list-text">属性値「 &lt;apiKey&gt; 」</block>
+  <block id="5455308b1c7692a68b58d6059d1af0fe" category="paragraph">API キーは Cloud Insights 環境に固有です。</block>
+  <block id="d5da864a003c6e8dd171d9f5f67d6bcf" category="sidebar">Reporting Database API の略</block>
 </blocks>
