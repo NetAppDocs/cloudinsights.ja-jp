@@ -8231,4 +8231,5 @@
   <block id="8a9336b93fd9fdd4855b170bfda1938e" category="list-text">CentOS （ 64 ビット） 8.4</block>
   <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 ビット） 8.4</block>
   <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 ビット） 8.4</block>
+  <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">APIKeys は、 _Sync_or_Async に適しています。</block>
 </blocks>
