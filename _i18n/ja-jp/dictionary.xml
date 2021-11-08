@@ -8232,4 +8232,36 @@
   <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 ビット） 8.4</block>
   <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 ビット） 8.4</block>
   <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">APIKeys は、 _Sync_or_Async に適しています。</block>
+  <block id="c6baf991a66b3aacc47987de1641b11e" category="summary">ログエクスプローラは、問題を調査するための強力なツールです。</block>
+  <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">ログエクスプローラ</block>
+  <block id="6f0a85aa190cf61bbcf2d473f4c6c50a" category="paragraph">Cloud Insights ログエクスプローラは、 EMS ログと Kubernetes ログを照会するための強力なツールです。調査に役立つだけでなく、ログクエリをモニタに保存して、ログトリガーがアクティブになったときにアラートを生成することもできます。</block>
+  <block id="78f546f3522c36deb2df39facbe2cbf2" category="admonition">ログエクスプローラは _Preview_feature であるため、変更される可能性があります。</block>
+  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">ログの検索を開始するには、 *Queries &gt;+New Log Query * をクリックします。</block>
+  <block id="c7175e137df374ab419bd8746e829439" category="inline-image-macro">ログクエリメニュー</block>
+  <block id="2476c675ea0ab08eb68e77616d8026cf" category="paragraph"><block ref="2476c675ea0ab08eb68e77616d8026cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f6ed4a34f2dd3f6ee334d4bce6755dc2" category="paragraph">リストから使用可能なログを選択します。このリストは、現在の Cloud Insights 環境設定によって異なる場合があります。</block>
+  <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">ログを選択します</block>
+  <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7588d3859ad2b6d675ed5520f12a393" category="admonition">プレビュー用に選択した一連のログにアクセスできます。また、時間の経過とともに追加のログを利用できます。</block>
+  <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">フィルタを設定して、クエリの結果をさらに絞り込むことができます。たとえば、障害を示すすべてのログ・メッセージを検索するには、「 failed 」という単語を含む _Messages_ のフィルタを設定します。</block>
+  <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">フィルタフィールドに目的のテキストを入力することができます。 Cloud Insights では、入力した文字列を含むワイルドカード検索の作成を求めるプロンプトが表示されます。</block>
+  <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">結果は、表示される各期間のログインスタンスの数を示すグラフに表示されます。グラフの下には、自分のログエントリが表示されます。グラフとエントリは、選択した期間に基づいて自動的に更新されます。</block>
+  <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">フィルタを示すクエリの例</block>
+  <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">ロググラフ</block>
+  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">このグラフには、選択したダッシュボードの時間範囲に基づいて _bucket_ にグループ化されたログエントリの数が表示されます。各期間のバケットは次のとおりです。</block>
+  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">バケットサイズ</block>
+  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30 分</block>
+  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45 分</block>
+  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 日</block>
+  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">グラフを拡大表示するには、スライダを左右いずれかの方向にドラッグします。ズームした領域をパンするには、白い領域をクリックしたまま左または右に移動します。ズームレベルをリセットするには、 _Reset Zoom_ をクリックします。</block>
+  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">グラフの横をドラッグしてズームインします</block>
+  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">グラフをズームしたりテーブルをスクロールしたりすると、ダッシュボードの自動更新が一時停止し、時間範囲にフリーズした時間が表示されることに注意してください。更新を再開するには、 _Resume_button をクリックします <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>。これにより、ズームレベルもリセットされます。</block>
+  <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">[ ログモニタの作成 ] をクリックすると、現在のフィルタに基づいて新しいモニタを作成できます。</block>
+  <block id="5498a5f4896f117c2848f41304cec816" category="section-title">ログの詳細</block>
+  <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">リスト内のログエントリの任意の場所をクリックすると、そのエントリの詳細ペインが開きます。ここでは、イベントに関する詳細を確認できます。</block>
+  <block id="13eb6f9ee990a41519e29ed1b850e7d4" category="paragraph">[ フィルタの追加 ] をクリックして、選択したフィールドを現在のフィルタに追加します。ログエントリリストは、新しいフィルタに基づいて更新されます。</block>
+  <block id="40cbcf33504e4618736618d0178350da" category="inline-image-macro">ログエントリの詳細ペイン</block>
+  <block id="ec3637bd1bccc80828f9c014bf3b44f7" category="paragraph"><block ref="ec3637bd1bccc80828f9c014bf3b44f7" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
