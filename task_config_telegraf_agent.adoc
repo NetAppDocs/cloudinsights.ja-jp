@@ -134,7 +134,7 @@ sc.exe delete telegraf
 image:Agent_Requirements_Rhel.png["RHEL / CentOS Agent のインストール"]
 
 .前提条件
-* CURL 、 sudo 、 ping 、 sha256sum 、 dmidecode の各コマンドを使用できる必要があります
+* cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります
 * プロキシの背後にある場合は、「 RHEL / CentOS * 用のプロキシサポートの設定」セクションの手順に従ってください。
 
 
@@ -226,7 +226,7 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 image:Agent_Requirements_Ubuntu.png["Ubuntu / Debian Agent のインストール"]
 
 .前提条件
-* CURL 、 sudo 、 ping 、 sha256sum 、 dmidecode の各コマンドを使用できる必要があります
+* cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります
 * プロキシの背後にいる場合は、「 Ubuntu / Debian * 用のプロキシサポートの設定」セクションの手順に従ってください。
 
 
@@ -318,7 +318,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 image:Agent_Requirements_Macos.png["MacOS Agent のインストール"]
 
 .前提条件
-* 次に示すコマンドは、 curl 、 sudo 、 shasum で使用できる必要があります
+* 次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります
 * プロキシの背後にいる場合は、「 MacOS* のプロキシサポートの設定」セクションの手順に従います。
 
 
@@ -446,7 +446,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方�
 NOTE: オペレータベースのインストールは _Preview_feature と見なされるため、変更されることがあります。
 
 .前提条件
-* cURL 、 sudo 、 kubectl などのコマンドを使用できる必要があります
+* cURL 、 sudo 、 openssl 、 sha256sum 、および kubectl のコマンドを使用できる必要があります
 +
 最適な結果を得るには、これらのコマンドをパスに追加してください。
 

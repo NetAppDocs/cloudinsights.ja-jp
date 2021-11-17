@@ -221,5 +221,8 @@ image:CS_Data_Collector_Error.png[""]
 
 
 | データコレクタでエラーが発生し、次のエラーメッセージが表示されます。「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「 | NFS サービスのみが設定された新しい SVM から開始します。Cloud Secure に ONTAP SVM データコレクタを追加します。Cloud Secure に ONTAP SVM データコレクタを追加する際に、 CIFS が SVM で許可されるプロトコルとして設定されている。Cloud Secure のデータコレクタでエラーが表示されるまで待ちます。SVM で CIFS サーバが設定されていないため、左側にあるエラーは Cloud Secure で表示されます。ONTAP SVM データコレクタを編集し、許可されたプロトコルとして CIFS のチェックを解除します。データコレクタを保存します。NFS プロトコルのみが有効な状態で実行が開始されます。 
+
+
+| Data Collector に、「 Error: Failed to Determine the collector within 2 retries 、 try restarting the collector again (Error Code: AGENT008) 」というエラーメッセージが表示されます。 | [ データコレクタ ] ページで、エラーが表示されているデータコレクタの右にスクロールし、 3 つのドットメニューをクリックします。選択した編集 _ 。データコレクタのパスワードをもう一度入力します。[Save] ボタンを押して、データコレクタを保存します。Data Collector が再起動し、エラーが解決されます。 
 |===
 それでも問題が解決しない場合は、 [ ヘルプ ]>[ サポート *] ページに記載されているサポートリンクにアクセスしてください。

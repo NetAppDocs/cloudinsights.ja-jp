@@ -5617,7 +5617,6 @@
   <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">前のテレグラムエージェントをアンインストールします。</block>
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="8904cc29551e19496fd1ef88d03dbdb2" category="list-text">cURL 、 sudo 、 kubectl などのコマンドを使用できる必要があります</block>
   <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">監視は Linux ノードにのみインストールされます</block>
@@ -7543,11 +7542,9 @@
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">招待がユーザーに送信されます。ユーザーは 14 日以内に招待を承諾する必要があります。招待を受諾すると、 NetApp Cloud Portal に送られ、招待状の E メールアドレスを使用してサインアップされます。その E メールアドレス用の既存のアカウントがある場合は、サインインするだけで Cloud Insights 環境にアクセスできます。</block>
   <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">RHEL / CentOS Agent のインストール</block>
   <block id="530723ab95ea5239b9c308f8890b5069" category="paragraph"><block ref="530723ab95ea5239b9c308f8890b5069" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f2ec5bf691b67e423ea64e2cefce5af" category="list-text">CURL 、 sudo 、 ping 、 sha256sum 、 dmidecode の各コマンドを使用できる必要があります</block>
   <block id="49d620df1cdf6184275e83524131195e" category="paragraph"><block ref="49d620df1cdf6184275e83524131195e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">MacOS Agent のインストール</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">次に示すコマンドは、 curl 、 sudo 、 shasum で使用できる必要があります</block>
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">グループを監視します</block>
   <block id="861cce966793d64acfe10deceab95b98" category="paragraph">新しいグループを作成するには、 [*"+" Create New Monitor Group*] ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。モニタを _all Monitors _ または _Custom Monitors _ グループから削除することはできませんこれらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
@@ -8264,4 +8261,10 @@
   <block id="13eb6f9ee990a41519e29ed1b850e7d4" category="paragraph">[ フィルタの追加 ] をクリックして、選択したフィールドを現在のフィルタに追加します。ログエントリリストは、新しいフィルタに基づいて更新されます。</block>
   <block id="40cbcf33504e4618736618d0178350da" category="inline-image-macro">ログエントリの詳細ペイン</block>
   <block id="ec3637bd1bccc80828f9c014bf3b44f7" category="paragraph"><block ref="ec3637bd1bccc80828f9c014bf3b44f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">Data Collector に、「 Error: Failed to Determine the collector within 2 retries 、 try restarting the collector again (Error Code: AGENT008) 」というエラーメッセージが表示されます。</block>
+  <block id="f2e1c8f11a6d114e56889c093ddb4738" category="cell">[ データコレクタ ] ページで、エラーが表示されているデータコレクタの右にスクロールし、 3 つのドットメニューをクリックします。選択した編集 _ 。データコレクタのパスワードをもう一度入力します。[Save] ボタンを押して、データコレクタを保存します。Data Collector が再起動し、エラーが解決されます。</block>
+  <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります</block>
+  <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります</block>
+  <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">cURL 、 sudo 、 openssl 、 sha256sum 、および kubectl のコマンドを使用できる必要があります</block>
+  <block id="9493694f9074632615f75f136ee1eb6f" category="sidebar">ログの照会（プレビュー）</block>
 </blocks>
