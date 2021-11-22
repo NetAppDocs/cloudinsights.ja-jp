@@ -1,20 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_hp_3par.html 
-keywords: data collector, 3PAR, HP, HP 3PAR 
-summary: task_dc_Fujitsu _data コレクタを設定しています。 
+keywords: data collector, 3PAR, HP, HP 3PAR, HPE, 
+summary: HP Enterprise Alletra 9000/Primera （旧 3PAR ）データコレクタの設定 
 ---
-= 3PAR StoreServ ストレージデータコレクタ
+= HP Enterprise Alletra 9000/Primera Storage データコレクタ
 
 
 [role="lead"]
-Cloud Insights では、 3PAR StoreServ データコレクタを使用して、 HP 3PAR StoreServ ストレージアレイのインベントリとパフォーマンスを検出します。
+Cloud Insights では、 HP Enterprise Alletra 9000/HP Enterprise Primera （以前の 3PAR ）データコレクタを使用してインベントリとパフォーマンスを検出します。
 
 
 
 == 用語集
 
-Cloud Insights では、 3PAR StoreServ データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Cloud Insights では、このデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
@@ -46,8 +46,8 @@ Cloud Insights では、 3PAR StoreServ データコレクタから次のイン�
 * InServ クラスタの IP アドレスまたは FQDN
 * インベントリの場合は、 StoreServ サーバへの読み取り専用のユーザ名とパスワード
 * パフォーマンスを確保するために、 StoreServ サーバへの読み取り / 書き込みユーザ名とパスワード
-* ポート要件： 22 （インベントリ収集）、 5988 、 5989 （パフォーマンス収集） [ 注： 3PAR のパフォーマンスは StoreServ OS 3.x + でサポートされます ]
-* パフォーマンス収集については、 SSH を使用して 3PAR アレイにログインし、 SMI-S が有効になっていることを確認してください。
+* ポート要件： 22 （インベントリ収集）、 5988 、 5989 （パフォーマンス収集） [ 注： StoreServ OS 3.x + ではパフォーマンスがサポートされます ]
+* パフォーマンス収集を行うには、 SSH を使用してアレイにログインし、 SMI-S が有効になっていることを確認します。
 
 
 
@@ -108,7 +108,7 @@ Cloud Insights では、 3PAR StoreServ データコレクタから次のイン�
 | 問題 | 次の操作を実行します 
 
 
-| "showsys" コマンドを実行しても結果は返されません。 | コマンドラインから「 showsys 」と「 showversion a 」を実行し、バージョンが 3PAR でサポートされているかどうかを確認します。 
+| "showsys" コマンドを実行しても結果は返されません。 | コマンドラインから「 showsys 」と「 showversion-a 」を実行し、バージョンがアレイでサポートされているかどうかを確認します。 
 |===
 
 

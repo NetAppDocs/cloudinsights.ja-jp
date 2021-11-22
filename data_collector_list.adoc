@@ -65,7 +65,7 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_emc_ecs.html["Dell EMC ECS の場合"] | インフラ 
 
 
-| link:task_dc_emc_isilon.html["Dell EMC Isilon の"] | インフラ 
+| link:task_dc_emc_isilon.html["Dell EMC PowerScale （旧 Isilon ）"] | インフラ 
 
 
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | インフラ 
@@ -134,10 +134,10 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_hds_ops_center.html["Hitachi Ops Center の略"] | インフラ 
 
 
-| link:task_dc_hpe_nimble.html["HPE Nimble Storage"] | インフラ 
+| link:task_dc_hpe_nimble.html["HP Enterprise Alletra 6000 （旧 Nimble ）ストレージ"] | インフラ 
 
 
-| link:task_dc_hp_3par.html["HP Enterprise 3PAR StoreServ ストレージ"] | インフラ 
+| link:task_dc_hp_3par.html["HP Enterprise Alletra 9000/Primera （旧 3PAR ）ストレージ"] | インフラ 
 
 
 | link:task_dc_hpe_commandview.html["HP Enterprise Command View の順にクリックします"] | インフラ 

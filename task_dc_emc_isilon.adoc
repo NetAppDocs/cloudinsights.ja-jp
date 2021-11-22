@@ -1,20 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_emc_isilon.html 
-keywords: data collector, isilon, EMC, DELL 
-summary: Dell EMC Isilon データコレクタの設定 
+keywords: data collector, isilon, EMC, DELL, PowerScale 
+summary: Dell EMC PowerScale （旧 Isilon ）データコレクタの設定 
 ---
-= Dell EMC Isilon データコレクタ
+= Dell EMC PowerScale データコレクタ
 
 
 [role="lead"]
-Cloud Insights は、 Isilon SSH データコレクタを使用して、 EMC Isilon スケールアウト NAS ストレージからインベントリデータとパフォーマンスデータを取得します。
+Cloud Insights は、 Dell EMC PowerScale （以前の Isilon ） SSH データコレクタを使用して、 PowerScale スケールアウト NAS ストレージからインベントリデータとパフォーマンスデータを取得します。
 
 
 
 == 用語集
 
-Cloud Insights は、 Isilon データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Cloud Insights では、このデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
@@ -40,8 +40,8 @@ Cloud Insights は、 Isilon データコレクタから次のインベントリ
 
 このデータコレクタを設定するには、次の情報が必要です。
 
-* Isilon ストレージに対する管理者権限
-* Isilon クラスタの IP アドレス
+* PowerScale ストレージへの管理者権限
+* PowerScale クラスタの IP アドレス
 * ポート 22 への SSH アクセス
 
 
@@ -54,13 +54,13 @@ Cloud Insights は、 Isilon データコレクタから次のインベントリ
 | フィールド | 説明 
 
 
-| IP アドレス | Isilon クラスタの IP アドレスまたは完全修飾ドメイン名 
+| IP アドレス | PowerScale クラスタの IP アドレスまたは完全修飾ドメイン名 
 
 
-| ユーザ名 | Isilon クラスタのユーザ名 
+| ユーザ名 | PowerScale クラスタのユーザ名 
 
 
-| パスワード | Isilon クラスタのパスワード 
+| パスワード | PowerScale クラスタのパスワード 
 |===
 
 
