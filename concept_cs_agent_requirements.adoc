@@ -32,7 +32,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 | ネットワーク | 100Mbps ～ 1Gbps のイーサネット接続、静的 IP アドレス、すべてのデバイスへの IP 接続、および Cloud Secure インスタンスへの必要なポート（ 80 または 443 ） 
 |===
-注： Cloud Insights エージェントと Cloud Secure エージェントは同じマシンにインストールできます。ただし、別々のマシンにインストールすることを推奨します。両方のエージェントが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
+注： Cloud Secure エージェントは、 Cloud Insights Acquisition Unit や Agent と同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
 
 |===
 
