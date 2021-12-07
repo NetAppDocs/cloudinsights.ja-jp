@@ -4629,7 +4629,6 @@
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">このデータコレクタは、次の機能でサポートされています。</block>
   <block id="e0f5635cfc022e85fc412c023e2e7759" category="list-text">SMB プロトコルバージョン 3.1 以前</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS プロトコルバージョン 4.0 以前</block>
-  <block id="588ac47b76f53afe6880e6f9275995c3" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume / flexgroup ボリュームを含む SVM はサポートされていません</block>
   <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM には複数のサブタイプがあります。このうち、サポートされているのは _DEFAULT_ と _SYNC_SOURE__ のみです。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">を設定する必要があります</block>
   <block id="6c1006735c24c4966ad5668af1361000" category="list-text">エージェント <block ref="a64dfb2e19772579ec5e757e77e2d502" category="inline-link-macro-rx"></block> データコレクタを設定する前に、</block>
@@ -8238,4 +8237,5 @@
   <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direct または AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> または <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">注： Cloud Secure エージェントは、 Cloud Insights Acquisition Unit や Agent と同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。</block>
+  <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume を備えた SVM はサポートされません。</block>
 </blocks>
