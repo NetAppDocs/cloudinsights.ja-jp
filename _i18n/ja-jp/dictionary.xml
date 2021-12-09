@@ -8106,7 +8106,6 @@
   <block id="b035f264e2d66667aac580634dbe607d" category="list-text">権限を読み取り / 書き込みに設定します。</block>
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">要望の有効期限を設定します。</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">[ 保存 ] をクリックし、 * キーをコピーして安全な場所に保存します。あとでフルキーにアクセスすることはできません。</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIkeys は、 _Sync_or_Async_&lt;TBD 詳細情報 &gt; に適しています</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">テーブルの直接クエリ</block>
   <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長い URL は、完全な https://&lt;Cloud Insights URL &gt;/rest/v1/dw-damanagement/odata ではなく、表示目的で https://.../odata/ に簡略化される可能性があります</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">次のような簡単なクエリを試してください</block>
@@ -8238,4 +8237,7 @@
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direct または AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> または <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">注： Cloud Secure エージェントは、 Cloud Insights Acquisition Unit や Agent と同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume を備えた SVM はサポートされません。</block>
+  <block id="578ac85a2fa04a9c847d579bf30ac050" category="paragraph">2021 年 10 月以降、 Cloud Insights には指標とログの両方についてのシステム定義のモニタが多数含まれます。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。</block>
+  <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">ONTAP の Advanced Counter および EMS Log Collection を有効にします</block>
+  <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">システムモニタのデフォルトの状態は _Paused です。モニタを再開する前に、 Data Collector で _Advanced Counter Data Collection_and _Enable ONTAP EMS log collection_が 有効になっていることを確認する必要があります。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
