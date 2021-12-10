@@ -4215,7 +4215,6 @@
   <block id="3e95d5bf4d584000651a5f687ba0310a" category="paragraph">あなたのフィルターを最大限に活用するためにすることができるある事はここにある。</block>
   <block id="0ecade71587c79081676c62ef53f935f" category="section-title">完全一致フィルタリング</block>
   <block id="a19631908d10e6f4ee6597e0c5e8756a" category="paragraph">完全一致フィルタを使用して、ホスト名などの特定のリソースを検索できます。ホスト名「マーケティング」のみを検索し、「マーケティング 01 」、「マーケティングボストン」などを除外する場合は、名前「 marketing 」を二重引用符で囲みます。</block>
-  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">高度なフィルタリング</block>
   <block id="17c3275b3d2f98d4dfc9281d6efa644b" category="paragraph">フィルタをさらに絞り込むには、次のコマンドを使用します。</block>
   <block id="9a67f09be58d0044199c666795b424b7" category="list-text">アスタリスクを使用すると、すべての項目を検索できます。例：</block>
   <block id="b1a24bdfc0663ae6b0664767e2bfe2e5" category="paragraph">「 vol 」で始まり、「 rhel 」で終わるすべてのリソースを表示します。</block>
@@ -8242,4 +8241,13 @@
   <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">システムモニタのデフォルトの状態は _Paused です。モニタを再開する前に、 Data Collector で _Advanced Counter Data Collection_and _Enable ONTAP EMS log collection_が 有効になっていることを確認する必要があります。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied"</block>
   <block id="111b2478c731e7f769050b7a9f8506c6" category="cell">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制約を緩和するには、次のいずれかを実行します。 • Telegraf が動作している各 Kubernetes ノードで、「 chcon-rt container_runtime_t /proc/1/mountstats 」を実行します。• Telegraf が動作している各 Kubernetes ノードで、 SELinux セキュリティポリシーを「 Enforcing 」から「 permissive 」に変更します。• Tegraf DemonSet を編集し、 spec.containers.securityContext.privileged を「 true 」に設定します。</block>
+  <block id="552ea4b269315a61fd8df84d4c5f4bc4" category="section-title">先行入力を提案する高度なテキストフィルタリング</block>
+  <block id="d7246d99ca35ad0c30da801caacfa83a" category="paragraph">フィールドの値を選択すると、そのクエリの他のフィルタには、そのフィルタに関連する値が表示されます。たとえば ' 特定の object_Name_ にフィルタを設定した場合 '_Model_ にフィルタを適用するフィールドには ' そのオブジェクト名に関連する値のみが表示されます</block>
+  <block id="3390387c68439da10e36e8f518ecdc02" category="paragraph">テキストフィルタのみで、コンテキストタイプアヘッド候補が表示されることに注意してください。日付、 Enum （ list ）などは先行入力候補を表示しません。つまり、列挙型フィールドにフィルタを設定し、他のテキストフィールドをコンテキストでフィルタリングすることができます。たとえば、データセンターなどの Enum フィールドの値を選択すると、他のフィルタにはそのデータセンターのモデル / 名前のみが表示されますが、逆の場合は表示されません。</block>
+  <block id="b334116b5a6a9ee3f65d46240e877891" category="paragraph">選択した時間範囲には、フィルタに表示されたデータのコンテキストも表示されます。</block>
+  <block id="87559df59f765da7386b723eed69c3fd" category="section-title">フィルタの単位を選択します</block>
+  <block id="464858407d850fd3c9de4f6588a1ee15" category="paragraph">フィルタフィールドに値を入力するときに、グラフに値を表示する単位を選択できます。たとえば、物理容量でフィルタして、 DEAFultGiB で表示するか、 TiB などの別の形式を選択できます。これは、ダッシュボードに TiB の値を示すグラフがいくつかあり、すべてのグラフで一貫した値を表示する場合に便利です。</block>
+  <block id="010696312885774629a0ee644a640ae3" category="inline-image-macro">フィルタで単位を選択しています</block>
+  <block id="c503bd54dc264736afdfab01b073b12e" category="paragraph"><block ref="c503bd54dc264736afdfab01b073b12e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6302cf6ae35e5844cf2d168fec04aaee" category="section-title">その他のフィルタリングの詳細</block>
 </blocks>
