@@ -7348,7 +7348,6 @@
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。</block>
   <block id="844adbc2fbc9a63340cee63b3801153a" category="cell">すべての User/Author 機能を実行できるほか、レポートの構成、レポートタスクのシャットダウンと再起動など、すべての管理タスクを実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Reporting ロールのみです。</block>
   <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">ダッシュボード、クエリ、アラート、アノテーション、アノテーションルール、 アプリケーションをサポートし、デバイス解決を管理できます。</block>
-  <block id="274b68192b056e268f128ff63bfcd4a4" category="cell">該当なし</block>
   <block id="70fb52e38580a301b191eb366ac4d029" category="cell">すべてのゲスト / コンシューマ機能を実行できるほか、レポートとダッシュボードの作成と管理も可能です。</block>
   <block id="76da35e3189c47f58355f9b7d58e7e97" category="cell">アセットページ、ダッシュボード、アラートへの読み取り専用アクセスが可能で、クエリの表示と実行が可能です。</block>
   <block id="024adade9cb0061af998b7d3f3e85f0a" category="cell">レポートの表示、スケジュール設定、実行、および言語やタイムゾーンなどの個人設定を行うことができます。ゲスト / コンシューマは、レポートの作成や管理タスクの実行はできません。</block>
@@ -8299,4 +8298,6 @@
   <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">詳細については、をご覧ください <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>Cloud Insights に付属のモニタの説明も含めてください。</block>
   <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">管理ユニット (MU)</block>
   <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID は、 raw TB から管理対象ユニットへのレートが異なる場合に測定されます。フォーマットされていない StorageGRID の容量が 40TB 個になると、 1 個のスペースが請求されます <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="d4b92ffff3f3199f4cb5dc53c8c0cf84" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、制限ユーザーアクセスの管理を行うことができます。</block>
+  <block id="0807462d8fba61c18f849a8f66cf58d7" category="cell">アラートおよびフォレンジックを表示できます。ゲストロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことはできません。</block>
 </blocks>
