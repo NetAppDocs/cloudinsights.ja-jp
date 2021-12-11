@@ -11,6 +11,9 @@ keywords: data collector, queries, create, storagegrid
 NetApp StorageGRID データコレクタでは、 StorageGRID 構成からのインベントリやパフォーマンスの収集がサポートされます。
 
 
+NOTE: StorageGRID は、 raw TB から管理対象ユニットへのレートが異なる場合に測定されます。フォーマットされていない StorageGRID の容量が 40TB 個になると、 1 個のスペースが請求されます link:concept_subscribing_to_cloud_insights.html#pricing["管理ユニット (MU)"]。
+
+
 
 == 要件
 

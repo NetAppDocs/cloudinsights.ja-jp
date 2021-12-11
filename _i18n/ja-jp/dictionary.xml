@@ -8297,4 +8297,6 @@
   <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">については以下を参照してください <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> ドキュメント</block>
   <block id="20a28be528da8febfe3a95f2e81c374b" category="paragraph">Cloud Insights には、 2021 年 10 月から、指標とログの両方を対象とするシステム定義の多数のモニタが含まれます。</block>
   <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">詳細については、をご覧ください <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>Cloud Insights に付属のモニタの説明も含めてください。</block>
+  <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">管理ユニット (MU)</block>
+  <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID は、 raw TB から管理対象ユニットへのレートが異なる場合に測定されます。フォーマットされていない StorageGRID の容量が 40TB 個になると、 1 個のスペースが請求されます <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
 </blocks>
