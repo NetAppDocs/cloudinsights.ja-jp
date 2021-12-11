@@ -10,9 +10,6 @@ summary: ログエクスプローラは、問題を調査するための強力�
 [role="lead"]
 Cloud Insights ログエクスプローラは、 EMS ログと Kubernetes ログを照会するための強力なツールです。調査に役立つだけでなく、ログクエリをモニタに保存して、ログトリガーがアクティブになったときにアラートを生成することもできます。
 
-
-NOTE: ログエクスプローラは _Preview_feature であるため、変更される可能性があります。
-
 ログの検索を開始するには、 *Queries >+New Log Query * をクリックします。
 
 image:LogExplorerMenu.png["ログクエリメニュー"]

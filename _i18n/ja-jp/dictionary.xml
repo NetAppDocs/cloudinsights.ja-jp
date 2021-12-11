@@ -7751,10 +7751,6 @@
 <block ref="3f488cb6a8d73935352ae358a16b41fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d2c05fd752bacd15546a3e7343e4ca" category="list-text">Amazon FSX for ONTAP の新しいコレクタ</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">システム定義のモニター</block>
-  <block id="571a4c7b2a21f7d5320e568101487965" category="paragraph">については以下を参照してください <block ref="336c342709e4378716804c9ce097a6ae" category="inline-link-macro-rx"></block> ドキュメントをプレビュー</block>
-  <block id="78f5442b44403af2b19916532d824297" category="section-title">システム定義モニタ（プレビュー）</block>
-  <block id="96243a9e9260d57336856a77aebc69e9" category="paragraph">2021 年 10 月から、 Cloud Insights は指標とログの両方についてシステム定義のモニタを多数プレビューします。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。</block>
-  <block id="48eb2cd1e9b8d7db7bb79328591d4368" category="admonition">システム定義モニタはプレビュー機能であるため、変更されることがあります。</block>
   <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">既存のモニタを変更するには、リストでモニタ名をクリックします。</block>
   <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">モニタを追加するには、 *+ モニタ * をクリックします。</block>
   <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">システムモニタまたはログモニタを選択します</block>
@@ -7785,7 +7781,6 @@
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* ログエントリに基づいて解決 * ：このアラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">アラート解決</block>
   <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c1c354049f1e5c1a3ac483bf9b54d91c" category="admonition">Webhook はプレビュー機能と見なされるため、変更される場合があります。</block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">システム定義のモニタは、事前に定義されたメトリックと条件に加えて、デフォルトの説明と修正アクションで構成されています。これらは変更できません。システム定義モニタの通知受信者リストを変更できます。メトリック、条件、概要、および修正アクションを表示したり、受信者リストを変更したりするには、システム定義のモニタグループを開き、リスト内のモニタ名をクリックします。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">システム定義のモニタグループは変更または削除できません。</block>
   <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下のシステム定義モニタは、記載されたグループで使用できます。</block>
@@ -7829,7 +7824,6 @@
   <block id="34e5045f115b5836d80d9776d1d13dc9" category="admonition">一部のウィジェットグラフなどの画面領域では、暗いテーマで表示しているときでも、背景が明るい場合があります。</block>
   <block id="013aa4ffc40507022dd1b0b1a936ff20" category="paragraph">Kubernetes フィルタはコンテキストに応じて表示されます。つまり、特定のノードページ上にある場合、 pod _name フィルタはそのノードに関連するポッドのみをリストします。さらに、特定のネームスペースにフィルタを適用すると、名前空間の名前空間ではポッドのみが表示されます。</block>
   <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
-  <block id="923a4b017c0560e9f308c651b65fd92e" category="admonition">コレクタレベルの通知はプレビュー機能であるため、変更される場合があります。</block>
   <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">コレクタ通知</block>
   <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">データコレクタのランディングページを表示しているときは、データコレクタの概要セクションの「通知」フィールドで鉛筆のアイコンをクリックすることで通知を変更できます。</block>
@@ -7856,7 +7850,6 @@
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。</block>
   <block id="72c287aa31792e43cc71160178046540" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO システム、 AFF システム、 FAS システムをサポートします。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">パフォーマンスやインベントリのしきい値、およびメトリックやログの条件に関するアラートを生成するモニタを作成します。</block>
-  <block id="2af7f5c66d757eadc79ed9a550d63f6c" category="paragraph">詳細については、をご覧ください <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block></block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
   <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">システムモニタ</block>
@@ -8163,7 +8156,6 @@
   <block id="c6baf991a66b3aacc47987de1641b11e" category="summary">ログエクスプローラは、問題を調査するための強力なツールです。</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">ログエクスプローラ</block>
   <block id="6f0a85aa190cf61bbcf2d473f4c6c50a" category="paragraph">Cloud Insights ログエクスプローラは、 EMS ログと Kubernetes ログを照会するための強力なツールです。調査に役立つだけでなく、ログクエリをモニタに保存して、ログトリガーがアクティブになったときにアラートを生成することもできます。</block>
-  <block id="78f546f3522c36deb2df39facbe2cbf2" category="admonition">ログエクスプローラは _Preview_feature であるため、変更される可能性があります。</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">ログの検索を開始するには、 *Queries &gt;+New Log Query * をクリックします。</block>
   <block id="c7175e137df374ab419bd8746e829439" category="inline-image-macro">ログクエリメニュー</block>
   <block id="2476c675ea0ab08eb68e77616d8026cf" category="paragraph"><block ref="2476c675ea0ab08eb68e77616d8026cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -8302,4 +8294,7 @@
   <block id="751f6c789f3a22b17d94185a7d67ce2d" category="cell">警告 @&lt;15% 重大 @&lt;5%</block>
   <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">ボリュームのストレージ容量は、アプリケーションデータと顧客データの格納に使用されます。クラスタボリュームに格納されているデータが多いほど、将来のデータに使用できるストレージ容量は少なくなります。ボリューム内で使用されているデータストレージ容量が合計ストレージ容量に達すると、 使用可能なストレージ容量が不足しているため、ボリュームはこれ以上データを格納できません。…ボリュームの使用済みストレージ容量を監視することで、データサービスの継続性が確保されます。</block>
   <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">重大のしきい値を超えた場合にサービスの中断を最小限に抑えるには、即時アクションが必要です。 1.増加に対応するために、ボリュームのスペースを増やすことを検討してください。 2.容量を解放するために不要になったデータを削除することを検討してください。警告しきい値に違反した場合は、すぐに次のアクションを実行するよう計画してください。 ...1.拡張に対応するために、ボリュームのスペースを増やすことを検討してください。</block>
+  <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">については以下を参照してください <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> ドキュメント</block>
+  <block id="20a28be528da8febfe3a95f2e81c374b" category="paragraph">Cloud Insights には、 2021 年 10 月から、指標とログの両方を対象とするシステム定義の多数のモニタが含まれます。</block>
+  <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">詳細については、をご覧ください <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>Cloud Insights に付属のモニタの説明も含めてください。</block>
 </blocks>
