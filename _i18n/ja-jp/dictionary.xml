@@ -7740,7 +7740,6 @@
   <block id="651ecedd8d25ab4ae212856320c2b07d" category="inline-image-macro">Kubernetes Explorer のフィルタリングの例</block>
   <block id="3c66c495f12a25be56d72e7b3f6df498" category="paragraph"><block ref="3c66c495f12a25be56d72e7b3f6df498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1f99134a154434d88680184fbf03690c" category="section-title">レポート用の K8s データ</block>
-  <block id="b780477f78288d46124bd3fa35adcdf6" category="paragraph">Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。</block>
   <block id="794bb0e615ad8cbde31e79e047b05977" category="inline-image-macro">チャージバックレポートに Kubernetes データが表示されます</block>
   <block id="72cb1c8d0bd036efb577af713c14ee92" category="paragraph"><block ref="72cb1c8d0bd036efb577af713c14ee92" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d358290cdffc932cfc83fc42f086cdfc" category="section-title">ダークテーマが到着しました</block>
@@ -8300,4 +8299,29 @@
   <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID は、 raw TB から管理対象ユニットへのレートが異なる場合に測定されます。フォーマットされていない StorageGRID の容量が 40TB 個になると、 1 個のスペースが請求されます <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="d4b92ffff3f3199f4cb5dc53c8c0cf84" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、制限ユーザーアクセスの管理を行うことができます。</block>
   <block id="0807462d8fba61c18f849a8f66cf58d7" category="cell">アラートおよびフォレンジックを表示できます。ゲストロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことはできません。</block>
+  <block id="a5091aedd97daf7c5a5297fa5d73a469" category="section-title">2021 年 12 月</block>
+  <block id="e4739a788e45bada83755eece8188d9a" category="section-title">ONTAP システムをさらに緊密に統合</block>
+  <block id="2798b81e41cc279af41eeff00d15882f" category="inline-link-macro">調査とアラート</block>
+  <block id="4f6af09f5c870001ac0eaaddb6e18202" category="paragraph">ネットアップの Event Management System （ EMS ；イベント管理システム）との新たな統合により、 ONTAP ハードウェア障害に対するアラート生成を簡易化できます。<block ref="eb6f7e8cef286ca3e1b61ec761ff162a" category="inline-link-macro-rx"></block> Cloud Insights の下位レベルの ONTAP メッセージを使用して、トラブルシューティングのワークフローを通知および改善し、 ONTAP 要素管理ツールへの依存をさらに軽減します。</block>
+  <block id="4e6a8ff944fc0c2a0442ee92b870bc50" category="section-title">ログを照会しています</block>
+  <block id="2a12dfd548f76c18495029720066b44b" category="paragraph">ONTAP システムの場合、 Cloud Insights クエリには強力な機能が搭載されています <block ref="12422d8daabf8ce7ffc805bfcc34b9ef" category="inline-link-macro-rx"></block>を使用すると、 EMS ログエントリの調査とトラブルシューティングを簡単に行うことができます。</block>
+  <block id="b8e041a845ecd104be2da44b4d9528c9" category="inline-image-macro">ログクエリ</block>
+  <block id="3ceb40febd91d8aaa879d7b03af4f7a8" category="paragraph"><block ref="3ceb40febd91d8aaa879d7b03af4f7a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20bd4d7a1c2eeb9ad384a475097ce55a" category="section-title">Data Collector レベルの通知。</block>
+  <block id="5ab86f6bb4fa1286ef2600bccd225460" category="paragraph">システム定義のアラート用モニタとカスタム作成のモニタに加えて、 ONTAP データコレクタのアラート通知も設定できます。これにより、他のモニタアラートとは無関係に、コレクタレベルのアラートの受信者を指定できます。</block>
+  <block id="424243ded0b8c86c8f8e062ea8431c32" category="section-title">Cloud Secure ロールの柔軟性が向上します</block>
+  <block id="4295e8065f2f640103f566df3329e17f" category="inline-link-macro">ロール</block>
+  <block id="a65fbabde908c5539a548266c1459783" category="paragraph">に基づいて、ユーザに Cloud Secure 機能へのアクセスを許可できます <block ref="2210cd35617833c784f9c717417466ce" category="inline-link-macro-rx"></block> 管理者が設定します。</block>
+  <block id="db03a10b973a96816a6cf82300b069fa" category="cell">Cloud Secure アクセス</block>
+  <block id="9284a6f8d6d2be481ce874ea641a8f0f" category="section-title">オペレーティングシステムのサポート</block>
+  <block id="51603a21ac59ea6c31ff8aa7668d1838" category="paragraph">CentOS 8.x のサポートは、現在 * CentOS 8 Stream * のサポートに置き換えられています。CentOS 8.x は、 2021 年 12 月 31 日にサポート終了となります。</block>
+  <block id="e7278853d2a6c41f5420ab900e3eca99" category="paragraph">ベンダーの変更を反映して、いくつかの Cloud Insights データコレクタ名が更新されました。</block>
+  <block id="d090fa049a63a30d7eaf096103e8cd91" category="cell">ベンダー / モデル</block>
+  <block id="6a1ff27319a41df4b8ee2c4d0c43bfaa" category="cell">前の名前</block>
+  <block id="7c4dcd810c213c036c2f9baf9e3eb16f" category="cell">Dell EMC PowerScale</block>
+  <block id="8a2b136f2ffaf807c9118c0d93904550" category="cell">Isilon</block>
+  <block id="5049bd73700c7777cb34634bcad6fa28" category="cell">HPE Alletra 9000/Primera</block>
+  <block id="a677b71188193c196dc3bbb91b2d692e" category="cell">3PAR</block>
+  <block id="dcd9522b375ce622ac79412f7a5c6e2f" category="cell">Nimble</block>
+  <block id="6762a399f5334f6d77cd7de65d4350ce" category="paragraph">Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。Kubernetes チャージバックデータを Reporting に渡すには、 Kubernetes クラスタとそのバックエンドストレージへのアクティブな接続が必要です。また、 Cloud Insights が Kubernetes クラスタとの間でデータを受信している必要があります。バックエンドストレージからデータを受信していない場合、 Cloud Insights は Kubernetes オブジェクトデータを Reporting に送信できません。</block>
 </blocks>

@@ -11,6 +11,77 @@ keywords: features
 
 
 
+=== 2021 年 12 月
+
+
+
+==== ONTAP システムをさらに緊密に統合
+
+ネットアップの Event Management System （ EMS ；イベント管理システム）との新たな統合により、 ONTAP ハードウェア障害に対するアラート生成を簡易化できます。link:task_system_monitors.html["調査とアラート"] Cloud Insights の下位レベルの ONTAP メッセージを使用して、トラブルシューティングのワークフローを通知および改善し、 ONTAP 要素管理ツールへの依存をさらに軽減します。
+
+
+
+==== ログを照会しています
+
+ONTAP システムの場合、 Cloud Insights クエリには強力な機能が搭載されています link:concept_log_explorer.html["ログエクスプローラ"]を使用すると、 EMS ログエントリの調査とトラブルシューティングを簡単に行うことができます。
+
+image:LogQueryExplorer.png["ログクエリ"]
+
+
+
+==== Data Collector レベルの通知。
+
+システム定義のアラート用モニタとカスタム作成のモニタに加えて、 ONTAP データコレクタのアラート通知も設定できます。これにより、他のモニタアラートとは無関係に、コレクタレベルのアラートの受信者を指定できます。
+
+
+
+==== Cloud Secure ロールの柔軟性が向上します
+
+に基づいて、ユーザに Cloud Secure 機能へのアクセスを許可できます link:concept_user_roles.html#permission-levels["ロール"] 管理者が設定します。
+
+|===
+
+
+| ロール | Cloud Secure アクセス 
+
+
+| 管理者 | アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。 
+
+
+| ユーザ | アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、制限ユーザーアクセスの管理を行うことができます。 
+
+
+| ゲスト | アラートおよびフォレンジックを表示できます。ゲストロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことはできません。 
+|===
+
+
+==== オペレーティングシステムのサポート
+
+CentOS 8.x のサポートは、現在 * CentOS 8 Stream * のサポートに置き換えられています。CentOS 8.x は、 2021 年 12 月 31 日にサポート終了となります。
+
+
+
+==== Data Collector のアップデート
+
+ベンダーの変更を反映して、いくつかの Cloud Insights データコレクタ名が更新されました。
+
+|===
+
+
+| ベンダー / モデル | 前の名前 
+
+
+| Dell EMC PowerScale | Isilon 
+
+
+| HPE Alletra 9000/Primera | 3PAR 
+
+
+| HPE Alletra 6000 | Nimble 
+|===
+'''
+
+
 === 2021年11月
 
 
@@ -77,7 +148,7 @@ image:Filter_Kubernetes_Explorer.png["Kubernetes Explorer のフィルタリン�
 
 ==== レポート用の K8s データ
 
-Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。
+Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。Kubernetes チャージバックデータを Reporting に渡すには、 Kubernetes クラスタとそのバックエンドストレージへのアクティブな接続が必要です。また、 Cloud Insights が Kubernetes クラスタとの間でデータを受信している必要があります。バックエンドストレージからデータを受信していない場合、 Cloud Insights は Kubernetes オブジェクトデータを Reporting に送信できません。
 
 image:Kubernetes_ETL_Example.png["チャージバックレポートに Kubernetes データが表示されます"]
 
