@@ -1,14 +1,14 @@
 ---
 sidebar: sidebar 
 permalink: reporting_schema_diagrams.html 
-keywords: Schema, DB Schema, premium 
-summary: DWH スキーマの図 
+keywords: Schema, DB Schema, premium, dwh, data warehouse 
+summary: レポートスキーマの図 
 ---
-= Cloud Insights Data Warehouse スキーマの図
+= Cloud Insights レポートスキーマの図
 
 
 [role="lead"]
-このドキュメントは、 Data Warehouse データベースのスキーマ図を提供します。を含むファイルをダウンロードすることもできます link:ci_reporting_database_schema.pdf["スキーマテーブル"]。
+このドキュメントでは、 Reporting Database のスキーマ図を示します。を含むファイルをダウンロードすることもできます link:ci_reporting_database_schema.pdf["スキーマテーブル"]。
 
 
 NOTE: レポート機能は Cloud Insights で使用できます link:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]。

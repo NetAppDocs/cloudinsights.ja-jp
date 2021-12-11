@@ -5241,10 +5241,7 @@
   <block id="d4ac786771333e144acef4c7fbf68def" category="cell">* ユーザーがデバイスで次のコマンドを実行する権限を持っていることを確認してください。 &gt; isi version osrelease &gt; isi status -q &gt; isi devices -d %s&gt; isi license * ウィザードで使用されている資格情報が一致することを確認してください</block>
   <block id="e34007722288aaaa30b91fd5ab591b8e" category="cell">「 Command &lt;Your Command&gt; run failed with permission ： &lt;your current permisse&gt; 」というエラーメッセージが表示されて「 Internal Error 」が表示されます。sudo コマンド run permission 問題」</block>
   <block id="f8d2d5875b17bbc0406c2dfd617860e3" category="cell">ユーザにデバイスで次のコマンドを実行するための sudo 権限があることを確認します</block>
-  <block id="b3fbc5fcb72f0cf438065d8b61978628" category="summary">DWH スキーマの図</block>
-  <block id="9c4808796a80debbb51a42bd52aef86f" category="doc">Cloud Insights Data Warehouse スキーマの図</block>
   <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">スキーマテーブル</block>
-  <block id="2c5aa08f44306dc7e3b2d5f85866d9bb" category="paragraph">このドキュメントは、 Data Warehouse データベースのスキーマ図を提供します。を含むファイルをダウンロードすることもできます <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">Inventory Datamart のサービスです</block>
   <block id="4ee2fd4b3ba41c46dcb5c95f5ab3c98c" category="paragraph">次の図は、インベントリデータマートを説明しています。</block>
   <block id="3e2f25b47c543aeccbef9b6b89e4e5b9" category="paragraph"><block ref="3e2f25b47c543aeccbef9b6b89e4e5b9" category="inline-image-macro-rx" type="image"></block></block>
@@ -8250,4 +8247,7 @@
   <block id="010696312885774629a0ee644a640ae3" category="inline-image-macro">フィルタで単位を選択しています</block>
   <block id="c503bd54dc264736afdfab01b073b12e" category="paragraph"><block ref="c503bd54dc264736afdfab01b073b12e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6302cf6ae35e5844cf2d168fec04aaee" category="section-title">その他のフィルタリングの詳細</block>
+  <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">レポートスキーマの図</block>
+  <block id="6674395fa1826fa5008d38849347faea" category="doc">Cloud Insights レポートスキーマの図</block>
+  <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">このドキュメントでは、 Reporting Database のスキーマ図を示します。を含むファイルをダウンロードすることもできます <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
 </blocks>
