@@ -8324,4 +8324,38 @@
   <block id="a677b71188193c196dc3bbb91b2d692e" category="cell">3PAR</block>
   <block id="dcd9522b375ce622ac79412f7a5c6e2f" category="cell">Nimble</block>
   <block id="6762a399f5334f6d77cd7de65d4350ce" category="paragraph">Reporting で Kubernetes データを使用できるようになりました。チャージバックやその他のレポートを作成できます。Kubernetes チャージバックデータを Reporting に渡すには、 Kubernetes クラスタとそのバックエンドストレージへのアクティブな接続が必要です。また、 Cloud Insights が Kubernetes クラスタとの間でデータを受信している必要があります。バックエンドストレージからデータを受信していない場合、 Cloud Insights は Kubernetes オブジェクトデータを Reporting に送信できません。</block>
+  <block id="137130f586fe8fbaec289a38be336008" category="summary">この分析情報から、リソースが環境内の他のリソースにどのような影響を及ぼすかを確認できます。</block>
+  <block id="2d78443087bc495d923e93521efb0c1d" category="doc">知見：ストレスのある共有リソース</block>
+  <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。</block>
+  <block id="f537dec4993300ffaa9674ac2db71a97" category="admonition">Stress_Insight の共有リソースは _Preview_feature と見なされるため、変更される場合があります。</block>
+  <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">ワークロードやリソースへの影響について話すときは、次の定義が役立ちます。</block>
+  <block id="cd038a3c036812737c2ee89b0152ce75" category="paragraph">* 要求する * または * インパクトのある * リソースは、別のリソースに悪影響を与えるものです。たとえば、 IOPS が非常に高いボリュームでは、原因によって他のボリュームのレイテンシが増大する可能性があります（例 _Impacted_or_Degraded_resources ）を参照してください。要求の厳しいリソースや影響を受けるリソースは、ストレージプールやボリュームなど、同じ共有リソースを使用する「ピア」です。要求の厳しいリソースは、 _greedy_resources と呼ばれることもあります。</block>
+  <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">要求の厳しいワークロードとは、共有ストレージプール内の他のリソースに影響を与えていると現在特定されているワークロードのことです。これらのワークロードは IOPS を高め（など）、影響を受けるワークロードの IOPS を削減します。要求の厳しいワークロードは _ 高消費のワークロード _ と呼ばれることもあります。</block>
+  <block id="7bddab02c6c096040f0edf52e1623868" category="paragraph">「 Impacted Workload 」は、共有ストレージプール内の負荷の高いワークロードによる影響を受けます。このようなワークロードでは、要件の厳しいワークロードが原因で IOPS やレイテンシが低下しています。</block>
+  <block id="cb9530c6d6791a5adae9a607513f9fe2" category="paragraph">* 共有リソースの飽和 * は、 _BASELINE_ に影響する IOPS の比率です。</block>
+  <block id="f6ee2d35944570b247cc02129e0311be" category="paragraph">* ベースライン * は、検出された飽和状態に直前の 1 時間における各ワークロードのレポートされる最大データポイントです。</block>
+  <block id="bf306d07c3ed41852c5f9cb551a07b59" category="paragraph">競合 * または飽和 * は、 IOPS が共有ストレージプール内の他のリソースまたはワークロードに影響していると判断された場合に発生します。</block>
+  <block id="0b34f00d1d4a3885b35a431a55efeb18" category="section-title">要件の厳しいワークロード</block>
+  <block id="b3d48647b3779314aebd78fd52891ad4" category="paragraph">共有リソースで要求の厳しいワークロードや影響を受けるワークロードを確認するには、 Cloud Insights メニューの * Dashboards &gt; Shared Resources の Stress* をクリックします。</block>
+  <block id="f59f9eea55ba2a2439645d8e6d60708c" category="inline-image-macro">ワークロードのリスト</block>
+  <block id="de841194d737155906a92014035475f2" category="paragraph"><block ref="de841194d737155906a92014035475f2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abf3a029f9cc4648911d9ae02dd252ca" category="paragraph">Cloud Insights は、飽和が検出されたワークロードのリストを表示します。Cloud Insights では、少なくとも 1_easteResource _ * と * 少なくとも 1_impacted resource_が 検出されたワークロードのみが表示されます。</block>
+  <block id="d7c664bf82d9e14603a845f0ffe47993" category="paragraph">ワークロードをクリックすると、そのワークロードの詳細ページが表示されます。上部チャートには、競合や飽和が発生している共有リソース（ストレージプールなど）のアクティビティが表示されます。</block>
+  <block id="2ca1e64d0a4fdfcf135961f6931ac68b" category="inline-image-macro">競合を示す共有リソース</block>
+  <block id="bb6db0535ce42b380d76743c35ffe29a" category="paragraph"><block ref="bb6db0535ce42b380d76743c35ffe29a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7e4a0aeb0ee372dc4742c55ad85d4088" category="paragraph">以下の 2 つのグラフは、要件の厳しいワークロードの影響を受けやすいワークロードを示しています。</block>
+  <block id="3058d78451b014873b4ca65f0669489e" category="inline-image-macro">要求の厳しいワークロードチャート</block>
+  <block id="46562410a025cae8a5441c0cc0a4c00f" category="inline-image-macro">影響を受けるワークロードグラフ</block>
+  <block id="0235e2ca371cdf80c7762b753dea8837" category="paragraph"><block ref="1e461f0fa39f3c43d15db85d9c4c41be" category="inline-image-macro-rx" type="image"></block>
+<block ref="d7adda713052ffbe921378a4e393f313" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9eb156b99e347ad63f9400c9ff3d5387" category="paragraph">各表の下には、競合に影響を及ぼすワークロードやリソースが表示されます。リソース（ VM など）をクリックすると、そのリソースの詳細ページが開きます。ワークロードをクリックすると、関連するポッドを示すクエリページが開きます。リンクが空のクエリを開く場合は、影響を受けるポッドがアクティブな競合の一部でなくなっている可能性があります。クエリの時間範囲を変更して、ポッドリストを表示する時間範囲を大きくすることも、よりフォーカスした時間範囲にすることもできます。</block>
+  <block id="008c5d1721c9b63d5ed08355eea1b53a" category="section-title">飽和状態を解決するにはどうすればよいですか？</block>
+  <block id="9cbb70da4f593e061720d13c0bd6f6e3" category="paragraph">環境内の飽和の可能性を減らすか、または排除するために、いくつかの手順を実行できます。これらは、ページの「 * + 推奨を表示」リンクを展開することで表示されます。いくつか試してみてください。</block>
+  <block id="900ef87417a7c603a78b6faed4b3aefb" category="list-text">高 IOPS の利用者を移動</block>
+  <block id="632a5f1480e0880a0e3bb18eab7d52d4" category="paragraph">「 Greedy 」ワークロードを、飽和状態になっていないストレージプールに移動します。ワークロードを移動する前に、これらのプールの階層と容量を評価して、不要なコストや追加の競合を回避することをお勧めします。</block>
+  <block id="4c93d51aefb4da90599e2c7f0c7f7321" category="list-text">Quality of Service （ QoS ；サービス品質）ポリシーを実装する</block>
+  <block id="de611c8e9567515efd9824b262d8d9e1" category="paragraph">使用可能な十分な空きリソースを確保するためにワークロードごとに QoS ポリシーを実装すると、ストレージプールの飽和を軽減できます。これは長期的な解決策です。</block>
+  <block id="5d43336b0046b068224b4a4c606863ba" category="list-text">リソースを追加する</block>
+  <block id="31fa4ab3e19080703e914efb949bbced" category="paragraph">共有リソース（ストレージプールなど）が IOPS 飽和ポイントに達した場合、プールにディスクを追加するか、より高速なディスクを追加することで、飽和状態を緩和するための十分な空きリソースが確保されます。</block>
+  <block id="ac62625b23d0635d3eaed0e05c830d36" category="paragraph">最後に、 [* Insight Link* のコピー ] をクリックして、ページの URL をクリップボードにコピーすると、同僚と簡単に共有できます。</block>
 </blocks>
