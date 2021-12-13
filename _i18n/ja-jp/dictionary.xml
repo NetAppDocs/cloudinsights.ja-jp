@@ -8187,7 +8187,6 @@
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります</block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります</block>
   <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">cURL 、 sudo 、 openssl 、 sha256sum 、および kubectl のコマンドを使用できる必要があります</block>
-  <block id="9493694f9074632615f75f136ee1eb6f" category="sidebar">ログの照会（プレビュー）</block>
   <block id="e29d4b0022b53ae021c4d0c28ff1c272" category="summary">HP Enterprise Alletra 6000 （旧 Nimble ）データコレクタの設定</block>
   <block id="1673741a6893cf106b8b69b143097e4c" category="doc">HPE Alletra 6000 データコレクタ</block>
   <block id="bb341a6d938cae0b0a085b354294a7cd" category="paragraph">HP Enterprise Alletra 6000 （以前の Nimble ）データコレクタは、 Alletra 6000 ストレージアレイのインベントリデータとパフォーマンスデータをサポートしています。</block>
@@ -8223,7 +8222,6 @@
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direct または AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> または <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">注： Cloud Secure エージェントは、 Cloud Insights Acquisition Unit や Agent と同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume を備えた SVM はサポートされません。</block>
-  <block id="578ac85a2fa04a9c847d579bf30ac050" category="paragraph">2021 年 10 月以降、 Cloud Insights には指標とログの両方についてのシステム定義のモニタが多数含まれます。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。</block>
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">ONTAP の Advanced Counter および EMS Log Collection を有効にします</block>
   <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">システムモニタのデフォルトの状態は _Paused です。モニタを再開する前に、 Data Collector で _Advanced Counter Data Collection_and _Enable ONTAP EMS log collection_が 有効になっていることを確認する必要があります。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied"</block>
@@ -8358,4 +8356,5 @@
   <block id="5d43336b0046b068224b4a4c606863ba" category="list-text">リソースを追加する</block>
   <block id="31fa4ab3e19080703e914efb949bbced" category="paragraph">共有リソース（ストレージプールなど）が IOPS 飽和ポイントに達した場合、プールにディスクを追加するか、より高速なディスクを追加することで、飽和状態を緩和するための十分な空きリソースが確保されます。</block>
   <block id="ac62625b23d0635d3eaed0e05c830d36" category="paragraph">最後に、 [* Insight Link* のコピー ] をクリックして、ページの URL をクリップボードにコピーすると、同僚と簡単に共有できます。</block>
+  <block id="bfbb887958da2dfcfde3e14473a0a3d3" category="paragraph">Cloud Insights には、指標とログの両方を監視するシステム定義のモニタが多数含まれています。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。</block>
 </blocks>

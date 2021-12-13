@@ -18,7 +18,7 @@ summary: パフォーマンスやインベントリのしきい値、および�
 
 
 [role="lead"]
-2021 年 10 月以降、 Cloud Insights には指標とログの両方についてのシステム定義のモニタが多数含まれます。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。
+Cloud Insights には、指標とログの両方を監視するシステム定義のモニタが多数含まれています。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。
 
 
 NOTE: システムモニタのデフォルトの状態は _Paused です。モニタを再開する前に、 Data Collector で _Advanced Counter Data Collection_and _Enable ONTAP EMS log collection_が 有効になっていることを確認する必要があります。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。image:Enable_Log_Monitor_Collection.png["ONTAP の Advanced Counter および EMS Log Collection を有効にします"]

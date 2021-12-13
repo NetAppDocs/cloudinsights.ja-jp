@@ -102,7 +102,7 @@ sidebar:
       url: "/task_query_assign_multiple_applicationss.html"
     - title: 表の値をクリップボードにコピーしています
       url: "/task_query_copy_table_values.html"
-    - title: ログの照会（プレビュー）
+    - title: ログを照会しています
       url: "/concept_log_explorer.html"
   - title: アノテーションの使用
     entries:
