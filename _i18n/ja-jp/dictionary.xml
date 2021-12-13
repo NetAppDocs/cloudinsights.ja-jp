@@ -7836,7 +7836,6 @@
   <block id="ff4d6902497a0527749455a3bab6c881" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> が固定されていますONTAP の最小バージョンは 9.8P7 です。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">データコレクタでエラーが発生し、次のエラーメッセージが表示されます。「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「</block>
   <block id="db45b764838c9131ffbab7063103f890" category="cell">NFS サービスのみが設定された新しい SVM から開始します。Cloud Secure に ONTAP SVM データコレクタを追加します。Cloud Secure に ONTAP SVM データコレクタを追加する際に、 CIFS が SVM で許可されるプロトコルとして設定されている。Cloud Secure のデータコレクタでエラーが表示されるまで待ちます。SVM で CIFS サーバが設定されていないため、左側にあるエラーは Cloud Secure で表示されます。ONTAP SVM データコレクタを編集し、許可されたプロトコルとして CIFS のチェックを解除します。データコレクタを保存します。NFS プロトコルのみが有効な状態で実行が開始されます。</block>
-  <block id="f2ca27a5a85ae2cd72b932650e54dc20" category="paragraph">Telegraf 用に以前に作成された Security Context Constraint （ Kubernetes からデータを収集するようにエージェントを設定するハイパーリンク）：</block>
   <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">ローカルシステムで次のコマンドを実行して、 Cloud Secure で使用するポートを開きます。ポート範囲に関するセキュリティ上の問題がある場合は、 _35000 ： 35100_ のように小さいポート範囲を使用できます。各 SVM は 2 つのポートを使用します。</block>
   <block id="cd97e5515b0cad32cadf2b0e90813f6d" category="paragraph">プラットフォームに応じて、次の手順を実行します。</block>
   <block id="504510de5d7df6b369756702c8c3a365" category="paragraph">* CentOS 7.x/RHEL 7.x * ：</block>
@@ -8359,4 +8358,5 @@
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことができます。</block>
   <block id="2967e4e81e6ef4babcb760cbbd1a80d0" category="paragraph">ベンダーの変更を反映した Cloud Insights データコレクタ名がいくつか追加されています。</block>
+  <block id="4419ae7806803f11d5bd8d5d040e7961" category="paragraph">Telegraf 用のセキュリティコンテキスト制約が以前に作成されていた場合は、次の手順を実行します。</block>
 </blocks>
