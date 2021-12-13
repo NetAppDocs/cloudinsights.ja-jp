@@ -8358,4 +8358,5 @@
   <block id="ac62625b23d0635d3eaed0e05c830d36" category="paragraph">最後に、 [* Insight Link* のコピー ] をクリックして、ページの URL をクリップボードにコピーすると、同僚と簡単に共有できます。</block>
   <block id="bfbb887958da2dfcfde3e14473a0a3d3" category="paragraph">Cloud Insights には、指標とログの両方を監視するシステム定義のモニタが多数含まれています。モニタインタフェースには、これらのシステムモニタに対応するためのいくつかの変更が含まれます。これらについては、このセクションで説明します。</block>
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことができます。</block>
 </blocks>
