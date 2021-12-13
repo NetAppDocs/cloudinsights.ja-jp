@@ -63,7 +63,7 @@ CentOS 8.x のサポートは、現在 * CentOS 8 Stream * のサポートに置
 
 ==== Data Collector のアップデート
 
-ベンダーの変更を反映して、いくつかの Cloud Insights データコレクタ名が更新されました。
+ベンダーの変更を反映した Cloud Insights データコレクタ名がいくつか追加されています。
 
 |===
 
