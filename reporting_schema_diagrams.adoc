@@ -270,3 +270,9 @@ image:disk_daily_performance_fact.png[""]
 === Disk Hourly Performance の 2 つの機能が
 
 image:disk_hourly_performance_fact.png[""]
+
+
+
+== Kubernetes
+
+image:k8s_schema.jpg["Kubernetes"]
