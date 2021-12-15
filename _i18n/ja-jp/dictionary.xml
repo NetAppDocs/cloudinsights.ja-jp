@@ -4796,9 +4796,6 @@
   <block id="f76cc97ccb788e95e43d6e238845fd1f" category="cell">このコマンドは構成ノードで実行する必要があります。</block>
   <block id="2af1bc57f00c07afe945f9aa64a9712f" category="summary">Google Compute データコレクタを設定します</block>
   <block id="ed3cd63dd0baae2764478daf8451ac08" category="doc">NetApp Google Compute データコレクタ</block>
-  <block id="adbb21be998ef439e786a2cc5479bf1b" category="paragraph">このデータコレクタは、 Google Compute クラウドプラットフォーム構成からのインベントリ収集をサポートします。</block>
-  <block id="6cb2830007af9ceb6ce55b4560dc650a" category="cell">プロジェクト ID</block>
-  <block id="72016e08368e92bde4566b6748dcf110" category="cell">Google Cloud Platform 構成のプロジェクト ID</block>
   <block id="76525f0f34b48475e5ca33f71d296f3b" category="cell">クライアント ID</block>
   <block id="0ba940100c87f907596ed0894bd30e64" category="cell">Google Cloud Platform 構成のクライアント ID</block>
   <block id="a2826ab9dd3371db38961f6064c6ce31" category="cell">Google 資格情報ファイルの内容をここにコピーして貼り付けます</block>
@@ -8359,4 +8356,11 @@
   <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことができます。</block>
   <block id="2967e4e81e6ef4babcb760cbbd1a80d0" category="paragraph">ベンダーの変更を反映した Cloud Insights データコレクタ名がいくつか追加されています。</block>
   <block id="4419ae7806803f11d5bd8d5d040e7961" category="paragraph">Telegraf 用のセキュリティコンテキスト制約が以前に作成されていた場合は、次の手順を実行します。</block>
+  <block id="2e924b339513eb23c96002f278d6b8b8" category="paragraph">このデータコレクタは、 Google Compute クラウドプラットフォーム構成からのインベントリとパフォーマンスの収集をサポートします。このコレクタは、 1 つの Google 組織内のすべてのプロジェクト内のすべてのコンピューティングリソースを検出しようとします。Cloud Insights で検出したい Google 組織が複数ある場合は、組織ごとに 1 つの Cloud Insights コレクタを導入します。</block>
+  <block id="aeeb23ddda2fbf397bcdca17962b697f" category="cell">組織 ID</block>
+  <block id="0e5d7d7899d2a1bd9df3ce85d8ded643" category="cell">このコレクタで検出する組織 ID 。サービスアカウントが複数の組織を表示できる場合は、このフィールドが必要です</block>
+  <block id="f7f7f8ef6f20a2ef4fbb8ed15c0b3852" category="cell">GCP プロジェクトを ID でフィルタリングするには、 [ 除外 ] または [ 含める ] を選択します</block>
+  <block id="1823a3293796ab04adae38227fa9a422" category="cell">Cloud Insights に移行するプロジェクトのリソースを制限する場合</block>
+  <block id="4fae97854a6cef2a7c02f3b22e8df69c" category="cell">プロジェクト ID</block>
+  <block id="23e7025720ca26f786e85bf276a90711" category="cell">「除外する」値の値に応じて、フィルタするプロジェクト ID または検出から除外するプロジェクト ID のリスト。デフォルトリストは空です</block>
 </blocks>
