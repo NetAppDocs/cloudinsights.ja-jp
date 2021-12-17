@@ -164,6 +164,9 @@ ONTAP SVM の設定ページが表示されます。各フィールドに必要�
 
 
 | フォルダアクセスを監視します | オンにすると、フォルダアクセス監視のイベントが有効になります。このオプションを選択しなくても、フォルダの作成 / 名前変更および削除が監視されることに注意してください。これを有効にすると、監視されるイベントの数が増えます。 
+
+
+| ONTAP 送信バッファサイズを設定します | ONTAP FPolicy 送信バッファのサイズを設定します。9.8p7 より前のバージョンの ONTAP を使用していて、 Performance 問題が表示された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。 
 |===
 .完了後
 * Installed Data Collectors ページで、各コレクタの右側にあるオプションメニューを使用してデータコレクタを編集します。データコレクタを再起動したり、データコレクタ設定の属性を編集したりできます。
@@ -217,7 +220,7 @@ image:CS_Data_Collector_Error.png[""]
 | クラスタに未使用の既存のポリシーがあります。Cloud Secure をインストールする前に、これらのツールを使用して何を行う必要がありますか？ | 切断状態の場合でも、既存の未使用の FPolicy 設定をすべて削除することを推奨します。Cloud Secure は、「 cloudsecure_ 」というプレフィックスを付けて FPolicy を作成します。その他の未使用の FPolicy 設定はすべて削除できます。fpolicy list ： _fpolicy show_steps を表示して FPolicy 設定を削除する場合の CLI コマンド： _fpolicy disable -vserver <svmname> -policy -name <policy_name> _fpolicy policy scope delete -vserver <svmname> -policy name <policy_name> _fpolicy policy delete -vserver <svmname > -policy_name <policy_name> -policy_name>fpolicy_fpolicy_name> 
 
 
-| Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。 | Data ONTAP バージョンを使用していることを確認します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["この問題"] が固定されていますONTAP の最小バージョンは 9.8P7 です。 
+| Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。 | Data ONTAP バージョンを使用していることを確認します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["この問題"] が固定されていますONTAP の最小バージョンは 9.8P7 です。9.8p7 より前のバージョンの ONTAP を使用していて、このパフォーマンス問題が検出された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。 
 
 
 | データコレクタでエラーが発生し、次のエラーメッセージが表示されます。「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「 | NFS サービスのみが設定された新しい SVM から開始します。Cloud Secure に ONTAP SVM データコレクタを追加します。Cloud Secure に ONTAP SVM データコレクタを追加する際に、 CIFS が SVM で許可されるプロトコルとして設定されている。Cloud Secure のデータコレクタでエラーが表示されるまで待ちます。SVM で CIFS サーバが設定されていないため、左側にあるエラーは Cloud Secure で表示されます。ONTAP SVM データコレクタを編集し、許可されたプロトコルとして CIFS のチェックを解除します。データコレクタを保存します。NFS プロトコルのみが有効な状態で実行が開始されます。 

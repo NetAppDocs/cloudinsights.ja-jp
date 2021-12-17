@@ -7464,7 +7464,6 @@
   <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">[ 監査 ] ページで、目的の時間範囲と任意のフィルタを設定します。Cloud Insights は、設定したフィルタリングおよび時間範囲に一致する監査エントリのみをエクスポートします。</block>
   <block id="81e9e10a5416438d2549dae075160792" category="list-text">[_Export_] ボタンをクリックします <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> をクリックします。</block>
   <block id="7201440e51225680b60dccf28366c73d" category="paragraph">表示される監査イベントは、最大 10 、 000 行までの .csv ファイルにエクスポートされます。</block>
-  <block id="8d27ed17859baac177ef9c6571d0c222" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： Red Hat Enterprise Linux 7.x 、 8.x 64 ビット CentOS 7.x 、 8.x 64 ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">ディスクスペースは、 /opt/netapp25-30GB のように割り当てられます</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">Linux では 50 ～ 55 GB 、ディスクスペースは次のように割り当てます。 /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">招待がユーザーに送信されます。ユーザーは 14 日以内に招待を承諾する必要があります。招待を受諾すると、 NetApp Cloud Portal に送られ、招待状の E メールアドレスを使用してサインアップされます。その E メールアドレス用の既存のアカウントがある場合は、サインインするだけで Cloud Insights 環境にアクセスできます。</block>
@@ -7830,7 +7829,6 @@
   <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">Dell EMC XC シリーズデータコレクタの設定</block>
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC シリーズデータコレクタ</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights では、このデータコレクタを使用して、 Dell EMC XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。</block>
-  <block id="ff4d6902497a0527749455a3bab6c881" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> が固定されていますONTAP の最小バージョンは 9.8P7 です。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">データコレクタでエラーが発生し、次のエラーメッセージが表示されます。「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「</block>
   <block id="db45b764838c9131ffbab7063103f890" category="cell">NFS サービスのみが設定された新しい SVM から開始します。Cloud Secure に ONTAP SVM データコレクタを追加します。Cloud Secure に ONTAP SVM データコレクタを追加する際に、 CIFS が SVM で許可されるプロトコルとして設定されている。Cloud Secure のデータコレクタでエラーが表示されるまで待ちます。SVM で CIFS サーバが設定されていないため、左側にあるエラーは Cloud Secure で表示されます。ONTAP SVM データコレクタを編集し、許可されたプロトコルとして CIFS のチェックを解除します。データコレクタを保存します。NFS プロトコルのみが有効な状態で実行が開始されます。</block>
   <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">ローカルシステムで次のコマンドを実行して、 Cloud Secure で使用するポートを開きます。ポート範囲に関するセキュリティ上の問題がある場合は、 _35000 ： 35100_ のように小さいポート範囲を使用できます。各 SVM は 2 つのポートを使用します。</block>
@@ -8363,4 +8361,51 @@
   <block id="1823a3293796ab04adae38227fa9a422" category="cell">Cloud Insights に移行するプロジェクトのリソースを制限する場合</block>
   <block id="4fae97854a6cef2a7c02f3b22e8df69c" category="cell">プロジェクト ID</block>
   <block id="23e7025720ca26f786e85bf276a90711" category="cell">「除外する」値の値に応じて、フィルタするプロジェクト ID または検出から除外するプロジェクト ID のリスト。デフォルトリストは空です</block>
+  <block id="77ec532867a94121758e72c95815d1e9" category="summary">スクリプトを使用して、 Cloud Secure のテストやデモを目的としたランサムウェア攻撃をシミュレートできます</block>
+  <block id="c91ccdaf7d2d0a73b8c6789c610e9a36" category="doc">Cloud Secure ：攻撃のシミュレーション</block>
+  <block id="f1767a0d238fd0fa03d86dfe344b7da9" category="paragraph">このページの手順を使用して、付属の Cloud Secure ランサムウェアシミュレーションスクリプトを使用して、 Cloud Secure のテストまたはデモを行う攻撃をシミュレートできます。</block>
+  <block id="c8722d0a5f0f718756806afb0f63faf3" category="section-title">始める前に注意してください</block>
+  <block id="228b6b559614ae017988e0b66c4ab82c" category="list-text">ランサムウェアシミュレーションスクリプトは Linux でのみ動作します。</block>
+  <block id="4b4977f144a612cb5dcc69751db61974" category="list-text">このスクリプトは、 Cloud Secure エージェントのインストールファイルに付属しています。Cloud Secure エージェントがインストールされているすべてのマシンで使用できます。</block>
+  <block id="5ca377457f233d1116a1177d3c9b8e67" category="list-text">このスクリプトは、 Cloud Secure エージェントマシン自体で実行できます。他の Linux マシンを準備する必要はありません。ただし、スクリプトを別のシステムで実行する場合は、スクリプトをコピーしてそこで実行するだけです。</block>
+  <block id="7507a6fc6500d36cd4c727aec7187901" category="section-title">サンプルファイルを 1 、 000 個以上用意してください</block>
+  <block id="b67a48562c5c72c2dd1f1ce618e93263" category="paragraph">このスクリプトは、暗号化するファイルが格納されたフォルダを含む SVM で実行する必要があります。フォルダとサブフォルダには、少なくとも 1 、 000 個のファイルを含めることをお勧めします。ファイルは空にできません。ファイルを作成したり、同じユーザを使用して暗号化したりしないでください。Cloud Secure では、これはリスクの低いアクティビティとみなされるため、アラートは生成されません（つまり、同じユーザが作成したファイルを変更した場合）。</block>
+  <block id="497ca441ba939bb60a530a6e3409b407" category="inline-link-macro">プログラムによって空でないファイルを作成します</block>
+  <block id="af64720caca21622d75cb553bfdb8bd9" category="paragraph">手順については、以下を参照してください <block ref="e4fffc8648374f8ac4aafa6cb656ffb6" category="inline-link-macro-rx"></block>。</block>
+  <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="section-title">システムを準備</block>
+  <block id="0864c33fc7e49f7b5dabd2b27c2805d5" category="paragraph">まず、ターゲットボリュームをマシンにマウントします。NFS マウントまたは CIFS エクスポートをマウントできます。</block>
+  <block id="6a2eb10d0f7d8e6c5942069b7aa730bf" category="paragraph">Linux で NFS エクスポートをマウントするには、次の手順を実行</block>
+  <block id="dd94533008fec4ee5889a56fd78e2a26" category="paragraph">NFS バージョン 4.1 はマウントしないでください。 FPolicy ではサポートされていません。</block>
+  <block id="6006ea3f9ae2b497be9e9bce2d0ead62" category="paragraph">Linux で CIFS をマウントするには、次の手順を</block>
+  <block id="a22c6eb3597528c16b0d46880ae4b1ae" category="paragraph">次に、 Data Collector をセットアップします。</block>
+  <block id="047f09d337fa7e61d37a18cdc64b32e2" category="list-text">Cloud Secure エージェントがまだ設定されていない場合は設定します。</block>
+  <block id="173dfa4be4da90a7d5d1ced4c9f85a25" category="list-text">SVM データコレクタが設定されていない場合は設定します。</block>
+  <block id="79e81469dc70b00e14fd266807fa2813" category="section-title">ランサムウェアシミュレータスクリプトを実行します</block>
+  <block id="026dcf0af13659deef26baefcf6ad0c6" category="list-text">Cloud Secure エージェント・マシンにログイン（ ssh ）します。</block>
+  <block id="785c0d55edba879bb891f6155bc195ee" category="list-text">/opt/NetApp/cloudsecure/agent/install_に 移動します</block>
+  <block id="430319bb139c1067cd6f898a565a8e7f" category="list-text">パラメータを指定せずにシミュレータスクリプトを呼び出し、使用状況を確認します。</block>
+  <block id="873038227b1d58f9be9ac08fa093fdc8" category="section-title">テストファイルを暗号化します</block>
+  <block id="d6dd6615fa7234326463921d688a17cd" category="paragraph">ファイルを暗号化するには、次のコマンドを実行します。</block>
+  <block id="76b9b68624d8f14bfe2d4fa26a74327e" category="section-title">ファイルをリストアします</block>
+  <block id="05b9537d4d6b18cde99b176600c5b6cb" category="paragraph">復号化するには、次のコマンドを実行します。</block>
+  <block id="508c80147534839c8ece65596b3e23ca" category="section-title">スクリプトを複数回実行します</block>
+  <block id="3556b7794d88ffd4262465058367fd7f" category="paragraph">ユーザがランサムウェア攻撃を受けた場合は、別のユーザに切り替えて攻撃を受けます。Cloud Secure はユーザの行動を学習し、ランサムウェア攻撃が繰り返された場合に同じユーザにアラートを送信しません。</block>
+  <block id="3c00df162167ecfa7cae1012f21e271a" category="section-title">プログラムでファイルを作成します</block>
+  <block id="b7013d500ab0d5c0a0a5ed66e230d702" category="paragraph">ファイルを作成する前に、データコレクタの処理を停止する必要があります。データコレクタをエージェントに追加する前に、次の手順を実行します。データコレクタをすでに追加している場合は、データコレクタを編集し、無効なパスワードを入力して保存します。これにより、データコレクタが一時的にエラー状態になります。注意：元のパスワードを必ずメモしてください。</block>
+  <block id="7fb4f29b2fbada5675e1ca18652cf155" category="paragraph">シミュレーションを実行する前に、暗号化するファイルを追加する必要があります。暗号化するファイルを手動でターゲットフォルダにコピーするか、スクリプト（以下の例を参照）を使用してプログラムでファイルを作成することができます。どちらの方法を使用した場合も、 1 、 000 個以上のファイルをコピーしてください。</block>
+  <block id="ab1689bf65069d89f2858a33f94e7a0c" category="paragraph">プログラムでファイルを作成する場合は、次の手順を実行します。</block>
+  <block id="1ccbd3884a5f46ebee24ea2d455e82c6" category="list-text">[ エージェント ] ボックスにログインします。</block>
+  <block id="aa0db2c21e2f148a0198b8084fbcecf2" category="list-text">Filer の SVM から Agent マシンに NFS エクスポートをマウントします。CD をそのフォルダに移動します。</block>
+  <block id="02f49225afe032e62af33156eb24f4d0" category="list-text">このフォルダに、 createfiles.sh という名前のファイルを作成します</block>
+  <block id="8c8c6d282bc49384bfe84c90829113ba" category="list-text">次の行をそのファイルにコピーします。</block>
+  <block id="01d3a32280cc94c7c057cd3d14488785" category="list-text">ファイルを保存します。</block>
+  <block id="03efecbfeba0123b6899f901d60d957a" category="list-text">ファイルに対する実行権限を確認します。</block>
+  <block id="6013cd3d50482e751e798f6b95a53f7e" category="list-text">スクリプトを実行します。</block>
+  <block id="f4cc1c9a55de42a2dbb9d5aa67b0ad18" category="paragraph">現在のフォルダには 1000 個のファイルが作成されます。</block>
+  <block id="f9c38f6218e4bf4132fd48e2dd8413c2" category="list-text">データコレクタを再度有効にします</block>
+  <block id="123d317d6377a1184be4f3542b76e7fc" category="paragraph">手順 1 でデータコレクタを無効にした場合は、データコレクタを編集し、正しいパスワードを入力して保存します。データコレクタが running 状態であることを確認します。</block>
+  <block id="9de07b55b73b4474c7f2f607db372035" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： Red Hat Enterprise Linux 7.x 、 8.x 64 ビット CentOS 7.x 64 ビット CentOS 8 Stream このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
+  <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">ONTAP 送信バッファサイズを設定します</block>
+  <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">ONTAP FPolicy 送信バッファのサイズを設定します。9.8p7 より前のバージョンの ONTAP を使用していて、 Performance 問題が表示された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。</block>
+  <block id="f27c6ba949e5a69bce4edfd9dbd3316e" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> が固定されていますONTAP の最小バージョンは 9.8P7 です。9.8p7 より前のバージョンの ONTAP を使用していて、このパフォーマンス問題が検出された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。</block>
 </blocks>
