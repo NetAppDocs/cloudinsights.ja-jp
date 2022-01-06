@@ -8378,9 +8378,6 @@
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントレベルがあります。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次の Cloud Secure ロールのいずれかを割り当てることができます。</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">各ユーザに必要なロールを選択します。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新しいユーザを追加する際には、目的のロール（通常はユーザまたはゲスト）を選択します。</block>
-  <block id="bd8b7c0925161675fcd7881a6fbad547" category="paragraph">このデータコレクタは、単一の Astra Data Store （ ADS ）クラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、 Monitoring Operator は _Telegraf _ を設定して、高度なメトリックと _Fluent bit_to 収集ログを収集します。</block>
-  <block id="be1c3d3113c4023e29e8dd947523c711" category="inline-link-macro">Astra データストアのドキュメント</block>
-  <block id="359f9ae1b8107525ade9fca25695caed" category="admonition">これらのインストール手順および追加情報は、にも記載されています <block ref="e2d5f927a8e191fcb9cf0ddb95ef6d7b" category="inline-link-macro-rx"></block>。</block>
   <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">Cloud Insights は、このデータコレクタからインベントリデータとパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="c5ecce90295639a685470629720aeea5" category="list-text">NetApp Monitoring Operator は、 Astra データストアを使用する Kubernetes クラスタにインストールする必要があります。Astra Data Store のインストール時にインストールされなかった場合は、 Astra Data Store のインストール手順に従って、モニタリングオペレータをインストールしてください。</block>
   <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">_kubectl-astras_kubectl プラグインをインストールする必要がありますインストールされていない場合は、 Astra Data Store のインストール手順に従って、 _kubectl-astrs_binary をインストールしてください。</block>
@@ -8412,4 +8409,12 @@
   <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">Acquisition Unit ポッドの名前を取得します。 kubectl get pod -- namespace NetApp-monitoring | grep "au-pPOD " Check the pod logs for errors ： kubectl logs -- namespace netapp -monitoring &lt;pod _name&gt; エラーがなく、ログの末尾に「 Main-Acquisition is up and running ！」というメッセージが表示されている場合、インストールは成功しましたが、想定よりも長くなりました。インストールスクリプトを再実行します。</block>
   <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">Cloud Insights から Acquisition Unit ID を取得できませんでした</block>
   <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">Cloud Insights に Acquisition Unit が表示されることを確認します。Admin &gt; Data Collectors に移動し、 Acquisition Unit タブをクリックします。Cloud Insights API キーに Acquisition Unit の権限があることを確認します。</block>
+  <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">ネットアップアストラデータストア</block>
+  <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
+  <block id="17d0980f445c2a05e39e2cbcbbb44f10" category="paragraph">このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、 Monitoring Operator は _Telegraf _ を設定して、高度なメトリックと _Fluent bit_to 収集ログを収集します。</block>
+  <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">Cloud Insights で指標を監視</block>
+  <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra データストアのクイックスタート</block>
+  <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">以下のインストール手順と追加情報は、 Astra データストアのドキュメントにも記載されています。<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
+<block ref="9e8952bf2d49abc5b376cb6c4ac1dd52" category="inline-link-macro-rx"></block></block>
+  <block id="8035d5d39b2b48f6ec1a3133b688513c" category="sidebar">Astra データストア</block>
 </blocks>
