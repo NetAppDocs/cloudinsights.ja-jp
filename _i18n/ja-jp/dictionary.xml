@@ -7555,36 +7555,12 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
-  <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights は、このコレクタからインベントリとパフォーマンスのデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
   <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraDSNodeInfo.status.drives</block>
   <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraDSNodeInfo</block>
   <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy の順にクリックします</block>
   <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共有 / 共有イニシエータ</block>
   <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
-  <block id="82f59b932944c8d3e51b299753b0b577" category="inline-link-macro">Acquisition Unit の設置</block>
-  <block id="5c4e04ad1190e5c90b1b0f619ffdfce8" category="list-text">Acquisition Unit は、 Astra Data Store Kubernetes クラスタ内の Kubernetes ポッドで実行する必要があります。を参照してください <block ref="685689410070e2ca4b2a238a29a6485a" category="inline-link-macro-rx"></block> 詳細：</block>
-  <block id="8155879da2f06fed5df19d6c696fb9eb" category="list-text">Acquisition Unit をインストールするには、 Cloud Insights が必要です <block ref="5decf952854a75ba62436d35e6c78b28" category="inline-link-macro-rx"></block> 各カテゴリに対する読み取り / 書き込み権限： _ Acquisition Unit 、 Data Collection 、 Data Ingestion _</block>
-  <block id="d94f21371b1ddf718eac12a52a2c04d5" category="list-text">使用する Kubernetes API トークンによって、 _astrads.netapp.io_ apiGroup に対する読み取り専用アクセスが付与される必要があります</block>
-  <block id="7fd42c59429dd49f7d8d2046c25561a2" category="list-text">astrads システムのデフォルトサービスアカウントの API トークンを取得するには、 bash シェルで次のコマンドを実行します。</block>
-  <block id="cb058d58577afc1218e66a94de6c292d" category="cell">Kubernetes API サーバの IP アドレス</block>
-  <block id="6c78114b7032d73ba3ed6e8cbd74b060" category="cell">Kubernetes API サーバポート</block>
-  <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API トークン</block>
-  <block id="cbf38915f7dd92dccde1fe3dad2469bf" category="cell">含まれている ADS クラスタ名</block>
-  <block id="e0412bb84ea8e005d283cd9efaeeaafb" category="cell">ポーリングの対象に含める ADS クラスタ名をカンマで区切ったリスト。すべてのクラスタを監視する場合は空欄のままにします。</block>
-  <block id="965c5c6eb8381e5b51445a5fbc3048b3" category="section-title">Acquisition Unit 、 Telegraf 、および Fluent ビットをインストールします</block>
-  <block id="942ad6ae4cfb77253ea0ed5053f1c538" category="paragraph">NetApp Monitoring Operator は、 Astra データストアを使用して Kubernetes クラスタにインストールされます。Monitoring Operator は、 Acquisition Unit 、 Advanced Metrics の Telegraf エージェント、およびログの Fluent ビットエージェントのインストールと設定を管理します。</block>
-  <block id="60c94873e829d5ca6d386970af565e78" category="paragraph">オペレータを設定するには、次の手順を実行します。</block>
-  <block id="d2953a6d1dc9e4c2944f4fbe26ac3e38" category="list-text">次のカスタムリソース定義スニペットをコピーします</block>
-  <block id="cf1bba394802bae24b1516ceecd24b5f" category="list-text">Kubernetes クラスタに Storage Provisioner が設定されていない場合は、 _storageClassName_ のコメントを解除し、取得ユニットの PVS を含む StorageClass の名前を指定します。これらの PVS は作成済みである必要があります。デフォルトの StorageClass を使用する場合は、空白のままにします。</block>
-  <block id="9b8755d743dc0ce6277cdc31ef224b5e" category="list-text">insert_cluster_name&gt; を Astra Data Store クラスタの名前に置き換えます</block>
-  <block id="a2f1c521dfa91f6c85597ffffd4ad0dc" category="list-text">INSERT_CI_API_KEY&gt; を Cloud Insights API アクセストークンに置き換えます</block>
-  <block id="cbbd92d6b955f7ab9a2e14bd02c8ae67" category="list-text">insert_CI_domain_name &gt; は、 Cloud Insights テナントドメイン名に置き換えられます</block>
-  <block id="0708c6c6efe0076d2e9dac362af766e5" category="list-text">次のコマンドを実行して、 Monitoring Operator Agent の仕様を編集します。</block>
-  <block id="f9e160d20c2644dfc7d3e369f872c3e4" category="list-text">上記のカスタムリソース定義スニペットを既存の Monitoring Operator エージェント仕様とマージします。</block>
-  <block id="150d2b6856d23f8d526cc61f0fb19907" category="list-text">エディタウィンドウを保存して閉じます。</block>
-  <block id="98b3e324b6c5777cb1d2831d88b1132f" category="paragraph">モニタリングオペレータは、収集ユニット、 Telegraf 、および Fluent ビットをインストールします。この処理が完了するまでに数分かかることがあります。次のコマンドを定期的に実行して、ステータスが up になるまで Acquisition Unit のステータスを確認します。または、新しい Acquisition Unit が Cloud Insights UI に表示されるまで待つこともできます。</block>
-  <block id="a7b3be6177e953276c8908078af9035c" category="paragraph">Acquisition Unit をインストールしたら、 Cloud Insights UI から Astra データストアコレクタを追加できます。</block>
   <block id="711f972f5e82f211f310ac06c2f8e036" category="cell">「 Unauthorized 」というメッセージが表示されます</block>
   <block id="90b86e404196295299e2aa0d840dad62" category="cell">Kubernetes API トークンに、 _astrads.netapp.io_ apiGroup 内の API を呼び出す権限があることを確認します</block>
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">不明なホスト : astrs-metric-service-astras-system.svc.cluster.local : 名前またはサービスが不明です</block>
@@ -7641,10 +7617,6 @@
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">上記の「はい」回答ごとに、 8 GB のメモリと 50 GB のディスク容量を AU に追加することをお勧めします。たとえば、「はい」と答えた場合、 150GB 以上のディスクスペースを備えた 24GB のメモリシステムを導入する必要があります。Linux の場合、ログの場所に追加するディスクスペース。</block>
   <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">ネットアップの Astra データストアを設定</block>
   <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra データコレクタ</block>
-  <block id="c81d3de0d63693ca7ae8a4c83d9b9678" category="paragraph">ネットアップの Astra データストアデータコレクタは、単一の Astra データストア（ ADS ）クラスタの設定データとパフォーマンスデータを監視してレポートします。</block>
-  <block id="23d69dc5c46eb576cdde08fed5bdc4c7" category="cell">Kubernetes API サーバの IP アドレス</block>
-  <block id="f2e0eea4e8022b610a38c7ca5b2987f2" category="cell">Kubernetes API サーバのポートデフォルトは 6443. です</block>
-  <block id="ca4d8b2cea754e64a8db55441ca30fca" category="cell">Base64 でエンコードされた Kubernetes API トークン</block>
   <block id="bc593a7d4784d165423875d1c30b5ce3" category="cell">Kubernetes に Tegraf をインストールまたはアップグレードしましたが、 Tegraf ポッドは起動しません。Telegraf ReplicaSet または DemonSet は、次のような障害を報告しています。 Error creating ： PoD "Telegraf-RS" is forbidden ： Unable to validate against any security context constraint ： [spec.volumes [2] ： Invalid Value ： "hostPath" ： hostPath volumes are not allowed to be used]</block>
   <block id="6dba20e9db8c662f2bd1d8bb1008108b" category="cell">セキュリティコンテキスト制約を作成します（前述の「 Kubernetes からデータを収集するためのエージェントの設定」セクションを参照）。Security Context Constraint に指定された名前空間とサービスアカウントが、 Telegraf ReplicaSet および DemonSet の名前空間とサービスアカウントと一致することを確認します。kubectl 説明 SCC テレホ - ホストアクセス | grep サービスアカウント kubectl-n CI- モニタリング -- 説明 RS テレグラム af-rs | grep -i " 名前空間 : "kubectl-n CI- モニタリング説明 RS テレグラム af-r| grep -i " サービスアカウント : "kubectl-n CI-monitoring -ds-describe " テレグラムの説明 "-ds-describe - ネームスペース "grep</block>
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">この GitHub の記事</block>
@@ -8406,4 +8378,38 @@
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントレベルがあります。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次の Cloud Secure ロールのいずれかを割り当てることができます。</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">各ユーザに必要なロールを選択します。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新しいユーザを追加する際には、目的のロール（通常はユーザまたはゲスト）を選択します。</block>
+  <block id="bd8b7c0925161675fcd7881a6fbad547" category="paragraph">このデータコレクタは、単一の Astra Data Store （ ADS ）クラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、 Monitoring Operator は _Telegraf _ を設定して、高度なメトリックと _Fluent bit_to 収集ログを収集します。</block>
+  <block id="be1c3d3113c4023e29e8dd947523c711" category="inline-link-macro">Astra データストアのドキュメント</block>
+  <block id="359f9ae1b8107525ade9fca25695caed" category="admonition">これらのインストール手順および追加情報は、にも記載されています <block ref="e2d5f927a8e191fcb9cf0ddb95ef6d7b" category="inline-link-macro-rx"></block>。</block>
+  <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">Cloud Insights は、このデータコレクタからインベントリデータとパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="c5ecce90295639a685470629720aeea5" category="list-text">NetApp Monitoring Operator は、 Astra データストアを使用する Kubernetes クラスタにインストールする必要があります。Astra Data Store のインストール時にインストールされなかった場合は、 Astra Data Store のインストール手順に従って、モニタリングオペレータをインストールしてください。</block>
+  <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">_kubectl-astras_kubectl プラグインをインストールする必要がありますインストールされていない場合は、 Astra Data Store のインストール手順に従って、 _kubectl-astrs_binary をインストールしてください。</block>
+  <block id="55cf41c81d8f2fa848c3a33fd73120b5" category="list-text">利用可能なコマンドは、 _ awk 、 curl 、 grep 、および jq_ です。</block>
+  <block id="af27e8481fc7ef90e7ed57735aa486a7" category="paragraph">インストールスクリプトの指示に従って、 Astra Data Store データコレクタをインストールします。画面の指示に従います。インストールが完了するまでに数分かかります。完了すると、データが Cloud Insights に表示されるまでに数分かかることがあります。</block>
+  <block id="d679078549b407f8255ce4a95eb4ccad" category="paragraph">スクリプトでは、次の手順を実行します。</block>
+  <block id="73abd6a4d58ac58a260c391fe56f1a57" category="list-text">API のアクセストークンを選択します。</block>
+  <block id="d81b7ed35f0d2bef601ad8d74fdeb35c" category="list-text">インストールダイアログからインストーラスクリプトをコピーし、 _cloudInsights -ads-monitoring .sh という名前のファイルとして保存します。クリップボードアイコンをクリックすると、スクリプトをクリップボードにすばやくコピーできます。</block>
+  <block id="e62192a6aee08bda18b9aa476e12ac7c" category="list-text">Bash ウィンドウを開き、 _cloudin保管 場所 - ads-monitoring .sh スクリプトの場所にディレクトリを変更します。</block>
+  <block id="fa36e0d10ffde2aefefc27bd0369f2f1" category="list-text">インストールダイアログからパーミッションコマンドブロックをコピーしますクリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。</block>
+  <block id="0df60a234fa438383cbe9b557bc6ac86" category="list-text">Bash ウィンドウに権限のコマンドを貼り付け、 Enter キーを押します。</block>
+  <block id="37ed094e95b1aafa9f96e9189d257a88" category="list-text">インストールダイアログからインストールコマンドをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。</block>
+  <block id="8c8c329f90a58cb7d77dde8ca933b56d" category="list-text">Bash ウィンドウに install コマンドを貼り付けます。</block>
+  <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">「 &lt;Kubernetes の IP &gt; 」を Kubernetes API サーバの IP アドレスに置き換えます。</block>
+  <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">&lt;Kubernetes トークン &gt; を Kubernetes API トークンに置き換えます。</block>
+  <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">Enter キーを押します。</block>
+  <block id="d29c6dec2ac17ff8872c354eb3f62aea" category="paragraph">インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Tegraf を設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール</block>
+  <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">完了設定 _ をクリックします。</block>
+  <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">エラーが原因でインストーラスクリプトが終了した場合は、エラーが解決したら再実行できます。デフォルトの設定を使用しない環境の場合、インストーラスクリプトでは、 Monitoring Operator 名前空間や Kubernetes API サーバポートなどの追加のパラメータがサポートされます。使用可能なオプションの一覧を以下に示します。</block>
+  <block id="b524f24588085b1e0adf31626117f231" category="section-title">インストーラのスクリプトオプション：</block>
+  <block id="df5b5c690ed2b1756bcbac0e24081d89" category="paragraph">Cloud Insights ドメイン名と選択した API アクセスキーは、ダウンロード時にインストーラスクリプトに組み込まれます。</block>
+  <block id="5b3edf747d66543d15b01f48fb0a354e" category="section-title">Astra データストアデータコレクタ</block>
+  <block id="81e081c4fe35feb390583edb77bf277e" category="section-title">インストールスクリプト</block>
+  <block id="5afe69e2069028149a518ef6de1e10c5" category="cell">名前空間で監視演算子が実行されていません。</block>
+  <block id="6f062aede7e681e4af5f68add3fd7fd7" category="cell">Astra Data Store のインストール手順に従ってインストールします</block>
+  <block id="4c43e40f1d743a69fcdef8d2b47d0b14" category="cell">300 秒後に Acquisition Unit ポッドが起動しませんでした。</block>
+  <block id="9434c645e8cc0f2a0d4f6cce62e5542d" category="cell">Acquisition Unit ポッドの名前を取得します。 kubectl get pod -- namespace NetApp-monitoring | grep "au-pPOD " Check the pod events for errors ： kubectl describe pod --namespace NetApp-monitoring &lt;pod name&gt;</block>
+  <block id="900774bd5956acd411393b65417a827b" category="cell">Acquisition Unit のインストールが 900 秒経っても完了しません</block>
+  <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">Acquisition Unit ポッドの名前を取得します。 kubectl get pod -- namespace NetApp-monitoring | grep "au-pPOD " Check the pod logs for errors ： kubectl logs -- namespace netapp -monitoring &lt;pod _name&gt; エラーがなく、ログの末尾に「 Main-Acquisition is up and running ！」というメッセージが表示されている場合、インストールは成功しましたが、想定よりも長くなりました。インストールスクリプトを再実行します。</block>
+  <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">Cloud Insights から Acquisition Unit ID を取得できませんでした</block>
+  <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">Cloud Insights に Acquisition Unit が表示されることを確認します。Admin &gt; Data Collectors に移動し、 Acquisition Unit タブをクリックします。Cloud Insights API キーに Acquisition Unit の権限があることを確認します。</block>
 </blocks>
