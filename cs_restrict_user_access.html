@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>自動応答ポリシー</title>
+  <title>ユーザアクセスの制限</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="自動応答ポリシー" />
+  <meta property="og:title" content="ユーザアクセスの制限" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/cs_automated_response_policies.html" />
-	<meta property="og:description" content="潜在的な攻撃（ランサムウェアなど）やアクティビティの警告に対する自動応答ポリシーを設定できます" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html" />
+	<meta property="og:description" content="Cloud Secure を使用すると、破壊の疑いがある場合にユーザアクセスを制限できます" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="潜在的な攻撃（ランサムウェアなど）やアクティビティの警告に対する自動応答ポリシーを設定できます">
-  <meta name="keywords" content=" alert, snapshot, ransomware, attack">
+  <meta name="description" content="Cloud Secure を使用すると、破壊の疑いがある場合にユーザアクセスを制限できます">
+  <meta name="keywords" content=" alert, snapshot,  attack">
   
   
 
@@ -281,11 +281,11 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/cs_automated_response_policies.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/cs_automated_response_policies.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/cs_restrict_user_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -883,15 +883,8 @@
   
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/cloudinsights/pdfs/pages/cs_automated_response_policies.pdf" >
-    <img src="/ja-jp/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
 
-</ul>
-  
+
 
 
 
@@ -1619,8 +1612,10 @@
         アクティビティフォレンジック - エンティティ
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/forensic_user_overview.html">
         ユーザ
-      </a></li></ul></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/cs_automated_response_policies.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/cs_automated_response_policies.html">
         自動応答ポリシー
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/concept_cs_attack_simulator.html">
+        ランサムウェア攻撃のシミュレーション
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/cs_notifications_email.html">
         通知
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/concept_cs_api.html">
@@ -1872,7 +1867,7 @@
           <a href="/ja-jp/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          自動応答ポリシー
+          ユーザアクセスの制限
         </li>
       </ul>
     </div>
@@ -1895,14 +1890,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">自動応答ポリシー</h1>
+  <h1 class="n-doc__component-detail-heading">ユーザアクセスの制限</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 12:53:27 +0000">01/17/2022</time>
+    <time datetime="2022-01-25 16:03:06 +0000">01/25/2022</time>
     
   
 
@@ -1921,32 +1916,221 @@
 </p>
 
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>応答ポリシーは、攻撃や異常なユーザ動作の発生時にスナップショットを作成するなどのアクションをトリガーします。</p>
+<p>攻撃が検出されると、 Cloud Secure はファイルシステムへのユーザーアクセスを制限することで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。</p>
 </div>
 <div class="paragraph">
-<p>特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、 [<strong>Admin] &gt; [Automated Response Policies] を選択し、適切な [</strong>+ Policy+] ボタンをクリックします。攻撃または警告のポリシーを作成できます。</p>
+<p>ユーザアクセスを制限する場合は、アクセス制限のタイプ（ブロックまたは読み取り専用）と期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="AutomatedAttackPolicy.png" alt="攻撃ポリシーを作成します"></span></p>
+<p>アクセス制限は、 SMB プロトコルと NFS プロトコルの両方でサポートされています。</p>
 </div>
 <div class="paragraph">
-<p>ポリシーは一意の名前で保存する必要があります。</p>
+<p>制限はホストマシンの IP アドレスによって行われます。ホストマシンとは、ユーザがストレージにアクセスしたマシンを意味します。これらのマシンの IP アドレスは、 Cloud Secure で監視されているいずれかの Storage Virtual Machine （ SVM ）へのアクセスがブロックされます。</p>
 </div>
 <div class="paragraph">
-<p>自動応答アクションを無効にする（例： Take Snapshot ）には、アクションをチェック解除してポリシーを保存するだけです。</p>
+<p>たとえば、 Cloud Secure が 10 個の SVM を管理し、そのうち 4 つに対して自動応答ポリシーが設定されているとします。4 つの SVM のいずれかで攻撃が発生した場合、 10 個すべての SVM でユーザのアクセスが制限されます。元の SVM では引き続き Snapshot が作成されます。</p>
 </div>
 <div class="paragraph">
-<p>指定されたデバイス（または選択されている場合はすべてのデバイス）に対してアラートがトリガーされると、自動応答ポリシーによってデータのスナップショットが作成されます。Snapshot のステータスは、で確認できます <a href="cs_alert_data.html#the-alert-details-page">"アラートの詳細ページ"</a>。</p>
+<p>4 つの SVM に CIFS 用に設定し、 1 つを NFS 用に設定し、残りの 2 つを NFS と CIFS 用に設定した場合、 4 つの SVM のいずれかで攻撃が発生すると、すべての SVM がブロックされます。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ユーザーアクセス制限の前提条件">ユーザーアクセス制限の前提条件</h3>
+<div class="paragraph">
+<p>この機能を使用するには、 SMB と NFS のエクスポートポリシーを設定する必要があります。NFS および SMB がデータソースコレクタで設定されている場合は、次の手順に従います。</p>
 </div>
 <div class="paragraph">
-<p>自動応答ポリシーを変更または一時停止するには、ポリシーのドロップダウンメニューでオプションを選択します。</p>
+<p>NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。SMB の場合は、エクスポートポリシーが設定されている必要があります。</p>
 </div>
 <div class="paragraph">
-<p>Cloud Secure では、 Snapshot パージの設定に基づいて、 1 日に 1 回 Snapshot が自動的に削除されます。</p>
+<p>NFS と SMB の両方について、 <em>csrole_must be configured correctlyONTAP SVM データソースコレクタのセットアップ時に、に記載されているように、 _csrole</em>（ まだ設定されていない場合）を設定する必要があります <a href="task_add_collector_svm.html#a-note-about-permissions">"データコレクタの権限"</a> ドキュメント</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="CloudSecure_SnapshotPurgeSettings.png" alt="スナップショットパージ設定"></span></p>
+<p>クラスタ IP を使用して Data Collector を設定する場合は、 ONTAP コマンドラインから次の操作を実行します。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+サーバ IP を使用してデータコレクタを設定する場合は、 ONTAP コマンドラインから次の操作を実行し、 Correct _&lt;vservername&gt; を挿入します。</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all
+デフォルトでは、 SVM で NFS サービスを作成するときにエクスポートポリシーが作成されます。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>エクスポートポリシーを設定するコマンドは次のとおりです。以下のコマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。注：コマンドを実行する前に、 advanced モードに切り替える必要があります。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>クラスタモードを使用している場合：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
+SVM モードを使用する場合：</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname " vserver export-policy rule " -access all -query " -policyname cloudsecure_* "</p>
+</div>
+<div class="paragraph">
+<p>両方のモードで、次のコマンドを実行します。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>set -privilege advanced
+cifs options modify -is-exportpolicy-enabled true -vserver &lt;vserver&gt;
+export-policy rule create -vserver &lt;vserver&gt; -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>_exportpolicy-rule_exportpolicy-が 正しく設定されているかどうかを確認するには、上記のコマンドを実行した後で次のコマンドを実行します。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>cifs options show  -fields is-exportpolicy-enabled -vserver &lt;vserver&gt;
+export-policy show -vserver &lt;vserver&gt;
+export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="機能を有効にする方法">機能を有効にする方法</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Secure で、 [<strong>Admin] &gt; [Automated Response Policies] &gt; [Response Policy Settings] &gt; [Access Limitation</strong>] の順に選択します。</p>
+</li>
+<li>
+<p>「ユーザーアクセスの制限を有効にする」を「有効にする」に設定します。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="自動ユーザアクセス制限の設定方法">自動ユーザアクセス制限の設定方法</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>新しい攻撃ポリシーを作成するか、既存の攻撃ポリシーを編集します。</p>
+</li>
+<li>
+<p>攻撃ポリシーを監視する SVM を選択します。</p>
+</li>
+<li>
+<p>[Restrict User IP File Access] チェックボックスをオンにします。この機能は、このオプションを選択すると有効になります。</p>
+</li>
+<li>
+<p>[ ユーザーアクセスの制限 ] で、適用する制限のモードを選択します。</p>
+</li>
+<li>
+<p>[Time Period] で、制限を適用する時間を選択します。</p>
+</li>
+<li>
+<p>自動制限をテストするには、を使用して攻撃をシミュレートします <a href="concept_cs_attack_simulator.html">"シミュレートされたスクリプト"</a>。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="システム内に制限されたユーザーがいるかどうかを確認する方法">システム内に制限されたユーザーがいるかどうかを確認する方法</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>アラートリストページでは、ユーザが制限されている場合に、画面上部のバナーが表示されます。</p>
+</li>
+<li>
+<p>バナーをクリックすると、 [Users] ページが表示されます。このリストには、制限されたユーザーが表示されます。</p>
+</li>
+<li>
+<p>[Users] ページに、 [IP Access] という列が表示されます。この列には、ユーザー制限の現在の状態が表示されます。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ユーザアクセスを手動で制限および管理します">ユーザアクセスを手動で制限および管理します</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>アラートの詳細画面またはユーザーの詳細画面に移動して、これらの画面からユーザーを手動で制限または制限解除できます。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ユーザアクセス履歴の制限">ユーザアクセス履歴の制限</h3>
+<div class="paragraph">
+<p>［ アラートの詳細とユーザーの詳細 ］ ページのユーザーパネルで、ユーザーの制限アクセス制限履歴（時間、アクション（ブロック、読み取り専用、復元）、期間）の監査を表示できます。 手動 / 自動、および影響を受ける IP が実行するアクション。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="機能を無効にする方法">機能を無効にする方法</h3>
+<div class="paragraph">
+<p>この機能はいつでも無効にできます。システム内に制限のあるユーザがいる場合は、アクセスを先にリストアする必要があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Secure で、 [<strong>Admin] &gt; [Automated Response Policies] &gt; [Response Policy Settings] &gt; [Access Limitation</strong>] の順に選択します</p>
+</li>
+<li>
+<p>[ ユーザーアクセスの制限を有効にする ] をオフにして無効にします。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>この機能はすべてのページで非表示になります。</p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">問題</th>
+<th class="tableblock halign-left valign-top">試してみてください</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一部のユーザーは制限されていませんが、攻撃があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data Collector と Agent が停止している場合、 Cloud Secure はコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details &gt; Access Limitation History for this User &gt; Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Restrict Access] を手動でクリックすると、「このアクションにはユーザ IP がありません」というメッセージが表示されます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">制限する IP はすでに別のユーザから制限されています。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 SVM で SMB プロトコルのエクスポートポリシーの使用が無効になっています」という警告が表示されてアクセスの制限に失敗します。restrictuser access 機能を使用するには、 export-policy の使用を有効にします。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「前提条件」に記載されているように、 SVM の -is-exportpolicy-enabled オプションが true であることを確認します。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
     </article>
@@ -1958,8 +2142,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[自動応答ポリシー](https://docs.netapp.com/ja-jp/cloudinsights/cs_automated_response_policies.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_automated_response_policies.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[ユーザアクセスの制限](https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_restrict_user_access.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
     <div class="page-nav-container">
