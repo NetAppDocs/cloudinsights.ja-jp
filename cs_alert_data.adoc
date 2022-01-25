@@ -22,7 +22,7 @@ image:CloudSecureAlertsListPage.png["アラートのリスト"]
 
 * 潜在的な攻撃 :*
 
-* 予想される Attack_type （例：ランサムウェア）
+* 潜在的な攻撃の種類（ランサムウェアや破壊行為など）
 * 潜在的な攻撃が検出された日時 _
 * アラートの _Status_ ：
 +
@@ -85,7 +85,7 @@ image:CloudSecureChangeAlertStatus.png["アラートステータスを変更し�
 
 === サマリセクション：
 
-* 攻撃の種類（この例ではランサムウェア）とアラート ID （ Cloud Secure が割り当て）
+* 攻撃の種類（ランサムウェア、被害者）とアラート ID （ Cloud Secure が割り当て）
 * 攻撃が検出された日時
 * 実行された処理（自動スナップショットの作成など）。Snapshot の時刻は概要セクションのすぐ下に表示されます）
 * ステータス（新規、進行中など）
@@ -106,9 +106,9 @@ image:CloudSecureChangeAlertStatus.png["アラートステータスを変更し�
 
 このセクションでは、潜在的な攻撃に関与するユーザーの詳細を示します。ユーザーの上位アクティビティのグラフも含まれます。
 
-ランサムウェア攻撃の可能性を示すアラートページ：image:RansomwareAlertExample.png["ランサムウェアアラートの例"]
+アラートページ（この例ではランサムウェア攻撃の可能性があります）：image:RansomwareAlertExample.png["ランサムウェアアラートの例"]
 
-ランサムウェア攻撃の詳細ページ：image:RansomwareDetailPageExample.png["Ransomware Detail Page の例"]
+詳細ページ（この例ではランサムウェア攻撃の可能性を示しています）：image:RansomwareDetailPageExample.png["Ransomware Detail Page の例"]
 
 
 

@@ -3083,7 +3083,6 @@
   <block id="7397074a443dab350a0b46b445bd42b6" category="paragraph">アラートリストには、選択した期間内に発生した攻撃および警告の総数、およびその期間内に発生した攻撃または警告のリストがグラフで表示されます。期間を変更するには、グラフの開始時間と終了時間のスライダを調整します。</block>
   <block id="183537e26fed4b4329d37cb02da5ae53" category="paragraph">アラートごとに次の情報が表示されます。</block>
   <block id="0a36ca304e21eb8063b7869dea7a355b" category="paragraph">* 潜在的な攻撃 :*</block>
-  <block id="c4d500ec5d09f3b30341c8b7188afeab" category="list-text">予想される Attack_type （例：ランサムウェア）</block>
   <block id="b81879140b6197b1eee86a1d325a0a81" category="list-text">潜在的な攻撃が検出された日時 _</block>
   <block id="5efe06a62d35c2fe7354ce05b69e8db6" category="list-text">アラートの _Status_ ：</block>
   <block id="17ca445149f5daf4135fa66ee7989d5e" category="list-text">新規（新しいアラートのデフォルト）</block>
@@ -3110,7 +3109,6 @@
   <block id="f5d13b5070432d74ba3be2fb78559747" category="section-title">[Alert Details] ページ</block>
   <block id="acd90b04487305df2bc9ead72d1b4d5b" category="paragraph">アラートリストページのアラートリンクをクリックすると、そのアラートの詳細ページを開くことができます。アラートの詳細は、攻撃またはアラートのタイプによって異なる場合があります。たとえば、ランサムウェア攻撃の詳細ページには、次のような情報が表示される場合があります。</block>
   <block id="328e24be37340d63de24fd6618cca8e1" category="section-title">サマリセクション：</block>
-  <block id="fe22c5a76eab707d31ee70e7a25b5c07" category="list-text">攻撃の種類（この例ではランサムウェア）とアラート ID （ Cloud Secure が割り当て）</block>
   <block id="d5a18d6d3a7fe43fabf57a19bb702f39" category="list-text">攻撃が検出された日時</block>
   <block id="9edcf7f99dfc7a9e521c7ad085287595" category="list-text">実行された処理（自動スナップショットの作成など）。Snapshot の時刻は概要セクションのすぐ下に表示されます）</block>
   <block id="680ed5ca6ba49d9bc8a5ffda83850464" category="list-text">ステータス（新規、進行中など）</block>
@@ -6184,20 +6182,7 @@
   <block id="5180305d1cffd4df8df4106e14eac4ab" category="cell">Lenovo HX ストレージシステムのパスワード</block>
   <block id="c409b03ce5b8004d77238d6745f5cce9" category="cell">Lenovo HX への接続に使用する TCP ポート。デフォルトは 9440. です。</block>
   <block id="e6b366c925b4cac6b44a37f5f479307f" category="cell">インベントリのポーリング間隔</block>
-  <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">潜在的な攻撃（ランサムウェアなど）やアクティビティの警告に対する自動応答ポリシーを設定できます</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自動応答ポリシー</block>
-  <block id="233840eff2ec91da45412df6b3a57f33" category="paragraph">応答ポリシーは、攻撃や異常なユーザ動作の発生時にスナップショットを作成するなどのアクションをトリガーします。</block>
-  <block id="4a2c418e248f1a17cef7314e84e4d21f" category="paragraph">特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、 [*Admin] &gt; [Automated Response Policies] を選択し、適切な [*+ Policy+] ボタンをクリックします。攻撃または警告のポリシーを作成できます。</block>
-  <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">攻撃ポリシーを作成します</block>
-  <block id="96dd8b86864f9c90bf0289c5f7b02b4d" category="paragraph"><block ref="96dd8b86864f9c90bf0289c5f7b02b4d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">ポリシーは一意の名前で保存する必要があります。</block>
-  <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">自動応答アクションを無効にする（例： Take Snapshot ）には、アクションをチェック解除してポリシーを保存するだけです。</block>
-  <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">アラートの詳細ページ</block>
-  <block id="657cde821ca6ec1fead20aff3f183568" category="paragraph">指定されたデバイス（または選択されている場合はすべてのデバイス）に対してアラートがトリガーされると、自動応答ポリシーによってデータのスナップショットが作成されます。Snapshot のステータスは、で確認できます <block ref="a2af663b6945ecc2ca4cdaa8eaef2f70" category="inline-link-macro-rx"></block>。</block>
-  <block id="89f1c60e7b4a80e9cdf68af3aa225ef8" category="paragraph">自動応答ポリシーを変更または一時停止するには、ポリシーのドロップダウンメニューでオプションを選択します。</block>
-  <block id="9d74b91cb5611a18b74d4ea2428c3b2c" category="paragraph">Cloud Secure では、 Snapshot パージの設定に基づいて、 1 日に 1 回 Snapshot が自動的に削除されます。</block>
-  <block id="ef64e7e27fcc41880602820204326750" category="inline-image-macro">スナップショットパージ設定</block>
-  <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8cddd68e9275728e34c400e58a9183d1" category="summary">監査では、 Cloud Insights システムのシステムアクティビティとユーザアクティビティが確認できます。</block>
   <block id="78f48b8a03facd61000db8f7ae6f9227" category="doc">監査</block>
   <block id="879d66cd75bfedef98a5f78c91d00905" category="section-title">監査エントリの表示</block>
@@ -8417,4 +8402,62 @@
   <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">以下のインストール手順と追加情報は、 Astra データストアのドキュメントにも記載されています。<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
 <block ref="9e8952bf2d49abc5b376cb6c4ac1dd52" category="inline-link-macro-rx"></block></block>
   <block id="8035d5d39b2b48f6ec1a3133b688513c" category="sidebar">Astra データストア</block>
+  <block id="8a684cc8084b02b93384f0bfc436d63c" category="list-text">潜在的な攻撃の種類（ランサムウェアや破壊行為など）</block>
+  <block id="f30c6485c3c21678c5177709acd318b0" category="list-text">攻撃の種類（ランサムウェア、被害者）とアラート ID （ Cloud Secure が割り当て）</block>
+  <block id="7cbf4ba3df1c84539924c37da16db19b" category="paragraph">アラートページ（この例ではランサムウェア攻撃の可能性があります）：<block ref="5ff4dcf9689ef64057d8e82508557b5f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c9d686a827f50aa2feb7087b665c481" category="paragraph">詳細ページ（この例ではランサムウェア攻撃の可能性を示しています）：<block ref="9d19bd7639e249113839e28d2fea9963" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">Cloud Secure を使用すると、破壊の疑いがある場合にユーザアクセスを制限できます</block>
+  <block id="34f9ae45ea998f4feb8ed8b837da35ce" category="doc">ユーザアクセスの制限</block>
+  <block id="1ef240a15bef296ddbe95040048f5568" category="paragraph">攻撃が検出されると、 Cloud Secure はファイルシステムへのユーザーアクセスを制限することで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。</block>
+  <block id="15db9edd838695d9e8dfe3cc4d26ce0e" category="paragraph">ユーザアクセスを制限する場合は、アクセス制限のタイプ（ブロックまたは読み取り専用）と期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。</block>
+  <block id="197e52f14728da939ea57554da72942d" category="paragraph">アクセス制限は、 SMB プロトコルと NFS プロトコルの両方でサポートされています。</block>
+  <block id="c7f4e2255f2d3462f88ebfd46e1df900" category="paragraph">制限はホストマシンの IP アドレスによって行われます。ホストマシンとは、ユーザがストレージにアクセスしたマシンを意味します。これらのマシンの IP アドレスは、 Cloud Secure で監視されているいずれかの Storage Virtual Machine （ SVM ）へのアクセスがブロックされます。</block>
+  <block id="2bf4ce6e35bfc4c6f3801fbf4a98f9ca" category="paragraph">たとえば、 Cloud Secure が 10 個の SVM を管理し、そのうち 4 つに対して自動応答ポリシーが設定されているとします。4 つの SVM のいずれかで攻撃が発生した場合、 10 個すべての SVM でユーザのアクセスが制限されます。元の SVM では引き続き Snapshot が作成されます。</block>
+  <block id="19e54e03824e649096b70d3644fd0e5f" category="paragraph">4 つの SVM に CIFS 用に設定し、 1 つを NFS 用に設定し、残りの 2 つを NFS と CIFS 用に設定した場合、 4 つの SVM のいずれかで攻撃が発生すると、すべての SVM がブロックされます。</block>
+  <block id="1c86226deccf9173a843b3d83a50b7e4" category="section-title">ユーザーアクセス制限の前提条件</block>
+  <block id="4625d3b7cfc602f8dda70ae516128ac1" category="paragraph">この機能を使用するには、 SMB と NFS のエクスポートポリシーを設定する必要があります。NFS および SMB がデータソースコレクタで設定されている場合は、次の手順に従います。</block>
+  <block id="736a9d0a6c8a973d0fc55e15bec4f867" category="paragraph">NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。SMB の場合は、エクスポートポリシーが設定されている必要があります。</block>
+  <block id="626812abc4a8fdb2dd02487a9302150b" category="inline-link-macro">データコレクタの権限</block>
+  <block id="c3c19a07296aa9f669c655127fb6e617" category="paragraph">NFS と SMB の両方について、 _csrole_must be configured correctlyONTAP SVM データソースコレクタのセットアップ時に、に記載されているように、 _csrole_（ まだ設定されていない場合）を設定する必要があります <block ref="b2b2b0ccbf010b48a5c08e47d75252e9" category="inline-link-macro-rx"></block> ドキュメント</block>
+  <block id="09c94b9432079689154a18242f283b8f" category="paragraph">クラスタ IP を使用して Data Collector を設定する場合は、 ONTAP コマンドラインから次の操作を実行します。</block>
+  <block id="2af796c4413341d560aef2af386307ea" category="paragraph">サーバ IP を使用してデータコレクタを設定する場合は、 ONTAP コマンドラインから次の操作を実行し、 Correct _&lt;vservername&gt; を挿入します。</block>
+  <block id="619f88c7ecb7dc067cac591110557971" category="paragraph">デフォルトでは、 SVM で NFS サービスを作成するときにエクスポートポリシーが作成されます。</block>
+  <block id="5b80f2727c0cb6c0ec0f55e11fc807fb" category="paragraph">エクスポートポリシーを設定するコマンドは次のとおりです。以下のコマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。注：コマンドを実行する前に、 advanced モードに切り替える必要があります。</block>
+  <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。</block>
+  <block id="ebe71a0f2c742e9f41b569a9c4c0f781" category="paragraph">クラスタモードを使用している場合：</block>
+  <block id="3aef1fa1559480e8342d9e450068392c" category="paragraph">SVM モードを使用する場合：</block>
+  <block id="a0a22a3661d87ec62675853ac74a612b" category="paragraph">security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname " vserver export-policy rule " -access all -query " -policyname cloudsecure_* "</block>
+  <block id="2122c7467f3c492bc888c3ad1b34ccb4" category="paragraph">両方のモードで、次のコマンドを実行します。</block>
+  <block id="5404ae00cde93cccb947d68c27a3c123" category="paragraph">_exportpolicy-rule_exportpolicy-が 正しく設定されているかどうかを確認するには、上記のコマンドを実行した後で次のコマンドを実行します。</block>
+  <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">機能を有効にする方法</block>
+  <block id="87ec0cfaa84f34c3c1bd7e7a9573acd3" category="list-text">Cloud Secure で、 [*Admin] &gt; [Automated Response Policies] &gt; [Response Policy Settings] &gt; [Access Limitation*] の順に選択します。</block>
+  <block id="ff3c40d658e508545278698eddf6f64f" category="list-text">「ユーザーアクセスの制限を有効にする」を「有効にする」に設定します。</block>
+  <block id="1b8e039cca81e12d3c38dc0474f9b680" category="section-title">自動ユーザアクセス制限の設定方法</block>
+  <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">新しい攻撃ポリシーを作成するか、既存の攻撃ポリシーを編集します。</block>
+  <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">攻撃ポリシーを監視する SVM を選択します。</block>
+  <block id="a69b7d29acba1026740c17b1314742da" category="list-text">[Restrict User IP File Access] チェックボックスをオンにします。この機能は、このオプションを選択すると有効になります。</block>
+  <block id="d08b030c0ac309193f01c8251798645c" category="list-text">[ ユーザーアクセスの制限 ] で、適用する制限のモードを選択します。</block>
+  <block id="f46147cf742d90e9b60b59b73abd3cce" category="list-text">[Time Period] で、制限を適用する時間を選択します。</block>
+  <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">シミュレートされたスクリプト</block>
+  <block id="25c2a3fab9090e127924dcd73f1ba277" category="list-text">自動制限をテストするには、を使用して攻撃をシミュレートします <block ref="c144f5bb29c4478b376c3856feebe3da" category="inline-link-macro-rx"></block>。</block>
+  <block id="ecd9a1503c716dad0163cfa442205dc6" category="section-title">システム内に制限されたユーザーがいるかどうかを確認する方法</block>
+  <block id="58c5c3c3ae9ddc777df3471cb0d91f15" category="list-text">アラートリストページでは、ユーザが制限されている場合に、画面上部のバナーが表示されます。</block>
+  <block id="f70812e312d2dcf5bb1030d22300b486" category="list-text">バナーをクリックすると、 [Users] ページが表示されます。このリストには、制限されたユーザーが表示されます。</block>
+  <block id="467c6ea6fc7965c01f9c4a37b4097833" category="list-text">[Users] ページに、 [IP Access] という列が表示されます。この列には、ユーザー制限の現在の状態が表示されます。</block>
+  <block id="40184bc9041969d58ad379b9b3e319cd" category="section-title">ユーザアクセスを手動で制限および管理します</block>
+  <block id="47a27e2a670aec2697933b5787c9b04c" category="list-text">アラートの詳細画面またはユーザーの詳細画面に移動して、これらの画面からユーザーを手動で制限または制限解除できます。</block>
+  <block id="bc35f531afc4546d2f00d327e39a34bd" category="section-title">ユーザアクセス履歴の制限</block>
+  <block id="fa2d13a7c1864e6553f454b50bb86fe3" category="paragraph">［ アラートの詳細とユーザーの詳細 ］ ページのユーザーパネルで、ユーザーの制限アクセス制限履歴（時間、アクション（ブロック、読み取り専用、復元）、期間）の監査を表示できます。 手動 / 自動、および影響を受ける IP が実行するアクション。</block>
+  <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">機能を無効にする方法</block>
+  <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">この機能はいつでも無効にできます。システム内に制限のあるユーザがいる場合は、アクセスを先にリストアする必要があります。</block>
+  <block id="093cb28dd5afe81970d566b9792edf3c" category="list-text">Cloud Secure で、 [*Admin] &gt; [Automated Response Policies] &gt; [Response Policy Settings] &gt; [Access Limitation*] の順に選択します</block>
+  <block id="badb314ae874abf7996a87ed524a2a2a" category="list-text">[ ユーザーアクセスの制限を有効にする ] をオフにして無効にします。</block>
+  <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">この機能はすべてのページで非表示になります。</block>
+  <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">一部のユーザーは制限されていませんが、攻撃があります。</block>
+  <block id="e90c2e3184d693395feccdf9a3d863a1" category="cell">1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data Collector と Agent が停止している場合、 Cloud Secure はコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details &gt; Access Limitation History for this User &gt; Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。</block>
+  <block id="6b7a5ef59cd0d78debed9516f04d7350" category="cell">[Restrict Access] を手動でクリックすると、「このアクションにはユーザ IP がありません」というメッセージが表示されます。</block>
+  <block id="9d9d839297abd5b6559ef681c302109c" category="cell">制限する IP はすでに別のユーザから制限されています。</block>
+  <block id="59b7bceceaf271dc23260e1c30098a18" category="cell">「 SVM で SMB プロトコルのエクスポートポリシーの使用が無効になっています」という警告が表示されてアクセスの制限に失敗します。restrictuser access 機能を使用するには、 export-policy の使用を有効にします。</block>
+  <block id="637e226349512d2d7a553322411b83f0" category="cell">「前提条件」に記載されているように、 SVM の -is-exportpolicy-enabled オプションが true であることを確認します。</block>
+  <block id="c52c39354f4ad29d5eea2036eb6bf8a9" category="sidebar">ランサムウェア攻撃のシミュレーション</block>
 </blocks>

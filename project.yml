@@ -223,6 +223,8 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自動応答ポリシー
       url: "/cs_automated_response_policies.html"
+    - title: ランサムウェア攻撃のシミュレーション
+      url: "/concept_cs_attack_simulator.html"
     - title: 通知
       url: "/cs_notifications_email.html"
     - title: Cloud Secure API の略
