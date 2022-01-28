@@ -20,6 +20,8 @@ image:AutomatedAttackPolicy.png["攻撃ポリシーを作成します"]
 
 指定されたデバイス（または選択されている場合はすべてのデバイス）に対してアラートがトリガーされると、自動応答ポリシーによってデータのスナップショットが作成されます。Snapshot のステータスは、で確認できます link:cs_alert_data.html#the-alert-details-page["アラートの詳細ページ"]。
 
+を参照してください link:cs_restrict_user_access.html["ユーザアクセスの制限"] IP によるユーザアクセスの制限の詳細については、ページを参照してください。
+
 自動応答ポリシーを変更または一時停止するには、ポリシーのドロップダウンメニューでオプションを選択します。
 
 Cloud Secure では、 Snapshot パージの設定に基づいて、 1 日に 1 回 Snapshot が自動的に削除されます。
