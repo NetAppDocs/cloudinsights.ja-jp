@@ -9,7 +9,7 @@
   <meta property="og:title" content="データを収集するエージェントの設定" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/task_config_telegraf_agent.html" />
-	<meta property="og:description" content="Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.19/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。" />
+	<meta property="og:description" content="Cloud Insights は、統合データの収集用に Telegraas をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Cloud Insights はをサポートします link:https://docs.influxdata.com/telegraf/v1.19/["Tegraf"] 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。">
+  <meta name="description" content="Cloud Insights は、統合データの収集用に Telegraas をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。">
   <meta name="keywords" content=" telegraf, installation, install, agent, telegraf agent">
   
   
@@ -1913,7 +1913,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-28 16:54:50 +0000">01/28/2022</time>
+    <time datetime="2022-01-28 21:16:58 +0000">01/28/2022</time>
     
   
 
@@ -2692,7 +2692,7 @@ sudo /tmp/uninstall</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>オペレータベースの設定。Kubernetes に推奨される機能です。</p>
+<p>NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。</p>
 </li>
 <li>
 <p>従来のスクリプトベースのエージェントのインストール</p>
@@ -2700,7 +2700,7 @@ sudo /tmp/uninstall</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>インストール手順は、選択したタイルによって異なります。</p>
+<p>インストール手順は、選択した内容によって異なります。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Tile_Choices.png" alt="Kubernetes のインストール方法の選択"></span></p>
@@ -2712,7 +2712,7 @@ sudo /tmp/uninstall</pre>
 <img src="/us-en/cloudinsights/images/note.svg" alt="注記">
 </td>
 <td class="content">
-オペレータベースのインストールは _Preview_feature と見なされるため、変更されることがあります。
+NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。
 </td>
 </tr>
 </table>
@@ -2739,7 +2739,7 @@ sudo /tmp/uninstall</pre>
 <p>Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。</p>
 </li>
 <li>
-<p>オペレータベースのインストールをテスト済みで、 AWS EKS 1.18 および OpenShift 3.11 と連携することが期待されています。</p>
+<p>NetApp Kubernetes Monitoring Operator インストールはテスト済みで、 AWS EKS 1.18 、 OpenShift 3.11 、 Rancher 2.6 で動作することが想定されています。</p>
 </li>
 </ul>
 </div>
@@ -2761,12 +2761,8 @@ sudo /tmp/uninstall</pre>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes v1.14 以降</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes v1.17 以降</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes の IO / OS = Linux</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes v1.13 以下</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">beta.Kubernetes IO / OS = Linux</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用</p></td>
@@ -2776,12 +2772,12 @@ sudo /tmp/uninstall</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="オペレータベースのインストール">オペレータベースのインストール</h4>
+<h4 id="netapp-kubernetes-monitoring-operator-installation">NetApp Kubernetes Monitoring Operator Installation</h4>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Agent_Instructions.png" alt="オペレータベースのインストール"></span></p>
 </div>
 <div class="olist arabic">
-<div class="title">Operator ベースのエージェントを Kubernetes にインストールする手順：</div>
+<div class="title">NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：</div>
 <ol class="arabic">
 <li>
 <p>クラスタ名とネームスペースを入力します。</p>
@@ -2799,6 +2795,141 @@ sudo /tmp/uninstall</pre>
 <p>インストールが自動的に開始されます。完了したら、 <em>Complete Setup</em> ボタンをクリックします。</p>
 </li>
 </ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="netapp-kubernetes-monitoring-operator-向けのプロキシサポートを設定します">NetApp Kubernetes Monitoring Operator 向けのプロキシサポートを設定します</h4>
+<div class="paragraph">
+<p>監視オペレータのプロキシを設定するには、次の手順を実行します。</p>
+</div>
+<div class="paragraph">
+<p>まず、 _agent-monitoring -NetApp_file を開き、編集します。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+このファイルの _spec ： _ セクションに、次のコードブロックを追加します。</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>spec:
+  proxy:
+    isAuProxyEnabled: &lt;true or false&gt;
+    isTelegrafProxyEnabled: &lt;true or false&gt;
+    isFluentbitProxyEnabled: &lt;true or false&gt;
+    password: &lt;password for proxy, optional&gt;
+    port: &lt;port for proxy&gt;
+    server: &lt;server for proxy&gt;
+    username: &lt;username for proxy, optional&gt;
+    noProxy: &lt;comma separated list of IPs or resolvable hostnames that should bypass a proxy&gt;</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="カスタム-プライベート-docker-リポジトリを使用">カスタム / プライベート Docker リポジトリを使用</h5>
+<div class="paragraph">
+<p>カスタムの Docker リポジトリを使用する場合は、次の手順を実行します。</p>
+</div>
+<div class="paragraph">
+<p>Docker シークレットを取得します。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get secret docker -o yaml
+上記のコマンドの出力から、 _.dockerconfigjson ： _ の値をコピーして貼り付けます。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Docker シークレットをデコードします。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> echo &lt;paste from _.dockerconfigjson:_  output above&gt; | base64 -d
+の出力は次の JSON 形式になります。</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{ "auths":
+  {"docker.&lt;cluster&gt;.cloudinsights.netapp.com" :
+    {"username":"&lt;tenant id&gt;",
+     "password":"&lt;password which is the CI API key&gt;",
+     "auth"    :"&lt;encoded username:password basic auth key. This is internal to docker&gt;"}
+  }
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Docker リポジトリにログインします。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker login docker.&lt;cluster&gt;.cloudinsights.netapp.com (from step #2) -u &lt;username from step #2&gt;
+password: &lt;password from docker secret step above&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cloud Insights からオペレータ用 Docker イメージを取得します。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> docker pull docker.&lt;cluster&gt;.cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;
+次のコマンドを使用して &lt;version&gt; フィールドを確認します。</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
+社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker.io/telegraf:1.19.3
+gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker.io/fluent-bit:1.7.8
+docker.io/kubernetes-event-exporter:0.10</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+enableAutoUpgrade: false</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker-repo: &lt;docker repo of the enterprise/corp docker repo&gt;
+dockerRepoSecret: &lt;optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>spec セクションで、次の変更を行います。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>spec:
+  telegraf:
+    - name: ksm
+      substitutions:
+        - key: k8s.gcr.io
+          value: &lt;same as "docker-repo" field above&gt;</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -2864,40 +2995,7 @@ _cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指
 </div>
 </div>
 <div class="sect3">
-<h4 id="demonset-replicaset-およびエージェントの停止-起動">DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動</h4>
-<div class="paragraph">
-<p>DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。</p>
-</div>
-<div class="paragraph">
-<p>エージェントの停止と再起動を容易にするには、次のコマンドを使用して Tegraf DemonSet YAML および ReplicaSet YAML を生成します。これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。</p>
-</div>
-<div class="paragraph">
-<p>独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml &gt; /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml &gt; /tmp/telegraf-rs.yaml</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>その後、次のコマンドを使用して Tegraf サービスを停止および開始できます。</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>kubectl --namespace ci-monitoring delete ds telegraf-ds
-kubectl --namespace ci-monitoring delete rs telegraf-rs</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="kubernetes-のプロキシサポートを設定する">Kubernetes のプロキシサポートを設定する</h4>
+<h4 id="kubernetes-スクリプトベースのプロキシサポートを設定しています">Kubernetes スクリプトベースのプロキシサポートを設定しています</h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2964,6 +3062,39 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 <div class="content">
 <pre>kubectl delete pod telegraf-ds-*
 kubectl delete pod telegraf-rs-*</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="demonset-replicaset-およびエージェントの停止-起動">DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動</h4>
+<div class="paragraph">
+<p>DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。</p>
+</div>
+<div class="paragraph">
+<p>エージェントの停止と再起動を容易にするには、次のコマンドを使用して Tegraf DemonSet YAML および ReplicaSet YAML を生成します。これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。</p>
+</div>
+<div class="paragraph">
+<p>独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml &gt; /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml &gt; /tmp/telegraf-rs.yaml</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>その後、次のコマンドを使用して Tegraf サービスを停止および開始できます。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring delete ds telegraf-ds
+kubectl --namespace ci-monitoring delete rs telegraf-rs</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 </div>
