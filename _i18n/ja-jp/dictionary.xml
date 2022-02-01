@@ -8508,4 +8508,12 @@
   <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">spec: セクションで ' 次の変更を行います</block>
   <block id="44adec27317574513bdc470781ccacb6" category="paragraph">仕様 : テレグラム : -name: KSM 置換 : -key: k81.gcr.io 値 : &lt; 上記の "Docker - repa" フィールドと同じ &gt;</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights の新機能</block>
+  <block id="e229d51ca45046e23340982a0d911a30" category="section-title">監査データの保持</block>
+  <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights が監査データを保持する時間は、お客様のエディションによって異なります。</block>
+  <block id="6140d54709a2f0707aaa20367fd479a2" category="list-text">Basic Edition ：監査データは 30 日間保持されます</block>
+  <block id="ef14a516a82a51d74eaeb8e2193667cb" category="list-text">Standard Edition および Premium Editions ：監査データは 1 年と 1 日の間保持されます</block>
+  <block id="7ad87c3be379b9de0a9009199fb5401c" category="paragraph">保持期限よりも古い監査エントリは自動的にパージされます。ユーザによる操作は不要です。</block>
+  <block id="c0e7fce2cca0be472d3098957e2a4864" category="paragraph">ここでは、監査に関する問題のトラブルシューティングに関する提案を示します。</block>
+  <block id="3e31734df6f02c9ad9cd0dc7c1f65a98" category="cell">モニターがエクスポートされたことを示す監査メッセージが表示されます。</block>
+  <block id="256a0ce1cb9ac99794371e404aa7446e" category="cell">カスタムモニタ構成のエクスポートは、通常、ネットアップのエンジニアが新機能の開発およびテストに使用します。このメッセージが表示されない場合は、監査対象のアクションで指定されたユーザーのアクションを調査するか、サポートに問い合わせてください。</block>
 </blocks>
