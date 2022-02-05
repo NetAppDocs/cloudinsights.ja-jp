@@ -15,6 +15,28 @@ keywords: features
 
 
 
+==== Cloud Insights は Apache log4j の脆弱性を解決します
+
+お客様のセキュリティは、ネットアップの最優先事項です。Cloud Insights には、最新の Apache log4j の脆弱性に対処するためのソフトウェアライブラリの更新が含まれています。
+
+ネットアップの Product Security Advisory Web サイトに掲載されている次の資料を参照してください。
+
+link:https://security.netapp.com/advisory/ntap-20211210-0007/["CVE-20121-44228"]
+
+
+
+これらの脆弱性の詳細と、ネットアップの対応については、を参照してください link:https://www.netapp.com/newsroom/netapp-apache-log4j-response/["ネットアップのニュースルーム"]。
+
+
+
+==== Kubernetes のネームスペースの詳細ページ
+
+Kubernetes 環境の探索は、クラスタの名前空間の情報詳細ページにより、かつてないほど優れています。ネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。
+
+image:Kubernetes_Namespace_Detail_Example_2.png["Kubernetes のネームスペースの詳細ページ"]
+
+
+
 ==== フィーチャーのプレビュー（ Preview Features
 
 Cloud Insights は、いくつかの新しいプレビュー機能を強調しています。これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
@@ -33,6 +55,7 @@ Cloud Insights は、いくつかの新しいプレビュー機能を強調し�
 
 | 応力の下の共有リソース | ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソースlink:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
 |===
+'''
 
 
 === 2021 年 12 月

@@ -8528,4 +8528,30 @@
   <block id="802e1838a460af6f9b00de358ee4fd50" category="cell">異常な大規模なファイル削除アクティビティを検出し、悪意のあるユーザによる悪意のあるファイルアクセスをブロックし、自動応答ポリシーを使用してスナップショットを自動的に作成します。</block>
   <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">応力の下の共有リソース</block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
+  <block id="e58aeb679b2b8a9e7a899a6123bac66e" category="section-title">Cloud Insights は Apache log4j の脆弱性を解決します</block>
+  <block id="671a3bde6499a097bb904b76a2924a9f" category="paragraph">お客様のセキュリティは、ネットアップの最優先事項です。Cloud Insights には、最新の Apache log4j の脆弱性に対処するためのソフトウェアライブラリの更新が含まれています。</block>
+  <block id="288805c2814f50aec1c5cc8239cd2bd7" category="paragraph">ネットアップの Product Security Advisory Web サイトに掲載されている次の資料を参照してください。</block>
+  <block id="2bfa00111c32dc35edaddb47c143c1ef" category="inline-link-macro">CVE-20121-44228</block>
+  <block id="f46441257a7d8ec08af42b1a30aa2e72" category="inline-link-macro">CVE-20121-45046</block>
+  <block id="3aa14225af96c104d78618c2bf4f894d" category="inline-link-macro">CVE-2021-45105</block>
+  <block id="c0e87524dc1210407d64e90828b757df" category="paragraph"><block ref="73b02b07113fb6adcf27db0d98c9ba96" category="inline-link-macro-rx"></block>
+<block ref="9d3f9e70197f80558150e2abec564e42" category="inline-link-macro-rx"></block>
+<block ref="44bc626fb6e5e9bca760e0364261a079" category="inline-link-macro-rx"></block></block>
+  <block id="87061cadde79eb3b3c4e0dcc1c14d24f" category="inline-link-macro">ネットアップのニュースルーム</block>
+  <block id="849e2d4ad1bbbd3a75c7088a2e84a8d9" category="paragraph">これらの脆弱性の詳細と、ネットアップの対応については、を参照してください <block ref="8759507f5384c0409324b697c58ce365" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec9cf927d91c3ad7664fabdee6472d03" category="section-title">Kubernetes のネームスペースの詳細ページ</block>
+  <block id="92093ab9ea8254ffd952bd6e9cfaff5f" category="paragraph">Kubernetes 環境の探索は、クラスタの名前空間の情報詳細ページにより、かつてないほど優れています。ネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。</block>
+  <block id="393ec8728d04ca4c0c87b2259965e9be" category="paragraph"><block ref="393ec8728d04ca4c0c87b2259965e9be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3de80a4099f2865b8078177e221120f1" category="paragraph">ネームスペースをクリックすると、ネームスペースの詳細ページが開きます。</block>
+  <block id="e8488ef49f6dab9af961495fc93e60c3" category="summary">Kubernetes のネームスペースランディングページについて説明しました</block>
+  <block id="096b06ed37fdb2ba92846987f8f7a8ed" category="paragraph">Kubernetes のネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。</block>
+  <block id="314f5a139733e879b0d731d8fdad57ee" category="paragraph">Kubernetes Explorer ページでネームスペースのリンクをクリックすると、そのネームスペースの詳細ページが開きます。</block>
+  <block id="033ce5e39aff0bd1d4995cfe035d043d" category="inline-image-macro">ネームスペースの詳細ページ</block>
+  <block id="84bf499548eb9730bcc1248ee2b6ddf6" category="paragraph"><block ref="84bf499548eb9730bcc1248ee2b6ddf6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="74c35406227b8d8ec7457220492c0d02" category="paragraph">他の Kubernetes Excplorer ページと同様に、特定のノードまたは他のオブジェクトに焦点を当てるようにフィルタを設定できます。また、ポッドの正常性とネームスペースのステータスの概要を確認できます。また、 CPU とメモリの需要と永続的ボリュームの容量がある場合は、グラフも表示されます。</block>
+  <block id="6470992de7cbd53a2e98767035d8a417" category="paragraph">最後に、ネームスペースに関連付けられているワークロードがページに表示されます。</block>
+  <block id="92bc1b7a13a5372aed9762b4aaea086f" category="paragraph">ページのいずれかのリンクをクリックして、 Kubernetes 環境の詳細を確認またはトラブルシューティングします。</block>
+  <block id="f8a3f6c3840b144728e1066d84db53ec" category="section-title">折れ線グラフの補間</block>
+  <block id="d1458c295da095c4f0b8cdf2e41ceaf6" category="paragraph">多くの場合、データコレクタがデータを異なる間隔でポーリングします。たとえば、データコレクタ A は 15 分ごとにポーリングし、データコレクタ B は 5 分ごとにポーリングします。折れ線グラフウィジェット（スプライングラフ、面グラフ、積み上げ面グラフも含む）で、複数のデータコレクタのこのデータを 1 行に集計している場合（たとえば、ウィジェットが「すべて」でグループ化されている場合）は、次のようになります。 また、 5 分ごとにデータを更新すると、コレクタ B からのデータが正確に表示され、コレクタ A からのデータにギャップが生じ、コレクタ A が再度ポーリングするまでアグリゲートに影響が及ぶ可能性があります。</block>
+  <block id="ccf8880e1018ebb2fd1bb2e959e62092" category="paragraph">この問題を軽減するために、 Cloud Insights は、データコレクタが再度ポーリングを行うまで、周囲のデータポイントを使用してデータの「最良の推測」を取得し、集約時にデータを補間します。ウィジェットのグループ化を調整することで、各データコレクタのオブジェクトデータをいつでも個別に表示できます。</block>
 </blocks>
