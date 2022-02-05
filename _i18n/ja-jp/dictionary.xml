@@ -8516,4 +8516,16 @@
   <block id="c0e7fce2cca0be472d3098957e2a4864" category="paragraph">ここでは、監査に関する問題のトラブルシューティングに関する提案を示します。</block>
   <block id="3e31734df6f02c9ad9cd0dc7c1f65a98" category="cell">モニターがエクスポートされたことを示す監査メッセージが表示されます。</block>
   <block id="256a0ce1cb9ac99794371e404aa7446e" category="cell">カスタムモニタ構成のエクスポートは、通常、ネットアップのエンジニアが新機能の開発およびテストに使用します。このメッセージが表示されない場合は、監査対象のアクションで指定されたユーザーのアクションを調査するか、サポートに問い合わせてください。</block>
+  <block id="9209b4ae424c71673a607557c64f7eb8" category="section-title">2022 年 2 月</block>
+  <block id="ecf4e9e3c38358de05561be5ed03f5d0" category="section-title">フィーチャーのプレビュー（ Preview Features</block>
+  <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">ネットアップの営業チーム</block>
+  <block id="c8d0b8a6f32511af92bc09ceb0fccb0d" category="paragraph">Cloud Insights は、いくつかの新しいプレビュー機能を強調しています。これらの機能をプレビューする場合は、にお問い合わせください <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 特徴 *</block>
+  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">ユーザーアクセスの自動応答を制限します</block>
+  <block id="decbe415d8accca7c2c16d48a79ee934" category="inline-link-macro">詳細はこちら</block>
+  <block id="f763810a8ec0d5862e0f288795932956" category="cell">攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="ecd6006dc9161e21cc393e8aee8b161a" category="cell">データ破壊–ファイル削除攻撃の検出</block>
+  <block id="802e1838a460af6f9b00de358ee4fd50" category="cell">異常な大規模なファイル削除アクティビティを検出し、悪意のあるユーザによる悪意のあるファイルアクセスをブロックし、自動応答ポリシーを使用してスナップショットを自動的に作成します。</block>
+  <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">応力の下の共有リソース</block>
+  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
 </blocks>
