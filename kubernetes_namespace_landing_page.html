@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Acquisition Unit の設定</title>
+  <title>Kubernetes のネームスペースの詳細ページ</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Acquisition Unit の設定" />
+  <meta property="og:title" content="Kubernetes のネームスペースの詳細ページ" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/task_configure_acquisition_unit.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/kubernetes_namespace_landing_page.html" />
+	<meta property="og:description" content="Kubernetes のネームスペースランディングページについて説明しました" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="">
-  <meta name="keywords" content=" Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving">
+  <meta name="description" content="Kubernetes のネームスペースランディングページについて説明しました">
+  <meta name="keywords" content=" telegraf, installation, install, kubernetes, pods, clusters, filters, filtering, k8s, namespace">
   
   
 
@@ -281,13 +281,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_configure_acquisition_unit.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_configure_acquisition_unit.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_configure_acquisition_unit.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_configure_acquisition_unit.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -408,15 +408,6 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/cloudinsights/pdfs/pages/task_configure_acquisition_unit.pdf" >
-    <img src="/ja-jp/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -1423,7 +1414,7 @@
         概要
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/concept_acquisition_unit_requirements.html">
         Acquisition Unit の要件
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_configure_acquisition_unit.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_configure_acquisition_unit.html">
         Acquisition Unit の設定
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_config_telegraf_agent.html">
         エージェントの設定
@@ -1889,7 +1880,7 @@
           <a href="/ja-jp/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          Acquisition Unit の設定
+          Kubernetes のネームスペースの詳細ページ
         </li>
       </ul>
     </div>
@@ -1912,7 +1903,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Acquisition Unit の設定</h1>
+  <h1 class="n-doc__component-detail-heading">Kubernetes のネームスペースの詳細ページ</h1>
 </div>
 
 
@@ -1938,446 +1929,23 @@
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>Cloud Insights は、ローカルサーバにインストールされている Acquisition Unit を使用してデバイスデータを収集します。各 Acquisition Unit では、複数のデータコレクタをホストできます。これらのコレクタは、分析のためにデバイスメトリックを Cloud Insights に送信</p>
+<p>Kubernetes のネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。</p>
 </div>
 <div class="paragraph">
-<p>ここでは、 Acquisition Unit を追加する方法と、プロキシを使用する環境で必要な追加の手順について説明します。</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP ；ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して Acquisition Unit マシンの時間を同期することを強く推奨します。
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="linux-acquisition-unit-の追加">Linux Acquisition Unit の追加</h2>
-<div class="sectionbody">
-<div class="ulist">
-<div class="title">作業を開始する前に</div>
-<ul>
-<li>
-<p>プロキシを使用するシステムの場合は、 Acquisition Unit をインストールする前にプロキシ環境変数を設定する必要があります。詳細については、を参照してください <a href="#Setting proxy environment variables">[Setting proxy environment variables]</a>。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">Linux Acquisition Unit のインストール手順</div>
-<ol class="arabic">
-<li>
-<p>Cloud Insights 環境に管理者またはアカウント所有者としてログインします。</p>
-</li>
-<li>
-<p>[*Admin] &gt; [Data Collectors] &gt; [Acquisition Units] &gt; [+ Acquisition Unit] をクリックします</p>
-<div class="paragraph">
-<p>[Install Acquisition Unit_Dialog] が表示されます。Linux を選択します。</p>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph thumb">
-<p><span class="image"><img src="NewLinuxAUInstall.png" alt="Linux AU の手順"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Acquisition Unit をホストしているサーバまたは VM が推奨されるシステム要件を満たしていることを確認する。</p>
-</li>
-<li>
-<p>サーバでサポートされているバージョンの Linux が実行されていることを確認します。サポートされているバージョンのリストについては、「サポートされている OS バージョン」（ i ）をクリックしてください。</p>
-</li>
-<li>
-<p>ダイアログ内の Installation コマンドスニペットを、 Acquisition Unit をホストするサーバまたは VM のターミナルウィンドウにコピーします。</p>
-</li>
-<li>
-<p>Bash シェルにコマンドを貼り付けて実行します。</p>
-</li>
-</ol>
-</div>
-<div class="ulist">
-<div class="title">完了後</div>
-<ul>
-<li>
-<p>[*Admin] &gt; [Data Collectors] &gt; [Acquisition units] をクリックして、 Acquisition Unit のステータスを確認します。</p>
-</li>
-<li>
-<p>Acquisition Unit のログには、 /var/log/netapp/cloudInsights /acq/ acq.log からアクセスできます</p>
-</li>
-<li>
-<p>Acquisition Unit を制御するには、次のスクリプトを使用します。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>cloudinsights-service.sh （ stop 、 start 、 restart 、 status を確認）</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Acquisition Unit をアンインストールするには、次のスクリプトを使用します。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>cloudinsights-uninstall.sh</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="プロキシ環境変数を設定しています">プロキシ環境変数を設定しています</h3>
-<div class="paragraph">
-<p>プロキシを使用する環境では、 Acquisition Unit を追加する前にプロキシ環境変数を設定する必要があります。プロキシの設定手順は、 _ Acquisition Unit の追加ダイアログに記載されています。</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>[+ in_ プロキシサーバを使用しますか ?_ ] をクリックします</p>
-</li>
-<li>
-<p>コマンドをテキストエディタにコピーし、必要に応じてプロキシ変数を設定します。</p>
-<div class="paragraph">
-<p>注：プロキシユーザ名とパスワードのフィールドでは、特殊文字に関する制限に注意してください。 ユーザ名フィールドに入力できます。' ： ' 、 % 、 ' ！ ' パスワードフィールドに入力できます。</p>
-</div>
-</li>
-<li>
-<p>Bash シェルを使用して、端末で編集したコマンドを実行します。</p>
-</li>
-<li>
-<p>Acquisition Unit ソフトウェアをインストールします。</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="プロキシ設定">プロキシ設定：</h3>
-<div class="paragraph">
-<p>Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証を使用します。認証するには、クライアント証明書を Cloud Insights サーバに渡す必要があります。これを実現するには、 HTTPS 要求をデータを復号化せずに Cloud Insights サーバに転送するようにプロキシを設定する必要があります。</p>
+<p>Kubernetes Explorer ページでネームスペースのリンクをクリックすると、そのネームスペースの詳細ページが開きます。</p>
 </div>
 <div class="paragraph">
-<p>最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>*.cloudinsights.netapp.com</pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="プロキシ-url-の表示">プロキシ URL の表示</h4>
-<div class="paragraph">
-<p>オンボーディング中にデータコレクタを選択するときに [* プロキシ設定 * ] リンクをクリックするか、 [* ヘルプ &gt; サポート * ] ページの [_ プロキシ設定 _ ] の下のリンクをクリックすると、プロキシエンドポイントの URL を表示できます。次のようなテーブルが表示されます。</p>
+<p><span class="image"><img src="Kubernetes_Namespace_Detail_Example_2.png" alt="ネームスペースの詳細ページ"></span></p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="ProxyEndpoints_NewTable.png" alt="プロキシエンドポイントテーブル"></span></p>
+<p>他の Kubernetes Excplorer ページと同様に、特定のノードまたは他のオブジェクトに焦点を当てるようにフィルタを設定できます。また、ポッドの正常性とネームスペースのステータスの概要を確認できます。また、 CPU とメモリの需要と永続的ボリュームの容量がある場合は、グラフも表示されます。</p>
 </div>
 <div class="paragraph">
-<p>Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="windows-acquisition-unit-の追加">Windows Acquisition Unit の追加</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<div class="title">Windows Acquisition Unit のインストールの手順</div>
-<ol class="arabic">
-<li>
-<p>管理者権限を持つユーザとして Acquisition Unit サーバ / VM にログインします。</p>
-</li>
-<li>
-<p>そのサーバーで、ブラウザウィンドウを開き、管理者またはアカウント所有者として Cloud Insights 環境にログインします。</p>
-</li>
-<li>
-<p>[*Admin] &gt; [Data Collectors] &gt; [Acquisition Units] &gt; [+ Acquisition Unit] をクリックします。</p>
-<div class="paragraph">
-<p>[Install Acquisition Unit_Dialog] が表示されます。Windows を選択します。</p>
-</div>
-</li>
-</ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="NewWindowsAUInstall.png" alt="Windows AU のインストール">
-</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Acquisition Unit をホストしているサーバまたは VM が推奨されるシステム要件を満たしていることを確認する。</p>
-</li>
-<li>
-<p>サーバでサポートされているバージョンの Windows が実行されていることを確認します。サポートされているバージョンのリストについては、「サポートされている OS バージョン」（ i ）をクリックしてください。</p>
-</li>
-<li>
-<p>[ インストーラのダウンロード（ Windows 64 ビット） *] ボタンをクリックします。</p>
-</li>
-<li>
-<p>アクセスキーをコピーします。インストール中にこのファイルが必要になります。</p>
-</li>
-<li>
-<p>Acquisition Unit のサーバ / VM で、ダウンロードしたインストーラを実行します。</p>
-</li>
-<li>
-<p>プロンプトが表示されたら、アクセスキーをインストールウィザードに貼り付けます。</p>
-</li>
-<li>
-<p>インストール中に、プロキシサーバーの設定が表示されます。</p>
-</li>
-</ol>
-</div>
-<div class="ulist">
-<div class="title">完了後</div>
-<ul>
-<li>
-<p>[*Admin] &gt; [Data Collectors] &gt; [Acquisition units] をクリックして、 Acquisition Unit のステータスを確認します。</p>
-</li>
-<li>
-<p>Acquisition Unit のログには、 &lt;install dir&gt;\Cloud Insights \Acquisition Unit \log\acq.log からアクセスできます</p>
-</li>
-<li>
-<p>Acquisition Unit のステータスを確認するには、次のスクリプトを使用します。</p>
-<div class="literalblock">
-<div class="content">
-<pre>cloudinsights-service.sh</pre>
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="プロキシ設定-2">プロキシ設定：</h3>
-<div class="paragraph">
-<p>Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証を使用します。認証するには、クライアント証明書を Cloud Insights サーバに渡す必要があります。これを実現するには、 HTTPS 要求をデータを復号化せずに Cloud Insights サーバに転送するようにプロキシを設定する必要があります。</p>
+<p>最後に、ネームスペースに関連付けられているワークロードがページに表示されます。</p>
 </div>
 <div class="paragraph">
-<p>最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>*.cloudinsights.netapp.com</pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="プロキシ-url-の表示-2">プロキシ URL の表示</h4>
-<div class="paragraph">
-<p>オンボーディング中にデータコレクタを選択するときに [* プロキシ設定 * ] リンクをクリックするか、 [* ヘルプ &gt; サポート * ] ページの [_ プロキシ設定 _ ] の下のリンクをクリックすると、プロキシエンドポイントの URL を表示できます。次のようなテーブルが表示されます。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="ProxyEndpoints_NewTable.png" alt="プロキシエンドポイントテーブル"></span></p>
-</div>
-<div class="paragraph">
-<p>Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="acquisition-unit-のアンインストール">Acquisition Unit のアンインストール</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Acquisition Unit ソフトウェアをアンインストールするには、次の手順を実行します。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Windows ： *</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Acquisition Unit のサーバー /VM で、 Control Panel を開いて、「プログラムのアンインストール」を選択します。Cloud Insights Acquisition Unit プログラムを選択して削除します。</p>
-</li>
-<li>
-<p>[ アンインストール ] をクリックし、画面の指示に従います。</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Linux ： *</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Acquisition Unit サーバ / VM で、次のコマンドを実行します。</p>
-<div class="literalblock">
-<div class="content">
-<pre> sudo cloudinsights-uninstall.sh -p
-. アンインストールのヘルプについては、次のコマンドを実行します。</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo cloudinsights-uninstall.sh --help</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>両方： *</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>AU ソフトウェアをアンインストールした後、 * Admin &gt; Data Collectors * に移動し、 * Acquisition Unit * タブを選択します。</p>
-</li>
-<li>
-<p>アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。</p>
-</li>
-</ol>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="acquisition-unit-の再インストール">Acquisition Unit の再インストール</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Acquisition Unit を同じサーバ / VM に再インストールするには、次の手順を実行する必要があります。</p>
-</div>
-<div class="paragraph">
-<p>Acquisition Unit を再インストールするには、あらかじめ別のサーバ / VM で一時的な Acquisition Unit を設定しておく必要があります。</p>
-</div>
-<div class="olist arabic">
-<div class="title">手順</div>
-<ol class="arabic">
-<li>
-<p>Acquisition Unit サーバ /VM にログインし、 AU ソフトウェアをアンインストールします。</p>
-</li>
-<li>
-<p>Cloud Insights 環境にログインして、 * Admin &gt; Data Collectors * にアクセスします。</p>
-</li>
-<li>
-<p>各データコレクタについて、右側の [ オプション ] メニューをクリックし、 <em>Edit</em> を選択します。一時収集ユニットにデータコレクタを割り当て、 * 保存 * をクリックします。</p>
-<div class="paragraph">
-<p>同じタイプの複数のデータコレクタを選択し、 * 一括アクション * ボタンをクリックすることもできます。<em>Edit</em> を選択し、データコレクタを一時 Acquisition Unit に割り当てます。</p>
-</div>
-</li>
-<li>
-<p>すべてのデータコレクタを一時的な Acquisition Unit に移動したら、 * Admin &gt; Data Collectors * に移動し、 * Acquisition Unit * タブを選択します。</p>
-</li>
-<li>
-<p>再インストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。</p>
-</li>
-<li>
-<p>Acquisition Unit ソフトウェアを元のサーバ / VM に再インストールできるようになりました。+ Acquisition Unit * をクリックし、上記の手順に従って Acquisition Unit をインストールします。</p>
-</li>
-<li>
-<p>Acquisition Unit を再インストールしたら、データコレクタを Acquisition Unit に再び割り当てます。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="au-詳細を表示しています">AU 詳細を表示しています</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Acquisition Unit （ AU ）の詳細ページには、 AU に関する有用な情報やトラブルシューティングに役立つ情報が表示されます。AU 詳細ページには、次のセクションがあります。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>以下を示す * サマリ * セクション：</p>
-<div class="ulist">
-<ul>
-<li>
-<p>* Acquisition Unit の名前 * と IP *</p>
-</li>
-<li>
-<p>AU の現在の接続 * Status *</p>
-</li>
-<li>
-<p>* 最終報告 * データコレクタのポーリング時間に成功</p>
-</li>
-<li>
-<p>AU マシンの * オペレーティング・システム *</p>
-</li>
-<li>
-<p>AU の現在の * 注 * 。このフィールドには、 AU のコメントを入力します。このフィールドには、最後に追加されたメモが表示されます。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>各データコレクタについて、 AU * Data Collectors * のテーブルが表示されます。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>* 名前 *- このリンクをクリックすると、追加情報を使用してデータコレクタの詳細ページにドリルダウンできます</p>
-</li>
-<li>
-<p>* Status * - 成功またはエラー情報</p>
-</li>
-<li>
-<p>* タイプ * - ベンダー / モデル</p>
-</li>
-<li>
-<p>* データコレクタの IP * アドレス</p>
-</li>
-<li>
-<p>現在の * 影響 * レベル</p>
-</li>
-<li>
-<p>*Last Acquired * time ：データコレクタが最後に正常にポーリングされた時刻</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="AU_Detail_Example.png" alt="AU Detail Page の例"></span></p>
-</div>
-<div class="paragraph">
-<p>データコレクタごとに、 [Three dots] メニューをクリックして、データコレクタの複製、編集、ポーリング、または削除を実行できます。このリストで複数のデータコレクタを選択して、それらに対して一括操作を実行することもできます。</p>
-</div>
-<div class="paragraph">
-<p>Acquisition Unit を再起動するには、ページ上部の「 * Restart * 」ボタンをクリックします。接続に問題が発生した場合に、このボタンをドロップダウンして、 AU への * 接続の復元 * を試行します。</p>
-</div>
-</div>
+<p>ページのいずれかのリンクをクリックして、 Kubernetes 環境の詳細を確認またはトラブルシューティングします。</p>
 </div>
 
     </article>
@@ -2389,8 +1957,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Acquisition Unit の設定](https://docs.netapp.com/ja-jp/cloudinsights/task_configure_acquisition_unit.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_configure_acquisition_unit.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Kubernetes のネームスペースの詳細ページ](https://docs.netapp.com/ja-jp/cloudinsights/kubernetes_namespace_landing_page.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/kubernetes_namespace_landing_page.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
     <div class="page-nav-container">
