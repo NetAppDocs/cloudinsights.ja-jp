@@ -14,7 +14,6 @@
   <block id="40a5834e83975621427553254177c0ab" category="section-title">エディション</block>
   <block id="e5357ca832e310fe2d063fed63521e4d" category="paragraph">Cloud Insights で使用できる機能は、登録したエディションによって異なります。使用可能なエディションについては、ここで説明します。</block>
   <block id="1dd24ddc8bdc4a8ad7940369b2db779f" category="list-text">* Basic Edition * は無料でご利用いただけます。ネットアップサポートの有効なアカウントをお持ちの既存のお客様にご利用いただけます。</block>
-  <block id="551580b22ed2599ef32a07489113307b" category="admonition">非アクティブな Cloud Insights Basic Edition 環境が削除され、そのリソースが再利用されます。90 日間連続してユーザアクティビティがない場合、環境は非アクティブとみなされます。</block>
   <block id="ffec407b7dac5bde197f9fa34cee89d5" category="admonition">Cloud Insights Basic Edition で収集された機能 ' データ保存時間 ' オブジェクトまたはメトリックは ' 予告なく変更される場合があります</block>
   <block id="b0bb53aca4f0808da1b4e8c638bf67a0" category="list-text">* Standard Edition * はサブスクリプション契約により提供され、 Basic Edition のすべての機能に加えて、その他の機能も提供されます。</block>
   <block id="ad7d493af34fa73fe95bf075712a5ec3" category="list-text">* Premium Edition* では、ビジネスインテリジェンスとレポート、 Cloud Secure 監査と脅威検出などの追加の利点が提供されます。</block>
@@ -8554,4 +8553,5 @@
   <block id="f8a3f6c3840b144728e1066d84db53ec" category="section-title">折れ線グラフの補間</block>
   <block id="d1458c295da095c4f0b8cdf2e41ceaf6" category="paragraph">多くの場合、データコレクタがデータを異なる間隔でポーリングします。たとえば、データコレクタ A は 15 分ごとにポーリングし、データコレクタ B は 5 分ごとにポーリングします。折れ線グラフウィジェット（スプライングラフ、面グラフ、積み上げ面グラフも含む）で、複数のデータコレクタのこのデータを 1 行に集計している場合（たとえば、ウィジェットが「すべて」でグループ化されている場合）は、次のようになります。 また、 5 分ごとにデータを更新すると、コレクタ B からのデータが正確に表示され、コレクタ A からのデータにギャップが生じ、コレクタ A が再度ポーリングするまでアグリゲートに影響が及ぶ可能性があります。</block>
   <block id="ccf8880e1018ebb2fd1bb2e959e62092" category="paragraph">この問題を軽減するために、 Cloud Insights は、データコレクタが再度ポーリングを行うまで、周囲のデータポイントを使用してデータの「最良の推測」を取得し、集約時にデータを補間します。ウィジェットのグループ化を調整することで、各データコレクタのオブジェクトデータをいつでも個別に表示できます。</block>
+  <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">非アクティブな Cloud Insights Basic Edition 環境が削除され、そのリソースが再利用されます。連続する 30 日間のユーザアクティビティがない場合、 7 日間にわたってデータが取り込まれていない場合、環境は非アクティブとみなされます。Cloud Insights は通知を送信し、環境が削除される 4 日前の猶予期間を提供します。</block>
 </blocks>
