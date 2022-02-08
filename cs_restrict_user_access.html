@@ -1919,7 +1919,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-08 15:44:13 +0000">02/08/2022</time>
+    <time datetime="2022-02-08 16:25:02 +0000">02/08/2022</time>
     
   
 
@@ -1969,15 +1969,15 @@
 <p>NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。SMB の場合は、エクスポートポリシーが設定されている必要があります。</p>
 </div>
 <div class="paragraph">
-<p>NFS と SMB の両方について、 <em>csrole_must be configured correctlyONTAP SVM データソースコレクタのセットアップ時に、に記載されているように、 _csrole</em>（ まだ設定されていない場合）を設定する必要があります <a href="task_add_collector_svm.html#a-note-about-permissions">"データコレクタの権限"</a> ドキュメント</p>
+<p>お客様がクラスタクレデンシャルを使用しておらず、 csuser を使用している場合は、ユーザアクセス制限をサポートするために、次の手順を実行する必要があります。</p>
 </div>
 <div class="paragraph">
-<p>クラスタ IP を使用して Data Collector を設定する場合は、 ONTAP コマンドラインから次の操作を実行します。</p>
+<p>クラスタ IP を使用して Data Collector を（ csuser とともに）設定する場合は、 ONTAP コマンドラインから次の手順を実行します。</p>
 </div>
 <div class="literalblock">
 <div class="content">
 <pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-サーバ IP を使用してデータコレクタを設定する場合は、 ONTAP コマンドラインから次の操作を実行し、 Correct _&lt;vservername&gt; を挿入します。</pre>
+vserver IP を使用して Data Collector （ csuser と一緒に）を設定する場合は、 ONTAP コマンドラインから次の操作を実行し、 Correct _&lt;vservername&gt; _ を挿入します。</pre>
 </div>
 </div>
 <div class="literalblock">
@@ -1989,32 +1989,20 @@
 <div class="paragraph">
 <p>エクスポートポリシーを設定するコマンドは次のとおりです。以下のコマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。注：コマンドを実行する前に、 advanced モードに切り替える必要があります。</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/tip.svg" alt="ヒント">
-</td>
-<td class="content">
-これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
-<p>クラスタモードを使用している場合：</p>
+<p>クラスタモードで csuser を使用している場合：</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
-SVM モードを使用する場合：</pre>
+<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+SVM モードで csuser を使用している場合：</pre>
 </div>
 </div>
-<div class="paragraph">
-<p>security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname " vserver export-policy rule " -access all -query " -policyname cloudsecure_* "</p>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all
+どちらのモードでも、クラスタモードと SVM モードの場合は、 SMB のみに対して次のコマンドを実行します。</pre>
 </div>
-<div class="paragraph">
-<p>両方のモードで、次のコマンドを実行します。</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -2123,6 +2111,62 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 <p>この機能はすべてのページで非表示になります。</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="ip-を手動で復元します">IP を手動で復元します</h3>
+<div class="paragraph">
+<p>Cloud Secure トライアルの期限が切れた場合、またはエージェント / コレクタがダウンした場合に、 ONTAP から IP を手動でリストアするには、次の手順を実行します。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>SVM のすべてのエクスポートポリシーをリストします。</p>
+<div class="literalblock">
+<div class="content">
+<pre>contrail-qa-fas8020::&gt; export-policy rule show -vserver &lt;svm name&gt;
+             Policy          Rule    Access   Client                RO
+Vserver      Name            Index   Protocol Match                 Rule
+------------ --------------- ------  -------- --------------------- ---------
+svm_s_____a default         1       nfs3,    cloudsecure_rule,     never
+                                     nfs4,    10.19.12.216
+                                     cifs
+svm_s_____a default         4       cifs,    0.0.0.0/0             any
+                                     nfs
+svm_s_____a test            1       nfs3,    cloudsecure_rule,     never
+                                     nfs4,    10.19.12.216
+                                     cifs
+svm_s_____a test            3       cifs,    0.0.0.0/0             any
+                                     nfs,
+                                     flexcache
+4 entries were displayed.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>「 cloudsecure_rule 」をクライアント一致に設定している SVM 上のすべてのポリシーで、該当する RuleIndex を指定してすべてのルールを削除します。通常、 CloudSecure ルールは 1 になります。</p>
+<div class="literalblock">
+<div class="content">
+<pre> contrail-qa-fas8020::*&gt; export-policy rule delete -vserver &lt;svm name&gt; -policyname * -ruleindex 1
+. CloudSecure ルールが削除されていることを確認します（確認のための手順はオプション）。</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>contrail-qa-fas8020::*&gt; export-policy rule show -vserver &lt;svm name&gt;
+             Policy          Rule    Access   Client                RO
+Vserver      Name            Index   Protocol Match                 Rule
+------------ --------------- ------  -------- --------------------- ---------
+svm_suchitra default         4       cifs,    0.0.0.0/0             any
+                                     nfs
+svm_suchitra test            3       cifs,    0.0.0.0/0             any
+                                     nfs,
+                                     flexcache
+2 entries were displayed.</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
 <div class="sect1">
 <h2 id="トラブルシューティング">トラブルシューティング</h2>
 <div class="sectionbody">
@@ -2143,7 +2187,7 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data Collector と Agent が停止している場合、 Cloud Secure はコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details &gt; Access Limitation History for this User &gt; Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[Restrict Access] を手動でクリックすると、「このアクションにはユーザ IP がありません」というメッセージが表示されます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Restrict Access] を手動でクリックすると、「このユーザの IP アドレスはすでに制限されています」というメッセージが表示されます。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">制限する IP はすでに別のユーザから制限されています。</p></td>
 </tr>
 <tr>
