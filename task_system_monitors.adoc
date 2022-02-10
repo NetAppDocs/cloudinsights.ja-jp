@@ -92,7 +92,7 @@ image:Monitor_metric_conditions.png["モニタの条件を定義します"]
 
 *Log monitor * で、最初に使用可能なログリストから監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。
 
-たとえば、 logs.netapp.ems ソースの「 object.stor.unavailabe 」メッセージタイプをフィルタリングするように選択できます。
+たとえば、 logs.netapp.ems ソースで「 object.stor.unavailable 」というメッセージタイプをフィルタリングするように選択できます。
 
 
 NOTE: ログモニタフィルタを空にすることはできません。
