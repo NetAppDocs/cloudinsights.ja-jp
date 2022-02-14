@@ -8559,4 +8559,5 @@
   <block id="6c1214115a59d3b11b800993d5bb40fb" category="list-text">CloudSecure ルールが削除されていることを確認します（確認のための手順はオプション）。</block>
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">[Restrict Access] を手動でクリックすると、「このユーザの IP アドレスはすでに制限されています」というメッセージが表示されます。</block>
   <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">たとえば、 logs.netapp.ems ソースで「 object.stor.unavailable 」というメッセージタイプをフィルタリングするように選択できます。</block>
+  <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">一括削除アクションの _Save_on または _Remove_on をクリックすると、 Cloud Insights はアクションにしばらく時間がかかることを通知します。このメッセージは無視してもかまいません。操作はバックグラウンドで続行されます。</block>
 </blocks>
