@@ -7618,7 +7618,6 @@
   <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">モニタのアクティブなアラートを示すアイコン</block>
   <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">モニタ名の横にある「ベル」アイコンをクリックすると、モニタに関連付けられているアクティブなアラートを表示できます。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
-  <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights はをサポートします <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">証明書を信頼ストアから削除します。</block>
   <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes では、次の 2 つの方法でデータを収集できます。</block>
@@ -8478,22 +8477,6 @@
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">spec セクションで、次の変更を行います。</block>
   <block id="44041917404886ef4df8802ca1493c79" category="section-title">Kubernetes スクリプトベースのプロキシサポートを設定しています</block>
-  <block id="e43d6e3ee8366674f4d3bc6eb87427a7" category="paragraph">カスタム / プライベート Docker リポジトリを使用してプロキシを設定する 2021 年 12 月 10 日に本番稼働に入った CI 導入以降、 CR で監視オペレータのプロキシを設定できます</block>
-  <block id="1d3227ede43efb9f227fa30469358de3" category="paragraph">kubectl -n NetApp-monitoring edit agent agent-monitoring netapp を選択します</block>
-  <block id="f41621a6649a18209de8ab1311719bde" category="paragraph">このファイルの spec: セクションで、次のコードブロックを追加します</block>
-  <block id="b0c450654b5e94522d011a58967a41c8" category="paragraph">仕様： proxy ： isAuProxyEnabled ： &lt;true または false&gt; isTelegraafProxyEnabled ： &lt;true または false&gt; isFluentbitProxyEnabled ： &lt;true または false&gt; パスワード： &lt; プロキシのパスワード、オプション &gt; port ： &lt; プロキシのポート &gt; サーバ： &lt; プロキシのサーバのユーザ名： &lt; プロキシのユーザ名、オプション &gt; noProxy ： &lt; プロキシをバイパスする必要がある IP または解決可能なホスト名のカンマ区切りリスト &gt; カスタム / プライベート Docker リポジトリを使用すると、 Docker シークレットが取得されます</block>
-  <block id="eb7f0fe8e02a65d56982f5a74f6583c0" category="paragraph">kubectl -n NetApp-monitoring get secret Docker -o yaml</block>
-  <block id="58e1e7f30cb0fd80bcb9aa7b716cb724" category="paragraph">（前述のコマンドの出力から .dockerconfigjson の値をコピーペースト） Docker シークレットをデコードします</block>
-  <block id="ac785eabe0073fe1171505c99a3724ee" category="paragraph">echo&lt;paste from 手順 1 above &gt; | base64 -d このコマンドの出力は、次の JSON 形式になります。 ｛ "auths" ： ｛ "docd.&lt;cluster&gt; .cloudinsights.netapp.com" ： ｛ "username" ： "&lt;tenant id&gt;" 、 "password" ： "&lt; CI API キーであるパスワード &gt; 、 "auth" ： "&lt; エンコードされたユーザ名：基本パスワード認証キー。Docker リポジトリへのログインには Docker 「 } 」が使用されています</block>
-  <block id="c97b0dfe1c937e6a975eddccb95973ef" category="paragraph">Docker ログイン Docker 。 &lt;cluster&gt; .cloudinsights.netapp.com （手順 2 から） -u &lt; ユーザ名を手順 #2 のパスワード： &lt; 手順 #2 からのパスワード： Cloud Insights からオペレータの Docker イメージを取得します</block>
-  <block id="3ec8cafe630fb58c78079faf4adeb00a" category="paragraph">Docker は Docker をプルします。 &lt;cluster&gt; .cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</block>
-  <block id="f422cefb0886961455efb67de7e26231" category="paragraph">kubectl -n NetApp-monitoring get deployment monitoring operator|grep " image ： " オペレータ用の Docker イメージをプライベート / エンタープライズ用の Docker レジストリにプッシュします</block>
-  <block id="43d80889a5a41546c856cf06328616cd" category="paragraph">社内ポリシーに従って、プライベート / ローカル / エンタープライズ Docker リポジトリにコードをプッシュするオープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします</block>
-  <block id="9b7a2fdb4de8c1f948c779a8031bce3a" category="paragraph">次のオープンソースイメージをダウンロードする必要があります。 dock.io/テレ グラム :1.19.3 GCR.io/kubebbuilder/kube-RBAC プロキシ : v0.5.0 k81.gcr.io/kube-state-metrics/kube-state-metrics : v2.1.0</block>
-  <block id="582e00a87af2a3a98b1dc04e62419ae2" category="paragraph">FLUENT ビットが有効になっている場合： Docker .IO/FLUENT ビット： 1.7.8 Docker .IO/Kubernetes -event-exporter ： 0.10 エージェント CR を編集して新しい Docker repo の場所を反映させ、自動アップグレードを無効にします（有効な場合）。</block>
-  <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade ： false docd-repo ： &lt;dockerRepoSecret ： &lt;optional ： enterprise-corp Docker repo の Docker シークレットの名前。このシークレットは、同じネームスペース内の k8s クラスタにすでに作成されている必要があります。 &gt;</block>
-  <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">spec: セクションで ' 次の変更を行います</block>
-  <block id="44adec27317574513bdc470781ccacb6" category="paragraph">仕様 : テレグラム : -name: KSM 置換 : -key: k81.gcr.io 値 : &lt; 上記の "Docker - repa" フィールドと同じ &gt;</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights の新機能</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">監査データの保持</block>
   <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights が監査データを保持する時間は、お客様のエディションによって異なります。</block>
@@ -8560,4 +8543,7 @@
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">[Restrict Access] を手動でクリックすると、「このユーザの IP アドレスはすでに制限されています」というメッセージが表示されます。</block>
   <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">たとえば、 logs.netapp.ems ソースで「 object.stor.unavailable 」というメッセージタイプをフィルタリングするように選択できます。</block>
   <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">一括削除アクションの _Save_on または _Remove_on をクリックすると、 Cloud Insights はアクションにしばらく時間がかかることを通知します。このメッセージは無視してもかまいません。操作はバックグラウンドで続行されます。</block>
+  <block id="c43280f80a1f0bcdf120e5ebc1478afa" category="paragraph">ここでは、ログクエリに関する問題のトラブルシューティング方法を説明します。</block>
+  <block id="a2b7ba428c90a214e64dd3650b09c2d7" category="cell">ログクエリに「デバッグ」メッセージが表示されません</block>
+  <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">デバッグログのメッセージが収集されません。必要なメッセージをキャプチャするには、関連するメッセージの重大度を _INFORMATIONAL 、 ERROR 、 ALERT 、 EMERGENCY 、 _OR_NOTICE レベルに変更します。</block>
 </blocks>
