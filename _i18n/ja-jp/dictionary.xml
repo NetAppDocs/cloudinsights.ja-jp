@@ -57,7 +57,6 @@
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">無料トライアルの期限が切れていて、 Cloud Insights にまだ登録していない場合は、登録するまで機能が制限されます。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">サブスクリプションオプション</block>
   <block id="91817940c8ccf98f5864299e8c3db4d7" category="paragraph">登録するには、 [ * 管理者 ] &gt; [ サブスクリプション * ] を選択します。[*Subscribe*] ボタンに加えて、インストールされているデータコレクタを確認し、推定価格を計算することができます。一般的な環境では、セルフサービス型の AWS Marketplace * Subscribe Now * ボタンをクリックします。ご使用の環境に 1,000 台以上の管理対象ユニットが含まれている場合、または含まれる予定の場合は、ボリューム価格の対象となります。</block>
-  <block id="ddfb49e4f93a6d4f76ab72bdd9f3c260" category="paragraph"><block ref="ddfb49e4f93a6d4f76ab72bdd9f3c260" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Cloud Insights の価格は管理ユニット * 単位です。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 台の管理対象ユニット = 2 台のホスト（任意の仮想マシンまたは物理マシン）</block>
@@ -8546,4 +8545,6 @@
   <block id="c43280f80a1f0bcdf120e5ebc1478afa" category="paragraph">ここでは、ログクエリに関する問題のトラブルシューティング方法を説明します。</block>
   <block id="a2b7ba428c90a214e64dd3650b09c2d7" category="cell">ログクエリに「デバッグ」メッセージが表示されません</block>
   <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">デバッグログのメッセージが収集されません。必要なメッセージをキャプチャするには、関連するメッセージの重大度を _INFORMATIONAL 、 ERROR 、 ALERT 、 EMERGENCY 、 _OR_NOTICE レベルに変更します。</block>
+  <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB</block>
 </blocks>
