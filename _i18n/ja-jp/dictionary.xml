@@ -8547,4 +8547,7 @@
   <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">デバッグログのメッセージが収集されません。必要なメッセージをキャプチャするには、関連するメッセージの重大度を _INFORMATIONAL 、 ERROR 、 ALERT 、 EMERGENCY 、 _OR_NOTICE レベルに変更します。</block>
   <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB</block>
+  <block id="659ff9500b9dfbdb242e7c46c8777782" category="list-text">Azure OAuth 2.0 リダイレクト URI （ login.microsoftonline.com ）</block>
+  <block id="7fe84062654c2f7953a6b3832d467cfb" category="list-text">Azure Resource Manager IP （ management.core.windows.net ）</block>
+  <block id="3b2e8fc35def670e931c7dad789c4510" category="paragraph">アカウントを適切に設定し、アプリケーションを Azure に登録すると、 Cloud Insights で Azure インスタンスを検出するために必要なクレデンシャルが付与されます。次のリンクでは、検出用のアカウントを設定する方法について説明します。<block ref="e57a159da4fbdd6739e41c759d2d3d96" category="inline-link-rx"></block></block>
 </blocks>
