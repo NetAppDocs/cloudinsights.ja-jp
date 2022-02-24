@@ -7701,7 +7701,6 @@
   <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">モニタの条件を定義します</block>
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">ログモニタ</block>
-  <block id="2537071834a07a838e1fbe450ad077ac" category="paragraph">*Log monitor * で、最初に使用可能なログリストから監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">ログモニタフィルタを空にすることはできません。</block>
   <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">監視するログを選択し、フィルタを設定します</block>
   <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
@@ -8550,4 +8549,6 @@
   <block id="659ff9500b9dfbdb242e7c46c8777782" category="list-text">Azure OAuth 2.0 リダイレクト URI （ login.microsoftonline.com ）</block>
   <block id="7fe84062654c2f7953a6b3832d467cfb" category="list-text">Azure Resource Manager IP （ management.core.windows.net ）</block>
   <block id="3b2e8fc35def670e931c7dad789c4510" category="paragraph">アカウントを適切に設定し、アプリケーションを Azure に登録すると、 Cloud Insights で Azure インスタンスを検出するために必要なクレデンシャルが付与されます。次のリンクでは、検出用のアカウントを設定する方法について説明します。<block ref="e57a159da4fbdd6739e41c759d2d3d96" category="inline-link-rx"></block></block>
+  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">*Log monitor * を作成する場合は、まず使用可能なログリストから、監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。</block>
+  <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
 </blocks>
