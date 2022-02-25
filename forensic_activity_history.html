@@ -1919,7 +1919,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-24 15:40:01 +0000">02/24/2022</time>
+    <time datetime="2022-02-25 15:35:25 +0000">02/25/2022</time>
     
   
 
@@ -2086,10 +2086,10 @@
 <p>* プロトコル * 。プロトコル固有のアクティビティを取得します。</p>
 </li>
 <li>
-<p>* 通常の操作プロセスの一部として生成される一時ファイルのアクティビティをフィルタリングするためのノイズ低減 * 。ノイズリダクションが有効になっている場合、 extension.tmp 、 .ldb 、 .laccdb 、 .$db などの一時ファイルはフィルタリングされます。</p>
+<p>* アクティビティを実行しているユーザーのユーザー名 * 。フィルタリングするユーザ名を正確に指定する必要があります。部分的なユーザ名で検索したり、プレフィックスやサフィックスの付いたユーザ名の一部を検索したりすることはできません。</p>
 </li>
 <li>
-<p>* アクティビティを実行しているユーザーのユーザー名 * 。フィルタリングするユーザ名を正確に指定する必要があります。部分的なユーザ名で検索したり、プレフィックスやサフィックスの付いたユーザ名の一部を検索したりすることはできません。</p>
+<p>* ユーザーが過去 2 時間に作成したファイルをフィルタリングするためのノイズリダクション * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</p>
 </li>
 </ul>
 </div>
@@ -2187,6 +2187,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[ すべてのアクティビティ ] テーブルの [ ユーザー ] 列には、「 LDAP: HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” 」または「 LDAP: デフォルト : 80038003 」というユーザー名が表示されます。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">考えられる原因は次のとおりです。 1.ユーザディレクトリコレクタがまだ設定されていません。追加するには、 [<strong>Admin] &gt; [Data Collectors] &gt; [User Directory Collectors] に移動し、 [</strong>+ User Directory Collectors] をクリックします。Active Directory_or_LDAP ディレクトリサーバー _ を選択します。2. ユーザディレクトリコレクタは設定されていますが、停止しているか、エラー状態です。[*Admin] &gt; [Data Collectors] &gt; [User Directory Collectors] に移動し、ステータスを確認してください。を参照してください <a href="http://docs.netapp.com/us-en/cloudinsights/task_config_user_dir_connect.html#troubleshooting-user-directory-collector-configuration-errors">"User Directory Collector のトラブルシューティング"</a> トラブルシューティングのヒントについては、ドキュメントのセクションを参照してください。適切に設定すると、 24 時間以内に名前が自動的に解決されます。それでも解決されない場合は、正しい User Data Collector を追加しているかどうかを確認します。追加した Active Directory / LDAP ディレクトリサーバにユーザが実際に含まれていることを確認します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一部の NFS イベントが UI に表示されません。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">次を確認します。 1.POSIX 属性が設定された AD サーバのユーザディレクトリコレクタは、 UI から unixid 属性が有効になっている必要があります。2. ユーザページで UI 3 から NFS アクセスを実行しているユーザを検索すると、アクセス権が表示されます。raw イベント（ユーザがまだ検出されていないイベント）は NFS 4 ではサポートされません。NFS エクスポートへの匿名アクセスは監視されません。5. NFS4.1 よりも小さいバージョンの NFS を使用していることを確認します。</p></td>
 </tr>
 </tbody>
 </table>

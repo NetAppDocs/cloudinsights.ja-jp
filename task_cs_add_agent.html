@@ -1919,7 +1919,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-24 15:40:01 +0000">02/24/2022</time>
+    <time datetime="2022-02-25 15:35:25 +0000">02/25/2022</time>
     
   
 
@@ -2115,8 +2115,8 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Agent マシンに SSH 接続します。「 sudo systemctl status cloudsecure-agent.service` 」を使用して、エージェントサービスのステータスを確認します。1. ログに「 Failed to start Cloud Secure daemon service 」というメッセージが表示されるかどうかを確認します。2. cssys ユーザが Agent マシンに存在するかどうかを確認します。次のコマンドを root 権限で 1 つずつ実行し、 cssys ユーザとグループが存在するかどうかを確認します。「 UDO id cssys 」の UDO グループ cssys 3 。存在しない場合は、集中型モニタリングポリシーによって cssys ユーザが削除されている可能性があります。4. 次のコマンドを実行して、 cssys のユーザとグループを手動で作成します。'UDO useradd cssys&#8217;sudo groupadd cssys'5次のコマンド「 sudo systemctl restart cloudsecure-agent.service` 6 」を実行して、エージェントサービスを再起動します。まだ実行されていない場合は、他のトラブルシューティングオプションを確認してください。</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">エージェントに 20 個を超えるデータコレクタを追加できません。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">エージェントに追加できるデータコレクタは 20 個だけです。Active Directory 、 SVM 、その他のコレクタなど、すべてのコレクタタイプを組み合わせて使用できます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">エージェントに 50 個を超えるデータコレクタを追加できません。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">エージェントに追加できるデータコレクタは 50 個までです。Active Directory 、 SVM 、その他のコレクタなど、すべてのコレクタタイプを組み合わせて使用できます。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Agent is in not_connected 状態であることが UI に表示されます。</p></td>
