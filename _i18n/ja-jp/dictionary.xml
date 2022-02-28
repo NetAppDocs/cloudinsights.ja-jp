@@ -7760,7 +7760,6 @@
   <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">URL パラメータとともに _http://_or_https:// _prefix を含む webhook ターゲット URL</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。URL/ ヘッダーのシークレットは、 %%&lt;secret_name&gt;%%_ として使用できます。</block>
-  <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">2021 年 11 月以降、 ONTAP Advanced Counter のデータ収集はデフォルトで有効になります。この機能は段階的に展開され、ダッシュボードには時間の経過とともに高度なデータが表示されます。高度なデータ収集を無効にするには、 ONTAP データコレクタを編集し、 [opt in for Advanced Counter Data Collection rolloution] チェックボックスをオフにします。</block>
   <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">Dell EMC XC シリーズデータコレクタの設定</block>
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC シリーズデータコレクタ</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights では、このデータコレクタを使用して、 Dell EMC XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。</block>
@@ -8443,7 +8442,6 @@
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">制限する IP はすでに別のユーザから制限されています。</block>
   <block id="59b7bceceaf271dc23260e1c30098a18" category="cell">「 SVM で SMB プロトコルのエクスポートポリシーの使用が無効になっています」という警告が表示されてアクセスの制限に失敗します。restrictuser access 機能を使用するには、 export-policy の使用を有効にします。</block>
   <block id="637e226349512d2d7a553322411b83f0" category="cell">「前提条件」に記載されているように、 SVM の -is-exportpolicy-enabled オプションが true であることを確認します。</block>
-  <block id="45584247f153a6738f901d94b5c8cade" category="summary">Cloud Insights は、統合データの収集用に Telegraas をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。</block>
   <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。</block>
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">インストール手順は、選択した内容によって異なります。</block>
   <block id="7851bfe0f67f9341140f846ee10fd94d" category="admonition">NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。</block>
@@ -8553,4 +8551,5 @@
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* ユーザーが過去 2 時間に作成したファイルをフィルタリングするためのノイズリダクション * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">一部の NFS イベントが UI に表示されません。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">次を確認します。 1.POSIX 属性が設定された AD サーバのユーザディレクトリコレクタは、 UI から unixid 属性が有効になっている必要があります。2. ユーザページで UI 3 から NFS アクセスを実行しているユーザを検索すると、アクセス権が表示されます。raw イベント（ユーザがまだ検出されていないイベント）は NFS 4 ではサポートされません。NFS エクスポートへの匿名アクセスは監視されません。5. NFS4.1 よりも小さいバージョンの NFS を使用していることを確認します。</block>
+  <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights は統合データの収集エージェントとして Telegraf をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。</block>
 </blocks>
