@@ -1919,19 +1919,11 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-02 18:36:11 +0000">03/02/2022</time>
+    <time datetime="2022-03-02 18:46:50 +0000">03/02/2022</time>
     
   
 
 <span>寄稿者
-  <a target="_blank" href="https://github.com/netapp-alavoie">
-    <img  class="avatar avatar-small"
-          alt="netapp-alavoie"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/39956590?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
@@ -1996,6 +1988,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ステータス：ハートビート失敗</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Acquisition Unit （ AU ）は、リースを更新するために 60 秒ごとに Cloud Insights にハートビートを送信します。ネットワーク問題または Cloud Insights が応答しないためにハートビートコールが失敗した場合、 AU のリース時間は更新されません。AU のリース期限が切れると、 Cloud Insights に「 Heartbeat Failed 」というステータスが表示されます。トラブルシューティングの手順： Acquisition Unit サーバと CloudInsights 間のネットワーク接続を確認します。Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）でエラーがないかどうかを確認します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 Heartbeat Error: message 」が表示されています</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</p></td>
 </tr>
 </tbody>
 </table>
