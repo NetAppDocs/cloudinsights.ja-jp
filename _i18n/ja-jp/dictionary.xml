@@ -7538,9 +7538,7 @@
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">不明なホスト : astrs-metric-service-astras-system.svc.cluster.local : 名前またはサービスが不明です</block>
   <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">ADS Kubernetes クラスタ内で実行されている Acquisition Unit ポッドにコレクタがインストールされていることを確認します。astrs-metric-service が astrs-system 名前空間を実行していることを確認します。</block>
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
-  <block id="ab94ba13e0011bb7ea0d255f086ced38" category="summary">ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">ONTAP 9.9 以上のデータコレクタ向けのネットアップクラウド接続</block>
-  <block id="86697e189a8abaad2c14305da76b6e58" category="admonition">このドキュメントは _Preview_documentation とみなされるため、変更される場合があります。</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector の設定</block>
   <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
@@ -7555,7 +7553,6 @@
   <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">Cloud Insights ブラウザタブに戻り、接続が確立されるまで待ちます。設定が完了すると、 _complete_button が表示されます。</block>
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">[_Complete_] をクリックします。</block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
-  <block id="e192aac42870d4b95309597771e9a5fe" category="cell"><block ref="e192aac42870d4b95309597771e9a5fe" category="inline-link-macro-rx"></block></block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">ONTAP 9.9 以降のクラウド接続</block>
   <block id="f41274c1ce20e5e73cc8aff93a484f51" category="inline-link-macro">FSx - ネットアップ</block>
   <block id="47b5a4776ee0e5c60f02b4cbf9af7b50" category="cell"><block ref="47b5a4776ee0e5c60f02b4cbf9af7b50" category="inline-link-macro-rx"></block></block>
@@ -8552,4 +8549,8 @@
   <block id="73f1df4b50034876b992ea5afa05d7c8" category="cell">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかを実行してください。•スクリプトベースのインストールの場合は、テレグラム DS を編集し（「 kubectl edit DS テレグラム」）、「特権 : false 」を「特権 : true 」に変更します。オペレータベースのインストールの場合は、エージェント（「 kubectl edit agent agent-monitoring -netapp 」）を編集し、特権モードを「 true 」に変更します。</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">volume_groups が使用されていないかぎり、読み取り専用のユーザ名とパスワード。この場合は、 Admin ユーザ名とパスワードが必要です</block>
+  <block id="a9d11491cdc145dca25e537c123d978b" category="summary">ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します</block>
+  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">代わりに、このページを使用して</block>
+  <block id="e919422ac519602135870aa126bbb9f5" category="paragraph">このパスワードは廃止されていますにアクセスしてください <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
+  <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
 </blocks>
