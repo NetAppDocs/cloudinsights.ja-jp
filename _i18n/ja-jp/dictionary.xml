@@ -5347,7 +5347,6 @@
   <block id="addafe1dd8efeb72ac99a72ca1ce3052" category="doc">Nutanix NX データコレクタ</block>
   <block id="c7a68554d565b4565da4415f43cba67b" category="paragraph">Cloud Insights は、 Nutanix データコレクタを使用して、 Nutanix NX ストレージシステムのインベントリとパフォーマンスのデータを検出します。</block>
   <block id="cd4626f2610d814464e0c885c5b8c62a" category="paragraph">Cloud Insights は、 Nutanix データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
-  <block id="9da45138db3dc6d08642defc2dfb1855" category="list-text">クラスタの外部データサービスの IP アドレス。</block>
   <block id="bf61ff29d8ff867a7727b034a7efa26f" category="list-text">ポート要件： HTTPS 443</block>
   <block id="b8b0b769d3e3395123e9c6b52b36b840" category="cell">Nutanix アレイへの接続に使用する TCP ポート。デフォルトは 9440. です。</block>
   <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Couchbase データコレクタの設定</block>
@@ -8552,4 +8551,5 @@
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights は統合データの収集エージェントとして Telegraf をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。</block>
   <block id="73f1df4b50034876b992ea5afa05d7c8" category="cell">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかを実行してください。•スクリプトベースのインストールの場合は、テレグラム DS を編集し（「 kubectl edit DS テレグラム」）、「特権 : false 」を「特権 : true 」に変更します。オペレータベースのインストールの場合は、エージェント（「 kubectl edit agent agent-monitoring -netapp 」）を編集し、特権モードを「 true 」に変更します。</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。</block>
+  <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">volume_groups が使用されていないかぎり、読み取り専用のユーザ名とパスワード。この場合は、 Admin ユーザ名とパスワードが必要です</block>
 </blocks>
