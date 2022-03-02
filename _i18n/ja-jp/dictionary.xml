@@ -8568,4 +8568,5 @@
   <block id="33eb2eac94cfbe6aa148fd041d121e27" category="paragraph">このデータコレクタを使用すると、</block>
   <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">Azure CVO に接続しようとして次のエラーが表示されます：「ブローカー / マネージャ CA サービスへの証明書署名要求が完了していません」</block>
   <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">Cloud Manager のプロキシの設定が Cloud Manager のプライベート IP に設定されていることを確認します。Cloud Manager のインストールで別のプロキシが設定されることがあります。プロキシが正しい IP に設定され、 Cloud Connector ダイアログでプロキシを参照すると、 Cloud Insights への接続が正常に確立されます。</block>
+  <block id="bbd58b68ee3e3e9c95c32ae30a226786" category="admonition">VPLEX クラスタからの Cloud Insights のパフォーマンス収集では、 Cloud Insights が SCP ベースのファイルコピーを介して取得する .csv ファイルとログを入力するために、パフォーマンスアーカイブサービスが動作可能である必要があります。VPLEX ファームウェアのアップグレード / 管理ステーションの更新の多くが、この機能を動作不能にすることが確認されています。このようなアップグレードを計画しているお客様は、計画しているアップグレードによってこの機能が動作不能になる場合は、 Dell/EMC に事前に問い合わせてください。問題が発生した場合、パフォーマンスの可視性のギャップを最小限に抑えるために、どのように IT を再有効化できますか。Cloud Insight の VPLEX パフォーマンスコードは、予想されるすべてのファイルが存在するかどうかを各ポーリングで評価し、ファイルが適切に更新されているかどうかを判断します。不足しているか古い場合、 Cloud Insights はパフォーマンス収集の失敗をログに記録します。</block>
 </blocks>
