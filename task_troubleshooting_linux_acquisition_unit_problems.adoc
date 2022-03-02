@@ -47,6 +47,9 @@ keywords: AU, acquisition unit, trioubleshooting
 
 
 | ステータス：ハートビート失敗 | Acquisition Unit （ AU ）は、リースを更新するために 60 秒ごとに Cloud Insights にハートビートを送信します。ネットワーク問題または Cloud Insights が応答しないためにハートビートコールが失敗した場合、 AU のリース時間は更新されません。AU のリース期限が切れると、 Cloud Insights に「 Heartbeat Failed 」というステータスが表示されます。トラブルシューティングの手順： Acquisition Unit サーバと CloudInsights 間のネットワーク接続を確認します。Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）でエラーがないかどうかを確認します。 
+
+
+| 「 Heartbeat Error: message 」が表示されています | このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。 
 |===
 
 
