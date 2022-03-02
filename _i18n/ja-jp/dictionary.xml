@@ -8563,4 +8563,6 @@
   <block id="9a8ef118d165349829d8c21e084de814" category="list-text">クリティカルからトリガーされない - 解決済みアラートを送信します</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">「 Heartbeat Error: message 」が表示されています</block>
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</block>
+  <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch Agent Metrics 名前空間</block>
+  <block id="4a508608b5d5c22a19b0ff3e12d1bc61" category="cell">データの収集元である EC2/EBS のネームスペース。このネームスペース内のデフォルト指標の名前が変更されると、 Cloud Insights は名前を変更したデータを収集できなくなる可能性があります。メトリック名はデフォルトのままにしておくことを推奨します。</block>
 </blocks>
