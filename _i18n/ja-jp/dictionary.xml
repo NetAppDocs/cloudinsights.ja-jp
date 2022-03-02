@@ -8551,6 +8551,6 @@
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">volume_groups が使用されていないかぎり、読み取り専用のユーザ名とパスワード。この場合は、 Admin ユーザ名とパスワードが必要です</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します</block>
   <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">代わりに、このページを使用して</block>
-  <block id="e919422ac519602135870aa126bbb9f5" category="paragraph">このパスワードは廃止されていますにアクセスしてください <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
+  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">このページは廃止されたため、更新されません。にアクセスしてください <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
 </blocks>
