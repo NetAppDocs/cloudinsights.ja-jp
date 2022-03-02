@@ -796,7 +796,7 @@ kubectl delete role agent-leader-election-role
 kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
 kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
 ....
-Telegraf 用のセキュリティコンテキスト制約が以前に作成されていた場合は、次の手順を実行します。
+スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。
 
  kubectl delete scc telegraf-hostaccess
 
