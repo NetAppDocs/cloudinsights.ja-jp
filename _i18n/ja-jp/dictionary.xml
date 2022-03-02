@@ -8565,4 +8565,7 @@
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch Agent Metrics 名前空間</block>
   <block id="4a508608b5d5c22a19b0ff3e12d1bc61" category="cell">データの収集元である EC2/EBS のネームスペース。このネームスペース内のデフォルト指標の名前が変更されると、 Cloud Insights は名前を変更したデータを収集できなくなる可能性があります。メトリック名はデフォルトのままにしておくことを推奨します。</block>
+  <block id="33eb2eac94cfbe6aa148fd041d121e27" category="paragraph">このデータコレクタを使用すると、</block>
+  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">Azure CVO に接続しようとして次のエラーが表示されます：「ブローカー / マネージャ CA サービスへの証明書署名要求が完了していません」</block>
+  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">Cloud Manager のプロキシの設定が Cloud Manager のプライベート IP に設定されていることを確認します。Cloud Manager のインストールで別のプロキシが設定されることがあります。プロキシが正しい IP に設定され、 Cloud Connector ダイアログでプロキシを参照すると、 Cloud Insights への接続が正常に確立されます。</block>
 </blocks>

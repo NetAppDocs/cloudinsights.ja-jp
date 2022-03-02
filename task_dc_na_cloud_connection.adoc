@@ -40,4 +40,13 @@ image:Cloud_Agent_Step_Waiting.png["接続を待っています"]
 
 == トラブルシューティング
 
+このデータコレクタを使用すると、
+
+[cols="2*"]
+|===
+| 問題 | 次の操作を実行します 
+
+
+| Azure CVO に接続しようとして次のエラーが表示されます：「ブローカー / マネージャ CA サービスへの証明書署名要求が完了していません」 | Cloud Manager のプロキシの設定が Cloud Manager のプライベート IP に設定されていることを確認します。Cloud Manager のインストールで別のプロキシが設定されることがあります。プロキシが正しい IP に設定され、 Cloud Connector ダイアログでプロキシを参照すると、 Cloud Insights への接続が正常に確立されます。 
+|===
 この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
