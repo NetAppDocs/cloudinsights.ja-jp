@@ -19,7 +19,7 @@
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
   <meta name="description" content="ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します">
-  <meta name="keywords" content=" data collector, NetApp, Cloud, agent, ONTAP">
+  <meta name="keywords" content=" data collector, NetApp, Cloud agent, ONTAP">
   
   
 
@@ -1215,15 +1215,6 @@
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/cloudinsights/pdfs/pages/task_dc_na_cloud_agent.pdf" >
-    <img src="/ja-jp/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -1764,7 +1755,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_dc_na_astra_data_store.html">
         Astra データストア
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_dc_na_cloud_agent.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_dc_na_cloud_connection.html">
         ONTAP 9.9 以降のクラウド接続
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_dc_na_cloud_volumes_ontap.html">
         Cloud Volumes ONTAP
@@ -1919,7 +1910,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-02 14:31:22 +0000">03/02/2022</time>
+    <time datetime="2022-03-02 18:13:47 +0000">03/02/2022</time>
     
   
 
@@ -1938,77 +1929,8 @@
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-このドキュメントは _Preview_documentation とみなされるため、変更される場合があります。
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="設定">設定</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。</p>
-</div>
-<div class="paragraph">
-<p>このデータコレクタは、 ONTAP 9.9 以上の CVO システム、 AFF システム、 FAS システムをサポートします。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Cloud_Agent_DC.png" alt="Cloud Agent Data Collector の設定"></span></p>
-</div>
-<div class="paragraph">
-<p>接続を設定するには、次の手順を実行します。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ONTAP システムへの接続の確立に使用する一意のトークンを生成します。</p>
-</li>
-<li>
-<p>トークンを含むペアリングコードをコピーします。ペアリングコードを表示するには、 [+] [ コードスニペットの表示 ] をクリックします。</p>
-<div class="paragraph">
-<p>ペアリングコードをコピーすると、データコレクタの設定画面に手順 6 が表示され、接続が確立されるまで待つように求められます。この画面では、接続が確立されるまで何も行う必要はありません。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Cloud_Agent_Step_Waiting.png" alt="接続を待っています"></span></p>
-</div>
-</li>
-<li>
-<p>新しいブラウザタブで、 ONTAP システムマネージャにログインし、 <em>Cluster &gt; Settings &gt; Cloud Connections</em> に移動します。</p>
-</li>
-<li>
-<p>[ クラウド接続の追加 ] をクリックし、ペアリングコードを貼り付けます。</p>
-</li>
-<li>
-<p>Cloud Insights ブラウザタブに戻り、接続が確立されるまで待ちます。設定が完了すると、 _complete_button が表示されます。</p>
-</li>
-<li>
-<p>[<em>Complete</em>] をクリックします。</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="トラブルシューティング">トラブルシューティング</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>この Data Collector の追加情報は、から入手できます <a href="concept_requesting_support.html">"サポート"</a> ページまたはを参照してください <a href="https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf">"Data Collector サポートマトリックス"</a>。</p>
-</div>
-</div>
+<p>このパスワードは廃止されていますにアクセスしてください <a href="https:task_dc_na_cloud_connection.html">"代わりに、このページを使用して"</a>。</p>
 </div>
 
     </article>
