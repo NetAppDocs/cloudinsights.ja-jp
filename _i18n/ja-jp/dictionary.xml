@@ -340,16 +340,13 @@
   <block id="cbc8f04159b7864cfdf1f3f9a0639b83" category="paragraph">最新の API 情報は、 Cloud Insights にログインし、 * Admin &gt; API アクセス * に移動することで確認できます。[API Documentation*] リンクをクリックします。</block>
   <block id="6ce2d3c8c549ab0fd691398bb443efb2" category="inline-image-macro">API のドキュメント</block>
   <block id="6b74edd5cf286c3a22a41e5e6740cb33" category="paragraph"><block ref="6b74edd5cf286c3a22a41e5e6740cb33" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47d7b551b40becb326c406f74238150a" category="paragraph">API ドキュメントは Swagger ベースです。 API の簡単な概要情報と使用方法を提供しており、環境内で試すことができます。</block>
   <block id="cbb70567b5f7ab27a565172b8e1bc114" category="inline-image-macro">API Swagger の例</block>
   <block id="fc7607d363ea08dec8a8340a1030dd17" category="paragraph"><block ref="fc7607d363ea08dec8a8340a1030dd17" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2dc554f3bbe39578deadcf21e6d30345" category="section-title">API アクセストークン</block>
-  <block id="1281391af6f060d6074a70718d4fe3ea" category="paragraph">Cloud Insights API を使用する前に、 1 つ以上の * API アクセストークン * を作成する必要があります。アクセストークンは、指定された API カテゴリに対して使用され、読み取り権限と書き込み権限を付与できます。各アクセストークンの有効期限を設定することもできます。指定したカテゴリのすべての API がアクセストークンに対して有効です。各トークンはユーザ名またはパスワードを無効にします。</block>
   <block id="6059fa099fb833766b1f8431a3926056" category="paragraph">アクセストークンを作成するには：</block>
   <block id="fecbf5d2c0c13cc8b95b8e609a0f7fe2" category="list-text">[*Admin] &gt; [API Access*] をクリックします</block>
   <block id="2eddd89969bc8a926181a1791b09cfd0" category="list-text">[*+API アクセストークン *] をクリックします</block>
   <block id="bb0b4db3f730b0e00e3f2d490deb6dc0" category="list-text">トークン名を入力します</block>
-  <block id="360146f659bd725b350b271d6c503e19" category="list-text">API カテゴリを選択します</block>
   <block id="7c6b7bcc37f76961d2189f2184466a34" category="list-text">この API アクセスに付与する権限を指定します</block>
   <block id="36422fc03146f715dd2ebf157cb2b018" category="list-text">トークン有効期限を指定します</block>
   <block id="df7e1abab84c88ca59b75d8179052a13" category="admonition">トークンは、クリップボードにコピーして作成プロセス中に保存する場合にのみ使用できます。トークンは作成後に取得できないため、トークンをコピーして安全な場所に保存することを強くお勧めします。トークン作成画面を閉じる前に、 [API アクセストークンのコピー *] ボタンをクリックするよう求められます。</block>
@@ -359,17 +356,11 @@
   <block id="695278b2df4ef830f797b2b85728cd20" category="paragraph">アクセストークンが渡される HTTP ヘッダーは * X-CloudInsights - apiKey ： * です。</block>
   <block id="a3edb14694b58a006156d05e3c4b6d5b" category="paragraph">たとえば、次のようにしてストレージアセットを取得します。</block>
   <block id="eceeec5380f54a75da4fa160c300d56b" category="paragraph">_&lt;API_Access_Token&gt; _ は、 API アクセスキーの作成時に保存したトークンです。</block>
-  <block id="98fbc8e7d31cedd912f33ee6a89818dc" category="section-title">API カテゴリ</block>
-  <block id="c7fb26bb2d197a98dd4605353de8b5fd" category="paragraph">Cloud Insights API はカテゴリベースであり、現在、次のカテゴリで構成されています。</block>
-  <block id="2f90612b2de30393cb574a8125f3b83c" category="list-text">アセットのカテゴリには、アセット、クエリ、および検索用の API が含まれています。</block>
   <block id="bf9403ca9242451b7ef055feae5711bb" category="list-text">アセット：最上位のオブジェクトを列挙し、特定のオブジェクトまたはオブジェクト階層を取得します。</block>
   <block id="8a471bf409138f673b99273d8183156b" category="list-text">クエリ： Cloud Insights クエリを取得および管理します。</block>
   <block id="c9de14b5a5af8684e29a00e86f5ea9f1" category="list-text">インポート：アノテーションまたはアプリケーションをインポートしてオブジェクトに割り当てます</block>
   <block id="cfce3085ae85f2087671061798f85476" category="list-text">検索：オブジェクトの一意の ID またはフルネームを知らずに、特定のオブジェクトを検索します。</block>
-  <block id="19d579e8bdc0964ff6c1b98d9f4077d2" category="list-text">データ収集カテゴリは、データコレクタを取得および管理するために使用します。</block>
-  <block id="2e3e1cf2be708126495ee0409de4ffdc" category="list-text">データ取り込みカテゴリは、 Telegraf エージェントなどの取り込みデータとカスタムメトリックを取得および管理するために使用されます</block>
   <block id="c99f25325f86d3f0c79c43f7e35c908e" category="inline-link-macro">API Swagger のドキュメント</block>
-  <block id="66f4e9202f5d9c4adb625559f7dd6e37" category="paragraph">その他のカテゴリや API は、時間の経過とともに利用できるようになる場合があります。最新の API 情報は、で確認できます <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
   <block id="f62c375c71b04a523593c5019e4aa100" category="section-title">在庫移動</block>
   <block id="f4f1eb3a3565596e151b069fef518185" category="paragraph">このセクションでは、 Cloud Insights オブジェクトの階層をトラバースする方法について説明します。</block>
   <block id="c22744ffcc9ee65a97cb166bcf41b4f4" category="section-title">トップレベルオブジェクト</block>
@@ -396,7 +387,6 @@
   <block id="2103fdff3f83cde5feb37c19095d5b93" category="list-text">StoragePoolPerformance の各ノードでパフォーマンスが</block>
   <block id="358c65aac4f24ec63cc1575e33da13c1" category="list-text">PortPerformance の 2 つのグループ</block>
   <block id="30b8ec388c3a122cf003beb59b6a428b" category="list-text">ディスクパフォーマンス</block>
-  <block id="d1d72189f00074c010ad5cdaa0e7efe1" category="paragraph">パフォーマンス指標には概要とカテゴリがあり、パフォーマンス概要のコレクションが含まれています。たとえば、 Latency 、 Traffic 、 Rate などです。</block>
   <block id="14342261b2648dd695d327dadfdc7c9b" category="paragraph">パフォーマンスサマリーには、 1 つのパフォーマンスカウンタから特定の期間（ 1 時間、 24 時間、 3 日間など）にわたって計算された概要、ユニット、サンプル開始時間、サンプル終了時間、および要約された値（現在、最小、最大、平均など）のコレクションが含まれます。</block>
   <block id="b3e848961f638d04022e0d810ded842a" category="inline-image-macro">API パフォーマンスの例</block>
   <block id="379ee6ecdf21cb4dc0ca4a4c6bd911a7" category="paragraph"><block ref="379ee6ecdf21cb4dc0ca4a4c6bd911a7" category="inline-image-macro-rx" type="image"></block></block>
@@ -404,7 +394,6 @@
   <block id="0412de4a6d9fc6ce32676395cdbe7041" category="list-text">「 self 」は、オブジェクトの一意の URL です</block>
   <block id="424af895bc123ba13a95c03efd8c3169" category="list-text">「 history 」は、タイムスタンプとカウンタ値のマップのペアのリストです</block>
   <block id="592193e048fbca7e89bbb5d2002328f7" category="list-text">他のすべてのディクショナリキー（「 diskThroughput 」など）は、パフォーマンスメトリックの名前です。</block>
-  <block id="9291545b28f5f21e3694eb57db45da2c" category="paragraph">パフォーマンスデータのオブジェクトタイプごとに、一意のパフォーマンス指標のセットがあります。たとえば、仮想マシンのパフォーマンスオブジェクトは、パフォーマンスメトリックとして「 diskThroughput 」をサポートします。サポートされている各パフォーマンスメトリックは、メトリックディクショナリに示されている特定の「パフォーマンスカテゴリ」です。Cloud Insights では、本ドキュメントで後述するパフォーマンス指標のカテゴリを複数サポートしています。各パフォーマンスメトリックディクショナリには、このパフォーマンスメトリックの判読可能な概要である「概要」フィールドと、パフォーマンスサマリーカウンタエントリのセットも含まれます。</block>
   <block id="5dbe2140a5eccbbcda4fa6164a08c479" category="paragraph">Performance Summary カウンタは、パフォーマンスカウンタの要約です。これは、カウンタの一般的な集計値であり、最新の測定値、要約データの時間範囲、カウンタの単位タイプ、データのしきい値なども表示します。しきい値のみオプションで、残りの属性は必須です。</block>
   <block id="502bc43530a89d32bddc256e33becd06" category="paragraph">パフォーマンス要約は、次のタイプのカウンタで使用できます。</block>
   <block id="274c3d5b2a32834eedd5b2684b3cc752" category="list-text">Read –読み取り処理の概要</block>
@@ -433,7 +422,6 @@
   <block id="85aa7a55c03d4a7d205562096674066a" category="inline-image-macro">ストレージプール容量の例</block>
   <block id="6f0ac10b550f7a116f9d902d16213da3" category="paragraph"><block ref="6f0ac10b550f7a116f9d902d16213da3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109d056fe4a5bfafadc37d21bc6e5654" category="section-title">[ 検索（ Search ） ] を使用してオブジェクトを検索する</block>
-  <block id="780b9434cb2ebb62e93b92701c3b13b0" category="paragraph">検索 API は、システムへのシンプルなエントリポイントです。API に対する唯一の入力パラメータは自由形式の文字列であり、結果の JSON には分類された結果のリストが含まれています。カテゴリは、ストレージ、ホスト、データストアなど、インベントリのアセットタイプによって異なります。各カテゴリには、検索条件に一致するカテゴリタイプのオブジェクトのリストが含まれます。</block>
   <block id="01ebbdd0a50dbc56d987ceb25032be7b" category="paragraph">Cloud Insights は拡張可能な（オープンな）解決策で、サードパーティのオーケストレーションシステム、ビジネス管理システム、変更管理システム、チケット処理システムとの統合や、カスタム CMDB の統合を可能にします。</block>
   <block id="b64fa7905e81fd64c5b00971051ce0f8" category="paragraph">Cloud Insight の RESTful API は、データのシンプルかつ効果的な移動を可能にし、ユーザがデータにシームレスにアクセスできるようにする統合の主要なポイントです。</block>
   <block id="c13fb1b2303d8e94acc9569811c7a5b8" category="summary">Dell EMC Celerra データコレクタの設定</block>
@@ -7295,9 +7283,7 @@
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="cell">監視</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">アカウント所有者</block>
   <block id="b754159e4e957eec4566aef2214ed483" category="cell">サブスクリプションの変更、課金情報および使用状況の表示、および Monitoring &amp; Optimization 、 Cloud Secure 、および Reporting のすべての管理者機能を実行できます。また、ユーザーを招待して管理したり、 SSO 認証とアイデンティティフェデレーションの設定を管理したりすることもできます。Cloud Insights に登録すると、最初のアカウント所有者が作成されます。Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者を設定することを強くお勧めします。 </block>
-  <block id="44b70724be7ec840b9d0d29c9f2451a3" category="cell">すべての Monitoring and Optimization 機能、すべてのユーザ機能、データコレクタ、 API キー、通知の管理を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Monitor ロールと Optimize ロールのみです。</block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。</block>
-  <block id="844adbc2fbc9a63340cee63b3801153a" category="cell">すべての User/Author 機能を実行できるほか、レポートの構成、レポートタスクのシャットダウンと再起動など、すべての管理タスクを実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Reporting ロールのみです。</block>
   <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">ダッシュボード、クエリ、アラート、アノテーション、アノテーションルール、 アプリケーションをサポートし、デバイス解決を管理できます。</block>
   <block id="70fb52e38580a301b191eb366ac4d029" category="cell">すべてのゲスト / コンシューマ機能を実行できるほか、レポートとダッシュボードの作成と管理も可能です。</block>
   <block id="76da35e3189c47f58355f9b7d58e7e97" category="cell">アセットページ、ダッシュボード、アラートへの読み取り専用アクセスが可能で、クエリの表示と実行が可能です。</block>
@@ -7514,7 +7500,6 @@
   <block id="90b86e404196295299e2aa0d840dad62" category="cell">Kubernetes API トークンに、 _astrads.netapp.io_ apiGroup 内の API を呼び出す権限があることを確認します</block>
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">不明なホスト : astrs-metric-service-astras-system.svc.cluster.local : 名前またはサービスが不明です</block>
   <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">ADS Kubernetes クラスタ内で実行されている Acquisition Unit ポッドにコレクタがインストールされていることを確認します。astrs-metric-service が astrs-system 名前空間を実行していることを確認します。</block>
-  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">ONTAP 9.9 以上のデータコレクタ向けのネットアップクラウド接続</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector の設定</block>
@@ -8559,4 +8544,31 @@
   <block id="2ca57dbd75b94a950c199a1c12cf85b9" category="cell">警告とアラートの通知は別の受信者に送信できるため、適切なチームに情報を提供できます</block>
   <block id="222414ee53d0c57a1870d9446ce7b005" category="paragraph">テレグラム統合データの取り込みのためのエージェントがバージョン *1.2* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</block>
   <block id="3d64508ab84203107071583e56c26993" category="list-text">Broadcom Fibre Channel Switches データコレクタは、各インベントリポーリングで発行される CLI コマンドの数を減らすように最適化されています。</block>
+  <block id="4199b6880b46eaef66e8d25adefc1ac2" category="cell">すべての Monitoring &amp; Optimization 機能、すべてのユーザ機能、データコレクタ、 Monitoring &amp; Optimization API トークン、通知の管理を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Monitor ロールと Optimize ロールのみです。</block>
+  <block id="6d02b22d35efda9cc53c8bd1d5c2d8c5" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure の API トークンなど、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。</block>
+  <block id="ceecc9f892b56b1081be5d007d545aab" category="cell">Reporting API トークンの管理、レポートの設定、レポートタスクのシャットダウンと再起動など、すべての管理タスクに加えて、すべての User/Author 関数を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Reporting ロールのみです。</block>
+  <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API タイプ</block>
+  <block id="c73695e7529146d82731a287d36e3f1d" category="cell">ログの取り込み</block>
+  <block id="dc1a2dd04ef0a485bbca321805f8ea84" category="inline-link-macro">機能セットのロール</block>
+  <block id="9229d75b73e189809aaf32ca1941e5cb" category="paragraph">さらに、 Cloud Insights もご利用いただけます <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> では、アクセス可能な API が決定されます。ユーザロールとゲストロールの権限は、管理者ロールよりも少なくなります。たとえば、 Monitor と Optimize で Administrator ロールを割り当てていても、 Reporting で User ロールを割り当てている場合は、 Data Warehouse を除くすべての API タイプを管理できます。</block>
+  <block id="990550983c2107ed5ccd87b4a6690b0a" category="inline-image-macro">API タイプ</block>
+  <block id="e86bb8cbf77ec00646c7b5fe6b42e633" category="paragraph"><block ref="e86bb8cbf77ec00646c7b5fe6b42e633" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f229a25d4d4958d97a50dc8a836a921f" category="paragraph">API ドキュメントは Swagger ベースです。 API の簡単な概要情報と使用方法を提供しており、環境内で試すことができます。ユーザーの役割や Cloud Insights エディションによっては、使用可能な API タイプが異なる場合があります。</block>
+  <block id="9bda043a75ddd802178719c5bb4e0e71" category="paragraph">Cloud Insights API を使用する前に、 1 つ以上の * API アクセストークン * を作成する必要があります。アクセストークンは、指定された API タイプに使用され、読み取り権限と書き込み権限を付与できます。各アクセストークンの有効期限を設定することもできます。指定したタイプの API はすべて、アクセストークンに対して有効です。各トークンはユーザ名またはパスワードを無効にします。</block>
+  <block id="815a8361cf9eb2836d28b11b65b2dc3b" category="list-text">API タイプを選択します</block>
+  <block id="9eaefcbfb99d876f3642ba3d021c04d6" category="paragraph">Cloud Insights API はカテゴリベースであり、現在次のタイプが含まれています。</block>
+  <block id="16d532fd527f8b9de1c866f621fb7569" category="list-text">アセットタイプには、アセット、クエリ、および検索 API が含まれます。</block>
+  <block id="c7ff46f17aacbcc8f9caba752c2fd410" category="list-text">データ収集タイプは、データコレクタを取得および管理するために使用します。</block>
+  <block id="c13a40ffc26f5f762f6de126cf232cf5" category="list-text">データの取り込みタイプは、 Telegraf エージェントなどの取り込みデータとカスタムメトリックを取得および管理するために使用されます</block>
+  <block id="e2838ba9f29d27f412035bd037388732" category="list-text">ログの取り込みは、ログデータの取得と管理に使用されます</block>
+  <block id="133f61531451649a036c6c806600058c" category="paragraph">これ以外のタイプや API は、時間の経過とともに使用できるようになる可能性があります。最新の API 情報は、で確認できます <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
+  <block id="5288b4109c2d4a86ed612074d0baed37" category="paragraph">ユーザがアクセスできる API タイプは、でも異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
+  <block id="8811c3ab0c7b0cc46d2ac67e164d0fc9" category="paragraph">パフォーマンスメトリックには、概要 とタイプがあり、パフォーマンスサマリーのコレクションが含まれています。たとえば、 Latency 、 Traffic 、 Rate などです。</block>
+  <block id="2bf7ed4a0e334f4b972f700945f47a56" category="paragraph">パフォーマンスデータのオブジェクトタイプごとに、一意のパフォーマンス指標のセットがあります。たとえば、仮想マシンのパフォーマンスオブジェクトは、パフォーマンスメトリックとして「 diskThroughput 」をサポートします。サポートされている各パフォーマンスメトリックは、メトリックディクショナリに示されている特定の「パフォーマンスカテゴリ」です。Cloud Insights では、本ドキュメントで後述するパフォーマンス指標タイプを複数サポートしています。各パフォーマンスメトリックディクショナリには、このパフォーマンスメトリックの判読可能な概要である「概要」フィールドと、パフォーマンスサマリーカウンタエントリのセットも含まれます。</block>
+  <block id="9d31f56324b0322ffe68df1873845bca" category="paragraph">検索 API は、システムへのシンプルなエントリポイントです。API に対する唯一の入力パラメータは自由形式の文字列であり、結果の JSON には分類された結果のリストが含まれています。タイプは、ストレージ、ホスト、データストアなど、インベントリのアセットタイプによって異なります。各タイプには、検索条件に一致するタイプのオブジェクトのリストが含まれます。</block>
+  <block id="20fdb910f7dde76d54b3392d04f062a5" category="section-title">API トークンの無効化または取り消し</block>
+  <block id="e5f3c9e3c596a48a99e4d03c8e19c62a" category="paragraph">API トークンを一時的に無効にするには、 API トークンリストページで API の「 3 つのドット」メニューをクリックし、 _Disable_ を選択します。トークンは ' 同じメニューを使用して '_Enable_ を選択していつでも再度有効にできます</block>
+  <block id="794a9d57da2bd5b4b16e0d11525d4f16" category="paragraph">API トークンを完全に削除するには、メニューから「 Revoke 」を選択します。取り消されたトークンは再度有効にすることはできません。新しいトークンを作成する必要があります。</block>
+  <block id="57d4e87edd35e992f8e4d3c6326ac8d8" category="inline-image-macro">API トークンを無効にするか、無効にします</block>
+  <block id="209d3712889d6411bf67708e93ef6c63" category="paragraph"><block ref="209d3712889d6411bf67708e93ef6c63" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
