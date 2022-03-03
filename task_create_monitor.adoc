@@ -189,9 +189,7 @@ image:Monitors_Alert_Description.png["アラートの対処方法と概要"]
 
 == システム定義のモニター
 
-Cloud Insights には、 2021 年 10 月から、指標とログの両方を対象とするシステム定義の多数のモニタが含まれます。
-
-詳細については、をご覧ください link:task_system_monitors.html["システム定義のモニター"]Cloud Insights に付属のモニタの説明も含めてください。
+を表示します link:task_system_monitors.html["システム定義のモニター"] Cloud Insights に含まれるモニタの説明については、ページを参照してください。
 
 
 

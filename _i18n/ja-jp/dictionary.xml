@@ -8162,8 +8162,6 @@
   <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">ボリュームのストレージ容量は、アプリケーションデータと顧客データの格納に使用されます。クラスタボリュームに格納されているデータが多いほど、将来のデータに使用できるストレージ容量は少なくなります。ボリューム内で使用されているデータストレージ容量が合計ストレージ容量に達すると、 使用可能なストレージ容量が不足しているため、ボリュームはこれ以上データを格納できません。…ボリュームの使用済みストレージ容量を監視することで、データサービスの継続性が確保されます。</block>
   <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">重大のしきい値を超えた場合にサービスの中断を最小限に抑えるには、即時アクションが必要です。 1.増加に対応するために、ボリュームのスペースを増やすことを検討してください。 2.容量を解放するために不要になったデータを削除することを検討してください。警告しきい値に違反した場合は、すぐに次のアクションを実行するよう計画してください。 ...1.拡張に対応するために、ボリュームのスペースを増やすことを検討してください。</block>
   <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">については以下を参照してください <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> ドキュメント</block>
-  <block id="20a28be528da8febfe3a95f2e81c374b" category="paragraph">Cloud Insights には、 2021 年 10 月から、指標とログの両方を対象とするシステム定義の多数のモニタが含まれます。</block>
-  <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">詳細については、をご覧ください <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>Cloud Insights に付属のモニタの説明も含めてください。</block>
   <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">管理ユニット (MU)</block>
   <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID は、 raw TB から管理対象ユニットへのレートが異なる場合に測定されます。フォーマットされていない StorageGRID の容量が 40TB 個になると、 1 個のスペースが請求されます <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="d4b92ffff3f3199f4cb5dc53c8c0cf84" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、制限ユーザーアクセスの管理を行うことができます。</block>
@@ -8548,4 +8546,5 @@
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
   <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</block>
+  <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">を表示します <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</block>
 </blocks>
