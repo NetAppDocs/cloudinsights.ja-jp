@@ -2740,27 +2740,18 @@
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">監視を作成して、ネットワーク内のリソースに関連する問題についてユーザに通知するアラートをトリガーするしきい値を設定します。たとえば、多数のプロトコルのいずれかに対して _node write latency _ に対してアラートを送信するモニタを作成できます。</block>
   <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">モニタとアラートは、 Cloud Insights Standard Edition 以降で使用できます。</block>
   <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">監視対象のしきい値と条件に達したとき、またはしきい値を超えたときに、 Cloud Insights はアラートを作成します。モニタには、 _Warning_threshold 、 a_Critical_threshold 、またはその両方を指定できます。</block>
-  <block id="839c283c68f2ef98e768a7975afd5e37" category="section-title">モニタの作成</block>
-  <block id="dfbbb6ad7733d63b680f9238f7dce10b" category="paragraph">次の例では、 _Volume Node NFS Write Latency _reaches or exceeds 200ms 、および 400ms に達したか超えると Critical アラートを通知する監視を作成します。いずれかのしきい値を 15 分以上連続して超えた場合にのみ、アラートを表示する必要があります。</block>
-  <block id="41072a21a5aa3d5e2d1c4423269fe77e" category="list-text">統合データを収集し、そのデータを収集するように Cloud Insights を設定する必要があります。</block>
   <block id="8d5905c4fc039f80da9bafa3d4cc6555" category="section-title">モニタを作成します</block>
   <block id="4dacc229b0bc4d687a0aceeaa94b8095" category="list-text">Cloud Insights メニューで、 * Alerts &gt; Manage Monitors * をクリックします</block>
   <block id="7a4d7843cd0dfc634c2485f99960f485" category="paragraph">[ モニタ ] リストページが表示され、現在設定されているモニタが表示されます。</block>
-  <block id="c98c015f4f0e82c2ed50d1fa3f1ddb9b" category="list-text">モニタを追加するには、 *+ モニタ * をクリックします。既存のモニタを変更するには、リストでモニタ名をクリックします。</block>
-  <block id="9b6aa409281581c32384a54312ef9422" category="paragraph">Monitor Configuration （モニタ設定）ダイアログが表示されます。</block>
-  <block id="e01bb84eddf46370a6fc520159f703b2" category="list-text">ドロップダウンで、監視するオブジェクトのタイプと指標を検索して選択します。例： _NetApp_ONTAP_volume_node_name _nfs_write_latency _ 。</block>
   <block id="0afd1ac0e8283e24d8739752316dccba" category="paragraph">フィルタを設定して、監視するオブジェクトの属性や指標を絞り込むことができます。</block>
   <block id="02421e310193c48e3a305e97cbba58c2" category="paragraph"><block ref="02421e310193c48e3a305e97cbba58c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8ce06b1a529052723e1fb36a1c2f1a25" category="admonition">複数条件のモニタ（ IOPS &gt; X 、レイテンシ &gt; Y など）を作成するには、最初の条件をしきい値、 2 番目の条件をフィルタとして定義します。</block>
   <block id="9ef1d5830a24b9e150ec53e978038289" category="section-title">モニターの条件を定義します。</block>
   <block id="2e75e9aa28dbca090ee157cf8d539e66" category="list-text">監視するオブジェクトと指標を選択したら、警告レベルと重大レベルのしきい値、またはその両方を設定します。</block>
-  <block id="4919fae5496230ab8ec4548d4c50c09b" category="list-text">_Warning_level には、 200 を入力します。この警告レベルを示す破線がグラフの例に表示されます。</block>
   <block id="a86a316c20ed3c30474a8a9bcbca7f2f" category="list-text">_Critical_level の場合は、 400 と入力します。このクリティカルレベルを示す破線がグラフの例に表示されます。</block>
   <block id="d00ff899ed7e3bcc490e418870ed0ce4" category="paragraph">このグラフには履歴データが表示されます。グラフ上の警告および重大レベルの線はモニタを視覚的に表しているため、モニタがアラートをトリガーするタイミングを簡単に確認できます。</block>
   <block id="390f4b7f0b6066d4e61aa66cd61b3e6c" category="list-text">実行間隔には、 _15 分 _ の間で _Continuously_ を選択します。</block>
   <block id="750f553c0f9776809a020b980f3dc25a" category="paragraph">しきい値を超えた時点でアラートをトリガーするか、しきい値が一定期間継続して違反になるまでアラートをトリガーするかを選択できます。この例では、合計 IOPS が警告レベルまたは重大レベルを超えるたびにアラートを表示する必要はありませんが、監視対象のオブジェクトがこれらのレベルの 1 つを 15 分以上継続して超えた場合にのみアラートを表示します。</block>
-  <block id="850762088c3c4c1f8b8fbd3a6391adf8" category="inline-image-macro">条件を定義します</block>
-  <block id="d678a6c1fad6d1a3decc8bc885eec2ca" category="paragraph"><block ref="d678a6c1fad6d1a3decc8bc885eec2ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17796f72f8255f9ed8d7715a3abc57ff" category="section-title">対処方法または追加情報を設定しています</block>
   <block id="0e7d6bdae9e86c17f6df720e53ca8bb5" category="paragraph">オプションの概要を追加したり、追加のインサイトや修正アクションを追加したりするには、「 * アラート概要の追加 * 」セクションに入力します。概要は 1024 文字以内で指定し、アラートとともに送信されます。分析情報 / 対処方法のフィールドは最大 67,000 文字で、アラートランディングページの概要セクションに表示されます。</block>
   <block id="9684215df29736c508d6e9d4bd429368" category="paragraph">これらのフィールドには、アラートを修正したり対処したりするためのメモ、リンク、手順を入力できます。</block>
@@ -2785,7 +2776,6 @@
   <block id="ec53a8c4f07baed5d8825072c89799be" category="list-text">ステータス</block>
   <block id="4c5b101f347b58f86395cf1a2e001ac3" category="list-text">監視対象のオブジェクト / 指標</block>
   <block id="80d050a497bb54c9b64ac9c69c1ca376" category="list-text">モニタの状態</block>
-  <block id="a2786365bad51d811f1602d581fb9374" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
   <block id="11a8d5beba27513c507b302b1ef0545d" category="paragraph">モニタをコピーするには、メニューから「 * Duplicate （複製） * 」を選択します。その後、新しいモニタを変更して、オブジェクト / 指標、フィルタ、条件、 E メール受信者などを変更できます</block>
   <block id="785af682b2cf8712cbb6039f68f0b952" category="paragraph">モニタが不要になった場合は、メニューから * Delete * を選択して削除できます。</block>
   <block id="03beff1464928590c48c07d06198e305" category="paragraph">グループ化により、関連するモニタを表示および管理できます。たとえば、環境内のストレージ専用の監視グループを使用したり、特定の受信者リストに関連する監視を使用したりできます。</block>
@@ -2797,7 +2787,6 @@
   <block id="e2bc4bcf0670da96e21e208bf6bcc766" category="paragraph"><block ref="e2bc4bcf0670da96e21e208bf6bcc766" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e30c931a1dd5474d9e4ca4e7c88580c7" category="admonition">グループからモニタを削除しても、モニタは Cloud Insights から削除されません。モニタを完全に削除するには、モニタを選択し、 _Delete_( 削除 ) をクリックします。これにより、その所有者であるグループからも削除され、どのユーザからも使用できなくなります。</block>
   <block id="cdd3916c98efbf8a767744185462ffec" category="paragraph">同様にモニタを別のグループに移動するには '_Move to Group_ を選択します</block>
-  <block id="4cd1a4d2d0079954614c21e4318c8a2a" category="admonition">各モニタは、一度に 1 つのグループにしか所属できません。</block>
   <block id="9f69190cb4874f8723dbc78ca0008d65" category="paragraph">グループ内のすべてのモニタを一度に一時停止または再開するには、グループのメニューを選択し、 _Pause_or_Resume_を クリックします。</block>
   <block id="c5cc340934b797d2f0bbc7777b820964" category="paragraph">同じメニューを使用して、グループの名前変更または削除を行います。グループを削除しても、 Cloud Insights からモニタは削除されません。これらのモニタは、 _ALL Monitors で使用できます。</block>
   <block id="6af18ae8f301c79fa391e8e18308336c" category="inline-image-macro">グループを一時停止します</block>
@@ -7446,7 +7435,6 @@
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">MacOS Agent のインストール</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">グループを監視します</block>
-  <block id="861cce966793d64acfe10deceab95b98" category="paragraph">新しいグループを作成するには、 [*"+" Create New Monitor Group*] ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。モニタを _all Monitors _ または _Custom Monitors _ グループから削除することはできませんこれらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
   <block id="479ed2d8eafc15acde1a42e1b6a98860" category="paragraph">関連：<block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
@@ -7476,8 +7464,6 @@
   <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insights のシリアル番号を入力してケースをオープンし、メモしておいたケースにログを添付します。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">ケースにログを添付するには、次の手順を実行します。 1.次のスクリプトをルート権限で実行し、出力ファイル（ cloudsecure-agent-scripts.zip ）を共有します。A/opt/NetApp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2 に設定します。次のコマンドを root 権限で 1 つずつ実行し、出力を共有します。AID cssys b.グループは cssys c. をCat /etc/os-release</block>
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">フィルタを調整しています</block>
-  <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">フィルタ処理中に、入力を開始すると、現在のテキストに基づいて * ワイルドカードフィルタ * を作成するオプションが表示されます。このオプションを選択すると、ワイルドカード式に一致するすべての結果が返されます。また、 NOT または OR を使用して *expressions * を作成することもできます。また、「 None 」オプションを選択して、フィールドで null 値をフィルタリングすることもできます。</block>
-  <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="55f6611cb342565cf0f5002400f53a95" category="inline-link-macro">アノテーション</block>
   <block id="bdc4d24d590d2c4f74d28cf65664af3f" category="list-text">* 注釈 * ：事前定義されたを使用します <block ref="bb75b560e5c64cb7dd473c74ae53e8f0" category="inline-link-macro-rx"></block> ウィジェットデータをフィルタリングします。</block>
   <block id="23b7f3c5f273dff8dfc28b1d3d393075" category="list-text">* Text * ：英数字の文字列。</block>
@@ -7605,8 +7591,6 @@
   <block id="48a056707ced77b5d50afec66c6d1fb0" category="paragraph">ワイルドカードまたは式に基づくフィルタ（例 フィルタフィールドには、「なし」などは濃い青で表示されます。リストから直接選択した項目は、水色で表示されます。</block>
   <block id="4c2b4732517e1639ec049c545ac89dea" category="inline-image-macro">ワイルドカードおよび選択した項目を表示するフィルタ</block>
   <block id="900a446c6bbff849c8592d8788be4d66" category="paragraph"><block ref="900a446c6bbff849c8592d8788be4d66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">モニタのアクティブなアラートを示すアイコン</block>
-  <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">モニタ名の横にある「ベル」アイコンをクリックすると、モニタに関連付けられているアクティブなアラートを表示できます。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">証明書を信頼ストアから削除します。</block>
@@ -8520,14 +8504,6 @@
   <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">代わりに、このページを使用して</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
   <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">このページは廃止されたため、更新されません。にアクセスしてください <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
-  <block id="eca6c1d25244ba63719b304531bddef1" category="section-title">警告と重要対アラート解決</block>
-  <block id="923c3cf6fbd418a123c8ebed052a57c2" category="paragraph">警告、重大、または解決済みのいずれのアラート通知を送信するかは、超過したしきい値によって異なります。</block>
-  <block id="dd79419ccedc558e5791cee0d2f316ba" category="list-text">非トリガーから警告への交差 - 警告アラートを送信します</block>
-  <block id="675f6f761966f8fa689b2b7048ae2e6e" category="list-text">トリガーされていないアラートからクリティカル送信アラートへの横断</block>
-  <block id="eba47cd4406c3d262fae2bbfc7b02691" category="list-text">警告からクリティカル送信への超過 - 重大アラートを送信します</block>
-  <block id="b574b2030f0f6245566ee094ff55bb41" category="list-text">重大から警告への交差 - 警告アラートを送信します</block>
-  <block id="72a32144305d760749f3bb911d5250ba" category="list-text">警告からトリガーされていない - 解決済みアラートを送信します</block>
-  <block id="9a8ef118d165349829d8c21e084de814" category="list-text">クリティカルからトリガーされない - 解決済みアラートを送信します</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">「 Heartbeat Error: message 」が表示されています</block>
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch Agent Metrics 名前空間</block>
@@ -8539,4 +8515,37 @@
   <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">カスタムモニタは、一時停止、再開、削除、または別のグループへの移動が可能です。システム定義のモニタは一時停止および再開できますが、削除または移動することはできません。</block>
   <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">カスタムモニタグループ</block>
   <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">新しいカスタムモニタグループを作成するには、「 + 」「新規モニタグループの作成 * 」ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</block>
+  <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">既存のモニタを変更するには、リストでモニタ名をクリックします。</block>
+  <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">モニタを追加するには、 *+ モニタ * をクリックします。</block>
+  <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">システムモニタまたはログモニタを選択します</block>
+  <block id="3aff4942a9a35d98c6fdcb7dee853d59" category="paragraph"><block ref="3aff4942a9a35d98c6fdcb7dee853d59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c58ee317c84221459556bf1d8e52753f" category="paragraph">新しいモニタを追加すると、メトリックモニタまたはログモニタを作成するよう求められます。</block>
+  <block id="fc2f22eed1d01c032a18cfe4cba78d61" category="list-text">_Metric _ は、インフラまたはパフォーマンスに関連するトリガーに関するアラートを監視します</block>
+  <block id="a0974f4b9ee8ae7e61310df23d207909" category="list-text">ログ関連のアクティビティに関するアラートを監視します</block>
+  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">モニタタイプを選択すると、モニタ設定ダイアログが表示されます。</block>
+  <block id="269c9bcd9ea3883a3a121a1b88af9e34" category="section-title">メートル法モニタ（ Metric Monitor</block>
+  <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">ドロップダウンで、監視するオブジェクトタイプと指標を検索して選択します。</block>
+  <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">_Warning_level には、この例に 200 を入力します。この警告レベルを示す破線がグラフの例に表示されます。</block>
+  <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">モニタの条件を定義します</block>
+  <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">ログモニタ</block>
+  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">*Log monitor * を作成する場合は、まず使用可能なログリストから、監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。</block>
+  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">たとえば、 logs.netapp.ems ソースで「 object.stor.unavailable 」というメッセージタイプをフィルタリングするように選択できます。</block>
+  <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">ログモニタフィルタを空にすることはできません。</block>
+  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">監視するログを選択し、フィルタを設定します</block>
+  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="454176c970e70022beb38f8813bea495" category="section-title">アラートの動作を定義します</block>
+  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">ログアラートがトリガーされたときのアラートの送信方法を選択します。上で設定したフィルタ条件に基づいて、 _Warning_ 、 _Critical_ 、または _Informational_severity でアラートを生成するようにモニタを設定できます。</block>
+  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">監視するログ動作を定義します</block>
+  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">アラート解決の動作を定義します</block>
+  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">ログ監視アラートの解決方法を選択できます。次の 3 つの選択肢があります。</block>
+  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 即時解決 * ：このアラートは、対処不要で即座に解決されます</block>
+  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 時間に基づく解決 * ：アラートは指定した時間が経過すると解決されます</block>
+  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* ログエントリに基づいて解決 * ：このアラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
+  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">アラート解決</block>
+  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
+  <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
+  <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</block>
 </blocks>
