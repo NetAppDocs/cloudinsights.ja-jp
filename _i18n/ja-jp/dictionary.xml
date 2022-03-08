@@ -8491,7 +8491,6 @@
   <block id="57cb6cf5756643ef9f1a5fc9914bed03" category="cell">1. ONTAP コレクタが「実行中」の状態かどうかを確認します。「はい」の場合は、一部のファイルを開いて、 CIFS クライアント VM 上で一部の CIFS イベントが生成されていることを確認します。2. アクティビティが表示されない場合は、 SVM にログインして次のコマンドを入力してください。_&lt;svm&gt; event log show -source fpolicy_fpolicy に関連するエラーがないことを確認してください。3. アクティビティが表示されない場合は、 SVM にログインしてください。次の command_&lt;svm&gt; fpolicy show_Check を入力して、「 cloudsecure_」 というプレフィックスの付いた FPolicy ポリシーが設定され、ステータスが「 on 」になっていることを確認します。設定されていないと、 Agent が SVM でコマンドを実行できない可能性が高くなります。ページの先頭に記載されているすべての前提条件を満たしていることを確認してください。</block>
   <block id="419d595db852dff067e69fe22233733e" category="cell">エージェントに 50 個を超えるデータコレクタを追加できません。</block>
   <block id="68ba2b7728c2b3aa469884aad6bd57a7" category="cell">エージェントに追加できるデータコレクタは 50 個までです。Active Directory 、 SVM 、その他のコレクタなど、すべてのコレクタタイプを組み合わせて使用できます。</block>
-  <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* ユーザーが過去 2 時間に作成したファイルをフィルタリングするためのノイズリダクション * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">一部の NFS イベントが UI に表示されません。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">次を確認します。 1.POSIX 属性が設定された AD サーバのユーザディレクトリコレクタは、 UI から unixid 属性が有効になっている必要があります。2. ユーザページで UI 3 から NFS アクセスを実行しているユーザを検索すると、アクセス権が表示されます。raw イベント（ユーザがまだ検出されていないイベント）は NFS 4 ではサポートされません。NFS エクスポートへの匿名アクセスは監視されません。5. NFS4.1 よりも小さいバージョンの NFS を使用していることを確認します。</block>
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights は統合データの収集エージェントとして Telegraf をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。</block>
@@ -8547,4 +8546,5 @@
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
   <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">を表示します <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</block>
+  <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">* ユーザーが新しく作成したファイル（過去 2 時間以内）を除外するためのノイズ削減 * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
 </blocks>
