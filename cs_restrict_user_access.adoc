@@ -26,40 +26,34 @@ summary: Cloud Secure を使用すると、破壊の疑いがある場合にユ�
 
 この機能を使用するには、 SMB と NFS のエクスポートポリシーを設定する必要があります。NFS および SMB がデータソースコレクタで設定されている場合は、次の手順に従います。
 
-NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。SMB の場合は、エクスポートポリシーが設定されている必要があります。
+NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。
 
-お客様がクラスタクレデンシャルを使用しておらず、 csuser を使用している場合は、ユーザアクセス制限をサポートするために、次の手順を実行する必要があります。
+SMB の場合は、エクスポートポリシーが設定されている必要があります。
 
-クラスタ IP を使用して Data Collector を（ csuser とともに）設定する場合は、 ONTAP コマンドラインから次の手順を実行します。
+クラスタ / SVM クレデンシャルを使用しておらず、 csuser を使用している場合は、最初に次の手順を実行して、 Cloud Secure にカスタムエクスポートポリシールールを作成させます。
 
- security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-vserver IP を使用して Data Collector （ csuser と一緒に）を設定する場合は、 ONTAP コマンドラインから次の操作を実行し、 Correct _<vservername> _ を挿入します。
-
- security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all
-デフォルトでは、 SVM で NFS サービスを作成するときにエクスポートポリシーが作成されます。
-
-エクスポートポリシーを設定するコマンドは次のとおりです。以下のコマンドをテキストエディタにコピーし、 <vserver> 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。注：コマンドを実行する前に、 advanced モードに切り替える必要があります。
-
-クラスタモードで csuser を使用している場合：
+クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。
 
  security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-SVM モードで csuser を使用している場合：
+SVM のクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次のコマンドを実行し、正しい <vservername> を挿入します。
 
  security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all
-どちらのモードでも、クラスタモードと SVM モードの場合は、 SMB のみに対して次のコマンドを実行します。
+デフォルトのエクスポートポリシーを設定するコマンドは次のとおりです。コマンドをテキストエディタにコピーし、 <vserver> 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。コマンドを実行する前に、 advanced モードに切り替える必要があります。
 
-....
-set -privilege advanced
-cifs options modify -is-exportpolicy-enabled true -vserver <vserver>
-export-policy rule create -vserver <vserver> -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any
-....
+
+TIP: これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。
+
+ set -privilege advanced
+ cifs options modify -is-exportpolicy-enabled true -vserver <vserver>
+ export-policy rule create -vserver <vserver> -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any
+
+NOTE: clientmatch は、特定のアドレスまたはサブネット（例： 10.0.3.212 または 192.168.5.0/24 ）、ホスト名、または @ ネットグループなどのネットグループです。エクスポートポリシーを使用して可能なすべての IP4 アドレスに適用する場合は、 clientmatch を 0.0.0.0/0 に設定します。
+
 _exportpolicy-rule_exportpolicy-が 正しく設定されているかどうかを確認するには、上記のコマンドを実行した後で次のコマンドを実行します。
 
-....
-cifs options show  -fields is-exportpolicy-enabled -vserver <vserver>
-export-policy show -vserver <vserver>
-export-policy rule show -policyname default -vserver <vserver>
-....
+ cifs options show  -fields is-exportpolicy-enabled -vserver <vserver>
+ export-policy show -vserver <vserver>
+ export-policy rule show -policyname default -vserver <vserver>
 
 
 === 機能を有効にする方法
