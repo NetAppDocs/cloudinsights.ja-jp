@@ -1891,7 +1891,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-08 14:59:08 +0000">03/08/2022</time>
+    <time datetime="2022-03-08 16:17:15 +0000">03/08/2022</time>
     
   
 
@@ -1938,43 +1938,40 @@
 <p>この機能を使用するには、 SMB と NFS のエクスポートポリシーを設定する必要があります。NFS および SMB がデータソースコレクタで設定されている場合は、次の手順に従います。</p>
 </div>
 <div class="paragraph">
-<p>NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。SMB の場合は、エクスポートポリシーが設定されている必要があります。</p>
+<p>NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。</p>
 </div>
 <div class="paragraph">
-<p>お客様がクラスタクレデンシャルを使用しておらず、 csuser を使用している場合は、ユーザアクセス制限をサポートするために、次の手順を実行する必要があります。</p>
+<p>SMB の場合は、エクスポートポリシーが設定されている必要があります。</p>
 </div>
 <div class="paragraph">
-<p>クラスタ IP を使用して Data Collector を（ csuser とともに）設定する場合は、 ONTAP コマンドラインから次の手順を実行します。</p>
+<p>クラスタ / SVM クレデンシャルを使用しておらず、 csuser を使用している場合は、最初に次の手順を実行して、 Cloud Secure にカスタムエクスポートポリシールールを作成させます。</p>
+</div>
+<div class="paragraph">
+<p>クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。</p>
 </div>
 <div class="literalblock">
 <div class="content">
 <pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-vserver IP を使用して Data Collector （ csuser と一緒に）を設定する場合は、 ONTAP コマンドラインから次の操作を実行し、 Correct _&lt;vservername&gt; _ を挿入します。</pre>
+SVM のクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次のコマンドを実行し、正しい &lt;vservername&gt; を挿入します。</pre>
 </div>
 </div>
 <div class="literalblock">
 <div class="content">
 <pre> security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all
-デフォルトでは、 SVM で NFS サービスを作成するときにエクスポートポリシーが作成されます。</pre>
+デフォルトのエクスポートポリシーを設定するコマンドは次のとおりです。コマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。コマンドを実行する前に、 advanced モードに切り替える必要があります。</pre>
 </div>
 </div>
-<div class="paragraph">
-<p>エクスポートポリシーを設定するコマンドは次のとおりです。以下のコマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。注：コマンドを実行する前に、 advanced モードに切り替える必要があります。</p>
-</div>
-<div class="paragraph">
-<p>クラスタモードで csuser を使用している場合：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-SVM モードで csuser を使用している場合：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre> security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all
-どちらのモードでも、クラスタモードと SVM モードの場合は、 SMB のみに対して次のコマンドを実行します。</pre>
-</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。
+</td>
+</tr>
+</table>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -1982,6 +1979,18 @@ SVM モードで csuser を使用している場合：</pre>
 cifs options modify -is-exportpolicy-enabled true -vserver &lt;vserver&gt;
 export-policy rule create -vserver &lt;vserver&gt; -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any</pre>
 </div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
+</td>
+<td class="content">
+clientmatch は、特定のアドレスまたはサブネット（例： 10.0.3.212 または 192.168.5.0/24 ）、ホスト名、または @ ネットグループなどのネットグループです。エクスポートポリシーを使用して可能なすべての IP4 アドレスに適用する場合は、 clientmatch を 0.0.0.0/0 に設定します。
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>_exportpolicy-rule_exportpolicy-が 正しく設定されているかどうかを確認するには、上記のコマンドを実行した後で次のコマンドを実行します。</p>
