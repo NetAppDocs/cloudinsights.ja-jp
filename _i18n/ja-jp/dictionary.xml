@@ -8034,8 +8034,6 @@
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">ONTAP の Advanced Counter および EMS Log Collection を有効にします</block>
   <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">システムモニタのデフォルトの状態は _Paused です。モニタを再開する前に、 Data Collector で _Advanced Counter Data Collection_and _Enable ONTAP EMS log collection_が 有効になっていることを確認する必要があります。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied"</block>
-  <block id="552ea4b269315a61fd8df84d4c5f4bc4" category="section-title">先行入力を提案する高度なテキストフィルタリング</block>
-  <block id="d7246d99ca35ad0c30da801caacfa83a" category="paragraph">フィールドの値を選択すると、そのクエリの他のフィルタには、そのフィルタに関連する値が表示されます。たとえば ' 特定の object_Name_ にフィルタを設定した場合 '_Model_ にフィルタを適用するフィールドには ' そのオブジェクト名に関連する値のみが表示されます</block>
   <block id="3390387c68439da10e36e8f518ecdc02" category="paragraph">テキストフィルタのみで、コンテキストタイプアヘッド候補が表示されることに注意してください。日付、 Enum （ list ）などは先行入力候補を表示しません。つまり、列挙型フィールドにフィルタを設定し、他のテキストフィールドをコンテキストでフィルタリングすることができます。たとえば、データセンターなどの Enum フィールドの値を選択すると、他のフィルタにはそのデータセンターのモデル / 名前のみが表示されますが、逆の場合は表示されません。</block>
   <block id="b334116b5a6a9ee3f65d46240e877891" category="paragraph">選択した時間範囲には、フィルタに表示されたデータのコンテキストも表示されます。</block>
   <block id="87559df59f765da7386b723eed69c3fd" category="section-title">フィルタの単位を選択します</block>
@@ -8607,4 +8605,8 @@
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">システムモニタには、 ONTAP インフラストラクチャ（ストレージ、ボリュームなど）のモニタ、ワークロード（ログモニタなど）、またはその他のグループが含まれます。ネットアップでは、お客様のニーズと製品の機能を常に評価しており、必要に応じてシステムの監視やグループの更新や追加を行います。</block>
   <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">必要に応じてモニタを含めるための独自のグループを作成できます。たとえば、すべてのストレージ関連モニタのグループを作成する場合などです。</block>
   <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">* サスペンド状態のモニタ * は、システムによってモニタがサスペンドされている場合にのみ表示されます。</block>
+  <block id="a43e9f5999fa1ed59d407736252e625d" category="section-title">コンテキストタイプアヘッド提案を使用した高度なテキストフィルタリング</block>
+  <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">ウィジェットクエリでのフィルタ処理は _contextual _ です。フィールドのフィルタ値または値を選択すると、そのクエリの他のフィルタには、そのフィルタに関連する値が表示されます。たとえば ' 特定の object_Name_ にフィルタを設定した場合 '_Model_ にフィルタを適用するフィールドには ' そのオブジェクト名に関連する値のみが表示されます</block>
+  <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">コンテキストフィルタリングでは、環境 ダッシュボードページの変数（テキストタイプの属性または注釈のみ）も使用できます。1 つの変数にファイラー値を選択すると、関連オブジェクトを使用する他のすべての変数には、それらの関連変数のコンテキストに基づいたフィルタ値のみが表示されます。</block>
+  <block id="efbb3ca459b4e1c502f697d1a65cc3d3" category="paragraph">変数でのフィルタ処理は _contextual _ です。変数のフィルタ値または値を選択すると、ページ上の他の変数には、そのフィルタに関連する値のみが表示されます。たとえば、変数フィルタを特定のストレージモデルに設定すると、 Storage _Name _ でフィルタするように設定された変数には、そのモデルに関連する値のみが表示されます。</block>
 </blocks>
