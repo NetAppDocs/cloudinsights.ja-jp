@@ -262,8 +262,6 @@ sidebar:
           url: "/task_dc_brocade_bna.html"
         - title: Fibre Channel スイッチ
           url: "/task_dc_brocade_fc_switch.html"
-      - title: Ceph
-        url: "/task_dc_ceph_storage.html"
       - title: シスコ
         url: "/task_dc_cisco_fc_switch.html"
       - title: デル
