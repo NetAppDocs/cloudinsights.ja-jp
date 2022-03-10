@@ -20,7 +20,7 @@ Cloud Insights では、 Cisco FC Switch データコレクタから次のイン
 
 [cols="2*"]
 |===
-| フィールド | 説明 
+| ベンダー / モデルの用語 | Cloud Insights の用語 
 
 
 | スイッチ | スイッチ 
