@@ -1,24 +1,24 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_emc_vnx_unified.html 
-keywords: data collector, VNX, EMC 
+keywords: data collector, VNX, EMC, Dell 
 summary: VNX データコレクタの構成。 
 ---
-= EMC VNX Unified データコレクタの構成
+= Dell EMC VNX Unified データコレクタの設定
 
 
 [role="lead"]
-EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。
+Dell EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。
 
 
 
 == 用語集
 
-Cloud Insights では、 EMC VNX ユニファイドデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Cloud Insights では、このデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| フィールド | 説明 
+| ベンダー / モデルの用語 | Cloud Insights の用語 
 
 
 | ディスク | ディスク 

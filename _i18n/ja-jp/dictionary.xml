@@ -2797,7 +2797,6 @@
   <block id="9a6f1c698cc1e100926a6444a2a7f560" category="summary">Lenovo データコレクタの設定。</block>
   <block id="b8e7dba3eebb606afc2cdea5e550fae8" category="doc">Lenovo データコレクタ</block>
   <block id="b7550fa0abbe6f770a66125cfc4f1ea4" category="paragraph">Cloud Insights は 'Lenovo のデータコレクタを使用して 'Lenovo HX ストレージ・システムのインベントリとパフォーマンス・データを検出します</block>
-  <block id="23880582533f727d2fb6ae300166d972" category="paragraph">Cloud Insights は、 Lenovo データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="6590f621515d064417bb91bd8f6cb526" category="cell">Nutanix コンテナ</block>
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP ポート要件： 9440</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">アレイへの接続に使用する TCP ポート。デフォルトは 9440. です。</block>
@@ -3461,9 +3460,6 @@
   <block id="eaa7024d6bed491bbaada5e2818c012a" category="inline-link-macro">Zookeeper の追加</block>
   <block id="e00d8ef6824afbc3eb164b885bda2e98" category="cell"><block ref="e00d8ef6824afbc3eb164b885bda2e98" category="inline-link-macro-rx"></block></block>
   <block id="ef4bf6f0faac05bfc1b9c6d8660008c2" category="summary">VNX データコレクタの構成。</block>
-  <block id="5dd8fec2f3419b311df4a52aba6e8d71" category="doc">EMC VNX Unified データコレクタの構成</block>
-  <block id="7f5c08046412547c25f5d5b32150c69d" category="paragraph">EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
-  <block id="9824037158f7f3ff96d24e3abc2ec1f5" category="paragraph">Cloud Insights では、 EMC VNX ユニファイドデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="444d4c127af1a977c6edbecdc0165c56" category="cell">ディスクフォルダ</block>
   <block id="53b936091a984a22f4042eeb94499891" category="cell">ファイルシステム</block>
   <block id="6152c3cd584051fa435ae70586f8bb59" category="cell">ストレージプロセッサ</block>
@@ -8545,4 +8541,6 @@
   <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。</block>
   <block id="db386e038002cc8473226f0494cef95f" category="admonition">clientmatch は、特定のアドレスまたはサブネット（例： 10.0.3.212 または 192.168.5.0/24 ）、ホスト名、または @ ネットグループなどのネットグループです。エクスポートポリシーを使用して可能なすべての IP4 アドレスに適用する場合は、 clientmatch を 0.0.0.0/0 に設定します。</block>
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告される Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では、 vSphere クラスタ名の先頭に vSphere データセンター名が付き、バックスラッシュ「 DC1\clusterA 」が Cloud Insights データセンター DC1 内のクラスタ A 内のハイパーバイザーでレポートされるクラスタ名です</block>
+  <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">Dell EMC VNX Unified データコレクタの設定</block>
+  <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">Dell EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
 </blocks>
