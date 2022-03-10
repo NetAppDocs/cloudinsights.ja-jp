@@ -3819,7 +3819,6 @@
   <block id="caa44442950fc55280b06c8cedc9483c" category="cell">デフォルトは 3 です</block>
   <block id="98196464d4c2c123b9a3591724c6d1bc" category="cell">通信ポート</block>
   <block id="755d3a152497d4bd8cf5072c3539fcc9" category="cell">デバイスリストのフィルタ ...</block>
-  <block id="832ba929e26e6883830b8a8143167c3b" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります</block>
   <block id="be79d6e6a44e0a57d37256e5bc2c0909" category="cell">解決策： * 入力された資格情報と IP アドレスを確認してください。* VMware Infrastructure Client を使用して、 Virtual Center との通信を試みます。* Managed Object Browser （ MOB など）を使用して Virtual Center と通信してみます。</block>
   <block id="4715797e850d7872546c22d0a379ca4f" category="summary">クエリを使用して、複数のアプリケーションやアノテーションをオブジェクトに割り当てたり、オブジェクトから複数のアプリケーションやアノテーションを削除したりできます。</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">アセットに対する複数のアプリケーションの割り当てと削除</block>
@@ -7225,7 +7224,6 @@
   <block id="93933c6ca68705cf2c6eee19987428b0" category="sidebar">Broadcom</block>
   <block id="0fd95facb681ca997fc73f6a94deca25" category="sidebar">Brocade Network Advisor の略</block>
   <block id="413cdf3c9d7f8e63cf5e98c30d03dde2" category="sidebar">Fibre Channel スイッチ</block>
-  <block id="9ef9ac4a14f1ba2a121f57b42ecf4e5e" category="sidebar">Ceph</block>
   <block id="7b1d1185b835814de783483f686e9825" category="sidebar">シスコ</block>
   <block id="ab2724d10b490217916b1bcc56aef48f" category="sidebar">デル</block>
   <block id="c24155c400371d139928f6e0f1fbb144" category="sidebar">XC シリーズ</block>
@@ -8546,4 +8544,5 @@
   <block id="fa77163b4c273ad38c4b189f407a970b" category="paragraph">デフォルトのエクスポートポリシーを設定するコマンドは次のとおりです。コマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。コマンドを実行する前に、 advanced モードに切り替える必要があります。</block>
   <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。</block>
   <block id="db386e038002cc8473226f0494cef95f" category="admonition">clientmatch は、特定のアドレスまたはサブネット（例： 10.0.3.212 または 192.168.5.0/24 ）、ホスト名、または @ ネットグループなどのネットグループです。エクスポートポリシーを使用して可能なすべての IP4 アドレスに適用する場合は、 clientmatch を 0.0.0.0/0 に設定します。</block>
+  <block id="f7d642fa886f4ad115e6600d3a187925" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、ハイパーバイザーで CI によって報告される CI 形式のクラスタ名を使用します。 CI では vSphere クラスタ名の先頭に vSphere データセンター名が付き、クラスタ名として DC1\clusterA をバックスラッシュとして使用します。 CI では、データセンター内のクラスタ A のハイパーバイザーについてレポートされます</block>
 </blocks>
