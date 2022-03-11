@@ -8542,22 +8542,10 @@
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
   <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID の略</block>
-  <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトによって生成される指標や、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集されたデータなどの「統合」データに対してしきい値を設定できます。これらの _ は、警告レベルまたは重大レベルのしきい値を超えたときにアラートを監視します。</block>
-  <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">また、警告レベル、重大レベル、または情報レベルのアラートをトリガーするモニタを作成して、指定された _ ログイベント _ が検出されたときに生成することもできます。</block>
-  <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">Cloud Insights には、いくつかの機能があります <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> また、環境に応じて異なります。</block>
-  <block id="4712a61ef2a234a93ba9db41c631d5b8" category="section-title">メトリックまたはログモニタ</block>
-  <block id="30d058d2916c7c827bc5728654ad1a8d" category="paragraph">モニタタイプを選択すると、モニタ設定ダイアログが表示されます。構成は、作成するモニタのタイプによって異なります。</block>
-  <block id="f9014555d08521285ca544350f9dc25a" category="paragraph">次のモニタグループが表示されます。グループ名の横には、グループに含まれるモニタの数が表示されます。</block>
-  <block id="d9e85911262ba37a5d999e863491d888" category="list-text">* カスタムモニター * には、ユーザーが作成したすべてのモニターが一覧表示されます。</block>
-  <block id="70d96c6a41afb254c16b7b9540d18895" category="list-text">* サスペンドされたモニタ * には、 Cloud Insights によってサスペンドされたすべてのシステムモニタが表示されます。</block>
-  <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">システム定義のモニタ</block>
-  <block id="69a8fd4125eb679015842f32069fd971" category="list-text">Cloud Insights には、いくつかの * システム・モニター・グループ * が表示されます。このグループには、の 1 つ以上のグループが表示されます <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>ONTAP インフラストラクチャおよびワークロードモニタを含む。</block>
-  <block id="c3c2ba86297c67abf1cd56f0d77e8cac" category="section-title">一時停止したモニタ</block>
-  <block id="1f4408604ff975de8817060ea3a7330a" category="paragraph">このグループは、 Cloud Insights が 1 つ以上のモニタを一時停止している場合にのみ表示されます。モニタが過度のアラートまたは継続的なアラートを生成している場合、モニタが一時停止することがあります。モニタがカスタムモニタの場合は、継続的なアラートの発生を防止する条件を変更してから、モニタを再開します。問題 がサスペンションを引き起こしている状態が解消されると、モニタはサスペンド状態のモニタグループから削除されます。</block>
-  <block id="5f8a706a9be7411e7b652c8139cb2a37" category="paragraph">これらのグループには、モニタに必要なデバイスやログが環境に含まれている限り、 Cloud Insights が提供するモニタが表示されます。</block>
-  <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">システム定義のモニタは、変更、別のグループへの移動、または削除できません。ただし、システムモニタを複製して、複製を変更または移動することはできます。</block>
-  <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">システムモニタには、 ONTAP インフラストラクチャ（ストレージ、ボリュームなど）のモニタ、ワークロード（ログモニタなど）、またはその他のグループが含まれます。ネットアップでは、お客様のニーズと製品の機能を常に評価しており、必要に応じてシステムの監視やグループの更新や追加を行います。</block>
-  <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">必要に応じてモニタを含めるための独自のグループを作成できます。たとえば、すべてのストレージ関連モニタのグループを作成する場合などです。</block>
-  <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">* サスペンド状態のモニタ * は、システムによってモニタがサスペンドされている場合にのみ表示されます。</block>
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告される Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では、 vSphere クラスタ名の先頭に vSphere データセンター名が付き、バックスラッシュ「 DC1\clusterA 」が Cloud Insights データセンター DC1 内のクラスタ A 内のハイパーバイザーでレポートされるクラスタ名です</block>
+  <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">監視対象のしきい値と条件に達したとき、またはしきい値を超えたときに、 Cloud Insights はアラートを作成します。モニタには、 _Warning_threshold 、 a_Critical_threshold 、またはその両方を指定できます。</block>
+  <block id="de1246f2ba95371b711d65f46fa80725" category="paragraph">監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトや、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集された統合データなどの「インフラ」オブジェクトにしきい値を設定できます。しきい値を超えたときにアラートを監視し、警告レベルのアラート、重大レベルのアラート、またはその両方のしきい値を設定できます。</block>
+  <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">については以下を参照してください <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> ドキュメント</block>
+  <block id="8d5905c4fc039f80da9bafa3d4cc6555" category="section-title">モニタを作成します</block>
+  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">モニタタイプを選択すると、モニタ設定ダイアログが表示されます。</block>
 </blocks>
