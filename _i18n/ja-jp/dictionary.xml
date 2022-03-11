@@ -8542,7 +8542,6 @@
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
   <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID の略</block>
-  <block id="2fb85e5bf896399f61e79b4b39655b2b" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告された Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では vSphere クラスタ名の先頭に vSphere データセンター名が付き、データセンター DC1 内のクラスタ A 内のハイパーバイザーで Cloud Insights が報告するクラスタ名に「 DC1/clusterA 」が付きます</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトによって生成される指標や、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集されたデータなどの「統合」データに対してしきい値を設定できます。これらの _ は、警告レベルまたは重大レベルのしきい値を超えたときにアラートを監視します。</block>
   <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">また、警告レベル、重大レベル、または情報レベルのアラートをトリガーするモニタを作成して、指定された _ ログイベント _ が検出されたときに生成することもできます。</block>
   <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">Cloud Insights には、いくつかの機能があります <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> また、環境に応じて異なります。</block>
@@ -8560,4 +8559,5 @@
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">システムモニタには、 ONTAP インフラストラクチャ（ストレージ、ボリュームなど）のモニタ、ワークロード（ログモニタなど）、またはその他のグループが含まれます。ネットアップでは、お客様のニーズと製品の機能を常に評価しており、必要に応じてシステムの監視やグループの更新や追加を行います。</block>
   <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">必要に応じてモニタを含めるための独自のグループを作成できます。たとえば、すべてのストレージ関連モニタのグループを作成する場合などです。</block>
   <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">* サスペンド状態のモニタ * は、システムによってモニタがサスペンドされている場合にのみ表示されます。</block>
+  <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告される Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では、 vSphere クラスタ名の先頭に vSphere データセンター名が付き、バックスラッシュ「 DC1\clusterA 」が Cloud Insights データセンター DC1 内のクラスタ A 内のハイパーバイザーでレポートされるクラスタ名です</block>
 </blocks>
