@@ -8543,4 +8543,9 @@
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告される Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では、 vSphere クラスタ名の先頭に vSphere データセンター名が付き、バックスラッシュ「 DC1\clusterA 」が Cloud Insights データセンター DC1 内のクラスタ A 内のハイパーバイザーでレポートされるクラスタ名です</block>
   <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">Dell EMC VNX Unified データコレクタの設定</block>
   <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">Dell EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
+  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">次のデータコレクタは、異なる Raw TiB から管理ユニットレートで測定されます。これらのデータコレクタの 40TiB 分の未フォーマット容量は、 1 つの管理ユニット（ MU ）として課金されます。</block>
+  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS の場合</block>
+  <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
+  <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
+  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID の略</block>
 </blocks>
