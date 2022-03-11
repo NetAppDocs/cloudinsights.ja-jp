@@ -50,10 +50,10 @@
   
   <link rel="stylesheet" href="/ja-jp/cloudinsights/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ja-jp/cloudinsights/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ja-jp/cloudinsights/css/product-family.css' type="text/css">
   <link rel='stylesheet' href='/ja-jp/cloudinsights/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/cloudinsights/js/na-search.js'></script><script src='/ja-jp/cloudinsights/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/cloudinsights/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/cloudinsights/css/prism-netapp.css' type='text/css'>
 
@@ -131,7 +131,6 @@
   }
   </script>
   <script src='/ja-jp/cloudinsights/js/version-dropdown.js'></script>
-  <script src='/ja-jp/cloudinsights/js/product-family.js'></script>
   <script src='/ja-jp/cloudinsights/js/FileSaver.min.js'></script>
   <script src='/ja-jp/cloudinsights/js/jszip-utils.min.js'></script>
   <script src='/ja-jp/cloudinsights/js/jszip.min.js'></script>
@@ -144,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Cloud Insights に登録しています](https://docs.netapp.com/ja-jp/cloudinsights/concept_subscribing_to_cloud_insights.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/concept_subscribing_to_cloud_insights.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -1846,19 +1864,16 @@
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">ホーム</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">ドキュメント</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ja-jp/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          Cloud Insights に登録しています
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -1887,7 +1902,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-10 19:38:33 +0000">03/10/2022</time>
+    <time datetime="2022-03-11 18:49:11 +0000">03/11/2022</time>
     
   
 
@@ -1904,7 +1919,6 @@
 
 
 </p>
-
 
 <div id="preamble">
 <div class="sectionbody">
@@ -2143,6 +2157,25 @@ Cloud Insights の評価にさらに時間が必要で、トライアルの有�
 </ul>
 </div>
 <div class="paragraph">
+<p>次のデータコレクタは、異なる Raw TiB から管理ユニットレートで測定されます。これらのデータコレクタの 40TiB 分の未フォーマット容量は、 1 つの管理ユニット（ MU ）として課金されます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dell EMC ECS の場合</p>
+</li>
+<li>
+<p>Hitachi Content Platform の略</p>
+</li>
+<li>
+<p>IBM Cleversafe</p>
+</li>
+<li>
+<p>NetApp StorageGRID の略</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
 <p>1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください <a href="#how-do-i-subscribe">下</a> 詳細：</p>
 </div>
 </div>
@@ -2348,25 +2381,6 @@ AWS Marketplace のページで「 * アカウントの設定 * 」をクリッ�
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Cloud Insights に登録しています](https://docs.netapp.com/ja-jp/cloudinsights/concept_subscribing_to_cloud_insights.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/concept_subscribing_to_cloud_insights.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">このページ</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
   <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
