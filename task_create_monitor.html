@@ -1902,7 +1902,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-11 23:41:04 +0000">03/11/2022</time>
+    <time datetime="2022-03-12 00:02:56 +0000">03/12/2022</time>
     
   
 
@@ -1915,28 +1915,11 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/netapp-mjryan">
-    <img  class="avatar avatar-small"
-          alt="netapp-mjryan"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/68082657?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
 </p>
 
-<div id="toc" class="toc">
-<div id="toctitle">目次</div>
-<ul class="sectlevel1">
-<li><a href="#メトリックまたはログモニタ">メトリックまたはログモニタ</a></li>
-<li><a href="#監視リスト">監視リスト</a></li>
-<li><a href="#グループを監視します">グループを監視します</a></li>
-<li><a href="#システム定義のモニター-2">システム定義のモニター</a></li>
-</ul>
-</div>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
@@ -1954,20 +1937,19 @@
 </tr>
 </table>
 </div>
-<!-- toc disabled -->
 <div class="paragraph">
-<p>監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトによって生成される指標や、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集されたデータなどの「統合」データに対してしきい値を設定できます。これらの _ は、警告レベルまたは重大レベルのしきい値を超えたときにアラートを監視します。</p>
+<p>監視対象のしきい値と条件に達したとき、またはしきい値を超えたときに、 Cloud Insights はアラートを作成します。モニタには、 _Warning_threshold 、 a_Critical_threshold 、またはその両方を指定できます。</p>
 </div>
 <div class="paragraph">
-<p>また、警告レベル、重大レベル、または情報レベルのアラートをトリガーするモニタを作成して、指定された _ ログイベント _ が検出されたときに生成することもできます。</p>
+<p>監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトや、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集された統合データなどの「インフラ」オブジェクトにしきい値を設定できます。しきい値を超えたときにアラートを監視し、警告レベルのアラート、重大レベルのアラート、またはその両方のしきい値を設定できます。</p>
 </div>
 <div class="paragraph">
-<p>Cloud Insights には、いくつかの機能があります <a href="task_system_monitors.html">"システム定義のモニター"</a> また、環境に応じて異なります。</p>
+<p>については以下を参照してください <a href="#system-defined-monitors">"システム定義のモニター"</a> ドキュメント</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="メトリックまたはログモニタ">メトリックまたはログモニタ</h2>
+<h2 id="モニタを作成します">モニタを作成します</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -1983,7 +1965,7 @@
 <li>
 <p>モニタを追加するには、 *+ モニタ * をクリックします。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_or_metric.png" alt="システムモニタまたはログモニタを選択します"></span></p>
+<p><span class="image"><img src="Monitor_log_or_metric.png" alt="システムモニタまたはログモニタを選択します"></span></p>
 </div>
 <div class="paragraph">
 <p>新しいモニタを追加すると、メトリックモニタまたはログモニタを作成するよう求められます。</p>
@@ -1999,13 +1981,13 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>モニタタイプを選択すると、モニタ設定ダイアログが表示されます。構成は、作成するモニタのタイプによって異なります。</p>
+<p>モニタタイプを選択すると、モニタ設定ダイアログが表示されます。</p>
 </div>
 </li>
 </ol>
 </div>
-<div class="sect2">
-<h3 id="メートル法モニタ-metric-monitor">メートル法モニタ（ Metric Monitor</h3>
+<div class="sect3">
+<h4 id="メートル法モニタ-metric-monitor">メートル法モニタ（ Metric Monitor</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2017,7 +1999,7 @@
 <p>フィルタを設定して、監視するオブジェクトの属性や指標を絞り込むことができます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/MonitorMetricFilter.png" alt="メトリックフィルタリング"></span></p>
+<p><span class="image"><img src="MonitorMetricFilter.png" alt="メトリックフィルタリング"></span></p>
 </div>
 <div class="paragraph">
 <p>統合データ（ Kubernetes 、 ONTAP 高度なデータなど）を使用する場合、指標フィルタリングを使用すると、データ系列の集計値でフィルタが機能し、グラフからオブジェクト全体が削除されるのとは異なり、プロットされたデータ系列から個々のデータポイントや一致しないデータポイントが削除されます。</p>
@@ -2056,7 +2038,7 @@
 <p>しきい値を超えた時点でアラートをトリガーするか、しきい値が一定期間継続して違反になるまでアラートをトリガーするかを選択できます。この例では、合計 IOPS が警告レベルまたは重大レベルを超えるたびにアラートを表示する必要はありませんが、監視対象のオブジェクトがこれらのレベルの 1 つを 15 分以上継続して超えた場合にのみアラートを表示します。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_metric_conditions.png" alt="モニタの条件を定義します"></span></p>
+<p><span class="image"><img src="Monitor_metric_conditions.png" alt="モニタの条件を定義します"></span></p>
 </div>
 </li>
 </ol>
@@ -2084,7 +2066,7 @@
 </table>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_monitor_filter.png" alt="監視するログを選択し、フィルタを設定します"></span></p>
+<p><span class="image"><img src="Monitor_log_monitor_filter.png" alt="監視するログを選択し、フィルタを設定します"></span></p>
 </div>
 <div class="sect3">
 <h4 id="アラートの動作を定義します">アラートの動作を定義します</h4>
@@ -2092,7 +2074,7 @@
 <p>ログアラートがトリガーされたときのアラートの送信方法を選択します。上で設定したフィルタ条件に基づいて、 <em>Warning</em> 、 <em>Critical</em> 、または _Informational_severity でアラートを生成するようにモニタを設定できます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_alert_behavior.png" alt="監視するログ動作を定義します"></span></p>
+<p><span class="image"><img src="Monitor_log_alert_behavior.png" alt="監視するログ動作を定義します"></span></p>
 </div>
 </div>
 <div class="sect3">
@@ -2114,17 +2096,16 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_monitor_resolution.png" alt="アラート解決"></span></p>
+<p><span class="image"><img src="Monitor_log_monitor_resolution.png" alt="アラート解決"></span></p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="通知タイプと受信者を選択します">通知タイプと受信者を選択します</h3>
+<div class="sect3">
+<h4 id="通知タイプと受信者を選択します">通知タイプと受信者を選択します</h4>
 <div class="paragraph">
 <p>[ チーム通知の設定 ] セクションでは、電子メールと Webhook のどちらでチームに通知するかを選択できます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Webhook_Choose_Monitor_Notification.png" alt="アラート方法を選択します"></span></p>
+<p><span class="image"><img src="Webhook_Choose_Monitor_Notification.png" alt="アラート方法を選択します"></span></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2137,7 +2118,7 @@
 <p>アラート通知の E メール受信者を指定します。必要に応じて、警告または重大なアラートの受信者を別々に選択することもできます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/email_monitor_alerts.png" alt="E メールアラートの受信者"></span></p>
+<p><span class="image"><img src="email_monitor_alerts.png" alt="E メールアラートの受信者"></span></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2150,11 +2131,11 @@
 <p>アラート通知に使用する Web フックを指定します。必要に応じて、警告または重大なアラートに別のフックを選択できます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Webhook_Monitor_Notifications.png" alt="Webhook Alerting ( ウェブフック警告"></span></p>
+<p><span class="image"><img src="Webhook_Monitor_Notifications.png" alt="Webhook Alerting ( ウェブフック警告"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="対処方法または追加情報を設定しています">対処方法または追加情報を設定しています</h3>
+<div class="sect3">
+<h4 id="対処方法または追加情報を設定しています">対処方法または追加情報を設定しています</h4>
 <div class="paragraph">
 <p>オプションの概要を追加したり、追加のインサイトや修正アクションを追加したりするには、「 * アラート概要の追加 * 」セクションに入力します。概要は 1024 文字以内で指定し、アラートとともに送信されます。分析情報 / 対処方法のフィールドは最大 67,000 文字で、アラートランディングページの概要セクションに表示されます。</p>
 </div>
@@ -2162,11 +2143,11 @@
 <p>これらのフィールドには、アラートを修正したり対処したりするためのメモ、リンク、手順を入力できます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_Alert_Description.png" alt="アラートの対処方法と概要"></span></p>
+<p><span class="image"><img src="Monitors_Alert_Description.png" alt="アラートの対処方法と概要"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="モニタを保存します">モニタを保存します</h3>
+<div class="sect3">
+<h4 id="モニタを保存します">モニタを保存します</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2181,11 +2162,8 @@
 </ol>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="監視リスト">監視リスト</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="監視リスト">監視リスト</h4>
 <div class="paragraph">
 <p>[Monitor] ページには、現在設定されているモニタが一覧表示され、次の情報が示されます</p>
 </div>
@@ -2214,19 +2192,8 @@
 <div class="paragraph">
 <p>モニタが不要になった場合は、メニューから * Delete * を選択して削除できます。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="グループを監視します">グループを監視します</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>グループ化により、関連するモニタを表示および管理できます。たとえば、環境内のストレージ専用の監視グループを使用したり、特定の受信者リストに関連する監視を使用したりできます。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_GroupList.png" alt="グループ化を監視します"></span></p>
-</div>
-<div class="paragraph">
-<p>次のモニタグループが表示されます。グループ名の横には、グループに含まれるモニタの数が表示されます。</p>
+<p>デフォルトでは 2 つのグループが表示されます。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2234,96 +2201,9 @@
 <p>* すべてのモニタ * にすべてのモニタが一覧表示されます。</p>
 </li>
 <li>
-<p>* カスタムモニター * には、ユーザーが作成したすべてのモニターが一覧表示されます。</p>
-</li>
-<li>
-<p>* サスペンドされたモニタ * には、 Cloud Insights によってサスペンドされたすべてのシステムモニタが表示されます。</p>
-</li>
-<li>
-<p>Cloud Insights には、いくつかの * システム・モニター・グループ * が表示されます。このグループには、の 1 つ以上のグループが表示されます <a href="task_system_monitors.html">"システム定義のモニタ"</a>ONTAP インフラストラクチャおよびワークロードモニタを含む。</p>
+<p>* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</p>
 </li>
 </ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-カスタムモニタは、一時停止、再開、削除、または別のグループへの移動が可能です。システム定義のモニタは一時停止および再開できますが、削除または移動することはできません。
-</td>
-</tr>
-</table>
-</div>
-<div class="sect2">
-<h3 id="一時停止したモニタ">一時停止したモニタ</h3>
-<div class="paragraph">
-<p>このグループは、 Cloud Insights が 1 つ以上のモニタを一時停止している場合にのみ表示されます。モニタが過度のアラートまたは継続的なアラートを生成している場合、モニタが一時停止することがあります。モニタがカスタムモニタの場合は、継続的なアラートの発生を防止する条件を変更してから、モニタを再開します。問題 がサスペンションを引き起こしている状態が解消されると、モニタはサスペンド状態のモニタグループから削除されます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="システム定義のモニター">システム定義のモニター</h3>
-<div class="paragraph">
-<p>これらのグループには、モニタに必要なデバイスやログが環境に含まれている限り、 Cloud Insights が提供するモニタが表示されます。</p>
-</div>
-<div class="paragraph">
-<p>システム定義のモニタは、変更、別のグループへの移動、または削除できません。ただし、システムモニタを複製して、複製を変更または移動することはできます。</p>
-</div>
-<div class="paragraph">
-<p>システムモニタには、 ONTAP インフラストラクチャ（ストレージ、ボリュームなど）のモニタ、ワークロード（ログモニタなど）、またはその他のグループが含まれます。ネットアップでは、お客様のニーズと製品の機能を常に評価しており、必要に応じてシステムの監視やグループの更新や追加を行います。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="カスタムモニタグループ">カスタムモニタグループ</h3>
-<div class="paragraph">
-<p>必要に応じてモニタを含めるための独自のグループを作成できます。たとえば、すべてのストレージ関連モニタのグループを作成する場合などです。</p>
-</div>
-<div class="paragraph">
-<p>新しいカスタムモニタグループを作成するには、「 + 」「新規モニタグループの作成 * 」ボタンをクリックします。グループの名前を入力し、 * グループの作成 * をクリックします。空のグループがその名前で作成されます。</p>
-</div>
-<div class="paragraph">
-<p>モニタをグループに追加するには、 _all Monitors グループ（推奨）に移動し、次のいずれかの操作を行います。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>単一のモニタを追加するには、モニタの右側にあるメニューをクリックし、 _ グループに追加 _ を選択します。モニタを追加するグループを選択します。</p>
-</li>
-<li>
-<p>モニタ名をクリックしてモニタの編集ビューを開き '<em>Associate to a monitor group</em> セクションでグループを選択します</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_AssociateToGroup.png" alt="グループに関連付けます"></span></p>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。モニタを _all Monitors _ または _Custom Monitors _ グループから削除することはできませんこれらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-グループからモニタを削除しても、モニタは Cloud Insights から削除されません。モニタを完全に削除するには、モニタを選択し、 <em>Delete</em>( 削除 ) をクリックします。これにより、その所有者であるグループからも削除され、どのユーザからも使用できなくなります。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>同様にモニタを別のグループに移動するには '<em>Move to Group</em> を選択します</p>
-</div>
-<div class="paragraph">
-<p>グループ内のすべてのモニタを一度に一時停止または再開するには、グループのメニューを選択し、 _Pause_or_Resume_を クリックします。</p>
-</div>
-<div class="paragraph">
-<p>同じメニューを使用して、グループの名前変更または削除を行います。グループを削除しても、 Cloud Insights からモニタは削除されません。これらのモニタは、 _ALL Monitors で使用できます。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_PauseGroup.png" alt="グループを一時停止します"></span></p>
 </div>
 <div class="paragraph">
 <p>デフォルトでは 2 つのグループが表示されます。</p>
@@ -2336,16 +2216,14 @@
 <li>
 <p>* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</p>
 </li>
-<li>
-<p>* サスペンド状態のモニタ * は、システムによってモニタがサスペンドされている場合にのみ表示されます。</p>
-</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="システム定義のモニター-2">システム定義のモニター</h2>
+<h2 id="システム定義のモニター">システム定義のモニター</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>を表示します <a href="task_system_monitors.html">"システム定義のモニター"</a> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</p>
