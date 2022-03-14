@@ -8537,15 +8537,26 @@
   <block id="db386e038002cc8473226f0494cef95f" category="admonition">clientmatch は、特定のアドレスまたはサブネット（例： 10.0.3.212 または 192.168.5.0/24 ）、ホスト名、または @ ネットグループなどのネットグループです。エクスポートポリシーを使用して可能なすべての IP4 アドレスに適用する場合は、 clientmatch を 0.0.0.0/0 に設定します。</block>
   <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">Dell EMC VNX Unified データコレクタの設定</block>
   <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">Dell EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
-  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">次のデータコレクタは、異なる Raw TiB から管理ユニットレートで測定されます。これらのデータコレクタの 40TiB 分の未フォーマット容量は、 1 つの管理ユニット（ MU ）として課金されます。</block>
-  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS の場合</block>
-  <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
-  <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
-  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID の略</block>
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告される Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では、 vSphere クラスタ名の先頭に vSphere データセンター名が付き、バックスラッシュ「 DC1\clusterA 」が Cloud Insights データセンター DC1 内のクラスタ A 内のハイパーバイザーでレポートされるクラスタ名です</block>
   <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">監視対象のしきい値と条件に達したとき、またはしきい値を超えたときに、 Cloud Insights はアラートを作成します。モニタには、 _Warning_threshold 、 a_Critical_threshold 、またはその両方を指定できます。</block>
   <block id="de1246f2ba95371b711d65f46fa80725" category="paragraph">監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトや、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集された統合データなどの「インフラ」オブジェクトにしきい値を設定できます。しきい値を超えたときにアラートを監視し、警告レベルのアラート、重大レベルのアラート、またはその両方のしきい値を設定できます。</block>
   <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">については以下を参照してください <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> ドキュメント</block>
   <block id="8d5905c4fc039f80da9bafa3d4cc6555" category="section-title">モニタを作成します</block>
   <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">モニタタイプを選択すると、モニタ設定ダイアログが表示されます。</block>
+  <block id="e50e258ecc9eaa88d6c653c3a24cb319" category="section-title">2022 年 3 月</block>
+  <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
+  <block id="81b63bcf37c281fa62b348f70cb153a7" category="paragraph">。 <block ref="abed7fb19b7000e31d7e181bcda0de86" category="inline-link-macro-rx"></block> データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。</block>
+  <block id="2e9faf5215aa3ecfef89358ec3693874" category="section-title">NetApp ONTAP モニタ用の新しい FSX</block>
+  <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">システム定義のモニタ</block>
+  <block id="bcd1e57acea622ff5f6c7b621a37241c" category="paragraph">NetApp ONTAP 環境向けの FSX の監視は、簡単に行うことができます <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block> インフラ（指標）とワークロード（ログ）の両方に対応します。</block>
+  <block id="daafde2d871e4e00ee5fe9553d09bdff" category="inline-image-macro">FSX はインフラストラクチャを監視します</block>
+  <block id="afa800198ea90e74596616f4c4a8fdcd" category="inline-image-macro">FSX はワークロードを監視します</block>
+  <block id="8f283632e9325fda07d220aff3fb7cff" category="paragraph"><block ref="11bfa9ac348c5f9646abf4cbcc8f2b06" category="inline-image-macro-rx" type="image"></block>
+<block ref="c1192427ce0fb4f6f5779270040dd6fc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="295955bf610ebac5a6f254316c525925" category="section-title">すべてのユーザが利用できる新しい Cloud Secure 機能</block>
+  <block id="4fb60dd9032d7b71b09db6d86ebac5c3" category="paragraph">環境のセキュリティがこれまで以上に強化され、次の Cloud Secure 機能が一般提供されました。</block>
+  <block id="3e51ff454857e5a91f611e3f2f427bbd" category="cell">警告とアラートの通知は別々に表示されます</block>
+  <block id="2ca57dbd75b94a950c199a1c12cf85b9" category="cell">警告とアラートの通知は別の受信者に送信できるため、適切なチームに情報を提供できます</block>
+  <block id="222414ee53d0c57a1870d9446ce7b005" category="paragraph">テレグラム統合データの取り込みのためのエージェントがバージョン *1.2* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</block>
+  <block id="3d64508ab84203107071583e56c26993" category="list-text">Broadcom Fibre Channel Switches データコレクタは、各インベントリポーリングで発行される CLI コマンドの数を減らすように最適化されています。</block>
 </blocks>
