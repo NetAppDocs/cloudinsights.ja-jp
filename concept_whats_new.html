@@ -1902,7 +1902,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-12 06:43:53 +0000">03/12/2022</time>
+    <time datetime="2022-03-14 20:37:46 +0000">03/14/2022</time>
     
   
 
@@ -1927,6 +1927,90 @@
 <div class="paragraph">
 <p>ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、 Cloud Insights で利用できる最新の機能をいくつか紹介します。</p>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2022-年-3-月">2022 年 3 月</h3>
+<div class="sect3">
+<h4 id="ontap-9-9-以降のクラウド接続">ONTAP 9.9 以降のクラウド接続</h4>
+<div class="paragraph">
+<p>。 <a href="task_dc_na_cloud_agent.html">"ONTAP 9.9 以降でのネットアップクラウド接続"</a> データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="netapp-ontap-モニタ用の新しい-fsx">NetApp ONTAP モニタ用の新しい FSX</h4>
+<div class="paragraph">
+<p>NetApp ONTAP 環境向けの FSX の監視は、簡単に行うことができます <a href="task_system_monitors.html">"システム定義のモニタ"</a> インフラ（指標）とワークロード（ログ）の両方に対応します。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="FSx_System_Monitors_Metrics.png" alt="FSX はインフラストラクチャを監視します"></span>
+<span class="image"><img src="FSx_System_Monitors_Workloads.png" alt="FSX はワークロードを監視します"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="すべてのユーザが利用できる新しい-cloud-secure-機能">すべてのユーザが利用できる新しい Cloud Secure 機能</h4>
+<div class="paragraph">
+<p>環境のセキュリティがこれまで以上に強化され、次の Cloud Secure 機能が一般提供されました。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 特徴 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 概要 *</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">データ破壊–ファイル削除攻撃の検出</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">異常な大規模なファイル削除アクティビティを検出し、悪意のあるユーザによる悪意のあるファイルアクセスをブロックし、自動応答ポリシーを使用してスナップショットを自動的に作成します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">警告とアラートの通知は別々に表示されます</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">警告とアラートの通知は別の受信者に送信できるため、適切なチームに情報を提供できます</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="telegraf-agent-を更新">Telegraf Agent を更新</h4>
+<div class="paragraph">
+<p>テレグラム統合データの取り込みのためのエージェントがバージョン <strong>1.2</strong> に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="data-collector-のアップデート">Data Collector のアップデート</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Broadcom Fibre Channel Switches データコレクタは、各インベントリポーリングで発行される CLI コマンドの数を減らすように最適化されています。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="フィーチャーのプレビュー-preview-features">フィーチャーのプレビュー（ Preview Features</h4>
+<div class="paragraph">
+<p>Cloud Insights は、いくつかの新しいプレビュー機能を強調しています。これらの機能をプレビューする場合は、にお問い合わせください <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"ネットアップの営業チーム"</a> を参照してください。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 特徴 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 概要 *</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">応力の下の共有リソース</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<a href="https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html">"詳細はこちら"</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
 </div>
 </div>
 <div class="sect2">
@@ -1956,7 +2040,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="フィーチャーのプレビュー-preview-features">フィーチャーのプレビュー（ Preview Features</h4>
+<h4 id="フィーチャーのプレビュー-preview-features-2">フィーチャーのプレビュー（ Preview Features</h4>
 <div class="paragraph">
 <p>Cloud Insights は、いくつかの新しいプレビュー機能を強調しています。これらの機能をプレビューする場合は、にお問い合わせください <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"ネットアップの営業チーム"</a> を参照してください。</p>
 </div>
@@ -2047,7 +2131,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="data-collector-のアップデート">Data Collector のアップデート</h4>
+<h4 id="data-collector-のアップデート-2">Data Collector のアップデート</h4>
 <div class="paragraph">
 <p>ベンダーの変更を反映した Cloud Insights データコレクタ名がいくつか追加されています。</p>
 </div>
@@ -2109,7 +2193,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="data-collector-のアップデート-2">Data Collector のアップデート</h4>
+<h4 id="data-collector-のアップデート-3">Data Collector のアップデート</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2211,7 +2295,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="telegraf-agent-を更新">Telegraf Agent を更新</h4>
+<h4 id="telegraf-agent-を更新-2">Telegraf Agent を更新</h4>
 <div class="paragraph">
 <p>テレグラム統合データの取り込みのためのエージェントがバージョン * 1.19.3* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
 </div>
@@ -2428,7 +2512,7 @@
 <p>4 月に行った変更の一部を以下に示します。</p>
 </div>
 <div class="sect3">
-<h4 id="telegraf-agent-を更新-2">Telegraf Agent を更新</h4>
+<h4 id="telegraf-agent-を更新-3">Telegraf Agent を更新</h4>
 <div class="paragraph">
 <p>テレグラム統合データの取り込み用エージェントは、パフォーマンスとセキュリティが向上し、バージョン 1.17.3 に更新されました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
 </div>
@@ -2584,7 +2668,7 @@
 <div class="sect2">
 <h3 id="2021年2月">2021年2月</h3>
 <div class="sect3">
-<h4 id="telegraf-agent-を更新-3">Telegraf Agent を更新</h4>
+<h4 id="telegraf-agent-を更新-4">Telegraf Agent を更新</h4>
 <div class="paragraph">
 <p>テレグラム統合データの取り込み用エージェントは、脆弱性およびバグ修正を含むバージョン 1.17.0 に更新されました。</p>
 </div>
@@ -3282,7 +3366,7 @@ Cloud Insights レポートは 500 MU 以上の環境で使用できます。
 </div>
 </div>
 <div class="sect3">
-<h4 id="telegraf-agent-を更新-4">Telegraf Agent を更新</h4>
+<h4 id="telegraf-agent-を更新-5">Telegraf Agent を更新</h4>
 <div class="paragraph">
 <p>テレグラム統合データの取り込み用エージェントがに更新されました <a href="https://docs.influxdata.com/telegraf/v1.14/">"バージョン 1.14"</a>には、バグ修正、セキュリティ修正、および新しいプラグインが含まれています。</p>
 </div>
