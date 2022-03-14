@@ -8571,4 +8571,9 @@
   <block id="794a9d57da2bd5b4b16e0d11525d4f16" category="paragraph">API トークンを完全に削除するには、メニューから「 Revoke 」を選択します。取り消されたトークンは再度有効にすることはできません。新しいトークンを作成する必要があります。</block>
   <block id="57d4e87edd35e992f8e4d3c6326ac8d8" category="inline-image-macro">API トークンを無効にするか、無効にします</block>
   <block id="209d3712889d6411bf67708e93ef6c63" category="paragraph"><block ref="209d3712889d6411bf67708e93ef6c63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">次のデータコレクタは、異なる Raw TiB から管理ユニットレートで測定されます。これらのデータコレクタの 40TiB 分の未フォーマット容量は、 1 つの管理ユニット（ MU ）として課金されます。</block>
+  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS の場合</block>
+  <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
+  <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
+  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID の略</block>
 </blocks>
