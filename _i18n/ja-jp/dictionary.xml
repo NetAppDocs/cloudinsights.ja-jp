@@ -7516,8 +7516,6 @@
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">[_Complete_] をクリックします。</block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">ONTAP 9.9 以降のクラウド接続</block>
-  <block id="f41274c1ce20e5e73cc8aff93a484f51" category="inline-link-macro">FSx - ネットアップ</block>
-  <block id="47b5a4776ee0e5c60f02b4cbf9af7b50" category="cell"><block ref="47b5a4776ee0e5c60f02b4cbf9af7b50" category="inline-link-macro-rx"></block></block>
   <block id="04cfeb854c88891dec7c9991ca350912" category="summary">NetApp ONTAP Data Collector 向けの Amazon FSX</block>
   <block id="e9a83bb8e223f30a5b64c2f63410624e" category="doc">NetApp ONTAP データコレクタ用の Amazon FSX</block>
   <block id="3f949888a1354566f0873f9ba5ab02fd" category="paragraph">このデータコレクタは、 Amazon FSX for NetApp ONTAP からインベントリデータとパフォーマンスデータを取得します。このデータコレクタは、 Cloud Insights サービスリージョン全体で段階的に利用可能になります。Cloud Insights 環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。</block>
@@ -8613,4 +8611,11 @@
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift の手順</block>
   <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">OpenShift 4.6-4.8 で実行している場合は、「特権モード」設定を変更する必要があります。次のコマンドを実行して、エージェントを開いて編集します。「 NetApp Monitoring 」以外のネームスペースを使用している場合は、コマンドラインでそのネームスペースを指定します。</block>
   <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">ファイルで、 change_privileged-mode ： false_to _privileged-users mode ： true_</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link-macro">NetApp ONTAP 対応の Amazon FSX</block>
+  <block id="2399abbf605913dd52d0a8667ed0a87a" category="cell"><block ref="2399abbf605913dd52d0a8667ed0a87a" category="inline-link-macro-rx"></block></block>
+  <block id="71071f9eeb8b3ff7f4a52f9927b52da4" category="section-title">ホストリージョン</block>
+  <block id="2c5e620943b15b31c38df4433ca50af9" category="paragraph">ホスト領域は次のとおりです。</block>
+  <block id="b4d0aea9805f5f0f557898d9ea7247df" category="list-text">US ： us-east-1</block>
+  <block id="566a4c81478be8a9ccd7d6589cefe57c" category="list-text">EMEA ： EU-central -1</block>
+  <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">APAC ： AP-南東 部 -2</block>
 </blocks>
