@@ -8322,7 +8322,6 @@
   <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。</block>
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">インストール手順は、選択した内容によって異なります。</block>
   <block id="7851bfe0f67f9341140f846ee10fd94d" category="admonition">NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。</block>
-  <block id="3c320073d2d3a48b02cd316c37a184cd" category="list-text">NetApp Kubernetes Monitoring Operator インストールはテスト済みで、 AWS EKS 1.18 、 OpenShift 3.11 、 Rancher 2.6 で動作することが想定されています。</block>
   <block id="fcbb3d16fd787d5bff5935ba723121de" category="cell">Kubernetes v1.17 以降</block>
   <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">NetApp Kubernetes Monitoring Operator Installation</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：</block>
@@ -8609,4 +8608,9 @@
   <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">ウィジェットクエリでのフィルタ処理は _contextual _ です。フィールドのフィルタ値または値を選択すると、そのクエリの他のフィルタには、そのフィルタに関連する値が表示されます。たとえば ' 特定の object_Name_ にフィルタを設定した場合 '_Model_ にフィルタを適用するフィールドには ' そのオブジェクト名に関連する値のみが表示されます</block>
   <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">コンテキストフィルタリングでは、環境 ダッシュボードページの変数（テキストタイプの属性または注釈のみ）も使用できます。1 つの変数にファイラー値を選択すると、関連オブジェクトを使用する他のすべての変数には、それらの関連変数のコンテキストに基づいたフィルタ値のみが表示されます。</block>
   <block id="efbb3ca459b4e1c502f697d1a65cc3d3" category="paragraph">変数でのフィルタ処理は _contextual _ です。変数のフィルタ値または値を選択すると、ページ上の他の変数には、そのフィルタに関連する値のみが表示されます。たとえば、変数フィルタを特定のストレージモデルに設定すると、 Storage _Name _ でフィルタするように設定された変数には、そのモデルに関連する値のみが表示されます。</block>
+  <block id="2c724476d225980fc3efb1e524c8e36a" category="list-text">OpenShift 4.6-4.8 で実行している場合は、以下の * OpenShift Instructions * を参照する必要があります。</block>
+  <block id="0317b3ef8ec7744a6871d2832b20779b" category="list-text">NetApp Kubernetes Monitoring Operator インストールはテスト済みで、 AWS EKS 1.18-1.21 、 OpenShift 4.6-4.8 、 Rancher 2.4-2.6 で動作することが予想されています。</block>
+  <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift の手順</block>
+  <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">OpenShift 4.6-4.8 で実行している場合は、「特権モード」設定を変更する必要があります。次のコマンドを実行して、エージェントを開いて編集します。「 NetApp Monitoring 」以外のネームスペースを使用している場合は、コマンドラインでそのネームスペースを指定します。</block>
+  <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">ファイルで、 change_privileged-mode ： false_to _privileged-users mode ： true_</block>
 </blocks>
