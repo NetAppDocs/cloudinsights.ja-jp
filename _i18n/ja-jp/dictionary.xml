@@ -7958,16 +7958,11 @@
   <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 ビット） 8.4</block>
   <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 ビット） 8.4</block>
   <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">APIKeys は、 _Sync_or_Async に適しています。</block>
-  <block id="c6baf991a66b3aacc47987de1641b11e" category="summary">ログエクスプローラは、問題を調査するための強力なツールです。</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">ログエクスプローラ</block>
-  <block id="6f0a85aa190cf61bbcf2d473f4c6c50a" category="paragraph">Cloud Insights ログエクスプローラは、 EMS ログと Kubernetes ログを照会するための強力なツールです。調査に役立つだけでなく、ログクエリをモニタに保存して、ログトリガーがアクティブになったときにアラートを生成することもできます。</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">ログの検索を開始するには、 *Queries &gt;+New Log Query * をクリックします。</block>
-  <block id="c7175e137df374ab419bd8746e829439" category="inline-image-macro">ログクエリメニュー</block>
-  <block id="2476c675ea0ab08eb68e77616d8026cf" category="paragraph"><block ref="2476c675ea0ab08eb68e77616d8026cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6ed4a34f2dd3f6ee334d4bce6755dc2" category="paragraph">リストから使用可能なログを選択します。このリストは、現在の Cloud Insights 環境設定によって異なる場合があります。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">ログを選択します</block>
   <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b7588d3859ad2b6d675ed5520f12a393" category="admonition">プレビュー用に選択した一連のログにアクセスできます。また、時間の経過とともに追加のログを利用できます。</block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">フィルタを設定して、クエリの結果をさらに絞り込むことができます。たとえば、障害を示すすべてのログ・メッセージを検索するには、「 failed 」という単語を含む _Messages_ のフィルタを設定します。</block>
   <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">フィルタフィールドに目的のテキストを入力することができます。 Cloud Insights では、入力した文字列を含むワイルドカード検索の作成を求めるプロンプトが表示されます。</block>
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">結果は、表示される各期間のログインスタンスの数を示すグラフに表示されます。グラフの下には、自分のログエントリが表示されます。グラフとエントリは、選択した期間に基づいて自動的に更新されます。</block>
@@ -8618,4 +8613,9 @@
   <block id="b4d0aea9805f5f0f557898d9ea7247df" category="list-text">US ： us-east-1</block>
   <block id="566a4c81478be8a9ccd7d6589cefe57c" category="list-text">EMEA ： EU-central -1</block>
   <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">APAC ： AP-南東 部 -2</block>
+  <block id="a042a0a750858e6060db4dfe64a00752" category="summary">ログエクスプローラは、さまざまなシステムログから問題を調査するための強力なツールです。</block>
+  <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights ログエクスプローラは、システムログを照会するための強力なツールです。検査に役立つだけでなく、ログクエリーをモニタに保存して、特定のログトリガーがアクティブになったときにアラートを生成することもできます。</block>
+  <block id="d12e6aa737bd25ac8fe55681d55277f3" category="inline-image-macro">ログクエリメニュー ,640</block>
+  <block id="8a6dd50ddfea8f64b33ecdec002efa14" category="paragraph"><block ref="8a6dd50ddfea8f64b33ecdec002efa14" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">クエリに使用できるログの種類は環境によって異なります。ログタイプは、時間が経過すると追加される場合があります。</block>
 </blocks>
