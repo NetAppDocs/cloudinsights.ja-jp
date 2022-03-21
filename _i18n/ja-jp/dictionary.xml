@@ -7960,7 +7960,6 @@
   <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">APIKeys は、 _Sync_or_Async に適しています。</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">ログエクスプローラ</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">ログの検索を開始するには、 *Queries &gt;+New Log Query * をクリックします。</block>
-  <block id="f6ed4a34f2dd3f6ee334d4bce6755dc2" category="paragraph">リストから使用可能なログを選択します。このリストは、現在の Cloud Insights 環境設定によって異なる場合があります。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">ログを選択します</block>
   <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">フィルタを設定して、クエリの結果をさらに絞り込むことができます。たとえば、障害を示すすべてのログ・メッセージを検索するには、「 failed 」という単語を含む _Messages_ のフィルタを設定します。</block>
@@ -8615,7 +8614,8 @@
   <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">APAC ： AP-南東 部 -2</block>
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">ログエクスプローラは、さまざまなシステムログから問題を調査するための強力なツールです。</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights ログエクスプローラは、システムログを照会するための強力なツールです。検査に役立つだけでなく、ログクエリーをモニタに保存して、特定のログトリガーがアクティブになったときにアラートを生成することもできます。</block>
-  <block id="d12e6aa737bd25ac8fe55681d55277f3" category="inline-image-macro">ログクエリメニュー ,640</block>
-  <block id="8a6dd50ddfea8f64b33ecdec002efa14" category="paragraph"><block ref="8a6dd50ddfea8f64b33ecdec002efa14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">クエリに使用できるログの種類は環境によって異なります。ログタイプは、時間が経過すると追加される場合があります。</block>
+  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">ログクエリメニュー ,480</block>
+  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">リストから使用可能なログを選択します。</block>
 </blocks>

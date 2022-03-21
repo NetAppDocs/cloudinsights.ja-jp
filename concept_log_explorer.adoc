@@ -12,9 +12,9 @@ Cloud Insights ログエクスプローラは、システムログを照会す�
 
 ログの検索を開始するには、 *Queries >+New Log Query * をクリックします。
 
-image:LogExplorerMenu.png["ログクエリメニュー ,640"]
+image:LogExplorerMenu.png["ログクエリメニュー ,480"]
 
-リストから使用可能なログを選択します。このリストは、現在の Cloud Insights 環境設定によって異なる場合があります。
+リストから使用可能なログを選択します。
 
 image:LogExplorer_ChooseLog.png["ログを選択します"]
 
