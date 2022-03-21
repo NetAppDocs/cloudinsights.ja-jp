@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_log_explorer.html 
-keywords: logs, monitors, alerts, 
+keywords: logs, monitors, alerts, EMS, Kubernetes, 
 summary: ログエクスプローラは、さまざまなシステムログから問題を調査するための強力なツールです。 
 ---
 = ログエクスプローラ
