@@ -132,7 +132,7 @@ Cloud Insights では、 1 つの AWS データコレクタで AWS の子アカ�
 * Cloud Insights AWS Data Collector * Advanced Configuration * セクションの * Cross account role * フィールドに、このロール名の文字列を入力します。
 
 
-ベストプラクティス： AWS Predefined_AmazonEC2ReadOnlyAccess_policy を ECS メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。
+ベストプラクティス： AWS Predefined_AmazonEC2ReadOnlyAccess_policy を EC2 メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。
 
 Cloud Insights が AWS の子アカウントから収集できるように環境を設定する方法については、次のドキュメントを参照してください。
 
