@@ -3055,8 +3055,6 @@
   <block id="0a36ca304e21eb8063b7869dea7a355b" category="paragraph">* 潜在的な攻撃 :*</block>
   <block id="b81879140b6197b1eee86a1d325a0a81" category="list-text">潜在的な攻撃が検出された日時 _</block>
   <block id="5efe06a62d35c2fe7354ce05b69e8db6" category="list-text">アラートの _Status_ ：</block>
-  <block id="17ca445149f5daf4135fa66ee7989d5e" category="list-text">新規（新しいアラートのデフォルト）</block>
-  <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="list-text">実行中です</block>
   <block id="f691f042a559b1c1a4f89826c6f75760" category="list-text">解決しました</block>
   <block id="e2ccdd369c3ae64bfd036d550bee4d1d" category="list-text">却下されました</block>
   <block id="dd67ee05c982c60e1a69e9ad946a2e63" category="paragraph">管理者は、アラートのステータスを変更し、調査に役立つメモを追加できます。</block>
@@ -8618,4 +8616,9 @@
   <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">リストから使用可能なログを選択します。</block>
   <block id="d64c94573b121a79214c7bf24c4a546d" category="paragraph">ベストプラクティス： AWS Predefined_AmazonEC2ReadOnlyAccess_policy を EC2 メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。</block>
+  <block id="f0617472d6b597b6d93003c4c1003ad6" category="list-text">* 新規 * ：新しいアラートのデフォルトです。</block>
+  <block id="124bb595dee29c483fb214a5dfd6be2a" category="list-text">* 進行中 * ：アラートはチームメンバーまたはメンバーによって調査中です。</block>
+  <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 解決済み * ：アラートはチームメンバーによって解決済みとマークされています。</block>
+  <block id="10b1c70c9f5425c76de374b73edb3311" category="list-text">* 却下 * ：アラートは却下され、アクティブではなくなりました。</block>
+  <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">アラートの _Status_ （新規、進行中など）</block>
 </blocks>
