@@ -8623,4 +8623,17 @@
   <block id="bbf3d6c7f63841c53e523ee9bd1f6985" category="list-text">Rancher 2.4 ~ 2.6 。</block>
   <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。</block>
   <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
+  <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。</block>
+  <block id="f09825d109ed4681880410bb47684198" category="doc">Kubernetes でのエージェントの設定</block>
+  <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">* ここに移動 *</block>
+  <block id="f043e0e94a86a741ec3cfa80a7184063" category="admonition">このページは現在実行中です。Kubernetes にエージェントをインストールするための最新の手順については、 <block ref="697dca91101784dbecc7595d7733df90" category="inline-link-macro-rx"></block>。</block>
+  <block id="990b78672b6335498977a301125673d5" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ae8396b4c25ba8af80c0396cbac8dbb2" category="paragraph">Kubernetes にエージェントをインストールするには、まず次の手順を実行する必要があります。</block>
+  <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">ホストに対応する Kubernetes プラットフォームを選択します</block>
+  <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">残りの手順を実行します。</block>
+  <block id="9ac0dd27d420b7b48ca72e463ae95e18" category="inline-link-macro">以下の手順を参照して</block>
+  <block id="6981ef377139f8296f4ae0aa44bc108d" category="paragraph">Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います <block ref="bd07fc5e27e6fac57c0afecd246768d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">Kubernetes にエージェントをインストールする</block>
+  <block id="f997e79142f159c33823b9deeab809eb" category="cell">Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした</block>
+  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。</block>
 </blocks>
