@@ -1902,7 +1902,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-15 14:08:10 +0000">03/15/2022</time>
+    <time datetime="2022-03-24 15:05:05 +0000">03/24/2022</time>
     
   
 
@@ -2698,16 +2698,29 @@ NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_featu
 <div class="title">前提条件</div>
 <ul>
 <li>
-<p>cURL 、 sudo 、 openssl 、 sha256sum 、および kubectl のコマンドを使用できる必要があります</p>
-<div class="paragraph">
-<p>最適な結果を得るには、これらのコマンドをパスに追加してください。</p>
+<p>NetApp Kubernetes Monitoring Operator のインストールはテスト済みで、次の環境で動作するように想定されています。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS EKS 1.18-1.21</p>
+</li>
+<li>
+<p>OpenShift 4.6-4.8</p>
+</li>
+<li>
+<p>Rancher 2.4 ~ 2.6 。</p>
+</li>
+</ul>
 </div>
 </li>
 <li>
-<p>kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。</p>
+<p>OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。</p>
 </li>
 <li>
-<p>OpenShift 4.6-4.8 で実行している場合は、以下の * OpenShift Instructions * を参照する必要があります。</p>
+<p>次のコマンドを使用できる必要があります。 <em>curl 、 _sudo 、 _openssl 、 _sha256sum</em> 、および <em>kubectl</em>.最適な結果を得るには、これらのコマンドをパスに追加してください。</p>
+</li>
+<li>
+<p>kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。</p>
 </li>
 <li>
 <p>プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。</p>
@@ -2717,9 +2730,6 @@ NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_featu
 </li>
 <li>
 <p>Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。</p>
-</li>
-<li>
-<p>NetApp Kubernetes Monitoring Operator インストールはテスト済みで、 AWS EKS 1.18-1.21 、 OpenShift 4.6-4.8 、 Rancher 2.4-2.6 で動作することが予想されています。</p>
 </li>
 </ul>
 </div>
