@@ -5517,7 +5517,6 @@
   <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">前のテレグラムエージェントをアンインストールします。</block>
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">監視は Linux ノードにのみインストールされます</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。</block>
@@ -7984,7 +7983,6 @@
   <block id="f2e1c8f11a6d114e56889c093ddb4738" category="cell">[ データコレクタ ] ページで、エラーが表示されているデータコレクタの右にスクロールし、 3 つのドットメニューをクリックします。選択した編集 _ 。データコレクタのパスワードをもう一度入力します。[Save] ボタンを押して、データコレクタを保存します。Data Collector が再起動し、エラーが解決されます。</block>
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります</block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります</block>
-  <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">cURL 、 sudo 、 openssl 、 sha256sum 、および kubectl のコマンドを使用できる必要があります</block>
   <block id="e29d4b0022b53ae021c4d0c28ff1c272" category="summary">HP Enterprise Alletra 6000 （旧 Nimble ）データコレクタの設定</block>
   <block id="1673741a6893cf106b8b69b143097e4c" category="doc">HPE Alletra 6000 データコレクタ</block>
   <block id="bb341a6d938cae0b0a085b354294a7cd" category="paragraph">HP Enterprise Alletra 6000 （以前の Nimble ）データコレクタは、 Alletra 6000 ストレージアレイのインベントリデータとパフォーマンスデータをサポートしています。</block>
@@ -8597,8 +8595,6 @@
   <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">ウィジェットクエリでのフィルタ処理は _contextual _ です。フィールドのフィルタ値または値を選択すると、そのクエリの他のフィルタには、そのフィルタに関連する値が表示されます。たとえば ' 特定の object_Name_ にフィルタを設定した場合 '_Model_ にフィルタを適用するフィールドには ' そのオブジェクト名に関連する値のみが表示されます</block>
   <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">コンテキストフィルタリングでは、環境 ダッシュボードページの変数（テキストタイプの属性または注釈のみ）も使用できます。1 つの変数にファイラー値を選択すると、関連オブジェクトを使用する他のすべての変数には、それらの関連変数のコンテキストに基づいたフィルタ値のみが表示されます。</block>
   <block id="efbb3ca459b4e1c502f697d1a65cc3d3" category="paragraph">変数でのフィルタ処理は _contextual _ です。変数のフィルタ値または値を選択すると、ページ上の他の変数には、そのフィルタに関連する値のみが表示されます。たとえば、変数フィルタを特定のストレージモデルに設定すると、 Storage _Name _ でフィルタするように設定された変数には、そのモデルに関連する値のみが表示されます。</block>
-  <block id="2c724476d225980fc3efb1e524c8e36a" category="list-text">OpenShift 4.6-4.8 で実行している場合は、以下の * OpenShift Instructions * を参照する必要があります。</block>
-  <block id="0317b3ef8ec7744a6871d2832b20779b" category="list-text">NetApp Kubernetes Monitoring Operator インストールはテスト済みで、 AWS EKS 1.18-1.21 、 OpenShift 4.6-4.8 、 Rancher 2.4-2.6 で動作することが予想されています。</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift の手順</block>
   <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">OpenShift 4.6-4.8 で実行している場合は、「特権モード」設定を変更する必要があります。次のコマンドを実行して、エージェントを開いて編集します。「 NetApp Monitoring 」以外のネームスペースを使用している場合は、コマンドラインでそのネームスペースを指定します。</block>
   <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">ファイルで、 change_privileged-mode ： false_to _privileged-users mode ： true_</block>
@@ -8621,4 +8617,10 @@
   <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 解決済み * ：アラートはチームメンバーによって解決済みとマークされています。</block>
   <block id="10b1c70c9f5425c76de374b73edb3311" category="list-text">* 却下 * ：アラートは却下され、アクティブではなくなりました。</block>
   <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">アラートの _Status_ （新規、進行中など）</block>
+  <block id="2cda05c10c4aa09279fe99d24fc57ae8" category="list-text">NetApp Kubernetes Monitoring Operator のインストールはテスト済みで、次の環境で動作するように想定されています。</block>
+  <block id="1293dad52aae23a70414cecab911c5c5" category="list-text">AWS EKS 1.18-1.21</block>
+  <block id="001571f4a9b36eecb51a7241b4a1de90" category="list-text">OpenShift 4.6-4.8</block>
+  <block id="bbf3d6c7f63841c53e523ee9bd1f6985" category="list-text">Rancher 2.4 ~ 2.6 。</block>
+  <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。</block>
+  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
 </blocks>
