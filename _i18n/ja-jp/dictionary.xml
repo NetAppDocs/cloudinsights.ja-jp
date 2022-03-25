@@ -8615,7 +8615,6 @@
   <block id="f0617472d6b597b6d93003c4c1003ad6" category="list-text">* 新規 * ：新しいアラートのデフォルトです。</block>
   <block id="124bb595dee29c483fb214a5dfd6be2a" category="list-text">* 進行中 * ：アラートはチームメンバーまたはメンバーによって調査中です。</block>
   <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 解決済み * ：アラートはチームメンバーによって解決済みとマークされています。</block>
-  <block id="10b1c70c9f5425c76de374b73edb3311" category="list-text">* 却下 * ：アラートは却下され、アクティブではなくなりました。</block>
   <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">アラートの _Status_ （新規、進行中など）</block>
   <block id="2cda05c10c4aa09279fe99d24fc57ae8" category="list-text">NetApp Kubernetes Monitoring Operator のインストールはテスト済みで、次の環境で動作するように想定されています。</block>
   <block id="1293dad52aae23a70414cecab911c5c5" category="list-text">AWS EKS 1.18-1.21</block>
@@ -8636,4 +8635,5 @@
   <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">Kubernetes にエージェントをインストールする</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。</block>
+  <block id="08c320e9abdbb73b135ebdf6b73de8ef" category="list-text">* 却下 * ：アラートは誤検知または予期される動作として却下されました。</block>
 </blocks>
