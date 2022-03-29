@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: API_Overview.html 
-keywords: API, customer API, premium, JSON, Swagger, Access Token, token 
+keywords: API, customer API, premium, JSON, Swagger, Access Token, token, key 
 summary: Cloud Insights API を使用すると、監視システムやレポートシステムなどの他のアプリケーションと統合できます。 
 ---
 = Cloud Insights API の略
@@ -80,7 +80,7 @@ NOTE: トークンは、クリップボードにコピーして作成プロセ�
 
 トークンを無効化、有効化、および取り消しできます。無効になっているトークンを有効にできます。
 
-トークンを使用すると、お客様の観点から API への汎用アクセスが許可され、独自のテナントの範囲内で API へのアクセスが管理されます。お客様の管理者は、 Cloud Insights のバックエンド担当者に直接関与せずに、これらのキーを付与したり取り消したりできます。
+トークンを使用すると、お客様の観点から API への汎用アクセスが許可され、独自のテナントの範囲内で API へのアクセスが管理されます。お客様の管理者は、 Cloud Insights のバックエンド担当者から直接関与することなく、これらのトークンを付与したり取り消したりできます。
 
 アプリケーションは、ユーザがアクセスの認証と許可に成功した後、ターゲット API を呼び出すときにアクセストークンをクレデンシャルとして渡します。渡されたトークンは、 API にアクセスするためのトークンのベアラーが許可されていることを API に通知し、許可中に許可されたスコープによって指定された特定のアクションを実行します。
 
@@ -89,7 +89,7 @@ NOTE: トークンは、クリップボードにコピーして作成プロセ�
 たとえば、次のようにしてストレージアセットを取得します。
 
  curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
-_<API_Access_Token> _ は、 API アクセスキーの作成時に保存したトークンです。
+_<API_Access_Token>_ は、 API アクセスの作成時に保存したトークンです。
 
 
 

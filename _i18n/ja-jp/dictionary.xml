@@ -351,7 +351,6 @@
   <block id="36422fc03146f715dd2ebf157cb2b018" category="list-text">トークン有効期限を指定します</block>
   <block id="df7e1abab84c88ca59b75d8179052a13" category="admonition">トークンは、クリップボードにコピーして作成プロセス中に保存する場合にのみ使用できます。トークンは作成後に取得できないため、トークンをコピーして安全な場所に保存することを強くお勧めします。トークン作成画面を閉じる前に、 [API アクセストークンのコピー *] ボタンをクリックするよう求められます。</block>
   <block id="ec849ad53569138e8e2a53e16d6fe52a" category="paragraph">トークンを無効化、有効化、および取り消しできます。無効になっているトークンを有効にできます。</block>
-  <block id="c702f9ec1de747488ae69091e4b44640" category="paragraph">トークンを使用すると、お客様の観点から API への汎用アクセスが許可され、独自のテナントの範囲内で API へのアクセスが管理されます。お客様の管理者は、 Cloud Insights のバックエンド担当者に直接関与せずに、これらのキーを付与したり取り消したりできます。</block>
   <block id="d0c8eeb04c89d77560166e2a296d3aef" category="paragraph">アプリケーションは、ユーザがアクセスの認証と許可に成功した後、ターゲット API を呼び出すときにアクセストークンをクレデンシャルとして渡します。渡されたトークンは、 API にアクセスするためのトークンのベアラーが許可されていることを API に通知し、許可中に許可されたスコープによって指定された特定のアクションを実行します。</block>
   <block id="695278b2df4ef830f797b2b85728cd20" category="paragraph">アクセストークンが渡される HTTP ヘッダーは * X-CloudInsights - apiKey ： * です。</block>
   <block id="a3edb14694b58a006156d05e3c4b6d5b" category="paragraph">たとえば、次のようにしてストレージアセットを取得します。</block>
@@ -8636,4 +8635,6 @@
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。</block>
   <block id="08c320e9abdbb73b135ebdf6b73de8ef" category="list-text">* 却下 * ：アラートは誤検知または予期される動作として却下されました。</block>
   <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="0c352b5d8cf5928163a8ab955706157d" category="paragraph">トークンを使用すると、お客様の観点から API への汎用アクセスが許可され、独自のテナントの範囲内で API へのアクセスが管理されます。お客様の管理者は、 Cloud Insights のバックエンド担当者から直接関与することなく、これらのトークンを付与したり取り消したりできます。</block>
+  <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">_&lt;API_Access_Token&gt;_ は、 API アクセスの作成時に保存したトークンです。</block>
 </blocks>
