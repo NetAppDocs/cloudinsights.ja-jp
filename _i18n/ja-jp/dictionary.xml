@@ -8637,4 +8637,18 @@
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">_&lt;API_Access_Token&gt;_ は、 API アクセスの作成時に保存したトークンです。</block>
   <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。</block>
   <block id="d7652c841f9f6f67155b6c416335e932" category="paragraph">作成されるロールとユーザログインは次のようになります。実際の出力は以下のように異なる場合があります</block>
+  <block id="aa4fab3c3fde779a8dc99f5269961218" category="section-title">既存のユーザーの役割を変更する</block>
+  <block id="9b207ebd40869bfc10be14cb4279b22c" category="paragraph">既存のユーザーの役割を変更し、 * セカンダリアカウント所有者 * として追加するには、次の手順を実行します。</block>
+  <block id="bb10192e5b1a488b6e0bf0a436918863" category="list-text">[*Admin] &gt; [User Management] をクリックします。画面には、システム上のすべてのアカウントのリストが表示されます。</block>
+  <block id="27821658abae724fdd49cbd24489bb01" category="list-text">変更するアカウントのユーザ名をクリックします。</block>
+  <block id="fb00f883d7bba803b24e9d29087a3f05" category="list-text">必要に応じて、各 Cloud Insights 機能セットでユーザのロールを変更します。</block>
+  <block id="fbf90baf7d2aee8b9e682b8648241121" category="list-text">変更の保存 _ をクリックします。</block>
+  <block id="45d8ada80e1217d6ce7177e21f1e6c70" category="section-title">セカンダリアカウント所有者を割り当てるには、次の手順に従います</block>
+  <block id="77ca2cca3bda5b43a70ba6327d64e565" category="paragraph">アカウント所有者の役割を別のユーザーに割り当てるには、 Monitor &amp; Optimize のアカウント所有者としてログインする必要があります。</block>
+  <block id="9ee18dbf71b3091f256475408a6072d3" category="list-text">[*Admin] &gt; [User Management] をクリックします。</block>
+  <block id="208c98f13e768937bc22bc97791e7bb1" category="list-text">[ ユーザー ] ダイアログで、 [ 所有者として割り当て ] をクリックします。</block>
+  <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">変更を保存します。</block>
+  <block id="a03002bd8dfa882b8d3ff5080f0cba0e" category="inline-image-macro">アカウント所有者の選択を示すユーザー変更ダイアログ</block>
+  <block id="577bebfc42387e1ce299416137c6deb6" category="paragraph"><block ref="577bebfc42387e1ce299416137c6deb6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf8d24acc43906e154b695ab61aa70a4" category="paragraph">アカウント所有者はいくつでも設定できますが、所有者の役割は、選択したユーザーのみに制限することをお勧めします。</block>
 </blocks>
