@@ -17,7 +17,7 @@ TOC: マクロ : ハードブレーク :toclevels:1:nofooter: アイコン :link
 
 にアクセスします
 
-エンティティプロファイル（ Entity Profile ）::
+エンティティプロファイル（ Entity Profile ）:: 以下の詳細について説明します。
 +
 --
 * 名前

@@ -8468,7 +8468,6 @@
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーで CI によって報告される Cloud Insights 形式のクラスタ名を使用する - Cloud Insights では、 vSphere クラスタ名の先頭に vSphere データセンター名が付き、バックスラッシュ「 DC1\clusterA 」が Cloud Insights データセンター DC1 内のクラスタ A 内のハイパーバイザーでレポートされるクラスタ名です</block>
   <block id="e50e258ecc9eaa88d6c653c3a24cb319" category="section-title">2022 年 3 月</block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
-  <block id="81b63bcf37c281fa62b348f70cb153a7" category="paragraph">。 <block ref="abed7fb19b7000e31d7e181bcda0de86" category="inline-link-macro-rx"></block> データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。</block>
   <block id="2e9faf5215aa3ecfef89358ec3693874" category="section-title">NetApp ONTAP モニタ用の新しい FSX</block>
   <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">システム定義のモニタ</block>
   <block id="bcd1e57acea622ff5f6c7b621a37241c" category="paragraph">NetApp ONTAP 環境向けの FSX の監視は、簡単に行うことができます <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block> インフラ（指標）とワークロード（ログ）の両方に対応します。</block>
@@ -8637,4 +8636,5 @@
   <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="0c352b5d8cf5928163a8ab955706157d" category="paragraph">トークンを使用すると、お客様の観点から API への汎用アクセスが許可され、独自のテナントの範囲内で API へのアクセスが管理されます。お客様の管理者は、 Cloud Insights のバックエンド担当者から直接関与することなく、これらのトークンを付与したり取り消したりできます。</block>
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">_&lt;API_Access_Token&gt;_ は、 API アクセスの作成時に保存したトークンです。</block>
+  <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。</block>
 </blocks>

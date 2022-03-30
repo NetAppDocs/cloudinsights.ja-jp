@@ -17,7 +17,7 @@ keywords: features
 
 ==== ONTAP 9.9 以降のクラウド接続
 
-。 link:task_dc_na_cloud_agent.html["ONTAP 9.9 以降でのネットアップクラウド接続"] データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。
+。 link:task_dc_na_cloud_connection.html["ONTAP 9.9 以降でのネットアップクラウド接続"] データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。
 
 
 
