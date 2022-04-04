@@ -77,4 +77,4 @@ image:Webhook_Monitor_Notify.png["Webhook モニタの通知"]
 
 == Webhook の例：
 
-のウェブフック link:task_webhook_example_slack.html["たるみ"]のウェブフック のウェブフック のウェブフック 
+のウェブフック link:task_webhook_example_slack.html["たるみ"]のウェブフック link:task_webhook_example_pagerduty.html["PagerDuty"]のウェブフック link:task_webhook_example_teams.html["チーム"]のウェブフック link:task_webhook_example_discord.html["切断"]

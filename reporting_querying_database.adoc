@@ -17,7 +17,7 @@ NOTE: このドキュメントでは、で使用できる Cloud Insights レポ�
 
 == OData
 
-Cloud Insights レポート API は、に従います link:https://www.odata.org/["OData v4 の"] （ Open Data Protocol ）レポートデータベースの照会の標準。詳細や詳細については、をご覧ください  OData の場合。
+Cloud Insights レポート API は、に従います link:https://www.odata.org/["OData v4 の"] （ Open Data Protocol ）レポートデータベースの照会の標準。詳細や詳細については、をご覧ください link:https://www.odata.org/getting-started/basic-tutorial/["このチュートリアルでは"] OData の場合。
 
 すべての要求は、 URL \\ https://<Cloud Insights URL>/rest/v1/dwh_management/OData から開始します
 

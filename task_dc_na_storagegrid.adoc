@@ -57,6 +57,26 @@ NOTE: StorageGRID は、 raw TB から管理対象ユニットへのレートが
 |===
 
 
+== シングルサインオン（ SSO ）
+
+。 link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"] ファームウェアバージョンには対応する API バージョンがあり、 3.0 API 以降のバージョンではシングルサインオン（ SSO ）ログインがサポートされています。
+
+|===
+
+
+| ファームウェアバージョン | API のバージョン | シングルサインオン（ SSO ）のサポート 
+
+
+| 11.1 | 2. | いいえ 
+
+
+| 11.2 | 3.0 | はい。 
+
+
+| 11.5 | 3.3 | はい。 
+|===
+
+
 == トラブルシューティング
 
 この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

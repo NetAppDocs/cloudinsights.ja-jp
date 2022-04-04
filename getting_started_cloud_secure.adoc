@@ -15,7 +15,7 @@ Cloud Secure に登録して初めて環境にログインしたあと、デー�
 
 Cloud Secure で分析するためにデータを収集するには、エージェントが必要です。環境内のサーバまたは VM に Agent ソフトウェアをインストールします。1 つのエージェントを複数のデータコレクタに使用できます。
 
-* を参照してください link:concept_cs_agent_requirements.html["エージェントの要件"] および  エージェントをインストールします。
+* を参照してください link:concept_cs_agent_requirements.html["エージェントの要件"] および link:task_cs_add_agent.html["エージェントのインストール"] エージェントをインストールします。
 
 
 

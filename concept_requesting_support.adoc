@@ -77,7 +77,7 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 * *link:https://kb.netapp.com["ナレッジベース"]*
 +
-このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、そこで記事を検索できます。 link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/HOW_TO/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["操作方法"]、 または  Cloud Insights に関連する情報。
+このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、そこで記事を検索できます。 link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/HOW_TO/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["操作方法"]、 link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/FAQ/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["よくある質問です"]または link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/BREAK_FIX/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["トラブルシューティング"] Cloud Insights に関連する情報。
 
 * *link:https://docs.netapp.com/us-en/cloudinsights/["ドキュメント"]*
 +
