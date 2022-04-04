@@ -2602,7 +2602,6 @@
   <block id="b91bb54d5249b7797f071b75dfcc2669" category="cell">1 日（または次の ETL まで）</block>
   <block id="2feda95a3fa7c2b2fe1a5823227a38d4" category="summary">Dell EMC RecoverPoint データコレクタの構成</block>
   <block id="b7580029151bf8be03d47ebe21aae5d2" category="doc">Dell EMC RecoverPoint データコレクタ</block>
-  <block id="2d0536ed48dc3aedf9eae91c758cc1aa" category="paragraph">EMC RecoverPoint データコレクタは、 EMC RecoverPoint ストレージからインベントリ情報を収集します。データコレクタを設定するには、ストレージプロセッサの IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
   <block id="3846db481899e198743ded5cfb08f1e5" category="paragraph">EMC RecoverPoint データコレクタは、 RecoverPoint が他のストレージアレイ間で調整するボリューム間レプリケーション関係を収集します。Cloud Insights は各 RecoverPoint クラスタのストレージアレイを表示し、そのクラスタ上のノードとストレージポートのインベントリデータを収集します。ストレージプールまたはボリュームのデータは収集されません。</block>
   <block id="0596b0a970815228ec6e528c4293a9c1" category="list-text">ストレージプロセッサの IP アドレスまたは完全修飾ドメイン名</block>
   <block id="e19668f1f8c943db0e13c92639c909cc" category="list-text">ポート 443 経由での REST API へのアクセス</block>
@@ -5165,9 +5164,7 @@
   <block id="f7e484ed281631da8383d690f4eddd80" category="cell">HAProxy バックエンド</block>
   <block id="97147057d2a68260221e7116c41c9222" category="cell">ノード IP ノード名プロキシ ID 最終変更時刻最終セッション時間モードプロセス ID サーバー ID セッション制限ステータス重み</block>
   <block id="9a0ea7807c7dd21ed7a14f4f90d3e5ba" category="cell">アクティブサーババックアップサーババイト数キャッシュヒットキャッシュ検索数キャッシュ検索数チェックダウンクライアントが圧縮バイトをバイパス圧縮バイト数をバイパス圧縮バイト数を無視圧縮応答をアウト接続接続平均ダウンタイム時間セキュリティの懸念応答拒否された応答接続エラー応答 1xx 応答 2xx 応答 3xx 応答 4xx 応答 5xx 応答その他のサーバ選択キュー現在キュー最大キュー 1 秒あたりのセッション最大キュー平均時間セッション 1 秒あたりの最大要求接続再使用応答時間平均セッション最大サーバ転送総セッション数総セッション時間平均要求再ディスパッチ要求再試行要求 書き換え</block>
-  <block id="10bcebae483fccb445d5bb08f8e21b57" category="summary">HDS COPS Center データコレクタの設定。</block>
   <block id="edfa0366cb6c25de6aa46576a0e54251" category="doc">Hitachi Ops Center データコレクタ</block>
-  <block id="00a13db56b8dd9cf1ca9ce114eaa262d" category="paragraph">このデータコレクタは、 Hitachi Ops Center の統合されたアプリケーションスイートを使用して、複数のストレージデバイスのインベントリとパフォーマンスのデータにアクセスします。</block>
   <block id="5c6ab1284b6b7a5a7102854a969c99be" category="cell">ストレージシステム</block>
   <block id="6fa6e2299a829e04bba19b10e38dc56c" category="cell">パリティグループ</block>
   <block id="7f47ab518e59deb2aed009c3db49ddbd" category="cell">ストレージプール（ RAID ）、ディスクグループ</block>
@@ -5182,7 +5179,6 @@
   <block id="3d9fdded41d1c4003ba59b29e1faef21" category="list-text">Operations Center サーバの IP アドレス</block>
   <block id="2d9bdba47e7ef41afea9893477c6c1b1" category="list-text">Ops Center ソフトウェアおよびピア権限の読み取り専用のユーザ名とパスワード</block>
   <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center の IP アドレス</block>
-  <block id="08ae6fd45d8b805f01549b8a7d5ba93a" category="cell">Operations Center サーバの IP アドレスまたは完全修飾ドメイン名</block>
   <block id="8db0f231405345684c1dab98cc049f52" category="cell">Ops Center サーバのユーザ名。</block>
   <block id="18bf6f2c111fb8ac2dbe99d3445cbadd" category="cell">Ops Center サーバのパスワード。</block>
   <block id="bc742a3b20c159bc11ea844e4d798e34" category="cell">デフォルトは HTTPS （ポート 443 ）です</block>
@@ -8658,4 +8654,9 @@
   <block id="55c82b601deae028c1c5e87fd820923d" category="cell">3.0</block>
   <block id="2b7c53bace6e76127dd80fffa6f4f898" category="cell">11.5</block>
   <block id="bca66716b9ca2d13a4c28be69b276777" category="cell">3.3</block>
+  <block id="8020d56a67ade967a3254ada824b1406" category="summary">HDS Ops Center データコレクタの設定</block>
+  <block id="317ca49a534ef6dc0317a60fdf058fef" category="paragraph">このデータコレクタは、 Hitachi Ops Center の統合されたアプリケーションスイートを使用して、複数のストレージデバイスのインベントリとパフォーマンスのデータにアクセスします。インベントリと容量を検出するには、 Operations Center のインストールに「 Common Services 」と「 Administrator 」の両方のコンポーネントを含める必要があります。パフォーマンス収集では、さらに「 Analyzer 」を導入する必要があります。</block>
+  <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">「 Common Services 」コンポーネントをホストする Ops Center サーバの IP アドレスまたは完全修飾ドメイン名</block>
+  <block id="8aaf0c3eec33a08ba4aa512a66667baf" category="paragraph">EMC RecoverPoint データコレクタの主な用途は、 RecoverPoint ストレージアプライアンスによって促進されるボリューム間レプリケーション関係を検出することです。このコレクタは、 RecoverPoint アプライアンス自体も検出します。Dell/EMC では、 VM 用の VMware バックアップ解決策 「 RecoverPoint for VMS 」を販売していますが、このコレクタではサポートされていません</block>
+  <block id="77b03d5ff356126537320c25f40d3644" category="paragraph">データコレクタを設定するには、ストレージプロセッサの IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
 </blocks>

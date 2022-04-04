@@ -2,13 +2,13 @@
 sidebar: sidebar 
 permalink: task_dc_hds_ops_center.html 
 keywords: data collector, Hitachi Ops Center 
-summary: HDS COPS Center データコレクタの設定。 
+summary: HDS Ops Center データコレクタの設定 
 ---
 = Hitachi Ops Center データコレクタ
 
 
 [role="lead"]
-このデータコレクタは、 Hitachi Ops Center の統合されたアプリケーションスイートを使用して、複数のストレージデバイスのインベントリとパフォーマンスのデータにアクセスします。
+このデータコレクタは、 Hitachi Ops Center の統合されたアプリケーションスイートを使用して、複数のストレージデバイスのインベントリとパフォーマンスのデータにアクセスします。インベントリと容量を検出するには、 Operations Center のインストールに「 Common Services 」と「 Administrator 」の両方のコンポーネントを含める必要があります。パフォーマンス収集では、さらに「 Analyzer 」を導入する必要があります。
 
 
 
@@ -68,7 +68,7 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | フィールド | 説明 
 
 
-| Hitachi Ops Center の IP アドレス | Operations Center サーバの IP アドレスまたは完全修飾ドメイン名 
+| Hitachi Ops Center の IP アドレス | 「 Common Services 」コンポーネントをホストする Ops Center サーバの IP アドレスまたは完全修飾ドメイン名 
 
 
 | ユーザ名 | Ops Center サーバのユーザ名。 

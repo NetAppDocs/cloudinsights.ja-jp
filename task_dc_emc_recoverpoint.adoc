@@ -8,7 +8,9 @@ summary: Dell EMC RecoverPoint データコレクタの構成
 
 
 [role="lead"]
-EMC RecoverPoint データコレクタは、 EMC RecoverPoint ストレージからインベントリ情報を収集します。データコレクタを設定するには、ストレージプロセッサの IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。
+EMC RecoverPoint データコレクタの主な用途は、 RecoverPoint ストレージアプライアンスによって促進されるボリューム間レプリケーション関係を検出することです。このコレクタは、 RecoverPoint アプライアンス自体も検出します。Dell/EMC では、 VM 用の VMware バックアップ解決策 「 RecoverPoint for VMS 」を販売していますが、このコレクタではサポートされていません
+
+データコレクタを設定するには、ストレージプロセッサの IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。
 
 EMC RecoverPoint データコレクタは、 RecoverPoint が他のストレージアレイ間で調整するボリューム間レプリケーション関係を収集します。Cloud Insights は各 RecoverPoint クラスタのストレージアレイを表示し、そのクラスタ上のノードとストレージポートのインベントリデータを収集します。ストレージプールまたはボリュームのデータは収集されません。
 
