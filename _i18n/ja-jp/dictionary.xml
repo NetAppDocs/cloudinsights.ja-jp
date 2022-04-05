@@ -874,7 +874,6 @@
   <block id="0062c1fbde704d862293af74f9c341ee" category="paragraph">+ ［ アプリケーションの追加 ］ ダイアログボックスが表示されます。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">アプリケーションの一意の名前を入力します。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">アプリケーションの優先度を選択します。</block>
-  <block id="791e1dfec485a22a41ff378f2bff756c" category="paragraph">アプリケーションを定義したら、アセットに割り当てることができます。</block>
   <block id="9bf2dd1afa4d073358de477920a2956b" category="section-title">アセットへのアプリケーションの割り当て</block>
   <block id="b93ef263c781b779a9342ab97ac1011e" category="paragraph">この手順では、例としてアプリケーションをホストに割り当てます。アプリケーションには、ホスト、仮想マシン、ボリューム、または内部ボリュームを割り当てることができます。</block>
   <block id="11db6ea59a00e33ecd2cdfae80620a9a" category="list-text">アプリケーションに割り当てるアセットを選択します。</block>
@@ -3799,8 +3798,6 @@
   <block id="be79d6e6a44e0a57d37256e5bc2c0909" category="cell">解決策： * 入力された資格情報と IP アドレスを確認してください。* VMware Infrastructure Client を使用して、 Virtual Center との通信を試みます。* Managed Object Browser （ MOB など）を使用して Virtual Center と通信してみます。</block>
   <block id="4715797e850d7872546c22d0a379ca4f" category="summary">クエリを使用して、複数のアプリケーションやアノテーションをオブジェクトに割り当てたり、オブジェクトから複数のアプリケーションやアノテーションを削除したりできます。</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">アセットに対する複数のアプリケーションの割り当てと削除</block>
-  <block id="ddb4e3be26b56b7ae03a903c61fba413" category="paragraph">複数のアプリケーションをアセットに割り当てたりアセットから削除したりするときは、手動で個別に行わなくても、クエリを使用してまとめて実行できます。</block>
-  <block id="ed447659cd503ecad81ff432937f36db" category="admonition">以下の手順を使用して、アノテーションを追加または削除することもできます。</block>
   <block id="930ebcf0e051fb5a1e36f9ff9248a750" category="paragraph">編集するすべてのアセットを検索するクエリを作成しておく必要があります。</block>
   <block id="4bdc13a05f4739df7fb7100c4c7a4f0a" category="paragraph">[ クエリ ] ページが表示されます。</block>
   <block id="4ce096e29e33c848d69cb1b5108fca19" category="list-text">アセットを検索するクエリの名前をクリックします。</block>
@@ -8659,4 +8656,10 @@
   <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">「 Common Services 」コンポーネントをホストする Ops Center サーバの IP アドレスまたは完全修飾ドメイン名</block>
   <block id="8aaf0c3eec33a08ba4aa512a66667baf" category="paragraph">EMC RecoverPoint データコレクタの主な用途は、 RecoverPoint ストレージアプライアンスによって促進されるボリューム間レプリケーション関係を検出することです。このコレクタは、 RecoverPoint アプライアンス自体も検出します。Dell/EMC では、 VM 用の VMware バックアップ解決策 「 RecoverPoint for VMS 」を販売していますが、このコレクタではサポートされていません</block>
   <block id="77b03d5ff356126537320c25f40d3644" category="paragraph">データコレクタを設定するには、ストレージプロセッサの IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
+  <block id="71a388d251263451b6a429a35f18c534" category="paragraph">アプリケーションを定義したら、アセットに割り当てることができます。</block>
+  <block id="46152eb4e0d7febe5ed5ec5aa51b068f" category="admonition">関連するアセットが大量にある環境では、それらのアセットへのアプリケーションの割り当ての継承に数分かかることがあります。関連するアセットが多数ある場合は、継承の時間を長くしてください。</block>
+  <block id="b5fba9ff24d0045d1377a05a46b32f68" category="inline-link-macro">アプリケーション</block>
+  <block id="a4dc3c56fe7e26b25b470b6a7c15badc" category="paragraph">複数を割り当てることができます <block ref="2a4b6454a635dd6d2517e4f81c46cc23" category="inline-link-macro-rx"></block> アセットに対して複数のアプリケーションを手動で割り当てたり削除したりする代わりに、クエリを使用してまとめて削除することもできます。</block>
+  <block id="4ab6864fc58ecd8b598ee10dfe2ac311" category="inline-link-macro">注釈</block>
+  <block id="9d0068916fee0d45d023af017221e708" category="admonition">以下の手順を使用して、を追加または削除できます <block ref="5ee10a6642913576d2747e5e8b69f77c" category="inline-link-macro-rx"></block> 同じ方法で。</block>
 </blocks>
