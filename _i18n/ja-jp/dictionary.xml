@@ -8663,4 +8663,17 @@
   <block id="4ab6864fc58ecd8b598ee10dfe2ac311" category="inline-link-macro">注釈</block>
   <block id="9d0068916fee0d45d023af017221e708" category="admonition">以下の手順を使用して、を追加または削除できます <block ref="5ee10a6642913576d2747e5e8b69f77c" category="inline-link-macro-rx"></block> 同じ方法で。</block>
   <block id="76b98091ce8fe8a7a83d21d8c94371fd" category="list-text">作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。</block>
+  <block id="47d7b551b40becb326c406f74238150a" category="paragraph">API ドキュメントは Swagger ベースです。 API の簡単な概要情報と使用方法を提供しており、環境内で試すことができます。</block>
+  <block id="1281391af6f060d6074a70718d4fe3ea" category="paragraph">Cloud Insights API を使用する前に、 1 つ以上の * API アクセストークン * を作成する必要があります。アクセストークンは、指定された API カテゴリに対して使用され、読み取り権限と書き込み権限を付与できます。各アクセストークンの有効期限を設定することもできます。指定したカテゴリのすべての API がアクセストークンに対して有効です。各トークンはユーザ名またはパスワードを無効にします。</block>
+  <block id="360146f659bd725b350b271d6c503e19" category="list-text">API カテゴリを選択します</block>
+  <block id="c702f9ec1de747488ae69091e4b44640" category="paragraph">トークンを使用すると、お客様の観点から API への汎用アクセスが許可され、独自のテナントの範囲内で API へのアクセスが管理されます。お客様の管理者は、 Cloud Insights のバックエンド担当者に直接関与せずに、これらのキーを付与したり取り消したりできます。</block>
+  <block id="98fbc8e7d31cedd912f33ee6a89818dc" category="section-title">API カテゴリ</block>
+  <block id="c7fb26bb2d197a98dd4605353de8b5fd" category="paragraph">Cloud Insights API はカテゴリベースであり、現在、次のカテゴリで構成されています。</block>
+  <block id="2f90612b2de30393cb574a8125f3b83c" category="list-text">アセットのカテゴリには、アセット、クエリ、および検索用の API が含まれています。</block>
+  <block id="19d579e8bdc0964ff6c1b98d9f4077d2" category="list-text">データ収集カテゴリは、データコレクタを取得および管理するために使用します。</block>
+  <block id="2e3e1cf2be708126495ee0409de4ffdc" category="list-text">データ取り込みカテゴリは、 Telegraf エージェントなどの取り込みデータとカスタムメトリックを取得および管理するために使用されます</block>
+  <block id="66f4e9202f5d9c4adb625559f7dd6e37" category="paragraph">その他のカテゴリや API は、時間の経過とともに利用できるようになる場合があります。最新の API 情報は、で確認できます <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
+  <block id="d1d72189f00074c010ad5cdaa0e7efe1" category="paragraph">パフォーマンス指標には概要とカテゴリがあり、パフォーマンス概要のコレクションが含まれています。たとえば、 Latency 、 Traffic 、 Rate などです。</block>
+  <block id="9291545b28f5f21e3694eb57db45da2c" category="paragraph">パフォーマンスデータのオブジェクトタイプごとに、一意のパフォーマンス指標のセットがあります。たとえば、仮想マシンのパフォーマンスオブジェクトは、パフォーマンスメトリックとして「 diskThroughput 」をサポートします。サポートされている各パフォーマンスメトリックは、メトリックディクショナリに示されている特定の「パフォーマンスカテゴリ」です。Cloud Insights では、本ドキュメントで後述するパフォーマンス指標のカテゴリを複数サポートしています。各パフォーマンスメトリックディクショナリには、このパフォーマンスメトリックの判読可能な概要である「概要」フィールドと、パフォーマンスサマリーカウンタエントリのセットも含まれます。</block>
+  <block id="780b9434cb2ebb62e93b92701c3b13b0" category="paragraph">検索 API は、システムへのシンプルなエントリポイントです。API に対する唯一の入力パラメータは自由形式の文字列であり、結果の JSON には分類された結果のリストが含まれています。カテゴリは、ストレージ、ホスト、データストアなど、インベントリのアセットタイプによって異なります。各カテゴリには、検索条件に一致するカテゴリタイプのオブジェクトのリストが含まれます。</block>
 </blocks>
