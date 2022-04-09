@@ -11,6 +11,81 @@ keywords: features
 
 
 
+=== 2022 年 4 月
+
+
+
+==== フィードバックを共有してください。
+
+Cloud Insights の形成に役立つ情報をご用意しました。ネットアップの「 Insights to Action 」プログラムに参加すると、ポイントや賞品を獲得できます。 link:https://netapp.co1.qualtrics.com/jfe/form/SV_2aVWcE58J7oIDs1["* 今すぐ登録 *"]！
+
+
+
+==== ダッシュボードエディタが更新されました
+
+ダッシュボード作成ツールを徹底的に見直し、データをより迅速に視覚化できるようにしました。Cloud Insights の [ ダッシュボード ] ページに移動して、既存のダッシュボードを編集したり、ダッシュボードギャラリーから追加したり、独自のダッシュボードを作成してチェックアウトしたりできます。
+
+image:DashboardWidgetEditorScreen.png["ウィジェットエディタのレイアウトが改善されました"]
+
+また、新しい Count 集約方式も導入されています。棒グラフ、棒グラフ、円グラフ、円グラフの各ウィジェットでデータをグループ化すると、選択した指標の関連オブジェクトの数をすばやく簡単に表示できます。
+
+image:CountAggregationExample1.png["[Count] を示す [Aggregation] ドロップダウン"]
+
+
+
+==== Kubernetes インフラの監視機能が強化されました
+
+Cloud Insights では、ポッド、デモ onset 、 ReplicaSets が作成または削除されたとき、および新しい展開が作成されたときにアラートを生成することで、 Kubernetes 環境の変更に優先的に対応します。Kubernetes ではデフォルトのステータスが _paused_state に監視されるため、必要なものだけを有効にする必要があります。
+
+
+
+==== ユーザ管理用の新しい API
+
+ユーザの管理と招待は、 API を使用したスナップ形式です。ユーザを招待し、必要な Cloud Insights 機能セット（監視と最適化、 Cloud Secure 、レポート）に基づいてロールを割り当てることができます。
+
+
+
+==== フィーチャーのプレビュー（ Preview Features
+
+Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
+
+|===
+
+
+| * 特徴 * | * 概要 * 
+
+
+| 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。 
+
+
+| Cloud Secure –攻撃に対するユーザアクセスを制限します | 攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+
+
+| 応力の下の共有リソース | Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+|===
+
+
+==== 新しい Data Collector
+
+* * Cohesity Smart Files * - この REST API ベースのコヒリティクラスタを取得し、「ビュー」（ CI 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。
+
+
+
+
+==== Data Collector のその他のアップデート
+
+次のデータコレクタでのパフォーマンスデータの収集と表示が改善されました。
+
+* Brocade CLI
+* Dell/EMC VPLEX 、 PowerStore 、 Isilon / PowerScale 、 VNX Block / Clariion CLI 、 XtremIO 、 Unity/VNXe
+* Pure FlashArray
+
+
+これらのパフォーマンス強化機能は、 VMware や Cisco のほか、すべてのネットアップデータコレクタですでに利用できます。今後数カ月にわたって、他のすべてのデータコレクタに展開される予定です。
+
+'''
+
+
 === 2022 年 3 月
 
 
@@ -58,23 +133,6 @@ image:FSx_System_Monitors_Workloads.png["FSX はワークロードを監視し�
 * Broadcom Fibre Channel Switches データコレクタは、各インベントリポーリングで発行される CLI コマンドの数を減らすように最適化されています。
 
 
-
-
-==== フィーチャーのプレビュー（ Preview Features
-
-Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
-
-|===
-
-
-| * 特徴 * | * 概要 * 
-
-
-| ユーザーアクセスの自動応答を制限します | 攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
-
-
-| 応力の下の共有リソース | ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソースlink:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
-|===
 '''
 
 

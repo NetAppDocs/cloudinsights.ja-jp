@@ -82,14 +82,7 @@
   <block id="7ad3a84f1fcb16f2e949410059075192" category="paragraph">AWS の登録プロセスが完了すると、 Cloud Insights 環境に戻ります。または、環境がアクティブでなくなった場合（ログアウトした場合など）は、 Cloud Central のサインインページが表示されます。Cloud Insights に再度サインインすると、サブスクリプションがアクティブになります。</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">AWS Marketplace のページで「 * アカウントの設定 * 」をクリックしてから、 AWS サブスクリプションの手続きを 1 時間以内に完了する必要があります。1 時間以内に完了しない場合は、もう一度「 * アカウントの設定 * 」をクリックして処理を完了する必要があります。</block>
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">問題が発生し、サブスクリプションプロセスが正常に完了しない場合でも、環境にログインすると「トライアルバージョン」のバナーが表示されます。この場合は、 * Admin &gt; Subscription * に移動して、契約プロセスを繰り返すことができます。</block>
-  <block id="ed5935cc32dade0b2d244107f7aa5fe6" category="section-title">サブスクリプションモード</block>
-  <block id="308bc3a6204b284eb17c88c0c26b6a38" category="paragraph">サブスクリプションがアクティブになると、 [ 管理者 ] &gt; [ サブスクリプション *] ページでサブスクリプションのステータスと管理対象ユニットの使用状況を確認できます。</block>
-  <block id="2931ce8ce932ee92d44cb8feec0f64e7" category="inline-image-macro">サブスクリプションステータス</block>
-  <block id="86ddc8a835d6340583cf61eac98ab055" category="paragraph"><block ref="86ddc8a835d6340583cf61eac98ab055" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c08374568b73748e7ca5cdc1ce644f6" category="paragraph">サブスクリプションのステータスページには、次の情報が表示されます。</block>
   <block id="6d9a2e2290d3df63014b18bdb7da2212" category="list-text">現在のサブスクリプションまたはアクティブエディション</block>
-  <block id="bfda71e564df94a83ed197513095a98d" category="list-text">サブスクリプションの詳細</block>
-  <block id="7c038313ceaf745a74cf959d5459722f" category="list-text">ホストと容量の内訳を含む、現在の管理ユニットの使用状況</block>
   <block id="2d5c36fcd4687378b85e14d41941a80f" category="admonition">フォーマットされていない容量管理対象ユニット数は、環境内の合計物理容量を表し、最も近い管理対象ユニットに切り上げられます。</block>
   <block id="cbeff837b5b145559373d2d49dde5efb" category="section-title">購読している使用量を超えた場合はどうなりますか ?</block>
   <block id="8014c42068ef58c63a245dfd8cb969f3" category="paragraph">管理下ユニットの使用率が総加入量の 80% 、 90% 、 100% を超えると、警告が表示されます。</block>
@@ -101,13 +94,6 @@
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">警告バナーが表示されます。購読している管理ユニット数を増やすことができます。</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100% *</block>
   <block id="13b6624916681c7d00ae8634971f8cd8" category="cell">エラーバナーが表示され、次のいずれかを実行するまで機能が制限されます。 * サブスクリプションを変更してサブスクリプション管理ユニット数を増やす * データコレクタを削除して、管理ユニットの使用量が購読している量以下になるようにします</block>
-  <block id="b004ed546334ca156d79ca28948f895f" category="section-title">データコレクタをインストール</block>
-  <block id="44dbec7be84a5fd30603c50945d16fe9" category="paragraph">[ データコレクタの表示 *] ボタンをクリックして、インストールされているデータコレクタのリストを展開します。</block>
-  <block id="fc533a9ce62a8d90d1518c1f6483e105" category="inline-image-macro">データコレクタ</block>
-  <block id="36c8ca827a0042c6cc4fdd697b9e4556" category="paragraph"><block ref="36c8ca827a0042c6cc4fdd697b9e4556" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5b1d644346a4becd2467f5d6388a0b61" category="paragraph">データコレクタセクションには ' 環境にインストールされているデータコレクタと ' それぞれの管理ユニットの内訳が表示されます</block>
-  <block id="284e300b68f9744a057424d324471ec9" category="admonition">管理対象ユニットの合計は、ステータスセクションのデータコレクタの数と若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。［ ステータス ］ セクションには、サブスクリプションの実際の管理ユニット数が表示されます。</block>
-  <block id="55c42dee624892077410178265bb666a" category="paragraph">購読している量に近づいている、または超過している場合は、 [three dots] メニューをクリックして [* Delete] を選択することにより、このリストのデータコレクタを削除できます。</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接購読して、トライアルをスキップしてください</block>
   <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">から直接 Cloud Insights に登録することもできます <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。</block>
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">netstat データコレクタ設定です</block>
@@ -4186,24 +4172,18 @@
   <block id="d7eb8ab1e688454eec9d83c8277b00fe" category="section-title">グループ化と集約</block>
   <block id="3d0486264987eff198cb8489a591c919" category="section-title">グループ化（ローリングアップ）</block>
   <block id="e251f9ae37a0914ac3ed0861aee9d003" category="paragraph">ウィジェットに表示されるデータは、取得中に収集されたデータポイントからグループ化（集計）されたものです。たとえば、ストレージ IOPS の経過を示す折れ線グラフでは、データセンターごとにグラフ線を表示してデータをすばやく比較できます。これらのデータをグループ化する方法はいくつかあります。</block>
-  <block id="5feea3e3ac58d9b39ba942eb579a4dc5" category="list-text">* Avg * ：収集されたデータの平均値として各行を表示します。</block>
-  <block id="d1433dcb6902e9ac41f53ed861b62f32" category="list-text">* 最大 * ：各行を基になるデータの _maximum_ として表示します。</block>
-  <block id="e83206d12cc1b2bd55081384b71f9020" category="list-text">* 最小 * ：各行を基になるデータの _minimum_ として表示します。</block>
   <block id="1a284984e082a2cc2ceecd12b5c25e50" category="list-text">* 合計 * ：各行を基になるデータの _SUM_( 合計 ) として表示します。</block>
   <block id="419981855bdd80d78c67ae74ed237d6c" category="list-text">* Count * ：指定した期間内にデータが報告されたオブジェクトの _count_of を表示します。ダッシュボードの時間範囲（ダッシュボードの時間を上書きするように設定されている場合はウィジェットの時間範囲）または選択したカスタム時間ウィンドウ _ （ _Entire Time Window_ ）を選択できます。</block>
   <block id="d186cba97a995601fc12d97defd879c7" category="paragraph">グループ化方法を設定するには、次の手順を実行します。</block>
   <block id="0886591e8bd637066947802b2c681da8" category="list-text">ウィジェットのクエリで、アセットのタイプと指標（ _Storage_ など）と指標（ _Performance IOPS Total_ など）を選択します。</block>
-  <block id="575c1cd09111ba05a1eb5cc5312dd4e8" category="list-text">*Group* の場合は、集計方法（ _Avg_ など）を選択し、データを集計する属性またはメトリックを選択します（例： _Data Center_ ）。</block>
   <block id="5545e86f2a092d7eeeeae79320003a7a" category="paragraph">ウィジェットが自動的に更新され、各データセンターのデータが表示されます。</block>
   <block id="9b3328ae96bacd8c344b3f781d9113c0" category="paragraph">また、基になるデータをグループ化してグラフや表にまとめることもできます。この場合は、ウィジェットのクエリごとに 1 つの線が表示されます。つまり、収集されたすべてのアセットについて、選択した指標または指標の平均、最小、最大、合計、または数が表示されます。</block>
   <block id="28c428ed363d0e9575a830fcfb080fe3" category="paragraph">データが「すべて」でグループ化されているウィジェットの凡例をクリックすると、ウィジェットで使用されている最初のクエリの結果を示すクエリページが開きます。</block>
   <block id="12d9c21e855587068144e1be92c3bc96" category="paragraph">クエリにフィルタを設定している場合は、フィルタされたデータに基づいてデータがグループ化されます。</block>
   <block id="4bb74590cbf2f4d72c628f06e53c55b9" category="paragraph">ウィジェットを任意のフィールド（ _Model_ など）でグループ化することを選択した場合でも、そのフィールドのデータをグラフまたは表に正しく表示するには、そのフィールドでフィルタ処理する必要があります。</block>
   <block id="d86c1c1f96efbca023a6312f2655cdd2" category="section-title">データの集約</block>
-  <block id="1d6802d615bce70ad97c362dcc6d5c40" category="paragraph">データポイントを分、時間、日などのバケットに集約して時系列のグラフ（行や領域など）をさらに調整し、そのデータを属性別（選択した場合）に集計することもできます。選択したインターバルの間に収集された _Avg 、 Max 、 Min 、 Sum_ 、または _Last_data ポイントに基づいて、データポイントを集計することができます。集計方法を選択するには、ウィジェットの「クエリ」セクションで「その他のオプション」をクリックします。</block>
   <block id="a10dce4cf3b20fcc81ffdd73fff68459" category="paragraph">インターバルを長くすると、「集計間隔にはデータポイントが多すぎる」という警告が表示されることがあります。間隔が短い場合は、ダッシュボードの期間を 7 日に延長するとこのように表示されることがあります。この場合、選択する期間がより短いほど、集約間隔は一時的に長くなります。</block>
   <block id="6d984d3ac5f53bc70c9ce3bedb56f658" category="paragraph">棒グラフウィジェットおよび単一値ウィジェットでデータを集約することもできます。</block>
-  <block id="161e11bf628a1fd670e3e0b9eedf29cb" category="paragraph">ほとんどのアセットカウンタは、デフォルトでは _Avg_ に集約されます。一部のカウンタは、デフォルトで _Max 、 Min_ 、または _Sum_By に集計されます。たとえば、デフォルトでは、ポートエラーでアグリゲートは _sum に、ストレージ IOPS アグリゲートは _Avg_ になります。</block>
   <block id="806da624ec9d79eaa05cce82c4860377" category="section-title">上 / 下の結果を表示しています</block>
   <block id="30481770dde0dcefc7b5810b7184ac11" category="paragraph">グラフウィジェットでは、集計されたデータの「上位」または「 * 下位」の結果を表示したり、表示される結果の数をドロップダウンリストから選択したりできます。表ウィジェットでは、任意の列でソートできます。</block>
   <block id="bf2502f9bc2110da9954bdce06de9421" category="section-title">グラフウィジェットの上位 / 下位表示機能</block>
@@ -4227,7 +4207,6 @@
   <block id="4f185713961f3f486e96a04d3b9dc1a6" category="paragraph">これで、合計 IOPS が 1 以上の VM がすべて表示されます。この表にはグループ化はありません。すべての VM が表示されている。</block>
   <block id="a1966740b980e92a9d3c265e43f730b5" category="list-text">[+]* でグループ化ボタンをクリックします。</block>
   <block id="a782b7666bdf1c1cb7056c8a2638fe4d" category="paragraph">表示されている任意の属性またはアノテーションでグループ化できます。1 つのグループ内のすべての VM を表示するには、 _ALL_ を選択します。</block>
-  <block id="b254adcada979c6c2e6c887199085285" category="paragraph">パフォーマンス指標の列ヘッダーには、「 3 ドット」メニューが表示されます。このメニューには「 * 集計」オプションが含まれています。デフォルトの集計方法は _Avg_ です。つまり、このグループに表示されている数値は、グループ内の各 VM の合計 IOPS の平均値です。この列を _Avg 、 Sum 、 Min_or_Max_ で集計することを選択できます。表示された列のうち、パフォーマンス指標を含むものはいずれも、個別に集計できます。</block>
   <block id="f7a8c2039d39ba896bfa4934788580f5" category="inline-image-macro">集計します</block>
   <block id="2202d4997fd5aa526a219fbba3683a62" category="paragraph"><block ref="2202d4997fd5aa526a219fbba3683a62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b38d94a5cfd2541af6801a9dc46fd618" category="list-text">[_all_] をクリックし、 [_Hypervisor name _] を選択します。</block>
@@ -8260,13 +8239,10 @@
   <block id="ecf4e9e3c38358de05561be5ed03f5d0" category="section-title">フィーチャーのプレビュー（ Preview Features</block>
   <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">ネットアップの営業チーム</block>
   <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 特徴 *</block>
-  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">ユーザーアクセスの自動応答を制限します</block>
   <block id="decbe415d8accca7c2c16d48a79ee934" category="inline-link-macro">詳細はこちら</block>
-  <block id="f763810a8ec0d5862e0f288795932956" category="cell">攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="ecd6006dc9161e21cc393e8aee8b161a" category="cell">データ破壊–ファイル削除攻撃の検出</block>
   <block id="802e1838a460af6f9b00de358ee4fd50" category="cell">異常な大規模なファイル削除アクティビティを検出し、悪意のあるユーザによる悪意のあるファイルアクセスをブロックし、自動応答ポリシーを使用してスナップショットを自動的に作成します。</block>
   <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">応力の下の共有リソース</block>
-  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="e58aeb679b2b8a9e7a899a6123bac66e" category="section-title">Cloud Insights は Apache log4j の脆弱性を解決します</block>
   <block id="671a3bde6499a097bb904b76a2924a9f" category="paragraph">お客様のセキュリティは、ネットアップの最優先事項です。Cloud Insights には、最新の Apache log4j の脆弱性に対処するためのソフトウェアライブラリの更新が含まれています。</block>
   <block id="288805c2814f50aec1c5cc8239cd2bd7" category="paragraph">ネットアップの Product Security Advisory Web サイトに掲載されている次の資料を参照してください。</block>
@@ -8694,4 +8670,51 @@
   <block id="7e07c1b11f24151c7ec5fb952780452c" category="cell">WAFL クォータの qtree を超えました</block>
   <block id="46faf95e309bd2826b383287323b8088" category="cell">このイベントは、ボリュームでツリークォータを超えた場合に発生します。このイベントは、一定期間、または「クォータのサイズ変更」が実行されるまで、このツリーに対して繰り返されません。時間は「 quota logmsg 」コマンドで指定します。</block>
   <block id="ef50e307d2e9be873ea2971a14d5b95b" category="cell">このツリーで使用量を減らすか、クォータを増やしてから、「 quota resize 」コマンドを実行してください。</block>
+  <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">サブスクリプションステータスを表示します</block>
+  <block id="4d71df4f1ca4df08ff676034d4f602c1" category="paragraph">サブスクリプションがアクティブになると、 [*Admin] &gt; [Subscription] * ページからサブスクリプションのステータスと管理ユニットの使用状況を確認できます。</block>
+  <block id="cf9f7d335ccf63f9afafb03e9bccbb83" category="inline-image-macro">月額プランを表示しています</block>
+  <block id="5b5d45532915c043e48d673f375857ab" category="paragraph"><block ref="5b5d45532915c043e48d673f375857ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a6d1c39ffb1db427cb7afbe60b68ee43" category="paragraph">[ サブスクリプションの詳細 ] タブには、次の情報が表示されます</block>
+  <block id="a62d98f1bf3d70795bcdab761b572ade" category="list-text">サブスクリプションの詳細</block>
+  <block id="2f40f378178c238fe365dfbf4f50ca13" category="list-text">リンクをクリックして、サブスクリプションの変更またはコストの変更の見積もりを行います</block>
+  <block id="3252142ff4dd2ca67a9bff6f0a7fd71b" category="section-title">使用状況管理を表示します</block>
+  <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">Usage Management （使用管理）タブには、管理対象ユニットの使用状況の概要、環境にインストールされているデータコレクタのリスト、および各管理対象ユニットの内訳が表示されます。</block>
+  <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">管理対象ユニットの合計は、サマリセクションのデータコレクタ数とは若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。サマリセクションには、サブスクリプションの実際の管理ユニット数が表示されます。</block>
+  <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">購読している量に近づいている、または超過している場合は、 [three dots] メニューをクリックして _Delete_を 選択することにより、このリストのデータコレクタを削除できます。</block>
+  <block id="88ae2467b83e5d292b18e19eaae1852d" category="list-text">NetApp Kubernetes Monitoring Operator インストールは、 Kubernetes 1.17 以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。</block>
+  <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022 年 4 月</block>
+  <block id="259a90b9586b985b7c26543c1f883472" category="section-title">フィードバックを共有してください。</block>
+  <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">* 今すぐ登録 *</block>
+  <block id="4d9ad51ad70c2642ecea9935d81a1695" category="paragraph">Cloud Insights の形成に役立つ情報をご用意しました。ネットアップの「 Insights to Action 」プログラムに参加すると、ポイントや賞品を獲得できます。 <block ref="ab6e19fe26503d1ed4ce099411562a46" category="inline-link-macro-rx"></block>！</block>
+  <block id="52072c34765837d5e6badb6caf288f6a" category="section-title">ダッシュボードエディタが更新されました</block>
+  <block id="cc7c0620453431e468812aace5e77151" category="paragraph">ダッシュボード作成ツールを徹底的に見直し、データをより迅速に視覚化できるようにしました。Cloud Insights の [ ダッシュボード ] ページに移動して、既存のダッシュボードを編集したり、ダッシュボードギャラリーから追加したり、独自のダッシュボードを作成してチェックアウトしたりできます。</block>
+  <block id="fa1ab12277f3f7697de9ade37c5612c4" category="inline-image-macro">ウィジェットエディタのレイアウトが改善されました</block>
+  <block id="5b17f0ef6e1e7f78e5bb8a85dadb4852" category="paragraph"><block ref="5b17f0ef6e1e7f78e5bb8a85dadb4852" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a48efe329568d1e14e89d768038fc44d" category="paragraph">また、新しい Count 集約方式も導入されています。棒グラフ、棒グラフ、円グラフ、円グラフの各ウィジェットでデータをグループ化すると、選択した指標の関連オブジェクトの数をすばやく簡単に表示できます。</block>
+  <block id="b4c3ffa7b1e054afcfeb3eb4b9347c21" category="inline-image-macro">[Count] を示す [Aggregation] ドロップダウン</block>
+  <block id="fa7034d945953ab347c4367d8fa3a51f" category="paragraph"><block ref="fa7034d945953ab347c4367d8fa3a51f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d55cb88c50b339df6b23026d70f4851" category="section-title">Kubernetes インフラの監視機能が強化されました</block>
+  <block id="6e8d08f021f143c0380bcfda2a0d8e35" category="paragraph">Cloud Insights では、ポッド、デモ onset 、 ReplicaSets が作成または削除されたとき、および新しい展開が作成されたときにアラートを生成することで、 Kubernetes 環境の変更に優先的に対応します。Kubernetes ではデフォルトのステータスが _paused_state に監視されるため、必要なものだけを有効にする必要があります。</block>
+  <block id="8cadb794eedb13cda455ddab4f27297a" category="section-title">ユーザ管理用の新しい API</block>
+  <block id="f8592e1ae5377bf3bb9b19a0a5eedfaf" category="paragraph">ユーザの管理と招待は、 API を使用したスナップ形式です。ユーザを招待し、必要な Cloud Insights 機能セット（監視と最適化、 Cloud Secure 、レポート）に基づいてロールを割り当てることができます。</block>
+  <block id="25e271d2558ae8aca95f77cf3064f9f4" category="cell">内部ボリュームとボリューム容量のフル予測</block>
+  <block id="6327e04265ebac4957d88ad9cb76d168" category="cell">Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。</block>
+  <block id="e90c4ace721cc2fab5257871d711796d" category="cell">Cloud Secure –攻撃に対するユーザアクセスを制限します</block>
+  <block id="e353c2255e0d23456f0d04e774cc242c" category="cell">攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="58114ec5d8ca1494b408777c1a724eef" category="cell">Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
+  <block id="9fc31ce4550c4f68c1ea81f5a37335aa" category="section-title">新しい Data Collector</block>
+  <block id="d0112aff81f4571da224986557628445" category="list-text">* Cohesity Smart Files * - この REST API ベースのコヒリティクラスタを取得し、「ビュー」（ CI 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。</block>
+  <block id="01ec768781d34379b5889a634c19e5cc" category="section-title">Data Collector のその他のアップデート</block>
+  <block id="cd96347d3d125d14ec06afe0adbac82a" category="paragraph">次のデータコレクタでのパフォーマンスデータの収集と表示が改善されました。</block>
+  <block id="03a00cff615471538bae5d9ab8cc669e" category="list-text">Brocade CLI</block>
+  <block id="ff117c121f3e342cdfe3ace24674c883" category="list-text">Dell/EMC VPLEX 、 PowerStore 、 Isilon / PowerScale 、 VNX Block / Clariion CLI 、 XtremIO 、 Unity/VNXe</block>
+  <block id="1269dd27efe1530411a746e3f4686a54" category="list-text">Pure FlashArray</block>
+  <block id="68d79c5dc5038c00a5ac6dae9671b5ee" category="paragraph">これらのパフォーマンス強化機能は、 VMware や Cisco のほか、すべてのネットアップデータコレクタですでに利用できます。今後数カ月にわたって、他のすべてのデータコレクタに展開される予定です。</block>
+  <block id="fec05a93bc2859fa296e20fb09a6d339" category="list-text">* Average * ：収集されたデータの平均値の線を表示します。</block>
+  <block id="c4006c924bdf8bc80ddcd09bd46d0666" category="list-text">* 最大 * ：各行を基になるデータの _maximum_ として表示します。</block>
+  <block id="fdf509d52d13201cead39e938712c689" category="list-text">* 最小 * ：各行を基になるデータの _minimum_ として表示します。</block>
+  <block id="843784684ad8439aa0ddfe813cac8e16" category="list-text">*Group* の場合、集計方法（ _Average_ など）を選択し、データを集計する属性またはメトリックを選択します（例： _Data Center_ ）。</block>
+  <block id="757a30a76f00d417fdea69085d4444a4" category="paragraph">データポイントを分、時間、日などのバケットに集約して時系列のグラフ（行や領域など）をさらに調整し、そのデータを属性別（選択した場合）に集計することもできます。データポイントを、それぞれの平均、最大、最小、合計、またはカウント _ に従って集計することができます。</block>
+  <block id="abbc6ae3194254cb0a6cd47c50a20631" category="paragraph">ほとんどのアセットカウンタは、デフォルトでは _Average_ に集計されます。一部のカウンタは、デフォルトで _Max 、 Min_ 、または _Sum_By に集計されます。たとえば、デフォルトでは、ポートエラーのアグリゲートは _sum になり、ストレージ IOPS のアグリゲートは _Average_ になります。</block>
+  <block id="958e53a8b3265badb6ae993dbe9c447a" category="paragraph">パフォーマンス指標の列ヘッダーには、「 3 ドット」メニューが表示されます。このメニューには「 * 集計」オプションが含まれています。デフォルトの集計方法は _Average_ です。つまり、このグループに表示されている数値は、グループ内の各 VM の合計 IOPS の平均値です。この列を平均 (_Average) 、合計 (Sum) 、最小 (Minimum) 、または最大 (Maximum_Maximum_) で集計することを選択できます。表示された列のうち、パフォーマンス指標を含むものはいずれも、個別に集計できます。</block>
 </blocks>

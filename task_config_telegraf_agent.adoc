@@ -446,11 +446,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方�
 NOTE: NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。
 
 .前提条件
-* NetApp Kubernetes Monitoring Operator のインストールはテスト済みで、次の環境で動作するように想定されています。
-+
-** AWS EKS 1.18-1.21
-** OpenShift 4.6-4.8
-** Rancher 2.4 ~ 2.6 。
+* NetApp Kubernetes Monitoring Operator インストールは、 Kubernetes 1.17 以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。
 
 
 * OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。
