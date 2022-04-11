@@ -39,12 +39,6 @@ Cloud Insights では、ポッド、デモ onset 、 ReplicaSets が作成また
 
 
 
-==== ユーザ管理用の新しい API
-
-ユーザの管理と招待は、 API を使用したスナップ形式です。ユーザを招待し、必要な Cloud Insights 機能セット（監視と最適化、 Cloud Secure 、レポート）に基づいてロールを割り当てることができます。
-
-
-
 ==== フィーチャーのプレビュー（ Preview Features
 
 Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
