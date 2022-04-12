@@ -8455,10 +8455,6 @@
   <block id="124bb595dee29c483fb214a5dfd6be2a" category="list-text">* 進行中 * ：アラートはチームメンバーまたはメンバーによって調査中です。</block>
   <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 解決済み * ：アラートはチームメンバーによって解決済みとマークされています。</block>
   <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">アラートの _Status_ （新規、進行中など）</block>
-  <block id="2cda05c10c4aa09279fe99d24fc57ae8" category="list-text">NetApp Kubernetes Monitoring Operator のインストールはテスト済みで、次の環境で動作するように想定されています。</block>
-  <block id="1293dad52aae23a70414cecab911c5c5" category="list-text">AWS EKS 1.18-1.21</block>
-  <block id="001571f4a9b36eecb51a7241b4a1de90" category="list-text">OpenShift 4.6-4.8</block>
-  <block id="bbf3d6c7f63841c53e523ee9bd1f6985" category="list-text">Rancher 2.4 ~ 2.6 。</block>
   <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。</block>
   <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。</block>
@@ -8695,8 +8691,6 @@
   <block id="fa7034d945953ab347c4367d8fa3a51f" category="paragraph"><block ref="fa7034d945953ab347c4367d8fa3a51f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0d55cb88c50b339df6b23026d70f4851" category="section-title">Kubernetes インフラの監視機能が強化されました</block>
   <block id="6e8d08f021f143c0380bcfda2a0d8e35" category="paragraph">Cloud Insights では、ポッド、デモ onset 、 ReplicaSets が作成または削除されたとき、および新しい展開が作成されたときにアラートを生成することで、 Kubernetes 環境の変更に優先的に対応します。Kubernetes ではデフォルトのステータスが _paused_state に監視されるため、必要なものだけを有効にする必要があります。</block>
-  <block id="8cadb794eedb13cda455ddab4f27297a" category="section-title">ユーザ管理用の新しい API</block>
-  <block id="f8592e1ae5377bf3bb9b19a0a5eedfaf" category="paragraph">ユーザの管理と招待は、 API を使用したスナップ形式です。ユーザを招待し、必要な Cloud Insights 機能セット（監視と最適化、 Cloud Secure 、レポート）に基づいてロールを割り当てることができます。</block>
   <block id="25e271d2558ae8aca95f77cf3064f9f4" category="cell">内部ボリュームとボリューム容量のフル予測</block>
   <block id="6327e04265ebac4957d88ad9cb76d168" category="cell">Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。</block>
   <block id="e90c4ace721cc2fab5257871d711796d" category="cell">Cloud Secure –攻撃に対するユーザアクセスを制限します</block>
@@ -8717,4 +8711,17 @@
   <block id="757a30a76f00d417fdea69085d4444a4" category="paragraph">データポイントを分、時間、日などのバケットに集約して時系列のグラフ（行や領域など）をさらに調整し、そのデータを属性別（選択した場合）に集計することもできます。データポイントを、それぞれの平均、最大、最小、合計、またはカウント _ に従って集計することができます。</block>
   <block id="abbc6ae3194254cb0a6cd47c50a20631" category="paragraph">ほとんどのアセットカウンタは、デフォルトでは _Average_ に集計されます。一部のカウンタは、デフォルトで _Max 、 Min_ 、または _Sum_By に集計されます。たとえば、デフォルトでは、ポートエラーのアグリゲートは _sum になり、ストレージ IOPS のアグリゲートは _Average_ になります。</block>
   <block id="958e53a8b3265badb6ae993dbe9c447a" category="paragraph">パフォーマンス指標の列ヘッダーには、「 3 ドット」メニューが表示されます。このメニューには「 * 集計」オプションが含まれています。デフォルトの集計方法は _Average_ です。つまり、このグループに表示されている数値は、グループ内の各 VM の合計 IOPS の平均値です。この列を平均 (_Average) 、合計 (Sum) 、最小 (Minimum) 、または最大 (Maximum_Maximum_) で集計することを選択できます。表示された列のうち、パフォーマンス指標を含むものはいずれも、個別に集計できます。</block>
+  <block id="1f5856d00cce4934e631e22ed97f045c" category="section-title">補間法</block>
+  <block id="781155d86ba8c2427651b7999f7bd765" category="paragraph">折れ線グラフ（スプライングラフ、面グラフ、積み上げ面グラフ）を作成または変更する場合、補間方法を 3 つのタイプのいずれかに設定できます。「グループ化」セクションで、目的の補間法を選択します。</block>
+  <block id="12f89e8efd48bd2ae722ca38259c8483" category="inline-image-macro">3 つの補間方法を示すウィジェットエディターのグループ化セクション</block>
+  <block id="e0cf5468a14db4a1e9107f69147d9f8f" category="paragraph"><block ref="e0cf5468a14db4a1e9107f69147d9f8f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54aa8353f51517d446e3ebcb7b7683de" category="list-text">* なし * ：何もしないでください。つまり、その間に点を生成しません。</block>
+  <block id="28e821cf57d55c851e5cccaf665d1ded" category="inline-image-macro">データポイント間の補間がない単純な直線的な角度の線</block>
+  <block id="37e25884e2dc85d5077e992279c18559" category="paragraph"><block ref="37e25884e2dc85d5077e992279c18559" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="286d41b895867a19647c6e18ab998b7d" category="list-text">* 階段 * ：点は前の点の値から生成されます。直線では、これは典型的な「階段」のレイアウトとして表示されます。</block>
+  <block id="19243f86c15cb607b665522b55c4a7a6" category="inline-image-macro">階段の補間を示す単純な直線</block>
+  <block id="6c345f365221ffd4d8cd2a2a0b15b228" category="paragraph"><block ref="6c345f365221ffd4d8cd2a2a0b15b228" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1e3817c54607481fd77cff67b3d62bf" category="list-text">* 線形 * ： 2 点間の接続の値として点が生成されます。2 つのポイントを接続しているラインのように見え、追加の ( 補間された ) データポイントを持つラインを生成します。</block>
+  <block id="ccd695c5d6bdf7e28aefe86c7867a7a9" category="inline-image-macro">各元の点間に追加のデータ点がある線形補間を示す単純な直線</block>
+  <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
