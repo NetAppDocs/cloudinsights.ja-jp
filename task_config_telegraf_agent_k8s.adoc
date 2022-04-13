@@ -30,7 +30,7 @@ NOTE: Agent をインストールする前にインストールファイルを�
 . 残りの手順を実行します。
 
 
-Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います link:/task_config_telegraf_agent.html["以下の手順を参照して"]。
+Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います link:task_config_telegraf_agent.html["以下の手順を参照して"]。
 
 
 NOTE: ホストにエージェントをインストールしたら、そのホストに再度エージェントをインストールする必要はありません。

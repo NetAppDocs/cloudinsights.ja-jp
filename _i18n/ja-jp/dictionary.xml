@@ -8462,7 +8462,6 @@
   <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">ホストに対応する Kubernetes プラットフォームを選択します</block>
   <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">残りの手順を実行します。</block>
   <block id="9ac0dd27d420b7b48ca72e463ae95e18" category="inline-link-macro">以下の手順を参照して</block>
-  <block id="6981ef377139f8296f4ae0aa44bc108d" category="paragraph">Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います <block ref="bd07fc5e27e6fac57c0afecd246768d9" category="inline-link-macro-rx"></block>。</block>
   <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">Kubernetes にエージェントをインストールする</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。</block>
@@ -8728,4 +8727,5 @@
   <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">エージェントの設定（ Windows/Linux/Mac ）</block>
   <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">エージェントの設定（ Kubernetes ）</block>
   <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">エージェントをインストールするには、まず次の手順を実行する必要があります。</block>
+  <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
