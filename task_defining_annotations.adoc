@@ -5,6 +5,7 @@ keywords: annotations, monitor, notes, tags
 summary: アノテーションを使用してデータを追跡する。 
 ---
 = アノテーションの定義
+:allow-uri-read: 
 
 
 [role="lead"]

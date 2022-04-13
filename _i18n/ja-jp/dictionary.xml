@@ -8203,7 +8203,6 @@
   <block id="637e226349512d2d7a553322411b83f0" category="cell">「前提条件」に記載されているように、 SVM の -is-exportpolicy-enabled オプションが true であることを確認します。</block>
   <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。</block>
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">インストール手順は、選択した内容によって異なります。</block>
-  <block id="7851bfe0f67f9341140f846ee10fd94d" category="admonition">NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。</block>
   <block id="fcbb3d16fd787d5bff5935ba723121de" category="cell">Kubernetes v1.17 以降</block>
   <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">NetApp Kubernetes Monitoring Operator Installation</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：</block>
@@ -8460,8 +8459,6 @@
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。</block>
   <block id="f09825d109ed4681880410bb47684198" category="doc">Kubernetes でのエージェントの設定</block>
   <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">* ここに移動 *</block>
-  <block id="f043e0e94a86a741ec3cfa80a7184063" category="admonition">このページは現在実行中です。Kubernetes にエージェントをインストールするための最新の手順については、 <block ref="697dca91101784dbecc7595d7733df90" category="inline-link-macro-rx"></block>。</block>
-  <block id="990b78672b6335498977a301125673d5" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="ae8396b4c25ba8af80c0396cbac8dbb2" category="paragraph">Kubernetes にエージェントをインストールするには、まず次の手順を実行する必要があります。</block>
   <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">ホストに対応する Kubernetes プラットフォームを選択します</block>
   <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">残りの手順を実行します。</block>
@@ -8724,4 +8721,11 @@
   <block id="e1e3817c54607481fd77cff67b3d62bf" category="list-text">* 線形 * ： 2 点間の接続の値として点が生成されます。2 つのポイントを接続しているラインのように見え、追加の ( 補間された ) データポイントを持つラインを生成します。</block>
   <block id="ccd695c5d6bdf7e28aefe86c7867a7a9" category="inline-image-macro">各元の点間に追加のデータ点がある線形補間を示す単純な直線</block>
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4f34579ac6d99e36b83ddd35d80ebb6d" category="admonition">このページの Kubernetes に関する手順は、新しいページに移動します。お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Kubernetes エージェントの最新の手順については、を参照してください。</block>
+  <block id="664a8070ae98149df4b2438dabea2160" category="admonition">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1f7b055a94f5e05d9c08683890d73b5e" category="list-text">従来のスクリプトベースのエージェントのインストール（非推奨）</block>
+  <block id="342761835c95d3618833ced82b6260ac" category="section-title">Kubernetes のチェックサムの検証</block>
+  <block id="737f024effb455f30b04c7091e2d8667" category="section-title">Kubernetes Agent のインストールに関するトラブルシューティング</block>
+  <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">エージェントの設定（ Windows/Linux/Mac ）</block>
+  <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">エージェントの設定（ Kubernetes ）</block>
 </blocks>

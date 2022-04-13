@@ -5,6 +5,7 @@ summary: Cloud Insights API を使用して Reporting DB を直接照会する�
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = API 経由で Reporting Database にアクセスします
+:allow-uri-read: 
 
 
 [role="lead"]

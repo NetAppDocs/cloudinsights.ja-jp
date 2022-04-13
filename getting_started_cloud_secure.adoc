@@ -5,6 +5,7 @@ summary: Cloud Secure での作業の開始
 keywords: invite, roles, data collector, agent 
 ---
 = Cloud Secure での作業の開始
+:allow-uri-read: 
 
 
 Cloud Secure に登録して初めて環境にログインしたあと、データアクセス情報の収集と分析を開始する前に設定手順を完了しておく必要があります。

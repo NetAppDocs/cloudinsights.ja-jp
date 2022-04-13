@@ -5,6 +5,7 @@ keywords: collector, configure, LDAP, Active Directory
 summary: Cloud Secure LDAP ユーザディレクトリコレクタの設定 
 ---
 = LDAP Directory Server Collector の設定
+:allow-uri-read: 
 
 
 [role="lead"]

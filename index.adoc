@@ -4,6 +4,7 @@ permalink: index.html
 summary: Cloud Insights のドキュメントポータルへようこそ。 
 ---
 = Cloud Insights のドキュメント
+:allow-uri-read: 
 
 
 [role="lead"]

@@ -5,6 +5,7 @@ summary: 無料トライアル期間中は、いつでも Cloud Insights に登�
 keywords: subscribe, trial, subscription, contract, raw capacity, region 
 ---
 = Cloud Insights に登録しています
+:allow-uri-read: 
 
 
 Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行えます。

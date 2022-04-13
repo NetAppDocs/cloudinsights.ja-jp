@@ -5,6 +5,7 @@ summary: ネットアップの Astra データストアを設定
 keywords: data collector, queries, create, astra, data, store, 
 ---
 = NetApp Astra データコレクタ
+:allow-uri-read: 
 
 
 [role="lead"]

@@ -5,6 +5,7 @@ keywords: webhook, notification, slack, integration
 summary: パフォーマンスまたはインベントリのしきい値をアラートするためのモニタを作成する 
 ---
 = webhook を使用した通知
+:allow-uri-read: 
 
 
 [role="lead"]

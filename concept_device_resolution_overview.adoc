@@ -5,6 +5,7 @@ keywords: Automatic, AR, AHR, Host, automatic device resolution
 summary: デバイスを自動で解決することで、環境内のパフォーマンスとインベントリを正確に追跡できます。 
 ---
 = 自動デバイス解決の概要
+:allow-uri-read: 
 
 
 [role="lead"]

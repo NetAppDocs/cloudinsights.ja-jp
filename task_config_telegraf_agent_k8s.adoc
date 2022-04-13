@@ -5,6 +5,7 @@ keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, ek
 summary: Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。 
 ---
 = Kubernetes でのエージェントの設定
+:allow-uri-read: 
 
 
 [role="lead"]
@@ -13,13 +14,10 @@ Cloud Insights ではを使用します link:https://docs.influxdata.com/telegra
 Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。
 
 
-IMPORTANT: このページは現在実行中です。Kubernetes にエージェントをインストールするための最新の手順については、 link:task_config_telegraf_agent.html["* ここに移動 *"]。
-
-
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
 
 
-NOTE: エージェントをインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <<Verifying Checksums>>。
+NOTE: Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <<Verifying Kubernetes Checksums>>。
 
 
 
@@ -54,18 +52,17 @@ NOTE: プロキシを使用している場合は、 Tegraf エージェントを
 Kubernetes では、次の 2 つの方法でデータを収集できます。
 
 * NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。
-* 従来のスクリプトベースのエージェントのインストール
+* 従来のスクリプトベースのエージェントのインストール（非推奨）
 
 
 インストール手順は、選択した内容によって異なります。
 
 image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方法の選択"]
 
-
-NOTE: NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。
-
 .前提条件
 * NetApp Kubernetes Monitoring Operator インストールは、 Kubernetes 1.17 以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。
+
+
 * OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。
 * 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
 * kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。
@@ -444,7 +441,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 
 
 
-== チェックサムを検証する
+== Kubernetes のチェックサムの検証
 
 Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。
 
@@ -465,16 +462,6 @@ Windows 以外（ Kubernetes の場合は次の例を使用します。実際の
 * ダウンロードのみ：
 +
  installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
-
-
-Windows の場合
-
-* Download and install （デフォルト）：
-+
- !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download -install)
-* ダウンロードのみ：
-+
- !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
 download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
@@ -521,7 +508,7 @@ Windows の場合
  .\cloudinsights-windows.ps1 -install
 
 
-== エージェントインストールのトラブルシューティング
+== Kubernetes Agent のインストールに関するトラブルシューティング
 
 エージェントの設定で問題が発生した場合の対処方法を次に示します。
 

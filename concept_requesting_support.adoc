@@ -5,6 +5,7 @@ summary: サポートをリクエストする方法については、技術情�
 keywords: support, knowledgebase, documentation, community, chat, videos, help, contact 
 ---
 = サポートをリクエストしています
+:allow-uri-read: 
 
 
 

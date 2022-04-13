@@ -5,6 +5,7 @@ keywords: logs, monitors, alerts, EMS, Kubernetes,
 summary: ログエクスプローラは、さまざまなシステムログから問題を調査するための強力なツールです。 
 ---
 = ログエクスプローラ
+:allow-uri-read: 
 
 
 [role="lead"]

@@ -5,6 +5,7 @@ keywords: Automatic, AR, AHR, Host, automatic device resolution, FC, Identify
 summary:  
 ---
 = ファイバチャネルデバイスの解決
+:allow-uri-read: 
 
 
 [role="lead"]
