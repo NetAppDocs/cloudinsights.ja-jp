@@ -435,6 +435,17 @@
 
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/cloudinsights/pdfs/pages/task_config_telegraf_agent_k8s.pdf" >
+    <img src="/ja-jp/cloudinsights/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
 
 
 
@@ -1516,7 +1527,9 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_configure_acquisition_unit.html">
         Acquisition Unit の設定
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_config_telegraf_agent.html">
-        エージェントの設定
+        エージェントの設定（ Windows/Linux/Mac ）
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_config_telegraf_agent_k8s.html">
+        エージェントの設定（ Kubernetes ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_configure_data_collectors.html">
         データコレクタの設定
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/concept_determining_data_collector_acq_status.html">
@@ -2004,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-11 15:37:59 +0000">04/11/2022</time>
+    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
     
   
 
@@ -2018,18 +2031,6 @@
 </div>
 <div class="paragraph">
 <p>Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/important.svg" alt="重要">
-</td>
-<td class="content">
-このページは現在実行中です。Kubernetes にエージェントをインストールするための最新の手順については、 <a href="task_config_telegraf_agent.html">"* ここに移動 *"</a>。
-</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2050,7 +2051,7 @@
 <img src="/us-en/cloudinsights/images/note.svg" alt="注記">
 </td>
 <td class="content">
-エージェントをインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <a href="#Verifying Checksums">[Verifying Checksums]</a>。
+Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <a href="#Verifying Kubernetes Checksums">[Verifying Kubernetes Checksums]</a>。
 </td>
 </tr>
 </table>
@@ -2135,7 +2136,7 @@
 <p>NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。</p>
 </li>
 <li>
-<p>従来のスクリプトベースのエージェントのインストール</p>
+<p>従来のスクリプトベースのエージェントのインストール（非推奨）</p>
 </li>
 </ul>
 </div>
@@ -2144,18 +2145,6 @@
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Tile_Choices.png" alt="Kubernetes のインストール方法の選択"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。
-</td>
-</tr>
-</table>
 </div>
 <div class="ulist">
 <div class="title">前提条件</div>
@@ -2784,7 +2773,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 </div>
 </div>
 <div class="sect1">
-<h2 id="チェックサムを検証する">チェックサムを検証する</h2>
+<h2 id="kubernetes-のチェックサムの検証">Kubernetes のチェックサムの検証</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。</p>
@@ -2827,27 +2816,6 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 <div class="literalblock">
 <div class="content">
 <pre>installerName=cloudinsights-kubernetes.sh … &amp;&amp; sudo -E -H ./$installerName --download</pre>
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Windows の場合</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Download and install （デフォルト）：</p>
-<div class="literalblock">
-<div class="content">
-<pre> !$($installerName=".\cloudinsights-windows.ps1") … -and $(&amp;$installerName -download -install)
-* ダウンロードのみ：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>!$($installerName=".\cloudinsights-windows.ps1") … -and $(&amp;$installerName -download)</pre>
 </div>
 </div>
 </li>
@@ -2946,7 +2914,7 @@ Windows の場合</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="エージェントインストールのトラブルシューティング">エージェントインストールのトラブルシューティング</h2>
+<h2 id="kubernetes-agent-のインストールに関するトラブルシューティング">Kubernetes Agent のインストールに関するトラブルシューティング</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>エージェントの設定で問題が発生した場合の対処方法を次に示します。</p>

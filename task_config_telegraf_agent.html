@@ -453,6 +453,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -1525,7 +1527,9 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_configure_acquisition_unit.html">
         Acquisition Unit の設定
       </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_config_telegraf_agent.html">
-        エージェントの設定
+        エージェントの設定（ Windows/Linux/Mac ）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_config_telegraf_agent_k8s.html">
+        エージェントの設定（ Kubernetes ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/task_configure_data_collectors.html">
         データコレクタの設定
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloudinsights/concept_determining_data_collector_acq_status.html">
@@ -2013,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-09 02:07:42 +0000">04/09/2022</time>
+    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
     
   
 
@@ -2774,6 +2778,18 @@ sudo /tmp/uninstall</pre>
 </div>
 <div class="sect2">
 <h3 id="kubernetes">Kubernetes</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
+</td>
+<td class="content">
+このページの Kubernetes に関する手順は、新しいページに移動します。お願いします <a href="task_config_telegraf_agent_k8s.html">"* ここに移動 *"</a> Kubernetes エージェントの最新の手順については、を参照してください。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Kubernetes では、次の 2 つの方法でデータを収集できます。</p>
 </div>
@@ -2792,18 +2808,6 @@ sudo /tmp/uninstall</pre>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Tile_Choices.png" alt="Kubernetes のインストール方法の選択"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-NetApp Kubernetes Monitoring Operator のインストールは、 _Preview_feature とみなされるため、変更される可能性があります。
-</td>
-</tr>
-</table>
 </div>
 <div class="ulist">
 <div class="title">前提条件</div>
@@ -3618,34 +3622,6 @@ Windows の場合</pre>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">すでにエージェントをインストールしていますが、 Cloud Insights インストーラを使用してインストールしていません</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">前のエージェントを削除し、 Cloud Insights エージェントのインストールを実行して、適切なデフォルト設定ファイルを設定します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegraf バージョン 2.0 以降を使用している必要があります。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 <em>kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'</em> これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes に Tegraf をインストールまたはアップグレードしましたが、 Tegraf ポッドは起動しません。Telegraf ReplicaSet または DemonSet は、次のような障害を報告しています。 Error creating ： PoD "Telegraf-RS" is forbidden ： Unable to validate against any security context constraint ： [spec.volumes [2] ： Invalid Value ： "hostPath" ： hostPath volumes are not allowed to be used]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">セキュリティコンテキスト制約を作成します（前述の「 Kubernetes からデータを収集するためのエージェントの設定」セクションを参照）。Security Context Constraint に指定された名前空間とサービスアカウントが、 Telegraf ReplicaSet および DemonSet の名前空間とサービスアカウントと一致することを確認します。kubectl 説明 SCC テレホ - ホストアクセス</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep サービスアカウント kubectl-n CI- モニタリング&#8201;&#8212;&#8201;説明 RS テレグラム af-rs</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep -i " 名前空間 : "kubectl-n CI- モニタリング説明 RS テレグラム af-r</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep -i " サービスアカウント : "kubectl-n CI-monitoring -ds-describe " テレグラムの説明 "-ds-describe - ネームスペース "grep</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Telegraf から次のようなエラーメッセージが表示されますが、 Telegraf は起動して実行されます。 Oct 11 14 ： 23 ： 41 IP-172-39-47 systemd[1] ： InfluxDB への指標の報告用に、プラグイン駆動型のサーバーエージェントを起動しました。10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/テレ グラム /.cache/snowflake 、 err: mkdir /etc/テレ グラム f/.ca che: 許可が拒否されました。ignored \n" func = "gosnowfleke. (*defaultLogger).Errorf" file="log. go:120" Oct 11 14:23:41 IP-172-21-39-47 TEテレ グラフ [1827]: time="2021 - 10-11T14:23:41Z" level=error.msg=" 失敗しました。無視されます。/etc/テレ グラム /.cache/snowflake/ocspa_response_cache.json を開きます。ファイルまたはディレクトリがありません \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"Oct. 1114:23:41 IP-172-41-39-47 テレグラム [1827:1127]~21-21Z: Telegraf 1.19.3 を起動しています</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">これは問題と呼ばれています。を参照してください <a href="https://github.com/influxdata/telegraf/issues/9407">"この GitHub の記事"</a> 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied"</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかを実行してください。•スクリプトベースのインストールの場合は、テレグラム DS を編集し（「 kubectl edit DS テレグラム」）、「特権 : false 」を「特権 : true 」に変更します。オペレータベースのインストールの場合は、エージェント（「 kubectl edit agent agent-monitoring -netapp 」）を編集し、特権モードを「 true 」に変更します。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした</p></td>
 </tr>
 </tbody>
 </table>
