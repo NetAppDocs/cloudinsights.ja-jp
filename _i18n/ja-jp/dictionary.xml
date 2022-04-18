@@ -5400,7 +5400,6 @@
   <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">Memcached</block>
   <block id="05345376e590de98cc623cdd4392065e" category="cell">接続処理認証要求の受け入れ失敗した認証バイト読み取り (1 秒あたり ) バイト書き込み (1 秒あたり ) CAS Badval CAS Hits CAS Mises Flush Reqs (1 秒あたり ) GET Reqs (1 秒あたり ) Touch Reqs (1 秒あたり ) Touch Reqs (1 秒あたり ) Connection Wrqs (1 秒あたり ) 接続構造未完了接続現在の保存済みアイテムの数減少リクエストヒット数 (1 秒あたり ) 削除リクエストヒット数 (1 秒あたり ) 削除リクエストミス回数 (1 秒あたり ) 削除リクエスト期限削除有効な削除アイテム期限切れアイテム取得ヒット数 (1 秒あたり ) 取得ミス回数 (1 秒あたり ) Used Hash Bytes Hash （使用済みハッシュバイトハッシュ）が拡張されています。要求ヒット（ 1 秒あたり）が含まれています。サーバ要求ミス（ 1 秒あたり）サーバ最大バイトリッスン無効な再要求されたワーカースレッド数再要求された数再要求されたワーカースレッド数合計開かれた接続数保存された</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Tegraf</block>
-  <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">データを収集するエージェントの設定</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">エージェントをインストールしています</block>
   <block id="a4c0f3c4bd8931418c028fb88c45e72f" category="paragraph">サービスデータコレクタをインストールしていて、エージェントをまだ設定していない場合は、最初に適切なオペレーティングシステム用のエージェントをインストールするように求められます。このトピックでは、 Tegraf エージェントを次のオペレーティングシステムにインストールする手順について説明します。</block>
@@ -8728,4 +8727,5 @@
   <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">エージェントの設定（ Kubernetes ）</block>
   <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">エージェントをインストールするには、まず次の手順を実行する必要があります。</block>
   <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
+  <block id="1da5ffd366c7914393abacbd5eddb42f" category="doc">データを収集するエージェントの設定（ Windows/Linux/Mac ）</block>
 </blocks>
