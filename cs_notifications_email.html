@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>アラート E メール通知の設定</title>
+  <title>アラート、警告、およびエージェント / データソースコレクタの状態に関する電子メール通知の設定</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="アラート E メール通知の設定" />
+  <meta property="og:title" content="アラート、警告、およびエージェント / データソースコレクタの状態に関する電子メール通知の設定" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/cs_notifications_email.html" />
 	<meta property="og:description" content="Cloud Secure アラートの通知用の E メールアドレスの追加" />
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[アラート E メール通知の設定](https://docs.netapp.com/ja-jp/cloudinsights/cs_notifications_email.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_notifications_email.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[アラート、警告、およびエージェント / データソースコレクタの状態に関する電子メール通知の設定](https://docs.netapp.com/ja-jp/cloudinsights/cs_notifications_email.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_notifications_email.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -2010,28 +2010,35 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">アラート E メール通知の設定</h1>
+  <h1 class="n-doc__component-detail-heading">アラート、警告、およびエージェント / データソースコレクタの状態に関する電子メール通知の設定</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
+    <time datetime="2022-04-19 15:49:16 +0000">04/19/2022</time>
     
   
 
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>アラートの E メール通知は、アラートに対するすべての対処方法についてアラート受信者リストに送信されます。</p>
+<p>Cloud Secure アラート受信者を設定するには、 [*Admin] &gt; [Notifications] をクリックし、受信者ごとに適切なセクションに電子メールアドレスを入力します。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="潜在的な攻撃アラートと警告">潜在的な攻撃アラートと警告</h3>
+<div class="paragraph">
+<p>Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Section に受信者の電子メールアドレスを入力します。アラートに対するすべてのアクションについて、 E メール通知がアラート受信者リストに送信されます。</p>
 </div>
 <div class="paragraph">
-<p>アラート受信者を設定するには、 [*Admin] &gt; [Notifications] をクリックし、受信者ごとに電子メールアドレスを入力します。</p>
+<p>警告通知を送信するには、 _ 警告通知の送信 _ セクションに受信者の電子メールアドレスを入力します。</p>
 </div>
-<div class="paragraph thumb">
-<p><span class="image"><img src="CS-Alert-Notification-List.png" alt="アラート E メール通知の受信者リスト"></span></p>
 </div>
 
     </article>
