@@ -32,6 +32,13 @@ image:DashboardWidgetEditorScreen.png["ウィジェットエディタのレイ�
 
 image:CountAggregationExample1.png["[Count] を示す [Aggregation] ドロップダウン"]
 
+また、折れ線グラフで 3 つのうちの 1 つを選択できるようになりました link:concept_dashboard_features.html#line-chart-interpolation["補間"] 方法：
+
+* なし - 補間は行われません
+* 線形 - 既存の点間のデータポイントを補間します
+* 階段（ Stair ） - 前のデータ点を補間されたデータ点として使用します
+
+
 
 
 ==== Kubernetes インフラの監視機能が強化されました

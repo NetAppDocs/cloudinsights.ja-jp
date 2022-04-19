@@ -8730,4 +8730,9 @@
   <block id="d788a1b203813004b96af5724b63cb70" category="section-title">潜在的な攻撃アラートと警告</block>
   <block id="0913d37e3bac65fbe05c7263d286ef60" category="paragraph">Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Section に受信者の電子メールアドレスを入力します。アラートに対するすべてのアクションについて、 E メール通知がアラート受信者リストに送信されます。</block>
   <block id="971a81b1c11c1b1948e93ef28402c3f4" category="paragraph">警告通知を送信するには、 _ 警告通知の送信 _ セクションに受信者の電子メールアドレスを入力します。</block>
+  <block id="cc801bd8b3e2970a29e5346ff2068dc8" category="inline-link-macro">補間</block>
+  <block id="52e11ba38b41752486ae425f250912e7" category="paragraph">また、折れ線グラフで 3 つのうちの 1 つを選択できるようになりました <block ref="f8a2abff360cff36e1134b6933cea3f7" category="inline-link-macro-rx"></block> 方法：</block>
+  <block id="9cb22571044cfb577ec048458671deab" category="list-text">なし - 補間は行われません</block>
+  <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">線形 - 既存の点間のデータポイントを補間します</block>
+  <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">階段（ Stair ） - 前のデータ点を補間されたデータ点として使用します</block>
 </blocks>
