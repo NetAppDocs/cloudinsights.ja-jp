@@ -2017,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:59:24 +0000">04/13/2022</time>
+    <time datetime="2022-04-19 14:07:19 +0000">04/19/2022</time>
     
   
 
@@ -2926,6 +2926,10 @@ Windows の場合</pre>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>etcd</em> が Kubernetes クラスタデータストアではないクラスタの場合、次のメッセージがテレグラフの RS ポッドに表示されます。 [ プラグインでの inputs.prometheus] エラー：キーペア /etc/Kubernetes /pki/ etcd/server.crt をロードできませんでした： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pti /pskt server または crt file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。エージェントの変更を試すには、次のコマンドを実行します。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file 、 delete the following section ： -name ： prometheus_etcd run-mode ： -ReplicaSet</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">すでに Cloud Insights を使用してエージェントをインストールしました</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。</p></td>
