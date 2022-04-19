@@ -8719,7 +8719,6 @@
   <block id="b915ed8448b78941f4d6278ccabef90c" category="cell">ポッドのマウントに失敗しました</block>
   <block id="a9baf64b936acc58c42a7bde7ce7c95b" category="cell">このアラートは、ポッドでマウントに失敗したときに発生します。</block>
   <block id="69a528dde5c160691621956eda156089" category="cell">_etcd_ が Kubernetes クラスタデータストアではないクラスタの場合、次のメッセージがテレグラフの RS ポッドに表示されます。 [ プラグインでの inputs.prometheus] エラー：キーペア /etc/Kubernetes /pki/ etcd/server.crt をロードできませんでした： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pti /pskt server または crt file</block>
-  <block id="89fbe6835a4bc28cf38fd3cdb8337b18" category="cell">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。エージェントの変更を試すには、次のコマンドを実行します。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file 、 delete the following section ： -name ： prometheus_etcd run-mode ： -ReplicaSet</block>
   <block id="f3eebfbf8459da325ae4a16094567ab0" category="paragraph">通知メール受信者の設定を行うには、 [*Admin] &gt; [Notifications] ページに移動し、 [_Email_] タブを選択します。</block>
   <block id="3caac88fd2cfb66b30bf5c3bb963e2ae" category="inline-image-macro">E メール通知</block>
   <block id="d2b2f74d37176e087c596d1a6ace12a4" category="paragraph"><block ref="d2b2f74d37176e087c596d1a6ace12a4" category="inline-image-macro-rx" type="image"></block></block>
@@ -8735,4 +8734,5 @@
   <block id="9cb22571044cfb577ec048458671deab" category="list-text">なし - 補間は行われません</block>
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">線形 - 既存の点間のデータポイントを補間します</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">階段（ Stair ） - 前のデータ点を補間されたデータ点として使用します</block>
+  <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet</block>
 </blocks>

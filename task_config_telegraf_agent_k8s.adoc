@@ -513,7 +513,7 @@ Windows の場合
 | 問題 | 次の操作を実行します 
 
 
-| _etcd_ が Kubernetes クラスタデータストアではないクラスタの場合、次のメッセージがテレグラフの RS ポッドに表示されます。 [ プラグインでの inputs.prometheus] エラー：キーペア /etc/Kubernetes /pki/ etcd/server.crt をロードできませんでした： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pti /pskt server または crt file | Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。エージェントの変更を試すには、次のコマンドを実行します。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file 、 delete the following section ： -name ： prometheus_etcd run-mode ： -ReplicaSet 
+| _etcd_ が Kubernetes クラスタデータストアではないクラスタの場合、次のメッセージがテレグラフの RS ポッドに表示されます。 [ プラグインでの inputs.prometheus] エラー：キーペア /etc/Kubernetes /pki/ etcd/server.crt をロードできませんでした： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pti /pskt server または crt file | Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet 
 
 
 | すでに Cloud Insights を使用してエージェントをインストールしました | ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。 
