@@ -5617,11 +5617,6 @@
   <block id="b7ca81e2bb67d9106d1a52bdbc5b9f05" category="inline-image-macro">ゲージ番号の説明</block>
   <block id="f05f3d3deaa32d3eb9419009831a83e7" category="paragraph"><block ref="f05f3d3deaa32d3eb9419009831a83e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c87f42b44870bb9fdcbb9ad0386ebd65" category="summary">Cloud Secure アラートの通知用の E メールアドレスの追加</block>
-  <block id="8ae97d6bc3533450865148a249850f22" category="doc">アラート E メール通知の設定</block>
-  <block id="36c6e5d5ba399283fbfde553f8a8a235" category="paragraph">アラートの E メール通知は、アラートに対するすべての対処方法についてアラート受信者リストに送信されます。</block>
-  <block id="7f1f4ef1548a44e4ce8c4500a1d58b4f" category="paragraph">アラート受信者を設定するには、 [*Admin] &gt; [Notifications] をクリックし、受信者ごとに電子メールアドレスを入力します。</block>
-  <block id="00a1fb22fe4440874b766144382bfc18" category="inline-image-macro">アラート E メール通知の受信者リスト</block>
-  <block id="eb602d5d2dcc504fbc5daf710f722df2" category="paragraph"><block ref="eb602d5d2dcc504fbc5daf710f722df2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fc5aca4e5185f241f9160502eac0b160" category="doc">NetApp ONTAP Data Collector の設定</block>
   <block id="bdde9f578348148335a5c86ea6a0eda9" category="paragraph">Cloud Secure では、データコレクタを使用して、デバイスからファイルとユーザのアクセスデータを収集します。データは Cloud Secure に提供され、分析されます。</block>
   <block id="3b37597c3ea4000c791420b6b40843f4" category="list-text">データを収集するようにエージェントを設定する必要があります</block>
@@ -6955,10 +6950,7 @@
   <block id="5f03374d311512ebf488198233e388a3" category="summary">通知用の E メールアドレスの追加</block>
   <block id="ff925bdbda92d2e19d76cbd9fa62fcdd" category="doc">電子メール通知を設定しています</block>
   <block id="30dadf54a791f6dee7ac5fcc771dfc37" category="paragraph">サブスクリプション関連の通知用の E メールリストや、パフォーマンスポリシーのしきい値違反の通知を受け取る受信者のグローバル E メールリストを設定できます。</block>
-  <block id="81259df23a1c293a09657cbc69c1cff7" category="paragraph">通知メール受信者を設定するには、 [*Admin] &gt; [Notifications] ページに移動します。</block>
   <block id="caa57653390758dea3d2e7abd7ccf4ac" category="section-title">サブスクリプション通知の受信者</block>
-  <block id="92c5913b4a67d45ed57b46dfd6cc6f30" category="inline-image-macro">サブスクリプションの E メール通知</block>
-  <block id="a86449ad080b1966ebbab1b2d2673d4d" category="paragraph"><block ref="a86449ad080b1966ebbab1b2d2673d4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f68d99a74dcf068e71380966b989bf38" category="paragraph">サブスクリプション関連のイベント通知の受信者を設定するには、「サブスクリプション通知の受信者」セクションに移動します。次の受信者のいずれかまたはすべてに、サブスクリプション関連イベントに関する E メール通知を送信するように選択できます。</block>
   <block id="35fb28a7e719ca2b5efe220007616a15" category="paragraph">送信される通知の種類と実行できるユーザアクションの例を次に示します。</block>
   <block id="30a3241f096a2fb5cc17d201c4dd0fc8" category="cell">* 通知： *</block>
@@ -6975,15 +6967,7 @@
   <block id="e89ae227607d5f04ef37a542e59758d5" category="cell">連絡先 <block ref="24745b642cc0706e7f0bffb600ab0d70" category="inline-link-macro-rx"></block> をクリックして、サブスクリプションを購入します</block>
   <block id="8e93b1e0d1805d8655a5ef72cc4c1f73" category="section-title">アラートのグローバル受信者リスト</block>
   <block id="f80a3af59189fad5d417cb3684841b2f" category="paragraph">アラートの E メール通知は、アラートに対するすべての対処方法についてアラート受信者リストに送信されます。アラート通知をグローバル受信者リストに送信することもできます。</block>
-  <block id="f3b4c8accf68f8bc1e1ad1a189f380f3" category="paragraph">グローバルアラート受信者を設定するには、 [* Admin] &gt; [Notifications] をクリックし、 [* Global Monitor Notification Recipients] セクションで目的の受信者を選択します。</block>
   <block id="04d99d40563d55904f96d7cf5a364c93" category="paragraph">モニタを作成または変更するときは、各モニタのグローバル受信者リストを常に上書きできます。</block>
-  <block id="11b55fb92388d3f4f22d9b74e20fe8cb" category="section-title">パフォーマンスポリシー通知のグローバル受信者リスト</block>
-  <block id="d6f8919f7d41780d165bc46e90d861d9" category="inline-image-macro">パフォーマンスポリシーの E メール通知</block>
-  <block id="504fe2b07eb666ad0da4b0123f533697" category="paragraph"><block ref="504fe2b07eb666ad0da4b0123f533697" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e8fa76ffeccba446b6ee0c1be7a594c" category="paragraph">グローバルパフォーマンスポリシーの通知 E メールリストに受信者を追加するには、「グローバルパフォーマンスポリシーの受信者」セクションに移動し、 E メールアドレスをカンマで区切って入力します。パフォーマンスポリシーのしきい値違反のアラートとして送信される E メールは、リスト内のすべての受信者に送信されます。</block>
-  <block id="d60bab759d591f556b26484b89016feb" category="paragraph">誤って入力した場合は、 [x] をクリックしてリストから受信者を削除できます。</block>
-  <block id="baf1c4abff061768e5a4207182de39ce" category="paragraph">また、送信される電子メール通知に添付されるオプションの署名ブロックを追加することもできます。</block>
-  <block id="3bfddc91dfb0eaa6fec68531dbb32e68" category="admonition">ポリシーを設定するときに、特定のポリシーのグローバルリストを無効にすることができます。</block>
   <block id="4e2217a1fba6817d301befaa05659074" category="summary">推奨されるダッシュボードをインポートして、ビジネス分析情報に関する質問に回答できます。</block>
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="doc">ダッシュボードギャラリーからインポートする</block>
   <block id="75ff2ecca247e32bd11a679fc97fbdab" category="paragraph">Cloud Insights には、データに関するビジネスインサイトを提供するために推奨されるダッシュボードが多数用意されています。各ダッシュボードには、回答で特定の質問をしたり、現在環境で収集されているデータに関連する特定の問題を解決したりするためのウィジェットが含まれています。</block>
@@ -8736,4 +8720,14 @@
   <block id="a9baf64b936acc58c42a7bde7ce7c95b" category="cell">このアラートは、ポッドでマウントに失敗したときに発生します。</block>
   <block id="69a528dde5c160691621956eda156089" category="cell">_etcd_ が Kubernetes クラスタデータストアではないクラスタの場合、次のメッセージがテレグラフの RS ポッドに表示されます。 [ プラグインでの inputs.prometheus] エラー：キーペア /etc/Kubernetes /pki/ etcd/server.crt をロードできませんでした： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pti /pskt server または crt file</block>
   <block id="89fbe6835a4bc28cf38fd3cdb8337b18" category="cell">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。エージェントの変更を試すには、次のコマンドを実行します。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file 、 delete the following section ： -name ： prometheus_etcd run-mode ： -ReplicaSet</block>
+  <block id="f3eebfbf8459da325ae4a16094567ab0" category="paragraph">通知メール受信者の設定を行うには、 [*Admin] &gt; [Notifications] ページに移動し、 [_Email_] タブを選択します。</block>
+  <block id="3caac88fd2cfb66b30bf5c3bb963e2ae" category="inline-image-macro">E メール通知</block>
+  <block id="d2b2f74d37176e087c596d1a6ace12a4" category="paragraph"><block ref="d2b2f74d37176e087c596d1a6ace12a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="998b4e1fe06f3059a9390f884ebd2960" category="list-text">すべての監視と最適化管理者</block>
+  <block id="df43b72d848c482dd610f8178005dbe4" category="paragraph">グローバルアラート受信者を設定するには、 [* Global Monitor Notification Recipients] セクションで目的の受信者を選択します。</block>
+  <block id="12c5785c0da06ba105803155a192752d" category="doc">アラート、警告、およびエージェント / データソースコレクタの状態に関する電子メール通知の設定</block>
+  <block id="fb2811eb0d80f0dc871a8e892a828518" category="paragraph">Cloud Secure アラート受信者を設定するには、 [*Admin] &gt; [Notifications] をクリックし、受信者ごとに適切なセクションに電子メールアドレスを入力します。</block>
+  <block id="d788a1b203813004b96af5724b63cb70" category="section-title">潜在的な攻撃アラートと警告</block>
+  <block id="0913d37e3bac65fbe05c7263d286ef60" category="paragraph">Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Section に受信者の電子メールアドレスを入力します。アラートに対するすべてのアクションについて、 E メール通知がアラート受信者リストに送信されます。</block>
+  <block id="971a81b1c11c1b1948e93ef28402c3f4" category="paragraph">警告通知を送信するには、 _ 警告通知の送信 _ セクションに受信者の電子メールアドレスを入力します。</block>
 </blocks>
