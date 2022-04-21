@@ -8735,4 +8735,5 @@
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">線形 - 既存の点間のデータポイントを補間します</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">階段（ Stair ） - 前のデータ点を補間されたデータ点として使用します</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet</block>
+  <block id="54a35beb58d95fcc8830c9195faeeb1d" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo _ （スクリプトベースのインストールには不要）、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
 </blocks>
