@@ -76,15 +76,17 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 これらのサポートオプションはトライアルモードで利用でき、 24 時間 365 日無料でご利用いただけます。
 
-* *link:https://kb.netapp.com["ナレッジベース"]*
+* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Suppport_KB&filter=%28content_type%3D%3D%22knowledgebase%22;product%3D%3D%22Cloud%20Insights%22%29["ナレッジベース"]*
 +
-このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、そこで記事を検索できます。 link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/HOW_TO/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["操作方法"]、 link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/FAQ/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["よくある質問です"]または link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/BREAK_FIX/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["トラブルシューティング"] Cloud Insights に関連する情報。
+このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、関連する記事、ハウツーなどを検索できます。
+
+
 
 * *link:https://docs.netapp.com/us-en/cloudinsights/["ドキュメント"]*
 +
 [Documentation] リンクをクリックすると、このドキュメントセンターに移動します。
 
-* *link:https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS["コミュニティ"]*
+* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["コミュニティ"]*
 +
 コミュニティのリンクをクリックすると、ネットアップの Cloud Insights コミュニティに移動し、他のユーザやエキスパートと交流できます。
 
