@@ -8733,4 +8733,12 @@
   <block id="b68a34f8a928794da0f98d4ee916c271" category="list-text">*<block ref="2fadd2d714be07c05e8b57dea395b60f" category="inline-link-macro-rx"></block>*</block>
   <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、関連する記事、ハウツーなどを検索できます。</block>
   <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
+  <block id="8e25d57d22cfdf4cc4f8dd58cabd49ec" category="section-title">エージェントおよび Data Collector のヘルスモニタリング</block>
+  <block id="26b8d4140c5def55b8efd4966237c999" category="paragraph">通知を使用して、エージェントとデータソースの状態を監視できます。</block>
+  <block id="27d9996981ce7dd3eb5e8b3dd72bf26c" category="paragraph">エージェントまたはデータソースコレクタが機能していない場合に通知を受信するには、 _Data Collection Health Alerts_Section に受信者の電子メールアドレスを入力します。</block>
+  <block id="cfbd8d8f411f08c4641b2905bdc80139" category="list-text">ヘルスアラートは、エージェント / コレクタが少なくとも 1 時間レポートを停止した後にのみ送信されます。</block>
+  <block id="c973f23a4328dc0e33a2614912736bb0" category="list-text">エージェントまたはデータコレクタが長時間切断されている場合でも、指定された 24 時間以内に目的の受信者に送信される電子メール通知は 1 通だけです。</block>
+  <block id="30a17963216c2665ef68b2a0cba05de6" category="list-text">エージェントに障害が発生した場合は、 1 つのアラートが送信されます（コレクタごとに送信されるアラートではありません）。E メールには影響を受けるすべての SVM のリストが記載されます。</block>
+  <block id="6aa9d0b40df0476a0e5d6cba51a44816" category="list-text">Active Directory による収集エラーは警告として報告されますが、ランサムウェアによる検出には影響しません。</block>
+  <block id="1c694b0b295603bad9f0fa0c7f151567" category="list-text">[ はじめに ] セットアップリストに、新しい _ 電子メール通知の構成 _ 段階が追加されました。</block>
 </blocks>
