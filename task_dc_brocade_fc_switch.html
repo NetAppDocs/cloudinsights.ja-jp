@@ -2017,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
+    <time datetime="2022-04-22 19:14:26 +0000">04/22/2022</time>
     
   
 
@@ -2246,6 +2246,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brocade データソースのインベントリ取得が失敗し、次のエラーが表示されます。 &lt;date&gt; &lt;time&gt; error [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： &lt;datasource name&gt; [Internal error] - Unable to generate the model for device&lt;IP&gt; 。プロンプトの検出エラー（ [Device name &lt; name &gt;] ：デバイス &lt;IP&gt; のモデルを生成できません。エラー検出プロンプト）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">問題 は、デフォルトのタイムアウトである 5 秒を超えてプロンプトが表示されるまでに Brocade スイッチが時間がかかりすぎる場合に発生することがあります。Cloud Insights のデータコレクタの詳細設定で、 _SSH バナー待機タイムアウト（秒） _ の値を大きくしてみます。</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">エラー：「 Cloud Insights Received Invalid Chassis Role 」</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">このデータソースで設定されているユーザにシャーシのロールの権限が付与されていることを確認します。</p></td>
