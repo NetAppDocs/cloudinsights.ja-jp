@@ -146,6 +146,9 @@ Cloud Insights では、 Brocade FC Switch データコレクタから次のイ�
 | 問題 | 次の操作を実行します 
 
 
+| Brocade データソースのインベントリ取得が失敗し、次のエラーが表示されます。 <date> <time> error [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： <datasource name> [Internal error] - Unable to generate the model for device<IP> 。プロンプトの検出エラー（ [Device name < name >] ：デバイス <IP> のモデルを生成できません。エラー検出プロンプト） | 問題 は、デフォルトのタイムアウトである 5 秒を超えてプロンプトが表示されるまでに Brocade スイッチが時間がかかりすぎる場合に発生することがあります。Cloud Insights のデータコレクタの詳細設定で、 _SSH バナー待機タイムアウト（秒） _ の値を大きくしてみます。 
+
+
 | エラー：「 Cloud Insights Received Invalid Chassis Role 」 | このデータソースで設定されているユーザにシャーシのロールの権限が付与されていることを確認します。 
 
 

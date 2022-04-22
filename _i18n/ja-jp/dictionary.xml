@@ -8741,4 +8741,6 @@
   <block id="30a17963216c2665ef68b2a0cba05de6" category="list-text">エージェントに障害が発生した場合は、 1 つのアラートが送信されます（コレクタごとに送信されるアラートではありません）。E メールには影響を受けるすべての SVM のリストが記載されます。</block>
   <block id="6aa9d0b40df0476a0e5d6cba51a44816" category="list-text">Active Directory による収集エラーは警告として報告されますが、ランサムウェアによる検出には影響しません。</block>
   <block id="1c694b0b295603bad9f0fa0c7f151567" category="list-text">[ はじめに ] セットアップリストに、新しい _ 電子メール通知の構成 _ 段階が追加されました。</block>
+  <block id="74913ce7e6f1cf7622d0e237b931c50e" category="cell">Brocade データソースのインベントリ取得が失敗し、次のエラーが表示されます。 &lt;date&gt; &lt;time&gt; error [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： &lt;datasource name&gt; [Internal error] - Unable to generate the model for device&lt;IP&gt; 。プロンプトの検出エラー（ [Device name &lt; name &gt;] ：デバイス &lt;IP&gt; のモデルを生成できません。エラー検出プロンプト）</block>
+  <block id="118ca29e0af60dc429c30e9a386e68fa" category="cell">問題 は、デフォルトのタイムアウトである 5 秒を超えてプロンプトが表示されるまでに Brocade スイッチが時間がかかりすぎる場合に発生することがあります。Cloud Insights のデータコレクタの詳細設定で、 _SSH バナー待機タイムアウト（秒） _ の値を大きくしてみます。</block>
 </blocks>
