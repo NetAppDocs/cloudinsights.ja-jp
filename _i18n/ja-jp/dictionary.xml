@@ -8743,4 +8743,17 @@
   <block id="1c694b0b295603bad9f0fa0c7f151567" category="list-text">[ はじめに ] セットアップリストに、新しい _ 電子メール通知の構成 _ 段階が追加されました。</block>
   <block id="74913ce7e6f1cf7622d0e237b931c50e" category="cell">Brocade データソースのインベントリ取得が失敗し、次のエラーが表示されます。 &lt;date&gt; &lt;time&gt; error [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： &lt;datasource name&gt; [Internal error] - Unable to generate the model for device&lt;IP&gt; 。プロンプトの検出エラー（ [Device name &lt; name &gt;] ：デバイス &lt;IP&gt; のモデルを生成できません。エラー検出プロンプト）</block>
   <block id="118ca29e0af60dc429c30e9a386e68fa" category="cell">問題 は、デフォルトのタイムアウトである 5 秒を超えてプロンプトが表示されるまでに Brocade スイッチが時間がかかりすぎる場合に発生することがあります。Cloud Insights のデータコレクタの詳細設定で、 _SSH バナー待機タイムアウト（秒） _ の値を大きくしてみます。</block>
+  <block id="c2a82bcbfe1a93fec106af67b6b26f3b" category="section-title">期限切れの API アクセストークンの回転</block>
+  <block id="d981e94161c0ab533162bbea9f1d9e89" category="paragraph">API アクセストークンには有効期限があります。API アクセストークンの期限が切れると、ユーザは新しいトークン（ TYPE_Data Ingestion _ with Read/Write パーミッション）を生成し、期限切れのトークンではなく、新しく生成されたトークンを使用するように Telegraf を再設定する必要があります。以下の手順では、その方法について詳しく説明します。</block>
+  <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">これらのコマンドでは、デフォルトのネームスペースである「 NetApp-monitoring 」が使用されていることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。</block>
+  <block id="85b9da5a8c5c1cce5881111010339cb4" category="list-text">Telegraf ConfigMaps （ CM ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
+  <block id="865b7c5a0ecd85e73193b19bcb780a4c" category="list-text">Telegraf DemonSet （ DS ）および ReplicaSet （ RS ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
+  <block id="b56a0b4a07e1bf181b703d8bdf115a4b" category="list-text">Kubernetes コントローラは、 Telegraf DS ポッドを自動的に再起動します。</block>
+  <block id="c12e3974927f7898f893ba8a9965a9a0" category="list-text">Telegraf RS ポッドを再起動します</block>
+  <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL / CentOS と Debian/Ubuntu</block>
+  <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">Telegraf 構成ファイルを編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
+  <block id="e89f4056c39669637fb609320173681a" category="list-text">Tegraf を再起動します。</block>
+  <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">MacOS</block>
+  <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">各 Tegraf コンフィギュレーションファイルを _C ： \Program Files\Telegra\Telegraf .d_ で、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
+  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
 </blocks>

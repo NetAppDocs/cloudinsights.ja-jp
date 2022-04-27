@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: API_Overview.html 
-keywords: API, customer API, premium, JSON, Swagger, Access Token, token, key 
+keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
 summary: Cloud Insights API を使用すると、監視システムやレポートシステムなどの他のアプリケーションと統合できます。 
 ---
 = Cloud Insights API の略
@@ -270,3 +270,83 @@ API トークンを一時的に無効にするには、 API トークンリス�
 API トークンを完全に削除するには、メニューから「 Revoke 」を選択します。取り消されたトークンは再度有効にすることはできません。新しいトークンを作成する必要があります。
 
 image:API_Disable_Token.png["API トークンを無効にするか、無効にします"]
+
+
+
+== 期限切れの API アクセストークンの回転
+
+API アクセストークンには有効期限があります。API アクセストークンの期限が切れると、ユーザは新しいトークン（ TYPE_Data Ingestion _ with Read/Write パーミッション）を生成し、期限切れのトークンではなく、新しく生成されたトークンを使用するように Telegraf を再設定する必要があります。以下の手順では、その方法について詳しく説明します。
+
+
+
+==== Kubernetes
+
+これらのコマンドでは、デフォルトのネームスペースである「 NetApp-monitoring 」が使用されていることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+
+* Telegraf ConfigMaps （ CM ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
++
+....
+kubectl -n netapp-monitoring edit cm
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+....
+* Telegraf DemonSet （ DS ）および ReplicaSet （ RS ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
++
+....
+kubectl -n netapp-monitoring edit ds telegraf-ds
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+kubectl -n netapp-monitoring edit rs telegraf-rs
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+....
+* Kubernetes コントローラは、 Telegraf DS ポッドを自動的に再起動します。
+* Telegraf RS ポッドを再起動します
++
+ kubectl -n netapp-monitoring delete pod <telegraf-rs-pod>
+
+
+
+
+==== RHEL / CentOS と Debian/Ubuntu
+
+* Telegraf 構成ファイルを編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
++
+ sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /etc/telegraf/telegraf.d/*.conf
+* Tegraf を再起動します。
++
+ sudo systemctl restart telegraf
+
+
+
+
+==== MacOS
+
+* Telegraf 構成ファイルを編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
++
+ sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
+* Tegraf を再起動します。
++
+....
+sudo launchctl stop telegraf
+sudo launchctl start telegraf
+....
+
+
+
+
+==== Windows の場合
+
+* 各 Tegraf コンフィギュレーションファイルを _C ： \Program Files\Telegra\Telegraf .d_ で、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
++
+....
+cp <plugin>.conf <plugin>.conf.bkup
+(Get-Content <plugin>.conf).Replace(‘<OLD_API_TOKEN>’, ‘<NEW_API_TOKEN>’) | Set-Content <plugin>.conf
+....
+* Tegraf を再起動します。
++
+....
+Stop-Service telegraf
+Start-Service telegraf
+....
+
