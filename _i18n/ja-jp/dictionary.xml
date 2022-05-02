@@ -8756,4 +8756,59 @@
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">各 Tegraf コンフィギュレーションファイルを _C ： \Program Files\Telegra\Telegraf .d_ で、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
   <block id="474b549bf76599f904f9c951a609a127" category="cell">Linuxの場合、ディスクスペースは次のように割り当てます。/opt/netapp 10 gb /var/log/netapp 40 gb /tmpインストール中に少なくとも1 GB使用可能</block>
+  <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor の略</block>
+  <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
+  <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor データコレクタ</block>
+  <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">NetApp Config Advisor データコレクタ</block>
+  <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">このデータコレクタは、ONTAP を実行するストレージシステムから設定データを取得し、読み取り専用呼び出しを使用して接続されたスイッチを取得します。また、このデータコレクタは、ONTAP クラスタ構成のスタック全体に対して設定の検証と健全性のチェックを実行し、ケーブル接続、設定、耐障害性、可用性、セキュリティの問題を特定します。</block>
+  <block id="6db4c00428e1d05aeb71deccf277b6e0" category="admonition">Config Advisor は_Preview_featureとみなされるため、変更される可能性があります。プレビュー中に、MUコストは発生しません。</block>
+  <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights は、ONTAP から設定データを取得し、Config Advisor データコレクタを使用してスイッチを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">configadvisorメトリックタグを示すドロップダウン</block>
+  <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">また、Config Advisor 指標は、ダッシュボードおよび_NetAppONTAP.configadviser_tagを使用したその他のクエリで使用できます。<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="24b9e08fd1f7ee3ff738c574a84a91af" category="section-title">Config Advisor の用語</block>
+  <block id="06d58427354787f0e6d7c893fe2243bc" category="paragraph">Config Advisor ダッシュボードに表示されるオブジェクトや参照に関連する用語を以下に示します。</block>
+  <block id="30c7128fd20d47795972c28c056858e9" category="section-title">デバイスサマリ</block>
+  <block id="744d9871512feec9f51d65f3dd1c47ab" category="list-text">デバイスタイプ/タイプ–データソースのデバイスのタイプ–ストレージコントローラ/スイッチ</block>
+  <block id="624932da51cedff9d7ac173a91c610a1" category="list-text">ベンダー/サブタイプ–新しいデータソースを設定しているかどうかと同じベンダー名が表示されます。</block>
+  <block id="7d43a6f99fa2a91e1af6d7d2c7c18f13" category="list-text">hostname -データソースで設定されているホスト名。</block>
+  <block id="cb46dd80b8d9a5b9d45de5e217aaa9df" category="list-text">version - OSまたはファームウェアのバージョン。</block>
+  <block id="b1fa038342539dd3908a11c162ea4c27" category="section-title">ルールの結果</block>
+  <block id="36dce5e2b74a110ae5a36da007cf06f5" category="list-text">ルール–推奨されるプラクティスからの構成の逸脱を分析したり、既知の問題を特定したりする、システムに対して実行されるチェック。</block>
+  <block id="7f571e862fdd40095520423d149828d8" category="list-text">ルール名–実行されるルールまたはチェックの短い名前。</block>
+  <block id="f742f640bcdf429ec002619c5b306bfb" category="list-text">ルールID–ルールの識別子。</block>
+  <block id="d5f2db6c184f1d03095ebed8fab38f6d" category="list-text">Target：ルールが適用されるコンポーネント。クラスタ名、ノード名、またはスイッチ名です。</block>
+  <block id="07e9e3b11dbfe13fae2d6a989de1722c" category="list-text">影響–システムへのリスクの影響。影響レベルは次のように分類されます</block>
+  <block id="f9465122ea451d5ec730ea7884c2879f" category="list-text">高影響：データアクセスが失われたり、ノードの冗長性が長時間失われたりする可能性があります</block>
+  <block id="59917e42806fa2d873b1567e2fab2ed8" category="list-text">Medium Impact：パフォーマンスの低下やノードの冗長性の短期的な喪失。</block>
+  <block id="0296cc1b8c1bba2993b2bf444d65e226" category="list-text">影響が小さい：影響の少ないシナリオ</block>
+  <block id="35c28fe615929955e070ca34eea74a58" category="list-text">ベストプラクティス：ドキュメント化されたベストプラクティスからの偏差</block>
+  <block id="da671d02becd0b448278c88d7cae5f0c" category="list-text">概要 –エラーの簡単な概要 。</block>
+  <block id="4684fb2fabd191161c08c96564158dfa" category="list-text">Details–影響を受けたコンポーネントの一覧を示すエラーの詳細な概要</block>
+  <block id="107a9bd1e11fd68e05b0eca047c2d0a3" category="list-text">推奨事項–リスクまたは修正に関する詳細情報を提供する技術情報アーティクルまたはネットアップドキュメントへのリンク。</block>
+  <block id="32e0e75cce51d9a86e3d9548e662cad3" category="list-text">ONTAP のSSHコールとONTAPIコールに読み取り専用アクセスするように設定された管理者アカウントへのアクセスが必要です。</block>
+  <block id="0a51523b7b104781f9276319d7728e78" category="list-text">スイッチが収集対象に含まれている場合、スイッチのSSH呼び出しに対して読み取り専用アクセスが設定された管理者アカウントへのアクセス権が必要です</block>
+  <block id="905f005d189dfca41c588dfb3a86c577" category="list-text">アカウントの詳細には、ユーザ名とパスワードが含まれます。ONTAP がSSHキーベース認証または多要素認証（MFA）用に設定されている場合、必要に応じてSSH秘密鍵を渡すことができます。</block>
+  <block id="ccdc4e4e1923b0b16ce7eea299ea4163" category="list-text">ポートの要件：22、80、443</block>
+  <block id="6598e142ccb1746c77267497f22d951b" category="list-text">デフォルトのSVMに対するsshアプリケーションまたはontapiアプリケーションに対する読み取り専用ロール名</block>
+  <block id="3b8258085ea914c50770f05a8c8040cf" category="list-text">スイッチに対する読み取り専用権限を持つ管理者アカウント</block>
+  <block id="881e28667d3bfa6ea28cdd40ef5acdb4" category="cell">ONTAP に対してMFAを有効にします</block>
+  <block id="892219065257846dd04f00fcdffe9e12" category="cell">これをオンにすると、ONTAP で多要素認証が有効になります</block>
+  <block id="fab1bac8f68d0e85c7d853e7cc89dee8" category="cell">SSH秘密鍵</block>
+  <block id="b243383d42c261781fda74277075a9bf" category="cell">ONTAP でSSHキー認証またはMFAを使用している場合は、SSH秘密鍵の内容を貼り付けます</block>
+  <block id="1ad2c997667844425cb79936e5d49437" category="cell">ONTAP SSHポート</block>
+  <block id="043854f925a3ddec09321e61f0796cb1" category="cell">ONTAP 接続用のカスタムSSHポートを指定できます</block>
+  <block id="1e5fb47b2115f5fd80852bf2d19f9931" category="cell">スイッチのSSHポート</block>
+  <block id="3d56802b24eb9202180b8a5869ee4f5a" category="cell">スイッチ接続用のカスタムSSHポートを指定できます</block>
+  <block id="dfdfdc8cf35c1a03b11bc6b5c58e09f8" category="cell">ポーリング間隔（分）</block>
+  <block id="a0c828f2046ae9b82d4a8bcdc9c02147" category="cell">デフォルトは1440分または24時間です。最小60分まで設定できます</block>
+  <block id="6cc75295aec583ed79034eb36a15cdae" category="section-title">サポートされているオペレーティングシステム</block>
+  <block id="3c4d9416409219cf9622042be0436a75" category="paragraph">Config Advisor は、次のオペレーティングシステムで実行できます。オペレーティングシステムがこのリストにないAcquisition Unitにコレクタがインストールされていると、収集が失敗します。</block>
+  <block id="1c9b42d9cdad3e650c7fc63dfa544dd3" category="list-text">Windows 10（64ビット）</block>
+  <block id="f943cc21622ce70821e7210ca18fa6dd" category="list-text">Windows Server 2012 R2 Server（64ビット）</block>
+  <block id="d58eb715e810c3f2ac46575a5aacd90b" category="list-text">Windows 2016 Server（64ビット）</block>
+  <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows Server 2019（64ビット）</block>
+  <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux（RHEL）7.7以降（64ビット）</block>
+  <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0以降</block>
+  <block id="ca205ac9d896fc87257c36e58f45e6f6" category="paragraph">Config Advisor に関連する質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
+  <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
 </blocks>
