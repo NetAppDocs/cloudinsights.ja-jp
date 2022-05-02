@@ -30,7 +30,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | メモリ | 8GB の RAM | 同じ 
 
 
-| 使用可能なディスクスペース | Linux の場合、ディスクスペースは /opt/NetApp 10 GB /var/log/NetApp 40 GB のように割り当てます | 50 GB 
+| 使用可能なディスクスペース | Linuxの場合、ディスクスペースは次のように割り当てます。/opt/netapp 10 gb /var/log/netapp 40 gb /tmpインストール中に少なくとも1 GB使用可能 | 50 GB 
 
 
 | ネットワーク | 100Mbps または 1Gbps のイーサネット接続、静的 IP アドレス、すべての FC デバイスへの IP 接続、 Cloud Insights インスタンスへの必要なポート（ 80 または 443 ） | 同じ 

@@ -6450,7 +6450,6 @@
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 個の CPU コア</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">同じ</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8GB の RAM</block>
-  <block id="4745019e22d662797beab173c177361c" category="cell">Linux の場合、ディスクスペースは /opt/NetApp 10 GB /var/log/NetApp 40 GB のように割り当てます</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
   <block id="47dc5acc8bdc974a72002ca9aa47f325" category="cell">100Mbps または 1Gbps のイーサネット接続、静的 IP アドレス、すべての FC デバイスへの IP 接続、 Cloud Insights インスタンスへの必要なポート（ 80 または 443 ）</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">権限</block>
@@ -8756,4 +8755,5 @@
   <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">MacOS</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">各 Tegraf コンフィギュレーションファイルを _C ： \Program Files\Telegra\Telegraf .d_ で、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
+  <block id="474b549bf76599f904f9c951a609a127" category="cell">Linuxの場合、ディスクスペースは次のように割り当てます。/opt/netapp 10 gb /var/log/netapp 40 gb /tmpインストール中に少なくとも1 GB使用可能</block>
 </blocks>
