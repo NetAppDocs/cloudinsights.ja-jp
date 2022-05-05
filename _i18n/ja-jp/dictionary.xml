@@ -8811,4 +8811,13 @@
   <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0以降</block>
   <block id="ca205ac9d896fc87257c36e58f45e6f6" category="paragraph">Config Advisor に関連する質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
   <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
+  <block id="68f0f62deae94ea2573e440bd6203542" category="summary">プレビュー機能は限られた容量で利用でき、プライムタイムに備えていない機能を強調しています。</block>
+  <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">フィーチャーと機能をプレビューします</block>
+  <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights は'_Preview_マナー モードで新しいフィーチャーと機能をハイライトしますプレビュー機能は、一部の環境または容量に限りがあります。</block>
+  <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">これらの機能をプレビューする場合は、にお問い合わせください <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">現在プレビュー中の機能をいくつか次に示します。</block>
+  <block id="6e1effcb952ada801a257429342ccd39" category="cell">Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。</block>
+  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">ユーザーアクセスの自動応答を制限します</block>
+  <block id="f763810a8ec0d5862e0f288795932956" category="cell">攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
 </blocks>

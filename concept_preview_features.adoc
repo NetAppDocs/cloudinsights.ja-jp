@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: concept_preview_features.html 
+summary: プレビュー機能は限られた容量で利用でき、プライムタイムに備えていない機能を強調しています。 
+keywords: coming soon, preview, 
+---
+= フィーチャーと機能をプレビューします
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights は'_Preview_マナー モードで新しいフィーチャーと機能をハイライトしますプレビュー機能は、一部の環境または容量に限りがあります。
+
+これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
+
+現在プレビュー中の機能をいくつか次に示します。
+
+|===
+
+
+| * 特徴 * | * 概要 * 
+
+
+| 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。 
+
+
+| ユーザーアクセスの自動応答を制限します | 攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+
+
+| 応力の下の共有リソース | ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソースlink:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+|===
