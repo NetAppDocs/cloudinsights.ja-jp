@@ -168,8 +168,24 @@ Config Advisor は、次のオペレーティングシステムで実行でき�
 
 
 
-== サポート
+== サポートとビデオ
 
-Config Advisor に関連する質問については、[ヘルプ]->[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。
+次のビデオでは、データコレクタのインストール方法とダッシュボードを使用したCloud Insights でConfig Advisor を最大限に活用する方法を紹介しています。
+
+
+
+==== データコレクタのインストールと設定
+
+video::Config_Advisor_Collector_Part1.mp4[]
+
+
+==== Config Advisor ダッシュボードの作成：
+
+video::Config_Advisor_Collector_Part2.mp4[]
+
+
+==== その他のサポート
+
+Config Advisor に関連するその他の質問については、[ヘルプ]->[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。
 
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

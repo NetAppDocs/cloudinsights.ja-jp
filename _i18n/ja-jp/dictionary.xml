@@ -8808,7 +8808,6 @@
   <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows Server 2019（64ビット）</block>
   <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux（RHEL）7.7以降（64ビット）</block>
   <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0以降</block>
-  <block id="ca205ac9d896fc87257c36e58f45e6f6" category="paragraph">Config Advisor に関連する質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
   <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
   <block id="68f0f62deae94ea2573e440bd6203542" category="summary">プレビュー機能は限られた容量で利用でき、プライムタイムに備えていない機能を強調しています。</block>
   <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">フィーチャーと機能をプレビューします</block>
@@ -8820,4 +8819,10 @@
   <block id="f763810a8ec0d5862e0f288795932956" category="cell">攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="6e1238d84ff9d81dac586bf262a824f6" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーでCIによって報告Cloud Insights されたCloud Insights形式のクラスタ名を使用する- Cloud Insights ではvSphereクラスタ名の先頭にvSphereデータセンター名が付き、フォワードスラッシュ「DC1/clusterA」がデータセンターDC1内のクラスタA内のハイパーバイザーでレポートされるクラスタ名です。</block>
+  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">サポートとビデオ</block>
+  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">次のビデオでは、データコレクタのインストール方法とダッシュボードを使用したCloud Insights でConfig Advisor を最大限に活用する方法を紹介しています。</block>
+  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">データコレクタのインストールと設定</block>
+  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Config Advisor ダッシュボードの作成：</block>
+  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">その他のサポート</block>
+  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Config Advisor に関連するその他の質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
 </blocks>
