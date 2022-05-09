@@ -8825,4 +8825,13 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Config Advisor ダッシュボードの作成：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">その他のサポート</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Config Advisor に関連するその他の質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
+  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">コレクタモニタ</block>
+  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">Acquisition Unit のシャットダウン</block>
+  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">Cloud Insights Acquisition Unitは、新機能を導入するためのアップグレードの一環として定期的に再起動します。これは、一般的な環境で月に1回以下の頻度で発生します。新たに再起動したAcquisition UnitでCloud Insights への登録が完了したことを示すResolutionを通知するまで、Acquisition Unitがシャットダウンした場合は、すぐに警告アラートが表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</block>
+  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">このアラートが頻繁に発生する場合や15分以上続く場合は、Acquisition Unit、ネットワーク、およびAUをインターネットに接続するプロキシをホストしているシステムの動作を確認してください。</block>
+  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">コレクタでエラーが</block>
+  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">データコレクタのポーリングで予期しない障害が発生しました。</block>
+  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">Cloud Insights のデータコレクタのページにアクセスして、その状況の詳細を確認してください。</block>
+  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">コレクタ警告</block>
+  <block id="85cbbe353849360cf65793354f09c95b" category="cell">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</block>
 </blocks>
