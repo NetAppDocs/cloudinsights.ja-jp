@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 20:05:52 +0000">04/18/2022</time>
+    <time datetime="2022-05-09 15:34:04 +0000">05/09/2022</time>
     
   
 
@@ -2042,6 +2042,7 @@
 <li><a href="#astra-データストア-ads-モニタ">Astra データストア（ ADS ）モニタ</a></li>
 <li><a href="#netapp-ontap-モニタの-fsx">NetApp ONTAP モニタの FSX</a></li>
 <li><a href="#k8s-モニタ">K8s モニタ</a></li>
+<li><a href="#コレクタモニタ">コレクタモニタ</a></li>
 </ul>
 </li>
 <li><a href="#詳細情報">詳細情報</a></li>
@@ -2823,6 +2824,37 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">ポッドのマウントに失敗しました</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">このアラートは、ポッドでマウントに失敗したときに発生します。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="コレクタモニタ">コレクタモニタ</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">モニタ名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重大度</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">説明</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">対処方法</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquisition Unit のシャットダウン</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights Acquisition Unitは、新機能を導入するためのアップグレードの一環として定期的に再起動します。これは、一般的な環境で月に1回以下の頻度で発生します。新たに再起動したAcquisition UnitでCloud Insights への登録が完了したことを示すResolutionを通知するまで、Acquisition Unitがシャットダウンした場合は、すぐに警告アラートが表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このアラートが頻繁に発生する場合や15分以上続く場合は、Acquisition Unit、ネットワーク、およびAUをインターネットに接続するプロキシをホストしているシステムの動作を確認してください。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">コレクタでエラーが</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">データコレクタのポーリングで予期しない障害が発生しました。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights のデータコレクタのページにアクセスして、その状況の詳細を確認してください。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">コレクタ警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</p></td>
 </tr>
 </tbody>
 </table>
