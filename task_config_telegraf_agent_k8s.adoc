@@ -274,7 +274,7 @@ kubectl delete pod telegraf-rs-*
 ....
 
 
-=== DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動
+== DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動
 
 DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。
 
@@ -298,7 +298,7 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 ....
 
 
-=== Kubernetes からデータを収集するようにエージェントを設定します
+== Kubernetes からデータを収集するようにエージェントを設定します
 
 注：スクリプトベースのインストールのデフォルトの名前空間は、 _CI-MOCI_です 。オペレータベースのインストールの場合、デフォルトのネームスペースは _NetApp-monitoring _ です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。
 
@@ -352,7 +352,7 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 ----
 
 
-=== kube-state-metrics サーバをインストールしています
+== kube-state-metrics サーバをインストールしています
 
 
 NOTE: オペレータベースのインストールでは、 kube-state-metrics のインストールを処理します。オペレータベースのインストールを実行する場合は、このセクションを省略してください。
@@ -371,7 +371,7 @@ kube-state-metrics サーバをインストールするには、次の手順を�
 
 
 
-=== kube-state-metrics カウンタ
+== kube-state-metrics カウンタ
 
 kubbe 状態メトリックカウンタの情報にアクセスするには、次のリンクを使用します。
 
@@ -392,7 +392,7 @@ kubbe 状態メトリックカウンタの情報にアクセスするには、�
 
 
 
-=== エージェントをアンインストールしています
+== エージェントをアンインストールしています
 
 これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
@@ -420,7 +420,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
  kubectl delete scc telegraf-hostaccess
 
 
-=== Agent をアップグレードしています
+== Agent をアップグレードしています
 
 これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
