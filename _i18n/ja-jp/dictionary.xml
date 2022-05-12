@@ -7948,7 +7948,6 @@
   <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">「 &lt;Kubernetes の IP &gt; 」を Kubernetes API サーバの IP アドレスに置き換えます。</block>
   <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">&lt;Kubernetes トークン &gt; を Kubernetes API トークンに置き換えます。</block>
   <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">Enter キーを押します。</block>
-  <block id="d29c6dec2ac17ff8872c354eb3f62aea" category="paragraph">インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Tegraf を設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール</block>
   <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">完了設定 _ をクリックします。</block>
   <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">エラーが原因でインストーラスクリプトが終了した場合は、エラーが解決したら再実行できます。デフォルトの設定を使用しない環境の場合、インストーラスクリプトでは、 Monitoring Operator 名前空間や Kubernetes API サーバポートなどの追加のパラメータがサポートされます。使用可能なオプションの一覧を以下に示します。</block>
   <block id="b524f24588085b1e0adf31626117f231" category="section-title">インストーラのスクリプトオプション：</block>
@@ -7965,7 +7964,6 @@
   <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">Cloud Insights に Acquisition Unit が表示されることを確認します。Admin &gt; Data Collectors に移動し、 Acquisition Unit タブをクリックします。Cloud Insights API キーに Acquisition Unit の権限があることを確認します。</block>
   <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">ネットアップアストラデータストア</block>
   <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
-  <block id="17d0980f445c2a05e39e2cbcbbb44f10" category="paragraph">このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、 Monitoring Operator は _Telegraf _ を設定して、高度なメトリックと _Fluent bit_to 収集ログを収集します。</block>
   <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">Cloud Insights で指標を監視</block>
   <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra データストアのクイックスタート</block>
   <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">以下のインストール手順と追加情報は、 Astra データストアのドキュメントにも記載されています。<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
@@ -8825,14 +8823,6 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Config Advisor ダッシュボードの作成：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">その他のサポート</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Config Advisor に関連するその他の質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
-  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">コレクタモニタ</block>
-  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">Acquisition Unit のシャットダウン</block>
-  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">Cloud Insights Acquisition Unitは、新機能を導入するためのアップグレードの一環として定期的に再起動します。これは、一般的な環境で月に1回以下の頻度で発生します。新たに再起動したAcquisition UnitでCloud Insights への登録が完了したことを示すResolutionを通知するまで、Acquisition Unitがシャットダウンした場合は、すぐに警告アラートが表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</block>
-  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">このアラートが頻繁に発生する場合や15分以上続く場合は、Acquisition Unit、ネットワーク、およびAUをインターネットに接続するプロキシをホストしているシステムの動作を確認してください。</block>
-  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">コレクタでエラーが</block>
-  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">データコレクタのポーリングで予期しない障害が発生しました。</block>
-  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">Cloud Insights のデータコレクタのページにアクセスして、その状況の詳細を確認してください。</block>
-  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">コレクタ警告</block>
-  <block id="85cbbe353849360cf65793354f09c95b" category="cell">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</block>
-  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">データコレクタまたはターゲットシステムの設定を確認します。このモニタは、他のモニタよりも多くのアラートを送信することがあるため、トラブルシューティングを実行していないかぎり、このモニタでアラートの受信者を設定しないことを推奨します。</block>
+  <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、Monitoring Operatorは高度なメトリックを収集し、CONFIGURE_Fluent bit_toはログを収集します。</block>
+  <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール</block>
 </blocks>

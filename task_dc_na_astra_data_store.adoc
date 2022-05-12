@@ -9,7 +9,7 @@ keywords: data collector, queries, create, astra, data, store,
 
 
 [role="lead"]
-このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、 Monitoring Operator は _Telegraf _ を設定して、高度なメトリックと _Fluent bit_to 収集ログを収集します。
+このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、Monitoring Operatorは高度なメトリックを収集し、CONFIGURE_Fluent bit_toはログを収集します。
 
 
 TIP: 以下のインストール手順と追加情報は、 Astra データストアのドキュメントにも記載されています。link:https://docs.netapp.com/us-en/astra-data-store/use/monitor-with-cloud-insights.html["Cloud Insights で指標を監視"]
@@ -68,7 +68,7 @@ Cloud Insights は、このデータコレクタからインベントリデー�
 . <Kubernetes トークン > を Kubernetes API トークンに置き換えます。
 . Enter キーを押します。
 +
-インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Tegraf を設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール
+インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール
 
 . 完了設定 _ をクリックします。
 
