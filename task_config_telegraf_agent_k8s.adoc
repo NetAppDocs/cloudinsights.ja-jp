@@ -9,15 +9,25 @@ summary: Cloud Insights は、 Kubernetes で統合データを収集するエ�
 
 
 [role="lead"]
-Cloud Insights ではを使用します link:https://docs.influxdata.com/telegraf/v1.19/["Tegraf"] 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
-
-Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。
+Cloud Insights ではを使用します link:https://docs.influxdata.com/telegraf/["Tegraf"] 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
 
 
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
 
 
 NOTE: Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <<Verifying Kubernetes Checksums>>。
+
+
+
+== オペレータベースのインストールか、スクリプトベースのインストールか？
+
+Cloud Insights は、Kubernetesクラスタを監視するためのKubernetesオペレータを構築しました。NetApp Kubernetes Monitoring Operator（NKMO）は、スクリプトでインストールされる監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能な監視をより柔軟に設定し、お客様による設定操作を減らすことができ、K8sクラスタで実行される他のソフトウェアを監視する機会を強化できます。
+
+NKMOは、Cloud Insights へのデータ収集、変換、および配信に、基礎となるテレグラムソフトウェアを引き続き使用します。これは、カスタムリソース定義とカスタムリソースで強化され、Kubernetesクラスタごとに監視をカスタマイズできるようになりました。
+
+
+
+== エージェントをインストールしています
 
 サービスデータコレクタをインストールしていて、エージェントをまだ設定していない場合は、最初に適切なオペレーティングシステム用のエージェントをインストールするように求められます。このトピックでは、 Tegraf エージェントを次のオペレーティングシステムにインストールする手順について説明します。
 
@@ -60,7 +70,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方�
 
 
 * OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。
-* 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
+* 次のコマンドを使用できる必要があります。 _curl 、 _sudo _ （スクリプトベースのインストールには不要）、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
 * kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。
 * プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。
 * セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。これはオペレータベースのインストールでインストールされます。
@@ -170,14 +180,14 @@ Cloud Insights からオペレータ用 Docker イメージを取得します。
 オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。
 
 ....
-docker.io/telegraf:1.19.3
-gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0
+docker.io/telegraf:1.21.4
+gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0
 ....
 FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。
 
 ....
-docker.io/fluent-bit:1.7.8
+docker.io/fluent-bit:1.8.12
 docker.io/kubernetes-event-exporter:0.10
 ....
 エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。
@@ -200,7 +210,47 @@ spec:
 ....
 
 
+=== スクリプトベースのKubernetes監視からオペレータベースの監視へのアップグレード
+
+スクリプトベースのKubernetes監視をすでにインストールしている場合は、次の手順に従って、オペレータベースの監視にアップグレードします。
+
+アップグレードの手順
+
+. スクリプトベースのモニタリングインストールからConfigMapを保持します。
++
+ kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+. K8sオペレータベースの監視解決策 のインストール中に使用するK8sクラスタ名を保存して、データの継続性を確保します。
++
+CIにKubernetesクラスタの名前を覚えていない場合は、次のコマンドラインを使用して、保存した構成からクラスタを抽出できます。
+
++
+ cat /tmp/telegraf-configs.yaml | grep kubernetes_cluster | head -2
+. スクリプトベースの監視を削除します
++
+Kubernetes 上のスクリプトベースのエージェントをアンインストールするには、次の手順を実行します。
+
++
+モニタリングネームスペースが Telegraf 専用に使用されている場合：
+
++
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
++
+ kubectl delete ns ci-monitoring
++
+モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
+
++
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+
+
+image:KubernetesOperatorTile.png["Kubernetesオペレータ用タイル"]
+
+
+
 == スクリプトベースのインストール
+
+
+NOTE: スクリプトベースのインストールは廃止されました。Kubernetesクラスタの監視には、Kubernetesオペレータベースの収集ツールを使用してください。
 
 image:Kubernetes_Install_Agent_screen.png["スクリプトベースのインストール"]
 

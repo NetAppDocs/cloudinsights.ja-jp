@@ -485,7 +485,6 @@
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">サポートをリクエストしています</block>
   <block id="fece24766a61b92f80fd8d572bb323d4" category="paragraph">Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、トライアルモードとサブスクリプションモードのどちらであるかによって異なります。</block>
   <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">サポートページ</block>
-  <block id="7ad952bbe9e97c8916bd02849ca3327b" category="paragraph"><block ref="7ad952bbe9e97c8916bd02849ca3327b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">サポート資格をアクティブ化しています</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">詳細</block>
   <block id="1b179bc63122b8c6c97a198ea6812e2a" category="paragraph">Cloud Insights は、試用モードで実行する場合にセルフサービスと E メールのサポートを提供します。サービスに登録したら、サポート資格をアクティブ化することを強くお勧めします。サポートエンタイトルメントをアクティブにすると、オンラインチャット、 Web チケット発行システム、および電話でテクニカルサポートにアクセスできます。登録が完了するまで、デフォルトのサポートモードはセルフサービスです。を参照してください <block ref="0ac112fddddbe1a53d74b73cbe92356e" category="inline-link-macro-rx"></block> 下。</block>
@@ -7591,7 +7590,6 @@
   <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
   <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">コレクタ通知</block>
   <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">データコレクタのランディングページを表示しているときは、データコレクタの概要セクションの「通知」フィールドで鉛筆のアイコンをクリックすることで通知を変更できます。</block>
   <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">コレクタ通知の編集</block>
   <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">URL パラメータとともに _http://_or_https:// _prefix を含む webhook ターゲット URL</block>
@@ -7927,7 +7925,6 @@
   <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">ONTAP 送信バッファサイズを設定します</block>
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">ONTAP FPolicy 送信バッファのサイズを設定します。9.8p7 より前のバージョンの ONTAP を使用していて、 Performance 問題が表示された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます</block>
-  <block id="be41e26b92ad2d5eb39a134c12da9d18" category="cell">ONTAP FPolicy 送信バッファのサイズを設定します。9.8p7 より前のバージョンの ONTAP を使用していて、 ONTAP パフォーマンス問題にヒットした場合は、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。これは非表示の機能であり、お客様の要求に応じて有効にします。</block>
   <block id="5ba6c86df3ea77e978bb9c685d6bec25" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> が固定されていますONTAP の最小バージョンは 9.8P7 です。9.8p7 より前のバージョンの ONTAP を使用していて、このパフォーマンス問題が検出された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションについて確認し、新しいデータコレクタの追加時や既存のデータコレクタの編集時にこの設定が表示されないようにする場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントレベルがあります。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次の Cloud Secure ロールのいずれかを割り当てることができます。</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">各ユーザに必要なロールを選択します。</block>
@@ -8272,7 +8269,6 @@
   <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 解決済み * ：アラートはチームメンバーによって解決済みとマークされています。</block>
   <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">アラートの _Status_ （新規、進行中など）</block>
   <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。</block>
-  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。</block>
   <block id="f09825d109ed4681880410bb47684198" category="doc">Kubernetes でのエージェントの設定</block>
   <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">* ここに移動 *</block>
@@ -8612,7 +8608,6 @@
   <block id="730e8afb4e9b33075d701c577225cc9f" category="cell">警告しきい値を超えた場合は、ただちに対処することを検討してください。 1.特定のユーザクォータ 2 のファイル数クォータを増やします。不要なファイルを削除して、特定のユーザのファイルクォータに対する圧力を軽減します</block>
   <block id="883bf0845a2612b57fb641fe15206813" category="cell">重大しきい値を超える場合は、サービスの中断を最小限に抑えるためにただちに対処する必要があります： 1 。ボリュームのノードから一部のワークロードを移動して、 IO 負荷を軽減してください 2 。ボリュームのノードに Flash Cache 3 がない場合は、 Flash Cache 3 を購入して追加し、 WAFL キャッシュを拡張します。QoS 制限を使用して同じノードに対する優先度の低いワークロードの要求を下げ、警告しきい値を超えた場合の即時対処を検討します。 1.ボリュームのノードから一部のワークロードを移動して、 IO 負荷を軽減してください 2 。ボリュームのノードに Flash Cache 3 がない場合は、 Flash Cache 3 を購入して追加し、 WAFL キャッシュを拡張します。QoS 制限により、同じノードでの優先度の低いワークロードの要求を軽減します。 4ワークロード特性（ブロックサイズ、アプリケーションキャッシングなど）の変更</block>
   <block id="c7138a3f31fdad6a8a7bd85a7c38cf78" category="cell">重大しきい値を超える場合は、サービスの中断を最小限に抑えるためにただちに対処する必要があります： 1 。ボリューム 2 のスペースを増やします。警告しきい値を超えたときに不要なデータを削除してから、ボリュームのスペースを増やすことを検討してください。</block>
-  <block id="6fec8353819572eb45b4ed570fb15361" category="section-title">ログモニタ（時刻解決なし）</block>
   <block id="4065d27b436ab18789af518781524ea9" category="cell">" クラウドクレデンシャルのスレッドとシステムの初期化が完了するまで待ちます。</block>
   <block id="a231bc4886129d6555188d03b6fc31ad" category="cell">オンプレミス製品を使用している場合は、次の対処策を実施します。 …「 network interface show 」コマンドを使用して、クラスタ間 LIF がオンラインで機能していることを確認します。…デスティネーションノードのクラスタ間 LIF で「 ping 」コマンドを使用して、オブジェクトストアサーバへのネットワーク接続を確認します。…オブジェクトストアの設定が変更されていないことを確認します。ログインおよび接続の情報はです それでも有効です。問題が解決しない場合は、ネットアップのテクニカルサポートにお問い合わせください。Cloud Volumes ONTAP を使用する場合は、次の対処方法を実行します。…オブジェクトストアの設定が変更されていないことを確認します。 ログイン情報と接続情報がまだ有効であることを確認してください。問題が有効でない場合は、ネットアップのテクニカルサポートにお問い合わせください。</block>
   <block id="983e45d9f14c8e4b92b207877e7cabb0" category="cell">なし</block>
@@ -8630,7 +8625,6 @@
   <block id="07766d9fa14ba7d6b5cf8861de22d2b5" category="cell">シェルフのファンに障害があります</block>
   <block id="e9c5971b4f7f1ba13f5e003dd03554c9" category="cell">次の対処方法を実行します。ファンモジュールが完全に装着され、固定されていることを確認します。メモ：一部のディスクシェルフの電源装置モジュールにファンが内蔵されています。問題が解決しない場合は、ファンモジュールを交換してください。それでも問題が解決しない場合は、ネットアップのテクニカルサポートにお問い合わせください。</block>
   <block id="5e0ce0c8530028abf9cee2b2f669b26a" category="cell">次の対処方法を実行します。「 disk show -n 」コマンドを使用して、どのディスクが割り当てられていないかを確認します。「 disk assign 」コマンドを使用して、ディスクをシステムに割り当てます。</block>
-  <block id="9d54715097050a7c75d5d072c9231c2c" category="section-title">時刻で解決されたログモニタ</block>
   <block id="65ad40ceca2e26e2fb683eb307a8d120" category="cell">次の手順を実行します。… AWS EC2 管理コンソールにログインします。…インスタンスページに移動します。… Cloud Volumes ONTAP 導入のインスタンスを探してその健常性を確認します。…インスタンスに関連付けられている AWS IAM ロールが有効であり、インスタンスに適切な権限が付与されていることを確認します。</block>
   <block id="1de16fe193323aa8cbad8f1695acf2ec" category="cell">クラウドクレデンシャルスレッドで、 Amazon Web Services （ AWS ）の Identity and Access Management （ IAM ）ロールベースのクレデンシャルを AWS メタデータサーバから取得することはできません。クレデンシャルは、 Amazon Simple Storage Service （ Amazon S3 ）への API 要求への署名に使用されます。Cloud Volume ONTAP にアクセスできなくなりました。…</block>
   <block id="64f971e0c1b17e1f78a432bb01a8746c" category="cell">Identity and Access Management （ IAM ）ロールスレッドで、 AWS メタデータサーバに Amazon Web Services （ AWS ） IAM ロールが見つかりません。IAM ロールは、 Amazon Simple Storage Service （ Amazon S3 ）への API 要求の署名に使用するロールベースのクレデンシャルを取得する必要があります。Cloud Volume ONTAP にアクセスできなくなりました。…</block>
@@ -8825,4 +8819,113 @@
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Config Advisor に関連するその他の質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
   <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、Monitoring Operatorは高度なメトリックを収集し、CONFIGURE_Fluent bit_toはログを収集します。</block>
   <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール</block>
+  <block id="d07e55df7f133c0213955a67c979d808" category="admonition">ONTAP データコレクタ通知は、クラスタ/データコレクタに関連する特定のモニタ通知よりも優先されます。Data Collector自体に設定した受信者リストには、データコレクタアラートが送信されます。アクティブなデータコレクタアラートがない場合は、監視用に生成されたアラートが特定の監視受信者に送信されます。</block>
+  <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">ログモニタ</block>
+  <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">ボリュームはオフラインです</block>
+  <block id="5609b8e3a5a7d588b5e383ca4cbc5c57" category="cell">ボリュームがオフラインになりました。</block>
+  <block id="e7536040ed5bedd31b479262b47500e3" category="cell">ボリュームをオンラインに戻します。</block>
+  <block id="d1c6b663baf98044c99cc6d564598639" category="cell">ボリュームは制限状態です</block>
+  <block id="c8f1088c9457fdf2989240ba63ef79ec" category="cell">フレキシブルボリュームが制限されたことを示すイベントです。</block>
+  <block id="083dfc3e7cc398a4bc31ef7290a24654" category="cell">Storage VMが停止しました</block>
+  <block id="2863895a71d5cb9e33a098ac259eb334" category="cell">このメッセージは、「vserver stop」処理が成功した場合に表示されます。</block>
+  <block id="b339435665ff601f5913edea4f10f768" category="cell">Storage VMでデータアクセスを開始するには、「vserver start」コマンドを使用します。</block>
+  <block id="4dfd7227c51557eca5ad760f17b1e3b2" category="cell">ノードのパニック</block>
+  <block id="60b3e4bcb8a36a9f858c72d83a5d4291" category="cell">このイベントはパニック状態になった場合に生成されます</block>
+  <block id="7d8b9fd3afbc24d3726d797e23715603" category="cell">ネットアップカスタマーサポートにお問い合わせください。</block>
+  <block id="cc3da35abc04bdb599096c76784750c9" category="section-title">変更ログモニタ</block>
+  <block id="8f0ea9dc7dd1704f6e4e6e709dc84ec2" category="cell">内部ボリュームが検出されました</block>
+  <block id="f42080c83d185f44a2df17faa40886d5" category="cell">このメッセージは、内部ボリュームが検出された場合に表示されます。</block>
+  <block id="2652a160c7449e6a9d9867ab77272655" category="cell">内部ボリュームが変更されました</block>
+  <block id="ff227a947c0e31eac1d84272a0a4148f" category="cell">このメッセージは、内部ボリュームが変更された場合に表示されます。</block>
+  <block id="27a24fe47191d9d8388895fa49370e30" category="cell">ストレージノードを検出</block>
+  <block id="e93b9e33542d91144ab9a9642a3a26a9" category="cell">このメッセージは、ストレージノードが検出された場合に表示されます。</block>
+  <block id="cc6843bc6cd1e570e50f7263422a340b" category="cell">ストレージノードが削除されました</block>
+  <block id="754ddad2e9ef53ebffdea523a3044181" category="cell">このメッセージは、ストレージノードが削除された場合に表示されます。</block>
+  <block id="35dfb12aba09ddfaeaa55717279f3093" category="cell">ストレージプールが検出されました</block>
+  <block id="ab23bc42353ab4c690e0aedd260bcf22" category="cell">このメッセージは、ストレージプールが検出された場合に表示されます。</block>
+  <block id="b3e73795809b6cff92d12effd798e721" category="cell">Storage Virtual Machineを検出</block>
+  <block id="bcf038f7a85e7cc87e8a178fbc2d0c53" category="cell">このメッセージは、Storage Virtual Machineが検出された場合に表示されます。</block>
+  <block id="cbe58c07baaa017f926c6594715fa74d" category="cell">Storage Virtual Machineを変更</block>
+  <block id="7177a13bcf2c1f14bff3599bdff189af" category="cell">このメッセージは、Storage Virtual Machineが変更された場合に表示されます。</block>
+  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">コレクタモニタ</block>
+  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">Acquisition Unit のシャットダウン</block>
+  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">Cloud Insights Acquisition Unitは、新機能を導入するためのアップグレードの一環として定期的に再起動します。これは、一般的な環境で月に1回以下の頻度で発生します。新たに再起動したAcquisition UnitでCloud Insights への登録が完了したことを示すResolutionを通知するまで、Acquisition Unitがシャットダウンした場合は、すぐに警告アラートが表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</block>
+  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">このアラートが頻繁に発生する場合や15分以上続く場合は、Acquisition Unit、ネットワーク、およびAUをインターネットに接続するプロキシをホストしているシステムの動作を確認してください。</block>
+  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">コレクタでエラーが</block>
+  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">データコレクタのポーリングで予期しない障害が発生しました。</block>
+  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">Cloud Insights のデータコレクタのページにアクセスして、その状況の詳細を確認してください。</block>
+  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">コレクタ警告</block>
+  <block id="85cbbe353849360cf65793354f09c95b" category="cell">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</block>
+  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">データコレクタまたはターゲットシステムの設定を確認します。このモニタは、他のモニタよりも多くのアラートを送信することがあるため、トラブルシューティングを実行していないかぎり、このモニタでアラートの受信者を設定しないことを推奨します。</block>
+  <block id="1879fc114cb19058a792b71aac95cb61" category="paragraph">Cloud Insights ではを使用します <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
+  <block id="938845c86bf6439f2bf6f4fc86fee5cf" category="section-title">オペレータベースのインストールか、スクリプトベースのインストールか？</block>
+  <block id="da90f5dd76c952cff43625f8bc75e982" category="paragraph">Cloud Insights は、Kubernetesクラスタを監視するためのKubernetesオペレータを構築しました。NetApp Kubernetes Monitoring Operator（NKMO）は、スクリプトでインストールされる監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能な監視をより柔軟に設定し、お客様による設定操作を減らすことができ、K8sクラスタで実行される他のソフトウェアを監視する機会を強化できます。</block>
+  <block id="8270372556d5c0c95f3132ca3526b498" category="paragraph">NKMOは、Cloud Insights へのデータ収集、変換、および配信に、基礎となるテレグラムソフトウェアを引き続き使用します。これは、カスタムリソース定義とカスタムリソースで強化され、Kubernetesクラスタごとに監視をカスタマイズできるようになりました。</block>
+  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">エージェントをインストールしています</block>
+  <block id="51192dad58dd7321468a8557d0452699" category="section-title">スクリプトベースのKubernetes監視からオペレータベースの監視へのアップグレード</block>
+  <block id="0266610cf3fcbb5ba3b10477aecfe4e1" category="paragraph">スクリプトベースのKubernetes監視をすでにインストールしている場合は、次の手順に従って、オペレータベースの監視にアップグレードします。</block>
+  <block id="a24b05a1dbfc11d6e8c8bae6db339730" category="paragraph">アップグレードの手順</block>
+  <block id="38c37951a474215e996d1e567cc4b4d5" category="list-text">スクリプトベースのモニタリングインストールからConfigMapを保持します。</block>
+  <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">K8sオペレータベースの監視解決策 のインストール中に使用するK8sクラスタ名を保存して、データの継続性を確保します。</block>
+  <block id="35c735048514e15b96558a336dddd484" category="paragraph">CIにKubernetesクラスタの名前を覚えていない場合は、次のコマンドラインを使用して、保存した構成からクラスタを抽出できます。</block>
+  <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">スクリプトベースの監視を削除します</block>
+  <block id="8f0f3f28d66cb57de112b327612b48d4" category="inline-image-macro">Kubernetesオペレータ用タイル</block>
+  <block id="099085e6f245bdfee8ce5ed73ba25890" category="paragraph"><block ref="099085e6f245bdfee8ce5ed73ba25890" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28fa7dedfef6e24a05f2efea53818499" category="admonition">スクリプトベースのインストールは廃止されました。Kubernetesクラスタの監視には、Kubernetesオペレータベースの収集ツールを使用してください。</block>
+  <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">分析情報から、リソースの使用状況とトレンド分析を確認できます。</block>
+  <block id="f1c9e9af80bb533618f5bdefe333747d" category="doc">分析</block>
+  <block id="4e97535a9ad440d2d327ab364bb7a0ec" category="paragraph">分析情報を使用すると、リソースの使用状況や他のリソースへの影響、時間のかかる分析などを確認できます。</block>
+  <block id="93b6b2ecbe8e38118f0e38a7f128eb90" category="paragraph">さまざまなインサイトをご利用いただけます。[Dashboards]&gt;[Insights（インサイト）]に移動して、ダイビングを開始します。アクティブなインサイト（現在発生しているインサイト）は、メインタブで表示するか、非アクティブなインサイト（_Inactive Insights）タブで表示できます。非アクティブなインサイトとは、以前はアクティブだったものの、もう発生していないインサイトです。</block>
+  <block id="fe9a216d65384f5afb0047e612bf386e" category="section-title">Insightのタイプ</block>
+  <block id="9e9013279f80acdb151d7cad5bc3f7d8" category="section-title">負荷のある共有リソース</block>
+  <block id="5f002a5fdb5afaacfc165c3a324751d5" category="paragraph">影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。 <block ref="de4400096db30b5f709799778e050e2c" category="inline-link-macro-rx"></block></block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">詳細はこちら。</block>
+  <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> Cloud Insights プレビューフィーチャーについて</block>
+  <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetesネームスペースのスペースが不足しています</block>
+  <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">スペース不足Insightで実行されているKubernetesネームスペースのワークロードについて、スペース不足になる可能性がある状況をKubernetesネームスペースで確認できます。各スペースがフルになるまでの推定日数も示されます。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
+  <block id="5153ae996beb76439018cf032b394d21" category="paragraph"><block ref="5153ae996beb76439018cf032b394d21" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e7ded308e600f5c72a32aac82868158" category="list-text">*チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。[ヘルプ]&gt;[サポート*]ページの右下にあるバブルをクリックします。</block>
+  <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">ONTAP データコレクタ*のランディング・ページを表示しているときに'データ・コレクタのサマリー・セクションの通知フィールドで鉛筆のアイコンをクリックすると'通知を変更できます</block>
+  <block id="851540d32e033a0c14b63879881da871" category="summary">分析情報は、Kubernetesスペースがいついっぱいになるかを予測するのに役立ちます。</block>
+  <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">分析情報：Kubernetesネームスペースのスペースが不足しています</block>
+  <block id="8754218641c0cb64c48e8a8cc68703c4" category="paragraph">環境のスペース不足は、決して良い状況ではありません。Cloud Insights は、Kubernetesの永続ボリュームがフルになるまでの時間を予測するのに役立ちます。</block>
+  <block id="8dc9b2ee1508011b53e7f0f04a3b46a8" category="paragraph">Space_Insightで実行されている_ Kubernetes名前空間を使用すると、容量不足のリスクがあるKubernetes名前空間のワークロードを表示できます。各永続ボリュームがいっぱいになるまでに推定される残り日数を確認できます。</block>
+  <block id="f2c0221f294a823d827a375c35966fc9" category="paragraph">このInsightを表示するには、[* Dashboards &gt; Insights（ダッシュボード&gt;インサイト*）]に移動します。</block>
+  <block id="6f6740f128ff4e7b81b3e550f00f9705" category="inline-image-macro">Kubernetesネームスペース内の、スペース不足に陥る危険性のあるワークロードのリスト</block>
+  <block id="9cd0fe5cef5af60f762c34beb874081a" category="paragraph"><block ref="9cd0fe5cef5af60f762c34beb874081a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b5d4ddc25dbf8207f2bee2e686857aa1" category="paragraph">ワークロードをクリックすると、Insightの詳細ページが開きます。このページのグラフには、ワークロード容量のトレンドと次の表が表示されます。</block>
+  <block id="531d617d072da086d2a88b4381d112d7" category="list-text">ワークロード名</block>
+  <block id="5594ad451661776d3680f239ed48baa0" category="list-text">永続ボリュームが影響を受けます</block>
+  <block id="60883d911c538f3168c126825cfa1804" category="list-text">予測フルまでの時間（日数）</block>
+  <block id="0e1f0238958c9e1538d02888144645f7" category="list-text">永続ボリュームの容量</block>
+  <block id="95458ffe03f081fb38d0e5630d7836c6" category="list-text">バックエンドストレージリソースに影響し、現在の使用容量が合計容量を上回っています。このリンクをクリックすると、バックエンドボリュームの詳細なランディングページが表示されます。</block>
+  <block id="9b6de7d57253456e4f416bcef90b76e5" category="inline-image-macro">詳細が表示されたワークロードテーブル</block>
+  <block id="e589c155ffae6696761533f45ef69b7c" category="paragraph"><block ref="e589c155ffae6696761533f45ef69b7c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f8f8bf593c85a6ac1a3a0cc2103aa21" category="section-title">スペースが不足している場合はどうすればよいですか？</block>
+  <block id="d6fe83f2685cfec3bef24ac55c5aa793" category="paragraph">Insightのページで、「*+推奨事項を表示」をクリックして解決策を確認します。スペース不足になると、常に容量を追加するのが最も簡単なオプションです。Cloud Insights では、ターゲットの60日間の予測に必要な時間をフルにするために追加が最適な容量が提示されます。その他の推奨事項も表示されます。</block>
+  <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">60日間のTTFに戻るために追加する容量</block>
+  <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="103ede5225263a5f8e396b6adb9b4898" category="paragraph">また、このInsightへのリンクをコピーして、ページをブックマークに追加したり、チームと簡単に共有したりすることもできます。</block>
+  <block id="b56a5394775a9f077c12cb3e770d913c" category="section-title">2022年5月</block>
+  <block id="968babe350ca1e85b43c2bfecb5dd48a" category="section-title">ネットアップサポートとチャットでライブチャットできます</block>
+  <block id="37679084525740b7948c17a18a192fc9" category="paragraph">ネットアップのサポート担当者とライブチャットできます。[ヘルプ]&gt;[サポート]ページで、[チャット]アイコンをクリックするか、[お問い合わせ]セクションの_Chat_をクリックしてチャットセッションを開始します。チャットサポートは、米国の平日にStandard EditionおよびPremium Editionユーザが利用できます。</block>
+  <block id="45e33bccc4ebc864f00a61301270a364" category="inline-image-macro">笑顔の上にネットアップの「N」が青で表示されたチャットアイコン</block>
+  <block id="ed9854709bd41d275fb8660c2894a4fc" category="paragraph"><block ref="ed9854709bd41d275fb8660c2894a4fc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="541eba6bad0f6bb8c10bec2af8d0388d" category="section-title">Kubernetesオペレータ</block>
+  <block id="92631a8aee2d30caecb661301eccee48" category="inline-link-macro">NetApp Kubernetes Monitoring Operator</block>
+  <block id="44e205d6b7f670b4484b5c59a0e047a1" category="paragraph">。 <block ref="7bfa97fa7d1d00f6d7f973b03d477760" category="inline-link-macro-rx"></block> （NKMO）はKubernetes 1.17以降を実行するすべての環境で使用でき、Cloud Insights 用のKubernetesのインストールに推奨される方法です。NKMOは、スクリプトでインストールされた監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能なモニタリングの柔軟な設定が可能になり、顧客による設定介入が減少します。また、Kubernetesクラスタで実行されている他のソフトウェアを監視する機会も強化されます。</block>
+  <block id="b309f54e4f5c6e536fce4de1d83c5553" category="section-title">APIを使用してユーザと招待を管理します</block>
+  <block id="ed39f5bc3223c1b01ac77f72f296192a" category="inline-link-macro">API Swaggerドキュメント</block>
+  <block id="11ac41afd372e3478375bc4334741ded" category="paragraph">Cloud Insights の強力なAPIを使用して、ユーザと招待を管理できるようになりました。詳細については、を参照してください <block ref="8b90a2a6f600732ad913a4dda50bc415" category="inline-link-macro-rx"></block>。</block>
+  <block id="8f586721df71efca42eda16d08885806" category="section-title">データ収集アラート</block>
+  <block id="16908b0605f2645dfcb4c3a8d248cef3" category="inline-link-macro">イベント</block>
+  <block id="b3a98c480e653bcb96e30bd853fa73d8" category="paragraph">データ収集のアラートを受信できるようになりました <block ref="cd5c9bc76fe8dcbf686501201e710bd1" category="inline-link-macro-rx"></block>：</block>
+  <block id="090cf11f8e59f7e005270bc00a8af56b" category="paragraph">これらのモニタは、デフォルトでは_Paused _であり、アラートを送信する前に有効（再開）する必要があります。</block>
+  <block id="43bd31a2d107dc985aca1295fc25dfe1" category="paragraph">また、Collector Warningのモニタは他のモニタタイプよりも多くのアラートを送信できるため、トラブルシューティングを行っていない限り、アラート受信者を設定しないことをお勧めします。</block>
+  <block id="81fb83219b34a7b8835cf9be74652d9b" category="section-title">ストレージ変更ログイベントに関するアラート</block>
+  <block id="19d2e18338377f4123600e47841d8c9a" category="paragraph">Cloud Insights で生成されるストレージ変更ログイベントの監視を定義すると（ログソース_logs.cloud_insights.change_log.storage_を使用して）情報アラートが表示され、収集のたびにストレージシステムの過去の状態と新しい状態が比較されます。ONTAP ストレージでは、次のイベントに対してデフォルトモニタを使用できます。</block>
+  <block id="bbe116aac998e7707bfddff610136f34" category="cell">Kubernetesネームスペースのスペースが不足しています</block>
+  <block id="639cd114dad5880c94752e290d36353a" category="cell">Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できます<block ref="91569d71925d0cb55a46b7a5e8a36cb5" category="inline-link-macro-rx"></block></block>
+  <block id="9bfa6f1e81e8e1a4af8a2057b85a0257" category="cell">Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
+  <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

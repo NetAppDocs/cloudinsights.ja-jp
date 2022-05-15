@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: insights_k8s_namespaces_running_out_of_space.html 
+keywords: insight, pv, persistent volume, backend 
+summary: 分析情報は、Kubernetesスペースがいついっぱいになるかを予測するのに役立ちます。 
+---
+= 分析情報：Kubernetesネームスペースのスペースが不足しています
+:allow-uri-read: 
+
+
+[role="lead"]
+環境のスペース不足は、決して良い状況ではありません。Cloud Insights は、Kubernetesの永続ボリュームがフルになるまでの時間を予測するのに役立ちます。
+
+
+NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 link:/concept_preview_features.html["詳細はこちら。"] Cloud Insights プレビューフィーチャーについて
+
+Space_Insightで実行されている_ Kubernetes名前空間を使用すると、容量不足のリスクがあるKubernetes名前空間のワークロードを表示できます。各永続ボリュームがいっぱいになるまでに推定される残り日数を確認できます。
+
+このInsightを表示するには、[* Dashboards > Insights（ダッシュボード>インサイト*）]に移動します。
+
+image:K8sRunningOutOfSpaceWorkloadList.png["Kubernetesネームスペース内の、スペース不足に陥る危険性のあるワークロードのリスト"]
+
+ワークロードをクリックすると、Insightの詳細ページが開きます。このページのグラフには、ワークロード容量のトレンドと次の表が表示されます。
+
+* ワークロード名
+* 永続ボリュームが影響を受けます
+* 予測フルまでの時間（日数）
+* 永続ボリュームの容量
+* バックエンドストレージリソースに影響し、現在の使用容量が合計容量を上回っています。このリンクをクリックすると、バックエンドボリュームの詳細なランディングページが表示されます。
+
+
+image:K8sRunningOutOfSpaceWorkloadTable.png["詳細が表示されたワークロードテーブル"]
+
+
+
+=== スペースが不足している場合はどうすればよいですか？
+
+Insightのページで、「*+推奨事項を表示」をクリックして解決策を確認します。スペース不足になると、常に容量を追加するのが最も簡単なオプションです。Cloud Insights では、ターゲットの60日間の予測に必要な時間をフルにするために追加が最適な容量が提示されます。その他の推奨事項も表示されます。
+
+image:K8sRunningOutOfSpaceRecommendations.png["60日間のTTFに戻るために追加する容量"]
+
+また、このInsightへのリンクをコピーして、ページをブックマークに追加したり、チームと簡単に共有したりすることもできます。

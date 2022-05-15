@@ -12,6 +12,84 @@ keywords: features
 
 
 
+=== 2022年5月
+
+
+
+==== ネットアップサポートとチャットでライブチャットできます
+
+ネットアップのサポート担当者とライブチャットできます。[ヘルプ]>[サポート]ページで、[チャット]アイコンをクリックするか、[お問い合わせ]セクションの_Chat_をクリックしてチャットセッションを開始します。チャットサポートは、米国の平日にStandard EditionおよびPremium Editionユーザが利用できます。
+
+image:ChatIcon.png["笑顔の上にネットアップの「N」が青で表示されたチャットアイコン"]
+
+
+
+==== Kubernetesオペレータ
+
+。 link:/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes Monitoring Operator"] （NKMO）はKubernetes 1.17以降を実行するすべての環境で使用でき、Cloud Insights 用のKubernetesのインストールに推奨される方法です。NKMOは、スクリプトでインストールされた監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能なモニタリングの柔軟な設定が可能になり、顧客による設定介入が減少します。また、Kubernetesクラスタで実行されている他のソフトウェアを監視する機会も強化されます。
+
+
+
+==== APIを使用してユーザと招待を管理します
+
+Cloud Insights の強力なAPIを使用して、ユーザと招待を管理できるようになりました。詳細については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html["API Swaggerドキュメント"]。
+
+
+
+==== データ収集アラート
+
+データ収集のアラートを受信できるようになりました link:/task_system_monitors.html#collector-monitors["イベント"]：
+
+* Acquisition Unit のシャットダウン
+* コレクタでエラーが
+* コレクタ警告
+
+
+これらのモニタは、デフォルトでは_Paused _であり、アラートを送信する前に有効（再開）する必要があります。
+
+また、Collector Warningのモニタは他のモニタタイプよりも多くのアラートを送信できるため、トラブルシューティングを行っていない限り、アラート受信者を設定しないことをお勧めします。
+
+
+
+==== ストレージ変更ログイベントに関するアラート
+
+Cloud Insights で生成されるストレージ変更ログイベントの監視を定義すると（ログソース_logs.cloud_insights.change_log.storage_を使用して）情報アラートが表示され、収集のたびにストレージシステムの過去の状態と新しい状態が比較されます。ONTAP ストレージでは、次のイベントに対してデフォルトモニタを使用できます。
+
+* 内部ボリュームが検出されました
+* 内部ボリュームが変更されました
+* ストレージノードを検出
+* ストレージノードが削除されました
+* ストレージプールが検出されました
+* Storage Virtual Machineを検出
+* Storage Virtual Machineを変更
+
+
+
+
+==== フィーチャーのプレビュー（ Preview Features
+
+Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
+
+|===
+
+
+| * 特徴 * | * 概要 * 
+
+
+| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
+
+
+| 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。 
+
+
+| Cloud Secure –攻撃に対するユーザアクセスを制限します | 攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+
+
+| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+|===
+'''
+
+
 === 2022 年 4 月
 
 

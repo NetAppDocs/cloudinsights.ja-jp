@@ -12,7 +12,7 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 toc::[]
 Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、トライアルモードとサブスクリプションモードのどちらであるかによって異なります。
 
-image:SupportPageExample-NA.png["サポートページ"]
+image:Support_with_Chat.png["サポートページ"]
 
 
 
@@ -109,6 +109,7 @@ NOTE: に登録する必要があります <<Activating support entitlement and 
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["* 電話 *"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["* サポートチケット *"]
+* *チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。[ヘルプ]>[サポート*]ページの右下にあるバブルをクリックします。
 
 
 をクリックして、セールスサポートをリクエストすることもできます link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 販売担当者 * にお問い合わせください"] リンク
