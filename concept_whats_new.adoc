@@ -26,7 +26,7 @@ image:ChatIcon.png["笑顔の上にネットアップの「N」が青で表示�
 
 ==== Kubernetesオペレータ
 
-。 link:/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes Monitoring Operator"] （NKMO）はKubernetes 1.17以降を実行するすべての環境で使用でき、Cloud Insights 用のKubernetesのインストールに推奨される方法です。NKMOは、スクリプトでインストールされた監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能なモニタリングの柔軟な設定が可能になり、顧客による設定介入が減少します。また、Kubernetesクラスタで実行されている他のソフトウェアを監視する機会も強化されます。
+。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes Monitoring Operator"] （NKMO）はKubernetes 1.17以降を実行するすべての環境で使用でき、Cloud Insights 用のKubernetesのインストールに推奨される方法です。NKMOは、スクリプトでインストールされた監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能なモニタリングの柔軟な設定が可能になり、顧客による設定介入が減少します。また、Kubernetesクラスタで実行されている他のソフトウェアを監視する機会も強化されます。
 
 
 
@@ -38,7 +38,7 @@ Cloud Insights の強力なAPIを使用して、ユーザと招待を管理で�
 
 ==== データ収集アラート
 
-データ収集のアラートを受信できるようになりました link:/task_system_monitors.html#collector-monitors["イベント"]：
+データ収集のアラートを受信できるようになりました link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#collector-monitors["イベント"]：
 
 * Acquisition Unit のシャットダウン
 * コレクタでエラーが
