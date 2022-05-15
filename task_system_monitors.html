@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-10 20:47:33 +0000">05/10/2022</time>
+    <time datetime="2022-05-15 23:26:52 +0000">05/15/2022</time>
     
   
 
@@ -2036,12 +2036,13 @@
 <li><a href="#モニタの説明">モニタの説明</a>
 <ul class="sectlevel2">
 <li><a href="#メトリックモニタ">メトリックモニタ</a></li>
-<li><a href="#ログモニタ時刻解決なし">ログモニタ（時刻解決なし）</a></li>
-<li><a href="#時刻で解決されたログモニタ">時刻で解決されたログモニタ</a></li>
+<li><a href="#ログモニタ">ログモニタ</a></li>
 <li><a href="#ランサムウェア対策ログモニタ">ランサムウェア対策ログモニタ</a></li>
 <li><a href="#astra-データストア-ads-モニタ">Astra データストア（ ADS ）モニタ</a></li>
 <li><a href="#netapp-ontap-モニタの-fsx">NetApp ONTAP モニタの FSX</a></li>
 <li><a href="#k8s-モニタ">K8s モニタ</a></li>
+<li><a href="#変更ログモニタ">変更ログモニタ</a></li>
+<li><a href="#コレクタモニタ">コレクタモニタ</a></li>
 </ul>
 </li>
 <li><a href="#詳細情報">詳細情報</a></li>
@@ -2265,7 +2266,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="ログモニタ時刻解決なし">ログモニタ（時刻解決なし）</h3>
+<h3 id="ログモニタ">ログモニタ</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2375,25 +2376,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">システムに未割り当てのディスクがあります - 容量が無駄になっており、構成の設定ミスや部分的な変更がシステムに適用されている可能性があります。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">次の対処方法を実行します。「 disk show -n 」コマンドを使用して、どのディスクが割り当てられていないかを確認します。「 disk assign 」コマンドを使用して、ディスクをシステムに割り当てます。</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="時刻で解決されたログモニタ">時刻で解決されたログモニタ</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">モニタ名</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">重大度</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">説明</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">対処方法</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">アンチウイルスサーバビジー</p></td>
@@ -2592,6 +2574,30 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Vscan サーバからストレージシステムにエラーが報告されました。通常は、ウイルスが検出されたことを示します。ただし、 Vscan サーバでその他のエラーが発生すると、このイベントを原因できます。ファイルへのクライアントアクセスは拒否されます。Vscan サーバは、設定に応じて、ファイルをクリーンアップするか、ファイルを隔離するか、または削除する可能性があります。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">「 syslog 」イベントで報告された Vscan サーバのログを調べて、感染ファイルのクリーンアップ、隔離、削除が正常に完了したかどうかを確認します。削除できなかった場合は、システム管理者が手動でファイルを削除しなければならないことがあります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームはオフラインです</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームがオフラインになりました。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームをオンラインに戻します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームは制限状態です</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フレキシブルボリュームが制限されたことを示すイベントです。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームをオンラインに戻します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage VMが停止しました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、「vserver stop」処理が成功した場合に表示されます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage VMでデータアクセスを開始するには、「vserver start」コマンドを使用します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ノードのパニック</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このイベントはパニック状態になった場合に生成されます</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ネットアップカスタマーサポートにお問い合わせください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -2823,6 +2829,90 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">ポッドのマウントに失敗しました</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">このアラートは、ポッドでマウントに失敗したときに発生します。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="変更ログモニタ">変更ログモニタ</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">モニタ名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重大度</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">概要を監視します</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">内部ボリュームが検出されました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、内部ボリュームが検出された場合に表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">内部ボリュームが変更されました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、内部ボリュームが変更された場合に表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ストレージノードを検出</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、ストレージノードが検出された場合に表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ストレージノードが削除されました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、ストレージノードが削除された場合に表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ストレージプールが検出されました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、ストレージプールが検出された場合に表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Virtual Machineを検出</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、Storage Virtual Machineが検出された場合に表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Virtual Machineを変更</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">情報</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このメッセージは、Storage Virtual Machineが変更された場合に表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="コレクタモニタ">コレクタモニタ</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">モニタ名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">説明</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">対処方法</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquisition Unit のシャットダウン</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights Acquisition Unitは、新機能を導入するためのアップグレードの一環として定期的に再起動します。これは、一般的な環境で月に1回以下の頻度で発生します。新たに再起動したAcquisition UnitでCloud Insights への登録が完了したことを示すResolutionを通知するまで、Acquisition Unitがシャットダウンした場合は、すぐに警告アラートが表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このアラートが頻繁に発生する場合や15分以上続く場合は、Acquisition Unit、ネットワーク、およびAUをインターネットに接続するプロキシをホストしているシステムの動作を確認してください。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">コレクタでエラーが</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">データコレクタのポーリングで予期しない障害が発生しました。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights のデータコレクタのページにアクセスして、その状況の詳細を確認してください。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">コレクタ警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">データコレクタまたはターゲットシステムの設定を確認します。このモニタは、他のモニタよりも多くのアラートを送信することがあるため、トラブルシューティングを実行していないかぎり、このモニタでアラートの受信者を設定しないことを推奨します。</p></td>
 </tr>
 </tbody>
 </table>
