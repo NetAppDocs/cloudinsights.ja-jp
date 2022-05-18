@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-15 23:57:55 +0000">05/15/2022</time>
+    <time datetime="2022-05-18 13:30:52 +0000">05/18/2022</time>
     
   
 
@@ -2053,7 +2053,13 @@
 <div class="sect3">
 <h4 id="kubernetesオペレータ">Kubernetesオペレータ</h4>
 <div class="paragraph">
-<p>。 <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install">"NetApp Kubernetes Monitoring Operator"</a> （NKMO）はKubernetes 1.17以降を実行するすべての環境で使用でき、Cloud Insights 用のKubernetesのインストールに推奨される方法です。NKMOは、スクリプトでインストールされた監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能なモニタリングの柔軟な設定が可能になり、顧客による設定介入が減少します。また、Kubernetesクラスタで実行されている他のソフトウェアを監視する機会も強化されます。</p>
+<p>Cloud Insights の高度なKubernetes監視機能とクラスタエクスプローラを使用すると、作業を簡単に開始できます。</p>
+</div>
+<div class="paragraph">
+<p>。 <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install">"NetApp Kubernetes Monitoring Operator"</a> （NKMO）は、Kubernetes for Cloud Insights Insightsをインストールする際に推奨される方法です。より柔軟な構成で、より少ない手順で監視を行うことができます。また、Kubernetesクラスタ内で実行されている他のソフトウェアを監視する機会も強化されています。</p>
+</div>
+<div class="paragraph">
+<p>詳細と前提条件については、上のリンクをクリックしてください</p>
 </div>
 </div>
 <div class="sect3">
@@ -2065,57 +2071,19 @@
 <div class="sect3">
 <h4 id="データ収集アラート">データ収集アラート</h4>
 <div class="paragraph">
-<p>データ収集のアラートを受信できるようになりました <a href="https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#collector-monitors">"イベント"</a>：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Acquisition Unit のシャットダウン</p>
-</li>
-<li>
-<p>コレクタでエラーが</p>
-</li>
-<li>
-<p>コレクタ警告</p>
-</li>
-</ul>
+<p>コレクタに失敗したため、重要なメトリックをお見逃しなく！</p>
 </div>
 <div class="paragraph">
-<p>これらのモニタは、デフォルトでは_Paused _であり、アラートを送信する前に有効（再開）する必要があります。</p>
-</div>
-<div class="paragraph">
-<p>また、Collector Warningのモニタは他のモニタタイプよりも多くのアラートを送信できるため、トラブルシューティングを行っていない限り、アラート受信者を設定しないことをお勧めします。</p>
+<p>データコレクタをこれまで以上に簡単に追跡できるようになりました <a href="https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors">"アラート"</a> データコレクタとAcquisition Unitの障害デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="ストレージ変更ログイベントに関するアラート">ストレージ変更ログイベントに関するアラート</h4>
+<h4 id="ontap-ストレージの変更に関するアラート">ONTAP ストレージの変更に関するアラート</h4>
 <div class="paragraph">
-<p>Cloud Insights で生成されるストレージ変更ログイベントの監視を定義すると（ログソース_logs.cloud_insights.change_log.storage_を使用して）情報アラートが表示され、収集のたびにストレージシステムの過去の状態と新しい状態が比較されます。ONTAP ストレージでは、次のイベントに対してデフォルトモニタを使用できます。</p>
+<p>ストレージの予期しない変更がシステム停止につながるのを避けましょう。</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>内部ボリュームが検出されました</p>
-</li>
-<li>
-<p>内部ボリュームが変更されました</p>
-</li>
-<li>
-<p>ストレージノードを検出</p>
-</li>
-<li>
-<p>ストレージノードが削除されました</p>
-</li>
-<li>
-<p>ストレージプールが検出されました</p>
-</li>
-<li>
-<p>Storage Virtual Machineを検出</p>
-</li>
-<li>
-<p>Storage Virtual Machineを変更</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>ONTAP システムでFlexVol、ノード、およびSVMの変更や削除が検出されたときにアラートを受け取るようにCloud Insights を設定できるようになりました。</p>
 </div>
 </div>
 <div class="sect3">
