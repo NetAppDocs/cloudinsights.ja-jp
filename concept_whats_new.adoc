@@ -26,7 +26,11 @@ image:ChatIcon.png["笑顔の上にネットアップの「N」が青で表示�
 
 ==== Kubernetesオペレータ
 
-。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes Monitoring Operator"] （NKMO）はKubernetes 1.17以降を実行するすべての環境で使用でき、Cloud Insights 用のKubernetesのインストールに推奨される方法です。NKMOは、スクリプトでインストールされた監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能なモニタリングの柔軟な設定が可能になり、顧客による設定介入が減少します。また、Kubernetesクラスタで実行されている他のソフトウェアを監視する機会も強化されます。
+Cloud Insights の高度なKubernetes監視機能とクラスタエクスプローラを使用すると、作業を簡単に開始できます。
+
+。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes Monitoring Operator"] （NKMO）は、Kubernetes for Cloud Insights Insightsをインストールする際に推奨される方法です。より柔軟な構成で、より少ない手順で監視を行うことができます。また、Kubernetesクラスタ内で実行されている他のソフトウェアを監視する機会も強化されています。
+
+詳細と前提条件については、上のリンクをクリックしてください
 
 
 
@@ -38,31 +42,17 @@ Cloud Insights の強力なAPIを使用して、ユーザと招待を管理で�
 
 ==== データ収集アラート
 
-データ収集のアラートを受信できるようになりました link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#collector-monitors["イベント"]：
+コレクタに失敗したため、重要なメトリックをお見逃しなく！
 
-* Acquisition Unit のシャットダウン
-* コレクタでエラーが
-* コレクタ警告
-
-
-これらのモニタは、デフォルトでは_Paused _であり、アラートを送信する前に有効（再開）する必要があります。
-
-また、Collector Warningのモニタは他のモニタタイプよりも多くのアラートを送信できるため、トラブルシューティングを行っていない限り、アラート受信者を設定しないことをお勧めします。
+データコレクタをこれまで以上に簡単に追跡できるようになりました link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["アラート"] データコレクタとAcquisition Unitの障害デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。
 
 
 
-==== ストレージ変更ログイベントに関するアラート
+==== ONTAP ストレージの変更に関するアラート
 
-Cloud Insights で生成されるストレージ変更ログイベントの監視を定義すると（ログソース_logs.cloud_insights.change_log.storage_を使用して）情報アラートが表示され、収集のたびにストレージシステムの過去の状態と新しい状態が比較されます。ONTAP ストレージでは、次のイベントに対してデフォルトモニタを使用できます。
+ストレージの予期しない変更がシステム停止につながるのを避けましょう。
 
-* 内部ボリュームが検出されました
-* 内部ボリュームが変更されました
-* ストレージノードを検出
-* ストレージノードが削除されました
-* ストレージプールが検出されました
-* Storage Virtual Machineを検出
-* Storage Virtual Machineを変更
-
+ONTAP システムでFlexVol、ノード、およびSVMの変更や削除が検出されたときにアラートを受け取るようにCloud Insights を設定できるようになりました。
 
 
 
