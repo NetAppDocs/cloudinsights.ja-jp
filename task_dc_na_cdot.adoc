@@ -189,7 +189,7 @@ ONTAP データ管理ストレージのアセットランディングページ�
 ....
 security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
 security login role create -role ci_readonly -cmddirname security -access readonly
-security login role create -role ci_readonly -access all -cmddirname “cluster application-record create”
+security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
 ....
 . 次のコマンドを使用して、読み取り専用ユーザを作成します。create コマンドを実行すると、このユーザのパスワードを入力するように求められます。
 +
