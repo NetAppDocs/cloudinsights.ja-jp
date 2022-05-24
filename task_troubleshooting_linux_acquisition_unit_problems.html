@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
+    <time datetime="2022-05-24 13:42:52 +0000">05/24/2022</time>
     
   
 
@@ -2050,8 +2050,8 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従って Acquisition Unit をリストアします。 1.Acquisition Unit （ AU ）サービスを停止します。<em>Copy Stop command</em> ボタンをクリックすると、コマンドをクリップボードに簡単にコピーし、このコマンドを Acquisition Unit マシンのコマンドプロンプトに貼り付けることができます。2. AU の /var/lib/netapp/cloudinsite/acq/conf_folder に「 token 」という名前のファイルを作成します。3. <em>Copy Token_button をクリックし ' 作成したファイルにこのトークンを貼り付けます4. AU サービスを再起動します。_Copy Restart command</em> ボタンをクリックし、 AU のコマンドプロンプトにコマンドを貼り付けます。</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SELinux でインストールが失敗する</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AU が SELinux にインストールされている場合、 SE は無効にするか、 Permissive モードに設定する必要があります。インストールが完了したら、強制モードを有効にできます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquisition Unitサーバサービスの開始時に権限が拒否されました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Permission_denied_when_starting_the_Cloud_Insight_Acquisition_Unit_Server_Service">"詳細はこちら。"</a>。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">サーバ要件が満たされていません</p></td>
