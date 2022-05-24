@@ -4085,8 +4085,6 @@
   <block id="710c77cfc8d2136c51aad6a8316043b9" category="cell">* これを試みなさい : *</block>
   <block id="a7179f7901a2f6257761977d760a253d" category="cell">[* Acquisition Units] タブの [*Admin] &gt; [Data Collectors] ページの AU ステータスに [Certificate Expired] または [Certificate revoked] が表示されます。</block>
   <block id="a56fa9c38676d6ae98991340b46ca3ad" category="cell">AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従って Acquisition Unit をリストアします。 1.Acquisition Unit （ AU ）サービスを停止します。_Copy Stop command_ ボタンをクリックすると、コマンドをクリップボードに簡単にコピーし、このコマンドを Acquisition Unit マシンのコマンドプロンプトに貼り付けることができます。2. AU の /var/lib/netapp/cloudinsite/acq/conf_folder に「 token 」という名前のファイルを作成します。3. _Copy Token_button をクリックし ' 作成したファイルにこのトークンを貼り付けます4. AU サービスを再起動します。_Copy Restart command_ ボタンをクリックし、 AU のコマンドプロンプトにコマンドを貼り付けます。</block>
-  <block id="d97d849aedd1b3ccd65327253d0656d3" category="cell">SELinux でインストールが失敗する</block>
-  <block id="cce922f56afc409366f4616547ab9813" category="cell">AU が SELinux にインストールされている場合、 SE は無効にするか、 Permissive モードに設定する必要があります。インストールが完了したら、強制モードを有効にできます。</block>
   <block id="f8c1f64e9a97f83b0f209268bdd07bcb" category="cell">サーバ要件が満たされていません</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要件</block>
   <block id="1b30be776a2009c2060ad54316282f2f" category="cell">Acquisition Unit サーバまたは VM が次の条件を満たしていることを確認します <block ref="e5b1973153b9956f66244f44dc226837" category="inline-link-macro-rx"></block></block>
@@ -8930,4 +8928,6 @@
   <block id="d79ca0965e13425b418413735c2f77b4" category="section-title">ONTAP ストレージの変更に関するアラート</block>
   <block id="3093b62af2aca236846ea1b6c223c129" category="paragraph">ストレージの予期しない変更がシステム停止につながるのを避けましょう。</block>
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">ONTAP システムでFlexVol、ノード、およびSVMの変更や削除が検出されたときにアラートを受け取るようにCloud Insights を設定できるようになりました。</block>
+  <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">Acquisition Unitサーバサービスの開始時に権限が拒否されました</block>
+  <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
 </blocks>

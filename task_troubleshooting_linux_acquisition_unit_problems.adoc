@@ -20,7 +20,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | [* Acquisition Units] タブの [*Admin] > [Data Collectors] ページの AU ステータスに [Certificate Expired] または [Certificate revoked] が表示されます。 | AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従って Acquisition Unit をリストアします。 1.Acquisition Unit （ AU ）サービスを停止します。_Copy Stop command_ ボタンをクリックすると、コマンドをクリップボードに簡単にコピーし、このコマンドを Acquisition Unit マシンのコマンドプロンプトに貼り付けることができます。2. AU の /var/lib/netapp/cloudinsite/acq/conf_folder に「 token 」という名前のファイルを作成します。3. _Copy Token_button をクリックし ' 作成したファイルにこのトークンを貼り付けます4. AU サービスを再起動します。_Copy Restart command_ ボタンをクリックし、 AU のコマンドプロンプトにコマンドを貼り付けます。 
 
 
-| SELinux でインストールが失敗する | AU が SELinux にインストールされている場合、 SE は無効にするか、 Permissive モードに設定する必要があります。インストールが完了したら、強制モードを有効にできます。 
+| Acquisition Unitサーバサービスの開始時に権限が拒否されました | AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Permission_denied_when_starting_the_Cloud_Insight_Acquisition_Unit_Server_Service["詳細はこちら。"]。 
 
 
 | サーバ要件が満たされていません | Acquisition Unit サーバまたは VM が次の条件を満たしていることを確認します link:concept_acquisition_unit_requirements.html["要件"] 
