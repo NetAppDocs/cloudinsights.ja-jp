@@ -124,7 +124,6 @@
   <block id="28362762be9926ed2f769fa58e5451bf" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページ</block>
   <block id="b6f0cd15b3ce5be3945328a01a08cb66" category="summary">ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます</block>
   <block id="4157783a6d651918a4d418c15ddff12f" category="doc">SVM イベントレートチェッカー</block>
-  <block id="e4df4f28724b623a0c0341d409b2de95" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。</block>
   <block id="3b31c3fb3c507b79d3f86f2b1e3392f5" category="paragraph">要件</block>
   <block id="70087224b93e8179deda7438fae8e843" category="list-text">クラスタ IP</block>
   <block id="baf16fe3173b840f1197987b16b3a8fc" category="list-text">クラスタ管理者のユーザ名とパスワード</block>
@@ -140,7 +139,6 @@
   <block id="cf34f3fb7645134a13186593549fa644" category="list-text">実行が完了すると、 SVM からイベントレートが出力されます。コンソールの出力では、 SVM ごとのイベントレートを確認できます。</block>
   <block id="6db04e87dfe97bac4b4b718639579432" category="list-text">各 ONTAP SVM データコレクタを 1 つの SVM に関連付けることができます。つまり、各データコレクタは、 1 つの SVM が生成するイベント数を受け取ることができます。</block>
   <block id="08683ab3ff556022951d5dda41f12b0a" category="paragraph">次の事項に注意してください。</block>
-  <block id="ca0e3de9e1a2208fdfd6a780b7d18ea1" category="paragraph">a) 単一のエージェントマシンでは、以下を処理できます。</block>
   <block id="276e994cf948a6c752060d65f4332540" category="cell">Agent Machine Configuration の略</block>
   <block id="4d12a2dc5213f7dd37735a4de1c0ab8e" category="cell">SVM データコレクタの数</block>
   <block id="71df4650d5b6e7efed16bede01137899" category="cell">エージェントマシンが処理できる最大イベントレート</block>
@@ -8930,4 +8928,6 @@
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">ONTAP システムでFlexVol、ノード、およびSVMの変更や削除が検出されたときにアラートを受け取るようにCloud Insights を設定できるようになりました。</block>
   <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">Acquisition Unitサーバサービスの開始時に権限が拒否されました</block>
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
+  <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。</block>
+  <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）次の表を一般的なサイジングガイドとして使用</block>
 </blocks>
