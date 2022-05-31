@@ -7505,7 +7505,6 @@
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">証明書を信頼ストアから削除します。</block>
   <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes では、次の 2 つの方法でデータを収集できます。</block>
-  <block id="7b30b1516f4acc31dd26b0ee7b225209" category="list-text">従来のスクリプトベースのエージェントのインストール</block>
   <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes のインストール方法の選択</block>
   <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。</block>
@@ -8387,7 +8386,6 @@
   <block id="e1e3817c54607481fd77cff67b3d62bf" category="list-text">* 線形 * ： 2 点間の接続の値として点が生成されます。2 つのポイントを接続しているラインのように見え、追加の ( 補間された ) データポイントを持つラインを生成します。</block>
   <block id="ccd695c5d6bdf7e28aefe86c7867a7a9" category="inline-image-macro">各元の点間に追加のデータ点がある線形補間を示す単純な直線</block>
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4f34579ac6d99e36b83ddd35d80ebb6d" category="admonition">このページの Kubernetes に関する手順は、新しいページに移動します。お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Kubernetes エージェントの最新の手順については、を参照してください。</block>
   <block id="664a8070ae98149df4b2438dabea2160" category="admonition">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
   <block id="1f7b055a94f5e05d9c08683890d73b5e" category="list-text">従来のスクリプトベースのエージェントのインストール（非推奨）</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Kubernetes のチェックサムの検証</block>
@@ -8930,4 +8928,5 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）次の表を一般的なサイジングガイドとして使用</block>
+  <block id="bebdcbd60f7879de52fcd7bcd57c521c" category="admonition">Kubernetesの手順が新しいページに移動されました。お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Kubernetes エージェントの最新の手順については、を参照してください。</block>
 </blocks>
