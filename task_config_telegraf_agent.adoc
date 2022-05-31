@@ -433,8 +433,7 @@ sudo /tmp/uninstall
 
 === Kubernetes
 
-
-NOTE: Kubernetesの手順が新しいページに移動されました。お願いします link:task_config_telegraf_agent_k8s.html["* ここに移動 *"] Kubernetes エージェントの最新の手順については、を参照してください。
+Kubernetes Agentの手順が新しいページに移動しました。お願いします link:task_config_telegraf_agent_k8s.html["* ここに移動 *"] Kubernetes エージェントの最新の手順については、を参照してください。
 
 
 

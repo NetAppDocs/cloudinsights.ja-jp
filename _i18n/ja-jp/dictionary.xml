@@ -8928,5 +8928,5 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）次の表を一般的なサイジングガイドとして使用</block>
-  <block id="bebdcbd60f7879de52fcd7bcd57c521c" category="admonition">Kubernetesの手順が新しいページに移動されました。お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Kubernetes エージェントの最新の手順については、を参照してください。</block>
+  <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes Agentの手順が新しいページに移動しました。お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Kubernetes エージェントの最新の手順については、を参照してください。</block>
 </blocks>
