@@ -5889,7 +5889,6 @@
   <block id="9a1a396295b55e43a238268cd5378571" category="paragraph">MyComputerName123_HBA1_Symm1_FA1</block>
   <block id="c8d9735981badcae3909dff78f1d657f" category="paragraph">Hostname ： MyComputerName</block>
   <block id="97b24ca631392b0a444fb266ccf9e85a" category="paragraph">正規表現：（ .* ？） _ 。 *</block>
-  <block id="59c4da5f3e129e4540ab4ed0809c7648" category="paragraph">例 9 ：最初のののあとから 2 番目ののの前までのすべての部分を検出します。</block>
   <block id="5fd386bb34f01c8fea9302b4944c3fc0" category="paragraph">* ゾーン： * Z_MyComputerName_StorageName</block>
   <block id="f7cca9f0fcd660c02b10b4923524cf00" category="paragraph">* ホスト名： * MyComputerName</block>
   <block id="934b65d923d9218256bfdfb8a6204b2f" category="paragraph">* RegExp ： * 。 * ？ _ （ * ？） _ 。 * ？</block>
@@ -8929,4 +8928,7 @@
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）次の表を一般的なサイジングガイドとして使用</block>
   <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes Agentの手順が新しいページに移動しました。お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Kubernetes エージェントの最新の手順については、を参照してください。</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">例</block>
+  <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">例9</block>
+  <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">この例では、最初のののあとから2番目ののの前までのすべての部分を検出します。</block>
 </blocks>

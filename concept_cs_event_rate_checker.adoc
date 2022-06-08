@@ -72,7 +72,7 @@ B+C は A 未満でなければなりません。そうしないと、 Agent マ
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
 
 
-=== 例
+== 例
 
 ここでは、 1 秒あたり 100 、 200 、および 300 のイベントレートを生成する SMS が 3 つあるとします。
 

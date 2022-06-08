@@ -42,7 +42,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-=== その他の推奨事項
+== その他の推奨事項
 
 * ONTAP システムとエージェントマシンの両方の時刻を、 *Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または *Simple Network Time Protocol （ SNTP ） * を使用して同期することを強くお勧めします。
 

@@ -508,7 +508,7 @@ image::SecondaryAxisExplained.png[2 次軸の例]
 
 
 
-==== 変数の型
+=== 変数の型
 
 変数には、次のタイプがあります。
 

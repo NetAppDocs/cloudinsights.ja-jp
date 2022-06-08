@@ -13,7 +13,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 
 
 
-=== 要件
+== 要件
 
 |===
 
@@ -43,14 +43,14 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 |===
 
 
-=== その他の推奨事項
+== その他の推奨事項
 
 * 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP ；ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して Acquisition Unit マシンの時間を同期することを強く推奨します。
 
 
 
 
-=== サイジングについて
+== サイジングについて
 
 Cloud Insights Acquisition Unit は 8GB のメモリと 50GB のディスクスペースしかないので、まずは大規模な環境に備えるために次の項目を確認してください。
 
