@@ -7415,7 +7415,6 @@
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は赤い丸で示されます。</block>
   <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* アラート・テーブル * ：最新の 1 、 000 件のアラートを表示します。</block>
-  <block id="863fe9f23689919336be1a2467bf51a4" category="paragraph">Cloud Insights ではを使用します <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
   <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。</block>
   <block id="0a41ae2c369ec6839d428c359a9fa6c3" category="cell">アラート * ：作成 / 変更 / 削除</block>
   <block id="856a71f1e469ce4d8cf0d9305027ea82" category="cell">アラート * ：表示</block>
@@ -8931,4 +8930,5 @@
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">例9</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">この例では、最初のののあとから2番目ののの前までのすべての部分を検出します。</block>
+  <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights ではを使用します <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
 </blocks>
