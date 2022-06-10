@@ -7726,7 +7726,6 @@
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">ログエクスプローラ</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">ログの検索を開始するには、 *Queries &gt;+New Log Query * をクリックします。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">ログを選択します</block>
-  <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">フィルタを設定して、クエリの結果をさらに絞り込むことができます。たとえば、障害を示すすべてのログ・メッセージを検索するには、「 failed 」という単語を含む _Messages_ のフィルタを設定します。</block>
   <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">フィルタフィールドに目的のテキストを入力することができます。 Cloud Insights では、入力した文字列を含むワイルドカード検索の作成を求めるプロンプトが表示されます。</block>
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">結果は、表示される各期間のログインスタンスの数を示すグラフに表示されます。グラフの下には、自分のログエントリが表示されます。グラフとエントリは、選択した期間に基づいて自動的に更新されます。</block>
@@ -8931,4 +8930,5 @@
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">例9</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">この例では、最初のののあとから2番目ののの前までのすべての部分を検出します。</block>
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights ではを使用します <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
+  <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

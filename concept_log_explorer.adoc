@@ -17,7 +17,7 @@ image:LogExplorerMenu.png["ログクエリメニュー ,480"]
 
 リストから使用可能なログを選択します。
 
-image:LogExplorer_ChooseLog.png["ログを選択します"]
+image:LogExplorer_2022.png["ログを選択します"]
 
 
 NOTE: クエリに使用できるログの種類は環境によって異なります。ログタイプは、時間が経過すると追加される場合があります。
