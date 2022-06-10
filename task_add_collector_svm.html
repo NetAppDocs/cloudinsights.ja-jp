@@ -2015,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-13 14:09:04 +0000">05/13/2022</time>
+    <time datetime="2022-06-10 20:23:26 +0000">06/10/2022</time>
     
   
 
@@ -2029,8 +2029,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="作業を開始する前に">作業を開始する前に</h3>
+<div class="sect1">
+<h2 id="作業を開始する前に">作業を開始する前に</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -2139,10 +2140,12 @@
 </ul>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="アクセス権に関する注意事項">アクセス権に関する注意事項</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="アクセス権に関する注意事項">アクセス権に関する注意事項</h3>
-<div class="sect3">
-<h4 id="クラスタ管理-ip-を使用して追加する場合の権限">クラスタ管理 IP を使用して追加する場合の権限：</h4>
+<h3 id="クラスタ管理-ip-を使用して追加する場合の権限">クラスタ管理 IP を使用して追加する場合の権限：</h3>
 <div class="paragraph">
 <p>クラスタ管理者ユーザを使用して Cloud Secure による ONTAP SVM データコレクタへのアクセスを許可できない場合は、次のコマンドに示すロールを持つ「 csuser 」という新しいユーザを作成できます。Cloud Secure データコレクタでクラスタ管理 IP を使用するように設定する場合は、「 csuser 」のユーザ名とパスワードを使用します。</p>
 </div>
@@ -2169,8 +2172,8 @@ security login role create -role csrole -cmddirname "vserver export-policy rule"
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="svm-管理-ip-を使用して追加する場合の権限">SVM 管理 IP を使用して追加する場合の権限：</h4>
+<div class="sect2">
+<h3 id="svm-管理-ip-を使用して追加する場合の権限">SVM 管理 IP を使用して追加する場合の権限：</h3>
 <div class="paragraph">
 <p>クラスタ管理者ユーザを使用して Cloud Secure による ONTAP SVM データコレクタへのアクセスを許可できない場合は、次のコマンドに示すロールを持つ「 csuser 」という新しいユーザを作成できます。Cloud Secure データコレクタで SVM 管理 IP を使用するように設定する場合は、「 csuser 」のユーザ名とパスワードを使用します。</p>
 </div>
@@ -2192,8 +2195,10 @@ security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="データコレクタを設定します">データコレクタを設定します</h3>
+</div>
+<div class="sect1">
+<h2 id="データコレクタを設定します">データコレクタを設定します</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <div class="title">設定の手順</div>
 <ol class="arabic">
@@ -2283,8 +2288,10 @@ security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="トラブルシューティング">トラブルシューティング</h3>
+</div>
+<div class="sect1">
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>既知の問題とその解決策を次の表に示します。</p>
 </div>
@@ -2366,6 +2373,7 @@ security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname
 </table>
 <div class="paragraph">
 <p>それでも問題が解決しない場合は、 [ ヘルプ ]&gt;[ サポート *] ページに記載されているサポートリンクにアクセスしてください。</p>
+</div>
 </div>
 </div>
 
