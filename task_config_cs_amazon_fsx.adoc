@@ -13,7 +13,7 @@ summary: Cloud Secure では、データコレクタを使用して、デバイ�
 
 
 
-=== Agent Machine Configuration の略
+== Agent Machine Configuration の略
 
 Cloud Secure エージェントとして使用するマシンを設定するには、次の手順を実行します。
 
@@ -40,7 +40,7 @@ Cloud Secure エージェントとして使用するマシンを設定するに�
 
 
 
-=== Cloud Secure エージェントをインストールします
+== Cloud Secure エージェントをインストールします
 
 . Cloud Insights 環境に管理者またはアカウント所有者としてログインします。
 . Cloud Secure Admin > Data Collectors に移動し、 Agents タブをクリックします。

@@ -13,7 +13,7 @@ Cloud Secure アラート受信者を設定するには、 [*Admin] > [Notificat
 
 
 
-=== 潜在的な攻撃アラートと警告
+== 潜在的な攻撃アラートと警告
 
 Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Section に受信者の電子メールアドレスを入力します。アラートに対するすべてのアクションについて、 E メール通知がアラート受信者リストに送信されます。
 
@@ -21,7 +21,7 @@ Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Sectio
 
 
 
-=== エージェントおよび Data Collector のヘルスモニタリング
+== エージェントおよび Data Collector のヘルスモニタリング
 
 通知を使用して、エージェントとデータソースの状態を監視できます。
 
