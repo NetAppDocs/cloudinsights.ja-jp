@@ -99,7 +99,7 @@ APAC ベース * の Cloud Secure 環境の場合：
 | TCP | 389 （ LDAP ） 636 （ LDAPS / start-TLS ） | LDAP サーバ URL | アウトバウンド | LDAP に接続します 
 
 
-| TCP | 443 | SVM 管理 IP アドレス | アウトバウンド | ONTAP との API 通信 
+| TCP | 443 | クラスタまたはSVMの管理IPアドレス（SVMコレクタの設定に応じて） | アウトバウンド | ONTAP との API 通信 
 
 
 | TCP | 35000~55000 | SVM データ LIF の IP アドレス | インバウンド / アウトバウンド | FPolicy イベントのための ONTAP との通信 
