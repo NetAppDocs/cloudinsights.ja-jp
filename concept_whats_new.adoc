@@ -12,6 +12,87 @@ keywords: features
 
 
 
+== 2022年6月
+
+
+
+=== Kubernetesのクラスタの飽和などの詳細情報
+
+Cloud Insights を使用すると、Kubernetes環境の調査がこれまでになく簡単になります。このページでは、彩度の詳細だけでなく、ネームスペースとワークロードをより明確に表示する、クラスタの詳細ページが改善されています。
+
+image:Kubernetes_Detail_Page_new.png["クラスタの詳細ページ"]
+
+クラスタリストページでは、ノード、ポッド、ネームスペース、ワークロードの数に加えて、飽和状態の情報も簡単に確認できます。
+
+image:Kubernetes_List_Page_new.png["サチュレーション番号を示すクラスタリストページ"]
+
+
+
+=== Kubernetesクラスタはどれくらい前ですか？
+
+クラスタは世界で始まったばかりですか？それとも長いデジタルライフを体験したことがありますか？_Ageは、Kubernetesノードについて収集された時間メトリックとして追加されました。
+
+image:Kubernetes_Table_Showing_Age.png["経過時間を日数で表示するKubernetesノードテーブル"]
+
+
+
+=== 容量のフルまでの時間予測
+
+Cloud Insights は、監視対象の各内部ボリュームの容量がなくなるまでの日数を予測するダッシュボードを提供します。これらの値を設定することで、システム停止のリスクを大幅に軽減できます。
+
+image:Internal Volume - Time to Full dashboard example.png["内部ボリュームTTF予測ダッシュボード"]
+
+TTFカウンタは'ストレージ'ストレージ・プール'ボリュームにも使用できますこれらのオブジェクト用にダッシュボードが追加されるように、このスペースを監視してください。
+
+Time to Fullの予測は_Preview_から移動し、すべての顧客に展開されます。
+
+
+
+=== 環境の変更点
+
+ONTAP 変更ログのエントリは、ログエクスプローラで確認できます。
+
+image:ChangeLogEntries.png["変更ログエントリの例を示す図"]
+
+
+
+=== オペレーティングシステムのサポート
+
+Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["すでにサポートされています"]：
+
+* CentOSストリーム9.
+* Windows 2022
+
+
+
+
+=== Telegraf Agent を更新
+
+テレグラム統合データの取り込みのためのエージェントがバージョン*1.22.3*に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
+
+
+
+=== フィーチャーのプレビュー（ Preview Features
+
+Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
+
+|===
+
+
+| * 特徴 * | * 概要 * 
+
+
+| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
+
+
+| Cloud Secure –攻撃に対するユーザアクセスを制限します | 攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+
+
+| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+|===
+'''
+
+
 == 2022年5月
 
 

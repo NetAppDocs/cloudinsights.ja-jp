@@ -5563,18 +5563,6 @@
   <block id="4e4315d948ef3fd3aad9be88a442863d" category="paragraph"><block ref="4e4315d948ef3fd3aad9be88a442863d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f2b31bafb888e1e6aa37602d2dd9751" category="summary">Kubernetes の詳細ページには、トラブルシューティングや計画に役立つ情報と詳細が記載されています。</block>
   <block id="e3971bbebca9b2f849e520ba01a2f593" category="doc">Kubernetes クラスタの詳細ページ</block>
-  <block id="4269bb6c19a94f9018fc8b2391d389d6" category="paragraph">Kubernetes クラスタの詳細ページには、 Kubernetes クラスタに関する詳細情報が表示されます。</block>
-  <block id="45839520c79817b3544ea7278498444f" category="paragraph">詳細ページは、クラスタ、ノード、ポッドの情報を表示する、 3 つのリンクされたランディングページで構成されます。「リソースの使用」セクションが変更され、選択した項目（クラスタ、ノード、またはポッド）の詳細が表示されます。現在のページタイプと名前は、画面の上部に表示されます。現在のページは次の階層に表示されます。 _Site Name / Kubernetes / クラスタ / ノード / ポッド _この " ブレッドクラム " トレイルの任意の部分をクリックすると、その特定のページに直接移動できます。</block>
-  <block id="826429035a8a9edc1a04760f1ec377e7" category="inline-image-macro">ページブレッドクラム</block>
-  <block id="4e853d77c8a0f1da8dabbad1a932d14f" category="paragraph"><block ref="4e853d77c8a0f1da8dabbad1a932d14f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="16719f4f1118dc7f0bc249c43c4df67c" category="section-title">クラスタの概要</block>
-  <block id="14282b9f7f0312a2fa708795fe78363f" category="paragraph">クラスタの概要ページには、次のような役立つ情報が表示されます。</block>
-  <block id="99719263f96092fedfd6f2402532e320" category="inline-image-macro">アノテートされたクラスタビュー</block>
-  <block id="8438aaf79bf17894116d917e847fe2ab" category="paragraph"><block ref="8438aaf79bf17894116d917e847fe2ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="313e6b13bbf296445e97ffbff720fc88" category="section-title">ノードとポッドの数</block>
-  <block id="973d0070d42f76d3bcc7400eac12db71" category="paragraph">ページの上部にあるノード / ポッドの数には、クラスタ内のノードとポッドの総数、およびアラート状態または保留状態になっているポッドの数が表示されます。</block>
-  <block id="7b2679f5857ae1f0cc402ba89c63ebfd" category="paragraph"><block ref="7b2679f5857ae1f0cc402ba89c63ebfd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="795ff789c4877d24d232de2509542198" category="admonition">3 つのポッドサブカウント（健常性、アラート、保留中）は、表示されているポッドの総数を最大で超えることがあります。これは、 _PENDING _ count には、スケジュールされていないポッドとスケジュールされているポッドの両方（つまり、未接続のポッドとノードに接続されているポッド）が含まれているために発生することがあります。</block>
   <block id="5817293ec6fb52e169e7a825ab42de81" category="section-title">クラスタ「ホイール」</block>
   <block id="a7f1dfb8c02fbef30a0e54df62d243f8" category="inline-image-macro">クラスタホイール</block>
   <block id="b853a854b0614b4da3e776995dee109f" category="paragraph"><block ref="b853a854b0614b4da3e776995dee109f" category="inline-image-macro-rx" type="image"></block></block>
@@ -5592,19 +5580,7 @@
   <block id="0770df85581c38c14cc5a29c2ac0ee05" category="paragraph">ファイルシステム、メモリ、および CPU の情報を表示するには、 Node 要素にカーソルを合わせます。</block>
   <block id="aeba0ba92e92fa550526462ee7f15f49" category="inline-image-macro">ノードの容量と割り当て</block>
   <block id="505a160b62bc31c8ffa7c7dd25cbf213" category="paragraph"><block ref="505a160b62bc31c8ffa7c7dd25cbf213" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b62f28268f24460a0f4b9910b578af0a" category="section-title">詳細セクション</block>
-  <block id="cde36533718db4476aa09a4e047344d6" category="paragraph">Kubernetes Explorer の各ページには、 CPU 、メモリ、ストレージなどの使用状況グラフが表示されます。これらのグラフの下には、各カテゴリの上位オブジェクトの概要とリストが表示され、基本的な詳細へのリンクが示されています。たとえば、 _Node_shows pod and containers 、 _Pod_shows PVC and related objects and containers などです。次の図は、 a_Node_page の詳細情報の例を示しています。</block>
-  <block id="b3c17e50efb1c9edd02adcbdb514b3ca" category="inline-image-macro">リソース使用例</block>
-  <block id="ef00d34afdcf8b03d5a2e1e4d3af0d5a" category="paragraph"><block ref="ef00d34afdcf8b03d5a2e1e4d3af0d5a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="99320250e7bccded117faab7b4abbe23" category="paragraph">アラートが発生しているリソースは、リストの上部に表示されます。影響を受けるリソースをクリックして詳細を確認します。</block>
   <block id="ed5c4f798b6d55f2a89cb97884f0d548" category="section-title">ゲージに関する注意</block>
-  <block id="6f757fa99d4ba48eb37bf099f6ce0c94" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。ストレージゲージには、 2 つの色のみが表示されます。これらの色は、 _TOTAL に対する _Used_ の値を 1 組だけ示しています。</block>
-  <block id="421a44fa6eeb7e044d9e2dfc48ec3cbb" category="paragraph">ゲージを読み取るときは、次の点に注意してください。</block>
-  <block id="e95563e1f436a54be789dca93730ae2c" category="paragraph">濃い青の帯は、使用量を示します。</block>
-  <block id="e01e69dafe6eb339618289cc9c9bc266" category="list-text">_light blue band_ と比較した場合 ' 濃い青は割り当て可能な量の割合として使用されていることを示しますこれは ' 割り当て可能な値の割合に一致します ( 次の例では 81)</block>
-  <block id="1c72c592b8a1e5080b0f1ef0bf3ba3b1" category="list-text">_white background_ と比較すると、濃い青の部分は総容量の割合として使用されていることを示します。これは、表示されている「 % of capacity 」の値（この例では 63 ）に一致します。</block>
-  <block id="b7ca81e2bb67d9106d1a52bdbc5b9f05" category="inline-image-macro">ゲージ番号の説明</block>
-  <block id="f05f3d3deaa32d3eb9419009831a83e7" category="paragraph"><block ref="f05f3d3deaa32d3eb9419009831a83e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c87f42b44870bb9fdcbb9ad0386ebd65" category="summary">Cloud Secure アラートの通知用の E メールアドレスの追加</block>
   <block id="fc5aca4e5185f241f9160502eac0b160" category="doc">NetApp ONTAP Data Collector の設定</block>
   <block id="bdde9f578348148335a5c86ea6a0eda9" category="paragraph">Cloud Secure では、データコレクタを使用して、デバイスからファイルとユーザのアクセスデータを収集します。データは Cloud Secure に提供され、分析されます。</block>
@@ -5626,32 +5602,8 @@
   <block id="5865d512ef44ce9af5c898e3838da358" category="summary">Kubernetes のランディングページで</block>
   <block id="e069a872dd6153588f1350dd2d1c2289" category="doc">Kubernetes クラスタの概要</block>
   <block id="d9ade118c1e64b59921edda821b7e351" category="paragraph">Cloud Insights Kubernetes エクスプローラは、 Kubernetes クラスタの全体的な健常性と使用状況を表示する強力なツールで、調査対象の領域に簡単にドリルダウンできます。</block>
-  <block id="0ea12a27609fed8542336693697baa24" category="paragraph">[Dashboards] &gt; [Kubernetes Explorer] をクリックすると、 Kubernetes クラスタの概要ページが開きます。この概要ページには、さまざまな情報が一目でわかるようになっています。</block>
-  <block id="215baded9b6fa25efea9f80435bbd2c5" category="admonition">このページとその後の Kubernetes Explorer ページの各セクションに青で表示される数字（ノード / ポッドのステータス、ネームスペースの数など）は、それらの数の後ろに詳細を表示する関連するクエリページへのリンクです。</block>
-  <block id="f45d7f4b198d8518dee2fc076b30504b" category="inline-image-macro">Kubernetes の概要</block>
-  <block id="8d6e8c083b564c8aa17abf5c3fa47c4e" category="paragraph"><block ref="8d6e8c083b564c8aa17abf5c3fa47c4e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="496c303b21014573b96d315479efd37c" category="section-title">クラスタの使用状況の概要</block>
-  <block id="34ab9dcbffff4563653d7b920816a0b1" category="inline-image-macro">クラスタリストの概要</block>
-  <block id="b86614ff44352dfd7c68b08040ccd30f" category="paragraph"><block ref="b86614ff44352dfd7c68b08040ccd30f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805da12f17bb46c8370f35e1ec563d4c" category="paragraph">クラスタリストには、環境内の各クラスタについて、次の使用情報が表示されます。</block>
-  <block id="07a57e9f5f30f1ff7e51e1e60c37ef3c" category="list-text">CPU ：使用中の総 CPU 容量の割合</block>
-  <block id="e7accbf7e404528eb22dd30b6c7dd0eb" category="list-text">Memory ：使用されている合計メモリの割合</block>
-  <block id="8edffe2b242a5dc12970506737375d6e" category="list-text">Storage ：使用中の合計ストレージの割合</block>
-  <block id="c111d3787dd9237c96846985db0fbaf5" category="paragraph">クラスタリストは、次のいずれかの要因でソートできます。</block>
-  <block id="715487e39938fd9522fbd2960e4e22e4" category="list-text">ノード / ポッドのアラートレベル（デフォルト）</block>
-  <block id="d6ed36bb2b00046e0edf3d24b526b7ad" category="list-text">クラスタ名</block>
-  <block id="68fa81b998d67f9c69a5d3c1b3d00cb2" category="list-text">ノードの数</block>
-  <block id="d9f8b756206a8b48892cbc933b59f7fd" category="list-text">コンピューティングの利用率が高い</block>
-  <block id="d7d604a3c988095c222ce26bd96c0bf1" category="list-text">コンピューティングによる使用率が低い</block>
-  <block id="d1d54ae931174baedccda327f31b7de6" category="list-text">ストレージで最も利用されている容量</block>
-  <block id="a24487b554578f150522f68d8802c1cb" category="list-text">ストレージによる利用率が低い</block>
   <block id="84a93a66c16a4163eea2b414b601e0ce" category="inline-link-macro">* 詳細ページ *</block>
-  <block id="ac61d4df22f68d8ea1cc552d5ee1ab60" category="paragraph">クラスタ名をクリックすると、が開きます <block ref="e6b61b13689c2840b60619df8bfe4051" category="inline-link-macro-rx"></block> をクリックします</block>
-  <block id="20bb5856046b51fcd3f95a3130f443ac" category="section-title">ノードとポッドのステータス</block>
-  <block id="6e793abe2db0b3a1a45549355f350f2d" category="paragraph"><block ref="6e793abe2db0b3a1a45549355f350f2d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13d28e8dfc702e3456e0767dff9a128a" category="section-title">ネームスペース</block>
-  <block id="fffac5e3e2269fa69215f1167f0dcb2f" category="paragraph">画面の右側には、各クラスタで使用されている上位 3 つのネームスペースのリストが表示されます。「 * all * 」リンクをクリックすると、クラスタのすべてのネームスペースが表示されます。</block>
-  <block id="e0d38e0eb9e189bb1ccae25e8b344c8e" category="paragraph"><block ref="e0d38e0eb9e189bb1ccae25e8b344c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7eb410d92e2a18ab21dc72d9c0d990b0" category="summary">作成されたクエリを表示します</block>
   <block id="0a1aca0ce8e56ded0adb600f66ec2de7" category="doc">クエリを表示する</block>
   <block id="1fc205cf7c624c62075df4662909d53d" category="paragraph">アセットの監視に使用するクエリを表示して、アセットに関するデータの表示方法を変更できます。</block>
@@ -6639,10 +6591,6 @@
   <block id="93a8152ce7cb1841a4bf2c531cae0884" category="paragraph">1 つ以上のパフォーマンス指標との関連性が高いアセット（割合）がベースアセットに表示されます。</block>
   <block id="52e73b46b8c614c95e2d0e115e5ee54c" category="list-text">上位貢献者</block>
   <block id="9d5e6443d723a60535db4b6e588cd979" category="paragraph">ベースアセットへの影響が大きいアセットが表示されます。</block>
-  <block id="bb6c5ecbef13e567544e5a0068237b25" category="list-text">Greedy</block>
-  <block id="6c3bac24c8ca8af7b4c02e9947ae939b" category="paragraph">に、ホスト、ネットワーク、ストレージなど、同じリソースの共有を通じてアセットからシステムリソースを引き継ぐアセットを示します。</block>
-  <block id="aa95669cd5732a57e8f6467705f06642" category="list-text">デグレード</block>
-  <block id="f67699c23f776601fce199281a6e1781" category="paragraph">このアセットにシステムリソースを奪われているアセットが表示されます。</block>
   <block id="558ecf4e5cd54e65b8ebf521239fee01" category="section-title">エキスパートビューの指標の定義</block>
   <block id="aeb25214a69e6c2dfeaae7a7033ddfe3" category="paragraph">アセットページのエキスパートビューセクションには、アセットに対して選択した期間に関する複数の指標が表示されます。各指標は独自のパフォーマンスチャートに表示されます。確認が必要なデータに応じて、チャートに表示する指標や関連するアセットを追加したり削除したりできます。選択できる指標はアセットのタイプによって異なります。</block>
   <block id="4dde0eee92994c516dd72b5548203582" category="cell">* メートル法 *</block>
@@ -7414,7 +7362,6 @@
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は赤い丸で示されます。</block>
   <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* アラート・テーブル * ：最新の 1 、 000 件のアラートを表示します。</block>
-  <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">Cloud Insights の現在の Telegraf バージョンは *1.19.3 * です。</block>
   <block id="0a41ae2c369ec6839d428c359a9fa6c3" category="cell">アラート * ：作成 / 変更 / 削除</block>
   <block id="856a71f1e469ce4d8cf0d9305027ea82" category="cell">アラート * ：表示</block>
   <block id="bd7396064bde19099b129313d4e4960b" category="paragraph">該当する場合は、アラートのリンクをクリックして、アセットに関連付けられているアラートとモニタを表示できます。</block>
@@ -7606,8 +7553,6 @@
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 対応処置あり * ：アラートで推奨される対処方法が提示されています。アラートページを開いて表示します。</block>
   <block id="9de47b26bb491f5ab145336bb77b8aa0" category="paragraph">Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</block>
   <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help &gt; Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。</block>
-  <block id="763e7c73a838930a9b9e74b5d349cbd6" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： * CentOS （ 64 ビット）： 7.2 から 7.9 、 8.1 から 8.4 * Debian （ 64 ビット）： 9 および 10 * Oracle Enterprise Linux （ 64 ビット）： 7.5 から 7.9 、 8.1 から 8.4 * Red Hat Enterprise Linux （ 64 ビット）： 7.2 ~ 7.9 、 8.1 ~ 8.4 * Ubuntu Server ： 18.04 および 20.04 LTS このコンピュータでは、他のアプリケーションレベルのソフトウェアは実行しないでください。専用のサーバを使用することを推奨します。</block>
-  <block id="35d156c90b71a0fab57ae717b06aecd8" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： * Microsoft Windows 10 64 ビット * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していません。専用のサーバを使用することを推奨します。</block>
   <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">ダッシュボードでは、任意の時系列ウィジェット（折れ線、スプライン、面、積み上げ面）、単一値、 または Gauge Widget を使用すると、選択した指標で式を作成し、それらの式の結果を 1 つのグラフに表示できます。次の例では、式を使用して特定の問題を解決します。最初の例は、環境内のすべてのストレージアセットの合計 IOPS に占める読み取り IOPS の割合を表示するウィジェットです。2 つ目の例では、環境内で発生した「システム」または「オーバーヘッド」の IOPS を可視化しています。これらの IOPS は、データの読み取りや書き込みから直接ではありません。</block>
   <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">式で変数を使用できます（例： _$var1 * 100_ ）。</block>
   <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">式で変数を使用するには、変数名（例： _$var1 * 100_ ）を入力します。式で使用できるのは数値変数のみです。</block>
@@ -8071,7 +8016,6 @@
   <block id="ec9cf927d91c3ad7664fabdee6472d03" category="section-title">Kubernetes のネームスペースの詳細ページ</block>
   <block id="92093ab9ea8254ffd952bd6e9cfaff5f" category="paragraph">Kubernetes 環境の探索は、クラスタの名前空間の情報詳細ページにより、かつてないほど優れています。ネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。</block>
   <block id="393ec8728d04ca4c0c87b2259965e9be" category="paragraph"><block ref="393ec8728d04ca4c0c87b2259965e9be" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3de80a4099f2865b8078177e221120f1" category="paragraph">ネームスペースをクリックすると、ネームスペースの詳細ページが開きます。</block>
   <block id="e8488ef49f6dab9af961495fc93e60c3" category="summary">Kubernetes のネームスペースランディングページについて説明しました</block>
   <block id="096b06ed37fdb2ba92846987f8f7a8ed" category="paragraph">Kubernetes のネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。</block>
   <block id="314f5a139733e879b0d731d8fdad57ee" category="paragraph">Kubernetes Explorer ページでネームスペースのリンクをクリックすると、そのネームスペースの詳細ページが開きます。</block>
@@ -8796,7 +8740,6 @@
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights は'_Preview_マナー モードで新しいフィーチャーと機能をハイライトしますプレビュー機能は、一部の環境または容量に限りがあります。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">これらの機能をプレビューする場合は、にお問い合わせください <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">現在プレビュー中の機能をいくつか次に示します。</block>
-  <block id="6e1effcb952ada801a257429342ccd39" category="cell">Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。</block>
   <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">ユーザーアクセスの自動応答を制限します</block>
   <block id="f763810a8ec0d5862e0f288795932956" category="cell">攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
@@ -8931,4 +8874,63 @@
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights ではを使用します <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c1f82bcb121a82434f4244621860e18e" category="cell">クラスタまたはSVMの管理IPアドレス（SVMコレクタの設定に応じて）</block>
+  <block id="a1801a3f5b06f28912e5d6d300bf2760" category="paragraph">[Dashboards]&gt;[Kubernetes Explorer]をクリックすると、[Kubernetes Cluster]リストページが開きます。この概要ページには、環境内のKubernetesクラスタの表が含まれています。</block>
+  <block id="33e8a05c91ebabc5e5949786e43cd0d4" category="inline-image-macro">Kubernetesリストページ</block>
+  <block id="c05ca31df34e47f888e486bfaeb3d6a2" category="paragraph"><block ref="c05ca31df34e47f888e486bfaeb3d6a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3bce0c8bf7435d97c12abc9e1e001859" category="section-title">クラスタリスト</block>
+  <block id="4057c9e17c94439b3336385760492522" category="paragraph">クラスタリストには、環境内の各クラスタについて次の情報が表示されます。</block>
+  <block id="df50bf9661097ebc97fcef0583f22715" category="list-text">クラスタ*名*。クラスタ名をクリックすると、が開きます <block ref="e6b61b13689c2840b60619df8bfe4051" category="inline-link-macro-rx"></block> をクリックします。</block>
+  <block id="8c225c4c4401845b3bd94174e08f0e42" category="list-text">*彩度*パーセンテージ。Overall Saturation（全体飽和）は、CPU、メモリ、またはストレージの飽和度の最大値です。</block>
+  <block id="d451db04e9e40d35803034e07a276657" category="list-text">クラスタ内のノード数*。この番号をクリックすると、Node listページが開きます。</block>
+  <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">クラスタ内の* Pod*の数。この番号をクリックすると、ポッドリストページが開きます。</block>
+  <block id="bed3b3102569672060faa59f92fbb130" category="list-text">クラスタ内のネームスペースの数*。この番号をクリックすると、名前空間リストページが開きます。</block>
+  <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">クラスタ内のワークロードの数*。この数値をクリックすると、ワークロードリストページが開きます。</block>
+  <block id="abd68946270bbe5e8dd65bc248dfb347" category="cell">「Time to Full」予測</block>
+  <block id="9b42a670fcbdc4d8fa72c247b7af5785" category="cell">Cloud Insights は、次のオブジェクトについて容量がなくなるまでの日数を予測できます。内部ボリュームストレージプールボリュームこれらの予測値は、システム停止のリスクを大幅に低減するのに役立ちます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。</block>
+  <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2 ~ 7.9、8.1 ~ 8.4 * Ubuntu Server：18.04および20.04 LTSこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
+  <block id="52fe0ed84edd736c538f6ab44e4a643f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022このコンピュータでは、他のアプリケーションレベルのソフトウェアは実行されません。専用のサーバを使用することを推奨します。</block>
+  <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。</block>
+  <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">ワークロードの競合</block>
+  <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">ホスト、ネットワーク、ストレージなど、他の共有リソースに影響を及ぼすアセットと影響を受けるアセットが表示されます。このようなリソースを_greeding_/degraded_resourcesと呼ぶこともあります。</block>
+  <block id="95eafe7994082a98ef565bc49b0bd0bc" category="section-title">2022年6月</block>
+  <block id="f1a19c84617286ffae10ff6a1d32f2bc" category="section-title">Kubernetesのクラスタの飽和などの詳細情報</block>
+  <block id="18c416489bffa32183ac9b677247149e" category="paragraph">Cloud Insights を使用すると、Kubernetes環境の調査がこれまでになく簡単になります。このページでは、彩度の詳細だけでなく、ネームスペースとワークロードをより明確に表示する、クラスタの詳細ページが改善されています。</block>
+  <block id="656b8508960318c503979ad7495d9568" category="inline-image-macro">クラスタの詳細ページ</block>
+  <block id="4ff7187de1db51fb0f4fde4076072ee1" category="paragraph"><block ref="4ff7187de1db51fb0f4fde4076072ee1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0765caa0af74f32ba608b509fa33a627" category="paragraph">クラスタリストページでは、ノード、ポッド、ネームスペース、ワークロードの数に加えて、飽和状態の情報も簡単に確認できます。</block>
+  <block id="0348dea23766cd47c2feb3b0d9d034e0" category="inline-image-macro">サチュレーション番号を示すクラスタリストページ</block>
+  <block id="6461362766d8aaa5c0248617322c4dd1" category="paragraph"><block ref="6461362766d8aaa5c0248617322c4dd1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f387a81f25d0852180214e3532cd69b7" category="section-title">Kubernetesクラスタはどれくらい前ですか？</block>
+  <block id="457e2716710d35dcf5c797476aec4453" category="paragraph">クラスタは世界で始まったばかりですか？それとも長いデジタルライフを体験したことがありますか？_Ageは、Kubernetesノードについて収集された時間メトリックとして追加されました。</block>
+  <block id="6b7be3d731a7fe9ca970c889034e1dfb" category="inline-image-macro">経過時間を日数で表示するKubernetesノードテーブル</block>
+  <block id="d50b69722bf7ada9440fb1892ac9282e" category="paragraph"><block ref="d50b69722bf7ada9440fb1892ac9282e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f81641a704754589795fe3a4d4130ea9" category="section-title">容量のフルまでの時間予測</block>
+  <block id="8e6160832d0b0d367dcc2b7cc6e3f821" category="paragraph">Cloud Insights は、監視対象の各内部ボリュームの容量がなくなるまでの日数を予測するダッシュボードを提供します。これらの値を設定することで、システム停止のリスクを大幅に軽減できます。</block>
+  <block id="5a1ff4999319d15d3b329a148ce830e2" category="inline-image-macro">内部ボリュームTTF予測ダッシュボード</block>
+  <block id="2b8d5e66c38238b579c8a7f9a4f0deb8" category="paragraph"><block ref="2b8d5e66c38238b579c8a7f9a4f0deb8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d0288e56a716095eb8a98c5c3943c54" category="paragraph">TTFカウンタは'ストレージ'ストレージ・プール'ボリュームにも使用できますこれらのオブジェクト用にダッシュボードが追加されるように、このスペースを監視してください。</block>
+  <block id="70bda96e0227797cb8002e9bb8d9880d" category="paragraph">Time to Fullの予測は_Preview_から移動し、すべての顧客に展開されます。</block>
+  <block id="c734c78a6282b21c743d2e94a2fbba82" category="section-title">環境の変更点</block>
+  <block id="c126f3a900297855b1ec4bc88198f155" category="paragraph">ONTAP 変更ログのエントリは、ログエクスプローラで確認できます。</block>
+  <block id="4c6ad175a17ca3e0294c095f93eefebe" category="inline-image-macro">変更ログエントリの例を示す図</block>
+  <block id="71f092ae4722c5826712794003f7d4b8" category="paragraph"><block ref="71f092ae4722c5826712794003f7d4b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47c2df3ac4f5eccb5b1440d704677b4d" category="inline-link-macro">すでにサポートされています</block>
+  <block id="9d6192c5f44176e1b049c0d24bde96db" category="paragraph">Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです <block ref="e27610920cf83f6a88b088882e8c727e" category="inline-link-macro-rx"></block>：</block>
+  <block id="8ff4902cc9377035eb3a8dc9fc480e10" category="list-text">CentOSストリーム9.</block>
+  <block id="3ffd22c07b48a1c76b76f941ad1cad96" category="list-text">Windows 2022</block>
+  <block id="c41fe2272c9ff38bed21d6e67f9945cc" category="paragraph">テレグラム統合データの取り込みのためのエージェントがバージョン*1.22.3*に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</block>
+  <block id="3398e3f6b2ecd1ae749962d864235c59" category="paragraph">Kubernetesクラスタの詳細ページには、Kubernetesクラスタの概要が表示されます。</block>
+  <block id="91babced605f49db75040cb5feaa6082" category="section-title">ネームスペース、ノード、およびポッドの数</block>
+  <block id="91fa5656598f458704b9e697bf298dfd" category="paragraph">ページ上部のカウントには、クラスタ内のネームスペース、ノード、ポッドの総数、および現在アラート中および保留中のPopdの数が表示されます。</block>
+  <block id="bbda26214d851fa5314ad7efb7b80f2f" category="section-title">共有リソースと飽和</block>
+  <block id="84bd7a2a103c477b4fe611cea9b09adf" category="paragraph">詳細ページの右上には、クラスタが現在の割合で飽和状態になっているかどうかのグラフと、その期間の最新の傾向が表示されます。クラスタの飽和は、各時点でのCPU、メモリ、またはストレージの飽和状態の最大値です。</block>
+  <block id="ef3c2a7ac487c69bf023b0a642949390" category="paragraph">その下には、CPU、メモリ、ストレージのタブがデフォルトで*共有リソース*の使用状況として表示されます。各タブには、時間の経過に伴う飽和度と傾向が表示され、使用状況の詳細も表示されます。ストレージの場合、この値はバックエンドとファイルシステムの飽和度の大きい方で、それぞれ独立して計算されます。</block>
+  <block id="66a1f02be46b4ca30febbe3c115a1dc1" category="paragraph">使用率が最も高いデバイスが下部の表に表示されます。リンクをクリックすると、これらのデバイスを確認できます。</block>
+  <block id="15cf649caaa7ee8626f6c90fd74178ac" category="paragraph">[ネームスペース]タブには、Kubernetes環境内のすべてのネームスペースのリストが表示されます。このタブには、CPUとメモリの使用状況、および各ネームスペース内のワークロードの数が表示されます。名前のリンクをクリックして、各ネームスペースを確認します。</block>
+  <block id="4bbafa72b08fc9d20496406c7fa9ba65" category="inline-image-macro">Kubernetes環境内の現在のネームスペースのリスト</block>
+  <block id="07d556c0f49399176a2bae14f135c098" category="paragraph"><block ref="07d556c0f49399176a2bae14f135c098" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">ワークロード</block>
+  <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同様に、各ネームスペースのワークロードのリストがワークロードタブに表示され、CPUとメモリの使用量も表示されます。ネームスペースリンクをクリックすると、ドリルでそれぞれが実行されます。</block>
+  <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</block>
 </blocks>

@@ -21,7 +21,7 @@ Cloud Insights は'_Preview_マナー モードで新しいフィーチャーと
 | * 特徴 * | * 概要 * 
 
 
-| 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。 
+| 「Time to Full」予測 | Cloud Insights は、次のオブジェクトについて容量がなくなるまでの日数を予測できます。内部ボリュームストレージプールボリュームこれらの予測値は、システム停止のリスクを大幅に低減するのに役立ちます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。 
 
 
 | ユーザーアクセスの自動応答を制限します | 攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
