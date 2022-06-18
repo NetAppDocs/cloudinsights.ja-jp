@@ -2015,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-10 20:23:26 +0000">06/10/2022</time>
+    <time datetime="2022-06-18 02:01:21 +0000">06/18/2022</time>
     
   
 
@@ -2028,100 +2028,39 @@
 <p>Cloud Insights Kubernetes エクスプローラは、 Kubernetes クラスタの全体的な健常性と使用状況を表示する強力なツールで、調査対象の領域に簡単にドリルダウンできます。</p>
 </div>
 <div class="paragraph">
-<p>[Dashboards] &gt; [Kubernetes Explorer] をクリックすると、 Kubernetes クラスタの概要ページが開きます。この概要ページには、さまざまな情報が一目でわかるようになっています。</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-このページとその後の Kubernetes Explorer ページの各セクションに青で表示される数字（ノード / ポッドのステータス、ネームスペースの数など）は、それらの数の後ろに詳細を表示する関連するクエリページへのリンクです。
-</td>
-</tr>
-</table>
+<p>[Dashboards]&gt;[Kubernetes Explorer]をクリックすると、[Kubernetes Cluster]リストページが開きます。この概要ページには、環境内のKubernetesクラスタの表が含まれています。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Cluster_Overview_Page.png" alt="Kubernetes の概要"></span></p>
+<p><span class="image"><img src="Kubernetes_List_Page_new.png" alt="Kubernetesリストページ"></span></p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="クラスタの使用状況の概要">クラスタの使用状況の概要</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラスタリスト">クラスタリスト</h3>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Cluster_List.png" alt="クラスタリストの概要"></span></p>
-</div>
-<div class="paragraph">
-<p>クラスタリストには、環境内の各クラスタについて、次の使用情報が表示されます。</p>
+<p>クラスタリストには、環境内の各クラスタについて次の情報が表示されます。</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>CPU ：使用中の総 CPU 容量の割合</p>
+<p>クラスタ*名*。クラスタ名をクリックすると、が開きます <a href="kubernetes_cluster_detail.html">"* 詳細ページ *"</a> をクリックします。</p>
 </li>
 <li>
-<p>Memory ：使用されている合計メモリの割合</p>
+<p>*彩度*パーセンテージ。Overall Saturation（全体飽和）は、CPU、メモリ、またはストレージの飽和度の最大値です。</p>
 </li>
 <li>
-<p>Storage ：使用中の合計ストレージの割合</p>
+<p>クラスタ内のノード数*。この番号をクリックすると、Node listページが開きます。</p>
+</li>
+<li>
+<p>クラスタ内の* Pod*の数。この番号をクリックすると、ポッドリストページが開きます。</p>
+</li>
+<li>
+<p>クラスタ内のネームスペースの数*。この番号をクリックすると、名前空間リストページが開きます。</p>
+</li>
+<li>
+<p>クラスタ内のワークロードの数*。この数値をクリックすると、ワークロードリストページが開きます。</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>クラスタリストは、次のいずれかの要因でソートできます。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ノード / ポッドのアラートレベル（デフォルト）</p>
-</li>
-<li>
-<p>クラスタ名</p>
-</li>
-<li>
-<p>ノードの数</p>
-</li>
-<li>
-<p>コンピューティングの利用率が高い</p>
-</li>
-<li>
-<p>コンピューティングによる使用率が低い</p>
-</li>
-<li>
-<p>ストレージで最も利用されている容量</p>
-</li>
-<li>
-<p>ストレージによる利用率が低い</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>クラスタ名をクリックすると、が開きます <a href="kubernetes_cluster_detail.html">"* 詳細ページ *"</a> をクリックします</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ノードとポッドのステータス">ノードとポッドのステータス</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Node_Pod_Status.png" alt="ノードとポッドのステータス"></span></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ネームスペース">ネームスペース</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>画面の右側には、各クラスタで使用されている上位 3 つのネームスペースのリストが表示されます。「 * all * 」リンクをクリックすると、クラスタのすべてのネームスペースが表示されます。</p>
-</div>
-<div class="paragraph">
-<p>ネームスペースをクリックすると、ネームスペースの詳細ページが開きます。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Namespaces.png" alt="ネームスペース"></span></p>
-</div>
 </div>
 </div>
 <div class="sect1">

@@ -2015,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
+    <time datetime="2022-06-18 02:01:21 +0000">06/18/2022</time>
     
   
 
@@ -2025,48 +2025,60 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Kubernetes クラスタの詳細ページには、 Kubernetes クラスタに関する詳細情報が表示されます。</p>
+<p>Kubernetesクラスタの詳細ページには、Kubernetesクラスタの概要が表示されます。</p>
 </div>
 <div class="paragraph">
-<p>詳細ページは、クラスタ、ノード、ポッドの情報を表示する、 3 つのリンクされたランディングページで構成されます。「リソースの使用」セクションが変更され、選択した項目（クラスタ、ノード、またはポッド）の詳細が表示されます。現在のページタイプと名前は、画面の上部に表示されます。現在のページは次の階層に表示されます。 _Site Name / Kubernetes / クラスタ / ノード / ポッド _この " ブレッドクラム " トレイルの任意の部分をクリックすると、その特定のページに直接移動できます。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Breadcrumb.png" alt="ページブレッドクラム"></span></p>
+<p><span class="image"><img src="Kubernetes_Detail_Page_new.png" alt="クラスタの詳細ページ"></span></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="クラスタの概要">クラスタの概要</h2>
+<h2 id="ネームスペースノードおよびポッドの数">ネームスペース、ノード、およびポッドの数</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>クラスタの概要ページには、次のような役立つ情報が表示されます。</p>
+<p>ページ上部のカウントには、クラスタ内のネームスペース、ノード、ポッドの総数、および現在アラート中および保留中のPopdの数が表示されます。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="共有リソースと飽和">共有リソースと飽和</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>詳細ページの右上には、クラスタが現在の割合で飽和状態になっているかどうかのグラフと、その期間の最新の傾向が表示されます。クラスタの飽和は、各時点でのCPU、メモリ、またはストレージの飽和状態の最大値です。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Cluster_View_Annotated.png" alt="アノテートされたクラスタビュー"></span></p>
-</div>
-<div class="sect2">
-<h3 id="ノードとポッドの数">ノードとポッドの数</h3>
-<div class="paragraph">
-<p>ページの上部にあるノード / ポッドの数には、クラスタ内のノードとポッドの総数、およびアラート状態または保留状態になっているポッドの数が表示されます。</p>
+<p>その下には、CPU、メモリ、ストレージのタブがデフォルトで*共有リソース*の使用状況として表示されます。各タブには、時間の経過に伴う飽和度と傾向が表示され、使用状況の詳細も表示されます。ストレージの場合、この値はバックエンドとファイルシステムの飽和度の大きい方で、それぞれ独立して計算されます。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Pod_Counts.png" alt="ノードとポッドの数"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-3 つのポッドサブカウント（健常性、アラート、保留中）は、表示されているポッドの総数を最大で超えることがあります。これは、 _PENDING _ count には、スケジュールされていないポッドとスケジュールされているポッドの両方（つまり、未接続のポッドとノードに接続されているポッド）が含まれているために発生することがあります。
-</td>
-</tr>
-</table>
+<p>使用率が最も高いデバイスが下部の表に表示されます。リンクをクリックすると、これらのデバイスを確認できます。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="クラスタホイール">クラスタ「ホイール」</h3>
+</div>
+<div class="sect1">
+<h2 id="ネームスペース">ネームスペース</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[ネームスペース]タブには、Kubernetes環境内のすべてのネームスペースのリストが表示されます。このタブには、CPUとメモリの使用状況、および各ネームスペース内のワークロードの数が表示されます。名前のリンクをクリックして、各ネームスペースを確認します。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_Namespace_tab_new.png" alt="Kubernetes環境内の現在のネームスペースのリスト"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ワークロード">ワークロード</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>同様に、各ネームスペースのワークロードのリストがワークロードタブに表示され、CPUとメモリの使用量も表示されます。ネームスペースリンクをクリックすると、ドリルでそれぞれが実行されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_Workloads_tab_new.png" alt="Kubernetes環境内の現在のネームスペースのリスト"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="クラスタホイール">クラスタ「ホイール」</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Wheel_Section.png" alt="クラスタホイール"></span></p>
 </div>
@@ -2101,42 +2113,12 @@
 <p><span class="image"><img src="Kubernetes_Capacity_Info.png" alt="ノードの容量と割り当て"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="詳細セクション">詳細セクション</h3>
+</div>
+<div class="sect1">
+<h2 id="ゲージに関する注意">ゲージに関する注意</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Kubernetes Explorer の各ページには、 CPU 、メモリ、ストレージなどの使用状況グラフが表示されます。これらのグラフの下には、各カテゴリの上位オブジェクトの概要とリストが表示され、基本的な詳細へのリンクが示されています。たとえば、 _Node_shows pod and containers 、 _Pod_shows PVC and related objects and containers などです。次の図は、 a_Node_page の詳細情報の例を示しています。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Node_Resource_Usage.png" alt="リソース使用例"></span></p>
-</div>
-<div class="paragraph">
-<p>アラートが発生しているリソースは、リストの上部に表示されます。影響を受けるリソースをクリックして詳細を確認します。</p>
-</div>
-<div class="sect3">
-<h4 id="ゲージに関する注意">ゲージに関する注意</h4>
-<div class="paragraph">
-<p>メモリと CPU のゲージには、 <em>allocatable capacity</em> と <em>total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。ストレージゲージには、 2 つの色のみが表示されます。これらの色は、 _TOTAL に対する _Used</em> の値を 1 組だけ示しています。</p>
-</div>
-<div class="paragraph">
-<p>ゲージを読み取るときは、次の点に注意してください。</p>
-</div>
-<div class="paragraph">
-<p>濃い青の帯は、使用量を示します。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><em>light blue band</em> と比較した場合 ' 濃い青は割り当て可能な量の割合として使用されていることを示しますこれは ' 割り当て可能な値の割合に一致します ( 次の例では 81)</p>
-</li>
-<li>
-<p><em>white background</em> と比較すると、濃い青の部分は総容量の割合として使用されていることを示します。これは、表示されている「 % of capacity 」の値（この例では 63 ）に一致します。</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Gauge_Explained.png" alt="ゲージ番号の説明"></span></p>
-</div>
-</div>
+<p>メモリと CPU のゲージには、 <em>allocatable capacity</em> と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</p>
 </div>
 </div>
 </div>

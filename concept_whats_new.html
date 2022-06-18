@@ -2015,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 14:03:29 +0000">06/08/2022</time>
+    <time datetime="2022-06-18 02:01:21 +0000">06/18/2022</time>
     
   
 
@@ -2028,6 +2028,112 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、 Cloud Insights で利用できる最新の機能をいくつか紹介します。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022年6月">2022年6月</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="kubernetesのクラスタの飽和などの詳細情報">Kubernetesのクラスタの飽和などの詳細情報</h3>
+<div class="paragraph">
+<p>Cloud Insights を使用すると、Kubernetes環境の調査がこれまでになく簡単になります。このページでは、彩度の詳細だけでなく、ネームスペースとワークロードをより明確に表示する、クラスタの詳細ページが改善されています。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_Detail_Page_new.png" alt="クラスタの詳細ページ"></span></p>
+</div>
+<div class="paragraph">
+<p>クラスタリストページでは、ノード、ポッド、ネームスペース、ワークロードの数に加えて、飽和状態の情報も簡単に確認できます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_List_Page_new.png" alt="サチュレーション番号を示すクラスタリストページ"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="kubernetesクラスタはどれくらい前ですか">Kubernetesクラスタはどれくらい前ですか？</h3>
+<div class="paragraph">
+<p>クラスタは世界で始まったばかりですか？それとも長いデジタルライフを体験したことがありますか？_Ageは、Kubernetesノードについて収集された時間メトリックとして追加されました。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_Table_Showing_Age.png" alt="経過時間を日数で表示するKubernetesノードテーブル"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="容量のフルまでの時間予測">容量のフルまでの時間予測</h3>
+<div class="paragraph">
+<p>Cloud Insights は、監視対象の各内部ボリュームの容量がなくなるまでの日数を予測するダッシュボードを提供します。これらの値を設定することで、システム停止のリスクを大幅に軽減できます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Internal%20Volume%20-%20Time%20to%20Full%20dashboard%20example.png" alt="内部ボリュームTTF予測ダッシュボード"></span></p>
+</div>
+<div class="paragraph">
+<p>TTFカウンタは&#8217;ストレージ&#8217;ストレージ・プール&#8217;ボリュームにも使用できますこれらのオブジェクト用にダッシュボードが追加されるように、このスペースを監視してください。</p>
+</div>
+<div class="paragraph">
+<p>Time to Fullの予測は_Preview_から移動し、すべての顧客に展開されます。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="環境の変更点">環境の変更点</h3>
+<div class="paragraph">
+<p>ONTAP 変更ログのエントリは、ログエクスプローラで確認できます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ChangeLogEntries.png" alt="変更ログエントリの例を示す図"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="オペレーティングシステムのサポート">オペレーティングシステムのサポート</h3>
+<div class="paragraph">
+<p>Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです <a href="https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html">"すでにサポートされています"</a>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CentOSストリーム9.</p>
+</li>
+<li>
+<p>Windows 2022</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="telegraf-agent-を更新">Telegraf Agent を更新</h3>
+<div class="paragraph">
+<p>テレグラム統合データの取り込みのためのエージェントがバージョン*1.22.3*に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="フィーチャーのプレビュー-preview-features">フィーチャーのプレビュー（ Preview Features</h3>
+<div class="paragraph">
+<p>Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"ネットアップの営業チーム"</a> を参照してください。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 特徴 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 概要 *</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetesネームスペースのスペースが不足しています</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Space_Insightで実行されている_Kubernetes名前空間では&#8217;容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できます<a href="https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html">"詳細はこちら"</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Secure –攻撃に対するユーザアクセスを制限します</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<a href="https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html">"詳細はこちら"</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">応力の下の共有リソース</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。<a href="https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html">"詳細はこちら"</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
 </div>
 </div>
 </div>
@@ -2080,7 +2186,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="フィーチャーのプレビュー-preview-features">フィーチャーのプレビュー（ Preview Features</h3>
+<h3 id="フィーチャーのプレビュー-preview-features-2">フィーチャーのプレビュー（ Preview Features</h3>
 <div class="paragraph">
 <p>Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"ネットアップの営業チーム"</a> を参照してください。</p>
 </div>
@@ -2163,7 +2269,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="フィーチャーのプレビュー-preview-features-2">フィーチャーのプレビュー（ Preview Features</h3>
+<h3 id="フィーチャーのプレビュー-preview-features-3">フィーチャーのプレビュー（ Preview Features</h3>
 <div class="paragraph">
 <p>Cloud Insights では、多数のエキサイティングなプレビュー機能が定期的にハイライトされています。これらの機能をプレビューする場合は、にお問い合わせください <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"ネットアップの営業チーム"</a> を参照してください。</p>
 </div>
@@ -2273,7 +2379,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="telegraf-agent-を更新">Telegraf Agent を更新</h3>
+<h3 id="telegraf-agent-を更新-2">Telegraf Agent を更新</h3>
 <div class="paragraph">
 <p>テレグラム統合データの取り込みのためのエージェントがバージョン <strong>1.2</strong> に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
 </div>
@@ -2378,7 +2484,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="オペレーティングシステムのサポート">オペレーティングシステムのサポート</h3>
+<h3 id="オペレーティングシステムのサポート-2">オペレーティングシステムのサポート</h3>
 <div class="paragraph">
 <p>CentOS 8.x のサポートは、現在 * CentOS 8 Stream * のサポートに置き換えられています。CentOS 8.x は、 2021 年 12 月 31 日にサポート終了となります。</p>
 </div>
@@ -2554,7 +2660,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="telegraf-agent-を更新-2">Telegraf Agent を更新</h3>
+<h3 id="telegraf-agent-を更新-3">Telegraf Agent を更新</h3>
 <div class="paragraph">
 <p>テレグラム統合データの取り込みのためのエージェントがバージョン * 1.19.3* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
 </div>
@@ -2777,7 +2883,7 @@
 <p>4 月に行った変更の一部を以下に示します。</p>
 </div>
 <div class="sect2">
-<h3 id="telegraf-agent-を更新-3">Telegraf Agent を更新</h3>
+<h3 id="telegraf-agent-を更新-4">Telegraf Agent を更新</h3>
 <div class="paragraph">
 <p>テレグラム統合データの取り込み用エージェントは、パフォーマンスとセキュリティが向上し、バージョン 1.17.3 に更新されました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html">"エージェントのインストール"</a> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</p>
 </div>
@@ -2937,7 +3043,7 @@
 <h2 id="2021年2月">2021年2月</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="telegraf-agent-を更新-4">Telegraf Agent を更新</h3>
+<h3 id="telegraf-agent-を更新-5">Telegraf Agent を更新</h3>
 <div class="paragraph">
 <p>テレグラム統合データの取り込み用エージェントは、脆弱性およびバグ修正を含むバージョン 1.17.0 に更新されました。</p>
 </div>
@@ -3649,7 +3755,7 @@ Cloud Insights レポートは 500 MU 以上の環境で使用できます。
 </div>
 </div>
 <div class="sect2">
-<h3 id="telegraf-agent-を更新-5">Telegraf Agent を更新</h3>
+<h3 id="telegraf-agent-を更新-6">Telegraf Agent を更新</h3>
 <div class="paragraph">
 <p>テレグラム統合データの取り込み用エージェントがに更新されました <a href="https://docs.influxdata.com/telegraf/v1.14/">"バージョン 1.14"</a>には、バグ修正、セキュリティ修正、および新しいプラグインが含まれています。</p>
 </div>
