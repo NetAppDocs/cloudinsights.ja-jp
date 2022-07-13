@@ -68,7 +68,7 @@ Kubernetes では、次の 2 つの方法でデータを収集できます。
 image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方法の選択"]
 
 .前提条件
-* NetApp Kubernetes Monitoring Operator インストールは、 Kubernetes 1.17 以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。
+* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。
 
 
 * OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。

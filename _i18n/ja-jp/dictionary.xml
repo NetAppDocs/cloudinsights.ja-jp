@@ -8278,7 +8278,6 @@
   <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">Usage Management （使用管理）タブには、管理対象ユニットの使用状況の概要、環境にインストールされているデータコレクタのリスト、および各管理対象ユニットの内訳が表示されます。</block>
   <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">管理対象ユニットの合計は、サマリセクションのデータコレクタ数とは若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。サマリセクションには、サブスクリプションの実際の管理ユニット数が表示されます。</block>
   <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">購読している量に近づいている、または超過している場合は、 [three dots] メニューをクリックして _Delete_を 選択することにより、このリストのデータコレクタを削除できます。</block>
-  <block id="88ae2467b83e5d292b18e19eaae1852d" category="list-text">NetApp Kubernetes Monitoring Operator インストールは、 Kubernetes 1.17 以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。</block>
   <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022 年 4 月</block>
   <block id="259a90b9586b985b7c26543c1f883472" category="section-title">フィードバックを共有してください。</block>
   <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">* 今すぐ登録 *</block>
@@ -8932,5 +8931,6 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同様に、各ネームスペースのワークロードのリストがワークロードタブに表示され、CPUとメモリの使用量も表示されます。ネームスペースリンクをクリックすると、ドリルでそれぞれが実行されます。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</block>
-  <block id="5543c4e9358604e03ae0e327a62bb03f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20および22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
+  <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
+  <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。</block>
 </blocks>
