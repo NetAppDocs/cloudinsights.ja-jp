@@ -8933,4 +8933,5 @@
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</block>
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。</block>
+  <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。</block>
 </blocks>
