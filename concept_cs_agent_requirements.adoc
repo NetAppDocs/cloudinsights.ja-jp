@@ -16,7 +16,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | コンポーネント | Linux 要件 
 
 
-| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ： Red Hat Enterprise Linux 7.x 、 8.x 64 ビット CentOS 7.x 64 ビット CentOS 8 Stream このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
+| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20および22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
 
 
 | コマンド | インストール、スクリプトの実行、およびアンインストールには 'Sudo su – ' コマンドが必要です。 

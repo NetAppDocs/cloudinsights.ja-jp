@@ -7857,7 +7857,6 @@
   <block id="f4cc1c9a55de42a2dbb9d5aa67b0ad18" category="paragraph">現在のフォルダには 1000 個のファイルが作成されます。</block>
   <block id="f9c38f6218e4bf4132fd48e2dd8413c2" category="list-text">データコレクタを再度有効にします</block>
   <block id="123d317d6377a1184be4f3542b76e7fc" category="paragraph">手順 1 でデータコレクタを無効にした場合は、データコレクタを編集し、正しいパスワードを入力して保存します。データコレクタが running 状態であることを確認します。</block>
-  <block id="9de07b55b73b4474c7f2f607db372035" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ： Red Hat Enterprise Linux 7.x 、 8.x 64 ビット CentOS 7.x 64 ビット CentOS 8 Stream このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">ONTAP 送信バッファサイズを設定します</block>
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">ONTAP FPolicy 送信バッファのサイズを設定します。9.8p7 より前のバージョンの ONTAP を使用していて、 Performance 問題が表示された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます</block>
@@ -8933,4 +8932,5 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同様に、各ネームスペースのワークロードのリストがワークロードタブに表示され、CPUとメモリの使用量も表示されます。ネームスペースリンクをクリックすると、ドリルでそれぞれが実行されます。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</block>
+  <block id="5543c4e9358604e03ae0e327a62bb03f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20および22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
 </blocks>
