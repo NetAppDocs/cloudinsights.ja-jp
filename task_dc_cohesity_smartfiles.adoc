@@ -1,0 +1,51 @@
+= 
+:allow-uri-read: 
+
+
+--
+サイドバー：サイドバーパーマリンク：task_dc_cohesity_smartfiles.html
+
+キーワード：データコレクタ、結束
+
+まとめ：Cohesity SmartFilesデータコレクタの設定。- - -
+
+= Cohesity SmartFilesデータコレクタ
+
+[role="lead"]
+このREST APIベースのコヒリティ・クラスターを取得し、「ビュー」（Cloud Insights 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。
+
+==設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| Cohesity Cluster IPの略 | CohesityクラスタのIPアドレス 
+
+
+| ユーザ名 | Cohesityクラスタのユーザ名 
+
+
+| パスワード | Cohesityクラスタに使用するパスワード 
+|===
+==高度な設定です
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| TCP ポート | CohesityクラスタとのTCP通信に使用するポート 
+
+
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 60 分です。 
+
+
+| パフォーマンスポーリング間隔（分） | パフォーマンスのポーリング間隔デフォルトは900秒です。 
+|===
+==トラブルシューティング
+
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+
+--

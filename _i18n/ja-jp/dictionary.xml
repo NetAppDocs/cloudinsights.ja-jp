@@ -8297,7 +8297,6 @@
   <block id="e353c2255e0d23456f0d04e774cc242c" category="cell">攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="58114ec5d8ca1494b408777c1a724eef" category="cell">Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="9fc31ce4550c4f68c1ea81f5a37335aa" category="section-title">新しい Data Collector</block>
-  <block id="d0112aff81f4571da224986557628445" category="list-text">* Cohesity Smart Files * - この REST API ベースのコヒリティクラスタを取得し、「ビュー」（ CI 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。</block>
   <block id="01ec768781d34379b5889a634c19e5cc" category="section-title">Data Collector のその他のアップデート</block>
   <block id="cd96347d3d125d14ec06afe0adbac82a" category="paragraph">次のデータコレクタでのパフォーマンスデータの収集と表示が改善されました。</block>
   <block id="03a00cff615471538bae5d9ab8cc669e" category="list-text">Brocade CLI</block>
@@ -8934,4 +8933,19 @@
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。</block>
+  <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">* Cohesity SmartFiles *-このREST APIベースのコヒリティ・クラスターを取得して、「ビュー」（CI内部ボリューム）、各種ノード、パフォーマンスメトリックの収集を行います。</block>
+  <block id="f4801fbbe359436f17e47ed8fb32d603" category="paragraph">サイドバー：サイドバーパーマリンク：task_dc_cohesity_smartfiles.html</block>
+  <block id="8616d2c04fe61253f00cfdb24f24a2ad" category="paragraph">キーワード：データコレクタ、結束</block>
+  <block id="14603cff16307cd8ca97c19ecdee7b3d" category="paragraph">まとめ：Cohesity SmartFilesデータコレクタの設定。- - -</block>
+  <block id="02e9f49555c20d5a8f3ca8fb679dc061" category="paragraph">= Cohesity SmartFilesデータコレクタ</block>
+  <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">このREST APIベースのコヒリティ・クラスターを取得し、「ビュー」（Cloud Insights 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。</block>
+  <block id="408d476befad17be036c6ad223d61bf7" category="paragraph">==設定</block>
+  <block id="b64d455dbfeeda0e192f63a2223b3cc0" category="cell">Cohesity Cluster IPの略</block>
+  <block id="20d32ea251aaa415b54e00ff841f25dc" category="cell">CohesityクラスタのIPアドレス</block>
+  <block id="55e588d1f72745ccdd93d782b1efdea0" category="cell">Cohesityクラスタのユーザ名</block>
+  <block id="28068b4914fd700011975ba0b1b872b8" category="cell">Cohesityクラスタに使用するパスワード</block>
+  <block id="491c67c11aa49801e2c84f994169a0c0" category="paragraph">==高度な設定です</block>
+  <block id="1d5447258f93b47e09976cc68c7f86d9" category="cell">CohesityクラスタとのTCP通信に使用するポート</block>
+  <block id="0896c34e1c20bc67d7328f53f406276d" category="cell">パフォーマンスのポーリング間隔デフォルトは900秒です。</block>
+  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">==トラブルシューティング</block>
 </blocks>
