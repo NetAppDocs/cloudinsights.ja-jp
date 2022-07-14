@@ -60,6 +60,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_config_telegraf_couchdb.html["CouchDB"] | サービス 
 
 
+| link:task_dc_cohesity_smartfiles.html["Cohesity SmartFiles"] | インフラ 
+
+
 | link:task_dc_emc_datadomain.html["Dell EMC Data Domain の略"] | インフラ 
 
 
