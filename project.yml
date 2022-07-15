@@ -224,7 +224,7 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自動応答ポリシー
       url: "/cs_automated_response_policies.html"
-    - title: ユーザアクセスの制限
+    - title: ユーザアクセスをブロックしています
       url: "/cs_restrict_user_access.html"
     - title: ランサムウェア攻撃のシミュレーション
       url: "/concept_cs_attack_simulator.html"
