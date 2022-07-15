@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>ユーザアクセスの制限</title>
+  <title>ユーザアクセスをブロックしています</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="ユーザアクセスの制限" />
+  <meta property="og:title" content="ユーザアクセスをブロックしています" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html" />
 	<meta property="og:description" content="Cloud Secure を使用すると、破壊の疑いがある場合にユーザアクセスを制限できます" />
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[ユーザアクセスの制限](https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_restrict_user_access.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[ユーザアクセスをブロックしています](https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_restrict_user_access.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloudinsights/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloudinsights/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -1948,14 +1948,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">ユーザアクセスの制限</h1>
+  <h1 class="n-doc__component-detail-heading">ユーザアクセスをブロックしています</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-06-10 20:23:26 +0000">06/10/2022</time>
+    <time datetime="2022-07-15 13:42:59 +0000">07/15/2022</time>
     
   
 
@@ -1965,94 +1965,45 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>攻撃が検出されると、 Cloud Secure はファイルシステムへのユーザーアクセスを制限することで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。</p>
+<p>攻撃が検出されると、Cloud Secure はファイルシステムへのユーザアクセスをブロックすることで攻撃を停止できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。</p>
 </div>
 <div class="paragraph">
-<p>ユーザアクセスを制限する場合は、アクセス制限のタイプ（ブロックまたは読み取り専用）と期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。</p>
+<p>ユーザアクセスをブロックする場合は、ブロック期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。アクセスブロックは、SMBプロトコルとNFSプロトコルの両方でサポートされています。</p>
 </div>
 <div class="paragraph">
-<p>アクセス制限は、 SMB プロトコルと NFS プロトコルの両方でサポートされています。</p>
+<p>SMBおよびホストマシンのIPアドレスに対してユーザが直接ブロックされているため、NFSに対して攻撃がブロックされます。これらのマシンの IP アドレスは、 Cloud Secure で監視されているいずれかの Storage Virtual Machine （ SVM ）へのアクセスがブロックされます。</p>
 </div>
 <div class="paragraph">
-<p>制限はホストマシンの IP アドレスによって行われます。ホストマシンとは、ユーザがストレージにアクセスしたマシンを意味します。これらのマシンの IP アドレスは、 Cloud Secure で監視されているいずれかの Storage Virtual Machine （ SVM ）へのアクセスがブロックされます。</p>
+<p>たとえば、Cloud Secure は10個のSVMを管理し、自動応答ポリシーはそのうち4つのSVMに対して設定されているとします。攻撃の原因が4つのSVMのいずれかである場合、10個のSVMすべてでユーザのアクセスがブロックされます。元の SVM では引き続き Snapshot が作成されます。</p>
 </div>
 <div class="paragraph">
-<p>たとえば、 Cloud Secure が 10 個の SVM を管理し、そのうち 4 つに対して自動応答ポリシーが設定されているとします。4 つの SVM のいずれかで攻撃が発生した場合、 10 個すべての SVM でユーザのアクセスが制限されます。元の SVM では引き続き Snapshot が作成されます。</p>
-</div>
-<div class="paragraph">
-<p>4 つの SVM に CIFS 用に設定し、 1 つを NFS 用に設定し、残りの 2 つを NFS と CIFS 用に設定した場合、 4 つの SVM のいずれかで攻撃が発生すると、すべての SVM がブロックされます。</p>
+<p>SMB用に設定されたSVMが4つあり、NFS用に設定されたSVMが残り2つのSVMがNFSとSMB両方に対して設定されている場合、4つのSVMのいずれかで攻撃が発生すると、すべてのSVMがブロックされます。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="ユーザーアクセス制限の前提条件">ユーザーアクセス制限の前提条件</h2>
+<h2 id="ユーザアクセスブロックの前提条件">ユーザアクセスブロックの前提条件</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>この機能を使用するには、 SMB と NFS のエクスポートポリシーを設定する必要があります。NFS および SMB がデータソースコレクタで設定されている場合は、次の手順に従います。</p>
+<p>この機能を使用するには、クラスタレベルのクレデンシャルが必要です。</p>
 </div>
 <div class="paragraph">
-<p>NFS の場合、エクスポートポリシーはデフォルトで設定されます。デフォルトでは、 SVM で NFS サービスが作成されるとエクスポートポリシーが作成されます。</p>
+<p>クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。</p>
 </div>
 <div class="paragraph">
-<p>SMB の場合は、エクスポートポリシーが設定されている必要があります。</p>
-</div>
-<div class="paragraph">
-<p>クラスタ / SVM クレデンシャルを使用しておらず、 csuser を使用している場合は、最初に次の手順を実行して、 Cloud Secure にカスタムエクスポートポリシールールを作成させます。</p>
+<p>ユーザに付与された権限を持つcsuserなどのカスタムユーザを使用している場合は、次の手順に従ってCloudSecureにブロックユーザへの権限を付与します。</p>
 </div>
 <div class="paragraph">
 <p>クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-SVM のクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次のコマンドを実行し、正しい &lt;vservername&gt; を挿入します。</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre> security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all
-デフォルトのエクスポートポリシーを設定するコマンドは次のとおりです。コマンドをテキストエディタにコピーし、 &lt;vserver&gt; 名を SVM の名前に置き換えます。次に、各行を 1 つずつコピーし、 ONTAP コンソールで実行します。コマンドを実行する前に、 advanced モードに切り替える必要があります。</pre>
-</div>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/tip.svg" alt="ヒント">
-</td>
-<td class="content">
-これは特に PoC の実行に役立ちます。テストするマシンでは、 SMB を次のように構成できます。PoC の実行中、データソースコレクタで、 SMB / CIFS プロトコルのみを有効にし、 NFS プロトコルを無効にします。
-</td>
-</tr>
-</table>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>set -privilege advanced
-cifs options modify -is-exportpolicy-enabled true -vserver &lt;vserver&gt;
-export-policy rule create -vserver &lt;vserver&gt; -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any</pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注記">
-</td>
-<td class="content">
-clientmatch は、特定のアドレスまたはサブネット（例： 10.0.3.212 または 192.168.5.0/24 ）、ホスト名、または @ ネットグループなどのネットグループです。エクスポートポリシーを使用して可能なすべての IP4 アドレスに適用する場合は、 clientmatch を 0.0.0.0/0 に設定します。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>_exportpolicy-rule_exportpolicy-が 正しく設定されているかどうかを確認するには、上記のコマンドを実行した後で次のコマンドを実行します。</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>cifs options show  -fields is-exportpolicy-enabled -vserver &lt;vserver&gt;
-export-policy show -vserver &lt;vserver&gt;
-export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
+<pre>security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+security login role create -role csrole -cmddirname set -access all
+security login role create -role csrole -cmddirname "vserver cifs session" -access all
+security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
+security login role create -role csrole -cmddirname "vserver name-mapping" -access all
+security login role create -role csrole -cmddirname "cluster show" -access readonly</pre>
 </div>
 </div>
 </div>
@@ -2063,17 +2014,17 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Cloud Secure で、 [<strong>Admin] &gt; [Automated Response Policies] &gt; [Response Policy Settings] &gt; [Access Limitation</strong>] の順に選択します。</p>
+<p>Cloud Secure で、[<strong>Admin]&gt;[Automated Response Policies]&gt;[Response Policy Settings]&gt;[Block User Access</strong>]の順に選択します。</p>
 </li>
 <li>
-<p>「ユーザーアクセスの制限を有効にする」を「有効にする」に設定します。</p>
+<p>[Enable Block User Access]を[enable_enabled_]に設定します。</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="自動ユーザアクセス制限の設定方法">自動ユーザアクセス制限の設定方法</h2>
+<h2 id="自動ユーザアクセスブロックの設定方法">自動ユーザアクセスブロックの設定方法</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -2084,34 +2035,34 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 <p>攻撃ポリシーを監視する SVM を選択します。</p>
 </li>
 <li>
-<p>[Restrict User IP File Access] チェックボックスをオンにします。この機能は、このオプションを選択すると有効になります。</p>
+<p>[ユーザーファイルアクセスをブロックする]チェックボックスをオンにします。この機能は、このオプションを選択すると有効になります。</p>
 </li>
 <li>
 <p>[ ユーザーアクセスの制限 ] で、適用する制限のモードを選択します。</p>
 </li>
 <li>
-<p>[Time Period] で、制限を適用する時間を選択します。</p>
+<p>[Time Period]で、ブロッキングを適用する時間を選択します。</p>
 </li>
 <li>
-<p>自動制限をテストするには、を使用して攻撃をシミュレートします <a href="concept_cs_attack_simulator.html">"シミュレートされたスクリプト"</a>。</p>
+<p>自動ユーザブロッキングをテストするには、を使用して攻撃をシミュレートします <a href="concept_cs_attack_simulator.html">"シミュレートされたスクリプト"</a>。</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="システム内に制限されたユーザーがいるかどうかを確認する方法">システム内に制限されたユーザーがいるかどうかを確認する方法</h2>
+<h2 id="システム内にブロックされているユーザーがいるかどうかを確認する方法">システム内にブロックされているユーザーがいるかどうかを確認する方法</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>アラートリストページでは、ユーザが制限されている場合に、画面上部のバナーが表示されます。</p>
+<p>アラートリストページでは、ユーザがブロックされた場合に画面上部のバナーが表示されます。</p>
 </li>
 <li>
-<p>バナーをクリックすると、 [Users] ページが表示されます。このリストには、制限されたユーザーが表示されます。</p>
+<p>バナーをクリックすると、[Users]ページが表示され、ブロックされているユーザのリストが表示されます。</p>
 </li>
 <li>
-<p>[Users] ページに、 [IP Access] という列が表示されます。この列には、ユーザー制限の現在の状態が表示されます。</p>
+<p>[Users]ページには、「User/IP Access」という名前のカラムがあります。この列には、ユーザブロッキングの現在の状態が表示されます。</p>
 </li>
 </ul>
 </div>
@@ -2123,17 +2074,17 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>アラートの詳細画面またはユーザーの詳細画面に移動して、これらの画面からユーザーを手動で制限または制限解除できます。</p>
+<p>アラートの詳細画面またはユーザの詳細画面に移動して、これらの画面からユーザを手動でブロックまたは復元できます。</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="ユーザアクセス履歴の制限">ユーザアクセス履歴の制限</h2>
+<h2 id="ユーザアクセス制限履歴">ユーザアクセス制限履歴</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>［ アラートの詳細とユーザーの詳細 ］ ページのユーザーパネルで、ユーザーの制限アクセス制限履歴（時間、アクション（ブロック、読み取り専用、復元）、期間）の監査を表示できます。 手動 / 自動、および影響を受ける IP が実行するアクション。</p>
+<p>［アラートの詳細とユーザーの詳細］ページのユーザーパネルで、ユーザーのアクセス制限履歴（時間、アクション（ブロック、ブロック解除）、期間、実行されたアクション）の監査を表示できます。 手動/自動、およびNFSの影響を受けるIP。</p>
 </div>
 </div>
 </div>
@@ -2146,10 +2097,10 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Cloud Secure で、 [<strong>Admin] &gt; [Automated Response Policies] &gt; [Response Policy Settings] &gt; [Access Limitation</strong>] の順に選択します</p>
+<p>Cloud Secure で、[<strong>Admin]&gt;[Automated Response Policies]&gt;[Response Policy Settings]&gt;[Block User Access</strong>]の順に選択します</p>
 </li>
 <li>
-<p>[ ユーザーアクセスの制限を有効にする ] をオフにして無効にします。</p>
+<p>無効にするには、[ブロックユーザーアクセスを有効にする]をオフにします。</p>
 </li>
 </ul>
 </div>
@@ -2159,7 +2110,7 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="ip-を手動で復元します">IP を手動で復元します</h2>
+<h2 id="nfsのipを手動でリストア">NFSのIPを手動でリストア</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Cloud Secure トライアルの期限が切れた場合、またはエージェント / コレクタがダウンした場合に、 ONTAP から IP を手動でリストアするには、次の手順を実行します。</p>
@@ -2175,12 +2126,12 @@ export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
 Vserver      Name            Index   Protocol Match                 Rule
 ------------ --------------- ------  -------- --------------------- ---------
 svm_s_____a default         1       nfs3,    cloudsecure_rule,     never
-                                     nfs4,    10.19.12.216
+                                     nfs4,    10.11.12.13
                                      cifs
 svm_s_____a default         4       cifs,    0.0.0.0/0             any
                                      nfs
 svm_s_____a test            1       nfs3,    cloudsecure_rule,     never
-                                     nfs4,    10.19.12.216
+                                     nfs4,    10.11.12.13
                                      cifs
 svm_s_____a test            3       cifs,    0.0.0.0/0             any
                                      nfs,
@@ -2190,11 +2141,11 @@ svm_s_____a test            3       cifs,    0.0.0.0/0             any
 </div>
 </li>
 <li>
-<p>「 cloudsecure_rule 」をクライアント一致に設定している SVM 上のすべてのポリシーで、該当する RuleIndex を指定してすべてのルールを削除します。通常、 CloudSecure ルールは 1 になります。</p>
+<p>「cloudsecure_rule」をクライアント一致として持つSVMのすべてのポリシーのルールを削除するには、対応するRuleIndexを指定します。通常、Cloud Secure ルールは1になります。</p>
 <div class="literalblock">
 <div class="content">
 <pre> contrail-qa-fas8020::*&gt; export-policy rule delete -vserver &lt;svm name&gt; -policyname * -ruleindex 1
-. CloudSecure ルールが削除されていることを確認します（確認のための手順はオプション）。</pre>
+. Cloud Secure ルールが削除されていることを確認します（オプションの確認手順）。</pre>
 </div>
 </div>
 <div class="literalblock">
@@ -2240,8 +2191,8 @@ svm_suchitra test            3       cifs,    0.0.0.0/0             any
 <td class="tableblock halign-left valign-top"><p class="tableblock">制限する IP はすでに別のユーザから制限されています。</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「 SVM で SMB プロトコルのエクスポートポリシーの使用が無効になっています」という警告が表示されてアクセスの制限に失敗します。restrictuser access 機能を使用するには、 export-policy の使用を有効にします。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「前提条件」に記載されているように、 SVM の -is-exportpolicy-enabled オプションが true であることを確認します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ポリシーを変更できませんでした。理由：このコマンドは許可されていません。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">csuserを使用している場合は、上記のようにユーザに権限が与えられているかどうかを確認します。</p></td>
 </tr>
 </tbody>
 </table>
