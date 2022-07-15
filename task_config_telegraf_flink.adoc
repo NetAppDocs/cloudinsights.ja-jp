@@ -36,17 +36,17 @@ JobManager ： Flink プライマリシステム。一連の TaskManager を調�
 
 
 
-==== 互換性
+=== 互換性
 
 Flink バージョン 1.7.0 に対して設定が開発されました。
 
 
 
-==== セットアップ中です
+=== セットアップ中です
 
 
 
-===== Jolokia エージェント JAR
+==== Jolokia エージェント JAR
 
 個々のコンポーネントについては、 Jolokia エージェント jar ファイルのバージョンをダウンロードする必要があります。テスト対象のバージョンは、でした link:https://jolokia.org/download.html["Jolokia 代理店 1.6.0"]。
 
@@ -54,7 +54,7 @@ Flink バージョン 1.7.0 に対して設定が開発されました。
 
 
 
-===== JobManager
+==== JobManager
 
 JobManager で Jolokia API を公開するように設定するには、ノードで次の環境変数を設定して JobManager を再起動します。
 
@@ -63,7 +63,7 @@ Jolokia （ 8778 ）には別のポートを選択できます。Jolokia をロ�
 
 
 
-===== TaskManager の略
+==== TaskManager の略
 
 Jolokia API を公開するように TaskManager を設定するには ' ノードに次の環境変数を設定し 'TaskManager を再起動します
 

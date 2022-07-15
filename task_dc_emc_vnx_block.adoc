@@ -104,7 +104,7 @@ NaviSECCLI.exe -h <ip address> -user <user> -password <password> -scope <scope �
 
 
 
-==== 在庫
+=== 在庫
 
 [cols="2*"]
 |===

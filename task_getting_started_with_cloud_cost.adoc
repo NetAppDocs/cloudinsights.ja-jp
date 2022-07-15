@@ -27,7 +27,7 @@ NOTE: Cloud Cost は、 US リージョンの Cloud Insights 環境でのみ使�
 
 
 
-==== クラウドコストを設定しています
+== クラウドコストを設定しています
 
 Cloud Insights にログインして、 [ クラウドコスト *] メニュー項目を初めてクリックすると、クラウドコストの設定を開始するためのようこそ画面とプロンプトが表示されます。
 
@@ -53,13 +53,13 @@ image:Cloud_Cost_Example_Dashboard.png["クラウドコストのダッシュボ�
 
 
 
-=== クラウドコストの詳細
+== クラウドコストの詳細
 
 Cloud Cost は、 Cloud Insights 環境との Cloud Analyzer 機能を接続します link:https://docs.spot.io/cloud-analyzer/["ネットアップのソリューションで実現"]Cloud Insights では、クラウドのコストデータに最も関連性の高いビューを提供します。クラウドコストダッシュボードの右上隅にある _Get Full Analysis_link をクリックすると、 Spot で Cloud Analyzer ダッシュボード全体を開くことができます。詳細な分析によって追加のデータとドリルダウンが提供され、クラウド関連の支出に関する詳細な情報が得られる場合があります。
 
 
 
-=== トラブルシューティング
+== トラブルシューティング
 
 問題が発生した場合に試すべきこと：
 

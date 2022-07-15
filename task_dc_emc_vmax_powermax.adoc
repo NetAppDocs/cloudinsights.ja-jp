@@ -131,7 +131,7 @@ Cloud Insights では、 EMC VMAX/PowerMax データソースから次のイン�
 
 
 
-==== 在庫
+=== 在庫
 
 [cols="2*"]
 |===

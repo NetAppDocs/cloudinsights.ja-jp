@@ -107,7 +107,7 @@ OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStac
 
 
 
-==== 在庫
+=== 在庫
 
 [cols="2*"]
 |===

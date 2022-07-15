@@ -174,17 +174,17 @@ Config Advisor は、次のオペレーティングシステムで実行でき�
 
 
 
-==== データコレクタのインストールと設定
+=== データコレクタのインストールと設定
 
 video::Config_Advisor_Collector_Part1.mp4[Installing and Configuring the Config Advisor data collector]
 
 
-==== Config Advisor ダッシュボードの作成：
+=== Config Advisor ダッシュボードの作成：
 
 video::Config_Advisor_Collector_Part2.mp4[Using dashboards to view Config Advisor data]
 
 
-==== その他のサポート
+=== その他のサポート
 
 Config Advisor に関連するその他の質問については、[ヘルプ]->[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。
 

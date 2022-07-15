@@ -5,17 +5,7 @@ keywords: monitors, alerts, log, metric, system-defined, system, metric,
 summary: パフォーマンスやインベントリのしきい値、およびメトリックやログの条件に関するアラートを生成するモニタを作成します。 
 ---
 = モニタとのアラート
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -76,7 +66,7 @@ TIP: 複数条件のモニタ（ IOPS > X 、レイテンシ > Y など）を作
 
 
 
-===== モニターの条件を定義します。
+==== モニターの条件を定義します。
 
 . 監視するオブジェクトと指標を選択したら、警告レベルと重大レベルのしきい値、またはその両方を設定します。
 . _Warning_level には、この例に 200 を入力します。この警告レベルを示す破線がグラフの例に表示されます。
@@ -253,13 +243,6 @@ NOTE: グループからモニタを削除しても、モニタは Cloud Insight
 同じメニューを使用して、グループの名前変更または削除を行います。グループを削除しても、 Cloud Insights からモニタは削除されません。これらのモニタは、 _ALL Monitors で使用できます。
 
 image:Monitors_PauseGroup.png["グループを一時停止します"]
-
-デフォルトでは 2 つのグループが表示されます。
-
-* * すべてのモニタ * にすべてのモニタが一覧表示されます。
-* * カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。
-* * サスペンド状態のモニタ * は、システムによってモニタがサスペンドされている場合にのみ表示されます。
-
 
 
 

@@ -40,13 +40,13 @@ Telegraf の Apache の HTTP Server 用プラグインは 'OD _status' モジュ
 
 
 
-==== 互換性：
+=== 互換性：
 
 構成は Apache の HTTP Server バージョン 2.4.38 に対して開発されました。
 
 
 
-==== mod_status を有効にします。
+=== mod_status を有効にします。
 
 'OD_status' モジュールを有効にして公開するには、次の 2 つの手順を実行します。
 
@@ -56,7 +56,7 @@ Telegraf の Apache の HTTP Server 用プラグインは 'OD _status' モジュ
 
 
 
-==== イネーブルモジュール：
+=== イネーブルモジュール：
 
 モジュールのロードは '/usr/local/apache/conf/httpd.conf ' の下の config ファイルによって制御されます。構成ファイルを編集し、次の行のコメントを解除します。
 
@@ -64,7 +64,7 @@ Telegraf の Apache の HTTP Server 用プラグインは 'OD _status' モジュ
  Include conf/extra/httpd-info.conf
 
 
-==== モジュールからの統計情報の公開：
+=== モジュールからの統計情報の公開：
 
 'OD_status' の公開は '/usr/local/apache2/conf/extra /httpd-info.conf' の下の config ファイルによって制御されます。設定ファイルに次のものがあることを確認してください ( 少なくとも、他のディレクティブが存在することを確認してください ) 。
 

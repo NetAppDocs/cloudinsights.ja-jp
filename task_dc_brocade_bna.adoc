@@ -101,7 +101,7 @@ Cloud Insights では、 Brocade Network Advisor データコレクタから次�
 
 
 
-==== 在庫
+=== 在庫
 
 [cols="2*"]
 |===

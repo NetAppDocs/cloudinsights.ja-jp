@@ -86,7 +86,7 @@ Cloud Insights では、 Fujitsu ETERNUS ストレージから次のインベン
 
 
 
-==== 在庫
+=== 在庫
 
 [cols="2*"]
 |===

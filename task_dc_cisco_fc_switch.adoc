@@ -146,7 +146,7 @@ Cloud Insights では、 Cisco FC Switch データコレクタから次のイン
 
 
 
-==== 在庫
+=== 在庫
 
 [cols="2*"]
 |===
@@ -169,7 +169,7 @@ Cloud Insights では、 Cisco FC Switch データコレクタから次のイン
 |===
 
 
-==== パフォーマンス
+=== パフォーマンス
 
 [cols="2*"]
 |===

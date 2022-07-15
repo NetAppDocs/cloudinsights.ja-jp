@@ -45,17 +45,17 @@ Hadoop プラグインは、テレグラムの Jolokia プラグインに基づ�
 
 
 
-==== 互換性
+=== 互換性
 
 構成は Hadoop バージョン 2.9.2 に対して開発されました。
 
 
 
-==== セットアップ中です
+=== セットアップ中です
 
 
 
-===== Jolokia エージェント JAR
+==== Jolokia エージェント JAR
 
 個々のコンポーネントについては、 Jolokia エージェント jar ファイルのバージョンをダウンロードする必要があります。テスト対象のバージョンは、でした link:https://jolokia.org/download.html["Jolokia 代理店 1.6.0"]。
 
@@ -63,7 +63,7 @@ Hadoop プラグインは、テレグラムの Jolokia プラグインに基づ�
 
 
 
-===== NameNode
+==== NameNode
 
 Jolokia API が公開されるように NameNode を設定するには、 <hadoop home>/etc/hadoop /hadoop -env.sh で次のセットアップを行います。
 
@@ -74,7 +74,7 @@ You can choose a different port for JMX (8000 above) and Jolokia (7800). If you 
 ----
 
 
-===== セカンダリ NameNode
+==== セカンダリ NameNode
 
 セカンダリ NameNode で Jolokia API を公開するように設定するには、 <hadoop home>/etc/hadoop /hadoop -env.sh で次のように設定します。
 
@@ -85,7 +85,7 @@ You can choose a different port for JMX (8002 above) and Jolokia (7802). If you 
 ----
 
 
-===== DataNode
+==== DataNode
 
 Jolokia API が公開されるように DataNode を設定するには、 <hopp_home>/etc/hadoop /hadoop -env.sh に以下のセットアップを行います。
 
@@ -96,7 +96,7 @@ You can choose a different port for JMX (8001 above) and Jolokia (7801). If you 
 ----
 
 
-===== ResourceManager の略
+==== ResourceManager の略
 
 ResourceManager で Jolokia API を公開するように設定するには、 <hadoop HOME>//etc/hadoop /hadoop -env.sh で次の設定を行うことができます。
 
@@ -107,7 +107,7 @@ You can choose a different port for JMX (8003 above) and Jolokia (7803). If you 
 ----
 
 
-===== NodeManager
+==== NodeManager
 
 Jolokia API を公開するように NodeManager を設定するには、 <hadoop home>/etc/hadoop /hadoop -env.sh で次の設定を行うことができます。
 
@@ -118,7 +118,7 @@ You can choose a different port for JMX (8004 above) and Jolokia (7804). If you 
 ----
 
 
-===== JobHistoryServer
+==== JobHistoryServer
 
 JobHistoryServer で Jolokia API を公開するように設定するには、 <hadoop home>/etc/hadoop /hadoop -env.sh で次の設定を行うことができます。
 
