@@ -16,7 +16,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 
 
 
-=== ディスコード設定：
+== ディスコード設定：
 
 * Discord （コード解除）でサーバーを選択し、 Text Channels （テキストチャンネル）で Edit Channel （チャネルの編集）（歯車アイコン）を選択します。
 * 「統合」＞「 Web フックの表示」と選択し、「新規 Webhook 」をクリックします
@@ -25,7 +25,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 
 
 
-=== Cloud Insights Webhook を作成します。
+== Cloud Insights Webhook を作成します。
 
 . Cloud Insights で、 [*Admin] > [Notifications] に移動し、 [*webhook *] タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。
 . Web フックに「 Discord 」などのわかりやすい名前を付けます。
@@ -40,7 +40,7 @@ NOTE: webhook をテストするには、メッセージ本文の URL 値を任�
 
 
 
-=== Webhook で通知します
+== Webhook で通知します
 
 webhook を使用してイベントを通知するには、 Cloud Insights で [*Alerts] > [Monitors *] の順に選択し、 [*+ Monitor*] をクリックして新しいイベントを作成します link:task_create_monitor.html["モニタ"]。
 

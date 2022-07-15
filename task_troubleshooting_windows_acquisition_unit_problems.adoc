@@ -48,7 +48,7 @@ keywords: AU, acquisition unit, trioubleshooting
 |===
 
 
-=== プロキシとファイアウォールに関する考慮事項
+== プロキシとファイアウォールに関する考慮事項
 
 組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。次の事項に注意してください。
 
@@ -63,7 +63,7 @@ Cloud Insights Acquisition Unit は、 Cloud Insights を使用して Web ブラ
 
 
 
-==== プロキシエンドポイントの表示
+=== プロキシエンドポイントの表示
 
 プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help > Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。Cloud Secure を使用している環境では、設定済みのエンドポイント URL もこのリストに表示されます。
 
@@ -71,7 +71,7 @@ image:ProxyEndpoints_NewTable.png["プロキシエンドポイントテーブル
 
 
 
-=== リソース
+== リソース
 
 その他のトラブルシューティングのヒントについては、を参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["ネットアップナレッジベース"] （サポートサインインが必要です）。
 

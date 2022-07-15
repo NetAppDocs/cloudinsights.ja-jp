@@ -16,7 +16,7 @@ TIP: モニタとアラートは、 Cloud Insights Standard Edition 以降で使
 
 
 
-=== アラートの表示と管理
+== アラートの表示と管理
 
 アラートを表示および管理するには、次の手順を実行します。
 
@@ -51,7 +51,7 @@ TIP: モニタとアラートは、 Cloud Insights Standard Edition 以降で使
 
 
 
-=== アラートの詳細ページ
+== アラートの詳細ページ
 
 Alert Detail ページには ' アラートの詳細情報が表示されますこれには 'a_Summary_'a_Expert View_Showing Graphs related to the object' any_related Assets_'_Comments_entered by alert 博士が含まれます
 
@@ -59,7 +59,7 @@ image:alert_detail_page.png["アラートの詳細ページ"]
 
 
 
-=== 「 Permanently Active 」アラート
+== 「 Permanently Active 」アラート
 
 監視対象オブジェクトでは、条件を「常に * 」にするようにモニタを設定できます。たとえば、 IOPS>1 や Latency >0 などです。これらは頻繁に「テスト」モニターとして作成され、そして忘れられる。このような監視を実行すると、コンスティチュエントオブジェクトを永続的に開いたままにするアラートが作成されます。これにより、原因システムにかかる負荷や安定性の問題が時間の経過に
 
