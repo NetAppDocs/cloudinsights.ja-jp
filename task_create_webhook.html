@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
+    <time datetime="2022-07-15 16:53:44 +0000">07/15/2022</time>
     
   
 
@@ -2014,8 +2014,9 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="webhook-の作成">Webhook の作成</h3>
+<div class="sect1">
+<h2 id="webhook-の作成">Webhook の作成</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Cloud Insights ウェブフックを作成するには、 [*Admin] &gt; [Notifications] に移動し、 [*webhooks] タブを選択します。</p>
 </div>
@@ -2031,26 +2032,29 @@
 <div class="paragraph">
 <p><span class="image"><img src="Webhook_Default_Parameters.png" alt="Cloud Insights のデフォルトの Webhook パラメータ"></span></p>
 </div>
-<div class="sect3">
-<h4 id="パラメータパラメータとは何ですかまたパラメータの使用方法を教えてください">パラメータ：パラメータとは何ですか？また、パラメータの使用方法を教えてください。</h4>
+<div class="sect2">
+<h3 id="パラメータパラメータとは何ですかまたパラメータの使用方法を教えてください">パラメータ：パラメータとは何ですか？また、パラメータの使用方法を教えてください。</h3>
 <div class="paragraph">
 <p>アラートパラメータは、アラートごとに動的に設定される値です。たとえば、 %%TriggeredOn%% の _Parameter はアラートがトリガーされたオブジェクトで置き換えられます。</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="カスタムパラメータとシークレット">カスタムパラメータとシークレット</h4>
+<div class="sect2">
+<h3 id="カスタムパラメータとシークレット">カスタムパラメータとシークレット</h3>
 <div class="paragraph">
 <p>このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。URL/ ヘッダーのシークレットは、 %%&lt;secret_name&gt;%%_ として使用できます。</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="モニタで-webhook-notification-を選択します">モニタで [Webhook Notification] を選択します</h3>
+</div>
+<div class="sect1">
+<h2 id="モニタで-webhook-notification-を選択します">モニタで [Webhook Notification] を選択します</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>で webhook 通知を選択します <a href="task_create_monitor.html#creating-a-monitor">"モニタ"</a>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [<em>Webhook</em>] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Webhook_Monitor_Notify.png" alt="Webhook モニタの通知"></span></p>
+</div>
 </div>
 </div>
 <div class="sect1">

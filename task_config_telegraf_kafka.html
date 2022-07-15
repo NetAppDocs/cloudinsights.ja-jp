@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:02:29 +0000">04/13/2022</time>
+    <time datetime="2022-07-15 16:53:44 +0000">07/15/2022</time>
     
   
 
@@ -2002,17 +2002,16 @@
 <div class="paragraph">
 <p>Kafka プラグインは、テレグラムの Jolokia プラグインに基づいています。すべての Kafka ブローカーから情報を収集する必要があるため、 JMX はすべてのコンポーネントで Jolokia 経由で設定および公開する必要があります。</p>
 </div>
-<div class="sect3">
-<h4 id="互換性">互換性</h4>
+<div class="sect2">
+<h3 id="互換性">互換性</h3>
 <div class="paragraph">
 <p>Kafka バージョン 0.11.0.2 の構成向けに開発されました。</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="セットアップ中です">セットアップ中です</h4>
+<div class="sect2">
+<h3 id="セットアップ中です">セットアップ中です</h3>
 <div class="paragraph">
 <p>以下の手順はすべて、 Kafka のインストール場所が「 /opt/Kafka 」であることを前提としています。以下の手順を使用して、設置場所を変更できます。</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="jolokia-エージェント-jar">Jolokia エージェント JAR</h4>
@@ -2040,6 +2039,7 @@ export KAFKA_JMX_OPTS="-javaagent:/opt/kafka/libs/jolokia-jvm-1.6.0-agent.jar=po
 </div>
 <div class="paragraph">
 <p>JMX (9999 以上 ) とジョロキア (8778) には別のポートを選択できますJolokia をロックする内部 IP を持っている場合は、「 catch all 」 0.0.0.0 を自分の IP で置き換えることができます。この IP には、テレグラムプラグインからアクセスできる必要があります。認証を行わない場合は、オプション「 -Dcom.sun.management.jmxremote.authenticate=false' 」を使用できます。自己責任で使用してください。</p>
+</div>
 </div>
 </div>
 </div>
