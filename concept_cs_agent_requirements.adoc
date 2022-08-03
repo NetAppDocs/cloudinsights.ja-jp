@@ -28,7 +28,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | メモリ | 16GB の RAM 
 
 
-| 使用可能なディスクスペース | ディスクスペースは、 /opt/netapp25-30GB のように割り当てられます 
+| 使用可能なディスクスペース | ディスクスペースの割り当ては、次のように行います。/opt/netapp 35GB（最小） 
 
 
 | ネットワーク | 100Mbps ～ 1Gbps のイーサネット接続、静的 IP アドレス、すべてのデバイスへの IP 接続、および Cloud Secure インスタンスへの必要なポート（ 80 または 443 ） 
@@ -105,7 +105,7 @@ APAC ベース * の Cloud Secure 環境の場合：
 | TCP | 35000~55000 | SVM データ LIF の IP アドレス | インバウンド / アウトバウンド | FPolicy イベントのための ONTAP との通信 
 
 
-| TCP | 7. | SVM データ LIF の IP アドレス | アウトバウンド | ONTAP と Cloud Secure 間の双方向。エージェントが SVM LIF に ping を送信します。 
+| TCP | 7. | SVM データ LIF の IP アドレス | 双方向 | ONTAP と Cloud Secure 間の双方向。エージェントが SVM LIF に ping を送信します。 
 |===
 
 

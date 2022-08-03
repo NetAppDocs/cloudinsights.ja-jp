@@ -859,64 +859,12 @@
   <block id="c0dc322f2a04394a685f21ff1d2ef559" category="list-text">[ 一括操作 ]&gt;[ アプリケーションの追加 *] をクリックします。</block>
   <block id="ee55ce21e29b3e7f2b2034ca09d6b8b2" category="list-text">アセットを割り当てるアプリケーションを選択します。</block>
   <block id="f64880272c45a077dc9152ab7dd2f24a" category="paragraph">アプリケーションにホストを割り当てたら、残りのアセットをアプリケーションに割り当てることができます。アプリケーションのランディング・ページにアクセスするには、 * Manage &gt; Application * をクリックして、作成したアプリケーションを選択します。</block>
-  <block id="7d48a0a5ed3c85848832ea7422284955" category="summary">フォレンジックの概要</block>
-  <block id="3c9a5933dbcf52b832c3bc29602f533e" category="doc">フォレンジック情報</block>
-  <block id="c6b06f9d94d6e3d9271189551e74cea0" category="paragraph">フォレンジックビューは、ユーザー、エンティティ、コミュニティ、ユーザーアクティビティ情報へのアクセスを提供します。</block>
-  <block id="44a46c2660280d286db386102080a441" category="section-title">ユーザ情報の確認</block>
-  <block id="28de16ab3be9929caaeaa80b9bcb8cae" category="paragraph">［ * Forensic （フォレンジック） ］ &gt; ［ User （ユーザー） ］ をクリックして、ユーザービューにアクセス</block>
-  <block id="6ca7bae39d7693f1928b8ed958ec3031" category="paragraph">このビューには、一般的なユーザ情報が表示されます</block>
-  <block id="6b37c53b00de653309ddd77e14f6fcb2" category="list-text">ユーザの名前。ユーザの詳細情報へのリンクが表示されます。</block>
-  <block id="6c9726cf0882d3e1a7a7afe4783da264" category="list-text">ユーザのアクティビティによって生成されたアラート</block>
-  <block id="445522ee576a12cf827fa43589a58259" category="list-text">ユーザが属しているコミュニティの数。コミュニティページへのリンクがあります</block>
   <block id="ccbd604baf2f1984132ebb1bbeb588fc" category="list-text">ユーザの場所</block>
-  <block id="195c405e622fd0e8a5261128ab24f646" category="list-text">ユーザーが最後にアクセスしたエンティティ</block>
-  <block id="b74597a63b1b4a0fcc6fc3dbf1e6c537" category="inline-link-macro">ユーザーの概要</block>
-  <block id="a7c9a128617298eaa5ad1cbc07b0fa95" category="paragraph">ユーザ名をクリックすると、で詳細情報にアクセスできます <block ref="3d59fda9ee439a9c317c1e3620febd81" category="inline-link-macro-rx"></block></block>
   <block id="6156c31e2cc5625d769ef3adb7a3ec3c" category="section-title">エンティティ情報の検査</block>
-  <block id="6ac59d127729a2df605b8a529582fd94" category="paragraph">Forensics &gt; Entity * をクリックして、 Entity ビューにアクセスします。</block>
-  <block id="315b80eaca275df566989ef64b720983" category="paragraph">このページには、ユーザがアクセスしているエンティティの一般的な情報が表示されます。</block>
   <block id="4a4a73d66611aace8d92f097448ce81b" category="paragraph">以下の詳細について説明します。</block>
-  <block id="694d77664575fb0b446ef89342fbc71d" category="list-text">エンティティ名</block>
-  <block id="51c3943e8749968c80b7744cc55309ca" category="list-text">エンティティタイプ</block>
-  <block id="1739f3571edb57fdab0fea8740bab304" category="list-text">エンティティとのコミュニティ関係</block>
-  <block id="95c38092c77409aa34ca740575e3d8a3" category="list-text">エンティティパス</block>
-  <block id="85d5603a6e68c4c44680e10abf168fa3" category="list-text">最終アクセス日時</block>
-  <block id="93fa92f9e5767fd30bf1640775eaafb8" category="list-text">エンティティサイズ</block>
-  <block id="04cf453ee7a9d96ce1163b2e7eb391fb" category="inline-link-macro">エンティティの概要（ Entity Overview</block>
-  <block id="e5e48bf4aad9fe1b29f3d7debbfab46d" category="paragraph">エンティティ名（ Entity Name ）をクリックして、で詳細な情報にアクセスします <block ref="41d4646ac17a8d86637f2c102393f3d2" category="inline-link-macro-rx"></block></block>
-  <block id="0ba8a1b83ab5f740c25d1a34945740ec" category="paragraph">コミュニティ数をクリックすると、エンティティを含むコミュニティが表示されます。</block>
-  <block id="0ac8ab4c4aa30fdb262dd2eba9a4cee9" category="section-title">コミュニティ情報の調査</block>
-  <block id="60033bcd0fb7bbabdbf0102bddefef4b" category="paragraph">[*Forensic] &gt; [Communities*] をクリックして、 [Communities] ページにアクセスします。</block>
-  <block id="e83880b4a1aefd4a24ca942c518a3e31" category="paragraph">このビューには次の機能があり</block>
-  <block id="1d4fe32a02507cbee05a22e2163b19ef" category="list-text">コミュニティ名</block>
-  <block id="20063e46ae559ca8c5317550e142db11" category="list-text">コミュニティに関連するアラート</block>
-  <block id="f7336e7753dc66e0f7a70cdc32419e67" category="list-text">コミュニティのユーザ数</block>
-  <block id="33b77eed26e588d09b61fad390717116" category="list-text">コミュニティのエンティティ数</block>
-  <block id="5526aa3f240fd8aa78b875a31bbd0240" category="paragraph">コミュニティ名をクリックまたは検索して、コミュニティの詳細ページにアクセスします。</block>
-  <block id="213b4a1ab7b919c2b3dc7350a6e507d1" category="list-text">コミュニティプロファイル</block>
-  <block id="f81602367bd918e87be49cc7333aad9d" category="list-text">コミュニティユーザの場所およびその他の最も近いコミュニティをリストします。</block>
-  <block id="25ec77a3cb61c007c81903e91a83e827" category="list-text">コミュニティビヘイビア</block>
-  <block id="37c16075756789b73bbb047b6ec3236e" category="list-text">アクセスされたエンティティの数と、読み取り、書き込み、およびメタデータアクセスの処理を示します。</block>
-  <block id="cc63aa0e41b641e62f5826480be1c9a9" category="list-text">ユーザーとエンティティ（ User and Entities ）</block>
-  <block id="2e9ec39a8903cee2b8bd7e4921a0da67" category="list-text">コミュニティ内の合計ユーザ数と合計エンティティ数を示します。</block>
-  <block id="54fff1a991ed8c2a8759bc6d55fd23c1" category="list-text">コミュニティ分析</block>
-  <block id="ddf0527a86cec7703cce5c33abbb5c34" category="list-text">コミュニティユーザの傾向</block>
-  <block id="0c77da7f9ef578c73bcc2abfaa5e17d2" category="list-text">エンティティに対して実行される操作</block>
-  <block id="d8e4fa79860720ab4de7678dd1551a7e" category="list-text">アラートの傾向</block>
-  <block id="3ba0f712de472ad27e352eda11f7ca9c" category="inline-link-macro">コミュニティの詳細</block>
-  <block id="128b0e056d6e9e44e8d5619f67f41be1" category="paragraph">コミュニティ名をクリックすると、で詳細情報にアクセスできます <block ref="35be0d791cd3b8bb67fe5dda3b8336a2" category="inline-link-macro-rx"></block></block>
-  <block id="51a06ae1e81a8fa844ac04e18fb5a8c2" category="section-title">ユーザアクティビティ情報の確認</block>
-  <block id="a59c3446cb001170a67fc660476e7122" category="paragraph">［ * Forensics （フォレンジック） ］ &gt; ［ User Activity （ユーザーアクティビティ） ］ をクリックして、 ［ User Activity （ユーザーアクティビティ） ］</block>
-  <block id="dbbd1a08e400cb6dbbb25944d19aeda7" category="paragraph">このビューには、監視対象の各ユーザについて次の情報が表示されます。</block>
-  <block id="4e29a3c62ae31255758baa02ac804d1a" category="list-text">エンティティのアクセス時間</block>
-  <block id="dd146dad600a7b7548fafddb2f136c7b" category="list-text">ユーザー概要へのリンクを持つエンティティにアクセスしたユーザー</block>
-  <block id="bf3b9394ae4ebc8ad6fc34bb746e7ff7" category="list-text">実施されたアクティビティ：</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">読み取り</block>
   <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">書き込み</block>
   <block id="686e697538050e4664636337cc3b834f" category="list-text">作成</block>
-  <block id="904a8304056d77e4547744781b7ceb50" category="list-text">名前を変更する</block>
-  <block id="35f626d440dca3958f80815ba211e28f" category="inline-link-macro">エンティティの詳細</block>
-  <block id="4f7a48a0c11b5b3ef72155cd3f928c11" category="list-text">アクセスの場所ユーザ名をクリックすると、で詳細情報にアクセスできます <block ref="43cf20fcbc1ba77da8a65316f0eebb78" category="inline-link-macro-rx"></block></block>
   <block id="65e6065f91f7e03659d071a3c7789f6e" category="summary">Cisco MDS Ablic Switch データコレクタの設定。</block>
   <block id="e2a42170f4db6fe18f3ec45ba9ed2b5a" category="doc">Cisco MDS ファブリックスイッチデータコレクタ</block>
   <block id="72562f98faa459e1834696da2a3bc9b3" category="paragraph">Cloud Insights では、 Cisco MDS ファブリックスイッチデータコレクタを使用して、 Cisco MDS ファブリックスイッチのインベントリ、および FC サービスが有効になっている各種の Cisco Nexus FCoE スイッチを検出します。</block>
@@ -1370,36 +1318,10 @@
   <block id="8e6eb3c8ff00ab06bab7e82986c7e1e5" category="cell">デフォルトは 300 です。</block>
   <block id="755b12aafe5dc12ab98be034e0bc593a" category="cell">「 Invalid login credentials 」というエラーメッセージが表示され、「 Policy does not allow 」または「 you are not authorized 」が表示されます。</block>
   <block id="e3023c7402b94962861565244cb9f3d0" category="cell">Pure http インターフェイスで Pure のユーザアカウントとパスワードを検証します</block>
-  <block id="a3a8ab6593662bf5af921765f1941855" category="summary">フォレンジックユーザーデータ</block>
-  <block id="7ca293d65417ae9cf489be8751021320" category="doc">フォレンジックユーザーデータ</block>
-  <block id="408845a3dd634fb6974267e5a603424a" category="paragraph">[User （ユーザー） ] ページには、 Cloud Secure によって監視されるユーザーが表示されます。</block>
-  <block id="947ebb461659f7a73d27f2a7a8c4d6bb" category="paragraph">このページには、次のデータが表示されます。</block>
   <block id="90b1f6651953fcf8b43ddc0da6760aaf" category="inline-link-macro">ユーザプロファイル</block>
-  <block id="96d09f2dc2b887e3b423d1b79cd62599" category="list-text">Cloud Secure で監視される各ユーザには、へのリンクが表示されます <block ref="55f5b6b5fddb3d46d73361cc24392e6f" category="inline-link-macro-rx"></block>。</block>
-  <block id="7eed1af6d5e60a7781d911d100ae52ca" category="list-text">ユーザーが実行したユーザーのアクティビティによって発生するアラート。アラートの重大度は次のように識別されます。 image ：：： critical.png [Critical] + \image ： warning] + \image ： low.png[Low] + \</block>
-  <block id="aa442e207a8d7e963a0aa5d7442d8f47" category="list-text">ユーザーが最後に実行したアクティビティ。</block>
-  <block id="a6ba690d9231e6ecc5bd081b0e06dd20" category="list-text">ユーザの場所 - 国と都道府県。</block>
-  <block id="c736c85a4c864cc9b572640abb256b92" category="list-text">ユーザが属しているコミュニティの数。</block>
-  <block id="64ffc8d19d49546980dfd40d46804fb9" category="section-title">フォレンジックユーザーデータのフィルタリング</block>
-  <block id="6efc6ed7a55278a9b930ab341ab7a976" category="paragraph">フォレンジックアクティビティ履歴データは、次の方法でフィルタできます。</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">なし</block>
-  <block id="28d0edd045e05cf5af64e35ae0c4c6ef" category="list-text">低</block>
-  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="list-text">警告</block>
-  <block id="278d01e5af56273bae1bb99a98b370cd" category="list-text">重要</block>
-  <block id="dc96f42b62a6e61a0f49a6f5ccdfbf8d" category="list-text">関連付けられているコミュニティ</block>
   <block id="d4908b1e39cc61772e5d74e5fb77d241" category="list-text">未定</block>
-  <block id="9bc012ef5084b7ef0b32dcf80fa43a9f" category="list-text">コミュニティ数</block>
-  <block id="89c76c28a62b7c221f9bd4d820491faa" category="list-text">数値または範囲</block>
-  <block id="6307dd2f57d3f7f949eca03a2a54f6e0" category="list-text">最後のアクティビティ</block>
-  <block id="e0669ff2bbd8b9e25b0b355beeb65fc0" category="list-text">時間または時間範囲</block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="list-text">場所</block>
-  <block id="db60443137b65a2f198625b3db4cfd04" category="list-text">アクティビティが実行された IP アドレス</block>
-  <block id="a790e175bcd4355b797477dbddb71196" category="list-text">アクティビティが実行された IP アドレス *</block>
-  <block id="1edcdad89b3a2245d759a169da1bf5a3" category="list-text">ユーザ ID</block>
-  <block id="a0f444d64169fdc0ad0a86c8e7e5ec6d" category="list-text">エンティティがアクセスされた場所</block>
-  <block id="da77770aeded479ed467590ba6712188" category="list-text">エンティティのパス</block>
-  <block id="46c3b6b9a12fcd2685c9d6ab083d4074" category="list-text">アクティビティが発生した時刻</block>
-  <block id="8e1c0aa55e2a24015a4aa31b1525e7ed" category="list-text">アクティビティを実行しているユーザー</block>
   <block id="2d511a0af71415c4b6b394d9a1964225" category="summary">アセットページは、ほとんどのオブジェクトタイプについて表示できます。</block>
   <block id="033cb70e428cff3c1584d7206da08f9c" category="doc">アセットページの概要</block>
   <block id="ab24a36f89b07d59e5cf53d5754754b1" category="paragraph">アセットページには、アセットの現在のステータスの概要と、アセットと関連するアセットに関する追加情報へのリンクが表示されます。</block>
@@ -5069,7 +4991,6 @@
   <block id="b9c3d80571e6dec0ee60a84ebd740366" category="paragraph"><block ref="b9c3d80571e6dec0ee60a84ebd740366" category="inline-link-macro-rx"></block></block>
   <block id="4fdfa131eb647830bbc47974555ed2c8" category="inline-link-macro">IAM ユーザに権限を委任するためのロールを作成する</block>
   <block id="d24c76fc9ba135863e7f58d98905e8a3" category="paragraph"><block ref="d24c76fc9ba135863e7f58d98905e8a3" category="inline-link-macro-rx"></block></block>
-  <block id="e61f983bca84adaf2e9ee840ad6c3d52" category="summary">Cloud Insights API を使用して、煩わしい作業やアプリケーションをインポートできます。</block>
   <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">Cloud Insights には、 CSV ファイルからアノテーションやアプリケーションをインポートして、指定したオブジェクトに割り当てるための API が用意されています。</block>
   <block id="6ea19b77fdbbe887a195870f5398f21f" category="admonition">Cloud Insights API は、 * Cloud Insights プレミアムエディション * で利用できます。</block>
   <block id="cd804333d16ac675a7605cf03f787ec6" category="section-title">インポート中です</block>
@@ -5295,9 +5216,6 @@
   <block id="fb2b11979470312e91d52daf018ca991" category="paragraph">リンクをクリックして開きます。コピーをダウンロードするには、右クリックして「 _ 名前を付けて保存 ... _ 」を選択します。</block>
   <block id="e8a0ae6a975a5b0b5682da12aecbad5d" category="inline-link-macro">* Data Collector サポートマトリックス *</block>
   <block id="2c7946be5550b6b9eea9fc71634c0a3a" category="paragraph"><block ref="2c7946be5550b6b9eea9fc71634c0a3a" category="inline-link-macro-rx"></block></block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Cloud Insights の設定には、 NetApp ONTAP のストリーミング計測データを使用します</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP による計測データのストリーミング</block>
-  <block id="f1417ae8cdc394cf3e1b04ec57f52d55" category="paragraph">Cloud Insights ONTAP ストリーミングテレメトリに関心をお寄せいただき、ありがとうございます。この機能は現在プライベートプレビューにあります。詳細情報やアクセス権については、 ng-ci-preview@netapp.com までお問い合わせください。</block>
   <block id="83fbc11c171008ea835730f7922a6417" category="summary">OpenZFS データコレクタ設定</block>
   <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS Data Collector を使用します</block>
   <block id="9109116c1e875f98e978783a131e4466" category="paragraph">Cloud Insights では、このデータコレクタを使用して OpenZFS から指標を収集します。</block>
@@ -6396,7 +6314,6 @@
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">同じ</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8GB の RAM</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
-  <block id="47dc5acc8bdc974a72002ca9aa47f325" category="cell">100Mbps または 1Gbps のイーサネット接続、静的 IP アドレス、すべての FC デバイスへの IP 接続、 Cloud Insights インスタンスへの必要なポート（ 80 または 443 ）</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">権限</block>
   <block id="b121d11a2c041b51e1c63a940169fc95" category="cell">Acquisition Unit サーバに対する sudo 権限/tmp は EXEC 機能でマウントする必要があります。</block>
   <block id="f2675114c7e961125e58746739ce868e" category="cell">Acquisition Unit サーバに対する管理者権限が必要です</block>
@@ -7156,7 +7073,6 @@
   <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">ログインの問題：</block>
   <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">ネットアップサポート</block>
-  <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">saas.support@netapp.com にお問い合わせください。これは、 Cloud Central の問題や質問に特化したものです。その他の Cloud Insights の問題については、にお問い合わせください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">詳細については、を参照してください<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">シングルサインオン（ SSO ）許可</block>
@@ -7286,7 +7202,6 @@
   <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">[ 監査 ] ページで、目的の時間範囲と任意のフィルタを設定します。Cloud Insights は、設定したフィルタリングおよび時間範囲に一致する監査エントリのみをエクスポートします。</block>
   <block id="81e9e10a5416438d2549dae075160792" category="list-text">[_Export_] ボタンをクリックします <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> をクリックします。</block>
   <block id="7201440e51225680b60dccf28366c73d" category="paragraph">表示される監査イベントは、最大 10 、 000 行までの .csv ファイルにエクスポートされます。</block>
-  <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">ディスクスペースは、 /opt/netapp25-30GB のように割り当てられます</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">Linux では 50 ～ 55 GB 、ディスクスペースは次のように割り当てます。 /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">招待がユーザーに送信されます。ユーザーは 14 日以内に招待を承諾する必要があります。招待を受諾すると、 NetApp Cloud Portal に送られ、招待状の E メールアドレスを使用してサインアップされます。その E メールアドレス用の既存のアカウントがある場合は、サインインするだけで Cloud Insights 環境にアクセスできます。</block>
   <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">RHEL / CentOS Agent のインストール</block>
@@ -7692,7 +7607,6 @@
   <block id="40cbcf33504e4618736618d0178350da" category="inline-image-macro">ログエントリの詳細ペイン</block>
   <block id="ec3637bd1bccc80828f9c014bf3b44f7" category="paragraph"><block ref="ec3637bd1bccc80828f9c014bf3b44f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">Data Collector に、「 Error: Failed to Determine the collector within 2 retries 、 try restarting the collector again (Error Code: AGENT008) 」というエラーメッセージが表示されます。</block>
-  <block id="f2e1c8f11a6d114e56889c093ddb4738" category="cell">[ データコレクタ ] ページで、エラーが表示されているデータコレクタの右にスクロールし、 3 つのドットメニューをクリックします。選択した編集 _ 。データコレクタのパスワードをもう一度入力します。[Save] ボタンを押して、データコレクタを保存します。Data Collector が再起動し、エラーが解決されます。</block>
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります</block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります</block>
   <block id="e29d4b0022b53ae021c4d0c28ff1c272" category="summary">HP Enterprise Alletra 6000 （旧 Nimble ）データコレクタの設定</block>
@@ -7922,7 +7836,6 @@
   <block id="38e47adb6ecfe4df7c79a3a31541dc49" category="inline-link-macro">ユーザアクセスの制限</block>
   <block id="221dc2418a55893a5e042c9e03adccdf" category="paragraph">を参照してください <block ref="0db6a779247705464ce31126448b6e46" category="inline-link-macro-rx"></block> IP によるユーザアクセスの制限の詳細については、ページを参照してください。</block>
   <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">Cloud Secure を使用すると、破壊の疑いがある場合にユーザアクセスを制限できます</block>
-  <block id="34f9ae45ea998f4feb8ed8b837da35ce" category="doc">ユーザアクセスの制限</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">機能を有効にする方法</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">新しい攻撃ポリシーを作成するか、既存の攻撃ポリシーを編集します。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">攻撃ポリシーを監視する SVM を選択します。</block>
@@ -8072,7 +7985,6 @@
   <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
-  <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* カスタムモニター * には、ユーザーが作成したモニターのみが表示されます。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">を表示します <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</block>
   <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">* ユーザーが新しく作成したファイル（過去 2 時間以内）を除外するためのノイズ削減 * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。</block>
@@ -8140,7 +8052,6 @@
   <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">システム定義のモニタは、変更、別のグループへの移動、または削除できません。ただし、システムモニタを複製して、複製を変更または移動することはできます。</block>
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">システムモニタには、 ONTAP インフラストラクチャ（ストレージ、ボリュームなど）のモニタ、ワークロード（ログモニタなど）、またはその他のグループが含まれます。ネットアップでは、お客様のニーズと製品の機能を常に評価しており、必要に応じてシステムの監視やグループの更新や追加を行います。</block>
   <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">必要に応じてモニタを含めるための独自のグループを作成できます。たとえば、すべてのストレージ関連モニタのグループを作成する場合などです。</block>
-  <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">* サスペンド状態のモニタ * は、システムによってモニタがサスペンドされている場合にのみ表示されます。</block>
   <block id="a43e9f5999fa1ed59d407736252e625d" category="section-title">コンテキストタイプアヘッド提案を使用した高度なテキストフィルタリング</block>
   <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">ウィジェットクエリでのフィルタ処理は _contextual _ です。フィールドのフィルタ値または値を選択すると、そのクエリの他のフィルタには、そのフィルタに関連する値が表示されます。たとえば ' 特定の object_Name_ にフィルタを設定した場合 '_Model_ にフィルタを適用するフィールドには ' そのオブジェクト名に関連する値のみが表示されます</block>
   <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">コンテキストフィルタリングでは、環境 ダッシュボードページの変数（テキストタイプの属性または注釈のみ）も使用できます。1 つの変数にファイラー値を選択すると、関連オブジェクトを使用する他のすべての変数には、それらの関連変数のコンテキストに基づいたフィルタ値のみが表示されます。</block>
@@ -8940,4 +8851,11 @@
   <block id="3aba5c3b5ec94e17ca4afc1a38905dbe" category="list-text">Cloud Secure ルールが削除されていることを確認します（オプションの確認手順）。</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">ポリシーを変更できませんでした。理由：このコマンドは許可されていません。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">csuserを使用している場合は、上記のようにユーザに権限が与えられているかどうかを確認します。</block>
+  <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「cloud.netapp.com」&gt;「アカウント/ログインの問題」または「cloud.netapp.com」&gt;「フェデレーションの問題」を選択します。これは、 Cloud Central の問題や質問に特化したものです。Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f0836a5cbb198e5071126d330de3a88" category="cell">ディスクスペースの割り当ては、次のように行います。/opt/netapp 35GB（最小）</block>
+  <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">双方向</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">このページです</block>
+  <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.データコレクタページで、エラーが表示されているデータコレクタの右にスクロールし、3つのドットメニューをクリックします。選択した編集 _ 。データコレクタのパスワードをもう一度入力します。[Save] ボタンを押して、データコレクタを保存します。Data Collector が再起動し、エラーが解決されます。2.エージェントマシンに十分なCPUまたはRAMヘッドルームがない場合があります。そのため、DSCが故障しています。マシンのエージェントに追加されているデータコレクタの数を確認してください。20を超える場合は、エージェントマシンのCPUとRAM容量を増やしてください。CPUとRAMが増加すると、DSCは初期化状態になり、その後自動的に実行状態になります。のサイジングガイドを参照してください <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">アノテーションとアプリケーションは、Cloud Insights APIを使用してインポートできます。</block>
+  <block id="dc32103fc28ea11a068c096412ef6787" category="cell">100Mbpsまたは1Gbpsのイーサネット接続、静的IPアドレス、ポート80または443からAcquisition Unitから*.cloudinsights.netapp.comまたはCloud Insights 環境（例 .c01.cloudinsights.netapp.com）が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
