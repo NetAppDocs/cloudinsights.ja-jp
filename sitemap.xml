@@ -43,7 +43,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/cloudinsights/concept_acquisition_unit_requirements.html</loc>
       
-      <lastmod>2022-06-18T02:01:21+00:00</lastmod>
+      <lastmod>2022-08-03T15:07:01+00:00</lastmod>
       
     </url>
   
@@ -99,7 +99,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/cloudinsights/concept_cs_agent_requirements.html</loc>
       
-      <lastmod>2022-07-13T15:23:37+00:00</lastmod>
+      <lastmod>2022-08-03T15:07:01+00:00</lastmod>
       
     </url>
   
@@ -205,13 +205,6 @@
       <loc>https://docs.netapp.com/ja-jp/cloudinsights/concept_notifications_email.html</loc>
       
       <lastmod>2022-05-15T23:26:52+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/cloudinsights/concept_ontap_streaming_telemetry.html</loc>
-      
-      <lastmod>2022-04-13T20:02:29+00:00</lastmod>
       
     </url>
   
@@ -554,7 +547,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/cloudinsights//search.html</loc>
       
-      <lastmod>2022-07-19T10:02:40+00:00</lastmod>
+      <lastmod>2022-08-03T15:07:21+00:00</lastmod>
       
     </url>
   
@@ -582,14 +575,14 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/cloudinsights/task_add_collector_svm.html</loc>
       
-      <lastmod>2022-06-10T20:23:26+00:00</lastmod>
+      <lastmod>2022-08-03T15:07:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/cloudinsights/task_annotation_import.html</loc>
       
-      <lastmod>2022-06-10T20:23:26+00:00</lastmod>
+      <lastmod>2022-08-03T15:07:01+00:00</lastmod>
       
     </url>
   
@@ -1513,7 +1506,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/cloudinsights/task_troubleshooting_general_problems.html</loc>
       
-      <lastmod>2022-07-15T16:53:44+00:00</lastmod>
+      <lastmod>2022-08-03T15:07:01+00:00</lastmod>
       
     </url>
   
