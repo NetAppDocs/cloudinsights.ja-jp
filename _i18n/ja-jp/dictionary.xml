@@ -7867,7 +7867,6 @@
   <block id="e5d1e0154409d9aa2d79f4ab1f1793c2" category="paragraph">Cloud Insights からオペレータ用 Docker イメージを取得します。</block>
   <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">次のコマンドを使用して &lt;version&gt; フィールドを確認します。</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">spec セクションで、次の変更を行います。</block>
@@ -8864,4 +8863,8 @@
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">データ到着が遅い場合や、データ到着がない場合と同様に、タイマーメカニズムを引き継ぐ必要があります。これは、「リアルタイム」でアラートをトリガーするためのデータ到着率が不十分であるためです。 そのため、質問は「分析ウィンドウを閉じて、何を確認するまでにどれくらい待つか」ということが一般的です。 待機時間が長すぎると、アラートを生成するのに十分な時間がかかります。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">長期的なデータ損失が発生する前の最後のデータポイントによって条件が違反されていることを通知する30分のウィンドウを備えたモニタがある場合、 この状態が持続していることをモニタが確認するために使用する他の情報を受信しなかったため、アラートが生成されます。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100Mbpsまたは1Gbpsのイーサネット接続、静的IPアドレス、ポート80または443からAcquisition Unitから*.cloudinsights.netapp.comまたはCloud Insights 環境（例 \https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、例外リストに追加された次のドメインを取得する必要があります。*.cloudinsights.netapp.com詳細については、プロキシについて準備してください <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> または <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
+  <block id="47400a8b7ae7e165f8d5326d32ebcc02" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。パブリックリポジトリと同じディレクトリ構造を使用します。次のオープンソースイメージをダウンロードする必要があります。</block>
+  <block id="b20c54eff3214bd1aab22457c1401f00" category="paragraph">Monitoring operator環境を編集して、新しいDocker repoの場所を反映します。</block>
+  <block id="99d5862cd7f8e60656b7d84aaaf12ce9" category="cell">NetApp Kubernetes Monitoring Operatorのインストール後、すぐにログに次のメッセージが表示されます。inputs.prometheus]プラグインでエラーが発生しました：\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics: get\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:へのHTTP要求の送信時にエラーが発生しました。tcp：lookup be-state-metrics .&lt;namespあれ ば.svc.local:該当するホストはありません</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。</block>
 </blocks>

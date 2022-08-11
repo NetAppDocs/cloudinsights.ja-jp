@@ -180,7 +180,7 @@ Cloud Insights からオペレータ用 Docker イメージを取得します。
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。
 
-オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。
+オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。パブリックリポジトリと同じディレクトリ構造を使用します。次のオープンソースイメージをダウンロードする必要があります。
 
 ....
 docker.io/telegraf:1.21.4
@@ -211,6 +211,9 @@ spec:
         - key: k8s.gcr.io
           value: <same as "docker-repo" field above>
 ....
+Monitoring operator環境を編集して、新しいDocker repoの場所を反映します。
+
+ kubectl -n netapp-monitoring edit deploy monitoring-operator
 
 
 === スクリプトベースのKubernetes監視からオペレータベースの監視へのアップグレード
@@ -591,5 +594,8 @@ Windows の場合
 
 
 | Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした | Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
+
+
+| NetApp Kubernetes Monitoring Operatorのインストール後、すぐにログに次のメッセージが表示されます。inputs.prometheus]プラグインでエラーが発生しました：\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics: get\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:へのHTTP要求の送信時にエラーが発生しました。tcp：lookup be-state-metrics .<namespあれ ば.svc.local:該当するホストはありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
