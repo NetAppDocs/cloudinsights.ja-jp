@@ -8867,4 +8867,8 @@
   <block id="b20c54eff3214bd1aab22457c1401f00" category="paragraph">Monitoring operator環境を編集して、新しいDocker repoの場所を反映します。</block>
   <block id="99d5862cd7f8e60656b7d84aaaf12ce9" category="cell">NetApp Kubernetes Monitoring Operatorのインストール後、すぐにログに次のメッセージが表示されます。inputs.prometheus]プラグインでエラーが発生しました：\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics: get\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:へのHTTP要求の送信時にエラーが発生しました。tcp：lookup be-state-metrics .&lt;namespあれ ば.svc.local:該当するホストはありません</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。</block>
+  <block id="911594325eba1fcc8e53e4e78b63f2e9" category="paragraph">次の行を置き換え...</block>
+  <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">...を使用：</block>
+  <block id="708a43ca283ea273fda53a8850915ef8" category="cell">CIエージェントをインストールしてKubernetes情報を収集するコマンドを実行しましたが、UIにKubernetes情報が表示されません。</block>
+  <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">次のコマンドを実行し、出力を収集して、ネットアップサポートにお問い合わせください。これらのコマンドは、デフォルトのネームスペースを使用していることに注意してください。独自のネームスペースを設定した場合は、これらのコマンドおよび後続のすべてのコマンドで、そのネームスペースを置き換えます。kubectl -nネットアップ監視説明導入、エージェント、RS、DS、ポッドkubectl -nネットアップ監視説明導入kubectl -nネットアップ監視ログ&lt;monitoring operator pod &gt;-c manager kubectl -n NetApp Monitoring logs &lt;テレ グラム&lt;テレ グラム&lt;テレ グラム&gt; kubectl -モニタリングポッド&lt;NetApp-tre -ステータスポッド&gt;</block>
 </blocks>
