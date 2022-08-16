@@ -44,7 +44,6 @@
   <block id="372735448eedd531647388e4231b11e5" category="cell">Cloud Secure ユーザデータアクセスの監査</block>
   <block id="296767e345f23610f06a21d1f03e36c6" category="cell">Cloud Secure Insider Threat Detection with AI/ML 』を参照してください</block>
   <block id="4fe19c14796d667021bad4a9a083aefc" category="cell">ビジネスインテリジェンスとレポート作成 *</block>
-  <block id="5cf75d903844ed65019951bc09f6c832" category="paragraph">-42; 500 台以上の管理対象ユニットの環境で使用できます</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">南京錠</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Cloud Insights の使用中に鍵のアイコンが表示される場合 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>では、この機能が現在のエディションで使用できないか、または制限付きの形式で利用できることを意味します。この機能にフルアクセスするには、をアップグレードしてください。</block>
   <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">試用版</block>
@@ -8871,4 +8870,7 @@
   <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">...を使用：</block>
   <block id="708a43ca283ea273fda53a8850915ef8" category="cell">CIエージェントをインストールしてKubernetes情報を収集するコマンドを実行しましたが、UIにKubernetes情報が表示されません。</block>
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">次のコマンドを実行し、出力を収集して、ネットアップサポートにお問い合わせください。これらのコマンドは、デフォルトのネームスペースを使用していることに注意してください。独自のネームスペースを設定した場合は、これらのコマンドおよび後続のすべてのコマンドで、そのネームスペースを置き換えます。kubectl -nネットアップ監視説明導入、エージェント、RS、DS、ポッドkubectl -nネットアップ監視説明導入kubectl -nネットアップ監視ログ&lt;monitoring operator pod &gt;-c manager kubectl -n NetApp Monitoring logs &lt;テレ グラム&lt;テレ グラム&lt;テレ グラム&gt; kubectl -モニタリングポッド&lt;NetApp-tre -ステータスポッド&gt;</block>
+  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
+  <block id="514faf5a71b4f0f67374c388f37aa0d7" category="cell">**</block>
+  <block id="54701d7c6ef5529abe15ceab8c8612cd" category="paragraph">-42;500台以上の管理対象ユニットと\*同時に5台までのアクティブなカスタムモニタに制限されている環境で使用可能** APIが限定されています</block>
 </blocks>
