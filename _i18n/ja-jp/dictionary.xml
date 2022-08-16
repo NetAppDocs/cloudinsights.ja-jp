@@ -8826,7 +8826,6 @@
   <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">ユーザアクセスブロックの前提条件</block>
   <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">この機能を使用するには、クラスタレベルのクレデンシャルが必要です。</block>
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。</block>
-  <block id="4563a2ec099bb3f18ab52f261f6897e8" category="paragraph">ユーザに付与された権限を持つcsuserなどのカスタムユーザを使用している場合は、次の手順に従ってCloudSecureにブロックユーザへの権限を付与します。</block>
   <block id="075530afc57aa5ff8851fb139e2fbbae" category="list-text">Cloud Secure で、[*Admin]&gt;[Automated Response Policies]&gt;[Response Policy Settings]&gt;[Block User Access*]の順に選択します。</block>
   <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">[Enable Block User Access]を[enable_enabled_]に設定します。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">自動ユーザアクセスブロックの設定方法</block>
@@ -8872,4 +8871,17 @@
   <block id="e056d3391fc09511bb4b998310f69c58" category="cell">APIアクセス&amp;&amp;</block>
   <block id="d54591f265027d735d3be71d57199e4a" category="cell">ビジネスインテリジェンスおよびレポート作成&amp;AST;&amp;ast;</block>
   <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">&amp;ast;アクティブなカスタムモニタは一度に5台までに制限されます&amp;plus; APIアクセスはエディション&amp;ast;&amp;ast;によって異なります; 500台以上の管理対象ユニットの環境で使用できます</block>
+  <block id="e8a2076095c01bcdd41cd90191e01972" category="admonition">Amazon FSXデータコレクタを使用している場合、SMBをブロックしても現在のユーザセッションは強制終了されません。を参照してください <block ref="330552a095a13e513ece685118db1083" category="inline-xref-macro-rx"></block> 詳細については、を参照してください。</block>
+  <block id="4c599f70e51d65668c4ce4bd1c33bb95" category="paragraph">ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってCloud Secure にユーザをブロックする権限を付与します。</block>
+  <block id="a8ebeed3ca8bbd5dcb31700e343f161c" category="paragraph">Cloud Secure トライアルの期限が切れた場合、またはエージェント/コレクタがダウンした場合に、ONTAP からユーザーを手動で復元するには、次の手順を実行します。</block>
+  <block id="f95989b518510dd543fddfe641a0760e" category="paragraph">Cloud Secure でブロックされているユーザのリストは、Usersリストページから取得できます。</block>
+  <block id="d429655e140835b91db45b4324358975" category="list-text">cluster_admin_credentialsを使用してONTAP クラスタ（ユーザのブロックを解除する場所）にログインします。（Amazon FSXの場合、FSXクレデンシャルを使用してログインします）。</block>
+  <block id="a450d857f06b830531fe0de70552762d" category="list-text">次のコマンドを実行して、すべてのSVMのCloud Secure for SMBでブロックされているすべてのユーザを表示します。</block>
+  <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">上記の出力では、2人のユーザーがドメインCSLABでブロックされました（US030、US040）。</block>
+  <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">上記の出力から位置を特定したら、次のコマンドを実行してユーザーのブロックを解除します。</block>
+  <block id="1f8fcb155f2b517c2c9ae95f65ae3623" category="list-text">コマンドを実行して、ユーザがブロックされていないことを確認します。</block>
+  <block id="a3b2696b55f3cdfe22afc4ee21f40ac8" category="paragraph">以前にブロックしたユーザに対しては、エントリは表示されません。</block>
+  <block id="ccfcbf1e5d2c0e260b83b0caf47be9db" category="cell">次のエラーが表示されます。svm1：ユーザドメイン\\user01の既存のCIFSセッションが閉じられていません。このエラーは、アラート詳細ページの[アクションの実行]セクション、および[アラートとユーザー]リストページの[アクセス制限履歴]に表示されます。このエラーが発生しても、ユーザーの現在のセッションは閉じられませんが、衝撃的な時間が経過するまでユーザーは新しいセッションをブロックされます。</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">前提条件</block>
+  <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">これは、Amazon FSXを搭載した既知の問題 です。Cloud Secure は既存のSMBセッションを閉じることができません。現在、Amazon FSXの既存のSMBセッションをブロックする回避策 はありません。コレクタのタイプがCVOまたはONTAP の場合は、に記載されている正しい権限を確認してください <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> セクション。</block>
 </blocks>
