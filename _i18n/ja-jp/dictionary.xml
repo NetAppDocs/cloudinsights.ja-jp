@@ -39,7 +39,6 @@
   <block id="48ddfbf9b74c53d0faaa56e85e7f4945" category="cell">クラウド指標</block>
   <block id="c804187aad1ac0e05bfe9734492a853f" category="cell">サービスメトリック</block>
   <block id="3e61ac3c29f7cbd9ed1cd4606d9a50e6" category="cell">監視とアラート生成</block>
-  <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="cell">API アクセス</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">シングルサインオン（ SSO ）</block>
   <block id="372735448eedd531647388e4231b11e5" category="cell">Cloud Secure ユーザデータアクセスの監査</block>
   <block id="296767e345f23610f06a21d1f03e36c6" category="cell">Cloud Secure Insider Threat Detection with AI/ML 』を参照してください</block>
@@ -8870,7 +8869,7 @@
   <block id="708a43ca283ea273fda53a8850915ef8" category="cell">CIエージェントをインストールしてKubernetes情報を収集するコマンドを実行しましたが、UIにKubernetes情報が表示されません。</block>
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">次のコマンドを実行し、出力を収集して、ネットアップサポートにお問い合わせください。これらのコマンドは、デフォルトのネームスペースを使用していることに注意してください。独自のネームスペースを設定した場合は、これらのコマンドおよび後続のすべてのコマンドで、そのネームスペースを置き換えます。kubectl -nネットアップ監視説明導入、エージェント、RS、DS、ポッドkubectl -nネットアップ監視説明導入kubectl -nネットアップ監視ログ&lt;monitoring operator pod &gt;-c manager kubectl -n NetApp Monitoring logs &lt;テレ グラム&lt;テレ グラム&lt;テレ グラム&gt; kubectl -モニタリングポッド&lt;NetApp-tre -ステータスポッド&gt;</block>
   <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast;</block>
-  <block id="cfd5ebf75a4f06628eea1779798f08d5" category="cell">&amp;ast;&amp;ast;</block>
-  <block id="fbcbad09f25603c31425bdbe7347ab04" category="cell">ビジネスインテリジェンスおよびレポート作成&amp;AST;&amp;ast;&amp;ast;</block>
-  <block id="78899749f4f598d5c1c70ec3895887bd" category="paragraph">&amp;AST;一度に5つのアクティブなカスタムモニタに制限されています&amp;AST;&amp;ast;利用可能な限定的なAPI &amp;ast;&amp;ast;&amp;ast; 500台以上の管理対象ユニットの環境で使用できます</block>
+  <block id="e056d3391fc09511bb4b998310f69c58" category="cell">APIアクセス&amp;&amp;</block>
+  <block id="d54591f265027d735d3be71d57199e4a" category="cell">ビジネスインテリジェンスおよびレポート作成&amp;AST;&amp;ast;</block>
+  <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">&amp;ast;アクティブなカスタムモニタは一度に5台までに制限されます&amp;plus; APIアクセスはエディション&amp;ast;&amp;ast;によって異なります; 500台以上の管理対象ユニットの環境で使用できます</block>
 </blocks>
