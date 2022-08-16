@@ -8870,7 +8870,7 @@
   <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">...を使用：</block>
   <block id="708a43ca283ea273fda53a8850915ef8" category="cell">CIエージェントをインストールしてKubernetes情報を収集するコマンドを実行しましたが、UIにKubernetes情報が表示されません。</block>
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">次のコマンドを実行し、出力を収集して、ネットアップサポートにお問い合わせください。これらのコマンドは、デフォルトのネームスペースを使用していることに注意してください。独自のネームスペースを設定した場合は、これらのコマンドおよび後続のすべてのコマンドで、そのネームスペースを置き換えます。kubectl -nネットアップ監視説明導入、エージェント、RS、DS、ポッドkubectl -nネットアップ監視説明導入kubectl -nネットアップ監視ログ&lt;monitoring operator pod &gt;-c manager kubectl -n NetApp Monitoring logs &lt;テレ グラム&lt;テレ グラム&lt;テレ グラム&gt; kubectl -モニタリングポッド&lt;NetApp-tre -ステータスポッド&gt;</block>
-  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
-  <block id="514faf5a71b4f0f67374c388f37aa0d7" category="cell">**</block>
-  <block id="54701d7c6ef5529abe15ceab8c8612cd" category="paragraph">-42;500台以上の管理対象ユニットと\*同時に5台までのアクティブなカスタムモニタに制限されている環境で使用可能** APIが限定されています</block>
+  <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast;</block>
+  <block id="cfd5ebf75a4f06628eea1779798f08d5" category="cell">&amp;ast;&amp;ast;</block>
+  <block id="a093ee1a6db03c2791705cf10c177d07" category="paragraph">&amp;#9;500台以上の管理対象ユニットと大規模な&amp;AST;アクティブなカスタムモニタが一度に5台まで使用可能な環境では'&amp;AST;限定的なAPIが用意されています</block>
 </blocks>
