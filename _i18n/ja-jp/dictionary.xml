@@ -8884,4 +8884,5 @@
   <block id="ccfcbf1e5d2c0e260b83b0caf47be9db" category="cell">次のエラーが表示されます。svm1：ユーザドメイン\\user01の既存のCIFSセッションが閉じられていません。このエラーは、アラート詳細ページの[アクションの実行]セクション、および[アラートとユーザー]リストページの[アクセス制限履歴]に表示されます。このエラーが発生しても、ユーザーの現在のセッションは閉じられませんが、衝撃的な時間が経過するまでユーザーは新しいセッションをブロックされます。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">前提条件</block>
   <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">これは、Amazon FSXを搭載した既知の問題 です。Cloud Secure は既存のSMBセッションを閉じることができません。現在、Amazon FSXの既存のSMBセッションをブロックする回避策 はありません。コレクタのタイプがCVOまたはONTAP の場合は、に記載されている正しい権限を確認してください <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> セクション。</block>
+  <block id="dfb65f9e847424acb7569e9d1d256de5" category="section-title">SMBのユーザを手動でリストア</block>
 </blocks>

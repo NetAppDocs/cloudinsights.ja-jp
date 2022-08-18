@@ -139,9 +139,11 @@ svm2         test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 2 entries were displayed.
 ....
-+
- == Manually Restore Users for SMB
 
+
+
+
+== SMBのユーザを手動でリストア
 
 Cloud Secure トライアルの期限が切れた場合、またはエージェント/コレクタがダウンした場合に、ONTAP からユーザーを手動で復元するには、次の手順を実行します。
 
