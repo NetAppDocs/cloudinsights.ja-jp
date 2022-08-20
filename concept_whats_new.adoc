@@ -12,6 +12,115 @@ keywords: features
 
 
 
+== 2022年8月
+
+
+
+=== Cloud Insights の外観は新しくなっています。
+
+今月から、「モニターと最適化」という名称が「観察性」に変更されました。ダッシュボード、クエリ、アラート、レポートなど、お気に入りの機能がすべてここに表示されます。また、新しい「セキュリティ」メニューで「Cloud Secure 」を探します。メニューのみが変更されています。機能は変更されていません。
+
+[role="thumb"]
+image:New_CI_Menu_2022.png["［新しいCI］メニュー"]
+
+「ヘルプ」メニューを検索していますか？
+
+画面の右上に表示されるようになりました。
+
+image:New_Help_Menu_2022.png["ヘルプメニューは右上隅にあります"]
+
+
+
+=== どこから始めるべきかわからない場合は、ONTAP の基礎を確認してください。
+
+link:concept_ontap_essentials.html["* ONTAP Essentials *"] は、NetApp ONTAP のインベントリ、ワークロード、データ保護に関する詳細なビューを提供する一連のダッシュボードとワークフローで、ストレージ容量やパフォーマンスを日々予測することもできます。利用率の高いコントローラが稼働しているかどうかを確認することもできます。ONTAP Essentialsは、ネットアップONTAP のすべての監視ニーズに最適な環境です。
+
+ONTAP Essentialsは、すべてのエディションで利用可能です。既存のONTAP オペレータや管理者が直感的に操作できるように設計されており、ActiveIQ Unified Managerからサービスベースの管理ツールへの移行を容易にします。
+
+image:ONTAP_Essentials_Menu_and_screen.png["ONTAP Essentialsの概要ダッシュボード"]
+
+
+
+=== ストレージデータファミリーはマージされます
+
+それを求められて、今それを持っている。ストレージ2および10進数のデータ単位が、ビットとバイトからテビッツやテラバイトに至る1つのファミリーに統合され、ダッシュボードにデータを簡単に表示できるようになりました。また、データレートは、現在では大きなファミリーの1つとなっています。
+
+image:DataFamilyMerged.png["2進数と10進数のデータファミリーのマージを示すドロップダウン"]
+
+
+
+=== ストレージで使用されている電力量
+
+NetApp_ONTAP.storage-shelf、NetApp_ONTAP.system_node、およびNetApp_ONTAP.cluster（電力消費のみ）指標を使用して、ONTAP ストレージシェルフとノードの電力消費、温度、ファン速度を表示および監視します。
+
+image:ONTAP_Power_Metrics_1.png["ストレージ電力消費量の指標"]
+
+
+
+=== プレビューからサイズ変更されたフィーチャー
+
+次の機能がプレビューから除外され、すべてのお客様が利用できるようになりました。
+
+|===
+
+
+| * 特徴 * | * 概要 * 
+
+
+| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
+
+
+| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+
+
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックすることも、アラートまたはユーザの詳細ページから手動でブロックすることもできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+|===
+
+
+=== データ収集の状態はどのようになっていますか？
+
+Cloud Insights には、Acquisition Unit用に2つの新しいハートビートモニタと、データコレクタの障害を通知する2つのモニタが用意されています。これらのコマンドを使用すると、データ収集の問題を迅速に通知できます。
+
+Data Collection_monitorグループで次のモニタを使用できるようになりました。
+
+* Acquisition Unit Heartbeat - Criticalをクリックします
+* Acquisition Unit Heartbeat -警告
+* コレクタでエラーが
+* コレクタ警告
+
+
+デフォルトでは、これらのモニタは_Paused _状態になっています。アラートをアクティブ化すると、データ収集の問題に関するアラートが表示されます。
+
+
+
+=== APIトークンの自動更新
+
+APIアクセストークンを自動更新に設定できるようになりました。この機能を有効にすると、期限切れトークン用に新しい/更新されたAPIアクセストークンが自動的に生成されます。期限切れトークンを使用しているCloud Insights エージェントは、対応する新規または更新されたAPIアクセストークンを使用するように自動的に更新されるため、シームレスな運用を継続できます。トークンを作成するときは、［トークンを自動的に更新］チェックボックスをオンにします。この機能は、現在のところ、Kubernetesプラットフォームで実行されているCloud Insights エージェントと最新のNetApp Kubernetes Monitoring Operatorでサポートされています。
+
+
+
+=== Basic Editionは、これまで以上に多くの機能を提供します
+
+トライアルは終了していますが、サブスクリプションがお客様に適しているかどうかまだ確認されていませんか？Basic Editionでは、現在のONTAP データコレクタでCloud Insights を引き続き使用できますが、VMwareのバージョン、トポロジ、およびIOS/Throughput / Latencyのデータも引き続きキャプチャできます。ストレージシステムでプレミアムサポートを受けているネットアップのお客様も、Cloud Insights のサポートを受けることができます。
+
+
+
+=== 詳細を確認する準備はできましたか？
+
+ヘルプ>サポートページの「*ラーニングセンター」セクションで、NetApp University Cloud Insights コースへのリンクを確認できます。
+
+
+
+=== オペレーティングシステムのサポート
+
+Cloud Insights Acquisition Unitでは、さらに次のオペレーティングシステムがサポートされます link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["すでにサポートされています"]：
+
+* Windows 11の場合
+
+
+'''
+
+
 == 2022年6月
 
 
@@ -85,7 +194,7 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 | Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスを制限します | 攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 
 
 | 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
@@ -153,7 +262,7 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 | 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスを制限します | 攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 
 
 | 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
@@ -209,7 +318,7 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 | 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスを制限します | 攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 
 
 | 応力の下の共有リソース | Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
@@ -351,10 +460,10 @@ image:LogQueryExplorer.png["ログクエリ"]
 | 管理者 | アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。 
 
 
-| ユーザ | アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことができます。 
+| ユーザ | アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックを行うことができます。 
 
 
-| ゲスト | アラートおよびフォレンジックを表示できます。ゲストロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことはできません。 
+| ゲスト | アラートおよびフォレンジックを表示できます。ゲストロールでは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックはできません。 
 |===
 
 

@@ -8119,8 +8119,6 @@
   <block id="6e8d08f021f143c0380bcfda2a0d8e35" category="paragraph">Cloud Insights では、ポッド、デモ onset 、 ReplicaSets が作成または削除されたとき、および新しい展開が作成されたときにアラートを生成することで、 Kubernetes 環境の変更に優先的に対応します。Kubernetes ではデフォルトのステータスが _paused_state に監視されるため、必要なものだけを有効にする必要があります。</block>
   <block id="25e271d2558ae8aca95f77cf3064f9f4" category="cell">内部ボリュームとボリューム容量のフル予測</block>
   <block id="6327e04265ebac4957d88ad9cb76d168" category="cell">Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。</block>
-  <block id="e90c4ace721cc2fab5257871d711796d" category="cell">Cloud Secure –攻撃に対するユーザアクセスを制限します</block>
-  <block id="e353c2255e0d23456f0d04e774cc242c" category="cell">攻撃が検出されたときにユーザーアクセスを制限する機能により、ビジネスクリティカルなデータの保護を強化できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="58114ec5d8ca1494b408777c1a724eef" category="cell">Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="9fc31ce4550c4f68c1ea81f5a37335aa" category="section-title">新しい Data Collector</block>
   <block id="01ec768781d34379b5889a634c19e5cc" category="section-title">Data Collector のその他のアップデート</block>
@@ -8896,4 +8894,47 @@
   <block id="641244a546c89759b8e5c60efd75767d" category="paragraph">さらに、 Cloud Insights もご利用いただけます <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> では、アクセス可能な API が決定されます。ユーザロールとゲストロールの権限は、管理者ロールよりも少なくなります。たとえば'監視機能で管理者ロールを持っていても'レポートでのユーザーロールを持っている場合は'データウェアハウスを除くすべてのAPIタイプを管理できます</block>
   <block id="0661e5cc01fe7da17bc8e2d8e2e34221" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各Cloud Insights フィーチャセットに含まれています（Observability、Security、Reporting）。</block>
   <block id="98d8ebff3e8aa04aa14171f6564f1ec7" category="paragraph">現在のCloud Insights 機能はすべて使用できます。将来のプレビューに備えて、このスペースをご確認ください。</block>
+  <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
+  <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">Cloud Insights の外観は新しくなっています。</block>
+  <block id="d3d93d4a561aa9307d47023701a0c283" category="paragraph">今月から、「モニターと最適化」という名称が「観察性」に変更されました。ダッシュボード、クエリ、アラート、レポートなど、お気に入りの機能がすべてここに表示されます。また、新しい「セキュリティ」メニューで「Cloud Secure 」を探します。メニューのみが変更されています。機能は変更されていません。</block>
+  <block id="f3f29af86c9b9c4db0c68765dfa7f051" category="inline-image-macro">［新しいCI］メニュー</block>
+  <block id="87f2cc206fb1e47d7441af559046dd86" category="paragraph"><block ref="87f2cc206fb1e47d7441af559046dd86" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b93edf0748e59f362dfa4896c478b93" category="paragraph">「ヘルプ」メニューを検索していますか？</block>
+  <block id="5c0bfda83c5d90521dd05955a44b1fc7" category="paragraph">画面の右上に表示されるようになりました。</block>
+  <block id="e50f2f4f823dfcb7955ac73ed07dfb02" category="inline-image-macro">ヘルプメニューは右上隅にあります</block>
+  <block id="1ee9fcbb5f9692177c85538fe0554fc5" category="paragraph"><block ref="1ee9fcbb5f9692177c85538fe0554fc5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db7ffbe90af5c64ff2e1d0b1a42439dc" category="section-title">どこから始めるべきかわからない場合は、ONTAP の基礎を確認してください。</block>
+  <block id="89cb10d77085cf41a426f6c7d7025df0" category="inline-link-macro">* ONTAP Essentials *</block>
+  <block id="2e414b94b1201a3f3cce93eac0021751" category="paragraph"><block ref="223512fb854e2c6568b12f6404a6d95e" category="inline-link-macro-rx"></block> は、NetApp ONTAP のインベントリ、ワークロード、データ保護に関する詳細なビューを提供する一連のダッシュボードとワークフローで、ストレージ容量やパフォーマンスを日々予測することもできます。利用率の高いコントローラが稼働しているかどうかを確認することもできます。ONTAP Essentialsは、ネットアップONTAP のすべての監視ニーズに最適な環境です。</block>
+  <block id="318810ea99242f63913a4d0569f6a3e1" category="paragraph">ONTAP Essentialsは、すべてのエディションで利用可能です。既存のONTAP オペレータや管理者が直感的に操作できるように設計されており、ActiveIQ Unified Managerからサービスベースの管理ツールへの移行を容易にします。</block>
+  <block id="f41594e15ab03658906c309b3fa344fb" category="section-title">ストレージデータファミリーはマージされます</block>
+  <block id="4506719f01b92a3f00a232b1f130938b" category="paragraph">それを求められて、今それを持っている。ストレージ2および10進数のデータ単位が、ビットとバイトからテビッツやテラバイトに至る1つのファミリーに統合され、ダッシュボードにデータを簡単に表示できるようになりました。また、データレートは、現在では大きなファミリーの1つとなっています。</block>
+  <block id="b69c1b6f0730aa5a7c71579ff7cdf146" category="inline-image-macro">2進数と10進数のデータファミリーのマージを示すドロップダウン</block>
+  <block id="6a2b2c80a567a29026c0efe569422fc7" category="paragraph"><block ref="6a2b2c80a567a29026c0efe569422fc7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62775367d0be8fb85879a7417d1c5f27" category="section-title">ストレージで使用されている電力量</block>
+  <block id="c460230a0d71f4c2e49713913fd0a01c" category="paragraph">NetApp_ONTAP.storage-shelf、NetApp_ONTAP.system_node、およびNetApp_ONTAP.cluster（電力消費のみ）指標を使用して、ONTAP ストレージシェルフとノードの電力消費、温度、ファン速度を表示および監視します。</block>
+  <block id="c0545994150347fb8590eb6dfe1934ab" category="inline-image-macro">ストレージ電力消費量の指標</block>
+  <block id="1b7dea988e626ae19b6022dad8fcffae" category="paragraph"><block ref="1b7dea988e626ae19b6022dad8fcffae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3280f3cc88209e72bdf5878afe5afec2" category="section-title">プレビューからサイズ変更されたフィーチャー</block>
+  <block id="b15e043f2e8db0aa222ae7311e987712" category="paragraph">次の機能がプレビューから除外され、すべてのお客様が利用できるようになりました。</block>
+  <block id="64f0171311f2657dbd0578fca9fb2fa5" category="cell">Cloud Secure –攻撃に対するユーザアクセスをブロックします</block>
+  <block id="6ad1deaea422210384bf8c46adb4027a" category="cell">攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックすることも、アラートまたはユーザの詳細ページから手動でブロックすることもできます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="2d6bee64b9e0e23f822f86b9ef8e0060" category="section-title">データ収集の状態はどのようになっていますか？</block>
+  <block id="62eb208f255de6653342ec37c0ec229b" category="paragraph">Cloud Insights には、Acquisition Unit用に2つの新しいハートビートモニタと、データコレクタの障害を通知する2つのモニタが用意されています。これらのコマンドを使用すると、データ収集の問題を迅速に通知できます。</block>
+  <block id="b355ccf4f7e6c9eb6dbdec86e748dbf6" category="paragraph">Data Collection_monitorグループで次のモニタを使用できるようになりました。</block>
+  <block id="f080c7e2db3c941a50244332dcd5aa78" category="list-text">Acquisition Unit Heartbeat - Criticalをクリックします</block>
+  <block id="0fdd65b6d5fd4a7a8433446830711e1c" category="list-text">Acquisition Unit Heartbeat -警告</block>
+  <block id="a211304a1293c2bf5a11a69b7b8c27be" category="paragraph">デフォルトでは、これらのモニタは_Paused _状態になっています。アラートをアクティブ化すると、データ収集の問題に関するアラートが表示されます。</block>
+  <block id="12f80d401d5ff4d4547512db4d3b2c6c" category="section-title">APIトークンの自動更新</block>
+  <block id="27ba6c06585f4077b49dfa97c8d3628b" category="paragraph">APIアクセストークンを自動更新に設定できるようになりました。この機能を有効にすると、期限切れトークン用に新しい/更新されたAPIアクセストークンが自動的に生成されます。期限切れトークンを使用しているCloud Insights エージェントは、対応する新規または更新されたAPIアクセストークンを使用するように自動的に更新されるため、シームレスな運用を継続できます。トークンを作成するときは、［トークンを自動的に更新］チェックボックスをオンにします。この機能は、現在のところ、Kubernetesプラットフォームで実行されているCloud Insights エージェントと最新のNetApp Kubernetes Monitoring Operatorでサポートされています。</block>
+  <block id="8f10a9bc5a8ba504bde35cb40a25605d" category="section-title">Basic Editionは、これまで以上に多くの機能を提供します</block>
+  <block id="8186bdac49bf2abfc340f91e81ee77e3" category="paragraph">トライアルは終了していますが、サブスクリプションがお客様に適しているかどうかまだ確認されていませんか？Basic Editionでは、現在のONTAP データコレクタでCloud Insights を引き続き使用できますが、VMwareのバージョン、トポロジ、およびIOS/Throughput / Latencyのデータも引き続きキャプチャできます。ストレージシステムでプレミアムサポートを受けているネットアップのお客様も、Cloud Insights のサポートを受けることができます。</block>
+  <block id="332f3415df49d49dabe51fb2d7f62e40" category="section-title">詳細を確認する準備はできましたか？</block>
+  <block id="f68b94c43b4b7f0dcab25235f8af5de9" category="paragraph">ヘルプ&gt;サポートページの「*ラーニングセンター」セクションで、NetApp University Cloud Insights コースへのリンクを確認できます。</block>
+  <block id="1092735d9c4841e6e9b1620161763b75" category="paragraph">Cloud Insights Acquisition Unitでは、さらに次のオペレーティングシステムがサポートされます <block ref="e27610920cf83f6a88b088882e8c727e" category="inline-link-macro-rx"></block>：</block>
+  <block id="8c4731f1a5288444bb2510ff8d967cc3" category="list-text">Windows 11の場合</block>
+  <block id="2ad48475868a5acf715f48e45c20d2d1" category="cell">Cloud Secure –攻撃に対するユーザアクセスをブロックします</block>
+  <block id="4e28671aa760c1ba504510846bdf520c" category="cell">攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="a78d7cf3a7b4f6fe8edcca9384e823a8" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックを行うことができます。</block>
+  <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">アラートおよびフォレンジックを表示できます。ゲストロールでは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックはできません。</block>
 </blocks>
