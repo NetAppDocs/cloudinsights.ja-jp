@@ -20,18 +20,10 @@ NOTE: 正確な監査およびデータレポートを作成するためには�
 NOTE: Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <<Verifying Kubernetes Checksums>>。
 
 
-
-== オペレータベースのインストールか、スクリプトベースのインストールか？
-
-Cloud Insights は、Kubernetesクラスタを監視するためのKubernetesオペレータを構築しました。NetApp Kubernetes Monitoring Operator（NKMO）は、スクリプトでインストールされる監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能な監視をより柔軟に設定し、お客様による設定操作を減らすことができ、K8sクラスタで実行される他のソフトウェアを監視する機会を強化できます。
-
-NKMOは、Cloud Insights へのデータ収集、変換、および配信に、基礎となるテレグラムソフトウェアを引き続き使用します。これは、カスタムリソース定義とカスタムリソースで強化され、Kubernetesクラスタごとに監視をカスタマイズできるようになりました。
-
+toc::[]
 
 
 == エージェントをインストールしています
-
-サービスデータコレクタをインストールしていて、エージェントをまだ設定していない場合は、最初に適切なオペレーティングシステム用のエージェントをインストールするように求められます。このトピックでは、 Tegraf エージェントを次のオペレーティングシステムにインストールする手順について説明します。
 
 エージェントをインストールするには、まず次の手順を実行する必要があります。
 
@@ -57,26 +49,19 @@ NOTE: プロキシを使用している場合は、 Tegraf エージェントを
 
 == Kubernetes にエージェントをインストールする
 
-Kubernetes では、次の 2 つの方法でデータを収集できます。
-
-* NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。
-* 従来のスクリプトベースのエージェントのインストール（非推奨）
-
-
-インストール手順は、選択した内容によって異なります。
-
-image:Kubernetes_Operator_Tile_Choices.png["Kubernetes のインストール方法の選択"]
+Cloud Insights では、Kubernetesコレクション向けのNetApp Kubernetes Monitoring Operator *を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
 
 .前提条件
-* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。
+* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります <<upgrading-the-agent,アップグレード>> PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。
 
 
 * OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。
 * NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。
-* 次のコマンドを使用できる必要があります。 _curl 、 _sudo _ （スクリプトベースのインストールには不要）、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
-* kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。
+* 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
+* kube-state-metricsは必須であり、NetApp Kubernetes Monitoring Operatorインストールとともに自動的にインストールされます。
 * プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。
-* セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。これはオペレータベースのインストールでインストールされます。
+
+
 * Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。
 
 
@@ -90,7 +75,7 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 | プラットフォーム | ラベル 
 
 
-| Kubernetes v1.17 以降 | Kubernetes の IO / OS = Linux 
+| Kubernetes V1.19以降 | Kubernetes の IO / OS = Linux 
 
 
 | Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用 | catt.io/os=linux 
@@ -183,14 +168,14 @@ Cloud Insights からオペレータ用 Docker イメージを取得します。
 オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。パブリックリポジトリと同じディレクトリ構造を使用します。次のオープンソースイメージをダウンロードする必要があります。
 
 ....
-docker.io/telegraf:1.21.4
-gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0
+docker.io/telegraf: 1.22.3
+gcr.io/kubebuilder/kube-rbac-proxy: v0.11.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.4.2
 ....
 FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。
 
 ....
-docker.io/fluent-bit:1.8.12
+docker.io/fluent-bit:1.9.3
 docker.io/kubernetes-event-exporter:0.10
 ....
 エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。
@@ -222,9 +207,9 @@ Monitoring operator環境を編集して、新しいDocker repoの場所を反�
  image: <same as "docker-repo" field above>/kubebuilder/kube-rbac-proxy:<kube-rbac-proxy-version>
 
 
-=== スクリプトベースのKubernetes監視からオペレータベースの監視へのアップグレード
+=== スクリプトベースのKubernetes監視からNetApp Kubernetes Monitoring Operatorにアップグレードします
 
-スクリプトベースのKubernetes監視をすでにインストールしている場合は、次の手順に従って、オペレータベースの監視にアップグレードします。
+以前にインストールしたスクリプトベースのKubernetesエージェントをNetApp Kubernetes Monitoring Operatorにアップグレードする場合は、次の手順を実行します。
 
 アップグレードの手順
 
@@ -259,110 +244,19 @@ image:KubernetesOperatorTile.png["Kubernetesオペレータ用タイル"]
 
 
 
-== スクリプトベースのインストール
+== NetApp Kubernetes Monitoring Operatorを停止および開始します
 
+NetApp Kubernetes Monitoring Operatorを停止するには、次の手順を実行します
 
-NOTE: スクリプトベースのインストールは廃止されました。Kubernetesクラスタの監視には、Kubernetesオペレータベースの収集ツールを使用してください。
+ kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=0
+NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実行します
 
-image:Kubernetes_Install_Agent_screen.png["スクリプトベースのインストール"]
-
-.Kubernetes にスクリプトベースのエージェントをインストールする手順：
-. エージェントアクセスキーを選択します。
-. インストールダイアログの * エージェントインストーラスニペットのコピー * ボタンをクリックします。コマンドブロックを表示する場合は、オプションで、 [__ Reveal Agent Installer Snippet_] ボタンをクリックします。
-. コマンドを次のようにして bash_window に貼り付けます。
-. 必要に応じて、 install コマンドの一部として名前空間をオーバーライドしたり、クラスタ名を指定したりできます。そのためには、コマンドブロックを変更して final_./$installerNam_ の前に次のいずれかまたは両方を追加します
-+
-** cluster_name = < クラスタ名 >
-** namespace = < 名前空間 >
-+
-コマンドブロックには、次のように配置されています。
-
-+
- installerName=cloudinsights-kubernetes.sh ... && CLUSTER_NAME=<cluster_name> NAMESPACE=<new_namespace> sudo -E -H ./$installerName --download --install
-+
-
-TIP: _cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指標を収集し、 _namespace_は Tegraf エージェントを導入するネームスペースです。指定したネームスペースがない場合は作成されます。
-
-
-
-. 準備ができたら、コマンドブロックを実行します。
-. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。明示的に _namespace__ を設定していない場合は、名前を入力するように求められます。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
-. 完了したら、 [* Complete Setup* （セットアップ完了） ] をクリックします。
-
-
-
-
-=== Kubernetes スクリプトベースのプロキシサポートを設定しています
-
-
-NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
-
-プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
-
- export https_proxy=<proxy_server>:<proxy_port>
-* Tegraf エージェントのインストール後に、 appropriate _https_proxy_ および / または _http_proxy_environment 変数を、 _TETRF -demonset および _TETR_replicaset に追加して設定します。
-
- kubectl edit ds telegraf-ds
-....
-…
-       env:
-       - name: https_proxy
-         value: <proxy_server>:<proxy_port>
-       - name: HOSTIP
-         valueFrom:
-           fieldRef:
-             apiVersion: v1
-             fieldPath: status.hostIP
-…
-....
- kubectl edit rs telegraf-rs
-....
-…
-       env:
-       - name: https_proxy
-         value: <proxy_server>:<proxy_port>
-       - name: HOSTIP
-         valueFrom:
-           fieldRef:
-             apiVersion: v1
-             fieldPath: status.hostIP
-…
-....
-次に Tegraf を再起動します。
-
-....
-kubectl delete pod telegraf-ds-*
-kubectl delete pod telegraf-rs-*
-....
-
-
-== DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動
-
-DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。
-
-エージェントの停止と再起動を容易にするには、次のコマンドを使用して Tegraf DemonSet YAML および ReplicaSet YAML を生成します。これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。
-
-独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。
-
-....
-kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml > /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml > /tmp/telegraf-rs.yaml
-....
-その後、次のコマンドを使用して Tegraf サービスを停止および開始できます。
-
-....
-kubectl --namespace ci-monitoring delete ds telegraf-ds
-kubectl --namespace ci-monitoring delete rs telegraf-rs
-....
-....
-kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
-....
+ kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
 
 
 == Kubernetes からデータを収集するようにエージェントを設定します
 
-注：スクリプトベースのインストールのデフォルトの名前空間は、 _CI-MOCI_です 。オペレータベースのインストールの場合、デフォルトのネームスペースは _NetApp-monitoring _ です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。
+注：NetApp Kubernetes Monitoringオペレータベースのインストールのデフォルトのネームスペースは、_NetApp-monitoring _です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。
 
 エージェントが実行するポッドは、次の項目にアクセスできる必要があります。
 
@@ -414,13 +308,16 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 ----
 
 
-== kube-state-metrics サーバをインストールしています
+== Kubeステートメトリックについて
+
+NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は不要で、ドキュメントのこのセクションはスキップできます。参考情報を提供するために、以下の資料を用意しています。
+
+
+
+=== kube-state-metrics サーバをインストールしています
 
 
 NOTE: オペレータベースのインストールでは、 kube-state-metrics のインストールを処理します。オペレータベースのインストールを実行する場合は、このセクションを省略してください。
-
-
-NOTE: Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください link:https://github.com/kubernetes/kube-state-metrics/blob/master/docs/cli-arguments.md["kube-state-metrics ドキュメント"]。
 
 kube-state-metrics サーバをインストールするには、次の手順を実行します（スクリプトベースのインストールを実行する場合に必要です）。
 
@@ -433,7 +330,7 @@ kube-state-metrics サーバをインストールするには、次の手順を�
 
 
 
-== kube-state-metrics カウンタ
+=== kube-state-metrics カウンタ
 
 kubbe 状態メトリックカウンタの情報にアクセスするには、次のリンクを使用します。
 
@@ -456,9 +353,15 @@ kubbe 状態メトリックカウンタの情報にアクセスするには、�
 
 == エージェントをアンインストールしています
 
+以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります <<upgrading-the-agent,アップグレード>> を使用して、NetApp Kubernetes Monitoring Operatorに接続します。
+
+
+
+=== スクリプトベースのエージェントを削除します
+
 これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
-Kubernetes 上のスクリプトベースのエージェントをアンインストールするには、次の手順を実行します。
+Kubernetes上のスクリプトベースのエージェント（NetApp Kubernetes Monitoring Operatorへのアップグレードなど）をアンインストールするには、次の手順を実行します。
 
 モニタリングネームスペースが Telegraf 専用に使用されている場合：
 
@@ -467,15 +370,18 @@ Kubernetes 上のスクリプトベースのエージェントをアンインス
 モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
 
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-オペレータベースのインストールの場合は、次のコマンドを実行します。
+
+
+=== をクリックして、NetApp Kubernetes Monitoring Operatorを削除します
+
+これらのコマンドでは、デフォルトのネームスペースである「 NetApp-monitoring 」が使用されていることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
 ....
 kubectl delete ns netapp-monitoring
-kubectl delete agent agent-monitoring-netapp
+kubectl delete clusterrole <name-space>-agent-manager-role <name-space>-agent-proxy-role
+kubectl delete clusterrolebinding <name-space>-agent-manager-rolebinding <name-space>-agent-proxy-rolebinding
 kubectl delete crd agents.monitoring.netapp.com
-kubectl delete role agent-leader-election-role
-kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
-kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+kubectl delete psp <name-space>-psp-nkmo
 ....
 スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。
 
@@ -484,19 +390,47 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 
 == Agent をアップグレードしています
 
+
+NOTE: スクリプトベースのエージェントがインストールされている場合は、NetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。
+
+
+
+=== スクリプトベースのエージェントからNetApp Kubernetes Monitoring Operatorへのアップグレード
+
 これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
 テレグラムエージェントをアップグレードするには、次の手順に従います。
 
-. 既存の構成をバックアップします。
+* クラスタ名をメモします。クラスタ名を表示するには、次のいずれかの照合を実行します。
+
+
+オペレータの場合：
+
+ kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
+スクリプトベースの場合：
+
+ kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
+* 既存の構成をバックアップします。
 +
  kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
-. Agent をアンインストールします（手順については、上記を参照）。
-. link:#kubernetes["新しいエージェントをインストールします"]。
+* <<uninstalling-the-agent,をアンインストールします>> 既存のエージェント
+* <<installing-the-agent,をインストールします>> 新しいエージェント]。
 
 
+
+
+=== NetApp Kubernetes Monitoring Operatorのアップグレード
+
+オペレータベースのインストールの場合は、次のコマンドを実行します。
+
+....
+kubectl delete ns netapp-monitoring
+kubectl delete crd agents.monitoring.netapp.com
+kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+....
 
 
 == Kubernetes のチェックサムの検証
@@ -596,10 +530,16 @@ Windows の場合
 | Telegraf から次のようなエラーメッセージが表示されますが、 Telegraf は起動して実行されます。 Oct 11 14 ： 23 ： 41 IP-172-39-47 systemd[1] ： InfluxDB への指標の報告用に、プラグイン駆動型のサーバーエージェントを起動しました。10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/テレ グラム /.cache/snowflake 、 err: mkdir /etc/テレ グラム f/.ca che: 許可が拒否されました。ignored \n" func = "gosnowfleke. (*defaultLogger).Errorf" file="log. go:120" Oct 11 14:23:41 IP-172-21-39-47 TEテレ グラフ [1827]: time="2021 - 10-11T14:23:41Z" level=error.msg=" 失敗しました。無視されます。/etc/テレ グラム /.cache/snowflake/ocspa_response_cache.json を開きます。ファイルまたはディレクトリがありません \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"Oct. 1114:23:41 IP-172-41-39-47 テレグラム [1827:1127]~21-21Z: Telegraf 1.19.3 を起動しています | これは問題と呼ばれています。を参照してください link:https://github.com/influxdata/telegraf/issues/9407["この GitHub の記事"] 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。 
 
 
-| Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied" | SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかを実行してください。•スクリプトベースのインストールの場合は、テレグラム DS を編集し（「 kubectl edit DS テレグラム」）、「特権 : false 」を「特権 : true 」に変更します。オペレータベースのインストールの場合は、エージェント（「 kubectl edit agent agent-monitoring -netapp 」）を編集し、特権モードを「 true 」に変更します。 
+| Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied" | SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかの操作を行います。•エージェントを編集する（「kubectl edit agent agent-monitoring netapp」）。さらに、「privileged-mode：false」を「privileged-mode：true」に変更する。 
 
 
 | Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした | Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
+
+
+| PSP環境を持っています。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSPをサポートする最新のNKMOにアップグレードするには、次の手順に従います。1.前の監視オペレータをアンインストールします。kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrole binding agent-manager-role binding agent-proxy-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -pro資料 室最新バージョンのモニタリングオペレータを配備します。 
+
+
+| NKMOを導入する際に問題が発生し、PSPを使用しています。 | 1.次のコマンドを使用して、エージェントを編集します。kubectl -n <name-space> edit agent 2.「security-policy enabled」を「false」に設定します。これにより、POSセキュリティポリシーが無効になり、NKMOを展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n <name-space> 
 
 
 | NetApp Kubernetes Monitoring Operatorのインストール後、すぐにログに次のメッセージが表示されます。inputs.prometheus]プラグインでエラーが発生しました：\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics: get\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:へのHTTP要求の送信時にエラーが発生しました。tcp：lookup be-state-metrics .<namespあれ ば.svc.local:該当するホストはありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 

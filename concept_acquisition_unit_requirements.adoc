@@ -21,7 +21,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | コンポーネント | Linux 要件 | Windows 要件 
 
 
-| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2 ~ 7.9、8.1 ~ 8.4 * Ubuntu Server：18.04および20.04 LTSこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 | ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022このコンピュータでは、他のアプリケーションレベルのソフトウェアは実行されません。専用のサーバを使用することを推奨します。 
+| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2 ~ 7.9、8.1 ~ 8.4 * Ubuntu Server：18.04および20.04 LTSこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 | ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
 
 
 | CPU | 2 個の CPU コア | 同じ 

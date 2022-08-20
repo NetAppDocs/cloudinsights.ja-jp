@@ -12,7 +12,7 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 toc::[]
 Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、トライアルモードとサブスクリプションモードのどちらであるかによって異なります。
 
-image:Support_with_Chat.png["サポートページ"]
+image:SupportPageWithLearningCenter.png["サポートページ"]
 
 
 
@@ -127,3 +127,9 @@ image:Support_View_SN.png["サポート SN を確認します"]
 == Cloud Insights データコレクタのサポートマトリックス
 
 では、サポートされているデータコレクタに関する情報や詳細を表示またはダウンロードできます link:CloudInsightsDataCollectorSupportMatrix.pdf["* Cloud Insights データ・コレクタ・サポート・マトリックス * 、 role="external""]。
+
+
+
+=== ラーニングセンター
+
+登録内容に関係なく、* Help > Support *は、Cloud Insights を最大限に活用できるよう、NetApp Universityのいくつかのコースにリンクしています。チェックアウト！

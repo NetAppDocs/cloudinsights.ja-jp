@@ -11,9 +11,6 @@ summary: 分析情報は、Kubernetesスペースがいついっぱいになる�
 [role="lead"]
 環境のスペース不足は、決して良い状況ではありません。Cloud Insights は、Kubernetesの永続ボリュームがフルになるまでの時間を予測するのに役立ちます。
 
-
-NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 link:/concept_preview_features.html["詳細はこちら。"] Cloud Insights プレビューフィーチャーについて
-
 Space_Insightで実行されている_ Kubernetes名前空間を使用すると、容量不足のリスクがあるKubernetes名前空間のワークロードを表示できます。各永続ボリュームがいっぱいになるまでに推定される残り日数を確認できます。
 
 このInsightを表示するには、[* Dashboards > Insights（ダッシュボード>インサイト*）]に移動します。

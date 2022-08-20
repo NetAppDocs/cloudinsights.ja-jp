@@ -787,7 +787,6 @@
   <block id="bcc3225d741abe003ad8a9f0472f8e0f" category="cell">アセットページ：表示</block>
   <block id="e1e6805adf2b0c232077411d5b3c6f84" category="cell">監査：表示</block>
   <block id="3ad3b94ea7e29fe0f9f1f0a0f4b95640" category="cell">クラウドコスト</block>
-  <block id="83f121ee28583626410ec235e4c3a84a" category="cell">Cloud Secure *</block>
   <block id="d92b97b5bd045f3cc0dd423eb7aad931" category="cell">ダッシュボード：作成 / 変更 / 削除</block>
   <block id="cbffc03121243a64702f719493c2ece0" category="cell">ダッシュボード：表示</block>
   <block id="01cbff12e5be125caf82ae0d33bfcd0a" category="cell">データコレクタ：追加 / 変更 / ポーリング / 削除</block>
@@ -5398,20 +5397,6 @@
   <block id="f1f45371fb9bb18dae05a3bbc8c3fbc0" category="cell">Kubernetes の IO / OS = Linux</block>
   <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用</block>
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">catt.io/os=linux</block>
-  <block id="3c3ac08f88c7317ac9d41d3b669cbc27" category="list-text">インストールダイアログの * エージェントインストーラスニペットのコピー * ボタンをクリックします。コマンドブロックを表示する場合は、オプションで、 [__ Reveal Agent Installer Snippet_] ボタンをクリックします。</block>
-  <block id="c3e7ae0efafea510710a12fe0f0d609a" category="list-text">必要に応じて、 install コマンドの一部として名前空間をオーバーライドしたり、クラスタ名を指定したりできます。そのためには、コマンドブロックを変更して final_./$installerNam_ の前に次のいずれかまたは両方を追加します</block>
-  <block id="e1a5dab3e4ad3574b29d38315af67877" category="list-text">cluster_name = &lt; クラスタ名 &gt;</block>
-  <block id="8d452c9dd71946426462bb948da29ba1" category="list-text">namespace = &lt; 名前空間 &gt;</block>
-  <block id="a16c56e9bf65ad3b7b874edee04a172d" category="admonition">_cluster_name _ は Cloud Insights から Kubernetes クラスタの名前で指標を収集し、 _namespace_は Tegraf エージェントを導入するネームスペースです。指定したネームスペースがない場合は作成されます。</block>
-  <block id="a49846985b439fe0226db69fec5a37b3" category="list-text">準備ができたら、コマンドブロックを実行します。</block>
-  <block id="f8dad256798b9f55db0111e9f6fa89aa" category="list-text">コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。明示的に _namespace__ を設定していない場合は、名前を入力するように求められます。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。</block>
-  <block id="4982b7b8dc760f43a8412361a66b103f" category="list-text">完了したら、 [* Complete Setup* （セットアップ完了） ] をクリックします。</block>
-  <block id="b48de51edae08102b98dd048f7903a05" category="paragraph">DemonSet と ReplicaSet が Kubernetes クラスタ上に作成され、必要な Telegraf エージェント / ポッドが実行されます。デフォルトでは、これらの Telegraf エージェント / ポッドはマスターノードと非マスターノードの両方にスケジュールされます。</block>
-  <block id="4d38edd7b7c9375065c0ea7fde2002ce" category="paragraph">エージェントの停止と再起動を容易にするには、次のコマンドを使用して Tegraf DemonSet YAML および ReplicaSet YAML を生成します。これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。</block>
-  <block id="925b82fe7b7df059708510a3af94e2d0" category="paragraph">独自のネームスペースを設定した場合は、これらのネームスペースと後続のすべてのコマンドおよびファイルを置き換えます。</block>
-  <block id="27632d6c587ce664ee73ab41cf584c2d" category="paragraph">その後、次のコマンドを使用して Tegraf サービスを停止および開始できます。</block>
-  <block id="d3f2095232996254a1ce9d2dd9efc5b0" category="paragraph">* Tegraf エージェントのインストール後に、 appropriate _https_proxy_ および / または _http_proxy_environment 変数を、 _TETRF -demonset および _TETR_replicaset に追加して設定します。</block>
-  <block id="fc8f446a9ea6e6bdd7e365563b8c3851" category="paragraph">次に Tegraf を再起動します。</block>
   <block id="1a2ec26374f8d36de076929c5ff28aa8" category="section-title">Kubernetes からデータを収集するようにエージェントを設定します</block>
   <block id="f1e81401ee0afe2275193298ef588120" category="list-text">ホストパス</block>
   <block id="5eeadeea1e2bd82727f9a220408a5f2a" category="list-text">ConfigMap</block>
@@ -5452,8 +5437,6 @@
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">モニタリングネームスペースが Telegraf 専用に使用されている場合：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：</block>
   <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">既存の構成をバックアップします。</block>
-  <block id="2dae4ebf3cd52678b8e5d2465189428c" category="list-text">Agent をアンインストールします（手順については、上記を参照）。</block>
-  <block id="74f5c6d32f2296f5957491bc1daf425c" category="list-text"><block ref="46fff369b4d49c060bdfe983d9141e8d" category="inline-link-macro-rx"></block>。</block>
   <block id="e7d024454be5ad9e8d0f6defe29e154f" category="section-title">エージェントインストールのトラブルシューティング</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">エージェントの設定で問題が発生した場合の対処方法を次に示します。</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">すでに Cloud Insights を使用してエージェントをインストールしました</block>
@@ -7073,11 +7056,8 @@
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">詳細については、を参照してください<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">シングルサインオン（ SSO ）許可</block>
-  <block id="ebbdc244249c4bebdb539839ef825e95" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。（ Cloud Secure 機能では、 _User_ROLES および _Guest_ROLES は使用できません）。ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
   <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">ユーザアカウントを作成または変更するには、管理者権限を持つアカウントを使用します。各ユーザアカウントには、次の権限レベルの Cloud Insights 機能ごとにロールが割り当てられます。</block>
-  <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="cell">監視</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">アカウント所有者</block>
-  <block id="b754159e4e957eec4566aef2214ed483" category="cell">サブスクリプションの変更、課金情報および使用状況の表示、および Monitoring &amp; Optimization 、 Cloud Secure 、および Reporting のすべての管理者機能を実行できます。また、ユーザーを招待して管理したり、 SSO 認証とアイデンティティフェデレーションの設定を管理したりすることもできます。Cloud Insights に登録すると、最初のアカウント所有者が作成されます。Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者を設定することを強くお勧めします。 </block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。</block>
   <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">ダッシュボード、クエリ、アラート、アノテーション、アノテーションルール、 アプリケーションをサポートし、デバイス解決を管理できます。</block>
   <block id="70fb52e38580a301b191eb366ac4d029" category="cell">すべてのゲスト / コンシューマ機能を実行できるほか、レポートとダッシュボードの作成と管理も可能です。</block>
@@ -7085,7 +7065,6 @@
   <block id="024adade9cb0061af998b7d3f3e85f0a" category="cell">レポートの表示、スケジュール設定、実行、および言語やタイムゾーンなどの個人設定を行うことができます。ゲスト / コンシューマは、レポートの作成や管理タスクの実行はできません。</block>
   <block id="ec0921e40c81a97ba64c076f0ada5cc3" category="section-title">ユーザーロール別の Cloud Insights 権限</block>
   <block id="83182dfe9652d91a9dff49ae5051115e" category="list-text">Cloud Insights の各機能に対するユーザのロールを選択します。</block>
-  <block id="6e8526c3709a72705e37b6942beed39a" category="admonition">選択できる機能とロールは、特定の管理者ロールでアクセスできる機能によって異なります。たとえば、 Reporting 専用の管理者ロールが割り当てられている場合、 Reporting で任意のロールにユーザを割り当てることはできますが、 Monitor and Optimize または Cloud Secure のロールを割り当てることはできません。</block>
   <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">ユーザロールの選択</block>
   <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="248f830b158797f9c038ea35ea266b89" category="section-title">2021年8月</block>
@@ -7148,7 +7127,6 @@
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">オンボーディング中にデータコレクタを選択するときに [* プロキシ設定 * ] リンクをクリックするか、 [* ヘルプ &gt; サポート * ] ページの [_ プロキシ設定 _ ] の下のリンクをクリックすると、プロキシエンドポイントの URL を表示できます。次のようなテーブルが表示されます。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">プロキシエンドポイントテーブル</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">kube-state-metrics ドキュメント</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">プロキシエンドポイントの表示</block>
   <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新しい監査ページのユーザーインターフェイス</block>
   <block id="50c786c9efcadf10b6b80a91b4bb98cf" category="inline-link-macro">監査ページ</block>
@@ -7222,7 +7200,6 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">ユーザを削除します</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">管理者ロールを持つユーザーは ' ユーザーの名前をクリックして ' ダイアログの _Delete User_ をクリックすることにより ' ユーザー ( 会社に所属していないユーザーなど ) を削除できますユーザが Cloud Insights 環境から削除されます。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">ユーザが作成したダッシュボード、クエリなどは、削除しても Cloud Insights 環境で引き続き使用できます。</block>
-  <block id="f15a3c589417e8499878c4798162a622" category="admonition">Kubernetes の永続ボリューム（ PVS ）をバックエンドストレージデバイスにリンクする機能を含むすべての機能を活用するには、 kube-state-metrics バージョン 2.0 以降を使用することを強く推奨します。kube-state-metrics バージョン 2.0 以降では、 Kubernetes オブジェクトラベルはデフォルトでエクスポートされません。Kubernetes オブジェクトラベルをエクスポートする kube-state-metrics を設定するには、メトリックラベル「 allow 」リストを指定する必要があります。の --metric-labels -allowlist_option を参照してください <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">この問題</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
   <block id="4d9921582b3bc6dc32845b40e4b4c522" category="cell">Cloud Secure を有効にすると、 ONTAP のパフォーマンスに影響が出る：レイテンシが時々高くなり、 IOPS がスポーティに低い。</block>
@@ -7360,11 +7337,6 @@
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">エージェントをインストールする前にインストールファイルを確認する場合は、の項を参照してください <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">証明書を信頼ストアから削除します。</block>
-  <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes では、次の 2 つの方法でデータを収集できます。</block>
-  <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes のインストール方法の選択</block>
-  <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">kube-state-metrics をインストールする必要があります。詳細については、以下を参照してください。kube-state-metrics は、オペレータベースのインストール時に自動的にインストールされます。</block>
-  <block id="37c93461ccb3b9d32a460c02b4fc8ce6" category="list-text">セキュリティコンテキスト制約を必要とする Kubernetes バリアントを実行している場合は、「 Kubernetes からデータを収集するためのエージェントの設定」セクションの手順に従ってください。これはオペレータベースのインストールでインストールされます。</block>
   <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。</block>
   <block id="640dbe189d66fa73b9cedb44a9424843" category="inline-image-macro">オペレータベースのインストール</block>
   <block id="4a64a7036f6051830b5665f656513166" category="paragraph"><block ref="4a64a7036f6051830b5665f656513166" category="inline-image-macro-rx" type="image"></block></block>
@@ -7373,13 +7345,6 @@
   <block id="69fe7b86f073ff27417a8bb4f40bf251" category="list-text">このスニペットをクリップボードにコピーするには、ボタンをクリックします。</block>
   <block id="60359575c1541888619045ed924fc983" category="list-text">スニペットを a_bash_window に貼り付け、実行します。</block>
   <block id="ecf5918b75414ec8e1874242a839d017" category="list-text">インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。</block>
-  <block id="54afcf6213f1a3b61770613a9ebc68df" category="section-title">スクリプトベースのインストール</block>
-  <block id="2c221df7e5c48bd54511af38bd07dbad" category="inline-image-macro">スクリプトベースのインストール</block>
-  <block id="ac80a29f37fb946121c0253c4976bde6" category="paragraph"><block ref="ac80a29f37fb946121c0253c4976bde6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b64f662cc5cf3d2e1684d86487aea6f6" category="list-title">Kubernetes にスクリプトベースのエージェントをインストールする手順：</block>
-  <block id="f5371c459cefaaee7b5b7685e956ff88" category="list-text">コマンドを次のようにして bash_window に貼り付けます。</block>
-  <block id="d3eca57feea30c8725375ed32c9285fd" category="section-title">DemonSet 、 ReplicaSet 、およびエージェントの停止 / 起動</block>
-  <block id="8c357155c34910d917ac705e248f3417" category="paragraph">注：スクリプトベースのインストールのデフォルトの名前空間は、 _CI-MOCI_です 。オペレータベースのインストールの場合、デフォルトのネームスペースは _NetApp-monitoring _ です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。</block>
   <block id="d101f99762aa933eab885ac5a54fb726" category="paragraph">エージェントが実行するポッドは、次の項目にアクセスできる必要があります。</block>
   <block id="e4f58bd0ebfcc73f188eead8e62fdd51" category="admonition">オペレータベースのインストールでは、 kube-state-metrics のインストールを処理します。オペレータベースのインストールを実行する場合は、このセクションを省略してください。</block>
   <block id="85d9e7fafd4cca5a1545c9cbf16d8e80" category="paragraph">kube-state-metrics サーバをインストールするには、次の手順を実行します（スクリプトベースのインストールを実行する場合に必要です）。</block>
@@ -7456,7 +7421,6 @@
   <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">出力例：</block>
   <block id="df8efe1c37f513ed79defb9aa3eafe5d" category="paragraph">* CentOS 8.x / RHEL 8.x * ：</block>
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">'sudo firewall-cmd --zone=public--list-ports | grep 35000` (CentOS 8 の場合 )</block>
-  <block id="2b88b6e768b59c582a319ed7678901c8" category="paragraph">コマンドブロックには、次のように配置されています。</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。</block>
   <block id="72c287aa31792e43cc71160178046540" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO システム、 AFF システム、 FAS システムをサポートします。</block>
@@ -7684,7 +7648,6 @@
   <block id="137130f586fe8fbaec289a38be336008" category="summary">この分析情報から、リソースが環境内の他のリソースにどのような影響を及ぼすかを確認できます。</block>
   <block id="2d78443087bc495d923e93521efb0c1d" category="doc">知見：ストレスのある共有リソース</block>
   <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。</block>
-  <block id="f537dec4993300ffaa9674ac2db71a97" category="admonition">Stress_Insight の共有リソースは _Preview_feature と見なされるため、変更される場合があります。</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">ワークロードやリソースへの影響について話すときは、次の定義が役立ちます。</block>
   <block id="cd038a3c036812737c2ee89b0152ce75" category="paragraph">* 要求する * または * インパクトのある * リソースは、別のリソースに悪影響を与えるものです。たとえば、 IOPS が非常に高いボリュームでは、原因によって他のボリュームのレイテンシが増大する可能性があります（例 _Impacted_or_Degraded_resources ）を参照してください。要求の厳しいリソースや影響を受けるリソースは、ストレージプールやボリュームなど、同じ共有リソースを使用する「ピア」です。要求の厳しいリソースは、 _greedy_resources と呼ばれることもあります。</block>
   <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">要求の厳しいワークロードとは、共有ストレージプール内の他のリソースに影響を与えていると現在特定されているワークロードのことです。これらのワークロードは IOPS を高め（など）、影響を受けるワークロードの IOPS を削減します。要求の厳しいワークロードは _ 高消費のワークロード _ と呼ばれることもあります。</block>
@@ -7845,9 +7808,6 @@
   <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">一部のユーザーは制限されていませんが、攻撃があります。</block>
   <block id="e90c2e3184d693395feccdf9a3d863a1" category="cell">1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data Collector と Agent が停止している場合、 Cloud Secure はコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details &gt; Access Limitation History for this User &gt; Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。</block>
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">制限する IP はすでに別のユーザから制限されています。</block>
-  <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes Monitoring Operator の設定Kubernetes のインストールに推奨される方法です。</block>
-  <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">インストール手順は、選択した内容によって異なります。</block>
-  <block id="fcbb3d16fd787d5bff5935ba723121de" category="cell">Kubernetes v1.17 以降</block>
   <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">NetApp Kubernetes Monitoring Operator Installation</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：</block>
   <block id="41433653d03e1d9f51b22f2b34a34907" category="section-title">NetApp Kubernetes Monitoring Operator 向けのプロキシサポートを設定します</block>
@@ -7867,7 +7827,6 @@
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">spec セクションで、次の変更を行います。</block>
-  <block id="44041917404886ef4df8802ca1493c79" category="section-title">Kubernetes スクリプトベースのプロキシサポートを設定しています</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights の新機能</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">監査データの保持</block>
   <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights が監査データを保持する時間は、お客様のエディションによって異なります。</block>
@@ -7933,7 +7892,6 @@
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">一部の NFS イベントが UI に表示されません。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">次を確認します。 1.POSIX 属性が設定された AD サーバのユーザディレクトリコレクタは、 UI から unixid 属性が有効になっている必要があります。2. ユーザページで UI 3 から NFS アクセスを実行しているユーザを検索すると、アクセス権が表示されます。raw イベント（ユーザがまだ検出されていないイベント）は NFS 4 ではサポートされません。NFS エクスポートへの匿名アクセスは監視されません。5. NFS4.1 よりも小さいバージョンの NFS を使用していることを確認します。</block>
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights は統合データの収集エージェントとして Telegraf をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。</block>
-  <block id="73f1df4b50034876b992ea5afa05d7c8" category="cell">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかを実行してください。•スクリプトベースのインストールの場合は、テレグラム DS を編集し（「 kubectl edit DS テレグラム」）、「特権 : false 」を「特権 : true 」に変更します。オペレータベースのインストールの場合は、エージェント（「 kubectl edit agent agent-monitoring -netapp 」）を編集し、特権モードを「 true 」に変更します。</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">volume_groups が使用されていないかぎり、読み取り専用のユーザ名とパスワード。この場合は、 Admin ユーザ名とパスワードが必要です</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します</block>
@@ -8001,8 +7959,6 @@
   <block id="2ca57dbd75b94a950c199a1c12cf85b9" category="cell">警告とアラートの通知は別の受信者に送信できるため、適切なチームに情報を提供できます</block>
   <block id="222414ee53d0c57a1870d9446ce7b005" category="paragraph">テレグラム統合データの取り込みのためのエージェントがバージョン *1.2* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。</block>
   <block id="3d64508ab84203107071583e56c26993" category="list-text">Broadcom Fibre Channel Switches データコレクタは、各インベントリポーリングで発行される CLI コマンドの数を減らすように最適化されています。</block>
-  <block id="4199b6880b46eaef66e8d25adefc1ac2" category="cell">すべての Monitoring &amp; Optimization 機能、すべてのユーザ機能、データコレクタ、 Monitoring &amp; Optimization API トークン、通知の管理を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Monitor ロールと Optimize ロールのみです。</block>
-  <block id="6d02b22d35efda9cc53c8bd1d5c2d8c5" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure の API トークンなど、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。</block>
   <block id="ceecc9f892b56b1081be5d007d545aab" category="cell">Reporting API トークンの管理、レポートの設定、レポートタスクのシャットダウンと再起動など、すべての管理タスクに加えて、すべての User/Author 関数を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは Reporting ロールのみです。</block>
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API タイプ</block>
   <block id="c73695e7529146d82731a287d36e3f1d" category="cell">ログの取り込み</block>
@@ -8096,7 +8052,6 @@
   <block id="fb00f883d7bba803b24e9d29087a3f05" category="list-text">必要に応じて、各 Cloud Insights 機能セットでユーザのロールを変更します。</block>
   <block id="fbf90baf7d2aee8b9e682b8648241121" category="list-text">変更の保存 _ をクリックします。</block>
   <block id="45d8ada80e1217d6ce7177e21f1e6c70" category="section-title">セカンダリアカウント所有者を割り当てるには、次の手順に従います</block>
-  <block id="77ca2cca3bda5b43a70ba6327d64e565" category="paragraph">アカウント所有者の役割を別のユーザーに割り当てるには、 Monitor &amp; Optimize のアカウント所有者としてログインする必要があります。</block>
   <block id="9ee18dbf71b3091f256475408a6072d3" category="list-text">[*Admin] &gt; [User Management] をクリックします。</block>
   <block id="208c98f13e768937bc22bc97791e7bb1" category="list-text">[ ユーザー ] ダイアログで、 [ 所有者として割り当て ] をクリックします。</block>
   <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">変更を保存します。</block>
@@ -8195,7 +8150,6 @@
   <block id="ccd695c5d6bdf7e28aefe86c7867a7a9" category="inline-image-macro">各元の点間に追加のデータ点がある線形補間を示す単純な直線</block>
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="664a8070ae98149df4b2438dabea2160" category="admonition">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="1f7b055a94f5e05d9c08683890d73b5e" category="list-text">従来のスクリプトベースのエージェントのインストール（非推奨）</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Kubernetes のチェックサムの検証</block>
   <block id="737f024effb455f30b04c7091e2d8667" category="section-title">Kubernetes Agent のインストールに関するトラブルシューティング</block>
   <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">エージェントの設定（ Windows/Linux/Mac ）</block>
@@ -8521,7 +8475,6 @@
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">線形 - 既存の点間のデータポイントを補間します</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">階段（ Stair ） - 前のデータ点を補間されたデータ点として使用します</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet</block>
-  <block id="54a35beb58d95fcc8830c9195faeeb1d" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo _ （スクリプトベースのインストールには不要）、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="b68a34f8a928794da0f98d4ee916c271" category="list-text">*<block ref="2fadd2d714be07c05e8b57dea395b60f" category="inline-link-macro-rx"></block>*</block>
   <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、関連する記事、ハウツーなどを検索できます。</block>
   <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
@@ -8547,7 +8500,6 @@
   <block id="e89f4056c39669637fb609320173681a" category="list-text">Tegraf を再起動します。</block>
   <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">MacOS</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">各 Tegraf コンフィギュレーションファイルを _C ： \Program Files\Telegra\Telegraf .d_ で、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
-  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。</block>
   <block id="474b549bf76599f904f9c951a609a127" category="cell">Linuxの場合、ディスクスペースは次のように割り当てます。/opt/netapp 10 gb /var/log/netapp 40 gb /tmpインストール中に少なくとも1 GB使用可能</block>
   <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor の略</block>
   <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
@@ -8607,10 +8559,6 @@
   <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">フィーチャーと機能をプレビューします</block>
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights は'_Preview_マナー モードで新しいフィーチャーと機能をハイライトしますプレビュー機能は、一部の環境または容量に限りがあります。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">これらの機能をプレビューする場合は、にお問い合わせください <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">現在プレビュー中の機能をいくつか次に示します。</block>
-  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">ユーザーアクセスの自動応答を制限します</block>
-  <block id="f763810a8ec0d5862e0f288795932956" category="cell">攻撃が検出されると、 Cloud Secure は、ファイルシステムへのユーザーアクセスを制限する（フルブロック、または読み取り専用アクセスに設定する）ことで攻撃を停止できます。自動応答ポリシーを使用するか、アラートまたはユーザの詳細ページから手動でアクセスを制限できます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
-  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">ストレス状態の共有リソースでは、次の項目を特定できます。 - 共有リソース上のワークロードの負荷が高く、影響を受けるワークロードが個々に存在するために負荷が高い共有ストレージリソース<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="6e1238d84ff9d81dac586bf262a824f6" category="cell">このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合、 ハイパーバイザーでCIによって報告Cloud Insights されたCloud Insights形式のクラスタ名を使用する- Cloud Insights ではvSphereクラスタ名の先頭にvSphereデータセンター名が付き、フォワードスラッシュ「DC1/clusterA」がデータセンターDC1内のクラスタA内のハイパーバイザーでレポートされるクラスタ名です。</block>
   <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">サポートとビデオ</block>
   <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">次のビデオでは、データコレクタのインストール方法とダッシュボードを使用したCloud Insights でConfig Advisor を最大限に活用する方法を紹介しています。</block>
@@ -8657,12 +8605,6 @@
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">コレクタ警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</block>
   <block id="1879fc114cb19058a792b71aac95cb61" category="paragraph">Cloud Insights ではを使用します <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block> 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
-  <block id="938845c86bf6439f2bf6f4fc86fee5cf" category="section-title">オペレータベースのインストールか、スクリプトベースのインストールか？</block>
-  <block id="da90f5dd76c952cff43625f8bc75e982" category="paragraph">Cloud Insights は、Kubernetesクラスタを監視するためのKubernetesオペレータを構築しました。NetApp Kubernetes Monitoring Operator（NKMO）は、スクリプトでインストールされる監視方法よりも優れた機能です。これにより、Cloud Insights で制御可能な監視をより柔軟に設定し、お客様による設定操作を減らすことができ、K8sクラスタで実行される他のソフトウェアを監視する機会を強化できます。</block>
-  <block id="8270372556d5c0c95f3132ca3526b498" category="paragraph">NKMOは、Cloud Insights へのデータ収集、変換、および配信に、基礎となるテレグラムソフトウェアを引き続き使用します。これは、カスタムリソース定義とカスタムリソースで強化され、Kubernetesクラスタごとに監視をカスタマイズできるようになりました。</block>
-  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">エージェントをインストールしています</block>
-  <block id="51192dad58dd7321468a8557d0452699" category="section-title">スクリプトベースのKubernetes監視からオペレータベースの監視へのアップグレード</block>
-  <block id="0266610cf3fcbb5ba3b10477aecfe4e1" category="paragraph">スクリプトベースのKubernetes監視をすでにインストールしている場合は、次の手順に従って、オペレータベースの監視にアップグレードします。</block>
   <block id="a24b05a1dbfc11d6e8c8bae6db339730" category="paragraph">アップグレードの手順</block>
   <block id="38c37951a474215e996d1e567cc4b4d5" category="list-text">スクリプトベースのモニタリングインストールからConfigMapを保持します。</block>
   <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">K8sオペレータベースの監視解決策 のインストール中に使用するK8sクラスタ名を保存して、データの継続性を確保します。</block>
@@ -8670,7 +8612,6 @@
   <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">スクリプトベースの監視を削除します</block>
   <block id="8f0f3f28d66cb57de112b327612b48d4" category="inline-image-macro">Kubernetesオペレータ用タイル</block>
   <block id="099085e6f245bdfee8ce5ed73ba25890" category="paragraph"><block ref="099085e6f245bdfee8ce5ed73ba25890" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28fa7dedfef6e24a05f2efea53818499" category="admonition">スクリプトベースのインストールは廃止されました。Kubernetesクラスタの監視には、Kubernetesオペレータベースの収集ツールを使用してください。</block>
   <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">分析情報から、リソースの使用状況とトレンド分析を確認できます。</block>
   <block id="f1c9e9af80bb533618f5bdefe333747d" category="doc">分析</block>
   <block id="4e97535a9ad440d2d327ab364bb7a0ec" category="paragraph">分析情報を使用すると、リソースの使用状況や他のリソースへの影響、時間のかかる分析などを確認できます。</block>
@@ -8679,10 +8620,8 @@
   <block id="9e9013279f80acdb151d7cad5bc3f7d8" category="section-title">負荷のある共有リソース</block>
   <block id="5f002a5fdb5afaacfc165c3a324751d5" category="paragraph">影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。 <block ref="de4400096db30b5f709799778e050e2c" category="inline-link-macro-rx"></block></block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">詳細はこちら。</block>
-  <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> Cloud Insights プレビューフィーチャーについて</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetesネームスペースのスペースが不足しています</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">スペース不足Insightで実行されているKubernetesネームスペースのワークロードについて、スペース不足になる可能性がある状況をKubernetesネームスペースで確認できます。各スペースがフルになるまでの推定日数も示されます。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
-  <block id="5153ae996beb76439018cf032b394d21" category="paragraph"><block ref="5153ae996beb76439018cf032b394d21" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e7ded308e600f5c72a32aac82868158" category="list-text">*チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。[ヘルプ]&gt;[サポート*]ページの右下にあるバブルをクリックします。</block>
   <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">ONTAP データコレクタ*のランディング・ページを表示しているときに'データ・コレクタのサマリー・セクションの通知フィールドで鉛筆のアイコンをクリックすると'通知を変更できます</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">分析情報は、Kubernetesスペースがいついっぱいになるかを予測するのに役立ちます。</block>
@@ -8753,10 +8692,7 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">クラスタ内の* Pod*の数。この番号をクリックすると、ポッドリストページが開きます。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">クラスタ内のネームスペースの数*。この番号をクリックすると、名前空間リストページが開きます。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">クラスタ内のワークロードの数*。この数値をクリックすると、ワークロードリストページが開きます。</block>
-  <block id="abd68946270bbe5e8dd65bc248dfb347" category="cell">「Time to Full」予測</block>
-  <block id="9b42a670fcbdc4d8fa72c247b7af5785" category="cell">Cloud Insights は、次のオブジェクトについて容量がなくなるまでの日数を予測できます。内部ボリュームストレージプールボリュームこれらの予測値は、システム停止のリスクを大幅に低減するのに役立ちます。クエリ、モニタ、またはダッシュボードで_timeToFull.total_and _timeToFull.confidential Interval_countersを使用します。</block>
   <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2 ~ 7.9、8.1 ~ 8.4 * Ubuntu Server：18.04および20.04 LTSこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
-  <block id="52fe0ed84edd736c538f6ab44e4a643f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022このコンピュータでは、他のアプリケーションレベルのソフトウェアは実行されません。専用のサーバを使用することを推奨します。</block>
   <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">ワークロードの競合</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">ホスト、ネットワーク、ストレージなど、他の共有リソースに影響を及ぼすアセットと影響を受けるアセットが表示されます。このようなリソースを_greeding_/degraded_resourcesと呼ぶこともあります。</block>
@@ -8802,7 +8738,6 @@
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</block>
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
-  <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。</block>
   <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">* Cohesity SmartFiles *-このREST APIベースのコヒリティ・クラスターを取得して、「ビュー」（CI内部ボリューム）、各種ノード、パフォーマンスメトリックの収集を行います。</block>
   <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">このREST APIベースのコヒリティ・クラスターを取得し、「ビュー」（Cloud Insights 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。</block>
@@ -8885,4 +8820,80 @@
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">前提条件</block>
   <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">これは、Amazon FSXを搭載した既知の問題 です。Cloud Secure は既存のSMBセッションを閉じることができません。現在、Amazon FSXの既存のSMBセッションをブロックする回避策 はありません。コレクタのタイプがCVOまたはONTAP の場合は、に記載されている正しい権限を確認してください <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> セクション。</block>
   <block id="dfb65f9e847424acb7569e9d1d256de5" category="section-title">SMBのユーザを手動でリストア</block>
+  <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">ラーニングセンター</block>
+  <block id="b81816f08eee3d7d65d91572590180d0" category="paragraph">登録内容に関係なく、* Help &gt; Support *は、Cloud Insights を最大限に活用できるよう、NetApp Universityのいくつかのコースにリンクしています。チェックアウト！</block>
+  <block id="87d26f2a744f5c5f07151656de6a1390" category="summary">ONTAP Essentialsは、環境の詳細な概要を提供するダッシュボードとワークフローのセットです。</block>
+  <block id="f7e8a669ab2a5aca497e3123c1f3935b" category="doc">ONTAP の基礎知識</block>
+  <block id="7aaa3b04c62b1d6b52635ad40e8ff0a2" category="paragraph">ONTAP Essentialsは、ONTAP のインベントリとワークロードの詳細な概要を提供するダッシュボードとワークフローのセットです。ONTAP Essentialsで作業するときに使用される次の用語が表示されることがあります。</block>
+  <block id="70de8b0d424cdb2d65787ccde2449a8d" category="list-text">インフラ/インベントリ：ユーザデータにストレージ/ネットワークサービスを提供するオブジェクトのリストビュー</block>
+  <block id="3d46ac68e417d922e47209568ce8e07b" category="list-text">ワークロード：ユーザにデータの読み取り/書き込みインターフェイスを提供するオブジェクトのリストビュー。</block>
+  <block id="0b91449983387e2b661cde46c2928572" category="list-text">データ保護：ネットアップのデータ保護テクノロジを使用して保護できるさまざまなオブジェクトのリストビュー</block>
+  <block id="de2952ddd95b7a20bbb88abe0c97e2a6" category="paragraph">ONTAP Essentialsには、少なくとも1つの動作中のONTAP データコレクタと、先週収集されたデータが必要です。</block>
+  <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">探索を開始するには、Cloud Insights メインメニューから* ONTAP Essentials *を選択します。</block>
+  <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP Essentialsの概要ダッシュボード</block>
+  <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88c28e828c24faa9cbd8f5219c054d7e" category="paragraph">概要*ダッシュボードには、環境内のクラスタ数や全体的な容量とパフォーマンスの割合など、役立つ情報が表示されます。また、ストレージ容量またはパフォーマンス容量がスペース不足になるまでの想定日数に関する予測データも表示されます。また、インフラ内のコントローラが高温で動作している場合は、ONTAP Essentialsにそれらのコントローラが表示されます。</block>
+  <block id="39ef60f7b3d6d0c88b10d90a3775807a" category="paragraph">情報グラフは、時間の経過に伴うパフォーマンスの確認や、容量使用率の内訳を提供します。</block>
+  <block id="192d723a70e1a973bee8e50c84ffa947" category="paragraph">これらのグラフやデータポイントは、調査や調査の開始点として使用できます。</block>
+  <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注：「フルまでの日数」に0（ゼロ）を指定すると、フルまでの日数が90日を超えたと推定されます。つまり、システムがすぐにスペース不足になる危険性はありません。</block>
+  <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">データ保護</block>
+  <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">データ保護*ページを選択して、SnapMirror関係を表示します。ソースボリュームまたはデスティネーションボリュームの情報を表示するには、ボタンをクリックしてください。表示するデータの列を追加するには、歯車アイコンをクリックします。</block>
+  <block id="0b0af87f68e61a9b2546cb02922b8109" category="inline-image-macro">SnapMirror関係リストページ</block>
+  <block id="ee2e5f4e15830a46863dde8ab0a741a9" category="paragraph"><block ref="ee2e5f4e15830a46863dde8ab0a741a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">ONTAP Essential* Infrastructure *ページでは、すべての基本的なONTAP オブジェクトに対して事前に構築された（さらにカスタマイズ可能な）クエリーを使用して、クラスタの正常性とパフォーマンスを確認できます。確認するオブジェクトタイプ（クラスタ、ストレージプールなど）を選択し、健常性とパフォーマンスのどちらの情報を表示するかを選択します。フィルタを設定して、個々のシステムの詳細を調べます。</block>
+  <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">ストレージプールのインフラストラクチャ選択</block>
+  <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4643f417b694b85fa8cf7cbd0572c5cd" category="inline-image-macro">調査するインフラストラクチャオブジェクト</block>
+  <block id="3e60a504c4f09f36de3a060d1761d279" category="paragraph">クラスタの健常性を示すインフラのページ：<block ref="4510f66edf4997b6dc6197eeda5a382e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb2693590d2fee42898b89121aea43bb" category="paragraph">環境内のLUN /ボリュームまたはqtreeのワークロードを表示して確認します。</block>
+  <block id="9b487ae015c8109487f87177d5d90403" category="inline-image-macro">ワークロードメニュー</block>
+  <block id="b17cca1084b467c0c42cf2095a7e921b" category="paragraph"><block ref="b17cca1084b467c0c42cf2095a7e921b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66afae6b95d602c69251c81851ce13af" category="inline-image-macro">ワークロードリストページ</block>
+  <block id="34ac3c3d3b008137a073199be9255e04" category="paragraph"><block ref="34ac3c3d3b008137a073199be9255e04" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc551a8dcf48d42b6ea5cf411242afd9" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
+  <block id="8d72d221ef2d41a0b7eb14afef955069" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。（_User_ROLESおよび_Guest_ROLESは、セキュリティ機能セットでは使用できません）。ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
+  <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">オブザーバビリティ</block>
+  <block id="3285ea5e06d78f941361e69f7ae3e762" category="cell">サブスクリプションの変更、課金情報および使用状況の表示、および監視機能、セキュリティ、およびレポートに関するすべての管理者機能の実行が可能です。また、ユーザーを招待して管理したり、 SSO 認証とアイデンティティフェデレーションの設定を管理したりすることもできます。Cloud Insights に登録すると、最初のアカウント所有者が作成されます。Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者を設定することを強くお勧めします。 </block>
+  <block id="84e7e19408ca9cadd7d1a9781e8afe16" category="cell">すべてのObservability関数、すべてのユーザ関数、およびデータコレクタの管理、Observability APIトークン、および通知を実行できます。管理者は、他のユーザーを招待することもできますが、割り当てることができるのは観察可能な役割だけです。</block>
+  <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、セキュリティ用APIトークンなど、すべてのセキュリティ機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのはセキュリティロールのみです。</block>
+  <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">選択できる機能とロールは、特定の管理者ロールでアクセスできる機能によって異なります。たとえば、レポートの管理者ロールのみを持っている場合、レポートの任意のロールにユーザーを割り当てることはできますが、観察能力またはセキュリティのロールを割り当てることはできません。</block>
+  <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">アカウント所有者ロールを別のユーザーに割り当てるには、監視機能のアカウント所有者としてログインする必要があります。</block>
+  <block id="91d6346301930db6ac6ad38d593c51ac" category="section-title">エージェントをインストールしています</block>
+  <block id="3ee07d3d3ada1695cfb57786400b0616" category="paragraph">Cloud Insights では、Kubernetesコレクション向けのNetApp Kubernetes Monitoring Operator *を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。</block>
+  <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">アップグレード</block>
+  <block id="5bf9f6c5de2d20f82bc6c9fdb01e712d" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.19以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。</block>
+  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
+  <block id="97ec45388dee131bfffb282394db6fd4" category="list-text">kube-state-metricsは必須であり、NetApp Kubernetes Monitoring Operatorインストールとともに自動的にインストールされます。</block>
+  <block id="2314c02816fff0392a5024832e6b446a" category="cell">Kubernetes V1.19以降</block>
+  <block id="ca32f00a9cb47dc2f19e4412ba43b7b9" category="section-title">スクリプトベースのKubernetes監視からNetApp Kubernetes Monitoring Operatorにアップグレードします</block>
+  <block id="3fd1f3a27386367248e3113008da8829" category="paragraph">以前にインストールしたスクリプトベースのKubernetesエージェントをNetApp Kubernetes Monitoring Operatorにアップグレードする場合は、次の手順を実行します。</block>
+  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">NetApp Kubernetes Monitoring Operatorを停止および開始します</block>
+  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">NetApp Kubernetes Monitoring Operatorを停止するには、次の手順を実行します</block>
+  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実行します</block>
+  <block id="3b28dd6c17fea6dd6467fc05ce0cfbd3" category="paragraph">注：NetApp Kubernetes Monitoringオペレータベースのインストールのデフォルトのネームスペースは、_NetApp-monitoring _です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。</block>
+  <block id="a945216a5c61e628c867b8948c797454" category="section-title">Kubeステートメトリックについて</block>
+  <block id="3eec57a6a8de996cf634aac9735ace39" category="paragraph">NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は不要で、ドキュメントのこのセクションはスキップできます。参考情報を提供するために、以下の資料を用意しています。</block>
+  <block id="8afa6952ba928d1f4365c371ab8232bb" category="paragraph">以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> を使用して、NetApp Kubernetes Monitoring Operatorに接続します。</block>
+  <block id="981b5f5c29e0fd86523b31dc51c96b3e" category="section-title">スクリプトベースのエージェントを削除します</block>
+  <block id="0b17bce222385cebd477477b188e6434" category="paragraph">Kubernetes上のスクリプトベースのエージェント（NetApp Kubernetes Monitoring Operatorへのアップグレードなど）をアンインストールするには、次の手順を実行します。</block>
+  <block id="98e7ede570d702984a8e51f5e4f2020c" category="section-title">をクリックして、NetApp Kubernetes Monitoring Operatorを削除します</block>
+  <block id="221999955f33800aac7697d68c8a2970" category="admonition">スクリプトベースのエージェントがインストールされている場合は、NetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。</block>
+  <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">スクリプトベースのエージェントからNetApp Kubernetes Monitoring Operatorへのアップグレード</block>
+  <block id="05d624845433696752479b6389c8e408" category="list-text">クラスタ名をメモします。クラスタ名を表示するには、次のいずれかの照合を実行します。</block>
+  <block id="eadd7c5194983b4056ca7437aabe6ce5" category="paragraph">オペレータの場合：</block>
+  <block id="30abd2203b50ff6e095851497e7951fa" category="paragraph">スクリプトベースの場合：</block>
+  <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">をアンインストールします</block>
+  <block id="4e62b8009bb6659f307f322060b87aca" category="list-text"><block ref="7dbbf8ef971711bc54bd144496bfdb76" category="inline-xref-macro-rx"></block> 既存のエージェント</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">をインストールします</block>
+  <block id="5d570b91fb793e6d7f0e8a1dc96abf37" category="list-text"><block ref="a2dc51b4aefd7c9119674679c63ec4a9" category="inline-xref-macro-rx"></block> 新しいエージェント]。</block>
+  <block id="1c57a8ea17dbb1aebe9f54fccc625688" category="section-title">NetApp Kubernetes Monitoring Operatorのアップグレード</block>
+  <block id="01824df579f6f3ad64522dc8298f0c41" category="cell">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかの操作を行います。•エージェントを編集する（「kubectl edit agent agent-monitoring netapp」）。さらに、「privileged-mode：false」を「privileged-mode：true」に変更する。</block>
+  <block id="d4f4168ee4529f65ee54ba8b223d6b1e" category="cell">PSP環境を持っています。これはモニタリングオペレータに影響しますか？</block>
+  <block id="d11a7a694c023537b8fd43857dd651f7" category="cell">ポッドセキュリティポリシー（PSP）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSPをサポートする最新のNKMOにアップグレードするには、次の手順に従います。1.前の監視オペレータをアンインストールします。kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrole binding agent-manager-role binding agent-proxy-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -pro資料 室最新バージョンのモニタリングオペレータを配備します。</block>
+  <block id="2eb2fe69b25b42c01f1dd6ed820e4ef3" category="cell">NKMOを導入する際に問題が発生し、PSPを使用しています。</block>
+  <block id="ffc85f5eab15bc118cab588bb4b4d3eb" category="cell">1.次のコマンドを使用して、エージェントを編集します。kubectl -n &lt;name-space&gt; edit agent 2.「security-policy enabled」を「false」に設定します。これにより、POSセキュリティポリシーが無効になり、NKMOを展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n &lt;name-space&gt;</block>
+  <block id="641244a546c89759b8e5c60efd75767d" category="paragraph">さらに、 Cloud Insights もご利用いただけます <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> では、アクセス可能な API が決定されます。ユーザロールとゲストロールの権限は、管理者ロールよりも少なくなります。たとえば'監視機能で管理者ロールを持っていても'レポートでのユーザーロールを持っている場合は'データウェアハウスを除くすべてのAPIタイプを管理できます</block>
+  <block id="0661e5cc01fe7da17bc8e2d8e2e34221" category="paragraph">ユーザがアクセスできる API カテゴリは、によっても異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各Cloud Insights フィーチャセットに含まれています（Observability、Security、Reporting）。</block>
+  <block id="98d8ebff3e8aa04aa14171f6564f1ec7" category="paragraph">現在のCloud Insights 機能はすべて使用できます。将来のプレビューに備えて、このスペースをご確認ください。</block>
 </blocks>

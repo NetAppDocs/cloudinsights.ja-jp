@@ -24,13 +24,7 @@ summary: 分析情報から、リソースの使用状況とトレンド分析�
 影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。 link:insights_shared_resources_under_stress.html["詳細はこちら。"]
 
 
-NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 link:/concept_preview_features.html["詳細はこちら。"] Cloud Insights プレビューフィーチャーについて
-
-
 
 === Kubernetesネームスペースのスペースが不足しています
 
 スペース不足Insightで実行されているKubernetesネームスペースのワークロードについて、スペース不足になる可能性がある状況をKubernetesネームスペースで確認できます。各スペースがフルになるまでの推定日数も示されます。 link:insights_k8s_namespaces_running_out_of_space.html["詳細はこちら。"]
-
-
-NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 link:/concept_preview_features.html["詳細はこちら。"] Cloud Insights プレビューフィーチャーについて
