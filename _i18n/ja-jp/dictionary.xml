@@ -8937,4 +8937,6 @@
   <block id="4e28671aa760c1ba504510846bdf520c" category="cell">攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="a78d7cf3a7b4f6fe8edcca9384e823a8" category="cell">アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックを行うことができます。</block>
   <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">アラートおよびフォレンジックを表示できます。ゲストロールでは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックはできません。</block>
+  <block id="1262546f0be80170bbf2b78b6352533d" category="cell">エージェントのインストールに失敗し、useradd：Cannot create directory/home/cssysというメッセージが表示されます</block>
+  <block id="5e430377cda5012c485a4d981bce9d1e" category="cell">このエラーは、権限がないためにユーザのログインディレクトリを/homeの下に作成できない場合に発生することがあります。回避策 では、次のコマンドを使用してcssysユーザを作成し、そのログインディレクトリを手動で追加します。_sudo useradd user_name -m -d home_DIR_m：ユーザのホームディレクトリがない場合は作成します。-d：新しいユーザは'ユーザのログイン・ディレクトリの値としてhome_DIRを使用して作成されますたとえば、_sudo useradd cssys-m-d/cssys_はuser_cssys_を追加し、rootの下にそのログインディレクトリを作成します。</block>
 </blocks>
