@@ -12,6 +12,9 @@ summary: HDS データコレクタを構成しています。
 このデータコレクタは、 HCP 管理 API を使用して、 Hitachi Content Platform （ HCP ）をサポートします。
 
 
+NOTE: Hitachi Content Platformは'管理対象ユニットに対して異なるraw TBのメーターを使用しています書式設定されていないHCP容量の40 TBごとに、1として課金されます link:concept_subscribing_to_cloud_insights.html#pricing["管理ユニット (MU)"]。
+
+
 
 == 用語集
 

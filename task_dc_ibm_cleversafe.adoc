@@ -12,6 +12,9 @@ summary: IBM Cleversafe データコレクタの設定。
 Cloud Insights では、このデータコレクタを使用して IBM Cleversafe ストレージシステムのインベントリデータとパフォーマンスデータを検出します。
 
 
+NOTE: IBM Cleversafeは、管理ユニットに対して異なるRaw TBで測定されています。フォーマットされていないIBM Cleversafeの容量は40TBごとに1が充電されます link:concept_subscribing_to_cloud_insights.html#pricing["管理ユニット (MU)"]。
+
+
 
 == 用語集
 

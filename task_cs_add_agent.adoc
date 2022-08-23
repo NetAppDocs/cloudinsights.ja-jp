@@ -117,5 +117,8 @@ image::new-agent-detect.png[新しいエージェント検出]
 | エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insights のシリアル番号を入力してケースをオープンし、メモしておいたケースにログを添付します。 | ケースにログを添付するには、次の手順を実行します。 1.次のスクリプトをルート権限で実行し、出力ファイル（ cloudsecure-agent-scripts.zip ）を共有します。A/opt/NetApp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2 に設定します。次のコマンドを root 権限で 1 つずつ実行し、出力を共有します。AID cssys b.グループは cssys c. をCat /etc/os-release 
 
 
+| cloudsecure-agent-symptom-collector.shスクリプトが次のエラーで失敗します。[root@machine tmp]#/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.shサービスログの収集アプリケーションログの収集エージェント設定の収集エージェントディレクトリ構造スナップショットの取得中のサービスステータススナップショット…………… 。…………………………… 。/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh：line 52：zip：command not found error：/tmp/cloudsecure-agent-symptoms.zipを作成できませんでした | ZIPツールがインストールされていません。コマンド「yum install zip」を実行してzipツールをインストールします。次に、cloudsecure-agent-symptom-collector.shを再度実行します。 
+
+
 | エージェントのインストールに失敗し、useradd：Cannot create directory/home/cssysというメッセージが表示されます | このエラーは、権限がないためにユーザのログインディレクトリを/homeの下に作成できない場合に発生することがあります。回避策 では、次のコマンドを使用してcssysユーザを作成し、そのログインディレクトリを手動で追加します。_sudo useradd user_name -m -d home_DIR_m：ユーザのホームディレクトリがない場合は作成します。-d：新しいユーザは'ユーザのログイン・ディレクトリの値としてhome_DIRを使用して作成されますたとえば、_sudo useradd cssys-m-d/cssys_はuser_cssys_を追加し、rootの下にそのログインディレクトリを作成します。 
 |===

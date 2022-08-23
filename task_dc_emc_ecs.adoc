@@ -12,6 +12,9 @@ summary: ECS データコレクタの設定。
 このデータコレクタは、 EMC ECS ストレージシステムからインベントリデータとパフォーマンスデータを取得します。データコレクタを設定するには、 ECS サーバの IP アドレスと管理レベルのドメインアカウントが必要です。
 
 
+NOTE: Dell EMC ECSでは、raw TBから管理ユニットへの異なるレートが使用されます。未フォーマットのECS容量の40 TBごとに、1として課金されます link:concept_subscribing_to_cloud_insights.html#pricing["管理ユニット (MU)"]。
+
+
 
 == 用語集
 
