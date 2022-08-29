@@ -4468,7 +4468,6 @@
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">ONTAP SVM Data Collector の設定</block>
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="paragraph">Cloud Secure では、データコレクタを使用して、デバイスからファイルとユーザのアクセスデータを収集します。</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">このデータコレクタは、次の機能でサポートされています。</block>
-  <block id="e0f5635cfc022e85fc412c023e2e7759" category="list-text">SMB プロトコルバージョン 3.1 以前</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS プロトコルバージョン 4.0 以前</block>
   <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM には複数のサブタイプがあります。このうち、サポートされているのは _DEFAULT_ と _SYNC_SOURE__ のみです。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">を設定する必要があります</block>
@@ -8945,4 +8944,5 @@
   <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi Content Platformは'管理対象ユニットに対して異なるraw TBのメーターを使用しています書式設定されていないHCP容量の40 TBごとに、1として課金されます <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">Cloud Insights では、NetApp StorageGRID コレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleversafeは、管理ユニットに対して異なるRaw TBで測定されています。フォーマットされていないIBM Cleversafeの容量は40TBごとに1が充電されます <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMBプロトコルバージョン3.1以前。Cloud Secure は、FlexCache を使用するSMB構成では機能しないことに注意してください。ONTAP 9.7以降では、FPolicyはNFS環境でのみサポートされます。</block>
 </blocks>
