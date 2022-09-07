@@ -8945,4 +8945,40 @@
   <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMBプロトコルバージョン3.1以前。Cloud Secure は、FlexCache を使用するSMB構成では機能しないことに注意してください。ONTAP 9.7以降では、FPolicyはNFS環境でのみサポートされます。</block>
   <block id="08433787a666ff495df242ff3e1d3c5c" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。</block>
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20以降</block>
+  <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">エージェントはインストール後に実行されていません。_systemctl status cloudsecure-agent.service_は次のように表示されます。[root@demo~]#systemctl status cloudsecure-agent.service agent.service–Cloud Secure エージェントデーモンサービスロード済み（/usr/lib/systemd/system/secloud-agent.service；enabled；vendor preset: disabled）Active:活動化（auto-restart）（結果：exit-code）（結果：tue211-08-21：122s /opt/netapp/cloudsecure/agent/bin/cloudsecure-agentプロセス開始前：PID=259:28：loaded（メインプロセス：/&lt;プロセスステータス：/&lt;プロセスステータス&gt;） 25889（code=Exited、status=126）、Aug 03 21：12：26 demo systemd[1]：cloudsecure-agent.service:メインプロセスが終了しました。code=Exited、status=126/n/a Aug 03 21：12：26 demo systemd[1]：Unit cloudsecure-agent.service entered failed状態になりました。8月03日21：12：26デモシステムd[1]：cloudsecure-agent.serviceが失敗しました。</block>
+  <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">これは'_cssys_userにインストール権限がないために失敗することがあります/opt/netappがNFSマウントで、_cssys_userがこのフォルダにアクセスできない場合、インストールは失敗します。_cssys_は、マウントされた共有にアクセスする権限がない可能性のあるCloud Secure インストーラによって作成されたローカルユーザです。これを確認するには、_cssys_userを使用して/opt/netapp/cloudsecure/agent/bin/cloudsecure-agentにアクセスします。「Permission denied」が返された場合、インストール許可は表示されません。マウントされたフォルダではなく、マシンのローカルディレクトリにインストールします。</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensicsページのフィルタの適用性</block>
+  <block id="33b1e192582408583865dca3abd0c740" category="cell">どのフィルタに適用できますか？</block>
+  <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">どのフィルタにも適用できません</block>
+  <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">* （アスタリスク）</block>
+  <block id="df292297b638e12c44f52c855ad511fb" category="cell">Auto * 03172022</block>
+  <block id="b95e1188e58582673c69e6683b36a626" category="cell">ユーザー、パス、エンティティタイプ、デバイスタイプ、ボリューム、 元のパス</block>
+  <block id="de49d77f1ec8a76ce0ab6d070d1a883c" category="cell">"Auto"で始まり、"03172022"で終わるすべてのリソースを返します。</block>
+  <block id="3518217f55c95e834c4ea7984f8aa0cd" category="cell">AutoSabotageUser1_03172022</block>
+  <block id="4e264b37a7e8d68a4e163769aad53d58" category="cell">ユーザー、エンティティタイプ、デバイス、ボリューム</block>
+  <block id="d3d8e64d1f98a044ea17ac6dc3edc1da" category="cell">AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022AB、AutoSabotageUser1_031720225などを返します</block>
+  <block id="3adefd54fc738f8196af6304ed8929ac" category="cell">AutoSabotageUser1_03172022またはAutoRansomUser4_03162022</block>
+  <block id="815a68f09aeea81a589436dc96205729" category="cell">ユーザ、ドメイン、ユーザ名、パス、エンティティタイプ、 デバイス、元のパス</block>
+  <block id="0a01700b4705c6c47c24699ad7d4a4cb" category="cell">AutoSabotageUser1_03172022またはAutoRansomUser4_03162022のいずれかを返します</block>
+  <block id="0ca071eb91357e8d4685daee24bd3360" category="cell">AutoRansomUser4_03162022ではありません</block>
+  <block id="323be35d43a1b0a294bddc8533167538" category="cell">ユーザ、ドメイン、ユーザ名、パス、エンティティタイプ、 元のパス、ボリューム</block>
+  <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">"AutoRansomUser4_03162022 "で始まるものをすべて返します。</block>
+  <block id="eae639a70006feff484a39363c977e24" category="cell">ドメイン</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">パス/元のパスの検索</block>
+  <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">検索結果は、の有無によって異なります</block>
+  <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
+  <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">動作します</block>
+  <block id="d8c67b8ac649f41c2a92277fb6c013ce" category="cell">AutoDir1/AutoFileです</block>
+  <block id="53ca5edb3205aa3468395e1789114a60" category="cell">壊れています</block>
+  <block id="5ccae7957209ff321acad5f697fee3fb" category="cell">/AutoDir1/AutoFile（Dir1）</block>
+  <block id="63f523ece51ecefa957ca39c100af8cb" category="cell">dir1部分部分文字列が機能しない</block>
+  <block id="1d7531d059e4088a0878ea4eb94d32b6" category="cell">"/AutoDir1/AutoFile032420222022"</block>
+  <block id="a38f318e70e36e7cc00c72afcc7e5fc0" category="cell">完全検索が実行されます</block>
+  <block id="7cce9e39c248f665a5808932eb5899ed" category="cell">Auto * 03242022</block>
+  <block id="888f8ecf6256a9875ff5de4f10099453" category="cell">/AutoDir1/AutoFile03242022または/AutoDir1/AutoFile03242022</block>
+  <block id="d87dd477d16107bb862f99dedbcacce4" category="cell">/AutoDir1/AutoFile03242022ではありません</block>
+  <block id="867d74d5a7cefddb9c7bc445d7c5b7e1" category="cell">NOT / AutoDir1</block>
+  <block id="137812c306b0ede761fedbc1e1b88824" category="cell">/AutoFile03242022はありません</block>
+  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
+  <block id="8bc6542329adc040b119d4b8973c0d7f" category="cell">すべてのエントリを表示します</block>
 </blocks>

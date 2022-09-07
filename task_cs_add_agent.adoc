@@ -121,4 +121,7 @@ image::new-agent-detect.png[新しいエージェント検出]
 
 
 | エージェントのインストールに失敗し、useradd：Cannot create directory/home/cssysというメッセージが表示されます | このエラーは、権限がないためにユーザのログインディレクトリを/homeの下に作成できない場合に発生することがあります。回避策 では、次のコマンドを使用してcssysユーザを作成し、そのログインディレクトリを手動で追加します。_sudo useradd user_name -m -d home_DIR_m：ユーザのホームディレクトリがない場合は作成します。-d：新しいユーザは'ユーザのログイン・ディレクトリの値としてhome_DIRを使用して作成されますたとえば、_sudo useradd cssys-m-d/cssys_はuser_cssys_を追加し、rootの下にそのログインディレクトリを作成します。 
+
+
+| エージェントはインストール後に実行されていません。_systemctl status cloudsecure-agent.service_は次のように表示されます。[root@demo~]#systemctl status cloudsecure-agent.service agent.service–Cloud Secure エージェントデーモンサービスロード済み（/usr/lib/systemd/system/secloud-agent.service；enabled；vendor preset: disabled）Active:活動化（auto-restart）（結果：exit-code）（結果：tue211-08-21：122s /opt/netapp/cloudsecure/agent/bin/cloudsecure-agentプロセス開始前：PID=259:28：loaded（メインプロセス：/<プロセスステータス：/<プロセスステータス>） 25889（code=Exited、status=126）、Aug 03 21：12：26 demo systemd[1]：cloudsecure-agent.service:メインプロセスが終了しました。code=Exited、status=126/n/a Aug 03 21：12：26 demo systemd[1]：Unit cloudsecure-agent.service entered failed状態になりました。8月03日21：12：26デモシステムd[1]：cloudsecure-agent.serviceが失敗しました。 | これは'_cssys_userにインストール権限がないために失敗することがあります/opt/netappがNFSマウントで、_cssys_userがこのフォルダにアクセスできない場合、インストールは失敗します。_cssys_は、マウントされた共有にアクセスする権限がない可能性のあるCloud Secure インストーラによって作成されたローカルユーザです。これを確認するには、_cssys_userを使用して/opt/netapp/cloudsecure/agent/bin/cloudsecure-agentにアクセスします。「Permission denied」が返された場合、インストール許可は表示されません。マウントされたフォルダではなく、マシンのローカルディレクトリにインストールします。 
 |===
