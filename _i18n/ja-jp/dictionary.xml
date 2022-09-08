@@ -45,7 +45,6 @@
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">南京錠</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Cloud Insights の使用中に鍵のアイコンが表示される場合 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>では、この機能が現在のエディションで使用できないか、または制限付きの形式で利用できることを意味します。この機能にフルアクセスするには、をアップグレードしてください。</block>
   <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">試用版</block>
-  <block id="c8862bdb0661387c42aa051d597d2d45" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、 Cloud Insights Standard Edition が提供するすべての機能をお客様の環境でご確認いただけます。</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">* 製品サポート *</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">試用期間中はいつでも Cloud Insights に登録できます。Cloud Insights に登録すると、データへの中断のないアクセスと拡張されたアクセスが保証されます <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> オプション（ Options ）</block>
   <block id="21d39705a699dccfee88543d413556c8" category="paragraph">無料トライアルがまもなく終了すると、 Cloud Insights にバナーが表示されますこのバナー内では、 [*Admin] &gt; [Subscription] * ページを開く _View Subscription_link が使用されます。管理者以外のユーザにはバナーが表示されますが、サブスクリプションページに移動することはできません。</block>
@@ -5324,7 +5323,6 @@
   <block id="dcdaa0ef05a3fb89ab74a979905c80d2" category="paragraph"><block ref="dcdaa0ef05a3fb89ab74a979905c80d2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">前提条件</block>
   <block id="e881539baa442c22144c7ae555cac843" category="list-text">PowerShell がインストールされていること</block>
-  <block id="7c3507318179da83cb89a37272393a6b" category="list-text">プロキシの背後にいる場合は、「 Windows * 用プロキシ・サポートの構成」セクションの手順に従います。</block>
   <block id="5002498d543f683aae80ee22af4a4919" category="list-title">Windows にエージェントをインストールする手順：</block>
   <block id="210f49b0f42e5dd87eb3a71d8a25532e" category="list-text">エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。</block>
   <block id="cc9e3ada3e15910f4f34f7dddee7971a" category="list-text">PowerShell ウィンドウを開きます</block>
@@ -5348,7 +5346,6 @@
   <block id="44bbcb23890d6d6f6e19f827fe6a3239" category="inline-link-macro">新しいエージェントをインストールします</block>
   <block id="1e3047ccd30b2ed259aa8b3fe3e877d1" category="list-text"><block ref="67cec2de8f18c94e7ba97311262ff17e" category="inline-link-macro-rx"></block>。</block>
   <block id="b523f646735e8e8381556641bbff1d1f" category="section-title">RHEL および CentOS</block>
-  <block id="c05b6a8cffe30e13e26576fdbc5eaea7" category="list-text">プロキシの背後にある場合は、「 RHEL / CentOS * 用のプロキシサポートの設定」セクションの手順に従ってください。</block>
   <block id="c9a13bf8b19a106ff517d02fffbce168" category="list-title">RHEL または CentOS にエージェントをインストールする手順：</block>
   <block id="371155faf9e65eedebc467c42881ab64" category="list-text">Bash ウィンドウを開きます</block>
   <block id="cb672d725b5532024df625e16f4b2c0c" category="list-text">Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。</block>
@@ -5367,7 +5364,6 @@
   <block id="bf2c36be7f2bc4dd2e37e375e76d6d4a" category="list-text"><block ref="8fae6fa4f132bafa12a111b0e12ddf22" category="inline-link-macro-rx"></block>。</block>
   <block id="7ae220dde836123a83ab52aa985caa47" category="section-title">Ubuntu と Debian</block>
   <block id="3fcd2752c343d8536926bfb628eec3dc" category="inline-image-macro">Ubuntu / Debian Agent のインストール</block>
-  <block id="1c67ca839a2354a09852b2eedf2223a7" category="list-text">プロキシの背後にいる場合は、「 Ubuntu / Debian * 用のプロキシサポートの設定」セクションの手順に従ってください。</block>
   <block id="2ccb8fda807f639572273dc350f43bbf" category="list-title">Debian または Ubuntu にエージェントをインストールする手順 :</block>
   <block id="6271d65c06a7a1fd244d963c100a1a1c" category="paragraph">オペレーティング・システムが systemd を使用している場合：</block>
   <block id="b5648f15565fb8185bfc83aaabee9577" category="paragraph">オペレーティングシステムが systemd を使用していない場合は、次の手順を実行します。</block>
@@ -5376,7 +5372,6 @@
   <block id="936ff88b3ce432ac2624f7f2bb4998a4" category="paragraph">Ubuntu または Debian でエージェントをアンインストールするには、 Bash ターミナルで次のコマンドを実行します。</block>
   <block id="7f3a9bda6122a676154f73d5edf02232" category="list-text"><block ref="760050cb55c606cd7ef0af21f798bf45" category="inline-link-macro-rx"></block>。</block>
   <block id="8b06df0295926efcdcc1f9e13c49848e" category="section-title">MacOS</block>
-  <block id="9081c1ab02feb1730d134201f823bf3c" category="list-text">プロキシの背後にいる場合は、「 MacOS* のプロキシサポートの設定」セクションの手順に従います。</block>
   <block id="b23f4e2f2268beeee7ca70611f0a7a37" category="list-title">エージェントを macOS にインストールする手順：</block>
   <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">前に Home醸造 を使用して Tegraf エージェントをインストールしていた場合は、アンインストールするように求められます。以前にインストールした Tegraf エージェントをアンインストールしたら、上記の手順 5 でコマンドを再実行します。</block>
   <block id="e747d1c9206ef290e765c44899e8276d" category="section-title">macOS のプロキシサポートを設定しています</block>
@@ -8981,4 +8976,11 @@
   <block id="137812c306b0ede761fedbc1e1b88824" category="cell">/AutoFile03242022はありません</block>
   <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
   <block id="8bc6542329adc040b119d4b8973c0d7f" category="cell">すべてのエントリを表示します</block>
+  <block id="2156565620990981867eac598ee8b32d" category="list-text">プロキシの背後にいる場合は、「Windows *プロキシ・サポートの構成」セクションの手順に従う必要があります。</block>
+  <block id="f3dd6d7b854220a72089f42589f41cba" category="admonition">プロキシを使用する環境の場合は、をインストールする前にこのセクションをお読みください。</block>
+  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">エージェントをインストールしています</block>
+  <block id="d45fc0c2a28126623498664c1e032858" category="list-text">プロキシの背後にある場合は、「RHEL / CentOS *用のプロキシサポートの設定」セクションの手順に従う必要があります。</block>
+  <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">プロキシの背後にいる場合は、「Ubuntu / Debian *用のプロキシサポートの設定」セクションの手順に従う必要があります。</block>
+  <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">プロキシの背後にいる場合は、「* macOS *用プロキシサポートの設定」セクションの手順に従う必要があります。</block>
+  <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。</block>
 </blocks>

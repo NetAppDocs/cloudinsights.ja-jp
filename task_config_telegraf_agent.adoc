@@ -56,12 +56,32 @@ NOTE: プロキシを使用している場合は、 Tegraf エージェントを
 
 === Windows の場合
 
-image:AgentInstallWindows.png["Windows Agent のインストール"]
 
-.前提条件
+
+==== 前提条件
+
 * PowerShell がインストールされていること
-* プロキシの背後にいる場合は、「 Windows * 用プロキシ・サポートの構成」セクションの手順に従います。
+* プロキシの背後にいる場合は、「Windows *プロキシ・サポートの構成」セクションの手順に従う必要があります。
 
+
+
+
+==== Windows 向けプロキシサポートを設定しています
+
+
+NOTE: プロキシを使用する環境の場合は、をインストールする前にこのセクションをお読みください。
+
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
+
+プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に _https_proxy_ および /or_http_proxy_environment 変数 * を設定するには、次の手順を実行します。
+
+ [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
+
+
+==== エージェントをインストールしています
+
+image:AgentInstallWindows.png["Windows Agent のインストール"]
 
 .Windows にエージェントをインストールする手順：
 . エージェントアクセスキーを選択します。
@@ -78,16 +98,6 @@ image:AgentInstallWindows.png["Windows Agent のインストール"]
 Start-Service telegraf
 Stop-Service telegraf
 ....
-
-
-==== Windows 向けプロキシサポートを設定しています
-
-
-NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
-
-プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に _https_proxy_ および /or_http_proxy_environment 変数 * を設定するには、次の手順を実行します。
-
- [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
 
 
 ==== エージェントをアンインストールしています
@@ -132,12 +142,39 @@ sc.exe delete telegraf
 
 === RHEL および CentOS
 
-image:Agent_Requirements_Rhel.png["RHEL / CentOS Agent のインストール"]
 
-.前提条件
+
+==== 前提条件
+
 * cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります
-* プロキシの背後にある場合は、「 RHEL / CentOS * 用のプロキシサポートの設定」セクションの手順に従ってください。
+* プロキシの背後にある場合は、「RHEL / CentOS *用のプロキシサポートの設定」セクションの手順に従う必要があります。
 
+
+
+
+==== RHEL / CentOS でのプロキシサポートの設定
+
+
+NOTE: プロキシを使用する環境の場合は、をインストールする前にこのセクションをお読みください。
+
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
+
+プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
+
+. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
++
+ export https_proxy=<proxy_server>:<proxy_port>
+. /etc/default/テレ グラム af_ を作成し、 _https_proxy_/or_http_proxy_variable の定義を挿入します。
++
+ https_proxy=<proxy_server>:<proxy_port>
+
+
+
+
+==== エージェントをインストールしています
+
+image:Agent_Requirements_Rhel.png["RHEL / CentOS Agent のインストール"]
 
 .RHEL または CentOS にエージェントをインストールする手順：
 . エージェントアクセスキーを選択します。
@@ -162,23 +199,6 @@ sudo systemctl stop telegraf
 sudo service telegraf start
 sudo service telegraf stop
 ....
-
-
-==== RHEL / CentOS でのプロキシサポートの設定
-
-
-NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
-
-プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
-
-. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
-+
- export https_proxy=<proxy_server>:<proxy_port>
-. /etc/default/テレ グラム af_ を作成し、 _https_proxy_/or_http_proxy_variable の定義を挿入します。
-+
- https_proxy=<proxy_server>:<proxy_port>
-
-
 
 
 ==== エージェントをアンインストールしています
@@ -224,12 +244,39 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 
 === Ubuntu と Debian
 
-image:Agent_Requirements_Ubuntu.png["Ubuntu / Debian Agent のインストール"]
 
-.前提条件
+
+==== 前提条件
+
 * cURL 、 sudo 、 ping 、 sha256sum 、 openssl 、 dmidecode となります
-* プロキシの背後にいる場合は、「 Ubuntu / Debian * 用のプロキシサポートの設定」セクションの手順に従ってください。
+* プロキシの背後にいる場合は、「Ubuntu / Debian *用のプロキシサポートの設定」セクションの手順に従う必要があります。
 
+
+
+
+==== Ubuntu / Debian のプロキシサポートの設定
+
+
+NOTE: プロキシを使用する環境の場合は、をインストールする前にこのセクションをお読みください。
+
+
+NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
+
+プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
+
+. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
++
+ export https_proxy=<proxy_server>:<proxy_port>
+. /etc/default/テレ グラムを作成し、 _https_proxy_/or_http_proxy_variable 以下の定義を挿入します。
++
+ https_proxy=<proxy_server>:<proxy_port>
+
+
+
+
+==== エージェントをインストールしています
+
+image:Agent_Requirements_Ubuntu.png["Ubuntu / Debian Agent のインストール"]
 
 .Debian または Ubuntu にエージェントをインストールする手順 :
 . エージェントアクセスキーを選択します。
@@ -254,23 +301,6 @@ sudo systemctl stop telegraf
 sudo service telegraf start
 sudo service telegraf stop
 ....
-
-
-==== Ubuntu / Debian のプロキシサポートの設定
-
-
-NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
-
-プロキシの背後にあるシステムの場合は、 Telegraf エージェントをインストールする前に、次の手順 * を実行します。
-
-. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
-+
- export https_proxy=<proxy_server>:<proxy_port>
-. /etc/default/テレ グラムを作成し、 _https_proxy_/or_http_proxy_variable 以下の定義を挿入します。
-+
- https_proxy=<proxy_server>:<proxy_port>
-
-
 
 
 ==== エージェントをアンインストールしています
@@ -316,32 +346,20 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 === MacOS
 
-image:Agent_Requirements_Macos.png["MacOS Agent のインストール"]
 
-.前提条件
+
+==== 前提条件
+
 * 次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります
-* プロキシの背後にいる場合は、「 MacOS* のプロキシサポートの設定」セクションの手順に従います。
+* プロキシの背後にいる場合は、「* macOS *用プロキシサポートの設定」セクションの手順に従う必要があります。
 
 
-.エージェントを macOS にインストールする手順：
-. エージェントアクセスキーを選択します。
-. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
-. Bash ウィンドウを開きます
-. Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。
-. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
-. 前に Home醸造 を使用して Tegraf エージェントをインストールしていた場合は、アンインストールするように求められます。以前にインストールした Tegraf エージェントをアンインストールしたら、上記の手順 5 でコマンドを再実行します。
-. [ 完了 ] または [ 続行 ] をクリックします
-
-
-エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
 
 
 ==== macOS のプロキシサポートを設定しています
+
+
+NOTE: プロキシを使用する環境の場合は、をインストールする前にこのセクションをお読みください。
 
 
 NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
@@ -387,6 +405,28 @@ sudo launchctl stop telegraf
 sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
 sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
 sudo launchctl start telegraf
+....
+
+
+==== エージェントをインストールしています
+
+image:Agent_Requirements_Macos.png["MacOS Agent のインストール"]
+
+.エージェントを macOS にインストールする手順：
+. エージェントアクセスキーを選択します。
+. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
+. Bash ウィンドウを開きます
+. Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。
+. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
+. 前に Home醸造 を使用して Tegraf エージェントをインストールしていた場合は、アンインストールするように求められます。以前にインストールした Tegraf エージェントをアンインストールしたら、上記の手順 5 でコマンドを再実行します。
+. [ 完了 ] または [ 続行 ] をクリックします
+
+
+エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
+
+....
+sudo launchctl start telegraf
+sudo launchctl stop telegraf
 ....
 
 

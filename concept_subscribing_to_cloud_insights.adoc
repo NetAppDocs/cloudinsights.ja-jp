@@ -98,7 +98,7 @@ Cloud Insights の使用中に鍵のアイコンが表示される場合 image:p
 
 == 試用版
 
-Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、 Cloud Insights Standard Edition が提供するすべての機能をお客様の環境でご確認いただけます。
+Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。
 
 試用期間中はいつでも Cloud Insights に登録できます。Cloud Insights に登録すると、データへの中断のないアクセスと拡張されたアクセスが保証されます link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 製品サポート *"] オプション（ Options ）
 
