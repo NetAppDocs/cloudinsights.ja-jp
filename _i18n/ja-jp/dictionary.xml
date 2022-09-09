@@ -8984,4 +8984,5 @@
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。</block>
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes Monitoring Operator（NKMO）は、Cloud Insights Insights用のKubernetesをインストールする方法として推奨されます。より柔軟な設定で監視を実行し、Kubernetesクラスタ内で実行される他のソフトウェアを監視する機会を増やします。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> NetApp Kubernetes Monitoring Operatorに関する情報とインストール手順については、以下を参照してください。</block>
+  <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝｝ ｛empty｝</block>
 </blocks>
