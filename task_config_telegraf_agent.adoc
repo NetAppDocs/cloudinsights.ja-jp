@@ -473,12 +473,10 @@ sudo /tmp/uninstall
 
 == Kubernetes
 
-====
 NetApp Kubernetes Monitoring Operator（NKMO）は、Cloud Insights Insights用のKubernetesをインストールする方法として推奨されます。より柔軟な設定で監視を実行し、Kubernetesクラスタ内で実行される他のソフトウェアを監視する機会を増やします。
 
 お願いします link:task_config_telegraf_agent_k8s.html["* ここに移動 *"] NetApp Kubernetes Monitoring Operatorに関する情報とインストール手順については、以下を参照してください。
 
-====
 
 
 == チェックサムを検証する
