@@ -21,6 +21,7 @@ Cloud Secure では、データコレクタを使用して、デバイスから�
 ** SMBプロトコルバージョン3.1以前。Cloud Secure は、FlexCache を使用するSMB構成では機能しないことに注意してください。ONTAP 9.7以降では、FPolicyはNFS環境でのみサポートされます。
 ** NFS プロトコルバージョン 4.0 以前
 ** FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます
+** ONTAP Select がサポートされています
 
 
 * サポートされるのはデータタイプの SVM のみです。Infinite Volume を備えた SVM はサポートされません。

@@ -5535,12 +5535,10 @@
   <block id="ba6a231cc4fc57afa76b3f2a42f71f11" category="list-text">[*Admin] &gt; [Data Collectors] &gt; [Agents] &gt; [+ Agent*] をクリックします</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">[ エージェントの追加 ] ページが表示されます。</block>
   <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">エージェント 1 を追加します</block>
-  <block id="fa851401541c7d95144ca33b604668b7" category="list-text">エージェントをインストールするオペレーティングシステムを選択します。</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">エージェントサーバが最小システム要件を満たしていることを確認します。</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">エージェントサーバでサポートされているバージョンの Linux が実行されていることを確認するには、 _ サポートされているバージョン（ i ） _ をクリックします。</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">ネットワークでプロキシサーバを使用している場合は、プロキシセクションの指示に従ってプロキシサーバの詳細を設定してください。</block>
   <block id="f828f889a93c9ae560b6227f2cc5d7fb" category="inline-image-macro">エージェントのインストールとプロキシに関する注意事項</block>
-  <block id="74cb98f58c3a23767424d0d09e83571e" category="paragraph"><block ref="74cb98f58c3a23767424d0d09e83571e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a10e2f227e4fcc6978cfba86486a764" category="list-text">[ クリップボードにコピー ] アイコンをクリックして、インストールコマンドをコピーします。</block>
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">ターミナルウィンドウでインストールコマンドを実行します。</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">インストールが正常に完了すると、次のメッセージが表示されます。</block>
@@ -5557,7 +5555,6 @@
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">エージェントのインストール時に /opt/NetApp/cloudsecure/agent/logs/agent.log フォルダが作成されず、 install.log ファイルに関連情報が記録されません。</block>
   <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">このエラーは、エージェントのブートストラップ中に発生します。ロガーが初期化される前に発生するため、エラーはログファイルに記録されません。エラーは標準出力にリダイレクトされ 'journalctl -u cloudsecure-agent.service` コマンドを使用してサービスログに表示されますこのコマンドを使用して、問題のトラブルシューティングをさらに行うことができます。</block>
   <block id="0a21e5a6656a19032e65faf86ec69c83" category="cell">「この Linux ディストリビューションはサポートされていません。インストールを終了しています。</block>
-  <block id="6a4df434fb58ac1c6e9e4f8dd1694643" category="cell">Cloud Secure 1.0.0 でサポートされるプラットフォームは、 RHEL 7.x / CentOS 7.x ですRHEL 6.x または CentOS 6.x システムにエージェントをインストールしないようにしてください。</block>
   <block id="3a7e14f279ad4988e72d190c932c04e4" category="cell">エージェントのインストールが次のエラーで失敗しました： "-bash: unzip: command not found"</block>
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">unzip をインストールし、インストールコマンドを再度実行します。Yum がマシンにインストールされている場合は、「 yum install unzip 」を実行して解凍ソフトウェアをインストールしてください。その後、 Agent インストール UI からコマンドをコピーして CLI に貼り付け、再度インストールを実行します。</block>
   <block id="a387ff3584e009519afcccd4187aa537" category="cell">エージェントがインストールされ、実行されていました。しかし、エージェントは突然停止しました。</block>
@@ -8773,7 +8770,6 @@
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">ポリシーを変更できませんでした。理由：このコマンドは許可されていません。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">csuserを使用している場合は、上記のようにユーザに権限が与えられているかどうかを確認します。</block>
   <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「cloud.netapp.com」&gt;「アカウント/ログインの問題」または「cloud.netapp.com」&gt;「フェデレーションの問題」を選択します。これは、 Cloud Central の問題や質問に特化したものです。Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
-  <block id="0f0836a5cbb198e5071126d330de3a88" category="cell">ディスクスペースの割り当ては、次のように行います。/opt/netapp 35GB（最小）</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">双方向</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">このページです</block>
   <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.データコレクタページで、エラーが表示されているデータコレクタの右にスクロールし、3つのドットメニューをクリックします。選択した編集 _ 。データコレクタのパスワードをもう一度入力します。[Save] ボタンを押して、データコレクタを保存します。Data Collector が再起動し、エラーが解決されます。2.エージェントマシンに十分なCPUまたはRAMヘッドルームがない場合があります。そのため、DSCが故障しています。マシンのエージェントに追加されているデータコレクタの数を確認してください。20を超える場合は、エージェントマシンのCPUとRAM容量を増やしてください。CPUとRAMが増加すると、DSCは初期化状態になり、その後自動的に実行状態になります。のサイジングガイドを参照してください <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
@@ -8985,4 +8981,9 @@
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes Monitoring Operator（NKMO）は、Cloud Insights Insights用のKubernetesをインストールする方法として推奨されます。より柔軟な設定で監視を実行し、Kubernetesクラスタ内で実行される他のソフトウェアを監視する機会を増やします。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> NetApp Kubernetes Monitoring Operatorに関する情報とインストール手順については、以下を参照してください。</block>
   <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝｝ ｛empty｝</block>
+  <block id="1b1cd01c54254af639999400741a0b75" category="list-text">ONTAP Select がサポートされています</block>
+  <block id="a1667a4627338ab4bba192e79668af02" category="paragraph"><block ref="a1667a4627338ab4bba192e79668af02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">このエラーは、サポートされていないシステムにAgentをインストールしようとしたときに表示されます。を参照してください <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">トラブルシューティング</block>
+  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">ディスクスペースは、次のように割り当てます。/opt/netapp 35GB（最小）/optがNASストレージからマウントされたフォルダである場合、ローカルユーザがこのフォルダにアクセスできることを確認します。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
 </blocks>

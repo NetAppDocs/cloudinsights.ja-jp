@@ -28,7 +28,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | メモリ | 16GB の RAM 
 
 
-| 使用可能なディスクスペース | ディスクスペースの割り当ては、次のように行います。/opt/netapp 35GB（最小） 
+| 使用可能なディスクスペース | ディスクスペースは、次のように割り当てます。/opt/netapp 35GB（最小）/optがNASストレージからマウントされたフォルダである場合、ローカルユーザがこのフォルダにアクセスできることを確認します。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください link:task_cs_add_agent.html#troubleshooting-agent-errors["トラブルシューティング"] 詳細については、を参照してください。 
 
 
 | ネットワーク | 100Mbps ～ 1Gbps のイーサネット接続、静的 IP アドレス、すべてのデバイスへの IP 接続、および Cloud Secure インスタンスへの必要なポート（ 80 または 443 ） 
