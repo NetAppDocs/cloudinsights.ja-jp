@@ -8725,7 +8725,6 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同様に、各ネームスペースのワークロードのリストがワークロードタブに表示され、CPUとメモリの使用量も表示されます。ネームスペースリンクをクリックすると、ドリルでそれぞれが実行されます。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">メモリと CPU のゲージには、 _allocatable capacity_ と _total の容量 _ に関連して _Used_in が表示されるので、 3 色が表示されます。</block>
-  <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。</block>
   <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">* Cohesity SmartFiles *-このREST APIベースのコヒリティ・クラスターを取得して、「ビュー」（CI内部ボリューム）、各種ノード、パフォーマンスメトリックの収集を行います。</block>
   <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">このREST APIベースのコヒリティ・クラスターを取得し、「ビュー」（Cloud Insights 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。</block>
@@ -8986,4 +8985,5 @@
   <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">このエラーは、サポートされていないシステムにAgentをインストールしようとしたときに表示されます。を参照してください <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
   <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">トラブルシューティング</block>
   <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">ディスクスペースは、次のように割り当てます。/opt/netapp 35GB（最小）/optがNASストレージからマウントされたフォルダである場合、ローカルユーザがこのフォルダにアクセスできることを確認します。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
+  <block id="2c766eee635ebf4112370c39ebd34dbf" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。SE（Security Enhanced）Linuxはサポートされていません。</block>
 </blocks>
