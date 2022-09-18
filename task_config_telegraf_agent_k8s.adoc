@@ -17,7 +17,7 @@ Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
 
 
-NOTE: Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <<Verifying Kubernetes Checksums>>。
+NOTE: Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください  Kubernetes Checksums。
 
 
 toc::[]
@@ -52,7 +52,7 @@ NOTE: プロキシを使用している場合は、 Tegraf エージェントを
 Cloud Insights では、Kubernetesコレクション向けのNetApp Kubernetes Monitoring Operator *を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
 
 .前提条件
-* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります <<upgrading-the-agent,アップグレード>> PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。
+* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります ,アップグレード PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。
 
 
 * OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。
@@ -353,7 +353,7 @@ kubbe 状態メトリックカウンタの情報にアクセスするには、�
 
 == エージェントをアンインストールしています
 
-以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります <<upgrading-the-agent,アップグレード>> を使用して、NetApp Kubernetes Monitoring Operatorに接続します。
+以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります ,アップグレード を使用して、NetApp Kubernetes Monitoring Operatorに接続します。
 
 
 
@@ -415,8 +415,8 @@ NOTE: スクリプトベースのエージェントがインストールされ�
  kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
-* <<uninstalling-the-agent,をアンインストールします>> 既存のエージェント
-* <<installing-the-agent,をインストールします>> 新しいエージェント]。
+* ,をアンインストールします 既存のエージェント
+* ,をインストールします 新しいエージェント]。
 
 
 

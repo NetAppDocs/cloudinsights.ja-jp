@@ -21,7 +21,7 @@ NOTE: 正確な監査およびデータレポートを作成するためには�
 == Linux Acquisition Unit の追加
 
 .作業を開始する前に
-* プロキシを使用するシステムの場合は、 Acquisition Unit をインストールする前にプロキシ環境変数を設定する必要があります。詳細については、を参照してください <<Setting proxy environment variables>>。
+* プロキシを使用するシステムの場合は、 Acquisition Unit をインストールする前にプロキシ環境変数を設定する必要があります。詳細については、を参照してください  proxy environment variables。
 
 
 .Linux Acquisition Unit のインストール手順

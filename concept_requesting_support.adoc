@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_requesting_support.html 
 summary: サポートをリクエストする方法については、技術情報アーティクルの表示、ネットアップコミュニティとの接続、ビデオの表示、チケットの発行があります。 
-keywords: support, knowledgebase, documentation, community, chat, videos, help, contact 
+keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = サポートをリクエストしています
 :allow-uri-read: 
@@ -101,7 +101,7 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 上記のセルフサポートオプションに加え、監視対象のネットアップの製品またはサービスに対する Cloud Insights サブスクリプションまたは有料サポートがある場合は、ネットアップサポートエンジニアと協力して問題を解決できます。
 
 
-NOTE: に登録する必要があります <<Activating support entitlement and accessing support,サポートを有効にします>> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください link:https://register.netapp.com["クラウドデータサービスサポート登録"]。
+NOTE: に登録する必要があります  support entitlement and accessing support,サポートを有効にします ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください link:https://register.netapp.com["クラウドデータサービスサポート登録"]。
 
 チェックボックスをオンにして、サポートセッション中にネットアップサポートエンジニアが Cloud Insights 環境にアクセスできるようにすることを強く推奨します。これにより、エンジニアが問題のトラブルシューティングを行い、問題を迅速に解決できるようになります。問題が解決されるか、サポートセッションが終了したら、チェックボックスをオフにできます。
 
@@ -109,7 +109,7 @@ NOTE: に登録する必要があります <<Activating support entitlement and 
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["* 電話 *"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["* サポートチケット *"]
-* *チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。[ヘルプ]>[サポート*]ページの右下にあるバブルをクリックします。
+* *チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。チャットは、Cloud Insights 画面の右上にある* Help > Live Chat *メニューオプションで利用できます。
 
 
 をクリックして、セールスサポートをリクエストすることもできます link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 販売担当者 * にお問い合わせください"] リンク

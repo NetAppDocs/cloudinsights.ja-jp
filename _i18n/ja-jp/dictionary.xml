@@ -8596,7 +8596,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">詳細はこちら。</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetesネームスペースのスペースが不足しています</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">スペース不足Insightで実行されているKubernetesネームスペースのワークロードについて、スペース不足になる可能性がある状況をKubernetesネームスペースで確認できます。各スペースがフルになるまでの推定日数も示されます。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
-  <block id="9e7ded308e600f5c72a32aac82868158" category="list-text">*チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。[ヘルプ]&gt;[サポート*]ページの右下にあるバブルをクリックします。</block>
   <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">ONTAP データコレクタ*のランディング・ページを表示しているときに'データ・コレクタのサマリー・セクションの通知フィールドで鉛筆のアイコンをクリックすると'通知を変更できます</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">分析情報は、Kubernetesスペースがいついっぱいになるかを予測するのに役立ちます。</block>
   <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">分析情報：Kubernetesネームスペースのスペースが不足しています</block>
@@ -8665,7 +8664,6 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">クラスタ内の* Pod*の数。この番号をクリックすると、ポッドリストページが開きます。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">クラスタ内のネームスペースの数*。この番号をクリックすると、名前空間リストページが開きます。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">クラスタ内のワークロードの数*。この数値をクリックすると、ワークロードリストページが開きます。</block>
-  <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2 ~ 7.9、8.1 ~ 8.4 * Ubuntu Server：18.04および20.04 LTSこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。</block>
   <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">ワークロードの競合</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">ホスト、ネットワーク、ストレージなど、他の共有リソースに影響を及ぼすアセットと影響を受けるアセットが表示されます。このようなリソースを_greeding_/degraded_resourcesと呼ぶこともあります。</block>
@@ -8797,10 +8795,6 @@
   <block id="87d26f2a744f5c5f07151656de6a1390" category="summary">ONTAP Essentialsは、環境の詳細な概要を提供するダッシュボードとワークフローのセットです。</block>
   <block id="f7e8a669ab2a5aca497e3123c1f3935b" category="doc">ONTAP の基礎知識</block>
   <block id="7aaa3b04c62b1d6b52635ad40e8ff0a2" category="paragraph">ONTAP Essentialsは、ONTAP のインベントリとワークロードの詳細な概要を提供するダッシュボードとワークフローのセットです。ONTAP Essentialsで作業するときに使用される次の用語が表示されることがあります。</block>
-  <block id="70de8b0d424cdb2d65787ccde2449a8d" category="list-text">インフラ/インベントリ：ユーザデータにストレージ/ネットワークサービスを提供するオブジェクトのリストビュー</block>
-  <block id="3d46ac68e417d922e47209568ce8e07b" category="list-text">ワークロード：ユーザにデータの読み取り/書き込みインターフェイスを提供するオブジェクトのリストビュー。</block>
-  <block id="0b91449983387e2b661cde46c2928572" category="list-text">データ保護：ネットアップのデータ保護テクノロジを使用して保護できるさまざまなオブジェクトのリストビュー</block>
-  <block id="de2952ddd95b7a20bbb88abe0c97e2a6" category="paragraph">ONTAP Essentialsには、少なくとも1つの動作中のONTAP データコレクタと、先週収集されたデータが必要です。</block>
   <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">探索を開始するには、Cloud Insights メインメニューから* ONTAP Essentials *を選択します。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP Essentialsの概要ダッシュボード</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
@@ -8817,7 +8811,6 @@
   <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4643f417b694b85fa8cf7cbd0572c5cd" category="inline-image-macro">調査するインフラストラクチャオブジェクト</block>
   <block id="3e60a504c4f09f36de3a060d1761d279" category="paragraph">クラスタの健常性を示すインフラのページ：<block ref="4510f66edf4997b6dc6197eeda5a382e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cb2693590d2fee42898b89121aea43bb" category="paragraph">環境内のLUN /ボリュームまたはqtreeのワークロードを表示して確認します。</block>
   <block id="9b487ae015c8109487f87177d5d90403" category="inline-image-macro">ワークロードメニュー</block>
   <block id="b17cca1084b467c0c42cf2095a7e921b" category="paragraph"><block ref="b17cca1084b467c0c42cf2095a7e921b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="66afae6b95d602c69251c81851ce13af" category="inline-image-macro">ワークロードリストページ</block>
@@ -8978,4 +8971,29 @@
   <block id="0dec2b903302bbd14d95abf2e3a6eb78" category="paragraph">エージェントマシンは、クラウドサービスプロバイダのそれぞれのサブネットで設定する必要があります。ネットワークアクセスの詳細については、[エージェントの要件]を参照してください。</block>
   <block id="608efa70bff9cd8ba64ac8f581eee545" category="paragraph">以下は、AWSでエージェントをインストールする手順です。クラウドサービスプロバイダに応じて、AzureまたはGoogle Cloudでインストールのために同等の手順を実行できます。</block>
   <block id="dacbc7c2a597126f4cb9dec110f0684b" category="paragraph">AWSでは、次の手順に従って、Cloud Secure エージェントとして使用するマシンを設定します。</block>
+  <block id="e92d16963e5b72f89982fb54b922794a" category="list-text">*チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。チャットは、Cloud Insights 画面の右上にある* Help &gt; Live Chat *メニューオプションで利用できます。</block>
+  <block id="abc39e61f48aa5adbf3a9de149e1a87a" category="list-text">インフラ/インベントリ：ユーザデータにストレージ/ネットワークサービスを提供するオブジェクト</block>
+  <block id="f66a68b2ce406b961d0175d123132ef1" category="list-text">Workloads：ユーザにデータの読み取り/書き込みのインターフェイスを提供するオブジェクト。</block>
+  <block id="85d3998a83e328d8facfa5fc0ffc5c7a" category="list-text">データ保護：ネットアップのデータ保護テクノロジを使用して保護できるオブジェクト</block>
+  <block id="a66819116f0ea13d8c7d391f072a94b3" category="paragraph">ONTAP Essentialsには、過去7日間に収集されたデータを含む、最低1つの動作中のONTAP データコレクタが必要です。</block>
+  <block id="704d895c2fdd387baf82cbd889ec2ac4" category="paragraph"><block ref="704d895c2fdd387baf82cbd889ec2ac4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d69c939c03cf5ed0d694b88094ca8309" category="paragraph">ここでは、環境内のアクティブなアラートを表示し、潜在的な問題をすばやく詳細に把握できます。解決済みのアラートを表示するには、_Resolvedタブを選択します。</block>
+  <block id="a8a9422431d959b78b009edf9ca8e97c" category="inline-image-macro">ONTAP アラートメニュー</block>
+  <block id="a81771e75cfd0a261680be2fa844a7c3" category="inline-image-macro">アクティブなアラートが表示されたONTAP のアラートページの例</block>
+  <block id="769427409530f58e4dace412d2741b71" category="paragraph"><block ref="34c43bd5ee99f9bff20a286878764efa" category="inline-image-macro-rx" type="image"></block>
+<block ref="83c2acb3e0809ee6fd30a80bed9be19c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">ネットワーキング</block>
+  <block id="4915558345cda00734062a8065ae320d" category="paragraph">ONTAP Essentialsネットワーキングでは、FC、NVMe FC、イーサネット、およびiSCSIインフラストラクチャを確認できます。このページでは、クラスタ内のポートやクラスタ内のノードを確認できます。</block>
+  <block id="d6d29c8ac434b329501477631622c73a" category="inline-image-macro">ONTAP Essentialsネットワーキングメニュー</block>
+  <block id="406f5ee7ba342eddfdb1feaa3554c5f3" category="inline-image-macro">ONTAP EssentialsのネットワークFCページに、クラスタノードへのポートが表示されます</block>
+  <block id="fb77a4c2cf8caf6167399eeb455fcddd" category="paragraph"><block ref="97fb6465b58fb1e2d5c970a3c00e4b1d" category="inline-image-macro-rx" type="image"></block>
+<block ref="c4c78d209c3177884a81b717b96ec1a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a3cd3c9afd68e2531df6b8a3ad4536c" category="paragraph">環境内のLUN /ボリューム、NFSまたはSMB共有、またはqtreeのワークロードを表示して確認できます。</block>
+  <block id="9eaf347efd9d5225664dc4c414a82eb2" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2~7.9、8.1～8.6 * Ubuntu Server：18.04および20.04 LTSこのコンピュータでは、他のアプリケーションレベルのソフトウェアは実行しないでください。専用のサーバを使用することを推奨します。</block>
+  <block id="15a43b8a93156e727b3b81dc25fd6d32" category="section-title">セキュリティモニタ</block>
+  <block id="2db1857ce4841fcb4871ca570d9f1e9e" category="cell">モニタ名</block>
+  <block id="38eb03d447ddc98ff3687aa8f4aeaa70" category="cell">FIPSモードが無効になりました</block>
+  <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">FIPS 140-2への準拠を有効にすると、TLSv1とSSLv3は無効になり、TLSv1.1とTLSv1.2のみが引き続き有効になります。ONTAP では、FIPS 140-2準拠モードが有効な場合、TLSv1とSSLv3を有効にすることはできません。</block>
+  <block id="f41a65442a444212a9242b353da02fa7" category="cell">クラスタでFIPS 140-2準拠モードを有効にするには、次のONTAP コマンドをadvanced権限モードで実行します。security config modify -interface SSL -is-fips-enabled true</block>
+  <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">モニタとアラート機能はすべてのCloud Insights エディションで利用できますが、Basicエディションには以下の条件があります。*一度にアクティブにできるカスタムモニタは最大5台です。5台を超えるモニタは、_Paused _状態に作成または移動されます。* VMDK、仮想マシン、ホスト、データストアのメトリックモニタはサポートされていません。これらのメトリック用に作成されたモニタは一時停止され、Basic Editionにダウングレードすると再開できません。</block>
 </blocks>

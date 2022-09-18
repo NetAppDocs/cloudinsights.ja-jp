@@ -11,12 +11,12 @@ keywords: dashboard, widget, ontap, overview, insight
 [role="lead"]
 ONTAP Essentialsは、ONTAP のインベントリとワークロードの詳細な概要を提供するダッシュボードとワークフローのセットです。ONTAP Essentialsで作業するときに使用される次の用語が表示されることがあります。
 
-* インフラ/インベントリ：ユーザデータにストレージ/ネットワークサービスを提供するオブジェクトのリストビュー
-* ワークロード：ユーザにデータの読み取り/書き込みインターフェイスを提供するオブジェクトのリストビュー。
-* データ保護：ネットアップのデータ保護テクノロジを使用して保護できるさまざまなオブジェクトのリストビュー
+* インフラ/インベントリ：ユーザデータにストレージ/ネットワークサービスを提供するオブジェクト
+* Workloads：ユーザにデータの読み取り/書き込みのインターフェイスを提供するオブジェクト。
+* データ保護：ネットアップのデータ保護テクノロジを使用して保護できるオブジェクト
 
 
-ONTAP Essentialsには、少なくとも1つの動作中のONTAP データコレクタと、先週収集されたデータが必要です。
+ONTAP Essentialsには、過去7日間に収集されたデータを含む、最低1つの動作中のONTAP データコレクタが必要です。
 
 
 
@@ -24,7 +24,7 @@ ONTAP Essentialsには、少なくとも1つの動作中のONTAP データコレ
 
 探索を開始するには、Cloud Insights メインメニューから* ONTAP Essentials *を選択します。
 
-image:ONTAP_Essentials_Menu_and_screen.png["ONTAP Essentialsの概要ダッシュボード"]
+image:ONTAP_Essentials_Overview_Sept.png["ONTAP Essentialsの概要ダッシュボード"]
 
 概要*ダッシュボードには、環境内のクラスタ数や全体的な容量とパフォーマンスの割合など、役立つ情報が表示されます。また、ストレージ容量またはパフォーマンス容量がスペース不足になるまでの想定日数に関する予測データも表示されます。また、インフラ内のコントローラが高温で動作している場合は、ONTAP Essentialsにそれらのコントローラが表示されます。
 
@@ -44,6 +44,15 @@ image:ONTAP_Essentials_data_protection.png["SnapMirror関係リストページ"]
 
 
 
+== アラート
+
+ここでは、環境内のアクティブなアラートを表示し、潜在的な問題をすばやく詳細に把握できます。解決済みのアラートを表示するには、_Resolvedタブを選択します。
+
+image:ONTAP_Essentials_Alerts_Menu.png["ONTAP アラートメニュー"]
+image:ONTAP_Essentials_Alerts_Page.png["アクティブなアラートが表示されたONTAP のアラートページの例"]
+
+
+
 == インフラ
 
 ONTAP Essential* Infrastructure *ページでは、すべての基本的なONTAP オブジェクトに対して事前に構築された（さらにカスタマイズ可能な）クエリーを使用して、クラスタの正常性とパフォーマンスを確認できます。確認するオブジェクトタイプ（クラスタ、ストレージプールなど）を選択し、健常性とパフォーマンスのどちらの情報を表示するかを選択します。フィルタを設定して、個々のシステムの詳細を調べます。
@@ -54,9 +63,18 @@ image:ONTAP_Essentials_Health_Performance.png["ストレージプールのイン
 
 
 
+== ネットワーキング
+
+ONTAP Essentialsネットワーキングでは、FC、NVMe FC、イーサネット、およびiSCSIインフラストラクチャを確認できます。このページでは、クラスタ内のポートやクラスタ内のノードを確認できます。
+
+image:ONTAP_Essentials_Alerts_Menu.png["ONTAP Essentialsネットワーキングメニュー"]
+image:ONTAP_Essentials_Alerts_Page.png["ONTAP EssentialsのネットワークFCページに、クラスタノードへのポートが表示されます"]
+
+
+
 == ワークロード
 
-環境内のLUN /ボリュームまたはqtreeのワークロードを表示して確認します。
+環境内のLUN /ボリューム、NFSまたはSMB共有、またはqtreeのワークロードを表示して確認できます。
 
 image:ONTAP_Essentials_Workloads_Menu.png["ワークロードメニュー"]
 

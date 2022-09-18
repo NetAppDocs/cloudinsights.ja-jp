@@ -465,6 +465,18 @@ Cloud Insights に現在搭載されているシステムモニタは次のと�
 |===
 
 
+=== セキュリティモニタ
+
+|===
+
+
+| モニタ名 | 説明 | 対処方法 
+
+
+| FIPSモードが無効になりました | FIPS 140-2への準拠を有効にすると、TLSv1とSSLv3は無効になり、TLSv1.1とTLSv1.2のみが引き続き有効になります。ONTAP では、FIPS 140-2準拠モードが有効な場合、TLSv1とSSLv3を有効にすることはできません。 | クラスタでFIPS 140-2準拠モードを有効にするには、次のONTAP コマンドをadvanced権限モードで実行します。security config modify -interface SSL -is-fips-enabled true 
+|===
+
+
 == 詳細情報
 
 * link:task_view_and_manage_alerts.html["アラートの表示と非表示"]
