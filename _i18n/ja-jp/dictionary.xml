@@ -4650,7 +4650,6 @@
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Windows Acquisition Unit の問題のトラブルシューティング</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">も参照してください <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> および <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights は 5 分ごとにログアウトします</block>
-  <block id="8f65024231687a39efcddb86a1e9debb" category="cell">ブラウザの設定で、 _ [* 。 ] auth0.com からサードパーティのクッキーの受け入れを有効にします。たとえば、 Chrome の incognito モードでは、デフォルトのブラウザ設定によってサードパーティのクッキーがブロックされます。次のコマンドを実行してみます。ブラウザの URL に「 chrome ： //settings/cookies 」と入力します。「すべての Cookie を許可」オプションを選択します。</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。</block>
   <block id="199017f1d912993f091b6b969d3442ad" category="cell">Cloud Central アカウントに登録していること、または組織が Cloud Central で SSO ログインを使用していることを確認します。Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
@@ -9033,4 +9032,5 @@
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">各子アカウントにAWSロールを設定して、メインアカウントIDに子アカウントのS3の詳細へのアクセスを許可する必要があります。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">ベストプラクティス：AWS Predefined_AmazonS3ReadOnlyAccess_policyをS3メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。</block>
   <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP の略</block>
+  <block id="396149d67edd166e53b49c38f4b707ba" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。例：Chromeで、ブラウザのURLに「chrome：//settings/cookies」と入力します。「すべてのCookieを許可」オプションを選択します。*または*「Block third-party cookies」を選択し、[*.] auth0.comおよび[*.] netapp.comの例外を追加します。注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
 </blocks>

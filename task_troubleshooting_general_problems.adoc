@@ -18,12 +18,10 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 == ログインの問題：
 
 |===
-
-
 | * 問題： * | * これを試みなさい : * 
 
 
-| Cloud Insights は 5 分ごとにログアウトします | ブラウザの設定で、 _ [* 。 ] auth0.com からサードパーティのクッキーの受け入れを有効にします。たとえば、 Chrome の incognito モードでは、デフォルトのブラウザ設定によってサードパーティのクッキーがブロックされます。次のコマンドを実行してみます。ブラウザの URL に「 chrome ： //settings/cookies 」と入力します。「すべての Cookie を許可」オプションを選択します。 
+| Cloud Insights は 5 分ごとにログアウトします | 必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。例：Chromeで、ブラウザのURLに「chrome：//settings/cookies」と入力します。「すべてのCookieを許可」オプションを選択します。*または*「Block third-party cookies」を選択し、[*.] auth0.comおよび[*.] netapp.comの例外を追加します。注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。 
 
 
 | Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。 | からチケットを開きます https://mysupport.netapp.com/site/help[]。カテゴリ「cloud.netapp.com」>「アカウント/ログインの問題」または「cloud.netapp.com」>「フェデレーションの問題」を選択します。これは、 Cloud Central の問題や質問に特化したものです。Cloud Insights のその他のテクニカル・サポート問題については、を参照してください link:concept_requesting_support.html["ネットアップサポート"]。 
