@@ -56,12 +56,6 @@ image:Help_LiveChat.png["ライブチャットが強調表示されたヘルプ�
 
 
 
-=== Data Collector のその他のアップデート
-
-これで、すべてのデータソースが最適化され、Acquisition Unitの更新やパッチの適用後にパフォーマンスのポーリングが再開されるようになりました。
-
-
-
 === オペレーティングシステムのサポート
 
 Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["すでにサポートされています"]：
