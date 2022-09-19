@@ -12,6 +12,75 @@ keywords: features
 
 
 
+== 2022年9月
+
+
+
+=== Basic Editionで使用可能なモニタ
+
+ONTAP link:task_system_monitors.html["デフォルトのモニタ"] Cloud Insights Basic Editionで使用できるようになりました。これには、70を超えるインフラ監視と30のワークロード例が含まれます。
+
+
+
+=== ONTAP PowerダッシュボードとStorageGRID ダッシュボード
+
+ダッシュボードギャラリーには、ONTAP 電源と温度の新しいダッシュボードと、StorageGRID 用の4つのダッシュボードが含まれています。ONTAP の電力測定基準やStorageGRID データを収集している環境では、[*+ from Gallery]を選択して、これらのダッシュボードをインポートします。
+
+
+
+=== しきい値が表形式で一目でわかるようにします
+
+条件付き書式を使用すると、表ウィジェットで警告レベルと重大レベルのしきい値を設定して強調表示し、異常なデータポイントを瞬時に可視化できます。
+
+image:ConditionalFormattingExample.png["条件付き書式の例"]
+
+
+
+=== Security Monitorサービスの略
+
+Cloud Insights では、ONTAP システムでFIPSモードが無効になっていることが検出されるとアラートが生成されます。詳細については、をご覧ください link:task_system_monitors.html#security-monitors["システムモニタ"]にアクセスして、この領域をご覧ください。近日公開予定のセキュリティモニターがさらに増えます。
+
+
+
+=== どこからでもチャットできます
+
+新しい* Help > Live Chat *リンクを選択すると、任意のCloud Insights 画面からネットアップサポートスペシャリストとチャットできます。ヘルプはから入手できます。 アイコンをクリックします。
+
+image:Help_LiveChat.png["ライブチャットが強調表示されたヘルプメニュー"]
+
+
+
+=== より目に見える洞察
+
+環境でが使用されている場合 link:insights_overview.html["インサイト"] Spress_or_Kubernetes名前空間の_共有リソースのように、影響を受けるリソースのアセットランディングページには、Insight自体へのリンクが含まれるようになり、探索とトラブルシューティングが迅速になりました。
+
+
+
+=== 新しいデータコレクタ
+
+* Amazon S3（プレビュー版）
+* Brocade FOS 9.0.x
+* Dell/EMC PowerStore 3.0.0.0
+
+
+
+
+=== Data Collector のその他のアップデート
+
+これで、すべてのデータソースが最適化され、Acquisition Unitの更新やパッチの適用後にパフォーマンスのポーリングが再開されるようになりました。
+
+
+
+=== オペレーティングシステムのサポート
+
+Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["すでにサポートされています"]：
+
+* Red Hat Enterprise Linux 8.5、8.6
+
+
+'''
+
+
 == 2022年8月
 
 
