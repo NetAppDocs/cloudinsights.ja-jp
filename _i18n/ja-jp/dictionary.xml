@@ -9032,4 +9032,5 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">AWS では大文字と小文字が区別され、 Cloud Insights では大文字と小文字が区別されないことに注意してください。したがって、Cloud Insights で「owner」という名前のアノテーションを作成し、S3で「owner」、「Owner」、および「owner」という名前のタグを作成すると、すべてのS3バリエーション「owner」のアノテーションがCloud Insightの「owner」アノテーションにマッピングされます。</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">各子アカウントにAWSロールを設定して、メインアカウントIDに子アカウントのS3の詳細へのアクセスを許可する必要があります。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">ベストプラクティス：AWS Predefined_AmazonS3ReadOnlyAccess_policyをS3メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。</block>
+  <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP の略</block>
 </blocks>
