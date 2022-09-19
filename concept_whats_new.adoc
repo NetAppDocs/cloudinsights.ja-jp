@@ -56,15 +56,6 @@ image:Help_LiveChat.png["ライブチャットが強調表示されたヘルプ�
 
 
 
-=== 新しいデータコレクタ
-
-* Amazon S3（プレビュー版）
-* Brocade FOS 9.0.x
-* Dell/EMC PowerStore 3.0.0.0
-
-
-
-
 === Data Collector のその他のアップデート
 
 これで、すべてのデータソースが最適化され、Acquisition Unitの更新やパッチの適用後にパフォーマンスのポーリングが再開されるようになりました。
