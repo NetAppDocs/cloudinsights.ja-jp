@@ -7625,7 +7625,6 @@
   <block id="2d78443087bc495d923e93521efb0c1d" category="doc">知見：ストレスのある共有リソース</block>
   <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">ワークロードやリソースへの影響について話すときは、次の定義が役立ちます。</block>
-  <block id="cd038a3c036812737c2ee89b0152ce75" category="paragraph">* 要求する * または * インパクトのある * リソースは、別のリソースに悪影響を与えるものです。たとえば、 IOPS が非常に高いボリュームでは、原因によって他のボリュームのレイテンシが増大する可能性があります（例 _Impacted_or_Degraded_resources ）を参照してください。要求の厳しいリソースや影響を受けるリソースは、ストレージプールやボリュームなど、同じ共有リソースを使用する「ピア」です。要求の厳しいリソースは、 _greedy_resources と呼ばれることもあります。</block>
   <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">要求の厳しいワークロードとは、共有ストレージプール内の他のリソースに影響を与えていると現在特定されているワークロードのことです。これらのワークロードは IOPS を高め（など）、影響を受けるワークロードの IOPS を削減します。要求の厳しいワークロードは _ 高消費のワークロード _ と呼ばれることもあります。</block>
   <block id="7bddab02c6c096040f0edf52e1623868" category="paragraph">「 Impacted Workload 」は、共有ストレージプール内の負荷の高いワークロードによる影響を受けます。このようなワークロードでは、要件の厳しいワークロードが原因で IOPS やレイテンシが低下しています。</block>
   <block id="cb9530c6d6791a5adae9a607513f9fe2" category="paragraph">* 共有リソースの飽和 * は、 _BASELINE_ に影響する IOPS の比率です。</block>
@@ -9015,10 +9014,6 @@
   <block id="4eecf9894a35e5b8b6c8f2cd8456dc16" category="section-title">より目に見える洞察</block>
   <block id="9e1c9c294ec3f4b96a8a0cc0df13f98e" category="inline-link-macro">インサイト</block>
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">環境でが使用されている場合 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> Spress_or_Kubernetes名前空間の_共有リソースのように、影響を受けるリソースのアセットランディングページには、Insight自体へのリンクが含まれるようになり、探索とトラブルシューティングが迅速になりました。</block>
-  <block id="b3a4cb8b1cc794671c98b17aac5ba206" category="section-title">新しいデータコレクタ</block>
-  <block id="b8cf9f003c21d314dc33ec400eddec24" category="list-text">Amazon S3（プレビュー版）</block>
-  <block id="337813588cd1360f633725a1a1d06b02" category="list-text">Brocade FOS 9.0.x</block>
-  <block id="5fcd1a145d1221f71e25605161e3258e" category="list-text">Dell/EMC PowerStore 3.0.0.0</block>
-  <block id="aa6bf00e4b89737b431c0d0ffdd1b855" category="paragraph">これで、すべてのデータソースが最適化され、Acquisition Unitの更新やパッチの適用後にパフォーマンスのポーリングが再開されるようになりました。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6</block>
+  <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">Cloud Insights が業界をリードするコンピューティングワークロードを検出していない場合、ボリュームまたは内部ボリューム自体がワークロードとして扱われることに注意してください。この環境 は、要求の厳しいワークロードでも影響を受けやすいワークロードでも</block>
 </blocks>
