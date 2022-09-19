@@ -9016,4 +9016,20 @@
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">環境でが使用されている場合 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> Spress_or_Kubernetes名前空間の_共有リソースのように、影響を受けるリソースのアセットランディングページには、Insight自体へのリンクが含まれるようになり、探索とトラブルシューティングが迅速になりました。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6</block>
   <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">Cloud Insights が業界をリードするコンピューティングワークロードを検出していない場合、ボリュームまたは内部ボリューム自体がワークロードとして扱われることに注意してください。この環境 は、要求の厳しいワークロードでも影響を受けやすいワークロードでも</block>
+  <block id="cda933c18fbb578a3f0d2e4907aaa572" category="summary">AWS S3をストレージデータコレクタとして設定する。</block>
+  <block id="77420e0a789b610e7581918e246f925d" category="doc">AWS S3をストレージデータコレクタとして設定します</block>
+  <block id="2401a330264ccc83db4e7dcb1d2a3800" category="paragraph">Cloud Insights は、AWS S3をストレージデータコレクタとして使用して、インベントリとパフォーマンスのデータをAWS S3インスタンスから取得します。</block>
+  <block id="7e4af3fb09f891d46f65e6fe7eaf79b4" category="paragraph">AWS S3からストレージデバイスとしてデータを収集するには、次の情報が必要です。</block>
+  <block id="1a0aac3e93287fcee8ae7a207036c825" category="list-text">IAMロール認証を使用している場合は、AWSクラウドアカウント用の* IAMロール*。IAM ロールは、 Acquisition Unit が AWS インスタンスにインストールされている場合にのみ適用されます。</block>
+  <block id="51222d9334f8421be01a4c67bba211f0" category="list-text">IAM Access Key認証を使用している場合は、AWSクラウドアカウントの* IAM Access Key * IDとSecret Access Key。</block>
+  <block id="059cecdb406ea318583165dbd87ae76a" category="list-text">AWS S3インスタンスは、仮想マシンまたは（自然に）ホストとしてレポートできます。EBS ボリュームは、 VM で使用されている仮想ディスクと、仮想ディスクの容量を提供するデータストアの両方として報告できます。</block>
+  <block id="eabf633dc74f78f079f74efeb11ba4c2" category="paragraph">アクセスキーは、アクセスキー ID （ AKIAIOSFODNN7EXAMPLE など）とシークレットアクセスキー（ wJalrXUtil/K7MDENG/bPxRfiCYEXAMPLEKEY など）で構成されます。AWS SDK、REST、またはクエリAPIの処理を使用している場合は、アクセスキーを使用して、AWSにプログラム経由で送信される要求に署名します。これらのキーは、 Amazon の契約に付属しています。</block>
+  <block id="c556d79cf119c0275f5a7e5ffe17e25e" category="cell">AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <block ref="abcc3869ca9e9148fb25f0d23e298b7f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a9798702903d4f5ee46de22467eb3ccd" category="paragraph">たとえば、_InstanceS3ReadOnly_という名前のIAMロールを作成した場合は、このIAMロールのすべてのS3リソースにS3の読み取り専用リストへのアクセス権限を付与するようにポリシーを設定する必要があります。また、このロールがアカウント間でロールを引き受けることができるように、 STS （セキュリティトークンサービス）アクセスを許可する必要があります。</block>
+  <block id="56fbeb9e954ace68d534e66e58b364a1" category="paragraph">IAMロールを作成したら、新しいS3インスタンスまたは既存のS3インスタンスを作成するときにIAMロールを関連付けることができます。</block>
+  <block id="ddaf3f263ed6f7d926e96caad7b5d807" category="paragraph">IAMロール_InstanceS3ReadOnly_をS3インスタンスに接続すると、インスタンスメタデータから一時的なクレデンシャルをIAMロール名で取得できるようになり、このS3インスタンスで実行されているすべてのアプリケーションからAWSリソースにアクセスできるようになります。</block>
+  <block id="182377d3b5aa85736490d0c1d8daae51" category="paragraph">AWS S3 As Storageのデータコレクタには、S3で設定されているタグを使用してCloud Insights のアノテーションを入力するオプションがあります。アノテーションにはAWSのタグとまったく同じ名前を付ける必要があります。Cloud Insights では、常に同じ名前のテキスト型アノテーションが入力され、他の型（数値、ブーリアンなど）のアノテーションの入力が「最良の試行」となります。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。</block>
+  <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">AWS では大文字と小文字が区別され、 Cloud Insights では大文字と小文字が区別されないことに注意してください。したがって、Cloud Insights で「owner」という名前のアノテーションを作成し、S3で「owner」、「Owner」、および「owner」という名前のタグを作成すると、すべてのS3バリエーション「owner」のアノテーションがCloud Insightの「owner」アノテーションにマッピングされます。</block>
+  <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">各子アカウントにAWSロールを設定して、メインアカウントIDに子アカウントのS3の詳細へのアクセスを許可する必要があります。</block>
+  <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">ベストプラクティス：AWS Predefined_AmazonS3ReadOnlyAccess_policyをS3メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。</block>
 </blocks>
