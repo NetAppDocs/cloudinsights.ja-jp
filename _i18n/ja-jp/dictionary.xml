@@ -4470,7 +4470,6 @@
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">ユーザディレクトリコネクタが正しく設定されていることを確認します。正しく設定されていないと、イベントはエンコードされたユーザ名で表示され、 Active Directory に保存されているユーザの実際の名前ではなく、 [Activity Forensics] ページに表示されます。</block>
   <block id="1c0d6e11904414aa4c18ec80cc712c68" category="list-text">最適なパフォーマンスを実現するには、 FPolicy サーバをストレージシステムと同じサブネットに設定する必要があります。</block>
   <block id="94a83cc87aa6db24b6f7e05b3ab3031d" category="list-text">次のどちらかの方法で SVM を追加する必要があります。</block>
-  <block id="6e04cacc7a600236021f263318871100" category="list-text">クラスタ IP 、 SVM 名、およびクラスタ管理のユーザ名とパスワードを使用する。_ これは推奨される方法です。 _</block>
   <block id="b0fa17525d310a01406e22a6a3792d8b" category="list-text">SVM 名は ONTAP に表示されるとおりに指定する必要があり、大文字と小文字が区別されます。</block>
   <block id="988cfc885910cb57855c7d1e3055000a" category="list-text">SVM SVM 管理 IP 、ユーザ名、およびパスワードを使用する</block>
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-link-macro">「権限に関する注意事項」</block>
@@ -9036,4 +9035,7 @@
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">nfs4-1.ops [共有]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">これらのいずれかまたはすべてのコントローラをキャプチャしないと、「内部ボリューム」のワークロードにCloud Insights が対応していないかレポートが作成されない可能性があります。</block>
   <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、\https://&lt;SMI-S Hostname or IP&gt;:5989/ecomconfigに移動します。「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
+  <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">クラスタ IP 、 SVM 名、およびクラスタ管理のユーザ名とパスワードを使用する。*_これは推奨される方法です。_*</block>
+  <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">エージェントは最初にプロキシサーバを介して接続され、エージェントのインストール時にプロキシが設定されました。これでプロキシサーバが変更されました。エージェントのプロキシ設定はどのように変更できますか。</block>
+  <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">agent.propertiesを編集して、プロキシの詳細を追加できます。次の手順を実行します。1.プロパティファイルが格納されているフォルダ（cd /opt/netapp/cloudsecure/conf 2）に変更します。任意のテキストエディタを使用して、_agent.properties_ファイルを開いて編集します。3.次の行を追加または変更します：agent_proxy_host = scspa1950329001.vm.netapp.com agent_proxy_port = 80 agent_proxy_user = pxuser agent_proxy_password = pass1234ファイルを保存します。5.エージェントsudo systemctl restart cloudsecure-agent.serviceを再起動します</block>
 </blocks>
