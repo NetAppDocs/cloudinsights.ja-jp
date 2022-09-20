@@ -256,7 +256,7 @@ sidebar:
         url: "/concept_data_collector_reference.html"
       - title: AWS
         url: "/task_dc_amazon_ec2.html"
-      - title: "/Amazon FSX for NetApp ONTAP の略"
+      - title: NetApp ONTAP 対応の Amazon FSX
         url: "/task_dc_na_amazon_fsx.html"
       - title: Azure
         url: "/task_dc_ms_azure.html"

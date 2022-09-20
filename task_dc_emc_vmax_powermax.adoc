@@ -24,7 +24,7 @@ Cloud Insights は、 Solutions Enabler symcli コマンドを使用して、環
 * Solutions Enabler （ SE ）サーバに対する管理者権限が必要です
 * SE ソフトウェアに対する読み取り専用のユーザ名とパスワード
 * UNISPHERE for VMAX アプリケーションを実行して、 SMI-S プロバイダのインストールで管理される EMC VMAX および PowerMax ストレージアレイの統計を収集する必要があります
-* パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、にアクセスします https://<SMI-S[] ホスト名またはIP>:5989/ecomconfigここで、「SMI-S Hostname or IP」はSMI-SサーバーのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます
+* パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、\https://<SMI-S Hostname or IP>:5989/ecomconfigに移動します。「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます
 
 
 

@@ -9026,10 +9026,8 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">AWS では大文字と小文字が区別され、 Cloud Insights では大文字と小文字が区別されないことに注意してください。したがって、Cloud Insights で「owner」という名前のアノテーションを作成し、S3で「owner」、「Owner」、および「owner」という名前のタグを作成すると、すべてのS3バリエーション「owner」のアノテーションがCloud Insightの「owner」アノテーションにマッピングされます。</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">各子アカウントにAWSロールを設定して、メインアカウントIDに子アカウントのS3の詳細へのアクセスを許可する必要があります。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">ベストプラクティス：AWS Predefined_AmazonS3ReadOnlyAccess_policyをS3メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。</block>
-  <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP の略</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。例：Chromeで、ブラウザのURLに「chrome：//settings/cookies」と入力します。「すべてのCookieを許可」オプションを選択します。*または*「Block third-party cookies」を選択し、[*.] auth0.comおよび[*.] netapp.comの例外を追加します。注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">Cloud Insights が業界をリードするコンピューティングワークロードを検出していない場合、ボリュームまたは内部ボリューム自体がワークロードとみなされます。この環境 は、要求の厳しいワークロードでも影響を受けやすいワークロードでも</block>
-  <block id="d1abcb872114cdbdf06bbc991083bed3" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、にアクセスします<block ref="25b9476534a152fb44ed4e9f3aa05000" category="inline-link-rx"></block> ホスト名またはIP&gt;:5989/ecomconfigここで、「SMI-S Hostname or IP」はSMI-SサーバーのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
   <block id="b6679962f8c42c1ba1776113605353b7" category="section-title">必要なパフォーマンス指標</block>
   <block id="024e28f9b56c22af28ebfa120fdb57f0" category="paragraph">Oracle ZFSアプライアンスを使用すると、ストレージ管理者はパフォーマンス統計をキャプチャするための柔軟性を大幅に高めることができます。Cloud Insights では、次の指標を収集するように設定されたハイアベイラビリティペアの各コントローラについて、_Each _が必要です。</block>
   <block id="20d28687278d151933891014ac36ae04" category="list-text">smb2。ops [共有]</block>
@@ -9037,4 +9035,5 @@
   <block id="2ba1eaa3efea8566de516f83331d1ca0" category="list-text">nfs4.ops [共有]</block>
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">nfs4-1.ops [共有]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">これらのいずれかまたはすべてのコントローラをキャプチャしないと、「内部ボリューム」のワークロードにCloud Insights が対応していないかレポートが作成されない可能性があります。</block>
+  <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、\https://&lt;SMI-S Hostname or IP&gt;:5989/ecomconfigに移動します。「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
 </blocks>
