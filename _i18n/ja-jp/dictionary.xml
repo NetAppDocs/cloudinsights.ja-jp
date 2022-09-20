@@ -1395,11 +1395,7 @@
   <block id="0749de0bb66e7b739d9bb3368f6c3de1" category="list-text">管理用 Solutions Enabler サーバの IP アドレス</block>
   <block id="b381cf1608514a7b06634cd7ead7dce2" category="list-text">Solutions Enabler （ SE ）サーバに対する管理者権限が必要です</block>
   <block id="133702dafbca190738aab49522eb7344" category="list-text">SE ソフトウェアに対する読み取り専用のユーザ名とパスワード</block>
-  <block id="8b8837e7c2e4835916adaca415ac7ea5" category="list-text">Solutions Enabler サーバ 6.5X の要件：</block>
-  <block id="4b07bc21a7224915423b6043ffd0f27f" category="list-text">SMIS-S V1.2 に対応した MI-S プロバイダ 3.3.1 をインストール</block>
-  <block id="7bb957acf5c9bb14a306ef82b79e96a7" category="list-text">インストール後に '\Program Files\EMC\SYMCLI\bin&gt;stordaemon start storsrvd を実行します</block>
   <block id="cf3dc9a48663d5659883d6343aa48779" category="list-text">UNISPHERE for VMAX アプリケーションを実行して、 SMI-S プロバイダのインストールで管理される EMC VMAX および PowerMax ストレージアレイの統計を収集する必要があります</block>
-  <block id="3a6b139d8309d859f87248363cb1badd" category="list-text">アクセスの検証： SMI-S プロバイダが実行されていることを確認します。 telnet &lt;se_server&gt;5988</block>
   <block id="e77420e037c75e1c5a9ef5611f13d0d1" category="paragraph">Cloud Insights では、 EMC VMAX/PowerMax データソースから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="c1ebc925cf4e0a09ee827da58d2b58c5" category="cell">ディスクグループ</block>
   <block id="1b5aa0d469fbc243656ad5838af455a7" category="cell">アレイストレージ</block>
@@ -9033,4 +9029,5 @@
   <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP の略</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。例：Chromeで、ブラウザのURLに「chrome：//settings/cookies」と入力します。「すべてのCookieを許可」オプションを選択します。*または*「Block third-party cookies」を選択し、[*.] auth0.comおよび[*.] netapp.comの例外を追加します。注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">Cloud Insights が業界をリードするコンピューティングワークロードを検出していない場合、ボリュームまたは内部ボリューム自体がワークロードとみなされます。この環境 は、要求の厳しいワークロードでも影響を受けやすいワークロードでも</block>
+  <block id="d1abcb872114cdbdf06bbc991083bed3" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、にアクセスします<block ref="25b9476534a152fb44ed4e9f3aa05000" category="inline-link-rx"></block> ホスト名またはIP&gt;:5989/ecomconfigここで、「SMI-S Hostname or IP」はSMI-SサーバーのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
 </blocks>
