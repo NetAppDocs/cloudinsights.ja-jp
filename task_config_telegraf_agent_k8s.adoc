@@ -500,7 +500,7 @@ Windows の場合
  .\cloudinsights-windows.ps1 -install
 
 
-== Kubernetesのインストールのトラブルシューティング
+== トラブルシューティング
 
 エージェントの設定で問題が発生した場合の対処方法を次に示します。
 
