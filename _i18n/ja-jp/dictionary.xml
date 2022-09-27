@@ -6787,7 +6787,6 @@
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="doc">ダッシュボードギャラリーからインポートする</block>
   <block id="75ff2ecca247e32bd11a679fc97fbdab" category="paragraph">Cloud Insights には、データに関するビジネスインサイトを提供するために推奨されるダッシュボードが多数用意されています。各ダッシュボードには、回答で特定の質問をしたり、現在環境で収集されているデータに関連する特定の問題を解決したりするためのウィジェットが含まれています。</block>
   <block id="62a23650084673f5c844edf6588b4cbc" category="paragraph">ギャラリーからダッシュボードをインポートするには、次の操作を行います。</block>
-  <block id="ca57fe1968fa78c8b5b54613e08987a2" category="list-text">［ * ダッシュボード &gt; すべてのダッシュボードを表示 * ］ を選択します</block>
   <block id="bb6ec7619f5b7d24eeed488d054902d5" category="list-text">[* + from Gallery （ギャラリーから * + ） ] をクリックします</block>
   <block id="58e1b019dfb18a656bddd772932b2be5" category="paragraph">推奨ダッシュボードのリストが表示されます。ダッシュボードには、解決に役立つ特定の質問の名前が付けられます。AWS 、ネットアップ、ストレージ、 VMware 、回答 その他</block>
   <block id="4915483ae3205b553b3e977503ffdcc5" category="list-text">リストから 1 つ以上のダッシュボードを選択し、 * ダッシュボードの追加 * をクリックします。これらのダッシュボードがダッシュボードリストに表示されるようになりました。</block>
@@ -9044,4 +9043,6 @@
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">インフラストラクチャ</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">プロキシサポートを設定しています</block>
   <block id="860cea525f63406af55925d01de59c97" category="paragraph">Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、NetApp Astra Control Centerを購入した場合、Cloud Insights でサブスクリプションを識別するためにAstra Control Centerライセンスのシリアル番号を使用できます。Cloud Insights は、この an Entitlement ID _ を参照します。</block>
+  <block id="5c42bfffed923b7136ae5aee981826dd" category="list-text">[ダッシュボード（Dashboards）]&gt;[ダッシュボード（Dashboards）</block>
+  <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">ダッシュボードギャラリーからのインポートは、管理者ロールまたはアカウント所有者ロールを持つユーザーが使用できます。</block>
 </blocks>
