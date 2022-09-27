@@ -243,7 +243,7 @@ NOTE: 管理対象ユニットの合計は、サマリセクションのデー�
 
 == エンタイトルメント ID の追加
 
-Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、ネットアップの Astra を購入済みで、 Cloud Insights が Astra 案件にバンドルされている場合、 Astra ライセンスのシリアル番号を使用して、 Cloud Insights でサブスクリプションを識別できます。Cloud Insights は、この an Entitlement ID _ を参照します。
+Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、NetApp Astra Control Centerを購入した場合、Cloud Insights でサブスクリプションを識別するためにAstra Control Centerライセンスのシリアル番号を使用できます。Cloud Insights は、この an Entitlement ID _ を参照します。
 
 Cloud Insights サブスクリプションにエンタイトルメント ID を追加するには、 [* Admin] > [Subscription] * ページで、 [_ + Entitlement ID_ ] をクリックします。
 

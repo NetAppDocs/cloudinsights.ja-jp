@@ -7483,7 +7483,6 @@
   <block id="5455308b1c7692a68b58d6059d1af0fe" category="paragraph">API キーは Cloud Insights 環境に固有です。</block>
   <block id="d5da864a003c6e8dd171d9f5f67d6bcf" category="sidebar">Reporting Database API の略</block>
   <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">エンタイトルメント ID の追加</block>
-  <block id="f61771ce04d790a82e1d9fadba23d65d" category="paragraph">Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、ネットアップの Astra を購入済みで、 Cloud Insights が Astra 案件にバンドルされている場合、 Astra ライセンスのシリアル番号を使用して、 Cloud Insights でサブスクリプションを識別できます。Cloud Insights は、この an Entitlement ID _ を参照します。</block>
   <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">Cloud Insights サブスクリプションにエンタイトルメント ID を追加するには、 [* Admin] &gt; [Subscription] * ページで、 [_ + Entitlement ID_ ] をクリックします。</block>
   <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">サブスクリプションにエンタイトルメント ID を追加します</block>
   <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
@@ -9044,5 +9043,5 @@
   <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">インフラストラクチャ</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">プロキシサポートを設定しています</block>
-  <block id="b24ba42b8fcbdf9b49ead5a4fa365998" category="section-title">Kubernetesのインストールのトラブルシューティング</block>
+  <block id="860cea525f63406af55925d01de59c97" category="paragraph">Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、NetApp Astra Control Centerを購入した場合、Cloud Insights でサブスクリプションを識別するためにAstra Control Centerライセンスのシリアル番号を使用できます。Cloud Insights は、この an Entitlement ID _ を参照します。</block>
 </blocks>
