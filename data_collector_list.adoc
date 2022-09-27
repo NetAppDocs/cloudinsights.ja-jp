@@ -30,6 +30,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_amazon_ec2.html["Amazon EC2 および EBS"] | インフラ 
 
 
+| link:task_dc_aws_s3.html["AWS S3をストレージとして使用"] | インフラストラクチャ 
+
+
 | link:task_dc_na_amazon_fsx.html["NetApp ONTAP 対応の Amazon FSX"] | インフラ 
 
 

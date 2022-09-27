@@ -202,8 +202,6 @@ sidebar:
         url: "/task_config_user_dir_connect.html"
       - title: LDAP ディレクトリコレクタの設定
         url: "/task_config_user_dir_connect_ldap.html"
-      - title: NetApp ONTAP コレクタ用の Amazon FSX の設定
-        url: "/task_config_cs_amazon_fsx.html"
       - title: ONTAP SVM Data Collector の設定
         url: "/task_add_collector_svm.html"
       - title: Cloud ONTAP データコレクタの設定
