@@ -9032,4 +9032,5 @@
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">セキュリティのベストプラクティス</block>
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights アラートは、環境内のデータポイントや傾向を強調するように設計されており、Cloud Insights では、有効なEメールアドレスをアラートの受信者として入力できます。セキュアな環境で作業する場合は、通知を受け取っているユーザ、またはアラートへのアクセス権があるユーザを特に意識してください。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">署名済みチェックサムファイル（SHA256署名またはSHA256 .ps1で終わる）</block>
+  <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">エージェントのインストール中に、ローカルのuser_cssys_とローカルのgroup_cssys_がマシン上に作成されます。権限設定でローカルユーザの作成が許可されておらず、Active Directoryが必要な場合は、Active Directoryサーバにusername_csys_という名前のユーザを作成する必要があります。</block>
 </blocks>
