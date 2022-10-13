@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_streaming_telemetry.html 
+summary: Cloud Insights の設定には、 NetApp ONTAP のストリーミング計測データを使用します 
+keywords: ONTAP, Telemetry, streaming, 
+---
+= NetApp ONTAP による計測データのストリーミング
+:allow-uri-read: 
+
+
+[role="lead"]
+最新の情報については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/task_dc_na_cloud_connection.html["ONTAP 9.9 以降でのネットアップクラウド接続"] データコレクタページ。

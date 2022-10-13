@@ -2408,15 +2408,11 @@
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">正確な値は引用符で囲む必要があります。例： "searchtext"</block>
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">ワイルドカード文字列には引用符は含まれていません。例： searchtext 、 \* searchtext * は、 'earchtext ' を含む文字列をフィルタします。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">プレフィックスが付いた文字列、たとえば searchtext* は、「 earchtext 」で始まる文字列を検索します。</block>
-  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">フォレンジックアクティビティ履歴データのソート</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">アクティビティ履歴データは、 _ 時間、ユーザー、ソース IP 、アクティビティ、パスおよび _ エンティティタイプ _ でソートできます。デフォルトでは、テーブルは descending _Time_order でソートされます。つまり、最新のデータが最初に表示されます。_Device_Field と _Protocol_fields に対してソートが無効になっています。</block>
-  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">すべてのアクティビティのエクスポート</block>
   <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">アクティビティ履歴テーブルの上にある _ エクスポート _ ボタンをクリックすると ' アクティビティ履歴を .csv ファイルにエクスポートできますエクスポートされるのは上位 10,000 レコードのみです。</block>
-  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">すべてのアクティビティの列を選択します</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">すべての activity テーブルには ' デフォルトで SELECT カラムが表示されます列を追加、削除、または変更するには、テーブルの右側にある歯車アイコンをクリックし、使用可能な列のリストから選択します。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">アクティビティセレクタ、幅 = 30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">アクティビティ履歴の保持</block>
   <block id="105063dce8eb13075f451e0ddc3ac046" category="paragraph">アクティブな Cloud Secure 環境では、アクティビティ履歴が 13 カ月間保持されます。</block>
   <block id="df0f20d62dc4ba9c471fdeef6751ec5f" category="cell">問題</block>
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">試してみてください</block>
@@ -8886,7 +8882,6 @@
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20以降</block>
   <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">エージェントはインストール後に実行されていません。_systemctl status cloudsecure-agent.service_は次のように表示されます。[root@demo~]#systemctl status cloudsecure-agent.service agent.service–Cloud Secure エージェントデーモンサービスロード済み（/usr/lib/systemd/system/secloud-agent.service；enabled；vendor preset: disabled）Active:活動化（auto-restart）（結果：exit-code）（結果：tue211-08-21：122s /opt/netapp/cloudsecure/agent/bin/cloudsecure-agentプロセス開始前：PID=259:28：loaded（メインプロセス：/&lt;プロセスステータス：/&lt;プロセスステータス&gt;） 25889（code=Exited、status=126）、Aug 03 21：12：26 demo systemd[1]：cloudsecure-agent.service:メインプロセスが終了しました。code=Exited、status=126/n/a Aug 03 21：12：26 demo systemd[1]：Unit cloudsecure-agent.service entered failed状態になりました。8月03日21：12：26デモシステムd[1]：cloudsecure-agent.serviceが失敗しました。</block>
   <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">これは'_cssys_userにインストール権限がないために失敗することがあります/opt/netappがNFSマウントで、_cssys_userがこのフォルダにアクセスできない場合、インストールは失敗します。_cssys_は、マウントされた共有にアクセスする権限がない可能性のあるCloud Secure インストーラによって作成されたローカルユーザです。これを確認するには、_cssys_userを使用して/opt/netapp/cloudsecure/agent/bin/cloudsecure-agentにアクセスします。「Permission denied」が返された場合、インストール許可は表示されません。マウントされたフォルダではなく、マシンのローカルディレクトリにインストールします。</block>
-  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensicsページのフィルタの適用性</block>
   <block id="33b1e192582408583865dca3abd0c740" category="cell">どのフィルタに適用できますか？</block>
   <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">どのフィルタにも適用できません</block>
   <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">* （アスタリスク）</block>
@@ -8903,7 +8898,6 @@
   <block id="323be35d43a1b0a294bddc8533167538" category="cell">ユーザ、ドメイン、ユーザ名、パス、エンティティタイプ、 元のパス、ボリューム</block>
   <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">"AutoRansomUser4_03162022 "で始まるものをすべて返します。</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">ドメイン</block>
-  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">パス/元のパスの検索</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">検索結果は、の有無によって異なります</block>
   <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
   <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">動作します</block>
@@ -9033,4 +9027,16 @@
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights アラートは、環境内のデータポイントや傾向を強調するように設計されており、Cloud Insights では、有効なEメールアドレスをアラートの受信者として入力できます。セキュアな環境で作業する場合は、通知を受け取っているユーザ、またはアラートへのアクセス権があるユーザを特に意識してください。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">署名済みチェックサムファイル（SHA256署名またはSHA256 .ps1で終わる）</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">エージェントのインストール中に、ローカルのuser_cssys_とローカルのgroup_cssys_がマシン上に作成されます。権限設定でローカルユーザの作成が許可されておらず、Active Directoryが必要な場合は、Active Directoryサーバにusername_csys_という名前のユーザを作成する必要があります。</block>
+  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Cloud Insights の設定には、 NetApp ONTAP のストリーミング計測データを使用します</block>
+  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP による計測データのストリーミング</block>
+  <block id="458a37db2666885e234720ccdea58253" category="paragraph">最新の情報については、を参照してください <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> データコレクタページ。</block>
+  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; ユーザーが過去2時間に作成したファイルをフィルタリングするために、ヘッド*ノイズリダクション*を使用します。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
+  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fcaa2</block>
+  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">=フォレンジックアクティビティ履歴データのソート</block>
+  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">=すべてのアクティビティをエクスポートしています</block>
+  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">==すべてのアクティビティの列選択</block>
+  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">=アクティビティ履歴の保持</block>
+  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensicsページのフィルタの適用可能性</block>
+  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">==パス/元のパスを検索します</block>
+  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">==トラブルシューティング</block>
 </blocks>
