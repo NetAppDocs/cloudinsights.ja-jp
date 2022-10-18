@@ -9007,7 +9007,6 @@
   <block id="2ba1eaa3efea8566de516f83331d1ca0" category="list-text">nfs4.ops [共有]</block>
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">nfs4-1.ops [共有]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">これらのいずれかまたはすべてのコントローラをキャプチャしないと、「内部ボリューム」のワークロードにCloud Insights が対応していないかレポートが作成されない可能性があります。</block>
-  <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、\https://&lt;SMI-S Hostname or IP&gt;:5989/ecomconfigに移動します。「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
   <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">クラスタ IP 、 SVM 名、およびクラスタ管理のユーザ名とパスワードを使用する。*_これは推奨される方法です。_*</block>
   <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">エージェントは最初にプロキシサーバを介して接続され、エージェントのインストール時にプロキシが設定されました。これでプロキシサーバが変更されました。エージェントのプロキシ設定はどのように変更できますか。</block>
   <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">agent.propertiesを編集して、プロキシの詳細を追加できます。次の手順を実行します。1.プロパティファイルが格納されているフォルダ（cd /opt/netapp/cloudsecure/conf 2）に変更します。任意のテキストエディタを使用して、_agent.properties_ファイルを開いて編集します。3.次の行を追加または変更します：agent_proxy_host = scspa1950329001.vm.netapp.com agent_proxy_port = 80 agent_proxy_user = pxuser agent_proxy_password = pass1234ファイルを保存します。5.エージェントsudo systemctl restart cloudsecure-agent.serviceを再起動します</block>
@@ -9039,4 +9038,5 @@
   <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensicsページのフィルタの適用可能性</block>
   <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">==パス/元のパスを検索します</block>
   <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">==トラブルシューティング</block>
+  <block id="9472f5553652a76fc53e58f1b861b32e" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、次のURLにアクセスします。https：//&lt;SMI-S Hostname or IP&gt; ：5989 / ecomconfig_where "SMI-S Hostname or IP" is the IP address or hostname of your SMI-S server.このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
 </blocks>
