@@ -9069,6 +9069,6 @@
   <block id="6ae223e6c671cefaa47a470a8e528da8" category="list-text">攻撃をブロックする自動応答ポリシーを実装します。</block>
   <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">影響を受けたファイルを特定し、迅速なリカバリとデータ侵害の調査に役立ちます。</block>
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP によるランサムウェア対策保護の統合</block>
-  <block id="0ed16a106cacc7c64648558f5ce3f2fc" category="section-title">Webhookのテスト</block>
-  <block id="0da0da408a0ca0569c73b8f7674069a4" category="paragraph">[ウェブフックのテスト]ボタンをクリックして、接続をテストします。これにより、選択された「メソッド」に従って、定義された「URL」に「メッセージ本文」（置換なし）が送信されます。また、「パラメータ：パラメータとは何ですか？また、パラメータをどのように使用しますか？」にも注意してください。 「Webフックをテスト」ボタンをクリックすると、置換は_not_performedになります。</block>
+  <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">各フィールドに適切な情報を入力し、完了したら[保存]をクリックします。</block>
+  <block id="8a133220a32d62ddc74b78987d698fbf" category="paragraph">また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。また、「パラメータ：パラメータとは何ですか？また、パラメータをどのように使用しますか？」にも注意してください。 セクション、置換は、[テスト・ウェブフック]ボタンをクリックすると_実行されません。ボタンは、_%_substitionsを示すペイロードを送信しますが、データに置き換えません。</block>
 </blocks>
