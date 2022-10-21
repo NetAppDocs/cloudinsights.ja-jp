@@ -9059,4 +9059,14 @@
   <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">信頼性の高いバナーは、攻撃がランサムウェアの挙動とファイル暗号化のアクティビティを示していることを示しています。暗号化ファイルのグラフには、ARP解決策 によってボリューム暗号化アクティビティが検出されたタイムスタンプが示されます。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
   <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">SVMがCloud Secure で監視されておらず、ONTAP で生成されたARPイベントがある場合、イベントは引き続きCloud Secure で受信および表示されます。ただし、アラートに関連するフォレンジック情報およびユーザーマッピングはキャプチャまたは表示されません。</block>
+  <block id="500021752029d6f358d3f431decf2194" category="summary">Cloud Secure は、ONTAP のランサムウェア防御と統合することで、ランサムウェアの検出を強化します。</block>
+  <block id="4c4518d4c20175eb4082a6b33eb4badb" category="section-title">2022年10月</block>
+  <block id="d9ed23066a8423b647abeae97c6e8d89" category="section-title">ONTAP の自律的ランサムウェア防御統合によるランサムウェア検出の精度と精度の向上</block>
+  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link-macro">自律的なランサムウェア防御</block>
+  <block id="ed7f4a0571f6c21909209a2c991883eb" category="paragraph">Cloud Secure は、ONTAP との統合を通じてランサムウェアの検出を改善します <block ref="592611ec20f061ec3c5a97f7d83bfebc" category="inline-link-macro-rx"></block> （ARP）。</block>
+  <block id="be2a9c6be9b8c3dee7de8e445589e2ee" category="paragraph">Cloud Secure は、潜在的なボリュームファイル暗号化アクティビティでONTAP ARPイベントを受信します</block>
+  <block id="abc85a341cbf25c2d9f1f3a47072b87d" category="list-text">ボリューム暗号化イベントとユーザアクティビティを関連付けて、破損の原因となっているユーザを特定する。</block>
+  <block id="6ae223e6c671cefaa47a470a8e528da8" category="list-text">攻撃をブロックする自動応答ポリシーを実装します。</block>
+  <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">影響を受けたファイルを特定し、迅速なリカバリとデータ侵害の調査に役立ちます。</block>
+  <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP によるランサムウェア対策保護の統合</block>
 </blocks>

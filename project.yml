@@ -222,6 +222,8 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自動応答ポリシー
       url: "/cs_automated_response_policies.html"
+    - title: ONTAP によるランサムウェア対策保護の統合
+      url: "/concept_cs_integration_with_ontap_arp.html"
     - title: ユーザアクセスをブロックしています
       url: "/cs_restrict_user_access.html"
     - title: ランサムウェア攻撃のシミュレーション

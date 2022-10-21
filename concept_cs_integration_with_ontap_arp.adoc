@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_integration_with_ontap_arp.html 
-summary: ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます 
-keywords: event, checker, rate, sizing 
+summary: Cloud Secure は、ONTAP のランサムウェア防御と統合することで、ランサムウェアの検出を強化します。 
+keywords: ransomware, ARP, Protection, Security 
 ---
 = ONTAP によるランサムウェア対策との統合
 :allow-uri-read: 
