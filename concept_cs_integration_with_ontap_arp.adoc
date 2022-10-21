@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_integration_with_ontap_arp.html 
+summary: ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます 
+keywords: event, checker, rate, sizing 
+---
+= ONTAP によるランサムウェア対策との統合
+:allow-uri-read: 
+
+
+[role="lead"]
+ONTAP の自律的ランサムウェア対策（ARP）機能は、NAS（NFSおよびSMB）環境におけるワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なインファイルアクティビティをプロアクティブに検出して警告します。
+
+ARPに関する詳細およびライセンス要件については、を参照してください link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["こちらをご覧ください"]。
+
+Cloud Secure は、ONTAP と統合してARPイベントを受信し、追加の分析と自動応答レイヤを提供します。
+
+Cloud Secure はONTAP からARPイベントを受信し、次のアクションを実行します。
+
+. ボリューム暗号化イベントとユーザアクティビティを関連付けて、破損の原因となっているユーザを特定します。
+. 自動応答ポリシーを実装する（定義されている場合）
+. フォレンジック機能を提供：
++
+** お客様がデータ侵害の調査を実施できるようにします。
+** 影響を受けたファイルを特定し、迅速なリカバリとデータ侵害の調査に役立ちます。
+
+
+
+
+
+
+== 前提条件
+
+. 最小ONTAP バージョン：9.11.1
+. ARPが有効なボリューム。ARPをイネーブルにする方法の詳細は、を参照してください link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["こちらをご覧ください"]。ARPは、OnCommand システムマネージャを介して有効にする必要があります。Cloud Secure ではARPを有効にできません。
+. Cloud Secure コレクタはクラスタIP経由で追加する必要があります。
+. この機能を使用するには、クラスタレベルのクレデンシャルが必要です。つまり、SVMを追加するときはクラスタレベルのクレデンシャルを使用する必要があります。
+
+
+
+
+== ユーザ権限が必要です
+
+クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。
+
+ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってCloud Secure に権限を付与し、ONTAP からARP関連情報を収集します。
+
+クラスタクレデンシャルを使用する_csuser_withの場合、ONTAP コマンドラインから次の操作を実行します。
+
+....
+security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+....
+
+
+== アラートの例
+
+ARPイベントにより生成されたアラートの例を次に示します。
+
+image:CS_ONTAP_ARP_EXAMPLE.png["ONTAP ARP Example画面"]
+
+信頼性の高いバナーは、攻撃がランサムウェアの挙動とファイル暗号化のアクティビティを示していることを示しています。暗号化ファイルのグラフには、ARP解決策 によってボリューム暗号化アクティビティが検出されたタイムスタンプが示されます。
+
+
+
+== 制限
+
+SVMがCloud Secure で監視されておらず、ONTAP で生成されたARPイベントがある場合、イベントは引き続きCloud Secure で受信および表示されます。ただし、アラートに関連するフォレンジック情報およびユーザーマッピングはキャプチャまたは表示されません。

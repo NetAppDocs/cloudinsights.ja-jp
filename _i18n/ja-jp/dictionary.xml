@@ -6439,12 +6439,6 @@
   <block id="016ed0e49b011ec69d8599631c4570d3" category="paragraph">環境の * ホームページ * として設定するダッシュボードは、次のいずれかの方法で選択できます。</block>
   <block id="a35bc916a1e75254232ca54369197a02" category="list-text">[ * Dashboards （ダッシュボード） ] &gt; [ Show All Dashboards （すべてのダッシュボードを表示） ] に移動して、環境内のダッシュボードのリストを表示します。目的のダッシュボードの右側にあるオプションメニューをクリックし、 * ホームページとして設定 * を選択します。</block>
   <block id="21383d1a6375f071dadd8d05e3e6f6ba" category="list-text">リストからダッシュボードをクリックして、ダッシュボードを開きます。上部コーナーのドロップダウンメニューをクリックし、 * ホームページに設定 * を選択します。</block>
-  <block id="7d30769516b52d1445b1bf2d7d9557f4" category="summary">Cloud Insights から他の NetApp Cloud Central 製品に簡単に切り替えることができます。</block>
-  <block id="24f46fe1d8ee8559ee63a33de2543943" category="doc">他の Cloud Central 製品に切り替える</block>
-  <block id="fccd52d76913d4b183b163d6e5172239" category="paragraph">その他のネットアップクラウド製品に切り替えるには、 * Cloud Central * メニューをクリックし、表示されているネットアップクラウド製品から選択します。Cloud Central ポータル自体に移動することもできます。</block>
-  <block id="dcfb05bdbd07b63ad902c550de53ea03" category="inline-image-macro">その他のクラウド製品</block>
-  <block id="7d43cb32851afdb4974a9d3020552cb2" category="paragraph"><block ref="7d43cb32851afdb4974a9d3020552cb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dc4ab3739b0ab1192c8e357f6d629754" category="paragraph">選択したクラウド製品に対して自動的に認証されてサインインされます。</block>
   <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Apache Zookeeper データコレクタの設定</block>
   <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Zookeeper データコレクタ</block>
   <block id="7c19206117ce83d65989db0a25c382ee" category="paragraph">Cloud Insights では、このデータコレクタを使用して Apache Zookeeper から指標を収集します。</block>
@@ -9041,4 +9035,28 @@
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">このガイドを参照してください</block>
   <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">Cloud Secure は、他のツールとも統合できます。例： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> Splunkと統合し、</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、「https：//&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_where「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
+  <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">ONTAP によるランサムウェア対策との統合</block>
+  <block id="d444ab62db0a690e837242dfd8b87acc" category="paragraph">ONTAP の自律的ランサムウェア対策（ARP）機能は、NAS（NFSおよびSMB）環境におけるワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なインファイルアクティビティをプロアクティブに検出して警告します。</block>
+  <block id="383c3a61ab1ee0baf884d10441d965bd" category="paragraph">ARPに関する詳細およびライセンス要件については、を参照してください <block ref="aaf4977c10e4402f9516d11af3df8368" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a90b843204a7e572f3f003b57df0e34" category="paragraph">Cloud Secure は、ONTAP と統合してARPイベントを受信し、追加の分析と自動応答レイヤを提供します。</block>
+  <block id="7f296999dd5a19bdac141d3c5458bf09" category="paragraph">Cloud Secure はONTAP からARPイベントを受信し、次のアクションを実行します。</block>
+  <block id="934b109c1d19ab46820aa2d388697f4e" category="list-text">ボリューム暗号化イベントとユーザアクティビティを関連付けて、破損の原因となっているユーザを特定します。</block>
+  <block id="bb7256da73d87b6336cf1dc5342a8692" category="list-text">自動応答ポリシーを実装する（定義されている場合）</block>
+  <block id="ac3108149bf9197801e00b41c3c7cb34" category="list-text">フォレンジック機能を提供：</block>
+  <block id="c5c2c046e5a8aeae7862975fda61f862" category="list-text">お客様がデータ侵害の調査を実施できるようにします。</block>
+  <block id="7355572f8cd61d6b84bd549a6b19d75b" category="list-text">影響を受けたファイルを特定し、迅速なリカバリとデータ侵害の調査に役立ちます。</block>
+  <block id="3c6aa4f4d8c4e33eefaec63c43ad62bb" category="list-text">最小ONTAP バージョン：9.11.1</block>
+  <block id="f97f5685fc902a89d150e9c654602c43" category="list-text">ARPが有効なボリューム。ARPをイネーブルにする方法の詳細は、を参照してください <block ref="9e499af99dc8d0d5835de8f33e6a6797" category="inline-link-macro-rx"></block>。ARPは、OnCommand システムマネージャを介して有効にする必要があります。Cloud Secure ではARPを有効にできません。</block>
+  <block id="b33ce104a861da9844f5dfaeb51c79eb" category="list-text">Cloud Secure コレクタはクラスタIP経由で追加する必要があります。</block>
+  <block id="77daf866423aa56487a2f9b637628664" category="list-text">この機能を使用するには、クラスタレベルのクレデンシャルが必要です。つまり、SVMを追加するときはクラスタレベルのクレデンシャルを使用する必要があります。</block>
+  <block id="d3967f941a1672db445a1da6ef843e2e" category="section-title">ユーザ権限が必要です</block>
+  <block id="76b59b81477976d5b5bed701e6ff22b9" category="paragraph">ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってCloud Secure に権限を付与し、ONTAP からARP関連情報を収集します。</block>
+  <block id="ba95389dce56e78ab6a308128620b033" category="paragraph">クラスタクレデンシャルを使用する_csuser_withの場合、ONTAP コマンドラインから次の操作を実行します。</block>
+  <block id="20cdc94cc7059da994e4c0a98a544c8f" category="section-title">アラートの例</block>
+  <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">ARPイベントにより生成されたアラートの例を次に示します。</block>
+  <block id="ba022000977a1c06f95377443d9b2500" category="inline-image-macro">ONTAP ARP Example画面</block>
+  <block id="d12fcb220971d8d0a7e1d474102c977e" category="paragraph"><block ref="d12fcb220971d8d0a7e1d474102c977e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">信頼性の高いバナーは、攻撃がランサムウェアの挙動とファイル暗号化のアクティビティを示していることを示しています。暗号化ファイルのグラフには、ARP解決策 によってボリューム暗号化アクティビティが検出されたタイムスタンプが示されます。</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
+  <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">SVMがCloud Secure で監視されておらず、ONTAP で生成されたARPイベントがある場合、イベントは引き続きCloud Secure で受信および表示されます。ただし、アラートに関連するフォレンジック情報およびユーザーマッピングはキャプチャまたは表示されません。</block>
 </blocks>
