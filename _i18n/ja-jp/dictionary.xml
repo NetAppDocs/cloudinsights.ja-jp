@@ -9070,5 +9070,6 @@
   <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">影響を受けたファイルを特定し、迅速なリカバリとデータ侵害の調査に役立ちます。</block>
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP によるランサムウェア対策保護の統合</block>
   <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">各フィールドに適切な情報を入力し、完了したら[保存]をクリックします。</block>
-  <block id="8a133220a32d62ddc74b78987d698fbf" category="paragraph">また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。また、「パラメータ：パラメータとは何ですか？また、パラメータをどのように使用しますか？」にも注意してください。 セクション、置換は、[テスト・ウェブフック]ボタンをクリックすると_実行されません。ボタンは、_%_substitionsを示すペイロードを送信しますが、データに置き換えません。</block>
+  <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。</block>
+  <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">このセクションでは、置換は「Test Webhook」ボタンをクリックしたときに_not_performedになります。このボタンは、_%_substitionsを示すペイロードを送信しますが、これらをデータに置き換えません。</block>
 </blocks>
