@@ -88,6 +88,8 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Kubernetes クラスタページ
       url: "/kubernetes_cluster_detail.html"
+    - title: ONTAP の基礎知識
+      url: "/concept_ontap_essentials.html"
   - title: クエリを使用した作業
     entries:
     - title: アセットのクエリ
