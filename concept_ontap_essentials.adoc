@@ -16,6 +16,8 @@ ONTAP Essentialsは、ONTAP のインベントリとワークロードの詳細�
 * データ保護：ネットアップのデータ保護テクノロジを使用して保護できるオブジェクト
 
 
+詳細については、を参照してください link:task_dc_na_cdot.html#ontap-data-management-terminology["ONTAP データコレクタ"] ページ
+
 ONTAP Essentialsには、過去7日間に収集されたデータを含む、最低1つの動作中のONTAP データコレクタが必要です。
 
 
