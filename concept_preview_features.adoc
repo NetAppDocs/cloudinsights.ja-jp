@@ -12,5 +12,3 @@ keywords: coming soon, preview,
 Cloud Insights は'_Preview_マナー モードで新しいフィーチャーと機能をハイライトしますプレビュー機能は、一部の環境または容量に限りがあります。
 
 これらの機能をプレビューする場合は、にお問い合わせください link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業チーム"] を参照してください。
-
-現在のCloud Insights 機能はすべて使用できます。将来のプレビューに備えて、このスペースをご確認ください。
