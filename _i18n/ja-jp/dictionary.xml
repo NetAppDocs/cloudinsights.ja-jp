@@ -8819,7 +8819,6 @@
   <block id="d11a7a694c023537b8fd43857dd651f7" category="cell">ポッドセキュリティポリシー（PSP）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSPをサポートする最新のNKMOにアップグレードするには、次の手順に従います。1.前の監視オペレータをアンインストールします。kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrole binding agent-manager-role binding agent-proxy-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -pro資料 室最新バージョンのモニタリングオペレータを配備します。</block>
   <block id="2eb2fe69b25b42c01f1dd6ed820e4ef3" category="cell">NKMOを導入する際に問題が発生し、PSPを使用しています。</block>
   <block id="ffc85f5eab15bc118cab588bb4b4d3eb" category="cell">1.次のコマンドを使用して、エージェントを編集します。kubectl -n &lt;name-space&gt; edit agent 2.「security-policy enabled」を「false」に設定します。これにより、POSセキュリティポリシーが無効になり、NKMOを展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n &lt;name-space&gt;</block>
-  <block id="98d8ebff3e8aa04aa14171f6564f1ec7" category="paragraph">現在のCloud Insights 機能はすべて使用できます。将来のプレビューに備えて、このスペースをご確認ください。</block>
   <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
   <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">Cloud Insights の外観は新しくなっています。</block>
   <block id="d3d93d4a561aa9307d47023701a0c283" category="paragraph">今月から、「モニターと最適化」という名称が「観察性」に変更されました。ダッシュボード、クエリ、アラート、レポートなど、お気に入りの機能がすべてここに表示されます。また、新しい「セキュリティ」メニューで「Cloud Secure 」を探します。メニューのみが変更されています。機能は変更されていません。</block>
@@ -9073,4 +9072,7 @@
   <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。</block>
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">このセクションでは、置換は「Test Webhook」ボタンをクリックしたときに_not_performedになります。このボタンは、_%_substitionsを示すペイロードを送信しますが、これらをデータに置き換えません。</block>
   <block id="cf2146b9e920671969e606b44d0743f6" category="paragraph">詳細については、を参照してください <block ref="b7f404f6b2e5258b20a8d7e7801ccdd1" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。以下に示す手動手順を実行する必要はありません。</block>
+  <block id="d894fe24a5654169420a98540a56b302" category="list-text">NetApp Kubernetes Monitoring Operatorを編集します。</block>
+  <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">古いAPIトークンを新しいAPIトークンに置き換えて、_spec.output-sink.api-key_valueを変更します。</block>
 </blocks>
