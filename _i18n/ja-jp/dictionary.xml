@@ -8913,7 +8913,6 @@
   <block id="d45fc0c2a28126623498664c1e032858" category="list-text">プロキシの背後にある場合は、「RHEL / CentOS *用のプロキシサポートの設定」セクションの手順に従う必要があります。</block>
   <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">プロキシの背後にいる場合は、「Ubuntu / Debian *用のプロキシサポートの設定」セクションの手順に従う必要があります。</block>
   <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">プロキシの背後にいる場合は、「* macOS *用プロキシサポートの設定」セクションの手順に従う必要があります。</block>
-  <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。</block>
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes Monitoring Operator（NKMO）は、Cloud Insights Insights用のKubernetesをインストールする方法として推奨されます。より柔軟な設定で監視を実行し、Kubernetesクラスタ内で実行される他のソフトウェアを監視する機会を増やします。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">お願いします <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> NetApp Kubernetes Monitoring Operatorに関する情報とインストール手順については、以下を参照してください。</block>
   <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝｝ ｛empty｝</block>
@@ -9075,4 +9074,10 @@
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。以下に示す手動手順を実行する必要はありません。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">NetApp Kubernetes Monitoring Operatorを編集します。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">古いAPIトークンを新しいAPIトークンに置き換えて、_spec.output-sink.api-key_valueを変更します。</block>
+  <block id="0a8446aea76ea046e4a350b7fcb33809" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。Cloud Insights のすべての機能 <block ref="0238d81be08586a15b3db75855b659b7" category="inline-xref-macro-rx"></block> このトライアル期間中にご利用いただけます。</block>
+  <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">AWS Marketplaceで試用</block>
+  <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">管理ユニット</block>
+  <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、Cloud Insights にアクセスできます <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> 試用期間は33日間で、最大499まで使用できます <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
+  <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">注：499 MUを超える値を設定すると、「違反」状態になります。トライアルが違反状態になっている間は、違反が解決されるまで、設定されているMU数を減らすか、またはCloud Insights にサブスクライブするまで、一部のCloud Insights 機能にアクセスできなくなります。</block>
+  <block id="9610f5475b4256230dbfd8bf12bacab1" category="paragraph">AWS Marketplaceの無償トライアルを延長することはできません。トライアル期間中はいつでも、Cloud Insights ベーシックエディションのサブスクリプションにダウングレードしたり、有料のCloud Insights スタンダードまたはプレミアムエディションのサブスクリプションに変更したりすることができます。その場合は、* Admin -&gt; Subscription *ページにアクセスしてください。</block>
 </blocks>
