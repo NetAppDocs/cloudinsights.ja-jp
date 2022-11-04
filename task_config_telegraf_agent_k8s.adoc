@@ -1,77 +1,49 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
-keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks 
+keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
 summary: Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。 
 ---
-= Kubernetes でのエージェントの設定
+= NetApp Kubernetes Monitoring Operatorの設定
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Insights ではを使用します link:https://docs.influxdata.com/telegraf/["Tegraf"] 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
-
-Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。
-
-
-NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
-
-
-NOTE: Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください  Kubernetes Checksums。
+Cloud Insights では、などの多くのコンポーネントが使用されます link:https://docs.fluentbit.io/manual["流暢なビット"] および link:https://docs.influxdata.com/telegraf/["Tegraf"]をクリックしてください。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
 
 
 toc::[]
+Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
 
-
-== エージェントをインストールしています
-
-エージェントをインストールするには、まず次の手順を実行する必要があります。
-
-. エージェントに使用するホストにログインします。
-. Cloud Insights サイトにログインし、 * Admin > Data Collectors * に移動します。
-. [*+Data Collector* ] をクリックして、インストールするデータコレクタを選択します。
-. ホストに対応する Kubernetes プラットフォームを選択します
-. 残りの手順を実行します。
-
-
-Windows 、 Linux 、または Mac にエージェントをインストールするには、次の手順に従います link:task_config_telegraf_agent.html["以下の手順を参照して"]。
-
-
-NOTE: ホストにエージェントをインストールしたら、そのホストに再度エージェントをインストールする必要はありません。
-
-
-TIP: サーバ /VM にエージェントをインストールすると、 Cloud Insights は、設定したデータコレクタからの収集に加えて、そのシステムからメトリックを収集します。これらの指標は、のように収集されます link:task_config_telegraf_node.html["「ノード」指標"]。
-
-
-NOTE: プロキシを使用している場合は、 Tegraf エージェントをインストールする前に、お使いのプラットフォームのプロキシの手順をお読みください。
+image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
 
 
 
-== Kubernetes にエージェントをインストールする
-
-Cloud Insights では、Kubernetesコレクション向けのNetApp Kubernetes Monitoring Operator *を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
+== NetApp Kubernetes Monitoring Operatorをインストールする前に
 
 .前提条件
-* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。Docker コンテナランタイムとともに使用すると、 Cloud Insights では、 NFS と iSCSI について POD / PV / ストレージ間のマッピングを表示できます。その他のランタイムでは iSCSI しか表示されません。2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります ,アップグレード PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。
+* 次のコンポーネントバージョンに注意してください。NetApp Kubernetes Monitoring Operatorには、現在、次のバージョンが含まれています。
++
+[[nkmoversion]]
+** Telegraf :1.24.0
+** kube-rbacプロキシ：v0.13.0
+** kube-state-metrics：v2.6.0
+** 流出ビット:1.9.8
+** Kubernetesイベントエクスポータ：0.10
 
 
-* OpenShift 4.6-4.8 で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の * OpenShift Instructions * に従う必要があります。
-* NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。
-* 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
-* kube-state-metricsは必須であり、NetApp Kubernetes Monitoring Operatorインストールとともに自動的にインストールされます。
-* プロキシの背後にいる場合は、「 Kubernetes 向けのプロキシサポートの設定」セクションの手順に従ってください。
-
-
-* Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。
-
-
-
-
-=== 監視は Linux ノードにのみインストールされます
-
+* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。
+* Cloud Insights がバックエンドストレージを監視しており、KubernetesをDockerコンテナランタイムで使用している場合、Cloud Insights では、NFSとiSCSIについてポッド/ PV /ストレージ間のマッピングを表示できます。その他の実行時間ではiSCSIのみが表示されます。
+* 2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります ,アップグレード PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。
+* OpenShift 4.6以降で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の* OpenShift Instructions *に従う必要があります。
+* 監視は Linux ノードにのみインストールされます
++
 Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。
 
++
 |===
+
+
 | プラットフォーム | ラベル 
 
 
@@ -80,74 +52,111 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 
 | Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用 | catt.io/os=linux 
 |===
+* NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。
+* 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
+* NetApp Kubernetes Monitoring Operatorインストールに使用するホストには、ターゲットのKubernetesクラスタと通信し、Cloud Insights 環境とインターネットに接続できるよう、_kubectl_configuredが必要です。このホストがCloud Insights にアクセスするためにプロキシを必要とする場合は、の手順に従います ,プロキシサポートを設定しています セクション。
+* NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。
+* インストール中または監視対象のKubernetesクラスタを操作中にプロキシの背後にいる場合は、の手順に従ってください ,プロキシサポートを設定しています セクション。
+* Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。
 
 
-== NetApp Kubernetes Monitoring Operator Installation
-
-image:Kubernetes_Operator_Agent_Instructions.png["オペレータベースのインストール"]
-
-.NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：
-. クラスタ名とネームスペースを入力します。
-. これらのコードを入力したら、エージェントインストーラスニペットをコピーできます
-. このスニペットをクリップボードにコピーするには、ボタンをクリックします。
-. スニペットを a_bash_window に貼り付け、実行します。
-. インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。
+正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
 
 
 
+== 開始する前に、これらの点に注意してください
 
-=== OpenShift の手順
+を使用してを実行する場合 ,プロキシを使用してください ,カスタムリポジトリまたはを使用している ,OpenShiftを参照してください。
 
-OpenShift 4.6-4.8 で実行している場合は、「特権モード」設定を変更する必要があります。次のコマンドを実行して、エージェントを開いて編集します。「 NetApp Monitoring 」以外のネームスペースを使用している場合は、コマンドラインでそのネームスペースを指定します。
+以前のインストールからアップグレードする場合は、も参照してください ,をアップグレードして 情報。
 
- kubectl edit agent agent-monitoring-netapp -n netapp-monitoring
-ファイルで、 change_privileged-mode ： false_to _privileged-users mode ： true_
+Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください ,Kubernetes のチェックサムの検証。
 
 
 
 === プロキシサポートを設定しています
 
-監視オペレータのプロキシを設定するには、次の手順を実行します。
+環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。
+
+* プロキシは、インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをCloud Insights 環境に接続するために必要です
+* ターゲットのKubernetesクラスタがCloud Insights 環境と通信するために必要なプロキシ
+
+
+これらのいずれか、または両方にプロキシを使用する場合は、NetApp Kubernetes Operating Monitorをインストールするために、まずCloud Insights 環境との良好な通信を可能にするようにプロキシが設定されていることを確認する必要があります。プロキシがあり、オペレータをインストールするサーバ/VMからCloud Insights にアクセスできる場合は、プロキシが適切に設定されている可能性があります。
+
+NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります
+
+変数を設定するには、NetApp Kubernetes Monitoring Operatorをインストールする前に、システムで次の手順を実行します。
+
+. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
++
+ export https_proxy=<proxy_server>:<proxy_port>
+. /etc/default/テレ グラム af_ を作成し、 _https_proxy_/or_http_proxy_variable の定義を挿入します。
++
+ https_proxy=<proxy_server>:<proxy_port>
+
+
+KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。
+
+設定を完了するには、NetApp Kubernetes Monitoring Operatorをインストールしたあと、システム*で次の手順を実行します。
 
 まず、 _agent-monitoring -NetApp_file を開き、編集します。
 
  kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
-このファイルの _spec ： _ セクションに、次のコードブロックを追加します。
+このファイルの*spec:*セクションを探し、次のコードを追加します。
 
-....
-spec:
-  proxy:
-    isAuProxyEnabled: <true or false>
-    isTelegrafProxyEnabled: <true or false>
-    isFluentbitProxyEnabled: <true or false>
-    password: <password for proxy, optional>
-    port: <port for proxy>
-    server: <server for proxy>
-    username: <username for proxy, optional>
-    noProxy: <comma separated list of IPs or resolvable hostnames that should bypass a proxy>
-....
+[listing]
+----
+ proxy:
+
+ # If an AU is enabled on your cluster for monitoring
+ # by Cloud Insights, then isAuProxyEnabled should be set to true:
+  isAuProxyEnabled: <true or false>
+
+ # If your Operator install is behind a corporate proxy,
+ # isTelegrafProxyEnabled should be set to true:
+  isTelegrafProxyEnabled: <true or false>
+
+ # If LOGS_COLLECTION is enabled on your cluster for monitoring
+ # by CI, then isFluentbitProxyEnabled should be set to true:
+  isFluentbitProxyEnabled: <true or false>
+
+ # Set the following values according to your proxy login:
+  password: <password for proxy, optional>
+  port: <port for proxy>
+  server: <server for proxy>
+  username: <username for proxy, optional
+
+ # In the noProxy section, enter a comma-separated list of
+ # IP addresses and/or resolvable hostnames that should bypass
+ # the proxy:
+  noProxy: <comma separated list>
+----
 
 
-=== カスタム / プライベート Docker リポジトリを使用
+=== カスタムまたはプライベートのDockerリポジトリを使用する
 
-カスタムの Docker リポジトリを使用する場合は、次の手順を実行します。
+デフォルトでは、NetApp Kubernetes Monitoring Operator設定は、パブリックレジストリからコンテナイメージを取得します。監視のターゲットとして使用するKubernetesクラスタがある場合は、 また、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからコンテナイメージのみを取得するようにクラスタを設定した場合、必要なコマンドを実行できるように、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。
 
-Docker シークレットを取得します。
+次の手順に従って、レジストリにコンテナイメージを事前に配置し、NetApp Kubernetes Monitoring Operator設定を変更してこれらのイメージにアクセスします。次のコマンドで、選択したインストールネームスペースを、デフォルトのネームスペースである「NetApp-monitoring」と異なる場合は置き換えてください。
 
+. Docker シークレットを取得します。
++
  kubectl -n netapp-monitoring get secret docker -o yaml
-上記のコマンドの出力から、 _.dockerconfigjson ： _ の値をコピーして貼り付けます。
+. 上記のコマンドの出力から、 _.dockerconfigjson ： _ の値をコピーして貼り付けます。
+. Docker シークレットをデコードします。
++
+ echo <paste from _.dockerconfigjson:_ output above> | base64 -d
 
-Docker シークレットをデコードします。
 
- echo <paste from _.dockerconfigjson:_  output above> | base64 -d
-の出力は次の JSON 形式になります。
+の出力は次のJSON形式になります。
 
 ....
 { "auths":
   {"docker.<cluster>.cloudinsights.netapp.com" :
     {"username":"<tenant id>",
-     "password":"<password which is the CI API key>",
-     "auth"    :"<encoded username:password basic auth key. This is internal to docker>"}
+     "password":"<password which is the CI API token>",
+     "auth"    :"<encoded username:password basic auth token. This is internal to docker>"}
   }
 }
 ....
@@ -157,15 +166,15 @@ Docker リポジトリにログインします。
 docker login docker.<cluster>.cloudinsights.netapp.com (from step #2) -u <username from step #2>
 password: <password from docker secret step above>
 ....
-Cloud Insights からオペレータ用 Docker イメージを取得します。
+オペレータ用のDockerイメージをCloud Insights から取得します。NetApp Monitoringのバージョン番号が最新であることを確認します。
 
  docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
-次のコマンドを使用して <version> フィールドを確認します。
+次のコマンドを使用して、_NetApp-Monitoring_<version>フィールドを確認します。
 
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。
 
-オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。パブリックリポジトリと同じディレクトリ構造を使用します。次のオープンソースイメージをダウンロードする必要があります。
+オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。
 
 ....
 docker.io/telegraf: 1.22.3
@@ -196,24 +205,34 @@ spec:
         - key: k8s.gcr.io
           value: <same as "docker-repo" field above>
 ....
-Monitoring operator環境を編集して、新しいDocker repoの場所を反映します。
-
- kubectl -n netapp-monitoring edit deploy monitoring-operator
-次の行を置き換え...
-
- image: gcr.io/kubebuilder/kube-rbac-proxy:<kube-rbac-proxy-version>
-...を使用：
-
- image: <same as "docker-repo" field above>/kubebuilder/kube-rbac-proxy:<kube-rbac-proxy-version>
 
 
-=== スクリプトベースのKubernetes監視からNetApp Kubernetes Monitoring Operatorにアップグレードします
+=== OpenShift の手順
 
-以前にインストールしたスクリプトベースのKubernetesエージェントをNetApp Kubernetes Monitoring Operatorにアップグレードする場合は、次の手順を実行します。
+OpenShift 4.6以降で実行している場合は、「特権モード」設定を変更する必要があります。次のコマンドを実行して、エージェントを開いて編集します。「 NetApp Monitoring 」以外のネームスペースを使用している場合は、コマンドラインでそのネームスペースを指定します。
 
-アップグレードの手順
+ kubectl edit agent agent-monitoring-netapp -n netapp-monitoring
+ファイルで、 change_privileged-mode ： false_to _privileged-users mode ： true_
 
-. スクリプトベースのモニタリングインストールからConfigMapを保持します。
+OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブロックする可能性のある追加のセキュリティレベルを実装する場合があります。
+
+
+
+== をアップグレードして
+
+
+NOTE: 以前にスクリプトベースのエージェントをインストールしている場合は、NetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。
+
+
+
+=== スクリプトベースのエージェントからNetApp Kubernetes Monitoring Operatorへのアップグレード
+
+テレグラムエージェントをアップグレードするには、次の手順に従います。
+
+. Cloud Insights が認識するクラスタ名をメモしておきます。クラスタ名を確認するには、次のコマンドを実行します。名前空間がデフォルト（_CI-MOTing_）でない場合は、適切な名前空間を置き換えます。
++
+ kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
+. 既存の構成をバックアップします。
 +
  kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 . K8sオペレータベースの監視解決策 のインストール中に使用するK8sクラスタ名を保存して、データの継続性を確保します。
@@ -238,9 +257,46 @@ Kubernetes 上のスクリプトベースのエージェントをアンインス
 
 +
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+. ,をインストールします 現在の演算子。必ず、上記の手順1と同じクラスタ名を使用してください。
 
 
-image:KubernetesOperatorTile.png["Kubernetesオペレータ用タイル"]
+
+
+=== 最新のNetApp Kubernetes Monitoring Operatorにアップグレードします
+
+オペレータベースのインストールアップグレードの場合は、次のコマンドを実行します。
+
+* Cloud Insights が認識するクラスタ名をメモしておきます。クラスタ名を確認するには、次のコマンドを実行します。ネームスペースがデフォルト（_NetApp-monitoring _）以外の場合は、適切なネームスペースに置き換えます。
++
+ kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
+* 既存の構成をバックアップします。
++
+ kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
+,をアンインストールします 現在の演算子。
+
+,をインストールします 最新の演算子。カスタムリポジトリを設定した場合は、同じクラスタ名を使用し、新しいコンテナイメージを取得するようにしてください。
+
+
+
+== NetApp Kubernetes Monitoring Operatorをインストールします
+
+image:NKMO_Install_Instructions.png["オペレータベースのインストール"]
+
+.NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：
+. 一意のクラスタ名およびネームスペースを入力してください。実行中の場合 ,をアップグレードして スクリプトベースのエージェントまたは以前のKubernetes Operatorから、同じクラスタ名とネームスペースを使用します。
+. これらのコードを入力したら、エージェントインストーラスニペットをコピーできます
+. このスニペットをクリップボードにコピーするには、ボタンをクリックします。
+. スニペットを a_bash_window に貼り付け、実行します。スニペットには固有のキーがあり、24時間有効です。
+. インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。
+
+
+
+NOTE: セットアップは完了していません ,プロキシを設定します。
+
+
+NOTE: カスタムリポジトリを使用している場合は、の手順に従う必要があります ,カスタム / プライベート Docker リポジトリを使用。
 
 
 
@@ -254,85 +310,65 @@ NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実�
  kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
 
 
-== Kubernetes からデータを収集するようにエージェントを設定します
-
-注：NetApp Kubernetes Monitoringオペレータベースのインストールのデフォルトのネームスペースは、_NetApp-monitoring _です。名前空間を使用するコマンドでは、必ずインストールに適した名前空間を指定してください。
-
-エージェントが実行するポッドは、次の項目にアクセスできる必要があります。
-
-* ホストパス
-* ConfigMap
-* 秘密
+== アンインストール中です
 
 
-これらの Kubernetes オブジェクトは、 Cloud Insights UI に用意されている Kubernetes Agent インストールコマンドの一部として自動的に作成されます。OpenShift などの一部の Kubernetes タイプでは、これらのコンポーネントへのアクセスをブロックする追加のセキュリティレベルが実装されています。_SecurityContextConstraint_ は、 Cloud Insights UI に用意されている Kubernetes エージェントインストールコマンドの一部として作成されていないため、手動で作成する必要があります。作成したら、 Tegraf ポッドを再起動します。
+NOTE: 以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります ,アップグレード を使用して、NetApp Kubernetes Monitoring Operatorに接続します。
 
-[listing]
-----
-    apiVersion: v1
-    kind: SecurityContextConstraints
-    metadata:
-      name: telegraf-hostaccess
-      creationTimestamp:
-      annotations:
-        kubernetes.io/description: telegraf-hostaccess allows hostpath volume mounts for restricted SAs.
-      labels:
-        app: ci-telegraf
-    priority: 10
-    allowPrivilegedContainer: true
-    defaultAddCapabilities: []
-    requiredDropCapabilities: []
-    allowedCapabilities: []
-    allowedFlexVolumes: []
-    allowHostDirVolumePlugin: true
-    volumes:
-    - hostPath
-    - configMap
-    - secret
-    allowHostNetwork: false
-    allowHostPorts: false
-    allowHostPID: false
-    allowHostIPC: false
-    seLinuxContext:
-      type: MustRunAs
-    runAsUser:
-      type: RunAsAny
-    supplementalGroups:
-      type: RunAsAny
-    fsGroup:
-      type: RunAsAny
-    readOnlyRootFilesystem: false
-    users:
-    - system:serviceaccount:ci-monitoring:monitoring-operator
-    groups: []
-----
+
+
+=== 廃止されたスクリプトベースのエージェントを削除します
+
+これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+
+Kubernetes上のスクリプトベースのエージェント（NetApp Kubernetes Monitoring Operatorへのアップグレードなど）をアンインストールするには、次の手順を実行します。
+
+モニタリングネームスペースが Telegraf 専用に使用されている場合：
+
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+ kubectl delete ns ci-monitoring
+モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
+
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+
+
+=== をクリックして、NetApp Kubernetes Monitoring Operatorを削除します
+
+NetApp Kubernetes Monitoring Operatorのデフォルトのネームスペースは、「NetApp Monitoring」です。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+
+新しいバージョンの監視オペレータは、次のコマンドを使用してアンインストールできます。
+
+....
+kubectl delete agent <name-space>
+kubectl delete ns,clusterrole,clusterrolebinding,crd <name-space>
+....
+最初のコマンドが「リソースが見つかりません」を返した場合は、次の手順に従って古いバージョンの監視オペレータをアンインストールします。
+
+次の各コマンドを順番に実行します。現在のインストール状況によっては、これらのコマンドの一部で「オブジェクトが見つかりません」というメッセージが返される場合があります。これらのメッセージは無視してかまいません。
+
+....
+kubectl -n <NAMESPACE> delete agent agent-monitoring-netapp
+kubectl delete crd agents.monitoring.netapp.com
+kubectl -n <NAMESPACE> delete role agent-leader-election-role
+kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader <NAMESPACE>-agent-manager-role <NAMESPACE>-agent-proxy-role <NAMESPACE>-cluster-role-privileged
+kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding <NAMESPACE>-agent-manager-rolebinding <NAMESPACE>-agent-proxy-rolebinding <NAMESPACE>-cluster-role-binding-privileged
+kubectl delete <NAMESPACE>-psp-nkmo
+kubectl delete ns <NAMESPACE>
+....
+スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。
+
+ kubectl delete scc telegraf-hostaccess
 
 
 == Kubeステートメトリックについて
 
-NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は不要で、ドキュメントのこのセクションはスキップできます。参考情報を提供するために、以下の資料を用意しています。
-
-
-
-=== kube-state-metrics サーバをインストールしています
-
-
-NOTE: オペレータベースのインストールでは、 kube-state-metrics のインストールを処理します。オペレータベースのインストールを実行する場合は、このセクションを省略してください。
-
-kube-state-metrics サーバをインストールするには、次の手順を実行します（スクリプトベースのインストールを実行する場合に必要です）。
-
-.手順
-. 一時フォルダ（例えば、 /tmp/kube-state-yaml -files/_ ）を作成し、から .yaml ファイルをコピーします https://github.com/kubernetes/kube-state-metrics/tree/master/examples/standard[] をこのフォルダに追加します。
-. kube-state-metrics のインストールに必要な .yaml ファイルを適用するには、次のコマンドを実行します。
-+
- kubectl apply -f /tmp/kube-state-yaml-files/
-
+NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は必要ありません。
 
 
 
 === kube-state-metrics カウンタ
 
-kubbe 状態メトリックカウンタの情報にアクセスするには、次のリンクを使用します。
+これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。
 
 . https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap メトリック"]
 . https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet メトリック"]
@@ -351,200 +387,42 @@ kubbe 状態メトリックカウンタの情報にアクセスするには、�
 
 
 
-== エージェントをアンインストールしています
-
-以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります ,アップグレード を使用して、NetApp Kubernetes Monitoring Operatorに接続します。
-
-
-
-=== スクリプトベースのエージェントを削除します
-
-これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
-
-Kubernetes上のスクリプトベースのエージェント（NetApp Kubernetes Monitoring Operatorへのアップグレードなど）をアンインストールするには、次の手順を実行します。
-
-モニタリングネームスペースが Telegraf 専用に使用されている場合：
-
- kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
- kubectl delete ns ci-monitoring
-モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：
-
- kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-
-
-=== をクリックして、NetApp Kubernetes Monitoring Operatorを削除します
-
-これらのコマンドでは、デフォルトのネームスペースである「 NetApp-monitoring 」が使用されていることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
-
-....
-kubectl delete ns netapp-monitoring
-kubectl delete clusterrole <name-space>-agent-manager-role <name-space>-agent-proxy-role
-kubectl delete clusterrolebinding <name-space>-agent-manager-rolebinding <name-space>-agent-proxy-rolebinding
-kubectl delete crd agents.monitoring.netapp.com
-kubectl delete psp <name-space>-psp-nkmo
-....
-スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。
-
- kubectl delete scc telegraf-hostaccess
-
-
-== Agent をアップグレードしています
-
-
-NOTE: スクリプトベースのエージェントがインストールされている場合は、NetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。
-
-
-
-=== スクリプトベースのエージェントからNetApp Kubernetes Monitoring Operatorへのアップグレード
-
-これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
-
-テレグラムエージェントをアップグレードするには、次の手順に従います。
-
-* クラスタ名をメモします。クラスタ名を表示するには、次のいずれかの照合を実行します。
-
-
-オペレータの場合：
-
- kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-スクリプトベースの場合：
-
- kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-* 既存の構成をバックアップします。
-+
- kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
-
-
-* ,をアンインストールします 既存のエージェント
-* ,をインストールします 新しいエージェント]。
-
-
-
-
-=== NetApp Kubernetes Monitoring Operatorのアップグレード
-
-オペレータベースのインストールの場合は、次のコマンドを実行します。
-
-....
-kubectl delete ns netapp-monitoring
-kubectl delete crd agents.monitoring.netapp.com
-kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
-kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
-....
-
-
-== Kubernetes のチェックサムの検証
-
-Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。
-
-次の手順を実行します。
-
-. 指示に従ってエージェントインストーラスニペットをコピーします。
-. スニペットをコマンドウィンドウに貼り付ける代わりに、テキストエディタに貼り付けます。
-. コマンドから末尾の「 --install 」（ Linux/Mac ）または「 -install 」（ Windows ）を削除します。
-. コマンド全体をテキストエディタからコピーします。
-. 次に、コマンドウィンドウ（作業ディレクトリ内）に貼り付けて実行します。
-
-
-Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）
-
-* Download and install （デフォルト）：
-+
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
-* ダウンロードのみ：
-+
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
-
-
-download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
-
-* インストールスクリプト
-* 環境ファイル
-* YAML ファイル
-* 署名済みチェックサムファイル（ SHA256 署名）
-* 署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）
-
-
-インストールスクリプト、環境ファイル、 YAML ファイルは、目視検査を使用して検証できます。
-
-PEM ファイルは、フィンガープリントが次のようになっていることを確認することで検証できます。
-
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
-具体的には、
-
-* Windows 以外：
-+
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-* Windows の場合
-+
- Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
-
-
-署名済みチェックサムファイルは、 PEM ファイルを使用して確認できます。
-
-* Windows 以外：
-+
- openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
-* Windows （上記の「証明書のインポート」を使用して証明書をインストールした後）：
-+
- Get-AuthenticodeSignature -FilePath .\sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
-
-
-すべてのアーティファクトが正常に検証されたら、次のコマンドを実行してエージェントのインストールを開始できます。
-
-Windows 以外：
-
- sudo -E -H ./<installation_script_name> --install
-Windows の場合
-
- .\cloudinsights-windows.ps1 -install
-
-
 == トラブルシューティング
 
-エージェントの設定で問題が発生した場合の対処方法を次に示します。
+NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。
 
 [cols="2*"]
 |===
 | 問題 | 次の操作を実行します 
 
 
-| _etcd_ が Kubernetes クラスタデータストアではないクラスタの場合、次のメッセージがテレグラフの RS ポッドに表示されます。 [ プラグインでの inputs.prometheus] エラー：キーペア /etc/Kubernetes /pki/ etcd/server.crt をロードできませんでした： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pti /pskt server または crt file | Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet 
+| _etcd_がKubernetesクラスタデータストアではないクラスタの場合、テレグラムRSポッドに次のメッセージが表示されます。[プラグインでのinputs.prometheus]エラー：キーペアをロードできませんでした/etc/kubernetes/pki/etcd/server.crt：/etc/kubernetes/pki/etcd/server.key：open /etc/kubernetes/pki/etcd/server.crt：No such file or directory | Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet 
 
 
-| すでに Cloud Insights を使用してエージェントをインストールしました | ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。 
+| Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegrafバージョン2.0以降を使用していて、KubernetesクラスタストレージがCloud Insights によってアクティブに監視されている必要があります。 
 
 
-| すでにエージェントをインストールしていますが、 Cloud Insights インストーラを使用してインストールしていません | 前のエージェントを削除し、 Cloud Insights エージェントのインストールを実行して、適切なデフォルト設定ファイルを設定します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。 
+| 次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781. | これらのメッセージは、1.20より前のバージョンのKubernetesでkube-state-metricsバージョン2.0.0以上を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル 
 
 
-| Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegraf バージョン 2.0 以降を使用している必要があります。 
-
-
-| 次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781. | これらのメッセージは、 Kubernetes バージョン 1.17 以下で kube-state-metrics バージョン 2.0.0 以降を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル 
-
-
-| Kubernetes に Tegraf をインストールまたはアップグレードしましたが、 Tegraf ポッドは起動しません。Telegraf ReplicaSet または DemonSet は、次のような障害を報告しています。 Error creating ： PoD "Telegraf-RS" is forbidden ： Unable to validate against any security context constraint ： [spec.volumes [2] ： Invalid Value ： "hostPath" ： hostPath volumes are not allowed to be used] | セキュリティコンテキスト制約を作成します（前述の「 Kubernetes からデータを収集するためのエージェントの設定」セクションを参照）。Security Context Constraint に指定された名前空間とサービスアカウントが、 Telegraf ReplicaSet および DemonSet の名前空間とサービスアカウントと一致することを確認します。kubectl 説明 SCC テレホ - ホストアクセス | grep サービスアカウント kubectl-n CI- モニタリング -- 説明 RS テレグラム af-rs | grep -i " 名前空間 : "kubectl-n CI- モニタリング説明 RS テレグラム af-r| grep -i " サービスアカウント : "kubectl-n CI-monitoring -ds-describe " テレグラムの説明 "-ds-describe - ネームスペース "grep 
+| Kubernetes に Tegraf をインストールまたはアップグレードしましたが、 Tegraf ポッドは起動しません。Telegraf ReplicaSetまたはDemonSetは、次のような障害を報告しています。エラー作成：ポッド"Telegraf-RS" is forbidden "：セキュリティコンテキスト制約に対して検証できません。この制限を緩和するには、エージェントを編集してください (`kubectl edit agent agent-monitoring-netapp`）を使用して「特権モード：false」を「特権モード：true」に変更します。[spec.volumes [2]：無効な値：「hostPath」：hostPathボリュームは使用できません] | セキュリティコンテキスト制約が存在しない場合は作成します。Security Context Constraint に指定された名前空間とサービスアカウントが、 Telegraf ReplicaSet および DemonSet の名前空間とサービスアカウントと一致することを確認します。kubectl 説明 SCC テレホ - ホストアクセス | grep サービスアカウント kubectl-n CI- モニタリング -- 説明 RS テレグラム af-rs | grep -i " 名前空間 : "kubectl-n CI- モニタリング説明 RS テレグラム af-r| grep -i " サービスアカウント : "kubectl-n CI-monitoring -ds-describe " テレグラムの説明 "-ds-describe - ネームスペース "grep 
 
 
 | Telegraf から次のようなエラーメッセージが表示されますが、 Telegraf は起動して実行されます。 Oct 11 14 ： 23 ： 41 IP-172-39-47 systemd[1] ： InfluxDB への指標の報告用に、プラグイン駆動型のサーバーエージェントを起動しました。10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/テレ グラム /.cache/snowflake 、 err: mkdir /etc/テレ グラム f/.ca che: 許可が拒否されました。ignored \n" func = "gosnowfleke. (*defaultLogger).Errorf" file="log. go:120" Oct 11 14:23:41 IP-172-21-39-47 TEテレ グラフ [1827]: time="2021 - 10-11T14:23:41Z" level=error.msg=" 失敗しました。無視されます。/etc/テレ グラム /.cache/snowflake/ocspa_response_cache.json を開きます。ファイルまたはディレクトリがありません \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"Oct. 1114:23:41 IP-172-41-39-47 テレグラム [1827:1127]~21-21Z: Telegraf 1.19.3 を起動しています | これは問題と呼ばれています。を参照してください link:https://github.com/influxdata/telegraf/issues/9407["この GitHub の記事"] 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。 
 
 
-| Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied" | SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、次のいずれかの操作を行います。•エージェントを編集する（「kubectl edit agent agent-monitoring netapp」）。さらに、「privileged-mode：false」を「privileged-mode：true」に変更する。 
+| Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied" | SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、エージェントを編集します (`kubectl edit agent agent-monitoring-netapp`）を使用して、「privileged-mode：false」を「privileged-mode：true」に変更します。 
 
 
 | Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした | Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
 
 
-| PSP環境を持っています。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSPをサポートする最新のNKMOにアップグレードするには、次の手順に従います。1.前の監視オペレータをアンインストールします。kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrole binding agent-manager-role binding agent-proxy-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -pro資料 室最新バージョンのモニタリングオペレータを配備します。 
+| PSP環境を持っています。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSPをサポートする最新のNKMOにアップグレードするには、次の手順に従います。1. ,をアンインストールします 前の監視オペレータ：kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -binding中のクラスタ役割を持つadminエージェントの役割を持つ役割を持つ役割を果たす役割を担う役割は、それぞれ果たす役割を担う。 ,をインストールします モニタリングオペレータの最新バージョン。 
 
 
-| NKMOを導入する際に問題が発生し、PSPを使用しています。 | 1.次のコマンドを使用して、エージェントを編集します。kubectl -n <name-space> edit agent 2.「security-policy enabled」を「false」に設定します。これにより、POSセキュリティポリシーが無効になり、NKMOを展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n <name-space> 
+| NKMOを導入する際に問題が発生し、PSPを使用しています。 | 1.次のコマンドを使用して、エージェントを編集します。kubectl -n <name-space> edit agent 2.「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n <namespace>| grep -i psp（should show that nothing is found） 
 
 
-| NetApp Kubernetes Monitoring Operatorのインストール後、すぐにログに次のメッセージが表示されます。inputs.prometheus]プラグインでエラーが発生しました：\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics: get\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:へのHTTP要求の送信時にエラーが発生しました。tcp：lookup be-state-metrics .<namespあれ ば.svc.local:該当するホストはありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
-
-
-| CIエージェントをインストールしてKubernetes情報を収集するコマンドを実行しましたが、UIにKubernetes情報が表示されません。 | 次のコマンドを実行し、出力を収集して、ネットアップサポートにお問い合わせください。これらのコマンドは、デフォルトのネームスペースを使用していることに注意してください。独自のネームスペースを設定した場合は、これらのコマンドおよび後続のすべてのコマンドで、そのネームスペースを置き換えます。kubectl -nネットアップ監視説明導入、エージェント、RS、DS、ポッドkubectl -nネットアップ監視説明導入kubectl -nネットアップ監視ログ<monitoring operator pod >-c manager kubectl -n NetApp Monitoring logs <テレ グラム<テレ グラム<テレ グラム> kubectl -モニタリングポッド<NetApp-tre -ステータスポッド> 
+| 「ImagePullBackoff」エラーが発生しました | このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 ,詳細はこちら カスタム/プライベートリポジトリの設定について 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
