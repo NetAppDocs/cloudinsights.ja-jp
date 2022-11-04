@@ -283,27 +283,19 @@ API アクセストークンには有効期限があります。API アクセス
 
 これらのコマンドでは、デフォルトのネームスペースである「 NetApp-monitoring 」が使用されていることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
-* Telegraf ConfigMaps （ CM ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
+注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。以下に示す手動手順を実行する必要はありません。
+
+* NetApp Kubernetes Monitoring Operatorを編集します。
++
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+* 古いAPIトークンを新しいAPIトークンに置き換えて、_spec.output-sink.api-key_valueを変更します。
 +
 ....
-kubectl -n netapp-monitoring edit cm
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
+spec:
+…
+  output-sink:
+  - api-key: <NEW_API_TOKEN>
 ....
-* Telegraf DemonSet （ DS ）および ReplicaSet （ RS ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
-+
-....
-kubectl -n netapp-monitoring edit ds telegraf-ds
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
-kubectl -n netapp-monitoring edit rs telegraf-rs
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
-....
-* Kubernetes コントローラは、 Telegraf DS ポッドを自動的に再起動します。
-* Telegraf RS ポッドを再起動します
-+
- kubectl -n netapp-monitoring delete pod <telegraf-rs-pod>
 
 
 
