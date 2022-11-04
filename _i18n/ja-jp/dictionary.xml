@@ -967,7 +967,6 @@
   <block id="b994d75c0a79a39d9acb5a498320c41e" category="paragraph">サードパーティのプラットフォームとベンダーのテクノロジ全体で、標準化、共通性、および命名方法にはさまざまなレベルがあります。Cloud Insights は、容量とパフォーマンスの情報を一貫したフレームワークに正規化しようとします。容量やパフォーマンスの一部の指標は、 IOPS 、レイテンシ、物理容量など、デバイスのカウンタからネイティブに提供されます。カウンタを指定しない場合、 Cloud Insights は値を集計できます（たとえば、基盤となるボリュームの IOPS または容量を合計するなど）。どちらも使用できない場合は、 Cloud Insights はさまざまな計算アルゴリズムを通じて指標値の算出を試みます。Cloud Insights には、 Cloud Insights が現在収集していない指標を追加で組み込むための、汎用的な SNMP 統合機能があります。</block>
   <block id="e885abb4ab92f6610661428455d3f5e7" category="section-title">Cloud Insights はファイバチャネルスイッチをサポートしていますか。</block>
   <block id="425ecea49bf7aad828d3bf87e9318ea2" category="paragraph">はい。お客様のストレージ資産からデータを収集するだけでなく、 Cloud Insights はお客様の環境内の Cisco 、 Brocade 、 QLogic スイッチからインベントリデータとパフォーマンスデータも取得します。</block>
-  <block id="f73369b2e30a54fde6f17bcd1578eff0" category="paragraph">== インフラストラクチャ全体のトポロジビューは使用できますか ? Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
   <block id="82976cdea05b7eb7fbe896786a79f35b" category="paragraph">はい。 Cloud Insights は、論理構成要素と物理構成要素を動的に検出してマッピングし、コンピューティング、ファブリック、仮想化、バックエンドストレージに関するエンドツーエンドのトポロジビューを対話型で提供します。トポロジアイコンを使用すると、影響を受けるリソースへのクイック起動ナビゲーションが可能になり、共有ストレージ環境でのワークロードや違反の特定に役立ちます。</block>
   <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Flink データコレクタの設定</block>
   <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flink Data Collector の使用</block>
@@ -8373,7 +8372,6 @@
   <block id="9cb22571044cfb577ec048458671deab" category="list-text">なし - 補間は行われません</block>
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">線形 - 既存の点間のデータポイントを補間します</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">階段（ Stair ） - 前のデータ点を補間されたデータ点として使用します</block>
-  <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet</block>
   <block id="b68a34f8a928794da0f98d4ee916c271" category="list-text">*<block ref="2fadd2d714be07c05e8b57dea395b60f" category="inline-link-macro-rx"></block>*</block>
   <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、関連する記事、ハウツーなどを検索できます。</block>
   <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
@@ -8390,10 +8388,6 @@
   <block id="c2a82bcbfe1a93fec106af67b6b26f3b" category="section-title">期限切れの API アクセストークンの回転</block>
   <block id="d981e94161c0ab533162bbea9f1d9e89" category="paragraph">API アクセストークンには有効期限があります。API アクセストークンの期限が切れると、ユーザは新しいトークン（ TYPE_Data Ingestion _ with Read/Write パーミッション）を生成し、期限切れのトークンではなく、新しく生成されたトークンを使用するように Telegraf を再設定する必要があります。以下の手順では、その方法について詳しく説明します。</block>
   <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">これらのコマンドでは、デフォルトのネームスペースである「 NetApp-monitoring 」が使用されていることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。</block>
-  <block id="85b9da5a8c5c1cce5881111010339cb4" category="list-text">Telegraf ConfigMaps （ CM ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
-  <block id="865b7c5a0ecd85e73193b19bcb780a4c" category="list-text">Telegraf DemonSet （ DS ）および ReplicaSet （ RS ）を編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
-  <block id="b56a0b4a07e1bf181b703d8bdf115a4b" category="list-text">Kubernetes コントローラは、 Telegraf DS ポッドを自動的に再起動します。</block>
-  <block id="c12e3974927f7898f893ba8a9965a9a0" category="list-text">Telegraf RS ポッドを再起動します</block>
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL / CentOS と Debian/Ubuntu</block>
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">Telegraf 構成ファイルを編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">Tegraf を再起動します。</block>
@@ -9076,7 +9070,6 @@
   <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は必要ありません。</block>
   <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。</block>
   <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。</block>
-  <block id="3b3ca1220dd8c3e25db4764df1e68cbe" category="cell">_etcd_がKubernetesクラスタデータストアではないクラスタの場合、テレグラムRSポッドに次のメッセージが表示されます。[プラグインでのinputs.prometheus]エラー：キーペアをロードできませんでした/etc/kubernetes/pki/etcd/server.crt：/etc/kubernetes/pki/etcd/server.key：open /etc/kubernetes/pki/etcd/server.crt：No such file or directory</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegrafバージョン2.0以降を使用していて、KubernetesクラスタストレージがCloud Insights によってアクティブに監視されている必要があります。</block>
   <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">これらのメッセージは、1.20より前のバージョンのKubernetesでkube-state-metricsバージョン2.0.0以上を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル</block>
   <block id="0b7a53ced1b85b8681621616e37366c7" category="cell">Kubernetes に Tegraf をインストールまたはアップグレードしましたが、 Tegraf ポッドは起動しません。Telegraf ReplicaSetまたはDemonSetは、次のような障害を報告しています。エラー作成：ポッド"Telegraf-RS" is forbidden "：セキュリティコンテキスト制約に対して検証できません。この制限を緩和するには、エージェントを編集してください <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）を使用して「特権モード：false」を「特権モード：true」に変更します。[spec.volumes [2]：無効な値：「hostPath」：hostPathボリュームは使用できません]</block>
@@ -9087,4 +9080,6 @@
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">「ImagePullBackoff」エラーが発生しました</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">詳細はこちら</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> カスタム/プライベートリポジトリの設定について</block>
+  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。ここに記載されているKubernetes APIトークンの更新手順を手動で実行する必要はありません。</block>
+  <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">インフラ全体のトポロジビューは使用できますか。Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
 </blocks>
