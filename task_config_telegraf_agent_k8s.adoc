@@ -396,9 +396,6 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 | 問題 | 次の操作を実行します 
 
 
-| _etcd_がKubernetesクラスタデータストアではないクラスタの場合、テレグラムRSポッドに次のメッセージが表示されます。[プラグインでのinputs.prometheus]エラー：キーペアをロードできませんでした/etc/kubernetes/pki/etcd/server.crt：/etc/kubernetes/pki/etcd/server.key：open /etc/kubernetes/pki/etcd/server.crt：No such file or directory | Cloud Insights でサポートされているのは、 Kubernetes データストアとしての _etcd_as の監視のみです。次の手順に従って設定を変更することで、エージェントを変更して etcd データの収集を回避することができます。 kubectl -n NetApp-monitoring edit agent agentMonitoring -netapp in that file ： -name ： prometheus_etcd run-mode ： -ReplicaSet 
-
-
 | Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegrafバージョン2.0以降を使用していて、KubernetesクラスタストレージがCloud Insights によってアクティブに監視されている必要があります。 
 
 
