@@ -9025,7 +9025,6 @@
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">を使用してを実行する場合 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>を使用してください <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>またはを使用している <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>を参照してください。</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">をアップグレードして</block>
   <block id="794e8cb207d48ed4b3325b391e777251" category="paragraph">以前のインストールからアップグレードする場合は、も参照してください <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 情報。</block>
-  <block id="023670044a04c30707541cd9ad44a499" category="paragraph">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="2261a5ecaa517b1e6b1ea9c3c9c6c74a" category="inline-xref-macro-rx"></block>。</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。</block>
   <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">プロキシは、インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをCloud Insights 環境に接続するために必要です</block>
   <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">ターゲットのKubernetesクラスタがCloud Insights 環境と通信するために必要なプロキシ</block>
@@ -9082,4 +9081,5 @@
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> カスタム/プライベートリポジトリの設定について</block>
   <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。ここに記載されているKubernetes APIトークンの更新手順を手動で実行する必要はありません。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">インフラ全体のトポロジビューは使用できますか。Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
+  <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
