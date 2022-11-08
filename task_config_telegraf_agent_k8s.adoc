@@ -387,6 +387,53 @@ NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にイ�
 
 
 
+== Kubernetes のチェックサムの検証
+
+Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。
+
+次の手順を実行します。
+
+. 指示に従ってエージェントインストーラスニペットをコピーします。
+. スニペットをコマンドウィンドウに貼り付ける代わりに、テキストエディタに貼り付けます。
+. コマンドから末尾の「--install」を削除します。
+. コマンド全体をテキストエディタからコピーします。
+. 次に、コマンドウィンドウ（作業ディレクトリ内）に貼り付けて実行します。
++
+** Download and install （デフォルト）：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+** ダウンロードのみ：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+
+
+
+
+download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
+
+* インストールスクリプト
+* 環境ファイル
+* YAML ファイル
+* 署名済みチェックサムファイル（ SHA256 署名）
+* 署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）
+
+
+インストールスクリプト、環境ファイル、 YAML ファイルは、目視検査を使用して検証できます。
+
+PEM ファイルは、フィンガープリントが次のようになっていることを確認することで検証できます。
+
+ E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+具体的には、
+
+ openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
+署名済みチェックサムファイルは、 PEM ファイルを使用して確認できます。
+
+ openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+すべてのアーティファクトが正常に検証されたら、次のコマンドを実行してエージェントのインストールを開始できます。
+
+ sudo -E -H ./<installation_script_name> --install
+
+
 == トラブルシューティング
 
 NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。

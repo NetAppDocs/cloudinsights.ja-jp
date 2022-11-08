@@ -9080,4 +9080,6 @@
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">インフラ全体のトポロジビューは使用できますか。Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
   <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">Cloud Insights では、ストレージノードやストレージノードのクエリに「* monitoring .count *」列を追加できます。返される結果にActive IQ監視対象のストレージシステムが含まれる場合は、monitor.count列にストレージシステムまたはノードのリスク数が表示されます。</block>
+  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">コマンドから末尾の「--install」を削除します。</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">署名済みチェックサムファイル（ SHA256 署名）</block>
 </blocks>
