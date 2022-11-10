@@ -218,6 +218,26 @@ OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブ�
 
 
 
+== NetApp Kubernetes Monitoring Operatorをインストールします
+
+image:NKMO_Install_Instructions.png["オペレータベースのインストール"]
+
+.NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：
+. 一意のクラスタ名およびネームスペースを入力してください。実行中の場合 ,をアップグレードして スクリプトベースのエージェントまたは以前のKubernetes Operatorから、同じクラスタ名とネームスペースを使用します。
+. これらのコードを入力したら、エージェントインストーラスニペットをコピーできます
+. このスニペットをクリップボードにコピーするには、ボタンをクリックします。
+. スニペットを a_bash_window に貼り付け、実行します。スニペットには固有のキーがあり、24時間有効です。
+. インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。
+
+
+
+NOTE: セットアップは完了していません ,プロキシを設定します。
+
+
+NOTE: カスタムリポジトリを使用している場合は、の手順に従う必要があります ,カスタム / プライベート Docker リポジトリを使用。
+
+
+
 == をアップグレードして
 
 
@@ -277,26 +297,6 @@ Kubernetes 上のスクリプトベースのエージェントをアンインス
 ,をアンインストールします 現在の演算子。
 
 ,をインストールします 最新の演算子。カスタムリポジトリを設定した場合は、同じクラスタ名を使用し、新しいコンテナイメージを取得するようにしてください。
-
-
-
-== NetApp Kubernetes Monitoring Operatorをインストールします
-
-image:NKMO_Install_Instructions.png["オペレータベースのインストール"]
-
-.NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：
-. 一意のクラスタ名およびネームスペースを入力してください。実行中の場合 ,をアップグレードして スクリプトベースのエージェントまたは以前のKubernetes Operatorから、同じクラスタ名とネームスペースを使用します。
-. これらのコードを入力したら、エージェントインストーラスニペットをコピーできます
-. このスニペットをクリップボードにコピーするには、ボタンをクリックします。
-. スニペットを a_bash_window に貼り付け、実行します。スニペットには固有のキーがあり、24時間有効です。
-. インストールが自動的に開始されます。完了したら、 _Complete Setup_ ボタンをクリックします。
-
-
-
-NOTE: セットアップは完了していません ,プロキシを設定します。
-
-
-NOTE: カスタムリポジトリを使用している場合は、の手順に従う必要があります ,カスタム / プライベート Docker リポジトリを使用。
 
 
 
@@ -458,10 +458,10 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 | Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした | Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
 
 
-| PSP環境を持っています。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSPをサポートする最新のNKMOにアップグレードするには、次の手順に従います。1. ,をアンインストールします 前の監視オペレータ：kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -binding中のクラスタ役割を持つadminエージェントの役割を持つ役割を持つ役割を果たす役割を担う役割は、それぞれ果たす役割を担う。 ,をインストールします モニタリングオペレータの最新バージョン。 
+| PSP/PSA環境があります。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）またはポッドセキュリティアドミッション（PSA）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートして現在のNKMOにアップグレードするには、次の手順に従います。1. ,をアンインストールします 前の監視オペレータ：kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -binding中のクラスタ役割を持つadminエージェントの役割を持つ役割を持つ役割を果たす役割を担う役割は、それぞれ果たす役割を担う。 ,をインストールします モニタリングオペレータの最新バージョン。 
 
 
-| NKMOを導入する際に問題が発生し、PSPを使用しています。 | 1.次のコマンドを使用して、エージェントを編集します。kubectl -n <name-space> edit agent 2.「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n <namespace>| grep -i psp（should show that nothing is found） 
+| NKMOを導入する際に問題が発生し、PSP/PSAを使用しました。 | 1.次のコマンドを使用して、エージェントを編集します。kubectl -n <name-space> edit agent 2.「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n <namespace>| grep -i psp（should show that nothing is found） 
 
 
 | 「ImagePullBackoff」エラーが発生しました | このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 ,詳細はこちら カスタム/プライベートリポジトリの設定について 
