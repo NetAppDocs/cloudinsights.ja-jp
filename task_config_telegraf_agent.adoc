@@ -11,7 +11,7 @@ summary: Cloud Insights は統合データの収集エージェントとして T
 [role="lead"]
 Cloud Insights ではを使用します link:https://docs.influxdata.com/telegraf["Tegraf"] 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
 
-Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。
+Cloud Insights の現在のTelegrafバージョンは*1.24.0 *です。
 
 
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。

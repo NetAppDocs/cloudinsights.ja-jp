@@ -8575,7 +8575,6 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">クラスタ内の* Pod*の数。この番号をクリックすると、ポッドリストページが開きます。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">クラスタ内のネームスペースの数*。この番号をクリックすると、名前空間リストページが開きます。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">クラスタ内のワークロードの数*。この数値をクリックすると、ワークロードリストページが開きます。</block>
-  <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights のTelegrafの最新バージョンは*1.22.3*です。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">ワークロードの競合</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">ホスト、ネットワーク、ストレージなど、他の共有リソースに影響を及ぼすアセットと影響を受けるアセットが表示されます。このようなリソースを_greeding_/degraded_resourcesと呼ぶこともあります。</block>
   <block id="95eafe7994082a98ef565bc49b0bd0bc" category="section-title">2022年6月</block>
@@ -9082,4 +9081,5 @@
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">コマンドから末尾の「--install」を削除します。</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">署名済みチェックサムファイル（ SHA256 署名）</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。</block>
+  <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">Cloud Insights の現在のTelegrafバージョンは*1.24.0 *です。</block>
 </blocks>
