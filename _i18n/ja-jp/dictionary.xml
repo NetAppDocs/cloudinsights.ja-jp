@@ -6215,7 +6215,6 @@
   <block id="129f8880167531920bb3396830948e86" category="cell">Linux 要件</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティングシステム</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">コマンド</block>
-  <block id="6068dbca35f237e6b23584f701dc4aa1" category="cell">インストール、スクリプトの実行、およびアンインストールには 'Sudo su – ' コマンドが必要です。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4 個の CPU コア</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16GB の RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">使用可能なディスクスペース</block>
@@ -9082,4 +9081,5 @@
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">Cloud Insights では、ストレージノードやストレージノードのクエリに「* monitoring .count *」列を追加できます。返される結果にActive IQ監視対象のストレージシステムが含まれる場合は、monitor.count列にストレージシステムまたはノードのリスク数が表示されます。</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">コマンドから末尾の「--install」を削除します。</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">署名済みチェックサムファイル（ SHA256 署名）</block>
+  <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。</block>
 </blocks>

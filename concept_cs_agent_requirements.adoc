@@ -19,7 +19,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。SE（Security Enhanced）Linuxはサポートされていません。 
 
 
-| コマンド | インストール、スクリプトの実行、およびアンインストールには 'Sudo su – ' コマンドが必要です。 
+| コマンド | インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。 
 
 
 | CPU | 4 個の CPU コア 
