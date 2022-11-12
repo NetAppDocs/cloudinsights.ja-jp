@@ -8074,7 +8074,6 @@
   <block id="57381bcfb8909c42cd334a5f9033e407" category="cell">AWS メタデータサーバに接続できませんでした</block>
   <block id="a146f13e0af345143ecc33ea983a5c06" category="cell">クラウド階層に到達不能です</block>
   <block id="34cd9019bbd8c57317268ed06f95dc66" category="cell">ストレージノードからクラウド階層のオブジェクトストア API に接続することはできません。一部のデータにアクセスできません。</block>
-  <block id="8cd7f8db9d150a04184b8fd02d5f5a6d" category="cell">クラスタ容量がフルです</block>
   <block id="029f2c939400c57163aca6fd2dc822ba" category="cell">ディスクがサービスを停止しています</block>
   <block id="a54845325eb752184d2bec973b7963de" category="cell">「このイベントは、ディスクが障害としてマークされているか、完全消去中であるか、 Maintenance Center に入力されたためにサービスから削除された場合に発生します。」</block>
   <block id="909a3974ecbd6f6ccecfcb1229be41ec" category="cell">FabricPool のスペース使用制限にほぼ達しました</block>
@@ -8305,13 +8304,6 @@
   <block id="58fde537c8a6c2a525f262279a148609" category="section-title">ランサムウェア対策ログモニタ</block>
   <block id="4d39fc318c9bd864606168b6c94356cd" category="cell">ボリュームでのランサムウェア対策監視の有効化（ラーニングモード）</block>
   <block id="6225aea9b43aee104d64ccb2870be625" category="cell">検出されたランサムウェアからデータを保護するために、元のデータをリストアするために使用できる Snapshot コピーが作成されました。システムによって AutoSupport または「コールホーム」メッセージが生成され、ネットアップテクニカルサポートおよび設定された宛先に送信されます。AutoSupport メッセージを使用すると、問題の特定と解決方法が向上します</block>
-  <block id="c19f755bb5512c54622f3290818d4ac5" category="section-title">Astra データストア（ ADS ）モニタ</block>
-  <block id="35e4b763e20006224c51c97d77f699fa" category="cell">警告 @&gt;85% 重大 @&gt;95%</block>
-  <block id="a6796b1585daa4bf415caa7d1cfddcde" category="cell">ADS クラスタのストレージ容量は、アプリケーションデータと顧客データの格納に使用されます。クラスタに格納されたデータが多いほど、将来のデータに使用できるストレージ容量は少なくなります。クラスタ内のストレージ容量が合計クラスタ容量に達すると、クラスタはこれ以上のデータを格納できなくなります。クラスタの物理容量を監視することで、データサービスの継続性が確保されます。</block>
-  <block id="23fa9d7af943ee0af2bb663410a00d19" category="cell">重大のしきい値を超えた場合にサービスの中断を最小限に抑えるには、即時アクションが必要です。 1.増加に対応するために、クラスタに割り当てられる容量を増やすことを検討してください。 2.容量を解放するために不要になったデータを削除することを検討してください。警告しきい値に違反した場合は、すぐに次のアクションを実行するよう計画してください。 ...1.この増加に対応するために、クラスタに割り当てられるスペースを増やすことを検討してください。</block>
-  <block id="751f6c789f3a22b17d94185a7d67ce2d" category="cell">警告 @&lt;15% 重大 @&lt;5%</block>
-  <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">ボリュームのストレージ容量は、アプリケーションデータと顧客データの格納に使用されます。クラスタボリュームに格納されているデータが多いほど、将来のデータに使用できるストレージ容量は少なくなります。ボリューム内で使用されているデータストレージ容量が合計ストレージ容量に達すると、 使用可能なストレージ容量が不足しているため、ボリュームはこれ以上データを格納できません。…ボリュームの使用済みストレージ容量を監視することで、データサービスの継続性が確保されます。</block>
-  <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">重大のしきい値を超えた場合にサービスの中断を最小限に抑えるには、即時アクションが必要です。 1.増加に対応するために、ボリュームのスペースを増やすことを検討してください。 2.容量を解放するために不要になったデータを削除することを検討してください。警告しきい値に違反した場合は、すぐに次のアクションを実行するよう計画してください。 ...1.拡張に対応するために、ボリュームのスペースを増やすことを検討してください。</block>
   <block id="ed7c2467a1552d048a5f05c4026b80be" category="section-title">NetApp ONTAP モニタの FSX</block>
   <block id="7b7fa7f57948350f939932b1915c8281" category="cell">FSX ボリューム容量がフルです</block>
   <block id="c9fd60e1b379b2bc36333b6880568a84" category="cell">警告 @&gt;85% …重大 @&gt;95%</block>
@@ -8862,10 +8854,8 @@
   <block id="2a3cd3c9afd68e2531df6b8a3ad4536c" category="paragraph">環境内のLUN /ボリューム、NFSまたはSMB共有、またはqtreeのワークロードを表示して確認できます。</block>
   <block id="9eaf347efd9d5225664dc4c414a82eb2" category="cell">ライセンス版の次のいずれかを実行しているコンピュータ：* CentOS（64ビット）：7.2から7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5から7.9、8.1から8.4 * Red Hat Enterprise Linux（64ビット）： 7.2~7.9、8.1～8.6 * Ubuntu Server：18.04および20.04 LTSこのコンピュータでは、他のアプリケーションレベルのソフトウェアは実行しないでください。専用のサーバを使用することを推奨します。</block>
   <block id="15a43b8a93156e727b3b81dc25fd6d32" category="section-title">セキュリティモニタ</block>
-  <block id="2db1857ce4841fcb4871ca570d9f1e9e" category="cell">モニタ名</block>
   <block id="38eb03d447ddc98ff3687aa8f4aeaa70" category="cell">FIPSモードが無効になりました</block>
   <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">FIPS 140-2への準拠を有効にすると、TLSv1とSSLv3は無効になり、TLSv1.1とTLSv1.2のみが引き続き有効になります。ONTAP では、FIPS 140-2準拠モードが有効な場合、TLSv1とSSLv3を有効にすることはできません。</block>
-  <block id="f41a65442a444212a9242b353da02fa7" category="cell">クラスタでFIPS 140-2準拠モードを有効にするには、次のONTAP コマンドをadvanced権限モードで実行します。security config modify -interface SSL -is-fips-enabled true</block>
   <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">モニタとアラート機能はすべてのCloud Insights エディションで利用できますが、Basicエディションには以下の条件があります。*一度にアクティブにできるカスタムモニタは最大5台です。5台を超えるモニタは、_Paused _状態に作成または移動されます。* VMDK、仮想マシン、ホスト、データストアのメトリックモニタはサポートされていません。これらのメトリック用に作成されたモニタは一時停止され、Basic Editionにダウングレードすると再開できません。</block>
   <block id="1b70ac0a972fddf1e1a33e6ed9df49c7" category="section-title">2022年9月</block>
   <block id="6e117bf7254c45b1f7fd76d22b07b5a8" category="section-title">Basic Editionで使用可能なモニタ</block>
@@ -9082,4 +9072,104 @@
   <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">ポッドセキュリティポリシー（PSP）またはポッドセキュリティアドミッション（PSA）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートして現在のNKMOにアップグレードするには、次の手順に従います。1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 前の監視オペレータ：kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -binding中のクラスタ役割を持つadminエージェントの役割を持つ役割を持つ役割を果たす役割を担う役割は、それぞれ果たす役割を担う。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> モニタリングオペレータの最新バージョン。</block>
   <block id="6ae137903bc328659928ed818d9ee78a" category="cell">NKMOを導入する際に問題が発生し、PSP/PSAを使用しました。</block>
   <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.次のコマンドを使用して、エージェントを編集します。kubectl -n &lt;name-space&gt; edit agent 2.「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n &lt;namespace&gt;| grep -i psp（should show that nothing is found）</block>
+  <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">トップに戻る</block>
+  <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
+  <block id="0091efee7f9b5f0e27211eb7226d0a23" category="cell">しきい値</block>
+  <block id="2a63f555989152ba866b43a1faacd680" category="cell">しきい値</block>
+  <block id="37a1ca329a6f5e5dca35632e49074596" category="cell">AutoSupport HTTPS 転送が無効です</block>
+  <block id="40692fef6f4ef30aa3b500774debd8f7" category="cell">警告@&lt;1&gt;</block>
+  <block id="5b4b99885d6c41f784d4353df3954f85" category="cell">AutoSupport は、転送プロトコルとして HTTPS 、 HTTP 、 SMTP をサポートしています。AutoSupport メッセージは機密性が高いため、ネットアップでは、 AutoSupport メッセージをネットアップサポートに送信する際のデフォルト転送プロトコルとして HTTPS を使用することを強く推奨しています。</block>
+  <block id="56e9eb9c60fd63630926841f5a7a0cf3" category="cell">AutoSupport メッセージの転送プロトコルとしてHTTPSを設定するには、次のONTAP コマンドを実行します。…system node AutoSupport modify -transport https</block>
+  <block id="35b47f5a2f95200e4d62c83034deae58" category="cell">SSH用のクラスタのセキュアでない暗号</block>
+  <block id="52c2cd14f22482229a7521ff77cec6e8" category="cell">SSHでセキュアでない暗号（たとえば、*CBCで始まる暗号）が使用されていることを示します。</block>
+  <block id="af4b3d60f3b2a1b2019c7e6584e05ac0" category="cell">CBC暗号を削除するには、次のONTAP コマンドを実行します。…security ssh remove -vserver &lt;admin vserver&gt;-ciphers aes256-cbc、aes192-cbc、aes128-cbc、3des-cbc</block>
+  <block id="66d8d95ccf0f8192646a37bff4b648ab" category="cell">クラスタでログインバナーが無効になりました</block>
+  <block id="7e7108ba14d9f82f42515d305f9e4773" category="cell">ONTAP システムにアクセスするユーザに対してログインバナーが無効になっていることを示します。ログインバナーを表示すると、システムに期待されるアクセス方法や使用方法を設定するのに役立ちます。</block>
+  <block id="9ef097ac170ba2d0a3dbaa80e948d24e" category="cell">クラスタにログインバナーを設定するには、次のONTAP コマンドを実行します。…security login banner modify -vserver &lt;admin SVM&gt;-message "権限のあるユーザだけがアクセスできます"</block>
+  <block id="a80b6077f36d29de0c7100f0e60cca35" category="cell">クラスタピア通信が暗号化されていません</block>
+  <block id="eff504a7000baa17798b249c97b6a046" category="cell">ディザスタリカバリ、キャッシング、またはバックアップのためにデータをレプリケートする場合は、ONTAP クラスタから別のクラスタにデータを転送するときに、そのデータを保護する必要があります。ソースとデスティネーションの両方のクラスタで暗号化を設定する必要があります。</block>
+  <block id="a8b0d51ab1676479b0a39c0ed8b9b9c6" category="cell">ONTAP 9.6よりも前に作成されたクラスタピア関係に対して暗号化を有効にするには、ソースとデスティネーションのクラスタを9.6にアップグレードする必要があります。その後、「cluster peer modify」コマンドを使用して、クラスタピアリング暗号化を使用するようにソースとデスティネーション両方のクラスタピアを変更します。詳細については、『ONTAP 9セキュリティ設定ガイド』を参照してください。</block>
+  <block id="f102a7c0ee6458e0d616666f2cf3d3c6" category="cell">デフォルトのローカル管理者ユーザが有効です</block>
+  <block id="144a851e30702c5c68b91e006bbc9af0" category="cell">警告@&gt;0</block>
+  <block id="ab15923d336c9df71683a27a3b88f21b" category="cell">ロックコマンドを使用して、不要なデフォルトの管理ユーザ（組み込み）アカウントをロック（無効化）することを推奨します。これらは主に、パスワードが更新または変更されていないデフォルトアカウントです。</block>
+  <block id="83ded096d536b0a9f273f70c8d46ca18" category="cell">組み込みの「admin」アカウントをロックするには、次のONTAP コマンドを実行します。…security login lock-username admin</block>
+  <block id="96e4a7f4d19cdbf4e4dc1487d9e2089f" category="cell">クラスタでFIPS 140-2準拠モードを有効にするには、次のONTAP コマンドをadvanced権限モードで実行します。…security config modify -interface SSL -is-fips-enabled true</block>
+  <block id="0683249465dfceec900f14913e23294e" category="cell">ログ転送が暗号化されていない</block>
+  <block id="3c84fa81b2128d2870573dd56fceedc3" category="cell">セキュリティ違反の影響が1つのシステムまたは解決策 に限定されるように、syslog情報のオフロードが必要です。そのため、syslog情報を安全なストレージまたは保持場所に安全にオフロードすることを推奨します。</block>
+  <block id="c7dc508bab528b876e8f8f56ed6c817f" category="cell">ログの転送先を作成したあとにプロトコルを変更することはできません。暗号化されたプロトコルに変更するには、次のONTAP コマンドを使用して、ログの転送先を削除して再作成します。…cluster log-forwarding create -destination &lt;destination ip&gt;-protocol tcp-encrypted</block>
+  <block id="557c2a2e5c2721f97358d14ed4a5fb5e" category="cell">MD5ハッシュ化パスワード</block>
+  <block id="b72f6d4281e334d8f1816c4c7b48a190" category="cell">ONTAP ユーザアカウントのパスワードには、より安全なSHA-512ハッシュ関数を使用することを推奨します。安全性の低いMD5ハッシュ関数を使用するアカウントは、SHA-512ハッシュ関数に移行する必要があります。</block>
+  <block id="b830e03eaaefb2ec43a4918402144e73" category="cell">ユーザに解決策 MD5ハッシュ関数を使用するパスワードでアカウントをロックするには、次のONTAP コマンドを実行します。…security login lock -vserver *-username *-hash-function MD5</block>
+  <block id="a4acaf21eebc7bf33475d1bda0f71fb4" category="cell">NTPサーバが設定されていません</block>
+  <block id="22c5be3ade73c0bbb31961b09d74c93e" category="cell">クラスタにNTPサーバが設定されていないことを示します。冗長性と最適なサービスを実現するために、最低3台のNTPサーバをクラスタに関連付けることを推奨します。</block>
+  <block id="a3a5af2134056138bdb5aa2d608242c8" category="cell">クラスタにNTPサーバを関連付けるには、次のONTAP コマンドを実行します。cluster time-service ntp server create -server &lt;ntp server host name or ip address&gt;</block>
+  <block id="5edad07c8412daab278c10b18e62e6da" category="cell">NTPサーバ数が不足しています</block>
+  <block id="adbc4b7c4cd23e8493bc55219426062f" category="cell">警告@&lt;3.</block>
+  <block id="083193cf390aff889ab229381b57bb1b" category="cell">クラスタに設定されているNTPサーバが3台未満であることを示します。冗長性と最適なサービスを実現するために、最低3台のNTPサーバをクラスタに関連付けることを推奨します。</block>
+  <block id="7b5eac97a56d3de62a762976408f1604" category="cell">クラスタにNTPサーバを関連付けるには、次のONTAP コマンドを実行します。…cluster time-service ntp server create -server &lt;ntp server host name or ip address&gt;</block>
+  <block id="02986d225b428f4872a041982195b036" category="cell">リモートシェルが有効です</block>
+  <block id="3f8b20f5d4c0ae31c0e785a64f88acf6" category="cell">リモートシェルは、ONTAP 解決策 へのコマンドラインアクセスを確立するためのセキュアな方法ではありません。セキュアなリモートアクセスのために、リモートシェルを無効にする必要があります。</block>
+  <block id="66b960fff3a2001089c50a4b5cba5aed" category="cell">ネットアップでは、セキュアなリモートアクセスのためにSecure Shell（SSH）を推奨しています。クラスタでリモートシェルを無効にするには、advanced権限モードで次のONTAP コマンドを実行します。…security protocol modify -application rsh -enabled false</block>
+  <block id="1c34d9b674b94d3ea5834211d426626d" category="cell">Storage VM監査ログが無効になりました</block>
+  <block id="48b5db589e58fb639e7ee3a50e8a1bda" category="cell">SVMで監査ログが無効になっていることを示します。</block>
+  <block id="ff6cebe76939541117e856ec4b111c5c" category="cell">SVMの監査ログを設定するには、次のONTAP コマンドを実行します。…vserver audit enable -vserver &lt;svm&gt;</block>
+  <block id="56d352fb8f0c5c4ba480f8a82205e5d8" category="cell">SSH用のStorage VMのセキュアでない暗号</block>
+  <block id="caa40d84ac4615bac46decaa416d068f" category="cell">CBC暗号を削除するには、次のONTAP コマンドを実行します。…security ssh remove -vserver &lt;vserver&gt;-ciphers aes256-cbc、aes192-cbc、aes128-cbc、3des-cbc</block>
+  <block id="fc133f2bd2b6166730e48945191a3f85" category="cell">Storage VMのログインバナーが無効になっています</block>
+  <block id="0c5f0b019f859e20c9cbd4eaf4fc9ff8" category="cell">システムでSVMにアクセスするユーザに対してログインバナーが無効になっていることを示します。ログインバナーを表示すると、システムに期待されるアクセス方法や使用方法を設定するのに役立ちます。</block>
+  <block id="0b7726d8daf36aa49b06f7fdaf9721be" category="cell">クラスタにログインバナーを設定するには、次のONTAP コマンドを実行します。…security login banner modify -vserver &lt;svm&gt;-message "権限のあるユーザだけがアクセスできます"</block>
+  <block id="833835bd672120225989385cebfa9000" category="cell">Telnetプロトコルが有効です</block>
+  <block id="44335166ddb91bd1291079f3852a7eaf" category="cell">Telnetは、ONTAP 解決策 へのコマンドラインアクセスを確立するためのセキュアな方法ではありません。セキュアなリモートアクセスのためにTelnetを無効にする必要があります。</block>
+  <block id="afb248522e19d4d05da83ae5f5e6a479" category="cell">ネットアップでは、セキュアなリモートアクセスのために Secure Shell （ SSH ）を推奨しています。クラスタでTelnetを無効にするには、次のONTAP コマンドをadvanced権限モードで実行します。…security protocol modify -application telnet -enabled false</block>
+  <block id="a433675536fc11ef74a8e05a9afe38f9" category="section-title">データ保護モニタ</block>
+  <block id="8067f9dd56568eda9da771d5126fd283" category="cell">LUN Snapshotコピー用の十分なスペースがありません</block>
+  <block id="c7e5b8e812dd23889ad718547a93510f" category="cell">（contains _luns = Yes）Warning @&gt; 95%…Critical @&gt; 100%</block>
+  <block id="01784dee7427225ed6440a615548d3c8" category="cell">アプリケーションとお客様のデータを格納するには、ボリュームのストレージ容量が必要です。スナップショット予約領域と呼ばれる領域の一部はスナップショットの保存に使用され、データをローカルで保護できます。ONTAP ボリュームに格納される新規データや更新データが多いほど、使用される Snapshot 容量は増えますが、今後追加または更新されるデータに使用できる Snapshot ストレージ容量は少なくなります。ボリューム内のSnapshotデータ容量がSnapshotリザーブスペースの合計に達すると、新しいSnapshotデータを格納できなくなり、ボリューム内のLUN内のデータの保護レベルが低下する可能性があります。ボリュームの使用済み Snapshot 容量を監視して、データサービスの継続性を確保します。</block>
+  <block id="df8c01d1eb9d6245c4bf409308a5a4c2" category="cell">**緊急アクション**重大しきい値に違反した場合は、サービスの中断を最小限に抑えるための即時アクションを考慮してください。1.Snapshot リザーブがフルになったときにボリューム内のデータスペースを使用するように Snapshot を設定します。2. 古い不要なスナップショットをいくつか削除して、領域を解放します。**すぐに実行するアクション**警告しきい値に違反した場合は、次のアクションを直ちに実行することを計画してください。1.この増加に対応するために、ボリューム内の Snapshot リザーブスペースを増やしてください。2. スナップショット予約がいっぱいになったときにボリューム内のデータ領域を使用するようにスナップショットを設定します。</block>
+  <block id="c4ecc793e303a550074c29b55d6b315f" category="cell">SnapMirror関係の遅延</block>
+  <block id="a3a4051e09c6fe3f48efd4a2f74ba269" category="cell">警告@&gt;150%...Critical@&gt;300%</block>
+  <block id="24fd2d3c5bd7f91010e5ae2c5d1dbb5f" category="cell">SnapMirror関係の遅延は、Snapshotのタイムスタンプとデスティネーションシステムの時間の差です。lag_time_ percentは、SnapMirrorポリシーのスケジュール間隔に対する遅延時間の比率です。遅延時間がスケジュール間隔と等しい場合、lag_time_パーセントは100%になります。SnapMirrorポリシーにスケジュールが設定されていない場合、lag_time_ percentは計算されません。</block>
+  <block id="49e95a6639b0e553bda17a9e3c021cef" category="cell">snapmirror showコマンドを使用して、SnapMirrorのステータスを監視します。snapmirror show-historyコマンドを使用して、SnapMirror転送の履歴を確認します</block>
+  <block id="76902715d9d568bf8af72c0649cdd8e5" category="section-title">Cloud Volume（CVO）モニタ</block>
+  <block id="28968af316b23628eea079287dc3b616" category="cell">CVO Disk Out of Service』を参照してください</block>
+  <block id="b55224db2efbd4c41d8a5fb92b425323" category="cell">ストレージプールのCVOギブバックに失敗しました</block>
+  <block id="2e71245153fd1ba1df5494a26ec96e03" category="cell">次の対処方法を実行します。network interface showコマンドを使用して、インタークラスタLIFがオンラインで機能していることを確認します。デスティネーションノードのクラスタ間LIFで「ping」コマンドを使用して、オブジェクトストアサーバへのネットワーク接続を確認してください。aggregate object-store config showコマンドを使用して、オブジェクトストアの設定が変更されておらず、ログインおよび接続の情報がまだ正確であることを確認してください。また、 giveback コマンドの「 require-partner-waiting 」パラメータに false を指定して、エラーを無効にすることもできます。詳細またはサポートについては、ネットアップテクニカルサポートにお問い合わせください。</block>
+  <block id="cd60234fe32d474c4ff3513a1ad3957e" category="cell">CVO HAインターコネクトが停止しています</block>
+  <block id="c68a4c81f996fdbd4e72d72cf1d66267" category="cell">対処方法は、プラットフォームでサポートされている HA インターコネクトリンクの数と種類、およびインターコネクトが停止している理由によって異なります。リンクが停止している場合：HAペアの両方のコントローラが動作していることを確認します。外部接続リンクの場合は、インターコネクトケーブルが正しく接続されていることと、Small Form-Factor Pluggable（SFP）がある場合は、両方のコントローラに正しく取り付けられていることを確認してください。内部接続リンクの場合は、「ic link off」コマンドと「ic link on」コマンドを使用して、一方のリンクを無効にし、再度有効にします。リンクが無効になっている場合は、「ic link on」コマンドを使用してリンクを有効にします。ピアが接続されていない場合は、「IC link off」コマンドと「IC link on」コマンドを使用して、一方のリンクをディセーブルにし、再度イネーブルにします。問題が解決しない場合は、ネットアップテクニカルサポートにお問い合わせください。</block>
+  <block id="3417d907d7ea86d210c4bfcc43a24aab" category="cell">ユーザあたりのCVOの最大セッション数を超えました</block>
+  <block id="692226afd760c4be1a4f564e2be9d79d" category="cell">TCP 接続でのユーザあたりの最大許容セッション数を超えました。セッションを確立する要求は、一部のセッションが解放されるまで拒否されます。</block>
+  <block id="cc4528d944e9b048751f24169667812f" category="cell">次の修正アクションを実行します。クライアントで実行されているすべてのアプリケーションを検査し、正常に動作していないアプリケーションを終了します。クライアントをリブートします。問題 が新規または既存のアプリケーションに起因しているかどうかを確認します。アプリケーションが新規の場合は、「cifs option modify -max-opens-opense-file-per-tree」コマンドを使用して、クライアントのしきい値を高く設定します。クライアントが想定どおりに動作していても、しきい値の上昇が必要となる場合があります。クライアントのしきい値を高く設定するには、 advanced 権限が必要です。既存のアプリケーションが問題 の原因である場合は、クライアントに問題 がある可能性があります。詳細またはサポートについては、ネットアップテクニカルサポートにお問い合わせください。</block>
+  <block id="64aa3e406bf6fdfe25f69b5bd281a6a9" category="cell">CVO NetBIOS名が競合しています</block>
+  <block id="6469db1dd765d74339c7fc94948f95aa" category="cell">次のいずれかの対処策を実行します。NetBIOS名またはエイリアスに競合がある場合は、次のいずれかを実行します。「vserver cifs delete -alias alias -vserver vserver」コマンドを使用して、重複するNetBIOSエイリアスを削除します。「vserver cifs create -aliases alias alias -vserver vserver」コマンドを使用して、重複する名前を削除し、新しい名前のエイリアスを追加してNetBIOSエイリアスの名前を変更します。エイリアスが設定されておらず、NetBIOS名に競合がある場合は、「vserver cifs delete -vserver vserver」コマンドと「vserver cifs create -cifs -server netbiosname」コマンドを使用してCIFSサーバの名前を変更します。メモ： CIFS サーバを削除すると、データにアクセスできなくなる可能性があります。NetBIOS名を削除するか、リモートマシンのNetBIOS名を変更します。</block>
+  <block id="644d9098bcc3a31bdacc976500b4eb66" category="cell">CVO NFSv4のストアプールを使い果たしました</block>
+  <block id="c51529ae13ecbf2fbbfab4cebaef41bd" category="cell">CVOノードのパニック</block>
+  <block id="2ae27baf1313de0831c184ee223aca44" category="cell">CVOノードのルートボリュームのスペースが不足しています</block>
+  <block id="5e5d1c16c43f05d0485ca792cbe28b39" category="cell">次の対処策を実行します。古いSnapshotコピーを削除するか、/mrootdirectoryから不要になったファイルを削除するか、ルートボリュームの容量を拡張して、ルートボリュームのスペースをクリアします。コントローラをリブートします。詳細またはサポートについては、ネットアップテクニカルサポートにお問い合わせください。</block>
+  <block id="61aa5f210dffed5ac7cf5d1d081d6845" category="cell">CVOが存在しない管理者共有です</block>
+  <block id="4c9d1c26e38129c49566c5decc4ba3f8" category="cell">CVOオブジェクトストアのホスト解決不可</block>
+  <block id="f4034c42cc745d268b71223c805f6d06" category="cell">CVOオブジェクトストアのクラスタ間LIFが停止しています</block>
+  <block id="e05c6d7df230fbf518b3c46b6e3323e9" category="cell">次の対処方法を実行します。「network interface show -role intercluster」コマンドを使用して、クラスタ間LIFのステータスを確認します。クラスタ間LIFが正しく設定され、動作していることを確認してください。インタークラスタLIFが設定されていない場合は、「network interface create -role intercluster」コマンドを使用して追加します。</block>
+  <block id="bd700b5e6f285c5b0b7fb9e26decbf22" category="cell">CVOオブジェクトストアシグネチャの不一致</block>
+  <block id="0bcb24e494a0d49d9daf70b0ce73eae1" category="cell">CVO QoS監視メモリの最大化</block>
+  <block id="f3ee7c32a9c1d087f309bd490e0d7a2d" category="cell">QoS サブシステムの動的メモリが現在のプラットフォームハードウェアの上限に達しました。一部の QoS 機能は、制限された容量で動作する場合があります。</block>
+  <block id="ab10fcc620e856f31d30a90d9261915c" category="cell">いくつかのアクティブなワークロードまたはストリームを削除してメモリを解放してください。アクティブなワークロードを判別するには、「statistics show -object workloads counter ops」コマンドを使用します。アクティブなワークロードに対する処理がゼロ以外の処理を示しています。次に、「workload delete &lt;workloads name&gt;」コマンドを複数回使用して、特定のワークロードを削除します。または、「stream delete-workload &lt;workload name&gt;*」コマンドを使用して、アクティブなワークロードから関連するストリームを削除します。</block>
+  <block id="1b00b12402523bf20a176bdc416a8d80" category="cell">CVO READDIRタイムアウト</block>
+  <block id="b4a9340b6b1c386ffbb813dd194cd4f1" category="cell">次の対処方法を実行します。Find information specific to recent directories that have READDIR file operations expire using the following 'diag ' privilege nodeshell CLIコマンド：WAFL readdir notice showディレクトリがスパースとして示されているかどうかを確認します。ディレクトリがスパースとして示されている場合は、ディレクトリの内容を新しいディレクトリにコピーしてディレクトリファイルのsparsessを削除することをお勧めします。ディレクトリがスパースとして示されておらず、ディレクトリが大きい場合は、ディレクトリ内のファイルエントリの数を減らすことでディレクトリファイルのサイズを縮小することを推奨します。</block>
+  <block id="c0c9b27bfb47df34482359e0681b8625" category="cell">ストレージプールのCVOの再配置に失敗しました</block>
+  <block id="e27cdb180c7ac453d55cc5376d484e30" category="cell">次の対処方法を実行します。network interface showコマンドを使用して、インタークラスタLIFがオンラインで機能していることを確認します。デスティネーションノードのクラスタ間LIFで「ping」コマンドを使用して、オブジェクトストアサーバへのネットワーク接続を確認してください。aggregate object-store config showコマンドを使用して、オブジェクトストアの設定が変更されておらず、ログインおよび接続の情報がまだ正確であることを確認してください。また、再配置コマンドの「 override -destination -checks 」パラメータを使用して、このエラーを無視することもできます。詳細またはサポートについては、ネットアップテクニカルサポートにお問い合わせください。</block>
+  <block id="ba14a826a3059fa0dbf98ba39cdd538f" category="cell">CVOシャドウコピーが失敗しました</block>
+  <block id="5793b85483d6f4727031f8cd27c2a2f8" category="cell">イベントメッセージに表示された情報を使用して、次のことを確認します。Is shadow copy configuration enabled？適切なライセンスがインストールされているか。どの共有でシャドウコピー処理が実行されますか。共有名は正しいですか？共有パスが存在するか。シャドウコピーセットとそのシャドウコピーの状態</block>
+  <block id="15e4f602af2b3fd276e8c1abb3e1d24c" category="cell">CVO Storage VMが停止されました</block>
+  <block id="4df327f108f33e6c2500a7f538a648ad" category="cell">CVOにCIFS認証が多すぎます</block>
+  <block id="6da8b96955c7e59e295e11c0f211341a" category="cell">CVOの未割り当てディスク</block>
+  <block id="0e932fe140878dddad130030e4c54088" category="cell">次の対処方法を実行します。disk show -nコマンドを使用して、割り当てが解除されたディスクを確認します。disk assignコマンドを使用して、ディスクをシステムに割り当てます。</block>
+  <block id="f168200fd2bd1ef2e681b67cd561efa4" category="cell">CVO：管理者共有への不正なユーザアクセス</block>
+  <block id="daf241abd3ddf3fdcfcac4e97128f387" category="cell">次の対処策を実行します。指定したユーザ名とIPアドレスがアクティブなVscanスキャナプールの1つに設定されていることを確認します。vserver vscan scanner-pool show-activeコマンドを使用して、現在アクティブなスキャナプールの設定を確認します。</block>
+  <block id="e57596d14b25baac52672fc309c8a58d" category="cell">CVO Virus Detected.（CVOウイルスが検出</block>
+  <block id="5431a7feb1f4bd20d2eb82e67431449e" category="cell">Vscan サーバからストレージシステムにエラーが報告されました。通常は、ウイルスが検出されたことを示します。ただし、 Vscan サーバで発生したその他のエラーではこのイベントを原因 処理できます。ファイルへのクライアントアクセスが拒否されました。Vscan サーバは、設定に応じて、ファイルをクリーンアップするか、ファイルを隔離するか、または削除する可能性があります。</block>
+  <block id="4263cc2b53ae23f9cc6cf513a43b5e97" category="cell">CVO Volumeオフライン</block>
+  <block id="28b914f56ac8ad6ac5c0eb77527d0023" category="cell">CVO Volumeは制限付きです</block>
+  <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">2022年11月</block>
+  <block id="1213554c7911deac461074eac67a0744" category="section-title">40以上の新しいセキュリティ、データ収集、CVOの監視が追加されました！</block>
+  <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">Cloud Volume 、セキュリティ、およびデータ保護に関する潜在的な問題を警告するために、システム定義の新しいモニターが多数追加されました。これらのモニターの詳細については、こちらをご覧ください <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
 </blocks>
