@@ -8973,7 +8973,6 @@
   <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">各フィールドに適切な情報を入力し、完了したら[保存]をクリックします。</block>
   <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。</block>
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">このセクションでは、置換は「Test Webhook」ボタンをクリックしたときに_not_performedになります。このボタンは、_%_substitionsを示すペイロードを送信しますが、これらをデータに置き換えません。</block>
-  <block id="cf2146b9e920671969e606b44d0743f6" category="paragraph">詳細については、を参照してください <block ref="b7f404f6b2e5258b20a8d7e7801ccdd1" category="inline-link-macro-rx"></block> ページ</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。以下に示す手動手順を実行する必要はありません。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">NetApp Kubernetes Monitoring Operatorを編集します。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">古いAPIトークンを新しいAPIトークンに置き換えて、_spec.output-sink.api-key_valueを変更します。</block>
@@ -9172,4 +9171,5 @@
   <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">2022年11月</block>
   <block id="1213554c7911deac461074eac67a0744" category="section-title">40以上の新しいセキュリティ、データ収集、CVOの監視が追加されました！</block>
   <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">Cloud Volume 、セキュリティ、およびデータ保護に関する潜在的な問題を警告するために、システム定義の新しいモニターが多数追加されました。これらのモニターの詳細については、こちらをご覧ください <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="94bf1c9b14123c3874cb9d8257cedc3c" category="paragraph">ONTAP に関連するその他の用語と定義については、を参照してください <block ref="59db06bd3283cfbb592d6ec7e170773c" category="inline-link-macro-rx"></block> ドキュメント</block>
 </blocks>
