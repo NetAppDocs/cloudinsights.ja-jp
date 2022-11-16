@@ -56,8 +56,8 @@ Cloud Insights では、このデータコレクタから次のインベント�
 
 インベントリデータを収集するには、次の情報が必要です。
 
-* Operations Center サーバの IP アドレス
-* Ops Center ソフトウェアおよびピア権限の読み取り専用のユーザ名とパスワード
+* 「Common Services」コンポーネントをホストするOps CenterサーバのIPアドレスまたはホスト名
+* ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートを実装していませんでした
 
 
 
