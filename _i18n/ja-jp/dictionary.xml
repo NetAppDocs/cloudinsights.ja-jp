@@ -9183,4 +9183,5 @@
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">同じユーザが作成したファイルは暗号化しないでください。ユーザが作成したばかりのファイルを変更しても、リスクのあるアクティビティとは見なされません。別のユーザが作成したファイルを使用するか、ファイルの作成から暗号化まで数時間かかります。</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">「Common Services」コンポーネントをホストするOps CenterサーバのIPアドレスまたはホスト名</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートを実装していませんでした</block>
+  <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">アセット上で同じアノテーションを更新する複数のルールを実行している場合は、最初のルール（上から下に実行）によってアノテーションが適用され、アセットが更新されます。2番目のルールは適用されますが、前のルールですでに設定されているアノテーションは変更されません。</block>
 </blocks>
