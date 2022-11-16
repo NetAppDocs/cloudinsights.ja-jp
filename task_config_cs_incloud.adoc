@@ -67,3 +67,18 @@ Cloud Secure エージェントとして使用するマシンを設定するに�
 
 
 詳細な手順については、 https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent を参照してください
+
+
+
+== トラブルシューティング
+
+既知の問題とその解決策を次の表に示します。
+
+|===
+
+
+| 問題 | 解決策： 
+
+
+| 「Cloud Secure ：Failed to Determine ONTAP type for Amazon FxSN data collector」というエラーがData Collectorに表示されます。お客様が新しいAmazon FSxNデータコレクタをCloud Secure に追加できません。エージェントからのポート443上のFSxNクラスタへの接続がタイムアウトしました。ファイアウォールとAWSセキュリティグループでは、通信を許可するために必要なルールが有効になっています。エージェントはすでに導入されており、同じAWSアカウントにも存在します。同じエージェントを使用して、残りのネットアップデバイス（およびすべてのデバイスが動作）を接続および監視します。 | この問題 を解決するには、fsxadmin LIFネットワークセグメントをエージェントのセキュリティルールに追加します。ポートについて不明な場合は、すべてのポートを許可します。 
+|===

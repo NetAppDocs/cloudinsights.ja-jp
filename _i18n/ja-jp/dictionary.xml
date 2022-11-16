@@ -9172,4 +9172,15 @@
   <block id="1213554c7911deac461074eac67a0744" category="section-title">40以上の新しいセキュリティ、データ収集、CVOの監視が追加されました！</block>
   <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">Cloud Volume 、セキュリティ、およびデータ保護に関する潜在的な問題を警告するために、システム定義の新しいモニターが多数追加されました。これらのモニターの詳細については、こちらをご覧ください <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
   <block id="94bf1c9b14123c3874cb9d8257cedc3c" category="paragraph">ONTAP に関連するその他の用語と定義については、を参照してください <block ref="59db06bd3283cfbb592d6ec7e170773c" category="inline-link-macro-rx"></block> ドキュメント</block>
+  <block id="1d9d1091c95c8c6a906de486d03c6a5a" category="cell">ユーザーディレクトリコレクタを設定する前に、 AD サーバーの暗号化を無効にします。ユーザの詳細情報が取得されてから 13 カ月間表示されます。ユーザーの詳細を取得した後に AD サーバーが切断された場合、新しく追加された AD 内のユーザーは取得されません。再度取得するには、ユーザディレクトリコレクタをADに接続する必要があります。</block>
+  <block id="ddae1da9e7e7b7bc5250e69e20396758" category="cell">Active DirectoryのデータはCloudInsightsのセキュリティに存在します。CloudInsightsからすべてのユーザ情報を削除する必要がある。</block>
+  <block id="cda875edf30beb4d722b276eaf998869" category="cell">CloudInsights SecurityからActive Directoryユーザー情報のみを削除することはできません。ユーザを削除するには、テナント全体を削除する必要があります。</block>
+  <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解決策：</block>
+  <block id="f261294412af441f0164f608fbed7960" category="cell">「Cloud Secure ：Failed to Determine ONTAP type for Amazon FxSN data collector」というエラーがData Collectorに表示されます。お客様が新しいAmazon FSxNデータコレクタをCloud Secure に追加できません。エージェントからのポート443上のFSxNクラスタへの接続がタイムアウトしました。ファイアウォールとAWSセキュリティグループでは、通信を許可するために必要なルールが有効になっています。エージェントはすでに導入されており、同じAWSアカウントにも存在します。同じエージェントを使用して、残りのネットアップデバイス（およびすべてのデバイスが動作）を接続および監視します。</block>
+  <block id="b4006ae0366e7ed3c70d23f64ed418c8" category="cell">この問題 を解決するには、fsxadmin LIFネットワークセグメントをエージェントのセキュリティルールに追加します。ポートについて不明な場合は、すべてのポートを許可します。</block>
+  <block id="2855135907eef979db329ca6aebe0464" category="section-title">シミュレータを実行する前のガイドライン：</block>
+  <block id="d786b68b9cf5f686784afa64b69b3bce" category="list-text">暗号化されたファイルが空でないことを確認します。</block>
+  <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">必ず50を超えるファイルを暗号化してください。少数のファイルは無視されます。</block>
+  <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">同じユーザで何度も攻撃を実行しないでください。数回の経過後、CSはこのユーザーの動作を学習し、ユーザーの通常の動作であると仮定します。</block>
+  <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">同じユーザが作成したファイルは暗号化しないでください。ユーザが作成したばかりのファイルを変更しても、リスクのあるアクティビティとは見なされません。別のユーザが作成したファイルを使用するか、ファイルの作成から暗号化まで数時間かかります。</block>
 </blocks>

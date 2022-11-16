@@ -178,5 +178,8 @@ image:cs_ADExample.png["AD 接続"]
 | 電話番号がユーザプロファイルページに入力されていません。 | これは、多くの場合、 Active Directory の属性マッピングの問題が原因です。1. Active Directory からユーザの情報を取得している特定の Active Directory コレクタを編集します。2. オプション属性の下に、 Active Directory 属性「 telephonenumber 」にマッピングされたフィールド名「 Telephone Number 」があることに注意してください。4. ここでは、前述の Active Directory エクスプローラツールを使用して、 Active Directory を参照し、正しい属性名を確認してください。3. Active Directory に、実際にユーザの電話番号を持つ「 telephonenumber 」という名前の属性があることを確認します。5. ここでは、 Active Directory で「 phonenumber 」に変更されたとします。6. CloudSecure User Directory コレクタを編集します。オプションの属性セクションで、「 telephonenumber 」を「 phonenumber 」に置き換えます。7. Active Directory コレクタを保存すると、コレクタが再起動してユーザの電話番号が取得され、ユーザプロファイルページにも同じ番号が表示されます。 
 
 
-| Active Directory （ AD ）サーバーで暗号化証明書（ SSL ）が有効になっている場合、 Cloud Secure ユーザーディレクトリコレクタは AD サーバーに接続できません。 | ユーザーディレクトリコレクタを設定する前に、 AD サーバーの暗号化を無効にします。ユーザの詳細情報が取得されてから 13 カ月間表示されます。ユーザーの詳細を取得した後に AD サーバーが切断された場合、新しく追加された AD 内のユーザーは取得されません。再度取得するには、ユーザディレクトリコレクタが AD に接続されている必要があります。 
+| Active Directory （ AD ）サーバーで暗号化証明書（ SSL ）が有効になっている場合、 Cloud Secure ユーザーディレクトリコレクタは AD サーバーに接続できません。 | ユーザーディレクトリコレクタを設定する前に、 AD サーバーの暗号化を無効にします。ユーザの詳細情報が取得されてから 13 カ月間表示されます。ユーザーの詳細を取得した後に AD サーバーが切断された場合、新しく追加された AD 内のユーザーは取得されません。再度取得するには、ユーザディレクトリコレクタをADに接続する必要があります。 
+
+
+| Active DirectoryのデータはCloudInsightsのセキュリティに存在します。CloudInsightsからすべてのユーザ情報を削除する必要がある。 | CloudInsights SecurityからActive Directoryユーザー情報のみを削除することはできません。ユーザを削除するには、テナント全体を削除する必要があります。 
 |===
