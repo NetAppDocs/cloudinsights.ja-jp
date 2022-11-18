@@ -9181,4 +9181,5 @@
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensicsページのフィルタの適用性</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">パス/元のパスの検索</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSでは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートは実装されていませんでした</block>
+  <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">HDS Ops Centerの「Analyzer」モジュールをインストールし、Operations Centerの「Analyzer」モジュールにデータを供給する必要があります</block>
 </blocks>
