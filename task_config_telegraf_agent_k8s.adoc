@@ -339,8 +339,8 @@ NetApp Kubernetes Monitoring Operatorのデフォルトのネームスペース�
 新しいバージョンの監視オペレータは、次のコマンドを使用してアンインストールできます。
 
 ....
-kubectl delete agent <name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd <name-space>
+kubectl delete agent -A -l installed-by=nkmo-<name-space>
+kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
 ....
 最初のコマンドが「リソースが見つかりません」を返した場合は、次の手順に従って古いバージョンの監視オペレータをアンインストールします。
 
