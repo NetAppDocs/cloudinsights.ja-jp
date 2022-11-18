@@ -9172,7 +9172,6 @@
   <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">同じユーザで何度も攻撃を実行しないでください。数回の経過後、CSはこのユーザーの動作を学習し、ユーザーの通常の動作であると仮定します。</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">同じユーザが作成したファイルは暗号化しないでください。ユーザが作成したばかりのファイルを変更しても、リスクのあるアクティビティとは見なされません。別のユーザが作成したファイルを使用するか、ファイルの作成から暗号化まで数時間かかります。</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">「Common Services」コンポーネントをホストするOps CenterサーバのIPアドレスまたはホスト名</block>
-  <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートを実装していませんでした</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">アセット上で同じアノテーションを更新する複数のルールを実行している場合は、最初のルール（上から下に実行）によってアノテーションが適用され、アセットが更新されます。2番目のルールは適用されますが、前のルールですでに設定されているアノテーションは変更されません。</block>
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* ユーザーが過去 2 時間に作成したファイルをフィルタリングするためのノイズリダクション * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
   <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">フォレンジックアクティビティ履歴データのソート</block>
@@ -9181,4 +9180,5 @@
   <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">アクティビティ履歴の保持</block>
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensicsページのフィルタの適用性</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">パス/元のパスの検索</block>
+  <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSでは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートは実装されていませんでした</block>
 </blocks>
