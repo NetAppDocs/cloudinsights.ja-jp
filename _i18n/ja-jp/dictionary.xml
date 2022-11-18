@@ -7861,7 +7861,6 @@
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">を表示します <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</block>
-  <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">* ユーザーが新しく作成したファイル（過去 2 時間以内）を除外するためのノイズ削減 * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。</block>
   <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">Dell EMC VNX Unified データコレクタの設定</block>
   <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">Dell EMC VNX Unified （ SSH ）データコレクタを設定するには、 Control Station の IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
@@ -8922,15 +8921,6 @@
   <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Cloud Insights の設定には、 NetApp ONTAP のストリーミング計測データを使用します</block>
   <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP による計測データのストリーミング</block>
   <block id="458a37db2666885e234720ccdea58253" category="paragraph">最新の情報については、を参照してください <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> データコレクタページ。</block>
-  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; ユーザーが過去2時間に作成したファイルをフィルタリングするために、ヘッド*ノイズリダクション*を使用します。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
-  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fcaa2</block>
-  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">=フォレンジックアクティビティ履歴データのソート</block>
-  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">=すべてのアクティビティをエクスポートしています</block>
-  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">==すべてのアクティビティの列選択</block>
-  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">=アクティビティ履歴の保持</block>
-  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensicsページのフィルタの適用可能性</block>
-  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">==パス/元のパスを検索します</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">==トラブルシューティング</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">このガイドを参照してください</block>
   <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">Cloud Secure は、他のツールとも統合できます。例： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> Splunkと統合し、</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、「https：//&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_where「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます</block>
@@ -9184,4 +9174,11 @@
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">「Common Services」コンポーネントをホストするOps CenterサーバのIPアドレスまたはホスト名</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートを実装していませんでした</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">アセット上で同じアノテーションを更新する複数のルールを実行している場合は、最初のルール（上から下に実行）によってアノテーションが適用され、アセットが更新されます。2番目のルールは適用されますが、前のルールですでに設定されているアノテーションは変更されません。</block>
+  <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* ユーザーが過去 2 時間に作成したファイルをフィルタリングするためのノイズリダクション * 。また、ユーザがアクセスする一時ファイル（ .tmp ファイルなど）をフィルタするためにも使用されます。</block>
+  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">フォレンジックアクティビティ履歴データのソート</block>
+  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">すべてのアクティビティのエクスポート</block>
+  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">すべてのアクティビティの列を選択します</block>
+  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">アクティビティ履歴の保持</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensicsページのフィルタの適用性</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">パス/元のパスの検索</block>
 </blocks>
