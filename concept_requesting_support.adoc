@@ -101,7 +101,7 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 上記のセルフサポートオプションに加え、監視対象のネットアップの製品またはサービスに対する Cloud Insights サブスクリプションまたは有料サポートがある場合は、ネットアップサポートエンジニアと協力して問題を解決できます。
 
 
-NOTE: に登録する必要があります  support entitlement and accessing support,サポートを有効にします ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください link:https://register.netapp.com["クラウドデータサービスサポート登録"]。
+NOTE: に登録する必要があります <<Activating support entitlement and accessing support,サポートを有効にします>> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください link:https://register.netapp.com["クラウドデータサービスサポート登録"]。
 
 チェックボックスをオンにして、サポートセッション中にネットアップサポートエンジニアが Cloud Insights 環境にアクセスできるようにすることを強く推奨します。これにより、エンジニアが問題のトラブルシューティングを行い、問題を迅速に解決できるようになります。問題が解決されるか、サポートセッションが終了したら、チェックボックスをオフにできます。
 

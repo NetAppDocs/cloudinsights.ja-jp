@@ -98,7 +98,7 @@ Cloud Insights の使用中に鍵のアイコンが表示される場合 image:p
 
 == 試用版
 
-Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。Cloud Insights のすべての機能 ,Standard Edition の場合 このトライアル期間中にご利用いただけます。
+Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。Cloud Insights のすべての機能 <<editions,Standard Edition の場合>> このトライアル期間中にご利用いただけます。
 
 試用期間中はいつでも Cloud Insights に登録できます。Cloud Insights に登録すると、データへの中断のないアクセスと拡張されたアクセスが保証されます link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 製品サポート *"] オプション（ Options ）
 
@@ -111,7 +111,7 @@ NOTE: Cloud Insights の評価にさらに時間が必要で、トライアル�
 
 == AWS Marketplaceで試用
 
-また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、Cloud Insights にアクセスできます ,Premium Edition の場合 試用期間は33日間で、最大499まで使用できます ,管理ユニット （MU）。
+また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、Cloud Insights にアクセスできます <<editions,Premium Edition の場合>> 試用期間は33日間で、最大499まで使用できます <<pricing,管理ユニット>> （MU）。
 
 注：499 MUを超える値を設定すると、「違反」状態になります。トライアルが違反状態になっている間は、違反が解決されるまで、設定されているMU数を減らすか、またはCloud Insights にサブスクライブするまで、一部のCloud Insights 機能にアクセスできなくなります。
 
@@ -149,7 +149,7 @@ Cloud Insights の価格は管理ユニット * 単位です。管理対象ユ�
 * NetApp StorageGRID の略
 
 
-1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください ,下 詳細：
+1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください <<how-do-i-subscribe,下>> 詳細：
 
 
 
@@ -166,7 +166,7 @@ NOTE: 計算ツールは概算専用です。ご登録時に正確な価格が�
 
 == 登録方法を教えてください。
 
-管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます ,セルフサブスクライブ AWS Marketplace 経由で提供
+管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます <<self-subscribe-via-aws-marketplace,セルフサブスクライブ>> AWS Marketplace 経由で提供
 
 
 

@@ -109,6 +109,6 @@ APAC ベース * の Cloud Secure 環境の場合：
 |===
 
 
-==== 関連：
+== システムのサイジング
 
 を参照してください link:concept_cs_event_rate_checker.html["イベントレートチェッカー"] サイジングに関する情報のドキュメント

@@ -957,7 +957,6 @@
   <block id="b74af5a9ece7cdf67ec6e4e272d7c116" category="paragraph">デバイスがサポートしている場合、ほとんどの場合、読み取り専用アクセスが必要です。読み取り専用アクセスを許可しないソリューションもあるため、適切な昇格されたアクセス許可が必要になります。</block>
   <block id="b6e4757a4fed24ae14490ad102cfc2d8" category="section-title">Cloud Insights はどれくらいの頻度で情報を収集しますか。</block>
   <block id="ff6f4b330e92d1228f84fcb98d25274c" category="paragraph">Cloud Insights は通常、パフォーマンスデータを 5 分ごとに収集し、論理構成と物理構成を 30 分ごとに検出しますCloud Insights では、推奨されるベストプラクティスや拡張性に基づいてデフォルトのポーリング間隔が設定されますが、それらの間隔についてはユーザが完全に制御することができます。</block>
-  <block id="33b5ea3829d10119391340b99e723dca" category="section-title">Cloud Insights が環境に与える影響</block>
   <block id="c21b8a2a80e57ca923413b1aa8daa2d0" category="paragraph">Cloud Insights のエージェントレス、アウトオブバンド、パッシブ IP 通信により、セットアップ、メンテナンス、データセンターエコシステムへの影響を最小限に抑えることができます。Cloud Insights のパフォーマンス開発チームは、データセンターのパフォーマンスへの影響を最小限に抑えるために、パフォーマンスの監視というアクティビティで大きな効果を発揮します。通常の運用環境では影響はごくわずかで、利用率の高いテクノロジプラットフォームやパフォーマンスの低いテクノロジプラットフォームで、リラックスした状態や強化が可能です。詳細については、『 Cloud Insights インストールガイド』を参照してください。</block>
   <block id="cf1e9c3fd6c6dda4ce691bf7e1cfbaef" category="section-title">Cloud Insights ですべてのホスト / VM を一覧表示するにはどうすればよいですか。</block>
   <block id="c63925f7ddebcf8bf216776c93dc34ab" category="paragraph">Cloud Insights は、ウィジェットとクエリリスト機能を補完するもので、データセンター資産のインベントリスタイルリストを提供します。スピンドルとその間に配置されたさまざまな構成要素を仮想マシンで一覧表示することができ、クエリ、ウィジェット、ダッシュボード、データウェアハウスレポートにアクセスできます。 RESTful API からアクセスできます。</block>
@@ -1241,7 +1240,6 @@
   <block id="23a0a69ba2da60844941129c97d32149" category="summary">Kubernetes ノードの詳細ページでは、バックエンドの PV ストレージとポッドストレージに関する情報を確認できます。</block>
   <block id="47e3b127c663c8b9509f25ef96d3c6be" category="doc">Kubernetes Node Detail ページ</block>
   <block id="e767946157d182cf237f259a3b6478c4" category="paragraph">Kubernetes Explorer でノードアイコンをクリックすると、そのノードの詳細情報ページを開くことができます。このページでは、ノードに関する情報のほか、 VM 、ポッド、コンテナに関する情報を確認できます。</block>
-  <block id="088972153fa4b405527a2376c07113eb" category="section-title">ノードのポッドと永続ボリュームを確認する</block>
   <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">Cloud Insights を使用すると、 Kubernetes 環境のバックエンドストレージを可視化し、 Kubernetes ポッドと永続的ボリューム（ PVS ）を把握できます。IOPS 、レイテンシ、スループットなどの PV カウンタは、単一ポッドでの使用量から PV カウンター、 PV 、バックエンドストレージデバイスへのすべての方法で追跡できます。</block>
   <block id="4f199152407556f59fa94af499f084e0" category="paragraph">PV レベルで Cloud Insights は、バックエンド（ PV タイプに応じて内部ボリュームまたはボリューム）の容量情報（合計、使用済み、使用済みの割合）および内部ボリュームの Snapshot 数が収集されます。ポッドからストレージレベルでは、バックエンドの容量と内部ボリュームの Snapshot 数を収集します。</block>
   <block id="aae3edef1483f0838d4754d553d09e68" category="paragraph">ボリュームまたは内部ボリュームのランディングページには、次の 2 つのテーブルが表示されます。</block>
@@ -1781,7 +1779,6 @@
   <block id="dd97078b1fded41ab7f0a8081708a7b4" category="inline-image-macro">モニター条件</block>
   <block id="927629cba26acb892b3c2398129ca22e" category="paragraph"><block ref="927629cba26acb892b3c2398129ca22e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca82c7bf0a12e1bd7623c916688916ff" category="section-title">2020 年 7 月</block>
-  <block id="6891d5aadc78ac62ff88e77318810010" category="section-title">Cloud Secure がスナップショットアクションを実行します</block>
   <block id="19b247a947fc686391faebd949689a52" category="paragraph">Cloud Secure は、悪意のあるアクティビティが検出されたときにスナップショットを自動的に取得することでデータを保護し、データを安全にバックアップします。</block>
   <block id="a4749fac6233635e6370a9c15d3b1bf4" category="paragraph">ランサムウェア攻撃やその他の異常なユーザアクティビティが検出されたときにスナップショットを取る自動応答ポリシーを定義できます。アラートページから手動で Snapshot を作成することもできます。</block>
   <block id="a7ee696c849e2610f7efdc26f935de50" category="inline-image-macro">アラート処置画面、 1000</block>
@@ -2176,7 +2173,6 @@
   <block id="ef484ddf1fa70f0f7e6e12c5ec398fd0" category="paragraph">設定対象として選択した初期データコレクタのタイプ（ストレージ、スイッチなど）に応じて、関連するダッシュボードが 1 つ以上インポートされます。たとえば、ストレージデータコレクタを設定すると、ストレージ関連のダッシュボードのセットがインポートされ、 Cloud Insights のホームページとして設定されます。ホームページは、 [ ダッシュボード（ *Dashboards ） ]&gt;[ すべてのダッシュボードを表示（ Show All Dashboards ） ] リストから変更できます。</block>
   <block id="884c68aa76be99399251cf49057f5089" category="inline-link-macro">自分で作成します</block>
   <block id="30ac9f66beb1edda1ef095e871e96e65" category="paragraph">追加のダッシュボードは、あとからインポートすることも、インポートすることもでき <block ref="d9f1bed19a893c2599f38f8ee38e7f25" category="inline-link-macro-rx"></block>。</block>
-  <block id="d26ece7a14868ffcc86bc3dfce18345c" category="section-title">これで終了です</block>
   <block id="dced233464479bab905d4f3c73af377e" category="paragraph">初期セットアッププロセスが完了すると、環境でデータの収集が開始されます。</block>
   <block id="53bc5b0eaf13535f4b602a5830ef8ad6" category="paragraph">初期セットアッププロセスが中断された場合（ブラウザウィンドウを閉じた場合など）は、次の手順を手動で実行する必要があります。</block>
   <block id="3109cfeae79b76c71475be9bfd3c2938" category="list-text">Data Collector を選択します</block>
@@ -2966,7 +2962,6 @@
   <block id="98d65924ba5e4c9e08f01233aceb15b8" category="list-text">攻撃中のファイルアクティビティを示すグラフ</block>
   <block id="150371e71cf9ac0249f420076a2e5358" category="section-title">[ 関連ユーザー ] セクション：</block>
   <block id="db67b2fbfe663dec3bafb30754f82043" category="paragraph">このセクションでは、潜在的な攻撃に関与するユーザーの詳細を示します。ユーザーの上位アクティビティのグラフも含まれます。</block>
-  <block id="3187f3dcb05b639d87ff0ef7bcdc3e02" category="section-title">Snapshot 処理を実行します</block>
   <block id="7683f342a6f18a36645f19f6332de56e" category="inline-link-macro">自動応答ポリシー</block>
   <block id="d27b2fb629cc2c24086da7257eb32814" category="paragraph">を定義できます <block ref="5def0187ac3a4d928905bc1e2b8dece3" category="inline-link-macro-rx"></block> ランサムウェア攻撃やその他の異常なユーザアクティビティが検出されるとスナップショットが作成されます。アラートページから手動で Snapshot を作成することもできます。</block>
   <block id="bf69429297f9f42186bf9ad016e6efd6" category="section-title">アラート通知</block>
@@ -3773,7 +3768,6 @@
   <block id="96cfad9bf45103ee0ef58fa25c0cfa6b" category="summary">レポートの出力と配信のカスタマイズ、クリップボードへのレポートのコピー、レポートの開き方（ XML ）。</block>
   <block id="e1039935b082dfd38ef43eb7fef4b452" category="doc">レポートの管理</block>
   <block id="ce2ce538c48e429c8dc98553649f3bbd" category="paragraph">レポートの出力形式と配信のカスタマイズ、レポートのプロパティまたはスケジュールの設定、およびレポートの電子メール送信を行うことができます。</block>
-  <block id="5df8ec67e66b1b70f4dd477eeabe20c2" category="section-title">レポートの出力形式と配信方法をカスタマイズする</block>
   <block id="8bee38bef7beb0158135e68890b6cc17" category="paragraph">レポートの形式と配信方法をカスタマイズできます。</block>
   <block id="c64e7d8f225e7e8875d2446a3b30bd34" category="list-text">Cloud Insights レポートポータルで、カスタマイズするレポートの上にマウスを置き、 [*[...] をクリックします。</block>
   <block id="58cae8bb2701afa19011bf0042646c9d" category="inline-image-macro">レポートのカスタマイズメニュー</block>
@@ -4482,10 +4476,8 @@
   <block id="d47350de0cb738713602fc081af217e9" category="paragraph">を参照してください <block ref="66b24601b32ea1e28a736b303c9dda16" category="inline-link-macro-rx"></block> を参照してください。この環境オンプレミスエージェントおよびクラウドにインストールされたエージェント。</block>
   <block id="0deb145e97d2a45a78872c8c8eb51e12" category="list-text">Cloud ONTAP SVM を監視するために AWS EC2 インスタンスにエージェントがインストールされている場合は、そのエージェントとストレージが同じ VPC 内に存在する必要があります。これらの VPC が個別の VPC 内にある場合は、 VPC 間に有効なルートが必要です。</block>
   <block id="0cd400e3d93cd7ed179f95d57d744891" category="section-title">アクセス権に関する注意事項</block>
-  <block id="d6dbed5bc250d74498fd43915882d37c" category="section-title">クラスタ管理 IP を使用して追加する場合の権限：</block>
   <block id="bf3bb5d17ba89dbbd6cbc400e1c6e125" category="paragraph">クラスタ管理者ユーザを使用して Cloud Secure による ONTAP SVM データコレクタへのアクセスを許可できない場合は、次のコマンドに示すロールを持つ「 csuser 」という新しいユーザを作成できます。Cloud Secure データコレクタでクラスタ管理 IP を使用するように設定する場合は、「 csuser 」のユーザ名とパスワードを使用します。</block>
   <block id="10414897d078dba7d0d6c5111c2af072" category="paragraph">新しいユーザを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。</block>
-  <block id="8891dc1e6e4e5ac8add48653bb6e58e7" category="section-title">SVM 管理 IP を使用して追加する場合の権限：</block>
   <block id="cb5fee403d15816a05d17c1eb2ba3cb4" category="paragraph">クラスタ管理者ユーザを使用して Cloud Secure による ONTAP SVM データコレクタへのアクセスを許可できない場合は、次のコマンドに示すロールを持つ「 csuser 」という新しいユーザを作成できます。Cloud Secure データコレクタで SVM 管理 IP を使用するように設定する場合は、「 csuser 」のユーザ名とパスワードを使用します。</block>
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">新しいユーザを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。これらのコマンドをテキストエディタにコピーし、 &lt;vservername&gt; を SVM 名に置き換えてから、 ONTAP で次のコマンドを実行します。</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">データコレクタを設定します</block>
@@ -6245,7 +6237,6 @@
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM データ LIF の IP アドレス</block>
   <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">インバウンド / アウトバウンド</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">FPolicy イベントのための ONTAP との通信</block>
-  <block id="8adc06985cc11866dd25119eb70226ab" category="section-title">関連：</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">イベントレートチェッカー</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">を参照してください <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> サイジングに関する情報のドキュメント</block>
   <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">このトピックはまだ準備ができていません。</block>
@@ -7217,16 +7208,6 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
-  <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
-  <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraDSNodeInfo.status.drives</block>
-  <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraDSNodeInfo</block>
-  <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy の順にクリックします</block>
-  <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共有 / 共有イニシエータ</block>
-  <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
-  <block id="711f972f5e82f211f310ac06c2f8e036" category="cell">「 Unauthorized 」というメッセージが表示されます</block>
-  <block id="90b86e404196295299e2aa0d840dad62" category="cell">Kubernetes API トークンに、 _astrads.netapp.io_ apiGroup 内の API を呼び出す権限があることを確認します</block>
-  <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">不明なホスト : astrs-metric-service-astras-system.svc.cluster.local : 名前またはサービスが不明です</block>
-  <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">ADS Kubernetes クラスタ内で実行されている Acquisition Unit ポッドにコレクタがインストールされていることを確認します。astrs-metric-service が astrs-system 名前空間を実行していることを確認します。</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">ONTAP 9.9 以上のデータコレクタ向けのネットアップクラウド接続</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector の設定</block>
@@ -7256,8 +7237,6 @@
   <block id="29528f054166735f3e8a10f7fc97f3dd" category="cell"><block ref="29528f054166735f3e8a10f7fc97f3dd" category="inline-link-macro-rx"></block></block>
   <block id="d3dc1fc44d23379b3a3e3c6e5eaed716" category="list-text">この Acquisition Unit 上で、 2500 台を超える仮想マシン、または 10 台の大規模（ 2 ノード以上）の ONTAP クラスタ、 Symmetrix 、 HDS / HPE VSP/XP アレイを検出できるか？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">上記の「はい」回答ごとに、 8 GB のメモリと 50 GB のディスク容量を AU に追加することをお勧めします。たとえば、「はい」と答えた場合、 150GB 以上のディスクスペースを備えた 24GB のメモリシステムを導入する必要があります。Linux の場合、ログの場所に追加するディスクスペース。</block>
-  <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">ネットアップの Astra データストアを設定</block>
-  <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra データコレクタ</block>
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">この GitHub の記事</block>
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">これは問題と呼ばれています。を参照してください <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。</block>
   <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">Telegraf から次のようなエラーメッセージが表示されますが、 Telegraf は起動して実行されます。 Oct 11 14 ： 23 ： 41 IP-172-39-47 systemd[1] ： InfluxDB への指標の報告用に、プラグイン駆動型のサーバーエージェントを起動しました。10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/テレ グラム /.cache/snowflake 、 err: mkdir /etc/テレ グラム f/.ca che: 許可が拒否されました。ignored \n" func = "gosnowfleke. (*defaultLogger).Errorf" file="log. go:120" Oct 11 14:23:41 IP-172-21-39-47 TEテレ グラフ [1827]: time="2021 - 10-11T14:23:41Z" level=error.msg=" 失敗しました。無視されます。/etc/テレ グラム /.cache/snowflake/ocspa_response_cache.json を開きます。ファイルまたはディレクトリがありません \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"Oct. 1114:23:41 IP-172-41-39-47 テレグラム [1827:1127]~21-21Z: Telegraf 1.19.3 を起動しています</block>
@@ -7365,7 +7344,6 @@
   <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">式で変数を使用するには、変数名（例： _$var1 * 100_ ）を入力します。式で使用できるのは数値変数のみです。</block>
   <block id="1634ed475d7378ae8b2f149b1a4c43e3" category="list-text">* 属性 * ：オブジェクトの属性またはメトリックを使用してフィルタリングします</block>
   <block id="a33e4b0669b0dcd6c6727f25e8e1c46b" category="list-text">* 日付 *: 日付値。ウィジェットの構成に応じて、「 From 」または「 To 」の値として使用します。</block>
-  <block id="75514bc8f4a0fcfa4d6e233cf6293d4f" category="section-title">属性変数</block>
   <block id="cdd0539c5f9ee15c61a20d8600fe7ca5" category="paragraph">属性タイプ変数を選択すると、指定した属性値を含むウィジェットデータをフィルタできます。次の例は、エージェントノードの空きメモリの傾向を表示する折れ線ウィジェットを示しています。エージェントノード IP の変数を作成しました。現在、すべての IP を表示するように設定されています。</block>
   <block id="e3f9b576b0f66601c43decf70ddc3a40" category="inline-image-macro">可変フィルタの前のエージェントノード</block>
   <block id="8e1962312d6932465c5534f5b70114c0" category="paragraph"><block ref="8e1962312d6932465c5534f5b70114c0" category="inline-image-macro-rx" type="image"></block></block>
@@ -7667,42 +7645,6 @@
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントレベルがあります。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次の Cloud Secure ロールのいずれかを割り当てることができます。</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">各ユーザに必要なロールを選択します。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新しいユーザを追加する際には、目的のロール（通常はユーザまたはゲスト）を選択します。</block>
-  <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">Cloud Insights は、このデータコレクタからインベントリデータとパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
-  <block id="c5ecce90295639a685470629720aeea5" category="list-text">NetApp Monitoring Operator は、 Astra データストアを使用する Kubernetes クラスタにインストールする必要があります。Astra Data Store のインストール時にインストールされなかった場合は、 Astra Data Store のインストール手順に従って、モニタリングオペレータをインストールしてください。</block>
-  <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">_kubectl-astras_kubectl プラグインをインストールする必要がありますインストールされていない場合は、 Astra Data Store のインストール手順に従って、 _kubectl-astrs_binary をインストールしてください。</block>
-  <block id="55cf41c81d8f2fa848c3a33fd73120b5" category="list-text">利用可能なコマンドは、 _ awk 、 curl 、 grep 、および jq_ です。</block>
-  <block id="af27e8481fc7ef90e7ed57735aa486a7" category="paragraph">インストールスクリプトの指示に従って、 Astra Data Store データコレクタをインストールします。画面の指示に従います。インストールが完了するまでに数分かかります。完了すると、データが Cloud Insights に表示されるまでに数分かかることがあります。</block>
-  <block id="d679078549b407f8255ce4a95eb4ccad" category="paragraph">スクリプトでは、次の手順を実行します。</block>
-  <block id="73abd6a4d58ac58a260c391fe56f1a57" category="list-text">API のアクセストークンを選択します。</block>
-  <block id="d81b7ed35f0d2bef601ad8d74fdeb35c" category="list-text">インストールダイアログからインストーラスクリプトをコピーし、 _cloudInsights -ads-monitoring .sh という名前のファイルとして保存します。クリップボードアイコンをクリックすると、スクリプトをクリップボードにすばやくコピーできます。</block>
-  <block id="e62192a6aee08bda18b9aa476e12ac7c" category="list-text">Bash ウィンドウを開き、 _cloudin保管 場所 - ads-monitoring .sh スクリプトの場所にディレクトリを変更します。</block>
-  <block id="fa36e0d10ffde2aefefc27bd0369f2f1" category="list-text">インストールダイアログからパーミッションコマンドブロックをコピーしますクリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。</block>
-  <block id="0df60a234fa438383cbe9b557bc6ac86" category="list-text">Bash ウィンドウに権限のコマンドを貼り付け、 Enter キーを押します。</block>
-  <block id="37ed094e95b1aafa9f96e9189d257a88" category="list-text">インストールダイアログからインストールコマンドをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。</block>
-  <block id="8c8c329f90a58cb7d77dde8ca933b56d" category="list-text">Bash ウィンドウに install コマンドを貼り付けます。</block>
-  <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">「 &lt;Kubernetes の IP &gt; 」を Kubernetes API サーバの IP アドレスに置き換えます。</block>
-  <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">&lt;Kubernetes トークン &gt; を Kubernetes API トークンに置き換えます。</block>
-  <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">Enter キーを押します。</block>
-  <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">完了設定 _ をクリックします。</block>
-  <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">エラーが原因でインストーラスクリプトが終了した場合は、エラーが解決したら再実行できます。デフォルトの設定を使用しない環境の場合、インストーラスクリプトでは、 Monitoring Operator 名前空間や Kubernetes API サーバポートなどの追加のパラメータがサポートされます。使用可能なオプションの一覧を以下に示します。</block>
-  <block id="b524f24588085b1e0adf31626117f231" category="section-title">インストーラのスクリプトオプション：</block>
-  <block id="df5b5c690ed2b1756bcbac0e24081d89" category="paragraph">Cloud Insights ドメイン名と選択した API アクセスキーは、ダウンロード時にインストーラスクリプトに組み込まれます。</block>
-  <block id="5b3edf747d66543d15b01f48fb0a354e" category="section-title">Astra データストアデータコレクタ</block>
-  <block id="81e081c4fe35feb390583edb77bf277e" category="section-title">インストールスクリプト</block>
-  <block id="5afe69e2069028149a518ef6de1e10c5" category="cell">名前空間で監視演算子が実行されていません。</block>
-  <block id="6f062aede7e681e4af5f68add3fd7fd7" category="cell">Astra Data Store のインストール手順に従ってインストールします</block>
-  <block id="4c43e40f1d743a69fcdef8d2b47d0b14" category="cell">300 秒後に Acquisition Unit ポッドが起動しませんでした。</block>
-  <block id="9434c645e8cc0f2a0d4f6cce62e5542d" category="cell">Acquisition Unit ポッドの名前を取得します。 kubectl get pod -- namespace NetApp-monitoring | grep "au-pPOD " Check the pod events for errors ： kubectl describe pod --namespace NetApp-monitoring &lt;pod name&gt;</block>
-  <block id="900774bd5956acd411393b65417a827b" category="cell">Acquisition Unit のインストールが 900 秒経っても完了しません</block>
-  <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">Acquisition Unit ポッドの名前を取得します。 kubectl get pod -- namespace NetApp-monitoring | grep "au-pPOD " Check the pod logs for errors ： kubectl logs -- namespace netapp -monitoring &lt;pod _name&gt; エラーがなく、ログの末尾に「 Main-Acquisition is up and running ！」というメッセージが表示されている場合、インストールは成功しましたが、想定よりも長くなりました。インストールスクリプトを再実行します。</block>
-  <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">Cloud Insights から Acquisition Unit ID を取得できませんでした</block>
-  <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">Cloud Insights に Acquisition Unit が表示されることを確認します。Admin &gt; Data Collectors に移動し、 Acquisition Unit タブをクリックします。Cloud Insights API キーに Acquisition Unit の権限があることを確認します。</block>
-  <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">ネットアップアストラデータストア</block>
-  <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
-  <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">Cloud Insights で指標を監視</block>
-  <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra データストアのクイックスタート</block>
-  <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">以下のインストール手順と追加情報は、 Astra データストアのドキュメントにも記載されています。<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
-<block ref="9e8952bf2d49abc5b376cb6c4ac1dd52" category="inline-link-macro-rx"></block></block>
   <block id="8035d5d39b2b48f6ec1a3133b688513c" category="sidebar">Astra データストア</block>
   <block id="8a684cc8084b02b93384f0bfc436d63c" category="list-text">潜在的な攻撃の種類（ランサムウェアや破壊行為など）</block>
   <block id="f30c6485c3c21678c5177709acd318b0" category="list-text">攻撃の種類（ランサムウェア、被害者）とアラート ID （ Cloud Secure が割り当て）</block>
@@ -7958,7 +7900,6 @@
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">_&lt;API_Access_Token&gt;_ は、 API アクセスの作成時に保存したトークンです。</block>
   <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> データコレクタを使用すると、外部 Acquisition Unit をインストールする必要がなくなるため、トラブルシューティング、メンテナンス、および初期導入が簡単になります。</block>
   <block id="d7652c841f9f6f67155b6c416335e932" category="paragraph">作成されるロールとユーザログインは次のようになります。実際の出力は以下のように異なる場合があります</block>
-  <block id="aa4fab3c3fde779a8dc99f5269961218" category="section-title">既存のユーザーの役割を変更する</block>
   <block id="9b207ebd40869bfc10be14cb4279b22c" category="paragraph">既存のユーザーの役割を変更し、 * セカンダリアカウント所有者 * として追加するには、次の手順を実行します。</block>
   <block id="bb10192e5b1a488b6e0bf0a436918863" category="list-text">[*Admin] &gt; [User Management] をクリックします。画面には、システム上のすべてのアカウントのリストが表示されます。</block>
   <block id="27821658abae724fdd49cbd24489bb01" category="list-text">変更するアカウントのユーザ名をクリックします。</block>
@@ -8446,8 +8387,6 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Config Advisor ダッシュボードの作成：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">その他のサポート</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Config Advisor に関連するその他の質問については、[ヘルプ]-&gt;[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。</block>
-  <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">このデータコレクタは、単一の Astra データストアクラスタのインベントリデータとパフォーマンスデータを取得します。データコレクタに加えて、Monitoring Operatorは高度なメトリックを収集し、CONFIGURE_Fluent bit_toはログを収集します。</block>
-  <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">インストーラスクリプトは、 * Monitoring Operator がインストールされ、設定されていることを確認します。* Fluent ビットを設定します。* Acquisition Unit をインストールします。* Acquisition Unit を起動したら、 Astra Data Store コレクタをインストール</block>
   <block id="d07e55df7f133c0213955a67c979d808" category="admonition">ONTAP データコレクタ通知は、クラスタ/データコレクタに関連する特定のモニタ通知よりも優先されます。Data Collector自体に設定した受信者リストには、データコレクタアラートが送信されます。アクティブなデータコレクタアラートがない場合は、監視用に生成されたアラートが特定の監視受信者に送信されます。</block>
   <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">ログモニタ</block>
   <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">ボリュームはオフラインです</block>
@@ -8513,7 +8452,6 @@
   <block id="95458ffe03f081fb38d0e5630d7836c6" category="list-text">バックエンドストレージリソースに影響し、現在の使用容量が合計容量を上回っています。このリンクをクリックすると、バックエンドボリュームの詳細なランディングページが表示されます。</block>
   <block id="9b6de7d57253456e4f416bcef90b76e5" category="inline-image-macro">詳細が表示されたワークロードテーブル</block>
   <block id="e589c155ffae6696761533f45ef69b7c" category="paragraph"><block ref="e589c155ffae6696761533f45ef69b7c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f8f8bf593c85a6ac1a3a0cc2103aa21" category="section-title">スペースが不足している場合はどうすればよいですか？</block>
   <block id="d6fe83f2685cfec3bef24ac55c5aa793" category="paragraph">Insightのページで、「*+推奨事項を表示」をクリックして解決策を確認します。スペース不足になると、常に容量を追加するのが最も簡単なオプションです。Cloud Insights では、ターゲットの60日間の予測に必要な時間をフルにするために追加が最適な容量が提示されます。その他の推奨事項も表示されます。</block>
   <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">60日間のTTFに戻るために追加する容量</block>
   <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
@@ -8584,7 +8522,6 @@
   <block id="2b8d5e66c38238b579c8a7f9a4f0deb8" category="paragraph"><block ref="2b8d5e66c38238b579c8a7f9a4f0deb8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d0288e56a716095eb8a98c5c3943c54" category="paragraph">TTFカウンタは'ストレージ'ストレージ・プール'ボリュームにも使用できますこれらのオブジェクト用にダッシュボードが追加されるように、このスペースを監視してください。</block>
   <block id="70bda96e0227797cb8002e9bb8d9880d" category="paragraph">Time to Fullの予測は_Preview_から移動し、すべての顧客に展開されます。</block>
-  <block id="c734c78a6282b21c743d2e94a2fbba82" category="section-title">環境の変更点</block>
   <block id="c126f3a900297855b1ec4bc88198f155" category="paragraph">ONTAP 変更ログのエントリは、ログエクスプローラで確認できます。</block>
   <block id="4c6ad175a17ca3e0294c095f93eefebe" category="inline-image-macro">変更ログエントリの例を示す図</block>
   <block id="71f092ae4722c5826712794003f7d4b8" category="paragraph"><block ref="71f092ae4722c5826712794003f7d4b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -8747,7 +8684,6 @@
   <block id="b15e043f2e8db0aa222ae7311e987712" category="paragraph">次の機能がプレビューから除外され、すべてのお客様が利用できるようになりました。</block>
   <block id="64f0171311f2657dbd0578fca9fb2fa5" category="cell">Cloud Secure –攻撃に対するユーザアクセスをブロックします</block>
   <block id="6ad1deaea422210384bf8c46adb4027a" category="cell">攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックすることも、アラートまたはユーザの詳細ページから手動でブロックすることもできます。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
-  <block id="2d6bee64b9e0e23f822f86b9ef8e0060" category="section-title">データ収集の状態はどのようになっていますか？</block>
   <block id="62eb208f255de6653342ec37c0ec229b" category="paragraph">Cloud Insights には、Acquisition Unit用に2つの新しいハートビートモニタと、データコレクタの障害を通知する2つのモニタが用意されています。これらのコマンドを使用すると、データ収集の問題を迅速に通知できます。</block>
   <block id="b355ccf4f7e6c9eb6dbdec86e748dbf6" category="paragraph">Data Collection_monitorグループで次のモニタを使用できるようになりました。</block>
   <block id="f080c7e2db3c941a50244332dcd5aa78" category="list-text">Acquisition Unit Heartbeat - Criticalをクリックします</block>
@@ -9182,4 +9118,22 @@
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">パス/元のパスの検索</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">ルート/ sysadminユーザアカウントとパスワード。Ops Centerコンポーネントをホストするすべてのサーバに存在します。HDSでは、Ops Center 10.8以降まで、LDAP/SSOユーザによるREST APIサポートは実装されていませんでした</block>
   <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">HDS Ops Centerの「Analyzer」モジュールをインストールし、Operations Centerの「Analyzer」モジュールにデータを供給する必要があります</block>
+  <block id="5c658c709f3241ce7e2e2db76e849621" category="paragraph">を参照してください <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> ページで、その他の前提条件と要件を確認してください。</block>
+  <block id="b4c2efa32144f8c7f6fa5513ac1c7e55" category="section-title">レポートの出力形式と配信方法のカスタマイズ</block>
+  <block id="7f3fae8bcffd39410a8caca4210f5f21" category="section-title">Cloud Insightsが環境に与える影響</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">このタスクについて</block>
+  <block id="c4902856573b47497259fa66ba244535" category="section-title">属性変数</block>
+  <block id="2c8315992b66ae0480f26fe69cea1579" category="section-title">これで終了です</block>
+  <block id="d1e4cf4e509b74019a6ec3d98c6300da" category="section-title">データ収集の健全性</block>
+  <block id="53e92bcfb6eee482c86ea61784ea9a60" category="section-title">環境の変化</block>
+  <block id="0990561b323eccdee60c16a1ced0a306" category="section-title">Snapshot_Actionを実行しますCloud Secure</block>
+  <block id="e80e3d8646e24f6d7661808de9274648" category="paragraph-title">スクロールリスト：</block>
+  <block id="b39c055166e1e8cfc2de8f74b7b76640" category="paragraph-title">検索タイプ：</block>
+  <block id="be62e4fb0ce75ae1c87237e1a5947368" category="section-title">既存のユーザのロールを変更する</block>
+  <block id="04f239d51d6f6978df84a2372f6abdb2" category="section-title">クラスタ管理IPを使用して追加する場合の権限：</block>
+  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">SVM管理IP *を使用して追加する場合の権限：</block>
+  <block id="cc327506f222e6ab4e0ec6a024dcbe7b" category="section-title">スペース不足になった場合はどうすればよいですか？</block>
+  <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">Snapshot_Actionを実行します</block>
+  <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">システムのサイジング</block>
+  <block id="e9a8035e121122e74ece696f921ab7d6" category="section-title">ノードのポッドと永続的ボリュームの確認</block>
 </blocks>

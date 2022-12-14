@@ -11,7 +11,9 @@ keywords: event, checker, rate, sizing
 [role="lead"]
 イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。
 
-要件
+
+
+== 要件
 
 * クラスタ IP
 * クラスタ管理者のユーザ名とパスワード
@@ -70,6 +72,8 @@ B+C は A 未満でなければなりません。そうしないと、 Agent マ
 つまり、 1 台のエージェントマシンに追加できるデータコレクタの数は、次の式に準拠する必要があります。
 
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
+を参照してください link:concept_cs_agent_requirements.html["エージェントの要件"] ページで、その他の前提条件と要件を確認してください。
+
 
 
 == 例
