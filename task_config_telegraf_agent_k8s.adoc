@@ -434,6 +434,100 @@ PEM ファイルは、フィンガープリントが次のようになってい�
  sudo -E -H ./<installation_script_name> --install
 
 
+== オペレータのチューニング
+
+NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。設定可能な変数については、次の表を参照してください。
+
+
+
+=== リソース関連の変数
+
+を参照してください https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[] Kubernetesのリソースについては、を参照してください。
+
+|===
+
+
+| プレースホルダー | プラグイン名 | デフォルトのCRに含まれています | 説明 
+
+
+| DS_CPU_LITION_PLACEHOLDER | エージェント | はい。 | テレグラムのKubernetes CPU制限 
+
+
+| DS_MEM_LITION_PLACEHOLDER | エージェント | はい。 | テレグラムのKubernetesメモリ制限- DS 
+
+
+| DS_CPU_REQUERY_PLACEHOLDER | エージェント | はい。 | テレグラムのCPU要求- DS 
+
+
+| DS_MEM_REQUERY_PLACEHOLDER | エージェント | はい。 | テレグラムのKubernetesメモリ要求- DS 
+
+
+| rs_cpu_limits_placeholder | エージェント | はい。 | テレグラムのKubernetes CPU制限： 
+
+
+| RS_MEM_LITION_PLACEHOLDER | エージェント | はい。 | テレグラムのKubernetesメモリ制限- RS 
+
+
+| rs_cpu_request_placeholder | エージェント | はい。 | テレグラム用のKubernetes CPU要求- RS 
+
+
+| RS_MEM_REQUERY_PLACEHOLDER | エージェント | はい。 | テレグラムに対するKubernetesメモリ要求 
+
+
+| KSM_CPU_REQUERY_PLACEHOLDER： | KSM | はい。 | kube-state-metrics導入用のKubernetes CPU要求 
+
+
+| KSM_MEM_REQUERY_PLACEHOLDER： | KSM | はい。 | kube-state-metrics導入用のKubernetes CPU要求 
+|===
+
+
+=== Telegrafに関連する変数
+
+を参照してください https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent[] テレグラム変数の詳細については、を参照してください。
+
+|===
+
+
+| プレースホルダー | プラグイン名 | デフォルトのCRに含まれています | 説明 
+
+
+| collection_interval_placeholder | エージェント | いいえ | （テレグラム間隔、タイプ間隔を設定）：テレグラムがすべてのプラグインの入力間で待機するデフォルトの時間。有効な時間単位は、ns、us（または µ s）、ms、s、m、高さ 
+
+
+| round_interval_placeholder | エージェント | いいえ | （テレグラムのround_intervalを設定し、boolean型）間隔の倍数でメトリックを収集します 
+
+
+| metric_batch_size_placeholder | エージェント | いいえ | （は、テレグラムのmetric_batch_size、タイプintを設定します）出力テレグラムの最大レコード数は、1つのバッチで書き込まれます 
+
+
+| metric_buffer_limit_cplaceholder | エージェント | いいえ | （は、テレグラムのmetric_buffer_limit、タイプintを設定します）出力テレグラムの最大レコード数は、正常な書き込みが完了するまでキャッシュされます 
+
+
+| collection_jitter_placeholder | エージェント | いいえ | （は、テレグラムの収集ジッタ、タイプ間隔を設定します）。各プラグインは、入力を収集する前に、スケジュールされた収集時間と、その時間+ Collection_jitterの間でランダムな時間を待機します 
+
+
+| Precision_placeholder | エージェント | いいえ | （テレグラム精度、タイプ間隔を設定）：収集されたメトリックは指定された精度に丸められ、「0」精度に設定された場合は、間隔で指定された単位で設定されます 
+
+
+| flush_interval_placeholder | エージェント | いいえ | （テレグラムフラッシュ間隔、タイプ間隔を設定します）：テレグラムが出力間で待機するデフォルトの時間。 
+
+
+| flush_jitter_placeholder | エージェント | いいえ | （は、テレグラムフラッシュジッタ、タイプインターバルを設定します）。各出力は、出力を書き込む前に、スケジュールされた書き込み時間とその時間+フラッシュジッタの間にランダムな時間を待機します 
+|===
+
+
+=== その他の変数
+
+|===
+
+
+| プレースホルダー | プラグイン名 | デフォルトのCRに含まれています | 説明 
+
+
+| CL_CMD_PLACEHOLDER | エージェント | はい。 | さまざまなリソースのダウンロードに使用するcurlコマンド。例）「curl」または「curl -k」 
+|===
+
+
 == トラブルシューティング
 
 NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。
