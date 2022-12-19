@@ -7071,7 +7071,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights に関する注意事項を参照してください</block>
-  <block id="5b6169d0d5d664ce4f07f6328cd547c6" category="list-text"><block ref="5b6169d0d5d664ce4f07f6328cd547c6" category="inline-link-macro-rx"></block></block>
   <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">プロキシ URL の表示</block>
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">オンボーディング中にデータコレクタを選択するときに [* プロキシ設定 * ] リンクをクリックするか、 [* ヘルプ &gt; サポート * ] ページの [_ プロキシ設定 _ ] の下のリンクをクリックすると、プロキシエンドポイントの URL を表示できます。次のようなテーブルが表示されます。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">プロキシエンドポイントテーブル</block>
@@ -9244,4 +9243,7 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">次に、適切なciscysアクセス権を持つサンプルファイルを示します。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">「unknown code」というメッセージが表示され、データ収集エラーが発生しました。</block>
   <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。</block>
+  <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">Cloud Secure に関する注意事項を参照してください</block>
+  <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
+<block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
 </blocks>
