@@ -9157,7 +9157,6 @@
   <block id="68bcc67f734c4d92ccfcbf87c7520280" category="inline-image-macro">ログモニタの複製</block>
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 SnapMirrorを対象としたビジネス継続性を実現する、新しいデフォルトのONTAP モニタ</block>
-  <block id="58884a5363d19bcb025a7a0fd15d3801" category="paragraph">SMBC（ビジネス継続性）のためのSnapMirror用システムモニターを10台追加し、SMBC証明書、ONTAP メディエーターの変更を通知しています。</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">オペレータのチューニング</block>
   <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。設定可能な変数については、次の表を参照してください。</block>
   <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">リソース関連の変数</block>
@@ -9240,4 +9239,6 @@
   <block id="66a60fbd4168a1ac76bf8fa7d2650519" category="cell">SMBCサーバ証明書の有効期限が切れて</block>
   <block id="13d0e81b911774edf84b28bd0b95b58f" category="cell">このメッセージは、ONTAP メディエーターサーバ証明書の有効期限が30日以内になった場合に表示されます。</block>
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">この証明書の有効期限が切れる前に、「snapmirror mediator remove」コマンドを使用して現在のONTAP メディエーターの設定を削除します。ONTAP メディエーターサーバで新しいサーバ証明書を更新します。snapmirror mediator addコマンドを使用してONTAP メディエーターへのアクセスを再設定します。</block>
+  <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">システムモニタ</block>
+  <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">私たちは、10個近くの新しい製品を追加しました <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> SnapMirror for Business Continuity（SMBC）については、SMBC証明書およびONTAP メディエーターの変更を通知します。</block>
 </blocks>

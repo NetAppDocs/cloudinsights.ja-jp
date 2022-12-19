@@ -62,7 +62,7 @@ image:Log_Monitor_Duplicate.png["ログモニタの複製"]
 
 === 11 SnapMirrorを対象としたビジネス継続性を実現する、新しいデフォルトのONTAP モニタ
 
-SMBC（ビジネス継続性）のためのSnapMirror用システムモニターを10台追加し、SMBC証明書、ONTAP メディエーターの変更を通知しています。
+私たちは、10個近くの新しい製品を追加しました link:task_system_monitors.html#snapmirror-for-business-continuity-smbc-mediator-log-monitors["システムモニタ"] SnapMirror for Business Continuity（SMBC）については、SMBC証明書およびONTAP メディエーターの変更を通知します。
 
 '''
 
