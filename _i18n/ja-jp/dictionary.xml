@@ -7784,11 +7784,7 @@
   <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">モニタの条件を定義します</block>
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">ログモニタ</block>
-  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">*Log monitor * を作成する場合は、まず使用可能なログリストから、監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。</block>
-  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">たとえば、 logs.netapp.ems ソースで「 object.stor.unavailable 」というメッセージタイプをフィルタリングするように選択できます。</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">ログモニタフィルタを空にすることはできません。</block>
-  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">監視するログを選択し、フィルタを設定します</block>
-  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="454176c970e70022beb38f8813bea495" category="section-title">アラートの動作を定義します</block>
   <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">ログアラートがトリガーされたときのアラートの送信方法を選択します。上で設定したフィルタ条件に基づいて、 _Warning_ 、 _Critical_ 、または _Informational_severity でアラートを生成するようにモニタを設定できます。</block>
   <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">監視するログ動作を定義します</block>
@@ -9241,4 +9237,7 @@
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">この証明書の有効期限が切れる前に、「snapmirror mediator remove」コマンドを使用して現在のONTAP メディエーターの設定を削除します。ONTAP メディエーターサーバで新しいサーバ証明書を更新します。snapmirror mediator addコマンドを使用してONTAP メディエーターへのアクセスを再設定します。</block>
   <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">システムモニタ</block>
   <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">私たちは、10個近くの新しい製品を追加しました <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> SnapMirror for Business Continuity（SMBC）については、SMBC証明書およびONTAP メディエーターの変更を通知します。</block>
+  <block id="b229f086c89bfd44fd734a5299e9f059" category="paragraph">*Log monitor * を作成する場合は、まず使用可能なログリストから、監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。1つ以上の「グループ化」属性を選択することもできます。</block>
+  <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">監視するログを選択し、フィルタを設定し、必要に応じて方法でグループを選択します</block>
+  <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
