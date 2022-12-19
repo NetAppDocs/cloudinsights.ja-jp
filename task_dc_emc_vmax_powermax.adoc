@@ -25,6 +25,23 @@ Cloud Insights は、 Solutions Enabler symcli コマンドを使用して、環
 * SE ソフトウェアに対する読み取り専用のユーザ名とパスワード
 * UNISPHERE for VMAX アプリケーションを実行して、 SMI-S プロバイダのインストールで管理される EMC VMAX および PowerMax ストレージアレイの統計を収集する必要があります
 * パフォーマンスのアクセス検証：Acquisition UnitのWebブラウザで、「https：//<SMI-S Hostname or IP> ：5989/ecomconfig_where「SMI-S Hostname or IP」はSMI-SサーバのIPアドレスまたはホスト名です。このURLは'EMC SMI-S（ECOM）サービスの管理ポータル用であり'ログイン・ポップアップが表示されます
+* 権限はSolutions Enablerサーバのデーモン構成ファイルで宣言する必要があります。通常は次の場所にあります。_/var/symapi/config/demon _users_
++
+次に、適切なciscysアクセス権を持つサンプルファイルを示します。
+
++
+....
+root@cernciaukc101:/root
+14:11:25 # tail /var/symapi/config/daemon_users
+###
+###     Refer to the storrdfd(3) man page for additional details.
+###
+###     As noted above, only authorized users can perform stordaemon control
+###     operations (e.g., shutdown).
+################################################################################
+# smith         storrdfd
+cisys storapid <all>
+....
 
 
 
@@ -123,10 +140,6 @@ Cloud Insights では、 EMC VMAX/PowerMax データソースから次のイン�
 
 このデータコレクタで問題が発生した場合の対処方法を次に示します。
 
-
-
-=== 在庫
-
 [cols="2*"]
 |===
 | 問題 | 次の操作を実行します 
@@ -154,5 +167,8 @@ Cloud Insights では、 EMC VMAX/PowerMax データソースから次のイン�
 
 
 | エラー : • Solutions Enabler サーバ 8.x から Solutions Enabler 7.x と一緒に収集したときに、「 symcfg list -Tdev 」 CLI コマンドで誤ったデータが返されることがあります• Solutions Enabler サーバ 8.3 以降から Solutions Enabler 8.1.0 以前で収集した場合、 CLI コマンド「 symcfg list -srp 」で誤ったデータが返されることがあります。 | Solutions Enabler のメジャーリリースが同じであることを確認してください 
+
+
+| 「unknown code」というメッセージが表示され、データ収集エラーが発生しました。 | Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <<要件,要件>> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

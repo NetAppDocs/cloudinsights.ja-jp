@@ -9240,4 +9240,8 @@
   <block id="b229f086c89bfd44fd734a5299e9f059" category="paragraph">*Log monitor * を作成する場合は、まず使用可能なログリストから、監視するログを選択します。次に、前述のように使用可能な属性に基づいてフィルタできます。1つ以上の「グループ化」属性を選択することもできます。</block>
   <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">監視するログを選択し、フィルタを設定し、必要に応じて方法でグループを選択します</block>
   <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e49c7b347b6e9d379c33509b8c27ec5b" category="list-text">権限はSolutions Enablerサーバのデーモン構成ファイルで宣言する必要があります。通常は次の場所にあります。_/var/symapi/config/demon _users_</block>
+  <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">次に、適切なciscysアクセス権を持つサンプルファイルを示します。</block>
+  <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">「unknown code」というメッセージが表示され、データ収集エラーが発生しました。</block>
+  <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。</block>
 </blocks>
