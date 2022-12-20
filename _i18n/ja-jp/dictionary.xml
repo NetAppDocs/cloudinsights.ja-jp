@@ -4452,7 +4452,6 @@
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="paragraph">Cloud Secure では、データコレクタを使用して、デバイスからファイルとユーザのアクセスデータを収集します。</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">このデータコレクタは、次の機能でサポートされています。</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS プロトコルバージョン 4.0 以前</block>
-  <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM には複数のサブタイプがあります。このうち、サポートされているのは _DEFAULT_ と _SYNC_SOURE__ のみです。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">を設定する必要があります</block>
   <block id="6c1006735c24c4966ad5668af1361000" category="list-text">エージェント <block ref="a64dfb2e19772579ec5e757e77e2d502" category="inline-link-macro-rx"></block> データコレクタを設定する前に、</block>
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">ユーザディレクトリコネクタが正しく設定されていることを確認します。正しく設定されていないと、イベントはエンコードされたユーザ名で表示され、 Active Directory に保存されているユーザの実際の名前ではなく、 [Activity Forensics] ページに表示されます。</block>
@@ -9246,4 +9245,16 @@
   <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">Cloud Secure に関する注意事項を参照してください</block>
   <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
 <block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
+  <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM には複数のサブタイプがあります。このうち、サポートされるのは_DEFAULT_、_SYNC_SOURE_、および_SYNC_destination_のみです。</block>
+  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Metro Clusterの推奨構成</block>
+  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Metro Clusterの推奨事項は次のとおりです。</block>
+  <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">2つのデータコレクタをソースSVMに、別のデータコレクタをデスティネーションSVMに接続します。</block>
+  <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">データコレクタは、_Cluster IP_.によって接続する必要があります。</block>
+  <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">あるデータコレクタを実行する必要がある時点であれば、別のデータコレクタでエラーが発生します。</block>
+  <block id="edf525ae0ad794e4070641e785a1a628" category="paragraph">現在の「実行中」のSVMのデータコレクタは、_RUNNING _と表示されます。現在の「停止」されているSVMのデータコレクタは、_Error_と表示されます。</block>
+  <block id="6d1fbd196541e759b0a79fdf2b671bcd" category="list-text">スイッチオーバーが発生すると、データコレクタの状態が「Running」から「Error」に変わり、その逆も同様です。</block>
+  <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">データコレクタがError状態からRunning状態に移行するまでに最大2分かかります。</block>
+  <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">サービスポリシー</block>
+  <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">ONTAP バージョン9.9..1のサービスポリシーを使用してData Source Collectorに接続するには、Data Service_data-NFS_、および/or _data-cifs_が 必要です。</block>
+  <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">9.6.1より前のバージョンのONTAP では、_data -fpolicy-client_need not be set」を実行します。</block>
 </blocks>
