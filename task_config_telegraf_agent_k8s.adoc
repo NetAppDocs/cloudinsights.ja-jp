@@ -438,6 +438,22 @@ PEM ファイルは、フィンガープリントが次のようになってい�
 
 NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。設定可能な変数については、次の表を参照してください。
 
+これらの値を変更するには、次のコマンドを使用してエージェントCRを編集します（ネームスペースには<namespace> を置き換えます）。
+
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+CR仕様は次の形式に従います。
+
+[listing]
+----
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
+----
+「デフォルトCRに含まれる」に「はい」とマークされている項目は、すでにエージェントCRに存在し、それぞれのプラグインの下に表示されます。"no"とマークされた項目は、付属のデフォルト置換の例に従って手動で追加する必要があります。
+
 
 
 === リソース関連の変数
@@ -447,7 +463,7 @@ NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の�
 |===
 
 
-| プレースホルダー | プラグイン名 | デフォルトのCRに含まれています | 説明 
+| 変数名（Variable Name） | プラグイン名 | デフォルトのCRに含まれています | 説明 
 
 
 | DS_CPU_LITION_PLACEHOLDER | エージェント | はい。 | テレグラムのKubernetes CPU制限 

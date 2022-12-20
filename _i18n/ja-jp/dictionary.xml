@@ -9257,4 +9257,8 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">ONTAP バージョン9.9..1のサービスポリシーを使用してData Source Collectorに接続するには、Data Service_data-NFS_、および/or _data-cifs_が 必要です。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">9.6.1より前のバージョンのONTAP では、_data -fpolicy-client_need not be set」を実行します。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。以下に示す手動手順を実行する必要はありません。</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">これらの値を変更するには、次のコマンドを使用してエージェントCRを編集します（ネームスペースには&lt;namespace&gt; を置き換えます）。</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR仕様は次の形式に従います。</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">「デフォルトCRに含まれる」に「はい」とマークされている項目は、すでにエージェントCRに存在し、それぞれのプラグインの下に表示されます。"no"とマークされた項目は、付属のデフォルト置換の例に従って手動で追加する必要があります。</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">変数名（Variable Name）</block>
 </blocks>
