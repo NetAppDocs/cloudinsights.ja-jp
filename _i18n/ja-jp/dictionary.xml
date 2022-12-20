@@ -8976,7 +8976,6 @@
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">「ImagePullBackoff」エラーが発生しました</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">詳細はこちら</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> カスタム/プライベートリポジトリの設定について</block>
-  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。ここに記載されているKubernetes APIトークンの更新手順を手動で実行する必要はありません。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">インフラ全体のトポロジビューは使用できますか。Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
   <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">Agent をインストールする前にインストールファイルを確認する場合は、「バージョン情報」を参照してください <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">Cloud Insights では、ストレージノードやストレージノードのクエリに「* monitoring .count *」列を追加できます。返される結果にActive IQ監視対象のストレージシステムが含まれる場合は、monitor.count列にストレージシステムまたはノードのリスク数が表示されます。</block>
@@ -9257,4 +9256,5 @@
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">サービスポリシー</block>
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">ONTAP バージョン9.9..1のサービスポリシーを使用してData Source Collectorに接続するには、Data Service_data-NFS_、および/or _data-cifs_が 必要です。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">9.6.1より前のバージョンのONTAP では、_data -fpolicy-client_need not be set」を実行します。</block>
+  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注：最新のNetApp Kubernetes Monitoring Operatorがインストールされ、更新可能なAPIアクセストークンを使用している場合、期限切れになるトークンは自動的に新規または更新されたAPIアクセストークンに置き換えられます。以下に示す手動手順を実行する必要はありません。</block>
 </blocks>
