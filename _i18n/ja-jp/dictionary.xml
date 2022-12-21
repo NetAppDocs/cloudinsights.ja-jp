@@ -9262,5 +9262,5 @@
   <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">「デフォルトCRに含まれる」に「はい」とマークされている項目は、すでにエージェントCRに存在し、それぞれのプラグインの下に表示されます。"no"とマークされた項目は、付属のデフォルト置換の例に従って手動で追加する必要があります。</block>
   <block id="3f60b096843929b02e1a070f57e27584" category="cell">変数名（Variable Name）</block>
   <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">CSUser</block>
-  <block id="76ce4e2b9af0d8561c4d9aba287c2dfd" category="paragraph">を追加した場合は、が表示されます<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_。このユーザには、ONTAP へのSSHアクセスが必要です。</block>
+  <block id="9a4d2e5dc3e76c3437292c8797a2f443" category="paragraph">を追加した場合は、が表示されます<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>が必要です。このユーザには、ONTAP 管理LIFへのSSHアクセスが必要です。</block>
 </blocks>
