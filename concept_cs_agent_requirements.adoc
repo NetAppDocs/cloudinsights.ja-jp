@@ -91,7 +91,7 @@ APAC ベース * の Cloud Secure 環境の場合：
 
 == ネットワーク内ルール
 
-を追加した場合は、が表示されます<</task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip,CSUser>>が必要です。このユーザには、ONTAP 管理LIFへのSSHアクセスが必要です。
+を追加する場合に注意してくださいlink:task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip["CSUser"]が必要です。このユーザには、ONTAP 管理LIFへのSSHアクセスが必要です。
 
 [cols="5*"]
 |===
