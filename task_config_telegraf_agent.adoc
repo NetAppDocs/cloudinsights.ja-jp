@@ -485,7 +485,13 @@ NetApp Kubernetes Monitoring Operator（NKMO）は、Cloud Insights Insights用�
 
 == チェックサムを検証する
 
-Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。
+Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。これを行うには、インストーラをダウンロードしてダウンロードしたパッケージのチェックサムを生成し、チェックサムをインストール手順に示されている値と比較します。
+
+
+
+=== インストールせずにインストーラパッケージをダウンロードします
+
+デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、UIから取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。
 
 次の手順を実行します。
 
@@ -540,6 +546,27 @@ PEM ファイルは、フィンガープリントが次のようになってい�
  Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
 
 
+
+
+=== チェックサム値を生成します
+
+チェックサム値を生成するには、使用するプラットフォームに応じて次のコマンドを実行します。
+
+* RHEL / Ubuntu：
++
+ sha256sum <package_name>
+* MacOS：
++
+ shasum -a 256 telegraf.pkg
+* Windows の場合
++
+ Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List
+
+
+
+
+=== PEMファイルを使用してチェックサムを確認してください
+
 署名済みチェックサムファイルは、 PEM ファイルを使用して確認できます。
 
 * Windows 以外：
@@ -556,6 +583,10 @@ $signer = $result.SignerCertificate
 Add-Type -Assembly System.Security
 [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 ....
+
+
+=== ダウンロードしたパッケージをインストールします
+
 すべてのアーティファクトが正常に検証されたら、次のコマンドを実行してエージェントのインストールを開始できます。
 
 Windows 以外：

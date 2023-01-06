@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere_rest.html 
+keywords: data collector, Unisphere, EMC 
+summary: Dell EMC Unisphere RESTデータコレクタの構成 
+---
+= Dell EMC Unisphere RESTデータコレクタの構成
+:allow-uri-read: 
+
+
+[role="lead"]
+このデータコレクタは、Dell EMC Unisphereレスストレージシステムからインベントリデータとパフォーマンスデータを取得します。データコレクタを構成するには、UnisphereサーバのIPアドレスと管理者レベルのドメインアカウントが必要です。
+
+
+
+== 要件
+
+* UnisphereサーバのIPアドレス
+* Unisphereサーバの管理者レベルのドメインアカウント
+* ポート8443
+
+
+
+
+== 設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| UnisphereサーバのIPアドレス | UnisphereサーバのIPアドレスまたは完全修飾ドメイン名 
+
+
+| Unisphereポート | デフォルトは8443です 
+
+
+| ユーザ名 | Unisphereサーバのユーザー名 
+
+
+| パスワード | Unisphereサーバのパスワード 
+|===
+
+
+== 高度な設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| インベントリポーリング間隔（分） | デフォルトは 40 分です。 
+
+
+| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは 600 秒です。 
+
+
+| 「除外」または「含める」を選択してリストを指定します | VM を含めるか除外するかを指定します 
+
+
+| インベントリフィルタデバイスリスト | フィルタリングするVMのリスト（カンマ区切り、または値にカンマが使用されている場合はセミコロンで区切った） 
+
+
+| Unisphereパフォーマンスポーリング間隔（秒） | デフォルトは300秒です 
+|===
+
+
+== トラブルシューティング
+
+このデータコレクタで問題が発生した場合の対処方法を次に示します。
+
+
+
+=== 在庫
+
+[cols="2*"]
+|===
+| 問題 | 次の操作を実行します 
+
+
+| エラー：ユーザ認証に失敗しました。 | このデバイスのクレデンシャルが正しいことを確認してください。 
+|===
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

@@ -75,6 +75,7 @@ image:Log_Monitor_Duplicate.png["ログモニタの複製"]
 
 Cloud Volume 、セキュリティ、およびデータ保護に関する潜在的な問題を警告するために、システム定義の新しいモニターが多数追加されました。これらのモニターの詳細については、こちらをご覧ください link:task_system_monitors.html#security-monitors["こちらをご覧ください"]。
 
+'''
 
 
 == 2022年10月

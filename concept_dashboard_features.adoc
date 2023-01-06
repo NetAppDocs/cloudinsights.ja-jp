@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
 summary: ダッシュボードの機能と概念 
-keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
 ---
 = ダッシュボードの機能
 :toc: macro
@@ -628,6 +628,24 @@ image:Gauge-Bullet.png["ブレットゲージ、幅 = 374"]
 image:Single-Value Widgets.png["書式設定あり / なしの単一値ウィジェット"]
 
 単一値ウィジェットまたはゲージウィジェットのリンクをクリックすると、ウィジェットの最初のクエリに対応するクエリページが表示されます。
+
+
+
+== 表ウィジェットの書式設定
+
+単一値ウィジェットやゲージウィジェットと同様に、表ウィジェットで条件付き書式を設定し、色や特殊アイコンでデータを強調表示することができます。
+
+条件付き書式を使用すると、表ウィジェットで警告レベルと重大レベルのしきい値を設定して強調表示し、異常なデータポイントを瞬時に可視化できます。
+
+image:ConditionalFormattingExample.png["条件付き書式の例"]
+
+条件付き書式は、表の各列に個別に設定されます。たとえば、容量の列でしきい値のセットとスループットの列のしきい値のセットを選択できます。
+
+列の単位表示を変更しても、条件付き書式は維持され、値の変更が反映されます。以下の画像は、表示単位が異なる場合でも同じ条件付き書式を示しています。
+
+image:ConditionalFormatting_GiB.png["条件付きフォーマット- GiB"] image:ConditionalFormatting_TiB.png["条件付き書式- TiB"]
+
+条件の書式を色、アイコン、またはその両方で表示するかどうかを選択できます。
 
 
 

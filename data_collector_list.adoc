@@ -75,6 +75,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale （旧 Isilon ）"] | インフラ 
 
 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon REST"] | インフラ 
+
+
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | インフラ 
 
 
@@ -85,6 +88,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | インフラ 
+
+
+| link:task_dc_emc_unisphere_rest.html["Dell EMC Unisphere REST"] | インフラ 
 
 
 | link:task_dc_emc_vmax_powermax.html["Dell EMC VMAX/PowerMax ファミリのデバイス"] | インフラ 

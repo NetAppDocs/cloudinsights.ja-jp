@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: bluexp_overview.html 
+summary: ハイブリッドマルチクラウドデータ環境を単一のコントロールプレーンから構築、保護、ガバナンスします。 
+keywords: bluexp, cloud manager, cm, storage, data, services, integrated 
+---
+= Cloud Insights はBlueXPの一部です
+:allow-uri-read: 
+
+
+[role="lead"]
+BlueXPを使用すると、すべてのネットアップストレージとデータ資産を1つのインターフェイスから管理できます。BlueXPには、多くの新しいストレージサービスと、以前は別のUIでスタンドアロンサービスとしてしか利用できなかったデータサービスが用意されています。Cloud Insights はこれらのサービスの1つです。
+
+
+NOTE: BlueXPナビゲーションメニューの統合は、と見なされます link:concept_preview_features.html["_プレビュー_"] このため、機能は変更される場合があります。
+
+BlueXPのナビゲーションメニューにある直感的な新しいメニューでは、データサービスがカテゴリ別に整理され、機能に応じて名前が付けられています。たとえば、「Cloud Insights 」機能セットは「Observability」（監視可能性）メニューにあります。Cloud Insights を探索している間は、ナビゲーションメニューの上部に「観察性」セクションが表示されます。これは、BlueXPの各サービスについて説明しています。
+
+image:BlueXP_Nav_Menu.png["BlueXPのナビゲーションメニューには、以下のネットアップサービスの最上位とその他のサービスで観察できる機能が表示されます"]
+
+
+NOTE: このドキュメントでは、「Cloud Insights 」と「Observability」という用語を同じ意味で使用することがあります。
+
+詳細については、ホバーツールのヒントを参照して
+
+BlueXPの詳細については'BlueXPのWebサイトを参照してください
