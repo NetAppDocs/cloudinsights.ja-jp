@@ -10675,4 +10675,11 @@
   <block id="24b9d8ba3ac9389d8f4a72d27707e6df" category="cell">1.次のコマンドを使用して、エージェントを編集します。kubectl -n &lt;name-space&gt; edit agent &lt;&lt;ヘッド2：「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get -all &lt;namespace&gt;</block>
   <block id="92e1a63940cff8448da6b16df73f8839" category="cell">grep -i psp（何も検出されなかったことを示すはずです）============2.「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n &lt;namespace&gt; | grep -i psp（should show that nothing is found）&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;3df6fa94316c710c5e3709e6c4bd493fa37256</block>
   <block id="1bdab929b5a195b946c68d496ce65060" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。&lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; 頭部</block>
+  <block id="6b290024189e0c4e1b4dfcdf7383e010" category="section-title">便利な定義</block>
+  <block id="684e976accba59790f5593505086fd7a" category="paragraph">Cloud Insights データコレクタまたは機能について説明する場合は、次の定義が役立ちます。</block>
+  <block id="5e4f18167064639e23a7d876eabb697a" category="inline-link-macro">フィーチャーをプレビューします</block>
+  <block id="d9501a665dbf4f495431fcca37973166" category="list-text">*プレビュー*：限定された容量または限定された視聴者に提供されます。 <block ref="1e732bee0ba13f7cae2a07a19dd93ab4" category="inline-link-macro-rx"></block> データコレクタは、プレビュー期間後にGAになる予定です。プレビュー期間は、対象者や機能によって異なります。</block>
+  <block id="dd94823438f14366dcf7fca1f9e36942" category="list-text">* GA *：エディションまたは機能セットに基づいて、すべてのお客様が一般に利用できる機能またはデータコレクタ。</block>
+  <block id="cd0d8ade9c16e03b7c1dd37589a88960" category="list-text">*廃止予定*：機能上の持続可能性がなくなった、または今後アップする予定の環境 データコレクタ。非推奨のデータコレクタは、多くの場合、新しい機能上更新されたデータコレクタに置き換えられます。</block>
+  <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*Deleted *:削除され、使用できなくなったデータコレクタ。</block>
 </blocks>
