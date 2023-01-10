@@ -10682,4 +10682,9 @@
   <block id="dd94823438f14366dcf7fca1f9e36942" category="list-text">* GA *：エディションまたは機能セットに基づいて、すべてのお客様が一般に利用できる機能またはデータコレクタ。</block>
   <block id="cd0d8ade9c16e03b7c1dd37589a88960" category="list-text">*廃止予定*：機能上の持続可能性がなくなった、または今後アップする予定の環境 データコレクタ。非推奨のデータコレクタは、多くの場合、新しい機能上更新されたデータコレクタに置き換えられます。</block>
   <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*Deleted *:削除され、使用できなくなったデータコレクタ。</block>
+  <block id="8a09aa1c7ea03c3f00c40e8568951198" category="paragraph">Data Collector のサポートマトリックスには、 Cloud Insights でサポートされているデータコレクタのリファレンス（ベンダーやモデルの情報など）が記載されています。</block>
+  <block id="ca0b4506c2206cd2c862ff1d61765a6a" category="paragraph">マトリックスは .pdf 形式で提供されています。</block>
+  <block id="fb2b11979470312e91d52daf018ca991" category="paragraph">リンクをクリックして開きます。コピーをダウンロードするには、右クリックして「 _ 名前を付けて保存 ... _ 」を選択します。</block>
+  <block id="e8a0ae6a975a5b0b5682da12aecbad5d" category="inline-link-macro">* Data Collector サポートマトリックス *</block>
+  <block id="2c7946be5550b6b9eea9fc71634c0a3a" category="paragraph"><block ref="2c7946be5550b6b9eea9fc71634c0a3a" category="inline-link-macro-rx"></block></block>
 </blocks>
