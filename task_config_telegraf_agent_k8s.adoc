@@ -26,7 +26,7 @@ image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
 +
 [[nkmoversion]]
 ** Telegraf :1.24.0
-** kube-rbacプロキシ：v0.13.0
+** kube-rbacプロキシ：v1.13.0
 ** kube-state-metrics：v2.6.0
 ** 流出ビット:1.9.8
 ** Kubernetesイベントエクスポータ：0.10
@@ -177,14 +177,14 @@ password: <password from docker secret step above>
 オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。
 
 ....
-docker.io/telegraf: 1.22.3
-gcr.io/kubebuilder/kube-rbac-proxy: v0.11.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.4.2
+docker.io/telegraf: 1.24.0
+gcr.io/kubebuilder/kube-rbac-proxy: v10.13.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.6.0
 ....
 FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。
 
 ....
-docker.io/fluent-bit:1.9.3
+docker.io/fluent-bit:1.9.8
 docker.io/kubernetes-event-exporter:0.10
 ....
 エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。

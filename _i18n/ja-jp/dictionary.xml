@@ -8891,7 +8891,6 @@
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">NetApp Kubernetes Monitoring Operatorをインストールする前に</block>
   <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">次のコンポーネントバージョンに注意してください。NetApp Kubernetes Monitoring Operatorには、現在、次のバージョンが含まれています。</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf :1.24.0</block>
-  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">kube-rbacプロキシ：v0.13.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">kube-state-metrics：v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">流出ビット:1.9.8</block>
   <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">Kubernetesイベントエクスポータ：0.10</block>
@@ -10680,4 +10679,5 @@
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">コレクタのライフサイクル:コレクタは'ライフサイクルの次のいずれかの状態に属します</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">Acquisition Unit：データコレクタをホストする専用のコンピュータ。通常は仮想マシンです。通常、このコンピュータは、監視対象の項目と同じデータセンター/VPC内にあります。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">データソース：ハードウェアまたはソフトウェアスタックと通信するためのモジュール。デバイスと通信するためにAUコンピュータで実行される設定とコードで構成されます。</block>
+  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">kube-rbacプロキシ：v1.13.0</block>
 </blocks>
