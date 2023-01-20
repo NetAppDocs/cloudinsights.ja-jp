@@ -21,10 +21,10 @@ image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
 
 == NetApp Kubernetes Monitoring Operatorをインストールする前に
 
-.前提条件
-* 次のコンポーネントバージョンに注意してください。NetApp Kubernetes Monitoring Operatorには、現在、次のバージョンが含まれています。
-+
 [[nkmoversion]]
+.前提条件
+* 次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに現在含まれているバージョンです。特に、これらのバージョンを使用している場合は注意が必要です <<using-a-custom-or-private-docker-repository,カスタムまたはプライベートのDockerリポジトリを使用する>>：
++
 ** Telegraf :1.24.0
 ** kube-rbacプロキシ：v1.13.0
 ** kube-state-metrics：v2.6.0
@@ -174,18 +174,18 @@ password: <password from docker secret step above>
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。
 
-オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。
+オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <<before-installing-the-netapp-kubernetes-monitoring-operator,前提条件>> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。
 
 ....
-docker.io/telegraf: 1.24.0
-gcr.io/kubebuilder/kube-rbac-proxy: v10.13.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.6.0
+docker.io/telegraf
+gcr.io/kubebuilder/kube-rbac-proxy
+k8s.gcr.io/kube-state-metrics/kube-state-metrics
 ....
 FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。
 
 ....
-docker.io/fluent-bit:1.9.8
-docker.io/kubernetes-event-exporter:0.10
+docker.io/fluent-bit
+docker.io/kubernetes-event-exporter
 ....
 エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。
 

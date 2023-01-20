@@ -8889,7 +8889,6 @@
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collectorのタイル</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">NetApp Kubernetes Monitoring Operatorをインストールする前に</block>
-  <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">次のコンポーネントバージョンに注意してください。NetApp Kubernetes Monitoring Operatorには、現在、次のバージョンが含まれています。</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf :1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">kube-state-metrics：v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">流出ビット:1.9.8</block>
@@ -8922,7 +8921,6 @@
   <block id="77cc6d4eb48f196cb4ec9933aeef1586" category="paragraph">の出力は次のJSON形式になります。</block>
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">オペレータ用のDockerイメージをCloud Insights から取得します。NetApp Monitoringのバージョン番号が最新であることを確認します。</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">次のコマンドを使用して、_NetApp-Monitoring_&lt;version&gt;フィールドを確認します。</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。</block>
   <block id="725add584c7b017b758ee4ca5893c90a" category="paragraph">OpenShift 4.6以降で実行している場合は、「特権モード」設定を変更する必要があります。次のコマンドを実行して、エージェントを開いて編集します。「 NetApp Monitoring 」以外のネームスペースを使用している場合は、コマンドラインでそのネームスペースを指定します。</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブロックする可能性のある追加のセキュリティレベルを実装する場合があります。</block>
   <block id="dd9d67c4c74337838e56e1e3e14ceb18" category="admonition">以前にスクリプトベースのエージェントをインストールしている場合は、NetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。</block>
@@ -10680,4 +10678,7 @@
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">Acquisition Unit：データコレクタをホストする専用のコンピュータ。通常は仮想マシンです。通常、このコンピュータは、監視対象の項目と同じデータセンター/VPC内にあります。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">データソース：ハードウェアまたはソフトウェアスタックと通信するためのモジュール。デバイスと通信するためにAUコンピュータで実行される設定とコードで構成されます。</block>
   <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">kube-rbacプロキシ：v1.13.0</block>
+  <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">カスタムまたはプライベートのDockerリポジトリを使用する</block>
+  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに現在含まれているバージョンです。特に、これらのバージョンを使用している場合は注意が必要です <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
+  <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。</block>
 </blocks>
