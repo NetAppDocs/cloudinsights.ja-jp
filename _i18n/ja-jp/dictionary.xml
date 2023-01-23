@@ -9989,20 +9989,6 @@
   <block id="7b3a030e96e9ee2980e89d94c28dbb48" category="cell">Isilonのユーザ名</block>
   <block id="2c56c637347a0a87008437d711d16263" category="cell">Isilonのパスワード</block>
   <block id="01cba5236d5d580a0466283128eeaca6" category="cell">デフォルトは8080です。</block>
-  <block id="abd9e0bb14f8b22570a2f7f71cda1899" category="doc">NetApp ONTAP 構成用の Amazon FSX</block>
-  <block id="e5444155690679de3490c237e18db0c4" category="paragraph">このデータコレクタは、 NetApp ONTAP 対応の Amazon FSX からファイルとユーザのアクセスデータを収集します。このデータコレクタは、 Cloud Insights サービスリージョン全体で段階的に利用可能になります。Cloud Insights 環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。</block>
-  <block id="0ee580e185da35a40a1d1984bc4f414a" category="list-text">AWS コンソールにログインし、 EC2-Instances ページに移動して Launch instance を選択します。</block>
-  <block id="5beb340d7612e5199a7f1cf1fa8559a6" category="list-text">に記載されているバージョンに応じて、 RHEL または CentOS AMI を選択します <block ref="f14b7add63be60d820928fdd866e56cc" category="inline-link-macro-rx"></block>。</block>
-  <block id="7c197f72661240062d16ebc1d01f474a" category="list-text">Amazon FSX for NetApp ONTAP インスタンスが存在する VPC とサブネットに Agent ボックスを作成します。</block>
-  <block id="84cdd7b041998cf9db566c8249b20d66" category="paragraph">または、ネットアップ ONTAP VPC の Amazon FSX に接続された VPC 内にエージェントボックスを配置する必要があります。</block>
-  <block id="d390a93ae0bf8ecb5f3eafac479ff1b7" category="paragraph">エージェントと Amazon FSX for NetApp ONTAP の間に双方向の通信が確立されていることを確認します。</block>
-  <block id="244fc1e8ff83d4d166131ec1052c59de" category="list-text">割り当てられたリソースとして、 t2.xlarge （ 4 vCPU と 16 GB RAM ）を選択します。</block>
-  <block id="8b7fcdb58af006bf84d991e49eeebe51" category="list-text">wget および unzip のネイティブ Linux パッケージをインストールします。</block>
-  <block id="d885b39aec33db3575946cc072241a27" category="list-text">Cloud Secure Admin &gt; Data Collectors に移動し、 Agents タブをクリックします。</block>
-  <block id="30bfaded2cce7bc8bce0c34aedd60d6a" category="list-text">+ Agent をクリックし、ターゲットプラットフォームとして RHEL を指定します。</block>
-  <block id="6e9db8c0f07c6f970099588928158b5d" category="list-text">ログインしている RHEL EC2 インスタンスに Agent Installation コマンドを貼り付けます。</block>
-  <block id="fbdfba9c1edac47c47090ea8623a8231" category="paragraph">これにより、すべてのエージェント前提条件が満たされていれば、 Cloud Secure エージェントがインストールされます。</block>
-  <block id="662c8fe551cd48617d7f1ceaea434408" category="paragraph">詳細な手順については、 Cloud Secure を参照してください <block ref="7902d0521fa6bd726229418f042a3bdf" category="inline-link-macro-rx"></block> ページ</block>
   <block id="643c94a9b7fa8044a23bb9cbc6ebffbe" category="section-title">表ウィジェットの書式設定</block>
   <block id="9e2381c8e7ac28deb699317b34df149b" category="paragraph">単一値ウィジェットやゲージウィジェットと同様に、表ウィジェットで条件付き書式を設定し、色や特殊アイコンでデータを強調表示することができます。</block>
   <block id="39fb612360768b141ab9cb2ecbdb6c06" category="paragraph">条件付き書式は、表の各列に個別に設定されます。たとえば、容量の列でしきい値のセットとスループットの列のしきい値のセットを選択できます。</block>
@@ -10680,5 +10666,5 @@
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">カスタムまたはプライベートのDockerリポジトリを使用する</block>
   <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに現在含まれているバージョンです。特に、これらのバージョンを使用している場合は注意が必要です <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。</block>
-  <block id="9a792c4a7d9a1e15c6a95f98fe5b6491" category="admonition">このデータコレクタはです <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 2023年1月1日現在AUベースのデータ収集への移行については、を参照してください <block ref="df6681cbd934aebfa279b5a883862ef0" category="inline-link-macro-rx"></block>。</block>
+  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">このデータコレクタはです <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 2023年1月1日現在AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
