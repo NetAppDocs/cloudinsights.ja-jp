@@ -5387,7 +5387,6 @@
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">モニタリングネームスペースが Telegraf 専用に使用されている場合：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：</block>
   <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">既存の構成をバックアップします。</block>
-  <block id="e7d024454be5ad9e8d0f6defe29e154f" category="section-title">エージェントインストールのトラブルシューティング</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">エージェントの設定で問題が発生した場合の対処方法を次に示します。</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">すでに Cloud Insights を使用してエージェントをインストールしました</block>
   <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。</block>
@@ -10706,4 +10705,6 @@
   <block id="4e6966e86a775d896fac148f8f919b74" category="list-text">次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに含まれるcurrent_required_versionsです。特に、これらのバージョンを使用している場合は注意が必要です <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">kube-rbacプロキシ：v0.13.0</block>
   <block id="09fac59df2e8bc91f55d933bf9d5c4b9" category="list-text">Kubernetes -event-exporter：v0.10</block>
+  <block id="051aaec40811db88a3eb9b87af9a7838" category="cell">新しいプラグインを設定してTegrafを再起動すると、Tegrafが起動しない。ログには、次のようなエラーが表示されます。"[テレ グラム]エージェント実行エラー:設定ファイルのロード中のエラー/etc/テレ グラム/テレグラムf.d/雲のインサイト- default.conf :プラグイン出力。http：line 88：設定によってフィールドが指定されました[use_system_proxy"]、but they were not used]</block>
+  <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">インストールされているTelegrafのバージョンが古い。このページの手順に従って、お使いのプラットフォームに対応するエージェント*をアップグレードしてください。</block>
 </blocks>
