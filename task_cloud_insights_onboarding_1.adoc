@@ -51,11 +51,11 @@ Cloud Insights を選択します。
 
 == サインインして実行します
 
-テナントが作成されたら、いつでも NetApp Cloud Portal にログインして、 * Cloud Insights に移動 * をクリックできます。Cloud Insights 環境に直接移動します。
+環境の作成が完了したら、いつでもNetApp Cloud Portalにログインして、「* Cloud Insights に移動*」をクリックできます。Cloud Insights 環境に直接移動します。
 
 次のように、 Cloud Insights 環境の URL に直接ブラウザを開くこともできます。
 
- https://<environment-name>.c01.cloudinsights.netapp.com/
+ https://<environment-prefix>.c01.cloudinsights.netapp.com/
 また、 URL は各ユーザーの招待メールにも含まれ、簡単にアクセスしたりブックマークを付けたりできます。ユーザがまだ Cloud Central にログインしていない場合は、ログインするように求められます。
 
 

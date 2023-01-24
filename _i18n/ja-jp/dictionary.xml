@@ -5839,7 +5839,6 @@
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">サブスクリプションを開始します</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">無償トライアルでは、次のことが可能です <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> いつでも Cloud Insights に接続できます。登録すると、現在のサブスクリプションに基づいて Cloud Insights 機能を使用できるようになります。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">サインインして実行します</block>
-  <block id="3c43cc5f14a9a8d5c0d0ad13a6807635" category="paragraph">テナントが作成されたら、いつでも NetApp Cloud Portal にログインして、 * Cloud Insights に移動 * をクリックできます。Cloud Insights 環境に直接移動します。</block>
   <block id="8dac70c4541c93f0deed8b8bd734a673" category="paragraph">次のように、 Cloud Insights 環境の URL に直接ブラウザを開くこともできます。</block>
   <block id="0e15f0ff9eb552105028ff08fc92e09f" category="paragraph">また、 URL は各ユーザーの招待メールにも含まれ、簡単にアクセスしたりブックマークを付けたりできます。ユーザがまだ Cloud Central にログインしていない場合は、ログインするように求められます。</block>
   <block id="0df3e25ccf83cd4779234f7f928bebb5" category="admonition">新しいユーザは、 Cloud Central にアクセスして環境の URL にアクセスする前に、まだサインアップしている必要があります。</block>
@@ -10702,4 +10701,5 @@
   <block id="ae832e9b5bda2699db45f3fa6aa8c556" category="cell">Swift</block>
   <block id="7793f7416a4d38be57956421d8dd181c" category="cell">ISI_PRIV_JOB_ENGINE</block>
   <block id="aa6591610b53847bfb4e19e53c0b4a05" category="cell">ジョブエンジン</block>
+  <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">環境の作成が完了したら、いつでもNetApp Cloud Portalにログインして、「* Cloud Insights に移動*」をクリックできます。Cloud Insights 環境に直接移動します。</block>
 </blocks>
