@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: task_dc_emc_isilon_rest.html 
 keywords: data collector, isilon, EMC, DELL, PowerScale 
-summary: Dell EMC Isilon RESTデータコレクタの設定 
+summary: Dell EMC Isilon / PowerScale RESTデータコレクタの設定 
 ---
 = Dell EMC Isilon RESTデータコレクタ
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Insights は、Dell EMC Isilon REST SSHデータコレクタを使用して、Dell EMC Isilonストレージからインベントリとパフォーマンスのデータを取得します。
+Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。
 
 
 
@@ -31,7 +31,13 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | ノード | ストレージノード 
 
 
-| File System の略 | 内部ボリューム 
+| OneFSファイルシステム | 内部ボリューム 
+
+
+| OneFSファイルシステム | ストレージプール 
+
+
+| qtree | qtree 
 |===
 注：これらは一般的な用語の対応のみを示したものであり、このデータコレクタのすべてのケースを表しているわけではありません。
 
@@ -41,11 +47,66 @@ Cloud Insights では、このデータコレクタから次のインベント�
 
 このデータコレクタを設定するには、次の情報が必要です。
 
-* Dell EMC Isilon RESTストレージに対する管理者権限
-* Dell EMC Isilon RESTクラスタのIPアドレス
+* ユーザアカウントとパスワード。このアカウントは、adminまたはrootである必要はありませんが、サービスアカウントに相当数の読み取り専用権限を付与する必要があります。以下の表を参照してください
+* Dell EMC Isilon / PowerScaleクラスタのIPアドレス/完全修飾ドメイン名
 * ポート8080へのHTTPSアクセス
 
 
+[cols="3*"]
+|===
+| 権限名 | 説明 | R（読み取り）またはRW（読み取りと書き込み） 
+
+
+| ISI_PRIV_LOGI_PAPI | プラットフォームAPI | R 
+
+
+| ISI_PRIV_SYS_TIME | 時間 | R 
+
+
+| ISI_PRIV_AUTH | 認証 | R 
+
+
+| ISI_PRIV_ROLE | 権限 | R 
+
+
+| ISI_PRIV_devicesのことです | デバイス | R 
+
+
+| ISI_PRIV_EVENT | イベント | R 
+
+
+| ISI_PRIV_HDFS | HDFS | R 
+
+
+| ISI_PRIV_NDMP | NDMP | R 
+
+
+| ISI_PRIV_NETWORK | ネットワーク | R 
+
+
+| ISI_PRIV_NFS | NFS | R 
+
+
+| ISI_PRIV_PAPI_CONFIG | プラットフォームAPIを設定します | R 
+
+
+| ISI_PRIV_quota（ISI_PRIV_quota） | クォータ | R 
+
+
+| ISI_PRIV_SmartPools | SmartPools | R 
+
+
+| ISI_PRIV_SMB | SMB | R 
+
+
+| ISI_PRIV_STATISTICS | 統計情報 | R 
+
+
+| ISI_PRIV_SWIFT | Swift | R 
+
+
+| ISI_PRIV_JOB_ENGINE | ジョブエンジン | R 
+|===
 
 
 == 設定
