@@ -23,13 +23,13 @@ image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
 
 [[nkmoversion]]
 .前提条件
-* 次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに現在含まれているバージョンです。特に、これらのバージョンを使用している場合は注意が必要です <<using-a-custom-or-private-docker-repository,カスタムまたはプライベートのDockerリポジトリを使用する>>：
+* 次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに含まれるcurrent_required_versionsです。特に、これらのバージョンを使用している場合は注意が必要です <<using-a-custom-or-private-docker-repository,カスタムまたはプライベートのDockerリポジトリを使用する>>：
 +
 ** Telegraf :1.24.0
-** kube-rbacプロキシ：v1.13.0
+** kube-rbacプロキシ：v0.13.0
 ** kube-state-metrics：v2.6.0
 ** 流出ビット:1.9.8
-** Kubernetesイベントエクスポータ：0.10
+** Kubernetes -event-exporter：v0.10
 
 
 * NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。

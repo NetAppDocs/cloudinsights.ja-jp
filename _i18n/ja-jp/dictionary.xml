@@ -8891,7 +8891,6 @@
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf :1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">kube-state-metrics：v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">流出ビット:1.9.8</block>
-  <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">Kubernetesイベントエクスポータ：0.10</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。</block>
   <block id="f555190cc628f345214d8d00c587f506" category="list-text">Cloud Insights がバックエンドストレージを監視しており、KubernetesをDockerコンテナランタイムで使用している場合、Cloud Insights では、NFSとiSCSIについてポッド/ PV /ストレージ間のマッピングを表示できます。その他の実行時間ではiSCSIのみが表示されます。</block>
   <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。</block>
@@ -10654,9 +10653,7 @@
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">コレクタのライフサイクル:コレクタは'ライフサイクルの次のいずれかの状態に属します</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">Acquisition Unit：データコレクタをホストする専用のコンピュータ。通常は仮想マシンです。通常、このコンピュータは、監視対象の項目と同じデータセンター/VPC内にあります。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">データソース：ハードウェアまたはソフトウェアスタックと通信するためのモジュール。デバイスと通信するためにAUコンピュータで実行される設定とコードで構成されます。</block>
-  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">kube-rbacプロキシ：v1.13.0</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">カスタムまたはプライベートのDockerリポジトリを使用する</block>
-  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに現在含まれているバージョンです。特に、これらのバージョンを使用している場合は注意が必要です <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。</block>
   <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">このデータコレクタはです <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 2023年1月1日現在AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Dell EMC Isilon / PowerScale RESTデータコレクタの設定</block>
@@ -10706,4 +10703,7 @@
   <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">UnisphereサーバのIPアドレス/完全修飾ドメイン名</block>
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">ユーザ名とパスワード</block>
   <block id="4723d1b438a15598881f85467c0b7be8" category="cell">パフォーマンスのポーリング間隔</block>
+  <block id="4e6966e86a775d896fac148f8f919b74" category="list-text">次のコンポーネントバージョンに注意してください。これらは、NetApp Kubernetes Monitoring Operatorに含まれるcurrent_required_versionsです。特に、これらのバージョンを使用している場合は注意が必要です <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
+  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">kube-rbacプロキシ：v0.13.0</block>
+  <block id="09fac59df2e8bc91f55d933bf9d5c4b9" category="list-text">Kubernetes -event-exporter：v0.10</block>
 </blocks>
