@@ -10709,4 +10709,6 @@
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">新しいプラグインを設定してTegrafを再起動すると、Tegrafが起動しない。ログには、次のようなエラーが表示されます。"[テレ グラム]エージェント実行エラー:設定ファイルのロード中にエラーが発生しました。/etc/exraf/exraf.d/cusinetrainesetraine-default.conf：プラグイン出力。http：line &lt;linenumber&gt; ：configuration specified the fields [use_system_proxy"]、but they were not used]</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">古いインストールでインストーラスクリプトを実行したが、エージェントがデータを送信していない</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">テレグラムエージェントをアンインストールし、インストールスクリプトを再実行します。お使いのプラットフォームに応じて、このページの*エージェントのアップグレード*の手順を実行します。</block>
+  <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">電子メールアラートは、攻撃が検出されてから24時間後に受信されます。UIにはアラートが24時間前に表示され、その日にCloud Insights ワークロードセキュリティからEメールが受信されます。</block>
+  <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">ONTAP がCloud Insights ワークロードセキュリティ（Cloud Secure ）に_ランサムウェアDetected _ Eventを送信すると、Eメールが送信されます。イベントには、攻撃のリストとタイムスタンプが含まれます。Workload Security UIには、攻撃を受けた最初のファイルのアラートタイムスタンプが表示されます。ONTAP は、特定の数のファイルがエンコードされたときに、_ランサムウェアDetected _ EventをCloud Insights に送信します。そのため、UIにアラートが表示される時間とEメールが送信される時間が異なる場合があります。</block>
 </blocks>
