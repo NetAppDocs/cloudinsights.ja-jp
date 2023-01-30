@@ -10711,4 +10711,18 @@
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">電子メールアラートは、攻撃が検出されてから24時間後に受信されます。UIにはアラートが24時間前に表示され、その日にCloud Insights ワークロードセキュリティからEメールが受信されます。</block>
   <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">ONTAP がCloud Insights ワークロードセキュリティ（Cloud Secure ）に_ランサムウェアDetected _ Eventを送信すると、Eメールが送信されます。イベントには、攻撃のリストとタイムスタンプが含まれます。Workload Security UIには、攻撃を受けた最初のファイルのアラートタイムスタンプが表示されます。ONTAP は、特定の数のファイルがエンコードされたときに、_ランサムウェアDetected _ EventをCloud Insights に送信します。そのため、UIにアラートが表示される時間とEメールが送信される時間が異なる場合があります。</block>
   <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">[*セキュリティ*]メニューで、[*管理者]&gt;[データコレクタ]&gt;[エージェント]&gt;[エージェント*]を選択します</block>
+  <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">物理容量–FSXファイルシステムに割り当てられているすべてのSSDストレージの2つの合計。</block>
+  <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS–このストレージプールに割り当てられているすべてのボリュームの合計IOPS。</block>
+  <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">Throughput–このストレージプールに割り当てられているすべてのボリュームの合計スループット。</block>
+  <block id="c70c5237e843e44e918067a6943132a4" category="section-title">Advanced Metricsの2つのパラメータ</block>
+  <block id="6efc5e8caa50fab32c231807d02a492b" category="paragraph">このデータコレクタは、NetApp ONTAP ストレージのFSXから次の高度な指標を収集します。</block>
+  <block id="7e30bf5c3bd5c005d855f2f6816576b2" category="list-text">FPolicy の</block>
+  <block id="1b5ad5217299ac08e7305ed9ae0fc329" category="list-text">NFSv3</block>
+  <block id="db31b8e47d6e93240aa15cb08543d7d8" category="list-text">NFSv3：ノード</block>
+  <block id="045b07c077b39ac849fd24abe6aecc82" category="list-text">NFSv4</block>
+  <block id="0694297a7c3a0df4c2a4b8f121752190" category="list-text">nfsv4_1</block>
+  <block id="a5eaa78bc9c57ccd6d1f4ad5bb793922" category="list-text">nfsv4_1：ノード</block>
+  <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">NFSv4：ノード</block>
+  <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">policy_groupを開きます</block>
+  <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">Workload _volume</block>
 </blocks>
