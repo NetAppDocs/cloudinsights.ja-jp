@@ -15,7 +15,7 @@ Cloud Secure では、データコレクタを使用して、デバイスから�
 
 == Cloud Volumes ONTAP ストレージ構成
 
-Cloud Secure エージェントをホストするシングルノード / HA AWS インスタンスを設定するには、 OnCommand Cloud Manager のドキュメントを参照してください。https://docs.netapp.com/us-en/occm/index.html[]
+Cloud Secure エージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
 設定が完了したら、次の手順に従って SVM をセットアップします。https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
