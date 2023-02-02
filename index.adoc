@@ -10,32 +10,34 @@ summary: Cloud Insights のドキュメントポータルへようこそ。
 [role="lead"]
 NetApp Cloud Insights は、インフラ全体を可視化できるクラウドインフラ監視ツールです。Cloud Insights を使用すると、パブリッククラウドやプライベートデータセンターなど、すべてのリソースの監視、トラブルシューティング、最適化を行うことができます。
 
-Cloud Insights は、次のようなメリットを
-
-* * 平均解決時間を最大 90% 短縮 *
-+
-数日間ログ検索を停止し、インフラの手動関連付けに失敗する：ネットアップの動的なトポロジと相関分析を使用して、問題領域をただちに特定します。
-
-* * クラウドインフラストラクチャのコストを平均 33% 削減 *
-+
-放置された未使用のリソースや適切なサイズのワークロードを最適化されたパフォーマンス階層とコスト階層に特定することで、非効率性を排除します。
-
-* * クラウドの問題の 80% がエンドユーザーに影響を与えないようにします *
-+
-高度な分析と機械学習を使用して、重大な停止に発展する前に問題を特定することで、膨大な量のデータを検索し、関連するデータを見つけることができます。
 
 
+== Cloud Insights でできること
 
+Cloud Insights は、ハイブリッドマルチクラウドの監視機能を提供し、インフラとワークロードの完全なスタックの監視を可能にします。
+
+* Kubernetesを含む、異機種混在インフラとワークロード向けのデータコレクタ
+* オープンなTelegrafコレクターとオープンAPIにより、統合が容易になります
+* 包括的なアラートと通知
+* インテリジェントなインサイトを得るための機械学習
+* リソース利用率を最適化
+* 高度なフィルタを備えた組み込みまたはカスタマイズ可能なダッシュボードにより、回答 の質問に対する表示ノイズを最小限に抑えることができます
+* ONTAP ストレージの運用状態を検出できます 
+* 最も重要なビジネス資産であるランサムウェア攻撃やデータ破壊攻撃からデータを保護
+
+
+'''
 
 
 == はじめに
 
-* 新規のお客様： link:task_cloud_insights_onboarding_1.html["オンボーディング"]
-* サインアップしました。どうすればよいですか？link:task_getting_started_with_cloud_insights.html["データの取得"]
+* どうすればよいですか link:task_cloud_insights_onboarding_1.html["*開始する*"] Cloud Insights を使用する場合は、
+* サインアップしています。では、どうすればよいですか？link:task_getting_started_with_cloud_insights.html["データの取得"]
 link:concept_user_roles.html["ユーザを設定する"]
-* Cloud Insights を最大限に活用するにはどうすればよいですか？link:task_defining_annotations.html["アセットの準備：アノテーション"]
+* 更新が次の手順link:task_defining_annotations.html["アセットの準備：アノテーション"]
 link:concept_querying_assets.html["目的のアセットの検索：クエリ"]
 link:concept_dashboards_overview.html["必要なデータの表示：ダッシュボード"]
 link:https:task_create_monitor.html["監視とアラート"]
-* Cloud Insights を試したことがありますが、準備ができました link:concept_subscribing_to_cloud_insights.html["* 予約購読 *"]。
+link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["データを保護する"]
+* これはすばらしい原料である! 準備ができました link:concept_subscribing_to_cloud_insights.html["* 予約購読 *"]。
 
