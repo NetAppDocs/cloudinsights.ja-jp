@@ -7628,7 +7628,6 @@
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">機能を有効にする方法</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">新しい攻撃ポリシーを作成するか、既存の攻撃ポリシーを編集します。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">攻撃ポリシーを監視する SVM を選択します。</block>
-  <block id="d08b030c0ac309193f01c8251798645c" category="list-text">[ ユーザーアクセスの制限 ] で、適用する制限のモードを選択します。</block>
   <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">シミュレートされたスクリプト</block>
   <block id="40184bc9041969d58ad379b9b3e319cd" category="section-title">ユーザアクセスを手動で制限および管理します</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">機能を無効にする方法</block>
@@ -8279,7 +8278,6 @@
   <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor データコレクタ</block>
   <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">NetApp Config Advisor データコレクタ</block>
   <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">このデータコレクタは、ONTAP を実行するストレージシステムから設定データを取得し、読み取り専用呼び出しを使用して接続されたスイッチを取得します。また、このデータコレクタは、ONTAP クラスタ構成のスタック全体に対して設定の検証と健全性のチェックを実行し、ケーブル接続、設定、耐障害性、可用性、セキュリティの問題を特定します。</block>
-  <block id="6db4c00428e1d05aeb71deccf277b6e0" category="admonition">Config Advisor は_Preview_featureとみなされるため、変更される可能性があります。プレビュー中に、MUコストは発生しません。</block>
   <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights は、ONTAP から設定データを取得し、Config Advisor データコレクタを使用してスイッチを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">configadvisorメトリックタグを示すドロップダウン</block>
   <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">また、Config Advisor 指標は、ダッシュボードおよび_NetAppONTAP.configadviser_tagを使用したその他のクエリで使用できます。<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
@@ -10804,4 +10802,6 @@
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">Cloud Insights にログインします。</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">.csvへのエクスポートは、ダッシュボードテーブルウィジェットの「3つのドット」メニューや、ほとんどのランディングページのテーブルでも実行できます。</block>
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">エクスポートされたデータには、現在表示されているフィルタ、列、および列名が反映されます。</block>
+  <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*このページ*</block>
+  <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">このページはスタブです。最新のUnisphereマニュアルについては、を参照してください <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
 </blocks>

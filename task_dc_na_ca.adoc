@@ -12,7 +12,7 @@ summary: NetApp Config Advisor データコレクタ
 このデータコレクタは、ONTAP を実行するストレージシステムから設定データを取得し、読み取り専用呼び出しを使用して接続されたスイッチを取得します。また、このデータコレクタは、ONTAP クラスタ構成のスタック全体に対して設定の検証と健全性のチェックを実行し、ケーブル接続、設定、耐障害性、可用性、セキュリティの問題を特定します。
 
 
-NOTE: Config Advisor は_Preview_featureとみなされるため、変更される可能性があります。プレビュー中に、MUコストは発生しません。
+NOTE: このデータコレクタはです link:task_getting_started_with_cloud_insights.html#useful-definitions["非推奨"]。
 
 
 
