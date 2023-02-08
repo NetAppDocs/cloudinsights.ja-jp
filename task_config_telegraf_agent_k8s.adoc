@@ -436,7 +436,10 @@ PEM ファイルは、フィンガープリントが次のようになってい�
 
 == オペレータのチューニング
 
-NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。設定可能な変数については、次の表を参照してください。
+NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。調整可能な変数の説明とリストについては、インストールパッケージに含まれているREADMEファイルを参照してください。オペレータのインストールが完了したら、次のコマンドを使用してREADMEを参照します。
+
+ kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
+/////-start Tuningセクションでは、カスタムリソースの特定の変数を微調整することで、NetApp Kubernetes Monitoring Operatorを調整して最適なパフォーマンスを実現できます。設定可能な変数については、次の表を参照してください。
 
 これらの値を変更するには、次のコマンドを使用してエージェントCRを編集します（ネームスペースには<namespace> を置き換えます）。
 
@@ -542,6 +545,8 @@ CR仕様は次の形式に従います。
 
 | CL_CMD_PLACEHOLDER | エージェント | はい。 | さまざまなリソースのダウンロードに使用するcurlコマンド。例）「curl」または「curl -k」 
 |===
+/////-チューニングセクション
+
 
 
 == トラブルシューティング
