@@ -171,26 +171,31 @@ password: <password from docker secret step above>
  docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
 次のコマンドを使用して、_NetApp-Monitoring_<version>フィールドを確認します。
 
- kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
+ kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
 社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。
 
 オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <<before-installing-the-netapp-kubernetes-monitoring-operator,前提条件>> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。
 
 ....
-docker.io/telegraf
-gcr.io/kubebuilder/kube-rbac-proxy
-k8s.gcr.io/kube-state-metrics/kube-state-metrics
+docker pull docker.<cluster>.cloudinsights.netapp.com/telegraf:<telegraf version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kube-rbac-proxy:<kube-rbac-proxy version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kube-state-metrics:<kube-state-metrics version>
 ....
 FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。
 
 ....
-docker.io/fluent-bit
-docker.io/kubernetes-event-exporter
+docker pull docker.<cluster>.cloudinsights.netapp.com/fluent-bit:<fluent-bit version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kubernetes-event-exporter:<kubernetes-event-exporter version>
 ....
-エージェント CR を編集して新しい Docker repo の場所を反映し、自動アップグレードを無効にします（有効な場合）。
+Monitoring operator環境を編集し、新しいDocker repo場所を使用するようにすべてのイメージ参照を変更します。
+
+....
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
+....
+エージェントCRを編集して、新しいDocker repoの場所を反映します。
 
  kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
- enableAutoUpgrade: false
 ....
 docker-repo: <docker repo of the enterprise/corp docker repo>
 dockerRepoSecret: <optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace>
