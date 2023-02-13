@@ -10752,7 +10752,6 @@
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">[アプリケーションの追加]ダイアログボックスが表示されます。</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Windows * Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Linux* Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
-  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* WindowsおよびLinux：*</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">* AUのアンインストール後：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Cloud Insights で、[*Admin]&gt;[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。</block>
 </blocks>
