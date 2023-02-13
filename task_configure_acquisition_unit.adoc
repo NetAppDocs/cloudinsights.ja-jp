@@ -153,13 +153,19 @@ Cloud Secure を使用している環境では、設定済みのエンドポイ�
 
 Acquisition Unit ソフトウェアをアンインストールするには、次の手順を実行します。
 
+'''
 * Windows ： *
+
+Windows * Acquisition Unitをアンインストールする場合は、次の手順を実行します。
 
 . Acquisition Unit のサーバー /VM で、 Control Panel を開いて、「プログラムのアンインストール」を選択します。Cloud Insights Acquisition Unit プログラムを選択して削除します。
 . [ アンインストール ] をクリックし、画面の指示に従います。
 
 
+'''
 * Linux ： *
+
+Linux* Acquisition Unitをアンインストールする場合は、次の手順を実行します。
 
 . Acquisition Unit サーバ / VM で、次のコマンドを実行します。
 +
@@ -169,14 +175,18 @@ Acquisition Unit ソフトウェアをアンインストールするには、次
  sudo cloudinsights-uninstall.sh --help
 
 
-* 両方： *
+'''
+* WindowsおよびLinux：*
 
-. AU ソフトウェアをアンインストールした後、 * Admin > Data Collectors * に移動し、 * Acquisition Unit * タブを選択します。
+* AUのアンインストール後：
+
+. Cloud Insights で、[*Admin]>[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。
 . アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。
 
 
 注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。
 
+'''
 
 
 == Acquisition Unit の再インストール

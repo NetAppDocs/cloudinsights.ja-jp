@@ -842,8 +842,6 @@
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">環境で実行されている特定のアプリケーションに関連付けられているデータを追跡するには、 Cloud Insights でアプリケーションを定義します。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">アプリケーションをビジネスエンティティに関連付ける場合は、アプリケーションを定義する前にビジネスエンティティを作成する必要があります。</block>
   <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">Cloud Insights を使用すると、アプリケーションに関連付けられているアセットのデータを追跡して、使用状況やコストレポートなどの情報を確認できます。</block>
-  <block id="6d9d461026a19a3d065af99db5765921" category="paragraph">。Cloud Insights メニューで、 * Manage &gt; Applications * の順にクリックします。</block>
-  <block id="0062c1fbde704d862293af74f9c341ee" category="paragraph">+ ［ アプリケーションの追加 ］ ダイアログボックスが表示されます。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">アプリケーションの一意の名前を入力します。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">アプリケーションの優先度を選択します。</block>
   <block id="9bf2dd1afa4d073358de477920a2956b" category="section-title">アセットへのアプリケーションの割り当て</block>
@@ -1112,8 +1110,6 @@
   <block id="abf0b3ef23b5557422e33977a6ac3fbf" category="paragraph">* Linux ： *</block>
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">Acquisition Unit サーバ / VM で、次のコマンドを実行します。</block>
   <block id="fcee21cb77c380c25d5b88c1b64869b8" category="list-text">アンインストールのヘルプについては、次のコマンドを実行します。</block>
-  <block id="ec62359e3a6ba69aa52f3e51f45e7418" category="paragraph">* 両方： *</block>
-  <block id="0de5666c48f0424cee331c8922fd923a" category="list-text">AU ソフトウェアをアンインストールした後、 * Admin &gt; Data Collectors * に移動し、 * Acquisition Unit * タブを選択します。</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">Acquisition Unit の再インストール</block>
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">Acquisition Unit を同じサーバ / VM に再インストールするには、次の手順を実行する必要があります。</block>
@@ -10752,4 +10748,11 @@
   <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">Monitoring operator環境を編集し、新しいDocker repo場所を使用するようにすべてのイメージ参照を変更します。</block>
   <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">エージェントCRを編集して、新しいDocker repoの場所を反映します。</block>
   <block id="9de2afa9a42c7e74a8b83bbef4f14c20" category="list-text">Telegraf :1.25.0</block>
+  <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">Cloud Insights メニューで、 * Manage &gt; Applications * の順にクリックします。</block>
+  <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">[アプリケーションの追加]ダイアログボックスが表示されます。</block>
+  <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Windows * Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
+  <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Linux* Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* WindowsおよびLinux：*</block>
+  <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">* AUのアンインストール後：</block>
+  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Cloud Insights で、[*Admin]&gt;[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。</block>
 </blocks>
