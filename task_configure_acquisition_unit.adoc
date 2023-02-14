@@ -176,7 +176,7 @@ Linux* Acquisition Unitをアンインストールする場合は、次の手順
 
 
 '''
-ec62359e3a6ba69aa52f3e51f45e7418
+* WindowsおよびLinux：*
 
 * AUのアンインストール後：
 

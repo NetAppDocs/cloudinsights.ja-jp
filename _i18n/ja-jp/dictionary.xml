@@ -5365,7 +5365,6 @@
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。</block>
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">モニタリングネームスペースが Telegraf 専用に使用されている場合：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：</block>
-  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">既存の構成をバックアップします。</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">エージェントの設定で問題が発生した場合の対処方法を次に示します。</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">すでに Cloud Insights を使用してエージェントをインストールしました</block>
   <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。</block>
@@ -10754,4 +10753,5 @@
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Linux* Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">* AUのアンインストール後：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Cloud Insights で、[*Admin]&gt;[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* WindowsおよびLinux：*</block>
 </blocks>
