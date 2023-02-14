@@ -62,7 +62,7 @@ API キーを配置した状態で、 Reporting データベースの直接ク�
 
 すべての呼び出しの URL は、 https://<Cloud Insights URL>/rest/v1/dwh_management/odat_ です。
 
-* Get/{schema}/** - Reporting Database からデータを取得します。少なくとも _Guest_role が必要です。
+* get/{schema}/**-レポートデータベースからデータを取得します。
 
 
 形式： \\https://<Cloud Insights URL>/rest/v1/dw-management/odata /<schema_name>/<query>_

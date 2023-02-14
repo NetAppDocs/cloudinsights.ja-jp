@@ -10754,4 +10754,5 @@
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">* AUのアンインストール後：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Cloud Insights で、[*Admin]&gt;[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* WindowsおよびLinux：*</block>
+  <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">get/{schema}/**-レポートデータベースからデータを取得します。</block>
 </blocks>
