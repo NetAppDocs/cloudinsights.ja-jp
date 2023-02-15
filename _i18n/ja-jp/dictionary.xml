@@ -10753,7 +10753,6 @@
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* WindowsおよびLinux：*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">get/{schema}/**-レポートデータベースからデータを取得します。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます</block>
-  <block id="190dd3a6d5f6ca42267f12b57190351c" category="doc">SVMイベントレートチェッカー（サイジングガイド）</block>
-  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">エージェントは最大50のデータコレクタをサポートできます。</block>
-  <block id="a2d414ab492937f815ce3679fbf45352" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。イベントレートチェッカーは、エージェントのニーズを計画するためのサイジングガイドとして使用します。</block>
+  <block id="4157783a6d651918a4d418c15ddff12f" category="doc">SVM イベントレートチェッカー</block>
+  <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。</block>
 </blocks>
