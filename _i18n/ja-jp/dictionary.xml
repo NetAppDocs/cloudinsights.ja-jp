@@ -118,8 +118,6 @@
   <block id="231cf4c70d866b616c21baddaeed0696" category="section-title">トラブルシューティング</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="inline-link-macro">サポート</block>
   <block id="28362762be9926ed2f769fa58e5451bf" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページ</block>
-  <block id="b6f0cd15b3ce5be3945328a01a08cb66" category="summary">ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます</block>
-  <block id="4157783a6d651918a4d418c15ddff12f" category="doc">SVM イベントレートチェッカー</block>
   <block id="3b31c3fb3c507b79d3f86f2b1e3392f5" category="paragraph">要件</block>
   <block id="70087224b93e8179deda7438fae8e843" category="list-text">クラスタ IP</block>
   <block id="baf16fe3173b840f1197987b16b3a8fc" category="list-text">クラスタ管理者のユーザ名とパスワード</block>
@@ -8427,7 +8425,6 @@
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">ONTAP システムでFlexVol、ノード、およびSVMの変更や削除が検出されたときにアラートを受け取るようにCloud Insights を設定できるようになりました。</block>
   <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">Acquisition Unitサーバサービスの開始時に権限が拒否されました</block>
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">AUをSELinuxにインストールしている場合は、SEを_permissive_modeに設定する必要があります。Enforcing_modeはサポートされていませんSELinuxをPermissiveモードに設定したら、AUサービスを再起動します。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
-  <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。エージェントは最大50のデータコレクタをサポートできます。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）次の表を一般的なサイジングガイドとして使用</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">例9</block>
@@ -10755,4 +10752,8 @@
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Cloud Insights で、[*Admin]&gt;[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* WindowsおよびLinux：*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">get/{schema}/**-レポートデータベースからデータを取得します。</block>
+  <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます</block>
+  <block id="190dd3a6d5f6ca42267f12b57190351c" category="doc">SVMイベントレートチェッカー（サイジングガイド）</block>
+  <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">イベントレートチェッカーは、 ONTAP SVM データコレクタをインストールする前に、 SVM での NFS / SMB の組み合わせイベントレートを確認するために使用します。これにより、エージェントマシンで監視可能な SVM 1 の数が表示されます。イベントレートチェッカーは、セキュリティ環境の計画に役立つサイジングガイドとして使用します。</block>
+  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">エージェントは最大50のデータコレクタをサポートできます。</block>
 </blocks>
