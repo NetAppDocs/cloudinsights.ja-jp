@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: cs_alert_data.html 
 keywords: alert, attack, ransomware, activity, security, abnormal 
-summary: 'Cloud Secure は、異常なユーザアクティビティまたは潜在的な攻撃が発生した場合にアラートを作成します。[ アラート ] ページには、これらのアクティビティが一覧表示され、すばやく簡単に調査できます。' 
+summary: 'ワークロードセキュリティは、ユーザのアクティビティが異常な場合や攻撃の可能性がある場合にアラートを生成します。[ アラート ] ページには、これらのアクティビティが一覧表示され、すばやく簡単に調査できます。' 
 ---
 = アラート
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure アラートページには、最近の攻撃や警告のタイムラインが表示され、各問題の詳細を表示できます。
+[ワークロードセキュリティアラート]ページには、最近の攻撃や警告のタイムラインが表示され、各問題 の詳細を表示できます。
 
 image:CloudSecureAlertsListPage.png["アラートのリスト"]
 
@@ -76,7 +76,7 @@ image:CloudSecureChangeAlertStatus.png["アラートステータスを変更し�
 
 === サマリセクション：
 
-* 攻撃の種類（ランサムウェア、被害者）とアラート ID （ Cloud Secure が割り当て）
+* 攻撃の種類（ランサムウェア、被害者）とアラートID（ワークロードセキュリティが割り当て）
 * 攻撃が検出された日時
 * 実行された処理（自動スナップショットの作成など）。Snapshot の時刻は概要セクションのすぐ下に表示されます）
 * ステータス（新規、進行中など）
@@ -105,7 +105,7 @@ image:CloudSecureChangeAlertStatus.png["アラートステータスを変更し�
 
 == Snapshot_Actionを実行します
 
-Cloud Secure は、悪意のあるアクティビティが検出されたときにスナップショットを自動的に取得することでデータを保護し、データを安全にバックアップします。
+ワークロードセキュリティは、悪意のあるアクティビティが検出されたときにスナップショットを自動的に取得することでデータを保護し、データを安全にバックアップします。
 
 を定義できます link:cs_automated_response_policies.html["自動応答ポリシー"] ランサムウェア攻撃やその他の異常なユーザアクティビティが検出されるとスナップショットが作成されます。アラートページから手動で Snapshot を作成することもできます。
 
@@ -123,7 +123,7 @@ Cloud Secure は、悪意のあるアクティビティが検出されたとき�
 
 == 保持ポリシー
 
-アラートと警告は 13 カ月間保持されます。13 カ月を経過したアラートと警告は削除されます。Cloud Secure 環境を削除すると、その環境に関連付けられているすべてのデータも削除されます。
+アラートと警告は 13 カ月間保持されます。13 カ月を経過したアラートと警告は削除されます。ワークロードセキュリティ環境を削除すると、その環境に関連付けられているすべてのデータも削除されます。
 
 
 
@@ -133,20 +133,20 @@ Cloud Secure は、悪意のあるアクティビティが検出されたとき�
 | 問題 | 次の操作を実行します 
 
 
-| Cloud Secure （ CS ）が作成したスナップショットの場合、 CS スナップショットのパージ / アーカイブ期間はありますか？ | いいえCS スナップショットのパージ / アーカイブ期間は設定されていません。CS スナップショットのパージポリシーを定義する必要があります。を参照してください link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["ONTAP のドキュメント"] ポリシーの設定方法については、を参照してください。 
+| ワークロードセキュリティ（CS）によって作成されたスナップショットの場合、CSスナップショットのパージ/アーカイブ期間はありますか？ | いいえCS スナップショットのパージ / アーカイブ期間は設定されていません。CS スナップショットのパージポリシーを定義する必要があります。を参照してください link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["ONTAP のドキュメント"] ポリシーの設定方法については、を参照してください。 
 
 
-| ONTAP では、 1 日に 1 時間ごとに Snapshot が作成される場合があります。Cloud Secure （ CS ）スナップショットは、そのスナップショットに影響を与えますか。CS スナップショットは時間単位のスナップショットを作成しますか？デフォルトの時間単位の Snapshot は停止しますか？ | Cloud Secure Snapshot は 1 時間ごとの Snapshot には影響しません。CS スナップショットでは時間単位のスナップショット領域は使用されず、以前と同様に続行されます。デフォルトの時間単位 Snapshot は停止しません。 
+| ONTAP では、 1 日に 1 時間ごとに Snapshot が作成される場合があります。ワークロードセキュリティ（CS）スナップショットは、そのスナップショットに影響を与えますか？CS スナップショットは時間単位のスナップショットを作成しますか？デフォルトの時間単位の Snapshot は停止しますか？ | ワークロードセキュリティスナップショットは、1時間ごとのスナップショットには影響しません。CS スナップショットでは時間単位のスナップショット領域は使用されず、以前と同様に続行されます。デフォルトの時間単位 Snapshot は停止しません。 
 
 
-| ONTAP で Snapshot 数が上限に達した場合、どうなるかを確認します。 | 最大 Snapshot 数に達すると、以降の Snapshot 作成が失敗し、 Snapshot がフルであることを示すエラーメッセージが Cloud Secure に表示されます。最も古い Snapshot を削除するには、 Snapshot ポリシーを定義する必要があります。定義しないと、 Snapshot は作成されません。ONTAP 9.3 以前では、ボリュームに格納できる Snapshot コピーは最大 255 個です。ONTAP 9.4 以降では、ボリュームに格納できる Snapshot コピーは最大 1023 個です。の詳細については、 ONTAP のマニュアルを参照してください link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fvolume__snapshot__autodelete__modify.html["Snapshot 削除ポリシーを設定しています"]。 
+| ONTAP で Snapshot 数が上限に達した場合、どうなるかを確認します。 | 最大Snapshot数に達すると、以降のSnapshot作成が失敗し、Snapshotがフルであることを示すエラーメッセージがワークロードセキュリティに表示されます。最も古い Snapshot を削除するには、 Snapshot ポリシーを定義する必要があります。定義しないと、 Snapshot は作成されません。ONTAP 9.3 以前では、ボリュームに格納できる Snapshot コピーは最大 255 個です。ONTAP 9.4 以降では、ボリュームに格納できる Snapshot コピーは最大 1023 個です。の詳細については、 ONTAP のマニュアルを参照してください link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fvolume__snapshot__autodelete__modify.html["Snapshot 削除ポリシーを設定しています"]。 
 
 
-| Cloud Secure は Snapshot をまったく作成できません。 | スナップショットの作成に使用されている役割に、 https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper 権限が割り当てられていることを確認します。Snapshot を作成するための適切なアクセス権を持つ sure _csrole_is create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all が作成されていることを確認します 
+| ワークロードセキュリティでSnapshotをまったく作成できません。 | スナップショットの作成に使用されている役割に、 https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper 権限が割り当てられていることを確認します。Snapshot を作成するための適切なアクセス権を持つ sure _csrole_is create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all が作成されていることを確認します 
 
 
-| Cloud Secure から削除されたあとに再び追加された SVM では、 Snapshot で古いアラートが失敗します。SVM が再び追加されたあとに発生する新しいアラートについては、 Snapshot が作成されます。 | これはまれなシナリオです。この問題が発生した場合は、 ONTAP にログインし、古いアラートに対して手動で Snapshot を作成してください。 
+| ワークロードセキュリティから削除されたSVMでSnapshotを再度追加した場合、古いアラートに対してSnapshotが失敗します。SVM が再び追加されたあとに発生する新しいアラートについては、 Snapshot が作成されます。 | これはまれなシナリオです。この問題が発生した場合は、 ONTAP にログインし、古いアラートに対して手動で Snapshot を作成してください。 
 
 
-| _Alert Details_page では、 _Take Snapshot_Button の下に「 Last Attempt failed 」エラーが表示されます。エラーにカーソルを合わせると、「 invoke API command has timed out for the data collector with id 」というメッセージが表示されます。 | これは、 SVM の LIF が ONTAP で _DISABLE_STATE になっている場合に、 SVM 管理 IP を介して Cloud Secure にデータコレクタが追加されたときに発生することがあります。ONTAP で特定の LIF を有効にし、 trigger_take Cloud Secure で手動でスナップショットを作成します。Snapshot 処理が成功します。 
+| _Alert Details_page では、 _Take Snapshot_Button の下に「 Last Attempt failed 」エラーが表示されます。エラーにカーソルを合わせると、「 invoke API command has timed out for the data collector with id 」というメッセージが表示されます。 | これは、SVMのLIFがONTAP で_disabled_stateである場合に、SVM管理IPを使用してワークロードセキュリティにデータコレクタが追加されたときに発生することがあります。ONTAP で特定のLIFを有効にし、ワークロードセキュリティからtrigger _Take Snapshotを手動で作成します。Snapshot 処理が成功します。 
 |===

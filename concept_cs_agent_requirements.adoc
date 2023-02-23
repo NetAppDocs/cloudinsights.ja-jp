@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_agent_requirements.html 
 summary: エージェントとして使用するサーバまたは VM が、最小要件を満たしている必要があります 
-keywords: agent, Linux, requirements, docker, browsers, permissions, Network 
+keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
 ---
-= エージェントの要件
+= ワークロードセキュリティエージェントの要件
 :allow-uri-read: 
 
 
@@ -31,9 +31,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 使用可能なディスクスペース | ディスクスペースは、次のように割り当てます。/opt/netapp 35GB（最小）/optがNASストレージからマウントされたフォルダである場合、ローカルユーザがこのフォルダにアクセスできることを確認します。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください link:task_cs_add_agent.html#troubleshooting-agent-errors["トラブルシューティング"] 詳細については、を参照してください。 
 
 
-| ネットワーク | 100Mbps ～ 1Gbps のイーサネット接続、静的 IP アドレス、すべてのデバイスへの IP 接続、および Cloud Secure インスタンスへの必要なポート（ 80 または 443 ） 
+| ネットワーク | 100 Mbps~1 Gbpsイーサネット接続、静的IPアドレス、すべてのデバイスへのIP接続、およびワークロードセキュリティインスタンスへの必要なポート（80または443） 
 |===
-注： Cloud Secure エージェントは、 Cloud Insights Acquisition Unit や Agent と同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
+ワークロードセキュリティエージェントは、Cloud Insights Acquisition UnitやAgentと同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
 
 |===
 
@@ -51,7 +51,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 == Cloud Network Access Rules の略
 
-US ベース * Cloud Secure 環境の場合：
+USベースの*ワークロード・セキュリティー環境の場合：
 
 [cols="5*"]
 |===
@@ -63,7 +63,7 @@ US ベース * Cloud Secure 環境の場合：
 
 | TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
 |===
-欧州 * ベースの Cloud Secure 環境の場合：
+欧州*ベースのワークロード・セキュリティー環境の場合：
 
 [cols="5*"]
 |===
@@ -75,7 +75,7 @@ US ベース * Cloud Secure 環境の場合：
 
 | TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
 |===
-APAC ベース * の Cloud Secure 環境の場合：
+APACベースの*ワークロード・セキュリティー環境の場合：
 
 [cols="5*"]
 |===
@@ -107,7 +107,7 @@ APAC ベース * の Cloud Secure 環境の場合：
 | TCP | 35000~55000 | SVM データ LIF の IP アドレス | インバウンド / アウトバウンド | FPolicy イベントのための ONTAP との通信 
 
 
-| TCP | 7. | SVM データ LIF の IP アドレス | 双方向 | ONTAP と Cloud Secure 間の双方向。エージェントが SVM LIF に ping を送信します。 
+| TCP | 7. | SVM データ LIF の IP アドレス | 双方向 | ONTAP とワークロードセキュリティの双方向。エージェントが SVM LIF に ping を送信します。 
 |===
 
 

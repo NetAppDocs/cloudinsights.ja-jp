@@ -1,16 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_getting_started.html 
-keywords: collectors, data collectors, configure, introduction, browsers 
-summary: 簡単な手順で Cloud Secure を使い始めることができます 
+keywords: collectors, data collectors, configure, introduction, browsers , Cloud Secure 
+summary: ワークロードセキュリティを使用する簡単な手順をいくつか紹介します 
 ---
-= Cloud Secure の使用を開始する
+= ワークロードセキュリティの導入
 :allow-uri-read: 
 
 
-Cloud Secure を使用してユーザアクティビティを監視する前に、設定タスクを完了しておく必要があります。
+[role="lead"]
+Workload Securityを使用してユーザアクティビティを監視する前に、設定タスクを完了する必要があります。
 
-Cloud Secure システムでは、エージェントを使用してストレージシステムからアクセスデータとユーザ情報をディレクトリサービスサーバから収集します。
+ワークロードセキュリティシステムでは、エージェントを使用して、ストレージシステムからアクセスデータとディレクトリサービスサーバからのユーザ情報を収集します。
 
 データの収集を開始する前に、次の項目を設定する必要があります。
 
@@ -43,4 +44,4 @@ link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["* ビデオ 
 
 | トラブルシューティング | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["* ビデオ * ：トラブルシューティング"] 
 |===
-Cloud Secure は、他のツールとも統合できます。例： link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["このガイドを参照してください"] Splunkと統合し、
+ワークロードセキュリティは、他のツールとも統合できます。例： link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["このガイドを参照してください"] Splunkと統合し、

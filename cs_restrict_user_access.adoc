@@ -2,20 +2,20 @@
 sidebar: sidebar 
 permalink: cs_restrict_user_access.html 
 keywords: alert, snapshot,  attack 
-summary: Cloud Secure を使用すると、破壊の疑いがある場合にユーザアクセスを制限できます 
+summary: ワークロードセキュリティを使用すると、破壊の疑いがある場合にユーザーアクセスを制限できます 
 ---
 = ユーザアクセスをブロックしています
 :allow-uri-read: 
 
 
 [role="lead"]
-攻撃が検出されると、Cloud Secure はファイルシステムへのユーザアクセスをブロックすることで攻撃を停止できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。
+攻撃が検出されると、ワークロードセキュリティは、ファイルシステムへのユーザーアクセスをブロックすることで攻撃を停止できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。
 
 ユーザアクセスをブロックする場合は、ブロック期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。アクセスブロックは、SMBプロトコルとNFSプロトコルの両方でサポートされています。
 
-SMBおよびホストマシンのIPアドレスに対してユーザが直接ブロックされているため、NFSに対して攻撃がブロックされます。これらのマシンの IP アドレスは、 Cloud Secure で監視されているいずれかの Storage Virtual Machine （ SVM ）へのアクセスがブロックされます。
+SMBおよびホストマシンのIPアドレスに対してユーザが直接ブロックされているため、NFSに対して攻撃がブロックされます。これらのマシンのIPアドレスは、ワークロードセキュリティで監視されているいずれかのStorage Virtual Machine（SVM）へのアクセスがブロックされます。
 
-たとえば、Cloud Secure は10個のSVMを管理し、自動応答ポリシーはそのうち4つのSVMに対して設定されているとします。攻撃の原因が4つのSVMのいずれかである場合、10個のSVMすべてでユーザのアクセスがブロックされます。元の SVM では引き続き Snapshot が作成されます。
+たとえば、ワークロードセキュリティでは10個のSVMを管理し、自動応答ポリシーでは4つのSVMを設定するとします。攻撃の原因が4つのSVMのいずれかである場合、10個のSVMすべてでユーザのアクセスがブロックされます。元の SVM では引き続き Snapshot が作成されます。
 
 SMB用に設定されたSVMが4つあり、NFS用に設定されたSVMが残り2つのSVMがNFSとSMB両方に対して設定されている場合、4つのSVMのいずれかで攻撃が発生すると、すべてのSVMがブロックされます。
 
@@ -27,7 +27,7 @@ SMB用に設定されたSVMが4つあり、NFS用に設定されたSVMが残り2
 
 クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。
 
-ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってCloud Secure にユーザをブロックする権限を付与します。
+ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってワークロードセキュリティにユーザをブロックする権限を付与します。
 
 クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。
 
@@ -42,7 +42,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == 機能を有効にする方法
 
-* Cloud Secure で、[*Admin]>[Automated Response Policies]>[Response Policy Settings]>[Block User Access*]の順に選択します。
+* ワークロードセキュリティで、[管理者]>[自動応答ポリシー]>[応答ポリシーの設定]>[ブロックユーザーアクセス*]の順に選択します。
 * [Enable Block User Access]を[enable_enabled_]に設定します。
 
 
@@ -85,7 +85,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 この機能はいつでも無効にできます。システム内に制限のあるユーザがいる場合は、アクセスを先にリストアする必要があります。
 
-* Cloud Secure で、[*Admin]>[Automated Response Policies]>[Response Policy Settings]>[Block User Access*]の順に選択します
+* ワークロードセキュリティで、[管理者]>[自動応答ポリシー]>[応答ポリシーの設定]>[ブロックユーザーアクセス*]の順に選択します
 * 無効にするには、[ブロックユーザーアクセスを有効にする]をオフにします。
 
 
@@ -95,7 +95,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == NFSのIPを手動でリストア
 
-Cloud Secure トライアルの期限が切れた場合、またはエージェント / コレクタがダウンした場合に、 ONTAP から IP を手動でリストアするには、次の手順を実行します。
+ワークロードセキュリティトライアルの期限が切れた場合、またはエージェント/コレクタがダウンした場合に、ONTAP からIPを手動で復元するには、次の手順を実行します。
 
 . SVM のすべてのエクスポートポリシーをリストします。
 +
@@ -117,10 +117,10 @@ svm3        test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 4 entries were displayed.
 ....
-. 「cloudsecure_rule」をクライアント一致として持つSVMのすべてのポリシーのルールを削除するには、対応するRuleIndexを指定します。通常、Cloud Secure ルールは1になります。
+. 「cloudsecure_rule」をクライアント一致として持つSVMのすべてのポリシーのルールを削除するには、対応するRuleIndexを指定します。通常、ワークロードのセキュリティルールは1になります。
 +
  contrail-qa-fas8020::*> export-policy rule delete -vserver <svm name> -policyname * -ruleindex 1
-. Cloud Secure ルールが削除されていることを確認します（オプションの確認手順）。
+. ワークロードセキュリティルールが削除されていることを確認します（確認のためのオプションの手順）。
 +
 ....
 contrail-qa-fas8020::*> export-policy rule show -vserver <svm name>
@@ -140,12 +140,12 @@ svm2         test            3       cifs,    0.0.0.0/0             any
 
 == SMBのユーザを手動でリストア
 
-Cloud Secure トライアルの期限が切れた場合、またはエージェント/コレクタがダウンした場合に、ONTAP からユーザーを手動で復元するには、次の手順を実行します。
+ワークロードセキュリティトライアルの期限が切れた場合、またはエージェント/コレクタがダウンした場合に、ONTAP からユーザーを手動で復元するには、次の手順を実行します。
 
-Cloud Secure でブロックされているユーザのリストは、Usersリストページから取得できます。
+ワークロードセキュリティでブロックされたユーザーのリストは、ユーザーリストページから取得できます。
 
 . cluster_admin_credentialsを使用してONTAP クラスタ（ユーザのブロックを解除する場所）にログインします。（Amazon FSXの場合、FSXクレデンシャルを使用してログインします）。
-. 次のコマンドを実行して、すべてのSVMのCloud Secure for SMBでブロックされているすべてのユーザを表示します。
+. 次のコマンドを実行して、すべてのSVMのSMBワークロードセキュリティでブロックされているすべてのユーザを表示します。
 +
  vserver name-mapping show -direction win-unix -replacement " "
 +
@@ -182,7 +182,7 @@ Position Hostname         IP Address/Mask
 | 問題 | 試してみてください 
 
 
-| 一部のユーザーは制限されていませんが、攻撃があります。 | 1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data Collector と Agent が停止している場合、 Cloud Secure はコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details > Access Limitation History for this User > Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。 
+| 一部のユーザーは制限されていませんが、攻撃があります。 | 1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data CollectorとAgentが停止している場合、ワークロードセキュリティはコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details > Access Limitation History for this User > Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。 
 
 
 | [Restrict Access] を手動でクリックすると、「このユーザの IP アドレスはすでに制限されています」というメッセージが表示されます。 | 制限する IP はすでに別のユーザから制限されています。 

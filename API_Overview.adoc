@@ -113,7 +113,7 @@ Cloud Insights API はカテゴリベースであり、現在次のタイプが�
 
 これ以外のタイプや API は、時間の経過とともに使用できるようになる可能性があります。最新の API 情報は、で確認できます link:#api-documentation-swagger["API Swagger のドキュメント"]。
 
-ユーザがアクセスできる API タイプは、でも異なります link:concept_user_roles.html["ユーザロール"] 各 Cloud Insights 機能セット（ Monitoring 、 Cloud Secure 、 Reporting ）に含まれています。
+ユーザがアクセスできる API タイプは、でも異なります link:concept_user_roles.html["ユーザロール"] 各Cloud Insights 機能セット（監視、ワークロードセキュリティ、レポート）に含まれています。
 
 
 

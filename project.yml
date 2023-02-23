@@ -187,19 +187,19 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: スキーマテーブル
       url: "/reference_schemas.html"
-  - title: Cloud Secure
+  - title: ストレージワークロードのセキュリティ
     entries:
-    - title: Cloud Secure について
+    - title: ワークロードセキュリティについて
       url: "/cs_intro.html"
     - title: はじめに
       entries:
-      - title: Cloud Secure の使用を開始する
+      - title: ワークロードセキュリティの導入
         url: "/task_cs_getting_started.html"
-      - title: Cloud Secure エージェントの要件
+      - title: ワークロードセキュリティエージェントの要件
         url: "/concept_cs_agent_requirements.html"
-      - title: Cloud Secure エージェントの設定
+      - title: ワークロードセキュリティエージェントの設定
         url: "/task_cs_add_agent.html"
-      - title: Cloud Secure エージェントの削除
+      - title: ワークロードセキュリティエージェントの削除
         url: "/task_cs_delete_agent.html"
       - title: AD Directory Collector の設定
         url: "/task_config_user_dir_connect.html"
@@ -209,7 +209,7 @@ sidebar:
         url: "/task_add_collector_svm.html"
       - title: Cloud ONTAP データコレクタの設定
         url: "/task_config_cs_incloud.html"
-      - title: Cloud Secure ユーザー管理
+      - title: ワークロードセキュリティユーザー管理
         url: "/task_cs_user_management.html"
       - title: イベントレートチェッカー（エージェントサイジングガイド）
         url: "/concept_cs_event_rate_checker.html"
@@ -233,7 +233,7 @@ sidebar:
       url: "/concept_cs_attack_simulator.html"
     - title: 通知
       url: "/cs_notifications_email.html"
-    - title: Cloud Secure API の略
+    - title: ワークロードセキュリティAPI
       url: "/concept_cs_api.html"
   - title: Active IQ
     url: "/concept_activeiq.html"

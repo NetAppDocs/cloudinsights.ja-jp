@@ -25,6 +25,6 @@ image:AutomatedAttackPolicy.png["攻撃ポリシーを作成します"]
 
 自動応答ポリシーを変更または一時停止するには、ポリシーのドロップダウンメニューでオプションを選択します。
 
-Cloud Secure では、 Snapshot パージの設定に基づいて、 1 日に 1 回 Snapshot が自動的に削除されます。
+ワークロードセキュリティでは、Snapshotの削除設定に基づいて、Snapshotが1日に1回自動的に削除されます。
 
 image:CloudSecure_SnapshotPurgeSettings.png["スナップショットパージ設定"]

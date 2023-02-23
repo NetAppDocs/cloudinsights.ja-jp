@@ -33,7 +33,7 @@ WARNING: 非アクティブな Cloud Insights Basic Edition 環境が削除さ�
 NOTE: Cloud Insights Basic Edition で収集された機能 ' データ保存時間 ' オブジェクトまたはメトリックは ' 予告なく変更される場合があります
 
 * * Standard Edition * はサブスクリプション契約により提供され、 Basic Edition のすべての機能に加えて、その他の機能も提供されます。
-* * Premium Edition* では、ビジネスインテリジェンスとレポート、 Cloud Secure 監査と脅威検出などの追加の利点が提供されます。
+* * Premium Edition *には、Business Intelligence and Reporting、Workload Security Auditing、Threat Detectionなどの追加の利点があります。
 
 
 
@@ -82,10 +82,10 @@ Basic Edition 、 Standard Edition 、 Premium Edition の主な機能は次の�
 | シングルサインオン（ SSO ） | - | - | チェック（ &C ）； 
 
 
-| Cloud Secure ユーザデータアクセスの監査 | - | - | チェック（ &C ）； 
+| ワークロードセキュリティユーザデータアクセス監査 | - | - | チェック（ &C ）； 
 
 
-| Cloud Secure Insider Threat Detection with AI/ML 』を参照してください | - | - | チェック（ &C ）； 
+| AI/MLを使用したワークロードセキュリティ内部の脅威検出 | - | - | チェック（ &C ）； 
 
 
 | ビジネスインテリジェンスおよびレポート作成&AST;&ast; | - | - | チェック（ &C ）； 

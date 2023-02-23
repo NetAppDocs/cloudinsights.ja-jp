@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: Cloud Secure Active Directory ユーザディレクトリコレクタの設定 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: ワークロードセキュリティActive Directoryユーザーディレクトリコレクタの設定 
 ---
 = Active Directory （ AD ）ユーザディレクトリコレクタの設定
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure は、 Active Directory サーバからユーザ属性を収集するように設定できます。
+ワークロードセキュリティは、Active Directoryサーバからユーザ属性を収集するように設定できます。
 
 .作業を開始する前に
 * このタスクを実行するには、 Cloud Insights 管理者またはアカウント所有者である必要があります。
@@ -18,7 +18,7 @@ Cloud Secure は、 Active Directory サーバからユーザ属性を収集す�
 
 
 .ユーザーディレクトリコレクタの設定手順
-. Cloud Secure メニューで、 * Admin > Data Collectors > User Directory Collectors > + User Directory Collector* をクリックし、 * Active Directory * を選択します
+. [ワークロードセキュリティ]メニューで、[管理者]、[データコレクタ]、[ユーザーディレクトリコレクタ]、[+ユーザーディレクトリコレクタ]の順にクリックし、[* Active Directory*]を選択します
 +
 [Add User Directory] 画面が表示されます。
 
@@ -114,7 +114,7 @@ Active Directory でデフォルトの属性名が変更されている場合は
 
 LDAP ユーザ権限および属性定義は、次の手順で検証できます。
 
-* 次のコマンドを使用して、 Cloud Secure LDAP ユーザ権限を検証します。
+* 次のコマンドを使用して、ワークロードセキュリティのLDAPユーザ権限を検証します。
 +
 ldapsearch-o ldif-wrap=no-lll-x-b" DC=netapp 、 dc=com "-h 10.235.40.29-p 389-D\Administrator@netapp.com -W
 
@@ -145,7 +145,7 @@ image:cs_ADExample.png["AD 接続"]
 | ユーザディレクトリコネクタを追加すると、「エラー」状態になります。「 DN=DC=HQ,DC=domainname,DC=com に対応するオブジェクトをフォレスト名として提供できませんでした」というエラーが表示されます。 | 指定したフォレスト名が正しくありません。正しいフォレスト名を編集して入力します。 
 
 
-| ドメインユーザのオプションの属性は、 Cloud Secure User Profile ページに表示されません。 | これは、 CloudSecure で追加されたオプション属性の名前と Active Directory の実際の属性名が一致しないことが原因である可能性があります。正しいオプションの属性名を編集して入力します。 
+| ドメインユーザーのオプションの属性は、[ワークロードセキュリティユーザープロファイル]ページに表示されません。 | これは、 CloudSecure で追加されたオプション属性の名前と Active Directory の実際の属性名が一致しないことが原因である可能性があります。正しいオプションの属性名を編集して入力します。 
 
 
 | データコレクタでエラーが発生し、「 LDAP ユーザを取得できませんでした。失敗の理由：サーバに接続できません。接続が null です " | _Restart_Button をクリックして、コレクタを再起動します。 
@@ -178,7 +178,7 @@ image:cs_ADExample.png["AD 接続"]
 | 電話番号がユーザプロファイルページに入力されていません。 | これは、多くの場合、 Active Directory の属性マッピングの問題が原因です。1. Active Directory からユーザの情報を取得している特定の Active Directory コレクタを編集します。2. オプション属性の下に、 Active Directory 属性「 telephonenumber 」にマッピングされたフィールド名「 Telephone Number 」があることに注意してください。4. ここでは、前述の Active Directory エクスプローラツールを使用して、 Active Directory を参照し、正しい属性名を確認してください。3. Active Directory に、実際にユーザの電話番号を持つ「 telephonenumber 」という名前の属性があることを確認します。5. ここでは、 Active Directory で「 phonenumber 」に変更されたとします。6. CloudSecure User Directory コレクタを編集します。オプションの属性セクションで、「 telephonenumber 」を「 phonenumber 」に置き換えます。7. Active Directory コレクタを保存すると、コレクタが再起動してユーザの電話番号が取得され、ユーザプロファイルページにも同じ番号が表示されます。 
 
 
-| Active Directory （ AD ）サーバーで暗号化証明書（ SSL ）が有効になっている場合、 Cloud Secure ユーザーディレクトリコレクタは AD サーバーに接続できません。 | ユーザーディレクトリコレクタを設定する前に、 AD サーバーの暗号化を無効にします。ユーザの詳細情報が取得されてから 13 カ月間表示されます。ユーザーの詳細を取得した後に AD サーバーが切断された場合、新しく追加された AD 内のユーザーは取得されません。再度取得するには、ユーザディレクトリコレクタをADに接続する必要があります。 
+| Active Directory（AD）サーバで暗号化証明書（SSL）が有効になっている場合、Workload Security User Directory CollectorはADサーバに接続できません。 | ユーザーディレクトリコレクタを設定する前に、 AD サーバーの暗号化を無効にします。ユーザの詳細情報が取得されてから 13 カ月間表示されます。ユーザーの詳細を取得した後に AD サーバーが切断された場合、新しく追加された AD 内のユーザーは取得されません。再度取得するには、ユーザディレクトリコレクタをADに接続する必要があります。 
 
 
 | Active DirectoryのデータはCloudInsightsのセキュリティに存在します。CloudInsightsからすべてのユーザ情報を削除する必要がある。 | CloudInsights SecurityからActive Directoryユーザー情報のみを削除することはできません。ユーザを削除するには、テナント全体を削除する必要があります。 

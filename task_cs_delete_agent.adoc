@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_delete_agent.html 
-keywords: agent, Cloud Secure, delete agent 
-summary: Cloud Secure エージェントの削除 
+keywords: agent, Workload Security, delete agent, Cloud Secure 
+summary: ワークロードセキュリティエージェントを削除しています 
 ---
-= Cloud Secure エージェントの削除
+= ワークロードセキュリティエージェントの削除
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure エージェントを削除する場合は、そのエージェントに関連付けられているすべてのデータコレクタを先に削除する必要があります。
+ワークロードセキュリティエージェントを削除する場合は、そのエージェントに関連付けられているすべてのデータコレクタを先に削除する必要があります。
 
 
 
@@ -19,7 +19,7 @@ Cloud Secure エージェントを削除する場合は、そのエージェン�
 IMPORTANT: エージェントを削除すると、そのエージェントに関連付けられているすべてのデータコレクタが削除されます。別のエージェントでデータコレクタを設定する場合は、 Agent を削除する前に、 Data Collector 設定のバックアップを作成する必要があります。
 
 .作業を開始する前に
-. エージェントに関連付けられているすべてのデータコレクタが Cloud Secure ポータルから削除されていることを確認します。
+. ワークロードセキュリティポータルから、エージェントに関連付けられているすべてのデータコレクタが削除されていることを確認します。
 +
 注：関連するすべてのコレクタが停止状態にある場合は、この手順を無視してください。
 

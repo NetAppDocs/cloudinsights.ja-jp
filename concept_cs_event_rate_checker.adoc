@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_event_rate_checker.html 
 summary: ONTAP SVM DSC をインストールする前に、このスクリプトを実行して SVM のイベントレートを確認できます 
-keywords: event, checker, rate, sizing, size, guide, 
+keywords: event, checker, rate, sizing, cloud secure 
 ---
 = SVMイベントレートチェッカー（エージェントサイジングガイド）
 :allow-uri-read: 
@@ -47,8 +47,7 @@ NOTE: このスクリプトを実行するときは、イベント速度を確�
  “Svm svm_rate is generating 100 events/sec”.
 
 
-. 各 ONTAP SVM データコレクタを 1 つの SVM に関連付けることができます。つまり、各データコレクタは、 1 つの SVM が生成するイベント数を受け取ることができます。
-
+各 ONTAP SVM データコレクタを 1 つの SVM に関連付けることができます。つまり、各データコレクタは、 1 つの SVM が生成するイベント数を受け取ることができます。
 
 次の事項に注意してください。
 
@@ -144,10 +143,10 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| 質問：すでに Cloud Secure 用に設定されている SVM でこのスクリプトを実行する場合、その SVM で既存の fpolicy config を使用するか、一時的に FPolicy を設定してプロセスを実行しますか。 
+| 質問：ワークロードセキュリティがすでに設定されているSVMでこのスクリプトを実行する場合、そのスクリプトはSVMの既存のfpolicy configを使用するか、一時的に設定してプロセスを実行しますか。 
 
 
-| 回答： Cloud Secure 用にすでに設定されている SVM でも、イベントレートチェッカーを実行できます。影響はありません。 
+| 回答 ：ワークロードのセキュリティがすでに設定されているSVMでも、イベントレートチェッカーは正常に実行できます。影響はありません。 
 
 
 | 質問：スクリプトを実行できる SVM の数を増やすことはできますか。 
