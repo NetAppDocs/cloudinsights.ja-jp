@@ -7258,7 +7258,6 @@
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\ https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">REST API の例</block>
   <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">すべての呼び出しの URL は、 https://&lt;Cloud Insights URL&gt;/rest/v1/dwh_management/odat_ です。</block>
-  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">Get/{schema}/** - Reporting Database からデータを取得します。少なくとも _Guest_role が必要です。</block>
   <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">形式： \\https://&lt;Cloud Insights URL&gt;/rest/v1/dw-management/odata /&lt;schema_name&gt;/&lt;query&gt;_</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">例</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">結果</block>
@@ -10317,10 +10316,6 @@
   <block id="e82617a45c06fc64ba2c7a8022ad2c26" category="admonition">このドキュメントでは、「Cloud Insights 」と「Observability」という用語を同じ意味で使用することがあります。</block>
   <block id="27a7deb0ec1bdff43e3eb6bbcee65f55" category="paragraph">詳細については、ホバーツールのヒントを参照して</block>
   <block id="03aa38861ba70a29a2ebce320835a31b" category="paragraph">BlueXPの詳細については'BlueXPのWebサイトを参照してください</block>
-  <block id="5b18f1d58f1483da5c81155095d22768" category="section-title">同期クエリ用のRESTクライアントのセットアップ</block>
-  <block id="ca5f5ae182f010eb67697760ff6586f3" category="list-text">クエリは1行で記述する必要があります</block>
-  <block id="2f9a3dbd7bceea75acec35221d985871" category="list-text">有効なJSON文字列を指定する必要があります</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIkeys は、 _Sync_or_Async_&lt;TBD 詳細情報 &gt; に適しています</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">Dell EMC Unisphere RESTデータコレクタの構成</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">Dell EMC Unisphere RESTデータコレクタの構成</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">ポート8443</block>
@@ -10785,4 +10780,5 @@
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">ワークロードセキュリティの導入</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">ワークロードセキュリティエージェントの設定</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">ワークロードセキュリティユーザー管理</block>
+  <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">WindowsおよびLinuxでのAcquisition Unitのインストール、アンインストール、プロキシのサポートの設定などがあります。</block>
 </blocks>
