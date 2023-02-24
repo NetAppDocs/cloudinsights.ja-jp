@@ -10609,7 +10609,6 @@
   <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights がAcquisition Unitとの通信に使用するCloud Insights とData Collector自体との通信は行われません。以下にいくつかの方法で試してみましょう。Acquisition UnitでFQDNを解決して、必要なポートに到達できることを確認してください。エラーメッセージに示されたエンドポイントにアクセスするためにプロキシが必要でないことを確認します。cURLを使用して、Acquisition Unitとエンドポイント間の通信をテストできます。このテストにプロキシを使用していない*ことを確認してください。例：root@acquisitionunit # curl -s -H accept：application/json -H "Content-type：application/json"-H api-key：&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; -X get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> リージョナルエンドポイント&gt;:8080/v1/Storage/IPRangesこちらを参照してください <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。</block>
   <block id="fca4fedbe53af4420a279beead573bdf" category="doc">ワークロードのセキュリティ：攻撃のシミュレーション</block>
-  <block id="373799975bf9df78f2b7e58b488fdb43" category="paragraph">コード--サイドバー:サイドバーのパーマリンク: concept_cs_attack_simulator.htmlキーワード:ランサムウェア、シミュレーション、シミュレータ、制限、攻撃の概要:スクリプトを使用してランサムウェア攻撃をシミュレートし、ワークロードセキュリティのテストまたはデモを行うことができます--</block>
   <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">このページの手順を使用して、付属のランサムウェアシミュレーションスクリプトを使用して、ワークロードセキュリティをテストまたは実証する攻撃をシミュレートできます。</block>
   <block id="16fa78539f96944e79f64b961036e74d" category="list-text">このスクリプトは、Workload Securityエージェントのインストールファイルとともに提供されます。ワークロードセキュリティエージェントがインストールされているすべてのマシンで使用できます。</block>
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">このスクリプトは、Workload Securityエージェントマシン自体で実行できます。他のLinuxマシンを準備する必要はありません。ただし、スクリプトを別のシステムで実行する場合は、スクリプトをコピーしてそこで実行するだけです。</block>
@@ -10781,4 +10780,5 @@
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">ワークロードセキュリティエージェントの設定</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">ワークロードセキュリティユーザー管理</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">WindowsおよびLinuxでのAcquisition Unitのインストール、アンインストール、プロキシのサポートの設定などがあります。</block>
+  <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">スクリプトを使用して、ランサムウェア攻撃をシミュレートし、ワークロードセキュリティのテストやデモを実施できます</block>
 </blocks>
