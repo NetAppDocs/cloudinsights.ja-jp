@@ -189,4 +189,10 @@ Position Hostname         IP Address/Mask
 
 
 | ポリシーを変更できませんでした。理由：このコマンドは許可されていません。 | csuserを使用している場合は、上記のようにユーザに権限が与えられているかどうかを確認します。 
+
+
+| NFSのユーザ（IPアドレス）ブロックが機能しますが、SMB / CIFSの場合、次のエラーメッセージが表示されます。「SIDからドメイン名への変換に失敗しました。理由タイムアウト：ソケットが確立されていません」 | これは、is_csuser_doesにsshを実行する権限がありません。（クラスタレベルで接続してから、ユーザがsshを実行できることを確認してください）。_csuser_roleには、これらの権限が必要です。 https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]クラスタのクレデンシャルを使用する場合は、ONTAP コマンドラインから次の手順を実行します。 security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole csrole csrole -cmddirname "vserver services access-check authentication translate role create -role csrole -cmddirname "vserver name-mapping"-access all if_csuser_が使用されておらず、クラスタレベルの管理者ユーザが使用されている場合は、管理者ユーザにONTAP に対するssh権限があることを確認してください。 
+
+
+|  |  
 |===

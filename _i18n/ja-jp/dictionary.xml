@@ -6741,7 +6741,6 @@
   <block id="72633c43eaf6d098d8df9b7b7cf5fb7a" category="sidebar">データコレクタエラーを調査します</block>
   <block id="3f919c7c06027082bb746a8ef324bad2" category="sidebar">推奨されるダッシュボードのインポート</block>
   <block id="11a7aeec2e88edd275331af35166c8ec" category="sidebar">ユーザアカウントとロール</block>
-  <block id="299db49f1f95a819e1364febfbbb0b0f" category="sidebar">他の Cloud Central 製品に切り替える</block>
   <block id="7d98fdc49fc17d8fbb4bb34a4904c7c8" category="sidebar">Data Collector リスト</block>
   <block id="dccd6b1a35e5f58699c220a398ba4b60" category="sidebar">自動デバイス解決</block>
   <block id="a0a44b683686e93d33180f439c1b3ed7" category="sidebar">デバイス解決の概要</block>
@@ -10781,4 +10780,6 @@
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">ワークロードセキュリティユーザー管理</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">WindowsおよびLinuxでのAcquisition Unitのインストール、アンインストール、プロキシのサポートの設定などがあります。</block>
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">スクリプトを使用して、ランサムウェア攻撃をシミュレートし、ワークロードセキュリティのテストやデモを実施できます</block>
+  <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">NFSのユーザ（IPアドレス）ブロックが機能しますが、SMB / CIFSの場合、次のエラーメッセージが表示されます。「SIDからドメイン名への変換に失敗しました。理由タイムアウト：ソケットが確立されていません」</block>
+  <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">これは、is_csuser_doesにsshを実行する権限がありません。（クラスタレベルで接続してから、ユーザがsshを実行できることを確認してください）。_csuser_roleには、これらの権限が必要です。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>クラスタのクレデンシャルを使用する場合は、ONTAP コマンドラインから次の手順を実行します。 security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole csrole csrole -cmddirname "vserver services access-check authentication translate role create -role csrole -cmddirname "vserver name-mapping"-access all if_csuser_が使用されておらず、クラスタレベルの管理者ユーザが使用されている場合は、管理者ユーザにONTAP に対するssh権限があることを確認してください。</block>
 </blocks>
