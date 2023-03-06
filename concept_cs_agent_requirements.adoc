@@ -16,7 +16,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 | コンポーネント | Linux 要件 
 
 
-| オペレーティングシステム | ライセンス版の次のいずれかを実行しているコンピュータ：Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8 Stream Ubuntu 20~22 64ビットこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。SE（Security Enhanced）Linuxはサポートされていません。 
+| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ: Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8ストリームUbuntu 20から22 64ビットRocky 8.x 64ビット、Rocky 9.x 64ビットこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していないはずです。専用のサーバを使用することを推奨します。SE（Security Enhanced）Linuxはサポートされていません。 
 
 
 | コマンド | インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。 
