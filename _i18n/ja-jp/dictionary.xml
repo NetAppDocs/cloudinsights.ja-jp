@@ -8712,7 +8712,6 @@
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">kube-state-metrics：v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">流出ビット:1.9.8</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。</block>
-  <block id="f555190cc628f345214d8d00c587f506" category="list-text">Cloud Insights がバックエンドストレージを監視しており、KubernetesをDockerコンテナランタイムで使用している場合、Cloud Insights では、NFSとiSCSIについてポッド/ PV /ストレージ間のマッピングを表示できます。その他の実行時間ではiSCSIのみが表示されます。</block>
   <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。実行する必要があります <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> PSPを使用する環境の場合は、最新のNetApp Kubernetes Monitoring Operatorに接続します。</block>
   <block id="ceb4fea071151ab6bb0ff80a20993744" category="list-text">OpenShift 4.6以降で実行している場合は、これらの前提条件を満たしていることを確認するだけでなく、以下の* OpenShift Instructions *に従う必要があります。</block>
   <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="list-text">NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。</block>
@@ -10782,4 +10781,5 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">スクリプトを使用して、ランサムウェア攻撃をシミュレートし、ワークロードセキュリティのテストやデモを実施できます</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">NFSのユーザ（IPアドレス）ブロックが機能しますが、SMB / CIFSの場合、次のエラーメッセージが表示されます。「SIDからドメイン名への変換に失敗しました。理由タイムアウト：ソケットが確立されていません」</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">これは、is_csuser_doesにsshを実行する権限がありません。（クラスタレベルで接続してから、ユーザがsshを実行できることを確認してください）。_csuser_roleには、これらの権限が必要です。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>クラスタのクレデンシャルを使用する場合は、ONTAP コマンドラインから次の手順を実行します。 security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole csrole csrole -cmddirname "vserver services access-check authentication translate role create -role csrole -cmddirname "vserver name-mapping"-access all if_csuser_が使用されておらず、クラスタレベルの管理者ユーザが使用されている場合は、管理者ユーザにONTAP に対するssh権限があることを確認してください。</block>
+  <block id="d511cfcda3973a3a336e284a48df103e" category="list-text">Cloud Insights がバックエンドストレージを監視していて、KubernetesをDockerコンテナランタイムとともに使用している場合、Cloud Insights はNFSおよびiSCSIのPODとPVとストレージのマッピングを表示できます。それ以外のランタイムではNFSのみが表示されます。</block>
 </blocks>
