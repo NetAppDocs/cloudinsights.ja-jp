@@ -54,10 +54,7 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 |===
 * NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。
 * 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
-
-
->>>>>>>>e64b5299cf9e0451417037778f9d37b84b9d9e6b * NetApp Kubernetes Monitoring Operatorインストールに使用するホストには、ターゲットのK8sクラスタと通信し、Cloud Insights 環境へのインターネット接続を確立するための_kubectl_configuredが必要です。このホストがCloud Insights にアクセスするためにプロキシを必要とする場合は、の手順に従います <<configuring-proxy-support,プロキシサポートを設定しています>> セクション。
-
+* NetApp Kubernetes Monitoring Operatorインストールに使用するホストには、ターゲットのKubernetesクラスタと通信し、Cloud Insights 環境とインターネットに接続できるよう、_kubectl_configuredが必要です。このホストがCloud Insights にアクセスするためにプロキシを必要とする場合は、の手順に従います <<configuring-proxy-support,プロキシサポートを設定しています>> セクション。
 * NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。
 * インストール中または監視対象のKubernetesクラスタを操作中にプロキシの背後にいる場合は、の手順に従ってください <<configuring-proxy-support,プロキシサポートを設定しています>> セクション。
 * Kubernetes クラスタのロールおよびロールのバインドを作成する権限が必要です。
@@ -426,7 +423,7 @@ download-only コマンドを使用すると、必要なアーティファクト
 
 PEM ファイルは、フィンガープリントが次のようになっていることを確認することで検証できます。
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 具体的には、
 
  openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
