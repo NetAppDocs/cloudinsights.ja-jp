@@ -10782,4 +10782,8 @@
   <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ: Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8ストリームUbuntu 20から22 64ビットRocky 8.x 64ビット、Rocky 9.x 64ビットこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していないはずです。専用のサーバを使用することを推奨します。SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">Cloud Insights がバックエンドストレージを監視しており、KubernetesがDockerコンテナランタイムとともに使用されている場合、Cloud Insights はNFSおよびiSCSIのポッドとPVとストレージのマッピングと指標を表示できます。それ以外のランタイムではNFSのみが表示されます。</block>
   <block id="82f6a763fe60e4e576dfec4afd406d65" category="list-text">NetApp Kubernetes Monitoring Operatorインストールに使用するホストには、ターゲットのKubernetesクラスタと通信し、Cloud Insights 環境とインターネットに接続できるよう、_kubectl_configuredが必要です。このホストがCloud Insights にアクセスするためにプロキシを必要とする場合は、の手順に従います <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> セクション。</block>
+  <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="section-title">2023年3月</block>
+  <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud Connection for ONTAP 9.9以降は廃止されました</block>
+  <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">Cloud Connection for ONTAP 9.9以降のデータコレクタは廃止されました。2023年4月4日以降、環境内のCloud Connectionデータコレクタでデータが収集されなくなり、ポーリング時にエラーが表示されます。Cloud Connectionデータコレクタは、次回の更新でCloud Insights から完全に削除されます。</block>
+  <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">2023年4月4日より前のリリースでは、クラウド接続で現在収集されているすべてのONTAP システムについて、新しいNetApp ONTAP データ管理ソフトウェアデータコレクタを設定する必要があります。 <block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>。</block>
 </blocks>
