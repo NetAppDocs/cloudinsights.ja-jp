@@ -90,10 +90,14 @@ NetApp Kubernetes Operating Monitorのインストールに使用するプロキ
 
 . 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
 +
- export https_proxy=<proxy_server>:<proxy_port>
-. /etc/default/テレ グラム af_ を作成し、 _https_proxy_/or_http_proxy_variable の定義を挿入します。
+.. セットアップするプロキシに認証（ユーザ名/パスワード）がない場合は、次のコマンドを実行します。
 +
- https_proxy=<proxy_server>:<proxy_port>
+ export https_proxy=<proxy_server>:<proxy_port>
+.. セットアップするプロキシに認証（ユーザ名/パスワード）が設定されている場合は、次のコマンドを実行します。
++
+ export http_proxy= <proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
 
 
 KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。
