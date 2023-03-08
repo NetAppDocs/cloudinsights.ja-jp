@@ -75,7 +75,7 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale （旧 Isilon ）"] | インフラ 
 
 
-| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon REST"] | インフラ 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon / PowerScale REST"] | インフラ 
 
 
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | インフラ 
