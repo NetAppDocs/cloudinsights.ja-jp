@@ -169,6 +169,6 @@ Cloud Insights では、 EMC VMAX/PowerMax データソースから次のイン�
 | エラー : • Solutions Enabler サーバ 8.x から Solutions Enabler 7.x と一緒に収集したときに、「 symcfg list -Tdev 」 CLI コマンドで誤ったデータが返されることがあります• Solutions Enabler サーバ 8.3 以降から Solutions Enabler 8.1.0 以前で収集した場合、 CLI コマンド「 symcfg list -srp 」で誤ったデータが返されることがあります。 | Solutions Enabler のメジャーリリースが同じであることを確認してください 
 
 
-| 「unknown code」というメッセージが表示され、データ収集エラーが発生しました。 | Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <<要件,要件>> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。 
+| 「unknown code」というメッセージが表示され、データ収集エラーが発生しました。 | Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <<要件,要件>> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。このエラーは'Solutions Enablerコマンドを実行する_cisys_userが/var/symapi/config/demon _users構成ファイルで必要なデーモン権限で構成されていない場合にも発生することがありますこれを修正するには、/var/symapi/config/demonファイルを編集し、cisysユーザにstorapidデーモンに対して指定された<all> 権限があることを確認します。例：14：11：25 #tail /var/symapi/config/demon _users... cisys storapid <all> の略 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

@@ -8974,7 +8974,6 @@
   <block id="e49c7b347b6e9d379c33509b8c27ec5b" category="list-text">権限はSolutions Enablerサーバのデーモン構成ファイルで宣言する必要があります。通常は次の場所にあります。_/var/symapi/config/demon _users_</block>
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">次に、適切なciscysアクセス権を持つサンプルファイルを示します。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">「unknown code」というメッセージが表示され、データ収集エラーが発生しました。</block>
-  <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。</block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM には複数のサブタイプがあります。このうち、サポートされるのは_DEFAULT_、_SYNC_SOURE_、および_SYNC_destination_のみです。</block>
   <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Metro Clusterの推奨構成</block>
   <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Metro Clusterの推奨事項は次のとおりです。</block>
@@ -10790,4 +10789,5 @@
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">セットアップするプロキシに認証（ユーザ名/パスワード）が設定されている場合は、次のコマンドを実行します。</block>
   <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">ネットアップでは、さまざまな方法で Cloud Insights をサポートしています。ナレッジベース（ KB ）記事やネットアップコミュニティなど、幅広いセルフサポートオプションを 24 時間 365 日ご利用いただけます。いずれかのCloud Insights エディション（Basic *、Standard、Premium）に登録している場合は、電話またはWebチケットでテクニカルサポートを利用できます。Web チケットとケース管理には、NetApp Support Site（ NSS ）の SSO アカウントが必要です。</block>
   <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*すべてのネットアップストレージシステムが少なくともPremiumサポートレベル以上であれば、Basicエディションでサポートを利用できます。</block>
+  <block id="575b95a19de7e191bf400580ceab0b27" category="cell">Solutions Enablerサーバのデーモン構成ファイルで権限が宣言されていない場合は、このメッセージが表示されることがあります（を参照） <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 上記を参照）。これは、SEクライアントのバージョンがSEサーバのバージョンと一致していることを前提としています。このエラーは'Solutions Enablerコマンドを実行する_cisys_userが/var/symapi/config/demon _users構成ファイルで必要なデーモン権限で構成されていない場合にも発生することがありますこれを修正するには、/var/symapi/config/demonファイルを編集し、cisysユーザにstorapidデーモンに対して指定された&lt;all&gt; 権限があることを確認します。例：14：11：25 #tail /var/symapi/config/demon _users... cisys storapid &lt;all&gt; の略</block>
 </blocks>
