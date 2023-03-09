@@ -58,7 +58,9 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 ARPイベントにより生成されたアラートの例を次に示します。
 
-image:CS_ONTAP_ARP_EXAMPLE.png["ONTAP ARP Example画面"]
+image:CS_Ransomware_Example_1.png["ランサムウェアアラートの上部セクション"]
+image:CS_Ransomware_Example_2.png["ランサムウェアアラートの上部セクション"]
+image:CS_Ransomware_Example_3.png["ランサムウェアアラートの上部セクション"]
 
 信頼性の高いバナーは、攻撃がランサムウェアの挙動とファイル暗号化のアクティビティを示していることを示しています。暗号化ファイルのグラフには、ARP解決策 によってボリューム暗号化アクティビティが検出されたタイムスタンプが示されます。
 
