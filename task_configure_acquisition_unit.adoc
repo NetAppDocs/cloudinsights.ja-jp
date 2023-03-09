@@ -83,6 +83,8 @@ Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証�
 
 NOTE: ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。
 
+プロキシ設定の詳細については、ネットアップのを参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["ナレッジベース（Knowledgbase）"]。
+
 
 
 ==== プロキシ URL の表示
@@ -136,6 +138,8 @@ Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証�
  *.cloudinsights.netapp.com
 
 NOTE: ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。
+
+プロキシ設定の詳細については、ネットアップのを参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["ナレッジベース（Knowledgbase）"]。
 
 
 
