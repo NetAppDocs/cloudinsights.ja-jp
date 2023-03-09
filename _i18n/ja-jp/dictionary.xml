@@ -497,7 +497,6 @@
   <block id="563ab1cab19237118c0d565ded4f7493" category="list-text">ネットアップの新規のお客様の場合は、ネットアップサポートサイト（ NSS ）のユーザアカウントを作成して、今後の登録や、テクニカルサポートチャットや Web チケット発行用のサポートポータルにアクセスする必要があります。このリンクはにあります<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。新しく登録した Cloud Insights のシリアル番号を入力しておくと、プロセスを迅速に進めることができます。</block>
   <block id="0e458a16f853c4e326f689913acf2dfe" category="list-text">これは、 Cloud Insights ネットアップのシリアル番号への登録を 1 回だけ行うものです。</block>
   <block id="bc4afdcc32d9a7d1bc03c2d8ad5b1828" category="section-title">サポート情報の入手方法</block>
-  <block id="7c59aac37a994b7c8de5ecb669c6e209" category="paragraph">ネットアップでは、さまざまな方法で Cloud Insights をサポートしています。ナレッジベース（ KB ）記事やネットアップコミュニティなど、幅広いセルフサポートオプションを 24 時間 365 日ご利用いただけます。Cloud Insights Edition （ Basic 、 Standard 、 Premium ）のいずれかに登録されているユーザの場合、電話または Web でチケットを発行してテクニカルサポートを受けることができます。Web チケットとケース管理には、ネットアップサポートサイト（ NSS ）の SSO アカウントが必要です。</block>
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">セルフサービスサポート：</block>
   <block id="6c0afebc7e7822e3ca22734d7b5d42c0" category="paragraph">これらのサポートオプションはトライアルモードで利用でき、 24 時間 365 日無料でご利用いただけます。</block>
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">ナレッジベース</block>
@@ -10789,4 +10788,6 @@
   <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
   <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">セットアップするプロキシに認証（ユーザ名/パスワード）がない場合は、次のコマンドを実行します。</block>
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">セットアップするプロキシに認証（ユーザ名/パスワード）が設定されている場合は、次のコマンドを実行します。</block>
+  <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">ネットアップでは、さまざまな方法で Cloud Insights をサポートしています。ナレッジベース（ KB ）記事やネットアップコミュニティなど、幅広いセルフサポートオプションを 24 時間 365 日ご利用いただけます。いずれかのCloud Insights エディション（Basic *、Standard、Premium）に登録している場合は、電話またはWebチケットでテクニカルサポートを利用できます。Web チケットとケース管理には、NetApp Support Site（ NSS ）の SSO アカウントが必要です。</block>
+  <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*すべてのネットアップストレージシステムが少なくともPremiumサポートレベル以上であれば、Basicエディションでサポートを利用できます。</block>
 </blocks>
