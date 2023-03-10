@@ -172,7 +172,10 @@ password: <password from docker secret step above>
 ....
 オペレータ用のDockerイメージをCloud Insights から取得します。NetApp Monitoringのバージョン番号が最新であることを確認します。
 
- docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
+....
 次のコマンドを使用して、_NetApp-Monitoring_<version>フィールドを確認します。
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
