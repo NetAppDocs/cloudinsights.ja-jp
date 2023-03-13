@@ -453,7 +453,7 @@ NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の�
 
 NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。
 
-[cols="2*"]
+[cols="stretch"]
 |===
 | 問題 | 次の操作を実行します 
 
@@ -480,5 +480,17 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 
 
 | 「ImagePullBackoff」エラーが発生しました | このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 <<using-a-custom-or-private-docker-repository,詳細はこちら>> カスタム/プライベートリポジトリの設定について 
+
+
+| 監視オペレータの配置に問題 を使用していますが、現在のドキュメントでは解決できません。  a| 
+次のコマンドの出力をキャプチャまたはメモし、テクニカルサポートチームに連絡します。
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
