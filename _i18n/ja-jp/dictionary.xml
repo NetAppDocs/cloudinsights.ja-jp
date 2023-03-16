@@ -151,12 +151,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">同じ名前、シーケンス番号などの既存の FPolicy にはエラーが発生します。</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">実行中はスクリプトは突然停止します。</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">スクリプトの実行例を次に示します。</block>
-  <block id="414578a6fb051cf762571b6abc3062a7" category="cell">質問：スクリプトを実行できる SVM の数を増やすことはできますか。</block>
-  <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">回答：はい。スクリプトを編集して、 SVM の最大数を 5 から任意の数に変更するだけです。</block>
-  <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">質問： SVM の数を増やすと、スクリプトの実行時間は長くなりますか。</block>
-  <block id="f64044d833e646b68fe903a7d7204ce9" category="cell">回答：いいえSVM の数を増やした場合でも、スクリプトは最大 5 分間実行されます。</block>
-  <block id="aeb20f65fbd8c09dda397cfc3a4d6120" category="cell">回答：はい。スクリプトを編集して、 SVM の最大数を 5 から任意の望ましい数に変更する必要があります。</block>
-  <block id="e90fb31b8ec18f1817a08fecf70d9418" category="cell">回答：いいえSVM の数を増やした場合でも、スクリプトは最大 5 分間実行されます。</block>
   <block id="b25c993d3776230a665bf577a045a77c" category="summary">Brocade データコレクタの設定</block>
   <block id="5dd0750dbeaff9eef9c017100d1e10be" category="doc">Brocade Enterprise Fabric Connectivity Manager データコレクタの設定</block>
   <block id="30e633574a47b4dcb4c8ecde882af403" category="paragraph">Cloud Insights では、 Brocade Enterprise Fabric Connectivity Manager （ EFCM ）データコレクタを使用して、 Brocade EFCM スイッチのインベントリを検出します。Cloud Insights では、 EFCM バージョン 9.5 、 9.6 、および 9.7 をサポートしています。</block>
@@ -10744,8 +10738,6 @@
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">すべてのアクティビティページは'ワークロードセキュリティ環境でエンティティに対して実行されるアクションを理解するのに役立ちます</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">アクティビティ履歴は、アクティブなワークロードセキュリティ環境で13カ月間保持されます。</block>
-  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">質問：ワークロードセキュリティがすでに設定されているSVMでこのスクリプトを実行する場合、そのスクリプトはSVMの既存のfpolicy configを使用するか、一時的に設定してプロセスを実行しますか。</block>
-  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">回答 ：ワークロードのセキュリティがすでに設定されているSVMでも、イベントレートチェッカーは正常に実行できます。影響はありません。</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">ワークロードセキュリティエージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">AWSでワークロードセキュリティエージェントとして使用するマシンを設定するには、次の手順を実行します。</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">ワークロードセキュリティエージェントとして使用するマシンを構成するには、次の手順を実行します。</block>
@@ -10797,4 +10789,16 @@
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">次のコマンドの出力をキャプチャまたはメモし、テクニカルサポートチームに連絡します。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">概要*ダッシュボードには、環境内のクラスタ数や全体的な容量とパフォーマンスの割合など、役立つ情報が表示されます。また、ストレージ容量またはパフォーマンス容量がスペース不足になるまでの想定日数に関する予測データも表示されます。また、インフラ内にCPU使用率が65%を超えて稼働しているコントローラがある場合（フェイルオーバー時にクラスタがリスクにさらされる可能性があるため）、ONTAP Essentialsでは「ホット」コントローラと表示されます。</block>
+  <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">質問</block>
+  <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">回答</block>
+  <block id="d0361ec8dd55377b979879d46798dd21" category="cell">ワークロードセキュリティ用にすでに設定されているSVMに対してこのスクリプトを実行した場合、SVMの既存のfpolicy設定だけを使用するのか、それとも一時的なfpolicyを設定してプロセスを実行するのか。</block>
+  <block id="dd6c1727e8619e941f226765e3ee28ed" category="cell">ワークロードセキュリティがすでに設定されているSVMであっても、イベントレートチェッカーは問題なく実行できます。影響はありません。</block>
+  <block id="865bc2d6c9cc50637b3abc05118e4574" category="cell">スクリプトを実行できるSVMの数を増やすことはできますか。</block>
+  <block id="d2a27dbe2bebb82fe8bccf11a4f69d9b" category="cell">はい。スクリプトを編集して、 SVM の最大数を 5 から任意の数に変更するだけです。</block>
+  <block id="e94aec426eb2ace8240d7abaeefa8597" category="cell">SVMの数を増やすと、スクリプトの実行時間は長くなりますか。</block>
+  <block id="3367c7848384adc0d8f9445dcca8b87e" category="cell">いいえSVM の数を増やした場合でも、スクリプトは最大 5 分間実行されます。</block>
+  <block id="49eeed91da2974d7d682c9398b2adbd0" category="cell">はい。スクリプトを編集して、 SVM の最大数を 5 から任意の望ましい数に変更する必要があります。</block>
+  <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">いいえSVM の数を増やした場合でも、スクリプトは最大 5 分間実行されます。</block>
+  <block id="ce3d712deda180dd445bfed60562d712" category="cell">既存のエージェントでEvent Rate Checkerを実行するとどうなりますか？</block>
+  <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">既存のエージェントに対してイベントレートチェッカーを実行する原因 と、SVMのレイテンシが増加する可能性があります。この増加は、イベントレートチェッカーの実行中は一時的なものです。</block>
 </blocks>
