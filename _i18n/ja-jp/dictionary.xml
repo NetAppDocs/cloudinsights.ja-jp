@@ -10796,4 +10796,5 @@
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">監視オペレータの配置に問題 を使用していますが、現在のドキュメントでは解決できません。</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">次のコマンドの出力をキャプチャまたはメモし、テクニカルサポートチームに連絡します。</block>
+  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
 </blocks>

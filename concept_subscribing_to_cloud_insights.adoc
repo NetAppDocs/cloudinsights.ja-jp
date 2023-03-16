@@ -143,6 +143,7 @@ Cloud Insights の価格は管理ユニット * 単位です。管理対象ユ�
 
 次のデータコレクタは、異なる Raw TiB から管理ユニットレートで測定されます。これらのデータコレクタの 40TiB 分の未フォーマット容量は、 1 つの管理ユニット（ MU ）として課金されます。
 
+* AWS S3
 * Dell EMC ECS の場合
 * Hitachi Content Platform の略
 * IBM Cleversafe
