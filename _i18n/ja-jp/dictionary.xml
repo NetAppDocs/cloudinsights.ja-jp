@@ -8434,7 +8434,6 @@
   <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">探索を開始するには、Cloud Insights メインメニューから* ONTAP Essentials *を選択します。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP Essentialsの概要ダッシュボード</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88c28e828c24faa9cbd8f5219c054d7e" category="paragraph">概要*ダッシュボードには、環境内のクラスタ数や全体的な容量とパフォーマンスの割合など、役立つ情報が表示されます。また、ストレージ容量またはパフォーマンス容量がスペース不足になるまでの想定日数に関する予測データも表示されます。また、インフラ内のコントローラが高温で動作している場合は、ONTAP Essentialsにそれらのコントローラが表示されます。</block>
   <block id="39ef60f7b3d6d0c88b10d90a3775807a" category="paragraph">情報グラフは、時間の経過に伴うパフォーマンスの確認や、容量使用率の内訳を提供します。</block>
   <block id="192d723a70e1a973bee8e50c84ffa947" category="paragraph">これらのグラフやデータポイントは、調査や調査の開始点として使用できます。</block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注：「フルまでの日数」に0（ゼロ）を指定すると、フルまでの日数が90日を超えたと推定されます。つまり、システムがすぐにスペース不足になる危険性はありません。</block>
@@ -10797,4 +10796,5 @@
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">監視オペレータの配置に問題 を使用していますが、現在のドキュメントでは解決できません。</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">次のコマンドの出力をキャプチャまたはメモし、テクニカルサポートチームに連絡します。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
+  <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">概要*ダッシュボードには、環境内のクラスタ数や全体的な容量とパフォーマンスの割合など、役立つ情報が表示されます。また、ストレージ容量またはパフォーマンス容量がスペース不足になるまでの想定日数に関する予測データも表示されます。また、インフラ内にCPU使用率が65%を超えて稼働しているコントローラがある場合（フェイルオーバー時にクラスタがリスクにさらされる可能性があるため）、ONTAP Essentialsでは「ホット」コントローラと表示されます。</block>
 </blocks>
