@@ -17,6 +17,12 @@ Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes M
 
 image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
 
+以下は、オペレータが環境内のどこに配置されているかを示す大まかな図です。環境によっては、_Proxy Server_が必要になる場合と不要になる場合があります。
+
+image:CI_Diagram_with_NKMO.png["Kubernetesクラスタ内に存在するNKMOを示すハイレベルなマップ。矢印は、ホスト、プロキシサーバからクラスタにデータが移動し、すべてがCloud Insights にロールアップされる様子を示しています"]
+
+演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。
+
 
 
 == NetApp Kubernetes Monitoring Operatorをインストールする前に

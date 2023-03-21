@@ -10801,4 +10801,8 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">いいえSVM の数を増やした場合でも、スクリプトは最大 5 分間実行されます。</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">既存のエージェントでEvent Rate Checkerを実行するとどうなりますか？</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">既存のエージェントに対してイベントレートチェッカーを実行する原因 と、SVMのレイテンシが増加する可能性があります。この増加は、イベントレートチェッカーの実行中は一時的なものです。</block>
+  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">以下は、オペレータが環境内のどこに配置されているかを示す大まかな図です。環境によっては、_Proxy Server_が必要になる場合と不要になる場合があります。</block>
+  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Kubernetesクラスタ内に存在するNKMOを示すハイレベルなマップ。矢印は、ホスト、プロキシサーバからクラスタにデータが移動し、すべてがCloud Insights にロールアップされる様子を示しています</block>
+  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
 </blocks>
