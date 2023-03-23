@@ -7514,7 +7514,6 @@
   <block id="3910d1d80274049b67c375b0000311fb" category="paragraph">上記のコマンドの出力から、 _.dockerconfigjson ： _ の値をコピーして貼り付けます。</block>
   <block id="683b8010d170fc689e256c2461d9ed7e" category="paragraph">Docker シークレットをデコードします。</block>
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">Docker リポジトリにログインします。</block>
-  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">FLUENT ビットが有効になっている場合は、次のファイルもダウンロードしてください。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">spec セクションで、次の変更を行います。</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights の新機能</block>
@@ -10805,4 +10804,5 @@
   <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Kubernetesクラスタ内に存在するNKMOを示すハイレベルなマップ。矢印は、ホスト、プロキシサーバからクラスタにデータが移動し、すべてがCloud Insights にロールアップされる様子を示しています</block>
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
+  <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのディレクトリパスが、docker.&lt;cluster&gt; .cloudinsights.netapp.comのディレクトリパスと一致していることを確認します。</block>
 </blocks>

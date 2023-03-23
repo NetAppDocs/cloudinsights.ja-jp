@@ -185,7 +185,7 @@ docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<vers
 次のコマンドを使用して、_NetApp-Monitoring_<version>フィールドを確認します。
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
-社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。
+社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのディレクトリパスが、docker.<cluster> .cloudinsights.netapp.comのディレクトリパスと一致していることを確認します。
 
 オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <<before-installing-the-netapp-kubernetes-monitoring-operator,前提条件>> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。
 
