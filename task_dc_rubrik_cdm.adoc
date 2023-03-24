@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: task_dc_rubrik_cdm.html 
+keywords: data collector, Rubrik, 
+summary: Rubrik CDMデータコレクタを設定しています。 
+---
+= Rubrik CDM Data Collectorの略
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights は、Rubrik CDMデータコレクタを使用してインベントリとパフォーマンスのデータを収集します。
+
+
+NOTE: これは_Preview_collectorと見なされ、この情報は変更される場合があります。
+
+このページは近日公開されます。

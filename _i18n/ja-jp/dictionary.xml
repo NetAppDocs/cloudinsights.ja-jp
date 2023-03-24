@@ -10805,4 +10805,9 @@
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのディレクトリパスが、docker.&lt;cluster&gt; .cloudinsights.netapp.comのディレクトリパスと一致していることを確認します。</block>
+  <block id="560b3269d8d097187c911ee417754210" category="summary">Rubrik CDMデータコレクタを設定しています。</block>
+  <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collectorの略</block>
+  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights は、Rubrik CDMデータコレクタを使用してインベントリとパフォーマンスのデータを収集します。</block>
+  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">これは_Preview_collectorと見なされ、この情報は変更される場合があります。</block>
+  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">このページは近日公開されます。</block>
 </blocks>
