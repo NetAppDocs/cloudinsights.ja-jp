@@ -7610,7 +7610,6 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">ログモニタ</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">ログモニタフィルタを空にすることはできません。</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">アラート解決の動作を定義します</block>
-  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">ログ監視アラートの解決方法を選択できます。次の 3 つの選択肢があります。</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 即時解決 * ：このアラートは、対処不要で即座に解決されます</block>
   <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 時間に基づく解決 * ：アラートは指定した時間が経過すると解決されます</block>
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* ログエントリに基づいて解決 * ：このアラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
@@ -10809,4 +10808,7 @@
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDMストレージ</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDMの略</block>
+  <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">アラートの動作を定義します</block>
+  <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">上記で定義した条件が1回（即刻）発生した場合に、重大度レベル_Critical_、_Warning_、または_Informational_でアラートを生成したり、条件が2回以上発生するまでアラートを待機したりするようにモニタを作成できます。</block>
+  <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">ログモニタのアラートの解決方法を選択できます。次の 3 つの選択肢があります。</block>
 </blocks>
