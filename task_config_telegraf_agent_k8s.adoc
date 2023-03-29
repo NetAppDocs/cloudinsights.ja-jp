@@ -59,7 +59,7 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 | Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用 | catt.io/os=linux 
 |===
 * NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。
-* 次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。
+* 次のコマンドが使用可能である必要があります：_curl、sudo、openssl、sha256sum、_and_kubectl_。最適な結果を得るには、これらのコマンドをパスに追加してください。_kubectl_は、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。_agents、clusterroles、clusterrolebindings、customresourcedefinitions、deployments、 ネームスペース、ロール、ロールバインド、シークレット、サービスアカウント、_および_services_。を参照してください link:nkmo_clusterrole_yaml.html["こちらをご覧ください"] たとえば、これらの最小クラスタロール権限を持つ.yamlファイルなどです。
 * NetApp Kubernetes Monitoring Operatorインストールに使用するホストには、ターゲットのKubernetesクラスタと通信し、Cloud Insights 環境とインターネットに接続できるよう、_kubectl_configuredが必要です。このホストがCloud Insights にアクセスするためにプロキシを必要とする場合は、の手順に従います <<configuring-proxy-support,プロキシサポートを設定しています>> セクション。
 * NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。
 * インストール中または監視対象のKubernetesクラスタを操作中にプロキシの背後にいる場合は、の手順に従ってください <<configuring-proxy-support,プロキシサポートを設定しています>> セクション。

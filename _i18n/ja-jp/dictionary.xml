@@ -8446,7 +8446,6 @@
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">選択できる機能とロールは、特定の管理者ロールでアクセスできる機能によって異なります。たとえば、レポートの管理者ロールのみを持っている場合、レポートの任意のロールにユーザーを割り当てることはできますが、観察能力またはセキュリティのロールを割り当てることはできません。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">アカウント所有者ロールを別のユーザーに割り当てるには、監視機能のアカウント所有者としてログインする必要があります。</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">アップグレード</block>
-  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">次のコマンドを使用できる必要があります。 _curl 、 _sudo 、 _openssl 、 _sha256sum_ 、および _kubectl_.最適な結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">NetApp Kubernetes Monitoring Operatorを停止するには、次の手順を実行します</block>
   <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実行します</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">Kubeステートメトリックについて</block>
@@ -10811,4 +10810,8 @@
   <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">アラートの動作を定義します</block>
   <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">上記で定義した条件が1回（即刻）発生した場合に、重大度レベル_Critical_、_Warning_、または_Informational_でアラートを生成したり、条件が2回以上発生するまでアラートを待機したりするようにモニタを作成できます。</block>
   <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">ログモニタのアラートの解決方法を選択できます。次の 3 つの選択肢があります。</block>
+  <block id="af943d1d81f743ab6e7c9bcbe3a8c6e9" category="summary">NKMOクラスタロールのYAMLファイルの例</block>
+  <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMOクラスタロールYAMLの例</block>
+  <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">NetApp Kubernetes Monitoring Operator（NKMO）の_kubectl_コンポーネントは、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。エージェント、クラスタロール、クラスタロールバインド、カスタムリソース定義、導入、 ネームスペース'ロール'ロールバインド'シークレット'サービスアカウント' サービスを提供します。以下は最小権限を持つクラスタロールの例です。</block>
+  <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">次のコマンドが使用可能である必要があります：_curl、sudo、openssl、sha256sum、_and_kubectl_。最適な結果を得るには、これらのコマンドをパスに追加してください。_kubectl_は、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。_agents、clusterroles、clusterrolebindings、customresourcedefinitions、deployments、 ネームスペース、ロール、ロールバインド、シークレット、サービスアカウント、_および_services_。を参照してください <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> たとえば、これらの最小クラスタロール権限を持つ.yamlファイルなどです。</block>
 </blocks>
