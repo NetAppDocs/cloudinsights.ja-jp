@@ -10801,9 +10801,6 @@
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのディレクトリパスが、docker.&lt;cluster&gt; .cloudinsights.netapp.comのディレクトリパスと一致していることを確認します。</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">Rubrik CDMデータコレクタを設定しています。</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collectorの略</block>
-  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights は、Rubrik CDMデータコレクタを使用してインベントリとパフォーマンスのデータを収集します。</block>
-  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">これは_Preview_collectorと見なされ、この情報は変更される場合があります。</block>
-  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">このページは近日公開されます。</block>
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDMストレージ</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDMの略</block>
@@ -10814,4 +10811,17 @@
   <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMOクラスタロールYAMLの例</block>
   <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">NetApp Kubernetes Monitoring Operator（NKMO）の_kubectl_コンポーネントは、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。エージェント、クラスタロール、クラスタロールバインド、カスタムリソース定義、導入、 ネームスペース'ロール'ロールバインド'シークレット'サービスアカウント' サービスを提供します。以下は最小権限を持つクラスタロールの例です。</block>
   <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">次のコマンドが使用可能である必要があります：_curl、sudo、openssl、sha256sum、_and_kubectl_。最適な結果を得るには、これらのコマンドをパスに追加してください。_kubectl_は、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。_agents、clusterroles、clusterrolebindings、customresourcedefinitions、deployments、 ネームスペース、ロール、ロールバインド、シークレット、サービスアカウント、_および_services_。を参照してください <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> たとえば、これらの最小クラスタロール権限を持つ.yamlファイルなどです。</block>
+  <block id="179f74ad6aecb22f37252502d5f39223" category="paragraph">Cloud Insights では、Rubrikデータコレクタを使用して、Rubrikストレージアプライアンスからインベントリデータとパフォーマンスデータを取得します。</block>
+  <block id="33a86d81c4ea09bf20b800c1ec8450bc" category="paragraph">Cloud Insights では、Rubrikデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="8f8baa884fbda77b562cc514c3b81d0c" category="cell">ストレージ、ストレージプール</block>
+  <block id="4789f5469e7862776edfb6738109575f" category="list-text">Cloud Insights Acquisition Unitは、TCPポート443からRubrikクラスタへの接続を開始します。クラスタごとに1つのコレクタ。</block>
+  <block id="ba1537545eae7c49c014e94db43517c8" category="list-text">RubrikクラスタのIPアドレス。</block>
+  <block id="662de008b2f10a99c71484e7e9c3ed75" category="list-text">クラスタのユーザ名とパスワード。</block>
+  <block id="93264baac0728f5daa6ac1609e5b5fdc" category="cell">RubrikクラスタのIPアドレス</block>
+  <block id="417cc983ef27be035f66210ac6213b46" category="cell">クラスタのユーザ名</block>
+  <block id="e41f6efeb9a8c29ac8077a1348b68078" category="cell">クラスタのパスワード</block>
+  <block id="444301801d58f01b1fb488fe224bb8c5" category="cell">複数のストレージが作成されているというメッセージを受け取りました。</block>
+  <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">クラスタが正しく設定されており、コレクタが単一のクラスタを参照していることを確認します。</block>
+  <block id="fc971fc699329bc531b4d65ff180a629" category="cell">ディスクAPIからより多くのデータが返されたという警告が表示されました</block>
+  <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">追加のデータを取得するには、サポートに確認してください。</block>
 </blocks>
