@@ -7610,11 +7610,7 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">ログモニタ</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">ログモニタフィルタを空にすることはできません。</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">アラート解決の動作を定義します</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 即時解決 * ：このアラートは、対処不要で即座に解決されます</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 時間に基づく解決 * ：アラートは指定した時間が経過すると解決されます</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* ログエントリに基づいて解決 * ：このアラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">アラート解決</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">モニターの右側にあるメニューをクリックし、 * 一時停止 * を選択すると、オブジェクトタイプの監視を一時的に停止できます。モニタリングを再開する準備ができたら、 * Resume * （続行）をクリックします。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">を表示します <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</block>
@@ -10824,4 +10820,11 @@
   <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">クラスタが正しく設定されており、コレクタが単一のクラスタを参照していることを確認します。</block>
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">ディスクAPIからより多くのデータが返されたという警告が表示されました</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">追加のデータを取得するには、サポートに確認してください。</block>
+  <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">瞬時に解決します</block>
+  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解決条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタによって生成される以降のすべてのアラートを抑制します。</block>
+  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします</block>
+  <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">アラート解決オプション</block>
+  <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">//***すぐに解決*：アラートはすぐに解決され、それ以上のアクションは必要ありません**時間に基づいて解決*：指定された時間が経過すると解決されます**ログエントリに基づいて解決*：アラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
+  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
 </blocks>
