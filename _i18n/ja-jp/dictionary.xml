@@ -7582,8 +7582,6 @@
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch Agent Metrics 名前空間</block>
   <block id="4a508608b5d5c22a19b0ff3e12d1bc61" category="cell">データの収集元である EC2/EBS のネームスペース。このネームスペース内のデフォルト指標の名前が変更されると、 Cloud Insights は名前を変更したデータを収集できなくなる可能性があります。メトリック名はデフォルトのままにしておくことを推奨します。</block>
-  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">Azure CVO に接続しようとして次のエラーが表示されます：「ブローカー / マネージャ CA サービスへの証明書署名要求が完了していません」</block>
-  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">Cloud Manager のプロキシの設定が Cloud Manager のプライベート IP に設定されていることを確認します。Cloud Manager のインストールで別のプロキシが設定されることがあります。プロキシが正しい IP に設定され、 Cloud Connector ダイアログでプロキシを参照すると、 Cloud Insights への接続が正常に確立されます。</block>
   <block id="bbd58b68ee3e3e9c95c32ae30a226786" category="admonition">VPLEX クラスタからの Cloud Insights のパフォーマンス収集では、 Cloud Insights が SCP ベースのファイルコピーを介して取得する .csv ファイルとログを入力するために、パフォーマンスアーカイブサービスが動作可能である必要があります。VPLEX ファームウェアのアップグレード / 管理ステーションの更新の多くが、この機能を動作不能にすることが確認されています。このようなアップグレードを計画しているお客様は、計画しているアップグレードによってこの機能が動作不能になる場合は、 Dell/EMC に事前に問い合わせてください。問題が発生した場合、パフォーマンスの可視性のギャップを最小限に抑えるために、どのように IT を再有効化できますか。Cloud Insight の VPLEX パフォーマンスコードは、予想されるすべてのファイルが存在するかどうかを各ポーリングで評価し、ファイルが適切に更新されているかどうかを判断します。不足しているか古い場合、 Cloud Insights はパフォーマンス収集の失敗をログに記録します。</block>
   <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">カスタムモニタは、一時停止、再開、削除、または別のグループへの移動が可能です。システム定義のモニタは一時停止および再開できますが、削除または移動することはできません。</block>
   <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">カスタムモニタグループ</block>
@@ -10377,7 +10375,6 @@
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">データソース：ハードウェアまたはソフトウェアスタックと通信するためのモジュール。デバイスと通信するためにAUコンピュータで実行される設定とコードで構成されます。</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">カスタムまたはプライベートのDockerリポジトリを使用する</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">オープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします。次のオープンソースイメージをダウンロードする必要があります。を参照してください <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> これらのコンポーネントの最新バージョンについては、上記の項を参照してください。</block>
-  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">このデータコレクタはです <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 2023年1月1日現在AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Dell EMC Isilon / PowerScale RESTデータコレクタの設定</block>
   <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。</block>
   <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">OneFSファイルシステム</block>
@@ -10834,4 +10831,5 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">環境の作成が完了したら、 Cloud Central のクレデンシャルを使用してログインし、 Cloud Insights の 30 日間の無償トライアルを開始できます。このトライアルでは、Cloud Insights が提供する機能を確認できます。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">クラスタ管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS / SMBユーザブロックに必要です。</block>
+  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">このデータコレクタは、2023年4月4日をもってCloud Insights で利用できなくなりました。AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
