@@ -12,6 +12,9 @@ keywords: email, notifications, alerts, warnings, attacks
 ワークロードセキュリティアラートの受信者を設定するには、[*Admin]>[Notifications]をクリックし、受信者ごとに適切なセクションに電子メールアドレスを入力します。
 
 
+NOTE: ワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
+
+
 
 == 潜在的な攻撃アラートと警告
 

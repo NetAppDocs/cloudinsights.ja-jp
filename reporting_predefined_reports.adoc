@@ -28,11 +28,12 @@ Cloud Insights では、ユーザをビジネスユニットに関連付ける�
 
 Reporting Portal を開くと、 _Team Content_folder が Cloud Insights レポートに必要な情報のタイプを選択するための出発点となります。
 
-. 左側のナビゲーションペインで、 * チームコンテンツ * をクリックし、使用する情報カテゴリを選択します。
-. [*Reports] をクリックして、事前定義済みレポートにアクセスします。
+. 左側のナビゲーションペインで、*コンテンツ>チームコンテンツ*を選択します。
+. 事前定義済みのレポートにアクセスするには、*[レポート]*を選択します。
 
 
-image:Reporting-TeamContent.png["チームのコンテンツ"]
+image:Reporting_Menu.png["[Reporting]メニュー"]
+image:Reporting_Team_Content.png["レポートが強調表示されているチームコンテンツ"]
 
 
 

@@ -23,6 +23,8 @@ sidebar:
       url: "/security_overview.html"
     - title: 当社が保存するものと場所
       url: "/security_information_and_region.html"
+    - title: securityadminツール
+      url: "/security_admin_tool.html"
   - title: はじめに
     entries:
     - title: 機能チュートリアル

@@ -10,7 +10,10 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 toc::[]
-Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、トライアルモードとサブスクリプションモードのどちらであるかによって異なります。
+Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、Cloud Insights エディションによって異なります。
+
+
+NOTE: ライブチャットサポートオプションは、Cloud Insights フェデラルエディションでは使用できません。
 
 image:SupportPageWithLearningCenter.png["サポートページ"]
 

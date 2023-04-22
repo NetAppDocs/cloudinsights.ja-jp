@@ -8,8 +8,83 @@ keywords: features
 :allow-uri-read: 
 
 
-ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、 Cloud Insights で利用できる最新の機能をいくつか紹介します。
+ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。
 
+
+NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用できない場合や、機能が制限されている場合があります。可能な限り、これらの違いはドキュメントに記載されています。
+
+
+
+== 2023年4月
+
+
+
+=== Kubernetesのパフォーマンス監視とマッピング
+
+。 link:concept_kubernetes_performance_monitoring_and_map.html["_Kubernetesのネットワークパフォーマンスとマップ_"] Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
+
+主な機能:•ワークロードマップはKubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を強調します。•Kubernetesポッド、ワークロード、ノード間のネットワークトラフィックを監視し、トラフィックとレイテンシの問題の原因を特定します。•入力、出力、リージョン間、ゾーン間のネットワークトラフィックを分析することで、全体的なコストを削減します。
+
+「スライドアウト」の詳細を示すワークロードマップ：
+
+image:Workload Map Example_withSlideout.png["[スライドアウト]パネルと詳細を示すワークロードマップの例"]
+
+Kubernetesのパフォーマンスの監視とマップは、として使用できます link:concept_preview_features.html["プレビュー（ Preview ）"] フィーチャー（ Feature ）：
+
+
+
+=== ONTAP Essentialsセキュリティダッシュボード
+
+。 link:concept_ontap_essentials.html#security["セキュリティダッシュボード"] では、現在のセキュリティ状況を瞬時に把握でき、ハードウェアとソフトウェアのボリューム暗号化、ランサムウェア対策のステータス、クラスタの認証方法をグラフで確認できます。セキュリティダッシュボードは、として使用できます link:concept_preview_features.html["プレビュー（ Preview ）"] フィーチャー（ Feature ）：
+
+image:OE_SecurityDashboard.png["ONTAP Essentialsセキュリティダッシュボード"]
+
+
+
+=== ONTAP コールドストレージを再利用します
+
+ONTAP コールドストレージの再利用_Insightは、ONTAP システム上のボリュームについて、コールド容量、潜在的なコスト/電力削減、推奨される対処方法に関するデータを提供します。
+
+image:Cold_Data_Example_1.png["Cold Data Insightの推奨事項の例"]
+
+このインサイトでは、次のような質問を回答 できます。
+
+* ストレージクラスタ上のコールドデータの量は、（a）高コストのSSDディスク、（b）HDDディスク、（c）仮想ディスクにどれくらいありますか？
+* 最適化されていないストレージに関して、最も影響を与えているワークロードは何ですか？
+* 特定のワークロードでデータがコールドである期間（日数）
+
+
+_Reclaim ONTAP コールドストレージ_はとみなされます link:concept_preview_features.html["_プレビュー_"] このため、機能は変更される場合があります。
+
+
+
+=== サブスクリプション通知はバナーメッセージも制御します
+
+サブスクリプション通知の受信者を設定する（[Admin]>[Notifications]）では、サブスクリプション関連の製品内バナー通知を表示するユーザも制御できるようになりました。
+
+image:Subscription_Expiring_Banner.png["Subscription Expiring in 2 daysバナーの例"]
+
+
+
+=== レポート機能の外観が一新されました
+
+Cloud Insights レポート画面の外観が新しくなり、メニューナビゲーションの一部が変更されていることがわかります。これらの画面とナビゲーションの変更は、現在のバージョンで更新されています link:reporting_overview.html["レポートドキュメント"]。
+
+image:Reporting_Menu.png["新しいレポートメニューの外観"]
+
+
+
+=== モニタはデフォルトで一時停止されています
+
+新しいCloud Insights 環境の場合は、次の点に注意してください link:task_system_monitors.html["システム定義のモニタ"] デフォルトではアラート通知は送信しません。モニタに1つ以上の配信方法を追加して、アラートを通知するモニタの通知を有効にする必要があります。既存のCloud Insights 環境では、現在_Paused_stateにあるシステム定義モニタのdefault_global_notification受信者リストが削除されました。現在アクティブなシステム定義モニターの通知設定と同様に、ユーザー定義通知も変更されません。
+
+
+
+=== [API Metering]タブをお探しですか？
+
+APIメーターは、[サブスクリプション]ページから*[管理者]>[APIアクセス]ページに移動しました。
+
+'''
 
 
 == 2023年3月
@@ -22,6 +97,7 @@ Cloud Connection for ONTAP 9.9以降のデータコレクタは廃止されま�
 
 2023年4月4日より前のリリースでは、クラウド接続で現在収集されているすべてのONTAP システムについて、新しいNetApp ONTAP データ管理ソフトウェアデータコレクタを設定する必要があります。 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["詳細はこちら。"]。
 
+'''
 
 
 == 2023年1月
@@ -42,6 +118,7 @@ Cloud Connection for ONTAP 9.9以降のデータコレクタは廃止されま�
 
 列の選択、列の名前変更、単位変換などのデータのカスタマイズも、新しいエクスポート機能に含まれるようになりました。
 
+'''
 
 
 == 2022年12月

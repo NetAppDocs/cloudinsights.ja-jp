@@ -12,6 +12,9 @@ summary: Cloud Insights には、さまざまな権限レベルを持つ複数�
 Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。ユーザはです link:#creating-accounts-by-inviting-users["招待済み"] から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます link:#single-sign-on-sso-accounts["シングルサインオン（ SSO ）許可"] デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。
 
 
+NOTE: Cloud Insights フェデラルエディションでのユーザーログインは、設定されたIDプロバイダー(指定された電子メールドメインを持つ)に制限されます。新しいユーザをCloud Insights Federal環境に招待する場合は、その環境に設定されているドメインとEメールアドレスが一致している必要があります。
+
+
 
 == アクセス許可レベル
 

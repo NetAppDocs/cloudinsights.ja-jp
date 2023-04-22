@@ -11,6 +11,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 実行する必要があります link:task_cs_add_agent.html["エージェントをインストールします"] データコレクタから情報を取得します。Agent をインストールする前に、お使いの環境がオペレーティングシステム、 CPU 、メモリ、およびディスクスペースの要件を満たしていることを確認してください。
 
+
+NOTE: ストレージワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
+
 [cols="36,60"]
 |===
 | コンポーネント | Linux 要件 

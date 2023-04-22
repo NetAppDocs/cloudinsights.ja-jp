@@ -18,6 +18,9 @@ Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行え�
 登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。詳細については、「 Cloud Insights について」を参照してください link:security_information_and_region.html["情報と地域"]。
 
 
+NOTE: 特に明記されていない限り、このページの情報は一般的に 環境 Cloud Insights 商用版(Basic、Standard、Premium)です。Cloud Insights の連邦版には、このページに記載されている機能の一部が含まれていない場合があります。
+
+
 
 == エディション
 
@@ -33,7 +36,7 @@ WARNING: 非アクティブな Cloud Insights Basic Edition 環境が削除さ�
 NOTE: Cloud Insights Basic Edition で収集された機能 ' データ保存時間 ' オブジェクトまたはメトリックは ' 予告なく変更される場合があります
 
 * * Standard Edition * はサブスクリプション契約により提供され、 Basic Edition のすべての機能に加えて、その他の機能も提供されます。
-* * Premium Edition *には、Business Intelligence and Reporting、Workload Security Auditing、Threat Detectionなどの追加の利点があります。
+* *Federal Edition*は、米国向けのFedRAMP準拠のCloud Insights Editionを提供します政府機関。上記の商用版で利用可能な一部の機能は、Federal Editionでは利用できない場合や、機能が制限されている場合があります。これらの違いについては、可能であればCloud Insights のドキュメントに記載されています。
 
 
 
@@ -61,7 +64,7 @@ Basic Edition 、 Standard Edition 、 Premium Edition の主な機能は次の�
 | フォーラム、ドキュメント、トレーニングビデオ | チェック（ &C ）； | チェック（ &C ）； | チェック（ &C ）； 
 
 
-| ライブチャットおよびテクニカルサポート | - | チェック（ &C ）； | チェック（ &C ）； 
+| ライブチャット^&plus;&plus;^およびテクニカルサポート | - | チェック（ &C ）； | チェック（ &C ）； 
 
 
 | VM 指標 | - | チェック（ &C ）； | チェック（ &C ）； 
@@ -76,7 +79,7 @@ Basic Edition 、 Standard Edition 、 Premium Edition の主な機能は次の�
 | 監視とアラート生成 | &ast; | チェック（ &C ）； | チェック（ &C ）； 
 
 
-| APIアクセス&& | チェック（ &C ）； | チェック（ &C ）； | チェック（ &C ）； 
+| APIアクセス^&plus;^ | チェック（ &C ）； | チェック（ &C ）； | チェック（ &C ）； 
 
 
 | シングルサインオン（ SSO ） | - | - | チェック（ &C ）； 
@@ -90,7 +93,7 @@ Basic Edition 、 Standard Edition 、 Premium Edition の主な機能は次の�
 
 | ビジネスインテリジェンスおよびレポート作成&AST;&ast; | - | - | チェック（ &C ）； 
 |===
-&ast;アクティブなカスタムモニタは一度に5台までに制限されます&plus; APIアクセスはエディション&ast;&ast;によって異なります; 500台以上の管理対象ユニットの環境で使用できます
+&ast;一度に5つのアクティブなカスタムモニタに制限&plus; APIアクセスは、エディション&ast;&ast; 500管理ユニット以上の環境で使用可能^&plus;&plus;^ Cloud Insights 連邦版では使用できません
 
 Cloud Insights の使用中に鍵のアイコンが表示される場合 image:padlock.png["南京錠"]では、この機能が現在のエディションで使用できないか、または制限付きの形式で利用できることを意味します。この機能にフルアクセスするには、をアップグレードしてください。
 

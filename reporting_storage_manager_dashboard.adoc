@@ -14,11 +14,15 @@ Storage Manager Dashboard では、一定期間のリソース使用量をまと
 
 NOTE: レポート機能は Cloud Insights で使用できます link:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]。
 
-このダッシュボードは 7 つのコンポーネントで構成され、ストレージ環境の特定の要素に関するコンテキスト情報が表示されます。ストレージサービスの要素をドリルダウンして、最も関心のあるセクションについて詳細な分析を実施できます。
-
 
 
 == まとめ
+
+チームコンテンツから* Storage Manager Dashboard *を選択すると、トラフィックとストレージに関する情報を提供する複数のレポートが表示されます。
+
+image:Reporting_Storage_Manager_Dashboard_Choices.png["Storage Managerのダッシュボードオプション"]
+
+Storage Manager Report *は、ストレージ環境のさまざまな側面に関するコンテキスト情報を含む7つのコンポーネントで構成されています。ストレージサービスの要素をドリルダウンして、最も関心のあるセクションについて詳細な分析を実施できます。
 
 image:Reporting-SMD.png["Storage Manager のダッシュボード"]
 

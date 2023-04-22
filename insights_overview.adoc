@@ -28,3 +28,12 @@ summary: 分析情報から、リソースの使用状況とトレンド分析�
 === Kubernetesネームスペースのスペースが不足しています
 
 スペース不足Insightで実行されているKubernetesネームスペースのワークロードについて、スペース不足になる可能性がある状況をKubernetesネームスペースで確認できます。各スペースがフルになるまでの推定日数も示されます。 link:insights_k8s_namespaces_running_out_of_space.html["詳細はこちら。"]
+
+
+
+=== ONTAP コールドストレージを再利用します
+
+ONTAP コールドストレージの再利用_Insightは、ONTAP システム上のボリュームについて、コールド容量、潜在的なコスト/電力削減、推奨される対処方法に関するデータを提供します。 link:insights_reclaim_ontap_cold_storage.html["詳細はこちら。"]
+
+
+NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 link:/concept_preview_features.html["詳細はこちら。"] Cloud Insights プレビューフィーチャーについて

@@ -41,7 +41,7 @@ Cloud Insights レポートでは、チャージバック、消費分析、予�
 
 メニューの [*Reports] リンクをクリックすると、 Cloud Insights レポートにアクセスできます。
 
-Reporting インターフェイスに移動します。Cloud Insights では、レポート作成エンジンに IBM Cognos Analytics を使用しています。Reporting クレデンシャルを使用してログインします。
+Reporting インターフェイスに移動します。Cloud Insights では、レポート作成エンジンに IBM Cognos Analytics を使用しています。
 
 
 

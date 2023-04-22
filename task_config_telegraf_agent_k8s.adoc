@@ -454,6 +454,9 @@ NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の�
 
  kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
 
+NOTE: オペレータのチューニングは、Cloud Insights フェデラルエディションでは使用できません
+
+
 
 == トラブルシューティング
 
