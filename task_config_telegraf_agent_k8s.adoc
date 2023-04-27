@@ -501,5 +501,17 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
  kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
  kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
 ----
+
+
+| NKMOネームスペース内のNet-Observer（ワークロードマップ）ポッドはCrashLoopBackOffにあります | これらのポッドは、Network ObservabilityのWorkload Mapデータコレクタに対応しています。以下を試してみてください:•いずれかのポッドのログをチェックして、カーネルの最小バージョンを確認してください。例：---｛"ci-tenant-id"："your-tenant-id"、"collector-cluster"："your-k8s-cluster-name"、"environment"："prod"、"level"："error"、"msg"："検証に失敗しました。理由:カーネルバージョン3.10.0が最小カーネルバージョン4.18.0よりも小さい、"time":"2022-11-09T08:23:08Z"}---•Net-observerポッドを使用するには、Linuxカーネルバージョンが4.18.0以上である必要があります。「uname -r」コマンドを使用してカーネルのバージョンを確認し、4.18.0以上であることを確認します 
+
+
+| NKMO名前空間のnet-observerポッドは、OpenShift 4環境のCrashLoopBackOffにあります | これは現在サポートされていません。今後のアップデートでサポートが追加される予定です。 
+
+
+| ポッドはNKMOネームスペース（デフォルト：netapp-monitoring）で実行されていますが、[Queries]のワークロードマップまたはKubernetes指標のデータがUIに表示されません | K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。 
+
+
+| NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています | net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。•保留状態のポッドをメモし、CPUまたはメモリのリソース問題 が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
