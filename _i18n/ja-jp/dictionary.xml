@@ -7905,7 +7905,6 @@
   <block id="e22f96f4c78ae5a5a73fa7bb9bb9e606" category="cell">ボリュームは、 I/O トラフィックを処理するオブジェクトで、多くの場合、 DevOps アプリケーション、ホームディレクトリ、データベースなどのパフォーマンス重視のアプリケーションによって駆動されます。ボリュームのレイテンシが高いと、アプリケーション自体に影響を及ぼし、タスクを実行できなくなる可能性があります。ボリュームのレイテンシを監視することは、アプリケーションの整合性を維持するうえで非常に重要です。メディアタイプに基づく想定レイテンシは、最大 1 ～ 2 ミリ秒、 SAS は最大 8 ～ 10 ミリ秒、 SATA HDD は 17 ～ 20 ミリ秒です</block>
   <block id="6a330cc3d1dd1f4ba2997354a3f21845" category="cell">ボリュームの qtree クォータオーバーコミット</block>
   <block id="fb7354d1ae8b5435bfa69884ef47da15" category="cell">ボリュームの qtree クォータオーバーコミットは、ボリュームが qtree クォータによってオーバーコミットされているとみなす割合を示します。ボリュームの qtree クォータの設定しきい値に達しました。ボリューム qtree クォータオーバーコミットを監視することで、ユーザに中断のないデータサービスが確実に提供されます。</block>
-  <block id="46df155a798a257bfbc43b89badd64d1" category="admonition">ほとんどのシステムモニタは、デフォルトで _Paused ステータスになっています。モニタを再開する前に、 Data Collector で _Advanced Counter Data Collection_and _Enable ONTAP EMS log collection_が 有効になっていることを確認する必要があります。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a126bfb1fdb6bbbe10997dfc35ed2144" category="section-title">モニタの説明</block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">システム定義のモニタは、事前に定義されたメトリックと条件に加えて、デフォルトの説明と修正アクションで構成されています。これらは変更できません。システム定義モニタの通知受信者リストを変更できます。メトリック、条件、概要、および修正アクションを表示したり、受信者リストを変更したりするには、システム定義のモニタグループを開き、リスト内のモニタ名をクリックします。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">システム定義のモニタグループは変更または削除できません。</block>
@@ -11044,4 +11043,5 @@
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。</block>
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。•保留状態のポッドをメモし、CPUまたはメモリのリソース問題 が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。</block>
+  <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">多くのシステムモニタは、デフォルトでIN_PAUSED_STATEになっています。システムモニタを有効にするには、モニタの_Resume_optionを選択します。Data Collectorで_Advanced Counter Data Collection_and_Enable ONTAP EMSログcollection_が有効になっていることを確認します。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
