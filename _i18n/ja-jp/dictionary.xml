@@ -6065,7 +6065,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">ONTAP との API 通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000~55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM データ LIF の IP アドレス</block>
-  <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">インバウンド / アウトバウンド</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">FPolicy イベントのための ONTAP との通信</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">イベントレートチェッカー</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">を参照してください <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> サイジングに関する情報のドキュメント</block>
@@ -10568,7 +10567,6 @@
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">USベースの*ワークロード・セキュリティー環境の場合：</block>
   <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">欧州*ベースのワークロード・セキュリティー環境の場合：</block>
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">APACベースの*ワークロード・セキュリティー環境の場合：</block>
-  <block id="c62621daddc9bbedf66f077464765078" category="cell">ONTAP とワークロードセキュリティの双方向。エージェントが SVM LIF に ping を送信します。</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">ワークロードセキュリティを使用している環境では、設定済みのエンドポイントURLもこのリストに表示されます。</block>
   <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">ユーザがアクセスできる API タイプは、でも異なります <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 各Cloud Insights 機能セット（監視、ワークロードセキュリティ、レポート）に含まれています。</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">ワークロードセキュリティでは、Snapshotの削除設定に基づいて、Snapshotが1日に1回自動的に削除されます。</block>
@@ -11044,4 +11042,6 @@
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。•保留状態のポッドをメモし、CPUまたはメモリのリソース問題 が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">多くのシステムモニタは、デフォルトでIN_PAUSED_STATEになっています。システムモニタを有効にするには、モニタの_Resume_optionを選択します。Data Collectorで_Advanced Counter Data Collection_and_Enable ONTAP EMSログcollection_が有効になっていることを確認します。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">インバウンド</block>
+  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。</block>
 </blocks>
