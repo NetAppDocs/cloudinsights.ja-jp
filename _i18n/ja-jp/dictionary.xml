@@ -10639,8 +10639,6 @@
   <block id="7d29e14ab81a7f2d743b14063e512bf7" category="paragraph">Cloud Insights のストレージワークロードセキュリティ（旧Cloud Secure ）は、内部の脅威に関する実用的な情報でデータを保護します。ハイブリッドクラウド環境全体にわたるすべての企業データへのアクセスを一元的に可視化および制御できるため、セキュリティとコンプライアンスの目標を確実に達成できます。</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">データのアクセスと管理をタイムリーかつ正確に可視化できないツールや手動プロセスを置き換えます。ワークロードセキュリティは、クラウドストレージシステムとオンプレミスストレージシステムの両方で独自に動作し、悪意のあるユーザの行動をリアルタイムで警告します。</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">ワークロードのセキュリティに関する通知（旧称Cloud Secure ）</block>
-  <block id="a2e7ba2dd94ada0070912463ec6803b4" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">すべてのアクティビティページは'ワークロードセキュリティ環境でエンティティに対して実行されるアクションを理解するのに役立ちます</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">アクティビティ履歴は、アクティブなワークロードセキュリティ環境で13カ月間保持されます。</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">ワークロードセキュリティエージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -11044,4 +11042,6 @@
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">多くのシステムモニタは、デフォルトでIN_PAUSED_STATEになっています。システムモニタを有効にするには、モニタの_Resume_optionを選択します。Data Collectorで_Advanced Counter Data Collection_and_Enable ONTAP EMSログcollection_が有効になっていることを確認します。これらのオプションは、 ONTAP データコレクタの _Advanced Configuration_ にあります。<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">インバウンド</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。</block>
+  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
+<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
 </blocks>
