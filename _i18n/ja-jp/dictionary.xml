@@ -2343,7 +2343,6 @@
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">ワイルドカード文字列には引用符は含まれていません。例： searchtext 、 \* searchtext * は、 'earchtext ' を含む文字列をフィルタします。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">プレフィックスが付いた文字列、たとえば searchtext* は、「 earchtext 」で始まる文字列を検索します。</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">アクティビティ履歴データは、 _ 時間、ユーザー、ソース IP 、アクティビティ、パスおよび _ エンティティタイプ _ でソートできます。デフォルトでは、テーブルは descending _Time_order でソートされます。つまり、最新のデータが最初に表示されます。_Device_Field と _Protocol_fields に対してソートが無効になっています。</block>
-  <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">アクティビティ履歴テーブルの上にある _ エクスポート _ ボタンをクリックすると ' アクティビティ履歴を .csv ファイルにエクスポートできますエクスポートされるのは上位 10,000 レコードのみです。</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">すべての activity テーブルには ' デフォルトで SELECT カラムが表示されます列を追加、削除、または変更するには、テーブルの右側にある歯車アイコンをクリックし、使用可能な列のリストから選択します。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">アクティビティセレクタ、幅 = 30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
@@ -11044,4 +11043,5 @@
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">アクティビティ履歴テーブルの上にある _ エクスポート _ ボタンをクリックすると ' アクティビティ履歴を .csv ファイルにエクスポートできます上位100、000件のレコードのみがエクスポートされることに注意してください。データの量によっては、エクスポートが完了するまでに数秒から数分かかる場合があります。</block>
 </blocks>
