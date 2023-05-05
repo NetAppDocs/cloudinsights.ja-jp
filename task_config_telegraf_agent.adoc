@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: Cloud Insights は統合データの収集エージェントとして Telegraf をサポートしており、 Windows 、 Linux 、 macOS 、および Kubernetes で設定できます。 
+summary: Cloud Insights は統合データの収集のためのエージェントとしてTelegrafをサポートしており、WindowsまたはLinux上で設定できます。 
 ---
-= データを収集するエージェントの設定（ Windows/Linux/Mac ）
+= データを収集するためのエージェントの設定(Windows/Linux)
 :allow-uri-read: 
 
 
@@ -28,8 +28,6 @@ NOTE: エージェントをインストールする前にインストールフ�
 * <<Windows の場合>>
 * <<RHEL および CentOS>>
 * <<Ubuntu と Debian>>
-* <<MacOS>>
-* <<Kubernetes>>
 
 
 エージェントをインストールするには、使用しているプラットフォームに関係なく、まず次の手順を実行する必要があります。
@@ -37,9 +35,7 @@ NOTE: エージェントをインストールする前にインストールフ�
 . エージェントに使用するホストにログインします。
 . Cloud Insights サイトにログインし、 * Admin > Data Collectors * に移動します。
 . [*+Data Collector* ] をクリックして、インストールするデータコレクタを選択します。
-
-
-. ホストに適したプラットフォーム（ Windows 、 Linux 、 macOS など）を選択します
+. ホストに適したプラットフォームを選択（Windows、Linux）
 . プラットフォームごとに、残りの手順を実行します。
 
 
@@ -345,145 +341,6 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 
 
-=== MacOS
-
-
-
-==== 前提条件
-
-* 次に示すコマンドは、 cURL 、 sudo 、 openssl 、および shasum を使用できる必要があります
-* プロキシの背後にいる場合は、「* macOS *用プロキシサポートの設定」セクションの手順に従う必要があります。
-
-
-
-
-==== macOS のプロキシサポートを設定しています
-
-
-NOTE: プロキシを使用する環境の場合は、をインストールする前にこのセクションをお読みください。
-
-
-NOTE: 次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります
-
-プロキシの背後にあるシステムの場合、 Telegraf エージェントをインストールする前に、現在のユーザー * の _http_proxy_ 変数および / または _http_proxy_environment 変数を設定するには、次の手順を実行します。
-
- export https_proxy=<proxy_server>:<proxy_port>
-* Tegraf エージェントをインストールした後、次のアドレスに appropriate _https_proxy_ および / または _http_proxy_variable を追加して設定します。 _ アプリケーション /Telegraf .app/Contents/telegraf.plist_:
-
-....
-…
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-   <key>EnvironmentVariables</key>
-   <dict>
-          <key>https_proxy</key>
-          <string><proxy_server>:<proxy_port></string>
-   </dict>
-   <key>Program</key>
-   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-   <key>Label</key>
-   <string>telegraf</string>
-   <key>ProgramArguments</key>
-   <array>
-     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-     <string>--config</string>
-     <string>/usr/local/etc/telegraf.conf</string>
-     <string>--config-directory</string>
-     <string>/usr/local/etc/telegraf.d</string>
-   </array>
-   <key>RunAtLoad</key>
-   <true/>
-</dict>
-</plist>
-…
-....
-次に、上記の変更を読み込んだ後、 Tegraf を再起動します。
-
-....
-sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf
-....
-
-
-==== エージェントをインストールしています
-
-image:Agent_Requirements_Macos.png["MacOS Agent のインストール"]
-
-.エージェントを macOS にインストールする手順：
-. エージェントアクセスキーを選択します。
-. エージェントのインストールダイアログからコマンドブロックをコピーします。クリップボードアイコンをクリックすると、コマンドをクリップボードに簡単にコピーできます。
-. Bash ウィンドウを開きます
-. Bash ウィンドウにコマンドを貼り付けて、 Enter キーを押します。
-. コマンドは、適切なエージェントインストーラをダウンロードしてインストールし、デフォルト設定を行います。終了すると、エージェントサービスが再起動されます。コマンドには一意のキーがあり、 24 時間有効です。
-. 前に Home醸造 を使用して Tegraf エージェントをインストールしていた場合は、アンインストールするように求められます。以前にインストールした Tegraf エージェントをアンインストールしたら、上記の手順 5 でコマンドを再実行します。
-. [ 完了 ] または [ 続行 ] をクリックします
-
-
-エージェントのインストール後、次のコマンドを使用してサービスを開始または停止できます。
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
-
-
-==== エージェントをアンインストールしています
-
-macOS でエージェントをアンインストールするには、 Bash 端末で次のコマンドを実行します。
-
-. Telegraf サービスを停止します。
-+
- sudo launchctl stop telegraf
-. テレグラムエージェントをアンインストールします。
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. 残っている設定ファイルまたはログファイルを削除します。
-+
-....
-sudo rm -rf /usr/local/etc/telegraf*
-sudo rm -rf /usr/local/var/log/telegraf.*
-....
-
-
-
-
-==== Agent をアップグレードしています
-
-テレグラムエージェントをアップグレードするには、次の手順に従います。
-
-. テレグラムサービスを停止します。
-+
- sudo launchctl stop telegraf
-. 前のテレグラムエージェントをアンインストールします。
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. link:#macos["新しいエージェントをインストールします"]。
-
-
-｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝｝ ｛empty｝
-
-
-
-== Kubernetes
-
-NetApp Kubernetes Monitoring Operator（NKMO）は、Cloud Insights Insights用のKubernetesをインストールする方法として推奨されます。より柔軟な設定で監視を実行し、Kubernetesクラスタ内で実行される他のソフトウェアを監視する機会を増やします。
-
-お願いします link:task_config_telegraf_agent_k8s.html["* ここに移動 *"] NetApp Kubernetes Monitoring Operatorに関する情報とインストール手順については、以下を参照してください。
-
-｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝｝ ｛empty｝
-
-
-
 == チェックサムを検証する
 
 Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。これを行うには、インストーラをダウンロードしてダウンロードしたパッケージのチェックサムを生成し、チェックサムをインストール手順に示されている値と比較します。
@@ -498,7 +355,7 @@ Cloud Insights エージェントのインストーラで整合性チェック�
 
 . 指示に従ってエージェントインストーラスニペットをコピーします。
 . スニペットをコマンドウィンドウに貼り付ける代わりに、テキストエディタに貼り付けます。
-. コマンドから末尾の「 --install 」（ Linux/Mac ）または「 -install 」（ Windows ）を削除します。
+. コマンドから末尾の「--install」（Linux）または「-install」（Windows）を削除します。
 . コマンド全体をテキストエディタからコピーします。
 . 次に、コマンドウィンドウ（作業ディレクトリ内）に貼り付けて実行します。
 
@@ -556,9 +413,6 @@ PEM ファイルは、フィンガープリントが次のようになってい�
 * RHEL / Ubuntu：
 +
  sha256sum <package_name>
-* MacOS：
-+
- shasum -a 256 telegraf.pkg
 * Windows の場合
 +
  Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List

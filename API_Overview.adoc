@@ -312,21 +312,6 @@ spec:
 
 
 
-==== MacOS
-
-* Telegraf 構成ファイルを編集し、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。
-+
- sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
-* Tegraf を再起動します。
-+
-....
-sudo launchctl stop telegraf
-sudo launchctl start telegraf
-....
-
-
-
-
 ==== Windows の場合
 
 * 各 Tegraf コンフィギュレーションファイルを _C ： \Program Files\Telegra\Telegraf .d_ で、古い API トークンのすべてのインスタンスを新しい API トークンに置き換えます。

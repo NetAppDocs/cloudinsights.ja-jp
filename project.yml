@@ -37,9 +37,9 @@ sidebar:
         url: "/concept_acquisition_unit_requirements.html"
       - title: Acquisition Unit の設定
         url: "/task_configure_acquisition_unit.html"
-      - title: エージェントの設定（ Windows/Linux/Mac ）
+      - title: Windows/Linuxでのエージェントの設定
         url: "/task_config_telegraf_agent.html"
-      - title: エージェントの設定（ Kubernetes ）
+      - title: Kubernetes演算子の設定
         url: "/task_config_telegraf_agent_k8s.html"
       - title: データコレクタの設定
         url: "/task_configure_data_collectors.html"

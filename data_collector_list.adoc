@@ -198,9 +198,6 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_lenovo.html["Lenovo HX シリーズ"] | インフラ 
 
 
-| link:task_config_telegraf_agent.html#macos["MacOS"] | サービス 
-
-
 | link:task_config_telegraf_memcached.html["Memcached"] | サービス 
 
 
