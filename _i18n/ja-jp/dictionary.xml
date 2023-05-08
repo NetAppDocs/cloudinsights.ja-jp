@@ -10196,25 +10196,6 @@
   <block id="e683c12dcf92dc441c52b41d48fae3bd" category="cell">フィルタリングするVMのリスト（カンマ区切り、または値にカンマが使用されている場合はセミコロンで区切った）</block>
   <block id="8d9973d4d778ded1eba118da9ff38733" category="cell">Unisphereパフォーマンスポーリング間隔（秒）</block>
   <block id="f1ef5b6a9704d8b164ef33c20e11ce70" category="cell">デフォルトは300秒です</block>
-  <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights はをサポートします <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 統合データを収集するエージェントであり、 Windows 、 Linux 、 macOS 、および Kubernetes 上で設定できます。</block>
-  <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">データを収集するエージェントの設定</block>
-  <block id="e43d6e3ee8366674f4d3bc6eb87427a7" category="paragraph">カスタム / プライベート Docker リポジトリを使用してプロキシを設定する 2021 年 12 月 10 日に本番稼働に入った CI 導入以降、 CR で監視オペレータのプロキシを設定できます</block>
-  <block id="1d3227ede43efb9f227fa30469358de3" category="paragraph">kubectl -n NetApp-monitoring edit agent agent-monitoring netapp を選択します</block>
-  <block id="f41621a6649a18209de8ab1311719bde" category="paragraph">このファイルの spec: セクションで、次のコードブロックを追加します</block>
-  <block id="b0c450654b5e94522d011a58967a41c8" category="paragraph">仕様： proxy ： isAuProxyEnabled ： &lt;true または false&gt; isTelegraafProxyEnabled ： &lt;true または false&gt; isFluentbitProxyEnabled ： &lt;true または false&gt; パスワード： &lt; プロキシのパスワード、オプション &gt; port ： &lt; プロキシのポート &gt; サーバ： &lt; プロキシのサーバのユーザ名： &lt; プロキシのユーザ名、オプション &gt; noProxy ： &lt; プロキシをバイパスする必要がある IP または解決可能なホスト名のカンマ区切りリスト &gt; カスタム / プライベート Docker リポジトリを使用すると、 Docker シークレットが取得されます</block>
-  <block id="eb7f0fe8e02a65d56982f5a74f6583c0" category="paragraph">kubectl -n NetApp-monitoring get secret Docker -o yaml</block>
-  <block id="58e1e7f30cb0fd80bcb9aa7b716cb724" category="paragraph">（前述のコマンドの出力から .dockerconfigjson の値をコピーペースト） Docker シークレットをデコードします</block>
-  <block id="ac785eabe0073fe1171505c99a3724ee" category="paragraph">echo&lt;paste from 手順 1 above &gt; | base64 -d このコマンドの出力は、次の JSON 形式になります。 ｛ "auths" ： ｛ "docd.&lt;cluster&gt; .cloudinsights.netapp.com" ： ｛ "username" ： "&lt;tenant id&gt;" 、 "password" ： "&lt; CI API キーであるパスワード &gt; 、 "auth" ： "&lt; エンコードされたユーザ名：基本パスワード認証キー。Docker リポジトリへのログインには Docker 「 } 」が使用されています</block>
-  <block id="c97b0dfe1c937e6a975eddccb95973ef" category="paragraph">Docker ログイン Docker 。 &lt;cluster&gt; .cloudinsights.netapp.com （手順 2 から） -u &lt; ユーザ名を手順 #2 のパスワード： &lt; 手順 #2 からのパスワード： Cloud Insights からオペレータの Docker イメージを取得します</block>
-  <block id="3ec8cafe630fb58c78079faf4adeb00a" category="paragraph">Docker は Docker をプルします。 &lt;cluster&gt; .cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</block>
-  <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">次のコマンドを使用して &lt;version&gt; フィールドを確認します。</block>
-  <block id="f422cefb0886961455efb67de7e26231" category="paragraph">kubectl -n NetApp-monitoring get deployment monitoring operator|grep " image ： " オペレータ用の Docker イメージをプライベート / エンタープライズ用の Docker レジストリにプッシュします</block>
-  <block id="43d80889a5a41546c856cf06328616cd" category="paragraph">社内ポリシーに従って、プライベート / ローカル / エンタープライズ Docker リポジトリにコードをプッシュするオープンソースの依存関係をすべてプライベート Docker レジストリにダウンロードします</block>
-  <block id="9b7a2fdb4de8c1f948c779a8031bce3a" category="paragraph">次のオープンソースイメージをダウンロードする必要があります。 dock.io/テレ グラム :1.19.3 GCR.io/kubebbuilder/kube-RBAC プロキシ : v0.5.0 k81.gcr.io/kube-state-metrics/kube-state-metrics : v2.1.0</block>
-  <block id="582e00a87af2a3a98b1dc04e62419ae2" category="paragraph">FLUENT ビットが有効になっている場合： Docker .IO/FLUENT ビット： 1.7.8 Docker .IO/Kubernetes -event-exporter ： 0.10 エージェント CR を編集して新しい Docker repo の場所を反映させ、自動アップグレードを無効にします（有効な場合）。</block>
-  <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade ： false docd-repo ： &lt;dockerRepoSecret ： &lt;optional ： enterprise-corp Docker repo の Docker シークレットの名前。このシークレットは、同じネームスペース内の k8s クラスタにすでに作成されている必要があります。 &gt;</block>
-  <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">spec: セクションで ' 次の変更を行います</block>
-  <block id="44adec27317574513bdc470781ccacb6" category="paragraph">仕様 : テレグラム : -name: KSM 置換 : -key: k81.gcr.io 値 : &lt; 上記の "Docker - repa" フィールドと同じ &gt;</block>
   <block id="25334cc3e68d534ebb5ad59907c70159" category="paragraph">Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。これを行うには、インストーラをダウンロードしてダウンロードしたパッケージのチェックサムを生成し、チェックサムをインストール手順に示されている値と比較します。</block>
   <block id="1078df24543dad61e1b5b51f611f5b0f" category="section-title">インストールせずにインストーラパッケージをダウンロードします</block>
   <block id="48feb91430f93bd8ac9740e9cdc40c75" category="paragraph">デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、UIから取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。</block>
@@ -11011,4 +10992,7 @@
   <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">Operating System_dataコレクタの場合は、Cloud Insights エージェントをインストールするプラットフォーム（Linux、Windows）を選択します。サービスからデータを収集するには、少なくとも 1 人のエージェントが必要です。エージェントは、 Cloud Insights で使用するために、ホスト自体からもデータを収集します。このデータは、ウィジェットなどでは「ノード」データに分類されます</block>
   <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">Windows/Linuxでのエージェントの設定</block>
   <block id="77206fd030aaac8141e97d837c255109" category="sidebar">Kubernetes演算子の設定</block>
+  <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023年5月</block>
+  <block id="675daaee26cb7a668008d96ba0afd8e2" category="section-title">ワークロードセキュリティ画面の読み込みが改善されました</block>
+  <block id="394791778bc8c7c505ff97a4408cada8" category="paragraph">Cloud Insights では、オブザーバビリティとワークロードセキュリティの画面をより効率的に表示することでユーザエクスペリエンスが向上し、これらの機能間を移動する際のロード時間が短縮されました。[Workload Security]ページのURLが変更されたことに注意してください。以前のURLは自動的に新しいURLにリダイレクトされます。</block>
 </blocks>
