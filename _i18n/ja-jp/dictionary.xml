@@ -8331,7 +8331,6 @@
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注：「フルまでの日数」に0（ゼロ）を指定すると、フルまでの日数が90日を超えたと推定されます。つまり、システムがすぐにスペース不足になる危険性はありません。</block>
   <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">データ保護</block>
   <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">データ保護*ページを選択して、SnapMirror関係を表示します。ソースボリュームまたはデスティネーションボリュームの情報を表示するには、ボタンをクリックしてください。表示するデータの列を追加するには、歯車アイコンをクリックします。</block>
-  <block id="0b0af87f68e61a9b2546cb02922b8109" category="inline-image-macro">SnapMirror関係リストページ</block>
   <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">ONTAP Essential* Infrastructure *ページでは、すべての基本的なONTAP オブジェクトに対して事前に構築された（さらにカスタマイズ可能な）クエリーを使用して、クラスタの正常性とパフォーマンスを確認できます。確認するオブジェクトタイプ（クラスタ、ストレージプールなど）を選択し、健常性とパフォーマンスのどちらの情報を表示するかを選択します。フィルタを設定して、個々のシステムの詳細を調べます。</block>
   <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">ストレージプールのインフラストラクチャ選択</block>
   <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
@@ -10701,7 +10700,6 @@
   <block id="605a2ba69471aa08a0c9f0b51efc298c" category="paragraph">Storage Manager Report *は、ストレージ環境のさまざまな側面に関するコンテキスト情報を含む7つのコンポーネントで構成されています。ストレージサービスの要素をドリルダウンして、最も関心のあるセクションについて詳細な分析を実施できます。</block>
   <block id="971864d3cce467fe27261b25e4c90a3b" category="paragraph"><block ref="971864d3cce467fe27261b25e4c90a3b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f253e02ec507b689198b02ee61b62dab" category="paragraph">情報グラフは、時間の経過に伴うパフォーマンスの確認や、容量使用率の内訳を提供します。これらのグラフやデータポイントは、調査や調査の開始点として使用できます。</block>
-  <block id="2b00b2591eefa2c660f44570ff1a8b90" category="paragraph"><block ref="2b00b2591eefa2c660f44570ff1a8b90" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45d58050fc83f658d533966b07ead592" category="inline-link-macro">* ONTAP 9向けネットアップセキュリティ強化ガイド*</block>
   <block id="95d10eb69527c16122bd44ec553d0f7c" category="paragraph">[Security Dashboard]には、現在のセキュリティ状況が瞬時に表示され、ハードウェアとソフトウェアのボリューム暗号化、ランサムウェア対策ステータス、クラスタ認証方式のチャートが表示されます。セキュリティ基準は、で定義された推奨事項に基づいて評価されます <block ref="a1c84b5f46cbbd9a263e3a5732ed7485" category="inline-link-macro-rx"></block>。</block>
   <block id="c3ccbe813e27865c5c1154a78b3b9abd" category="paragraph">暗号化やランサムウェア対策の中から必要なものを選択して、環境を詳しく調べます。</block>
@@ -10995,4 +10993,8 @@
   <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023年5月</block>
   <block id="675daaee26cb7a668008d96ba0afd8e2" category="section-title">ワークロードセキュリティ画面の読み込みが改善されました</block>
   <block id="394791778bc8c7c505ff97a4408cada8" category="paragraph">Cloud Insights では、オブザーバビリティとワークロードセキュリティの画面をより効率的に表示することでユーザエクスペリエンスが向上し、これらの機能間を移動する際のロード時間が短縮されました。[Workload Security]ページのURLが変更されたことに注意してください。以前のURLは自動的に新しいURLにリダイレクトされます。</block>
+  <block id="6b091071a7d33b506abd7a64e9f0795d" category="inline-image-macro">[Data Protection Dashboard]ウィジェットには、ローカルとリモートの概要が表示されます</block>
+  <block id="185acbfb6bbd68c83e1d229b0f437594" category="inline-image-macro">データ保護クラスタのリスト</block>
+  <block id="2104c64c486c18ec271b0134a19654dd" category="paragraph"><block ref="c556223236d0a6ab73f15f6e6f21e0f9" category="inline-image-macro-rx" type="image"></block>
+<block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

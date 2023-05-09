@@ -40,7 +40,8 @@ image:OE_Overview.png["ONTAP Essentialsの概要ダッシュボード"]
 
 データ保護*ページを選択して、SnapMirror関係を表示します。ソースボリュームまたはデスティネーションボリュームの情報を表示するには、ボタンをクリックしてください。表示するデータの列を追加するには、歯車アイコンをクリックします。
 
-image:OE_DataProtection.png["SnapMirror関係リストページ"]
+image:DataProtectionDashboard_OverviewWidgets.png["[Data Protection Dashboard]ウィジェットには、ローカルとリモートの概要が表示されます"]
+image:DataProtectionDashboard_ClusterList.png["データ保護クラスタのリスト"]
 
 
 
