@@ -83,12 +83,16 @@ sidebar:
         url: "/task_dashboard_example_VM_performance.html"
     - title: ダッシュボードのベストプラクティス
       url: "/concept_dashboard_best_practices.html"
-  - title: Kubernetes エクスプローラ
+  - title: Kubernetes
     entries:
     - title: Kubernetes の概要ページ
       url: "/kubernetes_landing_page.html"
+    - title: モニタリングオペレータの操作を開始します
+      url: "/task_config_telegraf_agent_k8s.html"
     - title: Kubernetes クラスタページ
       url: "/kubernetes_cluster_detail.html"
+    - title: Kubernetesの監視とマッピング
+      url: "/concept_kubernetes_performance_monitoring_and_map.html"
   - title: 分析
     entries:
     - title: 概要
