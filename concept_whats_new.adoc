@@ -29,48 +29,10 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
-=== Kubernetes Monitoring Operatorのインストールが改善されました
+=== 675daaee26cb7a668008d96ba0afd8e2
 
-のインストールと設定 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] 以下の改善により、これまで以上に簡単になりました。
+394791778bc8c7c505ff97a4408cada8
 
-* 環境 link:telegraf_agent_k8s_config_options.html["構成設定"] は、自己文書化された単一の構成ファイルに保持されます。
-* Kubernetes Monitoring Operatorイメージをプライベートリポジトリにアップロードするためのステップバイステップの手順。
-* 単一のコマンドで簡単にアップグレードでき、カスタム構成を維持しながらKubernetes Monitoringをアップグレードできます。
-* セキュリティの強化：APIキーがシークレットを安全に管理します。
-* CI / CD自動化ツールとの統合と導入が容易
-
-
-
-
-=== ストレージ仮想化
-
-Cloud Insights では、ローカルストレージがあるストレージアレイと他のストレージアレイが仮想化されているストレージアレイを区別できます。これにより、コストを関連付け、フロントエンドからインフラのバックエンドまで、パフォーマンスを区別することができます。
-
-image:StorageVirtualization_StorageSummary.png["仮想ストレージとバックアップストレージの情報が表示されたストレージランディングページ"]
-
-
-
-=== 新しいWebhookパラメータ
-
-を作成する場合 link:task_create_webhook.html["ウェブフック"] 通知。Webhook定義に次のパラメータを含めることができます。
-
-* %%TriggeredOnKeys%%
-* %%TriggeredOnValues%%
-
-
-
-
-=== Kubernetes PVデータをレポートします
-
-Cloud Insights で収集されたKubernetes永続ボリューム（PV）情報をレポート作成で使用できるようになり、チャージバック、トレンド分析、予測、TTF計算、 また、Kubernetesクラスタ、ネームスペース、ワークロードなどの指標に関するその他のビジネスレポートも作成できます。
-
-
-
-=== 新規のお客様にはデフォルトのONTAP システムモニタが有効になっています
-
-新しいCloud Insights 環境では、多くのONTAP システムモニタがデフォルトで有効になっています（_resumed_）。以前は、ほとんどのモニタはデフォルトで_Paused_stateに設定されていました。ビジネスニーズは会社によって異なるため、を参照することを常にお勧めします link:task_system_monitors.html["システムモニタ"] アラートの必要性に応じて、それぞれを一時停止または再開します。
-
-'''
 
 
 == 2023年4月
@@ -79,7 +41,7 @@ Cloud Insights で収集されたKubernetes永続ボリューム（PV）情報�
 
 === Kubernetesのパフォーマンス監視とマッピング
 
-。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetesのネットワークパフォーマンスとマップ_"] Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
+5d6a6764c313767cd859950497830f19
 
 主な機能:•ワークロードマップはKubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を強調します。•Kubernetesポッド、ワークロード、ノード間のネットワークトラフィックを監視し、トラフィックとレイテンシの問題の原因を特定します。•入力、出力、リージョン間、ゾーン間のネットワークトラフィックを分析することで、全体的なコストを削減します。
 
