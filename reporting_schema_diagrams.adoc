@@ -22,33 +22,51 @@ NOTE: レポート機能は Cloud Insights で使用できます link:concept_su
 
 
 
-=== ストレージ
+=== 注釈
 
-image:storage.png[""]
-
-
-
-=== ストレージノード
-
-image:storage_node.png[""]
+image:annotations.png[""]
 
 
 
-=== SAN ファブリック
+=== アプリケーション
 
-image:fabric.png[""]
-
-
-
-=== ポート接続
-
-image:connectivity.png[""]
+image:apps_annot.png[""]
 
 
 
-=== VM
+=== Kubernetes指標
 
-image:vm.png[""]
+image:k8s_schema.jpg["Kubernetes"]
+
+
+
+==== Kubernetes Cluster Metricsファクト
+
+image:k8s_cluster_metrics_fact.jpg["Kubernetes Cluster Metricsファクト"]
+
+
+
+==== Kubernetes Namespace Metricsファクト
+
+image:k8s_namespace_metrics_fact.jpg["Kubernetes Namespace Metricsファクト"]
+
+
+
+==== Kubernetes Node Metricsファクト
+
+image:k8s_node_metrics_fact.jpg["Kubernetes Node Metricsファクト"]
+
+
+
+==== Kubernetes PVC Metricsファクト
+
+image:k8s_pvc_metrics_fact.jpg["Kubernetes PVC Metricsファクト"]
+
+
+
+==== Kubernetes Workload Metricsファクト
+
+image:k8s_workload_metrics_fact.jpg["Kubernetes Workload Metricsファクト"]
 
 
 
@@ -64,39 +82,76 @@ image:logical.png[""]
 
 
 
-=== 注釈
+=== ポート接続
 
-image:annotations.png[""]
-
-
-
-=== アプリケーション
-
-image:apps_annot.png[""]
+image:connectivity.png[""]
 
 
 
-=== ストレージおよびストレージプールの容量
+=== SAN ファブリック
 
-image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
-
-
-
-=== ボリューム容量
-
-image:Volume_Capacity.png[""]
+image:fabric.png[""]
 
 
 
-=== VM 容量
+=== ストレージ
 
-image:VM_Capacity_Fact.png[""]
+image:storage.png[""]
+
+
+
+=== ストレージノード
+
+image:storage_node.png[""]
+
+
+
+=== VM
+
+image:vm.png[""]
+
+'''
+
+
+== Capacity Datamartの略
+
+次の図は、容量データマートを示しています。
+
+
+
+=== チャージバック
+
+image:Chargeback_Fact.png[""]
+
+
+
+=== ディスクグループの容量
+
+image:Disk_Group_Capacity.png[""]
+
+
+
+=== ファイルシステムの利用率
+
+image:fs_util.png[""]
 
 
 
 === 内部ボリューム容量
 
 image:Internal_Volume_Capacity_Fact.png[""]
+
+
+
+=== Kubernetes PVの容量
+
+image:k8s_pvc_capacity_fact.jpg[""]
+
+
+
+=== ポートの容量
+
+image:ports.png[""]
 
 
 
@@ -118,28 +173,23 @@ image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== ファイルシステムの利用率
+=== ストレージノードの容量
 
-image:fs_util.png[""]
-
-
-
-=== ポートの容量
-
-image:ports.png[""]
+image:Storage_Node_Capacity_Fact.jpg[""]
 
 
 
-=== チャージバック
+=== VM 容量
 
-image:Chargeback_Fact.png[""]
+image:VM_Capacity_Fact.png[""]
 
 
 
-=== ディスクグループの容量
+=== ボリューム容量
 
-image:Disk_Group_Capacity.png[""]
+image:Volume_Capacity.png[""]
 
+'''
 
 
 == パフォーマンスデータマート
@@ -150,43 +200,55 @@ image:Disk_Group_Capacity.png[""]
 
 === アプリケーションボリューム毎時パフォーマンス
 
-b68ed2de708ea9b3b40e76b37e99573b
+image:application_performance_fact.jpg[""]
+
+
+
+=== ディスクの日次パフォーマンス
+
+image:disk_daily_performance_fact.png[""]
+
+
+
+=== Disk Hourly Performance の 2 つの機能が
+
+image:disk_hourly_performance_fact.png[""]
+
+
+
+=== Host Hourly Performanceの略
+
+image:host_performance_fact.jpg[""]
 
 
 
 === 内部ボリューム毎時パフォーマンス
 
-49849b07ecf6904a481a051c4c6e59bf
-
-
-
-=== 内部ボリューム毎時パフォーマンス
-
-566adfd62d1d59e5aa02e13ceb0d2212
+image:internal_volume_performance_fact.jpg[""]
 
 
 
 === 内部ボリュームの日次パフォーマンス
 
-8665cb5eac9e402f835407ee789aba61
-
-
-
-=== 1 時間ごとのボリュームパフォーマンス
-
-image:vmdk_hourly_performance_fact.png[""]
-
-
-
-=== ボリュームの日次パフォーマンス
-
-d14385553d6e0a6f14394bc02a502a42
+image:internal_volume_daily_performance_fact.jpg[""]
 
 
 
 === qtree ：日次パフォーマンス
 
 image:QtreeDailyPerformanceFact.png[""]
+
+
+
+=== ストレージノードの日次パフォーマンス
+
+image:storage_node_daily_performance_fact.jpg[""]
+
+
+
+=== Storage Node Hourly Performance の略
+
+image:storage_node_hourly_performance_fact.jpg[""]
 
 
 
@@ -256,24 +318,12 @@ image:vmdk_hourly_performance_fact.png[""]
 
 
 
-=== Storage Node Hourly Performance の略
+=== 1 時間ごとのボリュームパフォーマンス
 
-a6040f821773a9032da45c788b24e202
-
-
-
-=== ディスクの日次パフォーマンス
-
-image:disk_daily_performance_fact.png[""]
+image:volume_performance_fact.jpg[""]
 
 
 
-=== Disk Hourly Performance の 2 つの機能が
+=== ボリュームの日次パフォーマンス
 
-image:disk_hourly_performance_fact.png[""]
-
-
-
-== Kubernetes
-
-image:k8s_schema.jpg["Kubernetes"]
+image:volume_daily_performance_fact.jpg[""]
