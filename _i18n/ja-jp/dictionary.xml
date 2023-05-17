@@ -11154,4 +11154,5 @@
   <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4 * Red Hat Enterprise Linux（64ビット）： 7.2～7.9、8.1～9.1 * Rocky 9.0、9.1 * Ubuntu Server: 18.04および20.04 LTSこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
 </blocks>
