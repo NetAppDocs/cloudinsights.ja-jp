@@ -30,7 +30,7 @@ image:ActiveMQDCConfigWindows.png["ActiveMQ の設定"]
 
 == セットアップ（ Setup ）
 
-情報は、に記載されています http://activemq.apache.org/getting-started.html["ActiveMQ のドキュメント"]
+情報は、に記載されています http://["ActiveMQ のドキュメント"]
 
 
 

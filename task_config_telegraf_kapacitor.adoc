@@ -30,7 +30,7 @@ image:KapacitorDCConfigWindows.png["Kapacitor の構成"]
 
 == セットアップ（ Setup ）
 
-セットアップ情報は、で確認できます https://docs.influxdata.com/kapacitor/v1.5/["カパトールの資料"]
+セットアップ情報は、で確認できます https://["カパトールの資料"]
 
 
 

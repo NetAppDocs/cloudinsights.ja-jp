@@ -92,7 +92,7 @@ sidebar:
     - title: Kubernetes クラスタページ
       url: "/kubernetes_cluster_detail.html"
     - title: Kubernetesの監視とマッピング
-      url: "/concept_kubernetes_performance_monitoring_and_map.html"
+      url: "/concept_kubernetes_network_monitoring_and_map.html"
   - title: 分析
     entries:
     - title: 概要
@@ -173,6 +173,8 @@ sidebar:
       url: "/concept_asset_user_data_section.html"
     - title: 関連アラートセクション
       url: "/concept_asset_alerts_section.html"
+    - title: ストレージ仮想化
+      url: "/concept_storage_virtualization.html"
     - title: 資産を検索するためのヒントとヒント
       url: "/concept_searching_assets.html"
   - title: レポート作成

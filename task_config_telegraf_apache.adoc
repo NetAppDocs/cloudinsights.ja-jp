@@ -14,7 +14,7 @@ summary: Apache データコレクタの設定
 .前提条件
 * Apache HTTP Server がセットアップされ、適切に実行されている必要があります
 * エージェントのホスト / VM に対する sudo 権限または管理者権限が必要です
-* 通常、 apache_mod_status_module は、 Apache サーバの「 /server-status?auto 」場所にページを公開するように設定されています。使用可能なすべてのフィールドを収集するには、 _ExtendedStatus_ オプションを有効にする必要があります。サーバの設定方法については、 Apache モジュールのドキュメントを参照してください。 https://httpd.apache.org/docs/2.4/mod/mod_status.html#enable[]
+* 通常、 apache_mod_status_module は、 Apache サーバの「 /server-status?auto 」場所にページを公開するように設定されています。使用可能なすべてのフィールドを収集するには、 _ExtendedStatus_ オプションを有効にする必要があります。サーバの設定方法については、 Apache モジュールのドキュメントを参照してください。 https://[]
 
 
 

@@ -1,18 +1,28 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_performance_monitoring_and_map.html 
+permalink: concept_kubernetes_network_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: Kubernetesワークロードの依存関係とフローを提示し、ネットワークとパフォーマンスの問題を明らかにします 
 ---
-= Kubernetesのパフォーマンス監視とマッピング
+= Kubernetes Network Performance Monitoring and Mapの略
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-Kubernetes Network Performance and Map機能は、Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
+Kubernetes Network Performance Monitoring and Map機能は、Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
 
 
-NOTE: Kubernetesのネットワークパフォーマンスとマップはです link:concept_preview_features.html["プレビュー（ Preview ）"] 機能は変更される場合があります。
+NOTE: Kubernetes Network Performance Monitoring and Mapは、です link:concept_preview_features.html["プレビュー（ Preview ）"] 機能は変更される場合があります。
 
 主な機能:•ワークロードマップはKubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を強調します。•Kubernetesポッド、ワークロード、ノード間のネットワークトラフィックを監視し、トラフィックとレイテンシの問題の原因を特定します。•入力、出力、リージョン間、ゾーン間のネットワークトラフィックを分析することで、全体的なコストを削減します。
 
@@ -22,7 +32,7 @@ image:workload-map-animated.gif["ワークロードマップの例"]
 
 == 前提条件
 
-Kubernetes Network Performance and Mapを使用する前に、を設定しておく必要があります link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] このオプションを有効にします。オペレータの配備中に、[ネットワークパフォーマンスとマップ]チェックボックスをオンにして有効にします。このオプションを有効にするには、Kubernetesランディングページに移動して[Modify Deployment]を選択します。
+Kubernetes Network Performance Monitoring and Mapを使用する前に、を設定しておく必要があります link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] このオプションを有効にします。オペレータの配備中に、[ネットワークパフォーマンスとマップ]チェックボックスをオンにして有効にします。このオプションを有効にするには、Kubernetesランディングページに移動して[Modify Deployment]を選択します。
 
 image:ServiceMap_NKMO_Deployment_Options.png["NKMO停止中にMapオプションを選択します"]
 
@@ -77,7 +87,7 @@ image:Workload_Map_Filtering.png["ワークロードマップのフィルタリ�
 +
 ** ポッドのワークロードラベルから取得
 ** ワークロードの想定されるラベル：app.kubernetes.io/component
-** ラベル名参照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** ラベル名参照： https://[]
 ** 推奨ラベル：
 +
 *** フロントエンド

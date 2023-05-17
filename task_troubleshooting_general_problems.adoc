@@ -24,7 +24,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 | Cloud Insights は 5 分ごとにログアウトします | 必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。例：Chromeで、ブラウザのURLに「chrome：//settings/cookies」と入力します。「すべてのCookieを許可」オプションを選択します。*または*「Block third-party cookies」を選択し、[*.] auth0.comおよび[*.] netapp.comの例外を追加します。注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。 
 
 
-| Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。 | からチケットを開きます https://mysupport.netapp.com/site/help[]。カテゴリ「cloud.netapp.com」>「アカウント/ログインの問題」または「cloud.netapp.com」>「フェデレーションの問題」を選択します。これは、 Cloud Central の問題や質問に特化したものです。Cloud Insights のその他のテクニカル・サポート問題については、を参照してください link:concept_requesting_support.html["ネットアップサポート"]。 
+| Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。 | からチケットを開きます https://[]。カテゴリ「cloud.netapp.com」>「アカウント/ログインの問題」または「cloud.netapp.com」>「フェデレーションの問題」を選択します。これは、 Cloud Central の問題や質問に特化したものです。Cloud Insights のその他のテクニカル・サポート問題については、を参照してください link:concept_requesting_support.html["ネットアップサポート"]。 
 
 
 | Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。 | Cloud Central アカウントに登録していること、または組織が Cloud Central で SSO ログインを使用していることを確認します。Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。 
@@ -46,4 +46,4 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 link:https://www.netapp.com/us/contact-us/support.aspx["電話"]
 link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["サポートチケット"]
 
-詳細については、を参照してください https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Cloud Insights サポートドキュメント"]。
+詳細については、を参照してください https://["Cloud Insights サポートドキュメント"]。

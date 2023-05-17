@@ -18,7 +18,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 
 == たわみ率の例：
 
-* に進みます https://api.slack.com/apps[] 新しいアプリケーションを作成しますわかりやすい名前を付けて、 [ たわみ率（ Slack ） ] ワークスペースを選択する。
+* に進みます https://[] 新しいアプリケーションを作成しますわかりやすい名前を付けて、 [ たわみ率（ Slack ） ] ワークスペースを選択する。
 +
 image:Webhooks_Slack_Create_Webhook.png["Slack Webhook を作成します"]
 
@@ -59,6 +59,6 @@ image:Webhooks_Slack_Notifications.png["Webhook 通知"]
 
 ==== 詳細情報
 
-* メッセージの形式とレイアウトを変更するには、を参照してください https://api.slack.com/messaging/composing[]
-* エラー処理： https://api.slack.com/messaging/webhooks#handling_errors[]
+* メッセージの形式とレイアウトを変更するには、を参照してください https://[]
+* エラー処理： https://[]
 
