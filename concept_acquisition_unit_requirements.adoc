@@ -21,7 +21,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | コンポーネント | Linux 要件 | Windows 要件 
 
 
-| オペレーティングシステム | 9eaf347efd9d5225664dc4c414a82eb2 | ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
+| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4 * Red Hat Enterprise Linux（64ビット）： 7.2～7.9、8.1～9.1 * Rocky 9.0、9.1 * Ubuntu Server: 18.04および20.04 LTSこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 | ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
 
 
 | CPU | 2 個の CPU コア | 同じ 
@@ -63,3 +63,10 @@ Cloud Insights Acquisition Unit は 8GB のメモリと 50GB のディスクス�
 上記の「はい」回答ごとに、 8 GB のメモリと 50 GB のディスク容量を AU に追加することをお勧めします。たとえば、「はい」と答えた場合、 150GB 以上のディスクスペースを備えた 24GB のメモリシステムを導入する必要があります。Linux の場合、ログの場所に追加するディスクスペース。
 
 サイジングに関するその他の情報については、ネットアップサポートにお問い合わせください。
+
+
+
+== Federal Editionの追加要件
+
+* Cloud Insights Federal Editionでは、FIPS検証済みの暗号化を機能させるために、Acquisition Unitシステムに_RNG-TOOL_がインストールされている必要があります。
+

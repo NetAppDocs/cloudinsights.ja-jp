@@ -54,8 +54,19 @@ image:Notifications_email_list.png["E メール通知"]
 
 グローバルアラート受信者を設定するには、 [* Global Monitor Notification Recipients] セクションで目的の受信者を選択します。
 
-[role="thumb"]
 モニタを作成または変更するときは、各モニタのグローバル受信者リストを常に上書きできます。
 
 
 NOTE: ONTAP データコレクタ通知は、クラスタ/データコレクタに関連する特定のモニタ通知よりも優先されます。Data Collector自体に設定した受信者リストには、データコレクタアラートが送信されます。アクティブなデータコレクタアラートがない場合は、監視用に生成されたアラートが特定の監視受信者に送信されます。
+
+
+
+== ONTAP の通知の編集
+
+ONTAP クラスタの通知を変更するには、ストレージランディングページの右上のドロップダウンから[_Edit Notifications_]を選択します。
+
+image:EditONTAPNotifications.png["ONTAP [通知の編集]をクリックします"]
+
+ここでは、重大、警告、情報、解決済みのアラートの通知を設定できます。各シナリオは、グローバル受信者リストまたは選択した他の受信者に通知できます。
+
+image:EditONTAPNotifications_MultipleScenarios.png["さまざまなシナリオのONTAP 通知"]
