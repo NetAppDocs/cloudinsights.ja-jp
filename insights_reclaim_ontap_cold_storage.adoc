@@ -16,11 +16,7 @@ NOTE: _Reclaim ONTAP コールドストレージ_Insightはとみなされます
 
 これらの分析情報を表示するには、*[Dashboards]>[Insights]*に移動し、_Reclaim ONTAP Cold Storage_Insightを確認します。このInsightでは、Cloud Insights でコールドストレージが検出された場合にのみ影響を受けるストレージが表示され、検出されなかった場合は「All clear」というメッセージが表示されます。
 
-次の点に注意してください。
-
-* 30日前に作成されたコールドデータは表示されません。
-* FlexGroup のコンスティチュエントボリュームはコールドデータの計算に含まれません（コンスティチュエントに対して階層ポリシーを設定できないため）。
-
+30日前に作成されたコールドデータは表示されません。
 
 image:Cold_Data_Insight_List.png["コールドデータを含む3つのストレージを表示するInsightのリスト"]
 
