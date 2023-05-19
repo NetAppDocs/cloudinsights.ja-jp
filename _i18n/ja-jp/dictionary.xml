@@ -10862,18 +10862,11 @@
   <block id="930fd15ae62cafe82d62d6912f307087" category="paragraph">Insight概要 には、「コールド」として検出されたデータの量と、データが配置されているストレージがすぐに表示されます。このテーブルには、コールドデータを含むワークロードの数も表示されます。</block>
   <block id="7cc631429c391f70b58e64999f7fbe48" category="inline-link-macro">ネットアップのTCO試算ツール</block>
   <block id="cdb12d4961181c6c0d6f14a1a17cfd87" category="paragraph">リストからInsightを選択すると、詳細を示すページが開きます。これには、クラウドへのデータの移動や未使用ディスクのサイクルダウンに関する推奨事項、推奨事項の実装によって実現できる可能性のあるコスト削減と電力削減の予測などが含まれます。このページには、への便利なリンクも用意されています <block ref="928b307e42240e05f4c78ed4745d6f3a" category="inline-link-macro-rx"></block> だからあなたは数字を試すことができます。</block>
-  <block id="d4dcff57f0b29162c5b6b2c09678b2e2" category="inline-image-macro">コールドデータの例</block>
-  <block id="3f7f21955dfa309fc0646bb3a937c6fb" category="paragraph"><block ref="3f7f21955dfa309fc0646bb3a937c6fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5048bf2003cf033b80e3fa2e33502f8" category="paragraph">[Insight]ページで、*[推奨事項]*を展開して次のオプションを確認します。</block>
   <block id="f77e48bcc98143a3f6bd8bcc492be286" category="list-text">未使用のワークロード（ゾンビ）を低コストのストレージ階層（HDD）に移動</block>
-  <block id="52119c89cf47d4da7004a38925cca6c7" category="paragraph">ゾンビフラグ、コールドストレージ、日数を使用して、最もコールドで最大のデータ量を特定し、低コストのストレージ階層（ハードディスクストレージを使用するストレージプールなど）にワークロードを移動します。が7日以上重大なIO要求を受信していない場合、ワークロードは「ゾンビ」と見なされます。</block>
   <block id="c8abb3322f2d9026ffca3cbd29c6e9ba" category="list-text">未使用のワークロードを削除</block>
   <block id="42bb4c2dadbccfef009beef19eb60c44" category="paragraph">使用されていないワークロードを確認し、アーカイブするかストレージシステムから削除することを検討してください。</block>
   <block id="30dc3fa30dc934a0d0aa98e3789e46c2" category="list-text">ネットアップのFabric Pool解決策 を検討してみましょう</block>
-  <block id="5338c9536e3c14268eb7568f06d418b6" category="paragraph">ネットアップのFabric Pool解決策 は、コールドデータを低コストのクラウドストレージに自動的に階層化することで、パフォーマンス階層の効率を高め、リモートデータ保護を実現します。</block>
-  <block id="394172dfa5bac3cc560f6f81bc64334d" category="paragraph">グラフと表にはトレンドに関する追加情報が表示されるほか、個 々 のワークロードにドリルダウンすることもできます。</block>
-  <block id="e8f788aa86e776dcd96d7f18cf2b3073" category="inline-image-macro">Cold_Data_Workload_Graph_and_Table</block>
-  <block id="18149ca5a604ec569675b78f1c8cfba7" category="paragraph"><block ref="18149ca5a604ec569675b78f1c8cfba7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db08e6b1d619064fa3fd2035f5926d18" category="paragraph">ONTAP コールドストレージの再利用_Insightは、ONTAP システム上のボリュームについて、コールド容量、潜在的なコスト/電力削減、推奨される対処方法に関するデータを提供します。 <block ref="82cab8f639b07ead699dc071830d992e" category="inline-link-macro-rx"></block></block>
   <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> Cloud Insights プレビューフィーチャーについて</block>
   <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">[メニュー]&gt;[コンテンツ]&gt;[チームコンテンツ]&gt;[レポート]*に移動します</block>
@@ -11164,4 +11157,19 @@
   <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">Federal Editionの追加要件</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">Cloud Insights フェデラルエディションクラスタにAcquisition Unitをインストールする場合は、基盤となるオペレーティングシステムに適切なエントロピーのソースが必要です。Linuxシステムでは、これは通常、_rng-tools_をインストールするか、ハードウェア乱数生成（RNG）を使用して行われます。Acquisition Unitマシンでこの要件が満たされていることを確認するのは、お客様の責任です。</block>
+  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">次の点に注意してください。</block>
+  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">30日前に作成されたコールドデータは表示されません。</block>
+  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">FlexGroup のコンスティチュエントボリュームはコールドデータの計算に含まれません（コンスティチュエントに対して階層ポリシーを設定できないため）。</block>
+  <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">コールドデータ電源情報</block>
+  <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">推奨事項</block>
+  <block id="987152d50a80bdf0820a4f1fd1771f81" category="paragraph">ゾンビフラグ、コールドストレージ、日数を使用して、最もコールドで最大のデータ量を特定し、低コストのストレージ階層（ハードディスクストレージを使用するストレージプールなど）にワークロードを移動します。が30日以上重大なIO要求を受信していない場合、ワークロードは「ゾンビ」とみなされます。</block>
+  <block id="27130393c9a69c9ac4259ad677b7e09b" category="inline-link-macro">Fabric Pool解決策 の略</block>
+  <block id="a7c5cd98f24711202e2a8089e206922c" category="paragraph">ネットアップの <block ref="6dfc63a251a9b042b77c667e40f20df9" category="inline-link-macro-rx"></block> コールドデータを低コストのクラウドストレージに自動的に階層化することで、パフォーマンス階層の効率を高め、リモートデータ保護を実現します。</block>
+  <block id="b0bad3786567c06c6ba5f9c05f89f0fb" category="section-title">視覚化と探索</block>
+  <block id="f9a5f3e9d6c824797a0884341490f583" category="paragraph">グラフと表にはトレンドに関する追加情報が表示されるほか、個 々 のワークロードにドリルダウンすることもできます。</block>
+  <block id="046d0c83fcc2f8749fd500daded4836a" category="inline-image-macro">コールドデータサマリグラフ</block>
+  <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">コールドデータワークロードテーブル</block>
+  <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
+<block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
