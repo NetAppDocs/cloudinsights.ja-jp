@@ -8283,7 +8283,6 @@
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注：「フルまでの日数」に0（ゼロ）を指定すると、フルまでの日数が90日を超えたと推定されます。つまり、システムがすぐにスペース不足になる危険性はありません。</block>
   <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">データ保護</block>
-  <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">データ保護*ページを選択して、SnapMirror関係を表示します。ソースボリュームまたはデスティネーションボリュームの情報を表示するには、ボタンをクリックしてください。表示するデータの列を追加するには、歯車アイコンをクリックします。</block>
   <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">ONTAP Essential* Infrastructure *ページでは、すべての基本的なONTAP オブジェクトに対して事前に構築された（さらにカスタマイズ可能な）クエリーを使用して、クラスタの正常性とパフォーマンスを確認できます。確認するオブジェクトタイプ（クラスタ、ストレージプールなど）を選択し、健常性とパフォーマンスのどちらの情報を表示するかを選択します。フィルタを設定して、個々のシステムの詳細を調べます。</block>
   <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">ストレージプールのインフラストラクチャ選択</block>
   <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
@@ -10894,8 +10893,6 @@
   <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023年5月</block>
   <block id="6b091071a7d33b506abd7a64e9f0795d" category="inline-image-macro">[Data Protection Dashboard]ウィジェットには、ローカルとリモートの概要が表示されます</block>
   <block id="185acbfb6bbd68c83e1d229b0f437594" category="inline-image-macro">データ保護クラスタのリスト</block>
-  <block id="2104c64c486c18ec271b0134a19654dd" category="paragraph"><block ref="c556223236d0a6ab73f15f6e6f21e0f9" category="inline-image-macro-rx" type="image"></block>
-<block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">ワークロードマップの例</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">モニタリングオペレータの操作を開始します</block>
@@ -11154,4 +11151,21 @@
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">30日前に作成されたコールドデータは表示されません。</block>
   <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">このデータコレクタは、2023年4月4日をもってCloud Insights にインストールできなくなり、2023年5月25日にインストールされているすべてのCloud Insights から削除されます。AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
+  <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">[データ保護]ページには、* Snapshotコピー*または* SnapMirrorポリシー*で保護されているボリュームのステータスが表示されます。</block>
+  <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">[_Local Protection Overview_]セクションのグラフには、Snapshotコピーで保護されているボリュームに関する次の情報が表示されます。</block>
+  <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">Snapshotコピーで保護されているボリュームと保護されていないボリュームの数。</block>
+  <block id="3f47a78c5f66b83b60ca72ace954dca7" category="list-text">Snapshotコピー用のリザーブスペースを使用しているボリューム、または超過しているボリュームの数。</block>
+  <block id="97fdc67fef73327f22b8fc495e435f8e" category="list-text">Snapshotコピー数の特定の範囲（コピー数が10個未満、10~200個など）にあるボリュームの数。</block>
+  <block id="b8a1fa4d1861a618562ca06e01978c9e" category="paragraph">[_Remote Protection Overview_]セクションのグラフには、SnapMirrorポリシーで保護されているボリュームに関する情報が表示されます。</block>
+  <block id="b43d32c4db7003345fb07d24af63f6df" category="list-text">正常なSnapMirror関係と正常でないSnapMirror関係の数。</block>
+  <block id="14160d3e23782b8cd0b814d46365dddf" category="list-text">遅延ステータスに基づくRecovery Point Objective（RPO；目標復旧時点）の遅延が発生しているSnapMirror関係の数。</block>
+  <block id="80ba86360fcf2d182d10656bc16ae2c5" category="list-text">SnapMirrorボリューム保護タイプで保護される関係の数（ボリュームSnapMirror、SVMDR関係、FlexGroup SnapMirror関係、SnapMirrorビジネス継続性（SMBC）整合性グループ関係、保護されていないボリュームなど）。</block>
+  <block id="c7fe2f93c4d26e8d245132ba4de7e3c6" category="list-text">SnapMirror関係タイプ（非同期ミラー、非同期バックアップ、非同期ミラーバックアップ、StrictSync、Syncなど）で保護されている関係の数。</block>
+  <block id="2e34ea590b54b579c6accf225d3ae30e" category="paragraph"><block ref="2e34ea590b54b579c6accf225d3ae30e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6b707fac607c8a9643179751e9c495d" category="paragraph">ページ下部の_Clusters_gridには、次の項目に関する詳細が表示されます。</block>
+  <block id="e6e7aa3e8144e8696637ef6e047685ee" category="list-text">ボリュームがSnapshotで保護されていません。</block>
+  <block id="2d71ecbcc9900bb68660e6db988080ca" category="list-text">ボリュームがSnapshotリザーブスペースを超過しています。</block>
+  <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">SnapMirrorポリシーで保護されていないボリューム、およびSnapMirror関係で遅延が発生しています。</block>
+  <block id="9354fc9fde4206bac6177054249907e9" category="list-text">正常でないSnapMirror関係。</block>
+  <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

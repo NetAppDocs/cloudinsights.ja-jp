@@ -38,9 +38,33 @@ image:OE_Overview.png["ONTAP Essentialsの概要ダッシュボード"]
 
 == データ保護
 
-データ保護*ページを選択して、SnapMirror関係を表示します。ソースボリュームまたはデスティネーションボリュームの情報を表示するには、ボタンをクリックしてください。表示するデータの列を追加するには、歯車アイコンをクリックします。
+[データ保護]ページには、* Snapshotコピー*または* SnapMirrorポリシー*で保護されているボリュームのステータスが表示されます。
 
-image:DataProtectionDashboard_OverviewWidgets.png["[Data Protection Dashboard]ウィジェットには、ローカルとリモートの概要が表示されます"]
+[_Local Protection Overview_]セクションのグラフには、Snapshotコピーで保護されているボリュームに関する次の情報が表示されます。
+
+* Snapshotコピーで保護されているボリュームと保護されていないボリュームの数。
+* Snapshotコピー用のリザーブスペースを使用しているボリューム、または超過しているボリュームの数。
+* Snapshotコピー数の特定の範囲（コピー数が10個未満、10~200個など）にあるボリュームの数。
+
+
+[_Remote Protection Overview_]セクションのグラフには、SnapMirrorポリシーで保護されているボリュームに関する情報が表示されます。
+
+* 正常なSnapMirror関係と正常でないSnapMirror関係の数。
+* 遅延ステータスに基づくRecovery Point Objective（RPO；目標復旧時点）の遅延が発生しているSnapMirror関係の数。
+* SnapMirrorボリューム保護タイプで保護される関係の数（ボリュームSnapMirror、SVMDR関係、FlexGroup SnapMirror関係、SnapMirrorビジネス継続性（SMBC）整合性グループ関係、保護されていないボリュームなど）。
+* SnapMirror関係タイプ（非同期ミラー、非同期バックアップ、非同期ミラーバックアップ、StrictSync、Syncなど）で保護されている関係の数。
+
+
+image:DataProtectionDashboard_OverviewWidgets_.png["[Data Protection Dashboard]ウィジェットには、ローカルとリモートの概要が表示されます"]
+
+ページ下部の_Clusters_gridには、次の項目に関する詳細が表示されます。
+
+* ボリュームがSnapshotで保護されていません。
+* ボリュームがSnapshotリザーブスペースを超過しています。
+* SnapMirrorポリシーで保護されていないボリューム、およびSnapMirror関係で遅延が発生しています。
+* 正常でないSnapMirror関係。
+
+
 image:DataProtectionDashboard_ClusterList.png["データ保護クラスタのリスト"]
 
 
