@@ -6967,19 +6967,6 @@
   <block id="bd7396064bde19099b129313d4e4960b" category="paragraph">該当する場合は、アラートのリンクをクリックして、アセットに関連付けられているアラートとモニタを表示できます。</block>
   <block id="2d762a3bbc5cce9178bdcae87b203e7c" category="inline-link-macro">監視とアラート</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">ONTAP 9.9 以上のデータコレクタ向けのネットアップクラウド接続</block>
-  <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights は、 * クラウド接続 * を使用して ONTAP 9.9 以上からデータを収集します。外部取得ユニットをインストールする必要がなくなり、トラブルシューティング、メンテナンス、および初期導入が簡素化されます。ONTAP 9.9 以上のデータコレクタのクラウド接続を設定するには、 ONTAP システムマネージャに * ペアリングコード * をコピーする必要があります。これにより、 Cloud Insights 環境への接続が確立されます。接続が確立されると、収集されるデータは Acquisition Unit を介して収集されたデータと同じになります。</block>
-  <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector の設定</block>
-  <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b3f4b400496b1f1be79ceb4e94a91c9a" category="paragraph">接続を設定するには、次の手順を実行します。</block>
-  <block id="3e71c2acb888e5c54e107a6e20c6d734" category="list-text">ONTAP システムへの接続の確立に使用する一意のトークンを生成します。</block>
-  <block id="5aa319f21d7d467c78e0900ae3ce4fe7" category="list-text">トークンを含むペアリングコードをコピーします。ペアリングコードを表示するには、 [+] [ コードスニペットの表示 ] をクリックします。</block>
-  <block id="92d743a425aee6a9d199011e37f4a7a4" category="paragraph">ペアリングコードをコピーすると、データコレクタの設定画面に手順 6 が表示され、接続が確立されるまで待つように求められます。この画面では、接続が確立されるまで何も行う必要はありません。</block>
-  <block id="91984937f546d43518e93c72ed5b7c0f" category="inline-image-macro">接続を待っています</block>
-  <block id="5e9af3de724d92d3056b1b1acbe5c289" category="paragraph"><block ref="5e9af3de724d92d3056b1b1acbe5c289" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="017330578692e5d7e9299cce45d52f9a" category="list-text">新しいブラウザタブで、 ONTAP システムマネージャにログインし、 _Cluster &gt; Settings &gt; Cloud Connections_ に移動します。</block>
-  <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">[ クラウド接続の追加 ] をクリックし、ペアリングコードを貼り付けます。</block>
-  <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">Cloud Insights ブラウザタブに戻り、接続が確立されるまで待ちます。設定が完了すると、 _complete_button が表示されます。</block>
-  <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">[_Complete_] をクリックします。</block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">ONTAP 9.9 以降のクラウド接続</block>
   <block id="04cfeb854c88891dec7c9991ca350912" category="summary">NetApp ONTAP Data Collector 向けの Amazon FSX</block>
@@ -7081,7 +7068,6 @@
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">'sudo firewall-cmd --zone=public--list-ports | grep 35000` (CentOS 8 の場合 )</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。</block>
-  <block id="72c287aa31792e43cc71160178046540" category="paragraph">このデータコレクタは、 ONTAP 9.9 以上の CVO システム、 AFF システム、 FAS システムをサポートします。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">パフォーマンスやインベントリのしきい値、およびメトリックやログの条件に関するアラートを生成するモニタを作成します。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">システムモニタ</block>
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 対応処置あり * ：アラートで推奨される対処方法が提示されています。アラートページを開いて表示します。</block>
@@ -7472,9 +7458,7 @@
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">スクリプトベースの Tegraf インストール用に手動で作成した Security Context Constraint の場合は、次の手順を実行します。</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">volume_groups が使用されていないかぎり、読み取り専用のユーザ名とパスワード。この場合は、 Admin ユーザ名とパスワードが必要です</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">ONTAP 9.9 以上のデータコレクタ用にネットアップクラウド接続を設定します</block>
-  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">代わりに、このページを使用して</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">このページは廃止されたため、更新されません。にアクセスしてください <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">「 Heartbeat Error: message 」が表示されています</block>
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch Agent Metrics 名前空間</block>
@@ -10623,7 +10607,6 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">環境の作成が完了したら、 Cloud Central のクレデンシャルを使用してログインし、 Cloud Insights の 30 日間の無償トライアルを開始できます。このトライアルでは、Cloud Insights が提供する機能を確認できます。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">クラスタ管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS / SMBユーザブロックに必要です。</block>
-  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">このデータコレクタは、2023年4月4日をもってCloud Insights で利用できなくなりました。AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">チームコンテンツから* Storage Manager Dashboard *を選択すると、トラフィックとストレージに関する情報を提供する複数のレポートが表示されます。</block>
   <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">Storage Managerのダッシュボードオプション</block>
   <block id="8f6a27e4a5050011d91bc9e27e37e101" category="paragraph"><block ref="8f6a27e4a5050011d91bc9e27e37e101" category="inline-image-macro-rx" type="image"></block></block>
@@ -11170,4 +11153,5 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">30日前に作成されたコールドデータは表示されません。</block>
+  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">このデータコレクタは、2023年4月4日をもってCloud Insights にインストールできなくなり、2023年5月25日にインストールされているすべてのCloud Insights から削除されます。AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>

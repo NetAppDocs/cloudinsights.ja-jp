@@ -12,4 +12,4 @@ keywords: data collector, NetApp, Cloud agent, ONTAP
 このデータコレクタは、 ONTAP 9.9 以上の CVO 、 AFF 、 FAS システムからのデータ収集をサポートするクラウド接続を作成します。
 
 
-NOTE: このデータコレクタは、2023年4月4日をもってCloud Insights で利用できなくなりました。AUベースのデータ収集への移行については、を参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["ナレッジベース"^]。
+NOTE: このデータコレクタは、2023年4月4日をもってCloud Insights にインストールできなくなり、2023年5月25日にインストールされているすべてのCloud Insights から削除されます。AUベースのデータ収集への移行については、を参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["ナレッジベース"^]。
