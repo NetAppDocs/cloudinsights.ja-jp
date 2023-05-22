@@ -11150,7 +11150,6 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">30日前に作成されたコールドデータは表示されません。</block>
-  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">このデータコレクタは、2023年4月4日をもってCloud Insights にインストールできなくなり、2023年5月25日にインストールされているすべてのCloud Insights から削除されます。AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">[データ保護]ページには、* Snapshotコピー*または* SnapMirrorポリシー*で保護されているボリュームのステータスが表示されます。</block>
   <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">[_Local Protection Overview_]セクションのグラフには、Snapshotコピーで保護されているボリュームに関する次の情報が表示されます。</block>
   <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">Snapshotコピーで保護されているボリュームと保護されていないボリュームの数。</block>
@@ -11168,4 +11167,5 @@
   <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">SnapMirrorポリシーで保護されていないボリューム、およびSnapMirror関係で遅延が発生しています。</block>
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">正常でないSnapMirror関係。</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">このデータコレクタは、2023年4月4日をもってCloud Insights にインストールできなくなり、2023年5月25日にインストールされているすべてのCloud Insights から削除されます。AUベースのデータ収集への移行については、を参照してください <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
