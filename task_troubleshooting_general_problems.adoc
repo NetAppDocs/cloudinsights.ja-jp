@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_troubleshooting_general_problems.html 
 summary: Cloud Insights の一般的なトラブルシューティングのヒント。 
-keywords: troubleshooting, problems, browser, login, log in, accessing, access to 
+keywords: troubleshooting, problems, browser, login, log in, accessing, access to, Trident, qtree, quota 
 ---
 = Cloud Insights の一般的な問題のトラブルシューティング
 :allow-uri-read: 
@@ -41,6 +41,29 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 
 | その他のログインエラーです | Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。 
 |===
+
+
+== その他の問題
+
+|===
+
+
+| *質問：* | *回答 ：* 
+
+
+| qtreeのハードクォータがクエリに正しく表示されていますが、ソフトクォータがボリュームの合計容量として表示されています。正解ですか？ | 設定されたクォータとして表示されるのは、手動で設定するかTridentで設定したハードクォータのみです。ハードクォータを指定しない場合、qtreeの容量は内部ボリュームの容量になります。 
+
+
+| 同じqtreeにソフトクォータとハードクォータの両方を手動で設定していますが、表示される合計容量はハードクォータです。Is that correct？ | ○（ハードクォータが指定されている場合は、合計容量として表示されます） 
+|===
+
+
+== リソース
+
+その他のトラブルシューティングのヒントについては、を参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["ネットアップナレッジベース"] （サポートサインインが必要です）。
+
+その他のサポート情報については、 Cloud Insights を参照してください link:concept_requesting_support.html["サポート"] ページ
+
 アクティブな Cloud Insights サブスクリプションがある場合は、次のサポートオプションを使用できます。
 
 link:https://www.netapp.com/us/contact-us/support.aspx["電話"]
