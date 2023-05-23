@@ -6769,7 +6769,6 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">パペット</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
-  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">ログインの問題：</block>
   <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">次の手順は '_http_proxy/https_proxy_environment 変数を設定するために必要なアクションの概要を示しています一部のプロキシ環境では '_no_proxy 環境変数も設定する必要があります</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">ネットアップサポート</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
@@ -11175,4 +11174,5 @@
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">設定されたクォータとして表示されるのは、手動で設定するかTridentで設定したハードクォータのみです。ハードクォータを指定しない場合、qtreeの容量は内部ボリュームの容量になります。</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">同じqtreeにソフトクォータとハードクォータの両方を手動で設定していますが、表示される合計容量はハードクォータです。Is that correct？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">○（ハードクォータが指定されている場合は、合計容量として表示されます）</block>
+  <block id="37b418c8c2b422040e90081e18556979" category="section-title">ログインの問題</block>
 </blocks>
