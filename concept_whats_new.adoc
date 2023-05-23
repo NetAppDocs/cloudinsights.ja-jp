@@ -1659,8 +1659,8 @@ Cloud Insights には、 ONTAP アドバンストカウンタの可視化を開�
 
 ONTAP 詳細データの詳細については、次のリンクを参照してください。
 
-* https://[] （注：ネットアップサポートにサインインする必要があります）。
-* https://[]
+* https://mysupport.netapp.com/site/tools/tool-eula/netapp-harvest[] （注：ネットアップサポートにサインインする必要があります）。
+* https://nabox.org/faq/[]
 
 
 

@@ -29,7 +29,7 @@ Cloud Insights は、このデータコレクタを使用して DC/OS からの�
 
 == セットアップ（ Setup ）
 
-セットアップ情報は、で確認できます https://["DC/OS のドキュメント"]。
+セットアップ情報は、で確認できます https://docs.mesosphere.com["DC/OS のドキュメント"]。
 
 
 

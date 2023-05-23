@@ -15,9 +15,9 @@ summary: ワークロードセキュリティでは、データコレクタを�
 
 == Cloud Volumes ONTAP ストレージ構成
 
-ワークロードセキュリティエージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。https://[]
+ワークロードセキュリティエージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
-設定が完了したら、次の手順に従って SVM をセットアップします。https://[]
+設定が完了したら、次の手順に従って SVM をセットアップします。https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
 
 
@@ -41,7 +41,7 @@ AWSでワークロードセキュリティエージェントとして使用す�
 
 .手順
 . AWS コンソールにログインし、 EC2-Instances ページに移動して、 _Launch instance_ を選択します。
-. このページに記載されているバージョンに応じて、 RHEL または CentOS AMI を選択します。https://[]
+. このページに記載されているバージョンに応じて、 RHEL または CentOS AMI を選択します。https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
 . Cloud ONTAP インスタンスが存在する VPC とサブネットを選択します。
 . 割り当てられたリソースとして、 [T2.xlarge _ （ 4 vCPU と 16 GB RAM ） ] を選択します。
 +

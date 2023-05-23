@@ -150,6 +150,6 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | エラー： IP で VirtualCenter への接続をインスタンス化できませんでした | 解決策： * 入力された資格情報と IP アドレスを確認してください。* Infrastructure Client を使用して、 Virtual Center と通信してみてください。* Managed Object Browser （ MOB など）を使用して Virtual Center と通信してみます。 
 
 
-| エラー： IP の VirtualCenter には、 JVM で必要な非準拠の証明書があります | 可能な解決策： * 推奨：強力な（など）を使用して、 Virtual Center の証明書を再生成します 1024 ビット） RSA キー。* 推奨されません。 JVM java.security 設定を変更して、 JDK.certPath.disableAlgorithms 制約を利用し、 512 ビット RSA キーを許可します。「 JDK 7 update 40 release notes 」を参照してください "http://[] 
+| エラー： IP の VirtualCenter には、 JVM で必要な非準拠の証明書があります | 可能な解決策： * 推奨：強力な（など）を使用して、 Virtual Center の証明書を再生成します 1024 ビット） RSA キー。* 推奨されません。 JVM java.security 設定を変更して、 JDK.certPath.disableAlgorithms 制約を利用し、 512 ビット RSA キーを許可します。「 JDK 7 update 40 release notes 」を参照してください "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

@@ -87,7 +87,7 @@ image:Workload_Map_Filtering.png["ワークロードマップのフィルタリ�
 +
 ** ポッドのワークロードラベルから取得
 ** ワークロードの想定されるラベル：app.kubernetes.io/component
-** ラベル名参照： https://[]
+** ラベル名参照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** 推奨ラベル：
 +
 *** フロントエンド

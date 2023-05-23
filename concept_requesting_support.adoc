@@ -34,7 +34,7 @@ Cloud Insights インスタンスは、初回のサブスクリプションプ�
 === オプション 1 ：ネットアップサポートサイト（ NSS ）の SSO アカウントを事前にお持ちのユーザ向けの手順
 
 .手順
-. ネットアップ登録用 Web サイトにアクセスします https://[]
+. ネットアップ登録用 Web サイトにアクセスします https://register.netapp.com[]
 . 「 I am already registered as NetApp Customer 」を選択し、製品ラインとして _ Cloud Insights _ を選択します。請求先のプロバイダ（ネットアップまたは AWS ）を選択し、 Cloud Insights のユーザインターフェイスで「 Help > Support 」メニューを参照して、シリアル番号とネットアップサブスクリプション名または AWS カスタマー ID を入力します。
 +
 image:SupportPage_SN_Section-NA.png["SN_Screen"]
@@ -52,7 +52,7 @@ image:ExistingCustomerRegExample.png["既存の顧客フォーム"]
 === オプション 2 ：ネットアップサポートサイト（ NSS ）の SSO アカウントがない新しいネットアップのお客様向けの手順
 
 .手順
-. ネットアップ登録用 Web サイトにアクセスします https://[]
+. ネットアップ登録用 Web サイトにアクセスします https://register.netapp.com[]
 . 「 I am not a registered NetApp Customer 」を選択し、以下の例のフォームに必要な情報を入力します。
 
 
@@ -63,7 +63,7 @@ image:NewCustomerRegExample.png["新しい顧客フォーム"]
 image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 . エラーが発生しない場合は、「登録が正常に送信されました」ページが表示されます。登録に使用された NSS SSO ユーザ名に関連付けられた電子メールアドレスには、「お使いの製品はサポート対象です」という電子メールが数時間以内に送信されます。
-. ネットアップの新規のお客様の場合は、ネットアップサポートサイト（ NSS ）のユーザアカウントを作成して、今後の登録や、テクニカルサポートチャットや Web チケット発行用のサポートポータルにアクセスする必要があります。このリンクはにあります https://[]。新しく登録した Cloud Insights のシリアル番号を入力しておくと、プロセスを迅速に進めることができます。
+. ネットアップの新規のお客様の場合は、ネットアップサポートサイト（ NSS ）のユーザアカウントを作成して、今後の登録や、テクニカルサポートチャットや Web チケット発行用のサポートポータルにアクセスする必要があります。このリンクはにあります https://mysupport.netapp.com/eservice/public/now.do[]。新しく登録した Cloud Insights のシリアル番号を入力しておくと、プロセスを迅速に進めることができます。
 . これは、 Cloud Insights ネットアップのシリアル番号への登録を 1 回だけ行うものです。
 
 
