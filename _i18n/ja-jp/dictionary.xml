@@ -11175,4 +11175,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">同じqtreeにソフトクォータとハードクォータの両方を手動で設定していますが、表示される合計容量はハードクォータです。Is that correct？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">○（ハードクォータが指定されている場合は、合計容量として表示されます）</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">ログインの問題</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">NetApp Kubernetes Monitoring Operatorをインストールした直後にログに次のメッセージが表示されます。[inputs.prometheus] Error in plugin: error making HTTP request to<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> ゲット<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp：lookup kube-state-metrics.&lt;namespace&gt; .svc.cluster.local：該当するホストがありません</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。</block>
 </blocks>

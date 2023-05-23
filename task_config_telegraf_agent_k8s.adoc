@@ -490,5 +490,8 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 
 
 | NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています | net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。•保留状態のポッドをメモし、CPUまたはメモリのリソース問題 が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。 
+
+
+| NetApp Kubernetes Monitoring Operatorをインストールした直後にログに次のメッセージが表示されます。[inputs.prometheus] Error in plugin: error making HTTP request to http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] ゲット http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] dial tcp：lookup kube-state-metrics.<namespace> .svc.cluster.local：該当するホストがありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
