@@ -70,11 +70,15 @@ image:Workload_Map_Slideout_with_Alert.png["ワークロードのスライドア
 
 
 
-== フィルタリング
+== 検索とフィルタ
 
 Cloud Insights の他の機能と同様に、必要なオブジェクトやワークロード属性に絞り込むフィルタを簡単に設定できます。
 
 image:Workload_Map_Filtering.png["ワークロードマップのフィルタリング"]
+
+同様に、_Find_フィールドに文字列を入力すると、一致するワークロードがハイライトされます。
+
+image:Workload_Map_Find_Highlighting.png["検索ボックスに入力すると、ワークロードがハイライトされます"]
 
 
 

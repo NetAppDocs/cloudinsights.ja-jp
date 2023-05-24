@@ -10724,7 +10724,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">色の円は、ワークロードに関する警告レベルまたは重大レベルのアラートを示します。円にカーソルを合わせると問題 の概要が表示されます。円をクリックすると、より詳細なスライドアウトパネルが開きます。</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">ワークロードのスライドアウトの詳細とアラート</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">フィルタリング</block>
   <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">Cloud Insights の他の機能と同様に、必要なオブジェクトやワークロード属性に絞り込むフィルタを簡単に設定できます。</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">ワークロードマップのフィルタリング</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
@@ -11177,4 +11176,8 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">ログインの問題</block>
   <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">NetApp Kubernetes Monitoring Operatorをインストールした直後にログに次のメッセージが表示されます。[inputs.prometheus] Error in plugin: error making HTTP request to<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> ゲット<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp：lookup kube-state-metrics.&lt;namespace&gt; .svc.cluster.local：該当するホストがありません</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。</block>
+  <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">検索とフィルタ</block>
+  <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同様に、_Find_フィールドに文字列を入力すると、一致するワークロードがハイライトされます。</block>
+  <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">検索ボックスに入力すると、ワークロードがハイライトされます</block>
+  <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
