@@ -10709,7 +10709,6 @@
   <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">モニタ</block>
   <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">ワークロードマップでは、を使用します <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> 情報を得るためにCloud Insights には、いくつかのデフォルトのKubernetesモニタが用意されています（デフォルトでは_Paused_になっている場合があります）。必要なモニタを_Resume_(つまり有効化)することも、ワークロードマップでも使用されるKubernetesオブジェクト用のカスタムモニタを作成することもできます。</block>
   <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">地図</block>
-  <block id="15e3eddd185c05a5fb388c2cd109a194" category="paragraph">マップには、サービス（ワークロードとも呼ばれる）とそれらの相互関係が表示されます。矢印は交通の方向を示しています。ワークロードにカーソルを合わせると、そのワークロードの概要情報が表示されます（次の例を参照）。</block>
   <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">ワークロードマップワークロードの例</block>
   <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42cecfeff00cc916fef4f64e7b921079" category="inline-xref">ラベル</block>
@@ -10731,7 +10730,6 @@
   <block id="deb0475feb493ff82c79e1e3ae6d77ea" category="paragraph">表示されるワークロードのタイプ（円のアイコンなど）をマップで識別するには、ワークロードラベルが必要です。ラベルは次のように導出されます。</block>
   <block id="7bdbd3fbfd646718abde6244c5ef84ca" category="list-text">一般的な用語で実行されているサービス/アプリケーションの名前</block>
   <block id="8079e3a427e5574a8e11aee165eaa34a" category="list-text">ソースがポッドの場合：</block>
-  <block id="f5617cd916f968d6f57576092e33e68c" category="list-text">ポッドのワークロードラベルから取得</block>
   <block id="1cf01db723421f728c6d1ec366bc1525" category="list-text">ワークロードの想定されるラベル：app.kubernetes.io/component</block>
   <block id="f7a8098a415987972c499ac42c4b95f9" category="list-text">ラベル名参照：<block ref="625495fb7d70df26441db849ce9bb393" category="inline-link-rx"></block></block>
   <block id="1dbb5d26447acfe771d67c1e833d6d5a" category="list-text">推奨ラベル：</block>
@@ -10741,10 +10739,6 @@
   <block id="0fea6a13c52b4d4725368f24b045ca84" category="list-text">キャッシュ</block>
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">キュー</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">カフカ</block>
-  <block id="30231f87db181989dc6b48606b359f57" category="list-text">Kubernetesクラスタの外部にあるソースの場合：</block>
-  <block id="2aa36d2124c1619305f749c6418c781f" category="list-text">DNS解決名を解析し、サービスタイプを抽出します</block>
-  <block id="1c145c21f55cfe3b796f2a421f92f818" category="paragraph">例：s3.eu-north-1.amazonaws.com</block>
-  <block id="bf0940aef56e172d86f9f25d77945341" category="paragraph">s3を取得するために解析された名前を解決しました</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。</block>
   <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">これらの機能の一部は、Cloud Insights 連邦版では使用できない場合や、機能が制限されている場合があります。可能な限り、これらの違いはドキュメントに記載されています。</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023年4月</block>
@@ -10896,7 +10890,6 @@
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">モニタリングオペレータの操作を開始します</block>
   <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetesの監視とマッピング</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubernetes Network Performance Monitoring and Mapの略</block>
-  <block id="30d4cb002f857650eba9633e4a50ff2a" category="paragraph">Kubernetes Network Performance Monitoring and Map機能は、Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubernetes Network Performance Monitoring and Mapは、です <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 機能は変更される場合があります。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">Kubernetes Network Performance Monitoring and Mapを使用する前に、を設定しておく必要があります <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> このオプションを有効にします。オペレータの配備中に、[ネットワークパフォーマンスとマップ]チェックボックスをオンにして有効にします。このオプションを有効にするには、Kubernetesランディングページに移動して[Modify Deployment]を選択します。</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubernetes Monitoring Operatorには、設定可能なオプションが多数あります。</block>
@@ -11180,4 +11173,30 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同様に、_Find_フィールドに文字列を入力すると、一致するワークロードがハイライトされます。</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">検索ボックスに入力すると、ワークロードがハイライトされます</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes Network Performance Monitoring and Map機能は、Kubernetesサービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
+  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。オブジェクトがIDでグループ化されていることを確認します。</block>
+  <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">kubernetes.workload</block>
+  <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">kubernetes.daemonset</block>
+  <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
+  <block id="da08d7cb113a582345e1c87537667bfd" category="list-text">kubernetes.cronjob</block>
+  <block id="e8eeaeeace97ddc1d8d3fd0e2d727de6" category="list-text">kutability.job</block>
+  <block id="2dd2185af8e18909d0c1f96b139ff088" category="list-text">kubernetes.replicaset</block>
+  <block id="b11992f8220e27ed38a528aa3279ca6c" category="list-text">kubernetes.statefulset</block>
+  <block id="959158aaf864560f2a6da1c5111a2488" category="list-text">Kubernetesポッド</block>
+  <block id="e5dd88b41415ccc9b96130968a48a25c" category="list-text">kubernetes.network_traffic_l4</block>
+  <block id="5b5c93dfe04a64ec52da6b4603542b2d" category="paragraph">マップには、サービス/ワークロードとそれらの相互関係が表示されます。矢印は交通の方向を示しています。ワークロードにカーソルを合わせると、そのワークロードの概要情報が表示されます（次の例を参照）。</block>
+  <block id="85adf3862ca2037a273ff3441c2be5f9" category="list-text">ラベルはポッドのワークロードラベルから取得されます</block>
+  <block id="cf568df890526e57bf700e2dc4b65a7c" category="list-text">ソースがKubernetesクラスタの外部にある場合は、次の手順を実行します。</block>
+  <block id="87ff7926a3611a5c9e94e85db4fa5bea" category="list-text">Cloud Insights は、DNS解決名を解析してサービスタイプを抽出しようとします。</block>
+  <block id="bd1a60f90cea9c1c50d2670c398e61e4" category="paragraph">たとえば、DNS解決名が_s3.eu-north-1.amazonaws.comの場合、解決された名前はサービスタイプとしてget_s3_に解析されます。</block>
+  <block id="500b3306f51ddde04e4c6da822f4a0e1" category="section-title">深海に潜る</block>
+  <block id="85b2e2afff81bc570758ed245f94e0ab" category="paragraph">ワークロードを右クリックすると、さらに詳しく調べるための追加のオプションが表示されます。たとえば、ここからズームインして、そのワークロードの接続を表示できます。</block>
+  <block id="382fe39fadd269cb6f5709f01bcb97f3" category="inline-image-macro">ワークロードマップ[Zoom]を右クリックすると、ワークロードの接続が表示されます</block>
+  <block id="11cf13816a69e8f7513d902d787c018f" category="paragraph"><block ref="11cf13816a69e8f7513d902d787c018f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="08a268f9324eb2fedb3f30f6aed68c83" category="paragraph">または、詳細スライドアウトパネルを開いて、_Summary_、_Network_、または_Pod &amp; Storage_タブを直接表示することもできます。</block>
+  <block id="c878025155cecb2c39acd2fc019a750c" category="inline-image-macro">詳細スライドアウトネットワークタブの例</block>
+  <block id="e1ad379a2729c042c49570a56d16450f" category="paragraph"><block ref="e1ad379a2729c042c49570a56d16450f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">最後に、[_Go to Asset Page_]を選択すると、ワークロードの詳細なアセットランディングページが開きます。</block>
+  <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">ワークロードアセットページ</block>
+  <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

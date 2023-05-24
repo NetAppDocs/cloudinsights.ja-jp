@@ -19,7 +19,7 @@ summary: Kubernetesワークロードの依存関係とフローを提示し、�
 
 
 [role="lead"]
-Kubernetes Network Performance Monitoring and Map機能は、Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
+Kubernetes Network Performance Monitoring and Map機能は、Kubernetesサービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
 
 
 NOTE: Kubernetes Network Performance Monitoring and Mapは、です link:concept_preview_features.html["プレビュー（ Preview ）"] 機能は変更される場合があります。
@@ -42,11 +42,24 @@ image:ServiceMap_NKMO_Deployment_Options.png["NKMO停止中にMapオプション
 
 ワークロードマップでは、を使用します link:task_create_monitor.html["モニタ"] 情報を得るためにCloud Insights には、いくつかのデフォルトのKubernetesモニタが用意されています（デフォルトでは_Paused_になっている場合があります）。必要なモニタを_Resume_(つまり有効化)することも、ワークロードマップでも使用されるKubernetesオブジェクト用のカスタムモニタを作成することもできます。
 
+Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。オブジェクトがIDでグループ化されていることを確認します。
+
+* kubernetes.workload
+* kubernetes.daemonset
+* kubernetes.deployment
+* kubernetes.cronjob
+* kutability.job
+* kubernetes.replicaset
+* kubernetes.statefulset
+* Kubernetesポッド
+* kubernetes.network_traffic_l4
+
+
 
 
 == 地図
 
-マップには、サービス（ワークロードとも呼ばれる）とそれらの相互関係が表示されます。矢印は交通の方向を示しています。ワークロードにカーソルを合わせると、そのワークロードの概要情報が表示されます（次の例を参照）。
+マップには、サービス/ワークロードとそれらの相互関係が表示されます。矢印は交通の方向を示しています。ワークロードにカーソルを合わせると、そのワークロードの概要情報が表示されます（次の例を参照）。
 
 image:ServiceMap_Simple_Example.png["ワークロードマップワークロードの例"]
 
@@ -89,7 +102,7 @@ image:Workload_Map_Find_Highlighting.png["検索ボックスに入力すると�
 * 一般的な用語で実行されているサービス/アプリケーションの名前
 * ソースがポッドの場合：
 +
-** ポッドのワークロードラベルから取得
+** ラベルはポッドのワークロードラベルから取得されます
 ** ワークロードの想定されるラベル：app.kubernetes.io/component
 ** ラベル名参照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** 推奨ラベル：
@@ -104,15 +117,28 @@ image:Workload_Map_Find_Highlighting.png["検索ボックスに入力すると�
 
 
 
-* Kubernetesクラスタの外部にあるソースの場合：
+* ソースがKubernetesクラスタの外部にある場合は、次の手順を実行します。
 +
-** DNS解決名を解析し、サービスタイプを抽出します
+** Cloud Insights は、DNS解決名を解析してサービスタイプを抽出しようとします。
 +
-例：s3.eu-north-1.amazonaws.com
-
-+
-s3を取得するために解析された名前を解決しました
+たとえば、DNS解決名が_s3.eu-north-1.amazonaws.comの場合、解決された名前はサービスタイプとしてget_s3_に解析されます。
 
 
 
 
+
+
+
+== 深海に潜る
+
+ワークロードを右クリックすると、さらに詳しく調べるための追加のオプションが表示されます。たとえば、ここからズームインして、そのワークロードの接続を表示できます。
+
+image:Workload_Map_Zoom_Into_Connections.png["ワークロードマップ[Zoom]を右クリックすると、ワークロードの接続が表示されます"]
+
+または、詳細スライドアウトパネルを開いて、_Summary_、_Network_、または_Pod & Storage_タブを直接表示することもできます。
+
+image:Workload_Map_Detail_Network_Slideout.png["詳細スライドアウトネットワークタブの例"]
+
+最後に、[_Go to Asset Page_]を選択すると、ワークロードの詳細なアセットランディングページが開きます。
+
+image:Workload_Map_Asset_Page.png["ワークロードアセットページ"]
