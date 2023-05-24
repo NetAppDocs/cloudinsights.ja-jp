@@ -11174,7 +11174,6 @@
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">検索ボックスに入力すると、ワークロードがハイライトされます</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
   <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes Network Performance Monitoring and Map機能は、Kubernetesサービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
-  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。オブジェクトがIDでグループ化されていることを確認します。</block>
   <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">kubernetes.workload</block>
   <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">kubernetes.daemonset</block>
   <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
@@ -11199,4 +11198,5 @@
   <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">最後に、[_Go to Asset Page_]を選択すると、ワークロードの詳細なアセットランディングページが開きます。</block>
   <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">ワークロードアセットページ</block>
   <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ec69e962ebca3d9f0e5279aa138f19a" category="paragraph">Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。データがデフォルトのオブジェクトタイプでグループ化されていることを確認します。</block>
 </blocks>

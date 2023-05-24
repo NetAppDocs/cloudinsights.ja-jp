@@ -42,7 +42,7 @@ image:ServiceMap_NKMO_Deployment_Options.png["NKMO停止中にMapオプション
 
 ワークロードマップでは、を使用します link:task_create_monitor.html["モニタ"] 情報を得るためにCloud Insights には、いくつかのデフォルトのKubernetesモニタが用意されています（デフォルトでは_Paused_になっている場合があります）。必要なモニタを_Resume_(つまり有効化)することも、ワークロードマップでも使用されるKubernetesオブジェクト用のカスタムモニタを作成することもできます。
 
-Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。オブジェクトがIDでグループ化されていることを確認します。
+Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。データがデフォルトのオブジェクトタイプでグループ化されていることを確認します。
 
 * kubernetes.workload
 * kubernetes.daemonset
