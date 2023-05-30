@@ -60,9 +60,11 @@ image:StorageVirtualization_StorageSummary.png["仮想ストレージとバッ�
 
 
 
-=== Kubernetes PVデータをレポートします
+=== Kubernetesのデータをレポートします
 
-Cloud Insights で収集されたKubernetes永続ボリューム（PV）情報をレポート作成で使用できるようになり、チャージバック、トレンド分析、予測、TTF計算、 また、Kubernetesクラスタ、ネームスペース、ワークロードなどの指標に関するその他のビジネスレポートも作成できます。
+Cloud Insightsで、PV、PVC、ワークロード、クラスタ、ネームスペースなど、Kubernetesのすべてのデータについてレポートを作成できるようになりました。
+
+Cloud Insightsで収集されたKubernetesデータ（Persistent Volumes（PV）、PVC、ワークロード、クラスタ、ネームスペースなど）をレポートに使用できるようになり、チャージバック、トレンド分析、予測、TTF計算、 また、Kubernetesの指標に関するその他のビジネスレポートも提供しています。
 
 
 
