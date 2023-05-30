@@ -62,8 +62,6 @@ image:StorageVirtualization_StorageSummary.png["仮想ストレージとバッ�
 
 === Kubernetesのデータをレポートします
 
-Cloud Insightsで、PV、PVC、ワークロード、クラスタ、ネームスペースなど、Kubernetesのすべてのデータについてレポートを作成できるようになりました。
-
 Cloud Insightsで収集されたKubernetesデータ（Persistent Volumes（PV）、PVC、ワークロード、クラスタ、ネームスペースなど）をレポートに使用できるようになり、チャージバック、トレンド分析、予測、TTF計算、 また、Kubernetesの指標に関するその他のビジネスレポートも提供しています。
 
 
