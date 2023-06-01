@@ -38,3 +38,23 @@ Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Sectio
 * Active Directory による収集エラーは警告として報告されますが、ランサムウェアによる検出には影響しません。
 * [ はじめに ] セットアップリストに、新しい _ 電子メール通知の構成 _ 段階が追加されました。
 
+
+
+
+== エージェントおよびData Collectorのアップグレード通知を受信しています
+
+* [Data Collection Health Alerts]にEメールIDを入力します。
+* [Enable upgrade notifications]チェックボックスが有効になります。
+* エージェントおよびData CollectorのアップグレードのEメール通知は、予定されているアップグレードの1日前にEメールIDに送信されます。
+
+
+
+
+== トラブルシューティング
+
+|===
+| * 問題： * | * これを試みなさい : * 
+
+
+| 「Data Collector Health Alerts」にEメールIDが表示されていますが、通知を受信していません。 | 通知メールは、NetApp Cloud Insightsドメイン（_accounts@service.cloudinsights.netapp.com_）から送信されます。一部の企業は、外部ドメインからの受信メールをブロックします。NetApp Cloud Insightsドメインからの外部通知がホワイトリストに登録されていることを確認します。 
+|===
