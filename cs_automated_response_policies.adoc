@@ -14,9 +14,9 @@ summary: 潜在的な攻撃（ランサムウェアなど）やアクティビ�
 
 NOTE: ワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
 
-特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、 [*Admin] > [Automated Response Policies] を選択し、適切な [*+ Policy+] ボタンをクリックします。攻撃または警告のポリシーを作成できます。
+特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、* Admin > Automated Response Policies *を選択し、適切な*+ Policy *ボタンをクリックします。攻撃または警告のポリシーを作成できます。
 
-image:AutomatedAttackPolicy.png["攻撃ポリシーを作成します"]
+image:Automated_Response_Screenshot.png["攻撃ポリシーを作成します"]
 
 ポリシーは一意の名前で保存する必要があります。
 

@@ -7369,9 +7369,7 @@
   <block id="c52c39354f4ad29d5eea2036eb6bf8a9" category="sidebar">ランサムウェア攻撃のシミュレーション</block>
   <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">潜在的な攻撃（ランサムウェアなど）やアクティビティの警告に対する自動応答ポリシーを設定できます</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">応答ポリシーは、スナップショットの作成や、攻撃や異常なユーザ動作が発生した場合のユーザアクセスの制限などのアクションをトリガーします。</block>
-  <block id="4a2c418e248f1a17cef7314e84e4d21f" category="paragraph">特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、 [*Admin] &gt; [Automated Response Policies] を選択し、適切な [*+ Policy+] ボタンをクリックします。攻撃または警告のポリシーを作成できます。</block>
   <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">攻撃ポリシーを作成します</block>
-  <block id="96dd8b86864f9c90bf0289c5f7b02b4d" category="paragraph"><block ref="96dd8b86864f9c90bf0289c5f7b02b4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">ポリシーは一意の名前で保存する必要があります。</block>
   <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">自動応答アクションを無効にする（例： Take Snapshot ）には、アクションをチェック解除してポリシーを保存するだけです。</block>
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">アラートの詳細ページ</block>
@@ -11205,4 +11203,6 @@
   <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">エージェントおよびData CollectorのアップグレードのEメール通知は、予定されているアップグレードの1日前にEメールIDに送信されます。</block>
   <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">「Data Collector Health Alerts」にEメールIDが表示されていますが、通知を受信していません。</block>
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知メールは、NetApp Cloud Insightsドメイン（_accounts@service.cloudinsights.netapp.com_）から送信されます。一部の企業は、外部ドメインからの受信メールをブロックします。NetApp Cloud Insightsドメインからの外部通知がホワイトリストに登録されていることを確認します。</block>
+  <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、* Admin &gt; Automated Response Policies *を選択し、適切な*+ Policy *ボタンをクリックします。攻撃または警告のポリシーを作成できます。</block>
+  <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
