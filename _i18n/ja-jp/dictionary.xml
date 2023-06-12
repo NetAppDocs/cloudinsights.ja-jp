@@ -3,52 +3,26 @@
   <block id="da6ac19a818a6de76b382ff406bf15b4" category="summary">無料トライアル期間中は、いつでも Cloud Insights に登録できます。</block>
   <block id="5a2dd268fff03fda59184d39fcea3904" category="doc">Cloud Insights に登録しています</block>
   <block id="48749104f97dbc83956df65c789fed9f" category="paragraph">Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行えます。</block>
-  <block id="f8345b18954fdb87b8ec25957d81a0fa" category="inline-link-macro">* NetApp Cloud Central *</block>
-  <block id="bc08fa610320914a0054ff93bcd79397" category="list-text">でアカウントに登録します <block ref="2cff9f38148e7f8c74bd89c0309a200d" category="inline-link-macro-rx"></block> ネットアップのクラウドサービスをすべて利用できるようになります。</block>
   <block id="3f6b1218c41eefc30536db7e39f979df" category="inline-link-macro">* 無償トライアル *</block>
   <block id="e4f3a6f7a1f50be5b653bf57b0b61372" category="list-text">に登録します <block ref="82b0fa617f1dfb2e34805f2626cf97a5" category="inline-link-macro-rx"></block> 使用可能な機能を調べるための Cloud Insights の。</block>
   <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">ネットアップの営業担当者</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
   <block id="7bc1d8b07dfc0e98950abc0c7f3979a5" category="inline-link-macro">情報と地域</block>
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。詳細については、「 Cloud Insights について」を参照してください <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>。</block>
-  <block id="40a5834e83975621427553254177c0ab" category="section-title">エディション</block>
-  <block id="e5357ca832e310fe2d063fed63521e4d" category="paragraph">Cloud Insights で使用できる機能は、登録したエディションによって異なります。使用可能なエディションについては、ここで説明します。</block>
-  <block id="1dd24ddc8bdc4a8ad7940369b2db779f" category="list-text">* Basic Edition * は無料でご利用いただけます。ネットアップサポートの有効なアカウントをお持ちの既存のお客様にご利用いただけます。</block>
-  <block id="ffec407b7dac5bde197f9fa34cee89d5" category="admonition">Cloud Insights Basic Edition で収集された機能 ' データ保存時間 ' オブジェクトまたはメトリックは ' 予告なく変更される場合があります</block>
-  <block id="b0bb53aca4f0808da1b4e8c638bf67a0" category="list-text">* Standard Edition * はサブスクリプション契約により提供され、 Basic Edition のすべての機能に加えて、その他の機能も提供されます。</block>
-  <block id="219927b224df858b634f5817e92a43c9" category="section-title">主な機能：</block>
-  <block id="156cab06046ee0bb08bbcf2279656592" category="paragraph">Basic Edition 、 Standard Edition 、 Premium Edition の主な機能は次のとおりです。</block>
-  <block id="0ad6a6d28761ee1aea9142218e951165" category="cell">キー機能</block>
-  <block id="4f407ad617aec7f56138e7f5dcb581be" category="cell">Basic エディション</block>
-  <block id="4c7e636779d99dc62c5aac24a3c8eb71" category="cell">Standard Edition の場合</block>
   <block id="1e2b97b9f5693b80ed092b9f3c74335d" category="cell">Premium Edition の場合</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">データ保持</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 日</block>
   <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90 日</block>
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 カ月</block>
-  <block id="e7bf25f23f000e012533efc35c4d2416" category="cell">インフラとストレージの指標</block>
-  <block id="0dbffb0c659b5d4a9b9db7c99921c0ff" category="cell">ネットアップのみ</block>
-  <block id="6723887a7f5a25b38fc43b06de935334" category="cell">マルチベンダー</block>
-  <block id="3474cd92e50405481b9e7fa627d1ec50" category="cell">カスタマイズ可能なダッシュボード</block>
-  <block id="218645bc52c81c8985636d68a575596c" category="cell">チェック（ &amp;C ）；</block>
-  <block id="c3778b94ab899c76a40a1a02fe9a4d49" category="cell">フォーラム、ドキュメント、トレーニングビデオ</block>
-  <block id="336d5ebc5436534e61d16e63ddfca327" category="cell">-</block>
-  <block id="eaedcc38fe9f5ceda03da3c909bffa54" category="cell">VM 指標</block>
-  <block id="48ddfbf9b74c53d0faaa56e85e7f4945" category="cell">クラウド指標</block>
-  <block id="c804187aad1ac0e05bfe9734492a853f" category="cell">サービスメトリック</block>
-  <block id="3e61ac3c29f7cbd9ed1cd4606d9a50e6" category="cell">監視とアラート生成</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">シングルサインオン（ SSO ）</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">南京錠</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Cloud Insights の使用中に鍵のアイコンが表示される場合 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>では、この機能が現在のエディションで使用できないか、または制限付きの形式で利用できることを意味します。この機能にフルアクセスするには、をアップグレードしてください。</block>
-  <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">試用版</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">* 製品サポート *</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">試用期間中はいつでも Cloud Insights に登録できます。Cloud Insights に登録すると、データへの中断のないアクセスと拡張されたアクセスが保証されます <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> オプション（ Options ）</block>
-  <block id="21d39705a699dccfee88543d413556c8" category="paragraph">無料トライアルがまもなく終了すると、 Cloud Insights にバナーが表示されますこのバナー内では、 [*Admin] &gt; [Subscription] * ページを開く _View Subscription_link が使用されます。管理者以外のユーザにはバナーが表示されますが、サブスクリプションページに移動することはできません。</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">Cloud Insights の評価にさらに時間が必要で、トライアルの有効期限が 4 日以下に設定されている場合は、さらに 30 日間試用期間を延長できます。トライアルを延長できるのは 1 回だけです。トライアルの期限が切れている場合は延長できません。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">トライアル期間が終了した場合はどうなりますか？</block>
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">無料トライアルの期限が切れていて、 Cloud Insights にまだ登録していない場合は、登録するまで機能が制限されます。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">サブスクリプションオプション</block>
-  <block id="91817940c8ccf98f5864299e8c3db4d7" category="paragraph">登録するには、 [ * 管理者 ] &gt; [ サブスクリプション * ] を選択します。[*Subscribe*] ボタンに加えて、インストールされているデータコレクタを確認し、推定価格を計算することができます。一般的な環境では、セルフサービス型の AWS Marketplace * Subscribe Now * ボタンをクリックします。ご使用の環境に 1,000 台以上の管理対象ユニットが含まれている場合、または含まれる予定の場合は、ボリューム価格の対象となります。</block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Cloud Insights の価格は管理ユニット * 単位です。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 台の管理対象ユニット = 2 台のホスト（任意の仮想マシンまたは物理マシン）</block>
@@ -56,9 +30,6 @@
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 詳細：</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">サブスクリプションコストを見積もります</block>
-  <block id="b3a13f2ac714cd20783d18ca8d2f35c7" category="paragraph">サブスクリプション計算ツールを使用すると、ホスト数とデータコレクタから報告される未フォーマット容量に基づいて、月あたりの Cloud Insights の推定販売価格を算出できます。現在の値は、 _Hosts_or_Unformatted Capacity_ フィールドに事前に入力されています。別の値を入力すると、将来の推定増加率の計画に役立ちます。</block>
-  <block id="83697bcbf001c6401bd12a7e4d024920" category="paragraph">見積価格は、サブスクリプション期間に基づいて変更されます。</block>
-  <block id="5c42608f26905e7504f522bdb6724935" category="admonition">計算ツールは概算専用です。ご登録時に正確な価格が設定されます。</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">登録方法を教えてください。</block>
   <block id="99d34ca2583ae7363bd4e07f9b2d98cc" category="inline-xref">セルフサブスクライブ</block>
   <block id="29778014c6460acd3ebe88e1e1f1652b" category="paragraph">管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます <block ref="c7602cfa7469b32fb39d8de19e42676e" category="inline-xref-macro-rx"></block> AWS Marketplace 経由で提供</block>
@@ -69,12 +40,9 @@
   <block id="ba16017252787d62326108ae062b54b0" category="section-title">AWS Marketplace でセルフサブスクライブ</block>
   <block id="24dced9ec471b11c43d64232ba07d95a" category="admonition">既存の Cloud Insights トライアルアカウントに AWS Marketplace のサブスクリプションを適用するには、アカウント所有者または管理者である必要があります。さらに、 Amazon Web Services （ AWS ）アカウントが必要です。</block>
   <block id="b4f83b03956523a39e8bbbd0895f0f29" category="inline-link-macro">Cloud Insights の機能です</block>
-  <block id="cd8989ed97c93cf5c202f61c8f811c55" category="paragraph">「 * Subscribe Now * 」ボタンをクリックすると AWS が開きます <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。</block>
   <block id="b0d79f167bb60f1ee8201b52678b1e91" category="paragraph">管理対象ユニットの総数を入力し、 12 か月または 36 か月のサブスクリプション期間を選択したら、「 * アカウントの設定 * 」をクリックしてサブスクリプションプロセスを終了します。</block>
-  <block id="7ad3a84f1fcb16f2e949410059075192" category="paragraph">AWS の登録プロセスが完了すると、 Cloud Insights 環境に戻ります。または、環境がアクティブでなくなった場合（ログアウトした場合など）は、 Cloud Central のサインインページが表示されます。Cloud Insights に再度サインインすると、サブスクリプションがアクティブになります。</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">AWS Marketplace のページで「 * アカウントの設定 * 」をクリックしてから、 AWS サブスクリプションの手続きを 1 時間以内に完了する必要があります。1 時間以内に完了しない場合は、もう一度「 * アカウントの設定 * 」をクリックして処理を完了する必要があります。</block>
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">問題が発生し、サブスクリプションプロセスが正常に完了しない場合でも、環境にログインすると「トライアルバージョン」のバナーが表示されます。この場合は、 * Admin &gt; Subscription * に移動して、契約プロセスを繰り返すことができます。</block>
-  <block id="6d9a2e2290d3df63014b18bdb7da2212" category="list-text">現在のサブスクリプションまたはアクティブエディション</block>
   <block id="2d5c36fcd4687378b85e14d41941a80f" category="admonition">フォーマットされていない容量管理対象ユニット数は、環境内の合計物理容量を表し、最も近い管理対象ユニットに切り上げられます。</block>
   <block id="cbeff837b5b145559373d2d49dde5efb" category="section-title">購読している使用量を超えた場合はどうなりますか ?</block>
   <block id="8014c42068ef58c63a245dfd8cb969f3" category="paragraph">管理下ユニットの使用率が総加入量の 80% 、 90% 、 100% を超えると、警告が表示されます。</block>
@@ -85,7 +53,6 @@
   <block id="c80438ed487f426482cacad6a4e99a1d" category="cell">* 90% *</block>
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">警告バナーが表示されます。購読している管理ユニット数を増やすことができます。</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100% *</block>
-  <block id="13b6624916681c7d00ae8634971f8cd8" category="cell">エラーバナーが表示され、次のいずれかを実行するまで機能が制限されます。 * サブスクリプションを変更してサブスクリプション管理ユニット数を増やす * データコレクタを削除して、管理ユニットの使用量が購読している量以下になるようにします</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接購読して、トライアルをスキップしてください</block>
   <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">から直接 Cloud Insights に登録することもできます <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。</block>
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">netstat データコレクタ設定です</block>
@@ -7239,7 +7206,6 @@
   <block id="f2c32ff362c075e1c65013393f95b23e" category="sidebar">PowerScale</block>
   <block id="dc20128ad51d4736f32ce4774255be05" category="sidebar">HP Alletra 9000 および Primera</block>
   <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
-  <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direct または AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> または <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume を備えた SVM はサポートされません。</block>
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">ONTAP の Advanced Counter および EMS Log Collection を有効にします</block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied"</block>
@@ -7432,7 +7398,6 @@
   <block id="f8a3f6c3840b144728e1066d84db53ec" category="section-title">折れ線グラフの補間</block>
   <block id="d1458c295da095c4f0b8cdf2e41ceaf6" category="paragraph">多くの場合、データコレクタがデータを異なる間隔でポーリングします。たとえば、データコレクタ A は 15 分ごとにポーリングし、データコレクタ B は 5 分ごとにポーリングします。折れ線グラフウィジェット（スプライングラフ、面グラフ、積み上げ面グラフも含む）で、複数のデータコレクタのこのデータを 1 行に集計している場合（たとえば、ウィジェットが「すべて」でグループ化されている場合）は、次のようになります。 また、 5 分ごとにデータを更新すると、コレクタ B からのデータが正確に表示され、コレクタ A からのデータにギャップが生じ、コレクタ A が再度ポーリングするまでアグリゲートに影響が及ぶ可能性があります。</block>
   <block id="ccf8880e1018ebb2fd1bb2e959e62092" category="paragraph">この問題を軽減するために、 Cloud Insights は、データコレクタが再度ポーリングを行うまで、周囲のデータポイントを使用してデータの「最良の推測」を取得し、集約時にデータを補間します。ウィジェットのグループ化を調整することで、各データコレクタのオブジェクトデータをいつでも個別に表示できます。</block>
-  <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">非アクティブな Cloud Insights Basic Edition 環境が削除され、そのリソースが再利用されます。連続する 30 日間のユーザアクティビティがない場合、 7 日間にわたってデータが取り込まれていない場合、環境は非アクティブとみなされます。Cloud Insights は通知を送信し、環境が削除される 4 日前の猶予期間を提供します。</block>
   <block id="c1f58328aeef13bbe14c188aa6c895ea" category="paragraph">ここでは、レポートに関する問題のトラブルシューティング方法を示します。</block>
   <block id="f6742e49587a771a1225e7c6e472c682" category="cell">レポートを E メールで送信するようにスケジュール設定すると、ログインしているユーザの名前が E メールの「宛先」フィールドに事前に入力されます。ただし、名前は「 firstname lastname 」（名、スペース、姓）の形式になっています。これは有効な E メールアドレスではないため、スケジュールされたレポートの実行時に E メールを送信できません。</block>
   <block id="155db2ed9995e9882b3be492b37935dc" category="cell">レポートを E メールで送信するようにスケジュールする場合は、事前に入力された名前をクリアし、正しい形式で正しい形式の有効な E メールアドレスを [ 宛先 ] フィールドに入力します。</block>
@@ -7442,7 +7407,6 @@
   <block id="c43280f80a1f0bcdf120e5ebc1478afa" category="paragraph">ここでは、ログクエリに関する問題のトラブルシューティング方法を説明します。</block>
   <block id="a2b7ba428c90a214e64dd3650b09c2d7" category="cell">ログクエリに「デバッグ」メッセージが表示されません</block>
   <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">デバッグログのメッセージが収集されません。必要なメッセージをキャプチャするには、関連するメッセージの重大度を _INFORMATIONAL 、 ERROR 、 ALERT 、 EMERGENCY 、 _OR_NOTICE レベルに変更します。</block>
-  <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB</block>
   <block id="659ff9500b9dfbdb242e7c46c8777782" category="list-text">Azure OAuth 2.0 リダイレクト URI （ login.microsoftonline.com ）</block>
   <block id="7fe84062654c2f7953a6b3832d467cfb" category="list-text">Azure Resource Manager IP （ management.core.windows.net ）</block>
@@ -7612,15 +7576,8 @@
   <block id="76b98091ce8fe8a7a83d21d8c94371fd" category="list-text">作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。</block>
   <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">サブスクリプションステータスを表示します</block>
   <block id="4d71df4f1ca4df08ff676034d4f602c1" category="paragraph">サブスクリプションがアクティブになると、 [*Admin] &gt; [Subscription] * ページからサブスクリプションのステータスと管理ユニットの使用状況を確認できます。</block>
-  <block id="cf9f7d335ccf63f9afafb03e9bccbb83" category="inline-image-macro">月額プランを表示しています</block>
-  <block id="5b5d45532915c043e48d673f375857ab" category="paragraph"><block ref="5b5d45532915c043e48d673f375857ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a6d1c39ffb1db427cb7afbe60b68ee43" category="paragraph">[ サブスクリプションの詳細 ] タブには、次の情報が表示されます</block>
-  <block id="a62d98f1bf3d70795bcdab761b572ade" category="list-text">サブスクリプションの詳細</block>
-  <block id="2f40f378178c238fe365dfbf4f50ca13" category="list-text">リンクをクリックして、サブスクリプションの変更またはコストの変更の見積もりを行います</block>
   <block id="3252142ff4dd2ca67a9bff6f0a7fd71b" category="section-title">使用状況管理を表示します</block>
-  <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">Usage Management （使用管理）タブには、管理対象ユニットの使用状況の概要、環境にインストールされているデータコレクタのリスト、および各管理対象ユニットの内訳が表示されます。</block>
   <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">管理対象ユニットの合計は、サマリセクションのデータコレクタ数とは若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。サマリセクションには、サブスクリプションの実際の管理ユニット数が表示されます。</block>
-  <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">購読している量に近づいている、または超過している場合は、 [three dots] メニューをクリックして _Delete_を 選択することにより、このリストのデータコレクタを削除できます。</block>
   <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022 年 4 月</block>
   <block id="259a90b9586b985b7c26543c1f883472" category="section-title">フィードバックを共有してください。</block>
   <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">* 今すぐ登録 *</block>
@@ -8260,8 +8217,6 @@
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">データ到着が遅い場合や、データ到着がない場合と同様に、タイマーメカニズムを引き継ぐ必要があります。これは、「リアルタイム」でアラートをトリガーするためのデータ到着率が不十分であるためです。 そのため、質問は「分析ウィンドウを閉じて、何を確認するまでにどれくらい待つか」ということが一般的です。 待機時間が長すぎると、アラートを生成するのに十分な時間がかかります。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">長期的なデータ損失が発生する前の最後のデータポイントによって条件が違反されていることを通知する30分のウィンドウを備えたモニタがある場合、 この状態が持続していることをモニタが確認するために使用する他の情報を受信しなかったため、アラートが生成されます。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100Mbpsまたは1Gbpsのイーサネット接続、静的IPアドレス、ポート80または443からAcquisition Unitから*.cloudinsights.netapp.comまたはCloud Insights 環境（例 \https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、例外リストに追加された次のドメインを取得する必要があります。*.cloudinsights.netapp.com詳細については、プロキシについて準備してください <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> または <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
-  <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast;</block>
-  <block id="d54591f265027d735d3be71d57199e4a" category="cell">ビジネスインテリジェンスおよびレポート作成&amp;AST;&amp;ast;</block>
   <block id="d429655e140835b91db45b4324358975" category="list-text">cluster_admin_credentialsを使用してONTAP クラスタ（ユーザのブロックを解除する場所）にログインします。（Amazon FSXの場合、FSXクレデンシャルを使用してログインします）。</block>
   <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">上記の出力では、2人のユーザーがドメインCSLABでブロックされました（US030、US040）。</block>
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">上記の出力から位置を特定したら、次のコマンドを実行してユーザーのブロックを解除します。</block>
@@ -8403,7 +8358,6 @@
   <block id="37d67556425a480bd771d25cccb64deb" category="list-text">ONTAP Amazon FSXの略</block>
   <block id="0dec2b903302bbd14d95abf2e3a6eb78" category="paragraph">エージェントマシンは、クラウドサービスプロバイダのそれぞれのサブネットで設定する必要があります。ネットワークアクセスの詳細については、[エージェントの要件]を参照してください。</block>
   <block id="608efa70bff9cd8ba64ac8f581eee545" category="paragraph">以下は、AWSでエージェントをインストールする手順です。クラウドサービスプロバイダに応じて、AzureまたはGoogle Cloudでインストールのために同等の手順を実行できます。</block>
-  <block id="e92d16963e5b72f89982fb54b922794a" category="list-text">*チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。チャットは、Cloud Insights 画面の右上にある* Help &gt; Live Chat *メニューオプションで利用できます。</block>
   <block id="abc39e61f48aa5adbf3a9de149e1a87a" category="list-text">インフラ/インベントリ：ユーザデータにストレージ/ネットワークサービスを提供するオブジェクト</block>
   <block id="f66a68b2ce406b961d0175d123132ef1" category="list-text">Workloads：ユーザにデータの読み取り/書き込みのインターフェイスを提供するオブジェクト。</block>
   <block id="85d3998a83e328d8facfa5fc0ffc5c7a" category="list-text">データ保護：ネットアップのデータ保護テクノロジを使用して保護できるオブジェクト</block>
@@ -8521,9 +8475,7 @@
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">古いAPIトークンを新しいAPIトークンに置き換えて、_spec.output-sink.api-key_valueを変更します。</block>
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">AWS Marketplaceで試用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">管理ユニット</block>
-  <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、Cloud Insights にアクセスできます <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> 試用期間は33日間で、最大499まで使用できます <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">注：499 MUを超える値を設定すると、「違反」状態になります。トライアルが違反状態になっている間は、違反が解決されるまで、設定されているMU数を減らすか、またはCloud Insights にサブスクライブするまで、一部のCloud Insights 機能にアクセスできなくなります。</block>
-  <block id="9610f5475b4256230dbfd8bf12bacab1" category="paragraph">AWS Marketplaceの無償トライアルを延長することはできません。トライアル期間中はいつでも、Cloud Insights ベーシックエディションのサブスクリプションにダウングレードしたり、有料のCloud Insights スタンダードまたはプレミアムエディションのサブスクリプションに変更したりすることができます。その場合は、* Admin -&gt; Subscription *ページにアクセスしてください。</block>
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">NetApp Kubernetes Monitoring Operatorの設定</block>
   <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">流暢なビット</block>
   <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">Cloud Insights では、などの多くのコンポーネントが使用されます <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> および <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>をクリックしてください。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
@@ -10383,8 +10335,6 @@
   <block id="0506b86e6f0cdfab05c9570568f031d8" category="paragraph">Workload Securityを使用してユーザアクティビティを監視する前に、設定タスクを完了する必要があります。</block>
   <block id="f827ca5aa861a4bddcbc872872858f88" category="paragraph">ワークロードセキュリティシステムでは、エージェントを使用して、ストレージシステムからアクセスデータとディレクトリサービスサーバからのユーザ情報を収集します。</block>
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">ワークロードセキュリティは、他のツールとも統合できます。例： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> Splunkと統合し、</block>
-  <block id="ff6174f06964486c8970783d9abd7b54" category="cell">ワークロードセキュリティユーザデータアクセス監査</block>
-  <block id="1b3681a6af892931e035b5a955f26be0" category="cell">AI/MLを使用したワークロードセキュリティ内部の脅威検出</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">ワークロードセキュリティLDAPユーザディレクトリコレクタの設定</block>
   <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">ワークロードセキュリティを設定して、LDAPディレクトリサーバからユーザ属性を収集します。</block>
   <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">[ワークロードセキュリティ]メニューで、[*管理者]、[データコレクタ]、[ユーザーディレクトリコレクタ]、[+ユーザーディレクトリコレクタ*]の順にクリックし、[* LDAPディレクトリサーバー*]を選択します</block>
@@ -10687,11 +10637,6 @@
   <block id="0407a7c5b366f01d5671805c1f907afe" category="inline-image-macro">Cognos左上のメニュー</block>
   <block id="837aabd72a7904f0806179e23fe0d6e5" category="paragraph"><block ref="837aabd72a7904f0806179e23fe0d6e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e816756750f33badae1d375877be4d7" category="list-text">*_Team Content_*に新しいフォルダを作成します</block>
-  <block id="72d743dc018b9aea07e4baa34bd41f04" category="admonition">特に明記されていない限り、このページの情報は一般的に 環境 Cloud Insights 商用版(Basic、Standard、Premium)です。Cloud Insights の連邦版には、このページに記載されている機能の一部が含まれていない場合があります。</block>
-  <block id="1127a17ff9264a478b5b2afbb0ec9fc5" category="list-text">*Federal Edition*は、米国向けのFedRAMP準拠のCloud Insights Editionを提供します政府機関。上記の商用版で利用可能な一部の機能は、Federal Editionでは利用できない場合や、機能が制限されている場合があります。これらの違いについては、可能であればCloud Insights のドキュメントに記載されています。</block>
-  <block id="bcb2daf8da854022329b57412821d9eb" category="cell">ライブチャット^&amp;plus;&amp;plus;^およびテクニカルサポート</block>
-  <block id="7a535c5cff09892a0f3fc0a2ecbe2932" category="cell">APIアクセス^&amp;plus;^</block>
-  <block id="cddad7083722bc6fb1722d2d5da45782" category="paragraph">&amp;ast;一度に5つのアクティブなカスタムモニタに制限&amp;plus; APIアクセスは、エディション&amp;ast;&amp;ast; 500管理ユニット以上の環境で使用可能^&amp;plus;&amp;plus;^ Cloud Insights 連邦版では使用できません</block>
   <block id="5452e6774adb97c1d8607e2b1af1851a" category="paragraph">Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、Cloud Insights エディションによって異なります。</block>
   <block id="3c99b9f872acb5e317804aaff9d10cfb" category="admonition">ライブチャットサポートオプションは、Cloud Insights フェデラルエディションでは使用できません。</block>
   <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">Kubernetesワークロードの依存関係とフローを提示し、ネットワークとパフォーマンスの問題を明らかにします</block>
@@ -11205,4 +11150,60 @@
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知メールは、NetApp Cloud Insightsドメイン（_accounts@service.cloudinsights.netapp.com_）から送信されます。一部の企業は、外部ドメインからの受信メールをブロックします。NetApp Cloud Insightsドメインからの外部通知がホワイトリストに登録されていることを確認します。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">特定のデバイスまたはすべてのデバイスにポリシーを設定できます。応答ポリシーを設定するには、* Admin &gt; Automated Response Policies *を選択し、適切な*+ Policy *ボタンをクリックします。攻撃または警告のポリシーを作成できます。</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f54630a238a2ce40ac5742f2df04227" category="list-text">でアカウントに登録します <block ref="b7d0b9f9f12fc76a51e1b13d72622a5b" category="inline-link-macro-rx"></block> ネットアップのクラウドサービスをすべて利用できるようになります。</block>
+  <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">* Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接または <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">特に明記されていない限り、このページの情報は一般的に 環境 Cloud Insights商用版です。Cloud Insights の連邦版には、このページに記載されている機能の一部が含まれていない場合があります。</block>
+  <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insightsの価格設定</block>
+  <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">Cloud Insightsベーシックエディションとプレミアムエディションで使用できる機能の完全な比較については、を参照してください <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">試用版</block>
+  <block id="011273891e0a49f42abc1a209e58868a" category="paragraph">無料トライアルがまもなく終了すると、 Cloud Insights にバナーが表示されますそのバナー内に_View Subscription_linkがあり、* Admin -&gt; Subscription *ページが開きます。管理者以外のユーザにはバナーが表示されますが、サブスクリプションページに移動することはできません。</block>
+  <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、33日間の試用期間でCloud Insightsにアクセスでき、最大499回まで利用できます <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
+  <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplaceの無償トライアルを延長することはできません。試用期間中はいつでも、*管理-&gt;サブスクリプション*ページにアクセスして、Cloud Insightsベーシックエディションのサブスクリプションにダウングレードしたり、有料のCloud Insightsサブスクリプションに変更したりできます。</block>
+  <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">サブスクライブするには、*[管理]-&gt;[サブスクリプション]*に移動します。[*Subscribe*] ボタンに加えて、インストールされているデータコレクタを確認し、推定価格を計算することができます。一般的な環境の場合は、セルフサービスのAWS Marketplaceボタンをクリックします。ご使用の環境に 1,000 台以上の管理対象ユニットが含まれている場合、または含まれる予定の場合は、ボリューム価格の対象となります。</block>
+  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Cohesity SmartFiles</block>
+  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC DATA Domainの略</block>
+  <block id="125896ecc7af5f5e57ffa0aa99abe89e" category="paragraph">[Subscription Calculators]では、必要になると予想されるManaged Unitの数に基づいて、推定される月あたりのCloud Insightsコストが計算されます。現在の値は事前に入力されており、それらの値を調整して将来の増加予測を計画するのに役立ちます。インフラ、Kubernetes、またはその両方の値を調整できます。</block>
+  <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">見積価格は、サブスクリプション期間に基づいて変更されます。
+注：計算ツールは見積もり専用です。ご登録時に正確な価格が設定されます。</block>
+  <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">インフラとKubernetesのコスト試算ツールが表示されたサブスクリプションページ</block>
+  <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e45641d408ce7d31aa423768c5c36d43" category="paragraph">Amazon Marketplaceのリンクをクリックすると、AWSが開きます <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。</block>
+  <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">AWS の登録プロセスが完了すると、 Cloud Insights 環境に戻ります。または、環境がアクティブでなくなった場合（ログアウトした場合など）は、NetApp BlueXPのサインインページに移動します。Cloud Insights に再度サインインすると、サブスクリプションがアクティブになります。</block>
+  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">[サブスクリプションの概要]タブには次の情報が表示されます。</block>
+  <block id="2638d109f7501322af782022ec53f096" category="list-text">現在のエディション</block>
+  <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">サブスクリプションシリアル番号</block>
+  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">現在のMU使用量と「What if？」 コスト見積もりツール</block>
+  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">サブスクリプションを変更するためのリンク</block>
+  <block id="d3d856c02816952b24a5110171a09834" category="paragraph">[Usage Management]タブには、Managed Unitの使用状況の概要と、コレクタまたはKubernetesクラスタ別のManaged Unitの消費状況を示すタブが表示されます。</block>
+  <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">利用状況がサブスクライブした金額に近づいている、または超過している場合は、データコレクタを削除するか、Kubernetesクラスタの監視を停止することで、使用量を減らすことができます。このリストの項目を削除するには、「3つのドット」メニューをクリックして_Delete_を選択します。</block>
+  <block id="718a66b23c9ea5a577883d447f892296" category="cell">エラーバナーが表示され、次のいずれかを実行するまで機能が制限されます。
+* Managed Unitの使用量がサブスクライブされた金額以下になるように、データコレクタを削除します
+*サブスクリプションを変更して、Managed Unitの数を増やしてください</block>
+  <block id="411d690288852abddc39378b2989bfda" category="section-title">2023年6月</block>
+  <block id="291a655a304c4b76742b53402a12bbc9" category="section-title">使用状況を確認してください</block>
+  <block id="0086a587e865c983a5de9f9b4d992e51" category="paragraph">2023年6月より、Cloud Insightsでは、機能セットに基づくManaged Unitの使用量の内訳を提供しています。インフラのManaged Unit（MU）の使用状況やKubernetesに関連付けられたMUの使用状況をすばやく表示、監視できるようになりました。</block>
+  <block id="32c091d4e02c7b82d97bee3fc5f2fd0c" category="inline-image-macro">計測の使用状況の内訳</block>
+  <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">Kubernetes Network Monitoring and Mapは、すべてのユーザに使用できます</block>
+  <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Kubernetesワークロード間の依存関係をマッピングすることでトラブルシューティングを簡易化し、Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。多くのお客様がプレビュー中に役立つと感じており、今では誰もが楽しめるようになっています。</block>
+  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Cloud InsightsのReportingコンポーネントの名前が「Cloud Insights Analytics」に変更されました。ただし、機能は変わりません。</block>
+  <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">コレクタ/取得の変更点：</block>
+  <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">Data Collector/Acquisition Unitに次の変更が加えられています。</block>
+  <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">Data DomainおよびCohesity MUは、40 TiB：1 MUで計測されます。</block>
+  <block id="73a81d909884b3b62b84dacced2eeca9" category="list-text">Acquisition UnitでRHELとRocky 9.0および9.1がサポートされるようになりました。</block>
+  <block id="c4f065a2c4ebd22f7bfd9dbe61a5ab49" category="section-title">新しいONTAP Essentialsダッシュボード</block>
+  <block id="b972bd3ee7c713179adbfcfdf2701350" category="paragraph">次のONTAP Essentialsダッシュボードがプレビュー環境で使用可能になり、すべてのユーザーが使用できるようになりました。</block>
+  <block id="9b2e2112dbf0945f11b7f04ac3421312" category="list-text">データ保護ダッシュボード（ローカルとリモートの保護の概要を含む）</block>
+  <block id="e549f5717ec1caa7dfb9fc872b4b87a3" category="section-title">追加のシステムモニタ</block>
+  <block id="62a0cfde3778aefa78f4b178eaa97a76" category="paragraph">Cloud Insightsには、次のシステムモニタが付属しています。</block>
+  <block id="ba58cfebfc4230ab4f6ab822a49aa1fe" category="list-text">Storage VM FCPサービスを使用できません</block>
+  <block id="99f7dcb5d0bc844ef56cc6cd317f2555" category="list-text">Storage VM iSCSIサービスを使用できません</block>
+  <block id="2c20388998fe9dc758bf7fb123ac7a32" category="cell">Forensics_All Activity_or_Entities_pagesのフィルタにアスタリスク(\*)などのワイルドカード文字を含む文字を入力すると、ページのロードに時間がかかります。</block>
+  <block id="2fdbb1db4127b83dadc134e367935c11" category="cell">検索文字列にアスタリスク（\*）を付けると、すべてが検索されます。ただし、_*&lt;searchTerm&gt;_ or _*&lt;searchTerm&gt;*_のような先頭のワイルドカード文字列は、クエリに時間がかかります。
+パフォーマンスを向上させるには、代わりに_&lt;searchTerm&gt;*_という形式でプレフィックス文字列を使用します（つまり、検索用語としてアスタリスク(*)_after_aを追加します）。
+例：_* testvolume_or_* test * volume__ではなく、文字列_testvolume *_を使用します。
+
+プレフィックスベースの検索を使用して、特定のフォルダの下にあるすべてのアクティビティを再帰的に表示します（階層検索）。例：_/path1/path2/path3_or_"/path1/path2/path3"_は、すべてのアクティビティを_/path1/path2/path3_の下に再帰的にリストします。
+または、[すべてのアクティビティ（All Activity）]タブの[フィルタに追加（Add to Filter）]オプションを使用します。</block>
+  <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*チャット*- NetAppサポート担当者に連絡してサポートを受けます（平日のみ）。チャットは、Cloud Insights 画面の右上にある* Help &gt; Live Chat *メニューオプションで利用できます。</block>
 </blocks>

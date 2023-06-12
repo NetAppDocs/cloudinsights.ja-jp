@@ -25,6 +25,61 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
+== 2023年6月
+
+
+
+=== 使用状況を確認してください
+
+2023年6月より、Cloud Insightsでは、機能セットに基づくManaged Unitの使用量の内訳を提供しています。インフラのManaged Unit（MU）の使用状況やKubernetesに関連付けられたMUの使用状況をすばやく表示、監視できるようになりました。
+
+image:Metering_Usage.png["計測の使用状況の内訳"]
+
+
+
+=== Kubernetes Network Monitoring and Mapは、すべてのユーザに使用できます
+
+。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetesのネットワークパフォーマンスとマップ_"] Kubernetesワークロード間の依存関係をマッピングすることでトラブルシューティングを簡易化し、Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。多くのお客様がプレビュー中に役立つと感じており、今では誰もが楽しめるようになっています。
+
+
+
+=== レポート作成
+
+Cloud InsightsのReportingコンポーネントの名前が「Cloud Insights Analytics」に変更されました。ただし、機能は変わりません。
+
+
+
+=== コレクタ/取得の変更点：
+
+Data Collector/Acquisition Unitに次の変更が加えられています。
+
+* Data DomainおよびCohesity MUは、40 TiB：1 MUで計測されます。
+* Acquisition UnitでRHELとRocky 9.0および9.1がサポートされるようになりました。
+
+
+
+
+=== 新しいONTAP Essentialsダッシュボード
+
+次のONTAP Essentialsダッシュボードがプレビュー環境で使用可能になり、すべてのユーザーが使用できるようになりました。
+
+* セキュリティダッシュボード
+* データ保護ダッシュボード（ローカルとリモートの保護の概要を含む）
+
+
+
+
+=== 追加のシステムモニタ
+
+Cloud Insightsには、次のシステムモニタが付属しています。
+
+* Storage VM FCPサービスを使用できません
+* Storage VM iSCSIサービスを使用できません
+
+
+'''
+
+
 == 2023年5月
 
 

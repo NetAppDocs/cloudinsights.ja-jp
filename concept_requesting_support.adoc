@@ -114,7 +114,7 @@ NOTE: に登録する必要があります <<Activating support entitlement and 
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["* 電話 *"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["* サポートチケット *"]
-* *チャット*-ネットアップのサポート担当者に、平日のみ連絡を取ることができます。チャットは、Cloud Insights 画面の右上にある* Help > Live Chat *メニューオプションで利用できます。
+* *チャット*- NetAppサポート担当者に連絡してサポートを受けます（平日のみ）。チャットは、Cloud Insights 画面の右上にある* Help > Live Chat *メニューオプションで利用できます。
 
 
 をクリックして、セールスサポートをリクエストすることもできます link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 販売担当者 * にお問い合わせください"] リンク
