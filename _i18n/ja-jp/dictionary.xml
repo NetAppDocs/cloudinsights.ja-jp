@@ -8517,7 +8517,6 @@
   <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。</block>
   <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegrafバージョン2.0以降を使用していて、KubernetesクラスタストレージがCloud Insights によってアクティブに監視されている必要があります。</block>
-  <block id="6b429c610cd6e569edf0723797324d8a" category="cell">SELinux が有効で強制されている場合、 Telegraf ポッドが Kubernetes ノードの /proc/1/mountstats ファイルにアクセスできない可能性があります。この制限を緩和するには、エージェントを編集します <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）を使用して、「privileged-mode：false」を「privileged-mode：true」に変更します。</block>
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">「ImagePullBackoff」エラーが発生しました</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">インフラ全体のトポロジビューは使用できますか。Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">Cloud Insights では、ストレージノードやストレージノードのクエリに「* monitoring .count *」列を追加できます。返される結果にActive IQ監視対象のストレージシステムが含まれる場合は、monitor.count列にストレージシステムまたはノードのリスク数が表示されます。</block>
@@ -11211,4 +11210,5 @@
   <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu/Debian：/var/log/telegraf/telegraf.log</block>
   <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows：C：\Program Files\telegraf\telegraf.log</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">指標収集間隔（秒）（最大=60秒）</block>
+  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、以下を参照してください。<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
 </blocks>
