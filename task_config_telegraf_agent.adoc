@@ -50,6 +50,17 @@ NOTE: プロキシを使用している場合は、 Tegraf エージェントを
 
 
 
+=== ログの場所
+
+Telegrafログメッセージは、stdoutから次のログファイルにリダイレクトされます。デフォルトでは、
+
+* RHEL / CentOS：/var/log/telegraf/telegraf.log
+* Ubuntu/Debian：/var/log/telegraf/telegraf.log
+* Windows：C：\Program Files\telegraf\telegraf.log
+
+
+
+
 === Windows の場合
 
 

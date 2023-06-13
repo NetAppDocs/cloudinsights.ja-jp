@@ -11206,4 +11206,9 @@
 プレフィックスベースの検索を使用して、特定のフォルダの下にあるすべてのアクティビティを再帰的に表示します（階層検索）。例：_/path1/path2/path3_or_"/path1/path2/path3"_は、すべてのアクティビティを_/path1/path2/path3_の下に再帰的にリストします。
 または、[すべてのアクティビティ（All Activity）]タブの[フィルタに追加（Add to Filter）]オプションを使用します。</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*チャット*- NetAppサポート担当者に連絡してサポートを受けます（平日のみ）。チャットは、Cloud Insights 画面の右上にある* Help &gt; Live Chat *メニューオプションで利用できます。</block>
+  <block id="b2997605f7b826343b475f71837415f4" category="section-title">ログの場所</block>
+  <block id="21872dffda230726cb93a6dddff7dd00" category="paragraph">Telegrafログメッセージは、stdoutから次のログファイルにリダイレクトされます。デフォルトでは、</block>
+  <block id="176f2e3b515143c4119028872457ab70" category="list-text">RHEL / CentOS：/var/log/telegraf/telegraf.log</block>
+  <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu/Debian：/var/log/telegraf/telegraf.log</block>
+  <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows：C：\Program Files\telegraf\telegraf.log</block>
 </blocks>
