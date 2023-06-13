@@ -39,7 +39,7 @@ NetApp Kubernetes Monitoring Operatorのインストールと設定はカスタ�
 | テレグラフ |  | オペレータのTelegrafインストールをカスタマイズできる設定オプション 
 
 
-|  | collectionInterval | 指標の収集間隔（秒） 
+|  | collectionInterval | 指標収集間隔（秒）（最大=60秒） 
 
 
 |  | dsCpuLimit | Telegraf DSのCPU制限 
