@@ -5,9 +5,20 @@ summary: Cloud Insights での作業の開始
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = データの収集を開始しています
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
+[role="lead"]
 Cloud Insights に登録して初めて環境にログインしたあと、以下の手順に従ってデータの収集と管理を開始します。
 
 データコレクタによって、ストレージデバイス、ネットワークスイッチ、仮想マシンなどのデータソースから情報が検出されます。収集された情報は、分析、検証、監視、およびトラブルシューティングに使用されます。

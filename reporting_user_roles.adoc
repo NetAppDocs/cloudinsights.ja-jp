@@ -5,7 +5,17 @@ summary: Cloud Insights レポートで実行できる操作は、ユーザロ�
 keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
 ---
 = Cloud Insights レポートユーザーの役割
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

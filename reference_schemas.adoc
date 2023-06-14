@@ -5,7 +5,17 @@ summary: Reporting で使用する Data Warehouse スキーマの図とテーブ
 keywords: dwh, data warehouse, schema, reporting 
 ---
 = レポート作成用の Cloud Insights スキーマ
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

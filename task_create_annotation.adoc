@@ -5,7 +5,17 @@ keywords: annotations, annotation rules, manual annotations,
 summary: アノテーションの作成方法 
 ---
 = アノテーションの使用
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

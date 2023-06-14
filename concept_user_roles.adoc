@@ -5,7 +5,17 @@ keywords: roles, guest, user, administrator, SSO, Federate, federation, identity
 summary: Cloud Insights には、さまざまな権限レベルを持つ複数のユーザアカウントがあります。 
 ---
 = ユーザアカウントとロール
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

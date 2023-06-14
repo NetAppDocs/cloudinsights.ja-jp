@@ -5,7 +5,17 @@ summary: 作成されたクエリを表示します
 keywords: query, queries, viewing 
 ---
 = クエリを表示する
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

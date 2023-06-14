@@ -5,7 +5,17 @@ keywords: telegraf, installation, install, agent, telegraf agent
 summary: Cloud Insights は統合データの収集のためのエージェントとしてTelegrafをサポートしており、WindowsまたはLinux上で設定できます。 
 ---
 = データを収集するためのエージェントの設定(Windows/Linux)
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

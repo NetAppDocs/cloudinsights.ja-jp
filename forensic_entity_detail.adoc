@@ -5,10 +5,18 @@ keywords: Forensic, entity, entity overview, entity behavior, detail
 summary: フォレンジックエンティティの詳細 
 ---
 = フォレンジックエンティティの詳細
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
-
-TOC: マクロ : ハードブレーク :toclevels:1:nofooter: アイコン :linkattrs:imagesdir:./media/
 
 エンティティの詳細ページを使用して、エンティティに関する詳細情報にアクセスします。
 

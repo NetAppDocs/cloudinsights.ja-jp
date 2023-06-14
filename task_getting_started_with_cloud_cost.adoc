@@ -5,7 +5,17 @@ summary: クラウドコストの導入を開始します。
 keywords: analysis, cost, analyzer 
 ---
 = クラウドコストの導入を開始します
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

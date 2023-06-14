@@ -5,7 +5,17 @@ summary: Time-To-Live （ TTL ）とダウンサンプリングの説明
 keywords: time-to-live, TTL, downsampling, downsample, 
 ---
 = Time-To-Live （ TTL ）とデータのダウンサンプリング
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

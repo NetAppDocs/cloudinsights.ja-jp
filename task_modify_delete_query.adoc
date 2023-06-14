@@ -5,14 +5,25 @@ summary: クエリを変更または削除する
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = クエリの変更または削除
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
+
+[role="lead]"]
+クエリに関連付けられている条件を変更して、アセットの検索条件を変更することができます。
 
 
 
 == クエリーの変更
-
-クエリに関連付けられている条件を変更して、アセットの検索条件を変更することができます。
 
 .手順
 . [ * クエリ * ] をクリックし、 [ * すべてのクエリを表示 * ] を選択します。

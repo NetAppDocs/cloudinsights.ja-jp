@@ -5,7 +5,17 @@ keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall
 summary: Workload Securityデータコレクタを追加します 
 ---
 = ONTAP SVM Data Collector の設定
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

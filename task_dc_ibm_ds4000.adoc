@@ -5,7 +5,17 @@ keywords: data collector, IBM, DS4000
 summary: IBM TotalStorage DS4000 データコレクタ 
 ---
 = IBM TotalStorage DS4000 データコレクタ
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -15,7 +25,7 @@ summary: IBM TotalStorage DS4000 データコレクタ
 
 == 用語集
 
-Cloud Insightst は、 IBM DS4000 データコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Cloud Insightsは'IBM DS4000データコレクタから次のインベントリ情報を取得します取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===

@@ -5,7 +5,17 @@ keywords: inactive, device,
 summary: 非アクティブなデバイスを識別すると、そのデバイスを削除するか、アクティブなロールに割り当てるかを選択できます。 
 ---
 = 非アクティブなデバイスの識別
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

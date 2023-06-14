@@ -5,7 +5,12 @@ keywords: api, access, token, swagger
 summary: ワークロードセキュリティには、CMDBなどの他のアプリケーションと統合するための強力なAPIが含まれています。 
 ---
 = ワークロードセキュリティAPI
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

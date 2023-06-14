@@ -5,7 +5,17 @@ keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstal
 summary: WindowsおよびLinuxでのAcquisition Unitのインストール、アンインストール、プロキシのサポートの設定などがあります。 
 ---
 = Acquisition Unit の設定
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
