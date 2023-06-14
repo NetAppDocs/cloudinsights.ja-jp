@@ -96,13 +96,13 @@ Cloud Insights は、 VNXe データコレクタから次のインベントリ�
 | フィールド | 説明 
 
 
-| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 40 分です。 
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは40分です 
 
 
-| CLI ポート | VNXe CLI に使用するポート 
+| CLIポート | VNXe CLI に使用するポート 
 
 
-| パフォーマンスのポーリング間隔（秒） | デフォルトは 300. です。 
+| パフォーマンスのポーリング間隔（秒） | デフォルトは300です。 
 |===
 
 
@@ -119,6 +119,9 @@ Cloud Insights は、 VNXe データコレクタから次のインベントリ�
 | 問題 | 次の操作を実行します 
 
 
-| 「 Failed to execute external utility 」というエラーメッセージが表示され、「 Failed to find Unisphere executable uemcli 」 | * 正しい IP アドレス、ユーザー名、パスワードを確認する * Unisphere CLI が Cloud Insights Acquisition Unit にインストールされていることを確認 * Unisphere CLI インストールディレクトリがデータソース構成で正しいことを確認します * VNXe の IP がデータソース構成で正しいことを確認します。Cloud Insights Acquisition Unit から CMD を開き、設定したインストールディレクトリに移動します。 $ ｛ INSTALLDIR.次のように入力して、 VNXe デバイスとの接続を試みます。 uemcli -d <your ip>-u <your ID>/sys/general show 
+| 「 Failed to execute external utility 」というエラーメッセージが表示され、「 Failed to find Unisphere executable uemcli 」 | * IPアドレス、ユーザ名、パスワードが正しいことを確認します
+*Unisphere CLIがCloud Insights Acquisition Unitにインストールされていることを確認します
+*データソース構成でUnisphere CLIのインストールディレクトリが正しいことを確認します
+* VNXeのIPがデータソースの構成で正しいことを確認します。Cloud Insights Acquisition Unit から CMD を開き、設定したインストールディレクトリに移動します。 $ ｛ INSTALLDIR.次のように入力して、 VNXe デバイスとの接続を試みます。 uemcli -d <your ip>-u <your ID>/sys/general show 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

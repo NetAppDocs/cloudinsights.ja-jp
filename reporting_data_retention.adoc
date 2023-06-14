@@ -39,7 +39,7 @@ Cloud Insights では、次の表に示すように、データマートおよ�
 | Performance データマート | ホスト | 毎時 | 13 カ月 
 
 
-| Performance データマート | ポートのスイッチパフォーマンス | 毎時 | 35 日 
+| Performance データマート | ポートのスイッチパフォーマンス | 毎時 | 35日 
 
 
 | Performance データマート | ホスト、ストレージ、およびテープのスイッチパフォーマンス | 毎時 | 13 カ月 
@@ -51,22 +51,22 @@ Cloud Insights では、次の表に示すように、データマートおよ�
 | Performance データマート | ストレージノード | 毎日 | 13 カ月 
 
 
-| Performance データマート | VM パフォーマンス | 毎時 | 35 日 
+| Performance データマート | VM パフォーマンス | 毎時 | 35日 
 
 
 | Performance データマート | VM パフォーマンス | 毎日 | 13 カ月 
 
 
-| Performance データマート | ハイパーバイザーのパフォーマンス | 毎時 | 35 日 
+| Performance データマート | ハイパーバイザーのパフォーマンス | 毎時 | 35日 
 
 
 | Performance データマート | ハイパーバイザーのパフォーマンス | 毎日 | 13 カ月 
 
 
-| Performance データマート | VMDK パフォーマンス | 毎時 | 35 日 
+| Performance データマート | VMDKのパフォーマンス | 毎時 | 35日 
 
 
-| Performance データマート | VMDK パフォーマンス | 毎日 | 13 カ月 
+| Performance データマート | VMDKのパフォーマンス | 毎日 | 13 カ月 
 
 
 | Performance データマート | ディスクパフォーマンス | 毎時 | 14 日 

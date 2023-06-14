@@ -28,7 +28,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 
 == たわみ率の例：
 
-* に進みます https://api.slack.com/apps[] 新しいアプリケーションを作成しますわかりやすい名前を付けて、 [ たわみ率（ Slack ） ] ワークスペースを選択する。
+* に進みます https://api.slack.com/apps[] 新しいアプリケーションを作成します  わかりやすい名前を付けて、 [ たわみ率（ Slack ） ] ワークスペースを選択する。
 +
 image:Webhooks_Slack_Create_Webhook.png["Slack Webhook を作成します"]
 

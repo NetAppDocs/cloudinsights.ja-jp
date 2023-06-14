@@ -35,13 +35,13 @@ Cloud Insights は、試用モードで実行する場合にセルフサービ�
 
 Cloud Insights インスタンスは、初回のサブスクリプションプロセスで「 950 」以降の 20 桁のネットアップシリアル番号を生成します。このネットアップシリアル番号は、お客様のアカウントに関連付けられた Cloud Insights サブスクリプションを表します。サポート利用資格を有効にするには、ネットアップのシリアル番号を登録する必要があります。サポート登録には、次の 2 つのオプションがあります。
 
-. ネットアップサポートサイト（ NSS ）の SSO アカウントをすでにお持ちのユーザ（現在ネットアップのお客様など）
-. ネットアップサポートサイト（ NSS ）の SSO アカウントがない新しいネットアップのお客様
+. NetApp Support Site（ NSS ）の SSO アカウントをすでにお持ちのユーザ（現在ネットアップのお客様など）
+. NetApp Support Site（ NSS ）の SSO アカウントがない新しいネットアップのお客様
 
 
 
 
-=== オプション 1 ：ネットアップサポートサイト（ NSS ）の SSO アカウントを事前にお持ちのユーザ向けの手順
+=== オプション 1 ：NetApp Support Site（ NSS ）の SSO アカウントを事前にお持ちのユーザ向けの手順
 
 .手順
 . ネットアップ登録用 Web サイトにアクセスします https://register.netapp.com[]
@@ -59,7 +59,7 @@ image:ExistingCustomerRegExample.png["既存の顧客フォーム"]
 
 
 
-=== オプション 2 ：ネットアップサポートサイト（ NSS ）の SSO アカウントがない新しいネットアップのお客様向けの手順
+=== オプション 2 ：NetApp Support Site（ NSS ）の SSO アカウントがない新しいネットアップのお客様向けの手順
 
 .手順
 . ネットアップ登録用 Web サイトにアクセスします https://register.netapp.com[]
@@ -73,7 +73,7 @@ image:NewCustomerRegExample.png["新しい顧客フォーム"]
 image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 . エラーが発生しない場合は、「登録が正常に送信されました」ページが表示されます。登録に使用された NSS SSO ユーザ名に関連付けられた電子メールアドレスには、「お使いの製品はサポート対象です」という電子メールが数時間以内に送信されます。
-. ネットアップの新規のお客様の場合は、ネットアップサポートサイト（ NSS ）のユーザアカウントを作成して、今後の登録や、テクニカルサポートチャットや Web チケット発行用のサポートポータルにアクセスする必要があります。このリンクはにあります https://mysupport.netapp.com/eservice/public/now.do[]。新しく登録した Cloud Insights のシリアル番号を入力しておくと、プロセスを迅速に進めることができます。
+. ネットアップの新規のお客様の場合は、NetApp Support Site（ NSS ）のユーザアカウントを作成して、今後の登録や、テクニカルサポートチャットや Web チケット発行用のサポートポータルにアクセスする必要があります。このリンクはにあります https://mysupport.netapp.com/eservice/public/now.do[]。新しく登録した Cloud Insights のシリアル番号を入力しておくと、プロセスを迅速に進めることができます。
 . これは、 Cloud Insights ネットアップのシリアル番号への登録を 1 回だけ行うものです。
 
 
@@ -129,7 +129,7 @@ NOTE: に登録する必要があります <<Activating support entitlement and 
 
 をクリックして、セールスサポートをリクエストすることもできます link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 販売担当者 * にお問い合わせください"] リンク
 
-Cloud Insights のシリアル番号は、サービス内で * Help > Support * メニューから確認できます。サービスへのアクセスで問題が発生し、ネットアップにシリアル番号を登録している場合は、ネットアップサポートサイトで次の番号の Cloud Insights シリアル番号の一覧を確認することもできます。
+Cloud Insights のシリアル番号は、サービス内で * Help > Support * メニューから確認できます。サービスへのアクセスで問題が発生し、ネットアップにシリアル番号を登録している場合は、NetApp Support Siteで次の番号の Cloud Insights シリアル番号の一覧を確認することもできます。
 
 * mysupport.netapp.com にログインします
 * [ 製品 ]>[ マイ製品 ] メニュータブで、製品ファミリー「 SaaS Cloud Insights 」を使用して、登録済みのシリアル番号をすべて検索します。

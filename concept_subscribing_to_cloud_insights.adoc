@@ -26,7 +26,8 @@ Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行え�
 * * Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] 直接または link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]。
 
 
-登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。詳細については、「 Cloud Insights について」を参照してください link:security_information_and_region.html["情報と地域"]。
+登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。
+詳細については、「 Cloud Insights について」を参照してください link:security_information_and_region.html["情報と地域"]。
 
 
 NOTE: 特に明記されていない限り、このページの情報は一般的に 環境 Cloud Insights商用版です。Cloud Insights の連邦版には、このページに記載されている機能の一部が含まれていない場合があります。
@@ -179,10 +180,10 @@ NOTE: 管理対象ユニットの合計は、サマリセクションのデー�
 | * 80% * | 情報バナーが表示されます。対処は不要です。 
 
 
-| * 90% * | 警告バナーが表示されます。購読している管理ユニット数を増やすことができます。 
+| * 90%* | 警告バナーが表示されます。購読している管理ユニット数を増やすことができます。 
 
 
-| * 100% * | エラーバナーが表示され、次のいずれかを実行するまで機能が制限されます。
+| * 100%* | エラーバナーが表示され、次のいずれかを実行するまで機能が制限されます。
 * Managed Unitの使用量がサブスクライブされた金額以下になるように、データコレクタを削除します
 *サブスクリプションを変更して、Managed Unitの数を増やしてください 
 |===

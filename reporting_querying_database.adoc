@@ -28,9 +28,10 @@ NOTE: このドキュメントでは、で使用できる Cloud Insights レポ�
 
 == OData
 
-Cloud Insights レポート API は、に従います link:https://www.odata.org/["OData v4 の"] （ Open Data Protocol ）レポートデータベースの照会の標準。詳細や詳細については、をご覧ください link:https://www.odata.org/getting-started/basic-tutorial/["このチュートリアルでは"] OData の場合。
+Cloud Insights レポート API は、に従います link:https://www.odata.org/["OData v4 の"] （ Open Data Protocol ）レポートデータベースの照会の標準。
+詳細や詳細については、をご覧ください link:https://www.odata.org/getting-started/basic-tutorial/["このチュートリアルでは"] OData の場合。
 
-すべての要求は、 URL \\ https://<Cloud Insights URL>/rest/v1/dwh_management/OData から開始します
+すべての要求はURL _\ https：//<Cloud Insights URL>/rest /v1/dwh-management/odata_で始まります
 
 
 
@@ -55,27 +56,27 @@ APIKeys は、 _Sync_or_Async に適しています。
 
 == テーブルの直接クエリ
 
-API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長い URL は、完全な https://<Cloud Insights URL >/rest/v1/dw-damanagement/odata ではなく、表示目的で https://.../odata/ に簡略化される可能性があります
+API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長いURLは\https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/ではなく\https://.../odata/に簡略化して表示することもできます
 
 次のような簡単なクエリを試してください
 
-* \https://<Cloud Insights URL>/rest/v1/dwh-management/odata / dwh_custom
-* \https://<Cloud Insights URL>/rest/v1/dwh-management/odata / dwh_inventory
-* \https://<Cloud Insights URL>/rest/v1/dwh-management/odata / dwh_inventory/storage
-* \https://<Cloud Insights URL>/rest/v1/dwh-management/odata / dwh_inventory/disk
-* \ https://.../odata/dwh_custom/custom_queries
+* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_custom
+* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_inventory
+* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_inventory/storage
+* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_inventory/disk
+* \https://.../odata/dwh_custom/custom_queries
 
 
 
 
 == REST API の例
 
-すべての呼び出しの URL は、 https://<Cloud Insights URL>/rest/v1/dwh_management/odat_ です。
+すべての呼び出しのURLは、_\ https：//<Cloud Insights URL>/rest /v1/dwh-management/odata_です。
 
 * get/{schema}/**-レポートデータベースからデータを取得します。
 
 
-形式： \\https://<Cloud Insights URL>/rest/v1/dw-management/odata /<schema_name>/<query>_
+形式は、_\https：//<Cloud Insights URL>/rest <schema_name>/<query>_です
 
 例
 

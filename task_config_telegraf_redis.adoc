@@ -53,7 +53,8 @@ image:RedisDCConfigWindows.png["Redis Data Collector の設定"]
 | オブジェクト： | 識別子： | 属性： | 「 dataPoints 」： 
 
 
-| Redis | ネームスペースサーバ |  |  
+| Redis | ネームスペース
+サーバ |  |  
 |===
 
 

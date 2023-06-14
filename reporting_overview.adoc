@@ -57,7 +57,7 @@ Reporting インターフェイスに移動します。Cloud Insights では、�
 
 == ETL とは
 
-Reporting では、「 Data Warehouse 」と「 ETL 」という用語が使用されます。ETL は、「抽出、変換、読み込み」の略です。ETL プロセスでは、 Cloud Insights で収集されたデータが取得されて、レポート用の形式に変換されます。「 Data Warehouse 」は、レポートに使用できる収集データを表します。
+Reporting では、「 Data Warehouse 」と「 ETL 」という用語が使用されます。  ETL は、「抽出、変換、読み込み」の略です。ETL プロセスでは、 Cloud Insights で収集されたデータが取得されて、レポート用の形式に変換されます。「 Data Warehouse 」は、レポートに使用できる収集データを表します。
 
 ETL プロセスは、次の個別プロセスで構成されます。
 

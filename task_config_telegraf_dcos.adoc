@@ -52,7 +52,44 @@ Cloud Insights は、このデータコレクタを使用して DC/OS からの�
 | オブジェクト | 識別子 | 属性（ Attributes ） | 「 dataPoints 」： 
 
 
-| DCOS_node | DCOS_CONTAINER DCOS_APP | クラスタのホスト名パス（ファイルシステムフィールドのみ）インターフェイス（ネットワークフィールドのみ） container_id task_name | system_uptime （ float ） CPU_cores （ float ） cpu_total （ float ） cpu_user （ float ） cpu_idle （ float ） cpu_wait （ float ） LOAD_1min （ float ） LOAD_15min （ float ） LOAD_15min （ float ） LOAD_15min （ float ） FILE_TB_int bytes （ int bytes （ int_int ） network_in-packets （ float ） network_out_packets （ float ） network_in_dropped （ float ） network_out_dropped （ float ） network_in_errors （ float ） network_out_errors （ float ） process_count （ float ） 
+| DCOS_node | dcos_containerです
+DCOS_APP | クラスタ
+ホスト名
+パス（ファイルシステムフィールドのみ）
+インターフェイス（ネットワークフィールドのみ）
+container_id
+task_name（タスク名） | system_uptime（float）
+cpu_cores（float）
+cpu_total（float）
+cpu_user（float）
+cpu_system（float）
+cpu_idle（float）
+cpu_wait（float）
+LOAD_1min（浮動小数点数）
+LOAD_5min（浮動小数点数）
+LOAD_15min（浮動小数点数）
+filesystem_capacity_total_bytes（int）
+filesystem_capacity_used_bytes（int）
+filesystem_capacity_free_bytes（int）
+filesystem_inode_total（float）
+filesystem_inode_used（float）
+filesystem_inode_free（float）
+memory_total_bytes（int）
+memory_free_bytes（int）
+memory_buffers_bytes（int）
+memory_cached_bytes（int）
+swap_total_bytes（int）
+swap_free_bytes（int）
+swap_used_bytes（int）
+network_in_bytes（int）
+network_out_bytes（int）
+network_in_packets（float）
+network_out_packets（float）
+network_in_dropped（float）
+network_out_dropped（float）
+network_in_errors（float）
+NETWORK_OUT_ERRORS（float）
+process_count（float） 
 |===
 
 

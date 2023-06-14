@@ -40,7 +40,18 @@ NetApp Kubernetes Monitoring Operatorのインストールと設定はカスタ�
 |  | クラスタ名 | すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Cloud Insights テナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します 
 
 
-|  | プロキシ形式:プロキシ:サーバー:ポート:ユーザー名:パスワード: noProxy:isTelegrafProxyEnabled:isAuProxyEnabled:isFluentbitProxyEnabled:isCollectorProxyEnabled: | 顧客がプロキシを設定する場合はオプションです。これは通常、顧客の法人代理店です。 
+|  | プロキシ
+の形式で入力し
+プロキシ：
+  サーバ：
+  ポート：
+  ユーザ名：
+  パスワード：
+  NoProxy：
+  isTelegrafProxyEnabled：
+  isAuProxyEnabled：
+  isFluentbitProxyEnabled：
+  isCollectorProxyEnabled： | 顧客がプロキシを設定する場合はオプションです。これは通常、顧客の法人代理店です。 
 
 
 |  | agentUUID | すべてのCloud Insights オペレータのインストールで一意に識別される文字列。これは通常、Cloud Insights によって自動的に設定されます。 
@@ -121,10 +132,16 @@ NetApp Kubernetes Monitoring Operatorのインストールと設定はカスタ�
 |  | MemRequestの略 | KUBE状態メトリクス展開のためのMEM要求 
 
 
-|  | リソース | キャプチャするリソースをカンマで区切ったリスト。例：cronjobs、デーモンセット、配置、入力、ジョブ、ネームスペース、ノード、persistentvolumeclaims、persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulsets 
+|  | リソース | キャプチャするリソースをカンマで区切ったリスト。
+例：cronjobs、デーモンセット、配置、入力、ジョブ、ネームスペース、ノード、persistentvolumeclaims、
+persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulsets 
 
 
-|  | ラベル | kube-state-metricsでキャプチャするリソースのカンマ区切りリスト例：cronjobs=[*]、daemonsets=[*]、deployments=[*]、ingresses=[*]、jobs=[*]、namespaces=[*]、nodes=[*]、persistentvolumes=[*]、pods=[*]、replicaresets=[*]、[*]、[*]、[*] 
+|  | ラベル | kube-state-metricsでキャプチャするリソースをカンマで区切ったリスト
++++
+例：cronjobs=[*]、daemonsets=[*]、deployments=[*]、ingresses=[*]、jobs=[*]、namespaces=[*]、nodes=[*]、
+persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]、resourcequotas=[*]、services=[*]、statefulsets=[*]
++++ 
 
 
 | ログ |  | オペレータのログ収集とインストールをカスタマイズできる設定オプション 

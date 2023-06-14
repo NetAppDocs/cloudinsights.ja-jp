@@ -19,4 +19,4 @@ summary: Dell EMC Unisphere RESTデータコレクタの構成
 
 
 [role="lead"]
-このページはスタブです。最新のUnisphereマニュアルについては、を参照してください link:task_dc_emc_unisphere_rest.html["*このページ*"]。
+このページはスタブです。  最新のUnisphereマニュアルについては、を参照してください link:task_dc_emc_unisphere_rest.html["*このページ*"]。

@@ -165,7 +165,7 @@ sidebar:
       url: "/concept_asset_page_overview.html"
     - title: オブジェクトのコンテキスト内フィルタリング
       url: "/concept_in_context_filters.html"
-    - title: Summary Topology セクション
+    - title: "[Summary]セクションと[Topology]セクション"
       url: "/concept_asset_summary_section.html"
     - title: Expert View セクシヨン
       url: "/concept_asset_expert_view_section.html"
@@ -263,7 +263,7 @@ sidebar:
       url: "/task_troubleshooting_windows_acquisition_unit_problems.html"
     - title: Data Collector エラーの調査
       url: "/task_research_failed_collector.html"
-  - title: リファレンスサポート
+  - title: リファレンス&サポート
     entries:
     - title: サポートをリクエストしています
       url: "/concept_requesting_support.html"

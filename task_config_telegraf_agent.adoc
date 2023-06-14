@@ -405,7 +405,7 @@ download-only コマンドを使用すると、必要なアーティファクト
 
 * インストールスクリプト
 * 環境ファイル
-* YAML ファイル
+* YAMLファイル
 * 署名済みチェックサムファイル（SHA256署名またはSHA256 .ps1で終わる）
 * 署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）
 
@@ -482,7 +482,9 @@ Windows の場合
 | 問題 | 次の操作を実行します 
 
 
-| 新しいプラグインを設定してTegrafを再起動すると、Tegrafが起動しない。ログには、次のようなエラーが表示されます。"[テレ グラム]エージェント実行エラー:設定ファイルのロード中にエラーが発生しました。/etc/exraf/exraf.d/cusinetrainesetraine-default.conf：プラグイン出力。http：line <linenumber> ：configuration specified the fields [use_system_proxy"]、but they were not used] | インストールされているTelegrafのバージョンが古い。このページの手順に従って、お使いのプラットフォームに対応するエージェント*をアップグレードしてください。 
+| 新しいプラグインを設定してTegrafを再起動すると、Tegrafが起動しない。ログには次のようなエラーが記録されています。
+
+"[telegraf] Error running agent: Error loading config file /etc/telegraf/telegraf.d/cloudinsights-default.conf : plugin outputs.http:line <linenumber>: configuration specified the fields ["use_system_proxy"] but they were not used" | インストールされているTelegrafのバージョンが古い。このページの手順に従って、お使いのプラットフォームに対応するエージェント*をアップグレードしてください。 
 
 
 | 古いインストールでインストーラスクリプトを実行したが、エージェントがデータを送信していない | テレグラムエージェントをアンインストールし、インストールスクリプトを再実行します。お使いのプラットフォームに応じて、このページの*エージェントのアップグレード*の手順を実行します。 

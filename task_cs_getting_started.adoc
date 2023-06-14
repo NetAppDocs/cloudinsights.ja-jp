@@ -24,7 +24,7 @@ Workload Securityを使用してユーザアクティビティを監視する前
 
 NOTE: ワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
 
-ワークロードセキュリティシステムでは、エージェントを使用して、ストレージシステムからアクセスデータとディレクトリサービスサーバからのユーザ情報を収集します。
+ワークロードセキュリティシステムは、エージェントを使用して、ストレージシステムからアクセスデータとディレクトリサービスサーバからユーザ情報を収集します。
 
 データの収集を開始する前に、次の項目を設定する必要があります。
 
@@ -49,7 +49,13 @@ link:https://netapp.hubs.vidyard.com/watch/Lce7EaGg7NZfvCUw4Jwy5P?["* ビデオ 
 link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["* ビデオ * ： Active Directory 接続"] 
 
 
-| データコレクタを設定する | [*Admin] > [Data Collectors] をクリックし、設定するデータコレクタをクリックします。ドキュメントの Data Collector Vendor Reference セクションを参照してください。link:https://netapp.hubs.vidyard.com/watch/YSQrcYA7DKXbj1UGeLYnSF?["* ビデオ * ： ONTAP SVM 接続"] 
+| データコレクタを設定する | [Admin]>[Data Collectors]*をクリックします
+
+設定するデータコレクタをクリックします。
+
+ドキュメントの Data Collector Vendor Reference セクションを参照してください。
+
+link:https://netapp.hubs.vidyard.com/watch/YSQrcYA7DKXbj1UGeLYnSF?["* ビデオ * ： ONTAP SVM 接続"] 
 
 
 | ユーザーアカウントを作成します | link:concept_user_roles.html["ユーザアカウントを管理する"] 
@@ -57,4 +63,4 @@ link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["* ビデオ 
 
 | トラブルシューティング | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["* ビデオ * ：トラブルシューティング"] 
 |===
-ワークロードセキュリティは、他のツールとも統合できます。例： link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["このガイドを参照してください"] Splunkと統合し、
+ワークロードセキュリティは、他のツールとも統合できます。  例： link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["このガイドを参照してください"] Splunkと統合し、

@@ -51,12 +51,13 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 === ストレージ
 
 * model –このクラスタ内で一意のディスクリートモデル名をカンマで区切って指定します。
-* ベンダー– AWS （ Hitachi ）
+* ベンダー–AWS
 * Serial Number –アレイのシリアル番号。
 * IP –一般に、データソースで設定されている IP またはホスト名です。
 * 物理容量–FSXファイルシステムに割り当てられているすべてのSSDストレージの2つの合計。
 * レイテンシ–読み取りと書き込みの両方について、ワークロードが直面しているホストの状況が表示されます。Cloud Insights がこの値を直接調達するのが理想的ですが、これは多くの場合ではありません。Cloud Insights は、このアップを提供するアレイの代わりに、通常、個々の内部ボリュームの統計情報から導出される IOPS 加重計算を実行します。
-* スループット–内部ボリュームから集約されたもの。管理–デバイスの管理インターフェイスのハイパーリンクが含まれている可能性があります。Cloud Insights データソースによって、インベントリレポートの一部としてプログラムによって作成されます。
+* スループット–内部ボリュームから集約されたもの。
+管理–デバイスの管理インターフェイスのハイパーリンクが含まれている可能性があります。Cloud Insights データソースによって、インベントリレポートの一部としてプログラムによって作成されます。
 
 
 
@@ -108,7 +109,7 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 * NFSv3
 * NFSv3：ノード
 * NFSv4
-* nfsv4_1
+* NFSv4_1
 * nfsv4_1：ノード
 * NFSv4：ノード
 * policy_groupを開きます
@@ -147,6 +148,14 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 | SSLException で通信が失敗します | AU が Filer 上のプレーンテキストポートに SSL を送信しようとしています。ZAPI ポートで SSL を受け入れるか、別のポートを使用するかを確認します。 
 
 
-| その他の接続エラー： ZAPI 応答にはエラーコード 13001 、「 database is not open 」 ZAPI エラーコード 60 があり、応答に「 API did not finished on time 」という応答が含まれています。 ZAPI エラーコード 14007 では「 initialize_session() returned NULL environment 」が返され、応答に「 Node is not healthy 」が含まれます。 | ネットワーク、ポート番号、および IP アドレスを確認してください。また、 AU マシンのコマンドラインからもコマンドを実行しようとします。 
+| 追加の接続エラー：
+
+ZAPI応答のエラーコード13001：「database is not open」
+
+ZAPIエラーコードが60で、応答に「API did not finish on time」が含まれている
+
+ZAPIの応答に「initialize_session () returned NULL environment」が含まれる
+
+ZAPIエラーコードが14007で、応答に「Node is not healthy」が含まれている | ネットワーク、ポート番号、および IP アドレスを確認してください。また、 AU マシンのコマンドラインからもコマンドを実行しようとします。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

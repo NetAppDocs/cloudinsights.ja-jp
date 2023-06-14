@@ -27,16 +27,32 @@ keywords: AU, acquisition unit, trioubleshooting
 | * 問題： * | * これを試みなさい : * 
 
 
-| [* Acquisition Units] タブの [*Admin] > [Data Collectors] ページの AU ステータスに [Certificate Expired] または [Certificate revoked] が表示されます。 | AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従って Acquisition Unit をリストアします。 1.Acquisition Unit （ AU ）サービスを停止します。_Copy Stop command_ ボタンをクリックすると、コマンドをクリップボードに簡単にコピーし、このコマンドを Acquisition Unit マシンのコマンドプロンプトに貼り付けることができます。2. AU の _c ： \Program Files\Cloud Insights \Acquisition Unit\conf\_folder に "token" という名前のファイルを作成します。3. _Copy Token_button をクリックし ' 作成したファイルにこのトークンを貼り付けます4. AU サービスを再起動します。_Copy Restart command_ ボタンをクリックし、 AU のコマンドプロンプトにコマンドを貼り付けます。 
+| [* Acquisition Units] タブの [*Admin] > [Data Collectors] ページの AU ステータスに [Certificate Expired] または [Certificate revoked] が表示されます。 | AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従ってAcquisition Unitをリストアします。
+
+1. Acquisition Unit（AU）サービスを停止します。_Copy Stop command_ ボタンをクリックすると、コマンドをクリップボードに簡単にコピーし、このコマンドを Acquisition Unit マシンのコマンドプロンプトに貼り付けることができます。
+
+2. AU の _c ： \Program Files\Cloud Insights \Acquisition Unit\conf\_folder に "token" という名前のファイルを作成します。
+
+3. _Copy Token_button をクリックし ' 作成したファイルにこのトークンを貼り付けます
+
+4. AU サービスを再起動します。_Copy Restart command_ ボタンをクリックし、 AU のコマンドプロンプトにコマンドを貼り付けます。 
 
 
 | サーバ要件が満たされていません | Acquisition Unit サーバまたは VM が次の条件を満たしていることを確認します link:concept_acquisition_unit_requirements.html["要件"] 
 
 
-| ネットワーク要件が満たされていません | Acquisition Unit のサーバ / VM から、ポート 443 経由で SSL 接続経由で Cloud Insights 環境（ <environment-name> .c01.cloudinsights.netapp.com ）にアクセスできることを確認します。次のコマンドを実行します。 ping <environment-name > .c01.cloudinsights.netapp.com_ _traceroute <environment-name> .c01.cloudinsights.netapp.com_ _curl\https://<environment-name>.c01.cloudinsights.netapp.com_ _wget\https://<environment-name>.c01.cloudinsights.netapp.com_ 
+| ネットワーク要件が満たされていません | Acquisition Unit のサーバ / VM から、ポート 443 経由で SSL 接続経由で Cloud Insights 環境（ <environment-name> .c01.cloudinsights.netapp.com ）にアクセスできることを確認します。次のコマンドを実行します。
+
+ _ping <environment-name>.c01.cloudinsights.netapp.com_
+_traceroute <environment-name>.c01.cloudinsights.netapp.com_
+_curl \https://<environment-name>.c01.cloudinsights.netapp.com_
+_wget\https://<environment-name>.c01.cloudinsights.netapp.com_ 
 
 
-| プロキシサーバが正しく設定されていません | プロキシの設定を確認し、必要に応じて Acquisition Unit ソフトウェアをアンインストールして再インストールして、正しいプロキシの設定を入力します。1. 「カール」を試してみます。プロキシに関する "man curl " 情報 / ドキュメントを参照してください -- preproxy 、 --proxy-* (curl では多数のプロキシ設定がサポートされているため、これはワイルドカード "*" です ) 。2. 「 wget 」を試します。プロキシオプションについては、ドキュメントを参照してください。 
+| プロキシサーバが正しく設定されていません | プロキシの設定を確認し、必要に応じて Acquisition Unit ソフトウェアをアンインストールして再インストールして、正しいプロキシの設定を入力します。
+
+1. 「カール」を試してみます。  プロキシに関する "man curl " 情報 / ドキュメントを参照してください -- preproxy 、 --proxy-* (curl では多数のプロキシ設定がサポートされているため、これはワイルドカード "*" です ) 。
+2. 「 wget 」を試します。  プロキシオプションについては、ドキュメントを参照してください。 
 
 
 | Acquisition Unit のインストールが Cloud Insights で失敗しました。 Acquisition Service の開始時にクレデンシャルエラーが発生し、 acq.log に表示されます。 | これは、プロキシのクレデンシャルに特殊文字が含まれていることが原因で発生することがあります。AU （ _sudo cloudInsights - uninstall.sh ）をアンインストールし、特殊文字を使用せずに再インストールします。 
@@ -45,13 +61,20 @@ keywords: AU, acquisition unit, trioubleshooting
 | 権限の問題 | 管理者権限を持つユーザとしてログインしていることを確認してください 
 
 
-| 収集が実行されていません | 情報は、 acq.log の _<install directory >\Cloud Insights \Acquisition Unit \log_folder にあります。Windows サービスを使用して取得を再開します 
+| 収集が実行されていません | 情報は、 acq.log の _<install directory >\Cloud Insights \Acquisition Unit \log_folder にあります。
+Windows サービスを使用して取得を再開します 
 
 
 | データ収集の問題： | Data Collector のランディングページで [Send Error Report] ボタンをクリックして、エラーレポートを送信します 
 
 
-| ステータス：ハートビート失敗 | Acquisition Unit （ AU ）は、リースを更新するために 60 秒ごとに Cloud Insights にハートビートを送信します。ネットワーク問題または Cloud Insights が応答しないためにハートビートコールが失敗した場合、 AU のリース時間は更新されません。AU のリース期限が切れると、 Cloud Insights に「 Heartbeat Failed 」というステータスが表示されます。トラブルシューティングの手順： * Acquisition Unit サーバと CloudInsights 間のネットワーク接続を確認します。* Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。* Acquisition Unit のログ（ <Install dir> ： \Program Files\Cloud Insights \Acquisition Unit \log\acq.log ）でエラーがないかどうかを確認します。 
+| ステータス：ハートビート失敗 | Acquisition Unit （ AU ）は、リースを更新するために 60 秒ごとに Cloud Insights にハートビートを送信します。ネットワーク問題または Cloud Insights が応答しないためにハートビートコールが失敗した場合、 AU のリース時間は更新されません。AU のリース期限が切れると、 Cloud Insights に「 Heartbeat Failed 」というステータスが表示されます。
+
+トラブルシューティングの手順：
+
+* Acquisition UnitサーバとCloudInsights間のネットワーク接続を確認します。
+* Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。
+* Acquisition Unit のログ（ <Install dir> ： \Program Files\Cloud Insights \Acquisition Unit \log\acq.log ）でエラーがないかどうかを確認します。 
 
 
 | 「 Heartbeat Error: message 」が表示されています | このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。 

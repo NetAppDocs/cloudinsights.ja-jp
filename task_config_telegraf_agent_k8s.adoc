@@ -39,11 +39,12 @@ image:CI_Diagram_with_NKMO.png["Kubernetesクラスタ内に存在するNKMOを�
 
 .前提条件
 * カスタムまたはプライベートDockerリポジトリを使用している場合は、「カスタムまたはプライベートDockerリポジトリの使用」セクションの手順に従います
-* NetApp Kubernetes Monitoring Operatorインストールは、Kubernetesバージョン1.20以降でサポートされます。
+* NetApp Kubernetes Monitoring Operatorのインストールは、Kubernetesバージョン1.20以降でサポートされています。
 * Cloud Insights がバックエンドストレージを監視しており、KubernetesがDockerコンテナランタイムとともに使用されている場合、Cloud Insights はNFSおよびiSCSIのポッドとPVとストレージのマッピングと指標を表示できます。それ以外のランタイムではNFSのみが表示されます。
 * 2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。環境でPSPを使用している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。
 * OpenShift 4.6以降を実行している場合は、以下の前提条件を満たしていることを確認するだけでなく、以下のOpenShiftの手順に従う必要があります。
-* 監視はLinuxノードにのみインストールCloud Insights は、Linuxを実行しているKubernetesノードの監視をサポートしています。これには、これらのプラットフォームで次のKubernetesラベルを検索するKubernetesノードセレクタを指定します。
+* 監視は Linux ノードにのみインストールされます
+Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。
 
 
 |===
@@ -61,7 +62,8 @@ image:CI_Diagram_with_NKMO.png["Kubernetesクラスタ内に存在するNKMOを�
 * 次のコマンドが使用可能である必要があります。curl、kubectl。オプションのインストール手順にはdockerコマンドが必要です。最適な結果を得るには、これらのコマンドをパスに追加してください。kubectlは、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。エージェント、クラスタロール、クラスタロールバインド、カスタムリソース定義、導入、 ネームスペース'ロール'ロールバインド'シークレット'サービスアカウント' サービスを提供します。これらの最小クラスタロール権限を持つ.yamlファイルの例については、こちらを参照してください。
 * NetApp Kubernetes Monitoring Operatorのインストールに使用するホストは、ターゲットのKubernetesクラスタと通信するようにkubectlを設定し、Cloud Insights 環境にインターネット接続できるようにする必要があります。
 * インストール中にプロキシの背後にいる場合、または監視対象のKubernetesクラスタを操作している場合は、「プロキシサポートの設定」セクションの手順に従ってください。
-* NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。
+* NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。
+監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。
 * Operatorを再デプロイする場合(つまり、Operatorを更新または置換する場合)は、_new_apiトークンを作成する必要はありません。前のトークンを再利用できます。
 * また、最新のNetApp Kubernetes Monitoring Operatorがインストールされていて、更新可能なAPIアクセストークンを使用している場合は、期限切れが近いトークンが新しい/更新されたAPIアクセストークンに自動的に置き換えられます。
 
@@ -251,7 +253,7 @@ NOTE: 以前にスクリプトベースのエージェントをインストー�
 
 テレグラムエージェントをアップグレードするには、次の手順に従います。
 
-. Cloud Insights が認識するクラスタ名をメモしておきます。クラスタ名を確認するには、次のコマンドを実行します。名前空間がデフォルト（_CI-MOTing_）でない場合は、適切な名前空間を置き換えます。
+. Cloud Insights が認識するクラスタ名をメモしておきます。  クラスタ名を確認するには、次のコマンドを実行します。名前空間がデフォルト（_CI-MOTing_）でない場合は、適切な名前空間を置き換えます。
 +
  kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
 
@@ -336,7 +338,7 @@ NOTE: 以前にインストールしたスクリプトベースのKubernetesエ�
 
 === 廃止されたスクリプトベースのエージェントを削除します
 
-これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。  独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
 Kubernetes上のスクリプトベースのエージェント（NetApp Kubernetes Monitoring Operatorへのアップグレードなど）をアンインストールするには、次の手順を実行します。
 
@@ -351,7 +353,7 @@ Kubernetes上のスクリプトベースのエージェント（NetApp Kubernete
 
 === をクリックして、NetApp Kubernetes Monitoring Operatorを削除します
 
-NetApp Kubernetes Monitoring Operatorのデフォルトのネームスペースは、「NetApp Monitoring」です。独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+NetApp Kubernetes Monitoring Operatorのデフォルトのネームスペースは、「NetApp Monitoring」です。  独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
 新しいバージョンの監視オペレータは、次のコマンドを使用してアンインストールできます。
 
@@ -426,11 +428,11 @@ Cloud Insights エージェントのインストーラで整合性チェック�
 
 
 
-download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
+download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。  アーティファクトには次のものがありますが、これらに限定することはできません。
 
 * インストールスクリプト
 * 環境ファイル
-* YAML ファイル
+* YAMLファイル
 * 署名済みチェックサムファイル（ SHA256 署名）
 * 署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）
 
@@ -463,25 +465,85 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 | Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。 | 手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegrafバージョン2.0以降を使用していて、KubernetesクラスタストレージがCloud Insights によってアクティブに監視されている必要があります。 
 
 
-| 次のようなログにメッセージが表示されます。 E0901 15 ： 21 ： 39.96145 1 reflector.GO ： 178]k81.io/kube-state/internal/store/Builder.GO ： 352 ： Failed to list *v1.MutatingWebhookConfiguration ： 8s could not find the requested resource E0901 15:15:2ku161781. | これらのメッセージは、1.20より前のバージョンのKubernetesでkube-state-metricsバージョン2.0.0以上を実行している場合に発生する可能性があります。Kubernetes のバージョンを取得するには、次の Leubectl version_ kbe-state-metrics バージョンを取得します。 _kubectl デプロイ /kube-state-metrics -o jsonpath='{.image}'_ これらのメッセージが発生しないようにするには、 kube-state-metrics デプロイを修正して、次の Leases 設定を具体的に無効にしてください。 _hookates_web_volumeconfigurations resources= 証明リクエスト , configmaps,cronjobs,demonsets,horizontalscalers,ingleers,jobs,limitrange,scapers,networkpolicies , nodes,persistentvolumes,persistentvolumesalims,persistentvolumes,podeters, replicaSets,replicaSets,replicationcontrollers ,residetodポッド ,residetappeditors,appers,uns,uns,uns,uns,sets,uns,uns,uns,uns,uns,sets,uns,sets,uns,sets,uns,uns,sets,uns,uns,sets,uns,uns,uns,wodecodeclieticecodetics,sets,sets,sets,sets,uns,sets,uns,uns,sets,sets,sets,un 検証する Web フック設定 ' ボリュームの添付ファイル 
+| ログに次のようなメッセージが表示されます。
+
+E0901 15:21:39.962145 1 reflector.go:178]k8s.io/kube-state-metrics/internal/store/builder.go:352:リストに失敗しました*v1.MutatingWebhookConfiguration:サーバーは要求されたリソースを見つけることができませんでした
+E0901 15:21:43.168161 1 reflector.go:178]k8s.io/kube-state-metrics/internal/store/builder.go:352:リストに失敗しました*v1 Lease:サーバーは要求されたリソースを見つけることができませんでした(GET leases.coordination.k8s.io)
+など | これらのメッセージは、1.20より前のバージョンのKubernetesでkube-state-metricsバージョン2.0.0以上を実行している場合に発生する可能性があります。
 
 
-| Telegraf から次のようなエラーメッセージが表示されますが、 Telegraf は起動して実行されます。 Oct 11 14 ： 23 ： 41 IP-172-39-47 systemd[1] ： InfluxDB への指標の報告用に、プラグイン駆動型のサーバーエージェントを起動しました。10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/テレ グラム /.cache/snowflake 、 err: mkdir /etc/テレ グラム f/.ca che: 許可が拒否されました。ignored \n" func = "gosnowfleke. (*defaultLogger).Errorf" file="log. go:120" Oct 11 14:23:41 IP-172-21-39-47 TEテレ グラフ [1827]: time="2021 - 10-11T14:23:41Z" level=error.msg=" 失敗しました。無視されます。/etc/テレ グラム /.cache/snowflake/ocspa_response_cache.json を開きます。ファイルまたはディレクトリがありません \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"Oct. 1114:23:41 IP-172-41-39-47 テレグラム [1827:1127]~21-21Z: Telegraf 1.19.3 を起動しています | これは問題と呼ばれています。を参照してください link:https://github.com/influxdata/telegraf/issues/9407["この GitHub の記事"] 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。 
+Kubernetesのバージョンを取得するには：
+
+ _kubectlバージョン_
+
+kube-state-metricsバージョンを取得するには、次の手順を実行します。
+
+ _kubectl get deploy/kube-state-metrics -o jsonpath='｛..image｝'_
+
+これらのメッセージが発生しないように、ユーザはkube-state-metrics展開を変更して、次のリースを無効にすることができます。
+
+_mutatingwebhookconfigurations_
+検証webhookconfigurations_
+_volumeattachmentsリソース_
+
+具体的には、次のCLI引数を使用できます。
+
+resources=certificatesigningrequests, configmaps, cronjobs, daemonsets, deployments, endpoints, horizontalpodautoscalers, ingresses, jobs, limitranges, namespaces, networkpolicies, poddisruptionbudgets, pods, ReplicaSets, replicationcontrollasses, resourcequotases, secrets, resourcequotases, secrets, services, storage, storefuls.
+
+デフォルトのリソースリストは次のとおりです。
+
+certificatesigningrequests, configmaps, cronjobs, daemonsets, deployments, endpoints, horizontalpododautoscalers, ingresses, jobs, leases, limitranges, mutatingwebhookconfiguration, namespaces, networkpersistentvolumes, poddisruptionbudgets, pers, persistentresets, pondsets, podsets, postresets, replicassess, replicastess, replicatess, replicastorets, replicast 検証Webhook構成'ボリューム添付ファイル"\y"ケンショウ:Webhookコウセイ'ボリュームアタッチメント 
 
 
-| Kubernetes で、 Telegraf ポッドが次のエラーを報告しています。 "Error in processing mountstats info: failed to open mountstats file: /hostfs /proc/1/mountstats 、 error: open /hostfs /proc/1/mountstats ： permission denied" | SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、以下を参照してください。 https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]。 
+| Telegrafから次のようなエラーメッセージが表示されますが、Telegrafは起動して実行されます。
+
+10月11日14:23:41 IP-172-31-39-47 systemd[1]: InfluxDBにメトリックを報告するプラグイン駆動のサーバーエージェントを起動しました。
+10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/telegraf/.cache/snowflake、err:mkdir /etc/telegraf/.ca
+CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"
+10月11日14：23：41 IP-172-31-39-47 telegraf [1827]：time="2021-10-11T14：23：41Z" level=error msg="failed to open.無視されます。/etc/telegraf/.cache/snowflake/ocsp_response_cache.jsonを開きます。no such
+ファイルまたはディレクトリ\n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"
+10月11日14:23:41 IP-172-31-39-47 telegraf [1827]: 2021-10-11T14:23:41Z I! Telegraf 1.19.3 を起動しています | これは問題と呼ばれています。  を参照してください link:https://github.com/influxdata/telegraf/issues/9407["この GitHub の記事"] 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。 
 
 
-| Kubernetes で、 Telegraf ReplicaSet ポッドから次のエラーが報告されています。 [ プラグインの inputs.prometheus] エラー： Could not load keypair /etc/Kubernetes /pki/ etcd/server.crt ： /etc/Kubernetes /pki/ etcd/server.key ： open /etc/Kubernetes /pki/ etcd/server.key ：特定のディレクトリまたは crt ファイルをロードできませんでした | Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。たとえば、 ReplicaSet...kubectl を編集して RS テレグラムを編集し、仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
+| Kubernetesで、Telegrafポッドが次のエラーを報告しています。
+"mountstats情報の処理中にエラーが発生しました：mountstatsファイルを開けませんでした：/hostfs/proc/1/mountstats、エラー：open/hostfs/proc/1/mountstats：権限が拒否されました" | SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、以下を参照してください。 https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]。 
 
 
-| PSP/PSA環境があります。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）またはポッドセキュリティアドミッション（PSA）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートして現在のNKMOにアップグレードするには、次の手順に従います。1. <<uninstalling,をアンインストールします>> 前の監視オペレータ：kubectl delete agent agent-monitoring netapp -n netapp -monitoring kubectl delete ns NetApp-monitoring kubectl delete CRD agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-proxy-metrics -reader kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -binding中のクラスタ役割を持つadminエージェントの役割を持つ役割を持つ役割を果たす役割を担う役割は、それぞれ果たす役割を担う。 <<installing-the-netapp-kubernetes-monitoring-operator,をインストールします>> モニタリングオペレータの最新バージョン。 
+| Kubernetesで、Telegraf ReplicaSetポッドが次のエラーを報告しています。
+
+ [プラグインのinputs.prometheus]エラー：keypair /etc/kubernetes/pki/etcd/server.crtをロードできませんでした：/etc/kubernetes/pki/etcd/server.key：open /etc/kubernetes/pki/etcd/server.crt：該当するファイルまたはディレクトリはありません | Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。
+
+たとえば、ReplicaSet...
+
+ kubectl edit rs telegraf-rs
+
+仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
 
 
-| NKMOを導入する際に問題が発生し、PSP/PSAを使用しました。 | 1.次のコマンドを使用して、エージェントを編集します。kubectl -n <name-space> edit agent 2.「security-policy enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。kubectl get psp（should show Pod Security Policy removed）kubectl get all -n <namespace>| grep -i psp（should show that nothing is found） 
+| PSP/PSA環境があります。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）またはポッドセキュリティアドミッション（PSA）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートする現在のNKMOにアップグレードするには、次の手順に従います。
+
+1. <<uninstalling,をアンインストールします>> 以前の監視オペレータ：
+
+ kubectl delete agent agent-monitoring-netapp-n netapp-monitoring
+ kubectlによってネットアップによる監視が削除されます
+ kubectlはCRD agents.monitoring.netapp.comを削除します
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <<installing-the-netapp-kubernetes-monitoring-operator,をインストールします>> モニタリングオペレータの最新バージョン。 
 
 
-| 「ImagePullBackoff」エラーが発生しました | このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。 <<using-a-custom-or-private-docker-repository,詳細はこちら>> カスタム/プライベートリポジトリの設定について 
+| NKMOを導入する際に問題が発生し、PSP/PSAを使用しました。 | 1.次のコマンドを使用してエージェントを編集します。
+
+kubectl -n <name-space>編集エージェント
+
+2.「security-policy-enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。
+
+kubectl get psp（Pod Security Policy removedを表示する必要があります）
+kubectl get all -n <namespace>| grep -i psp (should show that nothing is found) 
+
+
+| 「ImagePullBackoff」エラーが発生しました | このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。  <<using-a-custom-or-private-docker-repository,詳細はこちら>> カスタム/プライベートリポジトリの設定について 
 
 
 | 監視オペレータの配置に問題 を使用していますが、現在のドキュメントでは解決できません。  a| 
@@ -496,7 +558,14 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 ----
 
 
-| NKMOネームスペース内のNet-Observer（ワークロードマップ）ポッドはCrashLoopBackOffにあります | これらのポッドは、Network ObservabilityのWorkload Mapデータコレクタに対応しています。以下を試してみてください:•いずれかのポッドのログをチェックして、カーネルの最小バージョンを確認してください。例：---｛"ci-tenant-id"："your-tenant-id"、"collector-cluster"："your-k8s-cluster-name"、"environment"："prod"、"level"："error"、"msg"："検証に失敗しました。理由:カーネルバージョン3.10.0が最小カーネルバージョン4.18.0よりも小さい、"time":"2022-11-09T08:23:08Z"}---•Net-observerポッドを使用するには、Linuxカーネルバージョンが4.18.0以上である必要があります。「uname -r」コマンドを使用してカーネルのバージョンを確認し、4.18.0以上であることを確認します 
+| NKMOネームスペース内のNet-Observer（ワークロードマップ）ポッドはCrashLoopBackOffにあります | これらのポッドは、Network ObservabilityのWorkload Mapデータコレクタに対応しています。以下をお試しください。
+•いずれかのポッドのログをチェックして、カーネルの最小バージョンを確認します。例：
+
+-----
+｛"ci-tenant-id"："your-tenant-id"、"collector-cluster"："your-k8s-cluster-name"、"environment"："prod"、"level"："error"、"msg"："検証に失敗しました。理由：カーネルバージョン3.10.0が最小カーネルバージョン4.18.0よりも小さい、"time"："2022-11-09T08:23:08Z"｝
+-----
+
+•Net-Observerポッドを使用するには、Linuxカーネルのバージョンが4.18.0以上である必要があります。「uname -r」コマンドを使用してカーネルのバージョンを確認し、4.18.0以上であることを確認します 
 
 
 | NKMO名前空間のnet-observerポッドは、OpenShift 4環境のCrashLoopBackOffにあります | これは現在サポートされていません。今後のアップデートでサポートが追加される予定です。 
@@ -505,9 +574,12 @@ NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生し�
 | ポッドはNKMOネームスペース（デフォルト：netapp-monitoring）で実行されていますが、[Queries]のワークロードマップまたはKubernetes指標のデータがUIに表示されません | K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。 
 
 
-| NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています | net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。•保留状態のポッドをメモし、CPUまたはメモリのリソース問題 が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。 
+| NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています | net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。
+•保留状態のポッドをメモし、CPUまたはメモリのリソース問題が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。 
 
 
-| NetApp Kubernetes Monitoring Operatorをインストールした直後にログに次のメッセージが表示されます。[inputs.prometheus] Error in plugin: error making HTTP request to http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] ゲット http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] dial tcp：lookup kube-state-metrics.<namespace> .svc.cluster.local：該当するホストがありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
+| NetApp Kubernetes Monitoring Operatorをインストールした直後に、ログに次のようなメッセージが表示されます。
+
+[プラグインのinputs.prometheus]エラー：へのHTTP要求の実行中にエラーが発生しました http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] ゲット http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] dial tcp：lookup kube-state-metrics.<namespace> .svc.cluster.local：該当するホストがありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

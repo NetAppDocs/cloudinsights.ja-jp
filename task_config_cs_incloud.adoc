@@ -25,9 +25,11 @@ summary: ワークロードセキュリティでは、データコレクタを�
 
 == Cloud Volumes ONTAP ストレージ構成
 
-ワークロードセキュリティエージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
+ワークロードセキュリティエージェントをホストするシングルノード/ HA AWSインスタンスの設定については、OnCommand Cloud Volumes ONTAP のドキュメントを参照してください。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
-設定が完了したら、次の手順に従って SVM をセットアップします。https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
+設定が完了したら、次の手順に従って SVM をセットアップします。
+https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
 
 
@@ -51,7 +53,8 @@ AWSでワークロードセキュリティエージェントとして使用す�
 
 .手順
 . AWS コンソールにログインし、 EC2-Instances ページに移動して、 _Launch instance_ を選択します。
-. このページに記載されているバージョンに応じて、 RHEL または CentOS AMI を選択します。https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
+. このページに記載されているバージョンに応じて、 RHEL または CentOS AMI を選択します。
+https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
 . Cloud ONTAP インスタンスが存在する VPC とサブネットを選択します。
 . 割り当てられたリソースとして、 [T2.xlarge _ （ 4 vCPU と 16 GB RAM ） ] を選択します。
 +
@@ -73,10 +76,12 @@ AWSでワークロードセキュリティエージェントとして使用す�
 . Workload Security * Admin > Data Collectors *に移動し、* Agents *タブをクリックします。
 . [*+Agent] をクリックし、ターゲットプラットフォームとして RHEL を指定します。
 . [ エージェントインストール ] コマンドをコピーします。
-. ログインしている RHEL EC2 インスタンスに Agent Installation コマンドを貼り付けます。これにより、ワークロードセキュリティエージェントがインストールされ、すべてのが提供されます link:concept_cs_agent_requirements.html["エージェントの前提条件"] 達成された。
+. ログインしている RHEL EC2 インスタンスに Agent Installation コマンドを貼り付けます。
+これにより、ワークロードセキュリティエージェントがインストールされ、すべてのが提供されます link:concept_cs_agent_requirements.html["エージェントの前提条件"] 達成された。
 
 
-詳細な手順については、 https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent を参照してください
+詳細な手順については、次のリンクを参照してください。
+https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent
 
 
 
@@ -90,5 +95,7 @@ AWSでワークロードセキュリティエージェントとして使用す�
 | 問題 | 解決策： 
 
 
-| 「Workload Security: Failed to Determine ONTAP type for Amazon FxSN data collector」というエラーがData Collectorに表示されます。お客様が新しいAmazon FSxNデータコレクタをワークロードセキュリティに追加できません。エージェントからのポート443上のFSxNクラスタへの接続がタイムアウトしました。ファイアウォールとAWSセキュリティグループでは、通信を許可するために必要なルールが有効になっています。エージェントはすでに導入されており、同じAWSアカウントにも存在します。同じエージェントを使用して、残りのネットアップデバイス（およびすべてのデバイスが動作）を接続および監視します。 | この問題 を解決するには、fsxadmin LIFネットワークセグメントをエージェントのセキュリティルールに追加します。ポートについて不明な場合は、すべてのポートを許可します。 
+| 「Workload Security: Failed to Determine ONTAP type for Amazon FxSN data collector」というエラーがData Collectorに表示されます。
+お客様が新しいAmazon FSxNデータコレクタをワークロードセキュリティに追加できません。  エージェントからのポート443上のFSxNクラスタへの接続がタイムアウトしました。ファイアウォールとAWSセキュリティグループでは、通信を許可するために必要なルールが有効になっています。エージェントはすでに導入されており、同じAWSアカウントにも存在します。同じエージェントを使用して、残りのネットアップデバイス（およびすべてのデバイスが動作）を接続および監視します。 | この問題 を解決するには、fsxadmin LIFネットワークセグメントをエージェントのセキュリティルールに追加します。
+ポートについて不明な場合は、すべてのポートを許可します。 
 |===

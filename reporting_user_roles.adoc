@@ -94,7 +94,7 @@ NOTE: Cloud Insights Reporting （ Cognos アプリケーション）でユー�
 
 == 既存のお客様にとって重要な注意事項です
 
-Cloud Insights with Reporting を初めてお使いになる方へようこそ。レポートの利用を開始するために、これ以上何もする必要はありません。
+Cloud Insights with Reporting を初めてお使いになる方へようこそ。  レポートの利用を開始するために、これ以上何もする必要はありません。
 
 現在 Premium Edition をお使いの場合、 SSO はお使いの環境で自動的に有効になりません。SSO を有効にすると、 Reporting Portal （ Cognos ）の管理者ユーザが存在しなくなります。つまり '_My Content_ フォルダにあるすべてのレポートが削除され '_Team Content_ で再インストールまたは再作成する必要がありますまた、 SSO を有効にしたあとにスケジュールされたレポートを設定する必要があります。
 

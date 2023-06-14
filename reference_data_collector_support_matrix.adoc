@@ -23,6 +23,7 @@ Data Collector のサポートマトリックスには、 Cloud Insights でサ�
 
 マトリックスは .pdf 形式で提供されています。
 
-リンクをクリックして開きます。コピーをダウンロードするには、右クリックして「 _ 名前を付けて保存 ... _ 」を選択します。
+リンクをクリックして開きます。
+コピーをダウンロードするには、右クリックして「 _ 名前を付けて保存 ... _ 」を選択します。
 
 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["* Data Collector サポートマトリックス *"]

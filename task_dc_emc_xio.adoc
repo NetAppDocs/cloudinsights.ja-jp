@@ -43,7 +43,7 @@ Cloud Insights は、 EMC XtremIO データコレクタから次のインベン�
 | ベンダー / モデルの用語 | Cloud Insights の用語 
 
 
-| ディスク（ SSD ） | ディスク 
+| ディスク（SSD） | ディスク 
 
 
 | クラスタ | ストレージ 
@@ -79,7 +79,7 @@ Cloud Insights は、 EMC XtremIO データコレクタから次のインベン�
 | フィールド | 説明 
 
 
-| XMS ホスト | XtremIO Management Server の IP アドレスまたは完全修飾ドメイン名 
+| XMSホスト | XtremIO Management Server の IP アドレスまたは完全修飾ドメイン名 
 
 
 | ユーザ名 | XtremIO Management Server のユーザ名 
@@ -96,13 +96,13 @@ Cloud Insights は、 EMC XtremIO データコレクタから次のインベン�
 | フィールド | 説明 
 
 
-| TCP ポート | XtremIO Management Server への接続に使用する TCP ポート。デフォルトは 443. です。 
+| TCP ポート | XtremIO Management Server への接続に使用する TCP ポート。デフォルトは443です。 
 
 
-| インベントリのポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 60 分です。 
+| インベントリのポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは60分です。 
 
 
-| パフォーマンスのポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは 300 秒です。 
+| パフォーマンスのポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは300秒です。 
 |===
 
 

@@ -46,7 +46,8 @@ OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStac
 ** Nova Compute Service の場合は 8774
 ** Cinder ブロックサービスの場合は 8776
 ** Ceilometer パフォーマンスサービス用 8777
-** 9292 for Glance Image Service* 注 * ポートは特定のサービスにバインドされており、大規模な環境ではコントローラまたは別のホストでサービスを実行できます。
+** Glance Image Serviceの場合は9292
+*注*ポートは特定のサービスにバインドされ、大規模な環境ではコントローラまたは別のホストでサービスを実行できます。
 
 
 
@@ -101,13 +102,13 @@ OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStac
 | HTTPS を使用する | セキュア HTTP を使用する場合に選択します 
 
 
-| SSH ポート | SSH に使用するポート 
+| SSHポート | SSH に使用するポート 
 
 
 | SSH プロセスの再試行回数 | インベントリの再試行回数 
 
 
-| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 20 分です。 
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。  デフォルトは20分です。 
 |===
 
 
@@ -124,6 +125,7 @@ OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStac
 | 問題 | 次の操作を実行します 
 
 
-| 「 Configuration error 」と表示され、「 Policy does not allow 」または「 You are not authorized 」というエラーメッセージが表示されます。 | * IP アドレスを確認 * ユーザー名とパスワードを確認してください 
+| 「 Configuration error 」と表示され、「 Policy does not allow 」または「 You are not authorized 」というエラーメッセージが表示されます。 | * IPアドレスを確認します
+*ユーザー名とパスワードを確認してください 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

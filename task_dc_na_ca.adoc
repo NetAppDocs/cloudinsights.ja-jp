@@ -55,7 +55,8 @@ Cloud Insights は、ONTAP から設定データを取得し、Config Advisor �
 
 | ボリューム | 内部ボリューム 
 |===
-また、Config Advisor 指標は、ダッシュボードおよび_NetAppONTAP.configadviser_tagを使用したその他のクエリで使用できます。image:ConfigAdvisorTags.png["configadvisorメトリックタグを示すドロップダウン"]
+また、Config Advisor 指標は、ダッシュボードおよび_NetAppONTAP.configadviser_tagを使用したその他のクエリで使用できます。
+image:ConfigAdvisorTags.png["configadvisorメトリックタグを示すドロップダウン"]
 
 
 
@@ -79,7 +80,7 @@ Config Advisor ダッシュボードに表示されるオブジェクトや参�
 
 === ルールの結果
 
-* ルール–推奨されるプラクティスからの構成の逸脱を分析したり、既知の問題を特定したりする、システムに対して実行されるチェック。
+* ルール–推奨されるプラクティスとの構成の偏差を分析したり、既知の問題を特定したりするシステムに対して実行されるチェック。
 * ルール名–実行されるルールまたはチェックの短い名前。
 * ルールID–ルールの識別子。
 * Target：ルールが適用されるコンポーネント。クラスタ名、ノード名、またはスイッチ名です。

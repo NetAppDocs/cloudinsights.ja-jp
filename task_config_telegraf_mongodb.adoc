@@ -53,10 +53,13 @@ image:MongoDBDCConfigLinux.png["MongoDB の設定"]
 | オブジェクト： | 識別子： | 属性： | 「 dataPoints 」： 
 
 
-| MongoDB | ネームスペースホスト名 |  |  
+| MongoDB | ネームスペース
+ホスト名 |  |  
 
 
-| MongoDB データベース | ネームスペースホスト名データベース名 |  |  
+| MongoDB データベース | ネームスペース
+ホスト名
+データベース名 |  |  
 |===
 
 

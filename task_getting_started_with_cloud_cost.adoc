@@ -53,7 +53,7 @@ image:Cloud_Cost_Welcome_Wait.png["クラウドコストへようこそ！"]
 
 +
 
-NOTE: クラウドコストを完全に構成するには、最大 24 時間かかる場合があります。設定が完了すると、 E メール通知が送信されます。問題が発生した場合は、チャットアイコンをクリックするか、にアクセスして、ネットアップサポートにお問い合わせください link:https://spot.io/support["NetApp スポットサポート"]。
+NOTE: クラウドコストを完全に構成するには、最大 24 時間かかる場合があります。設定が完了すると、 E メール通知が送信されます。問題が発生した場合は、チャットアイコンをクリックするか、にアクセスして、ネットアップサポートにお問い合わせください  link:https://spot.io/support["NetApp スポットサポート"]。
 
 * セットアップが完了したら、 * クラウドコスト * メニュー項目をクリックすると、次の例のようなコスト分析ダッシュボードが表示されます。
 +
@@ -65,7 +65,7 @@ image:Cloud_Cost_Example_Dashboard.png["クラウドコストのダッシュボ�
 
 == クラウドコストの詳細
 
-Cloud Cost は、 Cloud Insights 環境との Cloud Analyzer 機能を接続します link:https://docs.spot.io/cloud-analyzer/["ネットアップのソリューションで実現"]Cloud Insights では、クラウドのコストデータに最も関連性の高いビューを提供します。クラウドコストダッシュボードの右上隅にある _Get Full Analysis_link をクリックすると、 Spot で Cloud Analyzer ダッシュボード全体を開くことができます。詳細な分析によって追加のデータとドリルダウンが提供され、クラウド関連の支出に関する詳細な情報が得られる場合があります。
+Cloud Cost は、 Cloud Insights 環境との Cloud Analyzer 機能を接続します link:https://docs.spot.io/cloud-analyzer/["ネットアップのソリューションで実現"]Cloud Insights では、クラウドのコストデータに最も関連性の高いビューを提供します。  クラウドコストダッシュボードの右上隅にある _Get Full Analysis_link をクリックすると、 Spot で Cloud Analyzer ダッシュボード全体を開くことができます。詳細な分析によって追加のデータとドリルダウンが提供され、クラウド関連の支出に関する詳細な情報が得られる場合があります。
 
 
 

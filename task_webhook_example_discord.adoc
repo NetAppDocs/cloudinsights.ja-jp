@@ -46,7 +46,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 image:Webhooks-Discord_example.png["ウェブフックテンプレートを外します"]
 
 
-NOTE: webhook をテストするには、メッセージ本文の URL 値を任意の有効な URL （ _https://netapp.com_ など）に一時的に置き換え、 _Test Webhook_ ボタンをクリックします。テストが完了したら、必ずメッセージの本文を元に戻してください。
+NOTE: Webhookをテストするには、メッセージ本文のhttps://netapp.com_)値を任意の有効なURL（_など）に一時的に置き換えてから、_Test Webhook_ボタンをクリックします。テストが完了したら、必ずメッセージの本文を元に戻してください。
 
 
 

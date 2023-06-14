@@ -29,7 +29,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 == PagerDuty 設定：
 
 . PagerDuty で、 [*Services] > [Service Directory] に移動し、 [*+New Service*] ボタンをクリックします
-. 「 A_Name_ 」と入力し、「 _ 」を選択して API を直接使用します _ 。[ サービスの追加 ] をクリックします。
+. 「 A_Name_ 」と入力し、「 _ 」を選択して API を直接使用します _ 。  [ サービスの追加 ] をクリックします。
 +
 image:Webhooks_PagerDutyScreen1.png["PagerDuty 画面"]
 

@@ -148,11 +148,14 @@ SVMの場合、[Security]ダッシュボードでは次のモニタが表示さ�
 |===
 クラスタリストで、各クラスタの[_View Details_]を選択してスライドアウトパネルを開き、_Cluster、Storage VM、_or_Anti-Ransomware_の現在の設定を確認します。
 
-クラスタの詳細には、接続ステータスや証明書情報などがあります。image:OE_Cluster_Slideout.png["クラスタの詳細スライドアウトパネル"]
+クラスタの詳細には、接続ステータスや証明書情報などがあります。
+image:OE_Cluster_Slideout.png["クラスタの詳細スライドアウトパネル"]
 
-Storage VMの詳細には、監査とSSHの情報が表示されます。image:OE_Storage_Slideout.png["[Storage]タブ"]
+Storage VMの詳細には、監査とSSHの情報が表示されます。
+image:OE_Storage_Slideout.png["[Storage]タブ"]
 
-ランサムウェア対策の詳細には、Storage VMがONTAPのランサムウェア対策またはCloud Insights ワークロードセキュリティで保護されているかどうかが表示されます。ONTAP の[ARP]列には、ONTAP システムで設定されているONTAPのオンボードランサムウェア対策の現在のステータスが表示されます。Cloud Insights ワークロードセキュリティを有効にするには、その列で[保護]を選択します。image:OE_Anti-Ransomware_Slideout.png["Anti-Ransomwareタブ"]
+ランサムウェア対策の詳細には、Storage VMがONTAPのランサムウェア対策またはCloud Insights ワークロードセキュリティで保護されているかどうかが表示されます。ONTAP の[ARP]列には、ONTAP システムで設定されているONTAPのオンボードランサムウェア対策の現在のステータスが表示されます。Cloud Insights ワークロードセキュリティを有効にするには、その列で[保護]を選択します。
+image:OE_Anti-Ransomware_Slideout.png["Anti-Ransomwareタブ"]
 
 
 
@@ -170,7 +173,8 @@ ONTAP Essential* Infrastructure *ページでは、すべての基本的なONTAP
 
 image:ONTAP_Essentials_Health_Performance.png["ストレージプールのインフラストラクチャ選択"]
 
-クラスタの健常性を示すインフラのページ：image:ONTAP_Essentials_Infrastructure_A.png["調査するインフラストラクチャオブジェクト"]
+クラスタの健常性を示すインフラのページ：
+image:ONTAP_Essentials_Infrastructure_A.png["調査するインフラストラクチャオブジェクト"]
 
 
 

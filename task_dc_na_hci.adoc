@@ -116,7 +116,8 @@ Cloud Insights では、このデータコレクタから次のインベント�
 
 == 高度な設定
 
-詳細設定画面で、 VM パフォーマンス * ボックスをオンにしてパフォーマンスデータを収集します。インベントリ収集は、デフォルトで有効になっています。次のフィールドを設定できます。
+詳細設定画面で、 VM パフォーマンス * ボックスをオンにしてパフォーマンスデータを収集します。インベントリ収集は、デフォルトで有効になっています。
+次のフィールドを設定できます。
 
 [cols="2*"]
 |===
@@ -157,9 +158,16 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | エラー：フィルタリングする VM をリストに含めることはできません | [Include List] を選択した場合は、有効なデータセンター、クラスタ、またはホスト名をリストして、 VM をフィルタリングしてください 
 
 
-| エラー： IP で VirtualCenter への接続をインスタンス化できませんでした | 解決策： * 入力された資格情報と IP アドレスを確認してください。* Infrastructure Client を使用して、 Virtual Center と通信してみてください。* Managed Object Browser （ MOB など）を使用して Virtual Center と通信してみます。 
+| エラー： IP で VirtualCenter への接続をインスタンス化できませんでした | 考えられる解決策：
+
+* 入力された資格情報と IP アドレスを確認してください。
+* Infrastructure Client を使用して、 Virtual Center と通信してみてください。
+* Managed Object Browser （ MOB など）を使用して Virtual Center と通信してみます。 
 
 
-| エラー： IP の VirtualCenter には、 JVM で必要な非準拠の証明書があります | 可能な解決策： * 推奨：強力な（など）を使用して、 Virtual Center の証明書を再生成します 1024 ビット） RSA キー。* 推奨されません。 JVM java.security 設定を変更して、 JDK.certPath.disableAlgorithms 制約を利用し、 512 ビット RSA キーを許可します。「 JDK 7 update 40 release notes 」を参照してください "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
+| エラー： IP の VirtualCenter には、 JVM で必要な非準拠の証明書があります | 考えられる解決策：
+
+*推奨：より強力なRSAキー（1024ビットなど）を使用して、Virtual Center用の証明書を再生成します。
+* 推奨されません。 JVM java.security 設定を変更して、 JDK.certPath.disableAlgorithms 制約を利用し、 512 ビット RSA キーを許可します。「 JDK 7 update 40 release notes 」を参照してください "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

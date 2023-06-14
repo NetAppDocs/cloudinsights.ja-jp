@@ -29,7 +29,17 @@ NOTE: ストレージワークロードセキュリティは、Cloud Insights �
 | コンポーネント | Linux 要件 
 
 
-| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ: Red Hat Enterprise Linux 7.x、8.x 64ビットCentOS 7.x 64ビットCentOS 8ストリームUbuntu 20から22 64ビットRocky 8.x 64ビット、Rocky 9.x 64ビットこのコンピュータは、他のアプリケーションレベルのソフトウェアを実行していないはずです。専用のサーバを使用することを推奨します。SE（Security Enhanced）Linuxはサポートされていません。 
+| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+Red Hat Enterprise Linux 7.x、8.x 64ビット
+CentOS 7.x 64ビット
+CentOS 8ストリーム
+Ubuntu 20から22 64ビット
+Rocky 8.x 64ビット、Rocky 9.x 64ビット
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
+
+SE（Security Enhanced）Linuxはサポートされていません。 
 
 
 | コマンド | インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。 
@@ -41,7 +51,10 @@ NOTE: ストレージワークロードセキュリティは、Cloud Insights �
 | メモリ | 16GB の RAM 
 
 
-| 使用可能なディスクスペース | ディスクスペースは、次のように割り当てます。/opt/netapp 35GB（最小）/optがNASストレージからマウントされたフォルダである場合、ローカルユーザがこのフォルダにアクセスできることを確認します。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください link:task_cs_add_agent.html#troubleshooting-agent-errors["トラブルシューティング"] 詳細については、を参照してください。 
+| 使用可能なディスクスペース | ディスクスペースは次の方法で割り当てる必要があります。
+/opt/netapp 35GB（最小）
+
+/optがNASストレージからマウントされたフォルダである場合は、ローカルユーザーがこのフォルダにアクセスできることを確認してください。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください link:task_cs_add_agent.html#troubleshooting-agent-errors["トラブルシューティング"] 詳細については、を参照してください。 
 
 
 | ネットワーク | 100 Mbps~1 Gbpsイーサネット接続、静的IPアドレス、すべてのデバイスへのIP接続、およびワークロードセキュリティインスタンスへの必要なポート（80または443） 
@@ -51,7 +64,10 @@ NOTE: ストレージワークロードセキュリティは、Cloud Insights �
 |===
 
 
-| 使用可能なディスクスペース | Linux では 50 ～ 55 GB 、ディスクスペースは次のように割り当てます。 /opt/netapp 25-30 GB /var/log/netapp 25 GB 
+| 使用可能なディスクスペース | 50～55 GB
+Linuxの場合は、次の方法でディスクスペースを割り当てる必要があります。
+/opt/ネットアップ25~30GB
+/var/log/netapp 25GB 
 |===
 
 
@@ -71,10 +87,13 @@ USベースの*ワークロード・セキュリティー環境の場合：
 | プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
 
 
-| TCP | 443 | < サイト名 > .cs01.cloudinsights.netapp.com < サイト名 > .c01.cloudinsights.netapp.com < サイト名 > .c02.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+| TCP | 443年 | <site_name>.cs01.cloudinsights.netapp.com
+<site_name>.c01.cloudinsights.netapp.com
+<site_name>.c02.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
 
 
-| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+| TCP | 443年 | gateway.c01.cloudinsights.netapp.com
+agentlogin.cs01.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
 |===
 欧州*ベースのワークロード・セキュリティー環境の場合：
 
@@ -83,22 +102,28 @@ USベースの*ワークロード・セキュリティー環境の場合：
 | プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
 
 
-| TCP | 443 | < サイト名 > .cs01-eu-1.cloudinsights.netapp.com < サイト名 > .c01-eu-1.cloudinsights.netapp.com < サイト名 > .c02-eu-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+| TCP | 443年 | <site_name>.cs01-eu-1.cloudinsights.netapp.com
+<site_name>.c01-eu-1.cloudinsights.netapp.com
+<site_name>.c02-eu-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
 
 
-| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+| TCP | 443年 | gateway.c01.cloudinsights.netapp.com
+agentlogin.cs01-eu-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
 |===
-APACベースの*ワークロード・セキュリティー環境の場合：
+APACベースの*ワークロード・セキュリティ環境の場合：
 
 [cols="5*"]
 |===
 | プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
 
 
-| TCP | 443 | < サイト名 > .cs01-ap-1.cloudinsights.netapp.com < サイト名 > .c01-ap-1.cloudinsights.netapp.com < サイト名 > .c02-ap-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+| TCP | 443年 | <site_name>.cs01-ap-1.cloudinsights.netapp.com
+<site_name>.c01-ap-1.cloudinsights.netapp.com
+<site_name>.c02-ap-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
 
 
-| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+| TCP | 443年 | gateway.c01.cloudinsights.netapp.com
+agentlogin.cs01-ap-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
 |===
 
 
@@ -111,10 +136,11 @@ APACベースの*ワークロード・セキュリティー環境の場合：
 | プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
 
 
-| TCP | 389 （ LDAP ） 636 （ LDAPS / start-TLS ） | LDAP サーバ URL | アウトバウンド | LDAP に接続します 
+| TCP | 389（LDAP）
+636（LDAPS / START-TLS） | LDAP サーバ URL | アウトバウンド | LDAP に接続します 
 
 
-| TCP | 443 | クラスタまたはSVMの管理IPアドレス（SVMコレクタの設定に応じて） | アウトバウンド | ONTAP との API 通信 
+| TCP | 443年 | クラスタまたはSVMの管理IPアドレス（SVMコレクタの設定に応じて） | アウトバウンド | ONTAP との API 通信 
 
 
 | TCP | 35000~55000 | SVM データ LIF の IP アドレス | インバウンド | FPolicy イベントのための ONTAP との通信 
@@ -123,7 +149,7 @@ APACベースの*ワークロード・セキュリティー環境の場合：
 | TCP | 7. | SVM データ LIF の IP アドレス | アウトバウンド | ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。 
 
 
-| SSH | 22 | クラスタ管理 | アウトバウンド | CIFS / SMBユーザブロックに必要です。 
+| SSH | 22. | クラスタ管理 | アウトバウンド | CIFS / SMBユーザブロックに必要です。 
 |===
 
 

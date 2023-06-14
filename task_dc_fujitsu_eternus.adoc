@@ -56,7 +56,7 @@ Cloud Insights では、 Fujitsu ETERNUS ストレージから次のインベン
 
 * Eternus ストレージの IP アドレス。カンマで区切って指定することはできません
 * SSH 管理レベルのユーザ名とパスワード
-* ポート 22
+* ポート22
 * ページスクロールが無効になっていることを確認します（ clienv -show -more-scroll disable ）。
 
 
@@ -86,7 +86,7 @@ Cloud Insights では、 Fujitsu ETERNUS ストレージから次のインベン
 | フィールド | 説明 
 
 
-| インベントリポーリング間隔（分） | デフォルトは 20 分です。 
+| インベントリポーリング間隔（分） | デフォルトは20分です。 
 |===
 
 
@@ -103,9 +103,19 @@ Cloud Insights では、 Fujitsu ETERNUS ストレージから次のインベン
 | 問題 | 次の操作を実行します 
 
 
-| 「 Error Retrieving data 」というエラーメッセージが表示され、「 Error Finding Prompt CLI 」または「 Error Finding prompt at the end of shell results 」が表示されます。 | 考えられる原因：ストレージシステムでページスクロールが有効になっています。考えられる解決策： * 次のコマンドを実行して、ページスクロールを無効にしてください。 set clienv -show -more-scroll disable 
+| 「 Error Retrieving data 」というエラーメッセージが表示され、「 Error Finding Prompt CLI 」または「 Error Finding prompt at the end of shell results 」が表示されます。 | 考えられる原因：ストレージシステムでページスクロールが有効になっています。
+可能性のある解決策：
+*次のコマンドを実行して、ページのスクロールを無効にしてみてください。
+ clientv-show-more-scroll disableを設定します 
 
 
-| 「 Connecting error 」とエラーメッセージ「 Failed to instantiate an SSH connection to storage 」または「 Failed to instantiate a connection to VirtualCenter 」が表示されます。 | 考えられる原因： * クレデンシャルが正しくありません。* IP アドレスが正しくありません。* ネットワークの問題。* ストレージが停止しているか、応答しない可能性があります解決策： * 入力された資格情報と IP アドレスを確認してください。* SSH クライアントを使用してストレージと通信してみてください。 
+| 「 Connecting error 」とエラーメッセージ「 Failed to instantiate an SSH connection to storage 」または「 Failed to instantiate a connection to VirtualCenter 」が表示されます。 | 考えられる原因：
+*認証情報が正しくありません。
+* IP アドレスが正しくありません。
+* ネットワークの問題。
+* ストレージが停止しているか、応答しない可能性があります
+考えられる解決策：
+* 入力された資格情報と IP アドレスを確認してください。
+* SSH クライアントを使用してストレージと通信してみてください。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

@@ -143,13 +143,13 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | フィールド | 説明 
 
 
-| HTTPS ポート | デフォルトは8080です。 
+| HTTPSポート | デフォルトは8080です。 
 
 
-| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 20. です。 
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは20です。 
 
 
-| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは 300. です。 
+| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは300です。 
 |===
 
 
@@ -166,7 +166,13 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | 問題 | 次の操作を実行します 
 
 
-| 「 Invalid login credentials 」というエラーメッセージが表示されます。「 Commands not enabled for role-based administration require root user access 」 | * ユーザーがデバイスで次のコマンドを実行する権限を持っていることを確認してください。 > isi version osrelease > isi status -q > isi devices -d %s> isi license * ウィザードで使用されている資格情報が一致することを確認してください 
+| 「 Invalid login credentials 」というエラーメッセージが表示されます。「 Commands not enabled for role-based administration require root user access 」 | *ユーザーがデバイス上で次のコマンドを実行する権限を持っていることを確認します。
+  > isiバージョンosrelease
+  > isi status -q
+  > isi status -n
+  > isiデバイス-d %s
+  > isiライセンス
+*ウィザードで使用されている認証情報がデバイスの認証情報と一致することを確認します 
 
 
 | 「 Command <Your Command> run failed with permission ： <your current permisse> 」というエラーメッセージが表示されて「 Internal Error 」が表示されます。sudo コマンド run permission 問題」 | ユーザにデバイスで次のコマンドを実行するための sudo 権限があることを確認します 

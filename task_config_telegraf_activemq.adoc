@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_activemq.html 
 keywords: telegraf, installation, install, ActiveMQ 
-summary: HTTP データコレクタの設定 
+summary: HTTPデータコレクタの設定 
 ---
 = ActiveMQ データコレクタ
 :toc: macro
@@ -53,13 +53,45 @@ image:ActiveMQDCConfigWindows.png["ActiveMQ の設定"]
 | オブジェクト： | 識別子： | 属性： | 「 dataPoints 」： 
 
 
-| ActiveMQ キュー | ネームスペースキューポートサーバ | ノード名ノード IP ノード UUID | 消費者数キューカウントキューサイズ 
+| ActiveMQ キュー | ネームスペース
+キュー
+ポート
+サーバ | ノード名
+ノードIP
+ノード UUID | 消費者数
+デキューカウント
+enqueueカウント
+キューサイズ 
 
 
-| ActiveMQ サブスクライバ | クライアント ID 接続 ID ポートサーバーの名前空間 | は、アクティブなデスティネーションノード名ノード IP ノード UUID ノード OS セレクタサブスクリプションです | Dequeue Count Depatched Count DeQueue Size Dequeue Count Pending Queue Size （デキューカウントディスパッチキューカウントキューサイズ） 
+| ActiveMQ サブスクライバ | クライアント ID
+接続ID
+ポート
+サーバ
+ネームスペース | はアクティブです
+宛先
+ノード名
+ノードIP
+ノード UUID
+ノードOS
+セレクタ
+サブスクリプション。 | デキューカウント
+ディスパッチ数
+ディスパッチキューサイズ
+enqueueカウント
+保留中のキューサイズ 
 
 
-| ActiveMQ トピック | トピックポートサーバーの名前空間 | ノード名ノードの IP ノード UUID ノード OS | 消費者数キューカウントキューカウントサイズ 
+| ActiveMQ トピック | トピック
+ポート
+サーバ
+ネームスペース | ノード名
+ノードIP
+ノード UUID
+ノードOS | 消費者数
+デキューカウント
+enqueueカウント
+サイズ 
 |===
 
 

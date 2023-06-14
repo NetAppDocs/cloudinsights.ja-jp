@@ -70,7 +70,7 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-ser
 | フィールド | 説明 
 
 
-| インベントリポーリング間隔（分） | デフォルトは 60 です。 
+| インベントリポーリング間隔（分） | デフォルトは60です 
 |===
 
 

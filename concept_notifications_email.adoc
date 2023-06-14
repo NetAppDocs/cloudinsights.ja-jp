@@ -30,7 +30,8 @@ image:Notifications_email_list.png["E メール通知"]
 
 == サブスクリプション通知の受信者
 
-サブスクリプション関連のイベント通知の受信者を設定するには、「サブスクリプション通知の受信者」セクションに移動します。次の受信者のいずれかまたはすべてに、サブスクリプション関連イベントに関する E メール通知を送信するように選択できます。
+サブスクリプション関連のイベント通知の受信者を設定するには、「サブスクリプション通知の受信者」セクションに移動します。
+次の受信者のいずれかまたはすべてに、サブスクリプション関連イベントに関する E メール通知を送信するように選択できます。
 
 * すべてのアカウント所有者
 * すべての監視と最適化管理者
@@ -48,13 +49,18 @@ image:Notifications_email_list.png["E メール通知"]
 | トライアルまたはサブスクリプションが更新されました | でサブスクリプションの詳細を確認します link:concept_subscribing_to_cloud_insights.html["サブスクリプション。"] ページ 
 
 
-| サブスクリプションの有効期限は 90 日ですサブスクリプションの有効期限は 30 日です | [ 自動更新 ] が有効になっている場合、アクションは必要ありません link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] をクリックして、サブスクリプションを更新します 
+| サブスクリプションの有効期限は90日です
+サブスクリプションは30日後に期限切れになります | [Auto Renewal]が有効になっている場合、対処は不要です
+連絡先 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] をクリックして、サブスクリプションを更新します 
 
 
-| トライアルは 2 日で終了します | からトライアルを更新します link:concept_subscribing_to_cloud_insights.html["サブスクリプション。"] ページ試用版は 1 回更新できます。連絡先 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] をクリックして、サブスクリプションを購入します 
+| トライアルは 2 日で終了します | からトライアルを更新します link:concept_subscribing_to_cloud_insights.html["サブスクリプション。"] ページ試用版は 1 回更新できます。
+連絡先 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] をクリックして、サブスクリプションを購入します 
 
 
-| トライアルまたはサブスクリプションの有効期限が切れたアカウントは、 48 時間以内にアカウントの収集を停止し、 48 時間後にアカウントが削除されます | 連絡先 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] をクリックして、サブスクリプションを購入します 
+| トライアルまたはサブスクリプションの有効期限が切れています
+アカウントは48時間後にデータの収集を停止します
+アカウントは48時間後に削除されます | 連絡先 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] をクリックして、サブスクリプションを購入します 
 |===
 
 

@@ -53,10 +53,23 @@ image:CouchbaseDCConfigWindows.png["Couchbase 構成"]
 | オブジェクト： | 識別子： | 属性： | 「 dataPoints 」： 
 
 
-| Couchbase Node | ネームスペースクラスタの Couchbase ノードホスト名 | ノード名ノード IP | メモリ空きメモリ合計 
+| Couchbase Node | ネームスペース
+クラスタ
+Couchbaseノードのホスト名 | ノード名
+ノードIP | メモリ空き
+メモリ合計 
 
 
-| Couchbase バケット | ネームスペースバケットクラスタ | ノード名ノード IP | Data Used Data fetches Disk Used Item Count Memory Used Operations per Second Quota Used （使用データフェッチディスクの使用アイテム数 1 秒あたりのメモリ使用量 
+| Couchbase バケット | ネームスペース
+バケット
+クラスタ | ノード名
+ノードIP | 使用済みデータ
+データフェッチ
+使用されているディスク
+アイテム数
+使用されているメモリ
+1秒あたりの処理数
+使用済みクォータ 
 |===
 
 

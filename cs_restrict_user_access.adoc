@@ -19,7 +19,8 @@ summary: ワークロードセキュリティを使用すると、破壊の疑�
 
 NOTE: ワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
 
-ユーザアクセスをブロックする場合は、ブロック期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。アクセスブロックは、SMBプロトコルとNFSプロトコルの両方でサポートされています。
+ユーザアクセスをブロックする場合は、ブロック期間を定義する必要があります。選択した期間が終了すると、ユーザアクセスが自動的にリストアされます。
+アクセスブロックは、SMBプロトコルとNFSプロトコルの両方でサポートされています。
 
 SMBおよびホストマシンのIPアドレスに対してユーザが直接ブロックされているため、NFSに対して攻撃がブロックされます。これらのマシンのIPアドレスは、ワークロードセキュリティで監視されているいずれかのStorage Virtual Machine（SVM）へのアクセスがブロックされます。
 
@@ -190,7 +191,10 @@ Position Hostname         IP Address/Mask
 | 問題 | 試してみてください 
 
 
-| 一部のユーザーは制限されていませんが、攻撃があります。 | 1. SVM の Data Collector と Agent が _RUNNING であることを確認します。Data CollectorとAgentが停止している場合、ワークロードセキュリティはコマンドを送信できません。2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details > Access Limitation History for this User > Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。 
+| 一部のユーザーは制限されていませんが、攻撃があります。 | 1. SVMのData CollectorとAgentがin_running_stateであることを確認します。Data CollectorとAgentが停止している場合、ワークロードセキュリティはコマンドを送信できません。
+
+2. これは、ユーザが以前に使用されていない新しい IP を持つマシンからストレージにアクセスした可能性があるためです。
+制限は、ユーザがストレージにアクセスする際に使用するホストの IP アドレスを介して行われます。UI （ Alert Details > Access Limitation History for this User > Affected IP ）で、制限されている IP アドレスのリストを確認します。IP が制限された IP と異なるホストからストレージにアクセスしている場合、ユーザは制限されていない IP を介してストレージにアクセスできます。IP が制限されているホストからアクセスしようとすると、ストレージにアクセスできなくなります。 
 
 
 | [Restrict Access] を手動でクリックすると、「このユーザの IP アドレスはすでに制限されています」というメッセージが表示されます。 | 制限する IP はすでに別のユーザから制限されています。 
@@ -199,7 +203,19 @@ Position Hostname         IP Address/Mask
 | ポリシーを変更できませんでした。理由：このコマンドは許可されていません。 | csuserを使用している場合は、上記のようにユーザに権限が与えられているかどうかを確認します。 
 
 
-| NFSのユーザ（IPアドレス）ブロックが機能しますが、SMB / CIFSの場合、次のエラーメッセージが表示されます。「SIDからドメイン名への変換に失敗しました。理由タイムアウト：ソケットが確立されていません」 | これは、is_csuser_doesにsshを実行する権限がありません。（クラスタレベルで接続してから、ユーザがsshを実行できることを確認してください）。_csuser_roleには、これらの権限が必要です。 https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]クラスタのクレデンシャルを使用する場合は、ONTAP コマンドラインから次の手順を実行します。 security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole csrole csrole -cmddirname "vserver services access-check authentication translate role create -role csrole -cmddirname "vserver name-mapping"-access all if_csuser_が使用されておらず、クラスタレベルの管理者ユーザが使用されている場合は、管理者ユーザにONTAP に対するssh権限があることを確認してください。 
+| NFSのユーザ（IPアドレス）ブロックが機能しますが、SMB / CIFSの場合、次のエラーメッセージが表示されます。「SIDからドメイン名への変換に失敗しました。理由タイムアウト：ソケットが確立されていません」 | これは、is_csuser_doesにsshを実行する権限がありません。（クラスタレベルで接続してから、ユーザがsshを実行できることを確認してください）。  _csuser_roleには、これらの権限が必要です。
+
+ https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]
+
+クラスタクレデンシャルを使用する_csuser_withの場合、ONTAP コマンドラインから次の操作を実行します。
+
+ security login role create -role csrole -cmddirname "vserver export-policy rule"-access all
+ security login role create -role csrole -cmddirname set -access all
+ security login role create -role csrole -cmddirname "vserver cifs session"-access all
+ security login role create -role csrole -cmddirname "vserver services access-check authentication translate"-access all
+ security login role create -role csrole -cmddirname "vserver name-mapping"-access all
+
+_csuser_を使用せず、クラスタレベルのadminユーザを使用している場合は、adminユーザにONTAPに対するssh権限があることを確認してください。 
 
 
 |  |  

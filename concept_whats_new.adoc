@@ -134,9 +134,13 @@ Cloud Insightsで収集されたKubernetesデータ（Persistent Volumes（PV）
 
 === Kubernetesのパフォーマンス監視とマッピング
 
-。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetesのネットワークパフォーマンスとマップ_"] Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
+。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetesのネットワークパフォーマンスとマップ_"] Kubernetesワークロード間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。
+この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
 
-主な機能:•ワークロードマップはKubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を強調します。•Kubernetesポッド、ワークロード、ノード間のネットワークトラフィックを監視し、トラフィックとレイテンシの問題の原因を特定します。•入力、出力、リージョン間、ゾーン間のネットワークトラフィックを分析することで、全体的なコストを削減します。
+主な特長：
+•ワークロードマップは、Kubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を明らかにします。
+•Kubernetesポッド、ワークロード、ノード間のネットワークトラフィックを監視し、トラフィックとレイテンシの問題の原因を特定します。
+•入力、出力、リージョン間、ゾーン間のネットワークトラフィックを分析することで、全体的なコストを削減します。
 
 「スライドアウト」の詳細を示すワークロードマップ：
 
@@ -189,7 +193,8 @@ image:Reporting_Menu.png["新しいレポートメニューの外観"]
 
 === モニタはデフォルトで一時停止されています
 
-新しいCloud Insights 環境の場合は、次の点に注意してください link:task_system_monitors.html["システム定義のモニタ"] デフォルトではアラート通知は送信しません。モニタに1つ以上の配信方法を追加して、アラートを通知するモニタの通知を有効にする必要があります。既存のCloud Insights 環境では、現在_Paused_stateにあるシステム定義モニタのdefault_global_notification受信者リストが削除されました。現在アクティブなシステム定義モニターの通知設定と同様に、ユーザー定義通知も変更されません。
+新しいCloud Insights 環境の場合は、次の点に注意してください link:task_system_monitors.html["システム定義のモニタ"] デフォルトではアラート通知は送信しません。モニタに1つ以上の配信方法を追加して、アラートを通知するモニタの通知を有効にする必要があります。
+既存のCloud Insights 環境では、現在_Paused_stateにあるシステム定義モニタのdefault_global_notification受信者リストが削除されました。現在アクティブなシステム定義モニターの通知設定と同様に、ユーザー定義通知も変更されません。
 
 
 
@@ -206,7 +211,7 @@ APIメーターは、[サブスクリプション]ページから*[管理者]>[A
 
 === Cloud Connection for ONTAP 9.9以降は廃止されました
 
-Cloud Connection for ONTAP 9.9以降のデータコレクタは廃止されました。2023年4月4日以降、環境内のCloud Connectionデータコレクタでデータが収集されなくなり、ポーリング時にエラーが表示されます。Cloud Connectionデータコレクタは、次回の更新でCloud Insights から完全に削除されます。
+Cloud Connection for ONTAP 9.9以降のデータコレクタは廃止されました。  2023年4月4日以降、環境内のCloud Connectionデータコレクタでデータが収集されなくなり、ポーリング時にエラーが表示されます。Cloud Connectionデータコレクタは、次回の更新でCloud Insights から完全に削除されます。
 
 2023年4月4日より前のリリースでは、クラウド接続で現在収集されているすべてのONTAP システムについて、新しいNetApp ONTAP データ管理ソフトウェアデータコレクタを設定する必要があります。 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["詳細はこちら。"]。
 
@@ -426,7 +431,7 @@ image:DataFamilyMerged.png["2進数と10進数のデータファミリーのマ�
 
 === ストレージで使用されている電力量
 
-NetApp_ONTAP.storage-shelf、NetApp_ONTAP.system_node、およびNetApp_ONTAP.cluster（電力消費のみ）指標を使用して、ONTAP ストレージシェルフとノードの電力消費、温度、ファン速度を表示および監視します。
+netapp_ontap.storage_shelf、netapp_ontap.system_node、netapp_ontap.clusterの各指標を使用して、ONTAPストレージシェルフとノードの消費電力、温度、ファン速度を表示および監視します（消費電力のみ）。
 
 image:ONTAP_Power_Metrics_1.png["ストレージ電力消費量の指標"]
 
@@ -442,13 +447,17 @@ image:ONTAP_Power_Metrics_1.png["ストレージ電力消費量の指標"]
 | * 特徴 * | * 概要 * 
 
 
-| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
+| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できます
+link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
 
 
-| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。
+link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックすることも、アラートまたはユーザの詳細ページから手動でブロックすることもできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。
+アクセスは、自動応答ポリシーを使用して自動的にブロックすることも、アラートまたはユーザの詳細ページから手動でブロックすることもできます。
+link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 |===
 
 
@@ -552,7 +561,9 @@ Cloud Insights Acquisition Unitでサポートされるオペレーティング�
 
 === Telegraf Agent を更新
 
-テレグラム統合データの取り込みのためのエージェントがバージョン*1.22.3*に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
+テレグラム統合データの取り込みのためのエージェントがバージョン*1.22.3*に更新され、性能とセキュリティが向上しました。
+更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント
+以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
 
 
 
@@ -566,13 +577,17 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 | * 特徴 * | * 概要 * 
 
 
-| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
+| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できます
+link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。
+アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。
+link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 
 
-| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。
+link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
 |===
 '''
 
@@ -583,7 +598,7 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 
 === ネットアップサポートとチャットでライブチャットできます
 
-ネットアップのサポート担当者とライブチャットできます。[ヘルプ]>[サポート]ページで、[チャット]アイコンをクリックするか、[お問い合わせ]セクションの_Chat_をクリックしてチャットセッションを開始します。チャットサポートは、米国の平日にStandard EditionおよびPremium Editionユーザが利用できます。
+ネットアップのサポート担当者とライブチャットできます。  [ヘルプ]>[サポート]ページで、[チャット]アイコンをクリックするか、[お問い合わせ]セクションの_Chat_をクリックしてチャットセッションを開始します。チャットサポートは、米国の平日にStandard EditionおよびPremium Editionユーザが利用できます。
 
 image:ChatIcon.png["笑顔の上にネットアップの「N」が青で表示されたチャットアイコン"]
 
@@ -609,7 +624,8 @@ Cloud Insights の強力なAPIを使用して、ユーザと招待を管理で�
 
 コレクタに失敗したため、重要なメトリックをお見逃しなく！
 
-データコレクタをこれまで以上に簡単に追跡できるようになりました link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["アラート"] データコレクタとAcquisition Unitの障害デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。
+データコレクタをこれまで以上に簡単に追跡できるようになりました link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["アラート"] データコレクタとAcquisition Unitの障害
+デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。
 
 
 
@@ -631,21 +647,25 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 | * 特徴 * | * 概要 * 
 
 
-| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できますlink:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
+| Kubernetesネームスペースのスペースが不足しています | Space_Insightで実行されている_Kubernetes名前空間では'容量不足のリスクがあるKubernetesネームスペース上のワークロードを確認できます各スペースがフルになるまでに推定される残り日数を確認できます
+link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["詳細はこちら"] 
 
 
 | 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。
+アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。
+link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 
 
-| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+| 応力の下の共有リソース | Stress_INSIGHTの_Shared Resourceは、AI/MLを使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供してパフォーマンスの問題をより迅速に解決します。
+link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
 |===
 '''
 
 
-== 2022 年 4 月
+== 2022年4月
 
 
 
@@ -661,7 +681,7 @@ Cloud Insights の形成に役立つ情報をご用意しました。ネット�
 
 image:DashboardWidgetEditorScreen.png["ウィジェットエディタのレイアウトが改善されました"]
 
-また、新しい Count 集約方式も導入されています。棒グラフ、棒グラフ、円グラフ、円グラフの各ウィジェットでデータをグループ化すると、選択した指標の関連オブジェクトの数をすばやく簡単に表示できます。
+また、新しい Count 集約方式も導入されています。  棒グラフ、棒グラフ、円グラフ、円グラフの各ウィジェットでデータをグループ化すると、選択した指標の関連オブジェクトの数をすばやく簡単に表示できます。
 
 image:CountAggregationExample1.png["[Count] を示す [Aggregation] ドロップダウン"]
 
@@ -693,10 +713,13 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 | 内部ボリュームとボリューム容量のフル予測 | Cloud Insights は、監視対象の各内部ボリュームおよびボリュームの容量がなくなるまでの日数を予測できます。この値を設定することで、システム停止のリスクを大幅に軽減できます。 
 
 
-| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
+| Cloud Secure –攻撃に対するユーザアクセスをブロックします | 攻撃が検出されたときにユーザーアクセスをブロックする機能により、ビジネスクリティカルなデータの保護を強化できます。
+アクセスは、自動応答ポリシーを使用して自動的にブロックするか、アラートまたはユーザの詳細ページから手動でブロックできます。
+link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["詳細はこちら"] 
 
 
-| 応力の下の共有リソース | Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
+| 応力の下の共有リソース | Stress Insight の共有リソースでは、 AI/ML を使用して、リソース競合が環境におけるパフォーマンス低下の原因となっている場所を自動的に特定し、影響を受けたワークロードを強調表示し、推奨される対処方法を提供して、パフォーマンスの問題をより迅速に解決します。
+link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["詳細はこちら"] 
 |===
 
 
@@ -721,7 +744,7 @@ Cloud Insights では、多数のエキサイティングなプレビュー機�
 '''
 
 
-== 2022 年 3 月
+== 2022年3月
 
 
 
@@ -759,7 +782,9 @@ image:FSx_System_Monitors_Workloads.png["FSX はワークロードを監視し�
 
 === Telegraf Agent を更新
 
-テレグラム統合データの取り込みのためのエージェントがバージョン *1.2* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
+テレグラム統合データの取り込みのためのエージェントがバージョン *1.2* に更新され、性能とセキュリティが向上しました。
+更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント
+以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
 
 
 
@@ -771,7 +796,7 @@ image:FSx_System_Monitors_Workloads.png["FSX はワークロードを監視し�
 '''
 
 
-== 2022 年 2 月
+== 2022年2月
 
 
 
@@ -783,7 +808,7 @@ image:FSx_System_Monitors_Workloads.png["FSX はワークロードを監視し�
 
 link:https://security.netapp.com/advisory/ntap-20211210-0007/["CVE-20121-44228"]
 link:https://security.netapp.com/advisory/ntap-20211215-0001/["CVE-20121-45046"]
-link:https://security.netapp.com/advisory/ntap-20211218-0001/["CVE-2021-45105"]
+link:https://security.netapp.com/advisory/ntap-20211218-0001/["（CVE-2021-45105"]
 
 これらの脆弱性の詳細と、ネットアップの対応については、を参照してください link:https://www.netapp.com/newsroom/netapp-apache-log4j-response/["ネットアップのニュースルーム"]。
 
@@ -798,13 +823,14 @@ image:Kubernetes_Namespace_Detail_Example_2.png["Kubernetes のネームスペ�
 '''
 
 
-== 2021 年 12 月
+== 2021年12月
 
 
 
 === ONTAP システムをさらに緊密に統合
 
-ネットアップの Event Management System （ EMS ；イベント管理システム）との新たな統合により、 ONTAP ハードウェア障害に対するアラート生成を簡易化できます。link:task_system_monitors.html["調査とアラート"] Cloud Insights の下位レベルの ONTAP メッセージを使用して、トラブルシューティングのワークフローを通知および改善し、 ONTAP 要素管理ツールへの依存をさらに軽減します。
+ネットアップの Event Management System （ EMS ；イベント管理システム）との新たな統合により、 ONTAP ハードウェア障害に対するアラート生成を簡易化できます。
+link:task_system_monitors.html["調査とアラート"] Cloud Insights の下位レベルの ONTAP メッセージを使用して、トラブルシューティングのワークフローを通知および改善し、 ONTAP 要素管理ツールへの依存をさらに軽減します。
 
 
 
@@ -829,10 +855,11 @@ image:LogQueryExplorer.png["ログクエリ"]
 |===
 
 
-| ロール | Cloud Secure アクセス 
+| ロール | Cloud Secureアクセス 
 
 
-| 管理者 | アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。 
+| 管理者 | アラート、フォレンジック、データコレクタ、自動応答ポリシー、 Cloud Secure 用 API など、すべての Cloud Secure 機能を実行できます。
+管理者は、他のユーザを招待することもできますが、割り当てることができるのは Cloud Secure ロールのみです。 
 
 
 | ユーザ | アラートを表示および管理し、フォレンジックを表示できます。ユーザーロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスのブロックを行うことができます。 
@@ -943,7 +970,8 @@ image:Kubernetes_ETL_Example.png["チャージバックレポートに Kubernete
 
 === ダークテーマが到着しました
 
-あなたの多くは暗い主題を求め、 Cloud Insights は答えた。ライトテーマとダークテーマを切り替えるには、ユーザー名の横にあるドロップダウンをクリックします。image:DarkModeSwitch.png["[ ダークテーマに切り替える ] は、 [ ユーザー ] ドロップダウンから選択できます"]
+あなたの多くは暗い主題を求め、 Cloud Insights は答えた。ライトテーマとダークテーマを切り替えるには、ユーザー名の横にあるドロップダウンをクリックします。
+image:DarkModeSwitch.png["[ ダークテーマに切り替える ] は、 [ ユーザー ] ドロップダウンから選択できます"]
 image:DarkModeDashboard.png["ダークテーマで表示される一般的なダッシュボードの画像"]
 
 
@@ -978,7 +1006,9 @@ image:Type-Ahead_Monitor_1.png["モニターのタイプアヘッドフィルタ
 
 === Telegraf Agent を更新
 
-テレグラム統合データの取り込みのためのエージェントがバージョン * 1.19.3* に更新され、性能とセキュリティが向上しました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
+テレグラム統合データの取り込みのためのエージェントがバージョン * 1.19.3* に更新され、性能とセキュリティが向上しました。
+更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント
+以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
 
 
 
@@ -1048,7 +1078,8 @@ image:Type-Ahead-Example-ingest.png["ワイルドカードフィルタ"]
 
 === Edition で使用可能な API
 
-Cloud Insights の強力な API にはこれまで以上にアクセス可能であり、 Alerts API が Standard Edition および Premium Edition で利用可能になりました。各エディションで使用できる API は次のとおりです。
+Cloud Insights の強力な API にはこれまで以上にアクセス可能であり、 Alerts API が Standard Edition および Premium Edition で利用可能になりました。
+各エディションで使用できる API は次のとおりです。
 
 [cols="<,^s,^s,^s"]
 |===
@@ -1101,7 +1132,8 @@ Cloud Insights は、複数のしきい値、 webhook 、 E メールによる�
 
 === Cloud Secure は NFS をサポートしています
 
-Cloud Secure で ONTAP データ収集用の NFS がサポートされるようになりました。SMB および NFS ユーザアクセスを監視し、ランサムウェア攻撃からデータを保護また、 Cloud Secure は、 NFS ユーザ属性を収集するための Active Directory および LDAP ユーザディレクトリもサポートしています。
+Cloud Secure で ONTAP データ収集用の NFS がサポートされるようになりました。SMB および NFS ユーザアクセスを監視し、ランサムウェア攻撃からデータを保護
+また、 Cloud Secure は、 NFS ユーザ属性を収集するための Active Directory および LDAP ユーザディレクトリもサポートしています。
 
 
 
@@ -1128,7 +1160,9 @@ image:CloudSecure_SnapshotPurgeSettings.png["消去設定"]
 
 === Telegraf Agent を更新
 
-テレグラム統合データの取り込み用エージェントは、パフォーマンスとセキュリティが向上し、バージョン 1.17.3 に更新されました。更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
+テレグラム統合データの取り込み用エージェントは、パフォーマンスとセキュリティが向上し、バージョン 1.17.3 に更新されました。
+更新を希望するユーザーは、の適切なアップグレードセクションを参照できます link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html["エージェントのインストール"] ドキュメント
+以前のバージョンのエージェントは、ユーザの操作を必要とせずに引き続き機能します。
 
 
 
@@ -1142,7 +1176,9 @@ image:Monitors_Alert_Description.png["アラートの対処方法と概要"]
 
 === すべてのエディションの Cloud Insights API
 
-API アクセスがすべてのエディションの Cloud Insights で利用できるようになりました。Basic エディションのユーザは、 Acquisition Unit と Data Collector のアクションを自動化できるようになりました。また、 Standard Edition ユーザは、メトリックを照会してカスタムメトリックを取り込むことができます。Premium Edition では、引き続きすべての API カテゴリをフルに使用できます。
+API アクセスがすべてのエディションの Cloud Insights で利用できるようになりました。
+Basic エディションのユーザは、 Acquisition Unit と Data Collector のアクションを自動化できるようになりました。また、 Standard Edition ユーザは、メトリックを照会してカスタムメトリックを取り込むことができます。
+Premium Edition では、引き続きすべての API カテゴリをフルに使用できます。
 
 [cols="<,^s,^s,^s"]
 |===
@@ -1163,7 +1199,7 @@ API アクセスがすべてのエディションの Cloud Insights で利用で
 
 | Data Warehouse |  |  | image:SmallCheckMark.png[""] 
 |===
-API の使用方法の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API のドキュメント"]。
+API の使用方法の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["APIドキュメント"]。
 
 '''
 
@@ -1201,10 +1237,10 @@ image:Webhooks_Notifications_sm.png["Webhook 通知"]
 お客様からの一般的な質問では、データの範囲を視覚化するためのデフォルトオプションが用意されています。そのため、サービス全体で次の 5 つの新しい選択肢が時間範囲ピッカーで利用できるようになりました。
 
 * 過去 30 分
-* 過去 2 時間
-* 過去 6 時間
-* 過去 12 時間
-* 過去 2 日間
+* 過去2時間
+* 過去6時間
+* 過去12時間
+* 過去2日間
 
 
 
@@ -1570,7 +1606,7 @@ IMPORTANT: 現在の Premium Edition のお客様で、レポートを保持し�
 
 === データ取り込み用の新しい API カテゴリ
 
-Cloud Insights では、 * データの取り込み * API カテゴリが追加され、カスタムデータとエージェントをより詳細に制御できるようになりました。この API カテゴリおよびその他の API カテゴリの詳細なドキュメントは、 Cloud Insights で * Admin > API Access * に移動し、 _API Documentation_link をクリックすると参照できます。AU 詳細ページおよび AU リストページに表示される Note フィールドの AU にコメントを追加することもできます。
+Cloud Insights では、 * データの取り込み * API カテゴリが追加され、カスタムデータとエージェントをより詳細に制御できるようになりました。この API カテゴリおよびその他の API カテゴリの詳細なドキュメントは、 Cloud Insights で * Admin > API Access * に移動し、 _API Documentation_link をクリックすると参照できます。AUの詳細ページとAUリストページに表示される[メモ]フィールドでAUにコメントを添付することもできます。
 
 '''
 
@@ -1596,11 +1632,14 @@ image:define_monitor_conditions_2.png["モニター条件"]
 
 Cloud Secure は、悪意のあるアクティビティが検出されたときにスナップショットを自動的に取得することでデータを保護し、データを安全にバックアップします。
 
-ランサムウェア攻撃やその他の異常なユーザアクティビティが検出されたときにスナップショットを取る自動応答ポリシーを定義できます。アラートページから手動で Snapshot を作成することもできます。
+ランサムウェア攻撃やその他の異常なユーザアクティビティが検出されたときにスナップショットを取る自動応答ポリシーを定義できます。
+アラートページから手動で Snapshot を作成することもできます。
 
-自動 Snapshot の作成：image:AlertActionsAutomaticExample.png["アラート処置画面、 1000"]
+自動 Snapshot の作成：
+image:AlertActionsAutomaticExample.png["アラート処置画面、 1000"]
 
-手動スナップショット：image:AlertActionsExample.png["アラート処置画面、 1000"]
+手動スナップショット：
+image:AlertActionsExample.png["アラート処置画面、 1000"]
 
 
 
@@ -1613,13 +1652,23 @@ Cloud Insights UI および REST API で使用できる容量カウンタを次�
 | オブジェクトタイプ（ Object Type ） | カウンタ 
 
 
-| ストレージ | 容量 - スペアの物理容量 - 物理エラー 
+| ストレージ | 容量-スペア物理容量
+容量-物理容量で障害が発生しました 
 
 
-| ストレージプール | データ容量 - 使用済みデータ容量 - その他の合計容量 - 使用済み容量 - 合計容量 - 物理容量 - ソフトリミット 
+| ストレージプール | Data Capacity - Usedの略
+データ容量-合計
+その他の容量-使用済み
+その他の容量-合計
+容量-物理容量
+容量-ソフトリミット 
 
 
-| 内部ボリューム | データ容量 - 使用済みデータ容量 - その他の合計容量 - 使用済みその他の容量 - クローンの合計削減容量 - 合計 
+| 内部ボリューム | Data Capacity - Usedの略
+データ容量-合計
+その他の容量-使用済み
+その他の容量-合計
+クローンの削減容量-合計 
 |===
 
 
@@ -1633,9 +1682,11 @@ Cloud Secure はランサムウェアなどの潜在的な攻撃を検出する�
 * 追加情報は、潜在的なセキュリティ違反の追跡を支援します
 
 
-ランサムウェア攻撃の可能性を示すアラートページ：image:RansomwareAlertExample.png["ランサムウェアアラートの例"]
+ランサムウェア攻撃の可能性を示すアラートページ：
+image:RansomwareAlertExample.png["ランサムウェアアラートの例"]
 
-ランサムウェア攻撃の詳細ページ：image:RansomwareDetailPageExample.png["Ransomware Detail Page の例"]
+ランサムウェア攻撃の詳細ページ：
+image:RansomwareDetailPageExample.png["Ransomware Detail Page の例"]
 
 
 
@@ -1655,11 +1706,13 @@ image:TableWidgetLeftRightPanes.png["左右のペインを示す表ウィジェ�
 
 * 複数の属性のグループ化：統合データ（ Kubernetes 、 ONTAP Advanced Metrics 、 Docker など）については、グループ化の対象として複数の属性を選択できます。選択したグループ化属性に従ってデータが表示されます。
 +
-統合データによるグループ化（編集モードで表示）：image:TableWidgetIntegrationEditMode.png["表ウィジェットでの統合データのグループ化"]
+統合データによるグループ化（編集モードで表示）：
+image:TableWidgetIntegrationEditMode.png["表ウィジェットでの統合データのグループ化"]
 
 * インフラデータ（ストレージ、 EC2 、 VM 、ポートなど）をグループ化することは、従来と同様に単一の属性によって行われます。オブジェクトではない属性によってグループ化する場合、テーブルでグループ行を展開すると、グループ内のすべてのオブジェクトが表示されます。
 +
-インフラストラクチャデータによるグループ化（表示モードで表示）：image:TableWidgetPerformanceData.png["表ウィジェットでのインフラストラクチャデータのグループ化"]
+インフラストラクチャデータによるグループ化（表示モードで表示）：
+image:TableWidgetPerformanceData.png["表ウィジェットでのインフラストラクチャデータのグループ化"]
 
 
 
@@ -1679,7 +1732,7 @@ image:IntegrationMetricFilterExample.png["統合メトリックフィルタリ�
 
 === ONTAP 詳細カウンタデータ
 
-Cloud Insights は、 ONTAP デバイスから収集された多数のカウンタと指標を提供する NetApp ONTAP 固有の * Advanced Counter Data * を利用しています。ONTAP の Advanced Counter データは、ネットアップのすべてのお客様がご利用になれます。 ONTAPこれらの指標を使用して、 Cloud Insights のウィジェットやダッシュボードで、カスタマイズした幅広いデータを視覚化できます。
+Cloud Insights は、 ONTAP デバイスから収集された多数のカウンタと指標を提供する NetApp ONTAP 固有の * Advanced Counter Data * を利用しています。  ONTAP の Advanced Counter データは、ネットアップのすべてのお客様がご利用になれます。 ONTAPこれらの指標を使用して、 Cloud Insights のウィジェットやダッシュボードで、カスタマイズした幅広いデータを視覚化できます。
 
 ONTAP の高度なカウンタを確認するには、ウィジェットのクエリで「 NetApp_ONTAP 」を検索し、カウンタから選択します。
 
@@ -1822,7 +1875,7 @@ image:CSActivityForensicsExample.png["エンティティページの例"]
 
 === ダッシュボードのグループ化
 
-ダッシュボードのグループ化により、パフォーマンスが向上します link:concept_dashboard_features.html#dashboard-groups["ダッシュボードの管理"] あなたに関係があります。関連するダッシュボードをグループに追加して、ストレージや仮想マシンなどを「ワンストップ」で管理できます。
+ダッシュボードのグループ化により、パフォーマンスが向上します link:concept_dashboard_features.html#dashboard-groups[" ダッシュボードの管理"] あなたに関係があります。関連するダッシュボードをグループに追加して、ストレージや仮想マシンなどを「ワンストップ」で管理できます。
 
 グループはユーザごとにカスタマイズされるため、 1 人のグループが他のユーザと異なる場合があります。グループは必要な数だけ作成でき、各グループにダッシュボードをいくつでも配置できます。
 
@@ -1851,7 +1904,7 @@ TV モードと自動更新機能を組み合わせることで、 Cloud Insight
 '''
 
 
-== 2020年4月
+== （2020年4月
 
 
 
@@ -1884,7 +1937,7 @@ Cloud Secure は、ファイルおよびフォルダに対するすべてのユ�
 最適化 link:concept_dashboard_features.html#aggregating-data["時間の集約"] タイムシリーズウィジェット（ライン、スプライン、エリア、積み上げ面グラフ）の間隔は、ダッシュボード / ウィジェットの 3 時間および 24 時間の時間範囲でより頻繁になり、データをより迅速にグラフ化できます。
 
 * 3 時間の時間範囲は、 1 分の集約間隔に最適化されます。これまでは 5 分でした。
-* 24 時間の時間範囲は、 30 分の集約間隔に最適化されます。以前は 1 時間でしたが、
+* 24時間の時間範囲は、30分の集約間隔に最適化されます。以前は 1 時間でしたが、
 
 
 カスタムインターバルを設定して、最適化された集計を上書きすることもできます。
@@ -1916,7 +1969,7 @@ image:NewWidgetPicker.png["新しいウィジェットセレクタ"]
 '''
 
 
-== 2020年2月
+== （2020年2月
 
 
 
@@ -1928,7 +1981,7 @@ Swagger ベースの詳細情報は、 * Admin > API Acccess * の * API Documen
 
 Cloud Insights API では、アクセストークンを使用して、資産や収集などのカテゴリの API にアクセスする権限ベースのアクセスを提供します。
 
-image:API_Documentation.png["API のドキュメント"]
+image:API_Documentation.png["APIドキュメント"]
 
 
 
@@ -2009,7 +2062,7 @@ image:Onboarding_Progress.png["進捗バー"]
 '''
 
 
-== 2019年12月
+== （2019年12月
 
 
 
@@ -2044,7 +2097,7 @@ Cloud Insights の管理ユニット（ MU ）の計算が次のように変更�
 '''
 
 
-== 2019年11月
+== （2019年11月
 
 
 
@@ -2055,7 +2108,7 @@ Cloud Insights の管理ユニット（ MU ）の計算が次のように変更�
 '''
 
 
-== 2019年10月
+== （2019年10月
 
 
 
@@ -2088,7 +2141,16 @@ Cloud Insights * Premium Edition * ではレポート作成が可能です。
 
 === Active IQ の機能拡張
 
-link:concept_activeiq.html["Active IQ のリスク"] ダッシュボードテーブルのウィジェットで使用するだけでなく、照会できるオブジェクトとしても使用できるようになりました。リスクオブジェクトには次の属性が含まれます。 * カテゴリ * 軽減カテゴリ * 潜在的影響 * リスクの詳細 * 重大度 * ソース * ストレージ * ストレージノード * UI カテゴリ
+link:concept_activeiq.html["Active IQ のリスク"] ダッシュボードテーブルのウィジェットで使用するだけでなく、照会できるオブジェクトとしても使用できるようになりました。次のリスクオブジェクト属性が含まれています。
+*カテゴリ
+*緩和カテゴリ
+*潜在的影響
+*リスクの詳細
+*重大度
+*ソース
+*ストレージ
+*ストレージノード
+* UIカテゴリ
 
 '''
 
@@ -2127,7 +2189,7 @@ image:Single-Value Widgets - Formatted.png["書式設定された単一値ウィ
 '''
 
 
-== 2019年8月
+== （2019年8月
 
 
 
@@ -2144,7 +2206,7 @@ Cloud Insights は、ネットアップのお客様とそのハードウェア /
 '''
 
 
-== 2019 年 7 月
+== （2019年7月
 
 
 
@@ -2173,7 +2235,7 @@ Cloud Insights は、ネットアップのお客様とそのハードウェア /
 '''
 
 
-== 2019 年 6 月
+== （2019年6月
 
 
 
@@ -2233,7 +2295,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 | CPU コア | 4. | 2. 
 
 
-| メモリ | 16 GB | 8 GB 
+| メモリ | 16GB | 8 GB 
 |===
 
 
@@ -2248,7 +2310,16 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 | Linux の場合 | Windows の場合 
 
 
-| CentOS 7.3 64 ビット CentOS 7.4 64 ビット CentOS 7.6 64 ビット Debian 9 64 ビット Red Hat Enterprise Linux 7.3 64 ビット Red Hat Enterprise Linux 7.4 64 ビット Red Hat Enterprise Linux 7.6 64 ビット Ubuntu Server 18.04 LTS | Microsoft Windows 10 64 ビット Microsoft Windows Server 2008 R2 Microsoft Windows Server 2019 
+| CentOS 7.3（64ビット
+CentOS 7.4 64ビット
+CentOS 7.6 64ビット
+Debian 9 64ビット
+Red Hat Enterprise Linux 7.3（64ビット）
+Red Hat Enterprise Linux 7.4（64ビット）
+Red Hat Enterprise Linux 7.6（64ビット）
+Ubuntu Server 18.04 LTS | Microsoft Windows 10 64ビット
+Microsoft Windows Server 2008 R2
+Microsoft Windows Server 2019の略 
 |===
 '''
 
@@ -2291,7 +2362,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 * AWS を中心とした新しい機能 link:concept_import_from_dashboard_gallery.html["ダッシュボード"] ギャラリーに追加されており、インポート可能です：
 +
 ** AWS Admin - どの EC2 が需要の高いか
-** AWS EC2 Instance Performance by Region 』を参照してください
+** AWS EC2 Instance Performance by Region
 
 
 
@@ -2325,7 +2396,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 '''
 
 
-== 2019年1月
+== （2019年1月
 
 
 
@@ -2344,7 +2415,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 '''
 
 
-== 2018年12月
+== (2018年12月).
 
 
 
@@ -2373,7 +2444,7 @@ Cloud Insights では、スイッチやストレージなどのインフラデ�
 '''
 
 
-== 2018年11月
+== （2018年11月
 
 
 

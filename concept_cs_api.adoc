@@ -29,7 +29,8 @@ API アクセスの要件：
 
 == API ドキュメント（ Swagger ）
 
-最新のAPI情報は、Workload Securityにログインし、* Admin > API Access *に移動することで確認できます。[API Documentation*] リンクをクリックします。API ドキュメントは Swagger ベースです。 API の簡単な概要情報と使用方法を提供しており、環境内で試すことができます。
+最新のAPI情報は、Workload Securityにログインし、* Admin > API Access *に移動することで確認できます。[API Documentation*] リンクをクリックします。
+API ドキュメントは Swagger ベースです。 API の簡単な概要情報と使用方法を提供しており、環境内で試すことができます。
 
 
 

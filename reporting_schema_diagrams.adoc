@@ -261,13 +261,13 @@ image:storage_node_hourly_performance_fact.jpg[""]
 
 
 
-=== Switch Hourly Performance for Host 』を参照してください
+=== Switch Hourly Performance for Host
 
 image:switch_performance_for_host_hourly_fact.png[""]
 
 
 
-=== Switch Hourly Performance for Port 』を参照してください
+=== Switch Hourly Performance for Port
 
 image:switch_performance_for_port_hourly_fact.png[""]
 
@@ -279,7 +279,7 @@ image:switch_performance_for_storage_hourly_fact.png[""]
 
 
 
-=== Switch Hourly Performance for Tape 』を参照してください
+=== Switch Hourly Performance for Tape
 
 image:switch_performance_for_tape_hourly_fact.png[""]
 

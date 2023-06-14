@@ -95,7 +95,7 @@ Cloud Insights では、 Brocade Network Advisor データコレクタから次�
 | パスワード | スイッチのパスワード 
 
 
-| インベントリのポーリング間隔（分） | デフォルトは 40 です。 
+| インベントリのポーリング間隔（分） | デフォルトは40です 
 
 
 | Report Access Gateway の略 | Access Gateway モードにデバイスを含める場合にオンにします 

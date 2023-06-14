@@ -37,7 +37,8 @@ image:Reporting_New_Report.png["新規レポートの作成"]
 +
 利用可能なパッケージのリストが表示されます。
 
-. [ストレージとストレージプールの容量]*を選択しますimage:Reporting_Select_Source_For_Report.png["レポートのソースの選択"]
+. [ストレージとストレージプールの容量]*を選択します
+image:Reporting_Select_Source_For_Report.png["レポートのソースの選択"]
 . [開く]*を選択します
 +
 レポートで使用できるスタイルが表示されます。

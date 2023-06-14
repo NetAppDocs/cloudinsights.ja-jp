@@ -31,22 +31,53 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | コンポーネント | Linux 要件 | Windows 要件 
 
 
-| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9 * Debian（64ビット）：9および10 * Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4 * Red Hat Enterprise Linux（64ビット）： 7.2～7.9、8.1～9.1 * Rocky 9.0、9.1 * Ubuntu Server: 18.04および20.04 LTSこのコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 | ライセンス版の次のいずれかを実行しているコンピュータ。 * Microsoft Windows 10 64ビット* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11このコンピュータは、他のアプリケーションレベルのソフトウェアを実行していない必要があります。専用のサーバを使用することを推奨します。 
+| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
+* Debian (64ビット): 9と10
+* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
+* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～9.1
+*ロッキー9.0、9.1
+* Ubuntu Server：18.04および20.04 LTS
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+* Microsoft Windows 10 64ビット
+* Microsoft Windows Server 2012
+* Microsoft Windows Server 2012 R2
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+* Microsoft Windows Server 2022
+* Microsoft Windows 11
 
 
-| CPU | 2 個の CPU コア | 同じ 
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 
+
+
+| CPU | 2個のCPUコア | 同じ 
 
 
 | メモリ | 8GB の RAM | 同じ 
 
 
-| 使用可能なディスクスペース | Linuxの場合、ディスクスペースは次のように割り当てます。/opt/netapp 10 gb /var/log/netapp 40 gb /tmpインストール中に少なくとも1 GB使用可能 | 50 GB 
+| 使用可能なディスクスペース | 50GB
+Linuxの場合は、次の方法でディスクスペースを割り当てる必要があります。
+/opt/netapp 10GB
+/var/log/netapp 40GB
+/tmpインストール中に1 GB以上の空き容量が必要です | 50GB 
 
 
-| ネットワーク | 100Mbpsまたは1Gbpsのイーサネット接続、静的IPアドレス、ポート80または443からAcquisition Unitから*.cloudinsights.netapp.comまたはCloud Insights 環境（例 \https://<environment_id>.c01.cloudinsights.netapp.com）が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください link:data_collector_list.html["Data Collector"]。組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、例外リストに追加された次のドメインを取得する必要があります。*.cloudinsights.netapp.com詳細については、プロキシについて準備してください link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちらをご覧ください"] または link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちらをご覧ください"]。 | 同じ 
+| ネットワーク | 100Mbps/1Gbpsイーサネット接続、静的IPアドレス、およびAcquisition Unitから*。.cloudinsights.netapp.comまたはCloud Insights環境（\https：//<environment_id>.c01.cloudinsights.netapp.com）へのポート80または443の接続が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください link:data_collector_list.html["Data Collector"]。
+
+組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、次のドメインを例外リストに追加する必要があります。
+
+*.cloudinsights.netapp.com
+
+詳細については、「プロキシについて」を参照してください link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちらをご覧ください"] または link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちらをご覧ください"]。 | 同じ 
 
 
-| 権限 | Acquisition Unit サーバに対する sudo 権限/tmp は EXEC 機能でマウントする必要があります。 | Acquisition Unit サーバに対する管理者権限が必要です 
+| 権限 | Acquisition Unit サーバに対する sudo 権限
+/tmp は EXEC 機能でマウントする必要があります。 | Acquisition Unit サーバに対する管理者権限が必要です 
 
 
 | ウィルススキャン |  | インストール時に、すべてのウィルススキャンソフトウェアを完全に無効にする必要があります。インストール後に、 Acquisition Unit ソフトウェアで使用するパスをウィルススキャンから除外する必要があります。 

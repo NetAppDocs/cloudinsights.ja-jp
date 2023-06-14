@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_dc_hds_hcp.html 
 keywords: data collector, Hitachi HDS, HCP 
-summary: HDS データコレクタを構成しています。 
+summary: HDSデータコレクタの設定 
 ---
 = Hitachi HCP データコレクタ
 :toc: macro
@@ -54,7 +54,7 @@ Cloud Insights は、 Hitachi HCP データコレクタから次のインベン�
 
 インベントリデータを収集するには、次の情報が必要です。
 
-* HCP サーバの IP アドレス
+* HCPサーバのIPアドレス
 * HCP ソフトウェアおよびピア権限の読み取り専用のユーザ名およびパスワード
 
 
@@ -67,16 +67,16 @@ Cloud Insights は、 Hitachi HCP データコレクタから次のインベン�
 | フィールド | 説明 
 
 
-| HCP ホスト | HCP ホストの IP アドレスまたは完全修飾ドメイン名 
+| HCPホスト | HCP ホストの IP アドレスまたは完全修飾ドメイン名 
 
 
-| HCP ポート | デフォルトは 9090 です 
+| HCPポート | デフォルトは 9090 です 
 
 
 | HCP ユーザー ID | HCP ホストのユーザ名。 
 
 
-| HCP パスワード | HCP ホストに使用するパスワード。 
+| HCPパスワード | HCP ホストに使用するパスワード。 
 
 
 | HCP 認証タイプ | HCP_LOCAL または active_directory を選択してください 
@@ -91,9 +91,9 @@ Cloud Insights は、 Hitachi HCP データコレクタから次のインベン�
 | フィールド | 説明 
 
 
-| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 60. です。 
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは60です。 
 
 
-| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは 900. です。 
+| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは900です。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

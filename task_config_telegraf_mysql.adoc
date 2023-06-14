@@ -53,7 +53,67 @@ image:MySQLDCConfigWindows.png["MySQL の設定"]
 | オブジェクト： | 識別子： | 属性： | 「 dataPoints 」： 
 
 
-| MySQL | ネームスペース MySQL サーバ | ノード IP ノード名 | 中断されたクライアント（ 1 秒あたり）中止された接続（ 1 秒あたり） RX バイト（ 1 秒あたり） TX バイト（ 1 秒あたり）コマンド管理者（ 1 秒あたり） コマンド Alter Event コマンド Alter Function コマンド Alter Instance コマンド Alter 手順コマンド Alter 表コマンド Alter 表領域コマンド Alter User コマンド Alter User コマンド Alter To Keycache コマンド BEGIN コマンド Binlog コマンド手順コマンド Change Master コマンド Change Repl Filter コマンド Check コマンド チェックサムコマンドコミットコマンドデータベースの作成コマンド関数の作成コマンドインデックスの作成コマンド手順コマンドの作成トリガコマンドの作成トリガコマンドの作成 UDF コマンドユーザーコマンドの作成ビューコマンドの作成 SQL 接続エラー作成した tmp ディスクテーブル遅延エラーフラッシュコマンドの受け入れ ハンドラ Commit InnoDB Buffer Pool Bytes Data Key Blocks Not flushed Key Read Requests Key Write Requests Key Writes Max Execution Time Exceeded Max Used Connections Performance Schema Accounts Lost Prepared Stmt Count Qcache Free Blocks Queries 質問フル結合選択範囲選択範囲チェックを選択します [ テーブルロックを即時スキャン ] を選択します 
+| MySQL | ネームスペース
+MySQLサーバ | ノードIP
+ノード名 | 中止されたクライアント数（1秒あたり）
+中断された接続数（1秒あたり）
+受信バイト数（1秒あたり）
+転送バイト数（1秒あたり）
+管理コマンド数（1秒あたり）
+コマンドはイベントを変更します
+コマンドは機能を変更します
+コマンドはインスタンスを変更します
+コマンドは手順を変更します
+コマンドはサーバーを変更します
+コマンドはテーブルを変更します
+コマンドはテーブルスペースを変更します
+コマンドはユーザーを変更します
+コマンド解析（Commands Analyze
+コマンドはキーキャッシュに割り当てます
+コマンドが開始されます
+コマンドBinlog
+コマンド手順を呼び出します
+コマンド変更DB
+コマンドマスターを変更します
+[コマンド][リプレゼンテーションフィルタを変更]
+コマンドチェック
+コマンドチェックサム
+コマンドCommit
+コマンドCreate DB
+コマンドイベントを作成します
+コマンド機能を作成します
+コマンドインデックスを作成します
+コマンドCreate手順
+コマンドサーバーを作成します
+コマンドテーブルを作成します
+コマンドCreate Trigger
+コマンドUDFを作成します
+コマンドCreate User
+コマンドビューを作成します
+コマンドdealloc SQL
+接続エラーが許可されました
+tmpディスクテーブルを作成しました
+遅延エラー
+フラッシュコマンド
+ハンドラコミット
+InnoDBバッファプールバイトデータ
+キーブロックはフラッシュされませんでした
+キー読み取り要求
+キー書き込み要求
+キー書き込み
+最大実行時間を超過しました
+最大使用接続数
+ファイルを開きます
+パフォーマンススキーマアカウントが失われました
+準備済みStmt数
+Qcache空きブロック
+クエリ
+質問
+[Full Join]を選択します
+[Full Range Join]を選択します
+範囲チェックを選択します
+スキャンを選択します
+テーブルがすぐにロックされます 
 |===
 
 

@@ -43,9 +43,11 @@ Cloud Insights は、ハイブリッドマルチクラウドの監視機能を�
 == はじめに
 
 * どうすればよいですか link:task_cloud_insights_onboarding_1.html["*開始する*"] Cloud Insights を使用する場合は、
-* サインアップしています。では、どうすればよいですか？link:task_getting_started_with_cloud_insights.html["データの取得"]
+* サインアップしています。では、どうすればよいですか？
+link:task_getting_started_with_cloud_insights.html["データの取得"]
 link:concept_user_roles.html["ユーザを設定する"]
-* 更新が次の手順link:task_defining_annotations.html["アセットの準備：アノテーション"]
+* 更新が次の手順
+link:task_defining_annotations.html["アセットの準備：アノテーション"]
 link:concept_querying_assets.html["目的のアセットの検索：クエリ"]
 link:concept_dashboards_overview.html["必要なデータの表示：ダッシュボード"]
 link:https:task_create_monitor.html["監視とアラート"]

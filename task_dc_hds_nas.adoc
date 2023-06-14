@@ -19,7 +19,7 @@ summary: HDS NAS （ HNAS ）データコレクタの設定。
 
 
 [role="lead"]
-Hitachi Vantara NAS データコレクタは、 HDS NAS クラスタの検出をサポートするインベントリおよび設定データコレクタです。Cloud Insights では、 NFS 共有と CIFS 共有、ファイルシステム（内部ボリューム）、 SPAN （ストレージプール）の検出がサポートされます。
+Hitachi Vantara NASデータコレクタは、HDS NASクラスタの検出をサポートするインベントリおよび設定データコレクタです。Cloud Insights では、 NFS 共有と CIFS 共有、ファイルシステム（内部ボリューム）、 SPAN （ストレージプール）の検出がサポートされます。
 
 
 
@@ -58,7 +58,7 @@ Cloud Insights では、 HNAS データコレクタから次のインベント�
 * デバイスの IP アドレス
 * ポート 22 、 SSH プロトコル
 * ユーザ名とパスワードの権限レベル： Supervisor
-* 注：このデータコレクタは SSH ベースであるため、ホストが HNAS 自体またはクラスタの接続先のシステム管理ユニット（ SMU ）の TCP 22 への SSH セッションを開始できるようにする必要があります。
+* 注：このデータコレクタはSSHベースなので、ホストするAUは、HNAS自体またはクラスタが接続されているSystems Management Unit（SMU）のTCP 22へのSSHセッションを開始できる必要があります。
 
 
 
@@ -87,7 +87,7 @@ Cloud Insights では、 HNAS データコレクタから次のインベント�
 | フィールド | 説明 
 
 
-| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは 30 分です。 
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは30分です。 
 |===
 
 
@@ -107,9 +107,12 @@ Cloud Insights では、 HNAS データコレクタから次のインベント�
 | 「 Error connecting 」 with error messages 「 Error setting up shell channel ：」または「 Error opening shell channel 」というエラーメッセージが表示されます。 | ネットワーク接続に問題があるか、 SSH の設定ミスが原因である可能性があります。代替 SSH クライアントとの接続を確認します 
 
 
-| 「 Command ： XXX has timed out 」というエラーメッセージが表示され、「 Timeout 」または「 Error Retrieving data 」というエラーが表示されます。 | * 代替 SSH クライアントでコマンドを実行してください * タイムアウトが増加します 
+| 「 Command ： XXX has timed out 」というエラーメッセージが表示され、「 Timeout 」または「 Error Retrieving data 」というエラーが表示されます。 | *別のSSHクライアントを使用してコマンドを実行してください
+*タイムアウトを増やします 
 
 
-| " 接続エラー " または " 無効なログイン認証情報 " のエラーメッセージ " デバイスと通信できませんでした： " | * IP アドレスの確認 * ユーザ名とパスワードの確認 * 代替 SSH クライアントとの接続を確認してください 
+| " 接続エラー " または " 無効なログイン認証情報 " のエラーメッセージ " デバイスと通信できませんでした： " | * IPアドレスを確認します
+*ユーザー名とパスワードを確認してください
+*代替SSHクライアントとの接続を確認してください 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

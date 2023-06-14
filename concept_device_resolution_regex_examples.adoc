@@ -107,13 +107,13 @@ hostname4-Raleigh-solaris
 
 
 
-=== 例 3
+=== 例3.
 
 正規表現の最後のセクションの前後にあるかっこ（）は、どの部分がホスト名であるかを識別します。「 VSAN3 」の部分がホスト名である場合は、 [a-zA-Z0-9]+_ （ [a-zA-Z0-9]+ ） . * となります
 
-* ゾーン： * A_VSAN3_SR48KENT_A_CX2578_SPA0
+*ゾーン：* A_VSAN3_SR48KENT_A_CX2578_SPA0
 
-* ホスト名： * SR48KENT
+*ホスト名：* SR48KENT
 
 * RegExp ： * [a-zA-Z0-9]+_[a-zA-Z0-9]+_ （ [a-zA-Z0-9]+ ） . *
 
@@ -124,8 +124,8 @@ hostname4-Raleigh-solaris
 次のようなゾーン名がある場合は、正規表現を作成できます。
 
 * myComputerName123 ： HBA1_Symm1_FA3
-* myComputerName123 ： HBA2_Symm1_FA5
-* myComputerName123 ： HBA3_Symm1_FA7
+* myComputerName123-HBA2_Symm1_FA5
+* myComputerName123-HBA3_Symm1_FA7
 
 
 これらを取り込むために使用できる正規表現は次のとおりです。
@@ -176,8 +176,8 @@ hostname4-Raleigh-solaris
 
 次のようなゾーン名がある場合は、正規表現を作成できます。
 
-* Storage1_Switch1_myComputerName123A_A1_FC1
-* Storage2_Switch2_myComputerName123B_A2_FC2
+* storage1_Switch1_myComputerName123A_A1_FC1を参照してください
+* storage2_Switch2_myComputerName123B_A2_FC2
 * Storage3_Switch3_myComputerName123T_A3_FC3
 
 
@@ -210,17 +210,17 @@ hostname4-Raleigh-solaris
 
 
 
-=== 例 7
+=== 例7.
 
-* ゾーン： * myComputerName123_HBA1_Symm1_FA1
+*ゾーン：* myComputerName123_HBA1_Symm1_FA1
 
-* ホスト名： * myComputerName123
+*ホスト名：* myComputerName123
 
 * RegExp ： * （ [a-zA-Z0-9]+ ） _ 。 *
 
 
 
-=== 例 8
+=== 例8
 
 この例では、最初ののの前のすべての部分を検出します。
 
@@ -246,33 +246,33 @@ Hostname ： MyComputerName
 
 
 
-=== 例 10
+=== 例10
 
 この例では、ゾーンの例から「 MyComputerName123 」を抽出します。
 
-* ゾーン： * Storage1_Switch1_MyComputerName123A_A1_FC1
+*ゾーン：* Storage1_Switch1_MyComputerName123A_A1_FC1
 
-Storage2_Switch2_MyComputerName123B_A2_FC2
+storage2_Switch2_MyComputerName123B_A2_FC2
 
 Storage3_Switch3_MyComputerName123T_A3_FC3
 
-* ホスト名： * MyComputerName123
+*ホスト名：* MyComputerName123
 
 * RegExp ： * 。 * 。 _ 。 * ？ _ （ [a-zA-Z0-9]+ ） * [ABT] _ 。 *
 
 
 
-=== 例 11
+=== 例11
 
-* ゾーン： * Storage1_Switch1_MyComputerName123A_A1_FC1
+*ゾーン：* Storage1_Switch1_MyComputerName123A_A1_FC1
 
-* ホスト名： * MyComputerName123A
+*ホスト名：* MyComputerName123A
 
 * RegExp ： * 。 * 。 _ 。 * ？ _ （ [a-zA-Z0-9]+ ） _ 。 * ？ _
 
 
 
-=== 例 12
+=== 例12
 
 角かっこ * の内側にある ^ （キャレット） * は、その式の否定を表します。たとえば、 [^Ff] は大文字の F と小文字の F を除くすべての文字に一致し、 [^a-z] は小文字の a~z を除くすべての文字に一致します。上の例の場合は、 _ 以外の文字に一致します。format ステートメントは、出力ホスト名にを追加します。
 
@@ -280,25 +280,26 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 * ホスト名： * mhs-apps44-d
 
-* RegExp ： * （ [^_]+ ） _ （ [AB] ）。 * Cloud Insights でのフォーマット： \1-\2 （ [^_]+ ） _ （ [^_]+ ） _ （ [^_]+ ）。 * Cloud Insights でのフォーマット： \1-\2-\3
+* RegExp:*([^_]+)_([AB]).* Cloud Insightsの形式:\1-\2([^_]+)_
+([^_]+)_([^_]+).* Cloud Insightsの形式は\1-\2-\3です
 
 
 
-=== 例 13
+=== 例13
 
 この例では、ストレージエイリアスの区切りにが使用されています。この場合、が文字列で実際に使用されており、式の一部ではないことを示すために、を使用する必要があります。
 
 * ストレージエイリアス： * \Hosts\E2DOC01C1\E2DOC01N1
 
-* ホスト名： * E2DOC01N1
+*ホスト名：* E2DOC01N1
 
 * RegExp ： * \\ 。 * ？ \\ 。 * ？ \\ （ .* ？）
 
 
 
-=== 例 14
+=== 例14
 
-この例では、ゾーンの例から「 PD-RV-W-AD-2 」を抽出します。
+この例では、ゾーンの例から「PD-RV-W-AD-2」を抽出します。
 
 * ゾーン： * PD_D-RV-W-AD-2_01
 
@@ -308,13 +309,13 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 
 
-=== 例 15
+=== 例15
 
 この例では、形式の設定でホスト名に「 US-BV- 」を追加しています。
 
-* ゾーン： * SRV_USBVM11_F1
+*ゾーン：* SRV_USBVM11_F1
 
-* ホスト名： * US-BV-M11
+*ホスト名：* US-BV-M11
 
 * RegExp ： * SRV_USBV （ [a-zA-Z0-9]+ ） _F [12]
 
