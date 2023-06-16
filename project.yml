@@ -89,6 +89,8 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: モニタリングオペレータの操作を開始します
       url: "/task_config_telegraf_agent_k8s.html"
+    - title: モニタリングオペレータオプション
+      url: "/telegraf_agent_k8s_config_options.html"
     - title: Kubernetes クラスタページ
       url: "/kubernetes_cluster_detail.html"
     - title: Kubernetesの監視とマッピング
