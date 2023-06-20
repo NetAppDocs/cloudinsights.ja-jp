@@ -3184,17 +3184,6 @@ API ドキュメントは Swagger ベースです。 API の簡単な概要情�
   <block id="b6818f4aea164eb8b94acf9d70d2e034" category="inline-link-macro">エージェントをインストールします</block>
   <block id="36bb58d4c9e71b2c4ea1af277d7e3a81" category="paragraph">実行する必要があります <block ref="8c7f43ef892529523b024d4c41e5a1ca" category="inline-link-macro-rx"></block> データコレクタから情報を取得します。Agent をインストールする前に、お使いの環境がオペレーティングシステム、 CPU 、メモリ、およびディスクスペースの要件を満たしていることを確認してください。</block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">ストレージワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。</block>
-  <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-Red Hat Enterprise Linux 7.x、8.x 64ビット
-CentOS 7.x 64ビット
-CentOS 8ストリーム
-Ubuntu 20から22 64ビット
-Rocky 8.x 64ビット、Rocky 9.x 64ビット
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
-
-SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">コマンド</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4 個の CPU コア</block>
@@ -14461,4 +14450,16 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="adff1a6c775e6cf9e3cea08dd7eb24da" category="list-text">ダッシュボードとアセットランディングページのウィジェットのデータ * 自動更新 * 選択したダッシュボードの期間（ダッシュボードの時間を上書きするように設定されている場合は、ウィジェットの時間範囲）で設定された更新間隔（ 10 秒ごと）に基づいてデータが表示されます。</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Kubernetesのバージョンを確認します（<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  v1.20.x以下の場合、これは想定される制限です。  NetApp Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。</block>
+  <block id="9f0b6346113de87bff4b194abaf599f1" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+Red Hat Enterprise Linux 7.x、8.x 64ビット
+CentOS 7.x 64ビット
+CentOS 8ストリーム
+Ubuntu 20から22 64ビット
+Rocky 8.x 64ビット、Rocky 9.x 64ビット
+SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
+
+SE（Security Enhanced）Linuxはサポートされていません。</block>
 </blocks>
