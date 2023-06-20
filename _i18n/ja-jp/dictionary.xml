@@ -14459,4 +14459,6 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="7278beedc594698425d0370a4a6a04ca" category="paragraph"><block ref="2abbdc1223d80452c66c4379ec2c0003" category="inline-link-macro-rx"></block> ダッシュボードやアセットページにほぼリアルタイムでデータを表示できます。</block>
   <block id="2cbb751e20b968f38b3cd64033f181fe" category="list-text">*TV モード * は、すっきりとしたディスプレイを提供します。ナビゲーションメニューは非表示になっており、データ表示用の画面のスペースが増えます。</block>
   <block id="adff1a6c775e6cf9e3cea08dd7eb24da" category="list-text">ダッシュボードとアセットランディングページのウィジェットのデータ * 自動更新 * 選択したダッシュボードの期間（ダッシュボードの時間を上書きするように設定されている場合は、ウィジェットの時間範囲）で設定された更新間隔（ 10 秒ごと）に基づいてデータが表示されます。</block>
+  <block id="02230bab9788e4843408e124331bb1ca" category="cell">クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。</block>
+  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Kubernetesのバージョンを確認します（<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  v1.20.x以下の場合、これは想定される制限です。  NetApp Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。</block>
 </blocks>
