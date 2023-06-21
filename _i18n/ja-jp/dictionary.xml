@@ -14462,4 +14462,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
 
 SE（Security Enhanced）Linuxはサポートされていません。</block>
+  <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube-state-metricsデプロイメントのCPU制限</block>
+  <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube-state-metrics展開のメモリ制限</block>
 </blocks>

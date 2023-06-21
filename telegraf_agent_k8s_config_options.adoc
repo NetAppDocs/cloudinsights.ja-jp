@@ -141,6 +141,12 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 +++ 
 
 
+|  | cpuLimit | kube-state-metricsデプロイメントのCPU制限 
+
+
+|  | memLimit | kube-state-metrics展開のメモリ制限 
+
+
 | ログ |  | オペレータのログ収集とインストールをカスタマイズできる設定オプション 
 
 
