@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference_object_icons.html 
 summary: Cloud Insights オブジェクトアイコンリファレンスです。 
-keywords: icons, assets, objects, reference 
+keywords: icons, assets, objects, reference, kubernetes, map 
 ---
 = オブジェクトアイコンリファレンス
 :toc: macro
@@ -21,4 +21,20 @@ keywords: icons, assets, objects, reference
 [role="lead"]
 Cloud Insights で使用されるオブジェクトアイコンのクイックリファレンスです。
 
-image:Icon_Glossary.png["アイコンのリファレンス"]
+
+
+== インフラストラクチャアイコン：
+
+image:Icon_Glossary.png["インフラストラクチャアイコン参照"]
+
+
+
+== Kubernetesのアイコン：
+
+image:K8sIconsWithLabels.png["Kubernetesアイコンリファレンス、幅= 180"]
+
+
+
+== Kubernetesのネットワークパフォーマンスの監視とマップアイコン：
+
+image:ServiceMap_Icons.png["Kubernetes Network Performance Monitoring and Map、width=640"]

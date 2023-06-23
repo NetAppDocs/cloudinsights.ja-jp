@@ -2235,8 +2235,6 @@ Qcache空きブロック
   <block id="8b91cb352f837187391eccc1bbd95135" category="summary">Cloud Insights オブジェクトアイコンリファレンスです。</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">オブジェクトアイコンリファレンス</block>
   <block id="9c760c96232338b3451e1d7fde6ce957" category="paragraph">Cloud Insights で使用されるオブジェクトアイコンのクイックリファレンスです。</block>
-  <block id="390c989aa3d9a6bba33ccfbf291f42d3" category="inline-image-macro">アイコンのリファレンス</block>
-  <block id="822c8b943b98c805e2153d211dbe71a8" category="paragraph"><block ref="822c8b943b98c805e2153d211dbe71a8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d93c484f546badb579eb956aa422abb" category="summary">NetApp HCI 管理サーバのデータコレクタの設定</block>
   <block id="734503beda013cb22d8829d4a3379d2b" category="doc">NetApp HCI 管理サーバのデータコレクタの設定</block>
   <block id="0275f535def004f8099692fd2cc76d94" category="paragraph">NetApp HCI 管理サーバデータコレクタは、 NetApp HCI ホスト情報を収集します。管理サーバ内のすべてのオブジェクトに対する読み取り専用の権限が必要です。</block>
@@ -14464,4 +14462,13 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4
 SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube-state-metricsデプロイメントのCPU制限</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube-state-metrics展開のメモリ制限</block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">インフラストラクチャアイコン：</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">インフラストラクチャアイコン参照</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetesのアイコン：</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetesアイコンリファレンス、幅= 180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetesのネットワークパフォーマンスの監視とマップアイコン：</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes Network Performance Monitoring and Map、width=640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
