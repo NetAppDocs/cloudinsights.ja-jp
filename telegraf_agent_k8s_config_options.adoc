@@ -123,6 +123,12 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 | kube-state-metricsの略 |  | Operatorのkube状態メトリックのインストールをカスタマイズできる設定オプション 
 
 
+|  | cpuLimit | kube-state-metricsデプロイメントのCPU制限 
+
+
+|  | memLimit | kube-state-metrics展開のメモリ制限 
+
+
 |  | cpuRequest | kube state metrics deploymentのCPU要求 
 
 
@@ -139,12 +145,6 @@ persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulset
 例：cronjobs=[*]、daemonsets=[*]、deployments=[*]、ingresses=[*]、jobs=[*]、namespaces=[*]、nodes=[*]、
 persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]、resourcequotas=[*]、services=[*]、statefulsets=[*]
 +++ 
-
-
-|  | cpuLimit | kube-state-metricsデプロイメントのCPU制限 
-
-
-|  | memLimit | kube-state-metrics展開のメモリ制限 
 
 
 | ログ |  | オペレータのログ収集とインストールをカスタマイズできる設定オプション 
@@ -228,13 +228,14 @@ spec:
   telegraf:
     # use these settings to fine tune data collection
     collectionInterval: 20s
-    #batchSize:
-    #bufferLimit:
-    #roundInterval:
-    #collectionJitter:
-    #precision:
-    #flushInterval:
-    #flushJitter:
+
+    # batchSize:
+    # bufferLimit:
+    # roundInterval:
+    # collectionJitter:
+    # precision:
+    # flushInterval:
+    # flushJitter:
 
     # Collect kubernetes.system_container metrics and objects in the kube-system|cattle-system namespaces for managed kubernetes clusters
     # (EKS, AKS, GKE, managed Rancher). Set this to true if you want collect these metrics.
@@ -259,6 +260,8 @@ spec:
     # rsMemRequest:
 
   kube-state-metrics:
+    # cpuLimit:
+    # memLimit:
     # cpuRequest:
     # memRequest:
 
