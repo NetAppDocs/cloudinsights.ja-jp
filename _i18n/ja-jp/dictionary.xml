@@ -8403,17 +8403,8 @@ VCSタイプ
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">アラート解決の動作を定義します</block>
   <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">ログモニタのアラートの解決方法を選択できます。次の 3 つの選択肢があります。</block>
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">瞬時に解決します</block>
-  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解決条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタによって生成される以降のすべてのアラートを抑制します。</block>
-  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">アラート解決オプション</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">///
-**すぐに解決*:アラートはすぐに解決され、それ以上のアクションは必要ありません
-**時間に基づいて解決*：指定した時間が経過するとアラートが解決されます
-**ログエントリに基づいて解決*：アラートは、後続のログアクティビティが発生すると解決されます。たとえば、あるオブジェクトが「 available 」としてログされる場合などです。</block>
-  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">アラート解決</block>
-  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>
-///</block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">通知タイプと受信者を選択します</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">[ チーム通知の設定 ] セクションでは、電子メールと Webhook のどちらでチームに通知するかを選択できます。</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">アラート方法を選択します</block>
@@ -14471,8 +14462,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
 
 SE（Security Enhanced）Linuxはサポートされていません。</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">netapp-monitoring-configuration agentconfigurationを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。  詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">dockerMetricCollectionEnabled</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。</block>
+  <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解像度条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタがmatching_group_by_generatedを持つ後続のすべてのアラートを抑制します。</block>
+  <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします。</block>
 </blocks>
