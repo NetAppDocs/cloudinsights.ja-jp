@@ -14471,4 +14471,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
 
 SE（Security Enhanced）Linuxはサポートされていません。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">netapp-monitoring-configuration agentconfigurationを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。  詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">dockerMetricCollectionEnabled</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。</block>
 </blocks>
