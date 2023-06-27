@@ -584,8 +584,5 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 
 
 | クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。 | Kubernetesのバージョンを確認します（ `kubectl version`）。  v1.20.x以下の場合、これは想定される制限です。  NetApp Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。 
-
-
-| オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。 | netapp-monitoring-configuration agentconfigurationを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。  詳細については、オペレータのを参照してください link:telegraf_agent_k8s_config_options.html["設定オプション"]。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
