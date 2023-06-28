@@ -6386,7 +6386,6 @@ httpdリクエストメソッドPUT
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 詳細：</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">サブスクリプションコストを見積もります</block>
-  <block id="125896ecc7af5f5e57ffa0aa99abe89e" category="paragraph">[Subscription Calculators]では、必要になると予想されるManaged Unitの数に基づいて、推定される月あたりのCloud Insightsコストが計算されます。現在の値は事前に入力されており、それらの値を調整して将来の増加予測を計画するのに役立ちます。インフラ、Kubernetes、またはその両方の値を調整できます。</block>
   <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">見積価格は、サブスクリプション期間に基づいて変更されます。
 注：計算ツールは見積もり専用です。ご登録時に正確な価格が設定されます。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">インフラとKubernetesのコスト試算ツールが表示されたサブスクリプションページ</block>
@@ -14464,4 +14463,7 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解像度条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタがmatching_group_by_generatedを持つ後続のすべてのアラートを抑制します。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします。</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMBプロトコルバージョン3.1以前。  ワークロードセキュリティは、FlexCache を使用するSMB構成では機能しないことに注意してください。FlexCacheを使用するシステムでは、ONTAP 9.7以降では、FPolicyがNFS環境でのみサポートされます。</block>
+  <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Managed Unit = KubernetesのvCPU 4台</block>
+  <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">サブスクリプション計算ツールを使用して、必要なManaged Unitの数に基づいてCloud Insightsサブスクリプションのコストを見積もることができます。現在の値は事前に入力されており、それらの値を調整して将来の増加予測を計画するのに役立ちます。インフラ、Kubernetes、またはその両方の値を調整できます。</block>
+  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Managed Unitの使用状況を確認できます</block>
 </blocks>
