@@ -2901,7 +2901,6 @@ Microsoft Windows Server 2019の略</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">このデータコレクタは、次の機能でサポートされています。</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">この問題</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> が固定されています</block>
-  <block id="e6624b1e82461272ada2be584f22a093" category="list-text">SMBプロトコルバージョン3.1以前。  ワークロードセキュリティは、FlexCache を使用するSMB構成では機能しないことに注意してください。ONTAP 9.7以降では、FPolicyはNFS環境でのみサポートされます。</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFSプロトコルバージョン4.0以前</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます</block>
   <block id="1b1cd01c54254af639999400741a0b75" category="list-text">ONTAP Select がサポートされています</block>
@@ -14464,4 +14463,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解像度条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタがmatching_group_by_generatedを持つ後続のすべてのアラートを抑制します。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします。</block>
+  <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMBプロトコルバージョン3.1以前。  ワークロードセキュリティは、FlexCache を使用するSMB構成では機能しないことに注意してください。FlexCacheを使用するシステムでは、ONTAP 9.7以降では、FPolicyがNFS環境でのみサポートされます。</block>
 </blocks>
