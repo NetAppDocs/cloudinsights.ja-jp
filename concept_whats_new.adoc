@@ -43,12 +43,6 @@ image:Metering_Usage.png["計測の使用状況の内訳"]
 
 
 
-=== レポート作成
-
-Cloud InsightsのReportingコンポーネントの名前が「Cloud Insights Analytics」に変更されました。ただし、機能は変わりません。
-
-
-
 === コレクタ/取得の変更点：
 
 Data Collector/Acquisition Unitに次の変更が加えられています。
