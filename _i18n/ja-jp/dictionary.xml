@@ -1809,7 +1809,6 @@ Cloud Central のプロファイルの E メールアドレスが Cloud Insights
   <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">Kubernetes Network Monitoring and Mapは、すべてのユーザに使用できます</block>
   <block id="ff13f3d2e68843ff68c076f0df232858" category="inline-link-macro">_Kubernetesのネットワークパフォーマンスとマップ_</block>
   <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Kubernetesワークロード間の依存関係をマッピングすることでトラブルシューティングを簡易化し、Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。多くのお客様がプレビュー中に役立つと感じており、今では誰もが楽しめるようになっています。</block>
-  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Cloud InsightsのReportingコンポーネントの名前が「Cloud Insights Analytics」に変更されました。ただし、機能は変わりません。</block>
   <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">コレクタ/取得の変更点：</block>
   <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">Data Collector/Acquisition Unitに次の変更が加えられています。</block>
   <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">Data DomainおよびCohesity MUは、40 TiB：1 MUで計測されます。</block>
@@ -14466,4 +14465,6 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Managed Unit = KubernetesのvCPU 4台</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">サブスクリプション計算ツールを使用して、必要なManaged Unitの数に基づいてCloud Insightsサブスクリプションのコストを見積もることができます。現在の値は事前に入力されており、それらの値を調整して将来の増加予測を計画するのに役立ちます。インフラ、Kubernetes、またはその両方の値を調整できます。</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Managed Unitの使用状況を確認できます</block>
+  <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">既存のレポートの編集</block>
+  <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">デフォルトの場所にあるファイルを編集すると、次回のレポートカタログの更新時にレポートが上書きされるリスクがあることに注意してください。編集したレポートは新しい名前で保存するか、デフォルト以外の場所に保存することをお勧めします。</block>
 </blocks>
