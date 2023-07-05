@@ -19,7 +19,7 @@ summary: Dell EMC Isilon / PowerScale RESTデータコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。
+Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。このコレクタは、OneFS 8.0.0以降を実行しているアレイをサポートします。
 
 
 
@@ -60,6 +60,7 @@ Cloud Insights では、このデータコレクタから次のインベント�
 * ユーザアカウントとパスワード。このアカウントは、adminまたはrootである必要はありませんが、サービスアカウントに相当数の読み取り専用権限を付与する必要があります。以下の表を参照してください
 * Dell EMC Isilon / PowerScaleクラスタのIPアドレス/完全修飾ドメイン名
 * ポート8080へのHTTPSアクセス
+* OneFS 8.0.0以降を実行しているIsilon/PowerScaleクラスタ
 
 
 [cols="3*"]

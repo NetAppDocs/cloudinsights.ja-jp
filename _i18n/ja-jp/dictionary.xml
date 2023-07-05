@@ -7826,7 +7826,6 @@ Incr Requests Misses（1秒あたり）
   <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Dell EMC Isilon / PowerScale RESTデータコレクタの設定</block>
   <block id="e23a1eab258608c673f841550477728b" category="doc">Dell EMC Isilon / PowerScale RESTデータコレクタ</block>
-  <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。</block>
   <block id="de3ff796ee06f589476ae3625f935268" category="paragraph">Cloud Insights では、このデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="f2c6151d6c0d99f3666129b97e2100f5" category="cell">ドライブ</block>
   <block id="249694a485fc5d3289c38986b4f8e887" category="cell">クラスタ</block>
@@ -14470,4 +14469,6 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="6345c18147755da14a72a1bcc448c878" category="paragraph"><block ref="6345c18147755da14a72a1bcc448c878" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bea93c5448a53dbeae5f078ae207efa5" category="paragraph"><block ref="416a8d7353098379fdb36ba6e8aa6da8" category="inline-image-macro-rx" type="image"></block>
 <block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。このコレクタは、OneFS 8.0.0以降を実行しているアレイをサポートします。</block>
+  <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">OneFS 8.0.0以降を実行しているIsilon/PowerScaleクラスタ</block>
 </blocks>
