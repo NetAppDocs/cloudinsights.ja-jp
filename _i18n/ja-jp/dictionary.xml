@@ -1464,13 +1464,9 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="f6ee2d35944570b247cc02129e0311be" category="paragraph">* ベースライン * は、検出された飽和状態に直前の 1 時間における各ワークロードのレポートされる最大データポイントです。</block>
   <block id="bf306d07c3ed41852c5f9cb551a07b59" category="paragraph">競合 * または飽和 * は、 IOPS が共有ストレージプール内の他のリソースまたはワークロードに影響していると判断された場合に発生します。</block>
   <block id="0b34f00d1d4a3885b35a431a55efeb18" category="section-title">要件の厳しいワークロード</block>
-  <block id="b3d48647b3779314aebd78fd52891ad4" category="paragraph">共有リソースで要求の厳しいワークロードや影響を受けるワークロードを確認するには、 Cloud Insights メニューの * Dashboards &gt; Shared Resources の Stress* をクリックします。</block>
   <block id="f59f9eea55ba2a2439645d8e6d60708c" category="inline-image-macro">ワークロードのリスト</block>
-  <block id="de841194d737155906a92014035475f2" category="paragraph"><block ref="de841194d737155906a92014035475f2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="abf3a029f9cc4648911d9ae02dd252ca" category="paragraph">Cloud Insights は、飽和が検出されたワークロードのリストを表示します。Cloud Insights では、少なくとも 1_easteResource _ * と * 少なくとも 1_impacted resource_が 検出されたワークロードのみが表示されます。</block>
   <block id="d7c664bf82d9e14603a845f0ffe47993" category="paragraph">ワークロードをクリックすると、そのワークロードの詳細ページが表示されます。上部チャートには、競合や飽和が発生している共有リソース（ストレージプールなど）のアクティビティが表示されます。</block>
   <block id="2ca1e64d0a4fdfcf135961f6931ac68b" category="inline-image-macro">競合を示す共有リソース</block>
-  <block id="bb6db0535ce42b380d76743c35ffe29a" category="paragraph"><block ref="bb6db0535ce42b380d76743c35ffe29a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e4a0aeb0ee372dc4742c55ad85d4088" category="paragraph">以下の 2 つのグラフは、要件の厳しいワークロードの影響を受けやすいワークロードを示しています。</block>
   <block id="3058d78451b014873b4ca65f0669489e" category="inline-image-macro">要求の厳しいワークロードチャート</block>
   <block id="46562410a025cae8a5441c0cc0a4c00f" category="inline-image-macro">影響を受けるワークロードグラフ</block>
@@ -14467,4 +14463,11 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">デフォルトの場所にあるファイルを編集すると、次回のレポートカタログの更新時にレポートが上書きされるリスクがあることに注意してください。編集したレポートは新しい名前で保存するか、デフォルト以外の場所に保存することをお勧めします。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">Forensics_All Activity_or_Entities_pagesのフィルタにアスタリスク(*)などのワイルドカード文字を含む文字を入力すると、ページのロードに時間がかかります。</block>
   <block id="1099e56ef7a6e4b5d3d41443b52d83aa" category="paragraph">1つのUnisphere for VMAX/PowerMaxインスタンスが1つ以上のSymmetrix VMAX 3以降のストレージアレイを管理している可能性があります。このコレクタは、そのUnisphereインスタンスに対して「ローカル」であるすべてのストレージアレイの検出をデフォルトで試行します。Unisphereインスタンスが「リモート」アレイ（SRDFレプリケーションを介して接続されているアレイなど）を認識している場合、これらのアレイは無視されます。検出するには、そのサイト内のいずれかのUnisphereインスタンスがローカルと認識しているCloud Insightsで追加のUnisphereコレクタを作成する必要があります。</block>
+  <block id="ae8f504ff2e83723f08fc4f873fcdca5" category="paragraph">共有リソースで要件の厳しいワークロードや影響を受けるワークロードの調査を開始するには、*[Dashboards]&gt;[Insights]*をクリックし、[Stress]*[Insight]で*[Shared Resources]を選択します。</block>
+  <block id="923231dd5cc497f857ab7bc31259567c" category="inline-image-macro">[Insights]メニュー</block>
+  <block id="4ad858c99ade794af9d0e0a1491e01bc" category="paragraph"><block ref="4ad858c99ade794af9d0e0a1491e01bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0111ce9fed5023fdfdac30af08350a0d" category="paragraph">Cloud Insights は、飽和が検出されたワークロードのリストを表示します。Cloud Insightsでは、少なくとも1つの_demanding resource_*または*_impacted resource__が検出されたワークロードが表示されます。</block>
+  <block id="6345c18147755da14a72a1bcc448c878" category="paragraph"><block ref="6345c18147755da14a72a1bcc448c878" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bea93c5448a53dbeae5f078ae207efa5" category="paragraph"><block ref="416a8d7353098379fdb36ba6e8aa6da8" category="inline-image-macro-rx" type="image"></block>
+<block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

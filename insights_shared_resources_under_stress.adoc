@@ -43,20 +43,20 @@ Cloud Insights が業界をリードするコンピューティングワーク�
 
 == 要件の厳しいワークロード
 
-共有リソースで要求の厳しいワークロードや影響を受けるワークロードを確認するには、 Cloud Insights メニューの * Dashboards > Shared Resources の Stress* をクリックします。
+共有リソースで要件の厳しいワークロードや影響を受けるワークロードの調査を開始するには、*[Dashboards]>[Insights]*をクリックし、[Stress]*[Insight]で*[Shared Resources]を選択します。
 
-image:Shared_resources_Under_Stress_menu.png["ワークロードのリスト"]
+image:InsightsMenu.png["[Insights]メニュー"]
 
-Cloud Insights は、飽和が検出されたワークロードのリストを表示します。Cloud Insights では、少なくとも 1_easteResource _ * と * 少なくとも 1_impacted resource_が 検出されたワークロードのみが表示されます。
+Cloud Insights は、飽和が検出されたワークロードのリストを表示します。Cloud Insightsでは、少なくとも1つの_demanding resource_*または*_impacted resource__が検出されたワークロードが表示されます。
 
 ワークロードをクリックすると、そのワークロードの詳細ページが表示されます。上部チャートには、競合や飽和が発生している共有リソース（ストレージプールなど）のアクティビティが表示されます。
 
-image:Shared_resources_Under_Stress_SharedResource.png["競合を示す共有リソース"]
+image:ResourceInsightShared.png["競合を示す共有リソース"]
 
 以下の 2 つのグラフは、要件の厳しいワークロードの影響を受けやすいワークロードを示しています。
 
-image:Insights_Demanding_Workload_Chart.png["要求の厳しいワークロードチャート"]
-image:Insights_Impacted_Workload_Chart.png["影響を受けるワークロードグラフ"]
+image:ResourceInsightDemanding.png["要求の厳しいワークロードチャート"]
+image:ResourceInsightImpacted-a.png["影響を受けるワークロードグラフ"]
 
 各表の下には、競合に影響を及ぼすワークロードやリソースが表示されます。  リソース（ VM など）をクリックすると、そのリソースの詳細ページが開きます。ワークロードをクリックすると、関連するポッドを示すクエリページが開きます。リンクが空のクエリを開く場合は、影響を受けるポッドがアクティブな競合の一部でなくなっている可能性があります。クエリの時間範囲を変更して、ポッドリストを表示する時間範囲を大きくすることも、よりフォーカスした時間範囲にすることもできます。
 
