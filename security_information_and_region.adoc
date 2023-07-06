@@ -41,7 +41,7 @@ Cloud Insights は次の情報を保存します。
 
 * 秘密
 +
-シークレットは、 Cloud Insights Acquisition Unit で顧客のデバイスやサービスにアクセスするために使用されるクレデンシャルで構成されます。これらのクレデンシャルは AES-256 を使用して暗号化され、秘密鍵は Acquisition Unit にのみ格納され、お客様の環境からは脱退しません。この設計により、 Privileged Cloud Insights SRE でもプレーンテキストで顧客シークレットにアクセスできません。
+シークレットは、 Cloud Insights Acquisition Unit で顧客のデバイスやサービスにアクセスするために使用されるクレデンシャルで構成されます。これらのクレデンシャルは強力な非対称暗号化を使用して暗号化され、秘密鍵はAcquisition Unitにのみ格納され、お客様の環境から離れることはありません。この設計により、 Privileged Cloud Insights SRE でもプレーンテキストで顧客シークレットにアクセスできません。
 
 * 機能データ
 +

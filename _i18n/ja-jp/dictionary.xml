@@ -5887,7 +5887,6 @@ cisys storapid &lt;all&gt;の略</block>
   <block id="cbbe9ca36f7a864171d70f736ed408bd" category="list-text">設定データ</block>
   <block id="b38208d6c0caf426b9ce527a7f6fa072" category="paragraph">これは、顧客のインベントリや操作を管理するために使用される、顧客から提供された構成データの要約です。たとえば、監視対象デバイスのホスト名や IP アドレス、ポーリング間隔、タイムアウト値などです</block>
   <block id="ffb85bfe93f1d2f1654a7048b87f0403" category="list-text">秘密</block>
-  <block id="d21b579e2da249b92e4bd86e3e8811ca" category="paragraph">シークレットは、 Cloud Insights Acquisition Unit で顧客のデバイスやサービスにアクセスするために使用されるクレデンシャルで構成されます。これらのクレデンシャルは AES-256 を使用して暗号化され、秘密鍵は Acquisition Unit にのみ格納され、お客様の環境からは脱退しません。この設計により、 Privileged Cloud Insights SRE でもプレーンテキストで顧客シークレットにアクセスできません。</block>
   <block id="6bf565eb0af1d9c4319c14b7f1ed3b40" category="list-text">機能データ</block>
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">このデータは、ネットアップがクラウドデータサービスを提供することで生成されます。このサービスは、クラウドデータサービスの開発、導入、運用、メンテナンス、セキュリティの各分野をネットアップに通知します。機能データには、顧客情報や個人情報は含まれません。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">ユーザーアクセスデータ</block>
@@ -14471,4 +14470,5 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
 <block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。このコレクタは、OneFS 8.0.0以降を実行しているアレイをサポートします。</block>
   <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">OneFS 8.0.0以降を実行しているIsilon/PowerScaleクラスタ</block>
+  <block id="ffa95e8fd7e458c2481c8a1213dd74e9" category="paragraph">シークレットは、 Cloud Insights Acquisition Unit で顧客のデバイスやサービスにアクセスするために使用されるクレデンシャルで構成されます。これらのクレデンシャルは強力な非対称暗号化を使用して暗号化され、秘密鍵はAcquisition Unitにのみ格納され、お客様の環境から離れることはありません。この設計により、 Privileged Cloud Insights SRE でもプレーンテキストで顧客シークレットにアクセスできません。</block>
 </blocks>
