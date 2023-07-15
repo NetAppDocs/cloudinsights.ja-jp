@@ -21,9 +21,6 @@ summary: この分析情報から、リソースが環境内の他のリソー�
 [role="lead"]
 ONTAP コールドストレージの再利用_Insightは、ONTAP システム上のボリュームについて、コールド容量、潜在的なコスト/電力削減、推奨される対処方法に関するデータを提供します。
 
-
-NOTE: _Reclaim ONTAP コールドストレージ_Insightはとみなされます link:concept_preview_features.html["_プレビュー_"] このため、機能は変更される場合があります。
-
 これらの分析情報を表示するには、*[Dashboards]>[Insights]*に移動し、_Reclaim ONTAP Cold Storage_Insightを確認します。このInsightでは、Cloud Insights でコールドストレージが検出された場合にのみ影響を受けるストレージが表示され、検出されなかった場合は「All clear」というメッセージが表示されます。
 
 30日前に作成されたコールドデータは表示されません。

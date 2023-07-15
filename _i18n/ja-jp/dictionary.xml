@@ -3216,11 +3216,6 @@ CPUとRAMが増加すると、DSCは初期化状態になり、その後自動�
 例：cronjobs、デーモンセット、配置、入力、ジョブ、ネームスペース、ノード、persistentvolumeclaims、
 persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulsets</block>
   <block id="42cecfeff00cc916fef4f64e7b921079" category="cell">ラベル</block>
-  <block id="d250be49afad7b894de05a3b7ae8bbae" category="cell">kube-state-metricsでキャプチャするリソースをカンマで区切ったリスト
-+++
-例：cronjobs=[*]、daemonsets=[*]、deployments=[*]、ingresses=[*]、jobs=[*]、namespaces=[*]、nodes=[*]、
-persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]、resourcequotas=[*]、services=[*]、statefulsets=[*]
-+++</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube-state-metricsデプロイメントのCPU制限</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">memLimit</block>
@@ -8862,7 +8857,6 @@ process_count（float）</block>
   <block id="9d6898c9d6fff2bd62d85b66643bb3d1" category="doc">分析情報：ONTAP コールドストレージの再利用</block>
   <block id="0d76fbb36f181c92649274af9d5b537e" category="paragraph">ONTAP コールドストレージの再利用_Insightは、ONTAP システム上のボリュームについて、コールド容量、潜在的なコスト/電力削減、推奨される対処方法に関するデータを提供します。</block>
   <block id="fa0f9b91b9b3862eb566219b032aa9f6" category="inline-link-macro">_プレビュー_</block>
-  <block id="dc258ad625dfe61afe78bdd8eaced72a" category="admonition">_Reclaim ONTAP コールドストレージ_Insightはとみなされます <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> このため、機能は変更される場合があります。</block>
   <block id="62cbec5499f7528b78b111c904e78b71" category="paragraph">これらの分析情報を表示するには、*[Dashboards]&gt;[Insights]*に移動し、_Reclaim ONTAP Cold Storage_Insightを確認します。このInsightでは、Cloud Insights でコールドストレージが検出された場合にのみ影響を受けるストレージが表示され、検出されなかった場合は「All clear」というメッセージが表示されます。</block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">30日前に作成されたコールドデータは表示されません。</block>
   <block id="da69b960f5bb93c02fdd4886868836f6" category="inline-image-macro">コールドデータを含む3つのストレージを表示するInsightのリスト</block>
@@ -14471,4 +14465,77 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">Cloud Insights は、Dell EMC Isilon / PowerScale RESTデータコレクタを使用して、Dell EMC IsilonまたはPowerScaleストレージからインベントリデータとパフォーマンスデータを取得します。このコレクタは、OneFS 8.0.0以降を実行しているアレイをサポートします。</block>
   <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">OneFS 8.0.0以降を実行しているIsilon/PowerScaleクラスタ</block>
   <block id="ffa95e8fd7e458c2481c8a1213dd74e9" category="paragraph">シークレットは、 Cloud Insights Acquisition Unit で顧客のデバイスやサービスにアクセスするために使用されるクレデンシャルで構成されます。これらのクレデンシャルは強力な非対称暗号化を使用して暗号化され、秘密鍵はAcquisition Unitにのみ格納され、お客様の環境から離れることはありません。この設計により、 Privileged Cloud Insights SRE でもプレーンテキストで顧客シークレットにアクセスできません。</block>
+  <block id="16601c709d6f082c4421fe1d28974834" category="section-title">[集計]、[単位]、[条件付き書式]の順に選択します</block>
+  <block id="0a9f1c237356720961c024fce3f78a12" category="section-title">集計と単位</block>
+  <block id="c4d2b1e614724dc8838bf027b78d7fe8" category="paragraph">「値」列では、表示される値の集計方法を選択したり、それらの値を表示する単位を選択したりすることで、クエリ結果をさらに絞り込むことができます。これらのオプションは、列の上部にある「3つのドット」メニューを選択すると表示されます。</block>
+  <block id="4d5e2bd7c10a04613e320165a2aef636" category="inline-image-macro">[クエリ]ページの結果には、集計、条件付き書式、単位表示、列名の変更が表示されます</block>
+  <block id="6359b5d0dddbd864f91ddfec03e1db49" category="paragraph"><block ref="6359b5d0dddbd864f91ddfec03e1db49" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5771a362d88a71a657bfcd21ca54b3f" category="section-title">単位（ Units ）</block>
+  <block id="ae2ad730f8b9e34404a53be6603eb8e4" category="paragraph">値を表示する単位を選択できます。たとえば、[Selected]列にraw容量が表示され、値の単位がGiBで表示されている場合は、[Unit Display]ドロップダウンから[TiB]を選択します。</block>
+  <block id="d9ceca6b3a280ab6926157d124ea15d7" category="section-title">集約</block>
+  <block id="e108aa85577531fd71feda784d41caf3" category="paragraph">同様に、表示されている値が基になるデータから「Average」として集約されている場合、 ただし、すべての値の合計を表示する場合は、_Group by_drop（グループ化された値に合計を表示する場合）または_Time Aggregate by_drop（行の値に基礎となるデータの合計を表示する場合）から[Sum]を選択します。</block>
+  <block id="4a0aedb71a2047b4501702b3bbc92002" category="paragraph">グループ化されたデータポイントを_Avg、Max、Min、またはSum_で集計することができます。</block>
+  <block id="93ad26b5f738a3399877d18e809c4ffe" category="paragraph">個 々 の行データは、_Average、Last data point Acquired、Maximum、Minimum、またはSum_で集計できます。</block>
+  <block id="d07a67a9bf91a7e251537433f822107d" category="section-title">条件付き書式</block>
+  <block id="b286203207ee36be1b0daa6eb3a4e2f8" category="paragraph">条件付き書式を使用すると、クエリ結果リストで警告レベルと重要レベルのしきい値を強調表示し、外れ値や例外的なデータポイントを即座に可視化できます。</block>
+  <block id="4c941a5536be07eee34fa9b29bd005c9" category="inline-image-macro">クエリページの条件付き書式</block>
+  <block id="077eb3e55847ad3494e20a7b4b22abfd" category="paragraph"><block ref="077eb3e55847ad3494e20a7b4b22abfd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a83a3620bfc4182656b8b3bba751d85b" category="paragraph">条件付き書式は、列ごとに個別に設定されます。たとえば、容量列ではしきい値のセットを選択し、スループット列ではしきい値のセットを選択できます。</block>
+  <block id="b416aba7067608c1cc6b8c37ef3753a2" category="section-title">列名を変更します</block>
+  <block id="c478709a4fc402ef4317c5de6580c96f" category="paragraph">列の名前を変更すると、[クエリ結果]リストに表示される名前が変更されます。クエリリストを.csvにエクスポートすると、新しい列名も結果のファイルに表示されます。</block>
+  <block id="c9cc8cce247e49bae79f15173ce97354" category="section-title">保存（Save）</block>
+  <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">2023年7月</block>
+  <block id="8d6bad49c4eea7a9cf27fd507f44022c" category="section-title">最近の変更を表示します</block>
+  <block id="210e83cd3251fb18d6b85fcfa343be97" category="paragraph">Data Collectorのランディングページに、最近の変更のリストが表示されるようになりました。データコレクタのランディングページの下部にある[Recent Changes]ボタンをクリックするだけで、最近のデータコレクタの変更が表示されます。</block>
+  <block id="f7796a8f8185c8c1d264bce4bad25eee" category="inline-image-macro">最近の変更の例</block>
+  <block id="57c43929c060c6b6731a95fee2e6ac4b" category="paragraph"><block ref="57c43929c060c6b6731a95fee2e6ac4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7106bac801506d89011c164f7281f183" category="section-title">オペレータの改善</block>
+  <block id="c6d80de9d1332fa033db27b32896a7ca" category="paragraph">に次の改善が加えられました <block ref="89b3ece041fc6e3eaf91d1f18cb70562" category="inline-link-macro-rx"></block> 導入：</block>
+  <block id="2a81267b1c9c4611addccc58ffea4ce5" category="list-text">Dockerのメトリック収集をバイパスするオプション</block>
+  <block id="62643d895d41437dc1854e6321bbca7d" category="list-text">Telegrafデーモンセットおよびレプリカセットに許容範囲を追加およびカスタマイズする機能</block>
+  <block id="4157bbc9478996de33c632d1be8b4617" category="section-title">Insight：コールドストレージの再利用</block>
+  <block id="82f32ca1972e78989f469529f9e93e21" category="inline-link-macro">ONTAPコールドストレージInsightを再利用します</block>
+  <block id="2703e92da2def9a17ac70dcd90bd8ab5" category="paragraph">。 <block ref="a08e2a6a27f9f88fce91a86a2a4aaa0e" category="inline-link-macro-rx"></block> FlexGroupがサポートされるようになりました。すべてのお客様がこのサービスを利用できるようになりました。</block>
+  <block id="ffd94c31fd478610bae8a28f858f4967" category="section-title">Operator Image Signatureの略</block>
+  <block id="b58a6be98adebdc6de5cd79aa5cf7223" category="paragraph">NetApp Kubernetes Monitoring Operatorのプライベートリポジトリを使用するお客様向けに、Operatorのインストール時にイメージ署名公開キーをコピーできるようになり、ダウンロードしたソフトウェアの信頼性を確認できるようになりました。オプションの手順で[_Copy Image Signature Public Key]ボタンを選択して、オペレータイメージをプライベートリポジトリにアップロードします。</block>
+  <block id="b48c3957268aba1d2cb9774cdfb76b1a" category="inline-image-macro">公開キーをダウンロードします</block>
+  <block id="241e648e3eaa9f9b228db06a6cf403f7" category="paragraph"><block ref="241e648e3eaa9f9b228db06a6cf403f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="659e26ba67b278fd61383664fb1ed670" category="section-title">クエリの集計、条件付き書式など</block>
+  <block id="7d7ce3fd83ffcf864f9c0285f8d8b6ab" category="paragraph">集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました <block ref="f011edc734cda8dc5136e8e133afbd9b" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b88de4b6bcbafe41a9b2e66846672ee" category="paragraph">これらの機能は、統合タイプのデータ（Kubernetes、ONTAP Advanced Metricsなど）で使用できるようになりました。インフラオブジェクト（ストレージ、ボリューム、スイッチなど）についても近日提供予定です。</block>
+  <block id="2b4c43183ba48840a9a245b4b11ed0f1" category="section-title">監査用API</block>
+  <block id="8b0aa17c3cd1f148c8d84b8d9eade119" category="paragraph">APIを使用して、監査対象イベントを照会またはエクスポートできるようになりました。[Admin]&gt;[API Access]に移動し、詳細については[_API Documentation_link]を選択してください。</block>
+  <block id="f0d8b3eaae91d14b5849226503f1f130" category="inline-image-macro">監査用API Swagger、幅= 400</block>
+  <block id="08eebc22528b6ae269764bbbfbd37d98" category="paragraph"><block ref="08eebc22528b6ae269764bbbfbd37d98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9d9cc2d70ab2dbd66579e01f859b8da3" category="section-title">Data Collector：Trident Economyの略</block>
+  <block id="3b9a2bab6a97ecd5c040555f8147b32b" category="paragraph">Cloud InsightsがTridentエコノミードライバをサポートするようになり、次のようなメリットが実現しました。</block>
+  <block id="5b51c0421974fa9b23cfbe623de43e2e" category="list-text">ポッドとONTAPのqtreeのマッピングとパフォーマンス指標を可視化</block>
+  <block id="0e6dfce910a8488d971baa1019611d0e" category="list-text">Kubernetesポッドからバックエンドストレージへのシームレスなトラブルシューティングと簡単なナビゲーションを提供します</block>
+  <block id="d43e029b6a4626717198326d15889721" category="list-text">監視機能でバックエンドのパフォーマンスの問題をプロアクティブに検出します</block>
+  <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">公差と接線（Tolerations and Taints）</block>
+  <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">（_AgentConfiguration_）をクリックします</block>
+  <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">_telegraf_、_fluent-bit_、および_net-observer_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。</block>
+  <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">塗料および耐性</block>
+  <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">Kubernetesの詳細はこちらをご覧ください <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">netapp-monitoring-configuration agentconfigurationを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。  詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">dockerMetricCollectionEnabled</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。</block>
+  <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
+  <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS追加の許容値。</block>
+  <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">rsTolerations</block>
+  <block id="0a1cb9f6e7c89d89c765fdd1efa6183b" category="cell">Telegraf-RS追加許容値。</block>
+  <block id="d6c26478ca41a23cc9741a4e92576269" category="cell">許容範囲</block>
+  <block id="c511c601aee805f46f3767063104cdd8" category="cell">kube-state-metrics追加の許容値。</block>
+  <block id="cea61529c4fbcfd86c0a3459bc229a87" category="cell">kube-state-metricsでキャプチャするリソースをカンマで区切ったリスト
+
++++
+例：cronjobs=[*]、daemonsets=[*]、deployments=[*]、ingresses=[*]、jobs=[*]、namespaces=[*]、nodes=[*]、
+persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]、resourcequotas=[*]、services=[*]、statefulsets=[*]
++++</block>
+  <block id="7e7b391c65060e4613a7fb96bfd2ef31" category="cell">Fluent-bit-tolerationsの略</block>
+  <block id="035bf5f67349238f72eae5d508efac99" category="cell">FLUENT-BIT-DSの追加許容値。</block>
+  <block id="8776d1f0ee4232b1c2ff5bc38e4b2603" category="cell">event-exporter-tolerationsの略</block>
+  <block id="bac5ce71f32beb834c27a988cad33543" category="cell">イベントエクスポータの追加許容値。</block>
+  <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4 -公差</block>
 </blocks>

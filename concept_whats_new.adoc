@@ -25,6 +25,72 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
+== 2023年7月
+
+
+
+=== 最近の変更を表示します
+
+Data Collectorのランディングページに、最近の変更のリストが表示されるようになりました。データコレクタのランディングページの下部にある[Recent Changes]ボタンをクリックするだけで、最近のデータコレクタの変更が表示されます。
+
+image:Recent_Changes_Example.png["最近の変更の例"]
+
+
+
+=== オペレータの改善
+
+に次の改善が加えられました link:/telegraf_agent_k8s_config_options.html["Kubernetesオペレータ"] 導入：
+
+* Dockerのメトリック収集をバイパスするオプション
+* Telegrafデーモンセットおよびレプリカセットに許容範囲を追加およびカスタマイズする機能
+
+
+
+
+=== Insight：コールドストレージの再利用
+
+。 link:insights_reclaim_ontap_cold_storage.html["ONTAPコールドストレージInsightを再利用します"] FlexGroupがサポートされるようになりました。すべてのお客様がこのサービスを利用できるようになりました。
+
+
+
+=== Operator Image Signatureの略
+
+NetApp Kubernetes Monitoring Operatorのプライベートリポジトリを使用するお客様向けに、Operatorのインストール時にイメージ署名公開キーをコピーできるようになり、ダウンロードしたソフトウェアの信頼性を確認できるようになりました。オプションの手順で[_Copy Image Signature Public Key]ボタンを選択して、オペレータイメージをプライベートリポジトリにアップロードします。
+
+image:Operator_Public_Image_Key.png["公開キーをダウンロードします"]
+
+
+
+=== クエリの集計、条件付き書式など
+
+集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました link:/task_create_query.html["クエリ"]。
+
+image:Query_Page_Aggregation_etc.png["[クエリ]ページの結果には、集計、条件付き書式、単位表示、列名の変更が表示されます"]
+
+これらの機能は、統合タイプのデータ（Kubernetes、ONTAP Advanced Metricsなど）で使用できるようになりました。インフラオブジェクト（ストレージ、ボリューム、スイッチなど）についても近日提供予定です。
+
+
+
+=== 監査用API
+
+APIを使用して、監査対象イベントを照会またはエクスポートできるようになりました。[Admin]>[API Access]に移動し、詳細については[_API Documentation_link]を選択してください。
+
+image:Audit_API_Swagger.png["監査用API Swagger、幅= 400"]
+
+
+
+=== Data Collector：Trident Economyの略
+
+Cloud InsightsがTridentエコノミードライバをサポートするようになり、次のようなメリットが実現しました。
+
+* ポッドとONTAPのqtreeのマッピングとパフォーマンス指標を可視化
+* Kubernetesポッドからバックエンドストレージへのシームレスなトラブルシューティングと簡単なナビゲーションを提供します
+* 監視機能でバックエンドのパフォーマンスの問題をプロアクティブに検出します
+
+
+'''
+
+
 == 2023年6月
 
 

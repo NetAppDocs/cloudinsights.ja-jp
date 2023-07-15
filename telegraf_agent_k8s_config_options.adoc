@@ -120,6 +120,15 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 |  | outputTimeout | を参照してください link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf設定ドキュメント"] 
 
 
+|  | dockerMetricCollectionEnabled | Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。 
+
+
+|  | dsTolerations | Telegraf-DS追加の許容値。 
+
+
+|  | rsTolerations | Telegraf-RS追加許容値。 
+
+
 | kube-state-metricsの略 |  | Operatorのkube状態メトリックのインストールをカスタマイズできる設定オプション 
 
 
@@ -140,7 +149,11 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulsets 
 
 
+|  | 許容範囲 | kube-state-metrics追加の許容値。 
+
+
 |  | ラベル | kube-state-metricsでキャプチャするリソースをカンマで区切ったリスト
+
 +++
 例：cronjobs=[*]、daemonsets=[*]、deployments=[*]、ingresses=[*]、jobs=[*]、namespaces=[*]、nodes=[*]、
 persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]、resourcequotas=[*]、services=[*]、statefulsets=[*]
@@ -181,6 +194,15 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 
 
 |  | enableDNSLookup | trueまたはfalse、DNSルックアップを有効にします 
+
+
+|  | Fluent-bit-tolerationsの略 | FLUENT-BIT-DSの追加許容値。 
+
+
+|  | event-exporter-tolerationsの略 | イベントエクスポータの追加許容値。 
+
+
+| ワークロードマップ |  | L4 -公差 
 |===
 
 
@@ -246,6 +268,10 @@ spec:
 
     # Declare Rancher cluster as managed. Set this to true if your Rancher cluster is managed as opposed to on-premise.
     #isManagedRancher: true|false
+
+    # By default, docker metrics will be collected for on-premise, docker-based k8s deployments. To disable docker metric collection, set this to false.
+    # dockerMetricCollectionEnabled: true|false
+
 
     # Deamonset CPU/Mem limits and requests
     # dsCpuLimit:
