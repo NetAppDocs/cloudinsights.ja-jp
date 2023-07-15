@@ -39,7 +39,7 @@ image:Recent_Changes_Example.png["最近の変更の例"]
 
 === オペレータの改善
 
-に次の改善が加えられました link:/telegraf_agent_k8s_config_options.html["Kubernetesオペレータ"] 導入：
+に次の改善が加えられました link:telegraf_agent_k8s_config_options.html["Kubernetesオペレータ"] 導入：
 
 * Dockerのメトリック収集をバイパスするオプション
 * Telegrafデーモンセットおよびレプリカセットに許容範囲を追加およびカスタマイズする機能
@@ -63,7 +63,7 @@ image:Operator_Public_Image_Key.png["公開キーをダウンロードします"
 
 === クエリの集計、条件付き書式など
 
-集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました link:/task_create_query.html["クエリ"]。
+集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました link:task_create_query.html["クエリ"]。
 
 image:Query_Page_Aggregation_etc.png["[クエリ]ページの結果には、集計、条件付き書式、単位表示、列名の変更が表示されます"]
 
