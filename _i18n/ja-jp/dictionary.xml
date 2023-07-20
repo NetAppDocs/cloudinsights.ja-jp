@@ -12700,7 +12700,6 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
   <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">ネットワークのパフォーマンスとマップ</block>
   <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">ci-net-observerの略</block>
   <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのイメージタグとディレクトリパスが、Cloud Insights リポジトリ内のイメージタグとディレクトリパスと一致していることを確認します。</block>
-  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">operator-deployment.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">operator-config.yamlのAgentConfigurationを編集して、新しいDockerリポジトリの場所を反映します。プライベートリポジトリ用に新しいimagePullSecretを作成します。詳細については、_ https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_を参照してください</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift の手順</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">OpenShift 4.6以降で実行している場合は、_runPrivileged_settingを有効にするには、_operator-config.yaml_でAgentConfigurationを編集する必要があります。</block>
@@ -14538,4 +14537,5 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4 -公差</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">に次の改善が加えられました <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 導入：</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">operator-config.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。</block>
 </blocks>
