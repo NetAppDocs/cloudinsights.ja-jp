@@ -14537,5 +14537,5 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4 -公差</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">に次の改善が加えられました <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 導入：</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
-  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">operator-config.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">operator-deployment.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。</block>
 </blocks>
