@@ -14557,4 +14557,5 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 ...
 
 次にTelegrafを再起動します。</block>
+  <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">使用するAPIに固有の例については、swaggerページを参照してください。</block>
 </blocks>

@@ -99,8 +99,10 @@ NOTE: トークンは、クリップボードにコピーして作成プロセ�
 
 たとえば、次のようにしてストレージアセットを取得します。
 
- curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
+ curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey:<API_Access_Token>'
 _<API_Access_Token>_ は、 API アクセスの作成時に保存したトークンです。
+
+使用するAPIに固有の例については、swaggerページを参照してください。
 
 
 
@@ -304,7 +306,7 @@ API アクセストークンには有効期限があります。API アクセス
 spec:
 …
   output-sink:
-  - api-key: <NEW_API_TOKEN>
+  - api-key:<NEW_API_TOKEN>
 ....
 
 
