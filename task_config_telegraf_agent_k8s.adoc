@@ -595,5 +595,25 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 
 
 | オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。 | netapp-monitoring-configuration agentconfigurationを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。  詳細については、オペレータのを参照してください link:telegraf_agent_k8s_config_options.html["設定オプション"]。 
+
+
+| Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
+
+ 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] コンテキストの期限を超過しました（ヘッダー待機中にClient.Timeoutが超過しました） | 各Telegraf設定ファイル（/etc/telegraf/telegraf.d/*.confなど）を編集し、Telegraf出力プラグインのタイムアウトを増やします。  たとえば、各.confファイルで、...のすべてのインスタンスを置き換えます。
+
+[[outputs.http]]
+な...何だ?
+タイムアウト="5s"
+...
+
+
+...で次の操作を行います。
+
+[[outputs.http]]
+な...何だ?
+タイムアウト="10s"
+...
+
+次にTelegrafを再起動します。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。

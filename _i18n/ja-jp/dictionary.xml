@@ -14538,4 +14538,23 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集計、単位の選択、条件付き書式、列の名前変更は、ダッシュボード表ウィジェットの最も便利な機能の1つであり、で同じ機能を使用できるようになりました <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">operator-deployment.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMから、Cloud Insightsにアクセスし、Cloud Insightsからバイナリをダウンロードできるようにする必要があります。</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
+
+ 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> コンテキストの期限を超過しました（ヘッダー待機中にClient.Timeoutが超過しました）</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">各Telegraf設定ファイル（/etc/telegraf/telegraf.d/*.confなど）を編集し、Telegraf出力プラグインのタイムアウトを増やします。  たとえば、各.confファイルで、...のすべてのインスタンスを置き換えます。
+
+[[outputs.http]]
+な...何だ?
+タイムアウト="5s"
+...
+
+
+...で次の操作を行います。
+
+[[outputs.http]]
+な...何だ?
+タイムアウト="10s"
+...
+
+次にTelegrafを再起動します。</block>
 </blocks>
