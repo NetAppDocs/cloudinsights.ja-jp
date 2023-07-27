@@ -7149,7 +7149,6 @@ Zノード数</block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">モニタリングオペレータの操作を開始します</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">モニタリングオペレータオプション</block>
   <block id="a63aef0458bbdbd190555891aec8dcd7" category="sidebar">Kubernetes クラスタページ</block>
-  <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetesの監視とマッピング</block>
   <block id="98a765989815a9f6076db83630a8d40a" category="sidebar">クエリを使用した作業</block>
   <block id="25e900254ad6189a853f2503238e3517" category="sidebar">アセットのクエリ</block>
   <block id="45a1e5f81eda87259a02f230c2cd17b9" category="sidebar">クエリーの作成</block>
@@ -14591,4 +14590,5 @@ FAS / AFF 8020
 FAS / AFF 8040
 FAS / AFF 8060
 FAS / AFF 8080</block>
+  <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">ネットワークのモニタリングとマップ</block>
 </blocks>

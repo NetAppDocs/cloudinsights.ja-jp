@@ -93,7 +93,7 @@ sidebar:
       url: "/telegraf_agent_k8s_config_options.html"
     - title: Kubernetes クラスタページ
       url: "/kubernetes_cluster_detail.html"
-    - title: Kubernetesの監視とマッピング
+    - title: ネットワークのモニタリングとマップ
       url: "/concept_kubernetes_network_monitoring_and_map.html"
   - title: 分析
     entries:
