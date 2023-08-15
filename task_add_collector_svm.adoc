@@ -293,7 +293,9 @@ g) ONTAPでファイアウォールを開き、ONTAPがエージェントボッ�
 
 7. まだ動作していない場合は、ネットワーキングチームに問い合わせて、 ONTAP からエージェントボックスへの接続が外部ファイアウォールによってブロックされていないことを確認してください。
 
-8. 上記のどれでも問題を解決できない場合は、でケースをオープンします link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["ネットアップサポート"] を参照してください。 
+8.ポート7が開いていることを確認します。
+
+9.上記のいずれも問題を解決できない場合は、 link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["ネットアップサポート"] を参照してください。 
 
 
 | メッセージ： "[hostname:<IP Address>] の ONTAP タイプを特定できませんでした。理由：ストレージシステム <IP アドレス > への接続エラー：ホストに到達できません（ホストに到達できません） " | 1. 正しい SVM IP 管理アドレスまたはクラスタ管理 IP が指定されていることを確認します。

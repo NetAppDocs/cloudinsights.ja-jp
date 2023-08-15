@@ -2994,40 +2994,6 @@ SVM IPを使用して追加する場合のオプションは次のとおりで�
 サイズ変更後にUIからコレクタを再起動します。</block>
   <block id="7dc1f3b50a6e66da2ae31d89467342c4" category="cell">コレクタから「 No local IP address found on the Connector that can reach the data interfaces of the SVM 」というエラーメッセージが報告されます。</block>
   <block id="dfb48a2f78b82c90165015b0e73f7e58" category="inline-link-macro">ネットアップサポート</block>
-  <block id="6cba87228a06e136ec0afee777c57387" category="cell">その理由としては、 ONTAP 側のネットワーク問題が考えられます。次の手順を実行してください。
-
-1. SVMデータLIFまたは管理LIFに、SVMからの接続をブロックしているファイアウォールがないことを確認します。
-
-2. クラスタ管理 IP を使用して SVM を追加する場合、 Agent VM から SVM のデータ LIF と管理 LIF に ping できることを確認します。問題が発生した場合は、 LIF のゲートウェイ、ネットマスク、およびルートを確認してください。
-
-また、クラスタ管理 IP を使用して SSH 経由でクラスタにログインし、エージェント IP に ping を実行することもできます。エージェントIPがping可能であることを確認します。
-
-_network ping -vserver &lt;vserver name&gt;-destination &lt;Agent IP&gt;-lif &lt;Lif Name&gt;-show-detail_
-
-pingできない場合は、ONTAPのネットワーク設定が正しいことを確認して、エージェントマシンにpingできるようにします。
-
-3. クラスタ IP 経由で接続しようとしたが動作しない場合は、 SVM IP 経由で直接接続してみます。SVM IP を使用して接続する手順については、上記を参照してください。
-
-4. SVM の IP と vsadmin のクレデンシャルを使用してコレクタを追加するときに、 SVM の LIF で Data plus Mgmt ロールが有効になっていることを確認します。この場合、 SVM LIF に ping することは可能ですが、 SVM LIF への SSH は機能しません。
-「はい」の場合は、 SVM 管理のみの LIF を作成し、この SVM 管理のみの LIF を使用して接続してみてください。
-
-5. まだ機能しない場合は、新しい SVM LIF を作成し、その LIF を介して接続します。サブネットマスクが正しく設定されていることを確認します。
-
-6.高度なデバッグ: 
-a）ONTAPでパケットトレースを開始します。
-b）CloudSecure UIからSVMにデータコレクタを接続してみます。
-c)エラーが表示されるまで待ちます。ONTAP でパケットトレースを停止します。
-d）ONTAPからパケットトレースを開きます。この場所で入手できます
-
- _\ https：//&lt;cluster_mgmt_ip&gt;/spi /&lt;clustername&gt;/etc/log/packet_traces/_
-
-e) ONTAPからエージェントボックスへのSYNがあることを確認します。
-f）ONTAPからSYNがない場合は、ONTAPにファイアウォールがある問題です。
-g) ONTAPでファイアウォールを開き、ONTAPがエージェントボックスに接続できるようにします。
-
-7. まだ動作していない場合は、ネットワーキングチームに問い合わせて、 ONTAP からエージェントボックスへの接続が外部ファイアウォールによってブロックされていないことを確認してください。
-
-8. 上記のどれでも問題を解決できない場合は、でケースをオープンします <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="17f836aa8a8fb1af2d3360f0ff3cda15" category="cell">メッセージ： "[hostname:&lt;IP Address&gt;] の ONTAP タイプを特定できませんでした。理由：ストレージシステム &lt;IP アドレス &gt; への接続エラー：ホストに到達できません（ホストに到達できません） "</block>
   <block id="e5f53b94e30dcc1b62ef059336b700c9" category="cell">1. 正しい SVM IP 管理アドレスまたはクラスタ管理 IP が指定されていることを確認します。
 2. 接続する SVM またはクラスタに SSH で接続します。接続が完了したら、 SVM またはクラスタ名が正しいことを確認してください。</block>
@@ -14229,4 +14195,40 @@ FAS / AFF 8080</block>
   <block id="bca37b041da64be838599cd43784ed63" category="paragraph">管理：</block>
   <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">API アクセス</block>
   <block id="4620823d389a7467f91084ea88f4f104" category="list-text">サブスクリプション情報</block>
+  <block id="384d2b3681715a5efe4a0e8ae256591a" category="cell">その理由としては、 ONTAP 側のネットワーク問題が考えられます。次の手順を実行してください。
+
+1. SVMデータLIFまたは管理LIFに、SVMからの接続をブロックしているファイアウォールがないことを確認します。
+
+2. クラスタ管理 IP を使用して SVM を追加する場合、 Agent VM から SVM のデータ LIF と管理 LIF に ping できることを確認します。問題が発生した場合は、 LIF のゲートウェイ、ネットマスク、およびルートを確認してください。
+
+また、クラスタ管理 IP を使用して SSH 経由でクラスタにログインし、エージェント IP に ping を実行することもできます。エージェントIPがping可能であることを確認します。
+
+_network ping -vserver &lt;vserver name&gt;-destination &lt;Agent IP&gt;-lif &lt;Lif Name&gt;-show-detail_
+
+pingできない場合は、ONTAPのネットワーク設定が正しいことを確認して、エージェントマシンにpingできるようにします。
+
+3. クラスタ IP 経由で接続しようとしたが動作しない場合は、 SVM IP 経由で直接接続してみます。SVM IP を使用して接続する手順については、上記を参照してください。
+
+4. SVM の IP と vsadmin のクレデンシャルを使用してコレクタを追加するときに、 SVM の LIF で Data plus Mgmt ロールが有効になっていることを確認します。この場合、 SVM LIF に ping することは可能ですが、 SVM LIF への SSH は機能しません。
+「はい」の場合は、 SVM 管理のみの LIF を作成し、この SVM 管理のみの LIF を使用して接続してみてください。
+
+5. まだ機能しない場合は、新しい SVM LIF を作成し、その LIF を介して接続します。サブネットマスクが正しく設定されていることを確認します。
+
+6.高度なデバッグ: 
+a）ONTAPでパケットトレースを開始します。
+b）CloudSecure UIからSVMにデータコレクタを接続してみます。
+c)エラーが表示されるまで待ちます。ONTAP でパケットトレースを停止します。
+d）ONTAPからパケットトレースを開きます。この場所で入手できます
+
+ _\ https：//&lt;cluster_mgmt_ip&gt;/spi /&lt;clustername&gt;/etc/log/packet_traces/_
+
+e) ONTAPからエージェントボックスへのSYNがあることを確認します。
+f）ONTAPからSYNがない場合は、ONTAPにファイアウォールがある問題です。
+g) ONTAPでファイアウォールを開き、ONTAPがエージェントボックスに接続できるようにします。
+
+7. まだ動作していない場合は、ネットワーキングチームに問い合わせて、 ONTAP からエージェントボックスへの接続が外部ファイアウォールによってブロックされていないことを確認してください。
+
+8.ポート7が開いていることを確認します。
+
+9.上記のいずれも問題を解決できない場合は、 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> を参照してください。</block>
 </blocks>
