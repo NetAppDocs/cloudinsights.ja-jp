@@ -13810,7 +13810,6 @@ SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">塗料および耐性</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">Kubernetesの詳細はこちらをご覧ください <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">netapp-monitoring-configuration agentconfigurationを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。  詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">dockerMetricCollectionEnabled</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
@@ -14231,4 +14230,21 @@ g) ONTAPでファイアウォールを開き、ONTAPがエージェントボッ�
 8.ポート7が開いていることを確認します。
 
 9.上記のいずれも問題を解決できない場合は、 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">_AgentConfiguration_のnetapp-monitoring-configurationセクションを編集し、_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+注： Cloud Insightsフェデラルエディションを使用している場合、_su_の使用が制限されているユーザーはDockerメトリクスを収集できません。Dockerソケットにアクセスするには、telegrafコンテナをrootとして実行するか、_su_を使用してtelegrafユーザーをDockerグループに追加する必要があるためです。Dockerメトリック収集と_su_の使用はデフォルトで有効になっています。両方を無効にするには、_AgentConfiguration_fileの_telegraf.docker_entryを削除します。
+
+な...何だ?
+仕様：
+な...何だ?
+テレグラフ：
+    な...何だ?
+     -名前：Docker
+            実行モード：
+              -デーモンセット
+            置換：
+              -key：docker_unix_sock_placeholder
+                値：unix：//run/docker.sock
+    な...何だ?
+な...何だ?</block>
 </blocks>
