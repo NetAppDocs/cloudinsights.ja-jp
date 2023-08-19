@@ -16057,4 +16057,25 @@ VMware vCenter Server 8.0.0ビルド-21457384
 VMware vCenter Server 8.0.1ビルド-21560480
 VMware vCenter Server 8.0.1ビルド-21815093
 VMware vCenter Server 8.0.1ビルド-21860503</block>
+  <block id="88abed0a9fa0fc7ed8be52f2de6d7f8d" category="section-title">Isilon/PowerScaleログと高度な分析データの収集</block>
+  <block id="93fa5fa7b7ca64e0109bdf3bfcc7c80d" category="paragraph">Isilon RESTコレクタとPowerScale RESTコレクタの改善点は次のとおりです。</block>
+  <block id="6bfe1d5f79aa2a34935e35f4ad9f09c4" category="list-text">Isilonログイベントはクエリやアラートで使用できます。</block>
+  <block id="c5922f5c7421c7ae70b97241261d79fa" category="list-text">Isilon高度な分析属性は、クエリ、ダッシュボード、アラートで使用できます。</block>
+  <block id="055ffc0f204dd9571932f105cc192d97" category="list-text">EMC_Isilon.cluster</block>
+  <block id="cc6fab0cd00772a7953b679fc832724f" category="list-text">emc_isilon.node</block>
+  <block id="30c0414214be11c59b1aa207a90a8b3d" category="list-text">emc_isilon.node_disk</block>
+  <block id="2f6871a6b3a926d4a14c71d0a97a5c03" category="list-text">emc_isilon.net_iface</block>
+  <block id="89dff3ed7503a715bcf83455f5951412" category="paragraph">これらは、Isilon RESTコレクタやPowerScale RESTコレクタのユーザーに対してデフォルトで有効になっています。NetAppでは、Isilon CLIベースのコレクタのユーザーは、上記のような拡張機能を利用するために、新しいREST APIベースのコレクタに移行することを強く推奨しています。</block>
+  <block id="f1c89ccf6bd41e321d0a5a4570ccbd41" category="section-title">ワークロードマップの改善</block>
+  <block id="406a6589551ad505a8c76df3da8e6d33" category="paragraph">ワークロードマップは、同じワークロードと通信する場合は、類似するすべての外部サービスを1つのノードにグループ化するため、グラフの複雑さが軽減され、サービスの相互接続方法がわかりやすくなります。</block>
+  <block id="f2f7479271c7e3bd1526b7c962cfd1b6" category="paragraph">グループ化されたノードを選択すると、そのノードに関連する各外部サービスのネットワークトラフィックメトリックを含む詳細な表が表示されます。</block>
+  <block id="ec9c27a1c2d5a1d4769d15b48868bdaf" category="section-title">Kubernetes Managed Unitの使用状況の調整</block>
+  <block id="5e232fe3a0e64ea5b8742398f66c956c" category="paragraph">Kubernetesクラスタ環境のコンピューティングリソースがNetApp Kubernetes Monitoring Operatorと基盤となるインフラデータコレクタ（VMwareなど）の両方によってカウントされた場合、これらのリソースの使用量が調整されて、Managed Unitのカウントが最も効率的に行われるようになります。Kubernetes MUの調整は、Admin &gt; SubscriptionページのSummaryタブとUsageタブの両方で確認できます。</block>
+  <block id="16cc34ec25ef5292c49b7fcf27d01385" category="inline-image-macro">見積もり計算ツールに表示されるKubernetes MU調整</block>
+  <block id="9740da1fe13081b9e8603e12c24f457b" category="paragraph">[Summary]タブ：
+<block ref="f2ff1c7008221f157f7e2a4df38ba4f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="465299d39a69339fb8fc976919bdf64f" category="inline-image-macro">[Usage]タブに表示されるK8s MU調整</block>
+  <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">[Usage]タブ：
+<block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">Acquisition UnitがRHEL 8.7をサポートするようになりました。</block>
 </blocks>

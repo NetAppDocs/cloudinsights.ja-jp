@@ -29,6 +29,54 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
+=== Isilon/PowerScaleログと高度な分析データの収集
+
+Isilon RESTコレクタとPowerScale RESTコレクタの改善点は次のとおりです。
+
+* Isilonログイベントはクエリやアラートで使用できます。
+* Isilon高度な分析属性は、クエリ、ダッシュボード、アラートで使用できます。
++
+** EMC_Isilon.cluster
+** emc_isilon.node
+** emc_isilon.node_disk
+** emc_isilon.net_iface
+
+
+
+
+これらは、Isilon RESTコレクタやPowerScale RESTコレクタのユーザーに対してデフォルトで有効になっています。NetAppでは、Isilon CLIベースのコレクタのユーザーは、上記のような拡張機能を利用するために、新しいREST APIベースのコレクタに移行することを強く推奨しています。
+
+
+
+=== ワークロードマップの改善
+
+ワークロードマップは、同じワークロードと通信する場合は、類似するすべての外部サービスを1つのノードにグループ化するため、グラフの複雑さが軽減され、サービスの相互接続方法がわかりやすくなります。
+
+グループ化されたノードを選択すると、そのノードに関連する各外部サービスのネットワークトラフィックメトリックを含む詳細な表が表示されます。
+
+
+
+=== Kubernetes Managed Unitの使用状況の調整
+
+Kubernetesクラスタ環境のコンピューティングリソースがNetApp Kubernetes Monitoring Operatorと基盤となるインフラデータコレクタ（VMwareなど）の両方によってカウントされた場合、これらのリソースの使用量が調整されて、Managed Unitのカウントが最も効率的に行われるようになります。Kubernetes MUの調整は、Admin > SubscriptionページのSummaryタブとUsageタブの両方で確認できます。
+
+[Summary]タブ：
+image:MU_Adjustments_K8s.png["見積もり計算ツールに表示されるKubernetes MU調整"]
+
+[Usage]タブ：
+image:MU_Adjustments_K8s_Usage_Tab.png["[Usage]タブに表示されるK8s MU調整"]
+
+
+
+=== コレクタ/取得の変更点：
+
+Data Collector/Acquisition Unitに次の変更が加えられています。
+
+* Acquisition UnitがRHEL 8.7をサポートするようになりました。
+
+
+
+
 === メニューの改善
 
 左側のナビゲーションメニューが更新され、お客様のワークフローをより適切にサポートできるようになりました。_kubernetes_などの新しいトップレベル項目は、顧客のニーズに迅速にアクセスできるようにし、統合管理者コンソールがテナント所有者の役割をサポートします。
