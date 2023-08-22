@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
 summary: アセットページのエキスパートビューセクションは、トラブルシューティングや監視に役立つ強力なツールです。 
-keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
+keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = エキスパートビュー
 :toc: macro
@@ -19,7 +19,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 [role="lead"]
-アセットページのエキスパートビューセクションでは、任意の数の該当する指標に基づいてベースアセットのパフォーマンスサンプルを表示でき、選択した期間のパフォーマンスチャートと関連するアセットを参照できます。
+アセットページのエキスパートビューセクションでは、任意の数の該当する指標に基づいてベースアセットのパフォーマンスサンプルを表示でき、選択した期間のパフォーマンスチャートと関連するアセットを参照できます。  グラフのデータは、データコレクタがポーリングを行い、更新されたデータが取得されると自動的に更新されます。
 
 
 

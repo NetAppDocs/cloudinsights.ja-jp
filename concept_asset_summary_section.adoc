@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
 summary: Cloud Insights のアセットページの概要セクション。 
-keywords: asset, summary, landing page, topology 
+keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = アセットページの概要セクション
 :toc: macro
@@ -20,6 +20,8 @@ keywords: asset, summary, landing page, topology
 
 [role="lead"]
 アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は赤い丸で示されます。
+
+概要セクションの情報、およびアセットページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクション、テーブル、およびカスタムウィジェットの右上隅に表示されます。
 
 image:Summary_Section_Example.png[""]
 

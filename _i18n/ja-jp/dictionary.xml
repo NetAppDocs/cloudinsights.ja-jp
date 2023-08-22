@@ -7532,7 +7532,6 @@ OS合計物理メモリサイズ
 ガベージコレクタ並列スカベンジ収集時間</block>
   <block id="27a216601981d13fcf078fa6774638a5" category="summary">アセットページのエキスパートビューセクションは、トラブルシューティングや監視に役立つ強力なツールです。</block>
   <block id="b7020f7cb2b885f482e520e38265e6b0" category="doc">エキスパートビュー</block>
-  <block id="6769810373d64f6178c70417f3100129" category="paragraph">アセットページのエキスパートビューセクションでは、任意の数の該当する指標に基づいてベースアセットのパフォーマンスサンプルを表示でき、選択した期間のパフォーマンスチャートと関連するアセットを参照できます。</block>
   <block id="a095544b81060891734744ad5bd2a5c3" category="section-title">[ エキスパートビュー（ Expert View ） ] セクションの使用</block>
   <block id="62329137e14077120c0de9e866ecae4b" category="paragraph">ストレージアセットページの Expert View セクションの例を次に示します。</block>
   <block id="beaa4bde61b31a115ee598bebfa3f120" category="inline-image-macro">Expert View の例</block>
@@ -16078,4 +16077,7 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">[Usage]タブ：
 <block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">Acquisition UnitがRHEL 8.7をサポートするようになりました。</block>
+  <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">アセットページのエキスパートビューセクションでは、任意の数の該当する指標に基づいてベースアセットのパフォーマンスサンプルを表示でき、選択した期間のパフォーマンスチャートと関連するアセットを参照できます。  グラフのデータは、データコレクタがポーリングを行い、更新されたデータが取得されると自動的に更新されます。</block>
+  <block id="05c3e307f6dc616e1f39e3e2b33522d0" category="paragraph">アセットページの概要セクションの情報、およびページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクションの右上隅と、ページ上の関連するテーブルまたはウィジェットに表示されます。</block>
+  <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">概要セクションの情報、およびアセットページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクション、テーブル、およびカスタムウィジェットの右上隅に表示されます。</block>
 </blocks>
