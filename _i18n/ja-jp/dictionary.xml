@@ -1790,7 +1790,6 @@ Cloud Central のプロファイルの E メールアドレスが Cloud Insights
 。[Annotation]をクリックし、*「Root agg exclude」*を選択します
 。「 * Value * 」をクリックし、「 * True * 」と入力します</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Cloud Insights で利用できる新機能と特徴。</block>
-  <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights の新機能</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。</block>
   <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">これらの機能の一部は、Cloud Insights 連邦版では使用できない場合や、機能が制限されている場合があります。可能な限り、これらの違いはドキュメントに記載されています。</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">2023年6月</block>
@@ -16080,4 +16079,5 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">アセットページのエキスパートビューセクションでは、任意の数の該当する指標に基づいてベースアセットのパフォーマンスサンプルを表示でき、選択した期間のパフォーマンスチャートと関連するアセットを参照できます。  グラフのデータは、データコレクタがポーリングを行い、更新されたデータが取得されると自動的に更新されます。</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">概要セクションの情報、およびアセットページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクション、テーブル、およびカスタムウィジェットの右上隅に表示されます。</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">アセットページの概要セクションの情報、およびページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクションの右上隅、およびページ上の関連するテーブルまたはウィジェットに表示されます。</block>
+  <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insightsの新機能</block>
 </blocks>

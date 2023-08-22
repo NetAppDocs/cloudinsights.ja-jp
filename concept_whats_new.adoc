@@ -4,7 +4,7 @@ permalink: concept_whats_new.html
 summary: Cloud Insights で利用できる新機能と特徴。 
 keywords: features 
 ---
-= Cloud Insights の新機能
+= Cloud Insightsの新機能
 :toc: macro
 :hardbreaks:
 :toclevels: 2
