@@ -16080,4 +16080,5 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">概要セクションの情報、およびアセットページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクション、テーブル、およびカスタムウィジェットの右上隅に表示されます。</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">アセットページの概要セクションの情報、およびページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクションの右上隅、およびページ上の関連するテーブルまたはウィジェットに表示されます。</block>
   <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insightsの新機能</block>
+  <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
 </blocks>
