@@ -147,4 +147,4 @@ Cloud Insights では、このデータコレクタから次のインベント�
 
 その場合は、「stopcim」を実行してから「startcim」を実行してCIM（SMI-Sサービスなど）を再起動します。 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

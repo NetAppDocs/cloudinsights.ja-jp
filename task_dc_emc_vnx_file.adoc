@@ -107,4 +107,4 @@ Cloud Insights は、 VNX File データコレクタから次のインベント�
 
 | エラー： DART の更新の実行中は処理を続行できません | Possible 解決策：データコレクタを一時停止し、 DART のアップグレードが完了するのを待ってから、別の取得要求を実行します。 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

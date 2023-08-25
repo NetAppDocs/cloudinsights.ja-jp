@@ -265,4 +265,4 @@ Cloud Insightsでは、HP Enterprise Command Viewデータコレクタから次�
     -「SET=STONAVM_HOME=」コマンドを実行します。
     -コマンド「auunitaddauto-ip$｛ip｝」を実行します。$ ｛ IP ｝ を実際の IP に置き換えてください 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

@@ -126,4 +126,4 @@ Cloud Insights は、 Unity データコレクタから次のインベントリ�
 *データソース構成でUnisphere CLIのインストールディレクトリが正しいことを確認します
 * VNXeのIPがデータソースの構成で正しいことを確認します。Cloud Insights Acquisition Unit から CMD を開き、設定したインストールディレクトリに移動します。 $ ｛ INSTALLDIR.次のように入力して、 VNXe デバイスとの接続を試みます。 uemcli -d <your ip>-u <your ID>/sys/general show 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

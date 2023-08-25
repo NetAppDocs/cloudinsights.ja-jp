@@ -199,4 +199,4 @@ video::Config_Advisor_Collector_Part2.mp4[Using dashboards to view Config Adviso
 
 Config Advisor に関連するその他の質問については、[ヘルプ]->[サポートチケットを開く]をクリックして、Config Advisor ツールからチケットを開きます。
 
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

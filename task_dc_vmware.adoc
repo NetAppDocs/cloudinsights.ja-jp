@@ -167,4 +167,4 @@ Cloud Insights では、 VMware vSphere データコレクタから次のイン�
 *推奨：より強力なRSAキー（1024ビットなど）を使用して、Virtual Center用の証明書を再生成します。
 * 推奨されません。 JVM java.security 設定を変更して、 JDK.certPath.disableAlgorithms 制約を利用し、 512 ビット RSA キーを許可します。「 JDK 7 update 40 release notes 」を参照してください "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

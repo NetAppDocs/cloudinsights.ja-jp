@@ -178,4 +178,4 @@ Cloud Insights では、このデータコレクタから次のインベント�
 
 | 「 Command <Your Command> run failed with permission ： <your current permisse> 」というエラーメッセージが表示されて「 Internal Error 」が表示されます。sudo コマンド run permission 問題」 | ユーザにデバイスで次のコマンドを実行するための sudo 権限があることを確認します 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

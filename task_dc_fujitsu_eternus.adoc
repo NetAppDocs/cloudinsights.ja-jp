@@ -118,4 +118,4 @@ Cloud Insights では、 Fujitsu ETERNUS ストレージから次のインベン
 * 入力された資格情報と IP アドレスを確認してください。
 * SSH クライアントを使用してストレージと通信してみてください。 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

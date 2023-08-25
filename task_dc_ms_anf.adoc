@@ -80,4 +80,4 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-ser
 * Reader へのアクセスによってパフォーマンス収集が失敗する場合は、リソースグループレベルで貢献者アクセスを許可してみてください。
 
 
-この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

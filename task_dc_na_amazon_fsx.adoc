@@ -158,4 +158,4 @@ ZAPIの応答に「initialize_session () returned NULL environment」が含ま�
 
 ZAPIエラーコードが14007で、応答に「Node is not healthy」が含まれている | ネットワーク、ポート番号、および IP アドレスを確認してください。また、 AU マシンのコマンドラインからもコマンドを実行しようとします。 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

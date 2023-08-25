@@ -328,4 +328,4 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
 
 >_system node systemshell -node *-command“spmctl -h cmd–stop；spmctl -h cmd–exec”_ 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

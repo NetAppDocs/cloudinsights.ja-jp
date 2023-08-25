@@ -158,4 +158,4 @@ NaviSECCLI.exe -h <IP address>-user <user>-password <password>-scope.
 
 | エラー：サポート対象外の構成 - Fibre Channel ポートがありません | デバイスにファイバチャネルポートが設定されていない。現在サポートされているのは FC 構成のみです。  このバージョン / ファームウェアがサポートされていることを確認してください。 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

@@ -211,4 +211,4 @@ Cloud Insights では、 Cisco FC Switch データコレクタから次のイン
 | エラー： Performance acquisition not supported by SNMP v1 | •データソースを編集し、スイッチパフォーマンスを無効にします
 •SNMP v2以上を使用するように、データソースとスイッチの設定を変更します 
 |===
-追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

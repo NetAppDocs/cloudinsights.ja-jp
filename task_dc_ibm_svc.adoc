@@ -130,4 +130,4 @@ Cloud Insightsは、IBM SVCデータコレクタから次のインベントリ�
 
 | エラー： " 構成ノードで実行されていないため、コマンドを開始できません。 " | このコマンドは構成ノードで実行する必要があります。 
 |===
-この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector サポートマトリックス"]。
+この Data Collector の追加情報は、から入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

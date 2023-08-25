@@ -4008,7 +4008,6 @@ Time Filebucketの略
   <block id="6a8bd65f467cef571626a2744007f5c1" category="list-text">プロセッサ– CPU 数</block>
   <block id="f24000b8fcb0d6fc0388e42c6979c974" category="list-text">アレイの各コントローラの IP アドレス</block>
   <block id="e619c30ee4f5465e0b32f516b979b644" category="list-text">ポート要件 2463</block>
-  <block id="aec2bde654bf8419f40a1a37b865d3df" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="7ff90e5500ec86359430cccd407b04b5" category="summary">IBM CS データコレクタの設定。</block>
   <block id="b33147c696a217b408219dcc0eb9a659" category="doc">IBM CS データコレクタ</block>
   <block id="2672d5bc1c735128c75324a55fd1f077" category="paragraph">Cloud Insights では、このデータコレクタを使用して IBM CS ストレージシステムのインベントリデータとパフォーマンスデータを検出します。</block>
@@ -16081,4 +16080,6 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">アセットページの概要セクションの情報、およびページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクションの右上隅、およびページ上の関連するテーブルまたはウィジェットに表示されます。</block>
   <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insightsの新機能</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
 </blocks>
