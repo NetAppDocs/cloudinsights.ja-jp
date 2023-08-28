@@ -214,6 +214,17 @@ Kubernetesの詳細はこちらをご覧ください link:https://kubernetes.io/
 
 
 
+=== 権限
+
+監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["表示するアグリゲート"]イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。
+
+. edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/<namespace>-additional-permissions_を編集します。
+. 動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照
+. クラスタに変更を適用します。
+
+
+
+
 == NetApp Kubernetes Monitoring Operatorをインストールします
 
 image:NKMO-Instructions-1.png[""]
@@ -631,5 +642,8 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 ...
 
 次にTelegrafを再起動します。 
+
+
+| 一部のイベントログの_involvedobject_dataが見つかりません。 | 次の手順を実行していることを確認してください： <<permissions,権限>> 上記のセクション。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

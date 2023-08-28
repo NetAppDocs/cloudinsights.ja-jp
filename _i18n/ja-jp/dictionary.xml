@@ -183,10 +183,7 @@
   <block id="9681b8ede5c132930da76a11a12ee1e0" category="paragraph">変更を行ったら、必ずダッシュボードを * [Save] * してください。</block>
   <block id="ca1b516707306a7db85b8ed1c44a3272" category="paragraph">最後の VM パフォーマンスダッシュボードは次のようになります。</block>
   <block id="8b8c0577487afb0f8113ae70ab69f902" category="paragraph"><block ref="8b8c0577487afb0f8113ae70ab69f902" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Cloud Insights の設定には、 NetApp ONTAP のストリーミング計測データを使用します</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP による計測データのストリーミング</block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
-  <block id="458a37db2666885e234720ccdea58253" category="paragraph">最新の情報については、を参照してください <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> データコレクタページ。</block>
   <block id="79bac41a8e857539d5a75dc7e93e17d8" category="summary">サポートをリクエストする方法については、技術情報アーティクルの表示、ネットアップコミュニティとの接続、ビデオの表示、チケットの発行があります。</block>
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">サポートをリクエストしています</block>
   <block id="5452e6774adb97c1d8607e2b1af1851a" category="paragraph">Cloud Insights でサポートオプションにアクセスするには、 [ ヘルプ ] 、 [ サポート ] の順にクリックします。利用可能なサポートオプションは、Cloud Insights エディションによって異なります。</block>
@@ -16080,4 +16077,11 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">では、サポートされているデータコレクタに関する情報や詳細を表示またはダウンロードできます <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">表示するアグリゲート</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/&lt;namespace&gt;-additional-permissions_を編集します。</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">クラスタに変更を適用します。</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">一部のイベントログの_involvedobject_dataが見つかりません。</block>
+  <block id="2420d7dae924d9613e0f888211903abc" category="cell">次の手順を実行していることを確認してください： <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> 上記のセクション。</block>
 </blocks>
