@@ -205,7 +205,7 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: スキーマテーブル
       url: "/reference_schemas.html"
-  - title: ストレージワークロードのセキュリティ
+  - title: ワークロードのセキュリティ
     entries:
     - title: ワークロードセキュリティについて
       url: "/cs_intro.html"
