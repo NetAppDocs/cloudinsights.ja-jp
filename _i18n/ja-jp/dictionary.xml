@@ -16077,11 +16077,24 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">では、サポートされているデータコレクタに関する情報や詳細を表示またはダウンロードできます <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">表示するアグリゲート</block>
-  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。</block>
-  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/&lt;namespace&gt;-additional-permissions_を編集します。</block>
-  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照</block>
-  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">クラスタに変更を適用します。</block>
-  <block id="4f05106cca363b0f3c492314ab777534" category="cell">一部のイベントログの_involvedobject_dataが見つかりません。</block>
-  <block id="2420d7dae924d9613e0f888211903abc" category="cell">次の手順を実行していることを確認してください： <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> 上記のセクション。</block>
+  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">ワークロードセキュリティは、ONTAPと統合してアクセス拒否イベントを受信し、追加の分析と自動応答レイヤを提供します。</block>
+  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">ONTAPアクセス拒否との統合</block>
+  <block id="c1aef2a1ae85a8f2d2f2972297da3d60" category="paragraph">ONTAPアクセス拒否機能は、NAS（NFSおよびSMB）環境のワークロード分析を使用して、失敗したファイル処理（権限のない処理を実行しようとしているユーザなど）をプロアクティブに検出して警告します。これらのファイル操作の失敗の通知は、特にセキュリティ関連の障害の場合には、初期段階でのインサイダー攻撃のブロックにさらに役立ちます。</block>
+  <block id="b849ca242cbc590016b269c1ee91cc29" category="paragraph">ワークロードセキュリティは、ONTAPと統合してアクセス拒否イベントを受信し、追加の分析および自動応答レイヤを提供します。</block>
+  <block id="5b3261ec26222327253513a1f5b85ba6" category="list-text">ONTAPの最小バージョン：9.13.0</block>
+  <block id="7238e9f6faa9a8bf2a1c0b55cb039588" category="list-text">アクセス拒否機能は、デフォルトでは無効になっています。ワークロードセキュリティ管理者は、新しいコレクタを追加したり、既存のコレクタを編集したりするときに、この機能を有効にできます。有効にするには、[Workload Security]&gt;[Collectors]で目的のコレクタを追加または編集し、[Advanced Configuration]の[_Monitor Access Denied Events]チェックボックスをオンにします。</block>
+  <block id="a808fab09e2c9ae5a63f5e049dab0688" category="inline-image-macro">アクセス拒否の有効化</block>
+  <block id="6dbaec8d589ae936fddaa5da8e4136bc" category="paragraph"><block ref="6dbaec8d589ae936fddaa5da8e4136bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccce4bc08fadbf62adda903ef18b3a71" category="paragraph">クラスタ管理のクレデンシャルを使用してコレクタを追加した場合、新しい権限は必要ありません。</block>
+  <block id="7e94086884e2780e5b6c9f81ac89dc5b" category="paragraph">ユーザーに付与された権限を持つカスタムユーザー（_csuser_など）を使用してコレクタを追加する場合は、次の手順に従ってワークロードセキュリティに権限を付与し、ONTAP for Access Deniedイベントに登録します。</block>
+  <block id="fe6df009bfa9d725b811d49cdb8b4e7c" category="paragraph">クラスタのクレデンシャルを使用する場合は、ONTAPコマンドラインから次のコマンドを実行します。</block>
+  <block id="02efd7604209ddbbd8e84d4f61b73a6e" category="paragraph">SVMクレデンシャルを使用している場合は、ONTAPコマンドラインから次のコマンドを実行します。</block>
+  <block id="18eb08209dff281929039b467a472f31" category="paragraph">注：上記のコマンドでは、_csrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。</block>
+  <block id="d0aae2eaa03ecabb8c086f9955d726c7" category="section-title">サンプルアクセス拒否イベント</block>
+  <block id="428ed0ed1c01699e6322b706684fdb11" category="paragraph">次の画像に示すように、サンプルのAccess Deniedイベントが表示されます。また、オプションで表示できる_desired Activity_columnの下に、特定の操作でユーザが必要とした権限のリストが表示されます。</block>
+  <block id="d41ccaf6090623996b7a77e9f74f06bf" category="inline-image-macro">アクセス拒否サンプルイベント</block>
+  <block id="66dcd3eccaf1048a46b7727780eeb9cd" category="inline-image-macro">アクセスが拒否されたアクティビティカラムを表示するサンプルイベント</block>
+  <block id="143f93c0a250d7b4c81e78e2cb154211" category="paragraph"><block ref="ee0b481ebed31d6775d42686b376f648" category="inline-image-macro-rx" type="image"></block>
+<block ref="f913a701b0e25c9f7bd9dfbc47afd16c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAPアクセスの統合が拒否されました</block>
 </blocks>
