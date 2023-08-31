@@ -7142,7 +7142,6 @@ Zノード数</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="sidebar">データ保持</block>
   <block id="44b5660e842b773ac9a2a0afa118094a" category="sidebar">スキーマ図</block>
   <block id="7689c3521d4273b6901f98796399f5b0" category="sidebar">スキーマテーブル</block>
-  <block id="8d480c386a79b0bc67bd88ac44cd794f" category="sidebar">ストレージワークロードのセキュリティ</block>
   <block id="9655cd831b69781db448703e74b15bf4" category="sidebar">ワークロードセキュリティについて</block>
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">ワークロードセキュリティの導入</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">ワークロードセキュリティエージェントの設定</block>
@@ -14151,125 +14150,6 @@ g) ONTAPでファイアウォールを開き、ONTAPがエージェントボッ�
     な...何だ?
 な...何だ?</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">このデータコレクタでサポートされるモデルとバージョン：</block>
-  <block id="7ab5521b32fba28cefe0f978f2a356cb" category="cell">3.1.1（MU1）
-3.1.1（MU1）P10
-3.1.2（MU3）P16
-3.1.3（MU1）P07
-3.1.3（MU2）
-3.1.3（MU3）
-3.2.1（MU3）P17
-3.2.1（MU5）P49
-3.2.2（MU2）P14
-3.2.2（MU4）P56
-3.2.2（MU6）P96
-3.2.2（MU6）P99
-3.2.2 P03
-3.3.1（MU1）P09
-3.3.1（MU2）P30
-3.3.1（MU2）P32
-3.3.1（MU5）P126
-3.3.1（MU5）P132
-3.3.2（MU1）
-3.3.2（MU1）P04
-3.3.2 P01
-4.4.1リリースタイプ：標準サポートリリース
-4.5.11リリースタイプ：延長サポートリリース
-4.5.3リリースタイプ：延長サポートリリース
-4.5.7リリースタイプ：延長サポートリリース
-9.5.8リリースタイプ：延長サポートリリース
-P02
-P04
-P05
-P08
-P09
-P103
-P106
-P107
-P11
-P111
-P113
-P115
-P118
-P119
-P127
-P13
-P131
-P132
-P133
-P135
-P138
-P139
-P140
-P141
-P142
-P146
-P148
-P149
-P15
-P150
-P151
-P152
-P153
-P154
-P155
-P156
-P157
-P160
-P161
-P162
-P164
-P165
-P166
-P167
-P168
-P170
-P172
-P173
-P175
-P177
-P18
-P180
-P19
-P22
-P23
-P25
-P27
-P29
-P30
-P32
-p34
-P36
-P37
-P39
-P40
-P41
-p42
-P45
-P48
-P49
-P50
-P51
-P52
-p53
-p56
-P57
-p59
-P60
-p70
-P71
-p72
-P73
-p75
-P76
-P78
-p80
-P85
-P90
-P93
-p94
-P96
-P98
-P99</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
 HPE_3PAR 20800
@@ -14693,26 +14573,6 @@ v8.0.0.7
 v8.1.2.0
 v8.2.2.0</block>
   <block id="1637df9cd961b86fbeb0fabf80ba05a6" category="cell">EMC IsilonおよびPowerScale REST API</block>
-  <block id="5dde3b080c893187156e20414f9764d5" category="cell">A200
-A2000
-A300 の比較
-F200
-F800
-F900
-H400
-H500
-H600
-H700
-syslogd@erskからのメッセージ
-NL400
-NL410
-S210
-シミュレータ
-X200
-X210
-X400
-X410
-infinity_hba_bay_to_unit：no da device pass7</block>
   <block id="89555faebdb0be850c8096d96c21889b" category="cell">9.1.0.10
 9.1.0.12
 9.1.0.16
@@ -14765,8 +14625,6 @@ PowerStore 9200T</block>
 5.1.SP4.P3（H.109）
 5.1.SP4.P4（H.97）</block>
   <block id="5ea93ac7e9175685461a3aa7ecd6678d" category="cell">RecoverPoint REST API</block>
-  <block id="9ecd3117b1265682a0ebf5bfab4e6f3a" category="cell">2.5
-3.5.</block>
   <block id="d10754452cfaa4a1e9127718e2623244" category="cell">R2_6.11000.113
 R2_6.11000.115
 R3_0.1400.101
@@ -14774,29 +14632,6 @@ R3_5.1200.104
 R3_6.500.113
 R3_6.700.103</block>
   <block id="ef2bf1c7f778e627ac9f8b235393cefc" category="cell">EMC ScaleIOおよびPowerFlex REST API</block>
-  <block id="ddf9e700baf694bd0e06ea3257f1a7f3" category="cell">v10.0.0.0
-v10.0.1.0
-V7.6.2.67
-V8.3.0.22
-V8.3.0.6
-V8.4.0.7
-V8.4.0.9
-v9.1.0.18
-v9.1.0.5
-v9.1.0.6
-v9.2.0.0
-v9.2.1.0
-v9.2.1.1
-v9.2.1.2
-v9.2.2.0
-v9.2.3.0
-v9.2.3.1
-v9.2.3.4
-v9.2.3.5
-v9.2.3.6
-v9.2.4.1
-v9.2.4.2
-利用不可</block>
   <block id="ced36b4cd1a263f511a018469d008a9a" category="cell">DMX3-24
 DMX4-24
 PMax2000
@@ -14882,10 +14717,6 @@ VMAX950F</block>
 6079.125.0ビルド53ビルド53
 6079.175.0ビルド0</block>
   <block id="248a2ada600649dd9a0defecae5a2871" category="cell">Dell Unisphere API</block>
-  <block id="9fce28a0e666c8b62bc169497c0f3166" category="cell">7.1.76-4
-7.1.80-3
-7.33
-8.1.9-232</block>
   <block id="650583531a5dada75e2debcf9178eb89" category="cell">VNX5300
 VNX5400
 VNX5700
@@ -15262,12 +15093,6 @@ F6304</block>
 7.0.14.20</block>
   <block id="47f7060be7cf2bba280a7fc28fd9a923" category="cell">Infinidat REST API</block>
   <block id="ec736ea56f7a370661ecd61258754f69" category="cell">Microsoft Azure Compute REST API</block>
-  <block id="e6dd9171dfadb6c8f73da254cca36935" category="cell">ONTAPIバージョン= 1.12
-ONTAPIバージョン= 1.14
-ONTAPIバージョン= 1.17
-ONTAPIバージョン= 1.19
-ONTAPIバージョン= 1.20
-ONTAPIバージョン= 1.21</block>
   <block id="f3cb24609643314e7a0326c5f8011a9e" category="cell">FAS2040
 FAS2050
 FAS2220
@@ -15320,226 +15145,7 @@ Data ONTAPリリース8.2.5 7-Mode</block>
   <block id="b25d1f10591ecf26b3978de4f3228bc7" category="cell">NetApp 7-Mode ZAPI</block>
   <block id="837e5317f8f1d06276bea49ab62e99d9" category="cell">ZAPI</block>
   <block id="63713dccbc1364b72d1a00c589b34dda" category="cell">Cloud Volumes Service REST API</block>
-  <block id="499749d8860f3be8018f2197936fe4df" category="cell">NetAppリリース9.11.0P1：2022年3月22日（火）17：41：04 UTC
-NetAppリリース9.11.1P3：2022年9月29日（木）16:06:51 UTC
-NetAppリリース9.11.1P5：2022年12月10日（土）23：54：17 UTC
-NetAppリリース9.11.1P6：2023年1月27日（金）03:16:05 UTC
-NetAppリリース9.11.1P7：2023年3月9日（木）11:22:24 UTC
-NetAppリリース9.11.1P9：2023年4月28日（金）03:24:07 UTC
-NetAppリリース9.12.1P4：2023年6月（火）20:41:34 UTC</block>
   <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">NetApp ONTAP API</block>
-  <block id="f50a061006ab57625d218533327934ec" category="cell">Data ONTAPリリース9.12.1P2：2023年4月5日（水）19：57：43 UTC（Lenovo）
-NetAppリリース8.2.3P5 Cluster-Mode：2015年7月16日（木）21：51：07（太平洋夏時間）
-NetAppリリース8.3.1：2015年8月31日（月）12:42:08 UTC
-NetAppリリース8.3.1P2：2015年12月9日（水）03：10：24 UTC
-NetAppリリース8.3.2：2016年2月24日（水）03:29:11 UTC
-NetAppリリース8.3.2P12：2017年8月14日（月）02：57：01 UTC
-NetAppリリース8.3.2P2：2016年5月23日（月）13:45:25 UTC
-NetAppリリース8.3.2P5：2016年8月23日（火）12:36:56 UTC
-NetAppリリース8.3：月2015年3月09日23：01：28 PDT
-NetAppリリース9.10.0：2021年8月19日（木）01：19：53 UTC
-NetAppリリース9.10.1：2022年1月15日（土）10：49：44 UTC
-NetAppリリース9.10.1：2022年1月15日（土）15:04:44 UTC
-NetAppリリース9.10.1P10：2022年12月18日（日）16：24：34 UTC
-NetAppリリース9.10.1P11：2023年2月23日（木）06:55:33 UTC
-NetAppリリース9.10.1P12：2023年4月13日（木）00:30:59 UTC
-NetAppリリース9.10.1P13：2023年6月19日（月）06:30：54 UTC
-NetAppリリース9.10.1P1：2022年2月20日（日）04：09：09 UTC
-NetAppリリース9.10.1P2：2022年3月13日07:13:58 UTC
-NetAppリリース9.10.1P3：2022年4月19日（火）17：44：44 UTC
-NetAppリリース9.10.1P4：2022年5月09日（月）22：11：44 UTC
-NetAppリリース9.10.1P5：2022年6月19日14：49：57 UTC
-NetAppリリース9.10.1P6：2022年7月01日（金）12：06：33 UTC
-NetAppリリース9.10.1P7：2022年8月2日（火）08:59:50 UTC
-NetAppリリース9.10.1P8：2022年9月13日（火）14：10：13 UTC
-NetAppリリース9.10.1P9：2022年11月3日（木）23：29：00 UTC
-NetAppリリース9.10.1RC1：2021年10月27日（水）02：46：19 UTC
-NetAppリリース9.11.0P1：2022年3月22日（火）17：41：04 UTC
-NetAppリリース9.11.1：2022年7月12日（火）04：38：28 UTC
-NetAppリリース9.11.1：2022年7月12日（火）10：21：46 UTC
-NetAppリリース9.11.1P10：2023年5月25日（木）12:28:26 UTC
-NetAppリリース9.11.1P1：2022年8月9日（火）13：13：19 UTC
-NetAppリリース9.11.1P2：2022年9月05日（月）03：40：01 UTC
-NetAppリリース9.11.1P3：2022年9月29日（木）16:06:51 UTC
-NetAppリリース9.11.1P4：2022年10月27日（木）11：37：48 UTC
-NetAppリリース9.11.1P5：2022年12月10日（土）23：54：17 UTC
-NetAppリリース9.11.1P6：2023年1月27日（金）03:16:05 UTC
-NetAppリリース9.11.1P7：2023年3月9日（木）11:22:24 UTC
-NetAppリリース9.11.1P8：2023年4月07日（金）00:02:50 UTC
-NetAppリリース9.11.1P9：2023年4月28日（金）03:24:07 UTC
-NetAppリリース9.11.1RC1：2022年4月27日（水）06：57：10 UTC
-NetAppリリース9.11.1X12：2022年3月24日（木）16:38:36 UTC
-NetAppリリース9.11.1X26：2022年6月02日（木）09:48:39 UTC
-NetAppリリース9.12.1：2023年2月01日（水）10:18 UTC
-NetAppリリース9.12.1P1：2023年2月22日（水）18：22：20 UTC
-NetAppリリース9.12.1P2：2023年4月5日（水）14:58:46 UTC
-NetAppリリース9.12.1P2：2023年4月5日（水）19：57：43 UTC
-NetAppリリース9.12.1P3：2023年5月2日（火）13:02:11 UTC
-NetAppリリース9.12.1P4：2023年6月（火）20:41:34 UTC
-NetAppリリース9.12.1RC1：2022年11月04日（金）11：45：36 UTC
-NetAppリリース9.12.1RC1：2022年11月09日（水）01：14：48 UTC
-NetAppリリース9.13.0：2023年2月7日（火）21:20:29 UTC
-NetAppリリース9.13.0P1：月3月27日03：33：38 UTC 2023
-NetAppリリース9.13.0P2：2023年4月11日（火）15:05:31 UTC
-NetAppリリース9.13.0P3：2023年5月17日（水）16:31:25 UTC
-NetAppリリース9.13.1：2023年6月19日（月）13:36:41 UTC
-NetAppリリース9.13.1RC1：2023年4月26日（水）15:07:24 UTC
-NetAppリリース9.13.1X19：2023年4月3日（月）20:51:32 UTC
-NetAppリリース9.13.1X25：2023年4月26日（水）15:07:24 UTC
-NetAppリリース9.13.1X33：2023年5月29日（月）12:34:33 UTC
-NetAppリリース9.13.1X34:2023年6月8日(木) 10:20:00 UTC
-NetAppリリース9.13.1X35：2023年6月12日（月）12:12:13 UTC
-NetAppリリース9.13.1X36：2023年6月15日（木）13:39:29 UTC
-NetAppリリース9.1：2016年12月23日（金）04：09：51 UTC
-NetAppリリース9.1P10：2017年11月14日（火）18:03:02 UTC
-NetAppリリース9.1P11：2017年12月21日（木）15:05:39 UTC
-NetAppリリース9.1P12：2018年3月5日（月）17：39：31 UTC
-NetAppリリース9.1P14：2018年6月27日（水）09：15:16 UTC
-NetAppリリース9.1P15：2018年8月30日（木）08:19:59 UTC
-NetAppリリース9.1P17：2019年2月28日（木）08:05:25 UTC
-NetAppリリース9.1P19：2019年5月27日（月）09：09：01 UTC
-NetAppリリース9.1P1：2017年2月14日（火）13：14：46 UTC
-NetAppリリース9.1P20：2019年10月28日（月）14:37:28 UTC
-NetAppリリース9.1P5：2017年6月11日（日）02：26：58 UTC
-NetAppリリース9.1P7：2017年8月14日（月）10:27:14 UTC
-NetAppリリース9.1P8：2017年8月30日（水）13:33:41 UTC
-NetAppリリース9.3P10：2018年12月15日（土）04:24:49 UTC
-NetAppリリース9.3P12：2019年4月01日（月）23:33:10 UTC
-NetAppリリース9.3P13：2019年5月27日（月）19：26：00 UTC
-NetAppリリース9.3P14：2019年7月10日（水）14:38:46 UTC
-NetAppリリース9.3P15：2019年7月16日（火）19:40:35 UTC
-NetAppリリース9.3P18：2019年12月30日（月）10:39:53 UTC
-NetAppリリース9.3P19：2020年7月10日（金）12：47：52 UTC
-NetAppリリース9.3P1：2018年1月22日（月）18：01：29 UTC
-NetAppリリース9.3P20：2020年9月23日（水）21：44：43 UTC
-NetAppリリース9.3P21：2021年1月11日（月）17：25：42 UTC
-NetAppリリース9.3P2：2018年3月02日（金）01：02：58 UTC
-NetAppリリース9.3P2：2018年3月01日（木）16:53:13 UTC
-NetAppリリース9.3P4：2018年4月27日（金）19：34：03 UTC
-NetAppリリース9.3P6：2018年6月14日（木）20:21:25 UTC
-NetAppリリース9.3P7：2018年7月25日（水）10:11:10 UTC
-NetAppリリース9.3P8：2018年9月3日（月）20:01:35 UTC
-NetAppリリース9.3P9：2018年10月25日（木）07：42：13 UTC
-NetAppリリース9.4P2：2018年8月21日（火）00:00:08 UTC
-NetAppリリース9.4P3：2018年10月11日（木）22:23:50 UTC
-NetAppリリース9.4P4：2018年11月01日（木）15:18:22 UTC
-NetAppリリース9.4P6：2019年2月22日（金）09：43：14 UTC
-NetAppリリース9.4RC1：2018年4月26日（木）09:13:57 UTC
-NetAppリリース9.5: 2018年12月13日(木)20:41:33 UTC
-NetAppリリース9.5P10：2019年12月13日（金）16：01：45 UTC
-NetAppリリース9.5P12：2020年4月10日（金）18：20：31（UTC）
-NetAppリリース9.5P13：2020年5月19日（火）02：45：36 UTC
-NetAppリリース9.5P14：2020年8月17日（月）05：32:42 UTC
-NetAppリリース9.5P15：2020年11月17日（火）07：31：22 UTC
-NetAppリリース9.5P16：2021年1月12日（火）10：52：07 UTC
-NetAppリリース9.5P17：2021年5月12日（水）20：42：52 UTC
-NetAppリリース9.5P18：2021年8月11日（水）19：17：30 UTC
-NetAppリリース9.5P19：2021年11月27日（土）06:39:07 UTC
-NetAppリリース9.5P1：2019年2月19日（火）21：38：50 UTC
-NetAppリリース9.5P2：2019年3月14日（木）13:59:39 UTC
-NetAppリリース9.5P3：2019年4月16日（火）18:33:13 UTC
-NetAppリリース9.5P3：2019年4月16日（火）22:44:27 UTC
-NetAppリリース9.5P4：2019年5月07日（火）03:16:26 UTC
-NetAppリリース9.5P5：2019年6月14日（金）15:33:34 UTC
-NetAppリリース9.5P6：2019年7月10日（水）18:43:50 UTC
-NetAppリリース9.5P6：2019年7月10日（水）22:58:11 UTC
-NetAppリリース9.5P7：2019年8月6日（火）00:37:41 UTC
-NetAppリリース9.5P8：2019年9月20日（金）19：03：08 UTC
-NetAppリリース9.5P9：2019年10月28日（月）09:18:10 UTC
-NetAppリリース9.6：2019年7月10日（水）10:10:43 UTC
-NetAppリリース9.6：2019年7月10日（水）16:25:33 UTC
-NetAppリリース9.6P11：2020年10月16日（金）23：13：09 UTC
-NetAppリリース9.6P14：2021年4月5日（月）15：34：55 UTC
-NetAppリリース9.6P15：2021年5月31日（月）02：25：27 UTC
-NetAppリリース9.6P18：2022年4月5日（火）11：08：11 UTC
-NetAppリリース9.6P2：2019年7月19日（金）06:06:59 UTC
-NetAppリリース9.6P3：2019年9月22日(日)08:26:36 UTC
-NetAppリリース9.6P4：2019年11月07日（木）01:50:36 UTC
-NetAppリリース9.6P5：2019年12月13日（金）18：21：56 UTC
-NetAppリリース9.6RC1：2019年5月11日（土）05:58:14 UTC
-NetAppリリース9.6X11：2019年3月10日(日)12:15:04 UTC
-NetAppリリース9.7：2020年1月9日（木）17：11：21 UTC
-NetAppリリース9.7P10：2020年12月10日（木）00:55:43 UTC
-NetAppリリース9.7P11：2021年1月12日（火）18:41:8 UTC
-NetAppリリース9.7P11：2021年1月12日（火）23：00:49 UTC
-NetAppリリース9.7P12：2021年3月02日（火）23:38:44 UTC
-NetAppリリース9.7P13：2021年4月15日（木）02：06：46 UTC
-NetAppリリース9.7P14：2021年6月10日（木）22:54:31 UTC
-NetAppリリース9.7P15：2021年8月6日（金）19：56：41 UTC
-NetAppリリース9.7P16：2021年9月10日（金）22：33：12 UTC
-NetAppリリース9.7P17：2021年11月27日（土）13:49:53 UTC
-NetAppリリース9.7P18：2022年3月10日（木）09:57:16 UTC
-NetAppリリース9.7P19：2022年5月23日（月）20:55:08 UTC
-NetAppリリース9.7P1：2020年2月27日（木）01：25：24 UTC
-NetAppリリース9.7P20：2022年8月11日（木）13:20:52 UTC
-NetAppリリース9.7P21：2022年12月23日（金）11：52：44 UTC
-NetAppリリース9.7P22：2023年3月27日（月）14:06:51 UTC
-NetAppリリース9.7P2：2020年3月22日21:50:44 UTC
-NetAppリリース9.7P3：2020年4月17日（金）14：37：51 UTC
-NetAppリリース9.7P4：2020年5月23日（土）00:43:42 UTC
-NetAppリリース9.7P5：2020年6月23日（火）04：02：30 UTC
-NetAppリリース9.7P6：2020年7月28日（火）04：06：27 UTC
-NetAppリリース9.7P7：2020年8月27日（木）20:57:05 UTC
-NetAppリリース9.7P8：2020年10月15日（木）04:11:57 UTC
-NetAppリリース9.7P9：2020年11月06日（金）1：13：45 UTC
-NetAppリリース9.7RC1：2019年11月22日（金）07：39：07（UTC）
-NetAppリリース9.7X17：2019年11月16日（土）22:06:11 UTC
-NetAppリリース9.8：2020年12月9日（水）06：17：24 UTC
-NetAppリリース9.8P10：2022年2月04日（金）19：51：21 UTC
-NetAppリリース9.8P11：2022年3月12日（土）10:19:15 UTC
-NetAppリリース9.8P11D2：2022年4月14日（木）12:50:07 UTC
-NetAppリリース9.8P12：2022年5月13日（金）00:04：00 UTC
-NetAppリリース9.8P13：2022年7月15日（金）22：40：56 UTC
-NetAppリリース9.8P14：2022年8月23日（火）15:29:48 UTC
-NetAppリリース9.8P15：2022年11月23日（水）09：29：16 UTC
-NetAppリリース9.8P16：2022年12月02日（金）02：05（UTC）
-NetAppリリース9.8P16：2022年12月01日（木）20:42:37 UTC
-NetAppリリース9.8P17：2023年2月24日（金）15:11:05 UTC
-NetAppリリース9.8P18：2023年3月29日（水）13:19:30 UTC
-NetAppリリース9.8P19：2023年5月11日（木）12:52:01 UTC
-NetAppリリース9.8P19：2023年5月11日（木）17:26:53 UTC
-NetAppリリース9.8P1：2021年1月21日（木）01：11：31 UTC
-NetAppリリース9.8P2：2021年2月16日（火）03:49:46 UTC
-NetAppリリース9.8P3：2021年3月27日土曜日08:43:48 UTC
-NetAppリリース9.8P4：2021年5月3日（月）09：22：00 UTC
-NetAppリリース9.8P5：2021年6月10日（木）21：52：01 UTC
-NetAppリリース9.8P6：2021年8月3日（火）16:21:11 UTC
-NetAppリリース9.8P7：2021年9月14日（火）18:38:58 UTC
-NetAppリリース9.8P8：2021年10月21日（木）19：21：56 UTC
-NetAppリリース9.8P9：2021年12月22日（水）09：39：04 UTC
-NetAppリリース9.8RC1：2020年10月31日（土）11：13：09 UTC
-NetAppリリース9.9.0：2021年2月5日（金）11：29：21 UTC
-NetAppリリース9.9.1：2021年6月13日06:06:29 UTC
-NetAppリリース9.9.1：2021年6月13日（日）11:45:05 UTC
-NetAppリリース9.9.1P10：2022年5月27日（金）16:22:46 UTC
-NetAppリリース9.9.1P11：2022年8月2日（火）19：12：28 UTC
-NetAppリリース9.9.1P12：2022年9月16日（金）20：50：11 UTC
-NetAppリリース9.9.1P13：2022年11月18日（金）17：29：45 UTC
-NetAppリリース9.9.1P14：2023年1月27日（金）21：45：51 UTC
-NetAppリリース9.9.1P15：月3月27日12:31:36 UTC
-NetAppリリース9.9.1P16：2023年5月25日（木）01：06：07 UTC
-NetAppリリース9.9.9.1P1：2021年7月02日（金）20：21：27 UTC
-NetAppリリース9.9.1P2：2021年8月19日（木）13:53:06 UTC
-NetAppリリース9.9.1P3：2021年9月25日（土）13:10:46 UTC
-NetAppリリース9.9.1P3：2021年9月29日（水）12:55:55 UTC
-NetAppリリース9.9.1P4：2021年10月11日（月）09:20:31 UTC
-NetAppリリース9.9.9.1P5：2021年11月20日（土）12：17：23 UTC
-NetAppリリース9.9.1P6：2021年12月21日（火）13:38:22 UTC
-NetAppリリース9.9.1P7：2022年1月29日（土）01：25：00 UTC
-NetAppリリース9.9.1P8：2022年3月15日（火）22：46：53 UTC
-NetAppリリース9.9.1P9：2022年4月20日（水）00:42:19 UTC
-NetAppリリースBluepaddle__9.7.0: 2019年11月22日(金)07:39:07 UTC
-NetAppリリースDirtwolf__9.8.0：2022年1月18日（火）07：07：03 UTC
-NetAppリリース灯台__9.13.1:月6月19日07:42:08 UTC
-NetAppリリース灯台__9.13.1:日曜日6月18日05:17:33 UTC
-NetAppリリースロングボード__9.0.1：2016年6月4日（土）09:45:33 UTC
-NetAppリリースメトロポリタン__9.11.1：2022年7月12日（火）04：38：28 UTC
-NetAppリリースメトロポリタン__9.11.1：2022年4月27日（水）01：48：31 UTC
-NetAppリリースストームキング__9.10.1：2022年3月13日02:23:34 UTC
-NetAppリリースYellowdog__9.12.1：2022年11月28日（月）22:02:55 UTC
-NetAppリリースYellowdog__9.12.1:火曜日1月31日19:19:43 UTC 2023
-NetAppリリースYellowdog__9.12.1:火曜日Nov 08 20:32:25 UTC
-NetAppリリースYellowdog__9.12.1：2022年10月5日（水）05:47:17 UTC</block>
   <block id="4a07a61fa2c711c9fc5bae0b8a8057fe" category="cell">AFF-A150
 AFF-A200
 AFF-A220
@@ -15589,186 +15195,6 @@ FAS9500
 FASDvM300
 シムボックス
 V6240</block>
-  <block id="76fe5692a92f8f0664c53254f69ec92c" category="cell">8.2.3P5 clustered Data ONTAP
-8.3.0 clustered Data ONTAP
-8.3.1 clustered Data ONTAP
-8.3.1P2 clustered Data ONTAP
-8.3.2 clustered Data ONTAP
-8.3.2P12 clustered Data ONTAP
-8.3.2P2 clustered Data ONTAP
-8.3.2P5 clustered Data ONTAP
-9.0.1 clustered Data ONTAP
-9.1.0 clustered Data ONTAP
-9.1.0P1 clustered Data ONTAP
-9.1.0P10 clustered Data ONTAP
-9.1.0P11 clustered Data ONTAP
-9.1.0P12 clustered Data ONTAP
-9.1.0P14 clustered Data ONTAP
-9.1.0P15 clustered Data ONTAP
-9.1.0P17 clustered Data ONTAP
-9.1.0P19 clustered Data ONTAP
-9.1.0P20 clustered Data ONTAP
-9.1.0P5 clustered Data ONTAP
-9.1.0P7 clustered Data ONTAP
-9.1.0P8 clustered Data ONTAP
-9.10.0 clustered Data ONTAP
-9.10.1 clustered Data ONTAP
-9.10.1P1 clustered Data ONTAP
-9.10.1P10 clustered Data ONTAP
-9.10.1P11 clustered Data ONTAP
-9.10.1P12 clustered Data ONTAP
-9.10.1P13 clustered Data ONTAP
-9.10.1P2 clustered Data ONTAP
-9.10.1P3 clustered Data ONTAP
-9.10.1P4 clustered Data ONTAP
-9.10.1P5 clustered Data ONTAP
-9.10.1P6 clustered Data ONTAP
-9.10.1P7 clustered Data ONTAP
-9.10.1P8 clustered Data ONTAP
-9.10.1P9 clustered Data ONTAP
-9.11.0P1 clustered Data ONTAP
-9.11.1 clustered Data ONTAP
-9.11.1P1 clustered Data ONTAP
-9.11.1P10 clustered Data ONTAP
-9.11.1P2 clustered Data ONTAP
-9.11.1P3 clustered Data ONTAP
-9.11.1P4 clustered Data ONTAP
-9.11.1P5 clustered Data ONTAP
-9.11.1P6 clustered Data ONTAP
-9.11.1P7 clustered Data ONTAP
-9.11.1P8 clustered Data ONTAP
-9.11.1P9 clustered Data ONTAP
-9.11.1X12 clustered Data ONTAP
-9.11.1X26 clustered Data ONTAP
-9.12.1 clustered Data ONTAP
-9.12.1P1 clustered Data ONTAP
-9.12.1P2 clustered Data ONTAP
-9.12.1P3 clustered Data ONTAP
-9.12.1P4 clustered Data ONTAP
-9.13.0 clustered Data ONTAP
-9.13.0P1 clustered Data ONTAP
-9.13.0P2 clustered Data ONTAP
-9.13.0P3 clustered Data ONTAP
-9.13.1 clustered Data ONTAP
-9.13.1X19 clustered Data ONTAP
-9.13.1X25 clustered Data ONTAP
-9.13.1X33 clustered Data ONTAP
-9.13.1X34 clustered Data ONTAP
-9.13.1X35 clustered Data ONTAP
-9.13.1X36 clustered Data ONTAP
-9.3.0P1 clustered Data ONTAP
-9.3.0P10 clustered Data ONTAP
-9.3.0P12 clustered Data ONTAP
-9.3.0P13 clustered Data ONTAP
-9.3.0P14 clustered Data ONTAP
-9.3.0P15 clustered Data ONTAP
-9.3.0P18 clustered Data ONTAP
-9.3.0P19 clustered Data ONTAP
-9.3.0P2 clustered Data ONTAP
-9.3.0P20 clustered Data ONTAP
-9.3.0P21 clustered Data ONTAP
-9.3.0P4 clustered Data ONTAP
-9.3.0P6 clustered Data ONTAP
-9.3.0P7 clustered Data ONTAP
-9.3.0P8 clustered Data ONTAP
-9.3.0P9 clustered Data ONTAP
-9.4.0 clustered Data ONTAP
-9.4.0P2 clustered Data ONTAP
-9.4.0P3 clustered Data ONTAP
-9.4.0P4 clustered Data ONTAP
-9.4.0P6 clustered Data ONTAP
-9.5.0 clustered Data ONTAP
-9.5.0P1 clustered Data ONTAP
-9.5.0P10 clustered Data ONTAP
-9.5.0P12 clustered Data ONTAP
-9.5.0P13 clustered Data ONTAP
-9.5.0P14 clustered Data ONTAP
-9.5.0P15 clustered Data ONTAP
-9.5.0P16 clustered Data ONTAP
-9.5.0P17 clustered Data ONTAP
-9.5.0P18 clustered Data ONTAP
-9.5.0P19 clustered Data ONTAP
-9.5.0P2 clustered Data ONTAP
-9.5.0P3 clustered Data ONTAP
-9.5.0P4 clustered Data ONTAP
-9.5.0P5 clustered Data ONTAP
-9.5.0P6 clustered Data ONTAP
-9.5.0P7 clustered Data ONTAP
-9.5.0P8 clustered Data ONTAP
-9.5.0P9 clustered Data ONTAP
-9.6.0 clustered Data ONTAP
-9.6.0P11 clustered Data ONTAP
-9.6.0P14 clustered Data ONTAP
-9.6.0P15 clustered Data ONTAP
-9.6.0P18 clustered Data ONTAP
-9.6.0P2 clustered Data ONTAP
-9.6.0P3 clustered Data ONTAP
-9.6.0P4 clustered Data ONTAP
-9.6.0P5 clustered Data ONTAP
-9.6.0x11 clustered Data ONTAP
-9.7.0 clustered Data ONTAP
-9.7.0P1 clustered Data ONTAP
-9.7.0P10 clustered Data ONTAP
-9.7.0P11 clustered Data ONTAP
-9.7.0P12 clustered Data ONTAP
-9.7.0P13 clustered Data ONTAP
-9.7.0P14 clustered Data ONTAP
-9.7.0P15 clustered Data ONTAP
-9.7.0P16 clustered Data ONTAP
-9.7.0P17 clustered Data ONTAP
-9.7.0P18 clustered Data ONTAP
-9.7.0P19 clustered Data ONTAP
-9.7.0P2 clustered Data ONTAP
-9.7.0P20 clustered Data ONTAP
-9.7.0P21 clustered Data ONTAP
-9.7.0P22 clustered Data ONTAP
-9.7.0P3 clustered Data ONTAP
-9.7.0P4 clustered Data ONTAP
-9.7.0P5 clustered Data ONTAP
-9.7.0P6 clustered Data ONTAP
-9.7.0P7 clustered Data ONTAP
-9.7.0P8 clustered Data ONTAP
-9.7.0P9 clustered Data ONTAP
-9.7.0x17 clustered Data ONTAP
-9.8.0 clustered Data ONTAP
-9.8.0P1 clustered Data ONTAP
-9.8.0P10 clustered Data ONTAP
-9.8.0P11 clustered Data ONTAP
-9.8.0P11D2 clustered Data ONTAP
-9.8.0P12 clustered Data ONTAP
-9.8.0P13 clustered Data ONTAP
-9.8.0P14 clustered Data ONTAP
-9.8.0P15 clustered Data ONTAP
-9.8.0P16 clustered Data ONTAP
-9.8.0P17 clustered Data ONTAP
-9.8.0P18 clustered Data ONTAP
-9.8.0P19 clustered Data ONTAP
-9.8.0P2 clustered Data ONTAP
-9.8.0P3 clustered Data ONTAP
-9.8.0P4 clustered Data ONTAP
-9.8.0P5 clustered Data ONTAP
-9.8.0P6 clustered Data ONTAP
-9.8.0P7 clustered Data ONTAP
-9.8.0P8 clustered Data ONTAP
-9.8.0P9 clustered Data ONTAP
-9.9.0 clustered Data ONTAP
-9.9.1 clustered Data ONTAP
-9.9.1P1 clustered Data ONTAP
-9.9.1P10 clustered Data ONTAP
-9.9.1P11 clustered Data ONTAP
-9.9.1P12 clustered Data ONTAP
-9.9.1P13 clustered Data ONTAP
-9.9.1P14 clustered Data ONTAP
-9.9.1P15 clustered Data ONTAP
-9.9.1P16 clustered Data ONTAP
-9.9.1P2 clustered Data ONTAP
-9.9.1P3 clustered Data ONTAP
-9.9.1P4 clustered Data ONTAP
-9.9.1P5 clustered Data ONTAP
-9.9.1P6 clustered Data ONTAP
-9.9.1P7 clustered Data ONTAP
-9.9.1P8 clustered Data ONTAP
-9.9.1P9 clustered Data ONTAP</block>
   <block id="e0e5e88bf87543da85f0d903d2d6fe42" category="cell">H410S-2
  H610S-2
  H610S-4
@@ -16077,24 +15503,250 @@ VMware vCenter Server 8.0.1ビルド-21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">追加情報はから入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">この Data Collector の追加情報は、から入手できます <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページまたはを参照してください <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">では、サポートされているデータコレクタに関する情報や詳細を表示またはダウンロードできます <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">ワークロードセキュリティは、ONTAPと統合してアクセス拒否イベントを受信し、追加の分析と自動応答レイヤを提供します。</block>
-  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">ONTAPアクセス拒否との統合</block>
-  <block id="c1aef2a1ae85a8f2d2f2972297da3d60" category="paragraph">ONTAPアクセス拒否機能は、NAS（NFSおよびSMB）環境のワークロード分析を使用して、失敗したファイル処理（権限のない処理を実行しようとしているユーザなど）をプロアクティブに検出して警告します。これらのファイル操作の失敗の通知は、特にセキュリティ関連の障害の場合には、初期段階でのインサイダー攻撃のブロックにさらに役立ちます。</block>
-  <block id="b849ca242cbc590016b269c1ee91cc29" category="paragraph">ワークロードセキュリティは、ONTAPと統合してアクセス拒否イベントを受信し、追加の分析および自動応答レイヤを提供します。</block>
-  <block id="5b3261ec26222327253513a1f5b85ba6" category="list-text">ONTAPの最小バージョン：9.13.0</block>
-  <block id="7238e9f6faa9a8bf2a1c0b55cb039588" category="list-text">アクセス拒否機能は、デフォルトでは無効になっています。ワークロードセキュリティ管理者は、新しいコレクタを追加したり、既存のコレクタを編集したりするときに、この機能を有効にできます。有効にするには、[Workload Security]&gt;[Collectors]で目的のコレクタを追加または編集し、[Advanced Configuration]の[_Monitor Access Denied Events]チェックボックスをオンにします。</block>
-  <block id="a808fab09e2c9ae5a63f5e049dab0688" category="inline-image-macro">アクセス拒否の有効化</block>
-  <block id="6dbaec8d589ae936fddaa5da8e4136bc" category="paragraph"><block ref="6dbaec8d589ae936fddaa5da8e4136bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ccce4bc08fadbf62adda903ef18b3a71" category="paragraph">クラスタ管理のクレデンシャルを使用してコレクタを追加した場合、新しい権限は必要ありません。</block>
-  <block id="7e94086884e2780e5b6c9f81ac89dc5b" category="paragraph">ユーザーに付与された権限を持つカスタムユーザー（_csuser_など）を使用してコレクタを追加する場合は、次の手順に従ってワークロードセキュリティに権限を付与し、ONTAP for Access Deniedイベントに登録します。</block>
-  <block id="fe6df009bfa9d725b811d49cdb8b4e7c" category="paragraph">クラスタのクレデンシャルを使用する場合は、ONTAPコマンドラインから次のコマンドを実行します。</block>
-  <block id="02efd7604209ddbbd8e84d4f61b73a6e" category="paragraph">SVMクレデンシャルを使用している場合は、ONTAPコマンドラインから次のコマンドを実行します。</block>
-  <block id="18eb08209dff281929039b467a472f31" category="paragraph">注：上記のコマンドでは、_csrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。</block>
-  <block id="d0aae2eaa03ecabb8c086f9955d726c7" category="section-title">サンプルアクセス拒否イベント</block>
-  <block id="428ed0ed1c01699e6322b706684fdb11" category="paragraph">次の画像に示すように、サンプルのAccess Deniedイベントが表示されます。また、オプションで表示できる_desired Activity_columnの下に、特定の操作でユーザが必要とした権限のリストが表示されます。</block>
-  <block id="d41ccaf6090623996b7a77e9f74f06bf" category="inline-image-macro">アクセス拒否サンプルイベント</block>
-  <block id="66dcd3eccaf1048a46b7727780eeb9cd" category="inline-image-macro">アクセスが拒否されたアクティビティカラムを表示するサンプルイベント</block>
-  <block id="143f93c0a250d7b4c81e78e2cb154211" category="paragraph"><block ref="ee0b481ebed31d6775d42686b376f648" category="inline-image-macro-rx" type="image"></block>
-<block ref="f913a701b0e25c9f7bd9dfbc47afd16c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAPアクセスの統合が拒否されました</block>
+  <block id="c00642d871f5ba7dbc50bbe96271824a" category="cell">3.1.1（MU1）
+3.1.2（MU3）
+3.1.3（MU1）
+3.1.3（MU2）
+3.1.3（MU3）
+3.2.1（MU3）
+3.2.1（MU5）
+3.2.2
+3.2.2（MU2）
+3.2.2（MU4）
+3.2.2（MU6）
+3.3.1（MU1）
+3.3.1（MU2）
+3.3.1（MU5）
+3.3.2
+3.3.2（MU1）
+4.4.1リリースタイプ：標準サポートリリース
+4.5.11リリースタイプ：延長サポートリリース
+4.5.3リリースタイプ：延長サポートリリース
+4.5.7リリースタイプ：延長サポートリリース
+9.5.8リリースタイプ：延長サポートリリース</block>
+  <block id="51b625d6addc0e43e8a47ac5aa049060" category="cell">A200
+A2000
+A300 の比較
+F200
+F800
+F900
+H400
+H500
+H600
+H700
+NL400
+NL410
+S210
+X200
+X210
+X400
+X410</block>
+  <block id="80ab59f6aabf4af4349282653e17c8da" category="cell">v10.0.0.0
+v10.0.1.0
+V7.6.2.67
+V8.3.0.22
+V8.3.0.6
+V8.4.0.7
+V8.4.0.9
+v9.1.0.18
+v9.1.0.5
+v9.1.0.6
+v9.2.0.0
+v9.2.1.0
+v9.2.1.1
+v9.2.1.2
+v9.2.2.0
+v9.2.3.0
+v9.2.3.1
+v9.2.3.4
+v9.2.3.5
+v9.2.3.6
+v9.2.4.1
+v9.2.4.2</block>
+  <block id="8f18d2f14650495a35607299888487dd" category="cell">1.12
+1.14
+1.17
+1.19
+1.20
+1.21</block>
+  <block id="0e81c94ca82abcdceefe92f03e92b4da" category="cell">8.2.3P5
+8.3.0
+8.3.1
+8.3.1P2
+8.3.2
+8.3.2P12
+8.3.2P2
+8.3.2P5
+9.0.1
+9.1.0
+9.1.0P1
+9.1.0P10
+9.1.0P11
+9.1.0P12
+9.1.0P14
+9.1.0P15
+9.1.0P17
+9.1.0P19
+9.1.0P20
+9.1.0P5
+9.1.0P7
+9.1.0P8
+9.10.0
+9.10.1
+9.10.1P1
+9.10.1P10
+9.10.1P11
+9.10.1P12
+9.10.1P13
+9.10.1P2
+9.10.1P3
+9.10.1P4
+9.10.1P5
+9.10.1P6
+9.10.1P7
+9.10.1P8
+9.10.1P9
+9.11.0P1
+9.11.1
+9.11.1P1
+9.11.1P10
+9.11.1P2
+9.11.1P3
+9.11.1P4
+9.11.1P5
+9.11.1P6
+9.11.1P7
+9.11.1P8
+9.11.1P9
+9.11.1X12
+9.11.1X26
+9.12.1: 
+9.12.1P1
+9.12.1P2
+9.12.1P3
+9.12.1P4
+9.13.0
+9.13.0P1
+9.13.0P2
+9.13.0P3
+9.13.1.
+9.13.1X19
+9.13.1X25
+9.13.1X33
+9.13.1X34
+9.13.1X35
+9.13.1X36
+9.3.0P1
+9.3.0P10
+9.3.0P12
+9.3.0P13
+9.3.0P14
+9.3.0P15
+9.3.0P18
+9.3.0P19
+9.3.0P2
+9.3.0P20
+9.3.0P21
+9.3.0P4
+9.3.0P6
+9.3.0P7
+9.3.0P8
+9.3.0P9
+9.4.0
+9.4.0P2
+9.4.0P3
+9.4.0P4
+9.4.0P6
+9.5.0
+9.5.0P1
+9.5.0P10
+9.5.0P12
+9.5.0P13
+9.5.0P14
+9.5.0P15
+9.5.0P16
+9.5.0P17
+9.5.0P18
+9.5.0P19
+9.5.0P2
+9.5.0P3
+9.5.0P4
+9.5.0P5
+9.5.0P6
+9.5.0P7
+9.5.0P8
+9.5.0P9
+9.6.0
+9.6.0P11
+9.6.0P14
+9.6.0P15
+9.6.0P18
+9.6.0P2
+9.6.0P3
+9.6.0P4
+9.6.0P5
+9.6.0x11
+9.7.0
+9.7.0P1
+9.7.0P10
+9.7.0P11
+9.7.0P12
+9.7.0P13
+9.7.0P14
+9.7.0P15
+9.7.0P16
+9.7.0P17
+9.7.0P18
+9.7.0P19
+9.7.0P2
+9.7.0P20
+9.7.0P21
+9.7.0P22
+9.7.0P3
+9.7.0P4
+9.7.0P5
+9.7.0P6
+9.7.0P7
+9.7.0P8
+9.7.0P9
+9.7.0x17
+9.8.0
+9.8.0P1
+9.8.0P10
+9.8.0P11
+9.8.0P11D2
+9.8.0P12
+9.8.0P13
+9.8.0P14
+9.8.0P15
+9.8.0P16
+9.8.0P17
+9.8.0P18
+9.8.0P19
+9.8.0P2
+9.8.0P3
+9.8.0P4
+9.8.0P5
+9.8.0P6
+9.8.0P7
+9.8.0P8
+9.8.0P9
+9.9.0
+9.9.1
+9.9.1P1
+9.9.1P10
+9.9.1P11
+9.9.1P12
+9.9.1P13
+9.9.1P14
+9.9.1P15
+9.9.1P16
+9.9.1P2
+9.9.1P3
+9.9.1P4
+9.9.1P5
+9.9.1P6
+9.9.1P7
+9.9.1P8
+9.9.1P9</block>
 </blocks>
