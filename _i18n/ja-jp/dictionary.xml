@@ -5929,9 +5929,6 @@ Num GC
 エラー</block>
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">ログエクスプローラは、さまざまなシステムログから問題を調査するための強力なツールです。</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights ログエクスプローラは、システムログを照会するための強力なツールです。検査に役立つだけでなく、ログクエリーをモニタに保存して、特定のログトリガーがアクティブになったときにアラートを生成することもできます。</block>
-  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">ログの検索を開始するには、 *Queries &gt;+New Log Query * をクリックします。</block>
-  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">[Log queries]メニュー、480</block>
-  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">リストから使用可能なログを選択します。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">ログを選択します</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
@@ -5941,16 +5938,6 @@ Num GC
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">結果は、表示される各期間のログインスタンスの数を示すグラフに表示されます。グラフの下には、自分のログエントリが表示されます。グラフとエントリは、選択した期間に基づいて自動的に更新されます。</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">フィルタを示すクエリの例</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">ロググラフ</block>
-  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">このグラフには、選択したダッシュボードの時間範囲に基づいて _bucket_ にグループ化されたログエントリの数が表示されます。各期間のバケットは次のとおりです。</block>
-  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">バケットサイズ</block>
-  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30分だ</block>
-  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45分だ</block>
-  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 日</block>
-  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">グラフを拡大表示するには、スライダを左右いずれかの方向にドラッグします。ズームした領域をパンするには、白い領域をクリックしたまま左または右に移動します。ズームレベルをリセットするには、 _Reset Zoom_ をクリックします。</block>
-  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">グラフの横をドラッグしてズームインします</block>
-  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">グラフをズームしたりテーブルをスクロールしたりすると、ダッシュボードの自動更新が一時停止し、時間範囲にフリーズした時間が表示されることに注意してください。更新を再開するには、 _Resume_button をクリックします <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>。これにより、ズームレベルもリセットされます。</block>
   <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">[ ログモニタの作成 ] をクリックすると、現在のフィルタに基づいて新しいモニタを作成できます。</block>
   <block id="5498a5f4896f117c2848f41304cec816" category="section-title">ログの詳細</block>
   <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">リスト内のログエントリの任意の場所をクリックすると、そのエントリの詳細ペインが開きます。  ここでは、イベントに関する詳細を確認できます。</block>
@@ -15609,4 +15596,30 @@ v9.2.4.2</block>
 9.9.1P8
 9.9.1P9</block>
   <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">非アクティブな Cloud Insights Basic Edition 環境が削除され、そのリソースが再利用されます。連続する 30 日間のユーザアクティビティがない場合、 7 日間にわたってデータが取り込まれていない場合、環境は非アクティブとみなされます。Cloud Insights は通知を送信し、環境が削除される 4 日前の猶予期間を提供します。</block>
+  <block id="12a4857a4dbeb827f3ccc062e3e95447" category="paragraph">ログの検索を開始するには、*[Log Queries]&gt;[+New Log Query]*をクリックします。</block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">フィルタリング</block>
+  <block id="c372ce68f746709e625ff6a439caabb9" category="section-title">含める/除外する</block>
+  <block id="2787899688f12e7489007de8b12213d5" category="paragraph">ログをフィルタリングするときは、入力した文字列を*含める*（「フィルタする」など）または*除外*にすることができます。除外された文字列は、完了したフィルタに「Not &lt;string&gt;」と表示されます。</block>
+  <block id="1734ff7c4f75b54c961ad7d4359787e1" category="inline-image-macro">除外オプションを表示するログフィルタ</block>
+  <block id="405c7a3556714c3c384503dcad4e730a" category="paragraph"><block ref="405c7a3556714c3c384503dcad4e730a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">高度なフィルタリング</block>
+  <block id="110b3aa692108cdd731e2a20e7fab59a" category="paragraph">クエリやダッシュボードウィジェットでテキストやリストの値をフィルタする場合、入力を開始すると、現在のテキストに基づいて * ワイルドカードフィルタ * を作成するオプションが表示されます。このオプションを選択すると、ワイルドカード式に一致するすべての結果が返されます。NOT、AND、ORを使用して式を作成することもできます。また、[None]オプションを選択してnull値をフィルタリングすることもできます。</block>
+  <block id="ca6fcfb5b3944c9f5e1fc9d91e8b5fc9" category="admonition">フィルタリングを構築するときは、クエリを早期に頻繁に保存するようにしてください。高度なクエリは「自由形式」の文字列エントリであり、ビルド中に解析ミスが発生する可能性があります。</block>
+  <block id="6682349270b7766210b24eb769ff2f4b" category="paragraph">この画面の画像を見てください。この画像は、_logs.kubernetes.event_logの高度なクエリのフィルタリングされた結果を示しています。このページでは多くのことが行われています。これについては、画像の下で説明します。</block>
+  <block id="1e7fa24e8c554b3ada8b33899f9054fb" category="inline-image-macro">[Advanced Query]画面の説明</block>
+  <block id="67e358a5c19a682585f241c67623688b" category="paragraph"><block ref="67e358a5c19a682585f241c67623688b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46a8b17ae4f06cb7ca1032e9fd81030d" category="list-text">この高度なクエリー文字列フィルタは、次の項目に対して適用されます。</block>
+  <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">「failed」という単語を含む_reason_のログエントリをフィルタリングしますが、特定の理由が「FailedMount」のログエントリはフィルタリングしません。</block>
+  <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">「monitoring」という単語を含む_metadata.namespace_を含むエントリのいずれかを含めますが、「cm-monitoring」または「eg-monitoring」の特定の名前空間は除外します。</block>
+  <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">上記の場合、"cm-monitoring"と"eg-monitoring"の両方にダッシュが含まれているため、文字列を二重引用符で囲む必要があります。そうしないと、解析エラーが表示されます。ダッシュ、スペースなどを含まない文字列は、引用符で囲む必要はありません。疑わしい場合は、文字列を引用符で囲みます。</block>
+  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">現在のフィルタの結果（[Filter by]の値や[Advanced Query]のフィルタなど）。リストは、表示されている任意の列でソートできます。追加の列を表示するには、「歯車」アイコンを選択します。</block>
+  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">グラフが拡大され、特定の期間内に発生したログ結果のみが表示されるようになりました。ここに表示されている時間範囲は、現在のズームレベルを反映しています。ズームレベルを現在のCloud Insights時間範囲に戻すには、_Reset Zoom_ボタンを選択します。</block>
+  <block id="e9c3a605437c1d21260249137747effc" category="list-text">グラフの結果は、_source_fieldでグループ化されています。グラフには、各列の結果が色別にグループ化されて表示されます。グラフの列にカーソルを合わせると、特定のエントリに関する詳細が表示されます。</block>
+  <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">グループ化されたマウスオーバーの詳細</block>
+  <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9bb5a9e84c262c583c25b07c1af190" category="paragraph">単純なフィルタと高度なクエリフィルタを組み合わせることができます。結果のフィルタは、2つのうちの「AND」になります。</block>
+  <block id="b761d7a9aa49f18da68cf21ea910b857" category="section-title">グラフの凡例</block>
+  <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">グラフの下の_凡例_にもいくつかの驚きがあります。凡例に表示される結果ごとに（現在のフィルタに基づいて）、その行の結果のみを表示するオプション（フィルタの追加）、またはその行以外の結果を表示するオプション（除外フィルタの追加）があります。グラフと[ログエントリ]リストが更新され、選択した結果が表示されます。  このフィルタリングを削除するには、凡例をもう一度開き、[X]を選択して凡例ベースのフィルタをクリアします。</block>
+  <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">最初の結果に[Add Filter]が表示されているAdvanced Queryの凡例</block>
+  <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
