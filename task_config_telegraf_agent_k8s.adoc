@@ -19,18 +19,10 @@ summary: Cloud Insights は、 Kubernetes で統合データを収集するエ�
 
 
 [role="lead"]
-Cloud Insights では、などの多くのコンポーネントが使用されます link:https://docs.fluentbit.io/manual["流暢なビット"] および link:https://docs.influxdata.com/telegraf/["Tegraf"]をクリックしてください。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
+Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
 
 
 toc::[]
-Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
-
-image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
-
-以下は、オペレータが環境内のどこに配置されているかを示す大まかな図です。環境によっては、_Proxy Server_が必要になる場合と不要になる場合があります。
-
-image:CI_Diagram_with_NKMO.png["Kubernetesクラスタ内に存在するNKMOを示すハイレベルなマップ。矢印は、ホスト、プロキシサーバからクラスタにデータが移動し、すべてがCloud Insights にロールアップされる様子を示しています"]
-
 演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。
 
 
