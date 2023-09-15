@@ -198,9 +198,10 @@ Linux* Acquisition Unitをアンインストールする場合は、次の手順
 . アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。
 
 
-注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。
 
-'''
+NOTE: データコレクタが接続されているAcquisition Unit（AU）は削除できません。元のAUを削除する前に、AUのすべてのデータコレクタを別のAUに移動します（コレクタを編集して別のAUを選択するだけです）。
+''''
+
 
 
 == Acquisition Unit の再インストール

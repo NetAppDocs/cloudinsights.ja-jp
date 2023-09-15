@@ -6896,7 +6896,6 @@ Zノード数</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">* AUのアンインストール後：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Cloud Insights で、[*Admin]&gt;[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。</block>
-  <block id="4262a364178344226a6201df72deaa22" category="paragraph">注：デフォルトの Acquisition Unit は削除できません。古い AU を削除する前に、デフォルトとして別の AU を選択します。</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">Acquisition Unit の再インストール</block>
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">Acquisition Unit を同じサーバ / VM に再インストールするには、次の手順を実行する必要があります。</block>
   <block id="1405103bcf8e1e217a5c701e0664adf3" category="paragraph">Acquisition Unit を再インストールするには、あらかじめ別のサーバ / VM で一時的な Acquisition Unit を設定しておく必要があります。</block>
@@ -12396,15 +12395,8 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">ワークロードセキュリティは、他のツールとも統合できます。  例： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> Splunkと統合し、</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。</block>
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">NetApp Kubernetes Monitoring Operatorの設定</block>
-  <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">流暢なビット</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Tegraf</block>
-  <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">Cloud Insights では、などの多くのコンポーネントが使用されます <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> および <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>をクリックしてください。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。</block>
-  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collectorのタイル</block>
-  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">以下は、オペレータが環境内のどこに配置されているかを示す大まかな図です。環境によっては、_Proxy Server_が必要になる場合と不要になる場合があります。</block>
-  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Kubernetesクラスタ内に存在するNKMOを示すハイレベルなマップ。矢印は、ホスト、プロキシサーバからクラスタにデータが移動し、すべてがCloud Insights にロールアップされる様子を示しています</block>
-  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">NetApp Kubernetes Monitoring Operatorをインストールする前に</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">前提条件</block>
@@ -15477,4 +15469,6 @@ v9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">その他の変数</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">CL_CMD_PLACEHOLDER</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">さまざまなリソースのダウンロードに使用するcurlコマンド。例）「curl」または「curl -k」</block>
+  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">データコレクタが接続されているAcquisition Unit（AU）は削除できません。元のAUを削除する前に、AUのすべてのデータコレクタを別のAUに移動します（コレクタを編集して別のAUを選択するだけです）。
+''''</block>
 </blocks>
