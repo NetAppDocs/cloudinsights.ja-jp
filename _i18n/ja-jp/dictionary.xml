@@ -15479,4 +15479,33 @@ v9.2.4.2</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">クラスタに変更を適用します。</block>
   <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">注:以前に追加した権限を削除する場合は、_event-exporter_podが再起動されるまで変更は有効になりません。</block>
+  <block id="4ae43ffefdaf3c2343be08c2c231978f" category="section-title">2023年9月</block>
+  <block id="34e28a7e0863af99d5c1703dc6cda717" category="section-title">ログで必要なものを簡単に検索</block>
+  <block id="fcf6af69900c1559042fbe3fe72c94a1" category="inline-link-macro">キノウカクチョウ</block>
+  <block id="d79e17684f1a24c58bb32d08bef3a3ff" category="paragraph">ログクエリ（*オブザーバビリティ&gt;ログクエリ&gt;+新規ログクエリ*）には、次のものが含まれます。 <block ref="86ca1f2cb3e438ee4c22e212690c972d" category="inline-link-macro-rx"></block> ログの検索を容易にし、より有益な情報を提供します。</block>
+  <block id="848fb0e63e13a4434909fdea6458ed6d" category="section-title">含める/除外する</block>
+  <block id="e60e1b57ed4e38e138695033de1e9d1e" category="paragraph">値をフィルタリングするときに、フィルタに一致する結果を*含める*か*除外*かを簡単に選択できます。「除外」を選択すると、「非&lt;value&gt;」フィルタが作成されます。INCLUDE値とEXCLUDE値を1つのフィルタで組み合わせることができます。</block>
+  <block id="0792509c03d281def53e2cbb6d7f07df" category="inline-image-macro">[除外]ラジオボタンを表示するフィルタ</block>
+  <block id="ba1b079c59ef8c16f8f957aa0df9c4de" category="paragraph"><block ref="ba1b079c59ef8c16f8f957aa0df9c4de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b45c0ca13c55b7f66782e958a84142d4" category="section-title">高度なクエリ</block>
+  <block id="95f02ff52db65fe00fc8634318fba90e" category="paragraph">*高度なクエリ*では、AND、NOT、OR、ワイルドカードなどを使用して値を結合または除外する「自由形式」フィルタを作成できます。</block>
+  <block id="b0afc67d027a88643736219f858d2596" category="inline-image-macro">AND、NOT、OR関数を示すログクエリの例</block>
+  <block id="c6d89674714a140b24e4a9d11d190824" category="paragraph"><block ref="c6d89674714a140b24e4a9d11d190824" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="190febc1a687d2e28053104a1cffd7c7" category="paragraph">[Filter By]と[Advanced Query]は、「AND」でまとめて1つのクエリを形成します。結果が結果リストとグラフに表示されます。</block>
+  <block id="82b7b893771cf0e9f3adb5b42ae6ee7e" category="section-title">グラフでのグループ化</block>
+  <block id="496613147f6975d1aa2dac2ceaa46634" category="paragraph">[*グループ化]*にログ属性を選択すると、リストとグラフに現在のフィルタの結果が表示されます。グラフでは、列が色別にグループ化されています。グラフの列にカーソルを合わせると、グラフの凡例を展開したときに表示される全体的な情報と同様に、特定のエントリに関する詳細が表示されます。  凡例では、特定のグループに含めるフィルタまたは除外フィルタを設定することもできます。</block>
+  <block id="44f9aec87f1c51a61aeca11ad9786542" category="inline-image-macro">グラフに積み上げられた列を示す例によるログクエリグループ</block>
+  <block id="e9523ec897a9823fb02ccbd1944b7f3f" category="paragraph"><block ref="e9523ec897a9823fb02ccbd1944b7f3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a80f4dd9b1327eb6d1bd68998aa54c3" category="section-title">「フローティング」ログ詳細パネル</block>
+  <block id="91d94db59fc7134cda265c7016d2dd86" category="paragraph">[Log Query]を使用してログを検索するときに、リスト内のエントリを選択すると、そのエントリの詳細パネルが開きます。スライドアウトパネルを「フローティング」（画面の残りの部分に表示）または「ページ内」（ページ内の独自のフレームとして表示）を選択できるようになりました。これらのビューを切り替えるには、パネルの右上隅にある[ページ内/フローティング]ボタンを選択します。</block>
+  <block id="fb8b0b641df922f8eab6bd7c3c4a1131" category="inline-image-macro">ボタンが強調表示された「ページ内」スライドアウトパネル</block>
+  <block id="e8d14fa9be7f94fb8271ac286e2294a8" category="paragraph"><block ref="e8d14fa9be7f94fb8271ac286e2294a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d5f3e5dd25b324aa763247302dd4e5ba" category="section-title">メニューを折りたたむ</block>
+  <block id="21425fa36b8a56c29ff0c7d71c2109fa" category="paragraph">左側のCloud Insightsナビゲーションメニューを折りたたむには、メニューの下にある[最小化]ボタンを選択します。メニューが最小化されている間に、アイコンにカーソルを合わせると、どのセクションが開いているかが表示されます。アイコンを選択するとメニューが開き、そのセクションに直接移動します。</block>
+  <block id="063ac5c87e9ce20ce0f904d0551f0a18" category="inline-image-macro">メニューを最小化する</block>
+  <block id="a42f1d09ea5508165ffbb74fd0d019d7" category="paragraph"><block ref="a42f1d09ea5508165ffbb74fd0d019d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36ffaf16e7982bb87a23ee56b05db6df" category="section-title">Data Collectorの改善点</block>
+  <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insightsでは、データコレクタ情報の表示と検索が容易になりました。</block>
+  <block id="203714762dd5efde1be30c09220249eb" category="list-text">*データコレクタリストの処理がより効率的になるため、これらのリストの表示とナビゲートにかかる時間が大幅に短縮されます。多数のデータコレクタが存在する大規模な環境では、データコレクタの一覧表示が大幅に改善されます。</block>
+  <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">Data Collector Support Matrix *は、.pdfファイルから.htmlベースのページに移行しました。これにより、ナビゲートが迅速になり、メンテナンスが容易になりました。新しいマトリックスはこちら：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
 </blocks>
