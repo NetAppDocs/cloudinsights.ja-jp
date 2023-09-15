@@ -206,6 +206,19 @@ Kubernetesの詳細はこちらをご覧ください link:https://kubernetes.io/
 
 
 
+=== 権限
+
+監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["表示するアグリゲート"]イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。
+
+. edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/<namespace>-additional-permissions_を編集します。
+. 動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照
+. クラスタに変更を適用します。
+
+
+注:以前に追加した権限を削除する場合は、_event-exporter_podが再起動されるまで変更は有効になりません。
+
+
+
 == NetApp Kubernetes Monitoring Operatorをインストールします
 
 image:NKMO-Instructions-1.png[""]

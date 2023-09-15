@@ -15473,4 +15473,10 @@ v9.2.4.2</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">横に星印が付いたAcquisition Unitがデバイス解決に使用されています。このAUを削除する前に、デバイス解決に使用する別のAUを選択する必要があります。別のAUにカーソルを合わせ、「3つのドット」メニューを開き、「デバイス解像度に使用」を選択します。</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">デバイス解決に使用されるAU</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">表示するアグリゲート</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/&lt;namespace&gt;-additional-permissions_を編集します。</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">クラスタに変更を適用します。</block>
+  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">注:以前に追加した権限を削除する場合は、_event-exporter_podが再起動されるまで変更は有効になりません。</block>
 </blocks>
