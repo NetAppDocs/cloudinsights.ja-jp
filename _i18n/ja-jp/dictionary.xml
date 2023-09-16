@@ -13071,16 +13071,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="129f8880167531920bb3396830948e86" category="cell">Linux 要件</block>
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Windows 要件</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティングシステム</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
-* Debian (64ビット): 9と10
-* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
-* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～9.1
-*ロッキー9.0、9.1
-* Ubuntu Server：18.04および20.04 LTS
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
   <block id="bc551a8dcf48d42b6ea5cf411242afd9" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
 
 * Microsoft Windows 10 64ビット
@@ -15508,4 +15498,14 @@ v9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insightsでは、データコレクタ情報の表示と検索が容易になりました。</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*データコレクタリストの処理がより効率的になるため、これらのリストの表示とナビゲートにかかる時間が大幅に短縮されます。多数のデータコレクタが存在する大規模な環境では、データコレクタの一覧表示が大幅に改善されます。</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">Data Collector Support Matrix *は、.pdfファイルから.htmlベースのページに移行しました。これにより、ナビゲートが迅速になり、メンテナンスが容易になりました。新しいマトリックスはこちら：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
+  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
+* Debian (64ビット): 9と10
+* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
+* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.7、9.1
+*ロッキー9.0、9.1
+* Ubuntu Server：18.04および20.04 LTS
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
 </blocks>

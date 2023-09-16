@@ -36,7 +36,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 * CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
 * Debian (64ビット): 9と10
 * Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
-* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～9.1
+* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.7、9.1
 *ロッキー9.0、9.1
 * Ubuntu Server：18.04および20.04 LTS
 
