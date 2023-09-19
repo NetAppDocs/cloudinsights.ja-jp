@@ -7087,7 +7087,6 @@ Zノード数</block>
   <block id="f71a3b05dcda414574b7fd039dce2d2f" category="sidebar">仮想マシンのパフォーマンス</block>
   <block id="a7801e783e14f13936bcda4af17b431b" category="sidebar">ダッシュボードのベストプラクティス</block>
   <block id="a8b3e330b031eece100735ab55ee1c1a" category="sidebar">Kubernetes の概要ページ</block>
-  <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">モニタリングオペレータの操作を開始します</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">モニタリングオペレータオプション</block>
   <block id="a63aef0458bbdbd190555891aec8dcd7" category="sidebar">Kubernetes クラスタページ</block>
   <block id="98a765989815a9f6076db83630a8d40a" category="sidebar">クエリを使用した作業</block>
@@ -12381,7 +12380,6 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">NetApp Kubernetes Monitoring Operatorの設定</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Tegraf</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。</block>
-  <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">演算子(NKMO)とデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">NetApp Kubernetes Monitoring Operatorをインストールする前に</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">前提条件</block>
   <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">カスタムまたはプライベートDockerリポジトリを使用している場合は、「カスタムまたはプライベートDockerリポジトリの使用」セクションの手順に従います</block>
@@ -12405,13 +12403,11 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。</block>
   <block id="44f30d2da91071ac955bd6af9891db9d" category="list-text">Operatorを再デプロイする場合(つまり、Operatorを更新または置換する場合)は、_new_apiトークンを作成する必要はありません。前のトークンを再利用できます。</block>
   <block id="f9cbff62c46c7a73f51dee39b0ea930a" category="list-text">また、最新のNetApp Kubernetes Monitoring Operatorがインストールされていて、更新可能なAPIアクセストークンを使用している場合は、期限切れが近いトークンが新しい/更新されたAPIアクセストークンに自動的に置き換えられます。</block>
-  <block id="4085e40ddd1e35991b92d689ee9b414a" category="section-title">開始する前に、これらの点に注意してください</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">プロキシ</block>
   <block id="ef2fbd69b6e60cf6860a0466960c15a2" category="inline-xref">カスタムリポジトリ</block>
   <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">を使用してを実行する場合 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>を使用してください <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>またはを使用している <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>を参照してください。</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">をアップグレードして</block>
-  <block id="794e8cb207d48ed4b3325b391e777251" category="paragraph">以前のインストールからアップグレードする場合は、も参照してください <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 情報。</block>
   <block id="44df9c10959f57dfdf2dd50f7591a9c9" category="section-title">オペレータの設定</block>
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">使用可能な設定</block>
   <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、一部の設定例がコメントアウトされています。のリストを参照してください <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 演算子の最新バージョン。</block>
@@ -12476,19 +12472,7 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
   <block id="3a7ceac4689e5c9ea84be781707cd148" category="list-text">有効-オンライン</block>
   <block id="be85cefb4673c1f486c73de818be2056" category="list-text">エラー- APIキーに十分な権限がありません</block>
   <block id="8cf39a7fcad49926187638c2ef3888e4" category="paragraph">テレグラムエージェントをアップグレードするには、次の手順に従います。</block>
-  <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">K8sオペレータベースの監視解決策 のインストール中に使用するK8sクラスタ名を保存して、データの継続性を確保します。</block>
-  <block id="35c735048514e15b96558a336dddd484" category="paragraph">CIにKubernetesクラスタの名前を覚えていない場合は、次のコマンドラインを使用して、保存した構成からクラスタを抽出できます。</block>
-  <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">スクリプトベースの監視を削除します</block>
-  <block id="368e58ca73434aae8ab3a7bf3f6d2955" category="paragraph">Kubernetes 上のスクリプトベースのエージェントをアンインストールするには、次の手順を実行します。</block>
-  <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">モニタリングネームスペースが Telegraf 専用に使用されている場合：</block>
-  <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">モニタリングネームスペースが Telegraf 以外の目的で使用されている場合：</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">をインストールします</block>
-  <block id="fb990bfdcd5afe0e05c70ad5c62965f0" category="list-text"><block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 現在の演算子。必ず、上記の手順1と同じクラスタ名を使用してください。</block>
-  <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">アップグレード</block>
-  <block id="f6df033900c8ae9dec99b302ab258469" category="admonition">以前にインストールしたスクリプトベースのKubernetesエージェントでを実行している場合は、を実行する必要があります <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> を使用して、NetApp Kubernetes Monitoring Operatorに接続します。</block>
-  <block id="cef7a1ce5721683d9793e2eee4d38e9c" category="section-title">廃止されたスクリプトベースのエージェントを削除します</block>
-  <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">これらのコマンドは、デフォルトの名前空間「 CI-monitoring 」を使用していることに注意してください。  独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。</block>
-  <block id="0b17bce222385cebd477477b188e6434" category="paragraph">Kubernetes上のスクリプトベースのエージェント（NetApp Kubernetes Monitoring Operatorへのアップグレードなど）をアンインストールするには、次の手順を実行します。</block>
   <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">次の手順を実行します。</block>
   <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">指示に従ってエージェントインストーラスニペットをコピーします。</block>
   <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">スニペットをコマンドウィンドウに貼り付ける代わりに、テキストエディタに貼り付けます。</block>
@@ -15375,7 +15359,6 @@ v9.2.4.2</block>
   <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">「failed」という単語を含む_reason_のログエントリをフィルタリングしますが、特定の理由が「FailedMount」のログエントリはフィルタリングしません。</block>
   <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">「monitoring」という単語を含む_metadata.namespace_を含むエントリのいずれかを含めますが、「cm-monitoring」または「eg-monitoring」の特定の名前空間は除外します。</block>
   <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">上記の場合、"cm-monitoring"と"eg-monitoring"の両方にダッシュが含まれているため、文字列を二重引用符で囲む必要があります。そうしないと、解析エラーが表示されます。ダッシュ、スペースなどを含まない文字列は、引用符で囲む必要はありません。疑わしい場合は、文字列を引用符で囲みます。</block>
-  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">現在のフィルタの結果（[Filter by]の値や[Advanced Query]のフィルタなど）。リストは、表示されている任意の列でソートできます。追加の列を表示するには、「歯車」アイコンを選択します。</block>
   <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">グラフが拡大され、特定の期間内に発生したログ結果のみが表示されるようになりました。ここに表示されている時間範囲は、現在のズームレベルを反映しています。ズームレベルを現在のCloud Insights時間範囲に戻すには、_Reset Zoom_ボタンを選択します。</block>
   <block id="e9c3a605437c1d21260249137747effc" category="list-text">グラフの結果は、_source_fieldでグループ化されています。グラフには、各列の結果が色別にグループ化されて表示されます。グラフの列にカーソルを合わせると、特定のエントリに関する詳細が表示されます。</block>
   <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">グループ化されたマウスオーバーの詳細</block>
@@ -15386,73 +15369,10 @@ v9.2.4.2</block>
   <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">最初の結果に[Add Filter]が表示されているAdvanced Queryの凡例</block>
   <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c22968bfe7941ac13825abafc2a7f5b1" category="list-text">一意のクラスタ名およびネームスペースを入力してください。実行中の場合 <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> 以前のKubernetes Operatorで、同じクラスタ名とネームスペースを使用します。</block>
-  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">既存の構成をバックアップします。</block>
-  <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">オペレータのチューニング</block>
-  <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。調整可能な変数の説明とリストについては、インストールパッケージに含まれているREADMEファイルを参照してください。オペレータのインストールが完了したら、次のコマンドを使用してREADMEを参照します。</block>
-  <block id="bc6b270b9094337edca8a85819407d18" category="admonition">オペレータのチューニングは、Cloud Insights フェデラルエディションでは使用できません</block>
-  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">NetApp Kubernetes Monitoring Operatorは、カスタムリソースの特定の変数を微調整することで、最適なパフォーマンスを実現するように調整できます。  設定可能な変数については、次の表を参照してください。</block>
-  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">これらの値を変更するには、次のコマンドを使用してエージェントCRを編集します（ネームスペースには&lt;namespace&gt; を置き換えます）。</block>
-  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR仕様は次の形式に従います。</block>
-  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">「デフォルトCRに含まれる」に「はい」とマークされている項目は、すでにエージェントCRに存在し、それぞれのプラグインの下に表示されます。"no"とマークされた項目は、付属のデフォルト置換の例に従って手動で追加する必要があります。</block>
-  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">リソース関連の変数</block>
-  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">を参照してください<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block>	Kubernetesのリソースについては、を参照してください。</block>
-  <block id="3f60b096843929b02e1a070f57e27584" category="cell">変数名（Variable Name）</block>
-  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">プラグイン名</block>
-  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">デフォルトのCRに含まれています</block>
-  <block id="b4706783c74b583b849dec44244e0769" category="cell">DS_CPU_LITION_PLACEHOLDER</block>
-  <block id="a6105c0a611b41b08f1209506350279e" category="cell">はい。</block>
-  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">テレグラムのKubernetes CPU制限</block>
-  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_LITION_PLACEHOLDER</block>
-  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">テレグラムのKubernetesメモリ制限- DS</block>
-  <block id="6787619d810a62301cfe3986961a1d04" category="cell">DS_CPU_REQUERY_PLACEHOLDER</block>
-  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">テレグラムのCPU要求- DS</block>
-  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_REQUERY_PLACEHOLDER</block>
-  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">テレグラムのKubernetesメモリ要求- DS</block>
-  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">rs_cpu_limits_placeholder</block>
-  <block id="b2099247c65bb590909309709da41854" category="cell">テレグラムのKubernetes CPU制限：</block>
-  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">RS_MEM_LITION_PLACEHOLDER</block>
-  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">テレグラムのKubernetesメモリ制限- RS</block>
-  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">rs_cpu_request_placeholder</block>
-  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">テレグラム用のKubernetes CPU要求- RS</block>
-  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">RS_MEM_REQUERY_PLACEHOLDER</block>
-  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">テレグラムに対するKubernetesメモリ要求</block>
-  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_REQUERY_PLACEHOLDER：</block>
-  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">KSM</block>
-  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">kube-state-metrics導入用のKubernetes CPU要求</block>
-  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_REQUERY_PLACEHOLDER：</block>
-  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">Telegrafに関連する変数</block>
-  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">を参照してください<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> テレグラム変数の詳細については、を参照してください。</block>
-  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">プレースホルダー</block>
-  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">collection_interval_placeholder</block>
-  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">いいえ</block>
-  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">（テレグラム間隔、タイプ間隔を設定）：テレグラムがすべてのプラグインの入力間で待機するデフォルトの時間。有効な時間単位は、ns、us（または µ s）、ms、s、m、高さ</block>
-  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">round_interval_placeholder</block>
-  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">（テレグラムのround_intervalを設定し、boolean型）間隔の倍数でメトリックを収集します</block>
-  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">metric_batch_size_placeholder</block>
-  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">（は、テレグラムのmetric_batch_size、タイプintを設定します）出力テレグラムの最大レコード数は、1つのバッチで書き込まれます</block>
-  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">metric_buffer_limit_cplaceholder</block>
-  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">（は、テレグラムのmetric_buffer_limit、タイプintを設定します）出力テレグラムの最大レコード数は、正常な書き込みが完了するまでキャッシュされます</block>
-  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">collection_jitter_placeholder</block>
-  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">（は、テレグラムの収集ジッタ、タイプ間隔を設定します）。各プラグインは、入力を収集する前に、スケジュールされた収集時間と、その時間+ Collection_jitterの間でランダムな時間を待機します</block>
-  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">Precision_placeholder</block>
-  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">（テレグラム精度、タイプ間隔を設定）：収集されたメトリックは指定された精度に丸められ、「0」精度に設定された場合は、間隔で指定された単位で設定されます</block>
-  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">flush_interval_placeholder</block>
-  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">（テレグラムフラッシュ間隔、タイプ間隔を設定します）：テレグラムが出力間で待機するデフォルトの時間。</block>
-  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">flush_jitter_placeholder</block>
-  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">（は、テレグラムフラッシュジッタ、タイプインターバルを設定します）。各出力は、出力を書き込む前に、スケジュールされた書き込み時間とその時間+フラッシュジッタの間にランダムな時間を待機します</block>
-  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">その他の変数</block>
-  <block id="327fbef93ac997add024577e1fdbe932" category="cell">CL_CMD_PLACEHOLDER</block>
-  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">さまざまなリソースのダウンロードに使用するcurlコマンド。例）「curl」または「curl -k」</block>
   <block id="1f0e93b0a15bd60e04388c6d5ff59fdc" category="admonition">データコレクタが接続されているAcquisition Unit（AU）は削除できません。元のAUを削除する前に、AUのすべてのデータコレクタを別のAUに移動します（コレクタを編集して別のAUを選択するだけです）。</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">横に星印が付いたAcquisition Unitがデバイス解決に使用されています。このAUを削除する前に、デバイス解決に使用する別のAUを選択する必要があります。別のAUにカーソルを合わせ、「3つのドット」メニューを開き、「デバイス解像度に使用」を選択します。</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">デバイス解決に使用されるAU</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">表示するアグリゲート</block>
-  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。</block>
-  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/&lt;namespace&gt;-additional-permissions_を編集します。</block>
-  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照</block>
-  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">クラスタに変更を適用します。</block>
-  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">注:以前に追加した権限を削除する場合は、_event-exporter_podが再起動されるまで変更は有効になりません。</block>
   <block id="4ae43ffefdaf3c2343be08c2c231978f" category="section-title">2023年9月</block>
   <block id="34e28a7e0863af99d5c1703dc6cda717" category="section-title">ログで必要なものを簡単に検索</block>
   <block id="fcf6af69900c1559042fbe3fe72c94a1" category="inline-link-macro">キノウカクチョウ</block>
@@ -15661,4 +15581,219 @@ PodのCPU利用率が高いかどうかを確認します。
   <block id="7a630b16f340cd744188cfe88ea277e0" category="cell">クラスタのCPU飽和度-上限</block>
   <block id="ef9e90b0a74afb98891334eb9c2fec60" category="cell">クラスタの割り当て可能なCPU使用率が高くなっています。
 クラスタのCPU使用率は、CPU使用率の合計をすべてのKubernetesノードの割り当て可能なCPUの合計で割って算出されます。</block>
+  <block id="8a14559db6edf9a976c459c3501915bb" category="list-text">現在のフィルタの結果（[Filter By]の値や[Advanced Query]のフィルタなど）が結果リストに表示されます。リストは、表示されている任意の列でソートできます。追加の列を表示するには、「歯車」アイコンを選択します。</block>
+  <block id="0e80fd75f5823e3db3be70c162115e4c" category="doc">NetApp Kubernetes監視オペレータをインストールまたはアップグレードする前に</block>
+  <block id="842fffc43801e047da9ff318c6e87c49" category="paragraph">NetApp Kubernetes Monitoring Operatorをインストールしてアップグレードする前に、この情報をお読みください。</block>
+  <block id="16a53ba18c619dcf3d471d85becaeee6" category="section-title">始める前に注意すべき重要事項</block>
+  <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">また、 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
+  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">以前のインストールからアップグレードする場合は、 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 情報。</block>
+  <block id="fbc05142fc5476cd7c2dd603607412ee" category="inline-link-macro">* NetApp Kubernetes監視オペレータのインストール*ページ</block>
+  <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">に戻ります <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
+  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collectorのタイル</block>
+  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">Operatorとデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
+  <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*インストールまたはアップグレードの前に*</block>
+  <block id="f8d86927776a602d23bcf32f5dc5ea76" category="admonition">を参照してください <block ref="0b7fc724dd1c400c20e2b859e6c06230" category="inline-link-macro-rx"></block> NetApp Kubernetes Monitoring Operatorをインストールまたはアップグレードする前のドキュメント。</block>
+  <block id="20e38ff1d741d05cb351043049612af2" category="section-title">最新のNetApp Kubernetes Monitoring Operatorにアップグレードします</block>
+  <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">既存のOperatorにAgentConfigurationが存在するかどうかを確認します（ネームスペースがdefault_netapp-monitoring_でない場合は、適切なネームスペースに置き換えてください）。</block>
+  <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">AgentConfigurationが存在する場合：</block>
+  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 既存の演算子の上にある最新の演算子。</block>
+  <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">最新のコンテナイメージを取得します</block>
+  <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確認してください <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> カスタムリポジトリを使用している場合。</block>
+  <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">AgentConfigurationが存在しない場合は、次の手順を実行します。</block>
+  <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">クラスタ名がCloud Insights で認識される名前であることをメモします（ネームスペースがデフォルトのネットアップ監視機能でない場合は、該当するネームスペースで置き換えてください）。</block>
+  <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">既存のOperatorのバックアップを作成します（ネームスペースがデフォルトのネットアップ監視機能になっていない場合は、適切なネームスペースで置き換えてください）。</block>
+  <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">をアンインストールします</block>
+  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> 既存の演算子。</block>
+  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新の演算子。</block>
+  <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">同じクラスタ名を使用してください。</block>
+  <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">最新のOperator YAMLファイルをダウンロードしたら、展開する前に、agent_backup.yamlにあるカスタマイズをダウンロードしたoperator-config.yamlに移植します。</block>
+  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">NetApp Kubernetes Monitoring Operatorを停止および開始します</block>
+  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">NetApp Kubernetes Monitoring Operatorを停止するには、次の手順を実行します</block>
+  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実行します</block>
+  <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">アンインストール中です</block>
+  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">をクリックして、NetApp Kubernetes Monitoring Operatorを削除します</block>
+  <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">NetApp Kubernetes Monitoring Operatorのデフォルトのネームスペースは、「NetApp Monitoring」です。  独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。</block>
+  <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">新しいバージョンの監視オペレータは、次のコマンドを使用してアンインストールできます。</block>
+  <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">最初のコマンドが「リソースが見つかりません」を返した場合は、次の手順に従って古いバージョンの監視オペレータをアンインストールします。</block>
+  <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">次の各コマンドを順番に実行します。現在のインストール状況によっては、これらのコマンドの一部で「オブジェクトが見つかりません」というメッセージが返される場合があります。これらのメッセージは無視してかまいません。</block>
+  <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">セキュリティコンテキスト制約が事前に作成されている場合は、次の手順を実行します。</block>
+  <block id="a945216a5c61e628c867b8948c797454" category="section-title">Kubeステートメトリックについて</block>
+  <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は必要ありません。</block>
+  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">kube-state-metrics カウンタ</block>
+  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。</block>
+  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap メトリック</block>
+  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
+  <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">DemonSet メトリック</block>
+  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
+  <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">導入メトリック</block>
+  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
+  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入力メトリック</block>
+  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
+  <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">ネームスペース指標</block>
+  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
+  <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">ノードのメトリックス</block>
+  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
+  <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">永続的ボリューム指標</block>
+  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
+  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">永続的ボリューム要求の指標</block>
+  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
+  <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">ポッドのメトリック</block>
+  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
+  <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet メトリック</block>
+  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
+  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">シークレットメトリック</block>
+  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
+  <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">サービスメトリック</block>
+  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
+  <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">Stat助け Set メトリック</block>
+  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
+  <block id="7a9065c97476c0400d1ffaaa20c4bbe5" category="paragraph">これらのいずれか、または両方にプロキシを使用する場合は、NetApp Kubernetes Operating Monitorをインストールするために、まずCloud Insights 環境との良好な通信を可能にするようにプロキシが設定されていることを確認する必要があります。プロキシがあり、オペレータをインストールするサーバ/VMからCloud Insights にアクセスできる場合は、プロキシが適切に設定されている可能性があります。</block>
+  <block id="342761835c95d3618833ced82b6260ac" category="section-title">Kubernetes のチェックサムの検証</block>
+  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。</block>
+  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">コマンドから末尾の「--install」を削除します。</block>
+  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。  アーティファクトには次のものがありますが、これらに限定することはできません。</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">署名済みチェックサムファイル（ SHA256 署名）</block>
+  <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。</block>
+  <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">Kubernetes 永続ボリュームと対応するバックエンドストレージデバイスの間にハイパーリンク / 接続がありません。My Kubernetes Persistent Volume がストレージサーバのホスト名を使用して設定されます。</block>
+  <block id="31374f026fd34f38c1768e8bcae58183" category="cell">手順に従って既存の Tegraf エージェントをアンインストールし、最新の Tegraf エージェントを再インストールします。Tegrafバージョン2.0以降を使用していて、KubernetesクラスタストレージがCloud Insights によってアクティブに監視されている必要があります。</block>
+  <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">ログに次のようなメッセージが表示されます。
+
+E0901 15:21:39.962145 1 reflector.go:178]k8s.io/kube-state-metrics/internal/store/builder.go:352:リストに失敗しました*v1.MutatingWebhookConfiguration:サーバーは要求されたリソースを見つけることができませんでした
+E0901 15:21:43.168161 1 reflector.go:178]k8s.io/kube-state-metrics/internal/store/builder.go:352:リストに失敗しました*v1 Lease:サーバーは要求されたリソースを見つけることができませんでした(GET leases.coordination.k8s.io)
+など</block>
+  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">これらのメッセージは、1.20より前のバージョンのKubernetesでkube-state-metricsバージョン2.0.0以上を実行している場合に発生する可能性があります。
+
+
+Kubernetesのバージョンを取得するには：
+
+ _kubectlバージョン_
+
+kube-state-metricsバージョンを取得するには、次の手順を実行します。
+
+ _kubectl get deploy/kube-state-metrics -o jsonpath='｛..image｝'_
+
+これらのメッセージが発生しないように、ユーザはkube-state-metrics展開を変更して、次のリースを無効にすることができます。
+
+_mutatingwebhookconfigurations_
+検証webhookconfigurations_
+_volumeattachmentsリソース_
+
+具体的には、次のCLI引数を使用できます。
+
+resources=certificatesigningrequests, configmaps, cronjobs, daemonsets, deployments, endpoints, horizontalpodautoscalers, ingresses, jobs, limitranges, namespaces, networkpolicies, poddisruptionbudgets, pods, ReplicaSets, replicationcontrollasses, resourcequotases, secrets, resourcequotases, secrets, services, storage, storefuls.
+
+デフォルトのリソースリストは次のとおりです。
+
+certificatesigningrequests, configmaps, cronjobs, daemonsets, deployments, endpoints, horizontalpododautoscalers, ingresses, jobs, leases, limitranges, mutatingwebhookconfiguration, namespaces, networkpersistentvolumes, poddisruptionbudgets, pers, persistentresets, pondsets, podsets, postresets, replicassess, replicastess, replicatess, replicastorets, replicast 検証Webhook構成'ボリューム添付ファイル"\y"ケンショウ:Webhookコウセイ'ボリュームアタッチメント</block>
+  <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">Telegrafから次のようなエラーメッセージが表示されますが、Telegrafは起動して実行されます。
+
+10月11日14:23:41 IP-172-31-39-47 systemd[1]: InfluxDBにメトリックを報告するプラグイン駆動のサーバーエージェントを起動しました。
+10 月 11 日 14 ： 23 ： 41 IP-172-41-39-47 テレグラム [1827] ： time="2021 - 10-11T14 ： 23 ： 41Z" level= error msg=" キャッシュディレクトリの作成に失敗しました。/etc/telegraf/.cache/snowflake、err:mkdir /etc/telegraf/.ca
+CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"
+10月11日14：23：41 IP-172-31-39-47 telegraf [1827]：time="2021-10-11T14：23：41Z" level=error msg="failed to open.無視されます。/etc/telegraf/.cache/snowflake/ocsp_response_cache.jsonを開きます。no such
+ファイルまたはディレクトリ\n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"
+10月11日14:23:41 IP-172-31-39-47 telegraf [1827]: 2021-10-11T14:23:41Z I! Telegraf 1.19.3 を起動しています</block>
+  <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">この GitHub の記事</block>
+  <block id="8f176f657f418586c2a4828045ab0c37" category="cell">これは問題と呼ばれています。  を参照してください <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。</block>
+  <block id="9aab00e938cede2932654042bc507309" category="cell">Kubernetesで、Telegrafポッドが次のエラーを報告しています。
+"mountstats情報の処理中にエラーが発生しました：mountstatsファイルを開けませんでした：/hostfs/proc/1/mountstats、エラー：open/hostfs/proc/1/mountstats：権限が拒否されました"</block>
+  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、以下を参照してください。<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
+  <block id="f997e79142f159c33823b9deeab809eb" category="cell">Kubernetesで、Telegraf ReplicaSetポッドが次のエラーを報告しています。
+
+ [プラグインのinputs.prometheus]エラー：keypair /etc/kubernetes/pki/etcd/server.crtをロードできませんでした：/etc/kubernetes/pki/etcd/server.key：open /etc/kubernetes/pki/etcd/server.crt：該当するファイルまたはディレクトリはありません</block>
+  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet ポッドは、マスターまたは etcd 用に指定されたノード上で実行することを目的としています。これらのノードのいずれかで ReplicaSet ポッドが実行されていない場合は、これらのエラーが発生します。マスター / etcd ノードに汚染があるかどうかを確認します。その場合は、 Telegraf ReplicaSet 、テレグラム af-RS に必要な忍容を追加します。
+
+たとえば、ReplicaSet...
+
+ kubectl edit rs telegraf-rs
+
+仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。</block>
+  <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">PSP/PSA環境があります。これはモニタリングオペレータに影響しますか？</block>
+  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">ポッドセキュリティポリシー（PSP）またはポッドセキュリティアドミッション（PSA）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートする現在のNKMOにアップグレードするには、次の手順に従います。
+
+1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 以前の監視オペレータ：
+
+ kubectl delete agent agent-monitoring-netapp-n netapp-monitoring
+ kubectlによってネットアップによる監視が削除されます
+ kubectlはCRD agents.monitoring.netapp.comを削除します
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> モニタリングオペレータの最新バージョン。</block>
+  <block id="6ae137903bc328659928ed818d9ee78a" category="cell">NKMOを導入する際に問題が発生し、PSP/PSAを使用しました。</block>
+  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.次のコマンドを使用してエージェントを編集します。
+
+kubectl -n &lt;name-space&gt;編集エージェント
+
+2.「security-policy-enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。
+
+kubectl get psp（Pod Security Policy removedを表示する必要があります）
+kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is found)</block>
+  <block id="59e3026f71d01a624108642cdb778ebd" category="cell">「ImagePullBackoff」エラーが発生しました</block>
+  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">詳細はこちら</block>
+  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。  <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> カスタム/プライベートリポジトリの設定について</block>
+  <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">監視オペレータの配置に問題 を使用していますが、現在のドキュメントでは解決できません。</block>
+  <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">次のコマンドの出力をキャプチャまたはメモし、テクニカルサポートチームに連絡します。</block>
+  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">NKMOネームスペース内のNet-Observer（ワークロードマップ）ポッドはCrashLoopBackOffにあります</block>
+  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">これらのポッドは、Network ObservabilityのWorkload Mapデータコレクタに対応しています。以下をお試しください。
+•いずれかのポッドのログをチェックして、カーネルの最小バージョンを確認します。例：
+
+-----
+｛"ci-tenant-id"："your-tenant-id"、"collector-cluster"："your-k8s-cluster-name"、"environment"："prod"、"level"："error"、"msg"："検証に失敗しました。理由：カーネルバージョン3.10.0が最小カーネルバージョン4.18.0よりも小さい、"time"："2022-11-09T08:23:08Z"｝
+-----
+
+•Net-Observerポッドを使用するには、Linuxカーネルのバージョンが4.18.0以上である必要があります。「uname -r」コマンドを使用してカーネルのバージョンを確認し、4.18.0以上であることを確認します</block>
+  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">NKMO名前空間のnet-observerポッドは、OpenShift 4環境のCrashLoopBackOffにあります</block>
+  <block id="c16b414538506d32ed8a234fa2331767" category="cell">これは現在サポートされていません。今後のアップデートでサポートが追加される予定です。</block>
+  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">ポッドはNKMOネームスペース（デフォルト：netapp-monitoring）で実行されていますが、[Queries]のワークロードマップまたはKubernetes指標のデータがUIに表示されません</block>
+  <block id="b301a7b156c241fb466de1bca776811c" category="cell">K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。</block>
+  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています</block>
+  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。
+•保留状態のポッドをメモし、CPUまたはメモリのリソース問題が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">NetApp Kubernetes Monitoring Operatorをインストールした直後に、ログに次のようなメッセージが表示されます。
+
+[プラグインのinputs.prometheus]エラー：へのHTTP要求の実行中にエラーが発生しました<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> ゲット<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp：lookup kube-state-metrics.&lt;namespace&gt; .svc.cluster.local：該当するホストがありません</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。</block>
+  <block id="02230bab9788e4843408e124331bb1ca" category="cell">クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。</block>
+  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Kubernetesのバージョンを確認します（<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  v1.20.x以下の場合、これは想定される制限です。  NetApp Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">_AgentConfiguration_のnetapp-monitoring-configurationセクションを編集し、_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+注： Cloud Insightsフェデラルエディションを使用している場合、_su_の使用が制限されているユーザーはDockerメトリクスを収集できません。Dockerソケットにアクセスするには、telegrafコンテナをrootとして実行するか、_su_を使用してtelegrafユーザーをDockerグループに追加する必要があるためです。Dockerメトリック収集と_su_の使用はデフォルトで有効になっています。両方を無効にするには、_AgentConfiguration_fileの_telegraf.docker_entryを削除します。
+
+な...何だ?
+仕様：
+な...何だ?
+テレグラフ：
+    な...何だ?
+     -名前：Docker
+            実行モード：
+              -デーモンセット
+            置換：
+              -key：docker_unix_sock_placeholder
+                値：unix：//run/docker.sock
+    な...何だ?
+な...何だ?</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
+
+ 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> コンテキストの期限を超過しました（ヘッダー待機中にClient.Timeoutが超過しました）</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">各Telegraf設定ファイル（/etc/telegraf/telegraf.d/*.confなど）を編集し、Telegraf出力プラグインのタイムアウトを増やします。  たとえば、各.confファイルで、...のすべてのインスタンスを置き換えます。
+
+[[outputs.http]]
+な...何だ?
+タイムアウト="5s"
+...
+
+
+...で次の操作を行います。
+
+[[outputs.http]]
+な...何だ?
+タイムアウト="10s"
+...
+
+次にTelegrafを再起動します。</block>
+  <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">オペレータをインストールまたはアップグレードする前に</block>
+  <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">モニタリングオペレータのインストール</block>
 </blocks>

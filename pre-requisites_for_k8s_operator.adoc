@@ -1,0 +1,204 @@
+---
+sidebar: sidebar 
+permalink: pre-requisites_for_k8s_operator.html 
+keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
+summary: Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。 
+---
+= NetApp Kubernetes監視オペレータをインストールまたはアップグレードする前に
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 2
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp Kubernetes Monitoring Operatorをインストールしてアップグレードする前に、この情報をお読みください。
+
+
+
+=== 前提条件
+
+* カスタムまたはプライベートDockerリポジトリを使用している場合は、「カスタムまたはプライベートDockerリポジトリの使用」セクションの手順に従います
+* NetApp Kubernetes Monitoring Operatorのインストールは、Kubernetesバージョン1.20以降でサポートされています。
+* Cloud Insights がバックエンドストレージを監視しており、KubernetesがDockerコンテナランタイムとともに使用されている場合、Cloud Insights はNFSおよびiSCSIのポッドとPVとストレージのマッピングと指標を表示できます。それ以外のランタイムではNFSのみが表示されます。
+* 2022年8月より、NetApp Kubernetes Monitoring Operatorにはポッドのセキュリティポリシー（PSP）のサポートが含まれます。環境でPSPを使用している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。
+* OpenShift 4.6以降を実行している場合は、以下の前提条件を満たしていることを確認するだけでなく、以下のOpenShiftの手順に従う必要があります。
+* 監視は Linux ノードにのみインストールされます
+Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。
+
+
+|===
+
+
+| プラットフォーム | ラベル 
+
+
+| Kubernetes v1.20以降 | Kubernetes の IO / OS = Linux 
+
+
+| Rancher + catt.io をオーケストレーション / Kubernetes プラットフォームとして使用 | catt.io/os=linux 
+|===
+* NetApp Kubernetes Monitoring Operatorとその依存関係（テレグラム、kube-state-metrics、Fluentbitなど）は、Arm64アーキテクチャで実行されているノードではサポートされません。
+* 次のコマンドが使用可能である必要があります。curl、kubectl。オプションのインストール手順にはdockerコマンドが必要です。最適な結果を得るには、これらのコマンドをパスに追加してください。kubectlは、少なくとも次のKubernetesオブジェクトにアクセスできるように設定する必要があります。エージェント、クラスタロール、クラスタロールバインド、カスタムリソース定義、導入、 ネームスペース'ロール'ロールバインド'シークレット'サービスアカウント' サービスを提供します。これらの最小クラスタロール権限を持つ.yamlファイルの例については、こちらを参照してください。
+* NetApp Kubernetes Monitoring Operatorのインストールに使用するホストは、ターゲットのKubernetesクラスタと通信するようにkubectlを設定し、Cloud Insights 環境にインターネット接続できるようにする必要があります。
+* インストール中にプロキシの背後にいる場合、または監視対象のKubernetesクラスタを操作している場合は、「プロキシサポートの設定」セクションの手順に従ってください。
+* NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。
+監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。
+* Operatorを再デプロイする場合(つまり、Operatorを更新または置換する場合)は、_new_apiトークンを作成する必要はありません。前のトークンを再利用できます。
+* また、最新のNetApp Kubernetes Monitoring Operatorがインストールされていて、更新可能なAPIアクセストークンを使用している場合は、期限切れが近いトークンが新しい/更新されたAPIアクセストークンに自動的に置き換えられます。
+
+
+
+
+=== オペレータの設定
+
+新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、一部の設定例がコメントアウトされています。のリストを参照してください link:telegraf_agent_k8s_config_options.html["使用可能な設定"] 演算子の最新バージョン。
+
+次のコマンドを使用してオペレータを配置した後で、このリソースを編集することもできます。
+
+ kubectl -n netapp-monitoring edit AgentConfiguration
+展開したオペレータのバージョンがAgentConfigurationをサポートしているかどうかを確認するには、次のコマンドを実行します。
+
+ kubectl get crd agentconfigurations.monitoring.netapp.com
+「Error from server (NotFound)」というメッセージが表示された場合は、AgentConfigurationを使用する前にオペレータをアップグレードする必要があります。
+
+
+
+== 始める前に注意すべき重要事項
+
+を使用してを実行する場合 <<configuring-proxy-support,プロキシ>>を使用してください <<using-a-custom-or-private-docker-repository,カスタムリポジトリ>>またはを使用している <<openshift-instructions,OpenShift>>を参照してください。
+
+また、 <<permissions,権限>>。
+
+以前のインストールからアップグレードする場合は、 <<をアップグレードして,をアップグレードして>> 情報。
+
+
+
+=== プロキシサポートを設定しています
+
+環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。
+
+* プロキシは、インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをCloud Insights 環境に接続するために必要です
+* ターゲットのKubernetesクラスタがCloud Insights 環境と通信するために必要なプロキシ
+
+
+これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMから、Cloud Insightsにアクセスし、Cloud Insightsからバイナリをダウンロードできるようにする必要があります。
+
+NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります
+
+変数を設定するには、NetApp Kubernetes Monitoring Operatorをインストールする前に、システムで次の手順を実行します。
+
+. 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
++
+.. セットアップするプロキシに認証（ユーザ名/パスワード）がない場合は、次のコマンドを実行します。
++
+ export https_proxy=<proxy_server>:<proxy_port>
+.. セットアップするプロキシに認証（ユーザ名/パスワード）が設定されている場合は、次のコマンドを実行します。
++
+ export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
+
+
+KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。
+
+NetApp Kubernetes Monitoring Operatorを導入する前に、operator-config.yamlでAgentConfigurationのプロキシセクションを設定します。
+
+[listing]
+----
+agent:
+  ...
+  proxy:
+    server: <server for proxy>
+    port: <port for proxy>
+    username: <username for proxy>
+    password: <password for proxy>
+
+    # In the noproxy section, enter a comma-separated list of
+    # IP addresses and/or resolvable hostnames that should bypass
+    # the proxy
+    noproxy: <comma separated list>
+
+    isTelegrafProxyEnabled: true
+    isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
+    isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
+    isAuProxyEnabled: <true or false> # true if AU enabled
+  ...
+...
+----
+
+
+=== カスタムまたはプライベートのDockerリポジトリを使用する
+
+デフォルトでは、NetApp Kubernetes Monitoring OperatorはCloud Insights リポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。
+
+NetApp Monitoring Operatorのインストールタイルから[Image Pull Snippet]を実行します。このコマンドは、Cloud Insights リポジトリにログインし、オペレータのすべてのイメージ依存関係をプルして、Cloud Insights リポジトリからログアウトします。プロンプトが表示されたら、指定したリポジトリの一時パスワードを入力します。このコマンドは、オプション機能を含む、オペレータが使用するすべてのイメージをダウンロードします。これらの画像がどの機能に使用されるかについては、以下を参照してください。
+
+Core Operator Functionality and Kubernetes Monitoringの略
+
+* ネットアップによる監視
+* kube-rbac-proxyの略
+* kube-state-metricsの略
+* テレグラフ
+* distroless-root-user
+
+
+イベントログ
+
+* Fluent-bit
+* kubernetes-event-exporterの略
+
+
+ネットワークのパフォーマンスとマップ
+
+* ci-net-observerの略
+
+
+社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのイメージタグとディレクトリパスが、Cloud Insights リポジトリ内のイメージタグとディレクトリパスと一致していることを確認します。
+
+operator-deployment.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。
+
+....
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
+....
+operator-config.yamlのAgentConfigurationを編集して、新しいDockerリポジトリの場所を反映します。プライベートリポジトリ用に新しいimagePullSecretを作成します。詳細については、_ https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_を参照してください
+
+[listing]
+----
+agent:
+  ...
+  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  dockerRepo: your.docker.repo/long/path/to/test
+  # Optional: A docker image pull secret that maybe needed for your private docker registry
+  dockerImagePullSecret: docker-secret-name
+----
+
+
+=== OpenShift の手順
+
+OpenShift 4.6以降で実行している場合は、_runPrivileged_settingを有効にするには、_operator-config.yaml_でAgentConfigurationを編集する必要があります。
+
+....
+# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
+runPrivileged: true
+....
+OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブロックする可能性のある追加のセキュリティレベルを実装する場合があります。
+
+
+
+=== 公差と接線（Tolerations and Taints）
+
+_telegraf_、_fluent-bit_、および_net-observer_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます link:telegraf_agent_k8s_config_options.html["（_AgentConfiguration_）をクリックします"]。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。
+
+Kubernetesの詳細はこちらをご覧ください link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["塗料および耐性"]。
+
+に戻ります link:task_config_telegraf_agent_k8s.html["* NetApp Kubernetes監視オペレータのインストール*ページ"]
