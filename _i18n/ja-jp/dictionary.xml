@@ -9246,23 +9246,7 @@ WAFL readdir notice show ...ディレクトリがスパースとして表示さ�
 2. QoS制限により、同じノード上で優先度の低いワークロードの負荷を軽減します
 3.ワークロードの特性（ブロックサイズ、アプリケーションのキャッシュなど）の変更</block>
   <block id="fff01ad725d8d95091bb3ef05163c7ba" category="section-title">K8s モニタ</block>
-  <block id="f294f708940b046c4b5c6c3fe2beb74d" category="cell">ポッドが作成されました</block>
   <block id="5391f9a882a54c787b206138ed6d28b0" category="cell">情報</block>
-  <block id="2b52cb18ad3dc04e8b3f5b0a217dab16" category="cell">このアラートは、ポッドが作成されたときに発生します。</block>
-  <block id="f0b518884d4692e825876fc2d7fca44a" category="cell">ポッドが削除されました</block>
-  <block id="0639cadac03e80ed4b6257e91f9bd8e3" category="cell">このアラートは、ポッドが削除されたときに発生します。</block>
-  <block id="39d7b0860d5ecdb0380a2c77c4dc332e" category="cell">Demonset が作成されます</block>
-  <block id="e098953d5def2535f5787c6fcd748361" category="cell">このアラートは、 Demonset が作成されたときに発生します。</block>
-  <block id="0de1cf7dabd7089b851b4cbcb81dac73" category="cell">Demonset が削除されました</block>
-  <block id="c9e4867a446fa930c3f7f1dff2ddaf9c" category="cell">このアラートは、 Demonset が削除された場合に発生します。</block>
-  <block id="3d89b8eed7c69a8a767fb928b4562a31" category="cell">ReplicaSet が作成されました</block>
-  <block id="73ce536af3f9104c8f119e8eb860e726" category="cell">このアラートは 'ReplicaSet が作成されたときに発生します</block>
-  <block id="eeabcf367afdad2d67693fc3246849de" category="cell">ReplicaSet が削除されました</block>
-  <block id="33230c56cde1b140e9cd5f9fc6dd1815" category="cell">このアラートは 'ReplicaSet が削除されたときに発生します</block>
-  <block id="5e68de0568b7ee3ce1ee168f6023b496" category="cell">展開が作成されました</block>
-  <block id="bcf54384c450fe942a8b2365ec90cc58" category="cell">このアラートは、展開が作成されたときに発生します。</block>
-  <block id="90582794610cecc6bf6c1b849f118be0" category="cell">ポッドで障害が発生しまし</block>
-  <block id="1fb5af0b070e3edfc1b28299d45542c7" category="cell">このアラートは、ポッドに障害が発生したときに発生します。</block>
   <block id="fac4e44d90149e3d2fdc712cbc9bb991" category="cell">ポッドの接続に失敗しました</block>
   <block id="b60b475ab9762e47d4888115edfe5fe4" category="cell">このアラートは、ポッドとのボリューム接続に失敗した場合に発生します。</block>
   <block id="309238af720d23dd7b5017c92842c5ed" category="cell">永続的ボリューム要求のバインドに失敗しました</block>
@@ -15509,4 +15493,172 @@ v9.2.4.2</block>
 
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">NET-OBSERVER-L4-DS追加許容値。</block>
+  <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">対処方法</block>
+  <block id="dacff74646dd80517d0cffd123266041" category="cell">重大度/しきい値</block>
+  <block id="a0fc1910fcbc18de2726e16e8e450c0e" category="cell">永続ボリュームレイテンシが高い</block>
+  <block id="acf1a4cb85a03e701ce12c2b5af1697c" category="cell">高レイテンシの永続ボリュームは、アプリケーション自体に影響を及ぼし、タスクを実行できない可能性があることを意味します。アプリケーションの一貫したパフォーマンスを維持するには、永続ボリュームのレイテンシを監視することが重要です。メディアタイプに基づく想定レイテンシは、最大 1 ～ 2 ミリ秒、 SAS は最大 8 ～ 10 ミリ秒、 SATA HDD は 17 ～ 20 ミリ秒です</block>
+  <block id="23342e50cb508ff10388d5171bab5292" category="cell">**即時アクション**
+	重大しきい値を超えた場合は、ただちに対処してサービスの中断を最小限に抑えることを検討してください。
+		ボリュームにQoSポリシーが割り当てられている場合は、制限のしきい値が原因でボリュームのワークロードが調整されていないかどうかを評価します。
+		**すぐに実行するアクション**
+	警告しきい値を超えている場合は、すぐに次のアクションを計画してください。
+		1.ストレージプールの利用率も高い場合は、ボリュームを別のストレージプールに移動します。
+	2. ボリュームに QoS ポリシーが割り当てられている場合、ボリュームワークロードが調整される原因となった場合に備えて、制限しきい値を評価します。
+	3. コントローラの利用率が高い場合は、ボリュームを別のコントローラに移動するか、コントローラの総ワークロードを減らします。</block>
+  <block id="803448f7213deba01eb02cdcf79fd429" category="cell">警告@&gt; 6、000 μ s
+	臨界@&gt; 12、000 μ s</block>
+  <block id="90b04ed8e7a658e5a53536008dbc49ca" category="cell">クラスタメモリ飽和度高</block>
+  <block id="647a330e362524d08e4713d9d799fac3" category="cell">クラスタの割り当て可能メモリの飽和度が高くなっています。
+	クラスタのCPU飽和度は、メモリ使用量の合計をすべてのKubernetesノードの割り当て可能なメモリの合計で割った値です。</block>
+  <block id="5ddf5dd104ca2c41c79e1923eafaab0a" category="cell">ノードを追加します。
+	スケジュールされていないノードを修正します。
+	適切なサイズのポッドでノードのメモリを解放</block>
+  <block id="5e2de4e8a6fc94dfdcde0d23d16a4b45" category="cell">警告@&gt; 80%
+	重大@&gt; 90%</block>
+  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">警告</block>
+  <block id="45418d6dfe7cd04b64a53acde16e3ac3" category="cell">高い再送信レート</block>
+  <block id="bfb4c85db6684f06b563d6cdd7918965" category="cell">高いTCP再送信レート</block>
+  <block id="d99165642f1db07fbe730ecc58aa4786" category="cell">ネットワークの輻輳を確認する-ネットワーク帯域幅を大量に消費するワークロードを特定します。
+	PodのCPU利用率が高いかどうかを確認します。
+	ハードウェアネットワークのパフォーマンスを確認します。</block>
+  <block id="27d40f1ffa3b1b63509d8c164f792e2b" category="cell">警告@&gt; 10%
+	重大@&gt; 25%</block>
+  <block id="4e969a481a508599577f19a66c5a2c7d" category="cell">ノードファイルシステム容量上限</block>
+  <block id="fb781ac8e192e21d893a740ed76df796" category="cell">-アプリケーションファイル用の十分なスペースを確保するために、ノードディスクのサイズを拡張します。
+-アプリケーションファイルの使用量を削減します。</block>
+  <block id="987be04e5e051fed3f030c2cd4ff1d32" category="cell">警告@&gt; 80%
+ 重大@&gt; 90%</block>
+  <block id="0d69047d13e9146b8262619f5d342fbf" category="cell">ワークロードネットワークジッタ上限</block>
+  <block id="4c6d9c0e11174f170d06049863db3bb1" category="cell">高いTCPジッタ（レイテンシ/応答時間の変動が大きい）</block>
+  <block id="0fc3d756aa02a551d20d8ecba29b15a1" category="cell">ネットワークの輻輳を確認します。ネットワーク帯域幅を大量に消費するワークロードを特定します。
+PodのCPU利用率が高いかどうかを確認します。
+ハードウェアネットワークのパフォーマンスの確認</block>
+  <block id="0b08522ca39f06e97361791696c099e6" category="cell">警告@&gt; 30 ms
+ CRITICAL @&gt; 50 ms</block>
+  <block id="5c8d95aa52f5f7fa3c761dc1931f2437" category="cell">永続的ボリュームのスループット</block>
+  <block id="ce667327ae727d17bb7630071127ce99" category="cell">永続ボリュームの MBps のしきい値を使用して、永続ボリュームが事前に定義されたパフォーマンスの期待値を超えたときに管理者にアラートを送信し、他の永続ボリュームに影響を及ぼしている可能性があるこのモニタをアクティブにすると、 SSD 上の永続的ボリュームの一般的なスループットプロファイルに適したアラートが生成されます。このモニタでは、環境内のすべての永続ボリュームを監視します。警告および重大のしきい値は、監視目標に基づいてこのモニタを複製し、ストレージクラスに適したしきい値を設定することで調整できます。さらに、環境内の永続ボリュームのサブセットを対象とすることもできます。</block>
+  <block id="349a265834d31c44dd4c4d988ae086a5" category="cell">**即時アクション**
+重大しきい値を超えた場合は、サービスの中断を最小限に抑えるための迅速な対処を計画してください。
+1.ボリュームのQoS MBpsの上限を設定します。
+2. ボリュームのワークロードを処理しているアプリケーションに異常がないかを確認します。
+**すぐに実行するアクション**
+警告しきい値を超えている場合は、次のアクションをすぐに実行するように計画してください。
+1.ボリュームのQoS MBpsの上限を設定します。
+2. ボリュームのワークロードを処理しているアプリケーションに異常がないかを確認します。</block>
+  <block id="da3a106e23c4f2bb1f4abed10895a5eb" category="cell">警告@&gt; 10、000 MB/秒
+ 重大@&gt; 15、000 MB/秒</block>
+  <block id="2cb486fc59da30d769c702eb01d788ed" category="cell">OOMが終了する危険性のあるコンテナ</block>
+  <block id="4451a534f9bef0a82e96f0c18b8f16bd" category="cell">コンテナのメモリ制限が低すぎます。コンテナが削除される可能性があります（Out of Memory Kill）。</block>
+  <block id="77f8b545bfce1b75706171f18d013f8c" category="cell">コンテナメモリの上限を引き上げます。</block>
+  <block id="a2c21993b043d505436e461c962d53a6" category="cell">警告@&gt; 95%</block>
+  <block id="381bd9782459bd6690d99e8a8a81ea06" category="cell">ワークロード停止</block>
+  <block id="d17f44dd62f560c6b98986fba619fcaa" category="cell">ワークロードに正常なポッドがありません。</block>
+  <block id="317b54184772540ad23340d4d76c09ef" category="cell">重大@&lt; 1</block>
+  <block id="8d889f31bcf23267b347a3fb4cb1ff1a" category="cell">リソースクォータのメモリ制限を超えようとしています</block>
+  <block id="e6f393bbe1c9300a33e61931440df8d0" category="cell">ネームスペースのメモリ制限がResourceQuotaを超えようとしています</block>
+  <block id="cb6d920e3afdddd6d3dd2e25a249a7ce" category="cell">ResourceQuotaのメモリ要求が超過しようとしています</block>
+  <block id="e5355e449eb03dfd98c1255687241437" category="cell">ネームスペースのメモリ要求がResourceQuotaを超えようとしています</block>
+  <block id="d056d53ae2322df97c75b1ce5dac5cff" category="cell">ノード作成に失敗しました</block>
+  <block id="c941e3d6c35513ec6bad317f797958dd" category="cell">設定エラーのため、ノードをスケジュールできませんでした。</block>
+  <block id="701714f5fbd36524d1a2977a95a150a5" category="cell">Kubernetesイベントログで、設定エラーの原因を確認します。</block>
+  <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">重要</block>
+  <block id="0e14c27d69d1477839d9efc8b0ad46f8" category="cell">永続的ボリュームの再生に失敗しました</block>
+  <block id="8c8cbcc14840938903ba6a12977112a5" category="cell">ボリュームの自動再生に失敗しました。</block>
+  <block id="f6aad30681bba4322fc5af1af69cf8ef" category="cell">警告@&gt;0 B</block>
+  <block id="a01254b5fadca078ea74cbeb0e57fe0c" category="cell">コンテナのCPUスロットリング</block>
+  <block id="1bf5d16fa7c5d9c8897cd4d824dac923" category="cell">コンテナのCPU制限が低すぎます。コンテナプロセスの速度が低下します。</block>
+  <block id="62a706a5ff0ecfd04050efa911929788" category="cell">コンテナのCPU制限を引き上げます。</block>
+  <block id="de6571525c704c8657b3102f71cd1329" category="cell">警告@&gt; 95%
+ 重大@&gt; 98%</block>
+  <block id="12ffb413fda4bff7ed3d529fab7e21dd" category="cell">サービスロードバランサを削除できませんでした</block>
+  <block id="b50c21eaa4dde5dcceb05f3d5e10e7c3" category="cell">永続ボリューム IOPS</block>
+  <block id="54e09e4f57136b1abc2be3badec732b0" category="cell">永続ボリュームの IOPS しきい値を使用すると、永続ボリュームが事前に定義されたパフォーマンスの期待値を超えたときに管理者に通知することができます。このモニタをアクティブにすると、永続ボリュームの一般的な IOPS プロファイルに適したアラートが生成されます。このモニタでは、環境内のすべての永続ボリュームを監視します。警告および重大のしきい値は、このモニタを複製し、ワークロードに適したしきい値を設定することで、監視の目標に基づいて調整できます。</block>
+  <block id="c9b0218269436ed0877e903ae0a00283" category="cell">**即時アクション**
+重大しきい値に違反した場合は、サービスの中断を最小限に抑えるための即時アクションを計画します。
+1.ボリュームのQoS IOPS制限を導入します。
+2. ボリュームのワークロードを処理しているアプリケーションに異常がないかを確認します。
+**すぐに実行するアクション**
+警告しきい値を超えている場合は、すぐに次のアクションを計画してください。
+1.ボリュームのQoS IOPS制限を導入します。
+2. ボリュームのワークロードを処理しているアプリケーションに異常がないかを確認します。</block>
+  <block id="29b0560962e1c0212afb7c4ecbb71c93" category="cell">警告@&gt; 20、000 IO/秒
+ 重大@&gt; 25、000 IO/秒</block>
+  <block id="87cfeec4bdb82649fe26dbd8b7bf29f9" category="cell">サービスロードバランサを更新できませんでした</block>
+  <block id="2643d59c01ffa8a1c0684fc4eb390bcc" category="cell">ノードPID圧力</block>
+  <block id="1288eedc6e2511d2721df59f399ac7fa" category="cell">（Linux）ノードで使用可能なプロセス識別子が削除しきい値を下回っています。</block>
+  <block id="8d9541f2f1d32c5fb01855176e5c57c1" category="cell">多数のプロセスを生成し、使用可能なプロセスIDのノードを枯渇させるポッドを検索して修正します。
+プロセスを生成するポッドやコンテナからノードを保護するには、PodPidsLimitを設定します。</block>
+  <block id="4dbefdf4b1ddb3ca9769f134be871e4b" category="cell">重大@&gt;0</block>
+  <block id="95bea6890aa529aa4331870c42c52bea" category="cell">ポッドイメージのプルエラー</block>
+  <block id="25a9cfb04ab08da2d3408b6841891ac7" category="cell">Kubernetesがポッドコンテナイメージを取得できませんでした。</block>
+  <block id="6f6bdaa9544f6281972ea06985fb9ab7" category="cell">-ポッド構成でポッドのイメージのスペルが正しいことを確認します。
+-レジストリにイメージタグが存在することを確認してください。
+-イメージレジストリのクレデンシャルを確認します。
+-レジストリ接続の問題を確認します。
+-公共のレジストリプロバイダーによって課されたレート制限に達していないことを確認します。</block>
+  <block id="94c150c1b83894781d50071af135ea80" category="cell">ジョブの実行時間が長すぎます</block>
+  <block id="1cf41ef56ce8a9eb75257ff3c8693f09" category="cell">ジョブの実行時間が長すぎます</block>
+  <block id="3d1aa5736ce76c14a4ebe18eaf3a77d6" category="cell">警告@&gt; 1時間
+ 重大@&gt; 5時間</block>
+  <block id="7841d72460ad10b826b67c603889a136" category="cell">ノードメモリ上限</block>
+  <block id="2aceb65bfe4bea21524bfc1a1b116165" category="cell">ノードのメモリ使用率が高くなっています</block>
+  <block id="71da577c9b69706906f95d0fd5696368" category="cell">ノードを追加します。
+スケジュールされていないノードを修正します。
+適切なサイズのポッドでノードのメモリを解放</block>
+  <block id="e5e09bf52d280084c87d12264b756edd" category="cell">警告@&gt; 85%
+ 重大@&gt; 90%</block>
+  <block id="74ef7bdeeb51a483e58c7ded021952ed" category="cell">ResourceQuotaのCPU制限を超えようとしています</block>
+  <block id="9b8e4b0bb0460afb26f3786cfd249927" category="cell">ネームスペースのCPU制限がリソースクォータを超えようとしています</block>
+  <block id="aa5d59f5b34fcd2e6570cb5b597748ae" category="cell">ポッドクラッシュループバックオフ</block>
+  <block id="2f6430566c6afc6ea2ca5b08f5bb7c01" category="cell">ポッドがクラッシュし、何度も再起動しようとしました。</block>
+  <block id="3bdafc039774c767282dbe18d44c1c99" category="cell">重大@&gt;3</block>
+  <block id="147f45a9ef97cc0341380f6f8a1d6e01" category="cell">ノードCPU高</block>
+  <block id="3e37bc9b357938449001aad25ef8f753" category="cell">ノードのCPU使用率が高くなっています。</block>
+  <block id="2681406d533aa4d58826e3edffbcc642" category="cell">ノードを追加します。
+スケジュールされていないノードを修正します。
+適切なサイズのポッドでノードのCPUを解放</block>
+  <block id="bbbc0887121969dffaaac1addd997c03" category="cell">ワークロードネットワークレイテンシのRTTが高い</block>
+  <block id="9d45c8691c30b49f5f9bb02bd9d560b0" category="cell">高いTCP RTT（Round Trip Time）遅延</block>
+  <block id="d7fb4a35576851603f71e722e49b7694" category="cell">Check for Network congestion：ネットワーク帯域幅を大量に消費するワークロードを特定します。
+PodのCPU利用率が高いかどうかを確認します。
+ハードウェアネットワークのパフォーマンスを確認します。</block>
+  <block id="5e8fb3d2a2c4c6e442f16a447b6ce44c" category="cell">警告@&gt; 150 ms
+ 重大@&gt; 300 ms</block>
+  <block id="f51ad3a32d20f12a4aa62f7865c24b05" category="cell">ジョブ失敗</block>
+  <block id="62cc8941365780e844a7a1a3edfdae70" category="cell">ノードのクラッシュまたはリブート、リソースの枯渇、ジョブのタイムアウト、またはポッドのスケジュール設定エラーが原因で、ジョブが正常に完了しませんでした。</block>
+  <block id="5ee1a3ccbcd9ac286dece4ebf73be882" category="cell">Kubernetesイベントログで障害の原因を確認します。</block>
+  <block id="2ec669c0c57f515b14422f2029d0d00c" category="cell">警告@&gt;1</block>
+  <block id="4b9573f7ad02d63bbbaee8beda615e22" category="cell">永続的ボリュームが数日でフル</block>
+  <block id="f24107b73347142c35cd13250c79c514" category="cell">永続的ボリュームのスペースが数日後に不足します</block>
+  <block id="ff886ed7d916977aab8b3fb7aae56d53" category="cell">-ボリュームサイズを大きくして、アプリケーションファイル用の十分な空き容量を確保します。
+-アプリケーションに保存されるデータ量を削減します。</block>
+  <block id="c9e8926f037a4aaf0bfbc95008a28ce5" category="cell">警告（8日未満）
+ 重大（3日未満）</block>
+  <block id="c314f44daabd371d9d8799b6e3cffa7a" category="cell">ノードのメモリ圧力</block>
+  <block id="348e57fa4d72e6a73235b6317cc9498e" category="cell">ノードのメモリが不足しています。使用可能なメモリが削除しきい値に達しました。</block>
+  <block id="13e758d164117d8a33c597c0707dc8f5" category="cell">ノード-準備完了</block>
+  <block id="3c15047d3f6252c3a62c846cf5fcc9aa" category="cell">ノードの準備が5分間完了していません</block>
+  <block id="9aa3333109c5063bd5f328edf601ba38" category="cell">ノードに十分なCPU、メモリ、およびディスクリソースがあることを確認します。
+ノードのネットワーク接続を確認してください。
+Kubernetesイベントログで障害の原因を確認します。</block>
+  <block id="72fc9f4b384a114b1502bdf2b1a4981b" category="cell">永続的ボリュームの容量が上限です</block>
+  <block id="9e20a4e791e5b3fcd5f0cdf5e58976a0" category="cell">永続的ボリュームバックエンドの使用容量が多くなっています。</block>
+  <block id="1af3a99d19897f9593f718d7e186ede9" category="cell">-ボリュームサイズを大きくして、アプリケーションファイル用の十分な空き容量を確保します。
+-アプリケーションに保存されるデータ量を削減します。</block>
+  <block id="342ebde848a696c7b94b3852d026d450" category="cell">サービスロードバランサを作成できませんでした</block>
+  <block id="fdc1b09aa1ad52660639e653ccf495f9" category="cell">サービスロードバランサの作成に失敗しました</block>
+  <block id="e00662f582c55c273e64f4e3cffcd0dd" category="cell">ワークロードレプリカの不一致</block>
+  <block id="bc323bcbe0862d9bb52aeff43583e9ee" category="cell">現在、一部のポッドはDeploymentまたはDaemonSetで使用できません。</block>
+  <block id="88009a6fc741fb272943a946dcf66624" category="cell">ResourceQuota CPU要求が超過しようとしています</block>
+  <block id="5e6016e4c2bd2e4bd4df818a1bf2e362" category="cell">ネームスペースのCPU要求がリソースクォータを超えようとしています</block>
+  <block id="e9ab30ecefea517194998d555f0b0e37" category="cell">ネットワークの輻輳を確認する-ネットワーク帯域幅を大量に消費するワークロードを特定します。
+PodのCPU利用率が高いかどうかを確認します。
+ハードウェアネットワークのパフォーマンスを確認します。</block>
+  <block id="a42092b4bcc7ac433713e0441e1787b1" category="cell">警告@&gt; 10%
+ 重大@&gt; 25%</block>
+  <block id="b0e0b6c8516b4a336ca0958188e4ddc7" category="cell">ノードディスク圧力</block>
+  <block id="b0faff68997bb5f0c79ea09d9187e7ce" category="cell">ノードのルートファイルシステムまたはイメージファイルシステムで使用可能なディスクスペースとinodeが削除しきい値を超えています。</block>
+  <block id="7a630b16f340cd744188cfe88ea277e0" category="cell">クラスタのCPU飽和度-上限</block>
+  <block id="ef9e90b0a74afb98891334eb9c2fec60" category="cell">クラスタの割り当て可能なCPU使用率が高くなっています。
+クラスタのCPU使用率は、CPU使用率の合計をすべてのKubernetesノードの割り当て可能なCPUの合計で割って算出されます。</block>
 </blocks>
