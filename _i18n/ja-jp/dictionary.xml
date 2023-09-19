@@ -15508,4 +15508,5 @@ v9.2.4.2</block>
 * Ubuntu Server：18.04および20.04 LTS
 
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">NET-OBSERVER-L4-DS追加許容値。</block>
 </blocks>

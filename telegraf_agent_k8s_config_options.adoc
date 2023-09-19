@@ -172,6 +172,12 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 |  | DNSMode（DNSMode） | TCP / UDP、DNSのモード 
 
 
+|  | Fluent-bit-tolerationsの略 | FLUENT-BIT-DSの追加許容値。 
+
+
+|  | event-exporter-tolerationsの略 | イベントエクスポータの追加許容値。 
+
+
 | ワークロードマップ |  | 作業負荷マップの収集とオペレータのインストールをカスタマイズできる設定オプション 
 
 
@@ -196,13 +202,7 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 |  | enableDNSLookup | trueまたはfalse、DNSルックアップを有効にします 
 
 
-|  | Fluent-bit-tolerationsの略 | FLUENT-BIT-DSの追加許容値。 
-
-
-|  | event-exporter-tolerationsの略 | イベントエクスポータの追加許容値。 
-
-
-| ワークロードマップ |  | L4 -公差 
+|  | L4 -公差 | NET-OBSERVER-L4-DS追加許容値。 
 |===
 
 
