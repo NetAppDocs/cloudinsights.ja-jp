@@ -3191,7 +3191,6 @@ persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulset
   <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">ネットオブザーバDSのメモリ制限</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">ネットオブザーバーDSのCPU要求</block>
   <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">ネットオブザーバーDSのMEM要求</block>
-  <block id="25fe0f5d8da2c17ccf23ee0ed8327251" category="cell">MetricAgreegationIntervalの略</block>
   <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">メトリック集約間隔（秒単位）</block>
   <block id="c561450e999b4dfedfdbbc8b48e36db7" category="cell">bpfPollIntervalの略</block>
   <block id="a75c6546b06d6f58867213c5349a5f15" category="cell">BPFポーリング間隔（秒単位）</block>
@@ -15796,4 +15795,5 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
 次にTelegrafを再起動します。</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">オペレータをインストールまたはアップグレードする前に</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">モニタリングオペレータのインストール</block>
+  <block id="1de805c2687b2c30b46a937270519488" category="cell">metricAggregationInterval</block>
 </blocks>

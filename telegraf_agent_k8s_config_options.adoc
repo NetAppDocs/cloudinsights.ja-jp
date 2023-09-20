@@ -193,7 +193,7 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 |  | MemRequestの略 | ネットオブザーバーDSのMEM要求 
 
 
-|  | MetricAgreegationIntervalの略 | メトリック集約間隔（秒単位） 
+|  | metricAggregationInterval | メトリック集約間隔（秒単位） 
 
 
 |  | bpfPollIntervalの略 | BPFポーリング間隔（秒単位） 
