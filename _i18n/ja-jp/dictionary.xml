@@ -11990,20 +11990,13 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="c6e2ba85460afb33b2bbe0fcfd9a3568" category="paragraph"><block ref="c6e2ba85460afb33b2bbe0fcfd9a3568" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0adbbc22841794e4fddaba88c2c92a43" category="list-text">目的のイベント（重要、警告、解決済み）の「チーム」ウェブフックを選択します。</block>
   <block id="3cc4e4e22440eccabf6117795fc161eb" category="paragraph"><block ref="3cc4e4e22440eccabf6117795fc161eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4a4a6b257377a1be5e4488cf0a12459b" category="summary">Time-To-Live （ TTL ）とダウンサンプリングの説明</block>
-  <block id="ded51882afc1e18389057617d96454cb" category="doc">Time-To-Live （ TTL ）とデータのダウンサンプリング</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">Cloud Insights は設定された期間（エディションごと）データを保持するため、数千のデータポイントが処理される可能性があります。そのため、グラフや表にデータが表示される前にデータがダウンサンプリングされることがあります。</block>
-  <block id="9f006f2f14b484069511ef4a3f5315b3" category="section-title">データ保持（ Time-To-Live ）</block>
   <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights は、アクティブサブスクライブされたエディションによって決定された時間だけデータを保持します。データ保持期間は Time-To-Live または TTL とも呼ばれます。</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">編集（ Edition ）</block>
-  <block id="433a6d1dc9f59395173b9c44da198568" category="cell">TTL</block>
   <block id="972e73b7a882d0802a4e3a16946a2f94" category="cell">基本</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 日</block>
   <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">標準</block>
-  <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90日</block>
   <block id="8d5e7e72f12067991186cdf3cb7d5d9d" category="cell">Premium サービス</block>
-  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 カ月</block>
-  <block id="c6de11ce9bf3311bd827033947947ad4" category="paragraph">Premium Edition サブスクリプションには、管理対象ユニット（ MU ）が 500 以上含まれ、ビジネスインテリジェンスおよびレポートデータも 13 カ月間保持されます。</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">データのダウンサンプリング</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">* ダウンサンプリング * は、グラフにデータの統計的近似値を提供し、収集したデータの正確なビューを維持しながら、すべてのデータポイントを表示することなく、データの効率的な概要を提供します。</block>
   <block id="b75dadfce21049a86b69409a71f9d89d" category="section-title">ダウンサンプリングが必要な理由</block>
@@ -15796,4 +15789,9 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">オペレータをインストールまたはアップグレードする前に</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">モニタリングオペレータのインストール</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricAggregationInterval</block>
+  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">Time-To-Live（TTL）-データ保持とダウンサンプリングの説明</block>
+  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">データ保持とデータのダウンサンプリング</block>
+  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">データ保持（Time-To-Live）</block>
+  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90日</block>
+  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">500台以上のManaged Unit（MU）を含むPremium Editionのサブスクリプションでは、Business IntelligenceとReportingのデータが13カ月間保持されます。</block>
 </blocks>
