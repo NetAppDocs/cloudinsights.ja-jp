@@ -13433,18 +13433,6 @@ Windows サービスを使用して取得を再開します</block>
   <block id="d17a9db742265dcdd4ca05c00d1d0b96" category="list-text">* Role * - Cloud Insights でのユーザーの役割（ゲスト、ユーザー、管理者）</block>
   <block id="2371d3134aba5e426570bddc2f309af4" category="list-text">*ip * - イベントに関連付けられた IP アドレス</block>
   <block id="57a6064ecdf5f0ef23cc5dc68b3df3ed" category="list-text">* アクション * - ログイン、作成、更新などのアクティビティのタイプ</block>
-  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-Red Hat Enterprise Linux 7.x、8.x 64ビット、SELinux
-CentOS 7.x 64ビット、SELinux
-CentOS 8 Stream、SELinux
-Ubuntu 20から22 64ビット
-Rocky 8.x 64ビット、Rocky 9.x 64ビット、SELinux
-SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上のSELinux
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
-
-SE（Security Enhanced）Linuxはサポートされていません。</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解像度条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタがmatching_group_by_generatedを持つ後続のすべてのアラートを抑制します。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします。</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMBプロトコルバージョン3.1以前。  ワークロードセキュリティは、FlexCache を使用するSMB構成では機能しないことに注意してください。FlexCacheを使用するシステムでは、ONTAP 9.7以降では、FPolicyがNFS環境でのみサポートされます。</block>
@@ -15794,4 +15782,14 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">データ保持（Time-To-Live）</block>
   <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90日</block>
   <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">500台以上のManaged Unit（MU）を含むPremium Editionのサブスクリプションでは、Business IntelligenceとReportingのデータが13カ月間保持されます。</block>
+  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+Red Hat Enterprise Linux 7.x、8.x 64ビット、SELinux
+CentOS 7.x 64ビット、SELinux
+CentOS 8 Stream、SELinux
+Ubuntu 20から22 64ビット
+Rocky 8.x 64ビット、Rocky 9.x 64ビット、SELinux
+SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上のSELinux
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
 </blocks>

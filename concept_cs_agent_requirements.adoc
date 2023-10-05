@@ -38,9 +38,7 @@ Ubuntu 20から22 64ビット
 Rocky 8.x 64ビット、Rocky 9.x 64ビット、SELinux
 SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上のSELinux
 
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
-
-SE（Security Enhanced）Linuxはサポートされていません。 
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 
 
 
 | コマンド | インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。 
