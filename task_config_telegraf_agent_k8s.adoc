@@ -32,7 +32,7 @@ Operatorとデータコレクタは、Cloud Insights Dockerレジストリから
 == NetApp Kubernetes Monitoring Operatorをインストールする前に
 
 
-IMPORTANT: を参照してください link:/pre-requisites_for_k8s_operator.html["*インストールまたはアップグレードの前に*"] NetApp Kubernetes Monitoring Operatorをインストールまたはアップグレードする前のドキュメント。
+IMPORTANT: を参照してください link:pre-requisites_for_k8s_operator.html["*インストールまたはアップグレードの前に*"] NetApp Kubernetes Monitoring Operatorをインストールまたはアップグレードする前のドキュメント。
 
 
 
@@ -523,5 +523,8 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 ...
 
 次にTelegrafを再起動します。 
+
+
+| 一部のイベントログの_involvedobject_dataが見つかりません。 | 次の手順を実行していることを確認してください： link:pre-requisites_for_k8s_operator.html["権限"] 上記のセクション。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

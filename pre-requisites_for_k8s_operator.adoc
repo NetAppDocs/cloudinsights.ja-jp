@@ -195,6 +195,17 @@ OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブ�
 
 
 
+=== 権限
+
+監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["表示するアグリゲート"]イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。
+
+. edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/<namespace>-additional-permissions_を編集します。
+. 動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照
+. クラスタに変更を適用します。
+
+
+
+
 === 公差と接線（Tolerations and Taints）
 
 _telegraf_、_fluent-bit_、および_net-observer_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます link:telegraf_agent_k8s_config_options.html["（_AgentConfiguration_）をクリックします"]。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。
