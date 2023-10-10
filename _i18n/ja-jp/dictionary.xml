@@ -15799,4 +15799,27 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">を参照してください <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> NetApp Kubernetes Monitoring Operatorをインストールまたはアップグレードする前のドキュメント。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">一部のイベントログの_involvedobject_dataが見つかりません。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">次の手順を実行していることを確認してください： <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 上記のセクション。</block>
+  <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">モジュールのトライアル</block>
+  <block id="7f82331674ae138af79c9ab94e1fac67" category="paragraph">近日公開予定！</block>
+  <block id="5ed0b3b1884385a11f0ddcb69c41afbf" category="admonition">モジュールトライアルはプレビュー機能と見なされるため、変更される場合があります。</block>
+  <block id="2b8d4048177d738d1e55b5d352a76442" category="paragraph">Cloud Insightsの最初のトライアルに加えて、*モジュールトライアル*もご利用いただけます。たとえば、インフラストラクチャオブザーバビリティにすでにサブスクライブしていて、Kubernetesを環境に追加する場合は、NetApp Kubernetes監視オペレータのインストール時から、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
+  <block id="c8ff921ed8862475c3fbdfc6e58cbc82" category="admonition">試用期間後に新しいManaged Unit（MU）の使用料が請求されるので、それに応じて計画するようにしてください。モジュールトライアルが終了すると、サービスの中断を回避するためにMUを追加する必要があるかどうかが通知されます。</block>
+  <block id="49ebde544abc61604ad7c6c491131bf2" category="paragraph">管理ユニットの使用状況は、*[管理]&gt;[サブスクリプション]ページの*[使用状況]タブで監視できます。</block>
+  <block id="522299d35366d8b59cb57f013ff640aa" category="inline-image-macro">[MU Usage]画面</block>
+  <block id="aa0083acb9559c9abfc7553890f8f78e" category="paragraph"><block ref="aa0083acb9559c9abfc7553890f8f78e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="da2a1b654dd8965375b17b81a0874e1d" category="section-title">試算ツール</block>
+  <block id="12b403caef8918465c7ebf1024a4ee26" category="paragraph">モジュールトライアルでは、モジュールで消費されるリソースのMU使用量は変更されません。 ただし、(_Summary_tabの)* Estimator *を開いて、トライアル後にMUがどのように課金されるかを確認したり、将来必要になる可能性のあるMU数の「What if」シナリオでプレイしたりすることができます。Estimatorを終了して数値をリセットします。</block>
+  <block id="de81da28c1db344902ce9fbb40bd9e3a" category="paragraph"><block ref="de81da28c1db344902ce9fbb40bd9e3a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23639e5972e5f3878de9fd64c5a01f73" category="paragraph">モジュールの横にあるチェックボックスをオンにして、モジュール全体のMUを推定コストから追加または削除します。</block>
+  <block id="3406a9b7847cf7a53e580c01031639d0" category="paragraph">Estimatorでは、現在のサブスクリプション期間を維持してライセンスを付与されたManaged Unitの数を増やすアドオンや、現在のサブスクリプションのときに購入する更新サブスクリプションの更新オプションのいずれかのアドオンの番号がどのように積み重ねられているかを確認することもできます。 期間終了。</block>
+  <block id="e88abbac5caee1a1c8d8af2d838a7e97" category="paragraph">モジュールトライアルの対象となるのは、サブスクリプションごとに1回のみです。</block>
+  <block id="51551d892e3008a0a15372506e7c3778" category="section-title">ドメインによるアクセスの制限</block>
+  <block id="3a61360418d262f9d84cc867c9f6dafd" category="paragraph">Cloud Insightsでは、指定したドメインだけにユーザアクセスを制限できます。[Admin]&gt;[User Management]ページで、[Restrict Domains]を選択します。</block>
+  <block id="c55e947bf98f22cc4e8f7588d8766267" category="inline-image-macro">ドメインをデフォルトドメイン、デフォルトおよび指定した追加ドメインのみ、または制限なしに制限する</block>
+  <block id="3918febcb400c73584a46d9496f559c5" category="paragraph"><block ref="3918febcb400c73584a46d9496f559c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8aa9f67356322fd8d0293bb016de3df" category="paragraph">次の選択肢が表示されます。</block>
+  <block id="1851aec30e57598577c5ea29624fe8f4" category="list-text">制限なし：ドメインに関係なく、ユーザはCloud Insightsに引き続きアクセスできます。</block>
+  <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">デフォルトドメインへのアクセスを制限する：デフォルトドメインは、Cloud Insights環境アカウントの所有者が使用するドメインです。これらのドメインは常にアクセス可能です。</block>
+  <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">指定したデフォルトおよびドメインへのアクセスを制限します。デフォルトのドメインに加えて、Cloud Insights環境へのアクセスを許可するドメインを一覧表示します。</block>
+  <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
