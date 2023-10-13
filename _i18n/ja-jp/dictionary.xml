@@ -6305,13 +6305,7 @@ httpdリクエストメソッドPUT
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Cloud Insights の価格は管理ユニット * 単位です。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB</block>
-  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">次のデータコレクタは、異なる Raw TiB から管理ユニットレートで測定されます。これらのデータコレクタの 40TiB 分の未フォーマット容量は、 1 つの管理ユニット（ MU ）として課金されます。</block>
-  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
-  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Cohesity SmartFiles</block>
-  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC DATA Domainの略</block>
-  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS の場合</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
-  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID の略</block>
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 詳細：</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">サブスクリプションコストを見積もります</block>
@@ -15822,4 +15816,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">デフォルトドメインへのアクセスを制限する：デフォルトドメインは、Cloud Insights環境アカウントの所有者が使用するドメインです。これらのドメインは常にアクセス可能です。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">指定したデフォルトおよびドメインへのアクセスを制限します。デフォルトのドメインに加えて、Cloud Insights環境へのアクセスを許可するドメインを一覧表示します。</block>
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1 Managed Unit = 40TiBの未フォーマット容量（AWS S3、Cohesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi Content Platform、IBM Cleversafe、NetApp StorageGRID）。</block>
 </blocks>
