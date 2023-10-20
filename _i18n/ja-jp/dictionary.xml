@@ -947,11 +947,6 @@ BlueXPのナビゲーションメニューでは、データサービスはカ�
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">非アクティブなデバイスの識別</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">所有している資産とその使用者を特定することは、「適切なサイジング」を行い、使用していないインフラストラクチャを解放するために重要です。使用率の低いリソースを簡単に再割り当てしたり、運用を停止したりでき、不要な購入を回避できます</block>
   <block id="89335488274d94cea3defd958dbbabbe" category="paragraph">次の手順に従って、アクセス頻度の低いアセットを特定します。</block>
-  <block id="74f2d5af3d35830fbffe4e065b028732" category="list-text">Cloud Insights メニューで、 * Queries &gt; New Query * をクリックします</block>
-  <block id="355d0fe6f460ad7e9e4be906a083f7e4" category="list-text">を参照してください<block ref="9116737835cb1f4d8af2c2aac1d48819" prefix=" " category="inline-code"></block> メニューで、照会するアセットタイプを選択します</block>
-  <block id="08b0a890022d521dd17d275bcefd82ef" category="list-text">[*+&gt;] をクリックしてアクティブにします</block>
-  <block id="cc1d1782b616d7d5b18a8e83247f82c9" category="list-text">[* any] をクリックし、 [* No] に変更します</block>
-  <block id="d6badef7150cd45268b7ee1f29045a26" category="paragraph">選択したデバイスタイプの非アクティブなアセットのリストが表示されます。</block>
   <block id="95af42a33b3caafac3bc1a54d266a2d2" category="summary">IBM PowerVM データコレクタを設定しています。</block>
   <block id="ba18c7f6265d13c449068915ad8f4e96" category="doc">IBM PowerVM データコレクタの設定</block>
   <block id="b089f5adc7d97f0c62b9c4b3186b03c7" category="paragraph">IBM PowerVM （ SSH ）データコレクタは、ハードウェア管理コンソール（ HMC ）で管理される IBM POWER ハードウェアインスタンスで実行されている仮想パーティションに関する情報を収集するために使用されます。</block>
@@ -15832,4 +15827,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 カ月</block>
   <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">エディションと価格</block>
   <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">各エディションで利用可能な機能の完全なリストは、Cloud Insightsで入手できます。 <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">[Explore]-&gt;[+New Metric Query]*に移動します。</block>
+  <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">ドロップダウンから[_Storage_]を選択します。</block>
+  <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">ギアをクリックし、_isActive_を 列として追加します。</block>
+  <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">チェックを表示している行がアクティブです。「X」は非アクティブなデバイスを示します。</block>
 </blocks>
