@@ -22,6 +22,9 @@ summary: NetApp ONTAP Data Collector 向けの Amazon FSX
 このデータコレクタは、 Amazon FSX for NetApp ONTAP からインベントリデータとパフォーマンスデータを取得します。このデータコレクタは、 Cloud Insights サービスリージョン全体で段階的に利用可能になります。Cloud Insights 環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。
 
 
+NOTE: このCloud Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。AWSを確認してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["ロールとルール"] 使用可能なオプションのマニュアル。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Cloud Insightsコレクタに使用する適切なロールです。
+
+
 
 == 用語集
 
