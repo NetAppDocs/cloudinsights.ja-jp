@@ -15831,4 +15831,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">ドロップダウンから[_Storage_]を選択します。</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">ギアをクリックし、_isActive_を 列として追加します。</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">チェックを表示している行がアクティブです。「X」は非アクティブなデバイスを示します。</block>
+  <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">インベントリの最近のステータス：予期しないデータを取得しました-アレイが0個のボリュームを報告しました</block>
+  <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常は認可（認証ではない）問題を示します。クレデンシャルが正しいこと、およびユーザ名にすべてのボリュームをリストして属性を表示できる権限があることを確認してください。</block>
 </blocks>
