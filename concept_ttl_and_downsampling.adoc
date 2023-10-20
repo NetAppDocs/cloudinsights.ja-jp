@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_ttl_and_downsampling.html 
-summary: Time-To-Live（TTL）-データ保持とダウンサンプリングの説明 
+summary: データの保持時間とダウンサンプリングの説明 
 keywords: time-to-live, TTL, downsampling, downsample, retention 
 ---
-= データ保持とデータのダウンサンプリング
+= データの保持とダウンサンプリングされたデータ
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -23,9 +23,9 @@ Cloud Insights は設定された期間（エディションごと）データ�
 
 
 
-== データ保持（Time-To-Live）
+== データ保持
 
-Cloud Insights は、アクティブサブスクライブされたエディションによって決定された時間だけデータを保持します。データ保持期間は Time-To-Live または TTL とも呼ばれます。
+Cloud Insights は、アクティブサブスクライブされたエディションによって決定された時間だけデータを保持します。
 
 |===
 | 編集（ Edition ） | データ保持 
@@ -34,9 +34,9 @@ Cloud Insights は、アクティブサブスクライブされたエディシ�
 | 基本 | 7 日 
 
 
-| Premium サービス | 90日 
+| Premium サービス | 13 カ月 
 |===
-500台以上のManaged Unit（MU）を含むPremium Editionのサブスクリプションでは、Business IntelligenceとReportingのデータが13カ月間保持されます。
+各エディションで利用可能な機能の完全なリストは、Cloud Insightsで入手できます。 link:https://bluexp.netapp.com/cloud-insights-pricing["エディションと価格"] ページ
 
 
 
