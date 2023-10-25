@@ -25,7 +25,7 @@ Cloud Insights では、このデータコレクタを使用してフローク�
 
 == インストール
 
-. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。[*Services*] で、 [Flink] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Flink] を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

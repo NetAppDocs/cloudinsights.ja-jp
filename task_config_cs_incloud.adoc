@@ -73,7 +73,7 @@ https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
 == ワークロードセキュリティエージェントをインストールします
 
 . Cloud Insights 環境に管理者またはアカウント所有者としてログインします。
-. Workload Security * Admin > Data Collectors *に移動し、* Agents *タブをクリックします。
+. [Workload Security]*[Collectors]*に移動し、*[Agents]*タブをクリックします。
 . [*+Agent] をクリックし、ターゲットプラットフォームとして RHEL を指定します。
 . [ エージェントインストール ] コマンドをコピーします。
 . ログインしている RHEL EC2 インスタンスに Agent Installation コマンドを貼り付けます。

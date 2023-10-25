@@ -27,7 +27,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | * 問題： * | * これを試みなさい : * 
 
 
-| [* Acquisition Units] タブの [*Admin] > [Data Collectors] ページの AU ステータスに [Certificate Expired] または [Certificate revoked] が表示されます。 | AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従ってAcquisition Unitをリストアします。
+| [Acquisition Units]タブの*[Observability]>[Collectors]*ページにあるAUのステータスには、[Certificate Expired]または[Certificate Revoked]と表示されます。 | AU の右側にあるメニューをクリックし、 * Restore Connection * （接続の復元）を選択します。指示に従ってAcquisition Unitをリストアします。
 
 1. Acquisition Unit（AU）サービスを停止します。_Copy Stop command_ ボタンをクリックすると、コマンドをクリップボードに簡単にコピーし、このコマンドを Acquisition Unit マシンのコマンドプロンプトに貼り付けることができます。
 

@@ -42,7 +42,7 @@ IMPORTANT: エージェントを削除すると、そのエージェントに関
 sudo /opt/netapp/cloudsecure/agent/install/cloudsecure-agent-uninstall.sh
 Uninstall CloudSecure Agent? [y|N]:
 ....
-. [*Admin] > [Data Collectors] > [Agents] をクリックします
+. [Workload Security]>[Collectors]>[Agents]*をクリックします。
 +
 設定されたエージェントのリストが表示されます。
 

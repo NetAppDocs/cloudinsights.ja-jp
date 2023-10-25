@@ -29,7 +29,7 @@ summary: ワークロードセキュリティLDAPユーザディレクトリコ�
 
 .ユーザーディレクトリコレクタの設定手順
 . [Workload Security]メニューで、次のいずれかをクリックします。
-*[Admin]>[Data Collectors]>[User Directory Collector]>[+ User Directory Collector]*を選択し、*[LDAP Directory Server]*を選択します
+*[Collectors]>[User Directory Collector]>[+ User Directory Collector]*を選択し、*[LDAP Directory Server]*を選択します。
 +
 [Add User Directory] 画面が表示されます。
 

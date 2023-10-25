@@ -36,7 +36,7 @@ NOTE: 正確な監査およびデータレポートを作成するためには�
 
 .Linux Acquisition Unit のインストール手順
 . Cloud Insights 環境に管理者またはアカウント所有者としてログインします。
-. [*Admin] > [Data Collectors] > [Acquisition Units] > [+ Acquisition Unit] をクリックします
+. [AObservability]>[Collectors]>[Acquisition Units]>[+Acquisition Unit]*
 +
 [Install Acquisition Unit_Dialog] が表示されます。Linux を選択します。
 
@@ -52,7 +52,7 @@ image:NewLinuxAUInstall.png["Linux AU の手順"]
 
 
 .完了後
-* [*Admin] > [Data Collectors] > [Acquisition units] をクリックして、 Acquisition Unit のステータスを確認します。
+* [Observability]>[Collectors]>[Acquisition Units]*をクリックして、Acquisition Unitのステータスを確認します。
 * Acquisition Unit のログには、 /var/log/netapp/cloudInsights /acq/ acq.log からアクセスできます
 * Acquisition Unit を制御するには、次のスクリプトを使用します。
 +
@@ -112,7 +112,7 @@ image:ProxyEndpoints_NewTable.png["プロキシエンドポイントテーブル
 .Windows Acquisition Unit のインストールの手順
 . 管理者権限を持つユーザとして Acquisition Unit サーバ / VM にログインします。
 . そのサーバーで、ブラウザウィンドウを開き、管理者またはアカウント所有者として Cloud Insights 環境にログインします。
-. [*Admin] > [Data Collectors] > [Acquisition Units] > [+ Acquisition Unit] をクリックします。
+. [Observability]>[Collectors]>[Acquisition Units]>[+Acquisition Unit]
 +
 [Install Acquisition Unit_Dialog] が表示されます。Windows を選択します。
 
@@ -130,7 +130,7 @@ image::NewWindowsAUInstall.png[Windows AU のインストール]
 
 
 .完了後
-* [*Admin] > [Data Collectors] > [Acquisition units] をクリックして、 Acquisition Unit のステータスを確認します。
+* [Observability]>[Collectors]>[Acquisition Units]*をクリックして、Acquisition Unitのステータスを確認します。
 * Acquisition Unit のログには、 <install dir>\Cloud Insights \Acquisition Unit \log\acq.log からアクセスできます
 * Acquisition Unit のステータスを確認するには、次のスクリプトを使用します。
 +
@@ -194,7 +194,7 @@ Linux* Acquisition Unitをアンインストールする場合は、次の手順
 
 * AUのアンインストール後：
 
-. Cloud Insights で、[*Admin]>[Data Collectors]に移動し、[* Acquisition Units]タブを選択します。
+. Cloud Insightsで、*[Observability]>[Collectors]に移動し、*[Acquisition Units]*タブを選択します。
 . アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。
 
 
@@ -216,12 +216,12 @@ Acquisition Unit を再インストールするには、あらかじめ別のサ
 
 .手順
 . Acquisition Unit サーバ /VM にログインし、 AU ソフトウェアをアンインストールします。
-. Cloud Insights 環境にログインして、 * Admin > Data Collectors * にアクセスします。
+. Cloud Insights環境にログインし、*オブザーバビリティ>コレクタ*に移動します。
 . 各データコレクタについて、右側の [ オプション ] メニューをクリックし、 _Edit_ を選択します。一時収集ユニットにデータコレクタを割り当て、 * 保存 * をクリックします。
 +
 同じタイプの複数のデータコレクタを選択し、 * 一括アクション * ボタンをクリックすることもできます。_Edit_ を選択し、データコレクタを一時 Acquisition Unit に割り当てます。
 
-. すべてのデータコレクタを一時的な Acquisition Unit に移動したら、 * Admin > Data Collectors * に移動し、 * Acquisition Unit * タブを選択します。
+. すべてのデータコレクタを一時的なAcquisition Unitに移動したら、*[Observability]>[Collectors]*に移動し、*[Acquisition Units]*タブを選択します。
 . 再インストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。
 . Acquisition Unit ソフトウェアを元のサーバ / VM に再インストールできるようになりました。+ Acquisition Unit * をクリックし、上記の手順に従って Acquisition Unit をインストールします。
 . Acquisition Unit を再インストールしたら、データコレクタを Acquisition Unit に再び割り当てます。

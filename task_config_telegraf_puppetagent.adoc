@@ -25,7 +25,7 @@ Cloud Insights では、このデータコレクタを使用して Puppet Agent 
 
 == インストール
 
-. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。「 * サービス * 」で「 Puppet 」を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。「 * サービス * 」で「 Puppet 」を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

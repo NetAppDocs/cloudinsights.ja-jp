@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して Nginx からメ�
 
 == インストール
 
-. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。[*Services*] で、 [Ngingin] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Ngingin] を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

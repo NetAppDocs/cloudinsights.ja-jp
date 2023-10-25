@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して MySQL からの�
 
 == インストール
 
-. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。[*Services] で [MySQL ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [MySQL ] を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

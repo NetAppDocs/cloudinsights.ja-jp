@@ -40,7 +40,7 @@ Cloud Insights 環境内のデータコレクタは、データセンター内�
 
 == Data Collector の設定
 
-* Cloud Insights メニューで、 * Admin > Data Collector* をクリックし、 * + Data Collector* ボタンをクリックします。すべてのデータコレクタを表示することも、サブスクリプションに基づいて使用可能なデータコレクタのみを表示することもできます。
+* Cloud Insightsメニューから* Observability > Collectors *をクリックし、*+ Data Collector *ボタンをクリックします。すべてのデータコレクタを表示することも、サブスクリプションに基づいて使用可能なデータコレクタのみを表示することもできます。
 
 
 * 選択するデータコレクタのタイプによって、インストール手順は異なります。

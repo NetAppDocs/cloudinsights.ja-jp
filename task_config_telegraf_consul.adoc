@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して、総領事か�
 
 == インストール
 
-. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。[*Services] で、 [Consul （コンサル） ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [Consul （コンサル） ] を選択します。
 +
 収集用にエージェントを設定していない場合は、にプロンプトが表示されます link:task_config_telegraf_agent.html["エージェントをインストールします"] お客様の環境で実現します。
 
