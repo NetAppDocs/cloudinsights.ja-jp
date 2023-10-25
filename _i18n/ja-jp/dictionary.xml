@@ -12868,7 +12868,6 @@ Thread Pool Fetch Shard Started Queueの略
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">データの収集元のデバイスのクレデンシャルが必要です。</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">データの収集元のすべてのデバイスには、デバイスのネットワークアドレス、アカウント情報、およびパスワードが必要です。</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">使用可能なデータコレクタがベンダー別に表示されます。</block>
-  <block id="98340026125b30253a889a183c2af3e1" category="list-text">必要なベンダーの [*+Collector*] をクリックし、設定するデータコレクタを選択します。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">ダイアログボックスで、データコレクタを設定し、 Acquisition Unit を追加できます。</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">データコレクタの名前を入力します。</block>
   <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">名前には、英字（ a ~ z ）、数字（ 0 ~ 9 ）、ダッシュ（ - ）、アンダースコア（ _ ）、アポストロフィ（ ' ）を使用できます。 およびピリオド（ . ）を使用できます。</block>
@@ -15834,4 +15833,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[* サービス *] で、 [CouchDB] を選択します。</block>
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Flink] を選択します。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">[Workload Security]*[Collectors]*に移動し、*[Agents]*タブをクリックします。</block>
+  <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">[+ Collector]*をクリックし、設定するデータコレクタを選択します。</block>
 </blocks>
