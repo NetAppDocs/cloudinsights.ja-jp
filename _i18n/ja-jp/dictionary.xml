@@ -15834,4 +15834,12 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Flink] を選択します。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">[Workload Security]*[Collectors]*に移動し、*[Agents]*タブをクリックします。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">[+ Collector]*をクリックし、設定するデータコレクタを選択します。</block>
+  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">ホワイトリストにファイル拡張子を追加してアラートを減らす</block>
+  <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">許可されたファイルタイプポリシー</block>
+  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">既知のファイル拡張子に対するランサムウェア攻撃が検出され、アラート画面でアラートが生成されている場合は、そのファイル拡張子をホワイトリストに登録して不要なアラートを防止することができます。</block>
+  <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">[Workload Security]&gt;[Policies]*に移動し、[_Allowed File Type Policies]タブに移動します。</block>
+  <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">ホワイトリストに登録すると、許可されているファイルタイプに対してランサムウェア攻撃のアラートは生成されません。_allowed File types_policyはランサムウェアの検出にのみ適用されることに注意してください。</block>
+  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">たとえば、_test.txt_というファイルの名前が_test.txt.abc_に変更され、Workload Securityが_.abc_拡張子のためにランサムウェア攻撃を検出した場合、_.abc_拡張子をホワイトリストに登録できます。ホワイトリストに登録すると、拡張子が_.abc_のファイルに対するランサムウェア攻撃は生成されなくなります。</block>
+  <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">許可されるファイルタイプには、完全一致（例：".abc"）または式（例：".*type"、".type*"、または"*type*"）を指定できます。タイプ「. a * c」、「. p * f」の式はサポートされていません。</block>
 </blocks>

@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: ws_allowed_file_types.html 
+keywords: workload security, cloud secure, whitelist, ransomware 
+summary: ホワイトリストにファイル拡張子を追加してアラートを減らす 
+---
+= 許可されたファイルタイプポリシー
+:allow-uri-read: 
+
+
+[role="lead"]
+既知のファイル拡張子に対するランサムウェア攻撃が検出され、アラート画面でアラートが生成されている場合は、そのファイル拡張子をホワイトリストに登録して不要なアラートを防止することができます。
+
+[Workload Security]>[Policies]*に移動し、[_Allowed File Type Policies]タブに移動します。
+
+image:WS_Allowed_File_Type_Policies.png["許可されたファイルタイプポリシー"]
+
+ホワイトリストに登録すると、許可されているファイルタイプに対してランサムウェア攻撃のアラートは生成されません。_allowed File types_policyはランサムウェアの検出にのみ適用されることに注意してください。
+
+たとえば、_test.txt_というファイルの名前が_test.txt.abc_に変更され、Workload Securityが_.abc_拡張子のためにランサムウェア攻撃を検出した場合、_.abc_拡張子をホワイトリストに登録できます。ホワイトリストに登録すると、拡張子が_.abc_のファイルに対するランサムウェア攻撃は生成されなくなります。
+
+許可されるファイルタイプには、完全一致（例：".abc"）または式（例：".*type"、".type*"、または"*type*"）を指定できます。タイプ「. a * c」、「. p * f」の式はサポートされていません。
