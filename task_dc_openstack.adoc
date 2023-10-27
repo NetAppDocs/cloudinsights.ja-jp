@@ -27,7 +27,7 @@ OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStac
 
 * OpenStack コントローラの IP アドレス
 * OpenStack admin ロールのクレデンシャルと Linux KVM ハイパーバイザーへの sudo アクセス。admin アカウントや admin 相当の権限を使用していない場合は、データコレクタユーザ ID に基づいて緩和するデフォルトポリシーを特定するために、トライアルとエラーを使用する必要があります。
-* OpenStack Ceilometer モジュールがインストールされ、パフォーマンス収集用に設定されている必要があります。Ceilometer の設定は、各ハイパーバイザーの Nova .conf ファイルを編集してから、各ハイパーバイザーで Nova Compute サービスを再起動することで実行します。オプション名は、 OpenStack の各リリースで変更されています。
+* パフォーマンス収集用にOpenStack Gnocchiモジュールをインストールして設定する必要があります。Gnocchiの設定は、各ハイパーバイザーのNova.confファイルを編集し、各ハイパーバイザーでNova Computeサービスを再起動することで行います。オプション名は、 OpenStack の各リリースで変更されています。
 +
 ** Icehouse のあるホテル
 ** Juno 社
@@ -45,7 +45,7 @@ OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStac
 ** KVM SSH の場合は 22
 ** Nova Compute Service の場合は 8774
 ** Cinder ブロックサービスの場合は 8776
-** Ceilometer パフォーマンスサービス用 8777
+** 8777（ニョッキ・パフォーマンス・サービス用）
 ** Glance Image Serviceの場合は9292
 *注*ポートは特定のサービスにバインドされ、大規模な環境ではコントローラまたは別のホストでサービスを実行できます。
 

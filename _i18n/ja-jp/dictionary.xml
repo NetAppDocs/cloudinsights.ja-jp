@@ -5627,7 +5627,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="1affaa3c0d19c2e084afa700debb8740" category="paragraph">OpenStack （ REST API / KVM ）データコレクタは、すべての OpenStack インスタンスのインベントリデータ、および必要に応じて VM のパフォーマンスデータを取得します。</block>
   <block id="ee627d472fc6df1e0c1367deb7ee0063" category="list-text">OpenStack コントローラの IP アドレス</block>
   <block id="280f91bd66acb7cf04ec960fca75f64a" category="list-text">OpenStack admin ロールのクレデンシャルと Linux KVM ハイパーバイザーへの sudo アクセス。admin アカウントや admin 相当の権限を使用していない場合は、データコレクタユーザ ID に基づいて緩和するデフォルトポリシーを特定するために、トライアルとエラーを使用する必要があります。</block>
-  <block id="ab920cce93179165ef5649da2b8c17f4" category="list-text">OpenStack Ceilometer モジュールがインストールされ、パフォーマンス収集用に設定されている必要があります。Ceilometer の設定は、各ハイパーバイザーの Nova .conf ファイルを編集してから、各ハイパーバイザーで Nova Compute サービスを再起動することで実行します。オプション名は、 OpenStack の各リリースで変更されています。</block>
   <block id="8beeeec38dbc6258291f2e47130835d8" category="list-text">Icehouse のあるホテル</block>
   <block id="291b02b25fbb9789119d2383e9f08e29" category="list-text">Juno 社</block>
   <block id="3afe87a2a8c61f8023e56883b9baccb8" category="list-text">キロ</block>
@@ -5641,7 +5640,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="5829ef3d89411d46f0a05f6867ff2efd" category="list-text">KVM SSH の場合は 22</block>
   <block id="a58963a7c2c9eafce2ab09ca28270ee0" category="list-text">Nova Compute Service の場合は 8774</block>
   <block id="745b1ee1989bc6dd0ac838e4dcb448e5" category="list-text">Cinder ブロックサービスの場合は 8776</block>
-  <block id="3c96098040036cf157077588c3a5792d" category="list-text">Ceilometer パフォーマンスサービス用 8777</block>
   <block id="ca3d2d05f916b41d8f53f506ace2e80e" category="list-text">Glance Image Serviceの場合は9292
 *注*ポートは特定のサービスにバインドされ、大規模な環境ではコントローラまたは別のホストでサービスを実行できます。</block>
   <block id="9be07620e581c90b777b5fef1296cc28" category="cell">OpenStack Controller の IP アドレス</block>
@@ -15842,4 +15840,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">ホワイトリストに登録すると、許可されているファイルタイプに対してランサムウェア攻撃のアラートは生成されません。_allowed File types_policyはランサムウェアの検出にのみ適用されることに注意してください。</block>
   <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">たとえば、_test.txt_というファイルの名前が_test.txt.abc_に変更され、Workload Securityが_.abc_拡張子のためにランサムウェア攻撃を検出した場合、_.abc_拡張子をホワイトリストに登録できます。ホワイトリストに登録すると、拡張子が_.abc_のファイルに対するランサムウェア攻撃は生成されなくなります。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">許可されるファイルタイプには、完全一致（例：".abc"）または式（例：".*type"、".type*"、または"*type*"）を指定できます。タイプ「. a * c」、「. p * f」の式はサポートされていません。</block>
+  <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">パフォーマンス収集用にOpenStack Gnocchiモジュールをインストールして設定する必要があります。Gnocchiの設定は、各ハイパーバイザーのNova.confファイルを編集し、各ハイパーバイザーでNova Computeサービスを再起動することで行います。オプション名は、 OpenStack の各リリースで変更されています。</block>
+  <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777（ニョッキ・パフォーマンス・サービス用）</block>
 </blocks>
