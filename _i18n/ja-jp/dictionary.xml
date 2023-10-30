@@ -15842,4 +15842,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">許可されるファイルタイプには、完全一致（例：".abc"）または式（例：".*type"、".type*"、または"*type*"）を指定できます。タイプ「. a * c」、「. p * f」の式はサポートされていません。</block>
   <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">パフォーマンス収集用にOpenStack Gnocchiモジュールをインストールして設定する必要があります。Gnocchiの設定は、各ハイパーバイザーのNova.confファイルを編集し、各ハイパーバイザーでNova Computeサービスを再起動することで行います。オプション名は、 OpenStack の各リリースで変更されています。</block>
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777（ニョッキ・パフォーマンス・サービス用）</block>
+  <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">ワークロードセキュリティの強化</block>
+  <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">ワークロードのセキュリティが改善され、次の機能が追加されました。</block>
+  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*アクセス拒否*:ワークロードセキュリティはONTAPと統合して「アクセス拒否」イベントを受信し、追加の分析と自動応答レイヤーを提供します。</block>
+  <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">ホワイトリスト*許可されたファイルタイプ*：既知のファイル拡張子に対するランサムウェア攻撃が検出された場合、そのファイル拡張子をホワイトリストに登録して不要なアラートを防止できます。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
 </blocks>
