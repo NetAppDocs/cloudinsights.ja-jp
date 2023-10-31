@@ -15839,13 +15839,22 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*アクセス拒否*:ワークロードセキュリティはONTAPと統合して「アクセス拒否」イベントを受信し、追加の分析と自動応答レイヤーを提供します。</block>
   <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">ホワイトリスト*許可されたファイルタイプ*：既知のファイル拡張子に対するランサムウェア攻撃が検出された場合、そのファイル拡張子をホワイトリストに登録して不要なアラートを防止できます。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Kubernetesイベントが予期せずCloud Insightsへの報告を停止しました。</block>
-  <block id="530877d75874db688a349c68f4d664d6" category="cell">event-exporter podの名前を取得します。'kubectl -n netapp -monitoring get pods</block>
-  <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">grepイベント-エクスポータ</block>
-  <block id="60154ad86ed086052b09e30faded046b" category="cell">awk '｛print $1｝'</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">このデータコレクタは、 EMC ECS ストレージシステムからインベントリデータとパフォーマンスデータを取得します。データコレクタを設定するには、ECSクラスタのIPアドレスまたはホスト名、およびユーザ名とパスワードが必要です。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECSクラスタのIPアドレスまたはホスト名</block>
   <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">ECSシステムのユーザ名とパスワード</block>
   <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">ポート4443（HTTPS）。  ECSシステムのTCPポート4443へのアウトバウンド接続が必要です。</block>
   <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ECSユーザーID</block>
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECSのユーザID</block>
+  <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">をアンインストールします</block>
+  <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">再インストール</block>
+  <block id="8469e2ae035ceb8a5938bd217eb94df0" category="cell">event-exporterポッドの名前を取得します。
+
+<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
+
+「netapp-ci-event-exporter」または「event-exporter」のいずれかにする必要があります。  次に、監視エージェントを編集します。<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>をクリックし、log_fileの値を設定して、前の手順で見つけた適切なイベントエクスポータポッド名を反映します。  具体的には、log_fileは「/var/log/containers/netapp-ci-event-exporter.log」または「/var/log/containers/event-exporter *。log」のいずれかに設定する必要があります。
+
+    -key:log_file
+      値：
+      -/var/log/containers/netapp-ci-event-exporter *。log
+別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
 </blocks>
