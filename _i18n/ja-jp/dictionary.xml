@@ -15861,4 +15861,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
   <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">FSx CLIコマンドは、FSxがAPIを介して禁止している一部の容量値を取得することに注意してください。Cloud InsightsはAPIを介してFSxデータを取得しようとするため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の値と異なる場合があります。詳細については、Amazonの担当者にお問い合わせください。</block>
+  <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">Cognosのレポートスケジュールの時間を入力すると、スケジュールの時間に「m」が余分に表示されることがあります。たとえば、時刻を「02:15 PM」と入力すると、「02:15 PMM」（またはPMM）という余分な文字が追加されます。外をクリックすると、「2:15 AM」に変わります。
+
+レポートを保存することはできますが、保存したレポートを再度開くと、スケジュール時刻にAMとPMのどちらを入力したかに関係なく、スケジュール時刻はAM（午前）と表示されます。</block>
+  <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">「AM」または「PM」の文字を完全に入力しないように注意して、スケジュール時刻を再入力します。「AM」は「A」、「PM」は「P」と入力するだけで十分です。余分な文字が表示されない場合は、スケジュール時刻が正しく設定されます。</block>
 </blocks>
