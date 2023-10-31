@@ -468,9 +468,6 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 •Net-Observerポッドを使用するには、Linuxカーネルのバージョンが4.18.0以上である必要があります。「uname -r」コマンドを使用してカーネルのバージョンを確認し、4.18.0以上であることを確認します 
 
 
-| NKMO名前空間のnet-observerポッドは、OpenShift 4環境のCrashLoopBackOffにあります | これは現在サポートされていません。今後のアップデートでサポートが追加される予定です。 
-
-
 | ポッドはNKMOネームスペース（デフォルト：netapp-monitoring）で実行されていますが、[Queries]のワークロードマップまたはKubernetes指標のデータがUIに表示されません | K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。 
 
 
