@@ -534,9 +534,12 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 
 「netapp-ci-event-exporter」または「event-exporter」のいずれかにする必要があります。  次に、監視エージェントを編集します。 `kubectl -n netapp-monitoring edit agent`をクリックし、log_fileの値を設定して、前の手順で見つけた適切なイベントエクスポータポッド名を反映します。  具体的には、log_fileは「/var/log/containers/netapp-ci-event-exporter.log」または「/var/log/containers/event-exporter *。log」のいずれかに設定する必要があります。
 
-    -key:log_file
-      値：
-      -/var/log/containers/netapp-ci-event-exporter *。log
+...。
+ -key:log_file
+   値：
+   -/var/log/containers/netapp-ci-event-exporter *。log
+...。
+
 別の方法として、 <<uninstalling,をアンインストールします>> および <<installing-the-netapp-kubernetes-monitoring-operator,再インストール>> エージェント。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

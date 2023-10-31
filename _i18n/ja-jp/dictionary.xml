@@ -15847,14 +15847,17 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECSのユーザID</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">をアンインストールします</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">再インストール</block>
-  <block id="8469e2ae035ceb8a5938bd217eb94df0" category="cell">event-exporterポッドの名前を取得します。
+  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">event-exporterポッドの名前を取得します。
 
 <block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
 
 「netapp-ci-event-exporter」または「event-exporter」のいずれかにする必要があります。  次に、監視エージェントを編集します。<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>をクリックし、log_fileの値を設定して、前の手順で見つけた適切なイベントエクスポータポッド名を反映します。  具体的には、log_fileは「/var/log/containers/netapp-ci-event-exporter.log」または「/var/log/containers/event-exporter *。log」のいずれかに設定する必要があります。
 
-    -key:log_file
-      値：
-      -/var/log/containers/netapp-ci-event-exporter *。log
+...。
+ -key:log_file
+   値：
+   -/var/log/containers/netapp-ci-event-exporter *。log
+...。
+
 別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
 </blocks>
