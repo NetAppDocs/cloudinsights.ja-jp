@@ -15860,4 +15860,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 ...。
 
 別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
+  <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">FSx CLIコマンドは、FSxがAPIを介して禁止している一部の容量値を取得することに注意してください。Cloud InsightsはAPIを介してFSxデータを取得しようとするため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の値と異なる場合があります。詳細については、Amazonの担当者にお問い合わせください。</block>
 </blocks>
