@@ -15824,20 +15824,15 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Flink] を選択します。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">[Workload Security]*[Collectors]*に移動し、*[Agents]*タブをクリックします。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">[+ Collector]*をクリックし、設定するデータコレクタを選択します。</block>
-  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">ホワイトリストにファイル拡張子を追加してアラートを減らす</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">許可されたファイルタイプポリシー</block>
-  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">既知のファイル拡張子に対するランサムウェア攻撃が検出され、アラート画面でアラートが生成されている場合は、そのファイル拡張子をホワイトリストに登録して不要なアラートを防止することができます。</block>
   <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">[Workload Security]&gt;[Policies]*に移動し、[_Allowed File Type Policies]タブに移動します。</block>
   <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">ホワイトリストに登録すると、許可されているファイルタイプに対してランサムウェア攻撃のアラートは生成されません。_allowed File types_policyはランサムウェアの検出にのみ適用されることに注意してください。</block>
-  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">たとえば、_test.txt_というファイルの名前が_test.txt.abc_に変更され、Workload Securityが_.abc_拡張子のためにランサムウェア攻撃を検出した場合、_.abc_拡張子をホワイトリストに登録できます。ホワイトリストに登録すると、拡張子が_.abc_のファイルに対するランサムウェア攻撃は生成されなくなります。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">許可されるファイルタイプには、完全一致（例：".abc"）または式（例：".*type"、".type*"、または"*type*"）を指定できます。タイプ「. a * c」、「. p * f」の式はサポートされていません。</block>
   <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">パフォーマンス収集用にOpenStack Gnocchiモジュールをインストールして設定する必要があります。Gnocchiの設定は、各ハイパーバイザーのNova.confファイルを編集し、各ハイパーバイザーでNova Computeサービスを再起動することで行います。オプション名は、 OpenStack の各リリースで変更されています。</block>
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777（ニョッキ・パフォーマンス・サービス用）</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">ワークロードセキュリティの強化</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">ワークロードのセキュリティが改善され、次の機能が追加されました。</block>
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*アクセス拒否*:ワークロードセキュリティはONTAPと統合して「アクセス拒否」イベントを受信し、追加の分析と自動応答レイヤーを提供します。</block>
-  <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">ホワイトリスト*許可されたファイルタイプ*：既知のファイル拡張子に対するランサムウェア攻撃が検出された場合、そのファイル拡張子をホワイトリストに登録して不要なアラートを防止できます。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Kubernetesイベントが予期せずCloud Insightsへの報告を停止しました。</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">このデータコレクタは、 EMC ECS ストレージシステムからインベントリデータとパフォーマンスデータを取得します。データコレクタを設定するには、ECSクラスタのIPアドレスまたはホスト名、およびユーザ名とパスワードが必要です。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECSクラスタのIPアドレスまたはホスト名</block>
@@ -15865,4 +15860,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 レポートを保存することはできますが、保存したレポートを再度開くと、スケジュール時刻にAMとPMのどちらを入力したかに関係なく、スケジュール時刻はAM（午前）と表示されます。</block>
   <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">「AM」または「PM」の文字を完全に入力しないように注意して、スケジュール時刻を再入力します。「AM」は「A」、「PM」は「P」と入力するだけで十分です。余分な文字が表示されない場合は、スケジュール時刻が正しく設定されます。</block>
+  <block id="ec6303682456657014f28b879941ffc3" category="inline-link-macro">許可されているファイルタイプ</block>
+  <block id="a962ae55ac740140e0980c56c9ca3d02" category="list-text">*許可されるファイルの種類*：既知のファイル拡張子に対してランサムウェア攻撃が検出された場合、そのファイル拡張子を <block ref="dc41f7077cede687c60abe45cd8114a8" category="inline-link-macro-rx"></block> 不要なアラートを回避するためのリスト。</block>
+  <block id="f998abe6d6e1433185e617432fa562a7" category="summary">警告を減らすために、許可されたファイルタイプリストにファイル拡張子を追加します。</block>
+  <block id="3a0a3011be8f34f267c24177c748de10" category="paragraph">既知のファイル拡張子に対するランサムウェア攻撃が検出され、[Alerts]画面でアラートが生成されている場合は、そのファイル拡張子を_allowedファイルtypes_listに追加して不要なアラートを防ぐことができます。</block>
+  <block id="bdf27b4c983630ae6531f89136fe0963" category="paragraph">一度_allowedファイルtypes_listに追加されると、その許可されたファイルタイプに対してランサムウェア攻撃アラートは生成されません。_allowed File types_policyはランサムウェアの検出にのみ適用されることに注意してください。</block>
+  <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">たとえば、_test.txt_という名前のファイルが_test.txt.abc_に変更され、_.abc_拡張子によってランサムウェア攻撃が検出された場合、_.abc_拡張子を_allowedファイルtypes_listに追加できます。リストに追加されると、拡張子が_.abc_のファイルに対するランサムウェア攻撃は生成されなくなります。</block>
 </blocks>
