@@ -22,7 +22,7 @@ summary: NetApp ONTAP Data Collector 向けの Amazon FSX
 このデータコレクタは、 Amazon FSX for NetApp ONTAP からインベントリデータとパフォーマンスデータを取得します。このデータコレクタは、 Cloud Insights サービスリージョン全体で段階的に利用可能になります。Cloud Insights 環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。
 
 
-NOTE: このCloud Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。AWSを確認してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["ロールとルール"] 使用可能なオプションのマニュアル。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Cloud Insightsコレクタに使用する適切なロールです。
+NOTE: このCloud Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。AWSを確認してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["ロールとルール"] 使用可能なオプションのマニュアル。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Cloud Insightsコレクタに使用する適切なロールです。また、ユーザには、http、ontapi、sshの3つのアプリケーションすべてが割り当てられている必要があります。
 
 
 
@@ -80,9 +80,9 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 
 このデータコレクタを設定して使用するための要件は次のとおりです。
 
-* 読み取り専用の API 呼び出し用に設定された管理者アカウントへのアクセス権が必要です。
+* 「fsxadmin」ロールのアカウントにアクセスできる必要があります。このアカウントには、ssh、ontapi、httpの3つのアプリケーションが割り当てられています。
 * アカウントの詳細には、ユーザ名とパスワードが含まれます。
-* ポートの要件： 80 または 443
+* ポートの要件：443
 
 
 
@@ -121,7 +121,7 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 * Workload _volume
 
 
-FSx CLIコマンドは、FSxがAPIを介して禁止している一部の容量値を取得することに注意してください。Cloud InsightsはAPIを介してFSxデータを取得しようとするため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の値と異なる場合があります。詳細については、Amazonの担当者にお問い合わせください。
+FSx CLIコマンドとAPIコマンドは、Cloud Insights ZAPIで収集されない一部の容量値を取得するため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の容量値と異なる場合があることに注意してください。
 
 
 

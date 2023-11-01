@@ -15746,7 +15746,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理者とアカウント所有者は、次のことができるようになりました。 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 指定した電子メールドメインに送信します。[Admin]&gt;[User Management]*に移動し、[_Restrict Domains]ボタンを選択します。</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">ロールとルール</block>
-  <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">このCloud Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。AWSを確認してください <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 使用可能なオプションのマニュアル。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Cloud Insightsコレクタに使用する適切なロールです。</block>
   <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">データの保持時間とダウンサンプリングの説明</block>
   <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">データの保持とダウンサンプリングされたデータ</block>
   <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">Cloud Insights は、アクティブサブスクライブされたエディションによって決定された時間だけデータを保持します。</block>
@@ -15855,7 +15854,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 ...。
 
 別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
-  <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">FSx CLIコマンドは、FSxがAPIを介して禁止している一部の容量値を取得することに注意してください。Cloud InsightsはAPIを介してFSxデータを取得しようとするため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の値と異なる場合があります。詳細については、Amazonの担当者にお問い合わせください。</block>
   <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">Cognosのレポートスケジュールの時間を入力すると、スケジュールの時間に「m」が余分に表示されることがあります。たとえば、時刻を「02:15 PM」と入力すると、「02:15 PMM」（またはPMM）という余分な文字が追加されます。外をクリックすると、「2:15 AM」に変わります。
 
 レポートを保存することはできますが、保存したレポートを再度開くと、スケジュール時刻にAMとPMのどちらを入力したかに関係なく、スケジュール時刻はAM（午前）と表示されます。</block>
@@ -15866,4 +15864,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="3a0a3011be8f34f267c24177c748de10" category="paragraph">既知のファイル拡張子に対するランサムウェア攻撃が検出され、[Alerts]画面でアラートが生成されている場合は、そのファイル拡張子を_allowedファイルtypes_listに追加して不要なアラートを防ぐことができます。</block>
   <block id="bdf27b4c983630ae6531f89136fe0963" category="paragraph">一度_allowedファイルtypes_listに追加されると、その許可されたファイルタイプに対してランサムウェア攻撃アラートは生成されません。_allowed File types_policyはランサムウェアの検出にのみ適用されることに注意してください。</block>
   <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">たとえば、_test.txt_という名前のファイルが_test.txt.abc_に変更され、_.abc_拡張子によってランサムウェア攻撃が検出された場合、_.abc_拡張子を_allowedファイルtypes_listに追加できます。リストに追加されると、拡張子が_.abc_のファイルに対するランサムウェア攻撃は生成されなくなります。</block>
+  <block id="1fb3ebafe871ac85c69ff35be5818dae" category="admonition">このCloud Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。AWSを確認してください <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 使用可能なオプションのマニュアル。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Cloud Insightsコレクタに使用する適切なロールです。また、ユーザには、http、ontapi、sshの3つのアプリケーションすべてが割り当てられている必要があります。</block>
+  <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">「fsxadmin」ロールのアカウントにアクセスできる必要があります。このアカウントには、ssh、ontapi、httpの3つのアプリケーションが割り当てられています。</block>
+  <block id="702a15850842eff4dc2587a96c210640" category="list-text">ポートの要件：443</block>
+  <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">FSx CLIコマンドとAPIコマンドは、Cloud Insights ZAPIで収集されない一部の容量値を取得するため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の容量値と異なる場合があることに注意してください。</block>
 </blocks>
