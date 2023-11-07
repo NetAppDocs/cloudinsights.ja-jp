@@ -39,8 +39,6 @@ sidebar:
         url: "/task_configure_acquisition_unit.html"
       - title: Windows/Linuxでのエージェントの設定
         url: "/task_config_telegraf_agent.html"
-      - title: Kubernetes演算子の設定
-        url: "/task_config_telegraf_agent_k8s.html"
       - title: データコレクタの設定
         url: "/task_configure_data_collectors.html"
       - title: Data Collector の取得ステータスを確認しています
