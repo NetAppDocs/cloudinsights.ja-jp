@@ -23,6 +23,8 @@ Cloud Insights ではを使用します link:https://docs.influxdata.com/telegra
 
 Cloud Insights の現在のTelegrafバージョンは*1.24.0 *です。
 
+Kubernetesへのインストールの詳細については、を参照してください。 link:/task_config_telegraf_agent_k8s.html["このページです"]。
+
 
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP; ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して、 Agent マシンの時刻を同期することを強くお勧めします。
 
