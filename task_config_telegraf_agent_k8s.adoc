@@ -21,6 +21,9 @@ summary: Cloud Insights は、 Kubernetes で統合データを収集するエ�
 [role="lead"]
 Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
 
+
+NOTE: Cloud Insightsフェデラルエディションを使用している場合は、インストールと設定の手順がこのページの手順と異なる場合があります。Cloud Insightsの指示に従って、NetApp Kubernetes監視オペレータをインストールします。
+
 image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
 
 
