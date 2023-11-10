@@ -5670,7 +5670,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">Cloud InsightsでAPIトークンを作成します。</block>
   <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">[Admin]&gt;[API Access]*に移動し、*[+API Access Token]*を選択します。</block>
   <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">識別しやすい* Name *と*概要*を設定します</block>
-  <block id="095edbf2eeed607f4203d4060d6bebab" category="list-text">「* Acquisition Unit *」と入力します</block>
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">権限：*読み取り/書き込み*</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">目的の*有効期限*および*自動更新*の値を選択します</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">生成されたAPIアクセストークンをコピーします。この手順は、ウィンドウを閉じる前に実行する必要があります。</block>
@@ -5701,18 +5700,10 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="b03ba9c0b65f3d61c05a13e6e0556f6e" category="list-text">次のコマンドを実行して、ワンタイムトークンとインストーラのバージョンを環境変数にエクスポートします。</block>
   <block id="f355abfc0309011b2480d033a0bd5a7c" category="list-text">次のコマンドを実行して、カスタムのユーザとグループを指定してCIをインストールします。</block>
   <block id="c2edf0fde07151d96c99ce933b5db7fc" category="paragraph">注：カスタムのユーザおよびグループを使用しない場合は、デフォルトの「cisys」ユーザおよびグループを使用できます。  この場合は、上記のinstallコマンドを実行しますが、ユーザとグループは指定しません。</block>
-  <block id="442acde7a27750391de6a8358d813ebf" category="paragraph">この時点で、AUソフトウェアがシステムにインストールされ、カスタムユーザおよびグループからアクセスできます。ただし、データコレクタを追加することはできません。これを手動で行うには、datasources.warファイルを適切な場所にコピーする必要があります。</block>
-  <block id="aa65691c6297c950fcee712307bb1a91" category="list-text">datasources.warのソースの場所に移動し、zipファイルを確認します。</block>
-  <block id="a97626ad22c898bbe0080f7f7799f0e0" category="list-text">デフォルトのdatasources.warフォルダに対する権限に注意してください。</block>
   <block id="43b4370cb1861295e2cf1d82e2cf71ce" category="list-text">次の手順では、カスタムユーザに切り替える（またはrootからログアウトしてからログインする）必要があります。</block>
   <block id="c228e145e9e61000d0f54dd253874651" category="list-text">注：デフォルトの「cisys」ユーザおよびグループを使用している場合は、この手順を実行する必要はありません。</block>
   <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">注:カスタムユーザーには、AUのインストール時にcloudinsights-install.shに提供したカスタムグループのメンバーである任意のユーザーを指定できます。また、AUのインストール時に指定したカスタムユーザーと同じユーザーまたは異なるユーザーを指定できます。</block>
-  <block id="802dfb282c205a5ce3de537f88b12f68" category="list-text">作業フォルダを作成し、同じ権限に調整します。</block>
   <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">注：「cisys」ユーザおよびグループを使用している場合は、上記の出力に表示されます。</block>
-  <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">_datasources-war -&lt;version&gt;.zip_を作業フォルダにコピーします。例：</block>
-  <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">ダウンロードフォルダに移動し、ファイルを解凍します。</block>
-  <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">すべてのファイルについて、ユーザ、グループ、および権限が正しいことを確認します。</block>
-  <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">AUを再起動します。</block>
   <block id="8eb996cf95107ce6a0a76700629efd1d" category="summary">Dell EMC VMAX および PowerMax ファミリのデバイスデータコレクタの設定。</block>
   <block id="e3200b87c17458ad0a7966173c25cf50" category="doc">Dell EMC VMAX および PowerMax ファミリのデバイスデータコレクタ</block>
   <block id="fd4f13f344037bce5e40ba8fad79e8e6" category="paragraph">Cloud Insights は、 Solutions Enabler symcli コマンドを使用して、環境内の既存の Solutions Enabler サーバと連携して EMC VMAX および PowerMax ストレージアレイを検出します。既存の Solutions Enabler サーバは、ゲートキーパーボリュームへのアクセスを通じて VMAX/PowerMax ストレージアレイに接続できます。</block>
@@ -15791,8 +15782,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">[Workload Security]メニューで、次のいずれかをクリックします。
 *[Collectors]&gt;[User Directory Collector]&gt;[+ User Directory Collector]*を選択し、*[LDAP Directory Server]*を選択します。</block>
   <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [Consul （コンサル） ] を選択します。</block>
-  <block id="232088b7a66f0b9f18bd94f0ff1ccbd9" category="list-text">注：異なるカスタムユーザを使用してAUを登録する場合は、所有者とグループの両方に対してグループ権限が読み取りと書き込みに設定されていることを確認してください（_chmod 660…_）。</block>
-  <block id="d9089236da8f5cf946e4497f9e886125" category="list-text">Cloud Insightsで、*[Observability]&gt;[Collectors]*に移動し、*[Acquisition Units]*タブを選択します。AUの右側にある「Three Dots」メニューから「_Restart_」を選択します。</block>
   <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「 * サービス」で「 Apache 」を選択します。</block>
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">複数のデータコレクタの情報を同時に編集できます。[オブザーバビリティ（Observability）]&gt;[コレクタ（Collectors）]*ページで、変更するデータコレクタを選択し、*[一括アクション（Bulk Actions）]*ボタンをクリックします。「 * 編集」を選択し、必要なフィールドを変更します。</block>
   <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [Memcached （メモキャッシュ） ] を選択します。</block>
@@ -15869,4 +15858,26 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">FSx CLIコマンドとAPIコマンドは、Cloud Insights ZAPIで収集されない一部の容量値を取得するため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の容量値と異なる場合があることに注意してください。</block>
   <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Kubernetesへのインストールの詳細については、を参照してください。 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
   <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Cloud Insightsフェデラルエディションを使用している場合は、インストールと設定の手順がこのページの手順と異なる場合があります。Cloud Insightsの指示に従って、NetApp Kubernetes監視オペレータをインストールします。</block>
+  <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">タイプ：[Acquisition Unit]および[Data Collection]を選択します。</block>
+  <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">パッチ</block>
+  <block id="1b61043ff027934bc2900e3c686978de" category="paragraph">この時点で、AUソフトウェアがシステムにインストールされ、カスタムユーザおよびグループからアクセスできます。ただし、データコレクタを追加することはできません。これを手動で行うには、次の手順をお読みください。パッチのみをインストールする場合は、 <block ref="40c0527ef35e12c3a3ce0496a70ee226" category="inline-xref-macro-rx"></block> セクションを参照してください。</block>
+  <block id="7235d692fc62fcacd964ca3ad6df04b4" category="section-title">データコレクタの手動インストール</block>
+  <block id="afa6999c343d1ebcba786b51f19dd530" category="paragraph">/collector/patch/datasourceswar/latest APIを使用して、最新のdatasources.warをダウンロードします。</block>
+  <block id="c627c3d68517a1230074d11fcf8e07e0" category="inline-image-macro">最新のdatasources.warを取得するAPI</block>
+  <block id="bbfdaaee0b61ad57c8df04fd101b7d16" category="paragraph"><block ref="bbfdaaee0b61ad57c8df04fd101b7d16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c1ab1322fbfe20363f4fc51283afd1d" category="paragraph">注:最新バージョンをダウンロードしていない場合は、NetAppでダウンロードするバージョンを確認してください。</block>
+  <block id="00945739bcbd26c8c0d12c48597c0dbb" category="paragraph">Download Fileをクリックします。AUシステム以外のシステムでこれらの手順を実行する場合は、ダウンロードしたdatasources.war zipバンドルをAUシステムにコピーします。</block>
+  <block id="efe48ed5576d7a3ea1584a18c0c39de9" category="paragraph">datasources.war zipバンドルが次のディレクトリにコピーされていることを確認します。/var/lib/netapp/cloudinsights/acq/download</block>
+  <block id="5edf51309b0e54b161dde9f3f2dbe815" category="paragraph">datasources.warの/var/lib/netapp/cloudinsights/acq/downloadディレクトリに移動し、zipファイルを確認します。</block>
+  <block id="ed7dc5789cb36687315d95140bf88b49" category="list-text">次の手順を実行します。</block>
+  <block id="60b0ec4bd2a387eb3da948b9a799f786" category="paragraph">注:別のカスタムユーザーを使用してをインストールする場合は、所有者とグループの両方に対して、グループ権限が読み取りと書き込みに設定されていることを確認してください(chmod 660…)。</block>
+  <block id="9acc35fb262bf83f278335070c7ea2f2" category="list-text">AUを再起動します。Cloud Insightsで、[Observability]&gt;[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。</block>
+  <block id="57858de47985c55285f0cbb5890decfc" category="section-title">パッチのダウンロード</block>
+  <block id="fc5e990e77fa1bad66c2b07f217c85ab" category="paragraph">/collector/patch/file/｛version｝APIを使用してパッチをダウンロードします。</block>
+  <block id="be2277f73c347adaa72509bcb1829517" category="inline-image-macro">パッチを取得するAPI</block>
+  <block id="0c80703f9063a302ebd010cfe3b646e3" category="paragraph"><block ref="0c80703f9063a302ebd010cfe3b646e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de0ee35fb580f6913af161cbc6c1cc65" category="paragraph">注:ダウンロードするバージョンをNetAppで確認してください。</block>
+  <block id="b20aea1fa1664bcc048770ea0e008918" category="paragraph">Download Fileをクリックします。AUシステム以外のシステムでこれらの手順を実行する場合は、ダウンロードしたパッチzipバンドルをAUシステムにコピーします。</block>
+  <block id="3e7f4643e7c9ebf9318c59a568b2521c" category="paragraph">パッチzipバンドルが次のディレクトリにコピーされていることを確認します。/var/lib/netapp/cloudinsights/acq/download</block>
+  <block id="9cb12f64263025528c33b8d045cd0c4a" category="paragraph">パッチの/var/lib/netapp/cloudinsights/acq/downloadディレクトリに移動し、.zipファイルを確認します。</block>
 </blocks>

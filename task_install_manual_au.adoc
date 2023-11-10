@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
-keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving 
+keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
 summary: Cloud Insightsは、AUソフトウェアを手動で更新するように構成できます。これにより、環境にインストールされているソフトウェアをより詳細に制御できます。 
 ---
 = Acquisition Unitソフトウェアを手動でインストールする
@@ -27,14 +27,14 @@ AUソフトウェアを手動でダウンロードしてインストールする
 
 
 
-=== Linuxでの新規AUインストールの実行：
+== Linuxでの新規AUインストールの実行：
 
 . Cloud InsightsでAPIトークンを作成します。
 +
 .. [Admin]>[API Access]*に移動し、*[+API Access Token]*を選択します。
 +
 ... 識別しやすい* Name *と*概要*を設定します
-... 「* Acquisition Unit *」と入力します
+... タイプ：[Acquisition Unit]および[Data Collection]を選択します。
 ... 権限：*読み取り/書き込み*
 ... 目的の*有効期限*および*自動更新*の値を選択します
 
@@ -109,68 +109,90 @@ image:Manual_AU_one_time_token_response.png[""]
 
 
 
-この時点で、AUソフトウェアがシステムにインストールされ、カスタムユーザおよびグループからアクセスできます。ただし、データコレクタを追加することはできません。これを手動で行うには、datasources.warファイルを適切な場所にコピーする必要があります。
+この時点で、AUソフトウェアがシステムにインストールされ、カスタムユーザおよびグループからアクセスできます。ただし、データコレクタを追加することはできません。これを手動で行うには、次の手順をお読みください。パッチのみをインストールする場合は、 <<downloading-a-patch,パッチ>> セクションを参照してください。
 
-. datasources.warのソースの場所に移動し、zipファイルを確認します。
-+
-....
-cd /opt/netapp/cloudinsights/acq
-ls -al
-…
--rw-rw----  1 test-user1 test-group1 282103053 Mar 12 12:27 datasources-war-<version>>.zip
-…
-....
-. デフォルトのdatasources.warフォルダに対する権限に注意してください。
-+
-....
-ls -al /var/lib/netapp/cloudinsights/acq/
-…
-drwxrwx--- 2 test-user1 test-group-1  4096 Feb 16 10:10 datasources.war
-…
-....
+
+
+== データコレクタの手動インストール
+
+/collector/patch/datasourceswar/latest APIを使用して、最新のdatasources.warをダウンロードします。
+
+image:API_Manual_Download_datasources.png["最新のdatasources.warを取得するAPI"]
+
+注:最新バージョンをダウンロードしていない場合は、NetAppでダウンロードするバージョンを確認してください。
+
+Download Fileをクリックします。AUシステム以外のシステムでこれらの手順を実行する場合は、ダウンロードしたdatasources.war zipバンドルをAUシステムにコピーします。
+
+datasources.war zipバンドルが次のディレクトリにコピーされていることを確認します。/var/lib/netapp/cloudinsights/acq/download
+
+datasources.warの/var/lib/netapp/cloudinsights/acq/downloadディレクトリに移動し、zipファイルを確認します。
+
 . 次の手順では、カスタムユーザに切り替える（またはrootからログアウトしてからログインする）必要があります。
 +
  su <custom user>
 +
-.. 注：デフォルトの「cisys」ユーザおよびグループを使用している場合は、この手順を実行する必要はありません。
-.. 注:カスタムユーザーには、AUのインストール時にcloudinsights-install.shに提供したカスタムグループのメンバーである任意のユーザーを指定できます。また、AUのインストール時に指定したカスタムユーザーと同じユーザーまたは異なるユーザーを指定できます。
+注：デフォルトの「cisys」ユーザおよびグループを使用している場合は、この手順を実行する必要はありません。
 
++
+注:カスタムユーザーには、AUのインストール時にcloudinsights-install.shに提供したカスタムグループのメンバーである任意のユーザーを指定できます。また、AUのインストール時に指定したカスタムユーザーと同じユーザーまたは異なるユーザーを指定できます。
 
-. 作業フォルダを作成し、同じ権限に調整します。
+. 次の手順を実行します。
 +
 ....
-mkdir /var/lib/netapp/cloudinsights/acq/download
-chmod 770 /var/lib/netapp/cloudinsights/acq/download
-ls -al /var/lib/netapp/cloudinsights/acq
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/datasources-war-<version>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
 …
-drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources.war
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version>.zip
 …
 ....
 +
-.. 注：「cisys」ユーザおよびグループを使用している場合は、上記の出力に表示されます。
+注：「cisys」ユーザおよびグループを使用している場合は、上記の出力に表示されます。
+
++
+注:別のカスタムユーザーを使用してをインストールする場合は、所有者とグループの両方に対して、グループ権限が読み取りと書き込みに設定されていることを確認してください(chmod 660…)。
+
+. AUを再起動します。Cloud Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
 
 
-. _datasources-war -<version>.zip_を作業フォルダにコピーします。例：
+
+
+== パッチのダウンロード
+
+/collector/patch/file/｛version｝APIを使用してパッチをダウンロードします。
+
+image:API_Manual_Download_patch.png["パッチを取得するAPI"]
+
+注:ダウンロードするバージョンをNetAppで確認してください。
+
+Download Fileをクリックします。AUシステム以外のシステムでこれらの手順を実行する場合は、ダウンロードしたパッチzipバンドルをAUシステムにコピーします。
+
+パッチzipバンドルが次のディレクトリにコピーされていることを確認します。/var/lib/netapp/cloudinsights/acq/download
+
+パッチの/var/lib/netapp/cloudinsights/acq/downloadディレクトリに移動し、.zipファイルを確認します。
+
+. 次の手順では、カスタムユーザに切り替える（またはrootからログアウトしてからログインする）必要があります。
 +
- cp /opt/netapp/cloudinsights/acq/ TBD/var/lib/netapp/cloudinsights/acq/download
-. ダウンロードフォルダに移動し、ファイルを解凍します。
+ su <custom user>
 +
- cd /var/lib/netapp/cloudinsights/acq/download
+注：デフォルトの「cisys」ユーザおよびグループを使用している場合は、この手順を実行する必要はありません。
+
++
+注:カスタムユーザーには、AUのインストール時にcloudinsights-install.shに提供したカスタムグループのメンバーである任意のユーザーを指定できます。また、AUのインストール時に指定したカスタムユーザーと同じユーザーまたは異なるユーザーを指定できます。
+
+. 次の手順を実行します。
 +
 ....
-unzip datasources-war-<version>.zip -d /var/lib/netapp/cloudinsights/acq/datasources.war/
-ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/<patch_file_name>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
+…
 ....
 +
-.. すべてのファイルについて、ユーザ、グループ、および権限が正しいことを確認します。
+注：「cisys」ユーザおよびグループを使用している場合は、上記の出力に表示されます。
+
 +
- -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
+注:別のカスタムユーザーを使用してをインストールする場合は、所有者とグループの両方に対して、グループ権限が読み取りと書き込みに設定されていることを確認してください(chmod 660…)。
 
-
-. 注：異なるカスタムユーザを使用してAUを登録する場合は、所有者とグループの両方に対してグループ権限が読み取りと書き込みに設定されていることを確認してください（_chmod 660…_）。
-. AUを再起動します。
-+
-.. Cloud Insightsで、*[Observability]>[Collectors]*に移動し、*[Acquisition Units]*タブを選択します。AUの右側にある「Three Dots」メニューから「_Restart_」を選択します。
-
-
+. AUを再起動します。Cloud Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
 
