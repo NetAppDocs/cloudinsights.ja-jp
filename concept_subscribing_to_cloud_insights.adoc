@@ -114,7 +114,7 @@ Cloud Insights の価格は管理ユニット * 単位です。管理対象ユ�
 
 * 1 台の管理対象ユニット = 2 台のホスト（任意の仮想マシンまたは物理マシン）
 * 1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB
-* 1 Managed Unit = 40TiBの未フォーマット容量（AWS S3、Cohesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi Content Platform、IBM Cleversafe、NetApp StorageGRID）。
+* 1 Managed Unit = 40TiBの未フォーマット容量（AWS S3、Cohesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi Content Platform、IBM Cleversafe、NetApp StorageGRID、 ルブリク
 * 1 Managed Unit = KubernetesのvCPU 4台
 
 
