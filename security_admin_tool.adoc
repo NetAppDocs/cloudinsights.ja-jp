@@ -48,8 +48,8 @@ SecurityAdminツールを使用すると、Cloud Insights のセキュリティ�
 AUのインストール後、SecurityAdminツールはAcquisition Unitシステムの次のいずれかの場所にあります。
 
 ....
-Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
-Linux - /bin/oci-securityadmin.sh
+Windows: C:\Program Files\Cloud Insights\Acquisition Unit\acq\securityadmin\bin\securityadmin.bat
+Linux: /opt/netapp/cloudinsights/securityadmin/bin/securityadmin.sh
 ....
 
 
@@ -70,8 +70,8 @@ image:SecurityAdminMenuChoices.png["SecurityAdmin Toolのオプション（Linux
 
 +
 ....
-Windows - C:\Program Files\SANscreen\backup\vault
-Linux - /var/log/netapp/oci/backup/vault
+Windows: C:\Program Files\Cloud Insights\Acquisition Unit\backup\vault
+Linux: /var/log/netapp/cloudinsights/backup/vault
 ....
 +
 ヴォールトバックアップには機密情報が含まれているため、安全に保管することを推奨します。
