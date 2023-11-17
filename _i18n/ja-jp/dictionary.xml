@@ -4314,13 +4314,10 @@ VMDK です
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">Windows 以外（ Kubernetes の場合は次の例を使用します。実際のスクリプト名は異なる場合があります）</block>
   <block id="140710a8dd48496a1ea3b09f2799c408" category="paragraph">Windows の場合</block>
   <block id="10835cdc0c344b8183321c8a0e88269e" category="paragraph">download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。</block>
-  <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">署名済みチェックサムファイル（SHA256署名またはSHA256 .ps1で終わる）</block>
   <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="list-text">Windows 以外：</block>
   <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">チェックサム値を生成します</block>
   <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">チェックサム値を生成するには、使用するプラットフォームに応じて次のコマンドを実行します。</block>
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL / Ubuntu：</block>
-  <block id="2759aa04a78ddf03f5db1a25acdca496" category="section-title">PEMファイルを使用してチェックサムを確認してください</block>
-  <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows （上記の「証明書のインポート」を使用して証明書をインストールした後）：</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">ダウンロードしたパッケージをインストールします</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">エージェントの設定で問題が発生した場合の対処方法を次に示します。</block>
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">新しいプラグインを設定してTegrafを再起動すると、Tegrafが起動しない。ログには次のようなエラーが記録されています。
@@ -15954,4 +15951,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b738fcd06367fb3c33e6d367c3e7c7ba" category="paragraph">_preEncrypted_optionを_True_に設定した場合、APIコマンドを通過するパスワードは*すでに暗号化されている*として扱われます。APIはパスワードを再暗号化しません。APIを構築するときは、以前に暗号化されたパスワードを適切な場所に貼り付けるだけです。</block>
   <block id="d9d5abe9014e781e9e8b7465a4527c53" category="inline-image-macro">APIの例、width=600</block>
   <block id="adf35aae3d2f06ba0ccf5e21b031b3d6" category="paragraph"><block ref="adf35aae3d2f06ba0ccf5e21b031b3d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">チェックサムファイル（末尾がSHA256.signedまたはSHA256.ps1）</block>
+  <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">チェックサムを検証</block>
+  <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">チェックサムファイルから期待されるチェックサムを抽出する</block>
 </blocks>

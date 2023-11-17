@@ -408,24 +408,10 @@ download-only コマンドを使用すると、必要なアーティファクト
 * インストールスクリプト
 * 環境ファイル
 * YAMLファイル
-* 署名済みチェックサムファイル（SHA256署名またはSHA256 .ps1で終わる）
-* 署名の検証に使用する PEM ファイル（ NetApp_cert.pem ）
+* チェックサムファイル（末尾がSHA256.signedまたはSHA256.ps1）
 
 
 インストールスクリプト、環境ファイル、 YAML ファイルは、目視検査を使用して検証できます。
-
-PEM ファイルは、フィンガープリントが次のようになっていることを確認することで検証できます。
-
- 1A918038E8E127BB5C87A202DF173B97A05B4996
-具体的には、
-
-* Windows 以外：
-+
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-* Windows の場合
-+
- Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
-
 
 
 
@@ -443,24 +429,18 @@ PEM ファイルは、フィンガープリントが次のようになってい�
 
 
 
-=== PEMファイルを使用してチェックサムを確認してください
+=== チェックサムを検証
 
-署名済みチェックサムファイルは、 PEM ファイルを使用して確認できます。
+チェックサムファイルから期待されるチェックサムを抽出する
 
 * Windows 以外：
++
+ openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any -nosigs -noverify
+* Windows の場合
++
+ (Get-Content telegraf.zip.sha256.ps1 -First 1).toUpper()
 
 
- openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any
-* Windows （上記の「証明書のインポート」を使用して証明書をインストールした後）：
-
-
-....
-Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$signer = $result.SignerCertificate
-Add-Type -Assembly System.Security
-[Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
-....
 
 
 === ダウンロードしたパッケージをインストールします
