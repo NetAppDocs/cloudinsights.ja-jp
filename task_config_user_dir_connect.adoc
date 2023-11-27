@@ -71,7 +71,8 @@ _CN=Acrobatユーザー、CN=Users、DC=HQ、DC=companyname、DC=com、O=company
 信頼されたActive Directoryドメインもサポートされます。 
 
 
-| バインド DN | ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです 
+| バインド DN | ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです
+また、Domain Read Only権限が必要です。 
 
 
 | バインドパスワード | ディレクトリサーバのパスワード（バインド DN で使用されるユーザ名のパスワード） 

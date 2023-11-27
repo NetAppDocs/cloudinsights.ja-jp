@@ -12020,7 +12020,6 @@ _CN=Acrobatユーザー、CN=Users、DC=HQ、DC=companyname、DC=com、O=company
 
 信頼されたActive Directoryドメインもサポートされます。</block>
   <block id="58384d924f3205aaac5f4a09d3b33801" category="cell">バインド DN</block>
-  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです</block>
   <block id="7066ea6d497311d6e3c4be6a9523999c" category="cell">バインドパスワード</block>
   <block id="0d91a6f24e197b2dbd20b358e4f84785" category="cell">ディレクトリサーバのパスワード（バインド DN で使用されるユーザ名のパスワード）</block>
   <block id="aebd636047453941f5450b96d44c3195" category="cell">LDAP 、 ldaps 、 ldap-start-TLS</block>
@@ -15954,4 +15953,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlexゲートウェイのIPアドレスまたはFQDN（カンマ（,）またはセミコロン（;）で区切ったもの</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用する管理者ユーザー名</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用するパスワード</block>
+  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです
+また、Domain Read Only権限が必要です。</block>
 </blocks>
