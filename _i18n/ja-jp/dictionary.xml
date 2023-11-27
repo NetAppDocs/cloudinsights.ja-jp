@@ -4871,8 +4871,6 @@ Blocks Write Timeの略
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">Dell EMC RecoverPoint </block>
   <block id="32f16e66f82b765e2355b037f437f0d6" category="cell"><block ref="32f16e66f82b765e2355b037f437f0d6" category="inline-link-macro-rx"></block></block>
-  <block id="9e41c813bafe9260d22ac12ca1d86d6b" category="inline-link-macro">Dell EMC ScaleIO のインストールを実行します </block>
-  <block id="e05a976ebc9a4cca05ffe391dc9aea64" category="cell"><block ref="e05a976ebc9a4cca05ffe391dc9aea64" category="inline-link-macro-rx"></block></block>
   <block id="42658796d03fcc8216277518ea2d5203" category="inline-link-macro">Dell EMC Unity </block>
   <block id="7d4fe4e454bc9f68e87ed3a86244c35a" category="cell"><block ref="7d4fe4e454bc9f68e87ed3a86244c35a" category="inline-link-macro-rx"></block></block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Unisphere REST</block>
@@ -10394,19 +10392,10 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="f15a825eae4d7211f1b9f849387b4133" category="paragraph">新しく割り当てたアプリケーションは、別のアセットから派生したアプリケーションよりも優先されます。たとえば、ホストから継承したアプリケーションがあるボリュームに新しいアプリケーションを割り当てた場合、派生したアプリケーションよりも新しいアプリケーションが優先されます。</block>
   <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">一括削除アクションの _Save_on または _Remove_on をクリックすると、 Cloud Insights はアクションにしばらく時間がかかることを通知します。このメッセージは無視してもかまいません。操作はバックグラウンドで続行されます。</block>
   <block id="46152eb4e0d7febe5ed5ec5aa51b068f" category="admonition">関連するアセットが大量にある環境では、それらのアセットへのアプリケーションの割り当ての継承に数分かかることがあります。関連するアセットが多数ある場合は、継承の時間を長くしてください。</block>
-  <block id="cf38d319bc1b083afe717ce8be4a0e2a" category="summary">Dell EMC ScaleIO データコレクタの設定。</block>
-  <block id="a502d590a35b78e5a42f13e7f79aefd5" category="doc">Dell EMC ScaleIO データコレクタ</block>
-  <block id="c502d2755afbc827d0b78e7bf29a63c3" category="paragraph">ScaleIO データコレクタは、 ScaleIO ストレージからインベントリ情報を収集します。このデータコレクタを設定するには、 ScaleIO ゲートウェイのアドレス、および管理者ユーザー名とパスワードが必要です。</block>
-  <block id="0711dbe30737a04c398a5d6577ea7fb6" category="paragraph">Cloud Insights は、 ScaleIO データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">MDM （ Meta Data Manager ）クラスタ</block>
-  <block id="32de3bca35dcedbe5dd77438efe818cd" category="cell">SDS （ ScaleIO データサーバ）</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">デバイス</block>
   <block id="9bc4ba1e74d4345d8fb67c1039e8ee31" category="list-text">Admin ユーザアカウントへの読み取り専用アクセス</block>
   <block id="0e75d3cb4ff238983ed93446b3df10b4" category="list-text">ポート要件： HTTPS ポート 443</block>
-  <block id="b598786f418563a6288a22d6b801761e" category="cell">ScaleIO ゲートウェイ</block>
-  <block id="7f1dace1c2447400ca7e254d9f7c680d" category="cell">ScaleIO ゲートウェイの IP アドレスまたは FQDN （カンマ（ , ）またはセミコロン（ ; ）で区切ります）</block>
-  <block id="d44a2e308ec90ea99344ff3ca9a81883" category="cell">ScaleIO デバイスへのログインに使用する管理者ユーザー名</block>
-  <block id="358e9f4d894beeefdde1369e74db160f" category="cell">ScaleIO デバイスへのログインに使用するパスワード</block>
   <block id="fd4515531c9ce1d6eae38a306629e6eb" category="paragraph">Inventory チェックボックスをクリックして、インベントリ収集を有効にします。</block>
   <block id="f7130526f999ef4eed4ac1dbf86a0a03" category="cell">HTTPSポート</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443年</block>
@@ -15954,4 +15943,15 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">チェックサムファイル（末尾がSHA256.signedまたはSHA256.ps1）</block>
   <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">チェックサムを検証</block>
   <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">チェックサムファイルから期待されるチェックサムを抽出する</block>
+  <block id="e399d76f82d333fa1c49eb069522e8ac" category="inline-link-macro">Dell EMC ScaleIO/PowerFlex </block>
+  <block id="f7ee83c5589aae26abcd6b7c1b853e5a" category="cell"><block ref="f7ee83c5589aae26abcd6b7c1b853e5a" category="inline-link-macro-rx"></block></block>
+  <block id="e3628e8ad35243dc8938a2b601a40729" category="summary">Dell EMC ScaleIO/PowerFlexデータコレクタの設定</block>
+  <block id="b7cfbf9d7104ab3206a9e36e4f1cfed8" category="doc">Dell EMC ScaleIO/PowerFlexデータコレクタ</block>
+  <block id="eb2970c74f4003234e24b8bb86f7f1b1" category="paragraph">ScaleIO/PowerFlexデータコレクタは、ScaleIOおよびPowerFlexストレージからインベントリ情報を収集します。このデータコレクタを設定するには、ScaleIO/PowerFlexゲートウェイアドレス、および管理者ユーザー名とパスワードが必要です。</block>
+  <block id="0605f6ce75ae8707c23e729bfc341dd5" category="paragraph">Cloud Insightsは、ScaleIO/PowerFlexデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="1504819ba5c6757e9100d77628a826a2" category="cell">SDS（ScaleIO/PowerFlexデータサーバー）</block>
+  <block id="52775d60a5ff510b7b7db324e92a528a" category="cell">ScaleIO/PowerFlexゲートウェイ</block>
+  <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlexゲートウェイのIPアドレスまたはFQDN（カンマ（,）またはセミコロン（;）で区切ったもの</block>
+  <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用する管理者ユーザー名</block>
+  <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用するパスワード</block>
 </blocks>

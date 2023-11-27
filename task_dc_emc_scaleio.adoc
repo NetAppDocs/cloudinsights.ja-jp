@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_emc_scaleio.html 
-keywords: data collector, scaleIO, EMC, DELL 
-summary: Dell EMC ScaleIO データコレクタの設定。 
+keywords: data collector, scaleIO, PowerFlex EMC, DELL 
+summary: Dell EMC ScaleIO/PowerFlexデータコレクタの設定 
 ---
-= Dell EMC ScaleIO データコレクタ
+= Dell EMC ScaleIO/PowerFlexデータコレクタ
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,13 +19,13 @@ summary: Dell EMC ScaleIO データコレクタの設定。
 
 
 [role="lead"]
-ScaleIO データコレクタは、 ScaleIO ストレージからインベントリ情報を収集します。このデータコレクタを設定するには、 ScaleIO ゲートウェイのアドレス、および管理者ユーザー名とパスワードが必要です。
+ScaleIO/PowerFlexデータコレクタは、ScaleIOおよびPowerFlexストレージからインベントリ情報を収集します。このデータコレクタを設定するには、ScaleIO/PowerFlexゲートウェイアドレス、および管理者ユーザー名とパスワードが必要です。
 
 
 
 == 用語集
 
-Cloud Insights は、 ScaleIO データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Cloud Insightsは、ScaleIO/PowerFlexデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
@@ -35,7 +35,7 @@ Cloud Insights は、 ScaleIO データコレクタから次のインベント�
 | MDM （ Meta Data Manager ）クラスタ | ストレージ 
 
 
-| SDS （ ScaleIO データサーバ） | ストレージノード 
+| SDS（ScaleIO/PowerFlexデータサーバー） | ストレージノード 
 
 
 | ストレージプール | ストレージプール 
@@ -65,13 +65,13 @@ Cloud Insights は、 ScaleIO データコレクタから次のインベント�
 | フィールド | 説明 
 
 
-| ScaleIO ゲートウェイ | ScaleIO ゲートウェイの IP アドレスまたは FQDN （カンマ（ , ）またはセミコロン（ ; ）で区切ります） 
+| ScaleIO/PowerFlexゲートウェイ | ScaleIO/PowerFlexゲートウェイのIPアドレスまたはFQDN（カンマ（,）またはセミコロン（;）で区切ったもの 
 
 
-| ユーザ名 | ScaleIO デバイスへのログインに使用する管理者ユーザー名 
+| ユーザ名 | ScaleIO/PowerFlexデバイスへのログインに使用する管理者ユーザー名 
 
 
-| パスワード | ScaleIO デバイスへのログインに使用するパスワード 
+| パスワード | ScaleIO/PowerFlexデバイスへのログインに使用するパスワード 
 |===
 
 
