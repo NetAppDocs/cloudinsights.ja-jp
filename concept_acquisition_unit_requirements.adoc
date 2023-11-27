@@ -60,10 +60,10 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | メモリ | 8GB の RAM | 同じ 
 
 
-| 使用可能なディスクスペース | 50GB
+| 使用可能なディスクスペース | 50 GB（100 GBを推奨）
 Linuxの場合は、次の方法でディスクスペースを割り当てる必要があります。
-/opt/netapp 10GB
-/var/log/netapp 40GB
+/opt/netapp 10 GB（大規模環境では20 GB）
+/var/log/netapp 40 GB（大規模環境では80 GB）
 /tmpインストール中に1 GB以上の空き容量が必要です | 50GB 
 
 

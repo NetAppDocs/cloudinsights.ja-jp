@@ -12938,11 +12938,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">同じ</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8GB の RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">使用可能なディスクスペース</block>
-  <block id="474b549bf76599f904f9c951a609a127" category="cell">50GB
-Linuxの場合は、次の方法でディスクスペースを割り当てる必要があります。
-/opt/netapp 10GB
-/var/log/netapp 40GB
-/tmpインストール中に1 GB以上の空き容量が必要です</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50GB</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">Data Collector</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">こちらをご覧ください</block>
@@ -15955,4 +15950,12 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用するパスワード</block>
   <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです
 また、Domain Read Only権限が必要です。</block>
+  <block id="dada9839975856f2fd06228d265fea07" category="list-text">ネットワーク監視：</block>
+  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Linuxカーネルバージョン4.18.0以降が必要</block>
+  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">Photon OSはサポートされていません。</block>
+  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB（100 GBを推奨）
+Linuxの場合は、次の方法でディスクスペースを割り当てる必要があります。
+/opt/netapp 10 GB（大規模環境では20 GB）
+/var/log/netapp 40 GB（大規模環境では80 GB）
+/tmpインストール中に1 GB以上の空き容量が必要です</block>
 </blocks>

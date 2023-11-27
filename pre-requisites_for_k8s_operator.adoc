@@ -53,6 +53,12 @@ Cloud Insights では、 Linux を実行している Kubernetes ノードの監�
 監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。
 * Operatorを再デプロイする場合(つまり、Operatorを更新または置換する場合)は、_new_apiトークンを作成する必要はありません。前のトークンを再利用できます。
 * また、最新のNetApp Kubernetes Monitoring Operatorがインストールされていて、更新可能なAPIアクセストークンを使用している場合は、期限切れが近いトークンが新しい/更新されたAPIアクセストークンに自動的に置き換えられます。
+* ネットワーク監視：
++
+** Linuxカーネルバージョン4.18.0以降が必要
+** Photon OSはサポートされていません。
+
+
 
 
 
