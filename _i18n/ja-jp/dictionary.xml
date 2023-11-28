@@ -5941,8 +5941,6 @@ Num GC
   <block id="dd844f5768b1b38bb3eaa8aad66cc28d" category="paragraph">ユーザがランサムウェア攻撃を受けた場合は、別のユーザに切り替えて攻撃を受けます。
 Workload Securityはユーザの動作を学習し、同じユーザに対してランサムウェア攻撃が繰り返し発生してもアラートを生成しません。</block>
   <block id="3c00df162167ecfa7cae1012f21e271a" category="section-title">プログラムでファイルを作成します</block>
-  <block id="b7013d500ab0d5c0a0a5ed66e230d702" category="paragraph">ファイルを作成する前に、データコレクタの処理を停止する必要があります。
-データコレクタをエージェントに追加する前に、次の手順を実行します。データコレクタをすでに追加している場合は、データコレクタを編集し、無効なパスワードを入力して保存します。これにより、データコレクタが一時的にエラー状態になります。注意：元のパスワードを必ずメモしてください。</block>
   <block id="7fb4f29b2fbada5675e1ca18652cf155" category="paragraph">シミュレーションを実行する前に、暗号化するファイルを追加する必要があります。暗号化するファイルを手動でターゲットフォルダにコピーするか、スクリプト（以下の例を参照）を使用してプログラムでファイルを作成することができます。どちらの方法を使用した場合も、 1 、 000 個以上のファイルをコピーしてください。</block>
   <block id="ab1689bf65069d89f2858a33f94e7a0c" category="paragraph">プログラムでファイルを作成する場合は、次の手順を実行します。</block>
   <block id="1ccbd3884a5f46ebee24ea2d455e82c6" category="list-text">[ エージェント ] ボックスにログインします。</block>
@@ -15876,22 +15874,14 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">このサポート情報はアノテーション形式で保持されているため、クエリを実行したり、ダッシュボードで使用したりできます。</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">ユーザがアノテーション値を上書きまたは空にした場合は、Cloud Insightsでアノテーションが更新されると再び値が自動入力されます。更新は1日に1回行われます。</block>
   <block id="b63d58d10a7cf952ba50c71631f55b80" category="section-title">ワークロードのセキュリティ：コレクタの一時停止/再開</block>
-  <block id="84a9e424bdf106d03d3d28925f9d139f" category="paragraph">Workload Securityでは、コレクタが_running_or_error_stateの場合にData Collectorを一時停止できます。コレクターの「3つのドット」メニューを開き、一時停止を選択します。コレクタが一時停止している間は、ONTAPからデータが収集されず、コレクタからONTAPにデータが送信されません。収集を再開するには、[Resume]を選択します。</block>
   <block id="27f986eca60850ba6afaf4deb6c8be29" category="section-title">Data Collectorの再生-一時停止</block>
   <block id="fc0a37407f79a45598558116e07830ba" category="paragraph">2つの新しい操作がコレクタのkebabメニューに表示されるようになりました(一時停止と再開)。</block>
-  <block id="a1f56413bb240260818b1874baafc3b6" category="paragraph">Data Collectorが_Running_or_Error_stateの場合は、収集を一時停止できます。コレクターの「3つのドット」メニューを開き、一時停止を選択します。コレクタが一時停止している間は、ONTAPからデータが収集されず、コレクタからONTAPにデータが送信されません。つまり、ONTAPからデータコレクタへ、およびそこからCloud InsightsへのFPolicyイベントは流れません。</block>
   <block id="12a77ef251456c14c7516a531e07f62b" category="paragraph">コレクタの一時停止中に新しいボリュームなどがONTAPに作成されると、ワークロードセキュリティでデータが収集されず、それらのボリュームなどがダッシュボードやテーブルに反映されないことに注意してください。</block>
-  <block id="01abfc750a0c942167651c40d088531d" category="cell">#</block>
-  <block id="a466ef2a0eac5ccca070b3013eaba386" category="cell">コレクタが一時停止した動作</block>
-  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
   <block id="ac08b45e1e6b3f3cb0a5ffc7cb738447" category="cell">スナップショットのパージは、一時停止中のコレクタに設定されている設定に従って実行されません。</block>
   <block id="301be6cbe57eeb518e76a0dacc06942b" category="cell">一時停止したコレクタでEMSイベント（ONTAP ARPなど）は処理されません。つまり、ONTAPがランサムウェア攻撃を特定した場合、Cloud Insightsワークロードセキュリティはそのイベントを取得できません。</block>
-  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3.</block>
   <block id="7e41836b686c17a31fd348a24ad244d1" category="cell">一時停止中のコレクタについては、ヘルス通知Eメールは送信されません。</block>
   <block id="3683774ed8a4e1ec359bda17c740e07d" category="cell">一時停止中のコレクタでは'手動または自動のアクション(スナップショットやユーザーブロックなど)はサポートされません</block>
-  <block id="e4da3b7fbbce2345d7772b0674a318d5" category="cell">5.</block>
   <block id="fa80f305470263b5f75374e020afeacd" category="cell">エージェントまたはコレクタのアップグレード、エージェントVMの再起動/再起動、またはエージェントサービスの再起動時に、一時停止したコレクタは_Paused_stateのままになります。</block>
-  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6.</block>
   <block id="90328fccc937505ade5c16d577869c88" category="cell">データコレクタが_Error_stateの場合、コレクタを_Paused_stateに変更することはできません。Pauseボタンは'コレクタの状態が_running_の場合にのみ有効になります</block>
   <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">エージェントが切断されている場合、コレクタを_Paused_stateに変更することはできません。コレクタが_stopped_stateになり、Pauseボタンが無効になります。</block>
   <block id="cd5c932f5b2fa2206673bc29c081fa55" category="section-title">外部キーの取得</block>
@@ -15958,4 +15948,12 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
 /opt/netapp 10 GB（大規模環境では20 GB）
 /var/log/netapp 40 GB（大規模環境では80 GB）
 /tmpインストール中に1 GB以上の空き容量が必要です</block>
+  <block id="ddc197f26701abc15014fe5035957110" category="paragraph">ファイルを作成する前に、データコレクタの処理を停止または一時停止する必要があります。
+データコレクタをエージェントに追加する前に、次の手順を実行します。データコレクタをすでに追加している場合は、データコレクタを編集し、無効なパスワードを入力して保存します。これにより、データコレクタが一時的にエラー状態になります。注意：元のパスワードを必ずメモしてください。</block>
+  <block id="ce9b2cd4bcab7dbbf52b62cd18cb5c55" category="inline-link-macro">コレクターの一時停止</block>
+  <block id="3fc1bb029faccb362d05bb964b9a5532" category="admonition">推奨されるオプションは次のとおりです。 <block ref="fab3704c9565365da788d72b33d2f55f" category="inline-link-macro-rx"></block> ファイルを作成する前に。]</block>
+  <block id="77b868151a2234cc10d342f43b6cbb14" category="inline-link-macro">コレクタの再開</block>
+  <block id="d7392010d6df617dd55d326f0d9bf442" category="list-text">これらの手順を実行する前にコレクタを一時停止した場合は、 <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>。</block>
+  <block id="60d7b95e24d1ecfc57f6986cabb1871a" category="paragraph">Workload Securityでは、コレクタがin_running_stateの場合、Data Collectorを一時停止できます。コレクターの「3つのドット」メニューを開き、一時停止を選択します。コレクタが一時停止している間は、ONTAPからデータが収集されず、コレクタからONTAPにデータが送信されません。収集を再開するには、[Resume]を選択します。</block>
+  <block id="cb4cb59ec3d83f1c614ac2210509e260" category="paragraph">Data Collectorがin_running_stateの場合は、収集を一時停止できます。コレクターの「3つのドット」メニューを開き、一時停止を選択します。コレクタが一時停止している間は、ONTAPからデータが収集されず、コレクタからONTAPにデータが送信されません。つまり、ONTAPからデータコレクタへ、およびそこからCloud InsightsへのFPolicyイベントは流れません。</block>
 </blocks>
