@@ -1021,7 +1021,6 @@ Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者�
   <block id="d92b97b5bd045f3cc0dd423eb7aad931" category="cell">ダッシュボード：作成 / 変更 / 削除</block>
   <block id="cbffc03121243a64702f719493c2ece0" category="cell">ダッシュボード：表示</block>
   <block id="01cbff12e5be125caf82ae0d33bfcd0a" category="cell">データコレクタ：追加 / 変更 / ポーリング / 削除</block>
-  <block id="e26fdd024e0e4577784142032ae3c526" category="cell">通知：表示 / 変更</block>
   <block id="0483254ad19c81b5ce06edf6bbb31f88" category="cell">クエリ：作成 / 変更 / 削除</block>
   <block id="bc72661c311f958b42bb5e49bc8344a7" category="cell">クエリ：表示 / 実行</block>
   <block id="5dfc56f9cd6a0615db0ca10f1fbbfe79" category="cell">デバイス解決</block>
@@ -15961,4 +15960,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="36e30a439910e67f76754ab0874aef1b" category="inline-link">1479704</block>
   <block id="7e18cc81c15bd72df03b7461c26d6e4a" category="inline-link">1354659</block>
   <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">ワークロードセキュリティでONTAPを使用しているときに、ONTAPでレイテンシの問題が発生することがあります。これには、次のようないくつかの理由が考えられます。 <block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>、<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>、<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>、<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block>、<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。これらの問題はすべてONTAP 9.13.1以降で解決されています。これらのいずれかのバージョンを使用することを強く推奨します。</block>
+  <block id="31f9d742d99e2999530fc9c1dfb9a6c3" category="cell">通知:表示</block>
+  <block id="33a69926e89c1993d0f64ae85dde0a8a" category="cell">通知:変更</block>
 </blocks>
