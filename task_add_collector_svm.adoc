@@ -405,9 +405,7 @@ _fpolicy policy event delete -vserver <svmname>-event-name <event_list>_
 _fpolicy policy external-engine delete -vserver <svmname>-engine-name <engine_name>_ 
 
 
-| ワークロードセキュリティを有効にすると、ONTAP のパフォーマンスが低下します。レイテンシは一時的に上昇し、IOPSは散発的に低下します。 | Data ONTAP バージョンを使用していることを確認します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["この問題"] が固定されていますONTAP の最小バージョンは 9.8P7 です。
-
-9.8p7 より前のバージョンの ONTAP を使用していて、このパフォーマンス問題が検出された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションについて確認し、新しいデータコレクタの追加時や既存のデータコレクタの編集時にこの設定が表示されないようにする場合は、ネットアップサポートにお問い合わせください。 
+| ワークロードセキュリティを有効にすると、ONTAP のパフォーマンスが低下します。レイテンシは一時的に上昇し、IOPSは散発的に低下します。 | ワークロードセキュリティでONTAPを使用しているときに、ONTAPでレイテンシの問題が発生することがあります。これには、次のようないくつかの理由が考えられます。 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["1372994"]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["1415152"]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1438207["1438207"]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1479704["1479704"]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1354659["1354659"]。これらの問題はすべてONTAP 9.13.1以降で解決されています。これらのいずれかのバージョンを使用することを強く推奨します。 
 
 
 | データコレクタでエラーが発生し、次のエラーメッセージが表示されます。

@@ -3062,9 +3062,6 @@ _fpolicy policy delete -vserver &lt;svmname&gt;-policy-name &lt;policy_name&gt;_
 _fpolicy policy event delete -vserver &lt;svmname&gt;-event-name &lt;event_list&gt;_
 _fpolicy policy external-engine delete -vserver &lt;svmname&gt;-engine-name &lt;engine_name&gt;_</block>
   <block id="63deecc7a53992db1697a520a67af0bd" category="cell">ワークロードセキュリティを有効にすると、ONTAP のパフォーマンスが低下します。レイテンシは一時的に上昇し、IOPSは散発的に低下します。</block>
-  <block id="5ba6c86df3ea77e978bb9c685d6bec25" category="cell">Data ONTAP バージョンを使用していることを確認します <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> が固定されていますONTAP の最小バージョンは 9.8P7 です。
-
-9.8p7 より前のバージョンの ONTAP を使用していて、このパフォーマンス問題が検出された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションについて確認し、新しいデータコレクタの追加時や既存のデータコレクタの編集時にこの設定が表示されないようにする場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">データコレクタでエラーが発生し、次のエラーメッセージが表示されます。
 「エラー：コネクタがエラー状態です。サービス名： audit 。失敗の理由： SVM svm_backup でポリシーを設定できませんでした。理由： ZAPI フィールド：イベントに対して値が指定されていません。「</block>
   <block id="0631a8aa5414db88c4ba11ffa8ff89e8" category="cell">NFS サービスのみが設定された新しい SVM から開始します。
@@ -15958,4 +15955,10 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="7cf0ebff62dd478662f71d56cd0334d1" category="list-text">これらの手順を実行する前にコレクタを一時停止した場合は、 <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>。</block>
   <block id="17f6f686e23fbca9f92a7a9926136c2d" category="cell">パフォーマンスの収集が失敗し、「Timed out during sending SNMP request」というメッセージが表示されます。</block>
   <block id="212277044ae3f4c8673a76ebbe182cbd" category="cell">クエリー変数およびスイッチの設定によっては、一部のクエリーがデフォルトのタイムアウトを超える場合があります。  <block ref="0374e985eaa396deda9975ede578752d" category="inline-link-macro-rx"></block>。</block>
+  <block id="25de52ee95bc069e80aae94425213b53" category="inline-link-macro">1372994</block>
+  <block id="a23b44fdff4bcafe023f18c4c11815e0" category="inline-link">1415152</block>
+  <block id="1728bd23561a7ad8c0a5ece1af1fc9e1" category="inline-link">1438207</block>
+  <block id="36e30a439910e67f76754ab0874aef1b" category="inline-link">1479704</block>
+  <block id="7e18cc81c15bd72df03b7461c26d6e4a" category="inline-link">1354659</block>
+  <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">ワークロードセキュリティでONTAPを使用しているときに、ONTAPでレイテンシの問題が発生することがあります。これには、次のようないくつかの理由が考えられます。 <block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>、<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>、<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>、<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block>、<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。これらの問題はすべてONTAP 9.13.1以降で解決されています。これらのいずれかのバージョンを使用することを強く推奨します。</block>
 </blocks>
