@@ -1,0 +1,145 @@
+---
+sidebar: sidebar 
+permalink: task_dc_brocade_rest.html 
+keywords: data collector, Brocade, FC switch, FOS, Rest 
+summary: Brocade FOS RESTデータコレクタを設定しています。 
+---
+= Brocade FOS RESTデータコレクタ
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Cloud Insightsでは、Brocade FOS RESTコレクタを使用して、FabricOS（FOS）ファームウェア8.2以降を実行しているBrocadeスイッチデバイスのインベントリとパフォーマンスを検出します。
+
+デフォルトでは、このコレクタは、スイッチが属するすべてのファブリックの一部であるすべてのFOSデバイスの検出を試みます。
+
+
+
+== 用語集
+
+Cloud Insightsでは、Brocade FOS RESTデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+
+[cols="2*"]
+|===
+| ベンダー / モデルの用語 | Cloud Insights の用語 
+
+
+| スイッチ | スイッチ 
+
+
+| ポート | ポート 
+
+
+| 仮想ファブリック、物理ファブリック | ファブリック 
+
+
+| ゾーン | ゾーン 
+
+
+| Logical Switch の略 | Logical Switch の略 
+
+
+| 仮想ボリューム | ボリューム 
+
+
+| LSANゾーン | IVR ゾーン 
+|===
+注：これらは一般的な用語の対応のみを示したものであり、このデータコレクタのすべてのケースを表しているわけではありません。
+
+
+
+== 要件
+
+* ファブリック内のすべてのスイッチへの IP 接続が必要です。[Discover all switches in the fabric_]チェックボックスを選択すると、Cloud Insightsはファブリック内のすべてのスイッチを識別しますが、検出するにはこれらの追加スイッチへのIP接続が必要です。
+* ファブリック内のすべてのスイッチで、同じアカウントがグローバルに必要です。アクセスの確認には、 PuTTY （オープンソースの端末エミュレータ）を使用できます。
+
+
+
+
+== 設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| スイッチ IP | EFC サーバの IP アドレスまたは完全修飾ドメイン名 
+
+
+| ユーザ名 | スイッチのユーザ名 
+
+
+| パスワード | スイッチのパスワード 
+|===
+
+
+== 高度な設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| 除外されたデバイス | ポーリングの対象から除外するデバイスのIDをカンマで区切ったリスト。 
+
+
+| インベントリポーリング間隔（分） | インベントリのポーリング間隔。デフォルトは60です。 
+
+
+| ファブリック内のすべてのスイッチを検出します | ファブリック内のすべてのスイッチを検出する場合に選択します。 
+
+
+| HBA との優先を選択しますゾーンのエイリアス | HBAとゾーンエイリアスのどちらを優先するかを選択します。 
+
+
+| 接続タイプ | HTTPまたはHTTPS。 
+
+
+| TCP ポートを上書きします | デフォルトを使用しない場合は、ポートを指定します。 
+
+
+| パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは300です。 
+|===
+
+
+== トラブルシューティング
+
+このデータコレクタで問題が発生した場合の対処方法を次に示します。
+
+
+
+=== 在庫
+
+[cols="2*"]
+|===
+| 問題 | 次の操作を実行します 
+
+
+| Brocadeデータソースのインベントリの取得が次のエラーで失敗します。
+
+<date> <time>エラー[ com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource]エラー2 / 2：<datasource name>[内部エラー]-デバイス<IP>のモデルを生成できません。プロンプトの検出エラー（ [Device name < name >] ：デバイス <IP> のモデルを生成できません。エラー検出プロンプト） | 問題 は、デフォルトのタイムアウトである 5 秒を超えてプロンプトが表示されるまでに Brocade スイッチが時間がかかりすぎる場合に発生することがあります。
+Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機タイムアウト（秒）_の値を大きくしてみてください。 
+
+
+| エラー：「 Cloud Insights Received Invalid Chassis Role 」 | このデータソースで設定されているユーザにシャーシのロールの権限が付与されていることを確認します。 
+
+
+| エラー：「シャーシの IP アドレスが一致しません」 | シャーシの IP アドレスを使用するようにデータソース構成を変更します。 
+
+
+| 複数のノードが Access Gateway ポートにログインしているというメッセージを受信します | NPV デバイスが正しく動作していること、および接続されているすべての WWN が必要であることを確認します。NPV デバイスを直接取得しないでください。代わりに、コアファブリックスイッチを取得すると NPV デバイスデータが収集されます。 
+
+
+| パフォーマンスの収集が失敗し、「Timed out during sending SNMP request」というメッセージが表示されます。 | クエリー変数およびスイッチの設定によっては、一部のクエリーがデフォルトのタイムアウトを超える場合があります。  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["詳細はこちら。"]。 
+|===
+追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。
