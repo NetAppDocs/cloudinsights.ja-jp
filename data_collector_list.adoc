@@ -232,9 +232,6 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_na_cloud_connection.html["ONTAP 9.9 以降でのネットアップクラウド接続 "] | インフラ 
 
 
-| link:task_dc_na_ca.html["NetApp Config Advisor の略 "] | インフラ 
-
-
 | link:task_dc_na_7mode.html["NetApp Data ONTAP 7-Mode "] | インフラ 
 
 
