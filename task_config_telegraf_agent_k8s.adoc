@@ -326,10 +326,10 @@ Cloud Insights エージェントのインストーラで整合性チェック�
 +
 ** Download and install （デフォルト）：
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download –-install
 ** ダウンロードのみ：
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download
 
 
 
