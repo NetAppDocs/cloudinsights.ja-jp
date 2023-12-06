@@ -6241,7 +6241,6 @@ httpdリクエストメソッドPUT
 * Managed Unitの使用量がサブスクライブされた金額以下になるように、データコレクタを削除します
 *サブスクリプションを変更して、Managed Unitの数を増やしてください</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接購読して、トライアルをスキップしてください</block>
-  <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">から直接 Cloud Insights に登録することもできます <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。</block>
   <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">エンタイトルメント ID の追加</block>
   <block id="860cea525f63406af55925d01de59c97" category="paragraph">Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、NetApp Astra Control Centerを購入した場合、Cloud Insights でサブスクリプションを識別するためにAstra Control Centerライセンスのシリアル番号を使用できます。Cloud Insights は、この an Entitlement ID _ を参照します。</block>
   <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">Cloud Insights サブスクリプションにエンタイトルメント ID を追加するには、 [* Admin] &gt; [Subscription] * ページで、 [_ + Entitlement ID_ ] をクリックします。</block>
@@ -15919,4 +15918,5 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">特定のBrocade FOS 8.2以降のデバイスは、HTTPまたはHTTPSでのみ通信します。スイッチにデジタル証明書がインストールされている場合、暗号化されていないHTTPとHTTPSで通信しようとすると、スイッチはHTTPエラーをスローします。テスト機能はHTTPとHTTPSの両方との通信を試行します。一方のプロトコルが成功したことをテストで確認した場合、もう一方のプロトコルが失敗したことを心配する必要はありません。コレクタは収集中に両方のプロトコルを試行し、どちらも機能しない場合にのみ失敗します。</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">監視オペレータが専用のネームスペースに配置されている場合は、ネームスペースを削除します。</block>
   <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">Amazon Marketplaceのリンクをクリックすると、AWSが開きます<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。</block>
+  <block id="cf15bbe6cd227a924c3717e47e474a31" category="paragraph">から直接 Cloud Insights に登録することもできます<block ref="eae66bec507f0b1bc5acf3fdd4b6a83b" category="inline-link-rx"></block>最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。</block>
 </blocks>

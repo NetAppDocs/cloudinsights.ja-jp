@@ -218,7 +218,7 @@ NOTE: 管理対象ユニットの合計は、サマリセクションのデー�
 
 == 直接購読して、トライアルをスキップしてください
 
-から直接 Cloud Insights に登録することもできます link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["AWS Marketplace"]最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。
+から直接 Cloud Insights に登録することもできます https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。
 
 
 
