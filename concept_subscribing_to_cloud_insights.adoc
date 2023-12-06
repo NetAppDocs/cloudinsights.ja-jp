@@ -152,7 +152,7 @@ Cloud Insights * シリアル番号 * をネットアップの営業担当者に
 
 NOTE: 既存の Cloud Insights トライアルアカウントに AWS Marketplace のサブスクリプションを適用するには、アカウント所有者または管理者である必要があります。さらに、 Amazon Web Services （ AWS ）アカウントが必要です。
 
-Amazon Marketplaceのリンクをクリックすると、AWSが開きます link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights の機能です"] サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。
+Amazon Marketplaceのリンクをクリックすると、AWSが開きます https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights の機能です"] サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。
 
 管理対象ユニットの総数を入力し、 12 か月または 36 か月のサブスクリプション期間を選択したら、「 * アカウントの設定 * 」をクリックしてサブスクリプションプロセスを終了します。
 

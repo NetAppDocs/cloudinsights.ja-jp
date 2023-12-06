@@ -6212,7 +6212,6 @@ httpdリクエストメソッドPUT
   <block id="1cf7fd422699345d54e2c23df79ac3a2" category="paragraph">Cloud Insights * シリアル番号 * をネットアップの営業担当者にご連絡いただき、 Cloud Insights 環境に有料サブスクリプションを適用できるようにしてください。シリアル番号は、 Cloud Insights トライアル環境を一意に識別します。シリアル番号は、 [*Admin] &gt; [Subscription*] ページにあります。</block>
   <block id="ba16017252787d62326108ae062b54b0" category="section-title">AWS Marketplace でセルフサブスクライブ</block>
   <block id="24dced9ec471b11c43d64232ba07d95a" category="admonition">既存の Cloud Insights トライアルアカウントに AWS Marketplace のサブスクリプションを適用するには、アカウント所有者または管理者である必要があります。さらに、 Amazon Web Services （ AWS ）アカウントが必要です。</block>
-  <block id="e45641d408ce7d31aa423768c5c36d43" category="paragraph">Amazon Marketplaceのリンクをクリックすると、AWSが開きます <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。</block>
   <block id="b0d79f167bb60f1ee8201b52678b1e91" category="paragraph">管理対象ユニットの総数を入力し、 12 か月または 36 か月のサブスクリプション期間を選択したら、「 * アカウントの設定 * 」をクリックしてサブスクリプションプロセスを終了します。</block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">AWS の登録プロセスが完了すると、 Cloud Insights 環境に戻ります。または、環境がアクティブでなくなった場合（ログアウトした場合など）は、NetApp BlueXPのサインインページに移動します。Cloud Insights に再度サインインすると、サブスクリプションがアクティブになります。</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">AWS Marketplace のページで「 * アカウントの設定 * 」をクリックしてから、 AWS サブスクリプションの手続きを 1 時間以内に完了する必要があります。1 時間以内に完了しない場合は、もう一度「 * アカウントの設定 * 」をクリックして処理を完了する必要があります。</block>
@@ -15919,4 +15918,5 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">テスト機能は、プロトコルにアクセスできないことを警告します。</block>
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">特定のBrocade FOS 8.2以降のデバイスは、HTTPまたはHTTPSでのみ通信します。スイッチにデジタル証明書がインストールされている場合、暗号化されていないHTTPとHTTPSで通信しようとすると、スイッチはHTTPエラーをスローします。テスト機能はHTTPとHTTPSの両方との通信を試行します。一方のプロトコルが成功したことをテストで確認した場合、もう一方のプロトコルが失敗したことを心配する必要はありません。コレクタは収集中に両方のプロトコルを試行し、どちらも機能しない場合にのみ失敗します。</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">監視オペレータが専用のネームスペースに配置されている場合は、ネームスペースを削除します。</block>
+  <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">Amazon Marketplaceのリンクをクリックすると、AWSが開きます<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。</block>
 </blocks>
