@@ -15919,4 +15919,53 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">監視オペレータが専用のネームスペースに配置されている場合は、ネームスペースを削除します。</block>
   <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">Amazon Marketplaceのリンクをクリックすると、AWSが開きます<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。</block>
   <block id="cf15bbe6cd227a924c3717e47e474a31" category="paragraph">から直接 Cloud Insights に登録することもできます<block ref="eae66bec507f0b1bc5acf3fdd4b6a83b" category="inline-link-rx"></block>最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。</block>
+  <block id="c33f6b520ad3c202db9ed1b825ac8b3d" category="section-title">2023年12月</block>
+  <block id="e5c497adc9cc22e52e97b4b5e964a73a" category="section-title">分析を一目で変更</block>
+  <block id="6af5d0d36d2880461f4a893b2fda8c49" category="inline-link-macro">変更分析</block>
+  <block id="9d47984568626758f79f59b8ab594e47" category="paragraph">Kubernetes <block ref="e15dca0da93b1f27987e351a6e71f29b" category="inline-link-macro-rx"></block> Kubernetes環境に対する最近の変更をオールインワンで確認できます。アラートと導入ステータスをすぐに確認できます。変更分析を使用すると、導入と設定の変更をすべて追跡し、Kubernetesのサービス、インフラ、クラスタの健全性とパフォーマンスに関連付けることができます。</block>
+  <block id="7096eb784c49db459b9e81d7144677b6" category="inline-image-macro">分析ダッシュボードの変更</block>
+  <block id="a00e9c277f678474cec2c7bb314fb3d9" category="paragraph"><block ref="a00e9c277f678474cec2c7bb314fb3d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1945d973cbf784106cf63f5c92dd03c" category="section-title">Kubernetesワークロードパフォーマンスダッシュボード</block>
+  <block id="0094a2cabaf94a50315415703ffad246" category="paragraph">ワークロードのパフォーマンスは、Kubernetesワークロードのパフォーマンスを包括的なダッシュボードで一目で確認できます。ボリューム、スループット、レイテンシ、再送信の傾向のグラフや、環境内の各ネームスペースのワークロードトラフィックの表をすばやく確認できます。フィルタを使用すると、関心のある分野に簡単にフォーカスできます。</block>
+  <block id="359764412be7b85d82a0fede6f294fd8" category="inline-image-macro">[Workload Performance]メニュー（幅= 400）</block>
+  <block id="6f0c6e70c5bdbec159d2aff314f95ca0" category="paragraph"><block ref="6f0c6e70c5bdbec159d2aff314f95ca0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23ba06ac0886515dd5b526ead5ff8ee9" category="inline-image-macro">ワークロードパフォーマンスダッシュボード</block>
+  <block id="ac4c1402903407a0a891f2bb0c81c5f1" category="paragraph"><block ref="ac4c1402903407a0a891f2bb0c81c5f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2054c9cef75769f02391e24b33913a1b" category="section-title">クエリの詳細を1つの画面に表示</block>
+  <block id="2e7e5c9d39542249aa31c6133e40c262" category="paragraph">クエリで行を選択すると、選択した行の属性、アノテーション、および指標の詳細がサイドパネルに表示され、オブジェクトのランディングページにドリルダウンしなくても役立つ情報が表示されます。行またはサイドパネルのリンクにより、ナビゲーションが容易になります。</block>
+  <block id="62cdb0814cb6471da325b4d35d9a9201" category="inline-image-macro">メトリッククエリのスライドアウトパネル</block>
+  <block id="828a2733738238dd63a3e8997aefd019" category="paragraph"><block ref="828a2733738238dd63a3e8997aefd019" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5090ffe948a87ecbd0fec886d682a30a" category="section-title">Data Collectorのアップデート：</block>
+  <block id="b9fc953f4ecb0e9185cc45fc4d0d85c5" category="list-text">* Brocade FOS REST *：このコレクタは「プレビュー」から移動され、一般提供されるようになりました。注意すべき点：</block>
+  <block id="834136be905525d9d1bd5340e9f78870" category="list-text">FOSでは、REST APIがFOS 8.2で導入されました。ただし、ルーティングなどの一部の機能では、9.0のREST API機能しか使用できません。</block>
+  <block id="6259752b8e7b6328c771bee6f8ad586c" category="list-text">8.2以降のFOSアセットが混在したファブリックと8.2より前のアセットで構成されているファブリックでは、Cloud Insights FOS RESTコレクタで古いアセットを検出できません。FOS RESTコレクタを編集して、デバイスのIPv4アドレスをカンマで区切って作成し、そのコレクタから除外することができます。</block>
+  <block id="fd03b080e03c993770237986acf19dc1" category="list-text">*SELinux*: Cloud Insightsには、Linux Acquisition Unitの初期インストールが強化されており、SELinuxの強制が有効になっているLinux環境での動作の堅牢性を確保します。これらの機能拡張は_new_au環境にのみ影響します。AUのアップグレードに関連するSELinuxの問題がある場合は、NetAppサポートに連絡してSELinux構成の修正を依頼してください。</block>
+  <block id="5142ab8747c5da1b5115ffa35bacd522" category="summary">Kubernetesの変更の追跡がかつてないほど簡単になりました。</block>
+  <block id="d75550072217b58f67a7216961c2bb8c" category="doc">Kubernetesの変更分析</block>
+  <block id="745bf0c93bc131f89ec736fc36e64da7" category="paragraph">Kubernetes Change Analyticsは、Kubernetes環境に対する最近の変更をオールインワンで表示します。アラートと導入ステータスをすぐに確認できます。変更分析を使用すると、導入と設定の変更をすべて追跡し、Kubernetesのサービス、インフラ、クラスタの健全性とパフォーマンスに関連付けることができます。</block>
+  <block id="baa67b8c9085fb7f1ab7886843918360" category="list-text">マルチテナントKubernetes環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insightsですべての変更を正しく追跡できない場合があります。</block>
+  <block id="ee48ad51c38d1e68f90591ef3918ee29" category="list-text">Change Analyticsでは、ワークロードの健常性と構成の変更を1つのペインで確認し、関連付けできます。これは、動的なKubernetes環境のトラブルシューティングに役立ちます。</block>
+  <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">Kubernetes Change Analyticsを表示するには、* Kubernetes &gt; Change Analysis *に移動します。</block>
+  <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubernetes Change Analyticsのメイン画面。警告と重大なアラート、成功した導入と失敗した導入、アラートをトリガーする上位3つのワークロードが表示されます。</block>
+  <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="a9ac2dc1ccf01db5959d4e16563a6bba" category="paragraph">ページは、現在選択されているCloud Insights時間範囲に基づいて自動的に更新されます。  時間範囲が小さいほど、画面の更新頻度が高くなります。</block>
+  <block id="11dc88e059709832ab0f8280cc54eecf" category="paragraph">Cloud Insightsのすべての機能と同様に、変更リストは直感的にフィルタできます。ページ上部で、Kubernetesクラスタ、ネームスペース、ワークロードの値を入力または選択するか、｛[+]ボタンを選択して独自のフィルタを追加します。</block>
+  <block id="3dec7ee4035d7384095c6f5a0454b2a8" category="paragraph">特定のクラスタ、ネームスペース、ワークロードにフィルタを適用して（設定した他のフィルタと一緒に）、そのクラスタ上のそのネームスペース内のそのワークロードに対する導入とアラートのタイムラインが表示されます。さらに拡大するには、グラフをクリックしてドラッグし、より具体的な時間範囲にフォーカスします。</block>
+  <block id="aa8e7ddd32230c18cfcb5371423cb0d3" category="inline-image-macro">ワークロードタイムラインの例</block>
+  <block id="b7cab2994bcbd4be950a067ce498791c" category="paragraph"><block ref="b7cab2994bcbd4be950a067ce498791c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d88cbd80f5b46f532c77eee8288f787b" category="section-title">クイックステータス</block>
+  <block id="798426d7e0a7153e9595b4baf74e0077" category="paragraph">フィルタリングエリアの下には、いくつかの高レベルインジケータがあります。左側にはアラートの数（WarningおよびCritical）が表示されます。この数には、_Active_alertsと_Resolved_alertsが含まれます。Only_Active_alertsを表示するには、「Status」のフィルタを設定し、「Active」を選択します。</block>
+  <block id="37357e10649c59b80f8f74168d40b929" category="inline-image-macro">分析アラートの変更</block>
+  <block id="b58e9f19bc5a7e5d850afb7712dfc43b" category="paragraph"><block ref="b58e9f19bc5a7e5d850afb7712dfc43b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="184829ac15599f93f6a04572f14f760f" category="paragraph">導入ステータスもここに表示されます。繰り返しになりますが、デフォルトでは、_Started_、_complete_、および_Failed_deploymentsの数が表示されます。Failed_Deploymentsのみを表示するには、[Status]のフィルタを設定し、[Failed]を選択します。</block>
+  <block id="9e6e0b4ddf1bd5bb169293dd8bdbbc91" category="inline-image-macro">分析DSeploysの変更</block>
+  <block id="515fe35177706f902d42aacba2cb3732" category="paragraph"><block ref="515fe35177706f902d42aacba2cb3732" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="73f4838ec94a4da6e87f88b514573adb" category="paragraph">次にアラートが最も多い上位3つのワークロードが表示されます。各ワークロードの横にある赤の数字は、そのワークロードに関連するアラートの数を示します。ワークロードのリンクをクリックして、インフラ（Kubernetes Explorer）、依存関係（ワークロードマップ）、またはログ分析（イベントログ）を確認します。</block>
+  <block id="9178d83020e12a25e2fc67bcbf52cb10" category="inline-image-macro">分析ワークロード探索オプションの変更</block>
+  <block id="1210a7f3bbc3fd1446c85109622a2bed" category="paragraph"><block ref="1210a7f3bbc3fd1446c85109622a2bed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4018bd0799cc93add471a8969cb9c41" category="section-title">詳細パネル</block>
+  <block id="af8e06fb12f5fdcc5176850dfc46d65f" category="paragraph">リストで変更を選択すると、変更を詳細に説明するパネルが開きます。たとえば、失敗したDeployを選択すると、Deployの概要、開始時刻と終了時刻、期間、および導入がトリガーされた場所、およびそれらのリソースを確認するためのリンクが表示されます。また、失敗の理由、関連する変更、関連するイベントも表示されます。</block>
+  <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">展開失敗の詳細パネル</block>
+  <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同様にアラートを選択すると、アラートをトリガーしたモニタやアラートのタイムラインを示すグラフなど、アラートの詳細が表示されます。</block>
 </blocks>
