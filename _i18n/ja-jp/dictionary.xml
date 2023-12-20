@@ -15960,7 +15960,7 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同様にアラートを選択すると、アラートをトリガーしたモニタやアラートのタイムラインを示すグラフなど、アラートの詳細が表示されます。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhookリストページ</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Webhookのリストページには、Name、Created By、Created On、Status、Secure、 およびLast Reportedフィールド。</block>
-  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
+  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
 
 * CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
 * Debian (64ビット): 9と10
@@ -15971,11 +15971,8 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
 
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
 
-&lt;&lt;&lt;&lt;&gt;&gt; SELinux
 SELinuxを使用している場合は、Acquisition Unitシステムで次のコマンドを実行することを推奨します。
 
- _sudo semanage fcontext -a -t usr_t "/opt/NetApp/cloudinsights（/.*）？"_
- _sudo restorecon -R /opt/NetApp/cloudinsights _
-=========
-&gt;&gt;&gt;&gt;&gt;&gt; メイン</block>
+ sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights（/.*）？"
+ sudo restorecon -R /opt/netapp/cloudinsights</block>
 </blocks>
