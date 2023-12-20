@@ -15197,16 +15197,6 @@ v9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insightsでは、データコレクタ情報の表示と検索が容易になりました。</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*データコレクタリストの処理がより効率的になるため、これらのリストの表示とナビゲートにかかる時間が大幅に短縮されます。多数のデータコレクタが存在する大規模な環境では、データコレクタの一覧表示が大幅に改善されます。</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">Data Collector Support Matrix *は、.pdfファイルから.htmlベースのページに移行しました。これにより、ナビゲートが迅速になり、メンテナンスが容易になりました。新しいマトリックスはこちら：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
-  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
-* Debian (64ビット): 9と10
-* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
-* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.7、9.1
-*ロッキー9.0、9.1
-* Ubuntu Server：18.04および20.04 LTS
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">NET-OBSERVER-L4-DS追加許容値。</block>
   <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">対処方法</block>
   <block id="dacff74646dd80517d0cffd123266041" category="cell">重大度/しきい値</block>
@@ -15970,4 +15960,22 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同様にアラートを選択すると、アラートをトリガーしたモニタやアラートのタイムラインを示すグラフなど、アラートの詳細が表示されます。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhookリストページ</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Webhookのリストページには、Name、Created By、Created On、Status、Secure、 およびLast Reportedフィールド。</block>
+  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
+* Debian (64ビット): 9と10
+* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
+* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.7、9.1
+*ロッキー9.0、9.1
+* Ubuntu Server：18.04および20.04 LTS
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
+
+&lt;&lt;&lt;&lt;&gt;&gt; SELinux
+SELinuxを使用している場合は、Acquisition Unitシステムで次のコマンドを実行することを推奨します。
+
+ _sudo semanage fcontext -a -t usr_t "/opt/NetApp/cloudinsights（/.*）？"_
+ _sudo restorecon -R /opt/NetApp/cloudinsights _
+=========
+&gt;&gt;&gt;&gt;&gt;&gt; メイン</block>
 </blocks>

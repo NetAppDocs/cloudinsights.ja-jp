@@ -40,7 +40,15 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 *ロッキー9.0、9.1
 * Ubuntu Server：18.04および20.04 LTS
 
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
+
+<<<<>> SELinux
+SELinuxを使用している場合は、Acquisition Unitシステムで次のコマンドを実行することを推奨します。
+
+ _sudo semanage fcontext -a -t usr_t "/opt/NetApp/cloudinsights（/.*）？"_
+ _sudo restorecon -R /opt/NetApp/cloudinsights _
+=========
+>>>>>> メイン | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
 
 * Microsoft Windows 10 64ビット
 * Microsoft Windows Server 2012
