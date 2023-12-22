@@ -28,7 +28,7 @@ summary: Workload Securityデータコレクタを追加します
 * このデータコレクタは、次の機能でサポートされています。
 +
 ** Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、 Data ONTAP バージョンを使用します link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["この問題"] が固定されています
-** SMBプロトコルバージョン3.1以前。  ワークロードセキュリティは、FlexCache を使用するSMB構成では機能しないことに注意してください。FlexCacheを使用するシステムでは、ONTAP 9.7以降では、FPolicyがNFS環境でのみサポートされます。
+** SMBプロトコルバージョン3.1以前。
 ** NFSプロトコルバージョン4.0以前
 ** FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます
 ** ONTAP Select がサポートされています
