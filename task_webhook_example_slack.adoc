@@ -34,9 +34,6 @@ image:Webhooks_Slack_Create_Webhook.png["Slack Webhook を作成します"]
 
 * 受信したウェブフックに移動し、 [on_Activate incoming webhooks] 、 [Request to _Add New Webhook_] の順にクリックして、投稿するチャネルを選択します。
 * Webhook URL をコピーします。これを Cloud Insights webhook 設定に貼り付ける必要があります。
-+
-image:Webhook_Slack_Config.jpg["Slack Webhook の URL"]
-
 
 
 
