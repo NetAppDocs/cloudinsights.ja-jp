@@ -26,6 +26,8 @@ Cloud Insights は、ローカルサーバにインストールされている A
 
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP ；ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して Acquisition Unit マシンの時間を同期することを強く推奨します。
 
+Cloud Insightsのセキュリティについて読む link:security_overview.html["こちらをご覧ください"]。
+
 
 
 == Linux Acquisition Unit の追加

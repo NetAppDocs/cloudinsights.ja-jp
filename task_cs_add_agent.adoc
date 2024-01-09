@@ -30,6 +30,7 @@ NOTE: ワークロードセキュリティは、Cloud Insights フェデラル�
 
 * インストール、スクリプトの実行、アンインストールには sudo 権限が必要です。
 * エージェントのインストール中に、ローカルのuser_cssys_とローカルのgroup_cssys_がマシン上に作成されます。権限設定でローカルユーザの作成が許可されておらず、Active Directoryが必要な場合は、Active Directoryサーバにusername_csys_という名前のユーザを作成する必要があります。
+* Cloud Insightsのセキュリティについては、 link:security_overview.html["こちらをご覧ください"]。
 
 
 
