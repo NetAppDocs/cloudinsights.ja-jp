@@ -94,12 +94,8 @@ Vserver 名、 CIFS サーバ名、およびその他のフィールドが返さ
 
 新しいユーザを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。
 
+ security login role create -role csrole -cmddirname DEFAULT -access readonly
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
-security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
 security login role create -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure_*"
 security login role create -role csrole -cmddirname "event catalog" -access all
@@ -107,6 +103,8 @@ security login role create -role csrole -cmddirname "event filter" -access all
 security login role create -role csrole -cmddirname "event notification destination" -access all
 security login role create -role csrole -cmddirname "event notification" -access all
 security login role create -role csrole -cmddirname "security certificate" -access all
+....
+....
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
@@ -118,12 +116,19 @@ security login create -user-or-group-name csuser -application ssh -authmethod pa
 
 新しいユーザを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。これらのコマンドをテキストエディタにコピーし、 <vservername> を SVM 名に置き換えてから、 ONTAP で次のコマンドを実行します。
 
+ security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
+....
+....
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 ....
+security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+
 
 
 == データコレクタを設定します
