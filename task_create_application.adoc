@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: アノテーションルールを作成すると、定義した条件に基づいて複数のアセットにアノテーションを自動的に適用できます。 
+summary: 必要に応じて、環境内のアセットに適用するアプリケーションを定義します。 
 keywords: application, create application, 
 ---
 = アプリケーションの作成

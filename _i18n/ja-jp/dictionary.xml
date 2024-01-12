@@ -10333,7 +10333,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443年</block>
   <block id="5fdb13066473bd6f58da638bc9c08a77" category="cell">デフォルトは60です。</block>
   <block id="f5246cc263393dd5ccd5be3435aec78d" category="cell">接続タイムアウト（秒）</block>
-  <block id="2837a19125070133e6e88f25d23f955b" category="summary">アノテーションルールを作成すると、定義した条件に基づいて複数のアセットにアノテーションを自動的に適用できます。</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">アプリケーションの作成</block>
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">環境で実行されている特定のアプリケーションに関連付けられているデータを追跡するには、 Cloud Insights でアプリケーションを定義します。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">アプリケーションをビジネスエンティティに関連付ける場合は、アプリケーションを定義する前にビジネスエンティティを作成する必要があります。</block>
@@ -15977,5 +15976,5 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">Cloud Insightsのセキュリティについて読む <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetAppセキュリティアドバイザリ</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">ネットアップが提供しているセキュリティアドバイザリを表示できます。 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
-  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver &lt;vservername&gt;</block>
+  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">必要に応じて、環境内のアセットに適用するアプリケーションを定義します。</block>
 </blocks>
