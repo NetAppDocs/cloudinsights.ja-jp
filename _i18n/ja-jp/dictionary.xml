@@ -15969,4 +15969,8 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
   <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">リソースが不足しているため、NetApp Kubernetes Monitoring Operatorによってデプロイされたポッドがクラッシュしています。</block>
   <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">『NetApp Kubernetes Monitoring Operator』を参照してください。 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 必要に応じてCPUやメモリの制限を増やします。</block>
+  <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">秘密に関する注意事項</block>
+  <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">クラスタ全体のシークレットを表示するNetApp Kubernetes Monitoring Operatorの権限を削除するには、インストール前に_operator-setup.yaml_fileから次のリソースを削除します。</block>
+  <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">アップグレードの場合は、クラスタからリソースも削除します。</block>
+  <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">変更分析が有効になっている場合は、_AgentConfiguration_or_operator -config.yaml_を変更して、変更管理セクションのコメントを解除し、変更管理セクションの下に_kindsToIgnoreFromWatch：'"secrets"'_を含めます。この行の一重引用符と二重引用符の存在と位置に注意してください。</block>
 </blocks>
