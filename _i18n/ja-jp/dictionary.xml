@@ -15973,4 +15973,9 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">クラスタ全体のシークレットを表示するNetApp Kubernetes Monitoring Operatorの権限を削除するには、インストール前に_operator-setup.yaml_fileから次のリソースを削除します。</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">アップグレードの場合は、クラスタからリソースも削除します。</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">変更分析が有効になっている場合は、_AgentConfiguration_or_operator -config.yaml_を変更して、変更管理セクションのコメントを解除し、変更管理セクションの下に_kindsToIgnoreFromWatch：'"secrets"'_を含めます。この行の一重引用符と二重引用符の存在と位置に注意してください。</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024年1月</block>
+  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">ワークロードセキュリティの向上</block>
+  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">ワークロードセキュリティの改善点は次のとおりです。</block>
+  <block id="39d95be3c95b6807c34781066d955324" category="list-text">検出アルゴリズムが強化され、誤検出警告の数が削減されました。</block>
+  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">Forensicsページのロード、表示、スクロール中のユーザーインターフェイスパフォーマンスが改善されました。</block>
 </blocks>
