@@ -15978,4 +15978,12 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">ワークロードセキュリティの改善点は次のとおりです。</block>
   <block id="39d95be3c95b6807c34781066d955324" category="list-text">検出アルゴリズムが強化され、誤検出警告の数が削減されました。</block>
   <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">Forensicsページのロード、表示、スクロール中のユーザーインターフェイスパフォーマンスが改善されました。</block>
+  <block id="a06394795b8f53802b059da7ff53b836" category="section-title">まだ使用していないCloud Insights機能を試す</block>
+  <block id="136e1a5570d9865595898fcb8d0bf787" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="0a393d5915f3031e3913a845dbcd9869" category="inline-link-macro-rx"></block>。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。</block>
+  <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">ワークロードの健全性</block>
+  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。</block>
+  <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">ワークロードの健常性の概要</block>
+  <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Data Domainの識別</block>
+  <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domainコレクタが改善され、フェイルオーバー時の耐久性を確保するためにHAシステムをより適切に識別できるようになりました。この変更により、HAシステム内のData Domainアプライアンスが1回だけ原因されます。これにより、削除するアセットのアノテーションが原因されます（アレイが再識別されるため）。Data Domainオブジェクトにアノテーションを再アタッチする必要があります。</block>
 </blocks>
