@@ -31,7 +31,7 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 === まだ使用していないCloud Insights機能を試す
 
-Cloud Insightsの初回トライアルに加えて、 link:/concept_subscribing_to_cloud_insights.html#module-trials["モジュールのトライアル"]。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。
+Cloud Insightsの初回トライアルに加えて、 link:concept_subscribing_to_cloud_insights.html#module-trials["モジュールのトライアル"]。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。
 
 
 
