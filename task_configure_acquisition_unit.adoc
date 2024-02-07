@@ -38,7 +38,7 @@ Cloud Insightsのセキュリティについて読む link:security_overview.htm
 
 .Linux Acquisition Unit のインストール手順
 . Cloud Insights 環境に管理者またはアカウント所有者としてログインします。
-. [AObservability]>[Collectors]>[Acquisition Units]>[+Acquisition Unit]*
+. [Observability]>[Collectors]>[Acquisition Units]>[+Acquisition Unit]
 +
 [Install Acquisition Unit_Dialog] が表示されます。Linux を選択します。
 
