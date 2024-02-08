@@ -15536,42 +15536,9 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Kubernetesのバージョンを確認します（<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  v1.20.x以下の場合、これは想定される制限です。  NetApp Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
-  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">_AgentConfiguration_のnetapp-monitoring-configurationセクションを編集し、_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
-
-注： Cloud Insightsフェデラルエディションを使用している場合、_su_の使用が制限されているユーザーはDockerメトリクスを収集できません。Dockerソケットにアクセスするには、telegrafコンテナをrootとして実行するか、_su_を使用してtelegrafユーザーをDockerグループに追加する必要があるためです。Dockerメトリック収集と_su_の使用はデフォルトで有効になっています。両方を無効にするには、_AgentConfiguration_fileの_telegraf.docker_entryを削除します。
-
-な...何だ?
-仕様：
-な...何だ?
-テレグラフ：
-    な...何だ?
-     -名前：Docker
-            実行モード：
-              -デーモンセット
-            置換：
-              -key：docker_unix_sock_placeholder
-                値：unix：//run/docker.sock
-    な...何だ?
-な...何だ?</block>
   <block id="9de497f607f8a73311408d3d7b337399" category="cell">Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
 
  来い! [agent]出力への書き込み中にエラーが発生しました。http：Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> コンテキストの期限を超過しました（ヘッダー待機中にClient.Timeoutが超過しました）</block>
-  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">各Telegraf設定ファイル（/etc/telegraf/telegraf.d/*.confなど）を編集し、Telegraf出力プラグインのタイムアウトを増やします。  たとえば、各.confファイルで、...のすべてのインスタンスを置き換えます。
-
-[[outputs.http]]
-な...何だ?
-タイムアウト="5s"
-...
-
-
-...で次の操作を行います。
-
-[[outputs.http]]
-な...何だ?
-タイムアウト="10s"
-...
-
-次にTelegrafを再起動します。</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">オペレータをインストールまたはアップグレードする前に</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">モニタリングオペレータのインストール</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricAggregationInterval</block>
@@ -16004,4 +15971,22 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">[Observability]&gt;[Collectors]&gt;[Acquisition Units]&gt;[+Acquisition Unit]</block>
   <block id="f76b3457c69f53525d8080927e20d41d" category="section-title">2024年2月</block>
+  <block id="80423bf256c338862372efdf1e8a1473" category="cell">_AgentConfiguration_のtelegrafセクションを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+注： Cloud Insightsフェデラルエディションを使用している場合、_su_の使用が制限されているユーザーはDockerメトリクスを収集できません。Dockerソケットにアクセスするには、telegrafコンテナをrootとして実行するか、_su_を使用してtelegrafユーザーをDockerグループに追加する必要があるためです。Dockerメトリック収集と_su_の使用はデフォルトで有効になっています。両方を無効にするには、_AgentConfiguration_fileの_telegraf.docker_entryを削除します。
+
+な...何だ?
+仕様：
+な...何だ?
+テレグラフ：
+    な...何だ?
+     -名前：Docker
+            実行モード：
+              -デーモンセット
+            置換：
+              -key：docker_unix_sock_placeholder
+                値：unix：//run/docker.sock
+    な...何だ?
+な...何だ?</block>
+  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">_AgentConfiguration_のtelegrafセクションを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
