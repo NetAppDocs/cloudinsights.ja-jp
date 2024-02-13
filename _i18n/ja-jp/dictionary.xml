@@ -15682,7 +15682,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777（ニョッキ・パフォーマンス・サービス用）</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">ワークロードセキュリティの強化</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">ワークロードのセキュリティが改善され、次の機能が追加されました。</block>
-  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*アクセス拒否*:ワークロードセキュリティはONTAPと統合して「アクセス拒否」イベントを受信し、追加の分析と自動応答レイヤーを提供します。</block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Kubernetesイベントが予期せずCloud Insightsへの報告を停止しました。</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">このデータコレクタは、 EMC ECS ストレージシステムからインベントリデータとパフォーマンスデータを取得します。データコレクタを設定するには、ECSクラスタのIPアドレスまたはホスト名、およびユーザ名とパスワードが必要です。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECSクラスタのIPアドレスまたはホスト名</block>
@@ -15989,4 +15988,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
     な...何だ?
 な...何だ?</block>
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">_AgentConfiguration_のtelegrafセクションを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">「アクセス拒否」イベント</block>
+  <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*アクセス拒否*：ワークロードセキュリティをONTAPと統合して <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> また、追加の分析と自動応答レイヤーを提供します。</block>
 </blocks>
