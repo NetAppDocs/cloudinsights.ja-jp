@@ -15939,10 +15939,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">アップグレードの場合は、クラスタからリソースも削除します。</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">変更分析が有効になっている場合は、_AgentConfiguration_or_operator -config.yaml_を変更して、変更管理セクションのコメントを解除し、変更管理セクションの下に_kindsToIgnoreFromWatch：'"secrets"'_を含めます。この行の一重引用符と二重引用符の存在と位置に注意してください。</block>
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024年1月</block>
-  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">ワークロードセキュリティの向上</block>
-  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">ワークロードセキュリティの改善点は次のとおりです。</block>
-  <block id="39d95be3c95b6807c34781066d955324" category="list-text">検出アルゴリズムが強化され、誤検出警告の数が削減されました。</block>
-  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">Forensicsページのロード、表示、スクロール中のユーザーインターフェイスパフォーマンスが改善されました。</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">まだ使用していないCloud Insights機能を試す</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">ワークロードの健全性</block>
   <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。</block>
@@ -15951,7 +15947,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Data Domainの識別</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domainコレクタが改善され、フェイルオーバー時の耐久性を確保するためにHAシステムをより適切に識別できるようになりました。この変更により、HAシステム内のData Domainアプライアンスが1回だけ原因されます。これにより、削除するアセットのアノテーションが原因されます（アレイが再識別されるため）。Data Domainオブジェクトにアノテーションを再アタッチする必要があります。</block>
   <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。</block>
-  <block id="3a16a434dce801908698971e622dd4d6" category="paragraph">新しいワークロードセキュリティAPIを使用して、データコレクタ（追加/更新/削除）とエージェントを管理できます。詳細については、* Admin &gt; API Access &gt; API Documentation *に移動し、_Workload Security_APIタイプを選択します。</block>
   <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">ワークロードセキュリティは、ONTAPと統合してアクセス拒否イベントを受信し、追加の分析と自動応答レイヤを提供します。</block>
   <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">ONTAPアクセス拒否との統合</block>
   <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAPアクセス拒否機能は、NAS環境（NFSおよびSMB）のワークロード分析を使用して、失敗したファイル処理（権限のない処理を実行しようとしているユーザなど）をプロアクティブに検出して警告します。これらのファイル操作の失敗の通知は、特にセキュリティ関連の障害の場合には、初期段階でのインサイダー攻撃のブロックにさらに役立ちます。</block>
@@ -15992,4 +15987,9 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*アクセス拒否*：ワークロードセキュリティをONTAPと統合して <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> また、追加の分析と自動応答レイヤーを提供します。</block>
   <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">パスフィルタを使用すると、「Request failed with status code 500/503」というエラーが発生します。</block>
   <block id="62ce499553ccf0270c3a01cc146e46fd" category="cell">レコードのフィルタリングには、より小さい日付範囲を使用してみてください。</block>
+  <block id="0cf476fa861dbe86c3426536da9f3734" category="section-title">ワークロードセキュリティデータコレクタAPI</block>
+  <block id="a9db33e90d7bc84178320a82514d183b" category="paragraph">大規模な環境では、新しいData Collectors APIを使用してワークロードセキュリティコレクタの作成を自動化できます。詳細については、* Admin &gt; API Access &gt; API Documentation *に移動し、_Workload Security_APIタイプを選択します。</block>
+  <block id="f3f66b8b59d9644a598941acf89639a4" category="section-title">ランサムウェア検出MLアルゴリズムの強化</block>
+  <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">ワークロードセキュリティには、最も高度な攻撃をより迅速かつ正確に検出するための、新しい第2世代のランサムウェア検出MLアルゴリズムが含まれています。</block>
+  <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行動の「季節性」:週末の行動は、平日と午前の行動とは異なるパターンに従う場合があります。ワークロードセキュリティアルゴリズムでは、この季節性を考慮に入れています。</block>
 </blocks>
