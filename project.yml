@@ -249,6 +249,8 @@ sidebar:
       url: "/ws_allowed_file_types.html"
     - title: ONTAP によるランサムウェア対策保護の統合
       url: "/concept_cs_integration_with_ontap_arp.html"
+    - title: ONTAPアクセスの統合が拒否されました
+      url: "/concept_ws_integration_with_ontap_access_denied.html"
     - title: ユーザアクセスをブロックしています
       url: "/cs_restrict_user_access.html"
     - title: ランサムウェア攻撃のシミュレーション
