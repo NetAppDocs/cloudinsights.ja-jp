@@ -1526,10 +1526,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 特徴 *</block>
   <block id="d972e288b86634fdb9a758828b4d511a" category="cell">ONTAP コールドストレージを再利用します</block>
   <block id="e1f1a8af4cedab3466112b828b25b73f" category="cell">コールド容量を使用するONTAP ボリュームワークロードやその他の関連指標を視覚化できます。</block>
-  <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">このトピックはまだ準備ができていません。</block>
-  <block id="4a00b82df023b0f0fb303ec1d7a1ebfc" category="doc">このトピックは構築中です</block>
-  <block id="27871ea7cd2bc4814101455654163190" category="paragraph">Cloud Insights プレビュー期間中に外観を変更します。多くのトピックはまだ工事中であり、その中の 1 つと思われます。  弊社にご連絡ください。また、ドキュメントの更新については、頻繁にご確認ください。</block>
-  <block id="ba94b4c8120f35a3763a9a410b2b6647" category="image-alt">建設中</block>
   <block id="c5c601f0f7513cb66c54f7740aebd769" category="summary">IBM TotalStorage DS4000 データコレクタ</block>
   <block id="bb368e45192fd41360b40a61c441bbf7" category="paragraph">このデータコレクタは 'IBM DS4000 ストレージ・システムからインベントリおよびパフォーマンス情報を取得します可能な構成は 2 種類（ファームウェア 6.x とファームウェア 7.x 以降）で、値はどちらも同じです。</block>
   <block id="3407e6f55320fe223ef04230620a7680" category="paragraph">Cloud Insightsは'IBM DS4000データコレクタから次のインベントリ情報を取得します取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
@@ -15993,4 +15989,32 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">ワークロードセキュリティには、最も高度な攻撃をより迅速かつ正確に検出するための、新しい第2世代のランサムウェア検出MLアルゴリズムが含まれています。</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行動の「季節性」:週末の行動は、平日と午前の行動とは異なるパターンに従う場合があります。ワークロードセキュリティアルゴリズムでは、この季節性を考慮に入れています。</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAPアクセスの統合が拒否されました</block>
+  <block id="2b954573bdfbf3e6f7cd041ebd3f3682" category="section-title">ユーザビリティの向上</block>
+  <block id="dd02e3f2ac2d39316775658f3f6fef9c" category="paragraph">右隅のドロップダウンから_Export as Image_を選択して、現在のダッシュボードの*スナップショット*を保存します。Cloud Insightsは、現在のウィジェットの状態の.pngを作成します。</block>
+  <block id="d53957f8a1aee068b3b3326766554570" category="inline-image-macro">[Export as Image]ドロップダウン</block>
+  <block id="37cada8c4f46b21c02df2939356a5c89" category="paragraph"><block ref="37cada8c4f46b21c02df2939356a5c89" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d2a24755cf47ed77e9e34a1df4ef815" category="paragraph">*ウィジェット、モニターなどのオブジェクトとメトリックの選択*がこれまで以上に簡単になりました。 目的のオブジェクトタイプを選択し、別のドロップダウンでそのオブジェクトに関連するメトリックを選択します。</block>
+  <block id="2f4107aef619081a1d89d75c6a93321e" category="inline-image-macro">オブジェクトセレクタとメトリックセレクタを分離</block>
+  <block id="ea67434ac421e1de9d939a1647e74e51" category="paragraph"><block ref="ea67434ac421e1de9d939a1647e74e51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cda669774eba29c91f639af08adb1a4a" category="paragraph">*これらのページの上部にあるアイコンを選択して、Data CollectorとAcquisition Unit *のリストを.csvにエクスポートします。</block>
+  <block id="6be2ffb5d4b79f5272ab1074fc6603b6" category="inline-image-macro">DCおよびAUリストを.csvにエクスポート</block>
+  <block id="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="paragraph"><block ref="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d480fd0b5ff9d58e0bc8785e82c7eb5b" category="paragraph">目的の情報を見つけやすくするために、[ヘルプ]&gt;[サポート]*ページが再編成されました。お客様からご要望があったため、このページに* API Swagger *とユーザドキュメントへの直接リンクが追加されました。</block>
+  <block id="6b2eef8adc0e95db95014a8b08724379" category="inline-image-macro">Help&amp;GT;サポートページのAPIリンク</block>
+  <block id="4c976a75386e11bb66ac24e8ee6af999" category="paragraph"><block ref="e8dee020306df51938caf982452d1304" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95489108ef80ef1f702494f344d95ea2" category="paragraph">[Alerts]リストページの[triggeredOn]列にある[Links]*をクリックすると、該当するランディングページに移動します（そのオブジェクトにランディングページがある場合）。</block>
+  <block id="c032f8e7ba44d91d7b9c57d652e0a033" category="inline-image-macro">TriggeredOnアラートフィールドのリンク</block>
+  <block id="fffe3fe21c35b168a145c010bce26160" category="paragraph"><block ref="fffe3fe21c35b168a145c010bce26160" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="139836acf897f8ef3c4fb19d21c35155" category="section-title">ネームスペース内のすべての変更を表示する</block>
+  <block id="9143a0f1ce37b1e53b957a49833f9322" category="paragraph">Kubernetes Change Analysisで、クラスタとネームスペースを選択したときの変更のタイムラインを確認できるようになりました。以前のバージョンでは、[Workload]も選択しておく必要があります。  クラスタとネームスペースでフィルタリングすると、そのネームスペース内のすべてのワークロードの変化を示すタイムラインが1行に表示されます。</block>
+  <block id="5ed610ab86efcfb43954fb9ef0b7a72e" category="inline-image-macro">ネームスペースタイムライン</block>
+  <block id="0b0562ef30238191f797d9225f3024c0" category="paragraph"><block ref="0b0562ef30238191f797d9225f3024c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c91be2a24e6b73c8e2a2275adc2bef10" category="section-title">アラートの関連ログ</block>
+  <block id="5c5683919f4c326b9a4d4e83bff8dd91" category="paragraph">ログアラートを表示すると、関連するログエントリが新しいテーブルに表示されます。  ログエントリは、アラートと同じソースと期間に発生し、同じ条件の対象となる場合に関連します。[Analyze Logs]を選択して詳細を確認します。</block>
+  <block id="cf7dab299bf1390e2d44ac5a3f5aef74" category="inline-image-macro">ログアラートランディングページの関連ログ</block>
+  <block id="29869d564dea811db493659e276c4afb" category="paragraph"><block ref="29869d564dea811db493659e276c4afb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">ONTAPスイッチデータの収集</block>
+  <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">スイッチ情報</block>
+  <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">権限</block>
+  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 設定：</block>
 </blocks>

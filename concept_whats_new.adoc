@@ -5,17 +5,14 @@ summary: Cloud Insights で利用できる新機能と特徴。
 keywords: features 
 ---
 = Cloud Insightsの新機能
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。
@@ -26,6 +23,52 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 == 2024年2月
+
+
+
+=== ユーザビリティの向上
+
+右隅のドロップダウンから_Export as Image_を選択して、現在のダッシュボードの*スナップショット*を保存します。Cloud Insightsは、現在のウィジェットの状態の.pngを作成します。
+
+image:ExportAsImage.png["[Export as Image]ドロップダウン"]
+
+*ウィジェット、モニターなどのオブジェクトとメトリックの選択*がこれまで以上に簡単になりました。 目的のオブジェクトタイプを選択し、別のドロップダウンでそのオブジェクトに関連するメトリックを選択します。
+
+image:ObjectAndMetricSelection.png["オブジェクトセレクタとメトリックセレクタを分離"]
+
+*これらのページの上部にあるアイコンを選択して、Data CollectorとAcquisition Unit *のリストを.csvにエクスポートします。
+
+image:ExportDCList.png["DCおよびAUリストを.csvにエクスポート"]
+
+目的の情報を見つけやすくするために、[ヘルプ]>[サポート]*ページが再編成されました。お客様からご要望があったため、このページに* API Swagger *とユーザドキュメントへの直接リンクが追加されました。
+
+image:Support_APIAccess.png["HelpサポートページのAPIリンク"]
+
+[Alerts]リストページの[triggeredOn]列にある[Links]*をクリックすると、該当するランディングページに移動します（そのオブジェクトにランディングページがある場合）。
+
+image:TriggeredOnLink.png["TriggeredOnアラートフィールドのリンク"]
+
+
+
+=== ネームスペース内のすべての変更を表示する
+
+Kubernetes Change Analysisで、クラスタとネームスペースを選択したときの変更のタイムラインを確認できるようになりました。以前のバージョンでは、[Workload]も選択しておく必要があります。  クラスタとネームスペースでフィルタリングすると、そのネームスペース内のすべてのワークロードの変化を示すタイムラインが1行に表示されます。
+
+image:NamespaceTimeline.png["ネームスペースタイムライン"]
+
+
+
+=== アラートの関連ログ
+
+ログアラートを表示すると、関連するログエントリが新しいテーブルに表示されます。  ログエントリは、アラートと同じソースと期間に発生し、同じ条件の対象となる場合に関連します。[Analyze Logs]を選択して詳細を確認します。
+
+image:RelatedLogsTable.png["ログアラートランディングページの関連ログ"]
+
+
+
+=== ONTAPスイッチデータの収集
+
+Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"] そして適切な link:["権限"] 設定：
 
 
 
