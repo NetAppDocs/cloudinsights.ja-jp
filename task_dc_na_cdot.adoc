@@ -184,6 +184,9 @@ Throughput –このストレージプールの容量の要因となっている
 
 
 | 高度なカウンタデータ収集 | ONTAP の統合を有効にします。ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。リストから目的のカウンタを選択します。 
+
+
+| クラスタスイッチ指標 | Cloud Insightsでクラスタスイッチのデータを収集できるようにします。Cloud Insights側でこれを有効にするだけでなく、次の機能を提供するようにONTAPシステムを設定する必要があります。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"]、およびが正しいことを確認します。 <<a-note-about-permissions,権限>> は、スイッチデータをCloud Insightsに送信できるように設定されています。下記の「権限に関する注意事項」を参照してください。 
 |===
 
 
@@ -252,6 +255,9 @@ security login role create -role ci_readonly -access all -cmddirname {cluster ap
 AD / LDAP アカウントを使用する場合は、コマンドをに設定します
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+クラスタスイッチのデータを収集する場合は、次の作業を行います。
+
+ security login rest-role create -role ci_readonly -api /api/network/ethernet -access readonly
 作成されるロールとユーザログインは次のようになります。実際の出力は以下のように異なる場合があります
 
 ....
@@ -269,6 +275,9 @@ UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
 ci_user     ontapi      password    ci_readonly   no
 ....
+
+NOTE: ONTAPアクセス制御が正しく設定されていないと、Cloud Insights REST呼び出しが失敗し、デバイスのデータにギャップが生じる可能性があります。  たとえば、Cloud Insightsコレクタで有効にしていて、ONTAPで権限を設定していない場合、取得は失敗します。  また、ロールが以前にONTAPで定義されていて、残りのAPI機能を追加する場合は、_http_がロールに追加されていることを確認してください。
+
 
 
 == トラブルシューティング

@@ -16017,4 +16017,8 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">スイッチ情報</block>
   <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">権限</block>
   <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 設定：</block>
+  <block id="cce3c9f8c5193ee861459b69a1aed6b4" category="cell">クラスタスイッチ指標</block>
+  <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">Cloud Insightsでクラスタスイッチのデータを収集できるようにします。Cloud Insights側でこれを有効にするだけでなく、次の機能を提供するようにONTAPシステムを設定する必要があります。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、およびが正しいことを確認します。 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> は、スイッチデータをCloud Insightsに送信できるように設定されています。下記の「権限に関する注意事項」を参照してください。</block>
+  <block id="466b14af7b02408eac035880aecf9915" category="paragraph">クラスタスイッチのデータを収集する場合は、次の作業を行います。</block>
+  <block id="4ba371a33d0081d06951a5868ba9b9f6" category="admonition">ONTAPアクセス制御が正しく設定されていないと、Cloud Insights REST呼び出しが失敗し、デバイスのデータにギャップが生じる可能性があります。  たとえば、Cloud Insightsコレクタで有効にしていて、ONTAPで権限を設定していない場合、取得は失敗します。  また、ロールが以前にONTAPで定義されていて、残りのAPI機能を追加する場合は、_http_がロールに追加されていることを確認してください。</block>
 </blocks>
