@@ -12866,13 +12866,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50GB</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">Data Collector</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">こちらをご覧ください</block>
-  <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100Mbps/1Gbpsイーサネット接続、静的IPアドレス、およびAcquisition Unitから*。.cloudinsights.netapp.comまたはCloud Insights環境（\https：//&lt;environment_id&gt;.c01.cloudinsights.netapp.com）へのポート80または443の接続が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。
-
-組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、次のドメインを例外リストに追加する必要があります。
-
-*.cloudinsights.netapp.com
-
-詳細については、「プロキシについて」を参照してください <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> または <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">権限</block>
   <block id="b121d11a2c041b51e1c63a940169fc95" category="cell">Acquisition Unit サーバに対する sudo 権限
 /tmp は EXEC 機能でマウントする必要があります。</block>
@@ -16021,4 +16014,13 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">Cloud Insightsでクラスタスイッチのデータを収集できるようにします。Cloud Insights側でこれを有効にするだけでなく、次の機能を提供するようにONTAPシステムを設定する必要があります。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、およびが正しいことを確認します。 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> は、スイッチデータをCloud Insightsに送信できるように設定されています。下記の「権限に関する注意事項」を参照してください。</block>
   <block id="466b14af7b02408eac035880aecf9915" category="paragraph">クラスタスイッチのデータを収集する場合は、次の作業を行います。</block>
   <block id="4ba371a33d0081d06951a5868ba9b9f6" category="admonition">ONTAPアクセス制御が正しく設定されていないと、Cloud Insights REST呼び出しが失敗し、デバイスのデータにギャップが生じる可能性があります。  たとえば、Cloud Insightsコレクタで有効にしていて、ONTAPで権限を設定していない場合、取得は失敗します。  また、ロールが以前にONTAPで定義されていて、残りのAPI機能を追加する場合は、_http_がロールに追加されていることを確認してください。</block>
+  <block id="fcf3c8b7073234871f47a3a68559837a" category="inline-link-macro">こちら（Linux）</block>
+  <block id="5543adb6f73fddb3a3944d6d35b0de3e" category="inline-link-macro">ここ（Windows）</block>
+  <block id="a619708c636cd548a93f5ec4dde89bb3" category="cell">100Mbps/1Gbpsイーサネット接続、静的IPアドレス、およびAcquisition Unitから*。.cloudinsights.netapp.comまたはCloud Insights環境（\https：//&lt;environment_id&gt;.c01.cloudinsights.netapp.com）へのポート80または443の接続が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。
+
+組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、次のドメインを例外リストに追加する必要があります。
+
+*.cloudinsights.netapp.com
+
+詳細については、「プロキシについて」を参照してください。 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> または <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>

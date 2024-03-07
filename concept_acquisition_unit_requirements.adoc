@@ -78,7 +78,7 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
 
 *.cloudinsights.netapp.com
 
-詳細については、「プロキシについて」を参照してください link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちらをご覧ください"] または link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちらをご覧ください"]。 | 同じ 
+詳細については、「プロキシについて」を参照してください。 link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちら（Linux）"] または link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["ここ（Windows）"]。 | 同じ 
 
 
 | 権限 | Acquisition Unit サーバに対する sudo 権限
