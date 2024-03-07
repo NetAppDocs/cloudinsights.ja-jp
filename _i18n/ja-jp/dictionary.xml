@@ -15946,7 +15946,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="6e0dfd81ddc34b1c1736fb0d236a55db" category="paragraph"><block ref="6e0dfd81ddc34b1c1736fb0d236a55db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e590479d69be0679e0d2b7c5a78d3ab" category="paragraph">クラスタ管理資格情報を使用してData Collectorを追加する場合、新しい権限は必要ありません。</block>
   <block id="a3fef797358352dd57f209719f4590ca" category="paragraph">ユーザに付与された権限を持つカスタムユーザ（_csuser_など）を使用してコレクタを追加する場合は、次の手順に従って、ONTAPでアクセス拒否イベントに登録するために必要な権限をワークロードセキュリティに付与します。</block>
-  <block id="04b888e98eb37f7a0061538c4af0da8a" category="paragraph">CSUSER WITH_CLUSTER_CREDENTIALの場合は、ONTAPコマンドラインから次のコマンドを実行します。_csrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。</block>
   <block id="7a1aa4b5b013e91e379aedbfb6a633f3" category="paragraph">csuser with _svm_credentialsの場合は、ONTAPコマンドラインから次のコマンドを実行します。</block>
   <block id="6b112db6b76b4a3d519b727558f34cb6" category="section-title">アクセス拒否イベント</block>
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">ONTAPシステムからイベントが取得されると、[ワークロードセキュリティフォレンジック]ページにアクセス拒否イベントが表示されます。表示される情報に加えて、歯車アイコンから_desired Activity_columnをテーブルに追加することで、特定の操作で不足しているユーザー権限を表示できます。</block>
@@ -16023,4 +16022,5 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
 *.cloudinsights.netapp.com
 
 詳細については、「プロキシについて」を参照してください。 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> または <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">CSUSER WITH_CLUSTER_CREDENTIALの場合は、ONTAPコマンドラインから次のコマンドを実行します。_csrestrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。</block>
 </blocks>

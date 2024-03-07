@@ -39,23 +39,19 @@ image:WS_Access_Denied_Enable_in_Collector.png["ONTAPコレクタの詳細設定
 
 ユーザに付与された権限を持つカスタムユーザ（_csuser_など）を使用してコレクタを追加する場合は、次の手順に従って、ONTAPでアクセス拒否イベントに登録するために必要な権限をワークロードセキュリティに付与します。
 
-CSUSER WITH_CLUSTER_CREDENTIALの場合は、ONTAPコマンドラインから次のコマンドを実行します。_csrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。
+CSUSER WITH_CLUSTER_CREDENTIALの場合は、ONTAPコマンドラインから次のコマンドを実行します。_csrestrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。
 
 [listing]
 ----
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
-
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
 ----
 csuser with _svm_credentialsの場合は、ONTAPコマンドラインから次のコマンドを実行します。
 
 [listing]
 ----
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
-security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
 
 
