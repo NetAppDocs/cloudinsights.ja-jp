@@ -22,6 +22,31 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
+== 2024年3月
+
+
+
+=== ワークロードセキュリティエージェントの詳細
+
+各ワークロードセキュリティエージェントには独自のランディングページがあり、エージェントに関する概要情報だけでなく、そのエージェントに関連付けられているインストール済みのデータコレクタおよびユーザディレクトリコレクタも簡単に確認できます。
+
+image:Agent_Detail_Page.png["エージェント詳細ランディングページの例"]
+
+
+
+=== より多くのデータを迅速にグラフ化
+
+アセットのランディングページのデータを分析する際に、エキスパートビューのグラフに簡単にデータを追加できます。ランディングページの各テーブルで、オブジェクトタイプに関連データがある場合は、そのオブジェクトにカーソルを合わせると、[エキスパートビューに追加]アイコンが表示されます。このアイコンを選択すると、そのオブジェクトが[Additional Resources]に追加され、[Expert View]チャートに表示されます。
+
+image:AddToChartIcon.png["エキスパートビューへのテーブルデータの追加"]
+
+ランディングページの表のデータを独自のグラフで表示することもできます。[_Show Chart_]アイコンを選択すると、テーブルの下にグラフが表示されます。
+
+image:LPTableShowChartIcon.png["グラフアイコンを表示"]
+
+'''
+
+
 == 2024年2月
 
 
@@ -68,7 +93,7 @@ image:RelatedLogsTable.png["ログアラートランディングページの関�
 
 === ONTAPスイッチデータの収集
 
-Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"] そして適切な link:["権限"] 設定：
+Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"] そして適切な <<a-note-about-permissions,権限>> 設定：
 
 
 

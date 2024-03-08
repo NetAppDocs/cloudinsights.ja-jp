@@ -1195,43 +1195,9 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="a1e8cc2c5f503818ad3e7f8ecfaa8763" category="cell">SMI-S プロバイダホストのユーザ名</block>
   <block id="b63a1c6d2cba6eafec34be4992c1cbd7" category="cell">SMI-S プロバイダホストのパスワード</block>
   <block id="3f1b70a3ec875ea55e15beb4035704a0" category="cell">パフォーマンスのポーリング間隔  デフォルトは300秒です。</block>
-  <block id="c7a7127c54e3e8ac9e699f2540a909f5" category="summary">クラウドコストの導入を開始します。</block>
-  <block id="15870627e10ad6ebeb6e55af499ed0ce" category="doc">クラウドコストの導入を開始します</block>
-  <block id="617bd6c0c962503351aba8343b7e2031" category="paragraph">クラウドコストは、過去、現在、推定された支出の詳細なコスト分析を提供し、環境内のクラウド使用量を可視化します。クラウドコストダッシュボードは、組織のクラウドコストを明確に表示し、個々のワークロード、アカウント、サービスを詳細に把握することができます。</block>
-  <block id="2436885db1284f5d1c2ff04e166657c2" category="paragraph">クラウドコストは、次のような大きな課題に役立ちます。</block>
   <block id="a09c79c7425699bb63c27bcfb53a75e4" category="list-text">クラウドコストの追跡と監視</block>
   <block id="c7c2c12ab057b143a362b32ceabe2719" category="list-text">廃棄物と潜在的な最適化領域を特定する</block>
   <block id="a926bc23fab6b3309c2fc6513cde1a78" category="list-text">実行可能アクションアイテムを配信しています</block>
-  <block id="58ef2f09c91f0fd135a3d546f584315b" category="paragraph">クラウドコストを設定または表示するには、 Cloud Insights の Administrator 権限または Account Owner 権限が必要です。設定が完了すると、その権限を持つ Cloud Insights ユーザはクラウドコストにアクセスできます。</block>
-  <block id="38a46fd15de299d3085b6d3dcc7d3430" category="inline-link-macro">_ 管理 _</block>
-  <block id="da164e3dc4a981bd337a49f689e13200" category="paragraph">Cloud Cost を、 _AWS Organizations_account にリンクして設定します。これは、と呼ばれることもあります <block ref="3aa6332afca6836ed5a3930d857d43b2" category="inline-link-macro-rx"></block> アカウント：</block>
-  <block id="8618496c14a763783ab7f0c9eb553da9" category="admonition">Cloud Cost は、 US リージョンの Cloud Insights 環境でのみ使用でき、設定できる AWS 組織アカウントは 1 つだけです。クラウドコストは、 Cloud Insights で所有しているすべての AWS コレクタとは別に設定する必要があります。</block>
-  <block id="f208452147328c902e5da2feaa57ec40" category="section-title">クラウドコストを設定しています</block>
-  <block id="619dbf025f83f3c776b6a035aa29dc02" category="paragraph">Cloud Insights にログインして、 [ クラウドコスト *] メニュー項目を初めてクリックすると、クラウドコストの設定を開始するためのようこそ画面とプロンプトが表示されます。</block>
-  <block id="27588501638faf04454522b3d6a19cd9" category="paragraph"><block ref="27588501638faf04454522b3d6a19cd9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2963dc85866064c6cb6cb2543783d2b4" category="list-text">「 Add AWS Credentials to Start * 」ボタンをクリックして開始します。AWS Connection 画面が表示されます。この画面の指示に従って、お客様の * AWS Organizations] アカウント * をクラウドコストにリンクします。</block>
-  <block id="9023e604130974a0e2aead65b2a53c56" category="inline-image-macro">AWS 接続</block>
-  <block id="f0446b6fd2f4706bc37399b459a99543" category="paragraph"><block ref="f0446b6fd2f4706bc37399b459a99543" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="39199f99ce2b20fe642d78ec53195f92" category="list-text">アカウントの設定が完了すると、「 Welcome 」というメッセージが表示されます。</block>
-  <block id="8a2bb02f16fe17b41c9642016536e145" category="inline-image-macro">クラウドコストへようこそ！</block>
-  <block id="7643e3d44596fe8d41e06fd8ef5d5008" category="paragraph"><block ref="7643e3d44596fe8d41e06fd8ef5d5008" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ad9da31b13649ea1789aabfc332bab9c" category="inline-link-macro">NetApp スポットサポート</block>
-  <block id="2ff55ebf268b23235a4afaed6bf89fb0" category="admonition">クラウドコストを完全に構成するには、最大 24 時間かかる場合があります。設定が完了すると、 E メール通知が送信されます。問題が発生した場合は、チャットアイコンをクリックするか、にアクセスして、ネットアップサポートにお問い合わせください  <block ref="ddb599aec35fadd08f10b2a7f518a6f5" category="inline-link-macro-rx"></block>。</block>
-  <block id="dfda23b36ad3b1b19c6acceaf8146420" category="list-text">セットアップが完了したら、 * クラウドコスト * メニュー項目をクリックすると、次の例のようなコスト分析ダッシュボードが表示されます。</block>
-  <block id="2be09169680c9bdccb002888ac05e690" category="inline-image-macro">クラウドコストのダッシュボードの例</block>
-  <block id="ebbee65277192e15bc1a4fcba1601350" category="paragraph"><block ref="ebbee65277192e15bc1a4fcba1601350" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d2ec72f5faac6ab8927b0c00e7f4c5ff" category="section-title">クラウドコストの詳細</block>
-  <block id="b02d07667db7239b36a8fa517318b9b8" category="inline-link-macro">ネットアップのソリューションで実現</block>
-  <block id="1d57a93afc649a9c2d41f3fefc479f4a" category="paragraph">Cloud Cost は、 Cloud Insights 環境との Cloud Analyzer 機能を接続します <block ref="6367240bb380cab47f55b37fa9dde00f" category="inline-link-macro-rx"></block>Cloud Insights では、クラウドのコストデータに最も関連性の高いビューを提供します。  クラウドコストダッシュボードの右上隅にある _Get Full Analysis_link をクリックすると、 Spot で Cloud Analyzer ダッシュボード全体を開くことができます。詳細な分析によって追加のデータとドリルダウンが提供され、クラウド関連の支出に関する詳細な情報が得られる場合があります。</block>
-  <block id="2f0b05ac17e2cbf6a46b1c047243119b" category="paragraph">問題が発生した場合に試すべきこと：</block>
-  <block id="3a67edf2eb58216defabf9354d0156ad" category="cell">設定を確認する電子メールを Spot から受信しましたが、リンクは Cloud Insights に関連していないようです</block>
-  <block id="f272bb9eb6f00902a89ad005fe94d698" category="cell">スポット E メール内のリンクは、 Cloud Insights クラウドコストとは関係ありません。スポットからの電子メールのリンクを無視します。</block>
-  <block id="eb3a1bdcddcd493484c3a1038b124c46" category="cell">クラウドコストが表示され、スポットログインプロンプトが表示されています。</block>
-  <block id="c5983ab7d31b675699b599da7e266e76" category="cell">クラウドコストセッションの期限が切れている可能性があります。Cloud Insights ホーム画面に移動し、クラウドコストに戻ってクラウドコストセッションを再開します。</block>
-  <block id="35b56f4439b474687713caf1080761c0" category="cell">「 Cloud Cost session conflict detected 」というメッセージが表示されました。</block>
-  <block id="b09b95fdf3a131d8cd1e62eca14f3c7d" category="cell">複数のアカウントで開いた Cloud Cost セッションは、同じブラウザではサポートされません。Cloud Insights からログアウトしてログインし直すと、アカウントのクラウドコスト情報を確認できます。</block>
-  <block id="1e46d28a00235a5e640c2a81d0bdade0" category="cell">ログインしようとすると、「 Unauthorized 」というエラーが表示されます。無効なクレデンシャルです。 "</block>
-  <block id="e4a2acf8eb6f077af0a6c0c59fbe6b64" category="cell">正しいクレデンシャルでログインしていることを確認します。問題が解決しない場合は、 NetApp Spot サポートにお問い合わせください。</block>
   <block id="8020d56a67ade967a3254ada824b1406" category="summary">HDS Ops Center データコレクタの設定</block>
   <block id="edfa0366cb6c25de6aa46576a0e54251" category="doc">Hitachi Ops Center データコレクタ</block>
   <block id="317ca49a534ef6dc0317a60fdf058fef" category="paragraph">このデータコレクタは、 Hitachi Ops Center の統合されたアプリケーションスイートを使用して、複数のストレージデバイスのインベントリとパフォーマンスのデータにアクセスします。インベントリと容量を検出するには、 Operations Center のインストールに「 Common Services 」と「 Administrator 」の両方のコンポーネントを含める必要があります。パフォーマンス収集では、さらに「 Analyzer 」を導入する必要があります。</block>
@@ -16008,7 +15974,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">ONTAPスイッチデータの収集</block>
   <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">スイッチ情報</block>
   <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">権限</block>
-  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 設定：</block>
   <block id="cce3c9f8c5193ee861459b69a1aed6b4" category="cell">クラスタスイッチ指標</block>
   <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">Cloud Insightsでクラスタスイッチのデータを収集できるようにします。Cloud Insights側でこれを有効にするだけでなく、次の機能を提供するようにONTAPシステムを設定する必要があります。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、およびが正しいことを確認します。 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> は、スイッチデータをCloud Insightsに送信できるように設定されています。下記の「権限に関する注意事項」を参照してください。</block>
   <block id="466b14af7b02408eac035880aecf9915" category="paragraph">クラスタスイッチのデータを収集する場合は、次の作業を行います。</block>
@@ -16023,4 +15988,17 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
 
 詳細については、「プロキシについて」を参照してください。 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> または <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
   <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">CSUSER WITH_CLUSTER_CREDENTIALの場合は、ONTAPコマンドラインから次のコマンドを実行します。_csrestrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。</block>
+  <block id="d7a15f16d93378f9428254d47703abd2" category="section-title">2024年3月</block>
+  <block id="375ee0c976167dd35b8f93758415f360" category="section-title">ワークロードセキュリティエージェントの詳細</block>
+  <block id="a59325a77a64da5b76b0405b20ca4aa1" category="paragraph">各ワークロードセキュリティエージェントには独自のランディングページがあり、エージェントに関する概要情報だけでなく、そのエージェントに関連付けられているインストール済みのデータコレクタおよびユーザディレクトリコレクタも簡単に確認できます。</block>
+  <block id="1ebfa37f92431bca4f057938f83d738b" category="inline-image-macro">エージェント詳細ランディングページの例</block>
+  <block id="bf03dc5843be707280c57c5a93024db8" category="paragraph"><block ref="bf03dc5843be707280c57c5a93024db8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9661fefae66a141a067dc636d0fea82a" category="section-title">より多くのデータを迅速にグラフ化</block>
+  <block id="ca7f408ca9b8a293ab5c4fdeac08cd5e" category="paragraph">アセットのランディングページのデータを分析する際に、エキスパートビューのグラフに簡単にデータを追加できます。ランディングページの各テーブルで、オブジェクトタイプに関連データがある場合は、そのオブジェクトにカーソルを合わせると、[エキスパートビューに追加]アイコンが表示されます。このアイコンを選択すると、そのオブジェクトが[Additional Resources]に追加され、[Expert View]チャートに表示されます。</block>
+  <block id="cff2d6fe0f7f87e18aab8d5161b8ea50" category="inline-image-macro">エキスパートビューへのテーブルデータの追加</block>
+  <block id="e5c53045d0520fd4816c1ccc930d7386" category="paragraph"><block ref="e5c53045d0520fd4816c1ccc930d7386" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">ランディングページの表のデータを独自のグラフで表示することもできます。[_Show Chart_]アイコンを選択すると、テーブルの下にグラフが表示されます。</block>
+  <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">グラフアイコンを表示</block>
+  <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 設定：</block>
 </blocks>
