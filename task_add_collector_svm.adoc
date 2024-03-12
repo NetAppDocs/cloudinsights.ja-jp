@@ -167,7 +167,7 @@ csuser with _svm_credentialsの場合は、ONTAPコマンドラインから次�
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
-詳細については、 <<concept_ws_integration_with_ontap_access_denied.html,ONTAPアクセス拒否との統合>>
+詳細については、 link:\concept_ws_integration_with_ontap_access_denied.html["ONTAPアクセス拒否との統合"]
 
 
 

@@ -53,7 +53,7 @@ csuser with _svm_credentialsの場合は、ONTAPコマンドラインから次�
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
-その他の設定について詳しくは、こちらをご覧ください <<task_add_collector_svm.html,ONTAP 権限>>。
+その他の設定について詳しくは、こちらをご覧ください link:\task_add_collector_svm.html["ONTAP 権限"]。
 
 
 
