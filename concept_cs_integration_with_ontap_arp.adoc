@@ -62,6 +62,8 @@ security login rest-role create -role arwrole -api /api/storage/volumes -access 
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
 ....
+その他の設定について詳しくは、こちらをご覧ください <<task_add_collector_svm.html,ONTAP 権限>>。
+
 
 
 == アラートの例
