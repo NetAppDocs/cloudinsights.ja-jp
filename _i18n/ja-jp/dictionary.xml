@@ -16006,4 +16006,31 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、9.13.1よりも新しいバージョンのData ONTAPを使用してください。</block>
   <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">詳細については、 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">詳細については、 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
+  <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP RESTデータコレクタ</block>
+  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP RESTデータコレクタ</block>
+  <block id="51c8777ccbe8cbbe060fa364f308995c" category="paragraph">このデータコレクタは、ONTAPアカウントからの読み取り専用REST API呼び出しを使用して、ONTAPを実行しているストレージシステムからインベントリとパフォーマンスのデータを取得します。このデータコレクタは、サポートを高速化するために、クラスタアプリケーションレジストリにレコードを作成します。</block>
+  <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS–ノードオブジェクトに対するONTAP REST呼び出しから直接導出されます。</block>
+  <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">レイテンシ–ノードオブジェクトに対するONTAP REST呼び出しから直接導出されます。</block>
+  <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">スループット–ノードオブジェクトに対するONTAP REST呼び出しから直接導出されます。</block>
+  <block id="4493cd6343183bf0a790cf01a53cddd1" category="list-text">読み取り専用REST API呼び出し用に設定された管理者アカウントへのアクセス権が必要です。</block>
+  <block id="cc5802bcc5281dcb68264fed31e4a4a1" category="cell">ONTAP管理IPアドレス</block>
+  <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP RESTユーザ名</block>
+  <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP RESTパスワード</block>
+  <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">デフォルトは60秒です。</block>
+  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。</block>
+  <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">EMSイベント収集を有効にする</block>
+  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">ONTAP EMSログイベントデータを含める場合に選択します。</block>
+  <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMSポーリング間隔（秒）</block>
+  <block id="961f9cd0cfe447f73a20455c4f8f7973" category="paragraph">また、ONTAP REST APIへの書き込み権限が有効になっていることを確認する必要があります。通常は、必要な権限を持つアカウントがクラスタレベルで必要になります。</block>
+  <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">次のコマンドを使用してロールを作成します。</block>
+  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login resT-role create -role｛role name｝-api/api-access readonly
+security login rest -role create -role｛role name｝-api/cluster/agents -access all</block>
+  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver services web access create -name spi -role｛role name｝-vserver｛name from above command｝
+security login create -user-or-group-name｛username｝-application http-authentication-method password -role｛role name｝</block>
+  <block id="7483de82186016bc69ffb8a75489f338" category="cell">ONTAP RESTデータコレクタを作成しようとすると、次のようなエラーが表示されます。
+設定：10.193.70.14：10.193.70.14のONTAP REST APIを使用できません。10.193.70.14で/api/clusterを取得できませんでした：400 Bad Request</block>
+  <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">これは、古いONTAPアレイ（ONTAP 9.6など）にREST API機能がないことが原因である可能性があります。ONTAP 9.14.1は、ONTAP RESTコレクタでサポートされるONTAPの最小バージョンです。REST ONTAPより前のリリースでは、「400 Bad Request」応答が想定されます。
+
+RESTをサポートしているが9.14.1以降ではないONTAPバージョンでは、次のようなsimillarメッセージが表示されることがあります。
+Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用できません。10.193.98.84：ONTAP REST API（10.193.98.84）が使用可能です。cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7以上のバージョンではありません。</block>
 </blocks>
