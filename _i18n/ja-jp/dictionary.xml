@@ -16008,11 +16008,9 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">詳細については、 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP RESTデータコレクタ</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP RESTデータコレクタ</block>
-  <block id="51c8777ccbe8cbbe060fa364f308995c" category="paragraph">このデータコレクタは、ONTAPアカウントからの読み取り専用REST API呼び出しを使用して、ONTAPを実行しているストレージシステムからインベントリとパフォーマンスのデータを取得します。このデータコレクタは、サポートを高速化するために、クラスタアプリケーションレジストリにレコードを作成します。</block>
   <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS–ノードオブジェクトに対するONTAP REST呼び出しから直接導出されます。</block>
   <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">レイテンシ–ノードオブジェクトに対するONTAP REST呼び出しから直接導出されます。</block>
   <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">スループット–ノードオブジェクトに対するONTAP REST呼び出しから直接導出されます。</block>
-  <block id="4493cd6343183bf0a790cf01a53cddd1" category="list-text">読み取り専用REST API呼び出し用に設定された管理者アカウントへのアクセス権が必要です。</block>
   <block id="cc5802bcc5281dcb68264fed31e4a4a1" category="cell">ONTAP管理IPアドレス</block>
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP RESTユーザ名</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP RESTパスワード</block>
@@ -16021,7 +16019,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">EMSイベント収集を有効にする</block>
   <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">ONTAP EMSログイベントデータを含める場合に選択します。</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMSポーリング間隔（秒）</block>
-  <block id="961f9cd0cfe447f73a20455c4f8f7973" category="paragraph">また、ONTAP REST APIへの書き込み権限が有効になっていることを確認する必要があります。通常は、必要な権限を持つアカウントがクラスタレベルで必要になります。</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">次のコマンドを使用してロールを作成します。</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login resT-role create -role｛role name｝-api/api-access readonly
 security login rest -role create -role｛role name｝-api/cluster/agents -access all</block>
@@ -16033,4 +16030,10 @@ security login create -user-or-group-name｛username｝-application http-authent
 
 RESTをサポートしているが9.14.1以降ではないONTAPバージョンでは、次のようなsimillarメッセージが表示されることがあります。
 Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用できません。10.193.98.84：ONTAP REST API（10.193.98.84）が使用可能です。cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7以上のバージョンではありません。</block>
+  <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">このデータコレクタは、REST API呼び出しを使用して、ONTAP 9.14.1以降を実行するストレージシステムからインベントリ、EMSログ、パフォーマンスデータを取得します。以前のリリースのONTAPシステムでは、ZAPIベースの「NetApp ONTAPデータ管理ソフトウェア」コレクタタイプを使用します。</block>
+  <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insightsは、ONTAPデータコレクタからインベントリ、ログ、およびパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="5eeda23f92dad663daa058631cc10210" category="list-text">シリアル番号–アレイUUID</block>
+  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">必要なアクセスレベルを持つユーザアカウントへのアクセス権が必要です。</block>
+  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">機能的にはCloud Insightsは読み取り要求を行いますが、CIをONTAPアレイに登録するには書き込み権限が必要です。以下の「アクセス権に関する注意」を参照してください。</block>
+  <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">Cloud InsightsのONTAPダッシュボードの多くは、高度なONTAPカウンタに依存しているため、データコレクタの詳細設定セクションで「高度なカウンタデータ収集を有効にする」*を有効にしておく必要があります。</block>
 </blocks>
