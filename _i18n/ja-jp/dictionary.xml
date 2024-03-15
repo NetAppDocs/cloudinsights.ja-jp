@@ -3549,7 +3549,6 @@ Time Filebucketの略
   <block id="ac60c998c7a8dc4dde987fedb05c0f55" category="paragraph">これで Latency の線が Latency 用の目盛りでグラフの右側に表示されます。</block>
   <block id="7dbc268ba4014394e1084d227d3b8b49" category="image-alt">2 次軸の例</block>
   <block id="05e5b67cad098092f46a63799fe75cca" category="section-title">ウィジェットの式</block>
-  <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">ダッシュボードでは、任意の時系列ウィジェット（折れ線、スプライン、面、積み上げ面）、単一値、 または Gauge Widget を使用すると、選択した指標で式を作成し、それらの式の結果を 1 つのグラフに表示できます。次の例では、式を使用して特定の問題を解決します。最初の例は、環境内のすべてのストレージアセットの合計 IOPS に占める読み取り IOPS の割合を表示するウィジェットです。2 つ目の例では、環境内で発生した「システム」または「オーバーヘッド」の IOPS を可視化しています。これらの IOPS は、データの読み取りや書き込みから直接ではありません。</block>
   <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">式で変数を使用できます（例： _$var1 * 100_ ）。</block>
   <block id="dba748e01f6c17fbbaa14a2441a39cb7" category="section-title">式の例：読み取り IOPS の割合</block>
   <block id="ce28af985b1b52bd86ddbc97a3281b27" category="paragraph">この例では、合計 IOPS に占める読み取り IOPS の割合をウィジェットに表示します。これは次の式と考えることができます。</block>
@@ -3567,7 +3566,6 @@ Time Filebucketの略
   <block id="a03c76235dfe1278dd742bbf81c45283" category="list-text">[ 単位 *] フィールドを "%" または "percent" に変更します。</block>
   <block id="296ee886ac2db46f818124c2c72ace21" category="paragraph">グラフに、選択したストレージデバイスの読み取り IOPS の割合が時系列で表示されます。必要に応じて、フィルタを設定するか、別の集計方法を選択できます。集計方法として [ 合計 ] を選択すると、すべてのパーセント値が一緒に追加され、 100% を超える可能性があることに注意してください。</block>
   <block id="8cc1f1662d28c12dd361aa641ce8a9de" category="list-text">グラフをダッシュボードに保存するには、 * 保存 * をクリックします。</block>
-  <block id="ff66fe277c0c407bea9d4ee21c5148f3" category="paragraph">折れ線グラフ、スプライングラフ、または積み上げ面グラフウィジェットで式を使用することもできます。</block>
   <block id="2164661e44bb6d157bb0697319a902cb" category="section-title">式の例：システム I/O</block>
   <block id="247041ff979b61cd999f4f2c24a31eb9" category="paragraph">例 2 ：データソースから収集した指標の中には、読み取り IOPS 、書き込み IOPS 、合計 IOPS があります。ただし、データソースで報告される IOPS の合計数には、「システム」 IOPS が含まれていることがあります。これらは、データの読み取りや書き込みとは直接関係のない I/O 処理です。このシステム I/O はオーバーヘッド I/O と考えることもできますが、適切なシステム運用には必要ですが、データの運用には直接関係しているわけではありません。</block>
   <block id="423d1df3523f2a34cef35f332f00c002" category="paragraph">これらのシステム I/O を表示するには、収集によって報告された合計 IOPS から読み取り IOPS と書き込み IOPS を差し引きます。式は次のようになります。</block>
@@ -16037,4 +16035,10 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">機能的にはCloud Insightsは読み取り要求を行いますが、Cloud InsightsをONTAPアレイに登録するには書き込み権限が必要です。を参照してください <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 下。</block>
   <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。デフォルトは有効です。</block>
   <block id="19decc8950209e44f521507a99ab0792" category="cell">ONTAP EMSログイベントデータを含める場合に選択します。デフォルトは有効です。</block>
+  <block id="b8da12392eaf9647590629afc8e5e321" category="inline-xref">表ウィジェット</block>
+  <block id="c886b395cb0cef3864cbd88d54b558b3" category="paragraph">ダッシュボードでは、時系列ウィジェット（折れ線、スプライン、面、積み上げ面）の棒グラフ、棒グラフ、円グラフ、または表ウィジェットを使用して、選択した指標から式を作成し、それらの式の結果を単一のグラフ（ <block ref="71a5b5d38cba985f9b4b8f746073d5cb" category="inline-xref-macro-rx"></block>）。次の例では、式を使用して特定の問題を解決します。最初の例は、環境内のすべてのストレージアセットの合計 IOPS に占める読み取り IOPS の割合を表示するウィジェットです。2 つ目の例では、環境内で発生した「システム」または「オーバーヘッド」の IOPS を可視化しています。これらの IOPS は、データの読み取りや書き込みから直接ではありません。</block>
+  <block id="4b10d5d55ab9803778e910ea6ce31bf3" category="section-title">表ウィジェットの式</block>
+  <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">表ウィジェットでは、式の処理方法が少し異なります。1つの表ウィジェットに最大5つの式を設定でき、それぞれが新しい列として表に追加されます。各式には、計算を実行するための最大5つの値を含めることができます。列に意味のある名前を簡単に付けることができます。</block>
+  <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">表ウィジェットの式</block>
+  <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
