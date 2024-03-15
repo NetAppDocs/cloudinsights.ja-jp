@@ -16015,9 +16015,7 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP RESTユーザ名</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP RESTパスワード</block>
   <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">デフォルトは60秒です。</block>
-  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。</block>
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">EMSイベント収集を有効にする</block>
-  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">ONTAP EMSログイベントデータを含める場合に選択します。</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMSポーリング間隔（秒）</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">次のコマンドを使用してロールを作成します。</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login resT-role create -role｛role name｝-api/api-access readonly
@@ -16033,7 +16031,10 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">このデータコレクタは、REST API呼び出しを使用して、ONTAP 9.14.1以降を実行するストレージシステムからインベントリ、EMSログ、パフォーマンスデータを取得します。以前のリリースのONTAPシステムでは、ZAPIベースの「NetApp ONTAPデータ管理ソフトウェア」コレクタタイプを使用します。</block>
   <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insightsは、ONTAPデータコレクタからインベントリ、ログ、およびパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">シリアル番号–アレイUUID</block>
-  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">必要なアクセスレベルを持つユーザアカウントへのアクセス権が必要です。</block>
-  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">機能的にはCloud Insightsは読み取り要求を行いますが、CIをONTAPアレイに登録するには書き込み権限が必要です。以下の「アクセス権に関する注意」を参照してください。</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">Cloud InsightsのONTAPダッシュボードの多くは、高度なONTAPカウンタに依存しているため、データコレクタの詳細設定セクションで「高度なカウンタデータ収集を有効にする」*を有効にしておく必要があります。</block>
+  <block id="992ec6f152c405f64da205561d5810c3" category="list-text">必要なレベルのアクセス権を持つユーザアカウントへのアクセス権が必要です。新しいRESTユーザ/ロールを作成する場合はAdmin権限が必要です。</block>
+  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">権限に関する注意</block>
+  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">機能的にはCloud Insightsは読み取り要求を行いますが、Cloud InsightsをONTAPアレイに登録するには書き込み権限が必要です。を参照してください <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 下。</block>
+  <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。デフォルトは有効です。</block>
+  <block id="19decc8950209e44f521507a99ab0792" category="cell">ONTAP EMSログイベントデータを含める場合に選択します。デフォルトは有効です。</block>
 </blocks>

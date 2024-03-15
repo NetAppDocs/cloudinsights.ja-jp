@@ -111,12 +111,12 @@ Throughput –このストレージプールの容量の要因となっている
 
 このデータコレクタを設定して使用するための要件は次のとおりです。
 
-* 必要なアクセスレベルを持つユーザアカウントへのアクセス権が必要です。
+* 必要なレベルのアクセス権を持つユーザアカウントへのアクセス権が必要です。新しいRESTユーザ/ロールを作成する場合はAdmin権限が必要です。
 * アカウントの詳細には、ユーザ名とパスワードが含まれます。
 * ポートの要件：443
 * アカウントの権限：
 +
-** 機能的にはCloud Insightsは読み取り要求を行いますが、CIをONTAPアレイに登録するには書き込み権限が必要です。以下の「アクセス権に関する注意」を参照してください。
+** 機能的にはCloud Insightsは読み取り要求を行いますが、Cloud InsightsをONTAPアレイに登録するには書き込み権限が必要です。を参照してください <<a-note-about-permissions,権限に関する注意>> 下。
 
 
 
@@ -153,10 +153,10 @@ Throughput –このストレージプールの容量の要因となっている
 | パフォーマンスポーリング間隔（秒） | デフォルトは60秒です。 
 
 
-| 高度なカウンタデータ収集 | ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。 
+| 高度なカウンタデータ収集 | ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。デフォルトは有効です。 
 
 
-| EMSイベント収集を有効にする | ONTAP EMSログイベントデータを含める場合に選択します。 
+| EMSイベント収集を有効にする | ONTAP EMSログイベントデータを含める場合に選択します。デフォルトは有効です。 
 
 
 | EMSポーリング間隔（秒） | デフォルトは60秒です。 
@@ -241,8 +241,8 @@ AD / LDAP アカウントを使用する場合は、コマンドをに設定し�
 Role Command/ Access
 Vserver Name Directory Query Level
 ---------- ------------- --------- ------------------ --------
-cluster1 ci_readonly DEFAULT read only
-cluster1 ci_readonly security readonly
+cluster1   ci_readonly   DEFAULT   read only
+cluster1   ci_readonly   security  read only
 ....
 ....
 cluster1::security login> show
@@ -250,7 +250,7 @@ Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
-ci_user     ontapi      password    ci_readonly   no
+ci_user     ontapi       password    ci_readonly    no
 ....
 
 
