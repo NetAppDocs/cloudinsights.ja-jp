@@ -51,8 +51,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == 機能を有効にする方法
 
-* ワークロードセキュリティで、[管理者]>[自動応答ポリシー]>[応答ポリシーの設定]>[ブロックユーザーアクセス*]の順に選択します。
-* [Enable Block User Access]を[enable_enabled_]に設定します。
+* [Workload Security]で、*[Workload Security]>[Policies]>[Automated Response Policies]*に移動します。  [*+ Attack Policy]*を選択します。
+* [_Block User File Access]を選択（チェック）します。
 
 
 
@@ -94,8 +94,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 この機能はいつでも無効にできます。システム内に制限のあるユーザがいる場合は、アクセスを先にリストアする必要があります。
 
-* ワークロードセキュリティで、[管理者]>[自動応答ポリシー]>[応答ポリシーの設定]>[ブロックユーザーアクセス*]の順に選択します
-* 無効にするには、[ブロックユーザーアクセスを有効にする]をオフにします。
+* [Workload Security]で、*[Workload Security]>[Policies]>[Automated Response Policies]*に移動します。  [*+ Attack Policy]*を選択します。
+* [_Block User File Access]の選択を解除します（オフにします）。
 
 
 この機能はすべてのページで非表示になります。

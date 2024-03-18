@@ -327,8 +327,6 @@ SecurityContextConstraintsに関連するエラーがある場合は、次の手
   <block id="4965f6590d5121fa73cf823f64ef219b" category="paragraph">ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってワークロードセキュリティにユーザをブロックする権限を付与します。</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">機能を有効にする方法</block>
-  <block id="8e0c9f34f42be5c07c87ecae239a8823" category="list-text">ワークロードセキュリティで、[管理者]&gt;[自動応答ポリシー]&gt;[応答ポリシーの設定]&gt;[ブロックユーザーアクセス*]の順に選択します。</block>
-  <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">[Enable Block User Access]を[enable_enabled_]に設定します。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">自動ユーザアクセスブロックの設定方法</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">新しい攻撃ポリシーを作成するか、既存の攻撃ポリシーを編集します。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">攻撃ポリシーを監視する SVM を選択します。</block>
@@ -346,8 +344,6 @@ SecurityContextConstraintsに関連するエラーがある場合は、次の手
   <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">［アラートの詳細とユーザーの詳細］ページのユーザーパネルで、ユーザーのアクセス制限履歴（時間、アクション（ブロック、ブロック解除）、期間、実行されたアクション）の監査を表示できます。 手動/自動、およびNFSの影響を受けるIP。</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">機能を無効にする方法</block>
   <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">この機能はいつでも無効にできます。システム内に制限のあるユーザがいる場合は、アクセスを先にリストアする必要があります。</block>
-  <block id="d9c1a964d322cb7ed68da85eaa8a06b0" category="list-text">ワークロードセキュリティで、[管理者]&gt;[自動応答ポリシー]&gt;[応答ポリシーの設定]&gt;[ブロックユーザーアクセス*]の順に選択します</block>
-  <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">無効にするには、[ブロックユーザーアクセスを有効にする]をオフにします。</block>
   <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">この機能はすべてのページで非表示になります。</block>
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">NFSのIPを手動でリストア</block>
   <block id="ef3c0a55c240483a8b3ffe2b395d514d" category="paragraph">ワークロードセキュリティトライアルの期限が切れた場合、またはエージェント/コレクタがダウンした場合に、ONTAP からIPを手動で復元するには、次の手順を実行します。</block>
@@ -15761,8 +15757,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlexゲートウェイのIPアドレスまたはFQDN（カンマ（,）またはセミコロン（;）で区切ったもの</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用する管理者ユーザー名</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">ScaleIO/PowerFlexデバイスへのログインに使用するパスワード</block>
-  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです
-また、Domain Read Only権限が必要です。</block>
   <block id="dada9839975856f2fd06228d265fea07" category="list-text">ネットワーク監視：</block>
   <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Linuxカーネルバージョン4.18.0以降が必要</block>
   <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">Photon OSはサポートされていません。</block>
@@ -16041,4 +16035,11 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">表ウィジェットでは、式の処理方法が少し異なります。1つの表ウィジェットに最大5つの式を設定でき、それぞれが新しい列として表に追加されます。各式には、計算を実行するための最大5つの値を含めることができます。列に意味のある名前を簡単に付けることができます。</block>
   <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">表ウィジェットの式</block>
   <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">ディレクトリの検索が許可されています。たとえば、 _username@companyname.com_ や _username@domainname.com_ などです
+また、Domain Read Only権限が必要です。
+ユーザは、セキュリティグループ_Read-Only Domain Controllers_のメンバーである必要があります。</block>
+  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">リンク：task_dc_brocade_rest.html</block>
+  <block id="690b59689f385d15b45ee131216725c7" category="list-text">[Workload Security]で、*[Workload Security]&gt;[Policies]&gt;[Automated Response Policies]*に移動します。  [*+ Attack Policy]*を選択します。</block>
+  <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">[_Block User File Access]を選択（チェック）します。</block>
+  <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">[_Block User File Access]の選択を解除します（オフにします）。</block>
 </blocks>
