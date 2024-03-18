@@ -175,7 +175,7 @@ csuser with _svm_credentialsの場合は、ONTAPコマンドラインから次�
 
 .設定の手順
 . Cloud Insights 環境に管理者またはアカウント所有者としてログインします。
-. [Observability]>[Collectors]>[+Data Collectors]*をクリックします。
+. [Workload Security]>[Collectors]>[+Data Collectors]*をクリックします。
 +
 使用可能なデータコレクタが表示されます。
 
