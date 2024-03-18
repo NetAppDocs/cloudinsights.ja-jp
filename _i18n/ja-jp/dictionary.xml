@@ -1591,7 +1591,6 @@ Cloud Central のプロファイルの E メールアドレスが Cloud Insights
   <block id="c4134f3d42be02defd9c28083deab940" category="list-text">EMC Unity データコレクタは、 NAS および iSCSI でインベントリをサポートしています。ファイバチャネルボリュームは検出されますが、 Cloud Insights では FC マッピング、マスキング、ストレージポートに関するレポートは作成されません。</block>
   <block id="57d5e0d738a7b9b51fbd2b265b3a1c52" category="paragraph">Cloud Insights は、 Unity データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="e22b6495595f2c4ad67a830d1be05c6e" category="cell">プロセッサ</block>
-  <block id="34c07cab78ed0e865a0f65e8c93c21fb" category="cell">一般的な iSCSI ブロック情報、 VMware VMFS</block>
   <block id="823c34885b0ed3470261b5a7d915fc12" category="cell">Replication Remote System の略</block>
   <block id="454c65346b592d2a6ddcf6e6cd91d9b3" category="cell">同期</block>
   <block id="1b5c8b57673db23e69bf32b928fab1da" category="cell">iSCSI ノード</block>
@@ -12929,7 +12928,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="b6070479612983d59fa5a6e72f7051b4" category="paragraph">データコレクタによって、ストレージデバイス、ネットワークスイッチ、仮想マシンなどのデータソースから情報が検出されます。収集された情報は、分析、検証、監視、およびトラブルシューティングに使用されます。</block>
   <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">Cloud Insights には、次の3種類のデータコレクタがあります。</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">インフラ（ストレージデバイス、ネットワークスイッチ、コンピューティングインフラ）</block>
-  <block id="31b29af38563f95fcd16900aef967adf" category="list-text">オペレーティングシステム（VMwareやWindowsなど）</block>
   <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">サービス（Kafkaなど）</block>
   <block id="06795a6787cf0dba942c7227d6c27d2d" category="paragraph">サポートされているベンダーとモデルから最初のデータコレクタを選択してください。あとでデータコレクタを簡単に追加できます。</block>
   <block id="5774c882dad1ebd6e046b3a9fdfae618" category="section-title">Acquisition Unit をインストールする</block>
@@ -15686,9 +15684,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="02892541231ed9b9797890da851659d1" category="section-title">FOS 9.1.1c以降のファームウェアに対するBrocade CLIコレクタの信頼性の向上</block>
   <block id="f451a3db1d946e0e6f7a6faff75241f4" category="paragraph">9.1.1cファームウェアを実行している一部のBrocadeファイバチャネルスイッチでは、特定のCLIコマンドの出力の先頭に「motd」ログインバナーテキストが付加されたり、ユーザがデフォルトのパスワードを変更するように警告が表示されたりすることがあります。Brocade CLIコレクタが拡張され、これら2種類の無関係なテキストが無視されるようになりました。</block>
   <block id="08cc9fe40f6d675ceb9852acf6cb4d2d" category="paragraph">この機能拡張以前は、仮想ファブリックが存在しないFOS 9.1.1cスイッチだけがこのコレクタタイプで検出されていました。</block>
-  <block id="fdbc837080bf746694718923941b3ca6" category="section-title">Cloud InsightsアノテーションへのVMwareタグのマッピング</block>
-  <block id="556f5b9e77a7546a1dbeab74aa1190e0" category="paragraph">VMwareデータコレクタを使用すると、VMwareで設定されているタグをCloud Insightsのアノテーションに入力できます。アノテーションにはVMwareタグとまったく同じ名前を付ける必要があります。Cloud Insights では、常に同じ名前のテキスト型アノテーションが入力され、他の型（数値、ブーリアンなど）のアノテーションの入力が「最良の試行」となります。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。</block>
-  <block id="8354fa58be11dc6519c7b2d92ba17795" category="paragraph">VMwareタグでは大文字と小文字が区別されますが、Cloud Insightsタグでは大文字と小文字が区別されません。そのため、Cloud Insightsで「owner」という名前のアノテーションを作成し、VMwareで「owner」、「Owner」、「owner」という名前のタグを作成すると、これらの「owner」のバリエーションはすべてCloud Insightの「owner」アノテーションにマッピングされます。</block>
   <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Cloud Insightsは現在、NetAppデバイスのサポート情報のみを自動公開しています。</block>
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">このサポート情報はアノテーション形式で保持されているため、クエリを実行したり、ダッシュボードで使用したりできます。</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">ユーザがアノテーション値を上書きまたは空にした場合は、Cloud Insightsでアノテーションが更新されると再び値が自動入力されます。更新は1日に1回行われます。</block>
@@ -16042,4 +16037,10 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="690b59689f385d15b45ee131216725c7" category="list-text">[Workload Security]で、*[Workload Security]&gt;[Policies]&gt;[Automated Response Policies]*に移動します。  [*+ Attack Policy]*を選択します。</block>
   <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">[_Block User File Access]を選択（チェック）します。</block>
   <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">[_Block User File Access]の選択を解除します（オフにします）。</block>
+  <block id="b1a9e545f7d7952c0575fd3c825b523c" category="section-title">Cloud InsightsアノテーションへのVMwareタグのマッピング</block>
+  <block id="98d5008742fe1974f056048f2891c18d" category="paragraph">VMwareデータコレクタを使用すると、VMwareで設定されているタグをCloud Insightsのアノテーションに入力できます。アノテーションにはVMwareタグとまったく同じ名前を付ける必要があります。Cloud Insights では、常に同じ名前のテキスト型アノテーションが入力され、他の型（数値、ブーリアンなど）のアノテーションの入力が「最良の試行」となります。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。</block>
+  <block id="8d1b85d225aca014c162676a1f06f465" category="paragraph">VMwareタグでは大文字と小文字が区別されますが、Cloud Insightsタグでは大文字と小文字が区別されません。そのため、Cloud Insightsで「owner」という名前のアノテーションを作成し、VMwareで「owner」、「Owner」、「owner」という名前のタグを作成すると、これらの「owner」のバリエーションはすべてCloud Insightの「owner」アノテーションにマッピングされます。</block>
+  <block id="865ccb9e69aad9a527770df196a2c282" category="list-text">オペレーティングシステム（VMwareやWindowsなど）</block>
+  <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">全般的なiSCSIブロック情報、VMware VMFS</block>
+  <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
 </blocks>

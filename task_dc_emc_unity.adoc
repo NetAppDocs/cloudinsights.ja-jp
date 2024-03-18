@@ -56,7 +56,7 @@ Cloud Insights は、 Unity データコレクタから次のインベントリ�
 | ストレージプール | ストレージプール 
 
 
-| 一般的な iSCSI ブロック情報、 VMware VMFS | 共有 
+| 全般的なiSCSIブロック情報、VMware VMFS | 共有 
 
 
 | Replication Remote System の略 | 同期 
