@@ -16001,10 +16001,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">EMSイベント収集を有効にする</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMSポーリング間隔（秒）</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">次のコマンドを使用してロールを作成します。</block>
-  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login resT-role create -role｛role name｝-api/api-access readonly
-security login rest -role create -role｛role name｝-api/cluster/agents -access all</block>
-  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver services web access create -name spi -role｛role name｝-vserver｛name from above command｝
-security login create -user-or-group-name｛username｝-application http-authentication-method password -role｛role name｝</block>
   <block id="7483de82186016bc69ffb8a75489f338" category="cell">ONTAP RESTデータコレクタを作成しようとすると、次のようなエラーが表示されます。
 設定：10.193.70.14：10.193.70.14のONTAP REST APIを使用できません。10.193.70.14で/api/clusterを取得できませんでした：400 Bad Request</block>
   <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">これは、古いONTAPアレイ（ONTAP 9.6など）にREST API機能がないことが原因である可能性があります。ONTAP 9.14.1は、ONTAP RESTコレクタでサポートされるONTAPの最小バージョンです。REST ONTAPより前のリリースでは、「400 Bad Request」応答が想定されます。
@@ -16061,4 +16057,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">WWNエイリアスのレポート</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">WWNエイリアスをレポートする場合に選択します</block>
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">FPolicyイベントのためのONTAPとの通信。ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。</block>
+  <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI-REST間のマッピング</block>
+  <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP RESTコレクタは、以前のONTAPIベースのコレクタの代わりに使用できます。そのため、収集または報告される指標が異なる場合があります。ONTAPIとRESTの違いの詳細については、を参照してください。 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> ドキュメント</block>
 </blocks>

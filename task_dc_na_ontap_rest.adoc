@@ -19,6 +19,9 @@ summary: ONTAP RESTデータコレクタ
 このデータコレクタは、REST API呼び出しを使用して、ONTAP 9.14.1以降を実行するストレージシステムからインベントリ、EMSログ、パフォーマンスデータを取得します。以前のリリースのONTAPシステムでは、ZAPIベースの「NetApp ONTAPデータ管理ソフトウェア」コレクタタイプを使用します。
 
 
+NOTE: ONTAP RESTコレクタは、以前のONTAPIベースのコレクタの代わりに使用できます。そのため、収集または報告される指標が異なる場合があります。ONTAPIとRESTの違いの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/ontap-restmap-9141/index.html["ONTAP 9.14.1 ONTAPI-REST間のマッピング"] ドキュメント
+
+
 
 == 用語集
 
@@ -212,21 +215,15 @@ Cloud InsightsのONTAPダッシュボードの多くは、高度なONTAPカウ�
 
 . 作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。
 . 次のコマンドを使用してロールを作成します。
-
-
-security login resT-role create -role｛role name｝-api/api-access readonly
-security login rest -role create -role｛role name｝-api/cluster/agents -access all
-
-vserver services web access create -name spi -role｛role name｝-vserver｛name from above command｝
-security login create -user-or-group-name｛username｝-application http-authentication-method password -role｛role name｝
-
++
 ....
- ////
-security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
- security login role create -role ci_readonly -cmddirname security -access readonly
- security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
- ////
+security login rest-role create -role {role name} -api /api -access readonly
+security login rest-role create -role {role name} -api /api/cluster/agents -access all
+vserver services web access create -name spi -role {role name} -vserver {name from above command}
+security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
+
+
 . 次のコマンドを使用して、読み取り専用ユーザを作成します。create コマンドを実行すると、このユーザのパスワードを入力するように求められます。
 +
  security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
