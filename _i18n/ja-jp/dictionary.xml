@@ -5438,7 +5438,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">ONTAP との API 通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000~55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM データ LIF の IP アドレス</block>
-  <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">FPolicy イベントのための ONTAP との通信</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">クラスタ管理</block>
@@ -16061,4 +16060,5 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">SSL経由の接続を有効にする場合に選択</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">WWNエイリアスのレポート</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">WWNエイリアスをレポートする場合に選択します</block>
+  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">FPolicyイベントのためのONTAPとの通信。ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。</block>
 </blocks>
