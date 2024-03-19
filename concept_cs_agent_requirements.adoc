@@ -83,46 +83,46 @@ USベースの*ワークロード・セキュリティー環境の場合：
 
 [cols="5*"]
 |===
-| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+| プロトコル | ポート | ソース | 宛先 | 説明 
 
 
-| TCP | 443年 | <site_name>.cs01.cloudinsights.netapp.com
+| TCP | 443年 | ワークロードセキュリティエージェント | <site_name>.cs01.cloudinsights.netapp.com
 <site_name>.c01.cloudinsights.netapp.com
-<site_name>.c02.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+<site_name>.c02.cloudinsights.netapp.com | Cloud Insights へのアクセス 
 
 
-| TCP | 443年 | gateway.c01.cloudinsights.netapp.com
-agentlogin.cs01.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+| TCP | 443年 | ワークロードセキュリティエージェント | gateway.c01.cloudinsights.netapp.com
+agentlogin.cs01.cloudinsights.netapp.com | 認証サービスへのアクセス 
 |===
 欧州*ベースのワークロード・セキュリティー環境の場合：
 
 [cols="5*"]
 |===
-| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+| プロトコル | ポート | ソース | 宛先 | 説明 
 
 
-| TCP | 443年 | <site_name>.cs01-eu-1.cloudinsights.netapp.com
+| TCP | 443年 | ワークロードセキュリティエージェント | <site_name>.cs01-eu-1.cloudinsights.netapp.com
 <site_name>.c01-eu-1.cloudinsights.netapp.com
-<site_name>.c02-eu-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+<site_name>.c02-eu-1.cloudinsights.netapp.com | Cloud Insights へのアクセス 
 
 
-| TCP | 443年 | gateway.c01.cloudinsights.netapp.com
-agentlogin.cs01-eu-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+| TCP | 443年 | ワークロードセキュリティエージェント | gateway.c01.cloudinsights.netapp.com
+agentlogin.cs01-eu-1.cloudinsights.netapp.com | 認証サービスへのアクセス 
 |===
 APACベースの*ワークロード・セキュリティ環境の場合：
 
 [cols="5*"]
 |===
-| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+| プロトコル | ポート | ソース | 宛先 | 説明 
 
 
-| TCP | 443年 | <site_name>.cs01-ap-1.cloudinsights.netapp.com
+| TCP | 443年 | ワークロードセキュリティエージェント | <site_name>.cs01-ap-1.cloudinsights.netapp.com
 <site_name>.c01-ap-1.cloudinsights.netapp.com
-<site_name>.c02-ap-1.cloudinsights.netapp.com | アウトバウンド | Cloud Insights へのアクセス 
+<site_name>.c02-ap-1.cloudinsights.netapp.com | Cloud Insights へのアクセス 
 
 
-| TCP | 443年 | gateway.c01.cloudinsights.netapp.com
-agentlogin.cs01-ap-1.cloudinsights.netapp.com | アウトバウンド | 認証サービスへのアクセス 
+| TCP | 443年 | ワークロードセキュリティエージェント | gateway.c01.cloudinsights.netapp.com
+agentlogin.cs01-ap-1.cloudinsights.netapp.com | 認証サービスへのアクセス 
 |===
 
 
@@ -132,23 +132,23 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com | アウトバウンド | 認証�
 
 [cols="5*"]
 |===
-| プロトコル | ポート | 宛先 | 方向（ Direction ） | 説明 
+| プロトコル | ポート | ソース | 宛先 | 説明 
 
 
 | TCP | 389（LDAP）
-636（LDAPS / START-TLS） | LDAP サーバ URL | アウトバウンド | LDAP に接続します 
+636（LDAPS / START-TLS） | ワークロードセキュリティエージェント | LDAP サーバ URL | LDAP に接続します 
 
 
-| TCP | 443年 | クラスタまたはSVMの管理IPアドレス（SVMコレクタの設定に応じて） | アウトバウンド | ONTAP との API 通信 
+| TCP | 443年 | ワークロードセキュリティエージェント | クラスタまたはSVMの管理IPアドレス（SVMコレクタの設定に応じて） | ONTAP との API 通信 
 
 
-| TCP | 35000~55000 | SVM データ LIF の IP アドレス | インバウンド | FPolicy イベントのための ONTAP との通信 
+| TCP | 35000~55000 | SVM データ LIF の IP アドレス | ワークロードセキュリティエージェント | FPolicy イベントのための ONTAP との通信 
 
 
-| TCP | 7. | SVM データ LIF の IP アドレス | アウトバウンド | ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。 
+| TCP | 7. | ワークロードセキュリティエージェント | SVM データ LIF の IP アドレス | ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。 
 
 
-| SSH | 22. | クラスタ管理 | アウトバウンド | CIFS / SMBユーザブロックに必要です。 
+| SSH | 22. | ワークロードセキュリティエージェント | クラスタ管理 | CIFS / SMBユーザブロックに必要です。 
 |===
 
 

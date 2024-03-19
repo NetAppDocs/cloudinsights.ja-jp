@@ -5408,11 +5408,9 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">Cloud Network Access Rules の略</block>
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">USベースの*ワークロード・セキュリティー環境の場合：</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">宛先</block>
-  <block id="02674a4ef33e11c879283629996c8ff8" category="cell">方向（ Direction ）</block>
   <block id="1e5d29d467aa39ff7343d30dc2f8de5b" category="cell">&lt;site_name&gt;.cs01.cloudinsights.netapp.com
 &lt;site_name&gt;.c01.cloudinsights.netapp.com
 &lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
-  <block id="4c32be4a0b4f48cdd593aef35fd69e44" category="cell">アウトバウンド</block>
   <block id="800d899720a1567094af6346ee35787a" category="cell">Cloud Insights へのアクセス</block>
   <block id="4ce4e8664144d2ca2f89818a65da41cc" category="cell">gateway.c01.cloudinsights.netapp.com
 agentlogin.cs01.cloudinsights.netapp.com</block>
@@ -5440,7 +5438,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">ONTAP との API 通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000~55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM データ LIF の IP アドレス</block>
-  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">インバウンド</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">FPolicy イベントのための ONTAP との通信</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP とワークロードセキュリティ間の単一方向。エージェントが SVM LIF に ping を送信します。</block>
@@ -16044,4 +16041,5 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">全般的なiSCSIブロック情報、VMware VMFS</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">[Workload Security]&gt;[Collectors]&gt;[+Data Collectors]*をクリックします。</block>
+  <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">ワークロードセキュリティエージェント</block>
 </blocks>
