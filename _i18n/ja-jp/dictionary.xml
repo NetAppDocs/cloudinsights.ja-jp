@@ -5394,10 +5394,6 @@ GC合計エクストラスリープ時間
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4 個の CPU コア</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16GB の RAM</block>
   <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">トラブルシューティング</block>
-  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">ディスクスペースは次の方法で割り当てる必要があります。
-/opt/netapp 35GB（最小）
-
-/optがNASストレージからマウントされたフォルダである場合は、ローカルユーザーがこのフォルダにアクセスできることを確認してください。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
   <block id="78280ee4e050e617aae8c514d1f4d00a" category="cell">100 Mbps~1 Gbpsイーサネット接続、静的IPアドレス、すべてのデバイスへのIP接続、およびワークロードセキュリティインスタンスへの必要なポート（80または443）</block>
   <block id="380053981c7042c95864932736052cac" category="paragraph">ワークロードセキュリティエージェントは、Cloud Insights Acquisition UnitやAgentと同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">50～55 GB
@@ -16059,4 +16055,11 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">FPolicyイベントのためのONTAPとの通信。ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI-REST間のマッピング</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP RESTコレクタは、以前のONTAPIベースのコレクタの代わりに使用できます。そのため、収集または報告される指標が異なる場合があります。ONTAPIとRESTの違いの詳細については、を参照してください。 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> ドキュメント</block>
+  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">ディスクスペースは次の方法で割り当てる必要があります。
+/opt/netapp 35GB（最小）
+
+注:ファイルシステムを作成できるように、少し余分なディスク領域を割り当てることをお勧めします。ファイルシステムに35GB以上の空きスペースがあることを確認します。
+
+
+/optがNASストレージからマウントされたフォルダである場合は、ローカルユーザーがこのフォルダにアクセスできることを確認してください。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
 </blocks>
