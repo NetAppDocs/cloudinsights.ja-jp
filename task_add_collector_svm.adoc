@@ -84,6 +84,27 @@ Vserver 名、 CIFS サーバ名、およびその他のフィールドが返さ
 
 
 
+== ユーザアクセスブロックの前提条件
+
+次の点に注意してください。 link:/cloudinsights/cs_restrict_user_access.html["ユーザアクセスブロック"]：
+
+この機能を使用するには、クラスタレベルのクレデンシャルが必要です。
+
+クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。
+
+ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってワークロードセキュリティにユーザをブロックする権限を付与します。
+
+クラスタクレデンシャルを持つ csuser の場合、 ONTAP コマンドラインから次の手順を実行します。
+
+....
+security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+security login role create -role csrole -cmddirname set -access all
+security login role create -role csrole -cmddirname "vserver cifs session" -access all
+security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
+security login role create -role csrole -cmddirname "vserver name-mapping" -access all
+....
+
+
 == アクセス権に関する注意事項
 
 

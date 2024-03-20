@@ -16063,4 +16063,7 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
 /optがNASストレージからマウントされたフォルダである場合は、ローカルユーザーがこのフォルダにアクセスできることを確認してください。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
+  <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">ユーザアクセスブロック</block>
+  <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">次の点に注意してください。 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
+  <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">の[Permissions]セクションを確認してください。 <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> ページも参照してください。</block>
 </blocks>
