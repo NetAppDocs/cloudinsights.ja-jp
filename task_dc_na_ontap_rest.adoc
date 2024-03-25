@@ -23,6 +23,18 @@ NOTE: ONTAP RESTコレクタは、以前のONTAPIベースのコレクタの代�
 
 
 
+== データ移行
+
+以前のONTAP（ONTAPI）データコレクタから新しいONTAP RESTコレクタに移行するには、次の手順を実行します。
+
+. RESTコレクタを追加し、同じユーザ/権限などをすべて入力します。 あなたは前のコレクターのために持っていました。
+. 前のコレクターを一時停止します
+. システムで約30分間データを収集します。この間、データの奇数は無視してください。
+. 残りの期間の後、RESTコレクタ上のデータの安定した継続が表示されます。
+
+
+
+
 == 用語集
 
 Cloud Insightsは、ONTAPデータコレクタからインベントリ、ログ、およびパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
@@ -51,6 +63,9 @@ Cloud Insightsは、ONTAPデータコレクタからインベントリ、ログ�
 
 
 | ボリューム | 内部ボリューム 
+
+
+| Storage Virtual Machine / SVM | Storage Virtual Machine の略 
 |===
 
 
@@ -115,6 +130,7 @@ Throughput –このストレージプールの容量の要因となっている
 このデータコレクタを設定して使用するための要件は次のとおりです。
 
 * 必要なレベルのアクセス権を持つユーザアカウントへのアクセス権が必要です。新しいRESTユーザ/ロールを作成する場合はAdmin権限が必要です。
+* ONTAPバージョン9.14.1以降。
 * アカウントの詳細には、ユーザ名とパスワードが含まれます。
 * ポートの要件：443
 * アカウントの権限：
@@ -133,7 +149,7 @@ Throughput –このストレージプールの容量の要因となっている
 | フィールド | 説明 
 
 
-| ONTAP管理IPアドレス | ネットアップクラスタの IP アドレスまたは完全修飾ドメイン名 
+| ONTAP管理IPアドレス | NetAppクラスタのIPアドレスまたは完全修飾ドメイン名。クラスタ管理IP / FQDNを指定する必要があります。 
 
 
 | ONTAP RESTユーザ名 | ネットアップクラスタのユーザ名 
@@ -214,41 +230,47 @@ Cloud InsightsのONTAPダッシュボードの多くは、高度なONTAPカウ�
 クラスタレベルで Cloud Insights のローカルアカウントを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。
 
 . 作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。
+. タイプが_admin_のSVMの名前を取得します。この名前は以降のコマンドで使用します。
++
+ vserver show -type admin
 . 次のコマンドを使用してロールを作成します。
 +
 ....
 security login rest-role create -role {role name} -api /api -access readonly
 security login rest-role create -role {role name} -api /api/cluster/agents -access all
-vserver services web access create -name spi -role {role name} -vserver {name from above command}
+vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
 security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
-
-
 . 次のコマンドを使用して、読み取り専用ユーザを作成します。create コマンドを実行すると、このユーザのパスワードを入力するように求められます。
 +
- security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
+ security login create -username ci_user -application http -authentication-method password -role ci_readonly
 
 
 AD / LDAP アカウントを使用する場合は、コマンドをに設定します
 
- security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
 作成されるロールとユーザログインは次のようになります。実際の出力は以下のように異なる場合があります
 
-....
-Role Command/ Access
-Vserver Name Directory Query Level
----------- ------------- --------- ------------------ --------
-cluster1   ci_readonly   DEFAULT   read only
-cluster1   ci_readonly   security  read only
-....
-....
-cluster1::security login> show
-Vserver: cluster1
-Authentication Acct
-UserName    Application   Method      Role Name      Locked
----------   -------      ----------- -------------- --------
-ci_user     ontapi       password    ci_readonly    no
-....
+[listing]
+----
+security login rest-role show -vserver <vserver name> -role restRole
+
+               Role                                    Access
+Vserver        Name            API                     Level
+----------     -------------   -------------------     ------
+<vserver name> restRole        /api                    readonly
+                               /api/cluster/agents     all
+2 entries were displayed.
+
+security login show -vserver <vserver name> -user-or-group-name restUser
+
+Vserver: <vserver name>
+                                                                 Second
+User/Group                 Authentication                 Acct   Authentication
+Name           Application Method        Role Name        Locked Method
+-------------- ----------- ------------- ---------------- ------ --------------
+restUser       http        password      restRole         no     none
+----
 
 
 == トラブルシューティング
@@ -265,5 +287,8 @@ ci_user     ontapi       password    ci_readonly    no
 
 RESTをサポートしているが9.14.1以降ではないONTAPバージョンでは、次のようなsimillarメッセージが表示されることがあります。
 Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用できません。10.193.98.84：ONTAP REST API（10.193.98.84）が使用可能です。cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7以上のバージョンではありません。 
+
+
+| ONTAP ONTAPIコレクタにデータが表示される場合、空または「0」の指標が表示されます。 | ONTAP RESTでは、ONTAPシステムの内部でのみ使用される指標はレポートされません。たとえば、システムアグリゲートはONTAP RESTでは収集されず、タイプが「data」のSVMのみが収集されます。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。
