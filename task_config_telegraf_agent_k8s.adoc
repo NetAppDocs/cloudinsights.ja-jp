@@ -260,16 +260,16 @@ NetApp Monitoring Operatorのインストールタイルから[Image Pull Snippe
 Core Operator Functionality and Kubernetes Monitoringの略
 
 * ネットアップによる監視
-* kube-rbac-proxyの略
-* kube-state-metricsの略
-* テレグラフ
+* ci-kube-rbac-proxy
+* CI-KSM
+* CI-テレグラフ
 * distroless-root-user
 
 
 イベントログ
 
-* Fluent-bit
-* kubernetes-event-exporterの略
+* CI-fluent-bit
+* ci-kubernetes-event-exporter
 
 
 ネットワークのパフォーマンスとマップ
@@ -282,7 +282,7 @@ Core Operator Functionality and Kubernetes Monitoringの略
 operator-deployment.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。
 
 ....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
 operator-config.yamlのAgentConfigurationを編集して、新しいDockerリポジトリの場所を反映します。プライベートリポジトリ用に新しいimagePullSecretを作成します。詳細については、_ https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_を参照してください

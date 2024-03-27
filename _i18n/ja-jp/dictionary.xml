@@ -13246,7 +13246,6 @@ Windows サービスを使用して取得を再開します</block>
   <block id="d43e029b6a4626717198326d15889721" category="list-text">監視機能でバックエンドのパフォーマンスの問題をプロアクティブに検出します</block>
   <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">公差と接線（Tolerations and Taints）</block>
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">（_AgentConfiguration_）をクリックします</block>
-  <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">_telegraf_、_fluent-bit_、および_net-observer_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">塗料および耐性</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">Kubernetesの詳細はこちらをご覧ください <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">dockerMetricCollectionEnabled</block>
@@ -16078,4 +16077,10 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">RESTコレクタを追加し、同じユーザ/権限などをすべて入力します。 あなたは前のコレクターのために持っていました。</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">FPolicyイベントのONTAPからワークロードセキュリティエージェントへの通信。  ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">エージェントからSVMのデータLIFへのエコー</block>
+  <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">NetApp-ci-telegraf-ds_、_NetApp-CI-fluent-bit-ds_、および_NetApp-CI-net-observer-l4-DS_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。</block>
+  <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">ci-kube-rbac-proxy</block>
+  <block id="67efe5df179f0f50a5a5e82fd46a07fc" category="list-text">CI-KSM</block>
+  <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">CI-テレグラフ</block>
+  <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">CI-fluent-bit</block>
+  <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">ci-kubernetes-event-exporter</block>
 </blocks>

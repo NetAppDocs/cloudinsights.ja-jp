@@ -214,7 +214,7 @@ OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブ�
 
 === 公差と接線（Tolerations and Taints）
 
-_telegraf_、_fluent-bit_、および_net-observer_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます link:telegraf_agent_k8s_config_options.html["（_AgentConfiguration_）をクリックします"]。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。
+NetApp-ci-telegraf-ds_、_NetApp-CI-fluent-bit-ds_、および_NetApp-CI-net-observer-l4-DS_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます link:telegraf_agent_k8s_config_options.html["（_AgentConfiguration_）をクリックします"]。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。
 
 Kubernetesの詳細はこちらをご覧ください link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["塗料および耐性"]。
 
