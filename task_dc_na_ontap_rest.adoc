@@ -23,16 +23,123 @@ NOTE: ONTAP RESTコレクタは、以前のONTAPIベースのコレクタの代�
 
 
 
+== 要件
+
+このデータコレクタを設定して使用するための要件は次のとおりです。
+
+* 必要なレベルのアクセス権を持つユーザアカウントへのアクセス権が必要です。新しいRESTユーザ/ロールを作成する場合はAdmin権限が必要です。
++
+** 機能的には、Cloud Insightsは主に読み取り要求を行いますが、Cloud InsightsをONTAPアレイに登録するには一部の書き込み権限が必要です。下記の「Permissions_immediately」を参照してください。
+
+
+* ONTAPバージョン9.14.1以降。
+* ポートの要件：443
+
+
+
+
+== アクセス権に関する注意事項
+
+Cloud InsightsのONTAPダッシュボードの多くは、高度なONTAPカウンタに依存しているため、データコレクタの詳細設定セクションで「高度なカウンタデータ収集を有効にする」*を有効にしておく必要があります。
+
+クラスタレベルで Cloud Insights のローカルアカウントを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。
+
+. 作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。
+. タイプが_admin_のSVMの名前を取得します。この名前は以降のコマンドで使用します。
++
+ vserver show -type admin
+. 次のコマンドを使用してロールを作成します。
++
+....
+security login rest-role create -role {role name} -api /api -access readonly
+security login rest-role create -role {role name} -api /api/cluster/agents -access all
+vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
+security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
+....
+. 次のコマンドを使用して、読み取り専用ユーザを作成します。create コマンドを実行すると、このユーザのパスワードを入力するように求められます。
++
+ security login create -username ci_user -application http -authentication-method password -role ci_readonly
+
+
+AD / LDAP アカウントを使用する場合は、コマンドをに設定します
+
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
+作成されるロールとユーザログインは次のようになります。実際の出力は以下のように異なる場合があります
+
+[listing]
+----
+security login rest-role show -vserver <vserver name> -role restRole
+
+               Role                                    Access
+Vserver        Name            API                     Level
+----------     -------------   -------------------     ------
+<vserver name> restRole        /api                    readonly
+                               /api/cluster/agents     all
+2 entries were displayed.
+
+security login show -vserver <vserver name> -user-or-group-name restUser
+
+Vserver: <vserver name>
+                                                                 Second
+User/Group                 Authentication                 Acct   Authentication
+Name           Application Method        Role Name        Locked Method
+-------------- ----------- ------------- ---------------- ------ --------------
+restUser       http        password      restRole         no     none
+----
+
+
 == データ移行
 
 以前のONTAP（ONTAPI）データコレクタから新しいONTAP RESTコレクタに移行するには、次の手順を実行します。
 
-. RESTコレクタを追加し、同じユーザ/権限などをすべて入力します。 あなたは前のコレクターのために持っていました。
-. 前のコレクターを一時停止します
-. システムで約30分間データを収集します。この間、データの奇数は無視してください。
-. 残りの期間の後、RESTコレクタ上のデータの安定した継続が表示されます。
+. RESTコレクタを追加します。以前のコレクタ用に設定されたユーザとは別のユーザの情報を入力することを推奨します。たとえば、上記の「権限」セクションに記載されているユーザを使用します。
+. 前のコレクタを一時停止して、データの収集を継続しないようにします。
+. 新しいRESTコレクタで少なくとも30分間データを取得します。この期間中に「正常」に表示されないデータはすべて無視してください。
+. 残りの期間が経過すると、RESTコレクタがデータを取得し続けるため、データが安定します。
 
 
+必要に応じて、この同じプロセスを使用して前のコレクタに戻ることができます。
+
+
+
+== 設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| ONTAP管理IPアドレス | NetAppクラスタのIPアドレスまたは完全修飾ドメイン名。クラスタ管理IP / FQDNを指定する必要があります。 
+
+
+| ONTAP RESTユーザ名 | ネットアップクラスタのユーザ名 
+
+
+| ONTAP RESTパスワード | ネットアップクラスタのパスワード 
+|===
+
+
+== 高度な設定
+
+[cols="2*"]
+|===
+| フィールド | 説明 
+
+
+| インベントリポーリング間隔（分） | デフォルトは 60 分です。 
+
+
+| パフォーマンスポーリング間隔（秒） | デフォルトは60秒です。 
+
+
+| 高度なカウンタデータ収集 | ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。デフォルトは有効です。 
+
+
+| EMSイベント収集を有効にする | ONTAP EMSログイベントデータを含める場合に選択します。デフォルトは有効です。 
+
+
+| EMSポーリング間隔（秒） | デフォルトは60秒です。 
+|===
 
 
 == 用語集
@@ -125,63 +232,6 @@ Throughput –このストレージプールの容量の要因となっている
 
 
 
-== 要件
-
-このデータコレクタを設定して使用するための要件は次のとおりです。
-
-* 必要なレベルのアクセス権を持つユーザアカウントへのアクセス権が必要です。新しいRESTユーザ/ロールを作成する場合はAdmin権限が必要です。
-* ONTAPバージョン9.14.1以降。
-* アカウントの詳細には、ユーザ名とパスワードが含まれます。
-* ポートの要件：443
-* アカウントの権限：
-+
-** 機能的にはCloud Insightsは読み取り要求を行いますが、Cloud InsightsをONTAPアレイに登録するには書き込み権限が必要です。を参照してください <<a-note-about-permissions,権限に関する注意>> 下。
-
-
-
-
-
-
-== 設定
-
-[cols="2*"]
-|===
-| フィールド | 説明 
-
-
-| ONTAP管理IPアドレス | NetAppクラスタのIPアドレスまたは完全修飾ドメイン名。クラスタ管理IP / FQDNを指定する必要があります。 
-
-
-| ONTAP RESTユーザ名 | ネットアップクラスタのユーザ名 
-
-
-| ONTAP RESTパスワード | ネットアップクラスタのパスワード 
-|===
-
-
-== 高度な設定
-
-[cols="2*"]
-|===
-| フィールド | 説明 
-
-
-| インベントリポーリング間隔（分） | デフォルトは 60 分です。 
-
-
-| パフォーマンスポーリング間隔（秒） | デフォルトは60秒です。 
-
-
-| 高度なカウンタデータ収集 | ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。デフォルトは有効です。 
-
-
-| EMSイベント収集を有効にする | ONTAP EMSログイベントデータを含める場合に選択します。デフォルトは有効です。 
-
-
-| EMSポーリング間隔（秒） | デフォルトは60秒です。 
-|===
-
-
 == ONTAPの電力メトリック
 
 いくつかのONTAPモデルは、監視やアラートに使用できるCloud Insightsの電力メトリックを提供します。以下のサポートされているモデルとサポートされていないモデルのリストは包括的ではありませんが、いくつかのガイダンスを提供する必要があります。一般的に、モデルがリストのものと同じファミリーに属している場合、サポートは同じである必要があります。
@@ -221,56 +271,6 @@ FAS / AFF 8040
 FAS / AFF 8060
 FAS / AFF 8080
 
-
-
-== アクセス権に関する注意事項
-
-Cloud InsightsのONTAPダッシュボードの多くは、高度なONTAPカウンタに依存しているため、データコレクタの詳細設定セクションで「高度なカウンタデータ収集を有効にする」*を有効にしておく必要があります。
-
-クラスタレベルで Cloud Insights のローカルアカウントを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。
-
-. 作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。
-. タイプが_admin_のSVMの名前を取得します。この名前は以降のコマンドで使用します。
-+
- vserver show -type admin
-. 次のコマンドを使用してロールを作成します。
-+
-....
-security login rest-role create -role {role name} -api /api -access readonly
-security login rest-role create -role {role name} -api /api/cluster/agents -access all
-vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
-security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
-....
-. 次のコマンドを使用して、読み取り専用ユーザを作成します。create コマンドを実行すると、このユーザのパスワードを入力するように求められます。
-+
- security login create -username ci_user -application http -authentication-method password -role ci_readonly
-
-
-AD / LDAP アカウントを使用する場合は、コマンドをに設定します
-
- security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
-作成されるロールとユーザログインは次のようになります。実際の出力は以下のように異なる場合があります
-
-[listing]
-----
-security login rest-role show -vserver <vserver name> -role restRole
-
-               Role                                    Access
-Vserver        Name            API                     Level
-----------     -------------   -------------------     ------
-<vserver name> restRole        /api                    readonly
-                               /api/cluster/agents     all
-2 entries were displayed.
-
-security login show -vserver <vserver name> -user-or-group-name restUser
-
-Vserver: <vserver name>
-                                                                 Second
-User/Group                 Authentication                 Acct   Authentication
-Name           Application Method        Role Name        Locked Method
--------------- ----------- ------------- ---------------- ------ --------------
-restUser       http        password      restRole         no     none
-----
 
 
 == トラブルシューティング
