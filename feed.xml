@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloudinsights | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/ja-jp/cloudinsights/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/ja-jp/cloudinsights</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>ja-jp</language>
+    <ttl>60</ttl>
+    <pubDate>Wed, 27 Mar 2024 15:48:43 +0000</pubDate>
+    <lastBuildDate>Wed, 27 Mar 2024 15:48:43 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>Cloud Insightsの新機能 (8 Mar 2024)</title>
+      <pubDate>Fri, 08 Mar 2024 19:23:36 +0000</pubDate>
+      <link>https://docs.netapp.com/ja-jp/cloudinsights/concept_whats_new.html?time=1709925816</link>
+      <guid isPermaLink="false">Fri, 08 Mar 2024 19:23:36 +0000</guid>
+      <description><![CDATA[ Cloud Insights で利用できる新機能と特徴。 ]]></description>
+    </item>
+    
+    
+  </channel>
+</rss>
