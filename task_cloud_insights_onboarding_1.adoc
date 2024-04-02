@@ -38,7 +38,7 @@ toc::[]
 
 
 
-=== すでにネットアップクラウドへのログインがある場合はどうすればよいですか？
+=== NetApp BlueXPへのログインをすでにお持ちの場合はどうすればよいですか？
 
 NetApp BlueXPアカウントを取得したら、で*[ログイン]*を選択するだけです https://cloud.netapp.com["* NetApp BlueXPl *"^] ポータルページ。
 
@@ -78,7 +78,7 @@ NOTE: 新規ユーザが環境のURLにアクセスするには、引き続きBl
 
 == ログアウトしています
 
-Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。BlueXPのサインイン画面に戻ります。
+Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。次のページに戻ります： link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["BlueXPのサインイン"] 画面。
 
 
 NOTE: Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。

@@ -11666,7 +11666,6 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">会社名と氏名を入力します。</block>
   <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">利用条件に同意し、* Continue（続行）*を選択します。</block>
   <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXPのガイドに従って操作を開始します。</block>
-  <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">すでにネットアップクラウドへのログインがある場合はどうすればよいですか？</block>
   <block id="263bd04f886f846996f5ed624502bf8f" category="inline-link">* NetApp BlueXPl *</block>
   <block id="361b2969b0cdb055eb84b98514758bea" category="paragraph">NetApp BlueXPアカウントを取得したら、で*[ログイン]*を選択するだけです<block ref="87139ca7d238418aa56c6f30bb2cbebf" category="inline-link-rx"></block> ポータルページ。</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">E メールアドレスとパスワードを入力します。その後、ネットアップのクラウドサービスに関するページに移動します。</block>
@@ -16079,8 +16078,10 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">環境の作成が完了したら、いつでもNetApp BlueXPポータルにログインして* Go to Cloud Insights *をクリックするだけです。Cloud Insights 環境に直接移動します。</block>
   <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">また、 URL は各ユーザーの招待メールにも含まれ、簡単にアクセスしたりブックマークを付けたりできます。BlueXPにまだログインしていない場合は、ログインするように求められます。</block>
   <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">新規ユーザが環境のURLにアクセスするには、引き続きBlueXPへのアクセスに登録する必要があります。</block>
-  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。BlueXPのサインイン画面に戻ります。</block>
-  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">非アクティブ時のタイムアウト</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">操作がない状態が6時間（360分）続くと、デフォルトではBlueXPからユーザがログアウトされます。アクティビティに関係なく、ユーザは7日後にログアウトされます。</block>
+  <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">NetApp BlueXPへのログインをすでにお持ちの場合はどうすればよいですか？</block>
+  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXPのサインイン</block>
+  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。次のページに戻ります： <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 画面。</block>
+  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
 </blocks>
