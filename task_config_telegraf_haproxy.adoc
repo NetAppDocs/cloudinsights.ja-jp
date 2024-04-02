@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して HAProxy から�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [HAProxy] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[HAProxy]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して MongoDB から�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [MongoDB （ MongoDB ） ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[MongoDB]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

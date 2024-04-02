@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して Memcached から
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [Memcached （メモキャッシュ） ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。Memcachedを選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

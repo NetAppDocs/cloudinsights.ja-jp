@@ -25,7 +25,7 @@ Cloud Insights では、このデータコレクタを使用して OpenZFS か�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。「 * サービス」で「 OpenZFS 」を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[OpenZFS]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

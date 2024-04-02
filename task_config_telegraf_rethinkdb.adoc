@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して、 RepinkDB か�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [RethinkDB] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[RethinkDB]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して JVM からメト
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で [JVM] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。JVMを選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

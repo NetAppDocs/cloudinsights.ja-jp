@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して PostgreSQL か�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [PostgreSQL ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。PostgreSQLを選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

@@ -25,7 +25,7 @@ Cloud Insights では、このデータコレクタを使用して Apache Zookee
 
 == インストール
 
-. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。[*Services*] で、 [Apache Zookeeper] を選択します。
+. [*Admin] > [Data Collectors] で、 [*+[Data Collectors] をクリックします。[Apache Zookeeper]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

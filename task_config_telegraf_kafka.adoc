@@ -25,7 +25,7 @@ Cloud Insights では、このデータコレクタを使用して Kafka から�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。「 * Services 」で「 Kafka 」を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。Kafkaを選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

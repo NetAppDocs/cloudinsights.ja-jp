@@ -21,7 +21,7 @@ summary: Elasticsearch データコレクタの設定
 [role="lead"]
 Cloud Insights は、このデータコレクタを使用して Elasticsearch から指標を収集します。
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [Elasticsearch ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[Elasticsearch]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

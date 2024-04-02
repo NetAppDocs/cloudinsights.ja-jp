@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して Redis から指�
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services*]( サービス ) で '[Redis]( 再利用 ) を選択します
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。Redisを選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

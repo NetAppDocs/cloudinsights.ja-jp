@@ -25,7 +25,7 @@ Cloud Insights では、このデータコレクタを使用して Couchbase か
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[* サービス *] で、 [ カウチベース ] を選択します。
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[Couchbase]を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

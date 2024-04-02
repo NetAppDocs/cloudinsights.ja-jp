@@ -4720,8 +4720,6 @@ Blocks Write Timeの略
   <block id="3688337d7dae83e1ae45c29303993fc2" category="list-text">インフラ：ストレージアレイ、スイッチ、ハイパーバイザー、バックアップデバイスなどのベンダーのデバイスから購入</block>
   <block id="63bee0ce61faf34ba2eb5eaf1772a185" category="list-text">サービス： Kubernetes や Docker などのサービスから購入_ 連動 _ とも呼ばれます。</block>
   <block id="8d1b7e78620c4edd1b1cb04c457422e7" category="paragraph">Cloud Insights でサポートされているデータコレクタの ABC 順リスト：</block>
-  <block id="440599e693054b36db08ebf86d960001" category="inline-link-macro">ActiveMQ </block>
-  <block id="01c33ba55f3a95c562cab844795d98bf" category="cell"><block ref="01c33ba55f3a95c562cab844795d98bf" category="inline-link-macro-rx"></block></block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">サービス</block>
   <block id="9c767a6f4aebc77e391afa6a6ca9c4ca" category="inline-link-macro">Amazon EC2 および EBS </block>
   <block id="9fe90fd7f13100c2c90971039d08207b" category="cell"><block ref="9fe90fd7f13100c2c90971039d08207b" category="inline-link-macro-rx"></block></block>
@@ -6467,7 +6465,6 @@ Replica Managerの下のReplicated Partitions（レプリケーションパー�
   <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Apache Zookeeper データコレクタの設定</block>
   <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Zookeeper データコレクタ</block>
   <block id="7c19206117ce83d65989db0a25c382ee" category="paragraph">Cloud Insights では、このデータコレクタを使用して Apache Zookeeper から指標を収集します。</block>
-  <block id="9eacca645d0260ad873e91bf1da19a71" category="list-text">[*Admin] &gt; [Data Collectors] で、 [*+[Data Collectors] をクリックします。[*Services*] で、 [Apache Zookeeper] を選択します。</block>
   <block id="8429b9b7552e9131928dae7613de806c" category="inline-image-macro">Zookeeper 構成</block>
   <block id="95e6ebb37419864b276c313f8f6c3cbb" category="paragraph"><block ref="95e6ebb37419864b276c313f8f6c3cbb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb4ac192a5f039c2e2c335ba5ced3583" category="inline-link-macro">Zookeeper の追加</block>
@@ -15557,7 +15554,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 2. ユーザディレクトリコレクタは設定されていますが、停止しているか、エラー状態です。[コレクタ]&gt;[ユーザディレクトリコレクタ]*に移動し、ステータスを確認してください。を参照してください <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> トラブルシューティングのヒントについては、ドキュメントのセクションを参照してください。
 適切に設定すると、 24 時間以内に名前が自動的に解決されます。
 それでも解決されない場合は、正しい User Data Collector を追加しているかどうかを確認します。追加した Active Directory / LDAP ディレクトリサーバにユーザが実際に含まれていることを確認します。</block>
-  <block id="43d39371e7465fe75cfe3d390dbe2744" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [RethinkDB] を選択します。</block>
   <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">[Acquisition Units]タブの*[Observability]&gt;[Collectors]*ページにあるAUのステータスには、[Certificate Expired]または[Certificate Revoked]と表示されます。</block>
   <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">[Collectors]&gt;[Agents]&gt;[+Agent]を選択します。</block>
   <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">[ワークロードセキュリティ]&gt;[コレクタ]*をクリックします。
@@ -15567,45 +15563,20 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 ドキュメントの Data Collector Vendor Reference セクションを参照してください。
 
 <block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
-  <block id="0408a4c64dc1f3ab40855164b4b6f38d" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Ngingin] を選択します。</block>
-  <block id="bdb77c4a55fae38966a8493c526d4be0" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*]( サービス ) で '[Redis]( 再利用 ) を選択します</block>
-  <block id="2652c4ffbd453ec1aefdecf31ada9e0b" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「 * Services 」で「 Kafka 」を選択します。</block>
-  <block id="4ee3dacc3b31186e6116102c2ab72d19" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [MySQL ] を選択します。</block>
-  <block id="ebb792d33abbc8326e1a943e8426035a" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で [Docker を選択します。</block>
-  <block id="dbc1393b73d772391a52f39c8694a13c" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*]( サービス ) で '[Kibana]( カイバナ ) を選択します</block>
-  <block id="9db4a00fe92c69a4d0bf878ff50fc95a" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で [JVM] を選択します。</block>
   <block id="b655d6566293cffcbf9e4e65bb4f042d" category="list-text">[Observability]&gt;[Collectors]&gt;[+Data Collectors]*をクリックします。</block>
   <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">[Observability]&gt;[Collectors]*で、オペレーティングシステム/プラットフォームを選択します。統合データコレクタ（ Kubernetes 、 Docker 、 Apache など）をインストールすると、ノードのデータ収集も設定されることに注意してください。</block>
   <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">[Workload Security]メニューで、次のいずれかをクリックします。
 *[Collectors]&gt;[User Directory Collector]&gt;[+ User Directory Collector]*を選択し、*[LDAP Directory Server]*を選択します。</block>
-  <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [Consul （コンサル） ] を選択します。</block>
-  <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「 * サービス」で「 Apache 」を選択します。</block>
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">複数のデータコレクタの情報を同時に編集できます。[オブザーバビリティ（Observability）]&gt;[コレクタ（Collectors）]*ページで、変更するデータコレクタを選択し、*[一括アクション（Bulk Actions）]*ボタンをクリックします。「 * 編集」を選択し、必要なフィールドを変更します。</block>
-  <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [Memcached （メモキャッシュ） ] を選択します。</block>
-  <block id="f5d9cddb5529cde22dbbfac64ed116e4" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [MongoDB （ MongoDB ） ] を選択します。</block>
   <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">[Workload Security]メニューで、次のいずれかをクリックします。
 *[Collectors]&gt;[User Directory Collector]&gt;[+ User Directory Collector]*を選択し、*[Active Directory]*を選択します。</block>
   <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">Cloud Insightsメニューで、*オブザーバビリティ&gt;コレクタ*をクリックします。</block>
   <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">Cloud Insightsメニューで* Observability &gt; Collectors *をクリックして、インストールされているデータコレクタのリストを開きます。</block>
   <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">Cloud Insightsメニューで、* Observability &gt; Collectors *をクリックします。</block>
-  <block id="f47fcfa022338bb85388c62d011288a2" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [PostgreSQL ] を選択します。</block>
-  <block id="b375a95628217618f913ff0addcb4f8e" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「 * サービス」で「 OpenZFS 」を選択します。</block>
   <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">Cloud Insights環境にログインし、*オブザーバビリティ&gt; Collectors *に移動します。</block>
   <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">[Workload Security]&gt;[Collectors]&gt;[Agents]*をクリックします。</block>
-  <block id="f7a71c08cded2c36e48dd402ecadd5ba" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「 * サービス * 」で「 Puppet 」を選択します。</block>
-  <block id="8bcbe1a1fde4e3d96f7aca6694b75230" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[* サービス *] で、 [ カウチベース ] を選択します。</block>
-  <block id="29f60eabcc5e39b67a2b7e9560e07dc6" category="list-text">Cloud Insightsメニューから* Observability &gt; Collectors *をクリックし、*+ Data Collector *ボタンをクリックします。すべてのデータコレクタを表示することも、サブスクリプションに基づいて使用可能なデータコレクタのみを表示することもできます。</block>
-  <block id="fd3211acf4f48156142e8f687cbe6c6b" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Kapacitor] を選択します。</block>
-  <block id="588c730d062048ef78564e2278564813" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で [netstat ] を選択します。</block>
   <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">[ワークロードセキュリティ]&gt;[コレクタ]*をクリックして、設定したコレクタのステータスを確認します。</block>
-  <block id="38d938dede033e6fd6e3fba721cdf402" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で、 [HAProxy] を選択します。</block>
-  <block id="b9e357a2b86f1ae6976d85b140c34304" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [*DC/OS*] を選択します。</block>
   <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">Cloud Insightsメニューから*オブザーバビリティ&gt;コレクタ*をクリックします。</block>
-  <block id="ec35f90f2dd5badf0a40cb0d12d855be" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [ActiveMQ ] を選択します。</block>
-  <block id="ca888e8799d75a60bf8835194141e443" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services] で [Elasticsearch ] を選択します。</block>
-  <block id="f1f3071daba335689c22cb4ecf169b27" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「 * Services 」で「 Hadoop 」を選択します。</block>
-  <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[* サービス *] で、 [CouchDB] を選択します。</block>
-  <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*Services*] で、 [Flink] を選択します。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">[Workload Security]*[Collectors]*に移動し、*[Agents]*タブをクリックします。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">[+ Collector]*をクリックし、設定するデータコレクタを選択します。</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">許可されたファイルタイプポリシー</block>
@@ -16083,4 +16054,31 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="5b006d79d014a1860daf684ecea7e093" category="list-text">新しいRESTコレクタで少なくとも30分間データを取得します。この期間中に「正常」に表示されないデータはすべて無視してください。</block>
   <block id="6e81cdef5dd14e3cf193147eefe83cc4" category="list-text">残りの期間が経過すると、RESTコレクタがデータを取得し続けるため、データが安定します。</block>
   <block id="d2098b0b84e989c49759cf70450a78d8" category="paragraph">必要に応じて、この同じプロセスを使用して前のコレクタに戻ることができます。</block>
+  <block id="34328c30b9aeceaed8fcff2dfe3eec30" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Kapacitorを選択します。</block>
+  <block id="3c9d727e041ea1596d9e67f7568b3d4b" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Redisを選択します。</block>
+  <block id="3d0738af358079dc547755789be4774a" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。netstatを選択します。</block>
+  <block id="419697cbdba3ded9f042d2b7a045a7be" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[HAProxy]を選択します。</block>
+  <block id="c22bbce40f7866184fc5238e4cf0526d" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Elasticsearch]を選択します。</block>
+  <block id="6ed4f0f0b93d3def9b1fe51a22e44d7a" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Consulを選択します。</block>
+  <block id="4bcd3cf21ebb34b835f0e6aa0d638f54" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[ActiveMQ]を選択します。</block>
+  <block id="5ccd9dd8e50ca94f3cd4db51f6b42c50" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[RethinkDB]を選択します。</block>
+  <block id="b0896396e0f3a7aa981b2ef8957b9208" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Apacheを選択します。</block>
+  <block id="0ba3615a02f45b8a7b485192d849f02b" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。PostgreSQLを選択します。</block>
+  <block id="589728f32967406f1fdbd032c3fe018d" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Memcachedを選択します。</block>
+  <block id="5888b2a0267a27f9f34b34863d7a8110" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[OpenZFS]を選択します。</block>
+  <block id="2f646a2871ea4aa3befe55d29f178062" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。JVMを選択します。</block>
+  <block id="6f449010e727da85fc5dba4dc0566129" category="list-text">[*Admin] &gt; [Data Collectors] で、 [*+[Data Collectors] をクリックします。[Apache Zookeeper]を選択します。</block>
+  <block id="e71ca37de84258d54f5428c43e7d7278" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Kafkaを選択します。</block>
+  <block id="ada6106f548a6369154652d4ea69d9a1" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[*DC/OS*]を選択します。</block>
+  <block id="993b018a6d59665db1ee4e45e62026f4" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Nginx]を選択します。</block>
+  <block id="8a8e72cdfe9e0062f257b6b3af0a66fc" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Puppet]を選択します。</block>
+  <block id="c3dba9c80e9fa5a82c71abb7fa5cf37f" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[CouchDB]を選択します。</block>
+  <block id="65f4403a1570898156c13c0053e0d957" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。Hadoopを選択します。</block>
+  <block id="9ee6c12aac4505f529c285b136202ce5" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Docker]を選択します。</block>
+  <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Couchbase]を選択します。</block>
+  <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Flink]を選択します。</block>
+  <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。MySQLを選択します。</block>
+  <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">Cloud Insightsメニューから* Observability &gt; Collectors *をクリックし、*+ Data Collector *ボタンをクリックします。</block>
+  <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「きばな」を選択します。</block>
+  <block id="c71f6654a45927e285ab22a697438b43" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[MongoDB]を選択します。</block>
 </blocks>

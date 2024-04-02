@@ -25,7 +25,7 @@ Cloud Insights は、このデータコレクタを使用して Kibana から指
 
 == インストール
 
-. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。[*Services*]( サービス ) で '[Kibana]( カイバナ ) を選択します
+. [Observability]>[Collectors]*で、*+ Data Collector *をクリックします。「きばな」を選択します。
 +
 Tegraf エージェントがインストールされているオペレーティングシステムまたはプラットフォームを選択します。
 

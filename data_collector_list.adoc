@@ -34,9 +34,6 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | Data Collector | を入力します 
 
 
-| link:task_config_telegraf_activemq.html["ActiveMQ "] | サービス 
-
-
 | link:task_dc_amazon_ec2.html["Amazon EC2 および EBS "] | インフラ 
 
 
