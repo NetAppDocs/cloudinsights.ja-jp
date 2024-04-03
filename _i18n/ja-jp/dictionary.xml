@@ -3077,7 +3077,6 @@ persistentvolumes、pods、ReplicaSets、resourcequotas、services、statefulset
   <block id="3b7c5615013c6b42362845591653e503" category="cell">enableDNSLookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">trueまたはfalse、DNSルックアップを有効にします</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">サンプルのAgentConfigurationファイル</block>
-  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">次に、AgentConfigurationファイルの例を示します。ここでは、すべてのオプションがキャプチャされるわけではありません。</block>
   <block id="433f90030fac46ba53c1cb65aab36ecc" category="summary">NetApp 7-Mode データコレクタの設定</block>
   <block id="8e8ea114aa0332388c2998ff213b8efa" category="doc">NetApp Data ONTAP 7-Mode データコレクタ</block>
   <block id="1ebde644fcccdfee3a751d90018bfde8" category="paragraph">Data ONTAP 7-Mode を使用するストレージシステムでは、 7-Mode のデータコレクタを使用します。このコレクタでは、 CLI を使用して容量とパフォーマンスのデータを取得します。</block>
@@ -16084,4 +16083,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXPのサインイン</block>
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。次のページに戻ります： <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 画面。</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
+  <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">true/false - KubernetesノードでSELinuxが有効になっている場合は、runPrivilegedをtrueに設定します。</block>
+  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">次に、AgentConfigurationファイルの例を示します。</block>
 </blocks>
