@@ -41,8 +41,11 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 
 
 |  | プロキシ
+
 の形式で入力し
+
 プロキシ：
+
   サーバ：
   ポート：
   ユーザ名：
@@ -51,7 +54,7 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
   isTelegrafProxyEnabled：
   isAuProxyEnabled：
   isFluentbitProxyEnabled：
-  isCollectorProxyEnabled： | 顧客がプロキシを設定する場合はオプションです。これは通常、顧客の法人代理店です。 
+  isCollectorProxyEnabled： | プロキシを設定する場合はオプションです。これは通常、顧客の法人代理店です。 
 
 
 | テレグラフ |  | オペレータのTelegrafインストールをカスタマイズできる設定オプション 
@@ -206,6 +209,47 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 
 
 |  | runPrivileged | true/false - KubernetesノードでSELinuxが有効になっている場合は、runPrivilegedをtrueに設定します。 
+
+
+| 変更管理 |  | Kubernetes Change Management and Analysisの構成オプション 
+
+
+|  | cpuLimit | change-observer-watch-rsのCPU制限 
+
+
+|  | memLimit | change-observer-watch-rsのメモリ制限 
+
+
+|  | cpuRequest | change-observer-watch-rsのCPU要求 
+
+
+|  | MemRequestの略 | change-observer-watch-rsのMEM要求 
+
+
+|  | failureDeclarationIntervalMins | ワークロードの導入に失敗した場合に障害が発生したとマークされる間隔（分） 
+
+
+|  | deployAggrIntervalSeconds | ワークロード導入を実行中のイベントが送信される頻度 
+
+
+|  | nonWorkloadAggrIntervalSeconds | ワークロード以外の導入環境を組み合わせて送信する頻度 
+
+
+|  | termsToRedact | 値が編集される環境名およびデータマップで使用される一連の正規表現
+用語の例：「pwd」、「password」、「token」、「apiKey」、「api-key」、 "JWT" 
+
+
+|  | AdditionalKindsToWatch | コレクターが監視するデフォルトの種類のセットから、監視する追加の種類のコンマ区切りリスト 
+
+
+|  | kindsToIgnoreFromWatch | コレクタが監視するデフォルトの種類のセットから、監視対象から無視する種類のコンマ区切りのリスト 
+
+
+|  | logRecordAggrIntervalSeconds | コレクタからCIにログレコードを送信する頻度 
+
+
+|  | ウォッチトレランス | change-observer-watch-ds追加の許容値。省略された単一行形式のみ。
+例：「｛key：taint1、operator：exists、effect：NoSchedule｝、｛key：taint2、operator：exists、effect：NoExecute｝」 
 |===
 
 
