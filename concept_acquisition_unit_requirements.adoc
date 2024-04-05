@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_acquisition_unit_requirements.html 
-summary: Acquisition Unit として使用するサーバまたは VM が最小要件を満たしている必要があります 
-keywords: AU, acquisition unit, RAU, requirements, sizing 
+summary: Acquisition Unitとして使用するサーバまたはVMが最小要件を満たしている必要があります。 
+keywords: AU, acquisition unit, requirements, sizing 
 ---
 = Acquisition Unit の要件
 :toc: macro
@@ -33,12 +33,15 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 
 | オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
 
-* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
+* CentOS（64ビット）：7.2～7.9、8.1～8.4、Stream 8、Stream 9
 * Debian (64ビット): 9と10
-* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
-* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.7、9.1
-*ロッキー9.0、9.1
-* Ubuntu Server：18.04および20.04 LTS
+* openSUSE Leap 15.1～15.5
+* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.8
+* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.8、9.1、9.2
+* Rocky 9.0、9.1、9.3
+* SUSE Enterprise Linux Server 15、15 SP2～15 SP5
+* Ubuntuサーバ：18.04、20.04、22.04 LTS
+*上記のプラットフォームでのSELinux
 
 このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
 

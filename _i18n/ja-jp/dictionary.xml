@@ -12758,7 +12758,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="60c7f1e49f405a1836fb656a8fffe2aa" category="cell">これは通常、 perf stat が実行されていないことが原因です。各ノードで次のコマンドを実行します。
 
 &gt;_system node systemshell -node *-command“spmctl -h cmd–stop；spmctl -h cmd–exec”_</block>
-  <block id="961208029de208a5d667bc4557cd4628" category="summary">Acquisition Unit として使用するサーバまたは VM が最小要件を満たしている必要があります</block>
   <block id="1e6f2d5fb7c78a27ba0dc78e9cc7c9b5" category="doc">Acquisition Unit の要件</block>
   <block id="15948ad6c9474a20f044eee0ea809fda" category="paragraph">インフラのデータコレクタ（ストレージ、 VM 、ポート、 EC2 など）から情報を取得するには、 Acquisition Unit （ AU ）をインストールする必要があります。Acquisition Unit をインストールする前に、オペレーティングシステム、 CPU 、メモリ、およびディスクスペースが要件を満たしていることを確認してください。</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">コンポーネント</block>
@@ -15783,21 +15782,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同様にアラートを選択すると、アラートをトリガーしたモニタやアラートのタイムラインを示すグラフなど、アラートの詳細が表示されます。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhookリストページ</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Webhookのリストページには、Name、Created By、Created On、Status、Secure、 およびLast Reportedフィールド。</block>
-  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-* CentOS（64ビット）：7.2～7.9、Stream 8、Stream 9
-* Debian (64ビット): 9と10
-* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.4
-* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.7、9.1
-*ロッキー9.0、9.1
-* Ubuntu Server：18.04および20.04 LTS
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
-
-SELinuxを使用している場合は、Acquisition Unitシステムで次のコマンドを実行することを推奨します。
-
- sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights（/.*）？"
- sudo restorecon -R /opt/netapp/cloudinsights</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMBプロトコルバージョン3.1以前。</block>
   <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">Cloud Insightsのセキュリティについては、 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">Cloud Insightsのセキュリティについて読む <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
@@ -16112,4 +16096,23 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">ウォッチトレランス</block>
   <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-observer-watch-ds追加の許容値。省略された単一行形式のみ。
 例：「｛key：taint1、operator：exists、effect：NoSchedule｝、｛key：taint2、operator：exists、effect：NoExecute｝」</block>
+  <block id="ab8e405c19b7905ee11081815f3188e8" category="summary">Acquisition Unitとして使用するサーバまたはVMが最小要件を満たしている必要があります。</block>
+  <block id="a09b5775576e1f992d4b31384ff11e67" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
+
+* CentOS（64ビット）：7.2～7.9、8.1～8.4、Stream 8、Stream 9
+* Debian (64ビット): 9と10
+* openSUSE Leap 15.1～15.5
+* Oracle Enterprise Linux（64ビット）：7.5～7.9、8.1～8.8
+* Red Hat Enterprise Linux（64ビット）：7.2～7.9、8.1～8.8、9.1、9.2
+* Rocky 9.0、9.1、9.3
+* SUSE Enterprise Linux Server 15、15 SP2～15 SP5
+* Ubuntuサーバ：18.04、20.04、22.04 LTS
+*上記のプラットフォームでのSELinux
+
+このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。
+
+SELinuxを使用している場合は、Acquisition Unitシステムで次のコマンドを実行することを推奨します。
+
+ sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights（/.*）？"
+ sudo restorecon -R /opt/netapp/cloudinsights</block>
 </blocks>
