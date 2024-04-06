@@ -22,6 +22,30 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
+== 2024年4月
+
+
+
+=== iSCSIボリュームレイテンシ
+
+iSCSIボリュームレイテンシの指標は、ダッシュボードやアラートなどで使用できます。iSCSI遅延メトリクスを収集するには、Kubernetes Collectorの[Modify Deployment]メニュー項目で[_Network Performance]と[Map_]をオンにします。
+
+
+
+=== オペレーティングシステムのサポート
+
+Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["すでにサポートされています"]：
+
+* Oracle Enterprise Linux 8.8
+* Red Hat Enterprise Linux 8.8
+* ロッキー9.3
+* openSUSE Leap 15.1～15.5
+* SUSE Enterprise Linux Server 15、15 SP2～15 SP5
+
+
+'''
+
+
 == 2024年3月
 
 
@@ -93,7 +117,7 @@ image:RelatedLogsTable.png["ログアラートランディングページの関�
 
 === ONTAPスイッチデータの収集
 
-Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"] そして適切な <<a-note-about-permissions,権限>> 設定：
+Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"] そして適切な link:task_dc_na_cdot.html#a-note-about-permissions["権限"] 設定：
 
 
 
@@ -116,7 +140,7 @@ Cloud Insightsの初回トライアルに加えて、 link:concept_subscribing_t
 
 === ワークロードの健全性
 
-ワークロードの健全性は、* Kubernetes > Explore > Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。
+ワークロードの健全性は、* Kubernetes > Explore > Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。健全性問題がインフラ、ネットワーク、構成の変更に関連しているかどうかを簡単に特定し、ドリルダウンしてルート原因を分析します。
 
 image:WorkloadHealth.png["ワークロードの健常性の概要"]
 

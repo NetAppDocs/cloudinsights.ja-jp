@@ -15800,7 +15800,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024年1月</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">まだ使用していないCloud Insights機能を試す</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">ワークロードの健全性</block>
-  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。</block>
   <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">ワークロードの健常性の概要</block>
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Data Domainの識別</block>
@@ -15904,7 +15903,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">ランディングページの表のデータを独自のグラフで表示することもできます。[_Show Chart_]アイコンを選択すると、テーブルの下にグラフが表示されます。</block>
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">グラフアイコンを表示</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 設定：</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 権限</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自律型ランサムウェア対策の権限</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAPアクセスの権限が拒否されました</block>
@@ -16115,4 +16113,14 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
 
  sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights（/.*）？"
  sudo restorecon -R /opt/netapp/cloudinsights</block>
+  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024年4月</block>
+  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">iSCSIボリュームレイテンシ</block>
+  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">iSCSIボリュームレイテンシの指標は、ダッシュボードやアラートなどで使用できます。iSCSI遅延メトリクスを収集するには、Kubernetes Collectorの[Modify Deployment]メニュー項目で[_Network Performance]と[Map_]をオンにします。</block>
+  <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
+  <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
+  <block id="c3571084e6793888922121d12a2dca13" category="list-text">ロッキー9.3</block>
+  <block id="7c5f962bedfb419a0baae6396bf5594d" category="list-text">openSUSE Leap 15.1～15.5</block>
+  <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15、15 SP2～15 SP5</block>
+  <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 設定：</block>
+  <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。健全性問題がインフラ、ネットワーク、構成の変更に関連しているかどうかを簡単に特定し、ドリルダウンしてルート原因を分析します。</block>
 </blocks>
