@@ -198,8 +198,6 @@
   <block id="5c7f848c8021f50b6420b0c983ceafd0" category="doc">Kubernetes Data Collector を実行します</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights は、このデータコレクタを使用して Kubernetes ポッド、ノード、コンテナの指標を収集します。</block>
   <block id="9a3185d3dd699a74f8c315584250a80c" category="inline-link-macro">エージェントのインストール</block>
-  <block id="853a529a2cb031ba8c442d361b80f74e" category="paragraph">Kubernetes のインストール手順については、を参照してください <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> ページ</block>
-  <block id="9202ccff1bbfb1125df09b7eb605eb6c" category="admonition">kube-state-metrics * に関する情報がに移動されました <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> ページ</block>
   <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Kubernetes コンテナ</block>
   <block id="5415e066c63454268882855520be8f45" category="cell">ネームスペース
 ポッド
@@ -15584,7 +15582,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">「fsxadmin」ロールのアカウントにアクセスできる必要があります。このアカウントには、ssh、ontapi、httpの3つのアプリケーションが割り当てられています。</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">ポートの要件：443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">FSx CLIコマンドとAPIコマンドは、Cloud Insights ZAPIで収集されない一部の容量値を取得するため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の容量値と異なる場合があることに注意してください。</block>
-  <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Kubernetesへのインストールの詳細については、を参照してください。 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
   <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Cloud Insightsフェデラルエディションを使用している場合は、インストールと設定の手順がこのページの手順と異なる場合があります。Cloud Insightsの指示に従って、NetApp Kubernetes監視オペレータをインストールします。</block>
   <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">タイプ：[Acquisition Unit]および[Data Collection]を選択します。</block>
   <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">パッチ</block>
@@ -16123,4 +16120,7 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15、15 SP2～15 SP5</block>
   <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 設定：</block>
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。健全性問題がインフラ、ネットワーク、構成の変更に関連しているかどうかを簡単に特定し、ドリルダウンしてルート原因を分析します。</block>
+  <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Kubernetesへのインストールの詳細については、を参照してください。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Kubernetes のインストール手順については、を参照してください <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="9475d89ab72707a841c177322d6462fa" category="summary">NetApp Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubernetesデータを収集します。</block>
 </blocks>

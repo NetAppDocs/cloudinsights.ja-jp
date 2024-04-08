@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_kubernetes.html 
-keywords: telegraf, installation, install, kubernetes 
+keywords: telegraf, kubernetes 
 summary: Kubernetes のデータコレクタの設定 
 ---
 = Kubernetes Data Collector を実行します
@@ -25,10 +25,7 @@ Cloud Insights は、このデータコレクタを使用して Kubernetes ポ�
 
 == インストール
 
-Kubernetes のインストール手順については、を参照してください link:task_config_telegraf_agent.html#kubernetes["エージェントのインストール"] ページ
-
-
-NOTE: kube-state-metrics * に関する情報がに移動されました link:task_config_telegraf_agent.html#kubernetes["エージェントのインストール"] ページ
+Kubernetes のインストール手順については、を参照してください link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] ページ
 
 
 
