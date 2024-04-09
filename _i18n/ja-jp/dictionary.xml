@@ -16108,8 +16108,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
  sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights（/.*）？"
  sudo restorecon -R /opt/netapp/cloudinsights</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024年4月</block>
-  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">iSCSIボリュームレイテンシ</block>
-  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">iSCSIボリュームレイテンシの指標は、ダッシュボードやアラートなどで使用できます。iSCSI遅延メトリクスを収集するには、Kubernetes Collectorの[Modify Deployment]メニュー項目で[_Network Performance]と[Map_]をオンにします。</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
   <block id="c3571084e6793888922121d12a2dca13" category="list-text">ロッキー9.3</block>
@@ -16124,4 +16122,9 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">データコレクタ：Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes Monitoring Operatorのインストールと設定</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">を参照してください <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> NetApp Kubernetes Monitoring Operatorをインストールまたはアップグレードする前に、前提条件のドキュメントを参照してください。</block>
+  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">KubernetesのiSCSI SANサポートのネットワークマップ</block>
+  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">NFSとiSCSIの基盤となるKubernetesストレージの依存関係を特定します。
+Kubernetesアプリケーションのストレージネットワークアクティビティと詳細なストレージ指標に関する分析情報を取得して、問題の解決を高速化します。チャージバックとショーバックのレポートにKubernetesアプリケーションがストレージインフラをどのように使用するかを解説します。</block>
+  <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">ポッドからストレージへの例</block>
+  <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

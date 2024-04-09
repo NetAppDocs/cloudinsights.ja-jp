@@ -26,9 +26,12 @@ NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用で�
 
 
 
-=== iSCSIボリュームレイテンシ
+=== KubernetesのiSCSI SANサポートのネットワークマップ
 
-iSCSIボリュームレイテンシの指標は、ダッシュボードやアラートなどで使用できます。iSCSI遅延メトリクスを収集するには、Kubernetes Collectorの[Modify Deployment]メニュー項目で[_Network Performance]と[Map_]をオンにします。
+NFSとiSCSIの基盤となるKubernetesストレージの依存関係を特定します。
+Kubernetesアプリケーションのストレージネットワークアクティビティと詳細なストレージ指標に関する分析情報を取得して、問題の解決を高速化します。チャージバックとショーバックのレポートにKubernetesアプリケーションがストレージインフラをどのように使用するかを解説します。
+
+image:pod-to-storage.png["ポッドからストレージへの例"]
 
 
 
