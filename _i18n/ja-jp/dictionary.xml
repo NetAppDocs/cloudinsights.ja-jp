@@ -5975,9 +5975,6 @@ Couchbaseノードのホスト名</block>
 使用済みクォータ</block>
   <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">Kubernetesワークロードの依存関係とフローを提示し、ネットワークとパフォーマンスの問題を明らかにします</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubernetes Network Performance Monitoring and Mapの略</block>
-  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes Network Performance Monitoring and Map機能は、Kubernetesサービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。
-この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
-  <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubernetes Network Performance Monitoring and Mapは、です <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 機能は変更される場合があります。</block>
   <block id="d11c5cdc648931cebdccd4a555384487" category="paragraph">主な特長：
 •ワークロードマップは、Kubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を明らかにします。
 •Kubernetesポッド、ワークロード、ノード間のネットワークトラフィックを監視し、トラフィックとレイテンシの問題の原因を特定します。
@@ -15273,7 +15270,6 @@ PodのCPU利用率が高いかどうかを確認します。
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">に戻ります <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collectorのタイル</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">Operatorとデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、NKMOはKubernetesクラスタノードに導入されたOperator互換コレクタを管理してデータを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*インストールまたはアップグレードの前に*</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">最新のNetApp Kubernetes Monitoring Operatorにアップグレードします</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">既存のOperatorにAgentConfigurationが存在するかどうかを確認します（ネームスペースがdefault_netapp-monitoring_でない場合は、適切なネームスペースに置き換えてください）。</block>
@@ -15748,9 +15744,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="fd03b080e03c993770237986acf19dc1" category="list-text">*SELinux*: Cloud Insightsには、Linux Acquisition Unitの初期インストールが強化されており、SELinuxの強制が有効になっているLinux環境での動作の堅牢性を確保します。これらの機能拡張は_new_au環境にのみ影響します。AUのアップグレードに関連するSELinuxの問題がある場合は、NetAppサポートに連絡してSELinux構成の修正を依頼してください。</block>
   <block id="5142ab8747c5da1b5115ffa35bacd522" category="summary">Kubernetesの変更の追跡がかつてないほど簡単になりました。</block>
   <block id="d75550072217b58f67a7216961c2bb8c" category="doc">Kubernetesの変更分析</block>
-  <block id="745bf0c93bc131f89ec736fc36e64da7" category="paragraph">Kubernetes Change Analyticsは、Kubernetes環境に対する最近の変更をオールインワンで表示します。アラートと導入ステータスをすぐに確認できます。変更分析を使用すると、導入と設定の変更をすべて追跡し、Kubernetesのサービス、インフラ、クラスタの健全性とパフォーマンスに関連付けることができます。</block>
-  <block id="baa67b8c9085fb7f1ab7886843918360" category="list-text">マルチテナントKubernetes環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insightsですべての変更を正しく追跡できない場合があります。</block>
-  <block id="ee48ad51c38d1e68f90591ef3918ee29" category="list-text">Change Analyticsでは、ワークロードの健常性と構成の変更を1つのペインで確認し、関連付けできます。これは、動的なKubernetes環境のトラブルシューティングに役立ちます。</block>
   <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">Kubernetes Change Analyticsを表示するには、* Kubernetes &gt; Change Analysis *に移動します。</block>
   <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubernetes Change Analyticsのメイン画面。警告と重大なアラート、成功した導入と失敗した導入、アラートをトリガーする上位3つのワークロードが表示されます。</block>
   <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
@@ -16117,7 +16110,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。健全性問題がインフラ、ネットワーク、構成の変更に関連しているかどうかを簡単に特定し、ドリルダウンしてルート原因を分析します。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Kubernetesへのインストールの詳細については、を参照してください。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> ページ</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Kubernetes のインストール手順については、を参照してください <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> ページ</block>
-  <block id="9475d89ab72707a841c177322d6462fa" category="summary">NetApp Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubernetesデータを収集します。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes向けデータコレクタ</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">データコレクタ：Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes Monitoring Operatorのインストールと設定</block>
@@ -16127,4 +16119,11 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
 Kubernetesアプリケーションのストレージネットワークアクティビティと詳細なストレージ指標に関する分析情報を取得して、問題の解決を高速化します。チャージバックとショーバックのレポートにKubernetesアプリケーションがストレージインフラをどのように使用するかを解説します。</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">ポッドからストレージへの例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analyticsを使用すると、Kubernetes環境に対する最近の変更をオールインワンビューで確認できます。アラートと導入ステータスをすぐに確認できます。変更分析を使用すると、導入と設定の変更をすべて追跡し、Kubernetesのサービス、インフラ、クラスタの健全性とパフォーマンスに関連付けることができます。</block>
+  <block id="4b4f5197cba63052758601b418b4cd40" category="list-text">マルチテナント環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insightsですべての変更を正しく追跡できない場合があります。</block>
+  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">Change Analyticsでは、ワークロードの健常性と構成の変更を1つのペインで確認し、関連付けできます。これは、動的な環境のトラブルシューティングに役立ちます。</block>
+  <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">KubernetesのNetwork Performance Monitoring and Map機能は、サービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることでトラブルシューティングを簡易化し、ネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響を与える前にパフォーマンスの問題を特定します。
+この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
+  <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubernetesデータを収集します。</block>
+  <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes Operatorとデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、OperatorはKubernetesクラスタノードに展開されたOperator互換コレクタを管理して、データを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
 </blocks>

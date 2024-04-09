@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_kubernetes_network_monitoring_and_map.html 
-keywords: service map, workloads, Kubernetes, 
+keywords: service map, workloads, 
 summary: Kubernetesワークロードの依存関係とフローを提示し、ネットワークとパフォーマンスの問題を明らかにします 
 ---
 = Kubernetes Network Performance Monitoring and Mapの略
@@ -19,11 +19,8 @@ summary: Kubernetesワークロードの依存関係とフローを提示し、�
 
 
 [role="lead"]
-Kubernetes Network Performance Monitoring and Map機能は、Kubernetesサービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることで、トラブルシューティングを簡易化します。Kubernetesのネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化し、ユーザに影響が及ぶ前にパフォーマンスの問題を特定します。
+KubernetesのNetwork Performance Monitoring and Map機能は、サービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることでトラブルシューティングを簡易化し、ネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響を与える前にパフォーマンスの問題を特定します。
 この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。
-
-
-NOTE: Kubernetes Network Performance Monitoring and Mapは、です link:concept_preview_features.html["プレビュー（ Preview ）"] 機能は変更される場合があります。
 
 主な特長：
 •ワークロードマップは、Kubernetesワークロードの依存関係とフローを示し、ネットワークとパフォーマンスの問題を明らかにします。
