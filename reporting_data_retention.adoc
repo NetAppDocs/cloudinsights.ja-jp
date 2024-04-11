@@ -51,7 +51,7 @@ Cloud Insights では、次の表に示すように、データマートおよ�
 | Performance データマート | ストレージノード | 毎日 | 13 カ月 
 
 
-| Performance データマート | VM パフォーマンス | 毎時 | 35日 
+| Performance データマート | VM パフォーマンス | 毎時 | 14 日 
 
 
 | Performance データマート | VM パフォーマンス | 毎日 | 13 カ月 
