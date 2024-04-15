@@ -131,8 +131,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com | 認証サービスへのアク�
 
 == ネットワーク内ルール
 
-を追加する場合に注意してくださいlink:task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip["CSUser"]が必要です。このユーザには、ONTAP 管理LIFへのSSHアクセスが必要です。
-
 [cols="5*"]
 |===
 | プロトコル | ポート | ソース | 宛先 | 説明 
