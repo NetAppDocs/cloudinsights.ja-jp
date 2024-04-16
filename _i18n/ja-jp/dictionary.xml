@@ -5402,8 +5402,6 @@ agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
   <block id="ccc64c65f1e8c75ec95b9e7045b1e7da" category="cell">gateway.c01.cloudinsights.netapp.com
 agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">ネットワーク内ルール</block>
-  <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-link-macro">CSUser</block>
-  <block id="a8f52a9563e47eb33fbdc4c48dfcf8f5" category="paragraph">を追加する場合に注意してください<block ref="d95c3cfe38a15370491721a373f38df2" category="inline-link-macro-rx"></block>が必要です。このユーザには、ONTAP 管理LIFへのSSHアクセスが必要です。</block>
   <block id="1b09a58921479be87f9dae639915150f" category="cell">389（LDAP）
 636（LDAPS / START-TLS）</block>
   <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP サーバ URL</block>
@@ -16126,4 +16124,8 @@ Kubernetesアプリケーションのストレージネットワークアクテ�
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubernetesデータを収集します。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes Operatorとデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、OperatorはKubernetesクラスタノードに展開されたOperator互換コレクタを管理して、データを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
   <block id="99caa80e6c446108c367beb2add705b3" category="list-text">マルチテナント環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insights変更分析ですべての変更を適切に追跡できない場合があります。</block>
+  <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP統合の権限：</block>
+  <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">ONTAPアクセス拒否の権限：</block>
+  <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">注: 1つのrest-role (_arwrole_or_csrestrole_--)がすでに追加されている場合、2つ目のrest-roleを追加する必要はありません。以下の例のように、API権限を追加するだけです。</block>
+  <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">例：_csrestrole_はすでに存在しているため、ランサムウェア対策を有効にし、既存の_csrestrole_にAPI権限を付与するだけで済みます。</block>
 </blocks>

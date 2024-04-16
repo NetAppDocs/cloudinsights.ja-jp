@@ -129,6 +129,27 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
+ONTAP ARP統合の権限：
+
+....
+security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+....
+ONTAPアクセス拒否の権限：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
+....
+注: 1つのrest-role (_arwrole_or_csrestrole_--)がすでに追加されている場合、2つ目のrest-roleを追加する必要はありません。以下の例のように、API権限を追加するだけです。
+
+例：_csrestrole_はすでに存在しているため、ランサムウェア対策を有効にし、既存の_csrestrole_にAPI権限を付与するだけで済みます。
+
+....
+security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+....
 
 
 === SVM管理IP *を使用して追加する場合の権限：
@@ -149,6 +170,12 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+ONTAPアクセス拒否の権限：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
+....
 
 
 === ONTAP自律型ランサムウェア対策の権限
