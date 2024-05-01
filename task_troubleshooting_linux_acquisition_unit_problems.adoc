@@ -83,7 +83,10 @@ Acquisition Unit サービスが実行されているかどうかを確認しま
 Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）でエラーがないかどうかを確認します。 
 
 
-| 「 Heartbeat Error: message 」が表示されています | このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。 
+| 「ハートビートエラー：」というメッセージが表示される | このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。 
+
+
+| Acquisition Unitを再インストールすると、「ValueError：File context for /opt/netapp/cloudinsights（/.*）？」と表示されるすでに定義されています」。 | SELinuxを搭載したシステムでは、このエラーメッセージは `cloudinsights-uninstall.sh -p` が実行されました。Acquisition Unitを再インストールします。コマンドの実行 `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"` 問題を修正し、メッセージを削除する必要があります。 
 |===
 
 
