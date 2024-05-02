@@ -247,6 +247,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_na_cdot.html["NetApp ONTAP データ管理ソフトウェア "] | インフラ 
 
 
+| link:task_dc_na_ontap_rest.html["NetApp ONTAP RESTコレクタ "] | インフラ 
+
+
 | link:task_dc_na_cdot.html["NetApp ONTAP Select の略 "] | インフラ 
 
 

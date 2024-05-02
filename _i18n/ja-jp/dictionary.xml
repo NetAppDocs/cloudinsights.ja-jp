@@ -16138,4 +16138,7 @@ Kubernetesアプリケーションのストレージネットワークアクテ�
   <block id="2f536f055cc49f30b2b045622c25fdbc" category="paragraph">このAPIに対してGETを実行すると、次の情報が返されました。</block>
   <block id="4d50bab3a705e7ae04c75813a7d22ad2" category="paragraph">このAPIは次の値を返します。</block>
   <block id="c124771302bfe76ccd178d7854d906f5" category="paragraph">詳細については、Swaggerのドキュメント（[Admin]&gt;[API Access]&gt;[API Documentation]&gt;[Workload Security]）を参照してください。</block>
+  <block id="01d9a0d595dd9694b83ce5628a29f326" category="inline-link-macro">NetApp ONTAP RESTコレクタ </block>
+  <block id="de38f5c9c41b0a8b6187edd7a04b16b2" category="cell"><block ref="de38f5c9c41b0a8b6187edd7a04b16b2" category="inline-link-macro-rx"></block></block>
+  <block id="bf9973f393dbc9824e3e96f831e12c25" category="sidebar">ONTAP RESTコレクタ</block>
 </blocks>
