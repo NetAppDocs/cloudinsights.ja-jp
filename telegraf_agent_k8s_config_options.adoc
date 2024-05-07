@@ -87,15 +87,6 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 |  | rsMemRequest | テレグラフRSのメモリ要求 
 
 
-|  | DockerMountPointの略 | dockerMountPointパスのオーバーライド。これは、クラウドファウンドリなどのKubernetesプラットフォームでの非標準のDockerインストール用です 
-
-
-|  | DockerUnixSocketの略 | dockerUnixSocketパスのオーバーライド。これは、クラウドファウンドリなどのKubernetesプラットフォームでの非標準のDockerインストール用です。 
-
-
-|  | crioSockPath | crioSockPathパスのオーバーライド。これは、クラウドファウンドリなどのKubernetesプラットフォームでの非標準のDockerインストール用です。 
-
-
 |  | runPrivileged | 特権モードでTelegrafコンテナを実行します。KubernetesノードでSELinuxが有効になっている場合は、このをtrueに設定します 
 
 
@@ -121,9 +112,6 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 
 
 |  | outputTimeout | を参照してください link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf設定ドキュメント"] 
-
-
-|  | dockerMetricCollectionEnabled | Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。 
 
 
 |  | dsTolerations | Telegraf-DS追加の許容値。 
