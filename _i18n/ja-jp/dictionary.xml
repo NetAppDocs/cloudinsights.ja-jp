@@ -3009,12 +3009,6 @@ CPUとRAMが増加すると、DSCは初期化状態になり、その後自動�
   <block id="76b9e3aaffb44c3c4a7084bd7430088d" category="cell">Telegraf RSのCPU要求</block>
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">テレグラフRSのメモリ要求</block>
-  <block id="04808c0fd1505eb55198b91e2910694e" category="cell">DockerMountPointの略</block>
-  <block id="8b4f648381c209aa11d7baaf654c5f90" category="cell">dockerMountPointパスのオーバーライド。これは、クラウドファウンドリなどのKubernetesプラットフォームでの非標準のDockerインストール用です</block>
-  <block id="986b967d4a19de83ed59389872e2eb46" category="cell">DockerUnixSocketの略</block>
-  <block id="4dccb3941fc9760d547f9ae348685ad3" category="cell">dockerUnixSocketパスのオーバーライド。これは、クラウドファウンドリなどのKubernetesプラットフォームでの非標準のDockerインストール用です。</block>
-  <block id="6ae45dc429d1f96b8c63fba54419b0f7" category="cell">crioSockPath</block>
-  <block id="eeec0978474a40f056df3ffd9acfa360" category="cell">crioSockPathパスのオーバーライド。これは、クラウドファウンドリなどのKubernetesプラットフォームでの非標準のDockerインストール用です。</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">runPrivileged</block>
   <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">特権モードでTelegrafコンテナを実行します。KubernetesノードでSELinuxが有効になっている場合は、このをtrueに設定します</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">バッチサイズ</block>
@@ -13210,8 +13204,6 @@ Windows サービスを使用して取得を再開します</block>
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">（_AgentConfiguration_）をクリックします</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">塗料および耐性</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">Kubernetesの詳細はこちらをご覧ください <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">dockerMetricCollectionEnabled</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Dockerの指標を収集する。デフォルトでは、この値はtrueに設定されており、オンプレミスのDockerベースのKubernetes環境でDocker指標が収集されます。Dockerのメトリック収集を無効にするには、falseに設定します。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
   <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS追加の許容値。</block>
   <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">rsTolerations</block>
@@ -16118,12 +16110,10 @@ Kubernetesアプリケーションのストレージネットワークアクテ�
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">ポッドからストレージへの例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analyticsを使用すると、Kubernetes環境に対する最近の変更をオールインワンビューで確認できます。アラートと導入ステータスをすぐに確認できます。変更分析を使用すると、導入と設定の変更をすべて追跡し、Kubernetesのサービス、インフラ、クラスタの健全性とパフォーマンスに関連付けることができます。</block>
-  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">Change Analyticsでは、ワークロードの健常性と構成の変更を1つのペインで確認し、関連付けできます。これは、動的な環境のトラブルシューティングに役立ちます。</block>
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">KubernetesのNetwork Performance Monitoring and Map機能は、サービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることでトラブルシューティングを簡易化し、ネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響を与える前にパフォーマンスの問題を特定します。
 この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubernetesデータを収集します。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes Operatorとデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、OperatorはKubernetesクラスタノードに展開されたOperator互換コレクタを管理して、データを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。</block>
-  <block id="99caa80e6c446108c367beb2add705b3" category="list-text">マルチテナント環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insights変更分析ですべての変更を適切に追跡できない場合があります。</block>
   <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP統合の権限：</block>
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">ONTAPアクセス拒否の権限：</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">注: 1つのrest-role (_arwrole_or_csrestrole_--)がすでに追加されている場合、2つ目のrest-roleを追加する必要はありません。以下の例のように、API権限を追加するだけです。</block>
@@ -16143,4 +16133,7 @@ Kubernetesアプリケーションのストレージネットワークアクテ�
   <block id="bf9973f393dbc9824e3e96f831e12c25" category="sidebar">ONTAP RESTコレクタ</block>
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">event-exporter-maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">イベントエクスポータの最大イベント経過時間。  を参照してください<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
+  <block id="639bed0f86ee37975166505f25500f59" category="paragraph">変更分析はどのように役立ちますか？</block>
+  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">マルチテナントKubernetes環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insightsインフラストラクチャの監視ですべての変更を適切に追跡できない場合があります。</block>
+  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">Change Analyticsでは、ワークロードの健全性と構成の変更を1つのペインで表示して関連付けることができます。これは、動的なKubernetes環境のトラブルシューティングに役立ちます。</block>
 </blocks>
