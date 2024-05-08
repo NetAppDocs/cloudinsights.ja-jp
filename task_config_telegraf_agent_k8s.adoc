@@ -16,32 +16,24 @@ summary: Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubern
 
 
 [role="lead"]
-Cloud Insights では、Kubernetesコレクション向けにNetApp Kubernetes Monitoring Operator *（NKMO）を提供しています。データコレクタを追加するときは、「Kubernetes」タイルを選択するだけです。
-
-
-NOTE: Cloud Insightsフェデラルエディションを使用している場合は、インストールと設定の手順がこのページの手順と異なる場合があります。Cloud Insightsの指示に従って、NetApp Kubernetes監視オペレータをインストールします。
-
-image:kubernetes_tile.png["Kubernetes Data Collectorのタイル"]
+Cloud Insightsでは、Kubernetesコレクション用の* Kubernetes Monitoring Operator *を提供しています。新しいオペレータを導入するには、* Kubernetes > Collectors >+ Kubernetes Collector *に移動します。
 
 
 toc::[]
-Kubernetes Operatorとデータコレクタは、Cloud Insights Dockerレジストリからダウンロードされます。インストールが完了すると、OperatorはKubernetesクラスタノードに展開されたOperator互換コレクタを管理して、データを取得します。これには、コレクタのライフサイクルの管理も含まれます。このチェーンに続いて、データがコレクタから取得され、Cloud Insights に送信されます。
+
+
+== Kubernetes Monitoring Operatorをインストールする前に
+
+を参照してください link:pre-requisites_for_k8s_operator.html["前提条件"] Kubernetes Monitoring Operatorをインストールまたはアップグレードする前のドキュメント。
 
 
 
-== NetApp Kubernetes Monitoring Operatorをインストールする前に
-
-
-IMPORTANT: を参照してください link:pre-requisites_for_k8s_operator.html["*インストールまたはアップグレードの前に*"] NetApp Kubernetes Monitoring Operatorをインストールまたはアップグレードする前に、前提条件のドキュメントを参照してください。
-
-
-
-== NetApp Kubernetes Monitoring Operatorをインストールします
+== Kubernetes Monitoring Operatorのインストール
 
 image:NKMO-Instructions-1.png[""]
 image:NKMO-Instructions-2.png[""]
 
-.NetApp Kubernetes Monitoring Operator Agent を Kubernetes にインストールする手順：
+.KubernetesにKubernetes Monitoring Operatorエージェントをインストールする手順は次のとおりです。
 . 一意のクラスタ名およびネームスペースを入力してください。実行中の場合 <<をアップグレードして,をアップグレードして>> 以前のKubernetes Operatorで、同じクラスタ名とネームスペースを使用します。
 . これらを入力すると、ダウンロードコマンドスニペットをクリップボードにコピーできます。
 . スニペットを a_bash_window に貼り付け、実行します。Operatorインストールファイルがダウンロードされます。スニペットには固有のキーがあり、24時間有効です。
@@ -52,23 +44,29 @@ image:NKMO-Instructions-2.png[""]
 . インストールが完了したら、[_Next_]ボタンをクリックします。また、_operator-secrets.yaml_fileを削除するか、安全に保存してください。
 
 
-詳細については、をご覧ください <<configuring-proxy-support,プロキシを設定します>>。
+プロキシを使用している場合は、 <<configuring-proxy-support,プロキシを設定します>>。
 
-詳細については、をご覧ください <<using-a-custom-or-private-docker-repository,カスタム/プライベートDockerリポジトリを使用する>>。
+カスタムリポジトリをお持ちの場合は、 <<using-a-custom-or-private-docker-repository,カスタム/プライベートDockerリポジトリを使用する>>。
 
-NetApp Kubernetes Monitoring Operatorをインストールすると、Kubernetes EMSログ収集がデフォルトで有効になります。インストール後にこの収集を無効にするには、Kubernetesクラスタの詳細ページの上部にある* Modify Deployment *ボタンをクリックし、[Log collection]の選択を解除します。
 
-image:K8s_Modify_Deployment_Screen.png["[Modify Deployment]画面に[Log Collection]のチェックボックスが表示されている。"]
 
-この画面には、現在のログ収集ステータスも表示されます。次の状態が考えられます。
+== Kubernetes監視コンポーネント
 
-* 無効
-* 有効
-* Enabled -インストールを実行中です
-* Enabled -オフライン
-* 有効-オンライン
-* エラー- APIキーに十分な権限がありません
+Cloud Insights Kubernetes Monitoringは、次の4つの監視コンポーネントで構成されます。
 
+* クラスタ指標
+* ネットワークパフォーマンスとマップ（オプション）
+* イベントログ（オプション）
+* 変更分析（オプション）
+
+
+上記のオプションコンポーネントは、各Kubernetesコレクタに対してデフォルトで有効になっています。特定のコレクタ用のコンポーネントが必要ないと判断した場合は、* Kubernetes > Collectors *に移動し、画面右側のコレクタの「three dots」メニューから_Modify Deployment_を選択して無効にできます。
+
+image:KubernetesModifyDeploymentMenu.png["Kubernetes CollectorリストページのModify deploymentメニュー"]
+
+画面には各コンポーネントの現在の状態が表示され、必要に応じてそのコレクタのコンポーネントを無効または有効にすることができます。
+
+image:KubernetesModifyDeploymentScreen.png["MODY展開オプション,700"]
 
 
 
@@ -76,7 +74,7 @@ image:K8s_Modify_Deployment_Screen.png["[Modify Deployment]画面に[Log Collect
 
 
 
-=== 最新のNetApp Kubernetes Monitoring Operatorにアップグレードします
+=== 最新のKubernetes Monitoring Operatorへのアップグレード
 
 既存のOperatorにAgentConfigurationが存在するかどうかを確認します（ネームスペースがdefault_netapp-monitoring_でない場合は、適切なネームスペースに置き換えてください）。
 
@@ -110,12 +108,12 @@ AgentConfigurationが存在しない場合は、次の手順を実行します�
 
 
 
-== NetApp Kubernetes Monitoring Operatorを停止および開始します
+== Kubernetes Monitoring Operatorの停止と起動
 
-NetApp Kubernetes Monitoring Operatorを停止するには、次の手順を実行します
+Kubernetes Monitoring Operatorを停止するには：
 
  kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=0
-NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実行します
+Kubernetes Monitoring Operatorを起動するには：
 
  kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
 
@@ -124,9 +122,9 @@ NetApp Kubernetes Monitoring Operatorを開始するには、次の手順を実�
 
 
 
-=== をクリックして、NetApp Kubernetes Monitoring Operatorを削除します
+=== Kubernetes Monitoring Operatorを削除するには
 
-NetApp Kubernetes Monitoring Operatorのデフォルトのネームスペースは、「NetApp Monitoring」です。  独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
+Kubernetes Monitoring Operatorのデフォルトのネームスペースは「netapp-monitoring」です。  独自のネームスペースを設定した場合は、それらのネームスペースと、以降のすべてのコマンドおよびファイルを置き換えます。
 
 新しいバージョンの監視オペレータは、次のコマンドを使用してアンインストールできます。
 
@@ -157,34 +155,19 @@ kubectl delete ns <NAMESPACE>
 
 == Kubeステートメトリックについて
 
-NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にインストールします。ユーザによる操作は必要ありません。
+NetApp Kubernetes Monitoring Operatorは、他のインスタンスとの競合を回避するために独自のkube-state-metricsをインストールします。
+
+Kube-State-Metricsの詳細については、を参照してください。 link:task_config_telegraf_kubernetes.html["このページです"]。
 
 
 
-=== kube-state-metrics カウンタ
+== オペレータの設定/カスタマイズ
 
-これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。
+これらのセクションでは、オペレータ設定のカスタマイズ、プロキシの操作、カスタムまたはプライベートDockerリポジトリの使用、OpenShiftの操作について説明します。
 
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["導入メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["入力メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["ネームスペース指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["ノードのメトリックス"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["永続的ボリューム指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["永続的ボリューム要求の指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["ポッドのメトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["シークレットメトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["サービスメトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["Stat助け Set メトリック"]
+新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、コメントアウトされた設定例が含まれています。のリストを参照してください link:telegraf_agent_k8s_config_options.html["使用可能な設定"] 演算子の最新バージョン。
 
-
-'''
- == Configuring the Operator
-新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、一部の設定例がコメントアウトされています。のリストを参照してください link:telegraf_agent_k8s_config_options.html["使用可能な設定"] 演算子の最新バージョン。
-
-次のコマンドを使用してオペレータを配置した後で、このリソースを編集することもできます。
+オペレータが配備された後で、次のコマンドを使用してこのリソースを編集することもできます。
 
  kubectl -n netapp-monitoring edit AgentConfiguration
 展開したオペレータのバージョンがAgentConfigurationをサポートしているかどうかを確認するには、次のコマンドを実行します。
@@ -196,17 +179,17 @@ NetApp Kubernetes Monitoring Operatorは、kube-state-metricsを自動的にイ�
 
 === プロキシサポートを設定しています
 
-環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。
+Kubernetes Monitoring Operatorをインストールするために、環境内でプロキシを使用できる場所は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。
 
 * プロキシは、インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをCloud Insights 環境に接続するために必要です
 * ターゲットのKubernetesクラスタがCloud Insights 環境と通信するために必要なプロキシ
 
 
-これらのいずれか、または両方にプロキシを使用する場合は、NetApp Kubernetes Operating Monitorをインストールするために、まずCloud Insights 環境との良好な通信を可能にするようにプロキシが設定されていることを確認する必要があります。プロキシがあり、オペレータをインストールするサーバ/VMからCloud Insights にアクセスできる場合は、プロキシが適切に設定されている可能性があります。
+これらのいずれかまたは両方にプロキシを使用する場合、Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。プロキシがあり、オペレータをインストールするサーバ/VMからCloud Insights にアクセスできる場合は、プロキシが適切に設定されている可能性があります。
 
-NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります
+Kubernetes Operating Monitorのインストールに使用するプロキシについては、Operatorをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります
 
-変数を設定するには、NetApp Kubernetes Monitoring Operatorをインストールする前に、システムで次の手順を実行します。
+変数を設定するには、Kubernetes Monitoring Operatorをインストールする前に、システム*で次の手順を実行します。
 
 . 現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。
 +
@@ -220,9 +203,9 @@ NetApp Kubernetes Operating Monitorのインストールに使用するプロキ
 
 
 
-KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。
+KubernetesクラスタがCloud Insights環境と通信するために使用するプロキシの場合は、これらの手順をすべて読んだ後にKubernetes Monitoring Operatorをインストールします。
 
-NetApp Kubernetes Monitoring Operatorを導入する前に、operator-config.yamlでAgentConfigurationのプロキシセクションを設定します。
+Kubernetes Monitoring Operatorをデプロイする前に、operator-config.yamlのAgentConfigurationのプロキシセクションを設定します。
 
 [listing]
 ----
@@ -250,7 +233,7 @@ agent:
 
 === カスタムまたはプライベートのDockerリポジトリを使用する
 
-デフォルトでは、NetApp Kubernetes Monitoring OperatorはCloud Insights リポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。
+デフォルトでは、Kubernetes Monitoring OperatorはCloud Insightsリポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、そのクラスタがカスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからコンテナイメージのみをプルするように構成されている場合は、Kubernetes Monitoring Operatorが必要とするコンテナへのアクセスを設定する必要があります。
 
 NetApp Monitoring Operatorのインストールタイルから[Image Pull Snippet]を実行します。このコマンドは、Cloud Insights リポジトリにログインし、オペレータのすべてのイメージ依存関係をプルして、Cloud Insights リポジトリからログアウトします。プロンプトが表示されたら、指定したリポジトリの一時パスワードを入力します。このコマンドは、オプション機能を含む、オペレータが使用するすべてのイメージをダウンロードします。これらの画像がどの機能に使用されるかについては、以下を参照してください。
 
@@ -310,7 +293,7 @@ OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブ�
 
 == 秘密に関する注意事項
 
-クラスタ全体のシークレットを表示するNetApp Kubernetes Monitoring Operatorの権限を削除するには、インストール前に_operator-setup.yaml_fileから次のリソースを削除します。
+Kubernetes Monitoring Operatorのシークレットをクラスタ全体で表示する権限を削除するには、インストール前に_operator-setup.yaml_fileから次のリソースを削除します。
 
 [listing]
 ----
@@ -384,9 +367,19 @@ PEM ファイルは、フィンガープリントが次のようになってい�
  sudo -E -H ./<installation_script_name> --install
 
 
+=== 公差と接線（Tolerations and Taints）
+
+NetApp-ci-telegraf-ds_、_NetApp-CI-fluent-bit-ds_、および_NetApp-CI-net-observer-l4-DS_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます link:telegraf_agent_k8s_config_options.html["（_AgentConfiguration_）をクリックします"]。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。
+
+Kubernetesの詳細はこちらをご覧ください link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["塗料および耐性"]。
+
+に戻ります link:task_config_telegraf_agent_k8s.html["* NetApp Kubernetes監視オペレータのインストール*ページ"]
+
+
+
 == トラブルシューティング
 
-NetApp Kubernetes Monitoring Operatorのセットアップで問題が発生した場合の対処方法を次に示します。
+Kubernetes Monitoring Operatorの設定で問題が発生した場合に試すべきこと：
 
 [cols="stretch"]
 |===
@@ -451,7 +444,7 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
 仕様に適切な公差を追加します。次に、 ReplicaSet ポッドを再起動します。 
 
 
-| PSP/PSA環境があります。これはモニタリングオペレータに影響しますか？ | ポッドセキュリティポリシー（PSP）またはポッドセキュリティアドミッション（PSA）を適用してKubernetesクラスタを実行している場合は、最新のNetApp Kubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートする現在のNKMOにアップグレードするには、次の手順に従います。
+| PSP/PSA環境があります。これはモニタリングオペレータに影響しますか？ | KubernetesクラスタがPod Security Policy（PSP）またはPod Security Admission（PSA）を使用して実行されている場合は、最新のKubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートしている現在のオペレータにアップグレードするには、次の手順に従います。
 
 1. <<uninstalling,をアンインストールします>> 以前の監視オペレータ：
 
@@ -464,17 +457,17 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
 2. <<installing-the-netapp-kubernetes-monitoring-operator,をインストールします>> モニタリングオペレータの最新バージョン。 
 
 
-| NKMOを導入する際に問題が発生し、PSP/PSAを使用しました。 | 1.次のコマンドを使用してエージェントを編集します。
+| Operatorを展開しようとして問題が発生しましたが、PSP/PSAを使用しています。 | 1.次のコマンドを使用してエージェントを編集します。
 
 kubectl -n <name-space>編集エージェント
 
-2.「security-policy-enabled」を「false」に設定します。これにより、ポッドセキュリティポリシーとポッドセキュリティアドミッションが無効になり、NKMOが展開できるようになります。次のコマンドを使用して確認します。
+2.「security-policy-enabled」を「false」に設定します。これにより、PodセキュリティポリシーとPodセキュリティアドミッションが無効になり、オペレータが展開できるようになります。次のコマンドを使用して確認します。
 
 kubectl get psp（Pod Security Policy removedを表示する必要があります）
 kubectl get all -n <namespace>| grep -i psp (should show that nothing is found) 
 
 
-| 「ImagePullBackoff」エラーが発生しました | このエラーは、カスタムまたはプライベートのDockerリポジトリがあり、NetApp Kubernetes Monitoring Operatorで正しく認識されるように設定していない場合に表示されることがあります。  <<using-a-custom-or-private-docker-repository,詳細はこちら>> カスタム/プライベートリポジトリの設定について 
+| 「ImagePullBackoff」エラーが発生しました | これらのエラーは、カスタムまたはプライベートのDockerリポジトリがあり、Kubernetes Monitoring Operatorを適切に認識するように設定していない場合に表示されることがあります。  <<using-a-custom-or-private-docker-repository,詳細はこちら>> カスタム/プライベートリポジトリの設定について 
 
 
 | 監視オペレータの配置に問題 を使用していますが、現在のドキュメントでは解決できません。  a| 
@@ -489,7 +482,7 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 ----
 
 
-| NKMOネームスペース内のNet-Observer（ワークロードマップ）ポッドはCrashLoopBackOffにあります | これらのポッドは、Network ObservabilityのWorkload Mapデータコレクタに対応しています。以下をお試しください。
+| Operator名前空間のNet-Observer（ワークロードマップ）ポッドがCrashLoopBackOffにある | これらのポッドは、Network ObservabilityのWorkload Mapデータコレクタに対応しています。以下をお試しください。
 •いずれかのポッドのログをチェックして、カーネルの最小バージョンを確認します。例：
 
 -----
@@ -499,19 +492,19 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 •Net-Observerポッドを使用するには、Linuxカーネルのバージョンが4.18.0以上である必要があります。「uname -r」コマンドを使用してカーネルのバージョンを確認し、4.18.0以上であることを確認します 
 
 
-| ポッドはNKMOネームスペース（デフォルト：netapp-monitoring）で実行されていますが、[Queries]のワークロードマップまたはKubernetes指標のデータがUIに表示されません | K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。 
+| PodはOperatorネームスペース（デフォルト：netapp-monitoring）で実行されているが、QueriesのワークロードマップまたはKubernetes指標のデータがUIに表示されない | K8Sクラスタのノードの時間設定を確認します。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期することを強く推奨します。 
 
 
-| NKMOネームスペース内の一部のnet-observerポッドが保留状態になっています | net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。
+| Operator名前空間の一部のnet-observerポッドがPending状態です | net-observerはデーモンセットであり、Kubernetesクラスタの各ノードでポッドを実行します。
 •保留状態のポッドをメモし、CPUまたはメモリのリソース問題が発生しているかどうかを確認します。必要なメモリとCPUがノードにあることを確認します。 
 
 
-| NetApp Kubernetes Monitoring Operatorをインストールした直後に、ログに次のようなメッセージが表示されます。
+| Kubernetes Monitoring Operatorをインストールした直後にログに次のようなメッセージが表示されます。
 
 [プラグインのinputs.prometheus]エラー：へのHTTP要求の実行中にエラーが発生しました http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] ゲット http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] dial tcp：lookup kube-state-metrics.<namespace> .svc.cluster.local：該当するホストがありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
 
 
-| クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。 | Kubernetesのバージョンを確認します（ `kubectl version`）。  v1.20.x以下の場合、これは想定される制限です。  NetApp Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。 
+| クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。 | Kubernetesのバージョンを確認します（ `kubectl version`）。  v1.20.x以下の場合、これは想定される制限です。  Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。 
 
 
 | オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。 | _AgentConfiguration_のtelegrafセクションを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください  link:telegraf_agent_k8s_config_options.html["設定オプション"]。
@@ -564,6 +557,6 @@ fluent-bit:
 
 
 
-| リソースが不足しているため、NetApp Kubernetes Monitoring Operatorによってデプロイされたポッドがクラッシュしています。 | 『NetApp Kubernetes Monitoring Operator』を参照してください。 link:telegraf_agent_k8s_config_options.html["設定オプション"] 必要に応じてCPUやメモリの制限を増やします。 
+| リソースが不足しているため、Kubernetes Monitoring Operatorによってデプロイされたポッドがクラッシュしています。 | Kubernetes Monitoring Operatorを参照 link:telegraf_agent_k8s_config_options.html["設定オプション"] 必要に応じてCPUやメモリの制限を増やします。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

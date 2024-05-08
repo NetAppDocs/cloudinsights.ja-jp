@@ -202,7 +202,7 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_config_telegraf_kibana.html["キバナ "] | サービス 
 
 
-| link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes "] | サービス 
+| link:https:task_config_telegraf_agent_k8s.html["Kubernetes "] | サービス 
 
 
 | link:task_dc_lenovo.html["Lenovo HX シリーズ "] | インフラ 
