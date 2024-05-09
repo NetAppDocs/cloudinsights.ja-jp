@@ -15977,7 +15977,6 @@ Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフ�
   <block id="807c67eb6796ba389d19bd183fc2b317" category="paragraph">Kube-State-Metricsの詳細については、を参照してください。 <block ref="73f7e5446269af2d39c747140597d176" category="inline-link-macro-rx"></block>。</block>
   <block id="4f20cb3e8959a7865ba5aaa5af540ddb" category="section-title">オペレータの設定/カスタマイズ</block>
   <block id="67dea165315ff79ce5620f051688d07c" category="paragraph">これらのセクションでは、オペレータ設定のカスタマイズ、プロキシの操作、カスタムまたはプライベートDockerリポジトリの使用、OpenShiftの操作について説明します。</block>
-  <block id="039369597a340d41c2e4a9df62b375fb" category="paragraph">新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、コメントアウトされた設定例が含まれています。のリストを参照してください <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 演算子の最新バージョン。</block>
   <block id="27aa502b8f8f23143b77f0800d6dd42f" category="paragraph">オペレータが配備された後で、次のコマンドを使用してこのリソースを編集することもできます。</block>
   <block id="c8cb2db38f5ff99219b7338226473fd2" category="paragraph">Kubernetes Monitoring Operatorをインストールするために、環境内でプロキシを使用できる場所は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。</block>
   <block id="a7f189b94dda98958771dc1a3345eb8f" category="paragraph">これらのいずれかまたは両方にプロキシを使用する場合、Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。プロキシがあり、オペレータをインストールするサーバ/VMからCloud Insights にアクセスできる場合は、プロキシが適切に設定されている可能性があります。</block>
@@ -16018,4 +16017,6 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">Kubernetesのバージョンを確認します（<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  v1.20.x以下の場合、これは想定される制限です。  Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">リソースが不足しているため、Kubernetes Monitoring Operatorによってデプロイされたポッドがクラッシュしています。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">Kubernetes Monitoring Operatorを参照 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 必要に応じてCPUやメモリの制限を増やします。</block>
+  <block id="d9a52817194c8be56b59a9d57114278a" category="section-title">設定オプション</block>
+  <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最も一般的に変更される設定は、_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、コメントアウトされた設定例が含まれています。のリストを参照してください <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 演算子の最新バージョン。</block>
 </blocks>

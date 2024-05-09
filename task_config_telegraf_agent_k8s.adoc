@@ -165,7 +165,11 @@ Kube-State-Metricsの詳細については、を参照してください。 link
 
 これらのセクションでは、オペレータ設定のカスタマイズ、プロキシの操作、カスタムまたはプライベートDockerリポジトリの使用、OpenShiftの操作について説明します。
 
-新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、コメントアウトされた設定例が含まれています。のリストを参照してください link:telegraf_agent_k8s_config_options.html["使用可能な設定"] 演算子の最新バージョン。
+
+
+=== 設定オプション
+
+最も一般的に変更される設定は、_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、コメントアウトされた設定例が含まれています。のリストを参照してください link:telegraf_agent_k8s_config_options.html["使用可能な設定"] 演算子の最新バージョン。
 
 オペレータが配備された後で、次のコマンドを使用してこのリソースを編集することもできます。
 
