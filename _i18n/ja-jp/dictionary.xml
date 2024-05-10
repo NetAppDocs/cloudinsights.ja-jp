@@ -16021,4 +16021,6 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最も一般的に変更される設定は、_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、コメントアウトされた設定例が含まれています。のリストを参照してください <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 演算子の最新バージョン。</block>
   <block id="55daf72da742e811f565e4ab709d3c49" category="section-title">ONTAPスイッチメトリックを収集するための権限要件</block>
   <block id="1a565d9a88c6cc1a17ed9ec577431947" category="paragraph">Cloud Insightsでは、コレクタのオプションとしてONTAPクラスタスイッチのデータを収集できます。 <block ref="0a74ef7985c5cbe5eb3ab6c199d26582" category="inline-xref-macro-rx"></block> 設定：Cloud Insightsコレクタでこれを有効にするだけでなく、次の機能を提供するようにONTAPシステム自体を設定する必要があります。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、およびが正しいことを確認します。 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> は、スイッチデータをCloud Insightsに送信できるように設定されています。</block>
+  <block id="e77307796c2832560f84fa94d82cd573" category="list-text">RubrikクラスタのIPアドレスまたはホスト名。</block>
+  <block id="fb36183a15285a9f1f23d79072c763f7" category="list-text">Basic認証の場合は、クラスタのユーザ名とパスワード。サービスアカウントベースの認証を使用する場合は、サービスアカウント、シークレット、および組織IDが必要です。</block>
 </blocks>
