@@ -132,6 +132,12 @@ Throughput –このストレージプールの容量の要因となっている
 
 
 
+=== ONTAPスイッチメトリックを収集するための権限要件
+
+Cloud Insightsでは、コレクタのオプションとしてONTAPクラスタスイッチのデータを収集できます。 <<advanced-configuration,詳細設定>> 設定：Cloud Insightsコレクタでこれを有効にするだけでなく、次の機能を提供するようにONTAPシステム自体を設定する必要があります。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"]、およびが正しいことを確認します。 <<a-note-about-permissions,権限>> は、スイッチデータをCloud Insightsに送信できるように設定されています。
+
+
+
 == 設定
 
 [cols="2*"]
