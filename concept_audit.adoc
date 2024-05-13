@@ -95,7 +95,7 @@ Cloud Insights で監査されるイベントとアクションは、次の領�
 
 * * ユーザーアカウント * ：ログイン、ログアウト、ロール変更など
 +
-例：_User * Tony Lavoie * 10.1.120.15 *、ユーザエージェント* Mozilla/5.0（Windows NT 10.0、Win64、x64）AppleWebKit/537.36（KHTML、Geckoなど）Chrome/85.0.4183.121 Safari/537.36 *、ログイン方法* BlueXP Portal Login_*
+5a3b3866ed7beab8b728614f1d33c0b5
 
 * * Acquisition Unit * ：作成、削除など
 +

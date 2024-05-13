@@ -55,134 +55,32 @@ sidebar:
     url: "/data_collector_list.html"
   - title: Cloud Insights に登録しています
     url: "/concept_subscribing_to_cloud_insights.html"
-  - title: オブザーバビリティ
+  - title: 自動デバイス解決
     entries:
-    - title: ダッシュボードの作成
+    - title: デバイス解決の概要
+      url: "/concept_device_resolution_overview.html"
+    - title: デバイス解決ルール
+      url: "/task_device_resolution_rules.html"
+    - title: ファイバチャネルのデバイス解決
+      url: "/task_device_resolution_fibre_channel.html"
+    - title: IP デバイス解決
+      url: "/task_device_resolution_ip.html"
+    - title: デバイス解決のプリファレンスの設定
+      url: "/task_device_resolution_preferences.html"
+    - title: 正規表現の例
+      url: "/concept_device_resolution_regex_examples.html"
+  - title: ダッシュボードの作成
+    entries:
+    - title: ダッシュボードの概要
+      url: "/concept_dashboards_overview.html"
+    - title: ダッシュボードの機能
+      url: "/concept_dashboard_features.html"
+    - title: ダッシュボードの例
       entries:
-      - title: ダッシュボードの概要
-        url: "/concept_dashboards_overview.html"
-      - title: ダッシュボードの機能
-        url: "/concept_dashboard_features.html"
-      - title: ダッシュボードの例
-        entries:
-        - title: 仮想マシンのパフォーマンス
-          url: "/task_dashboard_example_VM_performance.html"
-      - title: ダッシュボードのベストプラクティス
-        url: "/concept_dashboard_best_practices.html"
-    - title: クエリを使用した作業
-      entries:
-      - title: アセットのクエリ
-        url: "/concept_querying_assets.html"
-      - title: クエリーの作成
-        url: "/task_create_query.html"
-      - title: 使用可能なクエリを表示する
-        url: "/task_view_queries.html"
-      - title: クエリ結果を .csv にエクスポートしています
-        url: "/task_export_query_results.html"
-      - title: クエリの変更または削除
-        url: "/task_modify_delete_query.html"
-      - title: オブジェクトへの複数のアプリケーション / 注釈の割り当て
-        url: "/task_query_assign_multiple_applicationss.html"
-      - title: 表の値をクリップボードにコピーしています
-        url: "/task_query_copy_table_values.html"
-      - title: ログを照会しています
-        url: "/concept_log_explorer.html"
-    - title: 分析
-      entries:
-      - title: 概要
-        url: "/insights_overview.html"
-      - title: 負荷のある共有リソース
-        url: "/insights_shared_resources_under_stress.html"
-      - title: Kubernetesネームスペースのスペースが不足しています
-        url: "/insights_k8s_namespaces_running_out_of_space.html"
-      - title: ONTAP コールドストレージを再利用します
-        url: "/insights_reclaim_ontap_cold_storage.html"
-    - title: 監視とアラート
-      entries:
-      - title: モニタの作成
-        url: "/task_create_monitor.html"
-      - title: アラートの表示と管理
-        url: "/task_view_and_manage_alerts.html"
-      - title: 通知受信者の設定
-        url: "/concept_notifications_email.html"
-      - title: システム定義のモニター
-        url: "/task_system_monitors.html"
-      - title: Webhook 通知
-        url: "/task_create_webhook.html"
-    - title: アノテーションの使用
-      entries:
-      - title: アノテーションの定義
-        url: "/task_defining_annotations.html"
-      - title: アノテーションの使用
-        url: "/task_create_annotation.html"
-      - title: アノテーションルールの使用
-        url: "/task_create_annotation_rules.html"
-      - title: API を使用したアノテーションのインポート
-        url: "/task_annotation_import.html"
-    - title: アプリケーションの操作
-      entries:
-      - title: アプリケーションの概念
-        url: "/concept_about_applications.html"
-      - title: アプリケーションの設定
-        url: "/task_create_application.html"
-    - title: 自動デバイス解決
-      entries:
-      - title: デバイス解決の概要
-        url: "/concept_device_resolution_overview.html"
-      - title: デバイス解決ルール
-        url: "/task_device_resolution_rules.html"
-      - title: ファイバチャネルのデバイス解決
-        url: "/task_device_resolution_fibre_channel.html"
-      - title: IP デバイス解決
-        url: "/task_device_resolution_ip.html"
-      - title: デバイス解決のプリファレンスの設定
-        url: "/task_device_resolution_preferences.html"
-      - title: 正規表現の例
-        url: "/concept_device_resolution_regex_examples.html"
-    - title: アセットページ情報
-      entries:
-      - title: アセットページの概要
-        url: "/concept_asset_page_overview.html"
-      - title: オブジェクトのコンテキスト内フィルタリング
-        url: "/concept_in_context_filters.html"
-      - title: "[Summary]セクションと[Topology]セクション"
-        url: "/concept_asset_summary_section.html"
-      - title: Expert View セクシヨン
-        url: "/concept_asset_expert_view_section.html"
-      - title: User Data セクション
-        url: "/concept_asset_user_data_section.html"
-      - title: 関連アラートセクション
-        url: "/concept_asset_alerts_section.html"
-      - title: ストレージ仮想化
-        url: "/concept_storage_virtualization.html"
-      - title: 資産を検索するためのヒントとヒント
-        url: "/concept_searching_assets.html"
-    - title: レポート作成
-      entries:
-      - title: レポート概要
-        url: "/reporting_overview.html"
-      - title: Reporting User Roles の場合
-        url: "/reporting_user_roles.html"
-      - title: 事前定義済みレポートの使用
-        url: "/reporting_predefined_reports.html"
-      - title: Storage Manager のダッシュボード
-        url: "/reporting_storage_manager_dashboard.html"
-      - title: レポートの例の作成
-        url: "/reporting_create_example.html"
-      - title: レポートの管理
-        url: "/reporting_managing_reports.html"
-      - title: カスタムレポート
-        url: "/reporting_creating_custom_reports.html"
-      - title: データモデル
-        url: "/reporting_creating_custom_reports.html#reporting-data-models"
-      - title: Reporting Database API の略
-        url: "/reporting_querying_database.html"
-      - title: データ保持
-        url: "/reporting_data_retention.html"
-      - title: スキーマ図
-        url: "/reporting_schema_diagrams.html"
-      - title: スキーマテーブル
-        url: "/reference_schemas.html"
+      - title: 仮想マシンのパフォーマンス
+        url: "/task_dashboard_example_VM_performance.html"
+    - title: ダッシュボードのベストプラクティス
+      url: "/concept_dashboard_best_practices.html"
   - title: Kubernetes
     entries:
     - title: Kubernetes の概要ページ
@@ -199,20 +97,116 @@ sidebar:
       url: "/concept_kubernetes_network_monitoring_and_map.html"
     - title: 変更分析
       url: "/kubernetes_change_analytics.html"
+  - title: 分析
+    entries:
+    - title: 概要
+      url: "/insights_overview.html"
+    - title: 負荷のある共有リソース
+      url: "/insights_shared_resources_under_stress.html"
+    - title: Kubernetesネームスペースのスペースが不足しています
+      url: "/insights_k8s_namespaces_running_out_of_space.html"
+    - title: ONTAP コールドストレージを再利用します
+      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: ONTAP の基礎知識
     url: "/concept_ontap_essentials.html"
-  - title: 管理およびその他のタスク
+  - title: クエリを使用した作業
     entries:
-    - title: API の使用
-      url: "/API_Overview.html"
-    - title: 環境の監視
-      entries:
-      - title: イベントの監査
-        url: "/concept_audit.html"
-      - title: TTL およびダウンサンプリング
-        url: concept_ttl_and_downsampling.html
-      - title: Active IQ
-        url: "/concept_activeiq.html"
+    - title: アセットのクエリ
+      url: "/concept_querying_assets.html"
+    - title: クエリーの作成
+      url: "/task_create_query.html"
+    - title: 使用可能なクエリを表示する
+      url: "/task_view_queries.html"
+    - title: クエリ結果を .csv にエクスポートしています
+      url: "/task_export_query_results.html"
+    - title: クエリの変更または削除
+      url: "/task_modify_delete_query.html"
+    - title: オブジェクトへの複数のアプリケーション / 注釈の割り当て
+      url: "/task_query_assign_multiple_applicationss.html"
+    - title: 表の値をクリップボードにコピーしています
+      url: "/task_query_copy_table_values.html"
+    - title: ログを照会しています
+      url: "/concept_log_explorer.html"
+  - title: アノテーションの使用
+    entries:
+    - title: アノテーションの定義
+      url: "/task_defining_annotations.html"
+    - title: アノテーションの使用
+      url: "/task_create_annotation.html"
+    - title: アノテーションルールの使用
+      url: "/task_create_annotation_rules.html"
+    - title: API を使用したアノテーションのインポート
+      url: "/task_annotation_import.html"
+  - title: アプリケーションの操作
+    entries:
+    - title: アプリケーションの概念
+      url: "/concept_about_applications.html"
+    - title: アプリケーションの設定
+      url: "/task_create_application.html"
+  - title: 監視とアラート
+    entries:
+    - title: モニタの作成
+      url: "/task_create_monitor.html"
+    - title: アラートの表示と管理
+      url: "/task_view_and_manage_alerts.html"
+    - title: 通知受信者の設定
+      url: "/concept_notifications_email.html"
+    - title: システム定義のモニター
+      url: "/task_system_monitors.html"
+  - title: API の使用
+    url: "/API_Overview.html"
+  - title: Webhook 通知
+    url: "/task_create_webhook.html"
+  - title: 環境の監視
+    entries:
+    - title: イベントの監査
+      url: "/concept_audit.html"
+    - title: TTL およびダウンサンプリング
+      url: concept_ttl_and_downsampling.html
+  - title: アセットページ情報
+    entries:
+    - title: アセットページの概要
+      url: "/concept_asset_page_overview.html"
+    - title: オブジェクトのコンテキスト内フィルタリング
+      url: "/concept_in_context_filters.html"
+    - title: "[Summary]セクションと[Topology]セクション"
+      url: "/concept_asset_summary_section.html"
+    - title: Expert View セクシヨン
+      url: "/concept_asset_expert_view_section.html"
+    - title: User Data セクション
+      url: "/concept_asset_user_data_section.html"
+    - title: 関連アラートセクション
+      url: "/concept_asset_alerts_section.html"
+    - title: ストレージ仮想化
+      url: "/concept_storage_virtualization.html"
+    - title: 資産を検索するためのヒントとヒント
+      url: "/concept_searching_assets.html"
+  - title: レポート作成
+    entries:
+    - title: レポート概要
+      url: "/reporting_overview.html"
+    - title: Reporting User Roles の場合
+      url: "/reporting_user_roles.html"
+    - title: 事前定義済みレポートの使用
+      url: "/reporting_predefined_reports.html"
+    - title: Storage Manager のダッシュボード
+      url: "/reporting_storage_manager_dashboard.html"
+    - title: レポートの例の作成
+      url: "/reporting_create_example.html"
+    - title: レポートの管理
+      url: "/reporting_managing_reports.html"
+    - title: カスタムレポート
+      url: "/reporting_creating_custom_reports.html"
+    - title: データモデル
+      url: "/reporting_creating_custom_reports.html#reporting-data-models"
+    - title: Reporting Database API の略
+      url: "/reporting_querying_database.html"
+    - title: データ保持
+      url: "/reporting_data_retention.html"
+    - title: スキーマ図
+      url: "/reporting_schema_diagrams.html"
+    - title: スキーマテーブル
+      url: "/reference_schemas.html"
   - title: ワークロードのセキュリティ
     entries:
     - title: ワークロードセキュリティについて
@@ -265,6 +259,8 @@ sidebar:
       url: "/cs_notifications_email.html"
     - title: ワークロードセキュリティAPI
       url: "/concept_cs_api.html"
+  - title: Active IQ
+    url: "/concept_activeiq.html"
   - title: トラブルシューティング
     entries:
     - title: 全般的なトラブルシューティング

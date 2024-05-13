@@ -268,31 +268,3 @@ image:SecurityAdmin_Encrypt_Key_Swagger_API.png["データ収集用API"]
 _preEncrypted_optionを_True_に設定した場合、APIコマンドを通過するパスワードは*すでに暗号化されている*として扱われます。APIはパスワードを再暗号化しません。APIを構築するときは、以前に暗号化されたパスワードを適切な場所に貼り付けるだけです。
 
 image:SecurityAdmin_Encrypt_Key_API_Example.png["APIの例、width=600"]
-
-
-
-== APIで使用するパスワードの暗号化
-
-オプション8では、パスワードを暗号化し、APIを介してデータコレクタに渡すことができます。
-
-SecurityAdminツールを対話型モードで起動し、オプション8:_Encrypt Password_を選択します。
-
- securityadmin.sh -i
-暗号化するパスワードの入力を求められます。入力した文字は画面に表示されません。  プロンプトが表示されたら、パスワードを再入力します。
-
-または、スクリプトでコマンドを使用する場合は、コマンドラインで「-enc」パラメータを指定して_securityadmin.sh_を使用し、暗号化されていないパスワードを渡します。
-
- securityadmin -enc mypassword
-image:SecurityAdmin_Encrypt_Key_API_CLI_Example.png["CLIの例"]
-
-暗号化されたパスワードが画面に表示されます。先頭または末尾の記号を含む文字列全体をコピーします。
-
-image:SecurityAdmin_Encrypt_Key_1.png["インタラクティブモード暗号化パスワード、幅= 640"]
-
-暗号化されたパスワードをデータコレクタに送信するには、データ収集APIを使用します。このAPIのSwaggerは* Admin > API Access *にあり、[API Documentation]リンクをクリックします。「データ収集」APIタイプを選択します。  _data_collection.data_collector_headingで、この例の__/collector/datasources_POST APIを選択します。
-
-image:SecurityAdmin_Encrypt_Key_Swagger_API.png["データ収集用API"]
-
-_preEncrypted_optionを_True_に設定した場合、APIコマンドを通過するパスワードは*すでに暗号化されている*として扱われます。APIはパスワードを再暗号化しません。APIを構築するときは、以前に暗号化されたパスワードを適切な場所に貼り付けるだけです。
-
-image:SecurityAdmin_Encrypt_Key_API_Example.png["APIの例、width=600"]
