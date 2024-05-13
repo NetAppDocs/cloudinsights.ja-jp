@@ -562,5 +562,8 @@ fluent-bit:
 
 
 | リソースが不足しているため、Kubernetes Monitoring Operatorによってデプロイされたポッドがクラッシュしています。 | Kubernetes Monitoring Operatorを参照 link:telegraf_agent_k8s_config_options.html["設定オプション"] 必要に応じてCPUやメモリの制限を増やします。 
+
+
+| イメージがないか無効な設定が原因で、netapp-ci-kube-state-metricsポッドが起動しないか準備完了状態になりました。これでStatefulSetが停止し、設定の変更がnetapp-ci-kube-state-metricsポッドに適用されなくなりました。 | StatefulSetは link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["切断"] 状態。設定の問題を修正したら、netapp-ci-kube-state-metricsポッドをバウンスします。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

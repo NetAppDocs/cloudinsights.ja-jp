@@ -15987,4 +15987,63 @@ Aggregates：RESTでaggr0が報告されなくなりました。
 Storage Virtual Machine：RESTでは、「data」以外のタイプのSVM（「cluster」、「mgmt」、「node」など）は報告されなくなりました。
 
 また、デフォルトのパフォーマンスポーリング期間が15分から5分に変更されたため、データを含むグラフの表示が変更されることもあります。  ポーリングの頻度が高いほど、プロットするデータポイントが増えます。</block>
+  <block id="07564ad1af1bd4ed017ae241054bd345" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。  ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
+  <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">新しいユーザアカウントを作成するには、BlueXPを使用します。ユーザはEメールで送信された招待状に応答できますが、BlueXPのアカウントをお持ちでない場合は、BlueXPにサインアップして招待を承諾する必要があります。</block>
+  <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">アイデンティティフェデレーションとは</block>
+  <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">ユーザはすべてのNetApp BlueXPサービスに一度ログインします（シングルサインオン）。</block>
+  <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">ユーザアカウントは、すべてのクラウドサービスのNetApp BlueXPで管理されます。デフォルトでは、認証はBlueXPローカルユーザプロファイルを使用して行われます。このプロセスの概要を以下に示します。</block>
+  <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">ローカルを使用したBlueXP認証</block>
+  <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1efb7531b4ff57cf7e5dad319f452ce8" category="paragraph">ただし、独自のアイデンティティプロバイダを使用して、Cloud Insightsやその他のNetApp BlueXPサービスのユーザを認証したいと考えているお客様もいます。アイデンティティフェデレーションでは、NetApp BlueXPアカウントは社内ディレクトリのクレデンシャルを使用して認証されます。</block>
+  <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">フェデレーションを使用したBlueXP認証</block>
+  <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">アイデンティティフェデレーションの有効</block>
+  <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXPフェデレーションの手順</block>
+  <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXPはAuth0を使用してアイデンティティフェデレーションを実装し、Active Directoryフェデレーションサービス（ADFS）やMicrosoft Azure Active Directory（AD）などのサービスと統合します。アイデンティティフェデレーションを設定するには、 <block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
+  <block id="e806ab1149571cd13505dfbc97c18648" category="admonition">Cloud InsightsでSSOを使用する前に、BlueXPアイデンティティフェデレーションを設定する必要があります。</block>
+  <block id="3d447ee9850a212906099a2f2e71dd7b" category="paragraph">BlueXPでのアイデンティティフェデレーションの変更は、Cloud Insightsだけでなく、すべてのNetApp BlueXPサービスにも適用されることを理解しておくことが重要です。この変更については、お客様が所有する各BlueXP製品のNetAppチームと話し合い、使用している設定がアイデンティティフェデレーションと連携していることを確認したり、アカウントの調整が必要な場合はその旨をお客様に伝えてください。お客様は、社内の SSO チームをアイデンティティフェデレーションの変更にも関与させる必要があります。</block>
+  <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">アイデンティティフェデレーションを有効にしたら、会社のアイデンティティプロバイダに対する変更（SAMLからMicrosoft ADへの移行など）には、ユーザのプロファイルを更新するためにBlueXPでトラブルシューティング/変更/対応が必要になる可能性があることを理解しておくことも重要です。</block>
+  <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">この問題またはその他のフェデレーションの問題については、次のURLでサポートチケットを開くことができます。<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> カテゴリ「bluexp.netapp.com」&gt;「フェデレーションの問題」を選択します。</block>
+  <block id="1290a9c844484dfb0ecb66679bb02236" category="admonition">Cloud Insights Premium Edition では、 SSO ユーザーの自動プロビジョニング _ を使用できます。これを構成してから Cloud Insights で有効にする必要があります。SSOユーザの自動プロビジョニング設定には、 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 上記のセクションで説明したように、NetApp BlueXPを使用する。フェデレーションを使用すると、シングルサインオンユーザは、Security Assertion Markup Language 2.0（SAML）やOpenID Connect（OIDC）などのオープン標準を使用して、社内ディレクトリのクレデンシャルを使用してNetApp BlueXPアカウントにアクセスできます。</block>
+  <block id="5f47dcd3204dc1bc6c36abf1ce4be4cc" category="paragraph">_SSOユーザ自動プロビジョニング_を設定するには、*[管理]&gt;[ユーザ管理]*ページで、事前にBlueXPアイデンティティフェデレーションを設定しておく必要があります。バナーの*[フェデレーションの設定]*リンクを選択して、BlueXPフェデレーションに進みます。設定が完了すると、Cloud Insights管理者はSSOユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。</block>
+  <block id="bbeb55e7d4d240b66f4ca24218cf7de0" category="admonition">NetApp BlueXPにはユーザログインタイムアウトが7日間設定されているため、Cloud Insightsもそのイベントを使用してログアウトする必要があります。再度ログインするだけで、ダッシュボードは引き続き表示されます。</block>
+  <block id="d30a0cd77a13a9c540651e05cf93b85c" category="cell">イメージがないか無効な設定が原因で、netapp-ci-kube-state-metricsポッドが起動しないか準備完了状態になりました。これでStatefulSetが停止し、設定の変更がnetapp-ci-kube-state-metricsポッドに適用されなくなりました。</block>
+  <block id="54ddc3c7d064822eed932015d8740336" category="inline-link-macro">切断</block>
+  <block id="24842c3920322c32befcba0bfb6c67b4" category="cell">StatefulSetは <block ref="01cb4c066842f659530df33ef9ef5308" category="inline-link-macro-rx"></block> 状態。設定の問題を修正したら、netapp-ci-kube-state-metricsポッドをバウンスします。</block>
+  <block id="10c296499c1a789621926ca2df89bad4" category="paragraph">NetApp BlueXPが地域のCloud Insightsサイトと通信するための認証とアクセスに関する情報（ユーザの承認に関連するデータなど）。</block>
+  <block id="32b8c42dbc2b21fb7881d9a36bb2727a" category="list-text">NetApp BlueXPが地域のCloud Insightsサイトと通信するための情報（ユーザ認証に関連する情報を含む）。</block>
+  <block id="c8c46afa6f003113c7d643310bade896" category="inline-xref">同期または非同期_</block>
+  <block id="54ebec075b0ae24d1fe36b1a78b7014f" category="paragraph">APIkeysはに適しています <block ref="9966ea080d2324311c0da20a04f19491" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c545b4af283ca5836cafe431d1ea06a" category="section-title">同期か非同期か</block>
+  <block id="1f5c701838fc1e9c08d402a2d3562c8c" category="paragraph">デフォルトでは、APIコマンドは_synchronous_modeで動作します。つまり、要求を送信するとすぐに応答が返されます。ただし、クエリの実行に時間がかかることがあり、要求がタイムアウトする可能性があります。これを回避するには、request_asynchronously _を実行します。非同期モードでは、要求は実行の監視に使用するURLを返します。URLは準備ができたら結果を返します。</block>
+  <block id="3559171ac28b17714bc92816d17b2a17" category="paragraph">非同期モードでクエリを実行するには、ヘッダーを追加します。<block ref="1f82ebaa5a99226ba28d8d76ae41a3f8" prefix=" " category="inline-code"></block> 要求に。実行が成功すると、応答に次のヘッダーが含まれます。</block>
+  <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">ロケーションURLを照会すると、応答の準備ができていない場合は同じヘッダーが返され、応答の準備ができている場合はステータス200が返されます。応答コンテンツのタイプはtextで、元のクエリのhttpステータスとメタデータが含まれ、その後に元のクエリの結果が続きます。</block>
+  <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">すべての非同期クエリのリストと、準備ができているものを表示するには、次のコマンドを使用します。</block>
+  <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">応答の形式は次のとおりです。</block>
+  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。
+
+例
+Chromeでは、ブラウザのURLに「chrome :// settings/cookies」と入力します。
+
+「すべてのCookieを許可」オプションを選択します。
+*または*
+[サードパーティのCookieをブロックする]を選択し、[\*.] auth0.comおよび[*.] netapp.comに例外を追加します。
+
+注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
+  <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">BlueXPアカウントを持っていますが、BlueXPにログインできません。</block>
+  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「blueXP.netapp.com」&gt;「Account/Login Issues」または「bluexp.netapp.com」&gt;「Federation Issues」を選択します。  これらは、BlueXPの問題や質問に特化したものです。
+Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">BlueXPアカウントにサインアップしたこと、またはBlueXPでSSOログインを使用していることを確認します。
+
+BlueXPプロファイルのEメールアドレスが、Cloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認します。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
+  <block id="1b58998adf7a89d496bd43804045852f" category="cell">BlueXPからログアウトし、Cloud Insightsから自動的にログアウトしました。</block>
+  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">NetAppクラウドサービス全体のシングルサインオン（SSO）は、すべてのCloud Insightsセッションをログアウトします。複数の Cloud Insights アカウントへのアクセス権がある場合、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。</block>
+  <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloudアカウントでは、数日ごとに再認証が必要です（現在のBlueXPの設定は7日です）。ログインし直して、アカウントにアクセスします。</block>
+  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">アカウント管理者に連絡して、 Cloud Insights へのアクセスを確認してください。
+BlueXPプロファイルのEメールアドレスがCloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認する</block>
+  <block id="fa3c2d77fbba0d391ebafed4f6bf2cb1" category="paragraph">Cloud Insightsでの作業を開始するには、* NetApp BlueXP *ポータルにサインアップする必要があります。NetApp BlueXPへのログインをすでにお持ちの場合は、いくつかの簡単な手順でCloud Insightsの無償トライアルを開始できます。</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。BlueXPのサインイン画面に戻ります。</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
+  <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">例：_User * Tony Lavoie * 10.1.120.15 *、ユーザエージェント* Mozilla/5.0（Windows NT 10.0、Win64、x64）AppleWebKit/537.36（KHTML、Geckoなど）Chrome/85.0.4183.121 Safari/537.36 *、ログイン方法* BlueXP Portal Login_*</block>
+  <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理およびその他のタスク</block>
 </blocks>

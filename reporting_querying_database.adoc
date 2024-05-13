@@ -50,7 +50,7 @@ API キーを生成するには、次の手順を実行します。
 * [ 保存 ] をクリックし、 * キーをコピーして安全な場所に保存します。あとでフルキーにアクセスすることはできません。
 
 
-a60abfe03b8079f9f0eac07879fdf93b
+APIkeysはに適しています <<synchronous-or-asynchronous,同期または非同期_>>。
 
 
 
@@ -136,3 +136,43 @@ Reporting API クエリを使用する場合は、次の点に注意してくだ
 
 
 API キーは Cloud Insights 環境に固有です。
+
+
+
+== 同期か非同期か
+
+デフォルトでは、APIコマンドは_synchronous_modeで動作します。つまり、要求を送信するとすぐに応答が返されます。ただし、クエリの実行に時間がかかることがあり、要求がタイムアウトする可能性があります。これを回避するには、request_asynchronously _を実行します。非同期モードでは、要求は実行の監視に使用するURLを返します。URLは準備ができたら結果を返します。
+
+非同期モードでクエリを実行するには、ヘッダーを追加します。 `*Prefer: respond-async*` 要求に。実行が成功すると、応答に次のヘッダーが含まれます。
+
+....
+Status Code: 202 (which means ACCEPTED)
+preference-applied: respond-async
+location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
+....
+ロケーションURLを照会すると、応答の準備ができていない場合は同じヘッダーが返され、応答の準備ができている場合はステータス200が返されます。応答コンテンツのタイプはtextで、元のクエリのhttpステータスとメタデータが含まれ、その後に元のクエリの結果が続きます。
+
+....
+HTTP/1.1 200 OK
+ OData-Version: 4.0
+ Content-Type: application/json;odata.metadata=minimal
+ oDataResponseSizeCounted: true
+
+ { <JSON_RESPONSE> }
+....
+すべての非同期クエリのリストと、準備ができているものを表示するには、次のコマンドを使用します。
+
+ GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
+応答の形式は次のとおりです。
+
+....
+{
+   "queries" : [
+       {
+           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
+           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
+           "Finished": false
+       }
+   ]
+}
+....

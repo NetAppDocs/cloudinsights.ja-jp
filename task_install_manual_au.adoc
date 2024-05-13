@@ -196,3 +196,44 @@ drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
 
 . AUを再起動します。Cloud Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
 
+
+
+
+== 外部キーの取得
+
+UNIXシェルスクリプトを指定すると、Acquisition Unitによって実行され、キー管理システムから*秘密鍵*と*公開鍵*を取得できます。
+
+キーを取得するために、Cloud Insightsはスクリプトを実行し、_key id_and_key type_という2つのパラメータを渡します。キーID _は、キー管理システム内のキーを識別するために使用できます。_Key type _には、「public」または「private」を指定します。キータイプが「public」の場合、スクリプトは公開鍵を返す必要があります。キータイプが「private」の場合は、秘密鍵を返す必要があります。
+
+Acquisition Unitにキーを戻すには、標準出力にキーを出力する必要があります。スクリプトは、標準出力にキーをprint_only_theで出力する必要があります。他のテキストは標準出力に出力しないでください。要求されたキーが標準出力に出力されると、スクリプトは終了コード0で終了する必要があります。その他の戻りコードはエラーと見なされます。
+
+スクリプトはSecurityAdminツールを使用してAcquisition Unitに登録する必要があります。このツールでは、Acquisition Unitとともにスクリプトが実行されます。スクリプトには、rootおよび"cisys"ユーザに対する_read_and_execute_permissionが必要です。登録後にシェルスクリプトを変更した場合は、変更したシェルスクリプトをAcquisition Unitに再登録する必要があります。
+
+|===
+
+
+| 入力パラメータ:キーID | 顧客のキー管理システムでキーを識別するために使用するキー識別子。 
+
+
+| 入力パラメータ:キータイプ | パブリックまたはプライベート。 
+
+
+| 出力 | 要求されたキーを標準出力に出力する必要があります。現在、2048ビットRSAキーがサポートされています。キーは次の形式でエンコードおよび印刷する必要があります-
+
+秘密鍵形式- PEM、DERエンコードPKCS8 PrivateKeyInfo RFC 5958
+
+公開鍵形式- PEM、DERエンコードX.509 SubjectPublicKeyInfo RFC 5280 
+
+
+| 終了コード | 成功のためのゼロの終了コード。他のすべての終了値は失敗と見なされます。 
+
+
+| スクリプト権限 | スクリプトには、rootおよび「cisys」ユーザに対する読み取りおよび実行権限が必要です。 
+
+
+| ログ | スクリプトの実行が記録されます。ログは次の場所にあります。
+
+/var/log/netapp/cloudinsights/securityadmin/securityadmin.log
+
+/var/log/netapp/cloudinsights/acq/acq.log 
+|===
