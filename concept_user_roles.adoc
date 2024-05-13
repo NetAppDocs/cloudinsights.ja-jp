@@ -19,7 +19,7 @@ summary: Cloud Insights には、さまざまな権限レベルを持つ複数�
 
 
 [role="lead"]
-Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。  ユーザはです link:#creating-accounts-by-inviting-users["招待済み"] から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます link:#single-sign-on-sso-accounts["シングルサインオン（ SSO ）許可"] デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。
+Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。  ユーザはです link:#creating-accounts-by-inviting-users["招待済み"] から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます link:#single-sign-on-sso-and-identity-federation["シングルサインオン（ SSO ）許可"] デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。
 
 
 NOTE: Cloud Insights フェデラルエディションでのユーザーログインは、設定されたIDプロバイダー(指定された電子メールドメインを持つ)に制限されます。新しいユーザをCloud Insights Federal環境に招待する場合は、その環境に設定されているドメインとEメールアドレスが一致している必要があります。
@@ -145,7 +145,7 @@ Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者�
 
 == ユーザーを招待してアカウントを作成する
 
-新しいユーザアカウントの作成は Cloud Central で行います。ユーザは E メールで送信された招待に応答できますが、 Cloud Central のアカウントがない場合は、 Cloud Central に登録して招待を承諾する必要があります。
+新しいユーザアカウントを作成するには、BlueXPを使用します。ユーザはEメールで送信された招待状に応答できますが、BlueXPのアカウントをお持ちでない場合は、BlueXPにサインアップして招待を承諾する必要があります。
 
 .作業を開始する前に
 * ユーザー名は、招待の電子メールアドレスです。
@@ -225,31 +225,40 @@ image:Assign_Account_Owner.png["アカウント所有者の選択を示すユー
 
 
 
-=== Cloud Insights で SSO のアイデンティティフェデレーションを有効にする
+=== アイデンティティフェデレーションとは
 
 アイデンティティフェデレーションを使用：
 
 * 認証は、お客様の社内ディレクトリにあるお客様の資格情報を使用して、お客様のアイデンティティ管理システムに委任され、多要素認証（ MFA ）などの自動化ポリシーが適用されます。
-* ユーザはすべての NetApp クラウドサービスに一度ログインします（シングルサインオン）。
+* ユーザはすべてのNetApp BlueXPサービスに一度ログインします（シングルサインオン）。
 
 
-ユーザアカウントは、すべてのクラウドサービスについて NetApp Cloud Central で管理されます。デフォルトでは、認証は Cloud Central のローカルユーザプロファイルを使用して行われます。このプロセスの概要を以下に示します。
+ユーザアカウントは、すべてのクラウドサービスのNetApp BlueXPで管理されます。デフォルトでは、認証はBlueXPローカルユーザプロファイルを使用して行われます。このプロセスの概要を以下に示します。
 
-image:CloudCentralAuthentication.png["Cloud Central の認証"]
+image:BlueXP_Authentication_Local.png["ローカルを使用したBlueXP認証"]
 
-ただし、お客様によっては、 Cloud Insights と他の NetApp Cloud Central Services のユーザ認証に独自のアイデンティティプロバイダを使用することを検討しています。アイデンティティフェデレーションを使用すると、 NetApp Cloud Central アカウントは、社内ディレクトリのクレデンシャルを使用して認証されます。
+ただし、独自のアイデンティティプロバイダを使用して、Cloud Insightsやその他のNetApp BlueXPサービスのユーザを認証したいと考えているお客様もいます。アイデンティティフェデレーションでは、NetApp BlueXPアカウントは社内ディレクトリのクレデンシャルを使用して認証されます。
 
 次に、このプロセスの簡単な例を示します。
 
-image:IdentityFederationDiagram-2.png["アイデンティティフェデレーションを図示"]
+image:BlueXP_Authentication_Federated.png["フェデレーションを使用したBlueXP認証"]
 
 上の図では、ユーザーが Cloud Insights にアクセスすると、そのユーザーは認証のために顧客の ID 管理システムに転送されます。アカウントが認証されると、ユーザは Cloud Insights テナントの URL にアクセスするようになります。
 
-Cloud Central は、 Auth0 を使用してアイデンティティフェデレーションを実装し、 Active Directory フェデレーションサービス（ ADFS ）や Microsoft Azure Active Directory （ AD ）などのサービスと統合します。アイデンティティフェデレーションの設定と設定の詳細については、の Cloud Central のドキュメントを参照してください link:https://services.cloud.netapp.com/misc/federation-support["アイデンティティフェデレーション"]。
 
-Cloud Central でのアイデンティティフェデレーションの変更は、 Cloud Insights だけでなく、すべての NetApp クラウドサービスにも適用されることに注意してください。この変更については、使用している構成がアイデンティティフェデレーションと連携するように、またはアカウントに対して調整が必要かどうかを確認するために、お客様が所有している各 Cloud Central 製品のネットアップチームと検討する必要があります。お客様は、社内の SSO チームをアイデンティティフェデレーションの変更にも関与させる必要があります。
 
-また、アイデンティティフェデレーションを有効にすると、企業のアイデンティティプロバイダへの変更（ SAML から Microsoft AD への移行など）は、 Cloud Central でユーザのプロファイルを更新するために、トラブルシューティングや変更、注意が必要になる可能性があることにも注意してください。
+=== アイデンティティフェデレーションの有効
+
+BlueXPはAuth0を使用してアイデンティティフェデレーションを実装し、Active Directoryフェデレーションサービス（ADFS）やMicrosoft Azure Active Directory（AD）などのサービスと統合します。アイデンティティフェデレーションを設定するには、 link:https://services.cloud.netapp.com/misc/federation-support["BlueXPフェデレーションの手順"]。
+
+
+NOTE: Cloud InsightsでSSOを使用する前に、BlueXPアイデンティティフェデレーションを設定する必要があります。
+
+BlueXPでのアイデンティティフェデレーションの変更は、Cloud Insightsだけでなく、すべてのNetApp BlueXPサービスにも適用されることを理解しておくことが重要です。この変更については、お客様が所有する各BlueXP製品のNetAppチームと話し合い、使用している設定がアイデンティティフェデレーションと連携していることを確認したり、アカウントの調整が必要な場合はその旨をお客様に伝えてください。お客様は、社内の SSO チームをアイデンティティフェデレーションの変更にも関与させる必要があります。
+
+アイデンティティフェデレーションを有効にしたら、会社のアイデンティティプロバイダに対する変更（SAMLからMicrosoft ADへの移行など）には、ユーザのプロファイルを更新するためにBlueXPでトラブルシューティング/変更/対応が必要になる可能性があることを理解しておくことも重要です。
+
+この問題またはその他のフェデレーションの問題については、次のURLでサポートチケットを開くことができます。 https://mysupport.netapp.com/site/help[] カテゴリ「bluexp.netapp.com」>「フェデレーションの問題」を選択します。
 
 
 
@@ -258,9 +267,9 @@ Cloud Central でのアイデンティティフェデレーションの変更は
 管理者は、ユーザを招待するだけでなく、企業ドメイン内のすべてのユーザに対して * シングルサインオン（ SSO ）ユーザの自動プロビジョニング * アクセスを Cloud Insights に許可できます。個別に招待する必要はありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。
 
 
-NOTE: Cloud Insights Premium Edition では、 SSO ユーザーの自動プロビジョニング _ を使用できます。これを構成してから Cloud Insights で有効にする必要があります。SSO ユーザの自動プロビジョニング設定にはが含まれます link:https://services.cloud.netapp.com/misc/federation-support["アイデンティティフェデレーション"] 前述のセクションの説明に従って、 NetApp Cloud Central を使用します。フェデレーションを使用すると、 Security Assertion Markup Language 2.0 （ SAML ）や OpenID Connect （ OIDC ）などのオープン標準を使用して、社内ディレクトリのクレデンシャルを使用してシングルサインオンユーザが NetApp Cloud Central アカウントにアクセスできます。
+NOTE: Cloud Insights Premium Edition では、 SSO ユーザーの自動プロビジョニング _ を使用できます。これを構成してから Cloud Insights で有効にする必要があります。SSOユーザの自動プロビジョニング設定には、 link:https://services.cloud.netapp.com/misc/federation-support["アイデンティティフェデレーション"] 上記のセクションで説明したように、NetApp BlueXPを使用する。フェデレーションを使用すると、シングルサインオンユーザは、Security Assertion Markup Language 2.0（SAML）やOpenID Connect（OIDC）などのオープン標準を使用して、社内ディレクトリのクレデンシャルを使用してNetApp BlueXPアカウントにアクセスできます。
 
-_SSO ユーザーの自動プロビジョニングを設定するには、 [* Admin] > [User Management] ページで [* Request Federation] ボタンをクリックします。設定が完了すると、管理者は SSO ユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。
+_SSOユーザ自動プロビジョニング_を設定するには、*[管理]>[ユーザ管理]*ページで、事前にBlueXPアイデンティティフェデレーションを設定しておく必要があります。バナーの*[フェデレーションの設定]*リンクを選択して、BlueXPフェデレーションに進みます。設定が完了すると、Cloud Insights管理者はSSOユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。
 
 image:Roles_federation_Banner.png["フェデレーションを使用したユーザー管理"]
 

@@ -22,7 +22,6 @@
   <block id="e79313bfe03c4561628e01c7102ba5fb" category="section-title">監査済みイベントとアクション</block>
   <block id="6fffa02826aca9a14ee11d85609b3e25" category="paragraph">Cloud Insights で監査されるイベントとアクションは、次の領域に分類できます。</block>
   <block id="c5c594e685367681b202d84ba0c87407" category="list-text">* ユーザーアカウント * ：ログイン、ログアウト、ロール変更など</block>
-  <block id="5a3b3866ed7beab8b728614f1d33c0b5" category="paragraph">例： _ ユーザー * Tony Lavoie * が * 10.1.120.15 * 、ユーザーエージェント * Mozilla/5.0 （ Windows NT 10.0 、 Win64 、 x64 ） AppleWebKit/537.36 （ Gecko などの KHTML ） Chrome/85.0.4183.121 Safari/537.36 * 、ログイン方法（ s ） * Cloud Central Portal_Login * からログインしました</block>
   <block id="f8c4f6c2455f59fa0c1cc9fed5a8c6c1" category="list-text">* Acquisition Unit * ：作成、削除など</block>
   <block id="c1e8e78730ec648eeb7339e916d33231" category="paragraph">例： _ Acquisition Unit * AU-Boston-1 * removed_.</block>
   <block id="fa421109b9971a24c53c504a4c5ef88d" category="list-text">* Data Collector * ：追加、削除、変更、延期 / 再開、 Acquisition Unit の変更、 スタート / ストップなど</block>
@@ -797,7 +796,6 @@ BlueXPのナビゲーションメニューでは、データサービスはカ�
   <block id="11a7aeec2e88edd275331af35166c8ec" category="doc">ユーザアカウントとロール</block>
   <block id="0f9642bcff1dc3cd224f1f3e2f1ca629" category="inline-link-macro">招待済み</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">シングルサインオン（ SSO ）許可</block>
-  <block id="21495a8ea3304b589e7d69a7ec0ce1cc" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。  ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
   <block id="6a1a692b3423f858e5d6fa10a48a203d" category="admonition">Cloud Insights フェデラルエディションでのユーザーログインは、設定されたIDプロバイダー(指定された電子メールドメインを持つ)に制限されます。新しいユーザをCloud Insights Federal環境に招待する場合は、その環境に設定されているドメインとEメールアドレスが一致している必要があります。</block>
   <block id="4239d1a0d4b43b912ff81e4656377274" category="section-title">アクセス許可レベル</block>
   <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">ユーザアカウントを作成または変更するには、管理者権限を持つアカウントを使用します。各ユーザアカウントには、次の権限レベルの Cloud Insights 機能ごとにロールが割り当てられます。</block>
@@ -852,7 +850,6 @@ Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者�
   <block id="19afc2b6de08730341fe43a49d74b17f" category="cell">ユーザー管理：招待 / 追加 / 変更 / 非アクティブ化</block>
   <block id="99fb7036d3e93ba3319d093dfe84cd02" category="paragraph">* Premium Edition が必要です</block>
   <block id="c6050a6ee22484e6d99c05b9079a54e6" category="section-title">ユーザーを招待してアカウントを作成する</block>
-  <block id="577ad4d536287e761cfcca07c709967a" category="paragraph">新しいユーザアカウントの作成は Cloud Central で行います。ユーザは E メールで送信された招待に応答できますが、 Cloud Central のアカウントがない場合は、 Cloud Central に登録して招待を承諾する必要があります。</block>
   <block id="2261218e5eda0b1a833ad7434d235af5" category="list-text">ユーザー名は、招待の電子メールアドレスです。</block>
   <block id="ee878f787b1f1f1d4994736d075986bd" category="list-text">割り当てるユーザロールを理解します。</block>
   <block id="b9d905aec198b1e4b3ae4b7e048ef2e4" category="list-text">パスワードは、サインアップの過程でユーザーによって定義されます。</block>
@@ -886,26 +883,13 @@ Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者�
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">管理者ロールを持つユーザーは ' ユーザーの名前をクリックして ' ダイアログの _Delete User_ をクリックすることにより ' ユーザー ( 会社に所属していないユーザーなど ) を削除できますユーザが Cloud Insights 環境から削除されます。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">ユーザが作成したダッシュボード、クエリなどは、削除しても Cloud Insights 環境で引き続き使用できます。</block>
   <block id="ae34cecb877a210f81bf4d446541e619" category="section-title">シングルサインオン（ SSO ）とアイデンティティフェデレーション</block>
-  <block id="4743b9c396b4a51215bcc90cb20ea986" category="section-title">Cloud Insights で SSO のアイデンティティフェデレーションを有効にする</block>
   <block id="3c55703ac1b754437c4ca4d09b9083c0" category="paragraph">アイデンティティフェデレーションを使用：</block>
   <block id="1fa3ec89d7b92a55ab22349de75a4680" category="list-text">認証は、お客様の社内ディレクトリにあるお客様の資格情報を使用して、お客様のアイデンティティ管理システムに委任され、多要素認証（ MFA ）などの自動化ポリシーが適用されます。</block>
-  <block id="5a31a45adb468f47c1f0b1e80f5171f7" category="list-text">ユーザはすべての NetApp クラウドサービスに一度ログインします（シングルサインオン）。</block>
-  <block id="192320e6f55720b5664a47f5c666baca" category="paragraph">ユーザアカウントは、すべてのクラウドサービスについて NetApp Cloud Central で管理されます。デフォルトでは、認証は Cloud Central のローカルユーザプロファイルを使用して行われます。このプロセスの概要を以下に示します。</block>
-  <block id="56450eba64c0d00cde410611439dc78c" category="inline-image-macro">Cloud Central の認証</block>
-  <block id="9ab07284bc5b71a2d5cea4881836c513" category="paragraph"><block ref="9ab07284bc5b71a2d5cea4881836c513" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4e2be1ac16d688153b9bf995c933023c" category="paragraph">ただし、お客様によっては、 Cloud Insights と他の NetApp Cloud Central Services のユーザ認証に独自のアイデンティティプロバイダを使用することを検討しています。アイデンティティフェデレーションを使用すると、 NetApp Cloud Central アカウントは、社内ディレクトリのクレデンシャルを使用して認証されます。</block>
   <block id="5bdf50c3632df05e809cd15e1fcb4ca9" category="paragraph">次に、このプロセスの簡単な例を示します。</block>
-  <block id="456ec3716eb5484d780f58629b9d6b71" category="inline-image-macro">アイデンティティフェデレーションを図示</block>
-  <block id="da667ed7886fe1fad31ff9dd3c806a5d" category="paragraph"><block ref="da667ed7886fe1fad31ff9dd3c806a5d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8922583597ff9f65c02b62c61bfa22a" category="paragraph">上の図では、ユーザーが Cloud Insights にアクセスすると、そのユーザーは認証のために顧客の ID 管理システムに転送されます。アカウントが認証されると、ユーザは Cloud Insights テナントの URL にアクセスするようになります。</block>
   <block id="fa8a297cebb990edca45e0364e7e6b45" category="inline-link-macro">アイデンティティフェデレーション</block>
-  <block id="e0272c481804e7b56f3bd750203259b0" category="paragraph">Cloud Central は、 Auth0 を使用してアイデンティティフェデレーションを実装し、 Active Directory フェデレーションサービス（ ADFS ）や Microsoft Azure Active Directory （ AD ）などのサービスと統合します。アイデンティティフェデレーションの設定と設定の詳細については、の Cloud Central のドキュメントを参照してください <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block>。</block>
-  <block id="2dca6320aaa2ae28cf6938308c945311" category="paragraph">Cloud Central でのアイデンティティフェデレーションの変更は、 Cloud Insights だけでなく、すべての NetApp クラウドサービスにも適用されることに注意してください。この変更については、使用している構成がアイデンティティフェデレーションと連携するように、またはアカウントに対して調整が必要かどうかを確認するために、お客様が所有している各 Cloud Central 製品のネットアップチームと検討する必要があります。お客様は、社内の SSO チームをアイデンティティフェデレーションの変更にも関与させる必要があります。</block>
-  <block id="005faded672314bc475a7800de0ef460" category="paragraph">また、アイデンティティフェデレーションを有効にすると、企業のアイデンティティプロバイダへの変更（ SAML から Microsoft AD への移行など）は、 Cloud Central でユーザのプロファイルを更新するために、トラブルシューティングや変更、注意が必要になる可能性があることにも注意してください。</block>
   <block id="d6034d333b0966edaeeea729724c4988" category="section-title">シングルサインオン（ SSO ）ユーザの自動プロビジョニング</block>
   <block id="6c59be6231105da08319ced12f4e659b" category="paragraph">管理者は、ユーザを招待するだけでなく、企業ドメイン内のすべてのユーザに対して * シングルサインオン（ SSO ）ユーザの自動プロビジョニング * アクセスを Cloud Insights に許可できます。個別に招待する必要はありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。</block>
-  <block id="a4e769bbaabeca7372ca6634d43bf1a5" category="admonition">Cloud Insights Premium Edition では、 SSO ユーザーの自動プロビジョニング _ を使用できます。これを構成してから Cloud Insights で有効にする必要があります。SSO ユーザの自動プロビジョニング設定にはが含まれます <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 前述のセクションの説明に従って、 NetApp Cloud Central を使用します。フェデレーションを使用すると、 Security Assertion Markup Language 2.0 （ SAML ）や OpenID Connect （ OIDC ）などのオープン標準を使用して、社内ディレクトリのクレデンシャルを使用してシングルサインオンユーザが NetApp Cloud Central アカウントにアクセスできます。</block>
-  <block id="8454d6429fbbbb85edb89463f6d1f0a6" category="paragraph">_SSO ユーザーの自動プロビジョニングを設定するには、 [* Admin] &gt; [User Management] ページで [* Request Federation] ボタンをクリックします。設定が完了すると、管理者は SSO ユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。</block>
   <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">フェデレーションを使用したユーザー管理</block>
   <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8180ff7e185bcd2693971907be3065b6" category="paragraph">管理者が、デフォルトの SSO ロールから 1 人のユーザを昇格する場合（管理者に昇格する場合など）には、これは、ユーザの右側のメニューをクリックし、 _Assign Role_を 選択することにより、 [*Admin] &gt; [User Management] ページで実行できます。この方法で明示的なロールを割り当てられたユーザは、以降に _SSO ユーザの Auto-Provisioning_を 無効にしても、引き続き Cloud Insights にアクセスできます。</block>
@@ -1422,31 +1406,10 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">も参照してください <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> および <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">ログインの問題</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights は 5 分ごとにログアウトします</block>
-  <block id="396149d67edd166e53b49c38f4b707ba" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。
-
-例
-Chromeでは、ブラウザのURLに「chrome :// settings/cookies」と入力します。
-
-「すべてのCookieを許可」オプションを選択します。
-*または*
-[*。] auth0.comおよび[*。] netapp.comの例外を追加します。
-
-注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
-  <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">ネットアップサポート</block>
-  <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「cloud.netapp.com」&gt;「アカウント/ログインの問題」または「cloud.netapp.com」&gt;「フェデレーションの問題」を選択します。  これは、 Cloud Central の問題や質問に特化したものです。
-Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。</block>
-  <block id="199017f1d912993f091b6b969d3442ad" category="cell">Cloud Central アカウントに登録していること、または組織が Cloud Central で SSO ログインを使用していることを確認します。
-
-Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
-  <block id="176f8c6fa466059df49f2717c021d306" category="cell">Cloud Central または Cloud Secure からログアウトし、 Cloud Insights から自動的にログアウトされました。</block>
-  <block id="7a8624fb56224e907698f45ef2e4cc47" category="cell">ネットアップクラウド全体でシングルサインオン（ SSO ）が行われ、 Cloud Insights 、 Cloud Secure 、レポートのすべてのセッションがログアウトされます。複数の Cloud Insights アカウントへのアクセス権がある場合、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">数日後に自動的にログアウトされました。</block>
-  <block id="ed6e79e2f9b9c201ed834c6efeb7f356" category="cell">ネットアップクラウドアカウントの再認証は数日おきに行う必要があります（現在の Cloud Central 設定は 7 日間）。ログインし直して、アカウントにアクセスします。</block>
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">「ログインを許可されていません」というエラーメッセージが表示されます。</block>
-  <block id="acf29dcaa06698c29122cba5402e3145" category="cell">アカウント管理者に連絡して、 Cloud Insights へのアクセスを確認してください。
-Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">その他のログインエラーです</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。
 別のブラウザプロファイル（例 Chrome - ユーザーを追加します）。</block>
@@ -3645,7 +3608,6 @@ Time Filebucketの略
   <block id="b7ead3a19a9e810bd9a56c2d0ba0970d" category="paragraph">各ウィジェットの右上に自動更新間隔が表示されます。</block>
   <block id="2d5591e725889a349c977cc4e7cae6db" category="paragraph">カスタムダッシュボードの期間では自動更新を使用できません。</block>
   <block id="b9aa7ebd34479fa35d4742937dc6d82d" category="paragraph">* TV モード * と組み合わせて使用すると、自動更新により、ダッシュボードまたはアセットページにほぼリアルタイムでデータを表示できます。テレビモードでは、すっきりとしたディスプレイが提供されます。ナビゲーションメニューは非表示になっており、編集ボタンと同様に、データ表示用の画面のスペースが増えます。TV モードは一般的な Cloud Insights タイムアウトを無視し、認証セキュリティプロトコルによって手動または自動でログアウトするまでディスプレイをライブ状態にします。</block>
-  <block id="9fd11a00d0217c79c8723171888d8b89" category="admonition">NetApp Cloud Central には 7 日間の独自のユーザログインタイムアウトがあるため、 Cloud Insights もそのイベントを使用してログアウトする必要があります。再度ログインするだけで、ダッシュボードは引き続き表示されます。</block>
   <block id="a5c9402f6bc75dd26f443654668a4a43" category="inline-image-macro">TVモード</block>
   <block id="03d1874e32a13bf5497f4e8dffa69f6f" category="list-text">テレビモードを有効にするには、をクリックします <block ref="72428a0fd2f81e10aeae46bebf0ee590" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
   <block id="071f107bd9f41c0ac7ee5100c0d752b8" category="inline-image-macro">「終了」ボタン</block>
@@ -5533,7 +5495,6 @@ cisys storapid &lt;all&gt;の略</block>
   <block id="6bf565eb0af1d9c4319c14b7f1ed3b40" category="list-text">機能データ</block>
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">このデータは、ネットアップがクラウドデータサービスを提供することで生成されます。このサービスは、クラウドデータサービスの開発、導入、運用、メンテナンス、セキュリティの各分野をネットアップに通知します。機能データには、顧客情報や個人情報は含まれません。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">ユーザーアクセスデータ</block>
-  <block id="a020ee54398cbdbb6220eb6dbbb2eea3" category="paragraph">ユーザ許可に関連するデータなど、 NetApp Cloud Central が地域の Cloud Insights サイトと通信できるようにするための認証およびアクセスに関する情報。</block>
   <block id="1dd36ea366f8218507b500da92bb6c48" category="list-text">ストレージワークロードのセキュリティユーザディレクトリデータ</block>
   <block id="e587cf6b5b26fd5aa0090c89ebb05008" category="paragraph">ワークロードセキュリティ機能が有効になっていて、ユーザーディレクトリコレクタを有効にすることを選択した場合、ユーザー表示名、企業の電子メールアドレス、およびActive Directoryから収集されたその他の情報が保存されます。</block>
   <block id="60ff49feb33b4b07c5add7023c265e08" category="admonition">ユーザディレクトリデータとは、Cloud Insights /ワークロードセキュリティ自体のユーザに関するデータではなく、ワークロードセキュリティユーザディレクトリのデータコレクタによって収集されたユーザディレクトリ情報のことです。</block>
@@ -5551,7 +5512,6 @@ cisys storapid &lt;all&gt;の略</block>
   <block id="206942a675cab8dd706f1c5d66ae53a4" category="list-text">ワークロードのセキュリティ監査情報</block>
   <block id="1a8b073d683b352fc06cc3bc800bc823" category="paragraph">Cloud Insights 環境をホストしている地域に関係なく、次の情報は米国にあります。</block>
   <block id="2a56580b4f73dbbdeb1ee18d500fa3e8" category="list-text">サイト / アカウント所有者などの環境サイト（「テナント」とも呼ばれる）情報。</block>
-  <block id="477495be48e10387478849fdda012566" category="list-text">ネットアップクラウドセントラルが、地域の Cloud Insights サイト（ユーザ認証とのやり取りを含む）と通信できるようにするための情報。</block>
   <block id="ca5794f9a5913506d29b3ae1d97f5871" category="list-text">Cloud Insights ユーザとテナントとの関係に関連する情報。</block>
   <block id="71071f9eeb8b3ff7f4a52f9927b52da4" category="section-title">ホストリージョン</block>
   <block id="2c5e620943b15b31c38df4433ca50af9" category="paragraph">ホスト領域は次のとおりです。</block>
@@ -6613,7 +6573,6 @@ Zノード数</block>
   <block id="b035f264e2d66667aac580634dbe607d" category="list-text">権限を読み取り / 書き込みに設定します。</block>
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">要望の有効期限を設定します。</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">[ 保存 ] をクリックし、 * キーをコピーして安全な場所に保存します。あとでフルキーにアクセスすることはできません。</block>
-  <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">APIKeys は、 _Sync_or_Async に適しています。</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">テーブルの直接クエリ</block>
   <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長いURLは\https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata/ではなく\https://.../odata/に簡略化して表示することもできます</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">次のような簡単なクエリを試してください</block>
@@ -15751,7 +15710,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">NetAppクラスタのIPアドレスまたは完全修飾ドメイン名。クラスタ管理IP / FQDNを指定する必要があります。</block>
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">タイプが_admin_のSVMの名前を取得します。この名前は以降のコマンドで使用します。</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">ONTAP ONTAPIコレクタにデータが表示される場合、空または「0」の指標が表示されます。</block>
-  <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP RESTでは、ONTAPシステムの内部でのみ使用される指標はレポートされません。たとえば、システムアグリゲートはONTAP RESTでは収集されず、タイプが「data」のSVMのみが収集されます。</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">FPolicyイベントのONTAPからワークロードセキュリティエージェントへの通信。  ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">エージェントからSVMのデータLIFへのエコー</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">NetApp-ci-telegraf-ds_、_NetApp-CI-fluent-bit-ds_、および_NetApp-CI-net-observer-l4-DS_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。</block>
@@ -15793,7 +15751,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">Cloud Insightsメニューから* Observability &gt; Collectors *をクリックし、*+ Data Collector *ボタンをクリックします。</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「きばな」を選択します。</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[MongoDB]を選択します。</block>
-  <block id="2e95a4622d16ffb729672b5838f5732b" category="paragraph">Cloud Insightsでの作業を開始するには、* NetApp BlueXP *ポータルにサインアップする必要があります。BlueXPへのログインをすでにお持ちの場合は、いくつかの簡単な手順でCloud Insightsの無償トライアルを開始できます。</block>
   <block id="5bff30d13ce98c505187872963af1f25" category="section-title">NetApp BlueXPアカウントの作成</block>
   <block id="f21c4669cdc7c8b69bb7b9e4f65412b9" category="paragraph">環境の作成が完了したら、BlueXPクレデンシャルを使用してログインし、30日間のCloud Insights無償トライアルを開始できます。このトライアルでは、Cloud Insights が提供する機能を確認できます。</block>
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">環境の作成が完了したら、いつでもNetApp BlueXPポータルにログインして* Go to Cloud Insights *をクリックするだけです。Cloud Insights 環境に直接移動します。</block>
@@ -15802,9 +15759,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">非アクティブ時のタイムアウト</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">操作がない状態が6時間（360分）続くと、デフォルトではBlueXPからユーザがログアウトされます。アクティビティに関係なく、ユーザは7日後にログアウトされます。</block>
   <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">NetApp BlueXPへのログインをすでにお持ちの場合はどうすればよいですか？</block>
-  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXPのサインイン</block>
-  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。次のページに戻ります： <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 画面。</block>
-  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
   <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">true/false - KubernetesノードでSELinuxが有効になっている場合は、runPrivilegedをtrueに設定します。</block>
   <block id="5c7af4a6b686285084e62f255503c141" category="cell">プロキシ
 
@@ -16023,4 +15977,70 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="1a565d9a88c6cc1a17ed9ec577431947" category="paragraph">Cloud Insightsでは、コレクタのオプションとしてONTAPクラスタスイッチのデータを収集できます。 <block ref="0a74ef7985c5cbe5eb3ab6c199d26582" category="inline-xref-macro-rx"></block> 設定：Cloud Insightsコレクタでこれを有効にするだけでなく、次の機能を提供するようにONTAPシステム自体を設定する必要があります。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、およびが正しいことを確認します。 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> は、スイッチデータをCloud Insightsに送信できるように設定されています。</block>
   <block id="e77307796c2832560f84fa94d82cd573" category="list-text">RubrikクラスタのIPアドレスまたはホスト名。</block>
   <block id="fb36183a15285a9f1f23d79072c763f7" category="list-text">Basic認証の場合は、クラスタのユーザ名とパスワード。サービスアカウントベースの認証を使用する場合は、サービスアカウント、シークレット、および組織IDが必要です。</block>
+  <block id="07564ad1af1bd4ed017ae241054bd345" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つまでのユーザアカウントロールが用意されています。各アカウントには、次の表に示す特定の権限レベルが割り当てられます。  ユーザはです <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> から Cloud Insights にサインインして特定のロールを割り当てた場合、またはを使用してサインインできます <block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block> デフォルトのロールです。SSO 認証は、 Cloud Insights プレミアムエディションの機能として利用できます。</block>
+  <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">新しいユーザアカウントを作成するには、BlueXPを使用します。ユーザはEメールで送信された招待状に応答できますが、BlueXPのアカウントをお持ちでない場合は、BlueXPにサインアップして招待を承諾する必要があります。</block>
+  <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">アイデンティティフェデレーションとは</block>
+  <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">ユーザはすべてのNetApp BlueXPサービスに一度ログインします（シングルサインオン）。</block>
+  <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">ユーザアカウントは、すべてのクラウドサービスのNetApp BlueXPで管理されます。デフォルトでは、認証はBlueXPローカルユーザプロファイルを使用して行われます。このプロセスの概要を以下に示します。</block>
+  <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">ローカルを使用したBlueXP認証</block>
+  <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1efb7531b4ff57cf7e5dad319f452ce8" category="paragraph">ただし、独自のアイデンティティプロバイダを使用して、Cloud Insightsやその他のNetApp BlueXPサービスのユーザを認証したいと考えているお客様もいます。アイデンティティフェデレーションでは、NetApp BlueXPアカウントは社内ディレクトリのクレデンシャルを使用して認証されます。</block>
+  <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">フェデレーションを使用したBlueXP認証</block>
+  <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">アイデンティティフェデレーションの有効</block>
+  <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXPフェデレーションの手順</block>
+  <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXPはAuth0を使用してアイデンティティフェデレーションを実装し、Active Directoryフェデレーションサービス（ADFS）やMicrosoft Azure Active Directory（AD）などのサービスと統合します。アイデンティティフェデレーションを設定するには、 <block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
+  <block id="e806ab1149571cd13505dfbc97c18648" category="admonition">Cloud InsightsでSSOを使用する前に、BlueXPアイデンティティフェデレーションを設定する必要があります。</block>
+  <block id="3d447ee9850a212906099a2f2e71dd7b" category="paragraph">BlueXPでのアイデンティティフェデレーションの変更は、Cloud Insightsだけでなく、すべてのNetApp BlueXPサービスにも適用されることを理解しておくことが重要です。この変更については、お客様が所有する各BlueXP製品のNetAppチームと話し合い、使用している設定がアイデンティティフェデレーションと連携していることを確認したり、アカウントの調整が必要な場合はその旨をお客様に伝えてください。お客様は、社内の SSO チームをアイデンティティフェデレーションの変更にも関与させる必要があります。</block>
+  <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">アイデンティティフェデレーションを有効にしたら、会社のアイデンティティプロバイダに対する変更（SAMLからMicrosoft ADへの移行など）には、ユーザのプロファイルを更新するためにBlueXPでトラブルシューティング/変更/対応が必要になる可能性があることを理解しておくことも重要です。</block>
+  <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">この問題またはその他のフェデレーションの問題については、次のURLでサポートチケットを開くことができます。<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> カテゴリ「bluexp.netapp.com」&gt;「フェデレーションの問題」を選択します。</block>
+  <block id="1290a9c844484dfb0ecb66679bb02236" category="admonition">Cloud Insights Premium Edition では、 SSO ユーザーの自動プロビジョニング _ を使用できます。これを構成してから Cloud Insights で有効にする必要があります。SSOユーザの自動プロビジョニング設定には、 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 上記のセクションで説明したように、NetApp BlueXPを使用する。フェデレーションを使用すると、シングルサインオンユーザは、Security Assertion Markup Language 2.0（SAML）やOpenID Connect（OIDC）などのオープン標準を使用して、社内ディレクトリのクレデンシャルを使用してNetApp BlueXPアカウントにアクセスできます。</block>
+  <block id="5f47dcd3204dc1bc6c36abf1ce4be4cc" category="paragraph">_SSOユーザ自動プロビジョニング_を設定するには、*[管理]&gt;[ユーザ管理]*ページで、事前にBlueXPアイデンティティフェデレーションを設定しておく必要があります。バナーの*[フェデレーションの設定]*リンクを選択して、BlueXPフェデレーションに進みます。設定が完了すると、Cloud Insights管理者はSSOユーザログインを有効にできます。管理者が _SSO ユーザーの自動プロビジョニング _ を有効にすると、すべての SSO ユーザー（ゲストやユーザーなど）にデフォルトの役割を選択します。SSO を使用してログインしたユーザには、このデフォルトロールが割り当てられます。</block>
+  <block id="bbeb55e7d4d240b66f4ca24218cf7de0" category="admonition">NetApp BlueXPにはユーザログインタイムアウトが7日間設定されているため、Cloud Insightsもそのイベントを使用してログアウトする必要があります。再度ログインするだけで、ダッシュボードは引き続き表示されます。</block>
+  <block id="10c296499c1a789621926ca2df89bad4" category="paragraph">NetApp BlueXPが地域のCloud Insightsサイトと通信するための認証とアクセスに関する情報（ユーザの承認に関連するデータなど）。</block>
+  <block id="32b8c42dbc2b21fb7881d9a36bb2727a" category="list-text">NetApp BlueXPが地域のCloud Insightsサイトと通信するための情報（ユーザ認証に関連する情報を含む）。</block>
+  <block id="c8c46afa6f003113c7d643310bade896" category="inline-xref">同期または非同期_</block>
+  <block id="54ebec075b0ae24d1fe36b1a78b7014f" category="paragraph">APIkeysはに適しています <block ref="9966ea080d2324311c0da20a04f19491" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c545b4af283ca5836cafe431d1ea06a" category="section-title">同期か非同期か</block>
+  <block id="1f5c701838fc1e9c08d402a2d3562c8c" category="paragraph">デフォルトでは、APIコマンドは_synchronous_modeで動作します。つまり、要求を送信するとすぐに応答が返されます。ただし、クエリの実行に時間がかかることがあり、要求がタイムアウトする可能性があります。これを回避するには、request_asynchronously _を実行します。非同期モードでは、要求は実行の監視に使用するURLを返します。URLは準備ができたら結果を返します。</block>
+  <block id="3559171ac28b17714bc92816d17b2a17" category="paragraph">非同期モードでクエリを実行するには、ヘッダーを追加します。<block ref="1f82ebaa5a99226ba28d8d76ae41a3f8" prefix=" " category="inline-code"></block> 要求に。実行が成功すると、応答に次のヘッダーが含まれます。</block>
+  <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">ロケーションURLを照会すると、応答の準備ができていない場合は同じヘッダーが返され、応答の準備ができている場合はステータス200が返されます。応答コンテンツのタイプはtextで、元のクエリのhttpステータスとメタデータが含まれ、その後に元のクエリの結果が続きます。</block>
+  <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">すべての非同期クエリのリストと、準備ができているものを表示するには、次のコマンドを使用します。</block>
+  <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">応答の形式は次のとおりです。</block>
+  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。
+
+例
+Chromeでは、ブラウザのURLに「chrome :// settings/cookies」と入力します。
+
+「すべてのCookieを許可」オプションを選択します。
+*または*
+[サードパーティのCookieをブロックする]を選択し、[\*.] auth0.comおよび[*.] netapp.comに例外を追加します。
+
+注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
+  <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">BlueXPアカウントを持っていますが、BlueXPにログインできません。</block>
+  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「blueXP.netapp.com」&gt;「Account/Login Issues」または「bluexp.netapp.com」&gt;「Federation Issues」を選択します。  これらは、BlueXPの問題や質問に特化したものです。
+Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">BlueXPアカウントにサインアップしたこと、またはBlueXPでSSOログインを使用していることを確認します。
+
+BlueXPプロファイルのEメールアドレスが、Cloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認します。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
+  <block id="1b58998adf7a89d496bd43804045852f" category="cell">BlueXPからログアウトし、Cloud Insightsから自動的にログアウトしました。</block>
+  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">NetAppクラウドサービス全体のシングルサインオン（SSO）は、すべてのCloud Insightsセッションをログアウトします。複数の Cloud Insights アカウントへのアクセス権がある場合、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。</block>
+  <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloudアカウントでは、数日ごとに再認証が必要です（現在のBlueXPの設定は7日です）。ログインし直して、アカウントにアクセスします。</block>
+  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">アカウント管理者に連絡して、 Cloud Insights へのアクセスを確認してください。
+BlueXPプロファイルのEメールアドレスがCloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認する</block>
+  <block id="d5d48d5f4dfc82bc722dda03c00023b2" category="cell">ONTAP RESTでは、ONTAPシステムの内部でのみ使用される指標はレポートされません。たとえば、システムアグリゲートはONTAP RESTでは収集されず、タイプが「data」のSVMのみが収集されます。
+
+0または空のデータが報告される可能性のあるONTAP REST指標のその他の例：
+
+InternalVolumes：RESTでvol0が報告されなくなりました。
+Aggregates：RESTでaggr0が報告されなくなりました。
+ストレージ：ほとんどの指標は内部ボリュームの指標を集計したもので、上記の影響を受けます。
+Storage Virtual Machine：RESTでは、「data」以外のタイプのSVM（「cluster」、「mgmt」、「node」など）は報告されなくなりました。
+
+また、デフォルトのパフォーマンスポーリング期間が15分から5分に変更されたため、データを含むグラフの表示が変更されることもあります。  ポーリングの頻度が高いほど、プロットするデータポイントが増えます。</block>
+  <block id="fa3c2d77fbba0d391ebafed4f6bf2cb1" category="paragraph">Cloud Insightsでの作業を開始するには、* NetApp BlueXP *ポータルにサインアップする必要があります。NetApp BlueXPへのログインをすでにお持ちの場合は、いくつかの簡単な手順でCloud Insightsの無償トライアルを開始できます。</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Cloud Insights からログアウトするには、 * ユーザー名 * をクリックし、 * ログアウト * を選択します。BlueXPのサインイン画面に戻ります。</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
+  <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">例：_User * Tony Lavoie * 10.1.120.15 *、ユーザエージェント* Mozilla/5.0（Windows NT 10.0、Win64、x64）AppleWebKit/537.36（KHTML、Geckoなど）Chrome/85.0.4183.121 Safari/537.36 *、ログイン方法* BlueXP Portal Login_*</block>
+  <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理およびその他のタスク</block>
 </blocks>

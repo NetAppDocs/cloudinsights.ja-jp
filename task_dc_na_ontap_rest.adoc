@@ -289,6 +289,15 @@ RESTをサポートしているが9.14.1以降ではないONTAPバージョン�
 Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用できません。10.193.98.84：ONTAP REST API（10.193.98.84）が使用可能です。cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7以上のバージョンではありません。 
 
 
-| ONTAP ONTAPIコレクタにデータが表示される場合、空または「0」の指標が表示されます。 | ONTAP RESTでは、ONTAPシステムの内部でのみ使用される指標はレポートされません。たとえば、システムアグリゲートはONTAP RESTでは収集されず、タイプが「data」のSVMのみが収集されます。 
+| ONTAP ONTAPIコレクタにデータが表示される場合、空または「0」の指標が表示されます。 | ONTAP RESTでは、ONTAPシステムの内部でのみ使用される指標はレポートされません。たとえば、システムアグリゲートはONTAP RESTでは収集されず、タイプが「data」のSVMのみが収集されます。
+
+0または空のデータが報告される可能性のあるONTAP REST指標のその他の例：
+
+InternalVolumes：RESTでvol0が報告されなくなりました。
+Aggregates：RESTでaggr0が報告されなくなりました。
+ストレージ：ほとんどの指標は内部ボリュームの指標を集計したもので、上記の影響を受けます。
+Storage Virtual Machine：RESTでは、「data」以外のタイプのSVM（「cluster」、「mgmt」、「node」など）は報告されなくなりました。
+
+また、デフォルトのパフォーマンスポーリング期間が15分から5分に変更されたため、データを含むグラフの表示が変更されることもあります。  ポーリングの頻度が高いほど、プロットするデータポイントが増えます。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

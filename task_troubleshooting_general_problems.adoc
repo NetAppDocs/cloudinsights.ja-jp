@@ -38,28 +38,28 @@ Chromeでは、ブラウザのURLに「chrome :// settings/cookies」と入力�
 
 「すべてのCookieを許可」オプションを選択します。
 *または*
-[*。] auth0.comおよび[*。] netapp.comの例外を追加します。
+[サードパーティのCookieをブロックする]を選択し、[\*.] auth0.comおよび[*.] netapp.comに例外を追加します。
 
 注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。 
 
 
-| Cloud Central アカウントを持っていますが、 Cloud Central にログインできません。 | からチケットを開きます https://mysupport.netapp.com/site/help[]。カテゴリ「cloud.netapp.com」>「アカウント/ログインの問題」または「cloud.netapp.com」>「フェデレーションの問題」を選択します。  これは、 Cloud Central の問題や質問に特化したものです。
+| BlueXPアカウントを持っていますが、BlueXPにログインできません。 | からチケットを開きます https://mysupport.netapp.com/site/help[]。カテゴリ「blueXP.netapp.com」>「Account/Login Issues」または「bluexp.netapp.com」>「Federation Issues」を選択します。  これらは、BlueXPの問題や質問に特化したものです。
 Cloud Insights のその他のテクニカル・サポート問題については、を参照してください link:concept_requesting_support.html["ネットアップサポート"]。 
 
 
-| Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。 | Cloud Central アカウントに登録していること、または組織が Cloud Central で SSO ログインを使用していることを確認します。
+| Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。 | BlueXPアカウントにサインアップしたこと、またはBlueXPでSSOログインを使用していることを確認します。
 
-Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。 
-
-
-| Cloud Central または Cloud Secure からログアウトし、 Cloud Insights から自動的にログアウトされました。 | ネットアップクラウド全体でシングルサインオン（ SSO ）が行われ、 Cloud Insights 、 Cloud Secure 、レポートのすべてのセッションがログアウトされます。複数の Cloud Insights アカウントへのアクセス権がある場合、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。 
+BlueXPプロファイルのEメールアドレスが、Cloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認します。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。 
 
 
-| 数日後に自動的にログアウトされました。 | ネットアップクラウドアカウントの再認証は数日おきに行う必要があります（現在の Cloud Central 設定は 7 日間）。ログインし直して、アカウントにアクセスします。 
+| BlueXPからログアウトし、Cloud Insightsから自動的にログアウトしました。 | NetAppクラウドサービス全体のシングルサインオン（SSO）は、すべてのCloud Insightsセッションをログアウトします。複数の Cloud Insights アカウントへのアクセス権がある場合、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。 
+
+
+| 数日後に自動的にログアウトされました。 | NetApp Cloudアカウントでは、数日ごとに再認証が必要です（現在のBlueXPの設定は7日です）。ログインし直して、アカウントにアクセスします。 
 
 
 | 「ログインを許可されていません」というエラーメッセージが表示されます。 | アカウント管理者に連絡して、 Cloud Insights へのアクセスを確認してください。
-Cloud Central のプロファイルの E メールアドレスが Cloud Insights のウェルカム E メールに記載された E メールアドレスと一致していることを確認してください 
+BlueXPプロファイルのEメールアドレスがCloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認する 
 
 
 | その他のログインエラーです | Chrome で incognito モードを試すか、ブラウザの履歴、クッキー、およびキャッシュをクリアします。
