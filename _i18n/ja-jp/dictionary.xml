@@ -3218,7 +3218,6 @@ Time Filebucketの略
   <block id="554c387b4cc54e5b15b7b9ce27d28df0" category="section-title">ウィジェットの命名</block>
   <block id="59f8ad2450d81d69bb7178de28870ace" category="paragraph">ウィジェットの名前は、最初のクエリで選択したオブジェクト、指標、または属性に基づいて自動的に付けられます。ウィジェットのグループ化も選択すると、「グループ化」属性が自動命名（集計方法とメトリック）に含まれます。</block>
   <block id="f311dd325e3f7f8553f9d8fda43458a7" category="inline-image-macro">ウィジェットの命名例</block>
-  <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">新しいオブジェクトまたはグループ化属性を選択すると、自動名称が更新されます。</block>
   <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">自動ウィジェット名を使用しない場合は、単に新しい名前を入力します。</block>
   <block id="d15f90fbf11bb930e4311a597bd577da" category="section-title">ウィジェットの配置とサイズ</block>
@@ -3297,7 +3296,6 @@ Time Filebucketの略
   <block id="c4006c924bdf8bc80ddcd09bd46d0666" category="list-text">* 最大 * ：各行を基になるデータの _maximum_ として表示します。</block>
   <block id="fdf509d52d13201cead39e938712c689" category="list-text">* 最小 * ：各行を基になるデータの _minimum_ として表示します。</block>
   <block id="1a284984e082a2cc2ceecd12b5c25e50" category="list-text">* 合計 * ：各行を基になるデータの _SUM_( 合計 ) として表示します。</block>
-  <block id="419981855bdd80d78c67ae74ed237d6c" category="list-text">* Count * ：指定した期間内にデータが報告されたオブジェクトの _count_of を表示します。ダッシュボードの時間範囲（ダッシュボードの時間を上書きするように設定されている場合はウィジェットの時間範囲）または選択したカスタム時間ウィンドウ _ （ _Entire Time Window_ ）を選択できます。</block>
   <block id="d186cba97a995601fc12d97defd879c7" category="paragraph">グループ化方法を設定するには、次の手順を実行します。</block>
   <block id="0886591e8bd637066947802b2c681da8" category="list-text">ウィジェットのクエリで、アセットのタイプと指標（ _Storage_ など）と指標（ _Performance IOPS Total_ など）を選択します。</block>
   <block id="843784684ad8439aa0ddfe813cac8e16" category="list-text">*Group* の場合、集計方法（ _Average_ など）を選択し、データを集計する属性またはメトリックを選択します（例： _Data Center_ ）。</block>
@@ -3348,7 +3346,6 @@ Time Filebucketの略
   <block id="f23403e4c909f91a6bbdedfd4c63a940" category="paragraph">カスタム期間では、最大 31 日間連続で選択できます。この範囲に開始時間と終了時間を設定することもできます。デフォルトの開始時間は、最初に選択した日の午前 12 時、最後に選択した日のデフォルトの終了時間は午後 11 時 59 分です。* 適用 * をクリックすると、カスタムの時間範囲がダッシュボードに適用されます。</block>
   <block id="82c286e5c07573df31c7da74d9781c0b" category="section-title">ウィジェットでのダッシュボード時間の無効化</block>
   <block id="2234ef4841bda451602966ff52e300f5" category="paragraph">メインのダッシュボードの期間設定をウィジェットごとに無効にすることができます。これらのウィジェットでは、ダッシュボードの期間ではなく、各ウィジェットに対して設定された期間に基づいてデータが表示されます。</block>
-  <block id="284bed60740c7fa22f92630c7d8768d8" category="paragraph">ダッシュボードの時間をオーバーライドし、ウィジェットが独自の時間枠を使用するように設定するには、ウィジェットの編集モードで * ダッシュボードの時間 * を * オン * に上書き（チェックボックスをオンにします）を設定し、ウィジェットの時間範囲を選択します。* ウィジェットをダッシュボードに保存します。</block>
   <block id="86d95d157786463201d03f8cdf84019b" category="paragraph">ウィジェットには、ダッシュボードで選択した期間に関係なく、ウィジェットに対して設定された期間に従ってデータが表示されます。</block>
   <block id="00eb21356b96cac7e56ee66948f7292e" category="paragraph">ウィジェットに対して設定した期間は、ダッシュボード上の他のウィジェットには影響しません。</block>
   <block id="499df5a235e391725a79f411742e8626" category="section-title">第 1 軸と第 2 軸</block>
@@ -3590,7 +3587,6 @@ Time Filebucketの略
 処理数/分
 読み取り/分
 書き込み/分</block>
-  <block id="e8262a129757d59390413661a0f53d16" category="paragraph">ダッシュボードおよびアセットランディングページのウィジェットのデータは、選択したダッシュボードの時間範囲（またはダッシュボードの時間を上書きするように設定されている場合は、ウィジェットの時間範囲）で設定された更新間隔に従って自動的に更新されます。更新間隔は、ウィジェットが時系列（折れ線、スプライン、面、積み上げ面グラフ）であるか非時系列（その他すべてのグラフ）であるかに基づいています。</block>
   <block id="a311182bfffa770574efa58415204e5e" category="cell">ダッシュボードの時間範囲</block>
   <block id="a381288575a9ee2b7d6fbee5abc730ee" category="cell">時系列の更新間隔</block>
   <block id="696496081bb055864a75308dfe96791e" category="cell">非タイムシリーズ更新間隔</block>
@@ -16052,4 +16048,10 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="9c420799ef765483eddc7865804e6371" category="admonition">A_Module Evaluation_は_トライアルではありません_-お客様にCIサービスを使用した無料トライアル期間を提供し、購入を可能にする場合は、期間トライアルを使用します。モジュールの評価方法が異なります。これは、有料サブスクリプションの最近数カ月間に使用していないCloud Insightsモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。</block>
   <block id="8fe818ace86e2479958161998bd57015" category="paragraph">モジュール評価中に、モジュールで消費されるリソースのMU使用量は変更されません。 ただし、(_Summary_tabの)* Estimator *を開いて、評価後にMUがどのように課金されるかを確認したり、将来必要になる可能性のあるMU数の「What if」シナリオでプレイしたりすることができます。Estimatorを終了して数値をリセットします。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">モジュール評価の対象となるのは、サブスクリプションごとに1回のみです。</block>
+  <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">* Count * ：指定した期間内にデータが報告されたオブジェクトの _count_of を表示します。ダッシュボードの時間範囲によって決定される_Entire Time Window_を選択できます。</block>
+  <block id="9bd256c4a0f18dc34f706a5b2ffde80a" category="paragraph">ダッシュボードの時間を上書きしてウィジェットで独自の期間を使用するには、ウィジェットの編集モードで期間を選択し、ウィジェットをダッシュボードに保存します。</block>
+  <block id="3b1dbe846304b427475d6a670fb96413" category="inline-image-macro">ウィジェットのダッシュボードの期間の上書き</block>
+  <block id="c9b0370dc5d789bfc283022e4c0d9d9e" category="paragraph"><block ref="c9b0370dc5d789bfc283022e4c0d9d9e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="776202c829612e565a462d31af745afd" category="paragraph">ダッシュボードとアセットランディングページのウィジェットのデータは、選択した[Dashboard Time Range]で決定される更新間隔に従って自動更新されます。更新間隔は、ウィジェットが時系列（折れ線、スプライン、面、積み上げ面グラフ）であるか非時系列（その他すべてのグラフ）であるかに基づいています。</block>
 </blocks>
