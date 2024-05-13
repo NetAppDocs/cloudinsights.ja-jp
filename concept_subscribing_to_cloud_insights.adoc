@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: 無料トライアル期間中は、いつでも Cloud Insights に登録できます。 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
 ---
 = Cloud Insights に登録しています
 :toc: macro
@@ -70,27 +70,25 @@ AWS Marketplaceの無償トライアルを延長することはできません�
 
 
 
-== モジュールのトライアル
+== モジュールの評価
 
-近日公開予定！
-
-
-NOTE: モジュールトライアルはプレビュー機能と見なされるため、変更される場合があります。
-
-Cloud Insightsの最初のトライアルに加えて、*モジュールトライアル*もご利用いただけます。たとえば、インフラストラクチャオブザーバビリティにすでにサブスクライブしていて、Kubernetesを環境に追加する場合は、NetApp Kubernetes監視オペレータのインストール時から、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。
+また、*モジュール評価*もご利用いただけます。たとえば、インフラオブザーバビリティにすでにサブスクライブしていて、Kubernetesを環境に追加する場合は、NetApp Kubernetes監視オペレータのインストール時から、Kubernetesオブザーバビリティの30日間の評価が自動的に行われます。評価期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。
 
 
-NOTE: 試用期間後に新しいManaged Unit（MU）の使用料が請求されるので、それに応じて計画するようにしてください。モジュールトライアルが終了すると、サービスの中断を回避するためにMUを追加する必要があるかどうかが通知されます。
+NOTE: 評価後に新しいManaged Unit（MU）の使用料が請求されることに注意してください。そのため、適切な計画を立ててください。モジュールの評価が終了すると、サービスの中断を回避するためにMUを追加する必要があるかどうかが通知されます。
 
 管理ユニットの使用状況は、*[管理]>[サブスクリプション]ページの*[使用状況]タブで監視できます。
 
 image:Module_Trials_UsageTab.png["[MU Usage]画面"]
 
 
+NOTE: A_Module Evaluation_は_トライアルではありません_-お客様にCIサービスを使用した無料トライアル期間を提供し、購入を可能にする場合は、期間トライアルを使用します。モジュールの評価方法が異なります。これは、有料サブスクリプションの最近数カ月間に使用していないCloud Insightsモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。
+
+
 
 === 試算ツール
 
-モジュールトライアルでは、モジュールで消費されるリソースのMU使用量は変更されません。 ただし、(_Summary_tabの)* Estimator *を開いて、トライアル後にMUがどのように課金されるかを確認したり、将来必要になる可能性のあるMU数の「What if」シナリオでプレイしたりすることができます。Estimatorを終了して数値をリセットします。
+モジュール評価中に、モジュールで消費されるリソースのMU使用量は変更されません。 ただし、(_Summary_tabの)* Estimator *を開いて、評価後にMUがどのように課金されるかを確認したり、将来必要になる可能性のあるMU数の「What if」シナリオでプレイしたりすることができます。Estimatorを終了して数値をリセットします。
 
 image:Module_Trials_Estimator.png["試算ツール"]
 
@@ -98,7 +96,7 @@ image:Module_Trials_Estimator.png["試算ツール"]
 
 Estimatorでは、現在のサブスクリプション期間を維持してライセンスを付与されたManaged Unitの数を増やすアドオンや、現在のサブスクリプションのときに購入する更新サブスクリプションの更新オプションのいずれかのアドオンの番号がどのように積み重ねられているかを確認することもできます。 期間終了。
 
-モジュールトライアルの対象となるのは、サブスクリプションごとに1回のみです。
+モジュール評価の対象となるのは、サブスクリプションごとに1回のみです。
 
 
 
