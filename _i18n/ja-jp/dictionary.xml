@@ -5970,11 +5970,8 @@ httpdリクエストメソッドPUT
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">問題が発生し、サブスクリプションプロセスが正常に完了しない場合でも、環境にログインすると「トライアルバージョン」のバナーが表示されます。この場合は、 * Admin &gt; Subscription * に移動して、契約プロセスを繰り返すことができます。</block>
   <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">サブスクリプションステータスを表示します</block>
   <block id="4d71df4f1ca4df08ff676034d4f602c1" category="paragraph">サブスクリプションがアクティブになると、 [*Admin] &gt; [Subscription] * ページからサブスクリプションのステータスと管理ユニットの使用状況を確認できます。</block>
-  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">[サブスクリプションの概要]タブには次の情報が表示されます。</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">現在のエディション</block>
   <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">サブスクリプションシリアル番号</block>
-  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">現在のMU使用量と「What if？」 コスト見積もりツール</block>
-  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">サブスクリプションを変更するためのリンク</block>
   <block id="3252142ff4dd2ca67a9bff6f0a7fd71b" category="section-title">使用状況管理を表示します</block>
   <block id="d3d856c02816952b24a5110171a09834" category="paragraph">[Usage Management]タブには、Managed Unitの使用状況の概要と、コレクタまたはKubernetesクラスタ別のManaged Unitの消費状況を示すタブが表示されます。</block>
   <block id="2d5c36fcd4687378b85e14d41941a80f" category="admonition">フォーマットされていない容量管理対象ユニット数は、環境内の合計物理容量を表し、最も近い管理対象ユニットに切り上げられます。</block>
@@ -12933,7 +12930,6 @@ Windows サービスを使用して取得を再開します</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします。</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Managed Unit = KubernetesのvCPU 4台</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">サブスクリプション計算ツールを使用して、必要なManaged Unitの数に基づいてCloud Insightsサブスクリプションのコストを見積もることができます。現在の値は事前に入力されており、それらの値を調整して将来の増加予測を計画するのに役立ちます。インフラ、Kubernetes、またはその両方の値を調整できます。</block>
-  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Managed Unitの使用状況を確認できます</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">既存のレポートの編集</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">デフォルトの場所にあるファイルを編集すると、次回のレポートカタログの更新時にレポートが上書きされるリスクがあることに注意してください。編集したレポートは新しい名前で保存するか、デフォルト以外の場所に保存することをお勧めします。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">Forensics_All Activity_or_Entities_pagesのフィルタにアスタリスク(*)などのワイルドカード文字を含む文字を入力すると、ページのロードに時間がかかります。</block>
@@ -16048,4 +16044,12 @@ BlueXPプロファイルのEメールアドレスがCloud Insightsのようこ�
 Microsoft Edgeでは、Chromeと同じ形式の例外が適用されます。
 
 Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指定されます。</block>
+  <block id="8bfda936be946f758536df68a230dfab" category="paragraph">Subscription * Summary *タブには、次のような情報が表示されます。</block>
+  <block id="9b7f10f52064c80bcec17905afd00559" category="list-text">現在のMUエンタイトルメント</block>
+  <block id="f02a81449f4e8c1806fe657044887b30" category="paragraph">[* Usage]タブには、現在のMUの使用状況と、その使用状況がデータコレクタ別に表示されます。</block>
+  <block id="5e4b95db832e18e6c9bfe688b8cb8044" category="inline-image-macro">モジュール別のMU使用量</block>
+  <block id="36be66d4e4e4fc3739c2b9f067442449" category="paragraph"><block ref="36be66d4e4e4fc3739c2b9f067442449" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3b55f9a8374f81f85e7606ece767371" category="paragraph">[History（履歴）]タブには、過去7～90日間のMU使用状況が表示されます。グラフの列にカーソルを合わせると、モジュール別の内訳（オブザーバビリティ、Kubernetesなど）が表示されます。</block>
+  <block id="fbc13ba96b933d65afd4caf522ab96b6" category="inline-image-macro">MU使用履歴</block>
+  <block id="2319aa26c375ca721d328685f3585394" category="paragraph"><block ref="2319aa26c375ca721d328685f3585394" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
