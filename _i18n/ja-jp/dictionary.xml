@@ -1405,7 +1405,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Windows Acquisition Unit の問題のトラブルシューティング</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">も参照してください <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> および <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">ログインの問題</block>
-  <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights は 5 分ごとにログアウトします</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">ネットアップサポート</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">数日後に自動的にログアウトされました。</block>
@@ -16020,16 +16019,6 @@ Storage Virtual Machine：RESTでは、「data」以外のタイプのSVM（「c
   <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">ロケーションURLを照会すると、応答の準備ができていない場合は同じヘッダーが返され、応答の準備ができている場合はステータス200が返されます。応答コンテンツのタイプはtextで、元のクエリのhttpステータスとメタデータが含まれ、その後に元のクエリの結果が続きます。</block>
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">すべての非同期クエリのリストと、準備ができているものを表示するには、次のコマンドを使用します。</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">応答の形式は次のとおりです。</block>
-  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">必要なネットアップクッキーとAuth0クッキーに対してサードパーティによる承認を有効にします。
-
-例
-Chromeでは、ブラウザのURLに「chrome :// settings/cookies」と入力します。
-
-「すべてのCookieを許可」オプションを選択します。
-*または*
-[サードパーティのCookieをブロックする]を選択し、[\*.] auth0.comおよび[*.] netapp.comに例外を追加します。
-
-注意：例外を作成する場合は、必ず「このサイトにサードパーティのCookieを含める」オプションを選択してください。</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">BlueXPアカウントを持っていますが、BlueXPにログインできません。</block>
   <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「blueXP.netapp.com」&gt;「Account/Login Issues」または「bluexp.netapp.com」&gt;「Federation Issues」を選択します。  これらは、BlueXPの問題や質問に特化したものです。
 Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
@@ -16046,4 +16035,17 @@ BlueXPプロファイルのEメールアドレスがCloud Insightsのようこ�
   <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Cloud Insightsからログアウトすると、BlueXPからログアウトされます。BlueXPサインインを使用する他のNetAppクラウドサービスからもログアウトされます。</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">例：_User * Tony Lavoie * 10.1.120.15 *、ユーザエージェント* Mozilla/5.0（Windows NT 10.0、Win64、x64）AppleWebKit/537.36（KHTML、Geckoなど）Chrome/85.0.4183.121 Safari/537.36 *、ログイン方法* BlueXP Portal Login_*</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理およびその他のタスク</block>
+  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insightsは6時間ごとに自動的にログアウト</block>
+  <block id="125d2f260a38158435c7e7d5900894da" category="cell">これは、ブラウザのサードパーティのCookieが無効になっているためです。ユーザーは、すべてのサードパーティのCookieを有効にするようにブラウザを設定するか、より狭い例外リストを使用してCloud InsightsのCookieを有効にすることができます。
+
+例
+ブラウザの設定を開く
+
+「すべてのCookieを許可」オプションを選択します。
+*または*
+[Block third-party cookies]を選択し、_[\*.] auth0.com _および_[*.] netapp.com _に例外を追加します。
+
+Microsoft Edgeでは、Chromeと同じ形式の例外が適用されます。
+
+Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指定されます。</block>
 </blocks>
