@@ -3190,28 +3190,6 @@ Time Filebucketの略
   <block id="49990b51dcf59c3faef253d88e8baf59" category="section-title">セキュリティ認識トレーニング</block>
   <block id="a18b97bbb917ff0cc87bf6616d1ef734" category="paragraph">すべての Cloud Insights 担当者は、個々の役割向けに開発されたセキュリティトレーニングを受けて、各従業員がそれぞれの役割の特定のセキュリティ指向の課題に対応できるようにします。</block>
   <block id="d3c3f5c1a2706c55910136e97da08e3d" category="paragraph">Cloud Insights は、 SOC 2 監査の完了を含め、外部のライセンス済み CPA 企業のセキュリティ、プロセス、およびサービスについて、第三者による監査および検証を独立して実施します。</block>
-  <block id="e5f2463f379aba48a0f9ca6c913203cc" category="summary">IO 密度</block>
-  <block id="169c132355ddfd9b9cf9d499b71aeb68" category="doc">I/O 密度のデータに内部データボリュームのみが含まれていることを確認する</block>
-  <block id="7bb98d35c109da2ebbaa1c7a65d3f399" category="paragraph">ネットアップストレージシステムでは、ルートアグリゲートに、ストレージシステムの管理と制御に使用する特別なディレクトリと構成ファイルが含まれています。これらの処理を実行すると、ルートアグリゲートで大量のアクティビティが発生する可能性があります。I/O 密度が高い上位 10 個の内部ボリュームを Cloud Insights で照会すると、その結果の中にルートアグリゲートも含まれることがあります。</block>
-  <block id="46b224de326ea16a55f2530720d59843" category="paragraph">このガイドでは、ネットアップのルートアグリゲートを簡単に特定し、それらを内部ボリュームのクエリの結果から分離する方法と、システムにネットアップの新しいルートアグリゲートが追加されるたびにそれらを除外するルールを作成する方法について説明します。I/O 密度レポートに内部データボリュームだけの情報を出力するには、 Cloud Insights の次の機能を使用します。</block>
-  <block id="ea13f09d1bfd316504e8a7c0dfcf2fb4" category="list-text">Cloud Insights で監視しているネットアップのルートアグリゲートを特定するクエリを作成する。</block>
-  <block id="289afca30f86dfd5f20fe4a89589b1db" category="list-text">NetAppルートアグリゲートを除外するアノテーションルールを作成します。</block>
-  <block id="c0bea941d1547f078dda6774ee69c9dd" category="list-text">Cloud Insights で、環境内のネットアップのルートアグリゲートを特定するクエリを作成します。 * Queries &gt; + New Query &gt; Storage Pool *</block>
-  <block id="68eef2c4bf0c1205a9d57f62ff34da2c" category="paragraph">この例では、名前に「 aggr0 」を使用します。アグリゲートの作成時には、次の要件に従って名前を指定する必要があります。</block>
-  <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">先頭の文字にはアルファベットまたはアンダースコア（ _ ）を使用する必要があります。</block>
-  <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">アルファベット、数字、アンダースコアのみを使用できます。</block>
-  <block id="7ce969a0dacdf30d2053f97537327dfe" category="list-text">250 文字以内で指定します。</block>
-  <block id="ddc5fe45a1f8c76f3176ef59297915a5" category="paragraph">アグリゲートの名前は通常、 aggr0 、 aggr_0 などの形式にします。環境内のネットアップのルートアグリゲートをすべて特定するには、反復的なプロセスが必要となる場合があります。</block>
-  <block id="36460e710952fbc968c76ef4e9f3d51e" category="paragraph">アノテーションはアセットに割り当てる特殊なメモで、アノテーションによってアセットをフィルタすることができます。作成したアノテーションは、環境内のネットアップのルートアグリゲートを特定し、 IO 密度が高い内部ボリュームのリストに含まれないようにするために使用します。</block>
-  <block id="019f9302ad1b005fa5fa6e0bdda042c7" category="list-text">特定したすべてのネットアップルートアグリゲートをクエリに関連付けるためのアノテーションを作成します。 * Manage &gt; Annotations *</block>
-  <block id="554a808ec0af233c17e7e70b43072e1f" category="list-text">アノテーションの概要を入力します。 * 「 High I/O Density 」リストからルートアグリゲートを削除します。 *</block>
-  <block id="146fab5bc96cd6aa587f1c2a260a7b70" category="paragraph">アノテーションを個々のアセットに手動で適用する代わりに、アノテーションルールを使用して複数のアセットに自動的にアノテーションを適用することができます。アノテーションルールは、ユーザが作成するクエリに基づいてシステム上で実行されるもので、新しいアセットを既存のアセットセットに追加します。これらのアセットセットを包含から除外すると、新しいアセットも自動的に除外されます。</block>
-  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">環境内で特定したネットアップのルートアグリゲートを識別するクエリを作成し、保存しておく必要があります。</block>
-  <block id="21611fc590adaaf65bfbe5d847c57bdd" category="list-text">Cloud Insightsメニューで、* Manage &gt; Annotations *をクリックします</block>
-  <block id="d6bed7bad1624af0fa9be87684edae09" category="list-text">[ 名前 ] ボックスに、ルール * RootAggrExclude* を記述する一意の名前を入力します</block>
-  <block id="d5e6634ae4019ea4993c5fee3a276807" category="list-text">Query をクリックし、アノテーションルールを * Aggregate0 * に適用するために Cloud Insights が使用する Query を選択します</block>
-  <block id="a8297ead7d4d1f0590bf46a98e70b494" category="list-text">Annotation をクリックして ':* ルートアグリゲート除外 * を選択します</block>
-  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">「 * Value * 」をクリックし、「 * True * 」と入力します</block>
   <block id="38ed7bc985f8fe26e5b34cecd650286e" category="summary">ダッシュボードの機能と概念</block>
   <block id="24d256825c40c4686e0e7bfb247bf40d" category="doc">ダッシュボードの機能</block>
   <block id="36e7daeea464991f71bc9f7d59abc06f" category="paragraph">ダッシュボードとウィジェットでは、データの表示方法を柔軟に変更することができます。ここでは、カスタムダッシュボードを最大限に活用するのに役立つ概念をいくつか紹介します。</block>
@@ -9629,32 +9607,9 @@ Outgoing Byte Rateの略
 ハートビート応答時間最大
 結合時間の最大値
 同期時間最大</block>
-  <block id="de2080ec5e0e147976f00793ebd67db1" category="summary">フォレンジックエンティティの詳細</block>
-  <block id="ab440e736c2d9e3403efa72117388494" category="doc">フォレンジックエンティティの詳細</block>
-  <block id="0759459fd7984031945fba78588c75bb" category="paragraph">エンティティの詳細ページを使用して、エンティティに関する詳細情報にアクセスします。</block>
   <block id="6156c31e2cc5625d769ef3adb7a3ec3c" category="section-title">エンティティ情報の検査</block>
-  <block id="f8db4b534ba055c3a01a896220cf7409" category="paragraph">にアクセスします</block>
-  <block id="153bbbe3830b008df288fad38c0b3a83" category="list-text">エンティティプロファイル（ Entity Profile ）</block>
-  <block id="4a4a73d66611aace8d92f097448ce81b" category="list-text">以下の詳細について説明します。</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="list-text">名前</block>
-  <block id="8947a09168ba764c52eb7b93be315a8f" category="list-text">クリックして [ エンティティの概要 ] にアクセスします。</block>
-  <block id="14526abd8bda5af347775025cd5342cf" category="list-text">コミュニティ</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">パス</block>
-  <block id="54bc6f9dec592e510fe90ddcb5c6e572" category="list-text">最後にアクセスした</block>
-  <block id="22936c219b9fad247df75a21ff0a7b0e" category="list-text">[User Overview] にアクセスするには、 [user Overview] をクリックします。</block>
-  <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">サイズ</block>
-  <block id="85525c565d3741d72d4f4f86d783bd00" category="list-text">ユーザおよびコミュニティ</block>
-  <block id="c1e735eead256ce16dddd5709aaef387" category="list-text">ユーザがエンティティにアクセスした回数</block>
-  <block id="0e24ee04bc9ce222c893aba101ef6d43" category="list-text">コミュニティがエンティティにアクセスした回数。</block>
-  <block id="5679e71f2012621385ed2e7789f3207b" category="list-text">エンティティー Bhavior</block>
-  <block id="40926e069052929a1c74d824a8e32295" category="list-text">最近のアクティビティ：</block>
-  <block id="a1f6abd56494e8f8aa2dd028fe6e8327" category="list-text">最終アクセス日</block>
-  <block id="d31527e48f3e267b31ebf68a8452a926" category="list-text">エンティティに最後にアクセスしたユーザー</block>
-  <block id="282662c8bc8f4ccffd063bc4179b8d94" category="list-text">エンティティがアクセスされた場所</block>
-  <block id="456d0deba6a86c9585590550c797502d" category="list-text">処理</block>
-  <block id="e1796f873ff8ad4bc99c1496e6eb7f87" category="list-text">書き込み処理の数</block>
-  <block id="740155e144f4a52eaeb72a9385ed0d33" category="list-text">読み取り処理の数</block>
-  <block id="c1e108c2f999f00f38cf1ce52cc8164f" category="list-text">メタデータへのアクセス数</block>
   <block id="2e846daa38d7e7ac9350b703448d2886" category="summary">モニタによってトリガーされたアラートを表示する</block>
   <block id="f00316e5ead98cd18800712fd32c80d3" category="doc">モニタからのアラートの表示と管理</block>
   <block id="599031b826edb36138668c214857c5ee" category="inline-link-macro">監視対象のしきい値</block>
@@ -11936,10 +11891,7 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">前提条件</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">プロキシ</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">をアップグレードして</block>
-  <block id="44df9c10959f57dfdf2dd50f7591a9c9" category="section-title">オペレータの設定</block>
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">使用可能な設定</block>
-  <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">新しいバージョンの演算子では、最も一般的に変更される設定は_AgentConfiguration_customリソースで構成できます。オペレータを配備する前に、_operator-config.yaml_fileを編集して、このリソースを編集できます。このファイルには、一部の設定例がコメントアウトされています。のリストを参照してください <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 演算子の最新バージョン。</block>
-  <block id="342414165099895140bbfbd3ffb613ca" category="paragraph">次のコマンドを使用してオペレータを配置した後で、このリソースを編集することもできます。</block>
   <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">展開したオペレータのバージョンがAgentConfigurationをサポートしているかどうかを確認するには、次のコマンドを実行します。</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">「Error from server (NotFound)」というメッセージが表示された場合は、AgentConfigurationを使用する前にオペレータをアップグレードする必要があります。</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">プロキシサポートを設定しています</block>
@@ -12211,55 +12163,9 @@ enqueueカウント
 enqueueカウント
 サイズ</block>
   <block id="96633c4bbe4066df6cca5184b0c3138c" category="doc">データコレクタの設定</block>
-  <block id="f2c00107b5158d2563b78a7e2ec3a970" category="paragraph">Cloud Insights 環境内のデータコレクタは、データセンター内のホスト、サービス、またはデバイスからデータを収集するように設定します。</block>
-  <block id="22265760d3379d0bb5a64374d95aa587" category="list-text">データコレクタを設定するには、アカウント所有者または管理者の権限が必要です。</block>
-  <block id="b8ad8b1d3e73e72eeba197fe8cfed4ef" category="list-text">データの収集を開始する前に、 Acquisition Unit （インフラストラクチャの場合）または Agent （サービスまたはホストの場合）を設定しておく必要があります。</block>
-  <block id="b776d95fcadabfbede1f04ed42e70b38" category="list-text">データの収集元となるインフラデバイスのクレデンシャルが必要です。</block>
-  <block id="46b64733605b7642b18a0bb2d586bd5c" category="paragraph">データを収集するすべてのデバイスには、デバイスのネットワークアドレス、アカウント情報、およびパスワードが必要です。</block>
-  <block id="f4b59a337513071e6d4843f553d49bc6" category="section-title">資格情報のセキュリティ</block>
-  <block id="4a2fd5083496ddce3be60eef8073b637" category="paragraph">データコレクタのクレデンシャルは、 Cloud Insights に入力すると暗号化され、まず AU の公開鍵で暗号化された Acquisition Unit （ AU ）に送信され、 HTTPS 経由で暗号化されます。暗号化された値は、 AU がデバイスおよびソフトウェアとの通信にこれらの値を使用する場合に復号化されます。</block>
-  <block id="ca28d4c52bb2a654a2678ff8d3dcefa2" category="section-title">Data Collector の設定</block>
-  <block id="c339d1a32a95310d9e4a053f77cad28b" category="list-text">選択するデータコレクタのタイプによって、インストール手順は異なります。</block>
-  <block id="13762a4c9e8fa47d574db722fc1b3fa2" category="section-title">オペレーティングシステム：</block>
-  <block id="b00d7c7ac92f4aaddc21f00ae51e9ffb" category="paragraph">環境からオペレーティングシステムまたはサービスデータの収集を開始するには、少なくとも 1 つの Cloud Insights エージェントをインストールする必要があります。必要な数のエージェントをインストールできます。各エージェントは、複数のサービスからデータを収集できます。</block>
-  <block id="6caa4b361faebcb803a409db1b88d8a6" category="paragraph">各エージェントは、サービスからデータを収集するだけでなく、インストール先の VM / ホストのデータコレクタとしても機能します。収集されたデータは、ダッシュボードウィジェットまたはクエリでは「ノード」データとして表示されます。</block>
-  <block id="78ace3389e374f5f298be8d67bfa4a58" category="list-text">Cloud Insights にアクセスする VM またはホスト（ノード）のプラットフォームタイプまたはオペレーティングシステムをクリックします。</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">エージェントアクセスキーを選択します。</block>
-  <block id="c2bfe2eaf58eb4609047a3e1eea65778" category="list-text">表示されたコマンドをクリップボードにコピーします。クリップボードアイコンをクリックすると、コマンドを簡単にコピーできます。</block>
-  <block id="a53af23d658a9535fc02012c55ef38c8" category="list-text">エージェント VM/ ホストでターミナル / コマンドウィンドウを開き、コマンドを貼り付けます。Enter キーを押してコマンドを実行します。</block>
-  <block id="c3b9d0200b01f416076842501c9ae206" category="list-text">エージェントをインストールしたら、 [ 完了 ] をクリックします。エージェントがデータの収集を開始します。</block>
-  <block id="5010b1ac42dba70893a9d0885fbe6153" category="paragraph">ノードのデータがダッシュボードに表示されるか、クエリに使用できるようになるまでに、最大 2 つのポーリング期間がかかることがあります。</block>
   <block id="2feb695214b35f4b4c9ae83eac6164ee" category="section-title">サービス</block>
-  <block id="0e5b9bfd33de4aacc0a1ca8f5719168a" category="paragraph">サービスデータコレクタは、 Docker や Kibana などのテレグラムエージェントに基づくものです。</block>
-  <block id="95237aad105439410978d832422ec5f8" category="list-text">環境からサービスデータを収集するには、少なくとも 1 つの Cloud Insights エージェントが必要です。エージェントがインストールされていない場合は、サービスデータコレクタを設定するときに、エージェントのインストールを求めるプロンプトが表示されます。</block>
-  <block id="9d1d946c56f906fe4eda196507962e75" category="list-text">データの収集元となるサービスが環境にインストールされ、実行されている必要があります。</block>
-  <block id="f5b3a38421e3564dc407081a58490b3b" category="list-text">サービスデータコレクタをクリックします。</block>
-  <block id="7aaf5cf369a105094116ca809d0cc0c2" category="list-text">エージェントのオペレーティングシステムまたはプラットフォームを選択します。プラットフォーム用のエージェントをインストールしていない場合は、手順に従ってインストールしてください。</block>
-  <block id="26983a904e0717c520032a2178795368" category="list-text">[* Continue （続行） ] をクリックします</block>
-  <block id="04d6e043600695763216a74149b824d0" category="list-text">データコレクタの設定手順に従います。クリップボードアイコンをクリックすると、表示されているコマンドやコードスニペットをすばやくコピーできます。</block>
-  <block id="33365fcfbdf45a4d9ec1761cc9bb43e2" category="list-text">データコレクタが正しく設定されたら、 [* 終了 * ] をクリックします。</block>
   <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">サービスのデータがダッシュボードに表示されるか、クエリに使用できるようになるまで、ポーリング期間は最大 2 回かかる場合があります。</block>
-  <block id="cfd3e8ee788479f95905fd7f4ae27be6" category="section-title">インフラ</block>
-  <block id="7b7102b6e1f4866e3babe053b86b90ac" category="paragraph">インフラストラクチャデータコレクタには、ストレージやスイッチなどがあります。</block>
-  <block id="ac637daa3ccd1254a990c56b13cbf3e9" category="list-text">インフラデータの収集を開始するためには、少なくとも 1 つの Acquisition Unit を設定しておく必要があります。</block>
-  <block id="c050d9221193610ab179db826d0ebe03" category="list-text">[ インフラストラクチャー ] データコレクターをクリックします。</block>
-  <block id="211512ec77b8c6e0ce1dab5a4bb593aa" category="list-text">データコレクタの名前を入力します。名前には次の文字を使用できます。</block>
-  <block id="3fd760f5a5dc71312ce1dd808d747265" category="list-text">文字（ a~z ）</block>
-  <block id="c941c7696194a60a16e5962a0d5dbb37" category="list-text">番号（ 0~9 ）</block>
-  <block id="e5e058c4eece6b2f44372f1be024219c" category="list-text">ハイフン（ - ）</block>
-  <block id="7d36ba9acc13f7a9d2fc56dcb952101b" category="list-text">アンダースコア (_)</block>
-  <block id="ec69cea1e605a2ea754da699ed4b967b" category="list-text">期間（ . ）</block>
-  <block id="35f7e769e75dabc896b7969ce411cfaa" category="list-text">スペース ()</block>
-  <block id="ab36095ea637c9091ba22ae50c85cc76" category="paragraph">名前の先頭と末尾にスペース、ピリオド、ハイフンを使用することはできません。</block>
-  <block id="13ea58a04825bf78b2f2da7f3b0831b5" category="list-text">このデータコレクタに関連付ける Acquisition Unit を入力します。</block>
-  <block id="82f142e6d7380c3d45f29c8550f338a3" category="list-text">Configuration （設定）画面で必須フィールドを入力します。</block>
-  <block id="19110098d937705ce65c4bb5ad97a475" category="list-text">[ 詳細設定 *] をクリックして、追加の設定フィールドを入力します。すべてのデータコレクタで高度な設定が必要となるわけで</block>
-  <block id="4279b596662924e6b4010f919f84d17c" category="list-text">Test Configuration* をクリックして、データコレクタが正しく設定されていることを確認します。</block>
-  <block id="618758304f92b490c243390d7a43774d" category="list-text">完了したら、 [ コレクタの追加 ] をクリックします。</block>
-  <block id="644b4fa94e97c40a6df4575a32bdb388" category="inline-link-macro">Acquisition Unit の設定</block>
-  <block id="0d72fee8b671c19a26656d7fb11ab5c7" category="paragraph">新しい Acquisition Unit の追加については、を参照してください <block ref="f6d6d1d8bb58f56bfd9166104e49bf6e" category="inline-link-macro-rx"></block></block>
-  <block id="03600e14e8c249775af21bb69579dc2c" category="paragraph">[+]
-環境のデータがダッシュボードに表示されるか、クエリに使用できるようになるまでに、最大2回のポーリング期間がかかることがあります。</block>
   <block id="29f2c433c8324679db838494d114ace0" category="summary">Elasticsearch データコレクタの設定</block>
   <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">Elasticsearch Data Collector</block>
   <block id="7ad1c9b2a026e8cd588b98357fc68620" category="paragraph">Cloud Insights は、このデータコレクタを使用して Elasticsearch から指標を収集します。</block>
@@ -12452,16 +12358,6 @@ Thread Pool Fetch Shard Started Queueの略
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">使用可能なデータコレクタがベンダー別に表示されます。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">ダイアログボックスで、データコレクタを設定し、 Acquisition Unit を追加できます。</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">データコレクタの名前を入力します。</block>
-  <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">名前には、英字（ a ~ z ）、数字（ 0 ~ 9 ）、ダッシュ（ - ）、アンダースコア（ _ ）、アポストロフィ（ ' ）を使用できます。 およびピリオド（ . ）を使用できます。</block>
-  <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">通知を設定するよう求められたら、電子メール、 Webhook 、またはその両方でアラートを送信するように選択し、通知するアラートタイプ（重大、警告、情報、解決済み）を選択します。Global Monitor Recipient リスト（ *Admin &gt; Notifications * で設定）に通知するか、追加の受信者を指定するかを選択できます。  続行する準備ができたら、 [* Complete Setup* （セットアップ完了） ] をクリックします</block>
-  <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">コレクタ通知</block>
-  <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">ONTAP データコレクタ*のランディング・ページを表示しているときに'データ・コレクタのサマリー・セクションの通知フィールドで鉛筆のアイコンをクリックすると'通知を変更できます</block>
-  <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">コレクタ通知の編集</block>
-  <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">[ 詳細構成 *] をクリックして、追加の構成フィールドを追加します。すべてのデータコレクタで高度な設定が必要となるわけで</block>
-  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">[Add Collector* （コレクタの追加） ] をクリックして設定を保存し、 Cloud Insights テナントにデータコレクタを追加します。</block>
-  <block id="62ab4599363ab12f861dc69c2a905582" category="paragraph">新しいデータコレクタを追加すると、 Cloud Insights は 3 つのポーリングを開始します。</block>
   <block id="98be204914713a1fd39ff19bbc956666" category="list-text">最初のインベントリポーリング：すぐに</block>
   <block id="f8be5685f8c7c5768bbc90c8ce7fb95d" category="list-text">第 1 回のパフォーマンスデータのポーリングでベースラインを確立：インベントリのポーリング直後</block>
   <block id="9baa8b33ea662dffa7faa1d9b47e5e8d" category="list-text">第 2 回パフォーマンスポーリング：第 1 回のパフォーマンスポーリングが完了してから 15 秒以内</block>
@@ -13102,7 +12998,6 @@ FAS / AFF 8080</block>
   <block id="29dc284dcf38e4fe32feb8a0fd5c0b4b" category="cell">AWS Cloud Volumes</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="cell">FSX for ONTAP の略</block>
   <block id="13816363e2eaa66d7be294be0dbaef8c" category="cell">Data ONTAP</block>
-  <block id="64b14a7e6bb27e2b2b4b1397266f46b8" category="cell">qtree.1以上</block>
   <block id="341a7ed392b3acf42503f54b89dd0954" category="cell">使用済みライセンス</block>
   <block id="88bf89db528a107f9dcf9d0ab7b1203b" category="cell">内部ボリューム制限</block>
   <block id="7212522e5e7c1b74429f93734919f229" category="cell">クローンによる削減容量-合計</block>
@@ -15733,7 +15628,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Couchbase]を選択します。</block>
   <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[Flink]を選択します。</block>
   <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。MySQLを選択します。</block>
-  <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">Cloud Insightsメニューから* Observability &gt; Collectors *をクリックし、*+ Data Collector *ボタンをクリックします。</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。「きばな」を選択します。</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">[Observability]&gt;[Collectors]*で、*+ Data Collector *をクリックします。[MongoDB]を選択します。</block>
   <block id="5bff30d13ce98c505187872963af1f25" category="section-title">NetApp BlueXPアカウントの作成</block>
@@ -15815,7 +15709,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insightsでは、ONTAPシステムのバックエンドスイッチからデータを収集できます。データコレクタの_Advanced Configuration_セクションで収集を有効にして、ONTAPシステムが次の機能を提供するように設定されていることを確認します。 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> そして適切な <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 設定：</block>
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">ワークロードの健全性は、* Kubernetes &gt; Explore &gt; Workloads *ページで一目で確認できるため、どのワークロードがパフォーマンスに優れていて、どのワークロードに支援が必要かをすばやく確認できます。健全性問題がインフラ、ネットワーク、構成の変更に関連しているかどうかを簡単に特定し、ドリルダウンしてルート原因を分析します。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Kubernetesへのインストールの詳細については、を参照してください。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> ページ</block>
-  <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Kubernetes のインストール手順については、を参照してください <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> ページ</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes向けデータコレクタ</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">データコレクタ：Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes Monitoring Operatorのインストールと設定</block>
@@ -15950,9 +15843,6 @@ kubectl get all -n &lt;namespace&gt;| grep -i psp (should show that nothing is f
   <block id="70d79a6ca6098037988336f11346dce8" category="cell">Operator名前空間のNet-Observer（ワークロードマップ）ポッドがCrashLoopBackOffにある</block>
   <block id="e49c236734fe2ea50ae36fcb5353eed9" category="cell">PodはOperatorネームスペース（デフォルト：netapp-monitoring）で実行されているが、QueriesのワークロードマップまたはKubernetes指標のデータがUIに表示されない</block>
   <block id="665dddc2adb2f34c745ef47345ee5e93" category="cell">Operator名前空間の一部のnet-observerポッドがPending状態です</block>
-  <block id="a5ecb374e5b37ce04e31d68dc3716305" category="cell">Kubernetes Monitoring Operatorをインストールした直後にログに次のようなメッセージが表示されます。
-
-[プラグインのinputs.prometheus]エラー：へのHTTP要求の実行中にエラーが発生しました<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> ゲット<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp：lookup kube-state-metrics.&lt;namespace&gt; .svc.cluster.local：該当するホストがありません</block>
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">Kubernetesのバージョンを確認します（<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  v1.20.x以下の場合、これは想定される制限です。  Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">リソースが不足しているため、Kubernetes Monitoring Operatorによってデプロイされたポッドがクラッシュしています。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">Kubernetes Monitoring Operatorを参照 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 必要に応じてCPUやメモリの制限を増やします。</block>
@@ -16054,4 +15944,29 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="3b1dbe846304b427475d6a670fb96413" category="inline-image-macro">ウィジェットのダッシュボードの期間の上書き</block>
   <block id="c9b0370dc5d789bfc283022e4c0d9d9e" category="paragraph"><block ref="c9b0370dc5d789bfc283022e4c0d9d9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="776202c829612e565a462d31af745afd" category="paragraph">ダッシュボードとアセットランディングページのウィジェットのデータは、選択した[Dashboard Time Range]で決定される更新間隔に従って自動更新されます。更新間隔は、ウィジェットが時系列（折れ線、スプライン、面、積み上げ面グラフ）であるか非時系列（その他すべてのグラフ）であるかに基づいています。</block>
+  <block id="16a53ba18c619dcf3d471d85becaeee6" category="section-title">始める前に注意すべき重要事項</block>
+  <block id="ef2fbd69b6e60cf6860a0466960c15a2" category="inline-xref">カスタムリポジトリ</block>
+  <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
+  <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">を使用してを実行する場合 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>を使用してください <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>またはを使用している <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>を参照してください。</block>
+  <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">また、 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
+  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">以前のインストールからアップグレードする場合は、 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 情報。</block>
+  <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。</block>
+  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMから、Cloud Insightsにアクセスし、Cloud Insightsからバイナリをダウンロードできるようにする必要があります。</block>
+  <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります</block>
+  <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">変数を設定するには、NetApp Kubernetes Monitoring Operatorをインストールする前に、システムで次の手順を実行します。</block>
+  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。</block>
+  <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">NetApp Kubernetes Monitoring Operatorを導入する前に、operator-config.yamlでAgentConfigurationのプロキシセクションを設定します。</block>
+  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">デフォルトでは、NetApp Kubernetes Monitoring OperatorはCloud Insights リポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。</block>
+  <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">kube-rbac-proxyの略</block>
+  <block id="bb84790255aac66744320e4417143dd8" category="list-text">Fluent-bit</block>
+  <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">kubernetes-event-exporterの略</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">表示するアグリゲート</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">監視しているクラスタにClusterRoleがないカスタムリソースが含まれている場合、 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>イベントログを使用してこれらのリソースを監視するには、オペレータにこれらのリソースへのアクセスを手動で許可する必要があります。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">edit_operator -additional-permissions.yaml_インストール前、またはインストール後にresource_ClusterRole/&lt;namespace&gt;-additional-permissions_を編集します。</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">動詞["get","watch","list"]を使用して、目的のapiGroupsとリソースの新しいルールを作成します。「\https://kubernetes.io/docs/reference/access-authn-authz/rbac/」を参照</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">クラスタに変更を適用します。</block>
+  <block id="0b681475d547cee4e6a8aa2975d2a6ad" category="cell">Kubernetes Monitoring Operatorをインストールした直後にログに次のようなメッセージが表示されます。
+
+[プラグインのinputs.prometheus]エラー：\http://kube-state-metricsへの要求エラー。&lt;namespace&gt;.svc.cluster.local：8080/metrics：get\ http://kube-state-metrics &lt;namespace&gt;.svc.cluster.local：8080/metrics：dial tcp：lookup kube-state-metrics。&lt;namespace&gt;.svc.cluster.local：該当するホストはありません。</block>
+  <block id="079771aecc679d555303419cd98137ca" category="paragraph">Kubernetes のインストール手順については、を参照してください <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> ページ</block>
 </blocks>

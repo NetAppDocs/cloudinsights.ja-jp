@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_query_assign_multiple_applicationss.html 
+permalink: task_query_assign_multiple_applications.html 
 summary: クエリを使用して、複数のアプリケーションやアノテーションをオブジェクトに割り当てたり、オブジェクトから複数のアプリケーションやアノテーションを削除したりできます。 
 keywords: query, queries, application, annotation, multiple 
 ---

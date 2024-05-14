@@ -1,16 +1,14 @@
 ---
 sidebar: sidebar 
 permalink: forensic_entity_detail.html 
-keywords: Forensic, entity, entity overview, entity behavior, detail 
-summary: フォレンジックエンティティの詳細 
+keywords: Forensic, entity, entity overview, entity behavior, entities 
+summary: フォレンジックエンティティページ 
 ---
-= フォレンジックエンティティの詳細
+= フォレンジックエンティティページ
 :toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
 :toc: 
-:toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -18,60 +16,22 @@ summary: フォレンジックエンティティの詳細
 :toc-position: content
 
 
-エンティティの詳細ページを使用して、エンティティに関する詳細情報にアクセスします。
+フォレンジックエンティティページには、環境内のエンティティアクティビティに関する詳細情報が表示されます。
 
 
 
 == エンティティ情報の検査
 
-にアクセスします
+* Forensics > Activity Forensics * をクリックし、 _Entities_ タブをクリックして Entities ページにアクセスします。
 
-エンティティプロファイル（ Entity Profile ）:: 以下の詳細について説明します。
-+
---
-* 名前
-+
-** クリックして [ エンティティの概要 ] にアクセスします。
+このページには、環境内のエンティティアクティビティの概要が表示され、次の情報が強調表示されます。
+* 1分あたりの_unique Entities_accessedを示すグラフ
+*アクセスされたエンティティタイプ_のグラフ
+*_Common Paths_の内訳
+*エンティティの総数のうち_Top 50 Entities_outのリスト
 
+image:CS-Entities-Page.png["エンティティページ（ Entities Page ）"]
 
-* を入力します
-* コミュニティ
-* パス
-* 最後にアクセスした
-+
-** [User Overview] にアクセスするには、 [user Overview] をクリックします。
+リスト内のエンティティをクリックすると、エンティティの概要ページが開き、エンティティのプロファイルに名前、タイプ、デバイス名、最もアクセスされる場所の IP 、パスなどの詳細、およびユーザ、 IP 、 エンティティが最後にアクセスされた時刻です。
 
-
-* サイズ
-
-
---
-ユーザおよびコミュニティ::
-+
---
-* ユーザがエンティティにアクセスした回数
-* コミュニティがエンティティにアクセスした回数。
-
-
---
-エンティティー Bhavior::
-+
---
-* 最近のアクティビティ：
-+
-** 最終アクセス日
-** エンティティに最後にアクセスしたユーザー
-** エンティティがアクセスされた場所
-
-
-* 処理
-+
-** 書き込み処理の数
-** 読み取り処理の数
-** メタデータへのアクセス数
-
-
-
-
---
-
+image:CS-entity-detail-page.png["エンティティの概要ページ"]

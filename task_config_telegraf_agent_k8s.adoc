@@ -505,7 +505,7 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 
 | Kubernetes Monitoring Operatorをインストールした直後にログに次のようなメッセージが表示されます。
 
-[プラグインのinputs.prometheus]エラー：へのHTTP要求の実行中にエラーが発生しました http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] ゲット http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] dial tcp：lookup kube-state-metrics.<namespace> .svc.cluster.local：該当するホストがありません | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
+[プラグインのinputs.prometheus]エラー：\http://kube-state-metricsへの要求エラー。<namespace>.svc.cluster.local：8080/metrics：get\ http://kube-state-metrics <namespace>.svc.cluster.local：8080/metrics：dial tcp：lookup kube-state-metrics。<namespace>.svc.cluster.local：該当するホストはありません。 | このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。 
 
 
 | クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。 | Kubernetesのバージョンを確認します（ `kubectl version`）。  v1.20.x以下の場合、これは想定される制限です。  Kubernetes Monitoring Operatorで導入されたkube-state-metricsリリースでは、v1.cronjobのみがサポートされます。  Kubernetes 1.20.x以前では、cronjobリソースはv1beta.cronjobにあります。  その結果、kube-state-metricsはcronjobリソースを見つけることができません。 

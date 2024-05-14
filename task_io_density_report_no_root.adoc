@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_isolate_root_volume.html 
+permalink: task_io_density_report_no_root.html 
 summary: 大量の I/O 密度を照会する際に、ルートボリュームを除外する。 
 keywords: NetApp, root volume, high I/O, 
 ---

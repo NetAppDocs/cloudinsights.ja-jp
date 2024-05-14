@@ -22,7 +22,7 @@ Cloud Insights は、このデータコレクタを使用して Kubernetes ポ�
 
 == インストール
 
-Kubernetes のインストール手順については、を参照してください link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] ページ
+Kubernetes のインストール手順については、を参照してください link:task_config_telegraf_agent_k8s.html["Kubernetes監視オペレータ"] ページ
 
 
 
