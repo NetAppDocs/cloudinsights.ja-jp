@@ -47,7 +47,7 @@ keywords: dashboard, widget, custom, example, virtual machine, vm, performance
 
 
 
-image:VMDashboard-TableWidget1.png[""]
+image:VMDashboard-TableWidget1.png["[テーブルウィジェットの編集]ダイアログ"]
 
 . このウィジェットをカスタマイズできます。上部の Name フィールドで「 Widget 1 」を削除し、「 Virtual Machine Performance table 」と入力します。
 . アセットのタイプドロップダウンをクリックし、「 Storage _To Virtual Machine _ 」を変更します。
@@ -68,7 +68,7 @@ image:VMDashboard-TableWidget1.png[""]
 
 
 
-image:VMDashboard-TableWidgetGroup.png[""]
+image:VMDashboard-TableWidgetGroup.png["表ウィジェットのグループ化の例"]
 
 . 目的に応じて表ウィジェットをカスタマイズしたら、「 * [ 保存 ] * 」ボタンをクリックします。
 +
@@ -88,7 +88,7 @@ image:VMDashboard-TableWidgetGroup.png[""]
 . このウィジェットをダッシュボードに追加するには、「 * [ 保存 ] * 」をクリックします。
 
 
-image:VMDashboard-LineChartVMLatency.png[""]
+image:VMDashboard-LineChartVMLatency.png["レイテンシデータを示す折れ線グラフ"]
 
 次に、 VM の読み取り IOPS 、書き込み IOPS 、合計 IOPS を 1 つのグラフに表示するグラフを追加します。
 
@@ -100,7 +100,7 @@ image:VMDashboard-LineChartVMLatency.png[""]
 . このウィジェットの凡例をダッシュボードに表示するには、 * 凡例を表示 * をクリックします。
 
 
-image:VMDashboard-AreaChartVMIOPS.png[""]
+image:VMDashboard-AreaChartVMIOPS.png["VMのIOPSを示す面グラフ"]
 
 . このウィジェットをダッシュボードに追加するには、「 * [ 保存 ] * 」をクリックします。
 
@@ -121,4 +121,4 @@ image:VMDashboard-AreaChartVMIOPS.png[""]
 
 最後の VM パフォーマンスダッシュボードは次のようになります。
 
-image:VMDashExample1.png[""]
+image:VMDashExample1.png["VMダッシュボードのすべてのウィジェットが表示された完全な例"]

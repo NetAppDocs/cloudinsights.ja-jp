@@ -45,7 +45,7 @@ AUソフトウェアを手動でダウンロードしてインストールする
 
 
 
-image:Manual_AU_Create_API_Token.png[""]
+image:Manual_AU_Create_API_Token.png["APIトークンの作成"]
 
 . Swagger（[Admin]>[API Access]>[API Documentation]）で、トークンを使用してCloud Insights APIを許可します
 +
@@ -57,7 +57,7 @@ image:Manual_AU_Create_API_Token.png[""]
 
 
 
-image:Manual_AU_Authorization.png[""]
+image:Manual_AU_Authorization.png["APIトークンを承認する"]
 
 . 次の_/au/installers/｛platform｝/latest_or_/au/installers/｛platform｝/｛version｝_apiを使用してAUインストーラをダウンロードします。
 +
@@ -89,8 +89,8 @@ IMPORTANT: 次の手順では、一時トークンを使用する必要があり
 
 
 
-image:Manual_AU_one_time_token.png[""]
-image:Manual_AU_one_time_token_response.png[""]
+image:Manual_AU_one_time_token.png["ワンタイム使用APIトークンの作成"]
+image:Manual_AU_one_time_token_response.png["ワンタイム使用APIトークンの応答例"]
 
 . AUをインストールするマシンで、ダウンロードしたインストーラファイルが格納されているフォルダに移動します。次のコマンドを実行するには、ユーザにroot権限が必要です。
 +

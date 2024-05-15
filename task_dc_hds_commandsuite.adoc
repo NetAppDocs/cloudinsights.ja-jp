@@ -111,7 +111,7 @@ HDS ストレージノードのアセットランディングページにある�
 * HiCommand Device Manager ソフトウェアおよびピアの権限に対する読み取り専用のユーザ名とパスワード
 * ポート要件： 2001 （ http ）または 2443 （ https ）
 * ユーザ名とパスワードを使用して HiCommand Device Manager ソフトウェアにログインします
-* HiCommand Device Manager へのアクセスを確認します http://<HiCommand_Device_Manager_IP>:2001/service/StorageManager[]
+* HiCommand Device Manager\http：//<HiCommand_Device_Manager_IP>：2001/service/StorageManagerへのアクセスを確認します。
 
 
 

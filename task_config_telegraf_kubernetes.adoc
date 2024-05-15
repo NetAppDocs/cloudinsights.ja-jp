@@ -32,23 +32,21 @@ Kubernetes Monitoring Operatorはkube-state-metricsを自動的にインスト�
 
 
 
-=== kube-state-metrics カウンタ
+=== kube-state-metricsカウンタ
 
-これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。
+NetApp Kubernetes監視オペレータは、以下のkube-state-metricsカウンタを抽出します。各カウンタの詳細については、次のサイトを参照してください。 https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[]。
 
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["導入メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["入力メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["ネームスペース指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["ノードのメトリックス"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["永続的ボリューム指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["永続的ボリューム要求の指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["ポッドのメトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet メトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["シークレットメトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["サービスメトリック"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["Stat助け Set メトリック"]
+. ConfigMap メトリック
+. DemonSet メトリック
+. 導入メトリック
+. 入力メトリック
+. ネームスペース指標
+. ノードのメトリックス
+. 永続的ボリューム指標
+. 永続的ボリューム要求の指標
+. ポッドのメトリック
+. ReplicaSet メトリック
+. シークレットメトリック
+. サービスメトリック
+. Stat助け Set メトリック
 
-
-'''

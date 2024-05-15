@@ -87,7 +87,6 @@
   <block id="848e162feda2cd9dcd4c3740e6440441" category="list-text">次に、ウィジェットを追加します。必要に応じて、 * 編集 * アイコンをクリックして編集モードを有効にします。</block>
   <block id="73e63333d34d675df97db3ad7c445e97" category="list-text">[ ウィジェットの追加 * （ Add Widget * ） ] アイコンをクリックし、 [ * テーブル * （ * Table * ） ] を選択して新しい表ウィジェットをダッシュボードに追加します。</block>
   <block id="255e309e4ef25e1a494f4aec136025e6" category="paragraph">ウィジェットを編集（ Edit Widget ）ダイアログが開きます。環境内のすべてのストレージについて、デフォルトのデータが表示されます。</block>
-  <block id="731dfd723b554eaf8151475f0d88546b" category="paragraph"><block ref="731dfd723b554eaf8151475f0d88546b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e879f4d912b34f5a466e0863317b1663" category="list-text">このウィジェットをカスタマイズできます。上部の Name フィールドで「 Widget 1 」を削除し、「 Virtual Machine Performance table 」と入力します。</block>
   <block id="27e593a944a7198c37ca7fca40d69371" category="list-text">アセットのタイプドロップダウンをクリックし、「 Storage _To Virtual Machine _ 」を変更します。</block>
   <block id="e6fca2bd269fb78cc3ef024756280bef" category="paragraph">表のデータが更新され、環境内のすべての仮想マシンが表示されます。</block>
@@ -97,7 +96,6 @@
   <block id="1630a608b6b7648ad37e46b029924aee" category="paragraph">これで、合計 IOPS が 10 以上の VM のみが表に表示されます。</block>
   <block id="f28509ea18ff15960817dc6d0eadec87" category="list-text">結果をグループ化すると、表をさらに折りたたむことができます。[* Group by] の横にある [*] ボタンをクリックし、グループ化するフィールド（ _Application_or_Hypervisor name _ など）を選択します。グループ化が自動的に適用されます。</block>
   <block id="ccdd47122d87f6d80edce5290dfecc00" category="paragraph">これで、設定に従ってテーブルの行がグループ化されます。グループは必要に応じて展開または折りたたむことができます。グループ化された行には、各列の集計データが表示されます。一部の列では、その列の集計方法を選択できます。</block>
-  <block id="963b71ea25e0f4ac13e33745dc71f9ca" category="paragraph"><block ref="963b71ea25e0f4ac13e33745dc71f9ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e841905e785227685e1d25c190838b2" category="list-text">目的に応じて表ウィジェットをカスタマイズしたら、「 * [ 保存 ] * 」ボタンをクリックします。</block>
   <block id="60a2c40bda2512f24e50cf4d723ca018" category="paragraph">表ウィジェットがダッシュボードに保存されます。</block>
   <block id="3e4bc5fc68a2a8701b0de86c9e89059d" category="paragraph">ダッシュボード上のウィジェットの右下をドラッグすると、ウィジェットのサイズを変更できます。すべての列が明確に表示されるようにウィジェットの幅を広げます。保存 * をクリックして、現在のダッシュボードを保存します。</block>
@@ -108,7 +106,6 @@
   <block id="43adcf63c14ee1ceacc1093f2b713ad2" category="list-text">「 * Virtual Machine * 」を選択し、「 _Latency - Max_ 」を選択します。任意のフィルターを設定するか、 * フィルターを * 空のままにします。「 * 集計」で、「 _ 合計 _ すべて _ 」を選択します。このデータを「 _Line Chart_ 」として表示し、「 _Y 軸」を「 _Primary__ 」のままにします。</block>
   <block id="fcd3d23ed6fbd29d4387a16fcae59460" category="list-text">[+Query] * ボタンをクリックして、 2 行目を追加します。この行では、 _VMDK_or_Latency - Max_ を選択します。任意のフィルターを設定するか、 * フィルターを * 空のままにします。「 * 集計」で、「 _ 合計 _ すべて _ 」を選択します。このデータを「 _Line Chart_ 」として表示し、「 _Y 軸」を「 _Primary__ 」のままにします。</block>
   <block id="b520f92d1a3f5a11af3dce0ec85a100b" category="list-text">このウィジェットをダッシュボードに追加するには、「 * [ 保存 ] * 」をクリックします。</block>
-  <block id="08bfe1563394caca311bcf6aea8b2ac2" category="paragraph"><block ref="08bfe1563394caca311bcf6aea8b2ac2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baf9ee37915fbb747d9ef5b4d110868b" category="paragraph">次に、 VM の読み取り IOPS 、書き込み IOPS 、合計 IOPS を 1 つのグラフに表示するグラフを追加します。</block>
   <block id="82f304226dbde3ec59773ae390f5c0ff" category="list-text">[ ウィジェットの追加 ] アイコンをクリックし、 [ エリアグラフ _ ] を選択して、新しい面グラフウィジェットをダッシュボードに追加します。</block>
   <block id="bb3193917b080c5371689d0ba8cdbfc9" category="list-text">ウィジェットを編集（ Edit Widget ）ダイアログが開きます。このウィジェットに「 VM IOPS 」と名前を付けます。</block>
@@ -116,7 +113,6 @@
   <block id="784aade0c3e697e38ea636fb4ecc7838" category="list-text">[+Query] * ボタンをクリックして、 2 行目を追加します。この行では、 * Virtual Machine * を選択し、 _iops-Read_ を選択します。</block>
   <block id="44c6e401ff3de1e9bb3b9bbcadb1ac6c" category="list-text">3 番目のデータ行を追加するには、 [+Query] * ボタンをクリックします。この行では、 * Virtual Machine * を選択し、 _IOs-Write_. を選択します。</block>
   <block id="e3b7cbf62999250ac5a349afdde63d52" category="list-text">このウィジェットの凡例をダッシュボードに表示するには、 * 凡例を表示 * をクリックします。</block>
-  <block id="4bdd47da43cd2f2c9f78fffc1ff8de13" category="paragraph"><block ref="4bdd47da43cd2f2c9f78fffc1ff8de13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4795fc6f6e8d075051a908449a8b433" category="paragraph">次に、 VM に関連付けられているアプリケーションごとに VM のスループットを表示するグラフを追加します。これにはロールアップ機能を使用します。</block>
   <block id="06164225a98f1bbe40c8e5ee609b3a04" category="list-text">ウィジェットを編集（ Edit Widget ）ダイアログが開きます。このウィジェットに「 VM throughput by Application 」と名前を付けます。</block>
   <block id="fa7d4670dcaed9a91e90d1c7bcea7028" category="list-text">[ 仮想マシン ] を選択し、 [ スループット - 合計 ] を選択します。必要なフィルタを設定するか、フィルタを空のままにします。「ロールアップ」で「最大」を選択し、「アプリケーション」または「名前」で選択します。トップ 10 アプリケーションを表示します。このデータを折れ線グラフとして表示し、 Y 軸を [ プライマリ ] のままにします。</block>
@@ -124,7 +120,6 @@
   <block id="76d4e0908cbfa58636b2811ed2ba47aa" category="paragraph">ウィジェットの右下をドラッグすると、ウィジェットのサイズを変更できます。</block>
   <block id="9681b8ede5c132930da76a11a12ee1e0" category="paragraph">変更を行ったら、必ずダッシュボードを * [Save] * してください。</block>
   <block id="ca1b516707306a7db85b8ed1c44a3272" category="paragraph">最後の VM パフォーマンスダッシュボードは次のようになります。</block>
-  <block id="8b8c0577487afb0f8113ae70ab69f902" category="paragraph"><block ref="8b8c0577487afb0f8113ae70ab69f902" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">ONTAP 9.9 以降でのネットアップクラウド接続</block>
   <block id="79bac41a8e857539d5a75dc7e93e17d8" category="summary">サポートをリクエストする方法については、技術情報アーティクルの表示、ネットアップコミュニティとの接続、ビデオの表示、チケットの発行があります。</block>
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">サポートをリクエストしています</block>
@@ -1093,7 +1088,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="842ffa230636a6a4c9507048374c4b1b" category="paragraph">Cloud Insights API は、現在のエディションに基づいて提供されています。</block>
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">APIタイプ</block>
   <block id="7afd7da52e07dd7febdaa6f50c36644d" category="cell">Acquisition Unit の略</block>
-  <block id="136e04472fbaee9e921166f5e324d322" category="cell"><block ref="136e04472fbaee9e921166f5e324d322" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="cell">データ収集</block>
   <block id="9aedeaf1f77b8642abe528503b8c5de8" category="cell">資産</block>
   <block id="7779f407557df710ab784b39afcce151" category="cell">データの取り込み</block>
@@ -1457,7 +1451,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Cloud Insights のアセットページの概要セクション。</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">アセットページの概要セクション</block>
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">アセットページの概要セクションには、原因の指標やパフォーマンスポリシーなど、アセットに関する全般的な情報が表示されます。潜在的な問題領域は赤い丸で示されます。</block>
-  <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ce7951793151a0f69487b414bdd8b498" category="paragraph">注：「概要」セクションに表示される情報は、表示しているアセットのタイプによって異なります。</block>
   <block id="77e5be94869a677b15024b30a6f71dbd" category="paragraph">いずれかのアセットのリンクをクリックすると、対応するアセットページを表示できます。たとえば、ストレージノードを表示している場合、リンクをクリックすると、関連付けられているストレージのアセットページを表示できます。</block>
   <block id="74202c0b51dce91cb2d7ff8a3db7b041" category="paragraph">アセットに関連付けられている指標を表示できます。指標の横に赤い丸が表示されている場合、診断や解決を要する潜在的な問題があることを示しています。</block>
@@ -1466,7 +1459,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="99571eecaa5c5d622bb0d1f855752d5f" category="section-title">トポロジ</block>
   <block id="aa2a179e15d11223c669195106a7e555" category="paragraph">一部のアセットページでは、概要セクションにアセットとその接続のトポロジを表示するためのリンクが表示されます。</block>
   <block id="575c9466566e751977f9292115eb4416" category="paragraph">トポロジは次のアセットタイプで使用できます。</block>
-  <block id="52e59638e3e7203a9a8c3071303759c9" category="paragraph"><block ref="52e59638e3e7203a9a8c3071303759c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8488ef49f6dab9af961495fc93e60c3" category="summary">Kubernetes のネームスペースランディングページについて説明しました</block>
   <block id="ec9cf927d91c3ad7664fabdee6472d03" category="doc">Kubernetes のネームスペースの詳細ページ</block>
   <block id="096b06ed37fdb2ba92846987f8f7a8ed" category="paragraph">Kubernetes のネームスペースの詳細ページには、ネームスペースに使用されているすべてのアセットの概要が表示されます。これには、バックエンドのすべてのストレージリソースとその容量利用率が含まれます。</block>
@@ -1874,8 +1866,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="fa2e624f267fd72536c09f1bb81ca72e" category="paragraph">_ 属性の新しい変数と、ウィジェットで変数を使用する機能 _ 。</block>
   <block id="87cd8b8808600624d8c590cfc2e6e94b" category="inline-link-macro">変数（ variables ）</block>
   <block id="b9d6ed474c251dd95442fcafec00806b" category="paragraph">ダッシュボードは、かつてないほど強力で柔軟性に優れています。属性変数を使用してアダプティブダッシュボードを構築することで、ダッシュボードを即座にフィルタリングできます。これらと既存の他のものを使用する <block ref="1f4728a3536b8e2cc43013fb8f17db6c" category="inline-link-macro-rx"></block> 環境全体の指標を確認するためのダッシュボードを 1 つ作成し、リソース名、タイプ、場所などでシームレスにフィルタリングダウンできるようになりました。ウィジェットの数値変数を使用して、ストレージサービスの GB あたりのコストなど、物理指標をコストに関連付けます。</block>
-  <block id="3063e25af4e9f3b6080b388ac1aad070" category="paragraph"><block ref="3d859cfde5726d14af67cb7dbeb9e18a" category="inline-image-macro-rx" type="image"></block>
-<block ref="d1f7027beb3d94ad8ba6281c876e2b8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a6df26890e0a18d3e3ae4d3fdbfc8b83" category="section-title">API 経由で Reporting Database にアクセスします</block>
   <block id="252b86cd65deaa141a3f516e7ef483bd" category="paragraph">サードパーティのレポート作成ツール、 ITSM ツール、自動化ツールとの統合機能が強化されました。 Cloud Insights の強力な機能です <block ref="9591c9ad7e66434ec5fdd8eaa821cdd2" category="inline-link-macro-rx"></block> Cognos Reporting 環境を使用せずに、 Cloud Insights Reporting データベースを直接照会できます。</block>
   <block id="6b492909f89fdcefb2c45d261f5ea471" category="section-title">VM ランディングページのポッドテーブル</block>
@@ -2651,7 +2641,6 @@ Microsoft Windows Server 2019の略</block>
   <block id="04f239d51d6f6978df84a2372f6abdb2" category="section-title">クラスタ管理IPを使用して追加する場合の権限：</block>
   <block id="e535de2e280b2b41b1a9d22720f0270c" category="paragraph">クラスタ管理管理者ユーザがワークロードセキュリティを使用してONTAP SVMデータコレクタにアクセスできない場合は、次のコマンドに示すロールを持つ「csuser」という新しいユーザを作成できます。Cluster Management IPを使用するようにWorkload Securityデータコレクタを設定する場合は、「csuser」のユーザ名とパスワードを使用します。</block>
   <block id="10414897d078dba7d0d6c5111c2af072" category="paragraph">新しいユーザを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。</block>
-  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">SVM管理IP *を使用して追加する場合の権限：</block>
   <block id="c1b7d24fc9ee9c43d2bc97ab81dbedb3" category="paragraph">クラスタ管理管理者ユーザがワークロードセキュリティを使用してONTAP SVMデータコレクタにアクセスできない場合は、次のコマンドに示すロールを持つ「csuser」という新しいユーザを作成できます。Workload SecurityデータコレクタでSVM管理IPを使用するように設定する場合は、「csuser」のユーザ名とパスワードを使用します。</block>
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">新しいユーザを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。これらのコマンドをテキストエディタにコピーし、 &lt;vservername&gt; を SVM 名に置き換えてから、 ONTAP で次のコマンドを実行します。</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">データコレクタを設定します</block>
@@ -2700,7 +2689,6 @@ SVM IPを使用して追加する場合のオプションは次のとおりで�
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">例</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">9.6.1より前のバージョンのONTAP では、_data -fpolicy-client_need not be set」を実行します。</block>
   <block id="4b3fbac9b531aa2660d41834f330998e" category="paragraph">エラーの場合は、 _Status_column で _more detail_ をクリックしてエラーの詳細を確認します。</block>
-  <block id="a03d26ec6344587e2e2eea990dc74c04" category="paragraph"><block ref="a03d26ec6344587e2e2eea990dc74c04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7a4e713cb63e4db8a2b51e171793fb0" category="cell">Data Collector はしばらくの間実行され、ランダムな時刻の後に停止します。 "Error message: connector is in error state" というエラーメッセージが表示されます。サービス名： audit 。エラーの理由：外部 FPolicy サーバが過負荷状態です。」</block>
   <block id="6b6d7f0bb3be3abde199877bf4398807" category="cell">ONTAP からのイベントレートは、 [ エージェント ] ボックスで処理できるイベントレートよりもはるかに高くなっています。そのため、接続が終了しました。
 
@@ -3138,7 +3126,6 @@ Time Filebucketの略
   <block id="695f16a5a3fec41cddb4e9b142603061" category="list-text">HiCommand Device Manager ソフトウェアおよびピアの権限に対する読み取り専用のユーザ名とパスワード</block>
   <block id="2ed84ae72ff3e01616900184c1d0f692" category="list-text">ポート要件： 2001 （ http ）または 2443 （ https ）</block>
   <block id="a5141f9b03e4d6eb2d3f9b1aec49d49d" category="list-text">ユーザ名とパスワードを使用して HiCommand Device Manager ソフトウェアにログインします</block>
-  <block id="45ad2fd383f9501acfd6c1c71d85cf35" category="list-text">HiCommand Device Manager へのアクセスを確認します<block ref="7090750cd79fe50b73b5b343db7f1ba7" category="inline-link-rx"></block></block>
   <block id="3f62710735071427fa7bdf41be21b119" category="list-text">エクスポートツール（ Export.exe ）を Cloud Insights AU にコピーする必要があります。</block>
   <block id="cdb93666b5690d3e9ae5b44f51d2754c" category="list-text">Cloud Insights でパフォーマンスデータの取得に使用する場合は、 AMS アレイ上に専用のサービスアカウントを作成することを強く推奨します。Storage Navigator では、ユーザーアカウントでアレイへの同時ログインが 1 つだけ許可されています。Cloud Insights で管理スクリプトまたは HiCommand と同じユーザアカウントを使用すると、 1 つのユーザアカウントの同時ログイン制限により、 Cloud Insights 、管理スクリプト、または HiCommand がアレイと通信できなくなることがあります</block>
   <block id="86a075f7d35c4978e76289403f32f8a8" category="list-text">Storage Navigator Modular 2 （ SNM2 ） CLI ユーティリティが Cloud Insights AU にインストールされている必要があります。</block>
@@ -4294,7 +4281,6 @@ Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）で�
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">エージェントのインストール中に、ローカルのuser_cssys_とローカルのgroup_cssys_がマシン上に作成されます。権限設定でローカルユーザの作成が許可されておらず、Active Directoryが必要な場合は、Active Directoryサーバにusername_csys_という名前のユーザを作成する必要があります。</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">エージェントをインストールする手順</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">[ エージェントの追加 ] ページが表示されます。</block>
-  <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">エージェント 1 を追加します</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">エージェントサーバが最小システム要件を満たしていることを確認します。</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">エージェントサーバでサポートされているバージョンの Linux が実行されていることを確認するには、 _ サポートされているバージョン（ i ） _ をクリックします。</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">ネットワークでプロキシサーバを使用している場合は、プロキシセクションの指示に従ってプロキシサーバの詳細を設定してください。</block>
@@ -4303,7 +4289,6 @@ Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）で�
   <block id="7a10e2f227e4fcc6978cfba86486a764" category="list-text">[ クリップボードにコピー ] アイコンをクリックして、インストールコマンドをコピーします。</block>
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">ターミナルウィンドウでインストールコマンドを実行します。</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">インストールが正常に完了すると、次のメッセージが表示されます。</block>
-  <block id="b1740e3ac3c505fcca225cbec7f2d4c1" category="image-alt">新しいエージェント検出</block>
   <block id="580afeaa1b1ac5a8f6d1db7819e9a5df" category="list-title">完了後</block>
   <block id="04d29c3c4604f72fc55618d9d893779a" category="inline-link-macro">User Directory Collector の略 </block>
   <block id="efb42161e6d534718356bdb292677612" category="list-text">を設定する必要があります <block ref="a207b7d2a96200a9b4b411f4896b3d1d" category="inline-link-macro-rx"></block>。</block>
@@ -5336,13 +5321,11 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">権限：*読み取り/書き込み*</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">目的の*有効期限*および*自動更新*の値を選択します</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">生成されたAPIアクセストークンをコピーします。この手順は、ウィンドウを閉じる前に実行する必要があります。</block>
-  <block id="c53a7287de20acd49117a565baa3a38a" category="paragraph"><block ref="c53a7287de20acd49117a565baa3a38a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">Swagger（[Admin]&gt;[API Access]&gt;[API Documentation]）で、トークンを使用してCloud Insights APIを許可します</block>
   <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">Swagger画面の右上にある[_Authorize]をクリックします</block>
   <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">上からコピーしたトークンを[Customer apiKey]フィールドに貼り付けます</block>
   <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">[承認]*をクリックします</block>
   <block id="e90cef1e648cb27fd619c6f8c92f8f4d" category="list-text">ウィンドウを閉じます</block>
-  <block id="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="paragraph"><block ref="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cae2725952c883826876920381ecb59" category="list-text">次の_/au/installers/｛platform｝/latest_or_/au/installers/｛platform｝/｛version｝_apiを使用してAUインストーラをダウンロードします。</block>
   <block id="88eb9a112ead77fb26b1599f4f223fc1" category="list-text">プラットフォーム：* Linux *</block>
   <block id="52205a46ef276687ee5647ea8fe6eb0b" category="list-text">バージョン：*&lt;version&gt;*（最新または指定）</block>
@@ -5355,8 +5338,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">次の手順では、一時トークンを使用する必要があります。上記で作成したAPIアクセストークンは使用しないでください。</block>
   <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">Cloud Insights API Swaggerで、_/ au/oneTimeToken_APIを使用してワンタイムトークンを作成します。</block>
   <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">結果のワンユーストークンをコピーします。</block>
-  <block id="c7a15bab2443e9ad4efdb034095ab235" category="paragraph"><block ref="100d1787d5f8172a57c3e18a398e0c17" category="inline-image-macro-rx" type="image"></block>
-<block ref="0b1cbf7e91a826bb9e4ce0091ddf900c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">AUをインストールするマシンで、ダウンロードしたインストーラファイルが格納されているフォルダに移動します。次のコマンドを実行するには、ユーザにroot権限が必要です。</block>
   <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">インストーラファイルを解凍します</block>
   <block id="f0aa130be42df30dfb32287298a294dc" category="list-text">作成されたインストーラフォルダにディレクトリを変更します</block>
@@ -6942,9 +6923,6 @@ Qcache空きブロック
   <block id="993bb582982b324ee6465cc1d0c1a2bd" category="paragraph">カスタム期間では、最大 31 日間連続で選択できます。この範囲に開始時間と終了時間を設定することもできます。デフォルトの開始時間は、最初に選択した日の午前 12 時、最後に選択した日のデフォルトの終了時間は午後 11 時 59 分です。適用をクリックすると、カスタムの期間がアセットページに適用されます。</block>
   <block id="4feea054535349a31f7c12b7dcbc4d2b" category="section-title">カスタムウィジェットを追加します</block>
   <block id="2c6503d76e77d1cf4b2836c66fb29d6e" category="paragraph">任意のアセットページに独自のウィジェットを追加できます。  追加したウィジェットは、そのタイプのすべてのオブジェクトのアセットページに表示されます。たとえば、ストレージアセットページにカスタムウィジェットを追加すると、そのウィジェットがすべてのストレージアセットのアセットページに表示されます。</block>
-  <block id="f92acc2ebbef6e6ab56943465d44e66d" category="summary">データコレクタの障害のトラブルシューティング</block>
-  <block id="1f4094c2de648308d5fc49072a6bf149" category="doc">データコレクタの障害のトラブルシューティング</block>
-  <block id="d4908b1e39cc61772e5d74e5fb77d241" category="section-title">未定</block>
   <block id="5194ac07f0578fb108df17cc52b75ccc" category="summary">Pure Storage データコレクタの設定</block>
   <block id="4d05f9f9aae283a43131d72fd410500e" category="doc">Pure Storage FlashArray データコレクタ</block>
   <block id="4803e12533cf1a9835839a2e3730efdf" category="paragraph">Cloud Insights は、 Pure Storage FlashArray データコレクタを使用してインベントリデータとパフォーマンスデータを収集します。</block>
@@ -9656,8 +9634,6 @@ Outgoing Byte Rateの略
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">Inventory Datamart のサービスです</block>
   <block id="4ee2fd4b3ba41c46dcb5c95f5ab3c98c" category="paragraph">次の図は、インベントリデータマートを説明しています。</block>
   <block id="933e469cb306a0ea9faabd3e4235d3be" category="section-title">注釈</block>
-  <block id="06d49fce248546c7d82b8c1954d88572" category="paragraph"><block ref="06d49fce248546c7d82b8c1954d88572" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="754e09a84049d3a4b6cb4cf33780e715" category="paragraph"><block ref="754e09a84049d3a4b6cb4cf33780e715" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb59b991a8859e32315f0c110063a18c" category="section-title">Kubernetes指標</block>
   <block id="30136395f01879792198317c11831ea4" category="inline-image-macro">Kubernetes</block>
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
@@ -9672,84 +9648,46 @@ Outgoing Byte Rateの略
   <block id="e4620a71a57aaf26c998c4ca2014b6d3" category="section-title">Kubernetes Workload Metricsファクト</block>
   <block id="8069630217044bdf027d2b8af00a69d8" category="paragraph"><block ref="8069630217044bdf027d2b8af00a69d8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="section-title">NAS</block>
-  <block id="d605d34c925dcf2288b4a9e58160a98f" category="paragraph"><block ref="d605d34c925dcf2288b4a9e58160a98f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d42905511528df6765f3f1a7c04b865" category="section-title">パスと違反</block>
-  <block id="db0ca9f97ed2f67290608cf211194459" category="paragraph"><block ref="db0ca9f97ed2f67290608cf211194459" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cfe27cbd0a5a77107c6dfcf07d2629c" category="section-title">ポート接続</block>
-  <block id="5962edd92cfd8a93acedc6b7e7e7a7c2" category="paragraph"><block ref="5962edd92cfd8a93acedc6b7e7e7a7c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5bab0780005928c1dbfdbb00ea1df4a6" category="section-title">SAN ファブリック</block>
-  <block id="d73c5fce2101d5a56bc456e6dcc553ae" category="paragraph"><block ref="d73c5fce2101d5a56bc456e6dcc553ae" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3e2f25b47c543aeccbef9b6b89e4e5b9" category="paragraph"><block ref="3e2f25b47c543aeccbef9b6b89e4e5b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9918d51dd05a83e7bd33f0ccf00de8a" category="paragraph"><block ref="f9918d51dd05a83e7bd33f0ccf00de8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="583a65df9db4119165f5ea0abaa50281" category="section-title">VM</block>
-  <block id="d63c4d97992264f467c4b6d954ffe048" category="paragraph"><block ref="d63c4d97992264f467c4b6d954ffe048" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d260e141887ca1a59da8973861299709" category="section-title">Capacity Datamartの略</block>
   <block id="9ad5c20e0121bd52bd3fcef56f73d00d" category="paragraph">次の図は、容量データマートを示しています。</block>
   <block id="a7b2273fe3a1293885769855e2f3e6ba" category="section-title">チャージバック</block>
-  <block id="11ff75cde151f2a83f17a32413e20d93" category="paragraph"><block ref="11ff75cde151f2a83f17a32413e20d93" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec1d23d46d47071826c25c1be457754c" category="section-title">ディスクグループの容量</block>
-  <block id="e7166983d9d7cf17f7993ea13645ddc8" category="paragraph"><block ref="e7166983d9d7cf17f7993ea13645ddc8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87aaa09aa3753a95331c644c7b301566" category="section-title">ファイルシステムの利用率</block>
-  <block id="dc297a03f873852760b7ef869c38a64d" category="paragraph"><block ref="dc297a03f873852760b7ef869c38a64d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca2219979432d21faba231a579345d08" category="section-title">内部ボリューム容量</block>
-  <block id="f4e5ca88f8ce548d1f5ffb1bca3de78d" category="paragraph"><block ref="f4e5ca88f8ce548d1f5ffb1bca3de78d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7e27f6a5d216572cc692811c6530f82" category="section-title">Kubernetes PVの容量</block>
-  <block id="629604d8234527b8f55ed9a4f1119cc9" category="paragraph"><block ref="629604d8234527b8f55ed9a4f1119cc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d024c12213e71ea6a55252fbd3311782" category="section-title">ポートの容量</block>
-  <block id="4e0bf17868ca0bb7a19261cd6c03ca03" category="paragraph"><block ref="4e0bf17868ca0bb7a19261cd6c03ca03" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38f9518fc5a08755d8726dd013507ff6" category="section-title">qtree 容量</block>
-  <block id="586421980190a076a9b06514831910b5" category="paragraph"><block ref="586421980190a076a9b06514831910b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e0ba81e0831c363ed8d29ad89590f535" category="section-title">ストレージ容量の削減比率</block>
-  <block id="b1d500efdc2ccce9c1ea2de0f8d0ffb0" category="paragraph"><block ref="b1d500efdc2ccce9c1ea2de0f8d0ffb0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="72ef24c018bdda1f94bc3f159a543c04" category="section-title">ストレージおよびストレージプールの容量</block>
-  <block id="f3b797f67d469dd37ce40731bcd8be54" category="paragraph"><block ref="f3b797f67d469dd37ce40731bcd8be54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955630f91d989ab6e44388b92dc3ec42" category="section-title">ストレージノードの容量</block>
-  <block id="c99969b26ce76580fac3132d1addc9bd" category="paragraph"><block ref="c99969b26ce76580fac3132d1addc9bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c407084b02a56538766fb242db0b4450" category="section-title">VM 容量</block>
-  <block id="68e6551a1f63bb301cc7fca6362929c5" category="paragraph"><block ref="68e6551a1f63bb301cc7fca6362929c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69ba447dc5e9ab1619f330f106eabbf3" category="section-title">ボリューム容量</block>
-  <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5a0f3d3aca1daf0fc15bc8c06641d58" category="section-title">パフォーマンスデータマート</block>
   <block id="4b0a396c135d61ae9a60a4baa44adf59" category="paragraph">次の図は、パフォーマンスデータマートを説明しています。</block>
   <block id="b4cc8db8c41365008f6c83a7edd0c3f9" category="section-title">アプリケーションボリューム毎時パフォーマンス</block>
-  <block id="23f05aab2c347892b769f3ccf77b61ab" category="paragraph"><block ref="23f05aab2c347892b769f3ccf77b61ab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1dcdf4799c1661b5732a356dad0691d0" category="section-title">ディスクの日次パフォーマンス</block>
-  <block id="b382c057368550009cb6adaf6db9feaf" category="paragraph"><block ref="b382c057368550009cb6adaf6db9feaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f86c571e203a9013f990c064f0b41d7a" category="section-title">Disk Hourly Performance の 2 つの機能が</block>
-  <block id="f553d3656eb144d0d97045c1f9b2a3c0" category="paragraph"><block ref="f553d3656eb144d0d97045c1f9b2a3c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3176895f7b0fd7802579ef7f42a2c642" category="section-title">Host Hourly Performanceの略</block>
-  <block id="98c76a8e012a3b0335dadc45e22612b3" category="paragraph"><block ref="98c76a8e012a3b0335dadc45e22612b3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8ed77ce1d723e3b9eb45d36731ab5125" category="section-title">内部ボリューム毎時パフォーマンス</block>
-  <block id="2995061fb96ddb9884cf89bb2a0a4eba" category="paragraph"><block ref="2995061fb96ddb9884cf89bb2a0a4eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="35a2f98661106a51b803c7959dd0906f" category="section-title">内部ボリュームの日次パフォーマンス</block>
-  <block id="8c5acdb673581325ace1afb429eff665" category="paragraph"><block ref="8c5acdb673581325ace1afb429eff665" category="inline-image-macro-rx" type="image"></block></block>
   <block id="05a9ced33983772db161394893a94d72" category="section-title">qtree ：日次パフォーマンス</block>
-  <block id="ee8dd1c2940aea920797eeaffe912342" category="paragraph"><block ref="ee8dd1c2940aea920797eeaffe912342" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b73d87facce72dbc09974de7a801e6" category="section-title">ストレージノードの日次パフォーマンス</block>
-  <block id="73ff8710d68388c0f16d396727e1bb29" category="paragraph"><block ref="73ff8710d68388c0f16d396727e1bb29" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee5d6febefb6ed5a889b193c7b9f70d7" category="section-title">Storage Node Hourly Performance の略</block>
-  <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b49234362b48d766a5b0b1863f7c92c" category="section-title">Switch Hourly Performance for Host</block>
-  <block id="75e0e6e560181f10490dbe7ecec89c64" category="paragraph"><block ref="75e0e6e560181f10490dbe7ecec89c64" category="inline-image-macro-rx" type="image"></block></block>
   <block id="186dbcc03644e55957a9b1b52609c7d9" category="section-title">Switch Hourly Performance for Port</block>
-  <block id="bfbcecf2dc0e6f38f8ade49f74a5d02a" category="paragraph"><block ref="bfbcecf2dc0e6f38f8ade49f74a5d02a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="341ebe0d593f6e0dec63405ce23a76e1" category="section-title">Switch Hourly Performance for Storage の略</block>
-  <block id="5c78788c89f2721b1c5e92135d1b9aa6" category="paragraph"><block ref="5c78788c89f2721b1c5e92135d1b9aa6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94b56d759d5921c506e923eefdbe62b8" category="section-title">Switch Hourly Performance for Tape</block>
-  <block id="c709717967cf19240c0231f69694d044" category="paragraph"><block ref="c709717967cf19240c0231f69694d044" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5020b90850e754bc38486e80ef1e9292" category="section-title">VM パフォーマンス</block>
-  <block id="dc956c7fbb9b4a36aa283dd84a33bab4" category="paragraph"><block ref="dc956c7fbb9b4a36aa283dd84a33bab4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148a0a1a0c4f5f645a32c02dd12e0313" category="section-title">ホストの VM の日次パフォーマンス</block>
-  <block id="76c8bbc18b3829ee501ea6dc371355c4" category="paragraph"><block ref="76c8bbc18b3829ee501ea6dc371355c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c1dd9d7823c16fea64885fdb5ac184" category="section-title">ホストの VM 1 時間ごとのパフォーマンス</block>
   <block id="638d0e4f76718f4d82d0bdfd3b4c5425" category="section-title">VMDK の日次パフォーマンス</block>
-  <block id="501e2d2f999e9804fedf30b741f600e1" category="paragraph"><block ref="501e2d2f999e9804fedf30b741f600e1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="520ab7e34819995ee389e0b0acd6042e" category="section-title">VMDK 毎時パフォーマンス</block>
-  <block id="1f8eb1c7e0259ec622bd786d5407e1fd" category="paragraph"><block ref="1f8eb1c7e0259ec622bd786d5407e1fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb25875b45e4c1358cd431cc09ff89fb" category="section-title">1 時間ごとのボリュームパフォーマンス</block>
-  <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="735b6ed9b0069fd73dd0986ba5ad4bf2" category="section-title">ボリュームの日次パフォーマンス</block>
-  <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99d301f4dec03fe00ee2e9cef05695d1" category="summary">テーブルからクリップボードに値をコピーして、他のアプリケーションで使用することができます。</block>
   <block id="8b0cec3dd0c15262720b4713d8bcbf6e" category="doc">テーブル値をコピーしています</block>
   <block id="6d025f8133e95d3aec2e6c0cc1cc800e" category="paragraph">テーブルの値をクリップボードにコピーして、検索ボックスやその他のアプリケーションで使用することができます。</block>
@@ -11418,20 +11356,16 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">Cloud Insights に登録して環境を作成</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">Cloud Insights オンボーディング</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">* NetApp BlueXP *</block>
-  <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">ネットアップのクラウドサービスの利用を開始するには、を参照してください<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> [Get Started]をクリックします。</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">まだサインアップしていない場合は、*サインアップ*を選択します</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">有効なビジネス用 E メールアドレスを入力し、パスワードを選択してください。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">会社名と氏名を入力します。</block>
   <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">利用条件に同意し、* Continue（続行）*を選択します。</block>
   <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXPのガイドに従って操作を開始します。</block>
-  <block id="263bd04f886f846996f5ed624502bf8f" category="inline-link">* NetApp BlueXPl *</block>
-  <block id="361b2969b0cdb055eb84b98514758bea" category="paragraph">NetApp BlueXPアカウントを取得したら、で*[ログイン]*を選択するだけです<block ref="87139ca7d238418aa56c6f30bb2cbebf" category="inline-link-rx"></block> ポータルページ。</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">E メールアドレスとパスワードを入力します。その後、ネットアップのクラウドサービスに関するページに移動します。</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Cloud Insights を選択します。</block>
   <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">BlueXPでのCloud Insights 無償トライアル</block>
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">Cloud Insights の無償トライアルを開始しています</block>
-  <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">初めて Cloud Insights にログインする場合は、 Cloud Insights サービスの下にある無料トライアルを開始 * をクリックします。Cloud Insights が、貴社の環境を作成する手順をご案内します。</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">サブスクリプションを開始します</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">無償トライアルでは、次のことが可能です <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> いつでも Cloud Insights に接続できます。登録すると、現在のサブスクリプションに基づいて Cloud Insights 機能を使用できるようになります。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">サインインして実行します</block>
@@ -11600,7 +11534,6 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="a9bf74b26ee4b38e5dbb74fb19c8abef" category="paragraph">このシナリオは、 .csv ファイルで簡単に編集できる属性がデバイスに似ている場合に使用し、その後システムにインポートし直すことができます。</block>
   <block id="20bf5c31616eac18746c551892188b95" category="paragraph">ファイバチャネルデバイスの識別情報を .csv ファイルにエクスポートすると、次の情報がこの順序でファイルに格納されます。</block>
   <block id="fc5482f286ef5daafd6a8d85c7885c03" category="list-text">識別情報をエクスポートする 1 つ以上のファイバチャネルデバイスを選択します。</block>
-  <block id="1831b018233352e80cd4ae41174733e5" category="list-text">[* Export* ] をクリックします <block ref="5a6850cb7f51e9dfd8e09198487d79d2" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
   <block id="72e518a27a4c3f4be36166b3d74723b8" category="paragraph">.csv ファイルを開くか、ファイルを保存するかを選択します。</block>
   <block id="479ed2d8eafc15acde1a42e1b6a98860" category="paragraph">関連：
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
@@ -11915,8 +11848,6 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift の手順</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">OpenShift 4.6以降で実行している場合は、_runPrivileged_settingを有効にするには、_operator-config.yaml_でAgentConfigurationを編集する必要があります。</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShiftは、一部のKubernetesコンポーネントへのアクセスをブロックする可能性のある追加のセキュリティレベルを実装する場合があります。</block>
-  <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
-<block ref="6ba665c891b77a3a5dfb5c061b6e2ba3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">をアップグレードして</block>
   <block id="14acb12fc5baee38469b462494a56a68" category="list-text">これらを入力すると、ダウンロードコマンドスニペットをクリップボードにコピーできます。</block>
   <block id="492eb11b2ab5e4b044176b40a2eebeac" category="list-text">スニペットを a_bash_window に貼り付け、実行します。Operatorインストールファイルがダウンロードされます。スニペットには固有のキーがあり、24時間有効です。</block>
@@ -12165,7 +12096,6 @@ enqueueカウント
   <block id="96633c4bbe4066df6cca5184b0c3138c" category="doc">データコレクタの設定</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">エージェントアクセスキーを選択します。</block>
   <block id="2feb695214b35f4b4c9ae83eac6164ee" category="section-title">サービス</block>
-  <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">サービスのデータがダッシュボードに表示されるか、クエリに使用できるようになるまで、ポーリング期間は最大 2 回かかる場合があります。</block>
   <block id="29f2c433c8324679db838494d114ace0" category="summary">Elasticsearch データコレクタの設定</block>
   <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">Elasticsearch Data Collector</block>
   <block id="7ad1c9b2a026e8cd588b98357fc68620" category="paragraph">Cloud Insights は、このデータコレクタを使用して Elasticsearch から指標を収集します。</block>
@@ -14952,34 +14882,18 @@ PodのCPU利用率が高いかどうかを確認します。
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">次の各コマンドを順番に実行します。現在のインストール状況によっては、これらのコマンドの一部で「オブジェクトが見つかりません」というメッセージが返される場合があります。これらのメッセージは無視してかまいません。</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">セキュリティコンテキスト制約が事前に作成されている場合は、次の手順を実行します。</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">Kubeステートメトリックについて</block>
-  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">kube-state-metrics カウンタ</block>
-  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">これらのkubbeステートメトリックカウンタの情報にアクセスするには、次のリンクを使用します。</block>
   <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap メトリック</block>
-  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">DemonSet メトリック</block>
-  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
   <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">導入メトリック</block>
-  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
   <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入力メトリック</block>
-  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
   <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">ネームスペース指標</block>
-  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
   <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">ノードのメトリックス</block>
-  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
   <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">永続的ボリューム指標</block>
-  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
-  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">永続的ボリューム要求の指標</block>
-  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
   <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">ポッドのメトリック</block>
-  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
   <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet メトリック</block>
-  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
   <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">シークレットメトリック</block>
-  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
   <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">サービスメトリック</block>
-  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">Stat助け Set メトリック</block>
-  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Kubernetes のチェックサムの検証</block>
   <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。デフォルトのダウンロードおよびインストールではなく、ダウンロードのみの操作を実行するには、 UI から取得したエージェントインストールコマンドを編集し、末尾の「インストール」オプションを削除します。</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">コマンドから末尾の「--install」を削除します。</block>
@@ -15058,9 +14972,6 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">このメッセージが表示されるのは、通常、_KSM_PODが起動する前に、新しいオペレータがインストールされ、_テレ グラム-RS_PODが稼働している場合のみです。これらのメッセージは、すべてのポッドが実行されると停止します。</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">クラスタに存在するKubernetes CronJobsについて収集された指標が表示されません。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">オペレータのインストール後、telegraf-DSポッドがCrashLoopBackOffに入り、PODログに「su：Authentication failure」と表示されます。</block>
-  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
-
- 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> コンテキストの期限を超過しました（ヘッダー待機中にClient.Timeoutが超過しました）</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">オペレータをインストールまたはアップグレードする前に</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">モニタリングオペレータのインストール</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricAggregationInterval</block>
@@ -15092,7 +15003,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="1851aec30e57598577c5ea29624fe8f4" category="list-text">制限なし：ドメインに関係なく、ユーザはCloud Insightsに引き続きアクセスできます。</block>
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">デフォルトドメインへのアクセスを制限する：デフォルトドメインは、Cloud Insights環境アカウントの所有者が使用するドメインです。これらのドメインは常にアクセス可能です。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">指定したデフォルトおよびドメインへのアクセスを制限します。デフォルトのドメインに加えて、Cloud Insights環境へのアクセスを許可するドメインを一覧表示します。</block>
-  <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">2023年10月</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">指定したドメインへのアクセスを制限する</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">Cloud Insightsアクセスの制限</block>
@@ -15433,7 +15343,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
                 値：unix：//run/docker.sock
     な...何だ?
 な...何だ?</block>
-  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">_AgentConfiguration_のtelegrafセクションを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">「アクセス拒否」イベント</block>
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*アクセス拒否*：ワークロードセキュリティをONTAPと統合して <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> また、追加の分析と自動応答レイヤーを提供します。</block>
   <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">パスフィルタを使用すると、「Request failed with status code 500/503」というエラーが発生します。</block>
@@ -15498,7 +15407,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">グラフアイコンを表示</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 権限</block>
-  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自律型ランサムウェア対策の権限</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAPアクセスの権限が拒否されました</block>
   <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">その他の設定について詳しくは、こちらをご覧ください <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>。</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、9.13.1よりも新しいバージョンのData ONTAPを使用してください。</block>
@@ -15969,4 +15877,125 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
 
 [プラグインのinputs.prometheus]エラー：\http://kube-state-metricsへの要求エラー。&lt;namespace&gt;.svc.cluster.local：8080/metrics：get\ http://kube-state-metrics &lt;namespace&gt;.svc.cluster.local：8080/metrics：dial tcp：lookup kube-state-metrics。&lt;namespace&gt;.svc.cluster.local：該当するホストはありません。</block>
   <block id="079771aecc679d555303419cd98137ca" category="paragraph">Kubernetes のインストール手順については、を参照してください <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="9be87f9e8e8a3d18f170d8e28fbce953" category="section-title">kube-state-metricsカウンタ</block>
+  <block id="f4154b752e8569289468086cbe4e4e9b" category="paragraph">NetApp Kubernetes監視オペレータは、以下のkube-state-metricsカウンタを抽出します。各カウンタの詳細については、次のサイトを参照してください。<block ref="79bd6f84686ecc7b61be15b7d2f69e33" category="inline-link-rx"></block>。</block>
+  <block id="7e75de4210a4f75b62291d2c27cdf70b" category="list-text">永続的ボリューム要求の指標</block>
+  <block id="84b98a8d4559f5d46404a919d1040a3e" category="inline-image-macro">ドメインの制限ツールチップ</block>
+  <block id="2e2c905356717112e73ba7de2413a7c9" category="paragraph"><block ref="2e2c905356717112e73ba7de2413a7c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="823fea947b864c91d6e752501473c559" category="paragraph"><block ref="823fea947b864c91d6e752501473c559" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d33bf75d5e80061b9367f195f05e3eeb" category="paragraph"><block ref="d33bf75d5e80061b9367f195f05e3eeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9d04cd47823420fa061075ba05345de" category="inline-image-macro">NAS</block>
+  <block id="3b4e5c73809e6994ed3212bb7ddf9c8b" category="paragraph"><block ref="3b4e5c73809e6994ed3212bb7ddf9c8b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1f873037143ad09d4539dd078099e6d" category="inline-image-macro">パスと違反</block>
+  <block id="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="paragraph"><block ref="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f4214df4af946e8a7615e82db28d116" category="inline-image-macro">ポート接続</block>
+  <block id="1206ab321eae7286620a3018bfb95cb2" category="paragraph"><block ref="1206ab321eae7286620a3018bfb95cb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="242ecb7731cc20f39e1540965229f1ce" category="inline-image-macro">SANファブリック</block>
+  <block id="08d595e0713ed1ea1c5bfbf317cfada7" category="paragraph"><block ref="08d595e0713ed1ea1c5bfbf317cfada7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ddecebdea58b5f264d27f1f7909bab74" category="inline-image-macro">ストレージ</block>
+  <block id="51c14a87b4fa40df1324284a1bb28911" category="paragraph"><block ref="51c14a87b4fa40df1324284a1bb28911" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1af4d8d1e27060818e9c85e97a69ce95" category="inline-image-macro">ストレージノード</block>
+  <block id="8fa6c5e8edf99771f8bff4748cd4437a" category="paragraph"><block ref="8fa6c5e8edf99771f8bff4748cd4437a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd723ed383c1d461e38f7569ed30e7fd" category="inline-image-macro">仮想マシン</block>
+  <block id="fe82a552e413503d4121ee6fd50f63e5" category="paragraph"><block ref="fe82a552e413503d4121ee6fd50f63e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c5ca8dd445f709cb9110e451b4898f71" category="inline-image-macro">チャージバック</block>
+  <block id="e764fd818e8a60f10a76ae77381bfaf8" category="paragraph"><block ref="e764fd818e8a60f10a76ae77381bfaf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="859e0945a15fa9fabbbf016a602a42fc" category="paragraph"><block ref="859e0945a15fa9fabbbf016a602a42fc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f72ed0193c9f6e827b093b9ccb5692c" category="paragraph"><block ref="0f72ed0193c9f6e827b093b9ccb5692c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6bcd4ec60a2f1f010ce8992ba7f4c165" category="paragraph"><block ref="6bcd4ec60a2f1f010ce8992ba7f4c165" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="paragraph"><block ref="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="05ee109bb6a61c05a6e9a540d3d31c3f" category="paragraph"><block ref="05ee109bb6a61c05a6e9a540d3d31c3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="85275511fdcd60f9afc50a8dc99e4bc5" category="paragraph"><block ref="85275511fdcd60f9afc50a8dc99e4bc5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="721aede41f047426f957ff682629e9a3" category="paragraph"><block ref="721aede41f047426f957ff682629e9a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bffc4627852bfd98c5194d770bc8a0c7" category="paragraph"><block ref="bffc4627852bfd98c5194d770bc8a0c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb9ac9276d68505110a2f855e0584167" category="paragraph"><block ref="cb9ac9276d68505110a2f855e0584167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83b9739ec081b938c1167a09ed5eb70f" category="paragraph"><block ref="83b9739ec081b938c1167a09ed5eb70f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="84afe34b86a51d01fbe9bc82f5546c35" category="paragraph"><block ref="84afe34b86a51d01fbe9bc82f5546c35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9938cac46b49a5874f9aae8c12197356" category="paragraph"><block ref="9938cac46b49a5874f9aae8c12197356" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c61d5ee86f360bfb37d65d25b92d8b69" category="paragraph"><block ref="c61d5ee86f360bfb37d65d25b92d8b69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3dbb3b6e21eea031050b31060313c408" category="paragraph"><block ref="3dbb3b6e21eea031050b31060313c408" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52e6f974dc77751f36293cd0a12c42a1" category="paragraph"><block ref="52e6f974dc77751f36293cd0a12c42a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e9d346d6a7cb0b43af0243fd94dce848" category="paragraph"><block ref="e9d346d6a7cb0b43af0243fd94dce848" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="176adbc6b6bf8de89cf7f7afe5c28cf3" category="paragraph"><block ref="176adbc6b6bf8de89cf7f7afe5c28cf3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5798c65ea98d63c3c2d1ab932e8c3bbc" category="paragraph"><block ref="5798c65ea98d63c3c2d1ab932e8c3bbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="681deee752c2eeeedda4bc3077015d16" category="paragraph"><block ref="681deee752c2eeeedda4bc3077015d16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cc06e501d2313afc8a5354ed8cbebe3" category="paragraph"><block ref="3cc06e501d2313afc8a5354ed8cbebe3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="632590b38845e06be878069588e6e5c7" category="paragraph"><block ref="632590b38845e06be878069588e6e5c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56d66efcaf566eea795a6ebd02d2fa6e" category="paragraph"><block ref="56d66efcaf566eea795a6ebd02d2fa6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a00a08416d4e3d2841e9c44cb8d9f65b" category="paragraph"><block ref="a00a08416d4e3d2841e9c44cb8d9f65b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7d4c86213113e6498b04a4e0c5b3d897" category="paragraph"><block ref="7d4c86213113e6498b04a4e0c5b3d897" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fce52c04340881c99fd21c228440c1bf" category="paragraph"><block ref="fce52c04340881c99fd21c228440c1bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbc6c5b7146bafe40a30fc92b0cdaf2b" category="paragraph"><block ref="dbc6c5b7146bafe40a30fc92b0cdaf2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e5b033da78fbd177925f9a50abab298" category="paragraph"><block ref="4e5b033da78fbd177925f9a50abab298" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c8df8e69e71a378baf617f3ff985afc" category="paragraph"><block ref="0c8df8e69e71a378baf617f3ff985afc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="17b8e5d1c10542a4c25ad27c290eb108" category="paragraph"><block ref="17b8e5d1c10542a4c25ad27c290eb108" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b32116d8eca48b62ed2e18d3ce0a898" category="paragraph"><block ref="9b32116d8eca48b62ed2e18d3ce0a898" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5eb8a99093a69e48aa26443ea1c211ed" category="paragraph"><block ref="5eb8a99093a69e48aa26443ea1c211ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="7c3057c4ee146bbbf479dd984bac7872" category="inline-image-macro">モニタリングオペレータの指示</block>
+  <block id="07f70080e556bb9b826d89cf6ff09947" category="paragraph"><block ref="de36a053cf630e2894fa310d38b2b180" category="inline-image-macro-rx" type="image"></block>
+<block ref="7bc6d42c5d890df69a3f5fb8b991519a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="802997bcb8e9581226b3000b8b611b1c" category="cell">Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
+
+ 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post "\https：//&lt;tenant_url&gt;/rest/v1/lake/ingest/influxdb"：context deadline exceeded (Client. ヘッダー待機中にタイムアウトを超過しました）</block>
+  <block id="5a581223d2fea6c45a7ac1278334f8c1" category="cell">_AgentConfiguration_およびincrease_outputTimeout_のtelegrafセクションを10秒に編集します。詳細については、オペレータのを参照してください <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="732ce6294370d77834ecc9c30e5bfc82" category="image-alt">ワークロードセキュリティエージェントの追加</block>
+  <block id="f488844908bcd6752dde5e2291a4a5b8" category="image-alt">エージェントのインストールが成功したことを示すメッセージ</block>
+  <block id="49b8daebcc43b2c12992a3b23060a794" category="inline-image-macro">変数のドロップダウンアノテーション</block>
+  <block id="46736c19ce0a9a9cd8d068df66c14a29" category="inline-image-macro">変数の属性フィルタリング</block>
+  <block id="5ab787adbf028819ba79cab284beffef" category="paragraph"><block ref="9d10b6a06536dc9085d80fdf43f5eadb" category="inline-image-macro-rx" type="image"></block>
+<block ref="8baccdcbf74be733d4f8068fceb4563a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="61d927a1aed666979cd431fa1e2acade" category="inline-image-macro">チェックマーク</block>
+  <block id="66fab3ef4e4b1b406a7d7a7d64a34f5f" category="cell"><block ref="66fab3ef4e4b1b406a7d7a7d64a34f5f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3e3fbe658c59d92b9974e5edb4e74bb" category="list-text">HiCommand Device Manager\http：//&lt;HiCommand_Device_Manager_IP&gt;：2001/service/StorageManagerへのアクセスを確認します。</block>
+  <block id="ba290115002f208a04ca127b0e17c6be" category="inline-image-macro">[テーブルウィジェットの編集]ダイアログ</block>
+  <block id="5e1cbcf5ef12edbfe8322ecead535dd5" category="paragraph"><block ref="5e1cbcf5ef12edbfe8322ecead535dd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15a8b2e76636c71ff01c1fa4acba5796" category="inline-image-macro">表ウィジェットのグループ化の例</block>
+  <block id="8a4191b4e2d4351048760e7beb244dba" category="paragraph"><block ref="8a4191b4e2d4351048760e7beb244dba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79ff0115b286a1b0ae8ff29c8f5240e1" category="inline-image-macro">レイテンシデータを示す折れ線グラフ</block>
+  <block id="56f09862e7018b4ae795f1f94a6d6281" category="paragraph"><block ref="56f09862e7018b4ae795f1f94a6d6281" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8c9005dfe195826080e733ddb908cc6" category="inline-image-macro">VMのIOPSを示す面グラフ</block>
+  <block id="fbac94cddfcb7945065a320f6e7feafd" category="paragraph"><block ref="fbac94cddfcb7945065a320f6e7feafd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="401fed57c814eb5c6cee47d79b354f59" category="inline-image-macro">VMダッシュボードのすべてのウィジェットが表示された完全な例</block>
+  <block id="00c340d0d431c9fa05836d10d9d9cee7" category="paragraph"><block ref="00c340d0d431c9fa05836d10d9d9cee7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97d8e9a07abc13937635fa4d8bfc72e4" category="list-text">[* Export* ] をクリックします <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
+  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; 頭部</block>
+  <block id="3aa39f9c69e0586976520ec48d9ad3c6" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
+===* SVM管理IP *を使用して追加する場合の権限*：</block>
+  <block id="dd1d0dc7a37fe63b5e2c257349aa6532" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
+=== ONTAP自律型ランサムウェア対策の権限</block>
+  <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">Workload Security Collector Error More Detailリンク</block>
+  <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="05245c9c713dbc0e818edff595a4246c" category="inline-image-macro">ランディングページの概要セクションの例</block>
+  <block id="65ef2d3ac9b8dfdd7b17c10af9a602da" category="paragraph"><block ref="65ef2d3ac9b8dfdd7b17c10af9a602da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3e588c8b8cdde417ea31ee3bbefd9a9" category="inline-image-macro">ランディングページのトポロジセクションの例</block>
+  <block id="3cb6e63269aa6edf3cc66859826feb7d" category="paragraph"><block ref="3cb6e63269aa6edf3cc66859826feb7d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="609716a86af2f9467366b90e750be49d" category="paragraph">&lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; 頭部
+。[ 詳細構成 *] をクリックして、追加の構成フィールドを追加します。すべてのデータコレクタで高度な設定が必要となるわけで
+。Test Configuration* をクリックして、データコレクタが正しく設定されていることを確認します。
+。[Add Collector* （コレクタの追加） ] をクリックして設定を保存し、 Cloud Insights テナントにデータコレクタを追加します。</block>
+  <block id="599f97fbfc2fc945eb562d68c9aca1a8" category="paragraph">サービスのデータがダッシュボードに表示されるか、クエリに使用できるようになるまで、ポーリング期間は最大 2 回かかる場合があります。
+&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1</block>
+  <block id="67dd8a9c7300c7a68539b856568b643c" category="inline-image-macro">[エクスポート]ボタン</block>
+  <block id="e075c22a2e254de2972fc152e1c02118" category="list-text">[* Export* ] をクリックします <block ref="3b91e5b29194b7fd2b5cb067b5b3e811" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
+  <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">ネットアップのクラウドサービスの利用を開始するには、を参照してください <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> [Get Started]をクリックします。</block>
+  <block id="71292a4043ee880f4b2810b42954372c" category="paragraph">NetApp BlueXPアカウントを取得したら、で*[ログイン]*を選択するだけです <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> ポータルページ。</block>
+  <block id="4145d4f2ee1e46d7c8be56e8de04d6ad" category="paragraph">初めて Cloud Insights にログインする場合は、 Cloud Insights サービスの下にある無料トライアルを開始 * をクリックします。Cloud Insightsでは、環境を配置する地域の選択など、会社の環境を作成する手順を説明します。</block>
+  <block id="36ea7ac79a19ee180028b3bfed6a7d9d" category="inline-image-macro">Cloud Insights環境をホストするリージョンの選択</block>
+  <block id="6d8a4061d9933ffda18b9027252d037a" category="paragraph"><block ref="6d8a4061d9933ffda18b9027252d037a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f04c88c9abdcf0f7616d53af7878ffe" category="inline-image-macro">APIトークンの作成</block>
+  <block id="92ad7a2e8e52adc61ae1c672917b0a1b" category="paragraph"><block ref="92ad7a2e8e52adc61ae1c672917b0a1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1ccf6bac1d198cd3bf6c54076f17148" category="inline-image-macro">APIトークンを承認する</block>
+  <block id="ca268cb1b1c68d2d9ff1bb1fadd9a98d" category="paragraph"><block ref="ca268cb1b1c68d2d9ff1bb1fadd9a98d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="444d350efa5c1aec48178823f7b07394" category="inline-image-macro">ワンタイム使用APIトークンの作成</block>
+  <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">ワンタイム使用APIトークンの応答例</block>
+  <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
+<block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

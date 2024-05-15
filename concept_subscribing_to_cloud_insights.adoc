@@ -19,6 +19,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 :toc-position: content
 
 
+[role="lead"]
 Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行えます。
 
 * でアカウントに登録します link:https://https://bluexp.netapp.com//["* NetApp BlueXP *"] ネットアップのクラウドサービスをすべて利用できるようになります。

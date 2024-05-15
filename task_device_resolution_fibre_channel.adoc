@@ -120,7 +120,7 @@ Cloud Insights デバイス解決機能から、既存のファイバチャネ�
 . [*Manage] > [Device Resolution*] をクリックします
 . Fibre Channel identify * タブを選択します。
 . 識別情報をエクスポートする 1 つ以上のファイバチャネルデバイスを選択します。
-. [* Export* ] をクリックします image:ExportButton.png[""] ボタンを押します。
+. [* Export* ] をクリックします image:ExportButton.png["[ エクスポート ] ボタン"] ボタンを押します。
 +
 .csv ファイルを開くか、ファイルを保存するかを選択します。
 

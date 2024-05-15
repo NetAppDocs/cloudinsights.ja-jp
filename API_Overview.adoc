@@ -28,22 +28,22 @@ Cloud Insights API は、現在のエディションに基づいて提供され�
 | APIタイプ | 基本 | 標準 | Premium サービス 
 
 
-| Acquisition Unit の略 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Acquisition Unit の略 | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| データ収集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| データ収集 | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| アラート |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| アラート |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| 資産 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資産 |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| データの取り込み |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| データの取り込み |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| ログの取り込み |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| ログの取り込み |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 |===
 さらに、 Cloud Insights もご利用いただけます link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["機能セットのロール"] では、アクセス可能な API が決定されます。ユーザロールとゲストロールの権限は、管理者ロールよりも少なくなります。たとえば、 Monitor と Optimize で Administrator ロールを割り当てていても、 Reporting で User ロールを割り当てている場合は、 Data Warehouse を除くすべての API タイプを管理できます。
 

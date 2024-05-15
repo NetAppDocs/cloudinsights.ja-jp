@@ -15,6 +15,7 @@ keywords: features
 :imagesdir: ./media/
 
 
+[role="lead"]
 ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。
 
 
@@ -1445,8 +1446,8 @@ _ 属性の新しい変数と、ウィジェットで変数を使用する機能
 
 ダッシュボードは、かつてないほど強力で柔軟性に優れています。属性変数を使用してアダプティブダッシュボードを構築することで、ダッシュボードを即座にフィルタリングできます。これらと既存の他のものを使用する link:concept_dashboard_features.html#variables["変数（ variables ）"] 環境全体の指標を確認するためのダッシュボードを 1 つ作成し、リソース名、タイプ、場所などでシームレスにフィルタリングダウンできるようになりました。ウィジェットの数値変数を使用して、ストレージサービスの GB あたりのコストなど、物理指標をコストに関連付けます。
 
-image:Variables_Drop_Down_Showing_Annotations.png[""]
-image:Variables_Attribute_Filtering.png[""]
+image:Variables_Drop_Down_Showing_Annotations.png["変数のドロップダウンアノテーション"]
+image:Variables_Attribute_Filtering.png["変数の属性フィルタリング"]
 
 
 
@@ -1625,19 +1626,19 @@ Cloud Insights の強力な API にはこれまで以上にアクセス可能で
 | API カテゴリ | 基本 | 標準 | Premium サービス 
 
 
-| Acquisition Unit の略 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Acquisition Unit の略 | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| データ収集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| データ収集 | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| アラート |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| アラート |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| 資産 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資産 |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| データの取り込み |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| データの取り込み |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 |===
 
 
@@ -1724,19 +1725,19 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
 | API カテゴリ | 基本 | 標準 | Premium サービス 
 
 
-| Acquisition Unit の略 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Acquisition Unit の略 | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| データ収集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| データ収集 | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| 資産 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資産 |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| データの取り込み |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| データの取り込み |  | image:SmallCheckMark.png["チェックマーク"] | image:SmallCheckMark.png["チェックマーク"] 
 
 
-| Data Warehouse |  |  | image:SmallCheckMark.png[""] 
+| Data Warehouse |  |  | image:SmallCheckMark.png["チェックマーク"] 
 |===
 API の使用方法の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["APIドキュメント"]。
 

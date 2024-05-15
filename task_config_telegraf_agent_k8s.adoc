@@ -30,8 +30,8 @@ toc::[]
 
 == Kubernetes Monitoring Operatorのインストール
 
-image:NKMO-Instructions-1.png[""]
-image:NKMO-Instructions-2.png[""]
+image:NKMO-Instructions-1.png["モニタリングオペレータの指示"]
+image:NKMO-Instructions-2.png["モニタリングオペレータの指示"]
 
 .KubernetesにKubernetes Monitoring Operatorエージェントをインストールする手順は次のとおりです。
 . 一意のクラスタ名およびネームスペースを入力してください。実行中の場合 <<をアップグレードして,をアップグレードして>> 以前のKubernetes Operatorで、同じクラスタ名とネームスペースを使用します。
@@ -532,7 +532,7 @@ kubectl get all -n <namespace>| grep -i psp (should show that nothing is found)
 
 | Telegrafログに次のようなエラーメッセージが繰り返し表示されます。
 
- 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] コンテキストの期限を超過しました（ヘッダー待機中にClient.Timeoutが超過しました） | _AgentConfiguration_のtelegrafセクションを編集し、set_dockerMetricCollectionEnabled_をfalseに設定します。詳細については、オペレータのを参照してください  link:telegraf_agent_k8s_config_options.html["設定オプション"]。 
+ 来い! [agent]出力への書き込み中にエラーが発生しました。http：Post "\https：//<tenant_url>/rest/v1/lake/ingest/influxdb"：context deadline exceeded (Client. ヘッダー待機中にタイムアウトを超過しました） | _AgentConfiguration_およびincrease_outputTimeout_のtelegrafセクションを10秒に編集します。詳細については、オペレータのを参照してください link:telegraf_agent_k8s_config_options.html["設定オプション"]。 
 
 
 | 一部のイベントログの_involvedobject_dataが見つかりません。 | 次の手順を実行していることを確認してください： link:pre-requisites_for_k8s_operator.html["権限"] 上記のセクション。 

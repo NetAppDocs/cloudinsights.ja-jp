@@ -92,7 +92,7 @@ IP デバイスの識別情報を .csv ファイルにエクスポートする�
 . [*Manage] > [Device Resolution*] をクリックします
 . [IP Address identify *] タブを選択します。
 . 識別情報をエクスポートする IP デバイスを選択します。
-. [* Export* ] をクリックします image:ExportButton.png[""] ボタンを押します。
+. [* Export* ] をクリックします image:ExportButton.png["[エクスポート]ボタン"] ボタンを押します。
 +
 .csv ファイルを開くか、ファイルを保存するかを選択します。
 

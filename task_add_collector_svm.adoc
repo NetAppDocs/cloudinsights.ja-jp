@@ -129,6 +129,10 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
+< < < < < < < < < < < < < < 頭部
+
+[]
+====
 ONTAP ARP統合の権限：
 
 ....
@@ -150,9 +154,8 @@ security login create -user-or-group-name csuser -application http -authmethod p
 security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 ....
-
-
-=== SVM管理IP *を使用して追加する場合の権限：
+>>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
+===* SVM管理IP *を使用して追加する場合の権限*：
 
 クラスタ管理管理者ユーザがワークロードセキュリティを使用してONTAP SVMデータコレクタにアクセスできない場合は、次のコマンドに示すロールを持つ「csuser」という新しいユーザを作成できます。Workload SecurityデータコレクタでSVM管理IPを使用するように設定する場合は、「csuser」のユーザ名とパスワードを使用します。
 
@@ -170,14 +173,16 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+< < < < < < < < < < < < < < 頭部
+
+====
 ONTAPアクセス拒否の権限：
 
 ....
 security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ....
-
-
+>>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
 === ONTAP自律型ランサムウェア対策の権限
 
 クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。
@@ -348,7 +353,7 @@ Data Collectorがin_running_stateの場合は、収集を一時停止できま�
 
 エラーの場合は、 _Status_column で _more detail_ をクリックしてエラーの詳細を確認します。
 
-image:CS_Data_Collector_Error.png[""]
+image:CS_Data_Collector_Error.png["Workload Security Collector Error More Detailリンク"]
 
 [cols="2*"]
 |===

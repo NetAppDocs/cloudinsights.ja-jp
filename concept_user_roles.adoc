@@ -300,4 +300,4 @@ image:Restrict_Domains_Modal.png["ドメインをデフォルトドメイン、�
 * 指定したデフォルトおよびドメインへのアクセスを制限します。デフォルトのドメインに加えて、Cloud Insights環境へのアクセスを許可するドメインを一覧表示します。
 
 
-image:Restrict_Domains_Tooltip.png[""]
+image:Restrict_Domains_Tooltip.png["ドメインの制限ツールチップ"]

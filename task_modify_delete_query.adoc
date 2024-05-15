@@ -18,7 +18,7 @@ keywords: query, queries, modify, edit, delete, remove
 :toc-position: content
 
 
-[role="lead]"]
+[role="lead"]
 クエリに関連付けられている条件を変更して、アセットの検索条件を変更することができます。
 
 

@@ -23,7 +23,7 @@ keywords: asset, summary, landing page, topology, auto, refresh
 
 概要セクションの情報、およびアセットページの表やカスタムウィジェットの情報は、選択した期間に基づいて自動的に更新されます。現在のリフレッシュレートは、[Summary]セクション、テーブル、およびカスタムウィジェットの右上隅に表示されます。
 
-image:Summary_Section_Example.png[""]
+image:Summary_Section_Example.png["ランディングページの概要セクションの例"]
 
 注：「概要」セクションに表示される情報は、表示しているアセットのタイプによって異なります。
 
@@ -56,4 +56,4 @@ NOTE: 一部のストレージアセットについて、ボリュームの容�
 * ボリューム
 
 
-image:TopologyExample.png[""]
+image:TopologyExample.png["ランディングページのトポロジセクションの例"]

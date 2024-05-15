@@ -33,13 +33,13 @@ NOTE: レポート機能は Cloud Insights で使用できます link:concept_su
 
 === 注釈
 
-image:annotations.png[""]
+image:annotations.png["注釈"]
 
 
 
 === アプリケーション
 
-image:apps_annot.png[""]
+image:apps_annot.png["アプリケーション"]
 
 
 
@@ -81,43 +81,43 @@ image:k8s_workload_metrics_fact.jpg["Kubernetes Workload Metricsファクト"]
 
 === NAS
 
-image:nas.png[""]
+image:nas.png["NAS"]
 
 
 
 === パスと違反
 
-image:logical.png[""]
+image:logical.png["パスと違反"]
 
 
 
 === ポート接続
 
-image:connectivity.png[""]
+image:connectivity.png["ポート接続"]
 
 
 
 === SAN ファブリック
 
-image:fabric.png[""]
+image:fabric.png["SANファブリック"]
 
 
 
 === ストレージ
 
-image:storage.png[""]
+image:storage.png["ストレージ"]
 
 
 
 === ストレージノード
 
-image:storage_node.png[""]
+image:storage_node.png["ストレージノード"]
 
 
 
 === VM
 
-image:vm.png[""]
+image:vm.png["仮想マシン"]
 
 '''
 
@@ -130,73 +130,73 @@ image:vm.png[""]
 
 === チャージバック
 
-image:Chargeback_Fact.png[""]
+image:Chargeback_Fact.png["チャージバック"]
 
 
 
 === ディスクグループの容量
 
-image:Disk_Group_Capacity.png[""]
+image:Disk_Group_Capacity.png["ディスクグループの容量"]
 
 
 
 === ファイルシステムの利用率
 
-image:fs_util.png[""]
+image:fs_util.png["ファイルシステムの利用率"]
 
 
 
 === 内部ボリューム容量
 
-image:Internal_Volume_Capacity_Fact.png[""]
+image:Internal_Volume_Capacity_Fact.png["内部ボリューム容量"]
 
 
 
 === Kubernetes PVの容量
 
-image:k8s_pvc_capacity_fact.jpg[""]
+image:k8s_pvc_capacity_fact.jpg["Kubernetes PVの容量"]
 
 
 
 === ポートの容量
 
-image:ports.png[""]
+image:ports.png["ポートの容量"]
 
 
 
 === qtree 容量
 
-image:Qtree_Capacity_Fact.png[""]
+image:Qtree_Capacity_Fact.png["qtree 容量"]
 
 
 
 === ストレージ容量の削減比率
 
-image:efficiency.png[""]
+image:efficiency.png["ストレージ容量の削減比率"]
 
 
 
 === ストレージおよびストレージプールの容量
 
-image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
+image:Storage_and_Storage_Pool_Capacity_Fact.png["ストレージおよびストレージプールの容量"]
 
 
 
 === ストレージノードの容量
 
-image:Storage_Node_Capacity_Fact.jpg[""]
+image:Storage_Node_Capacity_Fact.jpg["ストレージノードの容量"]
 
 
 
 === VM 容量
 
-image:VM_Capacity_Fact.png[""]
+image:VM_Capacity_Fact.png["VM 容量"]
 
 
 
 === ボリューム容量
 
-image:Volume_Capacity.png[""]
+image:Volume_Capacity.png["ボリューム容量"]
 
 '''
 
@@ -209,130 +209,130 @@ image:Volume_Capacity.png[""]
 
 === アプリケーションボリューム毎時パフォーマンス
 
-image:application_performance_fact.jpg[""]
+image:application_performance_fact.jpg["アプリケーションボリューム毎時パフォーマンス"]
 
 
 
 === ディスクの日次パフォーマンス
 
-image:disk_daily_performance_fact.png[""]
+image:disk_daily_performance_fact.png["ディスクの日次パフォーマンス"]
 
 
 
 === Disk Hourly Performance の 2 つの機能が
 
-image:disk_hourly_performance_fact.png[""]
+image:disk_hourly_performance_fact.png["Disk Hourly Performance の 2 つの機能が"]
 
 
 
 === Host Hourly Performanceの略
 
-image:host_performance_fact.jpg[""]
+image:host_performance_fact.jpg["Host Hourly Performanceの略"]
 
 
 
 === 内部ボリューム毎時パフォーマンス
 
-image:internal_volume_performance_fact.jpg[""]
+image:internal_volume_performance_fact.jpg["内部ボリューム毎時パフォーマンス"]
 
 
 
 === 内部ボリュームの日次パフォーマンス
 
-image:internal_volume_daily_performance_fact.jpg[""]
+image:internal_volume_daily_performance_fact.jpg["内部ボリュームの日次パフォーマンス"]
 
 
 
 === qtree ：日次パフォーマンス
 
-image:QtreeDailyPerformanceFact.png[""]
+image:QtreeDailyPerformanceFact.png["qtree ：日次パフォーマンス"]
 
 
 
 === ストレージノードの日次パフォーマンス
 
-image:storage_node_daily_performance_fact.jpg[""]
+image:storage_node_daily_performance_fact.jpg["ストレージノードの日次パフォーマンス"]
 
 
 
 === Storage Node Hourly Performance の略
 
-image:storage_node_hourly_performance_fact.jpg[""]
+image:storage_node_hourly_performance_fact.jpg["Storage Node Hourly Performance の略"]
 
 
 
 === Switch Hourly Performance for Host
 
-image:switch_performance_for_host_hourly_fact.png[""]
+image:switch_performance_for_host_hourly_fact.png["Switch Hourly Performance for Host"]
 
 
 
 === Switch Hourly Performance for Port
 
-image:switch_performance_for_port_hourly_fact.png[""]
+image:switch_performance_for_port_hourly_fact.png["Switch Hourly Performance for Port"]
 
 
 
 === Switch Hourly Performance for Storage の略
 
-image:switch_performance_for_storage_hourly_fact.png[""]
+image:switch_performance_for_storage_hourly_fact.png["Switch Hourly Performance for Storage の略"]
 
 
 
 === Switch Hourly Performance for Tape
 
-image:switch_performance_for_tape_hourly_fact.png[""]
+image:switch_performance_for_tape_hourly_fact.png["Switch Hourly Performance for Tape"]
 
 
 
 === VM パフォーマンス
 
-image:vm_hourly_performance_fact.png[""]
+image:vm_hourly_performance_fact.png["VM パフォーマンス"]
 
 
 
 === ホストの VM の日次パフォーマンス
 
-image:vm_daily_performance_fact.png[""]
+image:vm_daily_performance_fact.png["ホストの VM の日次パフォーマンス"]
 
 
 
 === ホストの VM 1 時間ごとのパフォーマンス
 
-image:vm_hourly_performance_fact.png[""]
+image:vm_hourly_performance_fact.png["ホストの VM 1 時間ごとのパフォーマンス"]
 
 
 
 === ホストの VM の日次パフォーマンス
 
-image:vm_daily_performance_fact.png[""]
+image:vm_daily_performance_fact.png["ホストの VM の日次パフォーマンス"]
 
 
 
 === ホストの VM 1 時間ごとのパフォーマンス
 
-image:vm_hourly_performance_fact.png[""]
+image:vm_hourly_performance_fact.png["ホストの VM 1 時間ごとのパフォーマンス"]
 
 
 
 === VMDK の日次パフォーマンス
 
-image:vmdk_daily_performance_fact.png[""]
+image:vmdk_daily_performance_fact.png["VMDK の日次パフォーマンス"]
 
 
 
 === VMDK 毎時パフォーマンス
 
-image:vmdk_hourly_performance_fact.png[""]
+image:vmdk_hourly_performance_fact.png["VMDK 毎時パフォーマンス"]
 
 
 
 === 1 時間ごとのボリュームパフォーマンス
 
-image:volume_performance_fact.jpg[""]
+image:volume_performance_fact.jpg["1 時間ごとのボリュームパフォーマンス"]
 
 
 
 === ボリュームの日次パフォーマンス
 
-image:volume_daily_performance_fact.jpg[""]
+image:volume_daily_performance_fact.jpg["ボリュームの日次パフォーマンス"]
