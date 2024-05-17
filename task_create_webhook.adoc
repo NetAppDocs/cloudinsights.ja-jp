@@ -92,7 +92,7 @@ Webhookのリストページには、Name、Created By、Created On、Status、S
 
 == モニタで [Webhook Notification] を選択します
 
-で webhook 通知を選択します link:task_create_monitor.html#creating-a-monitor["モニタ"]をクリックして、 [* Alerts] > [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。
+で webhook 通知を選択します link:task_create_monitor.html["モニタ"]をクリックして、 [* Alerts] > [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。
 
 image:Webhook_Monitor_Notify.png["Webhook モニタの通知"]
 

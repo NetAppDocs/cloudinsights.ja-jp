@@ -129,7 +129,6 @@
   <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">サポート資格をアクティブ化しています</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">詳細</block>
-  <block id="1b179bc63122b8c6c97a198ea6812e2a" category="paragraph">Cloud Insights は、試用モードで実行する場合にセルフサービスと E メールのサポートを提供します。サービスに登録したら、サポート資格をアクティブ化することを強くお勧めします。サポートエンタイトルメントをアクティブにすると、オンラインチャット、 Web チケット発行システム、および電話でテクニカルサポートにアクセスできます。登録が完了するまで、デフォルトのサポートモードはセルフサービスです。を参照してください <block ref="0ac112fddddbe1a53d74b73cbe92356e" category="inline-link-macro-rx"></block> 下。</block>
   <block id="8c3419f130ad04caaa52bc7ca345b657" category="paragraph">Cloud Insights インスタンスは、初回のサブスクリプションプロセスで「 950 」以降の 20 桁のネットアップシリアル番号を生成します。このネットアップシリアル番号は、お客様のアカウントに関連付けられた Cloud Insights サブスクリプションを表します。サポート利用資格を有効にするには、ネットアップのシリアル番号を登録する必要があります。サポート登録には、次の 2 つのオプションがあります。</block>
   <block id="cc8ae441e8fc2d8b41c5c0efa830b99e" category="list-text">NetApp Support Site（ NSS ）の SSO アカウントをすでにお持ちのユーザ（現在ネットアップのお客様など）</block>
   <block id="0a0b0ec9b756ca7bf1c8323bc90df282" category="list-text">NetApp Support Site（ NSS ）の SSO アカウントがない新しいネットアップのお客様</block>
@@ -519,7 +518,6 @@ Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機�
   <block id="3cfba54c70b6969bcb6d6cf2f956498a" category="cell">AWS リージョンを選択します</block>
   <block id="a9e18ceb0cf33b5fa58eee464eb5119b" category="cell">IAM ロール</block>
   <block id="5af83476a58c870df52d1d246574922c" category="inline-xref">IAM ロール</block>
-  <block id="c556d79cf119c0275f5a7e5ffe17e25e" category="cell">AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <block ref="abcc3869ca9e9148fb25f0d23e298b7f" category="inline-xref-macro-rx"></block>。</block>
   <block id="0e174ead80150bd1646bbe3dff5be348" category="cell">AWS IAM Access Key ID</block>
   <block id="ee70e7971d85d7d2d77742381912070b" category="cell">AWS IAM Access Key ID を入力します。IAM ロールを使用しない場合は必須です。</block>
   <block id="f55ad0ad249bea7ede23875a3038fe11" category="cell">AWS IAM Secret Access Key の略</block>
@@ -678,7 +676,6 @@ Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機�
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">このセクションでは、置換は「Test Webhook」ボタンをクリックしたときに_not_performedになります。このボタンは、_%_substitionsを示すペイロードを送信しますが、これらをデータに置き換えません。</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">このセクションでは、任意のカスタムパラメータやシークレットを追加できます。セキュリティ上の理由から、シークレットが定義されている場合は、 webhook 作成者だけがこの webhook チャネルを変更できます。他のユーザに対しては読み取り専用です。URL/ ヘッダーのシークレットは、 %%&lt;secret_name&gt;%%_ として使用できます。</block>
   <block id="9f0bfcad9805fdb266c75890257a496e" category="section-title">モニタで [Webhook Notification] を選択します</block>
-  <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">で webhook 通知を選択します <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
   <block id="7f44d407783e89c1aced666e867dd410" category="inline-image-macro">Webhook モニタの通知</block>
   <block id="4b43841fab74d16cf87af7d828515aa0" category="paragraph"><block ref="4b43841fab74d16cf87af7d828515aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41e96c412b3694cd49b21435dba2aa8b" category="section-title">Webhook の例：</block>
@@ -738,13 +735,6 @@ Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機�
   <block id="aabf05c4f0e7b6d67364c9c3287c3f76" category="cell">エラー：ストレージプールから、設定された IP アドレスのサービスプロセッサのディスクが報告されません</block>
   <block id="5c794ce4033cc9a38588fdf417c99b4c" category="cell">サービスプロセッサの両方の IP をカンマで区切ってデータコレクタを設定します</block>
   <block id="eec4a8f5738e0ab13381d33020ad0b24" category="cell">エラー：リビジョン不一致エラー</block>
-  <block id="fd5876ba02b2687e0f759426e0298df1" category="cell">•これは通常、VNXブロックストレージデバイス上のファームウェアの更新が原因で発生しますが、NaviCLI.exeのインストールは更新されません。ファームウェアが異なる複数のデバイスがあっても、インストールされている CLI が 1 つだけ（ファームウェアバージョンが異なる）の場合にも、この問題が発生する可能性があります。
-•デバイスとホストの両方で同じバージョンのソフトウェアが実行されていることを確認します。
-    - Cloud Insights Acquisition Unitで、コマンドラインウィンドウを開きます
-    -ディレクトリを設定済みのインストールディレクトリに変更します
-    -「navicli -h $｛ip｝getagent」と入力して、CLARiXデバイスとの接続を確立します。
-    -最初の2行でバージョン番号を探します。例：「Agent Rev： 6.16.2（0.1）インチ
-    -最初の行でバージョンを探して比較します。例： Navisphere CLI Revision 6.07.00.04.07</block>
   <block id="2224c0524fbd6e8f44ccc50ce4a96ad5" category="cell">エラー：サポート対象外の構成 - Fibre Channel ポートがありません</block>
   <block id="529b04e834f40481051d6ce9539ddc0f" category="cell">デバイスにファイバチャネルポートが設定されていない。現在サポートされているのは FC 構成のみです。  このバージョン / ファームウェアがサポートされていることを確認してください。</block>
   <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">ハイブリッドマルチクラウドデータ環境を単一のコントロールプレーンから構築、保護、ガバナンスします。</block>
@@ -1256,11 +1246,9 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="6acc33ae48cab5cb2335531500f89b02" category="paragraph">このページでは、次のデータについて説明します。</block>
   <block id="add45c9b3192a1741f0078c1e3a26199" category="list-text">エンティティのアクセス時間。月、日、年、および時間を含みます。</block>
   <block id="2ba01387eb193f306ecd9e0aa92ec18b" category="inline-link-macro">ユーザー詳細データ</block>
-  <block id="d392843964c335c1c9dd5d3a73ecffa9" category="list-text">エンティティにアクセスし、へのリンクを持つユーザ <block ref="7c73493d9f7ea518160cd9b15865320b" category="inline-link-macro-rx"></block>。</block>
   <block id="5620854eb6d9dfc6232bbccefdbb4f0e" category="list-text">ユーザが実行したアクティビティ：</block>
   <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">書き込み</block>
   <block id="db7ee224458b6b939d2f759930e9a9f1" category="list-text">メタデータにアクセスします</block>
-  <block id="02d2d907a8cea574883286e56e5834d0" category="list-text">へのリンクを持つエンティティへのパス <block ref="48ae99400f35b5a30544095c0b977e4d" category="inline-link-macro-rx"></block></block>
   <block id="234e95e32a1ea9eb274c2e8437dfb0a7" category="list-text">エンティティタイプ：</block>
   <block id="0b27918290ff5323bea1e3b78a9cf04e" category="list-text">ファイル。</block>
   <block id="51d68bd940901bf218b5d1798790ca09" category="list-text">処理の実行元の IP アドレス。</block>
@@ -2619,7 +2607,6 @@ Microsoft Windows Server 2019の略</block>
   <block id="b0fa17525d310a01406e22a6a3792d8b" category="list-text">SVM 名は ONTAP に表示されるとおりに指定する必要があり、大文字と小文字が区別されます。</block>
   <block id="988cfc885910cb57855c7d1e3055000a" category="list-text">SVM SVM 管理 IP 、ユーザ名、およびパスワードを使用する</block>
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-link-macro">「権限に関する注意事項」</block>
-  <block id="b19cd1e15a68af6b243893fbf6531cb2" category="list-text">フル管理者のクラスタ / SVM 管理ユーザ名とパスワードを使用できない場合は、に記載されている権限よりも少ないカスタムユーザを作成できます <block ref="257f1904b32a0b6b3ad6c048be9351a6" category="inline-link-macro-rx"></block> セクションを参照してください。このカスタムユーザは、 SVM アクセスまたはクラスタアクセス用に作成できます。</block>
   <block id="af3222f57064502de0a6067116f97f3e" category="list-text">以下の「権限に関する注意」セクションで説明されているように、少なくともcsroleの権限を持つロールを持つADユーザを使用することもできます。も参照してください <block ref="d4aa194db895e3203d834756bc431bad" category="inline-link-macro-rx"></block>。</block>
   <block id="af53996a121bcf0b43c612a8465b5398" category="list-text">次のコマンドを実行して、 SVM に正しいアプリケーションが設定されていることを確認します。</block>
   <block id="cce32d87b6a1e3cf5567d9c84f96be3f" category="inline-image-macro">SVM コマンドの出力例</block>
@@ -2802,16 +2789,6 @@ ONTAP SVM データコレクタを編集し、許可されたプロトコルと�
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">Data Collectorに次のエラーメッセージが表示されます。
 「Error：Failed to determine the health of the collector within 2 retries、try restarting the collector again（Error Code：AGENT008）」</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">このページです</block>
-  <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.データコレクタページで、エラーが表示されているデータコレクタの右にスクロールし、3つのドットメニューをクリックします。選択した編集 _ 。
-データコレクタのパスワードをもう一度入力します。
-[Save] ボタンを押して、データコレクタを保存します。
-Data Collector が再起動し、エラーが解決されます。
-
-2.エージェントマシンに十分なCPUまたはRAMヘッドルームがない場合があります。そのため、DSCが故障しています。
-マシンのエージェントに追加されているデータコレクタの数を確認してください。
-20を超える場合は、エージェントマシンのCPUとRAM容量を増やしてください。
-CPUとRAMが増加すると、DSCは初期化状態になり、その後自動的に実行状態になります。
-のサイジングガイドを参照してください <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">それでも問題が解決しない場合は、 [ ヘルプ ]&gt;[ サポート *] ページに記載されているサポートリンクにアクセスしてください。</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubernetes Monitoring Operatorには、設定可能なオプションが多数あります。</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">オプション</block>
@@ -3082,7 +3059,6 @@ Time Filebucketの略
   <block id="f2d545399fe0fcbd9a77e09737d54288" category="list-text">IAM Access Key 認証を使用している場合は、 Amazon EC2 クラウドアカウントの * IAM Access Key * ID と Secret Access Key 。</block>
   <block id="2e5ae14c20670777cc04d62dd88480c6" category="list-text">EC2 インスタンスは、仮想マシンまたは（自然に）ホストとしてレポートできます。EBS ボリュームは、 VM で使用されている仮想ディスクと、仮想ディスクの容量を提供するデータストアの両方として報告できます。</block>
   <block id="e8c5df635511b033726ee811b739dc91" category="paragraph">アクセスキーは、アクセスキー ID （ AKIAIOSFODNN7EXAMPLE など）とシークレットアクセスキー（ wJalrXUtil/K7MDENG/bPxRfiCYEXAMPLEKEY など）で構成されます。Amazon EC2 SDK 、 REST 、またはクエリ API の処理を使用している場合は、アクセスキーを使用して EC2 にプログラム経由の要求に署名します。これらのキーは、 Amazon の契約に付属しています。</block>
-  <block id="263820305fad40ce46e17fb4c0dcd2f0" category="cell">AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <block ref="b1fa9c7402c411a5cbbd77540aba7325" category="inline-link-macro-rx"></block>。</block>
   <block id="7c8ecbd06e2ab81a313b14c1868827c7" category="cell">ポーリングに含める追加領域を指定します。</block>
   <block id="820d47e555604a3201080c1d157aa94d" category="cell">VM をフィルタするタグキーと値</block>
   <block id="05922526004ceb56027a07d530619935" category="cell">+ タグのフィルタ * をクリックして、 VM のキーとタグの値に一致するキーと値をフィルタリングして、対象に含める / 除外する VM （および関連ディスク）を選択します。タグキーは必須です。タグ値はオプションです。タグ値が空の場合、タグキーと一致する限り、 VM はフィルタリングされます。</block>
@@ -4111,20 +4087,7 @@ VMDK です
   <block id="5eb6bb157528b365f84c27bb4784031b" category="cell">シークレットキー</block>
   <block id="9447267c06cce84dba179c481872fb16" category="cell">Cloud Volume シークレットキー</block>
   <block id="c5d5d6018c10e2d5a417d69ddb1992bb" category="cell">デフォルトは60分です</block>
-  <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">次のようなエラーが表示されました。
-'要求を実行できませんでした：&lt;AWS region endpoint&gt;：8080 [AWS &lt;AWS region endpoint&gt;/リージョンエンドポイントIP&gt;]への接続に失敗しました：接続がタイムアウトしました：GET<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> リージョンエンドポイントFQDN&gt;：8080/v1/Storage/IPRanges HTTP/1.1</block>
   <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">ネットアップの技術情報アーティクル</block>
-  <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights がAcquisition Unitとの通信に使用するCloud Insights とData Collector自体との通信は行われません。ここでは、いくつかの方法を試すことができます。
-
-Acquisition UnitがFQDNを解決し、必要なポートに到達できることを確認します。
-エラーメッセージに示されたエンドポイントにアクセスするためにプロキシが必要でないことを確認します。
-cURLを使用して、Acquisition Unitとエンドポイント間の通信をテストできます。このテストにプロキシを使用していない*ことを確認してください。
-
-例
-
-root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: application/json"-H api-key:&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt;-X get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> リージョナルエンドポイント&gt;：8080 / v1 /ストレージ/ IP範囲
-
-を参照してください <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="8cc7620b98f53d4670d8d98f87e96bb6" category="summary">Acquisition Unit の問題に関するトラブルシューティングのヒント。</block>
   <block id="67714f40f76da8e998f34935a33be570" category="doc">Linux での Acquisition Unit の問題のトラブルシューティング</block>
   <block id="799af4349bd49a845da3921295bd9dbe" category="paragraph">ここでは、 Linux サーバの Acquisition Unit に関する問題のトラブルシューティングについて説明します。</block>
@@ -4186,7 +4149,6 @@ Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）で�
   <block id="1c86ffb67b6c557efd57f02a8124391f" category="inline-image-macro">書式設定あり / なしの単一値ウィジェット</block>
   <block id="54fd4ea8e77a36f86dbd7eb0c586dbfd" category="paragraph"><block ref="54fd4ea8e77a36f86dbd7eb0c586dbfd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cbd63d84b143ca4d977c56413f0636f8" category="inline-link-macro">カスタマイズ</block>
-  <block id="0645d2bfff769e917835d157e691f0be" category="list-text">* ゲージウィジェット * ：単一値のデータを従来の（固体）ゲージまたは箇条書きゲージに表示します。「警告」または「重大」の値に基づいた色で表示します <block ref="7b06cec2bc04bb3452943fbeb3b82682" category="inline-link-macro-rx"></block>。</block>
   <block id="750f1ef44e948ec90cac7cb3f1abb83c" category="inline-image-macro">書式設定、従来のゲージ、箇条書きゲージを使用した単一値</block>
   <block id="fd3db0ae2d5cb2c027ca4fb5235885fd" category="paragraph"><block ref="fd3db0ae2d5cb2c027ca4fb5235885fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="134fad64e91be8733fd79da18b8f3061" category="list-text">* バー、棒グラフ * ：容量別のトップ 10 ストレージや IOPS 別の下位 5 ボリュームなど、上位または下位の N 値が表示されます。</block>
@@ -6506,7 +6468,6 @@ Zノード数</block>
   <block id="ea88145436c3d93ffad8cb3aaa3f29d2" category="paragraph">Acquisition Unit を再起動するには、ページ上部の「 * Restart * 」ボタンをクリックします。接続に問題が発生した場合に、このボタンをドロップダウンして、 AU への * 接続の復元 * を試行します。</block>
   <block id="0899fcc28c04aa81ead738e68e460060" category="summary">Cloud Insights API を使用して Reporting DB を直接照会する。</block>
   <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">Cloud Insights の強力な API を使用すると、 Cognos Reporting 環境を介さずに、 Cloud Insights Reporting データベースを直接照会できます。</block>
-  <block id="839e9965620da680dac976910eb42800" category="admonition">このドキュメントでは、で使用できる Cloud Insights レポート機能について説明します <block ref="4403a1ad625c6a857c60069d4bc3b41a" category="inline-link-macro-rx"></block>。</block>
   <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4 の</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">このチュートリアルでは</block>
@@ -8080,8 +8041,6 @@ VCSタイプ
   <block id="2a06ef814799b699c9aeb4a107d374fd" category="cell">パフォーマンスフィルタのデバイスリスト</block>
   <block id="67f88e9638429025aedc9459c104dc99" category="cell">パフォーマンス収集の対象に含めるか除外するデバイスの ID をカンマで区切ったリスト</block>
   <block id="13cb776e94eedbe31790c3da868fce4f" category="cell">CMUC00192E 、 CMUC00191E 、または CMUC00190E を含むエラーです</block>
-  <block id="74ce3011edbe24d23741ab64757e01b3" category="cell">* 入力された資格情報と IP アドレスを確認してください。
-* Web 管理コンソールを使用してアレイと通信してみてください<block ref="05cc9b0aa4749686afc5de5ae5526f25" category="inline-link-rx"></block>。  $ ｛ IP ｝ をデータコレクタが設定した IP に置き換えてください。</block>
   <block id="b18a21f855b9b4e7ca0fae5355812eb5" category="cell">エラー：
 *プログラムを実行できません
 *コマンドの実行エラー</block>
@@ -12994,42 +12953,6 @@ FAS / AFF 8080</block>
   <block id="bca37b041da64be838599cd43784ed63" category="paragraph">管理：</block>
   <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">API アクセス</block>
   <block id="4620823d389a7467f91084ea88f4f104" category="list-text">サブスクリプション情報</block>
-  <block id="384d2b3681715a5efe4a0e8ae256591a" category="cell">その理由としては、 ONTAP 側のネットワーク問題が考えられます。次の手順を実行してください。
-
-1. SVMデータLIFまたは管理LIFに、SVMからの接続をブロックしているファイアウォールがないことを確認します。
-
-2. クラスタ管理 IP を使用して SVM を追加する場合、 Agent VM から SVM のデータ LIF と管理 LIF に ping できることを確認します。問題が発生した場合は、 LIF のゲートウェイ、ネットマスク、およびルートを確認してください。
-
-また、クラスタ管理 IP を使用して SSH 経由でクラスタにログインし、エージェント IP に ping を実行することもできます。エージェントIPがping可能であることを確認します。
-
-_network ping -vserver &lt;vserver name&gt;-destination &lt;Agent IP&gt;-lif &lt;Lif Name&gt;-show-detail_
-
-pingできない場合は、ONTAPのネットワーク設定が正しいことを確認して、エージェントマシンにpingできるようにします。
-
-3. クラスタ IP 経由で接続しようとしたが動作しない場合は、 SVM IP 経由で直接接続してみます。SVM IP を使用して接続する手順については、上記を参照してください。
-
-4. SVM の IP と vsadmin のクレデンシャルを使用してコレクタを追加するときに、 SVM の LIF で Data plus Mgmt ロールが有効になっていることを確認します。この場合、 SVM LIF に ping することは可能ですが、 SVM LIF への SSH は機能しません。
-「はい」の場合は、 SVM 管理のみの LIF を作成し、この SVM 管理のみの LIF を使用して接続してみてください。
-
-5. まだ機能しない場合は、新しい SVM LIF を作成し、その LIF を介して接続します。サブネットマスクが正しく設定されていることを確認します。
-
-6.高度なデバッグ: 
-a）ONTAPでパケットトレースを開始します。
-b）CloudSecure UIからSVMにデータコレクタを接続してみます。
-c)エラーが表示されるまで待ちます。ONTAP でパケットトレースを停止します。
-d）ONTAPからパケットトレースを開きます。この場所で入手できます
-
- _\ https：//&lt;cluster_mgmt_ip&gt;/spi /&lt;clustername&gt;/etc/log/packet_traces/_
-
-e) ONTAPからエージェントボックスへのSYNがあることを確認します。
-f）ONTAPからSYNがない場合は、ONTAPにファイアウォールがある問題です。
-g) ONTAPでファイアウォールを開き、ONTAPがエージェントボックスに接続できるようにします。
-
-7. まだ動作していない場合は、ネットワーキングチームに問い合わせて、 ONTAP からエージェントボックスへの接続が外部ファイアウォールによってブロックされていないことを確認してください。
-
-8.ポート7が開いていることを確認します。
-
-9.上記のいずれも問題を解決できない場合は、 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">このデータコレクタでサポートされるモデルとバージョン：</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
@@ -14942,7 +14865,6 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">これは問題と呼ばれています。  を参照してください <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 詳細：Tegraf が起動して動作している限り、ユーザはこのエラーメッセージを無視できます。</block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">Kubernetesで、Telegrafポッドが次のエラーを報告しています。
 "mountstats情報の処理中にエラーが発生しました：mountstatsファイルを開けませんでした：/hostfs/proc/1/mountstats、エラー：open/hostfs/proc/1/mountstats：権限が拒否されました"</block>
-  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、以下を参照してください。<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">Kubernetesで、Telegraf ReplicaSetポッドが次のエラーを報告しています。
 
  [プラグインのinputs.prometheus]エラー：keypair /etc/kubernetes/pki/etcd/server.crtをロードできませんでした：/etc/kubernetes/pki/etcd/server.key：open /etc/kubernetes/pki/etcd/server.crt：該当するファイルまたはディレクトリはありません</block>
@@ -15489,7 +15411,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">ユーザアクセスブロック</block>
   <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">次の点に注意してください。 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
-  <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">の[Permissions]セクションを確認してください。 <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> ページも参照してください。</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">データ移行</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">以前のONTAP（ONTAPI）データコレクタから新しいONTAP RESTコレクタに移行するには、次の手順を実行します。</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual Machine / SVM</block>
@@ -15629,10 +15550,6 @@ Kubernetesアプリケーションのストレージネットワークアクテ�
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">KubernetesのNetwork Performance Monitoring and Map機能は、サービス（ワークロードとも呼ばれます）間の依存関係をマッピングすることでトラブルシューティングを簡易化し、ネットワークパフォーマンスのレイテンシや異常をリアルタイムで可視化して、ユーザに影響を与える前にパフォーマンスの問題を特定します。
 この機能は、Kubernetesのトラフィックフローを分析、監査することで全体的なコストを削減するのに役立ちます。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes Monitoring Operatorは、Cloud Insightsで使用するKubernetesデータを収集します。</block>
-  <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP統合の権限：</block>
-  <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">ONTAPアクセス拒否の権限：</block>
-  <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">注: 1つのrest-role (_arwrole_or_csrestrole_--)がすでに追加されている場合、2つ目のrest-roleを追加する必要はありません。以下の例のように、API権限を追加するだけです。</block>
-  <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">例：_csrestrole_はすでに存在しているため、ランサムウェア対策を有効にし、既存の_csrestrole_にAPI権限を付与するだけで済みます。</block>
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">「ハートビートエラー：」というメッセージが表示される</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">Acquisition Unitを再インストールすると、「ValueError：File context for /opt/netapp/cloudinsights（/.*）？」と表示されるすでに定義されています」。</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">SELinuxを搭載したシステムでは、このエラーメッセージは<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> が実行されました。Acquisition Unitを再インストールします。コマンドの実行<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> 問題を修正し、メッセージを削除する必要があります。</block>
@@ -15649,8 +15566,6 @@ Kubernetesアプリケーションのストレージネットワークアクテ�
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">event-exporter-maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">イベントエクスポータの最大イベント経過時間。  を参照してください<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
   <block id="639bed0f86ee37975166505f25500f59" category="paragraph">変更分析はどのように役立ちますか？</block>
-  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">マルチテナントKubernetes環境では、設定ミスが原因でシステムが停止する可能性があります。非常に動的な環境では、Cloud Insightsインフラストラクチャの監視ですべての変更を適切に追跡できない場合があります。</block>
-  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">Change Analyticsでは、ワークロードの健全性と構成の変更を1つのペインで表示して関連付けることができます。これは、動的なKubernetes環境のトラブルシューティングに役立ちます。</block>
   <block id="9c64a0e0a0e22cc18b7137e967889926" category="doc">Kubernetes監視オペレータの設定オプション</block>
   <block id="3371b7c42a338a1d63764ce6cc96fdcb" category="inline-link-macro">Kubernetes監視オペレータ</block>
   <block id="f32519ffeecd98f4c4f06a7bf1c7a34c" category="paragraph">。 <block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block> 設定はカスタマイズできます。</block>
@@ -15678,12 +15593,6 @@ Kubernetes v1.20以上：kubernetes.io/os=Linux
 Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフォームとして使用：cattle.io / os = Linux</block>
   <block id="b0c7368729c7094129da2a9003691e56" category="cell">curlコマンドとkubectlコマンドが使用可能である必要があります。;最良の結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">接続性</block>
-  <block id="55a65c182f00e32a2ec3792167680870" category="cell">kubectl CLIはターゲットのKubernetesクラスタと通信するように設定し、Cloud Insights環境にインターネット接続できるようにしておきます。
-
-インストール中にプロキシの背後にいる場合は、 <block ref="64cf37673a6ed79c9da34b6623735516" category="inline-link-macro-rx"></block> Operatorインストールのセクション。
-
-監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。</block>
-  <block id="a4b54dca162f049f992f72e7505f2056" category="cell">OpenShift 4.6以降で実行している場合は、次のリンクを参照してください。task_config_telegraf_agent_k8s.html # OpenShift-instructions [OpenShift Instructionsこれらの前提条件を満たしていることを確認することに加えて。</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">APIトークン</block>
   <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">Operatorを再デプロイする場合(つまり、Operatorを更新または置換する場合)は、新しいAPIトークンを作成する必要はありません。前のトークンを再利用できます。</block>
   <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
@@ -15966,11 +15875,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="401fed57c814eb5c6cee47d79b354f59" category="inline-image-macro">VMダッシュボードのすべてのウィジェットが表示された完全な例</block>
   <block id="00c340d0d431c9fa05836d10d9d9cee7" category="paragraph"><block ref="00c340d0d431c9fa05836d10d9d9cee7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97d8e9a07abc13937635fa4d8bfc72e4" category="list-text">[* Export* ] をクリックします <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
-  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; 頭部</block>
-  <block id="3aa39f9c69e0586976520ec48d9ad3c6" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-===* SVM管理IP *を使用して追加する場合の権限*：</block>
-  <block id="dd1d0dc7a37fe63b5e2c257349aa6532" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== ONTAP自律型ランサムウェア対策の権限</block>
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">Workload Security Collector Error More Detailリンク</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="05245c9c713dbc0e818edff595a4246c" category="inline-image-macro">ランディングページの概要セクションの例</block>
@@ -15998,4 +15902,99 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">ワンタイム使用APIトークンの応答例</block>
   <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
 <block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88624c8c7afb5c98f1c473e14dcbf963" category="cell">kubectl CLIはターゲットのKubernetesクラスタと通信するように設定し、Cloud Insights環境にインターネット接続できるようにしておきます。
+
+インストール中にプロキシの背後にいる場合は、 <block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block> Operatorインストールのセクション。
+
+監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。</block>
+  <block id="7c32e6404e015057fc5db282b24077f0" category="cell">OpenShift 4.6以降を実行している場合は、 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> さらに、これらの前提条件が満たされていることを確認します。</block>
+  <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>。</block>
+  <block id="24c6fef3c58adc63ac779bde77c4fbce" category="cell">•これは通常、VNXブロックストレージデバイス上のファームウェアの更新が原因で発生しますが、NaviCLI.exeのインストールは更新されません。ファームウェアが異なる複数のデバイスがあっても、インストールされている CLI が 1 つだけ（ファームウェアバージョンが異なる）の場合にも、この問題が発生する可能性があります。
+•デバイスとホストの両方で同じバージョンのソフトウェアが実行されていることを確認します。
+    - Cloud Insights Acquisition Unitで、コマンドラインウィンドウを開きます
+    -ディレクトリを設定済みのインストールディレクトリに変更します
+    -「navicli -h &lt;ip&gt; getagent」と入力して、CLARiXデバイスと接続します。
+    -最初の2行でバージョン番号を探します。例：「Agent Rev： 6.16.2（0.1）インチ
+    -最初の行でバージョンを探して比較します。例： Navisphere CLI Revision 6.07.00.04.07</block>
+  <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">で webhook 通知を選択します <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
+  <block id="4123cf4f6521073cef46192908207644" category="cell">SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>。</block>
+  <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">このドキュメントでは、Cloud Insightsプレミアムエディションで使用できるCloud Insightsレポート機能について説明します。</block>
+  <block id="f09f88f2a0cd4d59d1c5dc91fdce034b" category="cell">*コマンドプロンプトを開き、設定したパスにディレクトリを変更します
+*「SET=STONAVM_HOME=」コマンドを実行します。
+*「auunitref」コマンドを実行します。
+*コマンド出力にIPを持つアレイの詳細が含まれていることを確認します
+*出力にアレイの詳細が含まれていない場合は、ストレージナビゲータCLIにアレイを登録します。
+    -コマンドプロンプトを開き、設定したパスにディレクトリを変更します
+    -「SET=STONAVM_HOME=」コマンドを実行します。
+    -コマンド「auunitaddauto-ip &lt;ip&gt;」を実行します。&lt;ip&gt;を正しいIPに置き換えます。</block>
+  <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">* ゲージウィジェット * ：単一値のデータを従来の（固体）ゲージまたは箇条書きゲージに表示します。「警告」または「重大」の値に基づいた色で表示します <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>。</block>
+  <block id="31ec8abc1c2fff3171b9e6ba5d038ad8" category="list-text">エンティティにアクセスし、へのリンクを持つユーザ <block ref="168fc69c3032b784e96b74cdbf6c371b" category="inline-link-macro-rx"></block>。</block>
+  <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">へのリンクを持つエンティティへのパス <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
+  <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">Cloud Insights は、試用モードで実行する場合にセルフサービスと E メールのサポートを提供します。サービスに登録したら、サポート資格をアクティブ化することを強くお勧めします。サポートエンタイトルメントをアクティブにすると、オンラインチャット、 Web チケット発行システム、および電話でテクニカルサポートにアクセスできます。登録が完了するまで、デフォルトのサポートモードはセルフサービスです。を参照してください <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> 下。</block>
+  <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* 入力された資格情報と IP アドレスを確認してください。
+* Web管理コンソール\https://&lt;ip&gt;:8452/DS8000/Consoleを使用して'アレイとの通信を試みます  &lt;ip&gt;をデータコレクタが設定されたIPに置き換えます。</block>
+  <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">の[Permissions]セクションを確認してください。 <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> ページも参照してください。</block>
+  <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">フル管理者のクラスタ / SVM 管理ユーザ名とパスワードを使用できない場合は、に記載されている権限よりも少ないカスタムユーザを作成できます <block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block> セクションを参照してください。このカスタムユーザは、 SVM アクセスまたはクラスタアクセス用に作成できます。</block>
+  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">SVM管理IP *を使用して追加する場合の権限：</block>
+  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自律型ランサムウェア対策の権限</block>
+  <block id="ce2c442b24aec5c08788260869132fdd" category="cell">その理由としては、 ONTAP 側のネットワーク問題が考えられます。次の手順を実行してください。
+
+1. SVMデータLIFまたは管理LIFに、SVMからの接続をブロックしているファイアウォールがないことを確認します。
+
+2. クラスタ管理 IP を使用して SVM を追加する場合、 Agent VM から SVM のデータ LIF と管理 LIF に ping できることを確認します。問題が発生した場合は、 LIF のゲートウェイ、ネットマスク、およびルートを確認してください。
+
+また、クラスタ管理 IP を使用して SSH 経由でクラスタにログインし、エージェント IP に ping を実行することもできます。エージェントIPがping可能であることを確認します。
+
+_network ping -vserver &lt;vserver name&gt;-destination &lt;Agent IP&gt;-lif &lt;Lif Name&gt;-show-detail_
+
+pingできない場合は、ONTAPのネットワーク設定が正しいことを確認して、エージェントマシンにpingできるようにします。
+
+3. クラスタ IP 経由で接続しようとしたが動作しない場合は、 SVM IP 経由で直接接続してみます。SVM IP を使用して接続する手順については、上記を参照してください。
+
+4. SVM の IP と vsadmin のクレデンシャルを使用してコレクタを追加するときに、 SVM の LIF で Data plus Mgmt ロールが有効になっていることを確認します。この場合、 SVM LIF に ping することは可能ですが、 SVM LIF への SSH は機能しません。
+「はい」の場合は、 SVM 管理のみの LIF を作成し、この SVM 管理のみの LIF を使用して接続してみてください。
+
+5. まだ機能しない場合は、新しい SVM LIF を作成し、その LIF を介して接続します。サブネットマスクが正しく設定されていることを確認します。
+
+6.高度なデバッグ: 
+a）ONTAPでパケットトレースを開始します。
+b）CloudSecure UIからSVMにデータコレクタを接続してみます。
+c)エラーが表示されるまで待ちます。ONTAP でパケットトレースを停止します。
+d）ONTAPからパケットトレースを開きます。この場所で入手できます
+
+ _\ https：//&lt;cluster_mgmt_ip&gt;/spi /&lt;clustername&gt;/etc/log/packet_traces/_
+
+e) ONTAPからエージェントボックスへのSYNがあることを確認します。
+f）ONTAPからSYNがない場合は、ONTAPにファイアウォールがある問題です。
+g) ONTAPでファイアウォールを開き、ONTAPがエージェントボックスに接続できるようにします。
+
+7. まだ動作していない場合は、ネットワーキングチームに問い合わせて、 ONTAP からエージェントボックスへの接続が外部ファイアウォールによってブロックされていないことを確認してください。
+
+8.ポート7が開いていることを確認します。
+
+9.上記のいずれも問題を解決できない場合は、 <block ref="d0162286c59c67bf86d01f060ee7cd04" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="c54f0cb7ebe859ae013e2a39e57b38c0" category="cell">1.データコレクタページで、エラーが表示されているデータコレクタの右にスクロールし、3つのドットメニューをクリックします。選択した編集 _ 。
+データコレクタのパスワードをもう一度入力します。
+[Save] ボタンを押して、データコレクタを保存します。
+Data Collector が再起動し、エラーが解決されます。
+
+2.エージェントマシンに十分なCPUまたはRAMヘッドルームがない場合があります。そのため、DSCが故障しています。
+マシンのエージェントに追加されているデータコレクタの数を確認してください。
+20を超える場合は、エージェントマシンのCPUとRAM容量を増やしてください。
+CPUとRAMが増加すると、DSCは初期化状態になり、その後自動的に実行状態になります。
+のサイジングガイドを参照してください <block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="36d35d8bdb33f254c1406a404bc7c125" category="cell">次のようなエラーが表示されました。
+'Failed to execute request：Connect to &lt;AWS region endpoint &gt;：8080 [&lt;AWS region endpoint &gt;/AWS region endpoint IP&gt;] failed：connect timed out：GET \https://&lt;AWS Region Endpoint FQDN &gt;：8080/v1/Storage/IPRanges HTTP/1.1'</block>
+  <block id="eb146021cef6507d29dcdce3e2090a16" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights がAcquisition Unitとの通信に使用するCloud Insights とData Collector自体との通信は行われません。ここでは、いくつかの方法を試すことができます。
+
+Acquisition UnitがFQDNを解決し、必要なポートに到達できることを確認します。
+エラーメッセージに示されたエンドポイントにアクセスするためにプロキシが必要でないことを確認します。
+cURLを使用して、Acquisition Unitとエンドポイント間の通信をテストできます。このテストにプロキシを使用していない*ことを確認してください。
+
+例
+
+root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: application/json"-H api-key:&lt;データコレクタの資格情報で使用されるAPIキー-H secret-key:&lt;データコレクタの資格情報で使用されるシークレットキー&gt;-X Get \https://&lt;AWS Regional Endpoint &gt;：808080/v1/Storage/IPRanges
+
+を参照してください <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
+  <block id="f1a3b56f57a450a14c2cf03113d0ffcf" category="list-text">マルチテナントKubernetes環境では、設定ミスが原因でシステムが停止する可能性があります。Change Analyticsでは、ワークロードの健全性と構成の変更を1つのペインで表示して関連付けることができます。これは、動的なKubernetes環境のトラブルシューティングに役立ちます。</block>
 </blocks>

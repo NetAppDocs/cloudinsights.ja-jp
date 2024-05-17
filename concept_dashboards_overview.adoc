@@ -74,7 +74,7 @@ image:Time-Series Charts.png["Area 、 Stacked Area 、 Line 、 Spline Charts �
 +
 image:Single-Value Widgets.png["書式設定あり / なしの単一値ウィジェット"]
 
-* * ゲージウィジェット * ：単一値のデータを従来の（固体）ゲージまたは箇条書きゲージに表示します。「警告」または「重大」の値に基づいた色で表示します link:concept_dashboard_features.adoc#formatting-gauge-widgets["カスタマイズ"]。
+* * ゲージウィジェット * ：単一値のデータを従来の（固体）ゲージまたは箇条書きゲージに表示します。「警告」または「重大」の値に基づいた色で表示します link:concept_dashboard_features.html#formatting-gauge-widgets["カスタマイズ"]。
 +
 image:Gauge Widgets.png["書式設定、従来のゲージ、箇条書きゲージを使用した単一値"]
 

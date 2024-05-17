@@ -49,7 +49,7 @@ summary: Workload Securityデータコレクタを追加します
 
 
 ** SVM SVM 管理 IP 、ユーザ名、およびパスワードを使用する
-** フル管理者のクラスタ / SVM 管理ユーザ名とパスワードを使用できない場合は、に記載されている権限よりも少ないカスタムユーザを作成できます link:#a-note-about-permissions["「権限に関する注意事項」"] セクションを参照してください。このカスタムユーザは、 SVM アクセスまたはクラスタアクセス用に作成できます。
+** フル管理者のクラスタ / SVM 管理ユーザ名とパスワードを使用できない場合は、に記載されている権限よりも少ないカスタムユーザを作成できます <<a-note-about-permissions,「権限に関する注意事項」>> セクションを参照してください。このカスタムユーザは、 SVM アクセスまたはクラスタアクセス用に作成できます。
 +
 *** 以下の「権限に関する注意」セクションで説明されているように、少なくともcsroleの権限を持つロールを持つADユーザを使用することもできます。も参照してください link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["ONTAP のドキュメント"]。
 
@@ -129,33 +129,9 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
-< < < < < < < < < < < < < < 頭部
 
-[]
-====
-ONTAP ARP統合の権限：
 
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-ONTAPアクセス拒否の権限：
-
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-....
-注: 1つのrest-role (_arwrole_or_csrestrole_--)がすでに追加されている場合、2つ目のrest-roleを追加する必要はありません。以下の例のように、API権限を追加するだけです。
-
-例：_csrestrole_はすでに存在しているため、ランサムウェア対策を有効にし、既存の_csrestrole_にAPI権限を付与するだけで済みます。
-
-....
-security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-....
->>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-===* SVM管理IP *を使用して追加する場合の権限*：
+=== SVM管理IP *を使用して追加する場合の権限：
 
 クラスタ管理管理者ユーザがワークロードセキュリティを使用してONTAP SVMデータコレクタにアクセスできない場合は、次のコマンドに示すロールを持つ「csuser」という新しいユーザを作成できます。Workload SecurityデータコレクタでSVM管理IPを使用するように設定する場合は、「csuser」のユーザ名とパスワードを使用します。
 
@@ -173,16 +149,8 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-< < < < < < < < < < < < < < 頭部
 
-====
-ONTAPアクセス拒否の権限：
 
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-....
->>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
 === ONTAP自律型ランサムウェア対策の権限
 
 クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。
@@ -410,7 +378,7 @@ g) ONTAPでファイアウォールを開き、ONTAPがエージェントボッ�
 
 8.ポート7が開いていることを確認します。
 
-9.上記のいずれも問題を解決できない場合は、 link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["ネットアップサポート"] を参照してください。 
+9.上記のいずれも問題を解決できない場合は、 link:concept_requesting_support.html["ネットアップサポート"] を参照してください。 
 
 
 | メッセージ： "[hostname:<IP Address>] の ONTAP タイプを特定できませんでした。理由：ストレージシステム <IP アドレス > への接続エラー：ホストに到達できません（ホストに到達できません） " | 1. 正しい SVM IP 管理アドレスまたはクラスタ管理 IP が指定されていることを確認します。
@@ -528,6 +496,6 @@ Data Collector が再起動し、エラーが解決されます。
 マシンのエージェントに追加されているデータコレクタの数を確認してください。
 20を超える場合は、エージェントマシンのCPUとRAM容量を増やしてください。
 CPUとRAMが増加すると、DSCは初期化状態になり、その後自動的に実行状態になります。
-のサイジングガイドを参照してください link:https://docs.netapp.com/us-en/cloudinsights/concept_cs_event_rate_checker.html["このページです"]。 
+のサイジングガイドを参照してください link:concept_cs_event_rate_checker.html["このページです"]。 
 |===
 それでも問題が解決しない場合は、 [ ヘルプ ]>[ サポート *] ページに記載されているサポートリンクにアクセスしてください。

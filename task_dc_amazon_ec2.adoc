@@ -54,7 +54,7 @@ Amazon EC2 デバイスからデータを収集するには、次の情報が必
 | AWS リージョン | AWS リージョンを選択します 
 
 
-| IAM ロール | AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください link:task_dc_amazon_ec2.html#iam-roles["IAM ロール"]。 
+| IAM ロール | AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <<iam-role,IAM ロール>>。 
 
 
 | AWS IAM Access Key ID | AWS IAM Access Key ID を入力します。IAM ロールを使用しない場合は必須です。 

@@ -311,6 +311,6 @@ HDS ストレージノードのアセットランディングページにある�
 *出力にアレイの詳細が含まれていない場合は、ストレージナビゲータCLIにアレイを登録します。
     -コマンドプロンプトを開き、設定したパスにディレクトリを変更します
     -「SET=STONAVM_HOME=」コマンドを実行します。
-    -コマンド「auunitaddauto-ip$｛ip｝」を実行します。$ ｛ IP ｝ を実際の IP に置き換えてください 
+    -コマンド「auunitaddauto-ip <ip>」を実行します。<ip>を正しいIPに置き換えます。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

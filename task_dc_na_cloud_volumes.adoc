@@ -61,7 +61,7 @@ keywords: data collector, NetApp, Cloud, AWS
 
 
 | 次のようなエラーが表示されました。
-'要求を実行できませんでした：<AWS region endpoint>：8080 [AWS <AWS region endpoint>/リージョンエンドポイントIP>]への接続に失敗しました：接続がタイムアウトしました：GET https://<AWS[] リージョンエンドポイントFQDN>：8080/v1/Storage/IPRanges HTTP/1.1 | 。 link:task_configure_acquisition_unit.html#proxy-configuration-2["プロキシ"] Cloud Insights がAcquisition Unitとの通信に使用するCloud Insights とData Collector自体との通信は行われません。ここでは、いくつかの方法を試すことができます。
+'Failed to execute request：Connect to <AWS region endpoint >：8080 [<AWS region endpoint >/AWS region endpoint IP>] failed：connect timed out：GET \https://<AWS Region Endpoint FQDN >：8080/v1/Storage/IPRanges HTTP/1.1' | 。 link:task_configure_acquisition_unit.html#proxy-configuration-2["プロキシ"] Cloud Insights がAcquisition Unitとの通信に使用するCloud Insights とData Collector自体との通信は行われません。ここでは、いくつかの方法を試すことができます。
 
 Acquisition UnitがFQDNを解決し、必要なポートに到達できることを確認します。
 エラーメッセージに示されたエンドポイントにアクセスするためにプロキシが必要でないことを確認します。
@@ -69,7 +69,7 @@ cURLを使用して、Acquisition Unitとエンドポイント間の通信をテ
 
 例
 
-root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: application/json"-H api-key:<api key used in the data collector credentials -H secret-key:<secret key used in the data collector credentials>-X get https://<AWS[] リージョナルエンドポイント>：8080 / v1 /ストレージ/ IP範囲
+root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: application/json"-H api-key:<データコレクタの資格情報で使用されるAPIキー-H secret-key:<データコレクタの資格情報で使用されるシークレットキー>-X Get \https://<AWS Regional Endpoint >：808080/v1/Storage/IPRanges
 
 を参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Cloud_Insights_fails_discovery_for_Cloud_Volumes_Service_for_AWS["ネットアップの技術情報アーティクル"]。 
 |===

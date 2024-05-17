@@ -151,7 +151,7 @@ NaviSECCLI.exe -h <IP address>-user <user>-password <password>-scope.
 •デバイスとホストの両方で同じバージョンのソフトウェアが実行されていることを確認します。
     - Cloud Insights Acquisition Unitで、コマンドラインウィンドウを開きます
     -ディレクトリを設定済みのインストールディレクトリに変更します
-    -「navicli -h $｛ip｝getagent」と入力して、CLARiXデバイスとの接続を確立します。
+    -「navicli -h <ip> getagent」と入力して、CLARiXデバイスと接続します。
     -最初の2行でバージョン番号を探します。例：「Agent Rev： 6.16.2（0.1）インチ
     -最初の行でバージョンを探して比較します。例： Navisphere CLI Revision 6.07.00.04.07 
 
