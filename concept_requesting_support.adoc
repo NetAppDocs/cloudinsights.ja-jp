@@ -95,13 +95,11 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 +
 このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、関連する記事、ハウツーなどを検索できます。
 
-
-
 * *link:https://docs.netapp.com/us-en/cloudinsights/["ドキュメント"]*
 +
 [Documentation] リンクをクリックすると、このドキュメントセンターに移動します。
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["コミュニティ"]*
+* *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["コミュニティ"]*
 +
 コミュニティのリンクをクリックすると、ネットアップの Cloud Insights コミュニティに移動し、他のユーザやエキスパートと交流できます。
 
@@ -116,7 +114,7 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 上記のセルフサポートオプションに加え、監視対象のネットアップの製品またはサービスに対する Cloud Insights サブスクリプションまたは有料サポートがある場合は、ネットアップサポートエンジニアと協力して問題を解決できます。
 
 
-NOTE: に登録する必要があります <<Activating support entitlement and accessing support,サポートを有効にします>> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください link:https://register.netapp.com["クラウドデータサービスサポート登録"]。
+NOTE: に登録する必要があります <<activating-support-entitlement,サポートを有効にします>> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください link:https://register.netapp.com["クラウドデータサービスサポート登録"]。
 
 チェックボックスをオンにして、サポートセッション中にネットアップサポートエンジニアが Cloud Insights 環境にアクセスできるようにすることを強く推奨します。これにより、エンジニアが問題のトラブルシューティングを行い、問題を迅速に解決できるようになります。問題が解決されるか、サポートセッションが終了したら、チェックボックスをオフにできます。
 

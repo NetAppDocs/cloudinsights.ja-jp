@@ -22,7 +22,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 [role="lead"]
 Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行えます。
 
-* でアカウントに登録します link:https://https://bluexp.netapp.com//["* NetApp BlueXP *"] ネットアップのクラウドサービスをすべて利用できるようになります。
+* でアカウントに登録します link:https://bluexp.netapp.com//["* NetApp BlueXP *"] ネットアップのクラウドサービスをすべて利用できるようになります。
 * に登録します link:https://cloud.netapp.com/cloud-insights["* 無償トライアル *"] 使用可能な機能を調べるための Cloud Insights の。
 * * Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] 直接または link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]。
 
@@ -134,7 +134,7 @@ image:Subscription_Cost_Calculators.png["インフラとKubernetesのコスト�
 
 == 登録方法を教えてください。
 
-管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます <<self-subscribe-via-aws-marketplace,セルフサブスクライブ>> AWS Marketplace 経由で提供
+管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます <<self-subscribe-through-aws-marketplace,セルフサブスクライブ>> AWS Marketplace 経由で提供
 
 
 

@@ -86,7 +86,7 @@ Vserver 名、 CIFS サーバ名、およびその他のフィールドが返さ
 
 == ユーザアクセスブロックの前提条件
 
-次の点に注意してください。 link:/cloudinsights/cs_restrict_user_access.html["ユーザアクセスブロック"]：
+次の点に注意してください。 link:cs_restrict_user_access.html["ユーザアクセスブロック"]：
 
 この機能を使用するには、クラスタレベルのクレデンシャルが必要です。
 

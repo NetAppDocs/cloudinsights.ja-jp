@@ -63,7 +63,7 @@ IBM XIV および A9000 （ CLI ）データコレクタでは、 XIV コマン�
 * cimserver にはユーザログインを指定する必要があります。  ログインには、アレイの構成とプロパティに対する完全な読み取りアクセス権が必要です。
 * SMI-S ネームスペース。  デフォルトは root/IBM です。  これは cimserver で設定できます。
 * ポート要件： HTTP の場合は 5988 、 HTTPS の場合は 5989 。
-* SMI-S パフォーマンス収集用のアカウントの作成方法については、次のリンクを参照してください。 http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html[]
+* SMI-S パフォーマンス収集用のアカウントの作成方法については、次のリンクを参照してください。 https://www.ibm.com/docs/en/products?topic=/com.ibm.tpc_V41.doc/fqz0_t_adding_cim_agent.html[]
 
 
 

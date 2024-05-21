@@ -141,7 +141,7 @@ NaviSECCLI.exe -h <IP address>-user <user>-password <password>-scope.
 | エラー：メタデータ LUN を取得できません。java -jar navicli.jar の実行中にエラーが発生しました | •セキュアクライアントを使用するようにデータコレクタの設定を変更する（推奨）
 •navicli.exeまたはnaviseccli.exeへのCLIパスにnavicli.jarをインストールします
 •注：navicli.jarはEMC Navisphereバージョン6.26で廃止されました
-•navicli.jarはで入手できる場合があります http://powerlink.emc.com[] 
+•navicli.jarは\http://powerlink.emc.comで利用できる場合があります。 
 
 
 | エラー：ストレージプールから、設定された IP アドレスのサービスプロセッサのディスクが報告されません | サービスプロセッサの両方の IP をカンマで区切ってデータコレクタを設定します 

@@ -51,7 +51,7 @@ link:concept_user_roles.html["ユーザを設定する"]
 link:task_defining_annotations.html["アセットの準備：アノテーション"]
 link:concept_querying_assets.html["目的のアセットの検索：クエリ"]
 link:concept_dashboards_overview.html["必要なデータの表示：ダッシュボード"]
-link:https:task_create_monitor.html["監視とアラート"]
-link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["データを保護する"]
+link:task_create_monitor.html["監視とアラート"]
+link:task_cs_getting_started.html["データを保護する"]
 * これはすばらしい原料である! 準備ができました link:concept_subscribing_to_cloud_insights.html["* 予約購読 *"]。
 

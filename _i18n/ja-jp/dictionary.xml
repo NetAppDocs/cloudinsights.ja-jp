@@ -161,7 +161,6 @@
   <block id="7cef246d709d34533b9dea3e15d3f5a2" category="list-text">*<block ref="2ecfa39652ed0f06ca436cc3b19d2bbb" category="inline-link-macro-rx"></block>*</block>
   <block id="15d10c3fd39c9846221b3ea9c93b55e0" category="paragraph">[Documentation] リンクをクリックすると、このドキュメントセンターに移動します。</block>
   <block id="7d61983c34edc2a8cabbea71c4732f62" category="inline-link-macro">コミュニティ</block>
-  <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
   <block id="a7a9e9720c642358ce4d75836f0323d7" category="paragraph">コミュニティのリンクをクリックすると、ネットアップの Cloud Insights コミュニティに移動し、他のユーザやエキスパートと交流できます。</block>
   <block id="c48730cb532534ed8ded87a7e1e63743" category="inline-link-macro">* フィードバック *</block>
   <block id="1ee12c9d2a4f0460caa4b5f609d4b32e" category="paragraph">また、提供するリンクもあります <block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block> Cloud Insights の改善にお役立てください。</block>
@@ -169,7 +168,6 @@
   <block id="8af88bdd2f4549eb670a6c4568c51014" category="paragraph">上記のセルフサポートオプションに加え、監視対象のネットアップの製品またはサービスに対する Cloud Insights サブスクリプションまたは有料サポートがある場合は、ネットアップサポートエンジニアと協力して問題を解決できます。</block>
   <block id="8e2e894a8f2d0c798eda10b04a6aae2c" category="inline-link-macro">クラウドデータサービスサポート登録</block>
   <block id="960807b3a38d77ca1916570b1732dda1" category="inline-xref">サポートを有効にします</block>
-  <block id="cad626d3146515dadd70f1b0383e0eb2" category="admonition">に登録する必要があります <block ref="508882d56a37a1ac140f8523d62ed3d4" category="inline-xref-macro-rx"></block> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
   <block id="59ec599572265c11af88366fc10b5d22" category="paragraph">チェックボックスをオンにして、サポートセッション中にネットアップサポートエンジニアが Cloud Insights 環境にアクセスできるようにすることを強く推奨します。これにより、エンジニアが問題のトラブルシューティングを行い、問題を迅速に解決できるようになります。問題が解決されるか、サポートセッションが終了したら、チェックボックスをオフにできます。</block>
   <block id="1178d064739e36d66d617e550b890b3c" category="paragraph">サポートは次のいずれかの方法でリクエストできます。次のサポートオプションを使用するには、アクティブな Cloud Insights サブスクリプションが必要です。</block>
   <block id="e145a699aa519b4431527a84030fe1fd" category="inline-link-macro">* 電話 *</block>
@@ -728,10 +726,6 @@ Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機�
   <block id="080a50fd42890f08f122c21be3187e4b" category="cell">エラー： 4.29 emc235848 emc241018 getAll Failed to parse host alias info</block>
   <block id="a6037a5a8dc19085b823e803eeb236da" category="cell">これは ' アレイ自体のホスト・イニシエータ・データベースの問題が FLARE 29 によって破損したことが原因で発生する可能性がありますEMC ナレッジベースの記事 emc235848 、 emc241018 を参照してください。チェックすることもできます<block ref="fcbe74266ffebefc607cd58d1002be58" category="inline-link-rx"></block></block>
   <block id="2846bc6366ffc91aee2075a2d5607161" category="cell">エラー：メタデータ LUN を取得できません。java -jar navicli.jar の実行中にエラーが発生しました</block>
-  <block id="048af5a91eb86b88a58c85caf252b7f2" category="cell">•セキュアクライアントを使用するようにデータコレクタの設定を変更する（推奨）
-•navicli.exeまたはnaviseccli.exeへのCLIパスにnavicli.jarをインストールします
-•注：navicli.jarはEMC Navisphereバージョン6.26で廃止されました
-•navicli.jarはで入手できる場合があります<block ref="52ccc160ee6ad92eb3a129205f83a3c5" category="inline-link-rx"></block></block>
   <block id="aabf05c4f0e7b6d67364c9c3287c3f76" category="cell">エラー：ストレージプールから、設定された IP アドレスのサービスプロセッサのディスクが報告されません</block>
   <block id="5c794ce4033cc9a38588fdf417c99b4c" category="cell">サービスプロセッサの両方の IP をカンマで区切ってデータコレクタを設定します</block>
   <block id="eec4a8f5738e0ab13381d33020ad0b24" category="cell">エラー：リビジョン不一致エラー</block>
@@ -1027,7 +1021,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="53b0472808dabea62502439bc14f2c4d" category="list-text">cimserver にはユーザログインを指定する必要があります。  ログインには、アレイの構成とプロパティに対する完全な読み取りアクセス権が必要です。</block>
   <block id="389e3a971065b48ffc3a05981fa6df88" category="list-text">SMI-S ネームスペース。  デフォルトは root/IBM です。  これは cimserver で設定できます。</block>
   <block id="3fb43ae0166a0c7258bca2e98a24ca2b" category="list-text">ポート要件： HTTP の場合は 5988 、 HTTPS の場合は 5989 。</block>
-  <block id="11c301b2ca2b5c8e4b4520a428503821" category="list-text">SMI-S パフォーマンス収集用のアカウントの作成方法については、次のリンクを参照してください。<block ref="449b9c51502ef7d0a14d677d1d606dd7" category="inline-link-rx"></block></block>
   <block id="341a4bf00fff7bb62ad3ac648c6ac9d4" category="cell">XIV IP アドレス</block>
   <block id="474b42a95b200cc5860646bb3c3691b2" category="cell">XIV ストレージの IP アドレスまたは完全修飾ドメイン名</block>
   <block id="ae2b712c4dd6aa98dc14069f97abb853" category="cell">XIV ストレージのユーザ名</block>
@@ -1591,7 +1584,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">これらのモニタの一部はデフォルトで_enabled_byになっています。これらのモニタにアラートを送信しない場合は、_pause_themを実行する必要があります。また、これらのモニタは通知を配信するように設定されていないことに注意してください。電子メールまたはWebフックでアラートを送信する場合は、これらのモニタで通知の受信者を設定する必要があります。</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">すべてのダッシュボードテーブルウィジェットの.csvエクスポート</block>
   <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">.csvエクスポートアイコン</block>
-  <block id="44d9011c39c37e8f6a446942bc615548" category="paragraph">データへのアクセス性を確保することは、.csvエクスポートを行うために不可欠です <block ref="c41d9af9fc2647da102c1cb100d033ea" category="inline-image-macro-rx" type="image"></block> クエリするデータのタイプ（アセットまたは統合）に関係なく、すべての指標クエリ、ダッシュボードテーブルウィジェット、オブジェクトランディングページで使用できます。</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">列の選択、列の名前変更、単位変換などのデータのカスタマイズも、新しいエクスポート機能に含まれるようになりました。</block>
   <block id="f5616c23f020b3f984cbcd5f9a053ecc" category="section-title">2022年12月</block>
   <block id="7750dc4a80b8e64c09792175ba7ab620" category="section-title">Cloud Insights トライアルでランサムウェア防御やその他のセキュリティ機能をご確認ください</block>
@@ -1988,8 +1980,6 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="8aa90565fb34d8b0aeab74ab74ffdf4a" category="section-title">2021年2月</block>
   <block id="2a266bc5a8b07b0f2457a4df0aadfb6c" category="paragraph">テレグラム統合データの取り込み用エージェントは、脆弱性およびバグ修正を含むバージョン 1.17.0 に更新されました。</block>
   <block id="dc50895267bc4dee6b58ad70b85a96b9" category="section-title">Cloud Cost Analyzer</block>
-  <block id="11b5e8f0c975c40cd6464e682e336f13" category="inline-link-macro">コスト分析</block>
-  <block id="bcc80a36bebd03f3264a4aaa13d8a82b" category="paragraph">詳細について解説したクラウドコストで、ネットアップの Spot by NetApp のパワーを体験してください <block ref="7b1d0f4c403bdc72ee0dc9975922d090" category="inline-link-macro-rx"></block> 過去、現在、推定された支出のうち、環境内のクラウドの使用状況を可視化します。クラウドコストダッシュボードでは、クラウドのコストを明確に把握し、個々のワークロード、アカウント、サービスを詳細に把握できます。</block>
   <block id="690e46a66b86b18e0053b85ffa67f4d8" category="paragraph">クラウドコストは、次のような大きな課題に役立ちます。</block>
   <block id="eb67bbd04d0744ceaeb4a1ecb49afecc" category="paragraph">クラウドコストは監視に重点を置いています。ネットアップのアカウントで Full Spot by NetApp にアップグレードすると、コストを自動削減し、環境を最適化できます。</block>
   <block id="f0a05082925a4e52ff224fde55a6d481" category="section-title">フィルタを使用した null 値を持つオブジェクトのクエリ</block>
@@ -2104,7 +2094,6 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="a5667679a016ee66ef9bc45c1a173b3b" category="section-title">2020年12月</block>
   <block id="2b615a7f2e90071943cf38af444bddc3" category="section-title">Kubernetes のインストールを簡易化</block>
   <block id="fad2f286b8862fcd3a947310f05dc816" category="inline-link-macro">Kubernetes Agent をインストールします</block>
-  <block id="67e488807bb09964f73d2e7fdb021f7a" category="paragraph">Kubernetes Agent のインストールは合理化され、ユーザの操作が少なくて済みます。 <block ref="3777bc6c1722cb1c6ddba242b3b94c15" category="inline-link-macro-rx"></block> Kubernetes のデータ収集機能が追加されました。</block>
   <block id="0e347c50a0d60b8f46cb8c37cd3b5088" category="section-title">2020年11月</block>
   <block id="d9947aaf7f49e22f3949677e3c0a6a23" category="section-title">その他のダッシュボード</block>
   <block id="2b7f89335a36359ed3085691d2f5cd6d" category="paragraph">ONTAP に焦点を当てた次のダッシュボードがギャラリーに追加され、インポート可能になりました。</block>
@@ -2333,7 +2322,6 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="9bd364d6e8f82e1bc496f13196b72c56" category="paragraph"><block ref="9bd364d6e8f82e1bc496f13196b72c56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b42c726529f30f475409276e435fe377" category="section-title">シングルサインオン（ SSO ）</block>
   <block id="48bddfb993c982287aecbed4fe284efe" category="inline-link-macro">単一 Sign-On</block>
-  <block id="a3516ed3470691df24f62296c61b5a09" category="paragraph">Cloud Insights Premium Edition では、管理者は * を有効にできます<block ref="f2c5efb9cc6ea11069356a919f3b9d88" category="inline-link-macro-rx"></block>* （ SSO ）は、企業ドメイン内のすべてのユーザの Cloud Insights へのアクセスを個別に招待する必要がありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。</block>
   <block id="0d34e9c21a13cf4c27d88185c745fbfa" category="admonition">SSO は Cloud Insights Premium Edition でのみ使用可能で、 Cloud Insights で有効にする前に設定する必要があります。SSO 設定にはが含まれます <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> NetApp Cloud Central を使用フェデレーションを使用すると、シングルサインオンユーザが、社内ディレクトリのクレデンシャルを使用して NetApp Cloud Central アカウントにアクセスできます。</block>
   <block id="d835981d77534f5f20446d4648ad7e5b" category="section-title">2020年1月</block>
   <block id="2cc7e858ba807100ff4baef8dd609c4c" category="section-title">Swagger REST API のドキュメント</block>
@@ -2371,7 +2359,6 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="section-title">（2019年11月</block>
   <block id="01c11021cc38b74d02dfdb2ef5e77fca" category="section-title">エディション機能比較表</block>
   <block id="f9acaf912b63febf0bcf7a9e4d298e9f" category="inline-link-macro">比較表</block>
-  <block id="3dd10079e95ba50871a5ab5215dce86e" category="paragraph">[*Admin] &gt; [Subscription*] ページ <block ref="0d2c63a7998c59da36d6389e14580db4" category="inline-link-macro-rx"></block> Cloud Insights の Basic 、 Standard 、および Premium Edition で使用できる機能セットのリストが更新されました。ネットアップでは常にクラウドサービスの改善に取り組んでいますので、このページを頻繁にチェックして、進化するビジネスニーズに最適なエディションをお探しください。</block>
   <block id="e10986a4d8d7c27e4a9031d551cb15f3" category="section-title">（2019年10月</block>
   <block id="4d581ab73b477b0058e9a556a352a77a" category="inline-link-macro">* Cloud Insights Reporting*</block>
   <block id="bf477952b52b01fceb367c01be571adb" category="paragraph"><block ref="b7cfc719aea5efd14bf49a060e3d8bab" category="inline-link-macro-rx"></block> は、事前定義済みのレポートを表示したりカスタムレポートを作成したりできる、ビジネスインテリジェンスツールです。Reporting を使用すると、次のタスクを実行できます。</block>
@@ -2486,7 +2473,6 @@ Microsoft Windows Server 2019の略</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link-macro">Azure</block>
   <block id="0258c52d81b28196d9cbe098b4856a2f" category="list-text"><block ref="0258c52d81b28196d9cbe098b4856a2f" category="inline-link-macro-rx"></block></block>
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="inline-link-macro">Google Cloud Platform の 1 つです</block>
-  <block id="72c552fb4cd87641ab3c9f8cf214eb84" category="list-text"><block ref="72c552fb4cd87641ab3c9f8cf214eb84" category="inline-link-macro-rx"></block></block>
   <block id="692664770412ddd705b7f413cee7d6fb" category="section-title">2019 年 3 月</block>
   <block id="3601f99e8d21385b2b03f7fab345b666" category="section-title">サブスクリプション関連イベントの E メール通知</block>
   <block id="f37bd2f66651e7d46f6d38440f2bc5dd" category="inline-link-macro">通知</block>
@@ -2498,7 +2484,6 @@ Microsoft Windows Server 2019の略</block>
   <block id="6a32031ac9a48d2cec00a754d1a57961" category="list-text">AWS EC2 Instance Performance by Region</block>
   <block id="faae77443f7a8406deaf55c3795ace10" category="section-title">2019年2月</block>
   <block id="433984394960c952a78e6fd7daed6948" category="inline-link-macro">AWS の子アカウントから収集します</block>
-  <block id="594a73585fb2101d0cd4e1fe43e9ce13" category="list-text">Cloud Insights はをサポートします <block ref="226fd2eb507f3c50c07835ace6fcdf92" category="inline-link-macro-rx"></block> 単一のデータコレクタ内。Cloud Insights が子アカウントから収集できるように AWS 環境を設定する必要があります。</block>
   <block id="d6d43bf1a9a7a5440ae98da79a4d974f" category="section-title">Data Collector の命名</block>
   <block id="26d7394791900bc730455fc0d475c6ea" category="list-text">Data Collector 名に、英字、数字、およびアンダースコアのほかに、ピリオド（ . ）、ハイフン（ - ）、およびスペース（）を含めることができるようになりました。名前の先頭と末尾にスペース、ピリオド、ハイフンを使用することはできません。</block>
   <block id="9d82d310bac0f9ae47be63a87775a97d" category="section-title">Acquisition Unit for Windows の略</block>
@@ -4682,12 +4667,6 @@ Blocks Write Timeの略
   <block id="381137dc478970e10f9007a45be6554a" category="inline-link-macro">必要なデータの表示：ダッシュボード</block>
   <block id="2d762a3bbc5cce9178bdcae87b203e7c" category="inline-link-macro">監視とアラート</block>
   <block id="1f3aee47e5a067de1cdceffdeaa16afa" category="inline-link-macro">データを保護する</block>
-  <block id="b3686203dff26adb25b86088bb90a8a9" category="list-text">更新が次の手順
-<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
-<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
-<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
-<block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block>
-<block ref="736f96cf0a6accc6598879f4794392e1" category="inline-link-macro-rx"></block></block>
   <block id="d17aef0dcce543eeda80f0586306b127" category="inline-link-macro">* 予約購読 *</block>
   <block id="f22fe88435293fe687ec1e801a002593" category="list-text">これはすばらしい原料である! 準備ができました <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
   <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">分析情報から、リソースの使用状況とトレンド分析を確認できます。</block>
@@ -5835,7 +5814,6 @@ httpdリクエストメソッドPUT
   <block id="da6ac19a818a6de76b382ff406bf15b4" category="summary">無料トライアル期間中は、いつでも Cloud Insights に登録できます。</block>
   <block id="5a2dd268fff03fda59184d39fcea3904" category="doc">Cloud Insights に登録しています</block>
   <block id="48749104f97dbc83956df65c789fed9f" category="paragraph">Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行えます。</block>
-  <block id="6f54630a238a2ce40ac5742f2df04227" category="list-text">でアカウントに登録します <block ref="b7d0b9f9f12fc76a51e1b13d72622a5b" category="inline-link-macro-rx"></block> ネットアップのクラウドサービスをすべて利用できるようになります。</block>
   <block id="3f6b1218c41eefc30536db7e39f979df" category="inline-link-macro">* 無償トライアル *</block>
   <block id="e4f3a6f7a1f50be5b653bf57b0b61372" category="list-text">に登録します <block ref="82b0fa617f1dfb2e34805f2626cf97a5" category="inline-link-macro-rx"></block> 使用可能な機能を調べるための Cloud Insights の。</block>
   <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">ネットアップの営業担当者</block>
@@ -5875,7 +5853,6 @@ httpdリクエストメソッドPUT
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">インフラとKubernetesのコスト試算ツールが表示されたサブスクリプションページ</block>
   <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">登録方法を教えてください。</block>
-  <block id="29778014c6460acd3ebe88e1e1f1652b" category="paragraph">管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます <block ref="c7602cfa7469b32fb39d8de19e42676e" category="inline-xref-macro-rx"></block> AWS Marketplace 経由で提供</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">ネットアップの営業担当者にサブスクライブ</block>
   <block id="e3b70cffc25d522a4137f9cafd0f3c50" category="paragraph">予想される管理ユニット数が 1,000 以上の場合は、をクリックします <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> ボタンをクリックして、ネットアップ営業チームに登録してください。</block>
   <block id="1cf7fd422699345d54e2c23df79ac3a2" category="paragraph">Cloud Insights * シリアル番号 * をネットアップの営業担当者にご連絡いただき、 Cloud Insights 環境に有料サブスクリプションを適用できるようにしてください。シリアル番号は、 Cloud Insights トライアル環境を一意に識別します。シリアル番号は、 [*Admin] &gt; [Subscription*] ページにあります。</block>
@@ -14788,15 +14765,12 @@ PodのCPU利用率が高いかどうかを確認します。
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">に戻ります <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">既存のOperatorにAgentConfigurationが存在するかどうかを確認します（ネームスペースがdefault_netapp-monitoring_でない場合は、適切なネームスペースに置き換えてください）。</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">AgentConfigurationが存在する場合：</block>
-  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 既存の演算子の上にある最新の演算子。</block>
   <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">最新のコンテナイメージを取得します</block>
   <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確認してください <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> カスタムリポジトリを使用している場合。</block>
   <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">AgentConfigurationが存在しない場合は、次の手順を実行します。</block>
   <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">クラスタ名がCloud Insights で認識される名前であることをメモします（ネームスペースがデフォルトのネットアップ監視機能でない場合は、該当するネームスペースで置き換えてください）。</block>
   <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">既存のOperatorのバックアップを作成します（ネームスペースがデフォルトのネットアップ監視機能になっていない場合は、適切なネームスペースで置き換えてください）。</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">をアンインストールします</block>
-  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> 既存の演算子。</block>
-  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新の演算子。</block>
   <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">同じクラスタ名を使用してください。</block>
   <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">最新のOperator YAMLファイルをダウンロードしたら、展開する前に、agent_backup.yamlにあるカスタマイズをダウンロードしたoperator-config.yamlに移植します。</block>
   <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">アンインストール中です</block>
@@ -14935,11 +14909,9 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5e77ada1a807785ef1b03c3f1b96779c" category="cell">2つの監視オペレータポッド（netapp-ci-monitoring-operator-pod &lt;pod&gt;とmonitoring-operator-pod）が実行されているのはなぜ&lt;pod&gt;ですか？</block>
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">古いオペレータを削除します。</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">新しいものを取り付ける</block>
-  <block id="e7d6cf6485500824df0535ac307eb301" category="cell">2023年10月12日現在、Cloud Insightsはユーザーにより良いサービスを提供するためにオペレータをリファクタリングしています。これらの変更を完全に適用するには、 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> および <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>。</block>
   <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">Agentは最大50個のデータコレクタをサポートできます。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">次のコマンドを実行します。</block>
   <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a）この表は、一般的なサイジングガイドとして使用します。コアまたはメモリの数を増やして、サポートされるデータコレクタの数を増やすことができます（最大50個のデータコレクタ）。</block>
-  <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理者とアカウント所有者は、次のことができるようになりました。 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 指定した電子メールドメインに送信します。[Admin]&gt;[User Management]*に移動し、[_Restrict Domains]ボタンを選択します。</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">ロールとルール</block>
   <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">データの保持時間とダウンサンプリングの説明</block>
@@ -15219,7 +15191,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">必要に応じて、環境内のアセットに適用するアプリケーションを定義します。</block>
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">event-exporterポッドの名前を取得します。</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">「netapp-ci-event-exporter」または「event-exporter」のいずれかにする必要があります。  次に、監視エージェントを編集します。<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>をクリックし、log_fileの値を設定して、前の手順で見つけた適切なイベントエクスポータポッド名を反映します。  具体的には、log_fileは「/var/log/containers/netapp-ci-event-exporter.log」または「/var/log/containers/event-exporter *。log」のいずれかに設定する必要があります。</block>
-  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> エージェント。</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">秘密に関する注意事項</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">アップグレードの場合は、クラスタからリソースも削除します。</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">変更分析が有効になっている場合は、_AgentConfiguration_or_operator -config.yaml_を変更して、変更管理セクションのコメントを解除し、変更管理セクションの下に_kindsToIgnoreFromWatch：'"secrets"'_を含めます。この行の一重引用符と二重引用符の存在と位置に注意してください。</block>
@@ -15230,7 +15201,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Data Domainの識別</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domainコレクタが改善され、フェイルオーバー時の耐久性を確保するためにHAシステムをより適切に識別できるようになりました。この変更により、HAシステム内のData Domainアプライアンスが1回だけ原因されます。これにより、削除するアセットのアノテーションが原因されます（アレイが再識別されるため）。Data Domainオブジェクトにアノテーションを再アタッチする必要があります。</block>
-  <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。</block>
   <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">ワークロードセキュリティは、ONTAPと統合してアクセス拒否イベントを受信し、追加の分析と自動応答レイヤを提供します。</block>
   <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">ONTAPアクセス拒否との統合</block>
   <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAPアクセス拒否機能は、NAS環境（NFSおよびSMB）のワークロード分析を使用して、失敗したファイル処理（権限のない処理を実行しようとしているユーザなど）をプロアクティブに検出して警告します。これらのファイル操作の失敗の通知は、特にセキュリティ関連の障害の場合には、初期段階でのインサイダー攻撃のブロックにさらに役立ちます。</block>
@@ -15410,7 +15380,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">ユーザアクセスブロック</block>
-  <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">次の点に注意してください。 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">データ移行</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">以前のONTAP（ONTAPI）データコレクタから新しいONTAP RESTコレクタに移行するには、次の手順を実行します。</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual Machine / SVM</block>
@@ -15595,7 +15564,6 @@ Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフ�
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">接続性</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">APIトークン</block>
   <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">Operatorを再デプロイする場合(つまり、Operatorを更新または置換する場合)は、新しいAPIトークンを作成する必要はありません。前のトークンを再利用できます。</block>
-  <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
   <block id="6a2947f7e89b5053f53a29320e46a462" category="paragraph">Kubernetes Monitoring Operatorはkube-state-metricsを自動的にインストールします。ユーザの操作は必要ありません。</block>
   <block id="9c2506e67ece46fad96ea50d91339c89" category="paragraph">Cloud Insightsでは、Kubernetesコレクション用の* Kubernetes Monitoring Operator *を提供しています。新しいオペレータを導入するには、* Kubernetes &gt; Collectors &gt;+ Kubernetes Collector *に移動します。</block>
   <block id="ef9cae2862d53687ca6c708bce978631" category="section-title">Kubernetes Monitoring Operatorをインストールする前に</block>
@@ -15636,17 +15604,6 @@ Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフ�
   <block id="1f1cd41335301b707232462ccfe6641a" category="paragraph">デフォルトでは、Kubernetes Monitoring OperatorはCloud Insightsリポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、そのクラスタがカスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからコンテナイメージのみをプルするように構成されている場合は、Kubernetes Monitoring Operatorが必要とするコンテナへのアクセスを設定する必要があります。</block>
   <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">Kubernetes Monitoring Operatorのシークレットをクラスタ全体で表示する権限を削除するには、インストール前に_operator-setup.yaml_fileから次のリソースを削除します。</block>
   <block id="5961d0092306c169d325c3e662030e8e" category="paragraph">Kubernetes Monitoring Operatorの設定で問題が発生した場合に試すべきこと：</block>
-  <block id="909f5f4ab6355c685c77bc41c8507d3c" category="cell">KubernetesクラスタがPod Security Policy（PSP）またはPod Security Admission（PSA）を使用して実行されている場合は、最新のKubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートしている現在のオペレータにアップグレードするには、次の手順に従います。
-
-1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 以前の監視オペレータ：
-
- kubectl delete agent agent-monitoring-netapp-n netapp-monitoring
- kubectlによってネットアップによる監視が削除されます
- kubectlはCRD agents.monitoring.netapp.comを削除します
- kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
- kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
-
-2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> モニタリングオペレータの最新バージョン。</block>
   <block id="b10669273dd57c8fd5d2fe2a3b97e299" category="cell">Operatorを展開しようとして問題が発生しましたが、PSP/PSAを使用しています。</block>
   <block id="f005ad36a865e60c2f589a58c0daafa5" category="cell">1.次のコマンドを使用してエージェントを編集します。
 
@@ -15766,7 +15723,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">を使用してを実行する場合 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>を使用してください <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>またはを使用している <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>を参照してください。</block>
   <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">また、 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
-  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">以前のインストールからアップグレードする場合は、 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 情報。</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMから、Cloud Insightsにアクセスし、Cloud Insightsからバイナリをダウンロードできるようにする必要があります。</block>
   <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります</block>
@@ -15928,7 +15884,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
     -「SET=STONAVM_HOME=」コマンドを実行します。
     -コマンド「auunitaddauto-ip &lt;ip&gt;」を実行します。&lt;ip&gt;を正しいIPに置き換えます。</block>
   <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">* ゲージウィジェット * ：単一値のデータを従来の（固体）ゲージまたは箇条書きゲージに表示します。「警告」または「重大」の値に基づいた色で表示します <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>。</block>
-  <block id="31ec8abc1c2fff3171b9e6ba5d038ad8" category="list-text">エンティティにアクセスし、へのリンクを持つユーザ <block ref="168fc69c3032b784e96b74cdbf6c371b" category="inline-link-macro-rx"></block>。</block>
   <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">へのリンクを持つエンティティへのパス <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
   <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">Cloud Insights は、試用モードで実行する場合にセルフサービスと E メールのサポートを提供します。サービスに登録したら、サポート資格をアクティブ化することを強くお勧めします。サポートエンタイトルメントをアクティブにすると、オンラインチャット、 Web チケット発行システム、および電話でテクニカルサポートにアクセスできます。登録が完了するまで、デフォルトのサポートモードはセルフサービスです。を参照してください <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> 下。</block>
   <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* 入力された資格情報と IP アドレスを確認してください。
@@ -15997,4 +15952,47 @@ root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: appli
 
 を参照してください <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="f1a3b56f57a450a14c2cf03113d0ffcf" category="list-text">マルチテナントKubernetes環境では、設定ミスが原因でシステムが停止する可能性があります。Change Analyticsでは、ワークロードの健全性と構成の変更を1つのペインで表示して関連付けることができます。これは、動的なKubernetes環境のトラブルシューティングに役立ちます。</block>
+  <block id="44b44ec49661da05e81e9deacf4859c9" category="list-text">更新が次の手順
+<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
+<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
+<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
+<block ref="4a83477a1c1cd11a9cc88c7f83441cbd" category="inline-link-macro-rx"></block>
+<block ref="0a7046f023aad7ac467f1bc6bd4c7520" category="inline-link-macro-rx"></block></block>
+  <block id="8f14dd0b95751e262de2483f4584b301" category="list-text">SMI-S パフォーマンス収集用のアカウントの作成方法については、次のリンクを参照してください。<block ref="2f1321aada2838c155155111cf14faf5" category="inline-link-rx"></block></block>
+  <block id="ca1a7da31fc2fe7999e74f8aa736345c" category="cell">•セキュアクライアントを使用するようにデータコレクタの設定を変更する（推奨）
+•navicli.exeまたはnaviseccli.exeへのCLIパスにnavicli.jarをインストールします
+•注：navicli.jarはEMC Navisphereバージョン6.26で廃止されました
+•navicli.jarは\http://powerlink.emc.comで利用できる場合があります。</block>
+  <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 既存の演算子の上にある最新の演算子。</block>
+  <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block> 既存の演算子。</block>
+  <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 最新の演算子。</block>
+  <block id="55b27691d4a3ba1d0f59fb6a06ac2e22" category="cell">KubernetesクラスタがPod Security Policy（PSP）またはPod Security Admission（PSA）を使用して実行されている場合は、最新のKubernetes Monitoring Operatorにアップグレードする必要があります。PSP/PSAをサポートしている現在のオペレータにアップグレードするには、次の手順に従います。
+
+1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 以前の監視オペレータ：
+
+ kubectl delete agent agent-monitoring-netapp-n netapp-monitoring
+ kubectlによってネットアップによる監視が削除されます
+ kubectlはCRD agents.monitoring.netapp.comを削除します
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block> モニタリングオペレータの最新バージョン。</block>
+  <block id="24f2b5ad86e12ea4b5db8fe4e651ad48" category="cell">2023年10月12日現在、Cloud Insightsはユーザーにより良いサービスを提供するためにオペレータをリファクタリングしています。これらの変更を完全に適用するには、 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> および <block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block> エージェント。</block>
+  <block id="a6310e9ccedf4149dc3c1ac0eac9b701" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。</block>
+  <block id="51ad37bbaedf65e990986c7c45cecf6b" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
+  <block id="7db8a9734f4a7b5feca7a8af308c36d8" category="paragraph">データへのアクセス性を確保することは、.csvエクスポートを行うために不可欠です <block ref="b3235708a4be37e405526094c229e25f" category="inline-image-macro-rx" type="image"></block> クエリするデータのタイプ（アセットまたは統合）に関係なく、すべての指標クエリ、ダッシュボードテーブルウィジェット、オブジェクトランディングページで使用できます。</block>
+  <block id="7daeb1e9ffa3386f002669f9634f6b0d" category="paragraph">Spot by NetAppとクラウドコストの効果を体験してください。過去、現在、予想される支出に関する詳細なコスト分析が可能で、環境内のクラウドの使用状況を可視化できます。クラウドコストダッシュボードでは、クラウドのコストを明確に把握し、個々のワークロード、アカウント、サービスを詳細に把握できます。</block>
+  <block id="e0364f4b0da4fc898b2bf6ba9b559d80" category="paragraph">Kubernetes Agent のインストールは合理化され、ユーザの操作が少なくて済みます。 <block ref="a001394c8ad50807ceb51bed4f9925c0" category="inline-link-macro-rx"></block> Kubernetes のデータ収集機能が追加されました。</block>
+  <block id="b4caded524c5b960f2078625c9674837" category="paragraph">Cloud Insights Premium Edition では、管理者は * を有効にできます<block ref="5c8d95133de190c8d2aa29b2263f0a3f" category="inline-link-macro-rx"></block>* （ SSO ）は、企業ドメイン内のすべてのユーザの Cloud Insights へのアクセスを個別に招待する必要がありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。</block>
+  <block id="55dc3e9ac4ea7deea6bba8489b3a7ebb" category="paragraph">[*Admin] &gt; [Subscription*] ページ <block ref="40b8c748cb211bbeb30a24d831f9ddd4" category="inline-link-macro-rx"></block> Cloud Insights の Basic 、 Standard 、および Premium Edition で使用できる機能セットのリストが更新されました。ネットアップでは常にクラウドサービスの改善に取り組んでいますので、このページを頻繁にチェックして、進化するビジネスニーズに最適なエディションをお探しください。</block>
+  <block id="641d04ada5e7fc82332bfdbadb6f2873" category="list-text"><block ref="641d04ada5e7fc82332bfdbadb6f2873" category="inline-link-macro-rx"></block></block>
+  <block id="ed5e0acf9669f57fff84572a31621d1b" category="list-text">Cloud Insights はをサポートします <block ref="97c4c7cd3efb536ad349bb18a2afdd73" category="inline-link-macro-rx"></block> 単一のデータコレクタ内。Cloud Insights が子アカウントから収集できるように AWS 環境を設定する必要があります。</block>
+  <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">でアカウントに登録します <block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block> ネットアップのクラウドサービスをすべて利用できるようになります。</block>
+  <block id="ab5e9545afec38b9d4cc8cb1f64b1a59" category="paragraph">管理ユニット数が 1 、 000 台未満の場合は、ネットアップ営業またはから登録できます <block ref="5ef09ccc45a6e1ddce52b5a69393ce8f" category="inline-xref-macro-rx"></block> AWS Marketplace 経由で提供</block>
+  <block id="c74bfaee9dd9d6bc97968a50b9386641" category="cell"><block ref="c74bfaee9dd9d6bc97968a50b9386641" category="inline-link-macro-rx"></block></block>
+  <block id="936c9a2cee3c5dc4479213c8279d9a02" category="list-text">エンティティにアクセスし、へのリンクを持つユーザ <block ref="82b8f427f7bb55fa43068f2e0e5af588" category="inline-link-macro-rx"></block>。</block>
+  <block id="c5f846375be5434ca084ef54324ae76b" category="list-text">*<block ref="e8f6304d27d1ce95657a904423bb24f0" category="inline-link-macro-rx"></block>*</block>
+  <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">に登録する必要があります <block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
+  <block id="3307ea9b101dea248dbf60bf6f93ed75" category="paragraph">次の点に注意してください。 <block ref="e513c094cbe732163e31cf30e277e8bc" category="inline-link-macro-rx"></block>：</block>
 </blocks>
