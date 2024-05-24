@@ -19,18 +19,27 @@ keywords: features
 ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。
 
 
-NOTE: これらの機能の一部は、Cloud Insights 連邦版では使用できない場合や、機能が制限されている場合があります。可能な限り、これらの違いはドキュメントに記載されています。
 
+== 2024年5月
+
+
+
+=== 時間に基づいてアラートを自動的に解決
+
+ログアラートを時間に基づいて解決できるようになりました。アラート条件の発生が停止した場合は、指定した時間が経過するとCloud Insightsで自動的にアラートを解決できます。アラートは、分、時間、日単位で解決できます。
+
+image:alerts_resolve_based_on_time.png["経過時間に基づいてアラートを解決する"]
+
+'''
 
 
 == 2024年4月
 
 
 
-=== KubernetesのiSCSI SANサポートのネットワークマップ
+=== Kubernetes向けのiSCSIサポート
 
-NFSとiSCSIの基盤となるKubernetesストレージの依存関係を特定します。
-Kubernetesアプリケーションのストレージネットワークアクティビティと詳細なストレージ指標に関する分析情報を取得して、問題の解決を高速化します。チャージバックとショーバックのレポートにKubernetesアプリケーションがストレージインフラをどのように使用するかを解説します。
+Cloud Insightsでは、Kubernetesに関連付けられたiSCSIストレージのマッピングがサポートされるようになりました。これにより、Kubernetesのネットワークマップを使用した迅速なトラブルシューティングと、Reportingを使用したチャージバックレポートやショーバックレポートの提供が可能になりました。
 
 image:pod-to-storage.png["ポッドからストレージへの例"]
 
@@ -305,7 +314,7 @@ image:StorageNodeSupportData.png["ストレージノードのサポート情報"
 
 === モジュールのトライアル
 
-Cloud Insightsの初回トライアルに加えて、 link:concept_subscribing_to_cloud_insights.html#module-evaluation["モジュールの評価"]。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。
+Cloud Insightsの初回トライアルに加えて、 link:concept_subscribing_to_cloud_insights.html#module-evaluation["モジュールの評価"]。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。評価期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。
 
 
 
@@ -772,7 +781,7 @@ Cloud Connection for ONTAP 9.9以降のデータコレクタは廃止されま�
 
 === すべてのダッシュボードテーブルウィジェットの.csvエクスポート
 
-データへのアクセス性を確保することは、.csvエクスポートを行うために不可欠です image:csv_export_icon.png[".csvエクスポートアイコン"] クエリするデータのタイプ（アセットまたは統合）に関係なく、すべての指標クエリ、ダッシュボードテーブルウィジェット、オブジェクトランディングページで使用できます。
+データへのアクセスを確保することは不可欠です。 CSVエクスポートは、クエリするデータのタイプ（アセットや統合）に関係なく、すべての指標クエリ、ダッシュボード表ウィジェット、オブジェクトランディングページで使用できます。
 
 列の選択、列の名前変更、単位変換などのデータのカスタマイズも、新しいエクスポート機能に含まれるようになりました。
 
@@ -1148,7 +1157,7 @@ image:ChatIcon.png["笑顔の上にネットアップの「N」が青で表示�
 
 Cloud Insights の高度なKubernetes監視機能とクラスタエクスプローラを使用すると、作業を簡単に開始できます。
 
-。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes Monitoring Operator"] （NKMO）は、Kubernetes for Cloud Insights Insightsをインストールする際に推奨される方法です。より柔軟な構成で、より少ない手順で監視を行うことができます。また、Kubernetesクラスタ内で実行されている他のソフトウェアを監視する機会も強化されています。
+。 link:task_config_telegraf_agent_k8s.html["Kubernetes監視オペレータ"] （NKMO）は、Kubernetes for Cloud Insights Insightsをインストールする際に推奨される方法です。より柔軟な構成で、より少ない手順で監視を行うことができます。また、Kubernetesクラスタ内で実行されている他のソフトウェアを監視する機会も強化されています。
 
 詳細と前提条件については、上のリンクをクリックしてください
 
@@ -1164,7 +1173,7 @@ Cloud Insights の強力なAPIを使用して、ユーザと招待を管理で�
 
 コレクタに失敗したため、重要なメトリックをお見逃しなく！
 
-データコレクタをこれまで以上に簡単に追跡できるようになりました link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["アラート"] データコレクタとAcquisition Unitの障害
+データコレクタをこれまで以上に簡単に追跡できるようになりました link:task_system_monitors.html#data-collection-monitors["アラート"] データコレクタとAcquisition Unitの障害
 デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。
 
 
@@ -1739,7 +1748,7 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
 
 | Data Warehouse |  |  | image:SmallCheckMark.png["チェックマーク"] 
 |===
-API の使用方法の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["APIドキュメント"]。
+API の使用方法の詳細については、を参照してください link:API_Overview.html#api-documentation-swagger["APIドキュメント"]。
 
 '''
 
@@ -1750,7 +1759,7 @@ API の使用方法の詳細については、を参照してください link:h
 
 === モニタの管理が容易になります
 
-link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html#monitor-grouping["グループ化を監視します"] 環境内のモニタの管理を簡易化します。複数のモニタをグループ化して、 1 つのモニタとして一時停止できるようになりました。たとえば、インフラストラクチャのスタックで更新が発生している場合は、それらのすべてのデバイスからのアラートを 1 回のクリックで一時停止できます。
+link:task_create_monitor.html#monitor-groups["グループ化を監視します"] 環境内のモニタの管理を簡易化します。複数のモニタをグループ化して、 1 つのモニタとして一時停止できるようになりました。たとえば、インフラストラクチャのスタックで更新が発生している場合は、それらのすべてのデバイスからのアラートを 1 回のクリックで一時停止できます。
 
 モニタグループは、 ONTAP デバイスの管理を Cloud Insights に向上させる、画期的な新機能の最初の部分です。
 
@@ -2545,7 +2554,7 @@ image:DuplicateWidget.png["ウィジェットを複製します"]
 
 === シングルサインオン（ SSO ）
 
-Cloud Insights Premium Edition では、管理者は * を有効にできますlink:concept_user_roles.html["単一 Sign-On"]* （ SSO ）は、企業ドメイン内のすべてのユーザの Cloud Insights へのアクセスを個別に招待する必要がありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。
+Cloud Insights Premium Edition では、管理者は * を有効にできますlink:concept_user_roles.html#what-is-identity-federation["単一 Sign-On"]* （ SSO ）は、企業ドメイン内のすべてのユーザの Cloud Insights へのアクセスを個別に招待する必要がありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。
 
 
 NOTE: SSO は Cloud Insights Premium Edition でのみ使用可能で、 Cloud Insights で有効にする前に設定する必要があります。SSO 設定にはが含まれます link:https://services.cloud.netapp.com/misc/federation-support["アイデンティティフェデレーション"] NetApp Cloud Central を使用フェデレーションを使用すると、シングルサインオンユーザが、社内ディレクトリのクレデンシャルを使用して NetApp Cloud Central アカウントにアクセスできます。
@@ -2639,13 +2648,6 @@ Cloud Insights の管理ユニット（ MU ）の計算が次のように変更�
 
 == （2019年11月
 
-
-
-=== エディション機能比較表
-
-[*Admin] > [Subscription*] ページ link:concept_subscribing_to_cloud_insights.html["比較表"] Cloud Insights の Basic 、 Standard 、および Premium Edition で使用できる機能セットのリストが更新されました。ネットアップでは常にクラウドサービスの改善に取り組んでいますので、このページを頻繁にチェックして、進化するビジネスニーズに最適なエディションをお探しください。
-
-'''
 
 
 == （2019年10月

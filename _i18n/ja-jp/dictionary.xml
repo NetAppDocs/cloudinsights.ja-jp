@@ -1491,7 +1491,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
 。「 * Value * 」をクリックし、「 * True * 」と入力します</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Cloud Insights で利用できる新機能と特徴。</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。</block>
-  <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">これらの機能の一部は、Cloud Insights 連邦版では使用できない場合や、機能が制限されている場合があります。可能な限り、これらの違いはドキュメントに記載されています。</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">2023年6月</block>
   <block id="291a655a304c4b76742b53402a12bbc9" category="section-title">使用状況を確認してください</block>
   <block id="0086a587e865c983a5de9f9b4d992e51" category="paragraph">2023年6月より、Cloud Insightsでは、機能セットに基づくManaged Unitの使用量の内訳を提供しています。インフラのManaged Unit（MU）の使用状況やKubernetesに関連付けられたMUの使用状況をすばやく表示、監視できるようになりました。</block>
@@ -1583,7 +1582,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="028a813ab7ca0ec1e490e58e353d0782" category="paragraph">私達は約ダースを加えた <block ref="21d27926b20de95eb7fd4474ce156c92" category="inline-link-macro-rx"></block> インターコネクトリンクの切断、ハートビートの問題などに関するアラートを送信します。また、SnapMirrorの自動再同期、MetroCluster ミラーリング、FabricPool ミラー再同期の変更に関するアラートを通知するために、3つの新しいデータ保護ログモニタが追加されました。</block>
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">これらのモニタの一部はデフォルトで_enabled_byになっています。これらのモニタにアラートを送信しない場合は、_pause_themを実行する必要があります。また、これらのモニタは通知を配信するように設定されていないことに注意してください。電子メールまたはWebフックでアラートを送信する場合は、これらのモニタで通知の受信者を設定する必要があります。</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">すべてのダッシュボードテーブルウィジェットの.csvエクスポート</block>
-  <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">.csvエクスポートアイコン</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">列の選択、列の名前変更、単位変換などのデータのカスタマイズも、新しいエクスポート機能に含まれるようになりました。</block>
   <block id="f5616c23f020b3f984cbcd5f9a053ecc" category="section-title">2022年12月</block>
   <block id="7750dc4a80b8e64c09792175ba7ab620" category="section-title">Cloud Insights トライアルでランサムウェア防御やその他のセキュリティ機能をご確認ください</block>
@@ -1735,7 +1733,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="ed9854709bd41d275fb8660c2894a4fc" category="paragraph"><block ref="ed9854709bd41d275fb8660c2894a4fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="541eba6bad0f6bb8c10bec2af8d0388d" category="section-title">Kubernetesオペレータ</block>
   <block id="3f2608784f855ab79eaabba7e20db8cd" category="paragraph">Cloud Insights の高度なKubernetes監視機能とクラスタエクスプローラを使用すると、作業を簡単に開始できます。</block>
-  <block id="c99dc7f44e492bb96fd08368b4a3ddbc" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> （NKMO）は、Kubernetes for Cloud Insights Insightsをインストールする際に推奨される方法です。より柔軟な構成で、より少ない手順で監視を行うことができます。また、Kubernetesクラスタ内で実行されている他のソフトウェアを監視する機会も強化されています。</block>
   <block id="d957cd4e3ae2f67fec227c3e2c78ab16" category="paragraph">詳細と前提条件については、上のリンクをクリックしてください</block>
   <block id="b309f54e4f5c6e536fce4de1d83c5553" category="section-title">APIを使用してユーザと招待を管理します</block>
   <block id="ed39f5bc3223c1b01ac77f72f296192a" category="inline-link-macro">API Swaggerドキュメント</block>
@@ -1743,8 +1740,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="8f586721df71efca42eda16d08885806" category="section-title">データ収集アラート</block>
   <block id="58943c1999eff55c3f818d8cd9208708" category="paragraph">コレクタに失敗したため、重要なメトリックをお見逃しなく！</block>
   <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-link-macro">アラート</block>
-  <block id="b07c25215a61dbc162c04ac4e8cf464f" category="paragraph">データコレクタをこれまで以上に簡単に追跡できるようになりました <block ref="465d95cf415e2e3bb54b69142e1e3a2d" category="inline-link-macro-rx"></block> データコレクタとAcquisition Unitの障害
-デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。</block>
   <block id="d79ca0965e13425b418413735c2f77b4" category="section-title">ONTAP ストレージの変更に関するアラート</block>
   <block id="3093b62af2aca236846ea1b6c223c129" category="paragraph">ストレージの予期しない変更がシステム停止につながるのを避けましょう。</block>
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">ONTAP システムでFlexVol、ノード、およびSVMの変更や削除が検出されたときにアラートを受け取るようにCloud Insights を設定できるようになりました。</block>
@@ -1953,10 +1948,8 @@ Basic エディションのユーザは、 Acquisition Unit と Data Collector �
 Premium Edition では、引き続きすべての API カテゴリをフルに使用できます。</block>
   <block id="e7394567670b4276802996b88134c0a5" category="cell">Data Warehouse</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">APIドキュメント</block>
-  <block id="838c002eb118e710e5d61b71fc780f8f" category="paragraph">API の使用方法の詳細については、を参照してください <block ref="e9ed95f163178f5ba2f40600e4067842" category="inline-link-macro-rx"></block>。</block>
   <block id="9a4bface9098ff4cd4b35cca641c0042" category="section-title">2021年4月</block>
   <block id="36366a2669f22ce91b34ad6b41571aae" category="section-title">モニタの管理が容易になります</block>
-  <block id="13b7f54c5b81552a88e3fcdf41c1053b" category="paragraph"><block ref="44c67d721560e8a84c351ce2405bfdf7" category="inline-link-macro-rx"></block> 環境内のモニタの管理を簡易化します。複数のモニタをグループ化して、 1 つのモニタとして一時停止できるようになりました。たとえば、インフラストラクチャのスタックで更新が発生している場合は、それらのすべてのデバイスからのアラートを 1 回のクリックで一時停止できます。</block>
   <block id="973ec05886dc84294d5bb00f09eed546" category="paragraph">モニタグループは、 ONTAP デバイスの管理を Cloud Insights に向上させる、画期的な新機能の最初の部分です。</block>
   <block id="562e0f00195363fb03d04ff04ed49b74" category="section-title">webhook を使用した拡張アラートオプション</block>
   <block id="221d2a347ebfc15d48665188f639d1cb" category="inline-link-macro">ウェブフック</block>
@@ -2357,8 +2350,6 @@ Premium Edition では、引き続きすべての API カテゴリをフルに�
   <block id="347d1bfe383416d66c880f50a77cb60f" category="list-text">1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TB</block>
   <block id="0e46275de0a113142f9932c6b8964924" category="paragraph">この変更により、既存の Cloud Insights サブスクリプションを使用して監視できる環境容量が 2 倍になります。</block>
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="section-title">（2019年11月</block>
-  <block id="01c11021cc38b74d02dfdb2ef5e77fca" category="section-title">エディション機能比較表</block>
-  <block id="f9acaf912b63febf0bcf7a9e4d298e9f" category="inline-link-macro">比較表</block>
   <block id="e10986a4d8d7c27e4a9031d551cb15f3" category="section-title">（2019年10月</block>
   <block id="4d581ab73b477b0058e9a556a352a77a" category="inline-link-macro">* Cloud Insights Reporting*</block>
   <block id="bf477952b52b01fceb367c01be571adb" category="paragraph"><block ref="b7cfc719aea5efd14bf49a060e3d8bab" category="inline-link-macro-rx"></block> は、事前定義済みのレポートを表示したりカスタムレポートを作成したりできる、ビジネスインテリジェンスツールです。Reporting を使用すると、次のタスクを実行できます。</block>
@@ -3583,7 +3574,6 @@ Time Filebucketの略
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="98f1b16edd9c418c18f29042ee157677" category="summary">Telegraf データ表示オプション</block>
   <block id="4f64e4d2d0b40a09df727cdb00378860" category="summary">NetApp E シリーズのデータコレクタの設定</block>
-  <block id="99f7508fc77f6415a72debd8f680d7cf" category="paragraph">NetApp E シリーズデータコレクタは、インベントリとパフォーマンスのデータを収集します。コレクタは、同じ設定を使用して同じデータを報告するファームウェア 7.x 以上をサポートしています。</block>
   <block id="20d1b58bf59d1451203fb42bdc412ad3" category="paragraph">Cloud Insight では、 NetApp E シリーズデータコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
   <block id="36627e0e4a34d0cb2aca55f4fd1a0112" category="section-title">E シリーズの用語（ランディングページ）</block>
   <block id="5c51efdc811f9ced021d566d81d1adcb" category="paragraph">NetApp E シリーズのアセットランディングページにあるオブジェクトや参考資料に関連する用語を次に示します。これらの用語の多くは、他のデータコレクタにも適用されます。</block>
@@ -15370,13 +15360,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">WWNエイリアスをレポートする場合に選択します</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI-REST間のマッピング</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP RESTコレクタは、以前のONTAPIベースのコレクタの代わりに使用できます。そのため、収集または報告される指標が異なる場合があります。ONTAPIとRESTの違いの詳細については、を参照してください。 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> ドキュメント</block>
-  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">ディスクスペースは次の方法で割り当てる必要があります。
-/opt/netapp 35GB（最小）
-
-注:ファイルシステムを作成できるように、少し余分なディスク領域を割り当てることをお勧めします。ファイルシステムに35GB以上の空きスペースがあることを確認します。
-
-
-/optがNASストレージからマウントされたフォルダである場合は、ローカルユーザーがこのフォルダにアクセスできることを確認してください。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">ユーザアクセスブロック</block>
@@ -15510,9 +15493,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes向けデータコレクタ</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">データコレクタ：Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes Monitoring Operatorのインストールと設定</block>
-  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">KubernetesのiSCSI SANサポートのネットワークマップ</block>
-  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">NFSとiSCSIの基盤となるKubernetesストレージの依存関係を特定します。
-Kubernetesアプリケーションのストレージネットワークアクティビティと詳細なストレージ指標に関する分析情報を取得して、問題の解決を高速化します。チャージバックとショーバックのレポートにKubernetesアプリケーションがストレージインフラをどのように使用するかを解説します。</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">ポッドからストレージへの例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analyticsを使用すると、Kubernetes環境に対する最近の変更をオールインワンビューで確認できます。アラートと導入ステータスをすぐに確認できます。変更分析を使用すると、導入と設定の変更をすべて追跡し、Kubernetesのサービス、インフラ、クラスタの健全性とパフォーマンスに関連付けることができます。</block>
@@ -15979,13 +15959,8 @@ root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: appli
 2. <block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block> モニタリングオペレータの最新バージョン。</block>
   <block id="24f2b5ad86e12ea4b5db8fe4e651ad48" category="cell">2023年10月12日現在、Cloud Insightsはユーザーにより良いサービスを提供するためにオペレータをリファクタリングしています。これらの変更を完全に適用するには、 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> および <block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>。</block>
   <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">別の方法として、 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> および <block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block> エージェント。</block>
-  <block id="a6310e9ccedf4149dc3c1ac0eac9b701" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。</block>
-  <block id="51ad37bbaedf65e990986c7c45cecf6b" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。試用期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
-  <block id="7db8a9734f4a7b5feca7a8af308c36d8" category="paragraph">データへのアクセス性を確保することは、.csvエクスポートを行うために不可欠です <block ref="b3235708a4be37e405526094c229e25f" category="inline-image-macro-rx" type="image"></block> クエリするデータのタイプ（アセットまたは統合）に関係なく、すべての指標クエリ、ダッシュボードテーブルウィジェット、オブジェクトランディングページで使用できます。</block>
   <block id="7daeb1e9ffa3386f002669f9634f6b0d" category="paragraph">Spot by NetAppとクラウドコストの効果を体験してください。過去、現在、予想される支出に関する詳細なコスト分析が可能で、環境内のクラウドの使用状況を可視化できます。クラウドコストダッシュボードでは、クラウドのコストを明確に把握し、個々のワークロード、アカウント、サービスを詳細に把握できます。</block>
   <block id="e0364f4b0da4fc898b2bf6ba9b559d80" category="paragraph">Kubernetes Agent のインストールは合理化され、ユーザの操作が少なくて済みます。 <block ref="a001394c8ad50807ceb51bed4f9925c0" category="inline-link-macro-rx"></block> Kubernetes のデータ収集機能が追加されました。</block>
-  <block id="b4caded524c5b960f2078625c9674837" category="paragraph">Cloud Insights Premium Edition では、管理者は * を有効にできます<block ref="5c8d95133de190c8d2aa29b2263f0a3f" category="inline-link-macro-rx"></block>* （ SSO ）は、企業ドメイン内のすべてのユーザの Cloud Insights へのアクセスを個別に招待する必要がありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。</block>
-  <block id="55dc3e9ac4ea7deea6bba8489b3a7ebb" category="paragraph">[*Admin] &gt; [Subscription*] ページ <block ref="40b8c748cb211bbeb30a24d831f9ddd4" category="inline-link-macro-rx"></block> Cloud Insights の Basic 、 Standard 、および Premium Edition で使用できる機能セットのリストが更新されました。ネットアップでは常にクラウドサービスの改善に取り組んでいますので、このページを頻繁にチェックして、進化するビジネスニーズに最適なエディションをお探しください。</block>
   <block id="641d04ada5e7fc82332bfdbadb6f2873" category="list-text"><block ref="641d04ada5e7fc82332bfdbadb6f2873" category="inline-link-macro-rx"></block></block>
   <block id="ed5e0acf9669f57fff84572a31621d1b" category="list-text">Cloud Insights はをサポートします <block ref="97c4c7cd3efb536ad349bb18a2afdd73" category="inline-link-macro-rx"></block> 単一のデータコレクタ内。Cloud Insights が子アカウントから収集できるように AWS 環境を設定する必要があります。</block>
   <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">でアカウントに登録します <block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block> ネットアップのクラウドサービスをすべて利用できるようになります。</block>
@@ -15995,4 +15970,40 @@ root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: appli
   <block id="c5f846375be5434ca084ef54324ae76b" category="list-text">*<block ref="e8f6304d27d1ce95657a904423bb24f0" category="inline-link-macro-rx"></block>*</block>
   <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">に登録する必要があります <block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block> ネットアップのクラウド製品の場合：登録は、ネットアップのにアクセスしてください <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
   <block id="3307ea9b101dea248dbf60bf6f93ed75" category="paragraph">次の点に注意してください。 <block ref="e513c094cbe732163e31cf30e277e8bc" category="inline-link-macro-rx"></block>：</block>
+  <block id="caab88a7f89273838ab79f84c1c8a49d" category="summary">NetApp EシリーズRESTデータコレクタの設定</block>
+  <block id="7d9a2bf43caef4a2c2ccab31b58ad1fb" category="doc">NetApp EシリーズRESTデータコレクタ</block>
+  <block id="02bbac9de1d6cf62350e13b0ebc66279" category="paragraph">NetApp EシリーズRESTデータコレクタは、インベントリとパフォーマンスのデータを収集します。コレクタは、同じ設定を使用して同じデータを報告するファームウェア 7.x 以上をサポートしています。RESTコレクタは、ストレージプールの暗号化ステータスと関連するディスクおよびボリュームの暗号化ステータスを監視し、ストレージノードのCPU利用率をパフォーマンスカウンタとして提供します。これは、従来のSANtricity Eシリーズコレクタでは提供されていない機能です。</block>
+  <block id="06026757f9dde1467a9d040a8e0ca5e8" category="paragraph">Insightでは、RESTを使用して、NetApp Eシリーズから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。</block>
+  <block id="199cdaad4b2e2da65f3c12904a570c15" category="inline-link-macro">EシリーズSANtricity API</block>
+  <block id="637b0100ed897846e49020047a7a69f0" category="list-text">このコレクタは、*ネイティブのREST API機能*を備えたEシリーズモデルアレイのみをサポートします。Eシリーズ部門には、古いEシリーズアレイ向けにオフアレイでインストール可能なREST APIディストリビューションが付属しています。このコレクタではこのシナリオはサポートされません。古いアレイを使用しているユーザは引き続きCloud Insightsを使用する必要があります <block ref="1e9e2e04984e423436b9d1423e41c8ce" category="inline-link-macro-rx"></block> コレクター。</block>
+  <block id="1dec37be48852b1e80d1d4ddd48a1698" category="list-text">[E-Series Controller IP Addresses]フィールドでは、2つのIP /ホスト名をカンマで区切って指定できます。1つ目のIP /ホスト名にアクセスできない場合、コレクタは2つ目のIP /ホスト名をインテリジェントに試行します。</block>
+  <block id="483afc2b0c89bbcbc08179996afd1bd3" category="list-text">HTTPSポート：デフォルトは8443です。</block>
+  <block id="9ae1165f709f672a335b55af672fcede" category="cell">EシリーズコントローラのIPアドレス</block>
+  <block id="0e8766b280f750325a542b5489199d1e" category="cell">アレイコントローラのIPアドレスまたは完全修飾ドメイン名をカンマで区切って指定</block>
+  <block id="92484fec13cdc76ac141bbc4fa556717" category="doc">NetApp Eシリーズの従来型SANtricity APIデータコレクタ</block>
+  <block id="8e9fa018c5fbfdcbcf5f7eb6c96db8ca" category="paragraph">NetApp Eシリーズの従来型SANtricity APIデータコレクタは、インベントリとパフォーマンスのデータを収集します。コレクタは、同じ設定を使用して同じデータを報告するファームウェア 7.x 以上をサポートしています。</block>
+  <block id="5b44aad20fbc2491f38bc99fd2eb8086" category="section-title">2024年5月</block>
+  <block id="cc0bc6461a822caeea316a8f3210d21f" category="section-title">時間に基づいてアラートを自動的に解決</block>
+  <block id="2741e130f2ac71e99ac0cbafbb9723e0" category="paragraph">ログアラートを時間に基づいて解決できるようになりました。アラート条件の発生が停止した場合は、指定した時間が経過するとCloud Insightsで自動的にアラートを解決できます。アラートは、分、時間、日単位で解決できます。</block>
+  <block id="6a16c8c6db694c5bd9f5d2b182956c8b" category="inline-image-macro">経過時間に基づいてアラートを解決する</block>
+  <block id="e77cf5300b07c5139b04469146e62ab7" category="paragraph"><block ref="e77cf5300b07c5139b04469146e62ab7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a48ce2d2ead926908bf3e2f5d7de56b8" category="section-title">Kubernetes向けのiSCSIサポート</block>
+  <block id="f16e629d6abf8685ee4d974de80f76a2" category="paragraph">Cloud Insightsでは、Kubernetesに関連付けられたiSCSIストレージのマッピングがサポートされるようになりました。これにより、Kubernetesのネットワークマップを使用した迅速なトラブルシューティングと、Reportingを使用したチャージバックレポートやショーバックレポートの提供が可能になりました。</block>
+  <block id="31a81d987a44cbfb0c2a597eabf114c6" category="inline-link-macro">モジュールの評価</block>
+  <block id="92f61f316ed304aa59fc2f9b20e73b00" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="4bd4692292d9f732bb0caf31164d4a95" category="inline-link-macro-rx"></block>。たとえば、Cloud Insightsにサブスクライブしていて、ストレージと仮想マシンを監視していた場合、Kubernetesを環境に追加すると、Kubernetesオブザーバビリティの30日間トライアルに自動的に参加できます。Kubernetes Observability Managed Unitの使用状況は、試用期間が終了するまで、サブスクライブ済みのエンタイトルメントにはカウントされません。</block>
+  <block id="99b27c504f0c3fcdb98f75b276b0c15a" category="paragraph">Cloud Insightsの初回トライアルに加えて、 <block ref="4bd4692292d9f732bb0caf31164d4a95" category="inline-link-macro-rx"></block>。たとえば、インフラオブザーバビリティにすでにサブスクライブしているものの、Kubernetesを環境に追加する場合は、自動的にKubernetesオブザーバビリティの30日間トライアルに参加します。評価期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
+  <block id="2e4d31af0f73e73316d16040c201d754" category="paragraph">データへのアクセスを確保することは不可欠です。 CSVエクスポートは、クエリするデータのタイプ（アセットや統合）に関係なく、すべての指標クエリ、ダッシュボード表ウィジェット、オブジェクトランディングページで使用できます。</block>
+  <block id="14fd8d5705fd5b8176b77dfebb7d13e4" category="paragraph">。 <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> （NKMO）は、Kubernetes for Cloud Insights Insightsをインストールする際に推奨される方法です。より柔軟な構成で、より少ない手順で監視を行うことができます。また、Kubernetesクラスタ内で実行されている他のソフトウェアを監視する機会も強化されています。</block>
+  <block id="49980d8cbfcf467e48dd828ddb798a3e" category="paragraph">データコレクタをこれまで以上に簡単に追跡できるようになりました <block ref="e932cbc2a5cd1eae0c0f9f3536a1f66d" category="inline-link-macro-rx"></block> データコレクタとAcquisition Unitの障害
+デフォルトでは、これらのモニタは_Paused _です。有効にするには、お使いのモニタのページに移動し、「Acquisition Unit Shutdown」および「Collector Failed」を探して再開します。</block>
+  <block id="bc27a46c4d07716aed4c7e1c5668263e" category="paragraph">API の使用方法の詳細については、を参照してください <block ref="84dd77938b21867afe38f6d659bbcd26" category="inline-link-macro-rx"></block>。</block>
+  <block id="b646c2538957d172cf56722332fc0c64" category="paragraph"><block ref="c1a6f5b95fc09a1273de65d4f5176a14" category="inline-link-macro-rx"></block> 環境内のモニタの管理を簡易化します。複数のモニタをグループ化して、 1 つのモニタとして一時停止できるようになりました。たとえば、インフラストラクチャのスタックで更新が発生している場合は、それらのすべてのデバイスからのアラートを 1 回のクリックで一時停止できます。</block>
+  <block id="47615e5adf328078e0feeaf4f57b3085" category="paragraph">Cloud Insights Premium Edition では、管理者は * を有効にできます<block ref="45710841bd1398dde71fdeae8706a5eb" category="inline-link-macro-rx"></block>* （ SSO ）は、企業ドメイン内のすべてのユーザの Cloud Insights へのアクセスを個別に招待する必要がありません。SSO が有効になっている場合、同じドメインの E メールアドレスを持つすべてのユーザは、各自の企業クレデンシャルを使用して Cloud Insights にログインできます。</block>
+  <block id="ff6c00b335fc80bde3d634aaad097f47" category="cell">ディスクスペースは次の方法で割り当てる必要があります。
+/opt/netapp 36 GB（ファイルシステム作成後に35 GB以上の空きスペース）
+
+注:ファイルシステムを作成できるように、少し余分なディスク領域を割り当てることをお勧めします。ファイルシステムに35GB以上の空きスペースがあることを確認します。
+
+
+/optがNASストレージからマウントされたフォルダである場合は、ローカルユーザーがこのフォルダにアクセスできることを確認してください。ローカルユーザにこのフォルダへのアクセス権がない場合、エージェントまたはデータコレクタのインストールが失敗する可能性があります。を参照してください <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 詳細については、を参照してください。</block>
 </blocks>

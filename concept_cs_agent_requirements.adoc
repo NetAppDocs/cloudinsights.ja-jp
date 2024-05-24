@@ -51,7 +51,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 
 | 使用可能なディスクスペース | ディスクスペースは次の方法で割り当てる必要があります。
-/opt/netapp 35GB（最小）
+/opt/netapp 36 GB（ファイルシステム作成後に35 GB以上の空きスペース）
 
 注:ファイルシステムを作成できるように、少し余分なディスク領域を割り当てることをお勧めします。ファイルシステムに35GB以上の空きスペースがあることを確認します。
 
