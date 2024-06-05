@@ -16009,4 +16009,6 @@ root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: appli
   <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp EシリーズREST </block>
   <block id="015094a403d71d47872c1d0819be899a" category="cell"><block ref="015094a403d71d47872c1d0819be899a" category="inline-link-macro-rx"></block></block>
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">EシリーズREST</block>
+  <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">NetApp-ci-kube-state-metricsポッドがKubernetes Operatorのアップグレード実行後に起動せず、ErrImagePullがスローされる（イメージをプルできない）。</block>
+  <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">ポッドを手動でリセットしてみてください。</block>
 </blocks>
