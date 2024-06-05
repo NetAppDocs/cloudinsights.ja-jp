@@ -238,6 +238,9 @@ Cloud Insights でサポートされているデータコレクタの ABC 順リ
 | link:task_dc_na_eseries.html["NetApp E-Series "] | インフラ 
 
 
+| link:task_dc_netapp_eseries_rest.html["NetApp EシリーズREST "] | インフラ 
+
+
 | link:task_dc_na_amazon_fsx.html["NetApp ONTAP 対応の Amazon FSX"] | インフラ 
 
 
