@@ -16011,4 +16011,6 @@ root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: appli
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">EシリーズREST</block>
   <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">NetApp-ci-kube-state-metricsポッドがKubernetes Operatorのアップグレード実行後に起動せず、ErrImagePullがスローされる（イメージをプルできない）。</block>
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">ポッドを手動でリセットしてみてください。</block>
+  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">Kubernetesクラスタの[Log Analysis]で、「Event discarded as being older then maxEventAgeSeconds」というメッセージが確認されています。</block>
+  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">Operator_agentconfiguration_を変更し、_event-exporter-maxEventAgeSeconds_（60秒）、_event-exporter-kubeQPS_（100）、および_event-exporter-kubeBurst_（500）を増やします。これらの設定オプションの詳細については、を参照してください。 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> ページ</block>
 </blocks>

@@ -568,5 +568,8 @@ fluent-bit:
 
 
 | NetApp-ci-kube-state-metricsポッドがKubernetes Operatorのアップグレード実行後に起動せず、ErrImagePullがスローされる（イメージをプルできない）。 | ポッドを手動でリセットしてみてください。 
+
+
+| Kubernetesクラスタの[Log Analysis]で、「Event discarded as being older then maxEventAgeSeconds」というメッセージが確認されています。 | Operator_agentconfiguration_を変更し、_event-exporter-maxEventAgeSeconds_（60秒）、_event-exporter-kubeQPS_（100）、および_event-exporter-kubeBurst_（500）を増やします。これらの設定オプションの詳細については、を参照してください。 link:telegraf_agent_k8s_config_options.html["設定オプション"] ページ 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。
