@@ -20,6 +20,21 @@ keywords: features
 
 
 
+== 2024年6月
+
+
+
+=== オペレーティングシステムのサポート
+
+Cloud Insights Acquisition Unitでサポートされるオペレーティングシステムは次のとおりです link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["すでにサポートされています"]：
+
+* Red Hat Enterprise Linux 8.9、8.10、9.4
+* ロッキー9.4
+* AlmaLinux 9.3および9.4
+
+
+
+
 == 2024年5月
 
 
