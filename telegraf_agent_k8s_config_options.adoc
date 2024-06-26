@@ -120,6 +120,12 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 |  | rsTolerations | Telegraf-RS追加許容値。 
 
 
+|  | skipProcessorsAfterAggregators | を参照してください link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf設定ドキュメント"] 
+
+
+|  | 保護なし | を参照してください link:https://community.influxdata.com/t/updating-telegraf-to-version-1-29-5-crashes-kubernetes-pod/33376["既知のTelegraf問題"]。Setting_unprotected_はKubernetes Monitoring OperatorにTelegrafを `--unprotected` フラグ。 
+
+
 | kube-state-metricsの略 |  | Operatorのkube状態メトリックのインストールをカスタマイズできる設定オプション 
 
 
