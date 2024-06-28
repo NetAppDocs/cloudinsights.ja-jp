@@ -16022,6 +16022,150 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="412ea2434c00799606f268b4aa2b35dc" category="cell">保護なし</block>
   <block id="9091b3fb9f4d43844af8dc0a973c67e0" category="inline-link-macro">既知のTelegraf問題</block>
   <block id="d466d69e5a5f62e5d6773f7d399fe086" category="cell">を参照してください <block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。Setting_unprotected_はKubernetes Monitoring OperatorにTelegrafを<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block> フラグ。</block>
-  <block id="ab504a720d67f8b1d6fb93a2e0fd41aa" category="cell">Telegrafは、ロック可能なメモリが不十分であることを望んでいます（またはクラッシュします）。</block>
   <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">基盤となるオペレーティングシステム/ノードでTelegrafのロック可能メモリの制限を増やしてみてください。制限値を増やすことができない場合は'NKMOエージェントの構成を変更して'_unprotected_to_true_に設定します  これにより、Telegrafはロックされたメモリページを予約しないように指示します。復号化されたシークレットがディスクにスワップアウトされる可能性があるため、セキュリティリスクが発生する可能性がありますが、ロックされたメモリを予約できない環境では実行できます。_unprotected_configurationオプションの詳細については、 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> ページ</block>
+  <block id="7438b4e926a47d987228924d394e21fc" category="cell">Telegrafが警告するか、ロック可能なメモリが不足しているためにクラッシュします。</block>
+  <block id="8c8a571e456c6997313d3c14bc8e2e33" category="summary">ワークロードセキュリティエージェントは手動でインストールまたは更新できるため、環境にインストールされているソフトウェアをより詳細に制御できます。</block>
+  <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">Workload Security AgentおよびCollectorの手動インストール</block>
+  <block id="b18da8c028e8898757dd43e098d29586" category="paragraph">デフォルトでは、ワークロードセキュリティエージェントまたはコレクタの新しいバージョンが使用可能になると、アップグレード前の通知が送信され、環境内のエージェントとコレクタが自動的に更新されます。ただし、セキュリティで保護された環境では、自動アップグレードは望ましくない場合があります。このような場合、エージェントとコレクタを手動でインストール/アップグレードするようにワークロードセキュリティを設定できます。これにより、システムにインストールされているソフトウェアをより詳細に制御できます。</block>
+  <block id="1d7c0bdfd6486be2ad7378309185dd8d" category="list-text">swaggerで、「cloudsecure_installers.agent」および「cloudsecure_installers.collector」という名前のAPIカテゴリが使用可能であることを確認します。そうでない場合、手動エージェントインストールのサポートは有効になりません。この機能を有効にするには、NetAppサポートにお問い合わせください。</block>
+  <block id="b6ce3d2e8bbf578cfdcdeb74825d0609" category="paragraph"><block ref="b6ce3d2e8bbf578cfdcdeb74825d0609" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b47cdf24f25c792e7f7bee977b59785f" category="list-text">このドキュメントに記載されているすべてのコマンドを「root」ユーザとして実行するか、別のユーザで実行している場合は「sudo」を使用してコマンドを実行します。</block>
+  <block id="24b69749dd40594efb1f2e9cafb0ba86" category="section-title">新しいエージェントのインストール</block>
+  <block id="24d17e357f806ec1c8a435b7688427df" category="list-text">新しいワークロードセキュリティAPIアクセストークンを作成します。</block>
+  <block id="3b87284d5c3fe4faabb8dc375cd165e7" category="list-text">[Admin]&gt;[API Access]*に移動します。[Workload Security Tokens]タブを選択し、[+API Access Token]をクリックします。</block>
+  <block id="63533cd0226103d0ad30dbf3c1586464" category="list-text">識別しやすい名前と概要を設定します。</block>
+  <block id="26e81e7061dc41e68dfb9b8aedbb1ed6" category="list-text">[What type of API will this token be used to calling？]の下に表示されます。 ドロップダウンで、[_Collector Management_and_Agent &amp; Collector Installation_]を選択します。</block>
+  <block id="1f13ce10e05713b09a5710af0b9f5f40" category="list-text">有効期限を選択します。</block>
+  <block id="73507ba211863509e00da520eff7099c" category="list-text">[Save_]をクリックします。</block>
+  <block id="cc7aef4ed3668a652853c8be5873aa33" category="list-text">生成されたAPIアクセストークンをコピーします。ウィンドウを閉じるとトークンを取得できなくなることに注意してください。その場合は、新しいトークンを生成する必要があります。</block>
+  <block id="45bbef09c47259a6fcfbd1f25b63ac9c" category="paragraph"><block ref="45bbef09c47259a6fcfbd1f25b63ac9c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="256176a4f9b26608ca563ee3f1ef34ec" category="paragraph"><block ref="256176a4f9b26608ca563ee3f1ef34ec" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="180648243db0d9593e75e0a7dcc9e70c" category="list-text">ページの右上にある* Admin &gt; API Access &gt; API Documentation *に移動し、_Workload Security_アイコンを選択します。ワークロードセキュリティAPIに関するSwaggerのドキュメントが開きます。</block>
+  <block id="2034e411b416bb8a1700564433d3cd96" category="paragraph"><block ref="2034e411b416bb8a1700564433d3cd96" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6e324f498c45c040c62a6fa6c3ee605" category="list-text">Access_Workload Security_APIsへのアクセスを許可します。</block>
+  <block id="2fb830e83b717250d3913a3a0b88988e" category="list-text">ページの右上にある[_Authorize_]ボタンをクリックします。</block>
+  <block id="1742f0a5fd9e84cc6abbac0f91f20145" category="list-text">[_Customer apiKey（apiKey）_text]フィールドに、手順1cからコピーしたAPIトークンを貼り付けます。</block>
+  <block id="4d72ae66caf6c8d221f1265fef5074a4" category="list-text">[_Authorize_]をクリックしてウィンドウを閉じます。</block>
+  <block id="be10b4573e48113fb1ac5c23054ebf52" category="paragraph"><block ref="be10b4573e48113fb1ac5c23054ebf52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="92d059abe745a2f9412e7e28cf8d4b7a" category="list-text">Agentインストーラをダウンロードします。</block>
+  <block id="9bfb10dfddb775b19e5382b100f3b95c" category="list-text">Swaggerで、_cloudsecure_installers.agent_&gt;_/v1/cloudsecure/agents/installers/｛platform｝/latest_（get）APIを選択します。[_Try it out_]をクリックします。</block>
+  <block id="9a9218c558d48a113241255b493ebce4" category="list-text">[_PLATFORM_]フィールドに「_Linux_」と入力します。[_Execute_]をクリックします。</block>
+  <block id="81fa97985e807c92a56b0503fbb64e90" category="paragraph"><block ref="00f688012d021ff7555f49c98fcaa137" category="inline-image-macro-rx" type="image"></block>
+<block ref="01005f9d47b011c1212f7bf5ad6f9024" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee6a52b13fbddb62016bcb2805c17702" category="list-text">[Download file]をクリックしてインストーラをダウンロードします。</block>
+  <block id="0f8979c47074a8474a7b68f6b5041333" category="list-text">エージェントをインストールするシステムとは別のマシンにインストーラファイルを外部からダウンロードする場合は、インストーラファイルをそのシステムにコピーします。</block>
+  <block id="2ca042fd80784e45a082b48e420ab342" category="list-text">または、curlコマンドをコピーして、エージェントをインストールするシステムで直接実行することもできます。</block>
+  <block id="c63360f268fe9cedccae33ff3677374e" category="list-text">curlコマンドに「-o｛｛file_name｝｝」引数を追加して、希望する名前でインストーラファイルを保存します。インストーラファイルの実際の名前は、swagger response headersセクションに記載されています。この名前も使われることがある。</block>
+  <block id="187e0a2ad583571b3a862394f5de152d" category="paragraph"><block ref="187e0a2ad583571b3a862394f5de152d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="916cf5f1dfa408f84ad15ac58fb178b7" category="list-text">ファイルは任意の場所にダウンロードできますが、インストーラの.zipを展開できる空のフォルダにダウンロードすることをお勧めします。</block>
+  <block id="ff324aae593d3293768656baf930a788" category="list-text">新しいフォルダを作成し（推奨）、インストーラファイルをこのフォルダにコピーして解凍します。</block>
+  <block id="6ce9d80723d57729143449d1cd127853" category="list-text">「cloudsecure-agent-install.sh」ファイルにset_execute_permissionを指定します。</block>
+  <block id="a9446988374a9bcb4db7d1e2cb812e4e" category="list-text">新しいエージェントをインストールするための1回限りのトークンを生成します。</block>
+  <block id="7b02da3e5513b578e65441f615ac8fc3" category="paragraph">注:このステップで生成されるワンタイムトークンは、ステップ1cで生成されるAPIアクセストークンとは異なります。</block>
+  <block id="a3022c8d916e0189ce254d35f8530250" category="list-text">Swaggerで、_cloudsecure_installers.agent&gt;/v1/cloudsecure/agent/oneTimeToken_APIを実行し、応答からトークンをコピーします。</block>
+  <block id="b49b775ebd025a1d541016edb46cce1f" category="list-text">One Timeトークンを環境変数としてエクスポートします。</block>
+  <block id="9df5c6030692622039f21c49d8d01552" category="list-text">プロキシサーバーを使用する場合は、https_proxyを下記の形式で環境変数としてエクスポートしてください。</block>
+  <block id="8cb67ba1a1692267fe20f637f1c00899" category="list-text">オプション：デフォルトでは、エージェントとコレクタはパス「/opt/netapp」にインストールされます。別のパスにインストールするには、次の環境変数を設定します。"</block>
+  <block id="fec12cce751056a9c721cb2b2055c11f" category="paragraph">注:カスタムパスにインストールされている場合、データコレクタおよびエージェントログなどの他のすべてのアーティファクトは、カスタムパス内にのみ作成されます。インストールログは引き続き-_/var/log/netapp/cloudsecure/install _に保存されます。</block>
+  <block id="98b0be5334ffb2235789bcf8b20d806a" category="list-text">エージェントインストーラをダウンロードしたディレクトリに戻り、「cloudsecure-agent-install.sh」を実行します。</block>
+  <block id="396a97364332575a50ec976701ed43c0" category="paragraph">注:ユーザが「bash」シェルで実行されていない場合は、exportコマンドが機能しない可能性があります。その場合、手順8～11を組み合わせて、以下のように実行できます。HTTPS_PROXYとAGENT_INSTALL_PATHはオプションで、不要な場合は無視してかまいません。</block>
+  <block id="c456bc2827dd977dfe67be72d8a00d47" category="paragraph">この時点で、エージェントは正常にインストールされます。</block>
+  <block id="eacf181f15af1f0579e56a30c60711dc" category="list-text">エージェントインストールの健全性チェック：</block>
+  <block id="b8d752e2b793a20d3b97803fa8bd137f" category="list-text">systemctl status cloudsecure-agent.service”を実行し、エージェントサービスがin_running_stateであることを確認します。</block>
+  <block id="a85cd1b0bb395d30fe2d656af8c45241" category="list-text">エージェントは[エージェント]ページに表示され、[接続済み]状態になっている必要があります。</block>
+  <block id="5d5d717f52e6d8847a7780754fc0fb2c" category="paragraph"><block ref="5d5d717f52e6d8847a7780754fc0fb2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dfbadd34e39758c3ba5d6aa09a579b79" category="list-text">インストール後のクリーンアップ</block>
+  <block id="140b66a6d0a9e50bee73565be1467b63" category="list-text">エージェントのインストールが正常に完了すると、ダウンロードしたエージェントインストーラファイルを削除できます。</block>
+  <block id="58130a8aadcaf720b42fcca8adaae36c" category="section-title">新しいデータコレクタのインストール</block>
+  <block id="1b36b33046ab8bd17922fc367347e295" category="paragraph">注：このドキュメントでは、「ONTAP SVMデータコレクタ」のインストール手順について説明します。環境の「Cloud Volumes ONTAPデータコレクタ」と「Amazon FSx for NetApp ONTAPデータコレクタ」の手順と同じです。</block>
+  <block id="a8dd0cd5ec6aa2fa59984595d5711e4f" category="list-text">コレクタをインストールする必要があるシステムに移動し、「/tmp」ディレクトリの下に「collectors」という名前のディレクトリを作成します。</block>
+  <block id="8343fe03336dda69cffe501d86dc3bd7" category="list-text">「collectors」ディレクトリの所有権を「cssys:csys」に変更します（csysユーザおよびグループはエージェントのインストール時に作成されます）。</block>
+  <block id="f88df495978aea1949fd994d1bd434f5" category="list-text">次に、コレクタのバージョンとUUIDを取得する必要があります。「cloudsecure_config.collector-types」APIに移動します。</block>
+  <block id="d01630b920021fdbcfded91d28c943bb" category="list-text">swagger「cloudsecure_config.collector-types &gt;/v1/cloudsecure/collector-types」（GET）APIに移動します。[collectorCategory]ドロップダウンで、[data]としてコレクタタイプを選択します。すべてのコレクタタイプの詳細を取得するには、[All]を選択します。</block>
+  <block id="f48b5207fe43ebc5402b9c278bd7fcce" category="list-text">必要なコレクタタイプのUUIDをコピーします。</block>
+  <block id="eea6c85e871ed7d5ae81ca5d661e78d5" category="paragraph"><block ref="eea6c85e871ed7d5ae81ca5d661e78d5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ddfde501612f68f80a91fec5fc0f07c7" category="list-text">コレクタインストーラをダウンロードする。</block>
+  <block id="c1c6a754702a1c4ab63fc9982a6ce591" category="list-text">「cloudsecure_installers.collector&gt;/v1/cloudsecure/collector-types/installers/｛collectorTypeUUID｝」（GET）APIに移動します。前の手順でコピーしたUUIDを入力し、インストーラファイルをダウンロードします。</block>
+  <block id="8180e782ffbaa5d5ac127d240a765e10" category="paragraph"><block ref="8180e782ffbaa5d5ac127d240a765e10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="960963d0b016c92eaeccc263ef52fdba" category="list-text">インストーラファイルを別のマシンに外部からダウンロードした場合は、エージェントが実行されているシステムにインストーラファイルをコピーし、ディレクトリ「/tmp/collectors」に配置します。</block>
+  <block id="55a4c61aa7efda1711d77921e1a92a8d" category="list-text">または、同じAPIからcurlコマンドをコピーして、コレクタをインストールするシステムで直接実行することもできます。</block>
+  <block id="1fee2c4ec45fbe47ced2acd43c9d4447" category="paragraph">ファイル名は、ダウンロードコレクタAPIの応答ヘッダーに含まれるものと同じである必要があります。下のスクリーンショットを参照してください。</block>
+  <block id="5ed4fdc46422ad7a3d943bfb0a365487" category="paragraph"><block ref="5ed4fdc46422ad7a3d943bfb0a365487" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="45212f4567fd41d5e2982cda11096e58" category="list-text">[Workload Security]&gt;[Collectors]*に移動し、*+ Collector *を選択します。ONTAP SVM_collectorを選択します。</block>
+  <block id="615d69b66e616d31e597f5daab30304d" category="list-text">コレクタの詳細と_Save_theコレクタを設定します。</block>
+  <block id="86ecf670dbd931937d00a5378aa07840" category="list-text">[Save]をクリックすると、エージェントプロセスは「/tmp/collectors/」ディレクトリにコレクタインストーラを見つけて、コレクタをインストールします。</block>
+  <block id="6787ef48e0f1a2e3871017f73c1104d0" category="list-text">別のオプションとして、UIを介してコレクタを追加する代わりに、APIを介してコレクタを追加することもできます。</block>
+  <block id="b27df93d8844fa78c07fad879a901800" category="list-text">[cloudsecure_config.collectors]&gt;[/v1/cloudsecure/collectors]（POST）APIに移動します。</block>
+  <block id="d91a6e2ddbc6f9b866b28804de7d2ea2" category="list-text">例のドロップダウンで、ONTAP SVM data collector json sample]を選択し、コレクタ設定の詳細を更新して[Execute]を選択します。</block>
+  <block id="e17d71bf716fbe0dbfb5f044e69abd47" category="paragraph"><block ref="e17d71bf716fbe0dbfb5f044e69abd47" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="65430216dd6e04aeb4ec77900543d9c0" category="list-text">[Data Collectors]セクションにコレクタが表示されます。</block>
+  <block id="8505d18bd42482fac2134d562f4f0951" category="paragraph"><block ref="8505d18bd42482fac2134d562f4f0951" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e2dcb3aa661588b80bf624cee20a4d9a" category="list-text">コレクタのインストールが正常に完了すると、ディレクトリ「/tmp/collectors」内のすべてのファイルを削除できます。</block>
+  <block id="5c988949b33fdff8d1cb685edd772a78" category="section-title">新しいUser Directory Collectorのインストール</block>
+  <block id="c1d3d73ef2be97edc6318c8b9e1be652" category="paragraph">注:このドキュメントでは、LDAPコレクタをインストールする手順について説明しました。ADコレクタをインストールする場合も同じ手順が適用されます。</block>
+  <block id="2ab3b812979b03e6897a80c035d884e3" category="list-text">次に、コレクタのバージョンとUUIDを取得する必要があります。「cloudsecure_config.collector-types」APIに移動します。collectorCategoryドロップダウンで、「user」としてコレクタタイプを選択します。1回の要求ですべてのコレクタタイプの詳細を取得するには、[All]を選択します。</block>
+  <block id="2851cf59c3b636d2286e3601c840bf0b" category="paragraph"><block ref="2851cf59c3b636d2286e3601c840bf0b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aa26819573f8d5de196d75c2940b9140" category="list-text">LDAPコレクタのUUIDをコピーします。</block>
+  <block id="b49c1096ebc6903e47a29c40f0574f0c" category="paragraph"><block ref="b49c1096ebc6903e47a29c40f0574f0c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28a727e9a70db036cc6e4b1381a93f66" category="list-text">コレクタインストーラをダウンロードします。</block>
+  <block id="cac3390b8d7c3963dd149f531a17b42d" category="list-text">「cloudsecure_installers.collector」&gt;「/v1/cloudsecure/collector-types/installers/｛collectorTypeUUID｝」（GET）APIに移動します。前の手順でコピーしたUUIDを入力し、インストーラファイルをダウンロードします。</block>
+  <block id="63707277cd58c76baa5fcedb992ac5b8" category="paragraph"><block ref="63707277cd58c76baa5fcedb992ac5b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c57cd0ffcecf9cea5cc8cd058524581" category="list-text">インストーラファイルが外部から別のマシンにダウンロードされている場合は、インストーラファイルを、エージェントが実行されているシステムのディレクトリ「/tmp/collectors」にコピーします。</block>
+  <block id="58237ddf4e8c451c3f1c93e5c96bf452" category="list-text">または、同じAPIからcurlコマンドをコピーして、コレクタがインストールされているシステムで直接実行することもできます。</block>
+  <block id="88ad8720d8a141ccd2cb753bd4e97afb" category="paragraph">[+]
+<block ref="5ed4fdc46422ad7a3d943bfb0a365487" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">[+]</block>
+  <block id="5709666caa5256a262f0055350a1c41f" category="list-text">コレクタインストーラzipファイルの所有権をcssys:csysに変更します。</block>
+  <block id="841d5bf0ac1c3f88a052517da8b24155" category="list-text">[User Directory Collectors]ページに移動し、[+ User Directory Collector]をクリックします。</block>
+  <block id="cd78c76e5ad6c0b400cbcf623f92e49a" category="paragraph"><block ref="cd78c76e5ad6c0b400cbcf623f92e49a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e9198d5902f64b3cae6ac3671c1677e" category="list-text">[LDAPディレクトリサーバ]を選択します。</block>
+  <block id="bc924648c1cee8ab0ee13d42575d59c5" category="paragraph"><block ref="bc924648c1cee8ab0ee13d42575d59c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe0c0f9a77be12447da802b62442e67e" category="list-text">LDAPディレクトリサーバの詳細を入力し、[Save]をクリックします。</block>
+  <block id="c11b04b153e3ae99f621725197405334" category="paragraph"><block ref="c11b04b153e3ae99f621725197405334" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e632d5518578306a762a61b755d4c5be" category="list-text">[Save]をクリックすると、エージェントサービスは「/tmp/collectors/」ディレクトリにコレクタインストーラを検索し、コレクタをインストールします。</block>
+  <block id="63a6b3c8c2e58ddc47bddb7e0e1765c6" category="list-text">代わりに、UIでコレクタを追加する代わりに、APIを介してコレクタを追加することもできます。</block>
+  <block id="a0a7d3e7a6cb2e91beed5114cc067cce" category="list-text">例のドロップダウンで[LDAP Directory Server user collector json sample]を選択し、コレクタ設定の詳細を更新して[Execute]をクリックします。</block>
+  <block id="7ed2e2c584b8462cda0058266b65f5df" category="paragraph"><block ref="7ed2e2c584b8462cda0058266b65f5df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3f5c445c4bc966c8652199ceb82762c" category="list-text">これで、[User Directory Collectors]セクションにコレクタが表示されます。</block>
+  <block id="abc9edb3d074e13fa39590e1b8e1592e" category="paragraph"><block ref="abc9edb3d074e13fa39590e1b8e1592e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62c9ab325204f66c9fca63c88b31f244" category="section-title">エージェントのアップグレード</block>
+  <block id="d6d45cdaacc8f0955983f7639a303c90" category="paragraph">エージェント/コレクタの新しいバージョンが利用可能になると、電子メール通知が送信されます。</block>
+  <block id="e1484285201e25aff4afdd10c3789c4e" category="list-text">最新のエージェントインストーラをダウンロードします。</block>
+  <block id="4c0a042538180edd06a6c8106e212114" category="list-text">最新のインストーラをダウンロードする手順は、「新しいエージェントのインストール」に似ています。 swaggerで、「cloudsecure_installers.agent」から「/v1/cloudsecure/agents/installers/｛platform｝/latest」APIを選択し、「linux」と入力してインストーラのzipファイルをダウンロードします。代わりにcurlコマンドを使用することもできます。インストーラファイルを解凍します。</block>
+  <block id="a6d8035a7c771338e6fad3bae1787e02" category="list-text">「cloudsecure-agent-upgrade.sh」ファイルに実行権限を設定します。</block>
+  <block id="a6d806d0183611768f05da5cdda916fc" category="list-text">「cloudsecure-agent-upgrade.sh」スクリプトを実行します。スクリプトが正常に実行されると、「Cloudsecure agent has upgraded successfully」というメッセージが出力されます。 をクリックします。</block>
+  <block id="bb7c03c78b9c284bc5c206564d483190" category="list-text">次のコマンド「systemctl daemon-reload」を実行します。</block>
+  <block id="64e858e7326545e63e7a7e612925881c" category="list-text">エージェントサービスを再起動します。</block>
+  <block id="68ac9dcbb18ec01adee86bb564a124de" category="paragraph">この時点で、エージェントは正常にアップグレードされます。</block>
+  <block id="0a08326fab343f28d5cc12e5f46e37f4" category="list-text">エージェントのアップグレード後の健全性チェック。</block>
+  <block id="27619ed5ea50bcf344707a0e4d503b14" category="list-text">エージェントがインストールされているパスに移動します（例：「/opt/netapp/cloudsecure/」）。  シンボリックリンク「エージェント」は、エージェントの新しいバージョンを指している必要があります。</block>
+  <block id="f8f9f7f0d4337aaef721604bd0326c44" category="section-title">コレクタのアップグレード</block>
+  <block id="d64a61695a0497568adb11f38b555611" category="paragraph">注：アップグレード手順は、すべてのタイプのコレクタで同じです。本ドキュメントでは、「ONTAP SVM」コレクタのアップグレードについて説明します。</block>
+  <block id="1788421524c681e92ffb072cb2b16ba4" category="list-text">コレクタをアップグレードする必要があるシステムに移動し、ディレクトリ「/tmp/collectors」がない場合は作成します。</block>
+  <block id="84409f99ba6f01bcc3c8c3cfe5f4edab" category="list-text">ディレクトリ「collectors」がcssys:csysによって所有されていることを確認してください。</block>
+  <block id="30cb8ff7690cb51e2ba4a45fa1fec47b" category="list-text">swaggerで、「cloudsecure_config.collector-types」GET APIに移動します。[collectorCategory]ドロップダウンで、[data]を選択します（ユーザディレクトリコレクタの場合は[user]、[all]を選択します）。</block>
+  <block id="b63f1156c2b0b306d2c21686c4671290" category="paragraph">応答の本文からUUIDとバージョンをコピーします。</block>
+  <block id="be2931485319fe61c020322a40893d98" category="paragraph"><block ref="be2931485319fe61c020322a40893d98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26f085ec96f326a83a2cd1c9a101547a" category="list-text">最新のコレクタインストーラファイルをダウンロードします。</block>
+  <block id="38836b79dd635a5e513204082f0d059b" category="list-text">「cloudsecure_installers.collector」&gt;「/v1/cloudsecure/collector-types/installers/｛collectorTypeUUID｝」APIに移動します。前の手順でコピーした「collectorTypeUUID」と入力します。インストーラを「/tmp/collectors」ディレクトリにダウンロードします。</block>
+  <block id="4aca3370873bcc20704038a3b449349c" category="list-text">または、同じAPIのcurlコマンドを使用することもできます。</block>
+  <block id="942215776ab4c9b3ecd9304dcbd6b397" category="paragraph"><block ref="942215776ab4c9b3ecd9304dcbd6b397" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87aac0bd54f48e3ea018cdbf4c49240f" category="paragraph">注：ファイル名は、ダウンロードコレクタAPIの応答ヘッダーに含まれているものと同じである必要があります。</block>
+  <block id="1e161bf723a8e1aeb010097d8893525c" category="list-text">アップグレードコレクタAPIのトリガー</block>
+  <block id="4e8e4b67b8a4e686cd0697d1631ba57f" category="list-text">swaggerで、「cloudsecure_installers.collector」&gt;「/v1/cloudsecure/collector-types/upgrade」（PUT）APIに移動します。</block>
+  <block id="c702d61016e786540c3423a56068d5fa" category="list-text">[Examples]ドロップダウンで、ONTAP SVM data collector upgrade JSON sample]を選択してサンプルペイロードを設定します。</block>
+  <block id="1658e77190c6002b3789ca2dd5bbdc65" category="list-text">バージョンをステップ3でコピーしたバージョンに置き換え、「実行」をクリックします。</block>
+  <block id="8815603aed46dcf87c07c5d729099d74" category="paragraph"><block ref="8815603aed46dcf87c07c5d729099d74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac934065e06072ceec86257a2f72087d" category="paragraph">数秒待つと、コレクタが自動的にアップグレードされます。</block>
+  <block id="59e00ac512bd959d2a3ded4209823e6f" category="list-text">健全性チェック。</block>
+  <block id="eac5a780e5ba342d31bf3d406ab502ca" category="paragraph">コレクタはUIでrunning状態になっている必要があります。</block>
+  <block id="ab515596662ea64e3e544564ff79aeab" category="list-text">アップグレード後のクリーンアップ</block>
+  <block id="f27db76a6388239fb1cfc200d1f859b7" category="list-text">コレクタのアップグレードが成功すると、ディレクトリ「/tmp/collectors」内のすべてのファイルを削除できます。</block>
+  <block id="991fefa76287bfa32eacbff100d426b8" category="paragraph">他のタイプのコレクタもアップグレードする場合は、上記の手順を繰り返します。</block>
+  <block id="9d72500e8a5c053eafcdfe4056754eb8" category="section-title">コモンズの問題と修正。</block>
+  <block id="b69ea6725a0b6525e6cf544da1adc773" category="list-text">AGENT014エラー。</block>
+  <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">このエラーは、コレクタインストーラファイルが「/tmp/collectors」ディレクトリに存在しない場合、またはアクセスできない場合に発生します。インストーラファイルがダウンロードされ、ディレクトリ「collectors」および インストーラzipファイルがcsysによって所有されていることを確認します。cssysおよびrestart agent service–“systemctl restart cloudsecure-agent.service”</block>
+  <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2.不正なエラー</block>
+  <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">このエラーは、必要なすべてのAPIカテゴリを選択せずにAPIアクセストークンが生成された場合に表示されます。必要なすべてのAPIカテゴリを選択して、新しいAPIアクセストークンを生成します。</block>
 </blocks>
