@@ -16168,4 +16168,24 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2.不正なエラー</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">このエラーは、必要なすべてのAPIカテゴリを選択せずにAPIアクセストークンが生成された場合に表示されます。必要なすべてのAPIカテゴリを選択して、新しいAPIアクセストークンを生成します。</block>
+  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、_/opt/netapp/cloudsecure/agent/export-script/_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
+  <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">_path_filterを使用すると、Forensic UIでデータのロードに時間がかかります。</block>
+  <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">パスが_/Aaa/Bbb/Ccc/Ddd _の場合は、次を検索する代わりに検索します。
+
+AAA/BBB/CCC*
+
+または
+
+AAA/BBB/C*
+
+検索対象：
+
+AAA / BBB / CCC /*
+
+この検索により、データのロードが高速化されます。</block>
+  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">•ONTAP永続ストアは9.15.1以降でサポートされています。</block>
+  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">一時停止したData Collectorは削除できません。</block>
+  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">一時停止中は、ONTAPのFPolicy設定は無効になりますが削除されることはありません。再開すると、ONTAPのFPolicy設定が再度有効になります。</block>
+  <block id="f4635255d83c947a8f5c0873878fce73" category="cell">SVMモードが選択されている場合、Data Collectorはエラーアウトしています。</block>
+  <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">SVMモードで接続中にSVM管理IPではなくクラスタ管理IPを使用して接続すると、接続エラーが発生します。正しいSVM IPが使用されていることを確認します。</block>
 </blocks>
