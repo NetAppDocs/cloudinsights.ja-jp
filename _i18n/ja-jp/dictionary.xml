@@ -5145,16 +5145,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">を参照してください <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> サイジングに関する情報のドキュメント</block>
   <block id="8b91cb352f837187391eccc1bbd95135" category="summary">Cloud Insights オブジェクトアイコンリファレンスです。</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">オブジェクトアイコンリファレンス</block>
-  <block id="9c760c96232338b3451e1d7fde6ce957" category="paragraph">Cloud Insights で使用されるオブジェクトアイコンのクイックリファレンスです。</block>
-  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">インフラストラクチャアイコン：</block>
-  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">インフラストラクチャアイコン参照</block>
-  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetesのアイコン：</block>
-  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetesアイコンリファレンス、幅= 180</block>
-  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetesのネットワークパフォーマンスの監視とマップアイコン：</block>
-  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes Network Performance Monitoring and Map、width=640</block>
-  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5a4b4eed429420789b0c3c343b565829" category="summary">Azure コンピューティングデータコレクタの設定</block>
   <block id="b9f971877c119683ae01bf78224fdfe8" category="doc">Azure コンピューティングデータコレクタの設定</block>
   <block id="9304de71983f1600caee7195634a20be" category="paragraph">Cloud Insights は、 Azure コンピューティングデータコレクタを使用して、 Azure コンピューティングインスタンスからインベントリとパフォーマンスのデータを取得します。</block>
@@ -16217,4 +16207,16 @@ AAA / BBB / CCC /*
   <block id="4f46e6105a9637d03f131c48ff2dbcc3" category="paragraph"><block ref="4f46e6105a9637d03f131c48ff2dbcc3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8490c9089d989bf468613ea9b946f89" category="inline-image-macro">「agent 014」エラーのホバーヒントを示すUI画面</block>
   <block id="275f1fc2756027a2e9293774dfb2629e" category="paragraph"><block ref="275f1fc2756027a2e9293774dfb2629e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f66bc2df80ac37f354b591907be92e18" category="section-title">2024年7月</block>
+  <block id="c95d60ebb4d51c931dcb044c429e5471" category="section-title">ダッシュボードナビゲーションの簡易化</block>
+  <block id="0bff35c7b383b6acafd81522392282b8" category="paragraph">この機能の目的は、運用ワークフローを合理化し、チーム間のコラボレーションを容易にすることです。</block>
+  <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">ダッシュボードをグループ化すると、必要な可視性をすばやく簡単に取得できます。新しいナビゲーションメニューを使用すると、場所を失うことなく異なるダッシュボード間を移動できるため、インフラの探索や管理が簡単になります。ダッシュボードグループを運用ランブックに合わせて調整し、エクスペリエンスをさらに向上させます。</block>
+  <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">ドロップダウンをクリックして、現在のダッシュボードと同じグループ内の別のダッシュボードを選択します。</block>
+  <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">新規オブジェクトアイコン</block>
+  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insightsのオブジェクトアイコンが更新され、さまざまなCloud Insightsページで使用されるアイコンの全体的なばらつきが軽減され、類似するオブジェクト（ボリューム関連オブジェクトなど）がグループ化されました。以前の「文字ベース」のアイコンは画像ベースのグラフィックに置き換えられ、Cloud Insights画面がよりユーザーフレンドリーでアクセスしやすいようになりました。</block>
+  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">アイコンの意味がわからない場合は、次の表（ページでも使用でき <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> ます）では、これらすべてについて説明しています。</block>
+  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">「ストレージ、ネットワーク、コンピューティング、統合（Kubernetesを含む）にグループ化されたCloud Insightsで使用されているすべてのオブジェクトアイコン、およびその他のアイコンを示す画像」</block>
+  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insightsで使用されるオブジェクトアイコン。</block>
 </blocks>
