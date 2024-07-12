@@ -11,4 +11,20 @@ keywords: icons, assets, objects, reference, map
 [role="lead"]
 Cloud Insightsで使用されるオブジェクトアイコン。
 
-image:Icons_2024.png["「ストレージ、ネットワーク、コンピューティング、統合（Kubernetesを含む）にグループ化されたCloud Insightsで使用されているすべてのオブジェクトアイコン、およびその他のアイコンを示す画像」"]
+
+
+== インフラストラクチャアイコン：
+
+image:Icon_Glossary.png["インフラストラクチャアイコン参照"]
+
+
+
+== Kubernetesのアイコン：
+
+image:K8sIconsWithLabels.png["Kubernetesアイコンリファレンス、幅= 180"]
+
+
+
+== Kubernetesのネットワークパフォーマンスの監視とマップアイコン：
+
+image:ServiceMap_Icons.png["Kubernetes Network Performance Monitoring and Map、width=640"]

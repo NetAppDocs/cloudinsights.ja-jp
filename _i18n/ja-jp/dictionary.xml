@@ -611,14 +611,6 @@ Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機�
   <block id="ac2ddb56e922acac513828fc77bc85f6" category="cell">「 Configuration error 」というエラーメッセージが表示され、「 REST Service is disabled 」というメッセージが表示されます。</block>
   <block id="8c2e7ed091a4f8575b17f8af2bb59449" category="cell">このデバイスで REST サービスが有効になっていることを確認します。</block>
   <block id="8bf875173a6afe9bba37e4713c91c421" category="cell">「 Configuration error 」と表示され、「 User Unauthorized for command 」というエラーメッセージが表示される。</block>
-  <block id="be63a0599db0a9d29e7d2b328c74dc03" category="cell">特定のロール（「 advanced_analytics 」など）が原因である可能性がありますが、設定済みのユーザ &lt;username&gt; には含まれません。
-可能性のある解決策：
-*読み取り専用ロールを持つユーザー$｛user｝のAnalytics（統計）スコープを修正します。
--[Configuration]-&gt;[Users]画面で、ロールの上にマウスを置き、ダブルクリックして編集を許可します
-- Scope（スコープ）ドロップダウンメニューからAnalytics（分析）を選択します。使用可能なプロパティのリストが表示されます。
--一番上のチェックボックスをクリックすると、3つのプロパティがすべて選択されます。
--右側の[追加]ボタンをクリックします。
--ポップアップウィンドウの右上にある[適用]ボタンをクリックします。ポップアップウィンドウが閉じます。</block>
   <block id="cf10c2b301ad472a4aba146a0e505098" category="summary">ワークロードセキュリティアラートの通知用のEメールアドレスの追加</block>
   <block id="12c5785c0da06ba105803155a192752d" category="doc">アラート、警告、およびエージェント / データソースコレクタの状態に関する電子メール通知の設定</block>
   <block id="9491cdf060c59bf0f883c94db8cfe73d" category="paragraph">ワークロードセキュリティアラートの受信者を設定するには、[*Admin]&gt;[Notifications]をクリックし、受信者ごとに適切なセクションに電子メールアドレスを入力します。</block>
@@ -1479,16 +1471,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="e3d01768f4feeb31194225e495d78ad9" category="list-text">アノテーションのタイプとして「 * Boolean * 」と入力します</block>
   <block id="216cccf9a11330381ead4d645bc105a9" category="section-title">I/O 密度に関するレポートから特定のアグリゲートを自動的に除外するためのアノテーションルールの作成</block>
   <block id="e4731b310642ca51f9042d77c31a36cc" category="paragraph">アノテーションを個々のアセットに手動で適用する代わりに、アノテーションルールを使用して複数のアセットに自動的にアノテーションを適用することができます。アノテーションルールは、ユーザが作成するクエリに基づいてシステム上で実行されるもので、新しいアセットを既存のアセットセットに追加します。これらのアセットセットをレポートから除外すると、新しいアセットも自動的に除外されます。</block>
-  <block id="066dd3116632d178996fcf4d32b30c70" category="paragraph">環境内で特定したネットアップのルートアグリゲートを識別するクエリを作成し、保存しておく必要があります。
-。手順
-。Cloud Insightsツールバーで、*[管理]&gt;[アノテーションルール]*をクリックします
-。[ 追加（ Add ） ] をクリックします。</block>
-  <block id="5a4064cefa68bcf6be0e69870c969e3d" category="paragraph">[+]
-[Add Rule]ダイアログが表示されます。
-。[Name]ボックスに、ルールを説明する一意の名前「*"RootAggrExclude"*」を入力します
-。[Query]をクリックし、アノテーションルールを適用するためにInsightで使用するクエリ*「Aggregate0」*を選択します
-。[Annotation]をクリックし、*「Root agg exclude」*を選択します
-。「 * Value * 」をクリックし、「 * True * 」と入力します</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Cloud Insights で利用できる新機能と特徴。</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">ネットアップは、製品やサービスの改善と強化を継続的に行っています。ここでは、Cloud Insights の商用版で利用可能な最新の機能の一部を紹介します。</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">2023年6月</block>
@@ -6487,20 +6469,14 @@ Zノード数</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights に関する注意事項を参照してください</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">ワークロードのセキュリティに関する通知（旧称Cloud Secure ）</block>
-  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="0f5492284173d31c1ded406c4349113a" category="summary">アノテーションルールを作成して、複数のアセットにアノテーションを自動的に適用します。</block>
   <block id="c892f3821b67f474b3303e3e931aee18" category="paragraph">アノテーションルールを使用すると、定義した条件に基づいて複数のアセットにアノテーションを自動的に適用できます。それらのルールに基づいて、アセットにアノテーションが割り当てられます。 Cloud Insights個々のアセットページで手動で設定したアノテーションは、 Cloud Insight でアノテーションルールが評価されるときにルールベースのアノテーションよりも優先されます。</block>
   <block id="331078c822aba58cecbe90d52f83043f" category="list-text">Cloud Insights メニューで、 * Manage &gt; Annotation rules * の順にクリックします。</block>
@@ -16213,10 +16189,24 @@ AAA / BBB / CCC /*
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">ダッシュボードをグループ化すると、必要な可視性をすばやく簡単に取得できます。新しいナビゲーションメニューを使用すると、場所を失うことなく異なるダッシュボード間を移動できるため、インフラの探索や管理が簡単になります。ダッシュボードグループを運用ランブックに合わせて調整し、エクスペリエンスをさらに向上させます。</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">ドロップダウンをクリックして、現在のダッシュボードと同じグループ内の別のダッシュボードを選択します。</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">新規オブジェクトアイコン</block>
-  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insightsのオブジェクトアイコンが更新され、さまざまなCloud Insightsページで使用されるアイコンの全体的なばらつきが軽減され、類似するオブジェクト（ボリューム関連オブジェクトなど）がグループ化されました。以前の「文字ベース」のアイコンは画像ベースのグラフィックに置き換えられ、Cloud Insights画面がよりユーザーフレンドリーでアクセスしやすいようになりました。</block>
-  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">アイコンの意味がわからない場合は、次の表（ページでも使用でき <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> ます）では、これらすべてについて説明しています。</block>
-  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">「ストレージ、ネットワーク、コンピューティング、統合（Kubernetesを含む）にグループ化されたCloud Insightsで使用されているすべてのオブジェクトアイコン、およびその他のアイコンを示す画像」</block>
-  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insightsで使用されるオブジェクトアイコン。</block>
+  <block id="f1d16f360380bc347a5a9e8768937aa7" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block></block>
+  <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">インフラストラクチャアイコン：</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">インフラストラクチャアイコン参照</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetesのアイコン：</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetesアイコンリファレンス、幅= 180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetesのネットワークパフォーマンスの監視とマップアイコン：</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes Network Performance Monitoring and Map、width=640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f206f600866607637821c713ae2b63cc" category="cell">このエラーは、特定のロール（「advanced_analytics」など）が設定済みのユーザに含まれていないことが原因で発生する可能性があります。読み取り専用ロールを持つユーザーにAnalyticsスコープを適用すると、エラーが削除される場合があります。次の手順を実行します。1.ZFSシステムの[Configuration]-&gt;[Users]画面で'ロールの上にマウスを移動し'ダブルクリックして編集を許可します2.[Scope]ドロップダウンメニューから[Analytics]を選択します。使用可能なプロパティのリストが表示されます。3.一番上のチェックボックスをクリックすると、3つのプロパティがすべて選択されます。4.右側の[追加]ボタンをクリックします。5.ポップアップウィンドウの右上にある[適用]ボタンをクリックします。ポップアップウィンドウが閉じます。</block>
+  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">特定したNetAppルートアグリゲートを特定するクエリを作成して保存しておく必要があります。</block>
+  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">Cloud Insightsツールバーで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
+  <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">[追加]*をクリックします。[Add Rule]ダイアログが表示されます。</block>
+  <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">[Name]ボックスに、ルールを説明する一意の名前「*"RootAggrExclude"*」を入力します</block>
+  <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">[Query]をクリックし、アノテーションルールを適用するためにInsightで使用するクエリ*「Aggregate0」*を選択します</block>
+  <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">[Annotation]をクリックし、*「Root agg exclude」*を選択します</block>
+  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">「 * Value * 」をクリックし、「 * True * 」と入力します</block>
 </blocks>
