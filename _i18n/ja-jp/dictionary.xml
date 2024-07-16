@@ -703,18 +703,6 @@ Cloud Insightsのデータコレクタの詳細設定で、_SSHバナー待機�
   <block id="c986424b59283e1aa18a7ebe90190f7c" category="cell">インベントリのポーリング間隔。デフォルトは40分です。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">適用範囲</block>
   <block id="529cf703eca7100792de266841b2b06b" category="cell">セキュアなクライアントの範囲デフォルトは Global です。</block>
-  <block id="7e4665920f5ea9564b167402b303e931" category="cell">エラー：
-•エージェントが実行されていません
-•naviseccliが見つかりませんでした
-•コマンドの実行に失敗しました</block>
-  <block id="6c8224496d7bc35b0ff1714bff1939e9" category="cell">•Navisphere CLIがCloud Insight Acquisition Unitにインストールされていることを確認します
-•データコレクタ設定ウィザードで[セキュアクライアントを使用する]オプションを選択しておらず、セキュアでないバージョンのNavisphere CLIがインストールされていない。
-•データコレクタ構成で、Navisphere CLIのインストールディレクトリが正しいことを確認します
-•データコレクタ構成でVNXブロックストレージのIPが正しいことを確認します。
-•Cloud Insights Acquisition Unitから：
-    - CMDを開きます。
-    -ディレクトリを設定済みのインストールディレクトリに変更します
-    -「navicli -h {ip} getagent」と入力して、VNXブロックストレージデバイスとの接続を試行します（{ip}を実際のIPに置き換えます）。</block>
   <block id="080a50fd42890f08f122c21be3187e4b" category="cell">エラー： 4.29 emc235848 emc241018 getAll Failed to parse host alias info</block>
   <block id="a6037a5a8dc19085b823e803eeb236da" category="cell">これは ' アレイ自体のホスト・イニシエータ・データベースの問題が FLARE 29 によって破損したことが原因で発生する可能性がありますEMC ナレッジベースの記事 emc235848 、 emc241018 を参照してください。チェックすることもできます<block ref="fcbe74266ffebefc607cd58d1002be58" category="inline-link-rx"></block></block>
   <block id="2846bc6366ffc91aee2075a2d5607161" category="cell">エラー：メタデータ LUN を取得できません。java -jar navicli.jar の実行中にエラーが発生しました</block>
@@ -1455,11 +1443,6 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="34d1e1ec387494ae7adb4531e99bcdaa" category="list-text">環境内でネットアップのルートアグリゲートを特定するクエリを作成します。クリック * Queries &gt; New Query &gt; Select Resource Type * （？）</block>
   <block id="7d67bb4f1a6063faca1a41fe36394d3e" category="list-text">[ ストレージプール ] をクリックします</block>
   <block id="f8b3cf53a4e69e8d205a5c6f4a5dd4c8" category="list-text">ルートアグリゲートの名前を入力します</block>
-  <block id="256df3a597f7a147ef4c2594c915c7ba" category="paragraph">この例では、名前に「 aggr0 」を使用します。アグリゲートの作成時には、次の要件に従って名前を指定する必要があります。
-。先頭の文字にはアルファベットまたはアンダースコア（ _ ）を使用する必要があります。
-。アルファベット、数字、アンダースコアのみを使用できます。
-。250 文字以内で指定します。
-アグリゲートの名前は通常、 aggr0 、 aggr_0 などの形式にします。環境内のネットアップのルートアグリゲートをすべて特定するには、反復的なプロセスが必要となる場合があります。</block>
   <block id="681dee9bbf117a59d6590ee3c6051976" category="list-text">[ 保存（ Save ） ] をクリックし、新しい照会の名前を入力する。</block>
   <block id="3ed6c78a3c2f0d621e647df2b3796fca" category="paragraph">前述のとおり、この作業は反復的なプロセスになる場合があり、ネットアップのすべてのルートアグリゲートを特定するために複数のクエリが必要になることがあります。</block>
   <block id="783606c01e3c46054cfad5b469434086" category="section-title">クエリで返されるルートボリューム用のアノテーションを作成します</block>
@@ -14827,16 +14810,6 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">オペレータをインストールまたはアップグレードする前に</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">モニタリングオペレータのインストール</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricAggregationInterval</block>
-  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-Red Hat Enterprise Linux 7.x、8.x 64ビット、SELinux
-CentOS 7.x 64ビット、SELinux
-CentOS 8 Stream、SELinux
-Ubuntu 20から22 64ビット
-Rocky 8.x 64ビット、Rocky 9.x 64ビット、SELinux
-SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上のSELinux
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">一部のイベントログの_involvedobject_dataが見つかりません。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">次の手順を実行していることを確認してください： <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 上記のセクション。</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">モジュールのトライアル</block>
@@ -15765,12 +15738,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="65ef2d3ac9b8dfdd7b17c10af9a602da" category="paragraph"><block ref="65ef2d3ac9b8dfdd7b17c10af9a602da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b3e588c8b8cdde417ea31ee3bbefd9a9" category="inline-image-macro">ランディングページのトポロジセクションの例</block>
   <block id="3cb6e63269aa6edf3cc66859826feb7d" category="paragraph"><block ref="3cb6e63269aa6edf3cc66859826feb7d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="609716a86af2f9467366b90e750be49d" category="paragraph">&lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; &lt; 頭部
-。[ 詳細構成 *] をクリックして、追加の構成フィールドを追加します。すべてのデータコレクタで高度な設定が必要となるわけで
-。Test Configuration* をクリックして、データコレクタが正しく設定されていることを確認します。
-。[Add Collector* （コレクタの追加） ] をクリックして設定を保存し、 Cloud Insights テナントにデータコレクタを追加します。</block>
-  <block id="599f97fbfc2fc945eb562d68c9aca1a8" category="paragraph">サービスのデータがダッシュボードに表示されるか、クエリに使用できるようになるまで、ポーリング期間は最大 2 回かかる場合があります。
-&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1</block>
   <block id="67dd8a9c7300c7a68539b856568b643c" category="inline-image-macro">[エクスポート]ボタン</block>
   <block id="e075c22a2e254de2972fc152e1c02118" category="list-text">[* Export* ] をクリックします <block ref="3b91e5b29194b7fd2b5cb067b5b3e811" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
   <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">ネットアップのクラウドサービスの利用を開始するには、を参照してください <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> [Get Started]をクリックします。</block>
@@ -15793,13 +15760,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
 監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。</block>
   <block id="7c32e6404e015057fc5db282b24077f0" category="cell">OpenShift 4.6以降を実行している場合は、 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> さらに、これらの前提条件が満たされていることを確認します。</block>
   <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>。</block>
-  <block id="24c6fef3c58adc63ac779bde77c4fbce" category="cell">•これは通常、VNXブロックストレージデバイス上のファームウェアの更新が原因で発生しますが、NaviCLI.exeのインストールは更新されません。ファームウェアが異なる複数のデバイスがあっても、インストールされている CLI が 1 つだけ（ファームウェアバージョンが異なる）の場合にも、この問題が発生する可能性があります。
-•デバイスとホストの両方で同じバージョンのソフトウェアが実行されていることを確認します。
-    - Cloud Insights Acquisition Unitで、コマンドラインウィンドウを開きます
-    -ディレクトリを設定済みのインストールディレクトリに変更します
-    -「navicli -h &lt;ip&gt; getagent」と入力して、CLARiXデバイスと接続します。
-    -最初の2行でバージョン番号を探します。例：「Agent Rev： 6.16.2（0.1）インチ
-    -最初の行でバージョンを探して比較します。例： Navisphere CLI Revision 6.07.00.04.07</block>
   <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">で webhook 通知を選択します <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
   <block id="4123cf4f6521073cef46192908207644" category="cell">SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>。</block>
   <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">このドキュメントでは、Cloud Insightsプレミアムエディションで使用できるCloud Insightsレポート機能について説明します。</block>
@@ -15887,10 +15847,6 @@ root@acquisitionunit#curl -s -H accept: application/json -H "Content-type: appli
 <block ref="4a83477a1c1cd11a9cc88c7f83441cbd" category="inline-link-macro-rx"></block>
 <block ref="0a7046f023aad7ac467f1bc6bd4c7520" category="inline-link-macro-rx"></block></block>
   <block id="8f14dd0b95751e262de2483f4584b301" category="list-text">SMI-S パフォーマンス収集用のアカウントの作成方法については、次のリンクを参照してください。<block ref="2f1321aada2838c155155111cf14faf5" category="inline-link-rx"></block></block>
-  <block id="ca1a7da31fc2fe7999e74f8aa736345c" category="cell">•セキュアクライアントを使用するようにデータコレクタの設定を変更する（推奨）
-•navicli.exeまたはnaviseccli.exeへのCLIパスにnavicli.jarをインストールします
-•注：navicli.jarはEMC Navisphereバージョン6.26で廃止されました
-•navicli.jarは\http://powerlink.emc.comで利用できる場合があります。</block>
   <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 既存の演算子の上にある最新の演算子。</block>
   <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block> 既存の演算子。</block>
   <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 最新の演算子。</block>
@@ -16201,7 +16157,6 @@ AAA / BBB / CCC /*
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetesのネットワークパフォーマンスの監視とマップアイコン：</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes Network Performance Monitoring and Map、width=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f206f600866607637821c713ae2b63cc" category="cell">このエラーは、特定のロール（「advanced_analytics」など）が設定済みのユーザに含まれていないことが原因で発生する可能性があります。読み取り専用ロールを持つユーザーにAnalyticsスコープを適用すると、エラーが削除される場合があります。次の手順を実行します。1.ZFSシステムの[Configuration]-&gt;[Users]画面で'ロールの上にマウスを移動し'ダブルクリックして編集を許可します2.[Scope]ドロップダウンメニューから[Analytics]を選択します。使用可能なプロパティのリストが表示されます。3.一番上のチェックボックスをクリックすると、3つのプロパティがすべて選択されます。4.右側の[追加]ボタンをクリックします。5.ポップアップウィンドウの右上にある[適用]ボタンをクリックします。ポップアップウィンドウが閉じます。</block>
   <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">特定したNetAppルートアグリゲートを特定するクエリを作成して保存しておく必要があります。</block>
   <block id="67820097ebadd10933dfa2562494a60e" category="list-text">Cloud Insightsツールバーで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
   <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">[追加]*をクリックします。[Add Rule]ダイアログが表示されます。</block>
@@ -16209,4 +16164,48 @@ AAA / BBB / CCC /*
   <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">[Query]をクリックし、アノテーションルールを適用するためにInsightで使用するクエリ*「Aggregate0」*を選択します</block>
   <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">[Annotation]をクリックし、*「Root agg exclude」*を選択します</block>
   <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">「 * Value * 」をクリックし、「 * True * 」と入力します</block>
+  <block id="108ba1ee72dc04eca8f69cdd3be5042b" category="cell">次のいずれかのライセンスバージョンを実行しているコンピュータ。* CentOS 8 Stream（64ビット）、SELinux * openSUSE LEAP 15.3～15.5（64ビット）* Oracle Linux 8.6-8.8、9.1～9.2（64ビット）* Red Hat Enterprise Linux 8.6～8.8、9.1～9.2（64ビット）、 SELinux * Rocky 9.2（64ビット）、SELinux * SUSE Linux Enterprise Server 15 SP3～15 SP3（64ビット）* Ubuntu 20.04 LTSおよび22.04 LTS（64ビット）このコンピューターでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。</block>
+  <block id="4550bd733b367bee1e03cd59abc31e8d" category="cell">エラーメッセージ_SID変換に失敗しました。__Reason：255：Error：command failed：not authorized for that commandエラー："access-check" is not a recognized command_、when a user should have been blocked.</block>
+  <block id="f5ce9e1caf923fc5af4671571a0fa7de" category="cell">これは、_csuser_に正しい権限がない場合に発生する可能性があります。詳細については、を参照してください <block ref="54b565a562b697bec979a5b58e397a1a" category="inline-link-macro-rx"></block> 。権限を適用したら、ONTAPデータコレクタとユーザディレクトリデータコレクタを再起動することをお勧めします。必要な権限コマンドを次に示します。---- security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole csrole -cmddirname "vserver services access-check authentication translate"-access role create -role csrole -cmddirname "vserver name-mapping"-access all ----</block>
+  <block id="aebb627cd726b3cef553d204f38a30e1" category="cell">合計 IOPS</block>
+  <block id="0e7eeb5ae5a9b72d3c35c2ccece0b487" category="cell">容量クォータハードリミット</block>
+  <block id="42912c555e8bff9f4a5fd6443fef82fe" category="cell">容量クォータソフトリミット</block>
+  <block id="b05f0d41b637f86ee2555bfc971f76bf" category="cell">ファイル数</block>
+  <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">[ 詳細構成 *] をクリックして、追加の構成フィールドを追加します。すべてのデータコレクタで高度な設定が必要となるわけで</block>
+  <block id="4279b596662924e6b4010f919f84d17c" category="list-text">Test Configuration* をクリックして、データコレクタが正しく設定されていることを確認します。</block>
+  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">[Add Collector* （コレクタの追加） ] をクリックして設定を保存し、 Cloud Insights テナントにデータコレクタを追加します。</block>
+  <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">サービスのデータがダッシュボードに表示されるか、クエリに使用できるようになるまで、ポーリング期間は最大 2 回かかる場合があります。</block>
+  <block id="3d9f514d46849760ef1b1412e314fd99" category="paragraph">エラー：</block>
+  <block id="0764744c95ee6244fcf44e9abace1780" category="list-text">エージェントが実行されてい</block>
+  <block id="50fe01395cf06f0bda9c7785c7850b3c" category="list-text">naviseccliが見つかりませんでした</block>
+  <block id="eef81c9905bf29aaca9fc2c2372b2d7d" category="list-text">コマンドを実行できませんでした</block>
+  <block id="adda4fad94eddad68c81a536f6fe276b" category="list-text">Navisphere CLIがCloud Insight Acquisition Unitにインストールされていることを確認する</block>
+  <block id="1840df5cb1968b467a032c9069eeb9c6" category="list-text">データコレクタ設定ウィザードで[Use secure client]オプションが選択されておらず、セキュアでないバージョンのNavisphere CLIがインストールされていません。</block>
+  <block id="45588a7df87bd65a1a96f5f04007af97" category="list-text">データコレクタ構成でNavisphere CLIのインストールディレクトリが正しいことを確認する</block>
+  <block id="fb08276f28e0821f5afdc80679822211" category="list-text">データコレクタ構成でVNXブロックストレージのIPが正しいことを確認します。</block>
+  <block id="20a681cc8b895e56eb4a894d551cb442" category="list-text">Cloud Insights Acquisition Unitから：</block>
+  <block id="be5615c3dd501caa54c15cd9e2bfcf45" category="list-text">CMDを開きます。</block>
+  <block id="886ad310965204f7168440eb252a084a" category="list-text">設定したインストールディレクトリにディレクトリを変更します。</block>
+  <block id="3c43e9ac93c272aa4bfdc57cc935352f" category="list-text">「navicli -h {ip} getagent」と入力して、VNXブロックストレージデバイスとの接続を試行します（{ip}を実際のIPに置き換えます）。</block>
+  <block id="a82401284e008612408db511edcb09c1" category="list-text">セキュアクライアントを使用するようにデータコレクタの設定を変更する（推奨）</block>
+  <block id="1df66018941e95008e15a2e1c78e3726" category="list-text">navicli.exeまたはnaviseccli.exeへのCLIパスにnavicli.jarをインストールします。</block>
+  <block id="85b53449ad4b0a390d5a28a3901d67b3" category="list-text">注：navicli.jarはEMC Navisphereバージョン6.26で廃止されました</block>
+  <block id="97000b8c373b07cac3f4aaa0293db3ff" category="list-text">navicli.jarは\http://powerlink.emc.comから入手できます。</block>
+  <block id="a09b98ae7e225d29e48bc82a2a3cdcc2" category="list-text">これは通常、VNXブロックストレージデバイスのファームウェアの更新が原因で発生しますが、NaviCLI.exeのインストールは更新されません。ファームウェアが異なる複数のデバイスがあっても、インストールされている CLI が 1 つだけ（ファームウェアバージョンが異なる）の場合にも、この問題が発生する可能性があります。</block>
+  <block id="8d8c9c49b1496662a04f576b02a94c85" category="list-text">デバイスとホストの両方で同じバージョンのソフトウェアが実行されていることを確認します。</block>
+  <block id="328dc93550d7121f2379427072c81a06" category="list-text">Cloud Insights Acquisition Unitで、コマンドラインウィンドウを開きます。</block>
+  <block id="56fd873a352d97a50759ba9cf0c3f815" category="list-text">「navicli -h &lt;ip&gt; getagent」と入力して、CLARiXデバイスとの接続を確立します。</block>
+  <block id="449910d5dfa39e01156bf9f68dd57eca" category="list-text">最初の2行でバージョン番号を探します。例：エージェントリビジョン：6.16.2(0.1)</block>
+  <block id="04adf764800f5c8a53f3220e26174673" category="list-text">最初の行のバージョンを探して比較します。例： Navisphere CLI Revision 6.07.00.04.07</block>
+  <block id="49de05ff5e80d977931bb78ae77b1fb6" category="paragraph">このエラーは、特定のロール（「advanced_analytics」など）が設定済みのユーザに含まれていないことが原因で発生する可能性があります。</block>
+  <block id="6660bb65ec23c92ba285586a7b130d42" category="paragraph">読み取り専用ロールを持つユーザーにAnalyticsスコープを適用すると、エラーが削除される場合があります。次の手順を実行します。</block>
+  <block id="e26dcd427fecb2b0cd4c8a29c5778144" category="list-text">ZFSシステムの[Configuration]-&gt;[Users]画面で'ロールの上にマウスを移動し'ダブルクリックして編集を許可します</block>
+  <block id="1b6d2e448d401a05eb632c37be03a078" category="list-text">[Scope]ドロップダウンメニューから[Analytics]を選択します。使用可能なプロパティのリストが表示されます。</block>
+  <block id="aed974f658af4bbc8b55b50f9e1144ac" category="list-text">一番上のチェックボックスをクリックすると、3つのプロパティがすべて選択されます。</block>
+  <block id="df1eafe25ea8ef9c03eef34a7b2fa3c0" category="list-text">右側の[追加]ボタンをクリックします。</block>
+  <block id="1dc9ebcdf41f3814f2793bf8b9cc03c2" category="list-text">ポップアップウィンドウの右上にある[適用]ボタンをクリックします。ポップアップウィンドウが閉じます。</block>
+  <block id="68eef2c4bf0c1205a9d57f62ff34da2c" category="paragraph">この例では、名前に「 aggr0 」を使用します。アグリゲートの作成時には、次の要件に従って名前を指定する必要があります。</block>
+  <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">先頭の文字にはアルファベットまたはアンダースコア（ _ ）を使用する必要があります。</block>
+  <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">アルファベット、数字、アンダースコアのみを使用できます。</block>
+  <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">250 文字以内で指定します。アグリゲートの名前は通常、 aggr0 、 aggr_0 などの形式にします。環境内のすべてのNetAppルートアグリゲートを特定するには、反復的なプロセスが必要になる場合があります。</block>
 </blocks>

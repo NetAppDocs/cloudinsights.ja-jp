@@ -29,16 +29,7 @@ NOTE: ストレージワークロードセキュリティは、Cloud Insights �
 | コンポーネント | Linux 要件 
 
 
-| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。
-
-Red Hat Enterprise Linux 7.x、8.x 64ビット、SELinux
-CentOS 7.x 64ビット、SELinux
-CentOS 8 Stream、SELinux
-Ubuntu 20から22 64ビット
-Rocky 8.x 64ビット、Rocky 9.x 64ビット、SELinux
-SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上のSELinux
-
-このコンピュータでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 
+| オペレーティングシステム | 次のいずれかのライセンスバージョンを実行しているコンピュータ。* CentOS 8 Stream（64ビット）、SELinux * openSUSE LEAP 15.3～15.5（64ビット）* Oracle Linux 8.6-8.8、9.1～9.2（64ビット）* Red Hat Enterprise Linux 8.6～8.8、9.1～9.2（64ビット）、 SELinux * Rocky 9.2（64ビット）、SELinux * SUSE Linux Enterprise Server 15 SP3～15 SP3（64ビット）* Ubuntu 20.04 LTSおよび22.04 LTS（64ビット）このコンピューターでは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用のサーバを使用することを推奨します。 
 
 
 | コマンド | インストールには「unzip」が必要です。また、インストール、スクリプトの実行、およびアンインストールには、「sudo su–」コマンドが必要です。 
