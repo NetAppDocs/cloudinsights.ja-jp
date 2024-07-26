@@ -29,7 +29,7 @@ summary: Workload Securityデータコレクタを追加します
 +
 ** Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、9.13.1よりも新しいバージョンのData ONTAPを使用してください。
 ** SMBプロトコルバージョン3.1以前。
-** NFSプロトコルバージョン4.0以前
+** NFSプロトコルバージョン4.1以前
 ** FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます
 ** ONTAP Select がサポートされています
 
@@ -152,44 +152,15 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 
 
-=== ONTAP自律型ランサムウェア対策の権限
+=== ONTAP Autonomous Ransomware Protectionの権限とONTAPへのアクセス拒否
 
 クラスタ管理者のクレデンシャルを使用している場合、新しい権限は不要です。
 
 ユーザに付与された権限でカスタムユーザ（_csuser_など）を使用している場合は、次の手順に従ってワークロードセキュリティにアクセス許可を付与し、ONTAP からARP関連情報を収集します。
 
-クラスタクレデンシャルを使用する_csuser_withの場合、ONTAP コマンドラインから次の操作を実行します。
-
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-詳細については、 link:concept_cs_integration_with_ontap_arp.html["ONTAP によるランサムウェア対策との統合"]
-
-
-
-=== ONTAPアクセスの権限が拒否されました
-
-クラスタ管理資格情報を使用してData Collectorを追加する場合、新しい権限は必要ありません。
-
-ユーザに付与された権限を持つカスタムユーザ（_csuser_など）を使用してコレクタを追加する場合は、次の手順に従って、ONTAPでアクセス拒否イベントに登録するために必要な権限をワークロードセキュリティに付与します。
-
-CSUSER WITH_CLUSTER_CREDENTIALの場合は、ONTAPコマンドラインから次のコマンドを実行します。_csrestrole_はカスタムロールで、_csuser_はONTAPカスタムユーザです。
-
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-----
-csuser with _svm_credentialsの場合は、ONTAPコマンドラインから次のコマンドを実行します。
-
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-----
 詳細については、 link:concept_ws_integration_with_ontap_access_denied.html["ONTAPアクセス拒否との統合"]
+
+および link:concept_cs_integration_with_ontap_arp.html["ONTAP によるランサムウェア対策との統合"]
 
 
 

@@ -2534,7 +2534,6 @@ Microsoft Windows Server 2019の略</block>
   <block id="16d7c89b47f259f2ff68b2ae7532fad6" category="summary">Workload Securityデータコレクタを追加します</block>
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">ONTAP SVM Data Collector の設定</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">このデータコレクタは、次の機能でサポートされています。</block>
-  <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFSプロトコルバージョン4.0以前</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">FlexGroup は ONTAP 9.4 以降のバージョンでサポートされます</block>
   <block id="1b1cd01c54254af639999400741a0b75" category="list-text">ONTAP Select がサポートされています</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">サポートされるのはデータタイプの SVM のみです。Infinite Volume を備えた SVM はサポートされません。</block>
@@ -5766,11 +5765,9 @@ httpdリクエストメソッドPUT
   <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">* Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接または <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。
 詳細については、「 Cloud Insights について」を参照してください <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>。</block>
-  <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">特に明記されていない限り、このページの情報は一般的に 環境 Cloud Insights商用版です。Cloud Insights の連邦版には、このページに記載されている機能の一部が含まれていない場合があります。</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insightsの価格設定</block>
   <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">Cloud Insightsベーシックエディションとプレミアムエディションで使用できる機能の完全な比較については、を参照してください <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> ページ</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">南京錠</block>
-  <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Cloud Insights の使用中に鍵のアイコンが表示される場合 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>では、この機能が現在のエディションで使用できないか、または制限付きの形式で利用できることを意味します。この機能にフルアクセスするには、をアップグレードしてください。</block>
   <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">試用版</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">* 製品サポート *</block>
@@ -5779,24 +5776,15 @@ httpdリクエストメソッドPUT
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">Cloud Insights の評価にさらに時間が必要で、トライアルの有効期限が 4 日以下に設定されている場合は、さらに 30 日間試用期間を延長できます。トライアルを延長できるのは 1 回だけです。トライアルの期限が切れている場合は延長できません。</block>
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">AWS Marketplaceで試用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">管理ユニット</block>
-  <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、33日間の試用期間でCloud Insightsにアクセスでき、最大499回まで利用できます <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">注：499 MUを超える値を設定すると、「違反」状態になります。トライアルが違反状態になっている間は、違反が解決されるまで、設定されているMU数を減らすか、またはCloud Insights にサブスクライブするまで、一部のCloud Insights 機能にアクセスできなくなります。</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplaceの無償トライアルを延長することはできません。試用期間中はいつでも、*管理-&gt;サブスクリプション*ページにアクセスして、Cloud Insightsベーシックエディションのサブスクリプションにダウングレードしたり、有料のCloud Insightsサブスクリプションに変更したりできます。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">トライアル期間が終了した場合はどうなりますか？</block>
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">無料トライアルの期限が切れていて、 Cloud Insights にまだ登録していない場合は、登録するまで機能が制限されます。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">サブスクリプションオプション</block>
-  <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">サブスクライブするには、*[管理]-&gt;[サブスクリプション]*に移動します。[*Subscribe*] ボタンに加えて、インストールされているデータコレクタを確認し、推定価格を計算することができます。一般的な環境の場合は、セルフサービスのAWS Marketplaceボタンをクリックします。ご使用の環境に 1,000 台以上の管理対象ユニットが含まれている場合、または含まれる予定の場合は、ボリューム価格の対象となります。</block>
-  <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
-  <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Cloud Insights の価格は管理ユニット * 単位です。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform の略</block>
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">1 、 000 台以上の管理対象ユニットが含まれている、または含まれる予定の環境では、 * ボリューム価格設定 * の対象となり、ネットアップ営業に登録を依頼するように求められます。を参照してください <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 詳細：</block>
-  <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">サブスクリプションコストを見積もります</block>
-  <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">見積価格は、サブスクリプション期間に基づいて変更されます。
-注：計算ツールは見積もり専用です。ご登録時に正確な価格が設定されます。</block>
-  <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">インフラとKubernetesのコスト試算ツールが表示されたサブスクリプションページ</block>
-  <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">登録方法を教えてください。</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">ネットアップの営業担当者にサブスクライブ</block>
   <block id="e3b70cffc25d522a4137f9cafd0f3c50" category="paragraph">予想される管理ユニット数が 1,000 以上の場合は、をクリックします <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> ボタンをクリックして、ネットアップ営業チームに登録してください。</block>
@@ -5825,15 +5813,7 @@ httpdリクエストメソッドPUT
   <block id="c80438ed487f426482cacad6a4e99a1d" category="cell">* 90%*</block>
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">警告バナーが表示されます。購読している管理ユニット数を増やすことができます。</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100%*</block>
-  <block id="718a66b23c9ea5a577883d447f892296" category="cell">エラーバナーが表示され、次のいずれかを実行するまで機能が制限されます。
-* Managed Unitの使用量がサブスクライブされた金額以下になるように、データコレクタを削除します
-*サブスクリプションを変更して、Managed Unitの数を増やしてください</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接購読して、トライアルをスキップしてください</block>
-  <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">エンタイトルメント ID の追加</block>
-  <block id="860cea525f63406af55925d01de59c97" category="paragraph">Cloud Insights にバンドルされている有効なネットアップ製品を所有している場合は、その製品のシリアル番号を既存の Cloud Insights サブスクリプションに追加できます。たとえば、NetApp Astra Control Centerを購入した場合、Cloud Insights でサブスクリプションを識別するためにAstra Control Centerライセンスのシリアル番号を使用できます。Cloud Insights は、この an Entitlement ID _ を参照します。</block>
-  <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">Cloud Insights サブスクリプションにエンタイトルメント ID を追加するには、 [* Admin] &gt; [Subscription] * ページで、 [_ + Entitlement ID_ ] をクリックします。</block>
-  <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">サブスクリプションにエンタイトルメント ID を追加します</block>
-  <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d93c484f546badb579eb956aa422abb" category="summary">NetApp HCI 管理サーバのデータコレクタの設定</block>
   <block id="734503beda013cb22d8829d4a3379d2b" category="doc">NetApp HCI 管理サーバのデータコレクタの設定</block>
   <block id="0275f535def004f8099692fd2cc76d94" category="paragraph">NetApp HCI 管理サーバデータコレクタは、 NetApp HCI ホスト情報を収集します。管理サーバ内のすべてのオブジェクトに対する読み取り専用の権限が必要です。</block>
@@ -12625,8 +12605,6 @@ Windows サービスを使用して取得を再開します</block>
   <block id="57a6064ecdf5f0ef23cc5dc68b3df3ed" category="list-text">* アクション * - ログイン、作成、更新などのアクティビティのタイプ</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">データ保持期間後のパージ(詳細はエディションページを参照してください)。モニタには解像度条件が定義されていないため、Alertはデータ保持期間が経過するまで、このモニタがmatching_group_by_generatedを持つ後続のすべてのアラートを抑制します。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolve based on log entry（ログエントリに基づいて解決）：次の定義で概説されているようにログ行が検出された場合にアラートを解決するか、データ保持期間後にパージします。</block>
-  <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Managed Unit = KubernetesのvCPU 4台</block>
-  <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">サブスクリプション計算ツールを使用して、必要なManaged Unitの数に基づいてCloud Insightsサブスクリプションのコストを見積もることができます。現在の値は事前に入力されており、それらの値を調整して将来の増加予測を計画するのに役立ちます。インフラ、Kubernetes、またはその両方の値を調整できます。</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">既存のレポートの編集</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">デフォルトの場所にあるファイルを編集すると、次回のレポートカタログの更新時にレポートが上書きされるリスクがあることに注意してください。編集したレポートは新しい名前で保存するか、デフォルト以外の場所に保存することをお勧めします。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">Forensics_All Activity_or_Entities_pagesのフィルタにアスタリスク(*)などのワイルドカード文字を含む文字を入力すると、ページのロードに時間がかかります。</block>
@@ -14718,16 +14696,13 @@ PodのCPU利用率が高いかどうかを確認します。
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">次の各コマンドを順番に実行します。現在のインストール状況によっては、これらのコマンドの一部で「オブジェクトが見つかりません」というメッセージが返される場合があります。これらのメッセージは無視してかまいません。</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">セキュリティコンテキスト制約が事前に作成されている場合は、次の手順を実行します。</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">Kubeステートメトリックについて</block>
-  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap メトリック</block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">DemonSet メトリック</block>
   <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">導入メトリック</block>
-  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入力メトリック</block>
   <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">ネームスペース指標</block>
   <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">ノードのメトリックス</block>
   <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">永続的ボリューム指標</block>
   <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">ポッドのメトリック</block>
   <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet メトリック</block>
-  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">シークレットメトリック</block>
   <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">サービスメトリック</block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">Stat助け Set メトリック</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Kubernetes のチェックサムの検証</block>
@@ -15228,10 +15203,8 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">グラフアイコンを表示</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 権限</block>
-  <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAPアクセスの権限が拒否されました</block>
   <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">その他の設定について詳しくは、こちらをご覧ください <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>。</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 以降のバージョン最高のパフォーマンスを得るには、9.13.1よりも新しいバージョンのData ONTAPを使用してください。</block>
-  <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">詳細については、 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">詳細については、 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP RESTデータコレクタ</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP RESTデータコレクタ</block>
@@ -15310,7 +15283,6 @@ Configuration：10.193.98.84：ONTAP REST API（10.193.98.84）は使用でき�
   <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">NetAppクラスタのIPアドレスまたは完全修飾ドメイン名。クラスタ管理IP / FQDNを指定する必要があります。</block>
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">タイプが_admin_のSVMの名前を取得します。この名前は以降のコマンドで使用します。</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">ONTAP ONTAPIコレクタにデータが表示される場合、空または「0」の指標が表示されます。</block>
-  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">FPolicyイベントのONTAPからワークロードセキュリティエージェントへの通信。  ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">エージェントからSVMのデータLIFへのエコー</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">NetApp-ci-telegraf-ds_、_NetApp-CI-fluent-bit-ds_、および_NetApp-CI-net-observer-l4-DS_DaemonSetsは、すべてのノードのデータを正しく収集するために、クラスタ内のすべてのノードでポッドをスケジュールする必要があります。オペレータは、いくつかの既知の*テイント*に耐えられるように設定されています。ノードにカスタムのtaintsを設定して、すべてのノードでポッドが実行されないようにしている場合は、それらのtaintsに* toleration *を作成できます <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。クラスタ内のすべてのノードにカスタムテイントを適用した場合は、オペレータの導入に必要な許容範囲を追加して、オペレータポッドをスケジュールおよび実行できるようにする必要があります。</block>
   <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">ci-kube-rbac-proxy</block>
@@ -15610,7 +15582,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">モジュールの評価</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">また、*モジュール評価*もご利用いただけます。たとえば、インフラオブザーバビリティにすでにサブスクライブしていて、Kubernetesを環境に追加する場合は、NetApp Kubernetes監視オペレータのインストール時から、Kubernetesオブザーバビリティの30日間の評価が自動的に行われます。評価期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
   <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">評価後に新しいManaged Unit（MU）の使用料が請求されることに注意してください。そのため、適切な計画を立ててください。モジュールの評価が終了すると、サービスの中断を回避するためにMUを追加する必要があるかどうかが通知されます。</block>
-  <block id="9c420799ef765483eddc7865804e6371" category="admonition">A_Module Evaluation_は_トライアルではありません_-お客様にCIサービスを使用した無料トライアル期間を提供し、購入を可能にする場合は、期間トライアルを使用します。モジュールの評価方法が異なります。これは、有料サブスクリプションの最近数カ月間に使用していないCloud Insightsモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。</block>
   <block id="8fe818ace86e2479958161998bd57015" category="paragraph">モジュール評価中に、モジュールで消費されるリソースのMU使用量は変更されません。 ただし、(_Summary_tabの)* Estimator *を開いて、評価後にMUがどのように課金されるかを確認したり、将来必要になる可能性のあるMU数の「What if」シナリオでプレイしたりすることができます。Estimatorを終了して数値をリセットします。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">モジュール評価の対象となるのは、サブスクリプションごとに1回のみです。</block>
   <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
@@ -15779,7 +15750,6 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">の[Permissions]セクションを確認してください。 <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> ページも参照してください。</block>
   <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">フル管理者のクラスタ / SVM 管理ユーザ名とパスワードを使用できない場合は、に記載されている権限よりも少ないカスタムユーザを作成できます <block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block> セクションを参照してください。このカスタムユーザは、 SVM アクセスまたはクラスタアクセス用に作成できます。</block>
   <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">SVM管理IP *を使用して追加する場合の権限：</block>
-  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自律型ランサムウェア対策の権限</block>
   <block id="ce2c442b24aec5c08788260869132fdd" category="cell">その理由としては、 ONTAP 側のネットワーク問題が考えられます。次の手順を実行してください。
 
 1. SVMデータLIFまたは管理LIFに、SVMからの接続をブロックしているファイアウォールがないことを確認します。
@@ -16062,7 +16032,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">このエラーは、コレクタインストーラファイルが「/tmp/collectors」ディレクトリに存在しない場合、またはアクセスできない場合に発生します。インストーラファイルがダウンロードされ、ディレクトリ「collectors」および インストーラzipファイルがcsysによって所有されていることを確認します。cssysおよびrestart agent service–“systemctl restart cloudsecure-agent.service”</block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2.不正なエラー</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">このエラーは、必要なすべてのAPIカテゴリを選択せずにAPIアクセストークンが生成された場合に表示されます。必要なすべてのAPIカテゴリを選択して、新しいAPIアクセストークンを生成します。</block>
-  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、_/opt/netapp/cloudsecure/agent/export-script/_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
   <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">_path_filterを使用すると、Forensic UIでデータのロードに時間がかかります。</block>
   <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">パスが_/Aaa/Bbb/Ccc/Ddd _の場合は、次を検索する代わりに検索します。
 
@@ -16079,7 +16048,6 @@ AAA / BBB / CCC /*
 この検索により、データのロードが高速化されます。</block>
   <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">•ONTAP永続ストアは9.15.1以降でサポートされています。</block>
   <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">一時停止したData Collectorは削除できません。</block>
-  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">一時停止中は、ONTAPのFPolicy設定は無効になりますが削除されることはありません。再開すると、ONTAPのFPolicy設定が再度有効になります。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">SVMモードが選択されている場合、Data Collectorはエラーアウトしています。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">SVMモードで接続中にSVM管理IPではなくクラスタ管理IPを使用して接続すると、接続エラーが発生します。正しいSVM IPが使用されていることを確認します。</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手動インストールAPI</block>
@@ -16211,4 +16179,50 @@ AAA / BBB / CCC /*
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBladeデータコレクタ</block>
   <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insightsは、Pure Storage FlashBladeデータコレクタを使用してインベントリとパフォーマンスのデータを収集します。</block>
   <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBladeホストのIPアドレス</block>
+  <block id="5ba53e5a2add537346e5d283255d419a" category="cell">FPolicyイベントのONTAPからワークロードセキュリティエージェントへの通信。ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。これらのポートをすべて予約する必要はありませんが、予約するポートはこの範囲内である必要があります。最初に最大100個のポートを予約し、必要に応じて増やすことをお勧めします。</block>
+  <block id="fd6114e047225ac69533d6082b3f731b" category="admonition">Forensics Activity APIを呼び出す場合は、cloudsecure_forensics.activities.* v2 * APIを使用します。このAPIに複数の呼び出しを行う場合は、呼び出しが並列ではなく連続して実行されるようにしてください。複数の並行呼び出しが発生すると、APIがタイムアウトする可能性があります。</block>
+  <block id="5649187108c4f32ee74dd6b5543c6f73" category="paragraph">Cloud Insightsの使用中に南京錠のアイコンが表示された場合は <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>、その機能が現在のサブスクリプションで利用できないか、限定された形式で利用できることを意味します。フルアクセスのためにその機能を購読してください。一部の機能は、サブスクライブする前にとして使用でき <block ref="7f89ca2c071a1700db286ba62f9d3c95" category="inline-xref-macro-rx"></block> ます。</block>
+  <block id="09b74e911376515159253ee372fe044b" category="paragraph">また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、33日間の試用期間でCloud Insightsにアクセスでき、最大499（MU）まで利用でき <block ref="74100db5c6c154a5b13e17b29feeccc3" category="inline-xref-macro-rx"></block> ます。</block>
+  <block id="b8af84dbd472dd10145b90235b35bb6b" category="admonition">A_Module Evaluation_は_トライアルではありません_-当社は、お客様にCloud Insightsサービスを使用した無料トライアル期間を提供し、購入可能であることを確認する場合に、タームトライアルを使用します。モジュールの評価方法が異なります。これは、有料サブスクリプションの最近数カ月間に使用していないCloud Insightsモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。</block>
+  <block id="b5ddfc508b0b9510d47c505df23b6a45" category="paragraph">サブスクライブするには、*[管理]-&gt;[サブスクリプション]*に移動します。*Subscribe*ボタンに加えて、インストールされているデータコレクタを確認し、推定計測値を計算することができます。一般的な環境の場合は、セルフサービスのAWS Marketplaceボタンをクリックします。ご使用の環境に 1,000 台以上の管理対象ユニットが含まれている場合、または含まれる予定の場合は、ボリューム価格の対象となります。</block>
+  <block id="b5c16ff734c99fe07b51b9c660dfc912" category="section-title">オブザーバビリティ計測</block>
+  <block id="92cab4ee09c983b6dbf1ec4c00c04076" category="paragraph">Cloud InsightsインフラのオブザーバビリティとKubernetesのオブザーバビリティは、* Managed Unit *単位で計測されます。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
+  <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 Managed Unit = KubernetesのvCPU 4台。</block>
+  <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 Managed Unit（K8s）の調整=インフラでも監視されるノードまたはホスト×2</block>
+  <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">ワークロードのセキュリティ計測</block>
+  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">ワークロードのセキュリティは、使用されているノードがハイエンド、ミッドレンジ、エントリレベルのいずれであるかに応じて、次のManaged Unit（MU）数で計測されます。</block>
+  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">ノードタイプ：</block>
+  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">モデルの例：</block>
+  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">計測時刻：</block>
+  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">ハイエンドノード×1</block>
+  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700、800、900、9xxx</block>
+  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80マネージドユニット</block>
+  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1つのミッドレンジノード</block>
+  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300、400、500、8x00</block>
+  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40マネージドユニット</block>
+  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">エントリレベルノード×1</block>
+  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx、2xx、2xxx</block>
+  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">管理対象ユニット×20</block>
+  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">ソフトウェアONTAP×1</block>
+  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO、FSx</block>
+  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">管理対象ユニット×10</block>
+  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1不明なノード</block>
+  <block id="3943920606f23b23925f15408e26cae2" category="paragraph">ワークロードセキュリティの使用状況は、*[管理者]&gt;[サブスクリプション]*ページの*[ワークロードセキュリティ]*タブで確認できます。</block>
+  <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">'Admin&amp;gt; Subscription&amp;gt; Workload Security（管理&amp;gt;サブスクリプション&amp;gt;ワークロードセキュリティ）タブには、ハイエンド、ミッドレンジ、エントリレベルのノード数が表示されます。'</block>
+  <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="019ede2125ee965dbf8adb0346c58f55" category="admonition">既存のワークロードセキュリティサブスクリプションでは、ノードの使用量がManaged Unitを消費しないように、MU使用量が調整されます。Cloud Insightsは、ライセンスされた使用量に準拠するために使用量を測定します。</block>
+  <block id="48eb2e3cd501957838ba5a76d243edf2" category="paragraph">次のいずれかを実行するまで、エラーバナーが表示されます。</block>
+  <block id="eaeeb5a6079506171dcd917d7b71a8a3" category="list-text">データコレクタを削除して、Managed Unitの使用量がサブスクライブした量以下になるようにする</block>
+  <block id="92ba817bcf69387f3ad0bdb24161ab8e" category="list-text">サブスクリプションを変更してManaged Unitの数を増やす</block>
+  <block id="667677d8bd1877e973ea57e00d3810db" category="section-title">ワークロードセキュリティの強化</block>
+  <block id="5918f5af03cf64b439fa77e65a5e7850" category="paragraph">* NFS 4.1のサポート*</block>
+  <block id="ccecb67a3f8de46bc8414046f6069d3d" category="paragraph">SVM Data Collectorで、* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。</block>
+  <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">*新しいフォレンジックアクティビティAPI *</block>
+  <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">フォレンジックアクティビティ <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> に新しいバージョンが追加されました。Forensics ActivityのAPIを呼び出す場合は、* cloudsecure_forensics.activities._v2_* APIを使用します。</block>
+  <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">このAPIに複数の呼び出しを行う場合、最良の結果を得るためには、呼び出しが並列ではなく順番に実行されるようにしてください。複数の並行呼び出しが発生すると、APIがタイムアウトする可能性があります。</block>
+  <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、_/opt/netapp/cloudsecure/agent/export-script/_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
+  <block id="e440db99ab8972afb639115c16f2426c" category="list-text">NFSプロトコルバージョン4.1以前</block>
+  <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP Autonomous Ransomware Protectionの権限とONTAPへのアクセス拒否</block>
+  <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">および <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
+  <block id="243b99ee952c73f66e7461d943f01834" category="list-text">一時停止中は、ONTAPのFPolicy設定は無効になりますが削除されることはありません。再開すると、ONTAPのFPolicy設定が再度有効になります。</block>
 </blocks>
