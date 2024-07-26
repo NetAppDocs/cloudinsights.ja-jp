@@ -36,17 +36,14 @@ Kubernetes Monitoring Operatorはkube-state-metricsを自動的にインスト�
 
 NetApp Kubernetes監視オペレータは、以下のkube-state-metricsカウンタを抽出します。各カウンタの詳細については、次のサイトを参照してください。 https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[]。
 
-. ConfigMap メトリック
 . DemonSet メトリック
 . 導入メトリック
-. 入力メトリック
 . ネームスペース指標
 . ノードのメトリックス
 . 永続的ボリューム指標
 . 永続的ボリューム要求の指標
 . ポッドのメトリック
 . ReplicaSet メトリック
-. シークレットメトリック
 . サービスメトリック
 . Stat助け Set メトリック
 
