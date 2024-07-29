@@ -28,7 +28,7 @@ keywords: features
 
 * NFS 4.1のサポート*
 
-SVM Data Collectorで、* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。
+SVM Data Collectorで、ONTAP 9.151以降の* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。
 
 *新しいフォレンジックアクティビティAPI *
 

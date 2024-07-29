@@ -16216,7 +16216,6 @@ AAA / BBB / CCC /*
   <block id="92ba817bcf69387f3ad0bdb24161ab8e" category="list-text">サブスクリプションを変更してManaged Unitの数を増やす</block>
   <block id="667677d8bd1877e973ea57e00d3810db" category="section-title">ワークロードセキュリティの強化</block>
   <block id="5918f5af03cf64b439fa77e65a5e7850" category="paragraph">* NFS 4.1のサポート*</block>
-  <block id="ccecb67a3f8de46bc8414046f6069d3d" category="paragraph">SVM Data Collectorで、* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。</block>
   <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">*新しいフォレンジックアクティビティAPI *</block>
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">フォレンジックアクティビティ <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> に新しいバージョンが追加されました。Forensics ActivityのAPIを呼び出す場合は、* cloudsecure_forensics.activities._v2_* APIを使用します。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">このAPIに複数の呼び出しを行う場合、最良の結果を得るためには、呼び出しが並列ではなく順番に実行されるようにしてください。複数の並行呼び出しが発生すると、APIがタイムアウトする可能性があります。</block>
@@ -16225,4 +16224,5 @@ AAA / BBB / CCC /*
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP Autonomous Ransomware Protectionの権限とONTAPへのアクセス拒否</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">および <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="243b99ee952c73f66e7461d943f01834" category="list-text">一時停止中は、ONTAPのFPolicy設定は無効になりますが削除されることはありません。再開すると、ONTAPのFPolicy設定が再度有効になります。</block>
+  <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">SVM Data Collectorで、ONTAP 9.151以降の* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。</block>
 </blocks>
