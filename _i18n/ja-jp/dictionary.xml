@@ -3968,7 +3968,6 @@ VMDK です
   <block id="bab16bd280bad939243defec2ae54eba" category="cell">物理ディスク</block>
   <block id="3edcb2400ce9f6580e362c8a9d6102ff" category="cell">コントローラノード</block>
   <block id="89693d6595f0aef621cb8fd0804326a5" category="cell">Common Provisioning Group の 1 つ</block>
-  <block id="2083196b10cec6f027f8645b9e960b3c" category="paragraph">このデータ照合を設定するには、次のものが必要です。</block>
   <block id="c3deb2066e20cbed62d1bfed93943bb1" category="list-text">InServ クラスタの IP アドレスまたは FQDN</block>
   <block id="1b4137d092037ad17a20e57351c33d8e" category="list-text">インベントリの場合は、 StoreServ サーバへの読み取り専用のユーザ名とパスワード</block>
   <block id="7abd5032a929f340867545508d1a1933" category="list-text">パフォーマンスを確保するために、 StoreServ サーバへの読み取り / 書き込みユーザ名とパスワード</block>
@@ -16046,8 +16045,6 @@ AAA/BBB/C*
 AAA / BBB / CCC /*
 
 この検索により、データのロードが高速化されます。</block>
-  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">•ONTAP永続ストアは9.15.1以降でサポートされています。</block>
-  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">一時停止したData Collectorは削除できません。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">SVMモードが選択されている場合、Data Collectorはエラーアウトしています。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">SVMモードで接続中にSVM管理IPではなくクラスタ管理IPを使用して接続すると、接続エラーが発生します。正しいSVM IPが使用されていることを確認します。</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手動インストールAPI</block>
@@ -16220,9 +16217,67 @@ AAA / BBB / CCC /*
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">フォレンジックアクティビティ <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> に新しいバージョンが追加されました。Forensics ActivityのAPIを呼び出す場合は、* cloudsecure_forensics.activities._v2_* APIを使用します。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">このAPIに複数の呼び出しを行う場合、最良の結果を得るためには、呼び出しが並列ではなく順番に実行されるようにしてください。複数の並行呼び出しが発生すると、APIがタイムアウトする可能性があります。</block>
   <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、_/opt/netapp/cloudsecure/agent/export-script/_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
-  <block id="e440db99ab8972afb639115c16f2426c" category="list-text">NFSプロトコルバージョン4.1以前</block>
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP Autonomous Ransomware Protectionの権限とONTAPへのアクセス拒否</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">および <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
-  <block id="243b99ee952c73f66e7461d943f01834" category="list-text">一時停止中は、ONTAPのFPolicy設定は無効になりますが削除されることはありません。再開すると、ONTAPのFPolicy設定が再度有効になります。</block>
   <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">SVM Data Collectorで、ONTAP 9.151以降の* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。</block>
+  <block id="be2f9224b979c292cb15fb8ca6626094" category="summary">異常の指標を監視</block>
+  <block id="de4898eb228c5960d7add96b5bd2ad82" category="doc">異常検出モニタ</block>
+  <block id="cbcb7e323368454d1aaea827422f8ab4" category="paragraph">異常検出では、環境内のデータパターンの予期しない変化を分析できます。環境でオブジェクトの動作のパターンが変化すると、異常が発生します。たとえば、オブジェクトのレイテンシが水曜日の特定の時間に一定のレベルを超えた場合、次の水曜日のその時間にレイテンシが急増します。 このスパイクは異常と見なされます。Cloud Insightsを使用すると、このような異常が発生したときにアラートを通知するモニタを作成できます。</block>
+  <block id="6ee4ef3e25dbca514480336d70c68b6f" category="paragraph">異常検出は、予測可能な繰り返しパターンを示すオブジェクト指標に適しています。これらのオブジェクト指標が想定レベルを上回る、または下回ると、Cloud Insightsはアラートを生成して調査を促すことができます。</block>
+  <block id="f9e98659236dd136d51fbe90184c9350" category="inline-image-macro">検出された異常を示すグラフ</block>
+  <block id="6d45093f10be1c53f9db64c498f5d580" category="paragraph"><block ref="6d45093f10be1c53f9db64c498f5d580" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d2575e3b331dd7b57d604dc713e48c2" category="section-title">異常検出とは</block>
+  <block id="9191e0d6339fc5dc7a81e5a8c55ed26b" category="paragraph">異常は、メトリックの平均値が、過去数週間のメトリックの加重平均からの標準偏差の数であり、最近の週の重みが前の週よりも大きい場合に発生します。Cloud Insightsは、データを監視し、異常が検出されたときにアラートを生成する機能を提供します。検出の「感度」レベルを設定することもできます。たとえば、平均値が平均からの標準偏差が少ない場合、より多くのアラートが生成されるようになります。逆に、感度が低い=平均からの標準偏差が多い=アラートの数が少ない。</block>
+  <block id="833e967d7ee3cf2f23601ccdafe6306f" category="section-title">異常検出の監視は、しきい値の監視とは異なります。</block>
+  <block id="707a70f8b64924d439fa4e0679dc94e9" category="list-text">*しきい値ベースの監視*は、特定のメトリックのしきい値が事前に定義されている場合に機能します。言い換えれば、何が期待されるのか(つまり、通常の範囲内)を明確に理解しているときです。</block>
+  <block id="c1045d44e2c7b706bb670c2d93126209" category="inline-image-macro">測定値モニタは、動作範囲がわかっている場合に使用します。</block>
+  <block id="8a651de0b445271791957a02b7f7ab12" category="paragraph"><block ref="8a651de0b445271791957a02b7f7ab12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="248d11a06c917163d4c218e182751e10" category="list-text">*異常検出モニタリング*機械学習アルゴリズムを使用して、「正常」の定義が明確でない場合に、標準から逸脱する異常値を特定します。</block>
+  <block id="050471a8ed4b8c04c6b9d753064cc4d4" category="inline-image-macro">異常検出モニタは、スパイクやドロップを確認する必要がある場合に使用します。</block>
+  <block id="44cf95d43f633731498e7905f9aa796f" category="paragraph"><block ref="44cf95d43f633731498e7905f9aa796f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89998a7699ba0967d4747309973670d5" category="section-title">異常検出はいつ必要ですか？</block>
+  <block id="cbe837020343dfcd14bef7b99f21f113" category="paragraph">異常検出の監視では、次のような多くの状況で役立つアラートが提供されます。</block>
+  <block id="515e7be6213cf58d48b39c170b448353" category="list-text">_normal_の定義が不明な場合。たとえば、ポートによっては、SANエラー率がさまざまに予想される場合があります。1つのエラーに関するアラートはノイズが多く、不要ですが、突然または大幅に増加した場合は、広範な問題が発生する可能性があります。</block>
+  <block id="858889ea561e10cb6de83250a829bb72" category="list-text">時間の経過とともに変化がある場所。季節的なワークロード（特定の時間にビジー状態または静かな状態）。これには、バッチの停止を示す可能性のある予期しない待機期間が含まれる可能性があります。</block>
+  <block id="07cd3ac948fc0a9966297e9ebb6e200a" category="list-text">しきい値を手動で定義して調整することが現実的ではない大量のデータを扱う。たとえば、ホストやボリュームが多数あり、ワークロードが異なる環境などです。SLAはそれぞれ異なる場合があるため、標準を超えるSLAを理解することが重要です。</block>
+  <block id="4bf3bd72ae0959df9c9f71dc2ca7782c" category="section-title">異常検出モニタの作成</block>
+  <block id="181074ffe7428fd491335b80f676903b" category="paragraph">異常を警告するには、*[Observability]&gt;[Alerts]&gt;[+Monitor]*に移動してモニタを作成します。モニタタイプとして[_Anomaly Detection Monitor_]を選択します。</block>
+  <block id="53f0acb9650a3311851819fb2a0f49b0" category="inline-image-macro">モニタ作成時の異常検出の選択、width=480</block>
+  <block id="e252e58b0713f9856d0a0d0b5aba870b" category="paragraph"><block ref="e252e58b0713f9856d0a0d0b5aba870b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53475b0e462d8632e63ce95786693f94" category="paragraph">監視するオブジェクトと指標を選択します。他のタイプのモニタと同様に、フィルタとグループ化を設定できます。</block>
+  <block id="a622dfc527a1cb769a9cb8f5251c5722" category="paragraph">次に、モニタの条件を設定します。</block>
+  <block id="a2adecda270991bbe54f4b599329e2fe" category="list-text">選択したメトリックが予測された境界の上に_スパイクするか、_ drops below _ those bounds、またはその両方のいずれかの場合にアラートをトリガーします。</block>
+  <block id="8bc993e57aef8f829550768090da9b0d" category="list-text">感度を_Medium_、_Low_（検出される異常が少ない）、または_High_（検出される異常が多い）に設定します。</block>
+  <block id="24167a985b902e0e2d7a081b6013a2c9" category="list-text">アラートレベルが_Critical_か_Warning_かを確認します。</block>
+  <block id="2e8e6d4492fccf3be846da219495beea" category="list-text">必要に応じて、異常が_ignored_になる値を設定します。これはノイズを減らすのに役立ちます。この値は、サンプルグラフに破線で示されています。</block>
+  <block id="f69a8cf61f4e95828fa362a7a3789fcc" category="inline-image-macro">異常検出モニタの条件の設定</block>
+  <block id="abf46926497e07e99587de4807a2ab2a" category="paragraph"><block ref="abf46926497e07e99587de4807a2ab2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="512aa9e270052050fd7133f7c815aba4" category="paragraph">最後に、アラートの配信方法（Eメール、Webhook、またはその両方）を設定したり、オプションの説明または修正アクションをモニタに指定したり、必要に応じてモニタをカスタムグループに追加したりできます。</block>
+  <block id="fab06889941e3b5c2391fd34bd7beaac" category="paragraph">モニタにわかりやすい名前を付けて保存すると、完了です。</block>
+  <block id="5b168d18500cad56ba4dfe58f2ff34a0" category="paragraph">モニタを作成すると、前週のデータが分析され、初期ベースラインが確立されます。時間が経過して履歴が増えるにつれて、異常検出の精度が向上します。</block>
+  <block id="56fcf918982ae9c2b1aec4da88526a61" category="section-title">異常の表示</block>
+  <block id="1d58d2f2ca69574aba1ed5f31bde491c" category="paragraph">アラートランディングページでは、異常が検出されたときにトリガーされたアラートに、指標が予測範囲外に急増した時点から、その範囲内に戻った時点までのハイライトされた帯がグラフに表示されます。</block>
+  <block id="2ab54321d1ba259795df47fcabb17a13" category="inline-image-macro">異常が発生した時間を示すグラフ</block>
+  <block id="2ad61a846e7819f62ef6d6e841319792" category="paragraph"><block ref="2ad61a846e7819f62ef6d6e841319792" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5dc3af95092fd8c3105a28d3093349e2" category="paragraph">アラートランディングページで異常チャートを表示する際には、次のオプションを選択できます。</block>
+  <block id="cad64385bb1c47803c5bd69ef88cfa2a" category="list-text">Weekly Trend（週ごとの傾向）：前の週の同じ時刻（前の週の同じ日）と最大5週間の値を比較します。</block>
+  <block id="9c221afc4c43a58770febf3135de5c16" category="list-text">Full Anomaly Bounds：デフォルトでは、指標の動作をより適切に分析できるように、グラフは指標値に焦点を当てています。異常境界全体（最大値など）を表示する場合に選択します。</block>
+  <block id="1f8a18333ce962d420f009316db68135" category="paragraph">ランディングページのエキスパートビューでオブジェクトを選択して、異常の原因となったオブジェクトを表示することもできます。グラフには、選択したオブジェクトの動作が表示されます。</block>
+  <block id="7db867678d69bd78eaeb6b23565fbadb" category="inline-image-macro">異常の原因となっているオブジェクトのグラフ化</block>
+  <block id="7a739c7bd23951027862cb0746253d51" category="paragraph"><block ref="7a739c7bd23951027862cb0746253d51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27f579af3362e110ecd440dc8bf9e526" category="section-title">AIOps：異常検出</block>
+  <block id="bb488ae395c5a616e026cebeb1d22b11" category="paragraph">Cloud Insightsは、機械学習を使用して、環境内のデータパターンの予期しない変化を検出し、プロアクティブなアラートを提供して問題を早期に特定できるようにします。</block>
+  <block id="ed665f31221c4a08eef181ec8d0a72db" category="paragraph">データセンターの動作は、1日の時間帯や曜日によって異なります。Cloud Insightsでは、毎週の季節性を使用して、各日と時間の履歴動作を比較します。</block>
+  <block id="bf43ac8b8257828bb0ffddb4736d081c" category="paragraph">異常検出監視では、「正常」の定義が不明な場合、時間の経過とともに動作が変化する場合、またはしきい値を手動で定義することが現実的ではない大量のデータを処理する場合などの状況に対してアラートを提供できます。</block>
+  <block id="fb60a89ddc5f4c906fea295c053a5be0" category="paragraph">選択したオブジェクト指標でこのような異常が発生した場合に新しいアラートが生成され <block ref="d288de494ea9d7a329c8dfc0fccf699b" category="inline-link-macro-rx"></block> ます。</block>
+  <block id="7c6a37577f49fc25a4c899cda17f9040" category="list-text">ONTAP 9.151以降を搭載したNFS 4.1以前のバージョン。</block>
+  <block id="b8667da3102e0adbbd2fe25017f00394" category="list-text">•ONTAP永続ストアは9.14.1以降でサポートされています。</block>
+  <block id="fa10b18dd52742e5f2cd029f0249346b" category="section-title">永続的ストア</block>
+  <block id="b611ad23a0a26f050542f8157d95cb61" category="paragraph">永続的ストアは、ONTAP 9.14.1以降でサポートされます。ボリューム名の手順はONTAP 9.14~9.15では異なります。</block>
+  <block id="928fe55cae4b263961426402bcf31be7" category="paragraph">永続ストアを有効にするには、コレクタの編集/追加ページでチェックボックスをオンにします。チェックボックスを選択すると、ボリューム名を受け入れるためのテキストフィールドが表示されます。永続的ストアを有効にするには、ボリューム名は必須フィールドです。</block>
+  <block id="0241f48b4ba5acc2c0fe7c5ebae0b009" category="list-text">ONTAP 9.14.1では、この機能を有効にする前にボリュームを作成し、_Volume Name_フィールドに同じ名前を指定する必要があります。推奨されるボリュームサイズは16GBです。</block>
+  <block id="9ba8df77f1ed6f2669acdf983da92bd3" category="list-text">ONTAP 9.15.1では、_Volume Name_フィールドに指定した名前を使用して、16GBのサイズでボリュームが自動的に作成されます。</block>
+  <block id="90d00ac7078d36b9a3f2093e6708b52e" category="paragraph">Persistent Storeには特定の権限が必要です（これらの一部またはすべてがすでに存在する場合があります）。</block>
+  <block id="f9555b564ff818367b2bbeb217f9f4aa" category="paragraph">クラスタモード：</block>
+  <block id="d21d9916425ed680af643d24ed5db91d" category="paragraph">SVMモード：</block>
 </blocks>
