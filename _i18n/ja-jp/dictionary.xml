@@ -755,21 +755,12 @@ BlueXPのナビゲーションメニューでは、データサービスはカ�
   <block id="11a7aeec2e88edd275331af35166c8ec" category="doc">ユーザアカウントとロール</block>
   <block id="0f9642bcff1dc3cd224f1f3e2f1ca629" category="inline-link-macro">招待済み</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">シングルサインオン（ SSO ）許可</block>
-  <block id="6a1a692b3423f858e5d6fa10a48a203d" category="admonition">Cloud Insights フェデラルエディションでのユーザーログインは、設定されたIDプロバイダー(指定された電子メールドメインを持つ)に制限されます。新しいユーザをCloud Insights Federal環境に招待する場合は、その環境に設定されているドメインとEメールアドレスが一致している必要があります。</block>
   <block id="4239d1a0d4b43b912ff81e4656377274" category="section-title">アクセス許可レベル</block>
   <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">ユーザアカウントを作成または変更するには、管理者権限を持つアカウントを使用します。各ユーザアカウントには、次の権限レベルの Cloud Insights 機能ごとにロールが割り当てられます。</block>
   <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">オブザーバビリティ</block>
   <block id="1bbfd833c09ec409acb6953c794c8762" category="cell">ワークロードのセキュリティ</block>
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="cell">レポート作成</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">アカウント所有者</block>
-  <block id="3285ea5e06d78f941361e69f7ae3e762" category="cell">サブスクリプションの変更、課金情報および使用状況の表示、および監視機能、セキュリティ、およびレポートに関するすべての管理者機能の実行が可能です。
-また、ユーザーを招待して管理したり、 SSO 認証とアイデンティティフェデレーションの設定を管理したりすることもできます。
-
-Cloud Insights に登録すると、最初のアカウント所有者が作成されます。
-
-Cloud Insights 環境ごとに少なくとも 2 つのアカウント所有者を設定することを強くお勧めします。 </block>
-  <block id="84e7e19408ca9cadd7d1a9781e8afe16" category="cell">すべてのObservability関数、すべてのユーザ関数、およびデータコレクタの管理、Observability APIトークン、および通知を実行できます。
-管理者は、他のユーザーを招待することもできますが、割り当てることができるのは観察可能な役割だけです。</block>
   <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、セキュリティ用APIトークンなど、すべてのセキュリティ機能を実行できます。
 管理者は、他のユーザを招待することもできますが、割り当てることができるのはセキュリティロールのみです。</block>
   <block id="ceecc9f892b56b1081be5d007d545aab" category="cell">Reporting API トークンの管理、レポートの設定、レポートタスクのシャットダウンと再起動など、すべての管理タスクに加えて、すべての User/Author 関数を実行できます。
@@ -16280,4 +16271,10 @@ AAA / BBB / CCC /*
   <block id="90d00ac7078d36b9a3f2093e6708b52e" category="paragraph">Persistent Storeには特定の権限が必要です（これらの一部またはすべてがすでに存在する場合があります）。</block>
   <block id="f9555b564ff818367b2bbeb217f9f4aa" category="paragraph">クラスタモード：</block>
   <block id="d21d9916425ed680af643d24ed5db91d" category="paragraph">SVMモード：</block>
+  <block id="e3afed0047b08059d0fada10f400c1e5" category="cell">管理者</block>
+  <block id="ab0ef3e5340f5400b9f95e43d3b79222" category="cell">管理者と同じ</block>
+  <block id="631b24afac365e771fc775aeb7fec0ad" category="cell">Administratorと同じで、SSO認証とアイデンティティフェデレーションの設定も管理できます。追加の所有者を割り当てることもできます。</block>
+  <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">すべてのオブザーバビリティ機能を実行できるだけでなく、データコレクタの管理も実行できます。</block>
+  <block id="7d86034e4b4cb78c8bb38a5020649dbd" category="cell">他のユーザを招待できますが、オブザーバビリティロールのみを割り当てることができます。SSO設定を表示できますが、変更できません。APIアクセストークンを作成および管理できます。監査情報を表示できます。サブスクリプション情報、使用状況、履歴を表示できます。グローバルアラート通知およびサブスクリプション通知の受信者リストを管理できます。</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">使用不可</block>
 </blocks>
