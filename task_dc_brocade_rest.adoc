@@ -21,6 +21,14 @@ summary: Brocade FOS RESTデータコレクタを設定しています。
 [role="lead"]
 Cloud Insightsでは、Brocade FOS RESTコレクタを使用して、FabricOS（FOS）ファームウェア8.2以降を実行しているBrocadeスイッチデバイスのインベントリとパフォーマンスを検出します。
 
+注意: FOSのデフォルトの「ユーザー」レベルでは、Cloud Insightsがデバイスのすべての論理的側面を表示するには不十分です。「シャーシロール」が有効になっているユーザーアカウントと、スイッチに設定されているすべての仮想ファブリックに対する権限が必要です。
+
+次に、FOSデバイスへのSSHセッションでCloud Insightsを使用するための「最小権限」ユーザアカウントを作成する例を示します。
+
+userconfig -- add NetAppCIUser -r user -l 1-128 -c user -p QWERTY！
+
+これにより、ユーザ「NetAppCIUser」、パスワード「QWERTY！」が作成されます。このユーザには、128個の可能なすべての仮想ファブリック（-l）で「ユーザ」ロール（-r）が割り当てられます。このユーザには、必要な「シャーシ」ロール（-c）が追加で割り当てられ、ユーザレベルのアクセス権が割り当てられています。
+
 デフォルトでは、このコレクタは、スイッチが属するすべてのファブリックの一部であるすべてのFOSデバイスの検出を試みます。
 
 
@@ -47,9 +55,6 @@ Cloud Insightsでは、Brocade FOS RESTデータコレクタから次のイン�
 
 
 | Logical Switch の略 | Logical Switch の略 
-
-
-| 仮想ボリューム | ボリューム 
 
 
 | LSANゾーン | IVR ゾーン 
@@ -134,9 +139,6 @@ Cloud Insightsでは、Brocade FOS RESTデータコレクタから次のイン�
 | エラー：「シャーシの IP アドレスが一致しません」 | シャーシの IP アドレスを使用するようにデータソース構成を変更します。 
 
 
-| 複数のノードが Access Gateway ポートにログインしているというメッセージを受信します | NPV デバイスが正しく動作していること、および接続されているすべての WWN が必要であることを確認します。NPV デバイスを直接取得しないでください。代わりに、コアファブリックスイッチを取得すると NPV デバイスデータが収集されます。 
-
-
-| パフォーマンスの収集が失敗し、「Timed out during sending SNMP request」というメッセージが表示されます。 | クエリー変数およびスイッチの設定によっては、一部のクエリーがデフォルトのタイムアウトを超える場合があります。  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["詳細はこちら。"]。 
+| 403 Forbiddenでインベントリが失敗する | これは、単に不正な資格情報であるか、十分に強力でないロールを使用しようとしていることを示している可能性があります。「ユーザー」レベルのユーザーには、必要な「シャーシロール」権限がないか、デフォルト以外の仮想ファブリックへのアクセスを表示する権限がないことに注意してください。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

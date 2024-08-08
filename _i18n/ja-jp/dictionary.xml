@@ -16165,7 +16165,6 @@ AAA / BBB / CCC /*
   <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">アルファベット、数字、アンダースコアのみを使用できます。</block>
   <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">250 文字以内で指定します。アグリゲートの名前は通常、 aggr0 、 aggr_0 などの形式にします。環境内のすべてのNetAppルートアグリゲートを特定するには、反復的なプロセスが必要になる場合があります。</block>
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBladeデータコレクタ</block>
-  <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insightsは、Pure Storage FlashBladeデータコレクタを使用してインベントリとパフォーマンスのデータを収集します。</block>
   <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBladeホストのIPアドレス</block>
   <block id="5ba53e5a2add537346e5d283255d419a" category="cell">FPolicyイベントのONTAPからワークロードセキュリティエージェントへの通信。ONTAPがイベントをワークロードセキュリティエージェントに送信するには、これらのポートをワークロードセキュリティエージェントに対して開いておく必要があります。これには、ワークロードセキュリティエージェント自体のファイアウォールも含まれます（存在する場合）。これらのポートをすべて予約する必要はありませんが、予約するポートはこの範囲内である必要があります。最初に最大100個のポートを予約し、必要に応じて増やすことをお勧めします。</block>
   <block id="fd6114e047225ac69533d6082b3f731b" category="admonition">Forensics Activity APIを呼び出す場合は、cloudsecure_forensics.activities.* v2 * APIを使用します。このAPIに複数の呼び出しを行う場合は、呼び出しが並列ではなく連続して実行されるようにしてください。複数の並行呼び出しが発生すると、APIがタイムアウトする可能性があります。</block>
@@ -16277,4 +16276,16 @@ AAA / BBB / CCC /*
   <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">すべてのオブザーバビリティ機能を実行できるだけでなく、データコレクタの管理も実行できます。</block>
   <block id="7d86034e4b4cb78c8bb38a5020649dbd" category="cell">他のユーザを招待できますが、オブザーバビリティロールのみを割り当てることができます。SSO設定を表示できますが、変更できません。APIアクセストークンを作成および管理できます。監査情報を表示できます。サブスクリプション情報、使用状況、履歴を表示できます。グローバルアラート通知およびサブスクリプション通知の受信者リストを管理できます。</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">使用不可</block>
+  <block id="a8724e88fefdacdec22b256079efbc3b" category="paragraph">注意: FOSのデフォルトの「ユーザー」レベルでは、Cloud Insightsがデバイスのすべての論理的側面を表示するには不十分です。「シャーシロール」が有効になっているユーザーアカウントと、スイッチに設定されているすべての仮想ファブリックに対する権限が必要です。</block>
+  <block id="c98bbcb8f16f41d79d40524732f5085a" category="paragraph">次に、FOSデバイスへのSSHセッションでCloud Insightsを使用するための「最小権限」ユーザアカウントを作成する例を示します。</block>
+  <block id="87acb0f928436de44c10589e7dfad434" category="paragraph">userconfig -- add NetAppCIUser -r user -l 1-128 -c user -p QWERTY！</block>
+  <block id="13a225ee351dfd6def3fc0db9ef2c5d0" category="paragraph">これにより、ユーザ「NetAppCIUser」、パスワード「QWERTY！」が作成されます。このユーザには、128個の可能なすべての仮想ファブリック（-l）で「ユーザ」ロール（-r）が割り当てられます。このユーザには、必要な「シャーシ」ロール（-c）が追加で割り当てられ、ユーザレベルのアクセス権が割り当てられています。</block>
+  <block id="9269037f4e86b08be75df1f65affd8d8" category="cell">403 Forbiddenでインベントリが失敗する</block>
+  <block id="5300b225712833815322a70076b43af1" category="cell">これは、単に不正な資格情報であるか、十分に強力でないロールを使用しようとしていることを示している可能性があります。「ユーザー」レベルのユーザーには、必要な「シャーシロール」権限がないか、デフォルト以外の仮想ファブリックへのアクセスを表示する権限がないことに注意してください。</block>
+  <block id="a5acdd594b390d17ff4ed98ab41acb5f" category="paragraph">Cloud Insightsは、Pure Storage FlashBladeデータコレクタを使用して、REST APIのバージョン2を公開するFlashBladeクラスタからインベントリとパフォーマンスのデータを収集します。</block>
+  <block id="26c7e129f928f6ba8485b8308659b929" category="cell">オブジェクトストレージバケット</block>
+  <block id="c307e1b8edd2b5d784d81d211f67c2e5" category="list-text">ストレージシステムのIPアドレスまたは完全修飾ドメイン名</block>
+  <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">APIトークン。理想的には寿命が無限です。読み取り専用レベルのユーザで十分です。</block>
+  <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">Cloud Insights管理者が自分のAPIトークンが属するユーザを記憶できるようにするためのユーザ名</block>
+  <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API トークン</block>
 </blocks>
