@@ -43,13 +43,9 @@ summary: この分析情報から、リソースが環境内の他のリソー�
 
 === 負荷の高いワークロード
 
-共有リソースでインパクトのあるワークロードと影響を受けるワークロードを確認するには、Cloud Insights メニューの* Dashboards > High Consuming workloads *をクリックします。
+Cloud Insightsで検出された負荷の高いワークロードは、Stress_Insightの下の_Shared Resourcesに表示されます。これらの分析情報を確認するには、*オブザーバビリティ> Infrastructure Insights *に移動してください。
 
-image:Impacts_Workloads_Menu.png["負荷の高いワークロードメニュー"]
-
-Cloud Insights は、飽和が検出されたワークロードのリストを表示します。ワークロードをクリックすると、ワークロードダッシュボードが開きます。
-
-image:Impacts_High_Consuming_Workloads.png["ワークロードのリスト"]
+image:Impacts_Workloads_Menu.png["リソースを共有"]
 
 ワークロードをクリックすると、そのワークロードの詳細ページが表示されます。  上部チャートには、競合が発生している共有リソース（ストレージプールなど）のアクティビティが表示されます。
 
