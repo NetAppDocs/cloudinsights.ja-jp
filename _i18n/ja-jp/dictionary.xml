@@ -16293,4 +16293,5 @@ AAA / BBB / CCC /*
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">時間に基づくアラートの解決</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6eca91256cc474aa6b595cae920d2b6a" category="paragraph">VMware vSphereのデータコレクタは、VMゲストおよびESXiホストのパフォーマンスと構成に関する情報を収集します。vSphere内のすべてのオブジェクトに対して読み取り専用のPrivilegesが必要です。2024年8月以降、vSphereコレクタは、vSphere環境からのログメッセージと一部のVMware固有の指標も取り込みます。Cloud InsightsはvSphere 8.0.1以降の環境からのみVMwareログ情報を取得できます。同様に、ベンダー固有の指標はvSphere 7以降の環境でのみサポートされます。そのため、特定のコレクタが古いvSphereインスタンスを参照している場合は、そのコレクタのログやベンダー固有のメトリックのチェックボックスを無効にすることができます。</block>
+  <block id="88a839c0b82eee34733678fcc5ffb8bd" category="cell">Fluent Bitの起動に失敗し、データベースのオープン/作成を試みた場合は、runPrivilegedをtrueに設定します。</block>
 </blocks>
