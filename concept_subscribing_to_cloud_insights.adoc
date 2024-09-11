@@ -29,7 +29,7 @@ Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行え�
 登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。
 詳細については、「 Cloud Insights について」を参照してください link:security_information_and_region.html["情報と地域"]。
 
-Cloud Insightsベーシックエディションとプレミアムエディションで使用できる機能の完全な比較については、を参照してください link:https://bluexp.netapp.com/cloud-insights-pricing["Cloud Insightsの価格設定"] ページ
+Cloud Insightsベーシックエディションとプレミアムエディションで利用可能な機能の完全な比較については、link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Cloud Insightsの価格設定"]ページを参照してください。
 
 
 WARNING: 非アクティブな Cloud Insights Basic Edition 環境が削除され、そのリソースが再利用されます。連続する 30 日間のユーザアクティビティがない場合、 7 日間にわたってデータが取り込まれていない場合、環境は非アクティブとみなされます。Cloud Insights は通知を送信し、環境が削除される 4 日前の猶予期間を提供します。

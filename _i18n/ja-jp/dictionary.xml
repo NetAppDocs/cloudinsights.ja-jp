@@ -5747,7 +5747,6 @@ httpdリクエストメソッドPUT
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。
 詳細については、「 Cloud Insights について」を参照してください <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>。</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insightsの価格設定</block>
-  <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">Cloud Insightsベーシックエディションとプレミアムエディションで使用できる機能の完全な比較については、を参照してください <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> ページ</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">南京錠</block>
   <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">試用版</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。</block>
@@ -16302,4 +16301,5 @@ AAA / BBB / CCC /*
   <block id="1979148f99c797a36ae97c5382f95179" category="inline-image-macro">WS Agentのバージョン</block>
   <block id="1958af1f939092e25b5d78caf2a1b150" category="paragraph"><block ref="1958af1f939092e25b5d78caf2a1b150" category="inline-image-macro-rx" type="image"></block></block>
   <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">このエラーは、エージェントのブートストラップ中に発生します。ロガーが初期化される前に発生するため、エラーはログファイルに記録されません。エラーは標準出力にリダイレクトされ、<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>コマンドを使用してサービスログに表示されます。このコマンドは、問題の詳細なトラブルシューティングに使用できます。est</block>
+  <block id="3215409bdfa80bc0793df35265a10206" category="paragraph">Cloud Insightsベーシックエディションとプレミアムエディションで利用可能な機能の完全な比較については、<block ref="5ae6a719f15b2f1023483afd4997e05f" category="inline-link-macro-rx"></block>ページを参照してください。</block>
 </blocks>
