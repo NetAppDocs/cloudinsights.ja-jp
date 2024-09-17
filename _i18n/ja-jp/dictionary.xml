@@ -9093,9 +9093,6 @@ Aデバイスから。この画面で実行できる操作には、次のもの�
   <block id="37394ad048cccadcb8fadc6b50055f50" category="cell">カスタムSQLを使用してレポートを実行します</block>
   <block id="654a32ee33803fd11261b8d650858744" category="section-title">Reporting （ Cognos ） E メールの設定</block>
   <block id="17ea205c242f02ff29a6c35d09220094" category="admonition">Cloud Insights Reporting （ Cognos アプリケーション）でユーザの E メール設定を変更した場合、それらの設定は現在のセッション _ に対してのみアクティブになります。Cognos からログアウトして再度ログインすると、 E メールの設定がリセットされます。</block>
-  <block id="68ee8ec8a294e5cd7317a22a04835d18" category="section-title">既存のお客様にとって重要な注意事項です</block>
-  <block id="de1257fde6a6c03e2ac180d51c8c79f6" category="paragraph">Cloud Insights with Reporting を初めてお使いになる方へようこそ。  レポートの利用を開始するために、これ以上何もする必要はありません。</block>
-  <block id="a3a23e64a26caa2ba68aabe6a653f8a3" category="paragraph">現在 Premium Edition をお使いの場合、 SSO はお使いの環境で自動的に有効になりません。SSO を有効にすると、 Reporting Portal （ Cognos ）の管理者ユーザが存在しなくなります。つまり '_My Content_ フォルダにあるすべてのレポートが削除され '_Team Content_ で再インストールまたは再作成する必要がありますまた、 SSO を有効にしたあとにスケジュールされたレポートを設定する必要があります。</block>
   <block id="64e8aee8ab5bbf42a82844d113285456" category="section-title">SSO を有効にするために既存の環境を準備するには、どのような手順を実行する必要がありますか。</block>
   <block id="30cf09810334fcbe4d4ece63c4a34c1f" category="paragraph">レポートを確実に保持するには、次の手順を使用して、 _My Content_to _Team Content_ からすべてのレポートを移行します。この作業は、環境で SSO を有効にする前に行う必要があります。</block>
   <block id="b3ac02e1033cf67cbcd4dfd278c25e00" category="list-text">[メニュー]&gt;[コンテンツ]*に移動します</block>
@@ -16302,4 +16299,10 @@ AAA / BBB / CCC /*
   <block id="1958af1f939092e25b5d78caf2a1b150" category="paragraph"><block ref="1958af1f939092e25b5d78caf2a1b150" category="inline-image-macro-rx" type="image"></block></block>
   <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">このエラーは、エージェントのブートストラップ中に発生します。ロガーが初期化される前に発生するため、エラーはログファイルに記録されません。エラーは標準出力にリダイレクトされ、<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>コマンドを使用してサービスログに表示されます。このコマンドは、問題の詳細なトラブルシューティングに使用できます。est</block>
   <block id="3215409bdfa80bc0793df35265a10206" category="paragraph">Cloud Insightsベーシックエディションとプレミアムエディションで利用可能な機能の完全な比較については、<block ref="5ae6a719f15b2f1023483afd4997e05f" category="inline-link-macro-rx"></block>ページを参照してください。</block>
+  <block id="6170d8ef618bd7f0badc437283eafda2" category="section-title">ローカルルートSVMユーザアクティビティの変更</block>
+  <block id="d8622ff198a6c984d167c00f2cf7a110" category="paragraph">ローカルルートSVMユーザが何らかのアクティビティを実行している場合は、共有がマウントされているクライアントのIPがユーザ名で考慮され、フォレンジックのアクティビティページとユーザアクティビティページでは_root@&lt;ip-address-of-the-client&gt;_と表示されます。</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例：</block>
+  <block id="f3798d278d520536cd288461ba2c1858" category="list-text">SVM-1がワークロードセキュリティによって監視されていて、そのSVMのrootユーザがIPアドレスが10.197.12.40のクライアントに共有をマウントした場合、フォレンジックアクティビティページに表示されるユーザ名は_root@10.197.12.40_になります。</block>
+  <block id="b9d319d8c871cc037bbb64830c075261" category="list-text">IPアドレスが10.197.12.41の別のクライアントに同じSVM-1がマウントされている場合、フォレンジックアクティビティページに表示されるユーザ名は_root@10.197.12.41_になります。</block>
+  <block id="e3c2786769604634cbe42574b350b28f" category="list-text">これは、NFS rootユーザのアクティビティをIPアドレスで分離するためです。以前は、すべてのアクティビティは_root_userによってのみ実行され、IPの区別はありませんでした。</block>
 </blocks>
