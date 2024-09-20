@@ -16305,4 +16305,11 @@ AAA / BBB / CCC /*
   <block id="f3798d278d520536cd288461ba2c1858" category="list-text">SVM-1がワークロードセキュリティによって監視されていて、そのSVMのrootユーザがIPアドレスが10.197.12.40のクライアントに共有をマウントした場合、フォレンジックアクティビティページに表示されるユーザ名は_root@10.197.12.40_になります。</block>
   <block id="b9d319d8c871cc037bbb64830c075261" category="list-text">IPアドレスが10.197.12.41の別のクライアントに同じSVM-1がマウントされている場合、フォレンジックアクティビティページに表示されるユーザ名は_root@10.197.12.41_になります。</block>
   <block id="e3c2786769604634cbe42574b350b28f" category="list-text">これは、NFS rootユーザのアクティビティをIPアドレスで分離するためです。以前は、すべてのアクティビティは_root_userによってのみ実行され、IPの区別はありませんでした。</block>
+  <block id="ce86a5aaf36b8b44516c9a3d547bc544" category="section-title">API経由でデータを抽出するスクリプト</block>
+  <block id="abd1c518dbb73a973f62bdeac0383a1f" category="paragraph">ワークロードセキュリティエージェントには、要求された時間範囲を小さなバッチに分割することで、v2 APIへの並行呼び出しを容易にするエクスポートスクリプトが含まれています。</block>
+  <block id="9691b74510440e767ebe140708556d4a" category="paragraph">スクリプトは_/ opt/ NetApp / cloudsecure/agent/export-script_にあります。使用方法については、同じディレクトリにあるREADMEファイルを参照してください。</block>
+  <block id="b33ce51cf90f2cebc1848ee9bdd86a73" category="paragraph">スクリプトを呼び出すコマンドの例を次に示します。</block>
+  <block id="4cee2cbc95e55efcd827954ec63679ef" category="paragraph">キーパラメータ:-:<block ref="86768c9197497f61803d2cccda886c2b" prefix=" " category="inline-code"></block>要求された時間範囲を12時間の間隔に分割します。<block ref="90bf4ae9a260a1dab39cf85f9b78e62f" prefix=" " category="inline-code"></block>-: 3つのスレッドを使用して、これらの間隔を並行してフェッチします。</block>
+  <block id="6bcfb21e09554dca2e39878feec63052" category="inline-link-macro">AWSのドキュメント</block>
+  <block id="27bd1734310b9ef60e677eeb8578ef51" category="list-text">コレクタがインストールされているアカウントには、_delegateアクセス権administrator_deligate Privilegesが必要です。詳細については、<block ref="c2b17d165b23584303b797053451136e" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>

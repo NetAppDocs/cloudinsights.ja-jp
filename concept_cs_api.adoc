@@ -63,3 +63,19 @@ NOTE: トークンは、クリップボードにコピーして作成プロセ�
 _<API_Access_Token> _ は、 API アクセスキーの作成時に保存したトークンです。
 
 詳細については、 _API Documentation_link の * Admin > API Access * を参照してください。
+
+
+
+== API経由でデータを抽出するスクリプト
+
+ワークロードセキュリティエージェントには、要求された時間範囲を小さなバッチに分割することで、v2 APIへの並行呼び出しを容易にするエクスポートスクリプトが含まれています。
+
+スクリプトは_/ opt/ NetApp / cloudsecure/agent/export-script_にあります。使用方法については、同じディレクトリにあるREADMEファイルを参照してください。
+
+スクリプトを呼び出すコマンドの例を次に示します。
+
+[source]
+----
+python3 data-export.py --tenant_url <tenant id>.cs01.cloudinsights.netapp.com --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
+----
+キーパラメータ:-: `--iteration_interval 12`要求された時間範囲を12時間の間隔に分割します。 `--num_workers 3`-: 3つのスレッドを使用して、これらの間隔を並行してフェッチします。

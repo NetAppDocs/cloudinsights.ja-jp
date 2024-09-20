@@ -142,6 +142,7 @@ Cloud Insights では、 1 つの AWS データコレクタで AWS の子アカ�
 * 各子アカウントに AWS ロールを設定して、メインアカウント ID が子アカウントから EC2 の詳細にアクセスできるようにする必要があります。
 * 各子アカウントには、同じ文字列としてロール名を設定する必要があります。
 * Cloud Insights AWS Data Collector * Advanced Configuration * セクションの * Cross account role * フィールドに、このロール名の文字列を入力します。
+* コレクタがインストールされているアカウントには、_delegateアクセス権administrator_deligate Privilegesが必要です。詳細については、link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["AWSのドキュメント"]を参照してください。
 
 
 ベストプラクティス： AWS Predefined_AmazonEC2ReadOnlyAccess_policy を EC2 メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。
