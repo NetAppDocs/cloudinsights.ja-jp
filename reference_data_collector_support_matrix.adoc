@@ -4,7 +4,7 @@ permalink: reference_data_collector_support_matrix.html
 summary: Data Collector サポートマトリックスには、サポートされているデータコレクタに関する詳細情報が記載されています 
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
-= Cloud Insights データコレクタのサポートマトリックス
+= Data Infrastructure Insights Data Collectorサポートマトリックス
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -22,7 +22,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 :toc-position: content
 
 
-Data Collectorのサポートマトリックスには、Cloud Insights でサポートされているデータコレクタのリファレンス（ベンダーやモデルの情報など）が記載されています。
+Data Collector Support Matrixには、ベンダーやモデルの情報など、Data Infrastructure InsightsでサポートされるData Collectorのリファレンスが記載されています。
 
 
 toc::[]

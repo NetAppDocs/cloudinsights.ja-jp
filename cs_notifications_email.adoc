@@ -22,9 +22,6 @@ keywords: email, notifications, alerts, warnings, attacks
 ワークロードセキュリティアラートの受信者を設定するには、[*Admin]>[Notifications]をクリックし、受信者ごとに適切なセクションに電子メールアドレスを入力します。
 
 
-NOTE: ワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
-
-
 
 == 潜在的な攻撃アラートと警告
 
@@ -67,5 +64,5 @@ Attack_alert 通知を送信するには、 _Send Potential Attack Alerts_Sectio
 | * 問題： * | * これを試みなさい : * 
 
 
-| 「Data Collector Health Alerts」にEメールIDが表示されていますが、通知を受信していません。 | 通知メールは、NetApp Cloud Insightsドメイン（_accounts@service.cloudinsights.netapp.com_）から送信されます。一部の企業は、外部ドメインからの受信メールをブロックします。NetApp Cloud Insightsドメインからの外部通知がホワイトリストに登録されていることを確認します。 
+| 「Data Collector Health Alerts」にEメールIDが表示されていますが、通知を受信していません。 | 通知メールは、NetApp Data Infrastructure Insightsドメイン（_accounts@service.clou dinsights.jp NetApp .com_）から送信されます。一部の企業は、外部ドメインからの受信メールをブロックします。NetApp Data Infrastructure Insightsドメインからの外部通知がホワイトリストに登録されていることを確認します。 
 |===

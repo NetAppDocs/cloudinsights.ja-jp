@@ -21,9 +21,6 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 実行する必要があります link:task_cs_add_agent.html["エージェントをインストールします"] データコレクタから情報を取得します。Agent をインストールする前に、お使いの環境がオペレーティングシステム、 CPU 、メモリ、およびディスクスペースの要件を満たしていることを確認してください。
 
-
-NOTE: ストレージワークロードセキュリティは、Cloud Insights フェデラルエディションでは使用できません。
-
 [cols="36,60"]
 |===
 | コンポーネント | Linux 要件 
@@ -52,7 +49,7 @@ NOTE: ストレージワークロードセキュリティは、Cloud Insights �
 
 | ネットワーク | 100 Mbps~1 Gbpsイーサネット接続、静的IPアドレス、すべてのデバイスへのIP接続、およびワークロードセキュリティインスタンスへの必要なポート（80または443） 
 |===
-ワークロードセキュリティエージェントは、Cloud Insights Acquisition UnitやAgentと同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
+注：ワークロードセキュリティエージェントは、Data Infrastructure Insights Acquisition Unitやエージェントと同じマシンにインストールできます。ただし、これらを別々のマシンにインストールすることを推奨します。これらが同じマシンにインストールされている場合は、次のようにディスク領域を割り当ててください。
 
 |===
 
@@ -82,7 +79,7 @@ USベースの*ワークロード・セキュリティー環境の場合：
 
 | TCP | 443年 | ワークロードセキュリティエージェント | <site_name>.cs01.cloudinsights.netapp.com
 <site_name>.c01.cloudinsights.netapp.com
-<site_name>.c02.cloudinsights.netapp.com | Cloud Insights へのアクセス 
+<site_name>.c02.cloudinsights.netapp.com | データインフラの分析情報へのアクセス 
 
 
 | TCP | 443年 | ワークロードセキュリティエージェント | gateway.c01.cloudinsights.netapp.com
@@ -97,7 +94,7 @@ agentlogin.cs01.cloudinsights.netapp.com | 認証サービスへのアクセス
 
 | TCP | 443年 | ワークロードセキュリティエージェント | <site_name>.cs01-eu-1.cloudinsights.netapp.com
 <site_name>.c01-eu-1.cloudinsights.netapp.com
-<site_name>.c02-eu-1.cloudinsights.netapp.com | Cloud Insights へのアクセス 
+<site_name>.c02-eu-1.cloudinsights.netapp.com | データインフラの分析情報へのアクセス 
 
 
 | TCP | 443年 | ワークロードセキュリティエージェント | gateway.c01.cloudinsights.netapp.com
@@ -112,7 +109,7 @@ APACベースの*ワークロード・セキュリティ環境の場合：
 
 | TCP | 443年 | ワークロードセキュリティエージェント | <site_name>.cs01-ap-1.cloudinsights.netapp.com
 <site_name>.c01-ap-1.cloudinsights.netapp.com
-<site_name>.c02-ap-1.cloudinsights.netapp.com | Cloud Insights へのアクセス 
+<site_name>.c02-ap-1.cloudinsights.netapp.com | データインフラの分析情報へのアクセス 
 
 
 | TCP | 443年 | ワークロードセキュリティエージェント | gateway.c01.cloudinsights.netapp.com

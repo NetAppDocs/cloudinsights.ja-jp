@@ -34,7 +34,7 @@ ONTAP Essentialsには、過去7日間に収集されたデータを含む、最
 
 == 概要
 
-探索を開始するには、Cloud Insights メインメニューから* ONTAP Essentials *を選択します。
+データインフラのインサイトのメインメニューから*「ONTAP Essentials」*を選択して、データインフラの詳細を確認してください。
 
 image:OE_Overview.png["ONTAP Essentialsの概要ダッシュボード"]
 
@@ -154,8 +154,7 @@ image:OE_Cluster_Slideout.png["クラスタの詳細スライドアウトパネ�
 Storage VMの詳細には、監査とSSHの情報が表示されます。
 image:OE_Storage_Slideout.png["[Storage]タブ"]
 
-ランサムウェア対策の詳細には、Storage VMがONTAPのランサムウェア対策またはCloud Insights ワークロードセキュリティで保護されているかどうかが表示されます。ONTAP の[ARP]列には、ONTAP システムで設定されているONTAPのオンボードランサムウェア対策の現在のステータスが表示されます。Cloud Insights ワークロードセキュリティを有効にするには、その列で[保護]を選択します。
-image:OE_Anti-Ransomware_Slideout.png["Anti-Ransomwareタブ"]
+ランサムウェア対策の詳細では、Storage VMがONTAPのランサムウェア対策とデータインフラ分析情報のワークロードセキュリティのどちらで保護されているかを確認できます。ONTAP の[ARP]列には、ONTAP システムで設定されているONTAPのオンボードランサムウェア対策の現在のステータスが表示されます。Data Infrastructure Insightsワークロードセキュリティを有効にするには、列の[保護]を選択します。image:OE_Anti-Ransomware_Slideout.png["Anti-Ransomwareタブ"]
 
 
 

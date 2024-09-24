@@ -41,9 +41,9 @@ image:ServiceMap_NKMO_Deployment_Options.png["NKMO停止中にMapオプション
 
 == モニタ
 
-ワークロードマップでは、を使用します link:task_create_monitor.html["モニタ"] 情報を得るためにCloud Insights には、いくつかのデフォルトのKubernetesモニタが用意されています（デフォルトでは_Paused_になっている場合があります）。必要なモニタを_Resume_(つまり有効化)することも、ワークロードマップでも使用されるKubernetesオブジェクト用のカスタムモニタを作成することもできます。
+ワークロードマップは、を使用しlink:task_create_monitor.html["モニタ"]て情報を取得します。Data Infrastructure Insightsには、多数のデフォルトKubernetesモニタが用意されています（デフォルトでは、これらのモニタは_Paused_になっている場合があります）。必要なモニタを_Resume_(つまり有効化)することも、ワークロードマップでも使用されるKubernetesオブジェクト用のカスタムモニタを作成することもできます。
 
-Cloud Insights メトリックアラートは、以下のいずれかのオブジェクトタイプに対して作成できます。データがデフォルトのオブジェクトタイプでグループ化されていることを確認します。
+Data Infrastructure Insightsの指標アラートは、以下のいずれかのオブジェクトタイプに対して作成できます。データがデフォルトのオブジェクトタイプでグループ化されていることを確認します。
 
 * kubernetes.workload
 * kubernetes.daemonset
@@ -86,7 +86,7 @@ image:Workload_Map_Slideout_with_Alert.png["ワークロードのスライドア
 
 == 検索とフィルタ
 
-Cloud Insights の他の機能と同様に、必要なオブジェクトやワークロード属性に絞り込むフィルタを簡単に設定できます。
+Data Infrastructure Insightsの他の機能と同様に、必要なオブジェクトやワークロードの属性に絞り込むフィルタを簡単に設定できます。
 
 image:Workload_Map_Filtering.png["ワークロードマップのフィルタリング"]
 
@@ -120,7 +120,7 @@ image:Workload_Map_Find_Highlighting.png["検索ボックスに入力すると�
 
 * ソースがKubernetesクラスタの外部にある場合は、次の手順を実行します。
 +
-** Cloud Insights は、DNS解決名を解析してサービスタイプを抽出しようとします。
+** Data Infrastructure Insightsは、DNS解決名を解析してサービスタイプを抽出しようとします。
 +
 たとえば、DNS解決名が_s3.eu-north-1.amazonaws.comの場合、解決された名前はサービスタイプとしてget_s3_に解析されます。
 

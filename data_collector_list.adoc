@@ -4,7 +4,7 @@ permalink: data_collector_list.html
 summary: サポートされているデータコレクタのリスト。 
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
-= Cloud Insights データコレクタリスト
+= Data Infrastructure Insightsのデータコレクタリスト
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,7 +19,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 
 
 [role="lead"]
-Cloud Insights は、多くのベンダーやサービスからのさまざまなデータコレクタをサポートしています。
+Data Infrastructure Insightsは、多数のベンダーやサービスが提供するさまざまなデータコレクタをサポートしています。
 
 データコレクタは、次のタイプによって分類されます。
 
@@ -27,7 +27,7 @@ Cloud Insights は、多くのベンダーやサービスからのさまざま�
 * サービス： Kubernetes や Docker などのサービスから購入_ 連動 _ とも呼ばれます。
 
 
-Cloud Insights でサポートされているデータコレクタの ABC 順リスト：
+Data Infrastructure Insightsでサポートされているデータコレクタのアルファベット順リスト：
 
 [cols="<,<"]
 |===

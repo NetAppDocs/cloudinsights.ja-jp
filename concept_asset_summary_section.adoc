@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
-summary: Cloud Insights のアセットページの概要セクション。 
+summary: 'Data Infrastructure Insightsのアセットページの[Summary]セクションの概要。' 
 keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = アセットページの概要セクション

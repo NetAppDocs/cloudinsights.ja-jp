@@ -19,7 +19,7 @@ keywords: collector, acquisition, status
 
 
 [role="lead"]
-データコレクタは Cloud Insights の主要な情報源であるため、実行状態を維持することが不可欠です。
+データコレクタは、Data Infrastructure Insightsの主要な情報源であるため、実行状態を維持することが不可欠です。
 
 データコレクタのステータスは、アセットページの右上に「 Acquired N minutes ago 」というメッセージとして表示されます。 N はアセットのデータコレクタの最新の取得時間を示します。取得日時も表示されます。
 

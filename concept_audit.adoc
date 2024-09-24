@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_audit.html 
 keywords: audit, users, activities 
-summary: 監査では、 Cloud Insights システムのシステムアクティビティとユーザアクティビティが確認できます。 
+summary: '[Audit]では、Data Infrastructure Insightsシステムでのシステムとユーザのアクティビティを確認できます。' 
 ---
 = 監査
 :toc: macro
@@ -19,7 +19,7 @@ summary: 監査では、 Cloud Insights システムのシステムアクティ�
 
 
 [role="lead"]
-想定される変更（追跡用）と想定外の変更（トラブルシューティング用）を特定するために、 Cloud Insights のシステムイベントとユーザアクティビティの監査証跡を表示できます。
+予想される変更（追跡用）と予想外の変更（トラブルシューティング用）の両方を特定するために、Data Infrastructure Insightsのシステムイベントとユーザアクティビティの監査証跡を表示できます。
 
 
 
@@ -29,7 +29,7 @@ summary: 監査では、 Cloud Insights システムのシステムアクティ�
 
 * * Time * - イベントまたはアクティビティの日付と時刻
 * * ユーザー * - アクティビティを開始したユーザー
-* * Role * - Cloud Insights でのユーザーの役割（ゲスト、ユーザー、管理者）
+* *ロール*- Data Infrastructure Insightsにおけるユーザのロール（ゲスト、ユーザ、管理者）
 * *ip * - イベントに関連付けられた IP アドレス
 * * アクション * - ログイン、作成、更新などのアクティビティのタイプ
 * * カテゴリ * - アクティビティのカテゴリ
@@ -91,7 +91,7 @@ image:Audit_Filters.png["監査フィルタ"]
 
 == 監査済みイベントとアクション
 
-Cloud Insights で監査されるイベントとアクションは、次の領域に分類できます。
+Data Infrastructure Insightsで監査されるイベントとアクションは、大きく次の領域に分類できます。
 
 * * ユーザーアカウント * ：ログイン、ログアウト、ロール変更など
 +
@@ -134,7 +134,7 @@ Cloud Insights で監査されるイベントとアクションは、次の領�
 監査表示の結果を .csv ファイルにエクスポートして、データを分析したり、別のアプリケーションにインポートしたりできます。
 
 .手順
-. [ 監査 ] ページで、目的の時間範囲と任意のフィルタを設定します。Cloud Insights は、設定したフィルタリングおよび時間範囲に一致する監査エントリのみをエクスポートします。
+. [ 監査 ] ページで、目的の時間範囲と任意のフィルタを設定します。Data Infrastructure Insightsでは、設定したフィルタリングと時間範囲に一致する監査エントリのみがエクスポートされます。
 . [_Export_] ボタンをクリックします image:ExportButton.png["[ エクスポート ] ボタン"] をクリックします。
 
 
@@ -144,7 +144,7 @@ Cloud Insights で監査されるイベントとアクションは、次の領�
 
 == 監査データの保持
 
-Cloud Insights が監査データを保持する時間は、お客様のエディションによって異なります。
+Data Infrastructure Insightsが監査データを保持する時間は、お客様のエディションによって異なります。
 
 * Basic Edition ：監査データは 30 日間保持されます
 * Standard Edition および Premium Editions ：監査データは 1 年と 1 日の間保持されます

@@ -31,7 +31,7 @@ summary: 分析情報から、リソースの使用状況とトレンド分析�
 
 === 負荷のある共有リソース
 
-影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Cloud Insights には、環境内のリソースの飽和と影響の調査に役立つツールが用意されています。 link:insights_shared_resources_under_stress.html["詳細はこちら。"]
+影響の大きいワークロードは、共有リソース内の他のワークロードのパフォーマンスを低下させる可能性があります。これにより、共有リソースに負荷がかかります。Data Infrastructure Insightsは、リソースの飽和状態や環境への影響を調査するのに役立つツールを提供します。link:insights_shared_resources_under_stress.html["詳細はこちら。"]
 
 
 
@@ -46,4 +46,4 @@ summary: 分析情報から、リソースの使用状況とトレンド分析�
 ONTAP コールドストレージの再利用_Insightは、ONTAP システム上のボリュームについて、コールド容量、潜在的なコスト/電力削減、推奨される対処方法に関するデータを提供します。 link:insights_reclaim_ontap_cold_storage.html["詳細はこちら。"]
 
 
-NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。 link:/concept_preview_features.html["詳細はこちら。"] Cloud Insights プレビューフィーチャーについて
+NOTE: これは_Preview_featureであり、改善が行われると時間の経過とともに変更される場合があります。link:/concept_preview_features.html["詳細はこちら。"] Data Infrastructure Insightsプレビュー機能について

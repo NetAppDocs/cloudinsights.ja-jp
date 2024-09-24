@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboards_overview.html 
-summary: Cloud Insights のダッシュボードの概要。 
+summary: Data Infrastructure Insightsのダッシュボードの概要 
 keywords: dashboard, widget, custom, view, data 
 ---
 = ダッシュボードの概要
@@ -19,7 +19,7 @@ keywords: dashboard, widget, custom, view, data
 
 
 [role="lead"]
-Cloud Insights では、さまざまなウィジェットを使用してカスタムダッシュボードを作成し、それぞれのダッシュボードでデータを極めて柔軟に表示、グラフ化できるため、インフラデータの運用ビューを作成することができます。
+Data Infrastructure Insightsでは、インフラデータの運用ビューを柔軟に作成できます。さまざまなウィジェットを使用してカスタムダッシュボードを作成し、それぞれのダッシュボードでデータの表示やグラフを柔軟に行うことができます。
 
 
 IMPORTANT: これらのセクションの例は、説明のみを目的としたものであり、想定されるすべてのシナリオを網羅しているわけではありません。ここに記載されている概念や手順を参考にしながら、実際のニーズに応じたデータ用のダッシュボードを作成してください。

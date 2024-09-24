@@ -76,13 +76,7 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
 /tmpインストール中に1 GB以上の空き容量が必要です | 50GB 
 
 
-| ネットワーク | 100Mbps/1Gbpsイーサネット接続、静的IPアドレス、およびAcquisition Unitから*。.cloudinsights.netapp.comまたはCloud Insights環境（\https：//<environment_id>.c01.cloudinsights.netapp.com）へのポート80または443の接続が必要です。Acquisition Unitと各Data Collectorの要件については、の手順を参照してください link:data_collector_list.html["Data Collector"]。
-
-組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、次のドメインを例外リストに追加する必要があります。
-
-*.cloudinsights.netapp.com
-
-詳細については、「プロキシについて」を参照してください。 link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちら（Linux）"] または link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["ここ（Windows）"]。 | 同じ 
+| ネットワーク | 100 Mbps/1 Gbpsイーサネット接続、静的IPアドレス、およびAcquisition Unitから*。cloudinsights.c01.cloudinsights.com NetAppまたはデータインフラストラクチャインサイト環境（\https：//<environment_id>.c01.cloudinsights.c.com NetApp）へのポート80または443の接続が必要です。Acquisition Unitと各Data Collectorの間の要件については、の手順を参照してくださいlink:data_collector_list.html["Data Collector"]。インターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシの動作を理解し、Data Infrastructure Insightsが機能するために特定の例外を探す必要があります。たとえば、デフォルトでアクセスがブロックされ、特定のWebサイト/ドメインへのアクセスのみが例外で許可されていますか。その場合は、次のドメインを例外リストに追加する必要があります。*。NetApp .com詳細については、プロキシlink:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["こちら（Linux）"]またはを参照してください。link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["ここ（Windows）"] | 同じ 
 
 
 | 権限 | Acquisition Unit サーバに対する sudo 権限
@@ -102,7 +96,7 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
 
 == サイジングについて
 
-Cloud Insights Acquisition Unit は 8GB のメモリと 50GB のディスクスペースしかないので、まずは大規模な環境に備えるために次の項目を確認してください。
+Data Infrastructure Insights Acquisition Unitの使用は、メモリが8GB、ディスクスペースが50GBしかないので開始できますが、大規模な環境の場合は次の点を自問してください。
 
 次のことを期待していますか？
 
@@ -118,5 +112,5 @@ Cloud Insights Acquisition Unit は 8GB のメモリと 50GB のディスクス�
 
 == Federal Editionの追加要件
 
-* Cloud Insights フェデラルエディションクラスタにAcquisition Unitをインストールする場合は、基盤となるオペレーティングシステムに適切なエントロピーのソースが必要です。Linuxシステムでは、これは通常、_rng-tools_をインストールするか、ハードウェア乱数生成（RNG）を使用して行われます。Acquisition Unitマシンでこの要件が満たされていることを確認するのは、お客様の責任です。
+* Data Infrastructure Insights Federal EditionクラスタにAcquisition Unitをインストールする場合は、基盤となるオペレーティングシステムに十分なエントロピーがある必要があります。Linuxシステムでは、これは通常、_rng-tools_をインストールするか、ハードウェア乱数生成（RNG）を使用して行われます。Acquisition Unitマシンでこの要件が満たされていることを確認するのは、お客様の責任です。
 

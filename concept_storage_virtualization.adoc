@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_storage_virtualization.html 
-summary: Cloud Insights では、フロントエンドとバックエンドの両方の仮想ストレージを表示できます。 
+summary: Data Infrastructure Insightsでは、フロントエンドとバックエンドの両方の仮想ストレージを表示できます。 
 keywords: storage, virtual, virtualized, virtualization, 
 ---
 = ストレージ仮想化
@@ -19,7 +19,7 @@ keywords: storage, virtual, virtualized, virtualization,
 
 
 [role="lead"]
-Cloud Insights では、ローカルストレージがあるストレージアレイと他のストレージアレイが仮想化されているストレージアレイを区別できます。これにより、コストを関連付け、フロントエンドからインフラのバックエンドまで、パフォーマンスを区別することができます。
+Data Infrastructure Insightsでは、ローカルストレージがあるストレージアレイと、他のストレージアレイが仮想化されているストレージアレイを区別できます。これにより、コストを関連付け、フロントエンドからインフラのバックエンドまで、パフォーマンスを区別することができます。
 
 
 

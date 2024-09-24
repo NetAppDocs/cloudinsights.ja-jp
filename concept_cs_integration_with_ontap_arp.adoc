@@ -94,6 +94,5 @@ SVMがワークロードセキュリティで監視されていないものの�
 | 問題 | 解決策： 
 
 
-| 電子メールアラートは、攻撃が検出されてから24時間後に受信されます。UIにはアラートが24時間前に表示され、その日にCloud Insights ワークロードセキュリティからEメールが受信されます。 | ONTAP がCloud Insights ワークロードセキュリティ（ワークロードセキュリティ）に_ランサムウェアDetected _ Eventを送信すると、Eメールが送信されます。イベントには、攻撃のリストとタイムスタンプが含まれます。Workload Security UIには、攻撃を受けた最初のファイルのアラートタイムスタンプが表示されます。ONTAP は、特定の数のファイルがエンコードされたときに、_ランサムウェアDetected _ EventをCloud Insights に送信します。
-そのため、UIにアラートが表示される時間とEメールが送信される時間が異なる場合があります。 
+| 電子メールアラートは、攻撃が検出されてから24時間後に受信されます。UIでは、その24時間前にData Infrastructure Insights Workload SecurityがEメールを受信するとアラートが表示されます。 | ONTAPがData Infrastructure Insights Workload Security（ワークロードセキュリティ）に_Ransomware Detected_Eventを送信すると、Eメールが送信されます。イベントには、攻撃のリストとタイムスタンプが含まれます。Workload Security UIには、攻撃を受けた最初のファイルのアラートタイムスタンプが表示されます。ONTAPは、一定数のファイルがエンコードされると、_Ransomware Detected_EventをData Infrastructure Insightsに送信します。そのため、UIにアラートが表示される時間とEメールが送信される時間が異なる場合があります。 
 |===

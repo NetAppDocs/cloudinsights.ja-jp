@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_asset_alerts_section.html 
-summary: Cloud Insights のアセットページの関連するアラートセクションの概要。 
+summary: 'Data Infrastructure Insightsのアセットページの[Related Alerts]セクションの概要。' 
 keywords: asset, landing page, violations, Alerts, 
 ---
 = Asset Page Related Alerts セクション
