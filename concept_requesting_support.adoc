@@ -91,9 +91,10 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 これらのサポートオプションはトライアルモードで利用でき、 24 時間 365 日無料でご利用いただけます。
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Suppport_KB&filter=%28content_type%3D%3D%22knowledgebase%22;product%3D%3D%22Cloud%20Insights%22%29["ナレッジベース"]*
-+
-このセクション内のリンクをクリックすると、ネットアップナレッジベースに移動し、関連する記事、ハウツーなどを検索できます。
+* * https://kb。NetApp .com /スペシャル：検索？query=cloud + insights [KnowledgeBase]*
+
+
++このセクションのリンクをクリックすると、NetAppナレッジベースに移動し、関連記事やハウツーなどを検索できます。
 
 * *link:https://docs.netapp.com/us-en/cloudinsights/["ドキュメント"]*
 +

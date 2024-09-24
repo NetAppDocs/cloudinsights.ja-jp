@@ -19,17 +19,17 @@ summary: HDS Command Suite Device Manager データコレクタの設定
 
 
 [role="lead"]
-Hitachi Vantara コマンドスイートのデータコレクタは、 HiCommand Device Manager サーバをサポートします。Cloud Insights は、標準の HiCommand API を使用して HiCommand Device Manager サーバと通信します。
+Hitachi Vantara コマンドスイートのデータコレクタは、 HiCommand Device Manager サーバをサポートします。Data Infrastructure Insightsは、標準のHiCommand APIを使用してHiCommand Device Managerサーバと通信します。
 
 
 
 == 用語集
 
-Cloud Insights は、 Hitachi Vantara Command Suite データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、Hitachi Vantara Command Suiteデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | PDEV | ディスク 
@@ -77,10 +77,10 @@ HDS ストレージプールのアセットランディングページにある�
 ** シンプロビジョニング– HDP プールの場合
 ** RAID グループ–次のような理由が考えられません。
 +
-Cloud Insights は、あらゆるコストで容量の二重カウントを回避するために強いスタンスを取っています。HDS では、通常、ディスクから RAID グループを作成し、それらの RAID グループにプールボリュームを作成し、それらのプールボリュームからプール（多くの場合 HDP を作成しますが、特別な目的にすることもあります）を構築する必要があります。Cloud Insights が、基盤となる RAID グループとプールの両方をそのまま報告した場合、それぞれの物理容量の合計がディスクの合計を大幅に超えてしまいます。
+Data Infrastructure Insightsでは、どのようなコストであっても容量が二重にカウントされることを避けるために、HDS では、通常、ディスクから RAID グループを作成し、それらの RAID グループにプールボリュームを作成し、それらのプールボリュームからプール（多くの場合 HDP を作成しますが、特別な目的にすることもあります）を構築する必要があります。Data Infrastructure Insightsが基盤となるRAIDグループとプールの両方を現状のまま報告した場合、物理容量の合計がディスクの合計を大幅に超えてしまいます。
 
 +
-Cloud Insights の HDS Command Suite データコレクタは、 RAID グループのサイズをプールボリュームの容量で任意に縮小します。これにより、 Cloud Insights が RAID グループをまったく報告しない場合があります。さらに、作成された RAID グループには、 Cloud Insights Web UI には表示されないようにフラグが設定されますが、 Cloud Insights Data Warehouse （ DWH ）にフローします。これらの決定の目的は、ほとんどのユーザーが気にしないことを UI の混乱から回避することです。 HDS アレイに 50 MB の空きがある RAID グループがある場合は、その空きスペースを有効な結果に使用できない可能性があります。
+代わりに、Data Infrastructure InsightsのHDS Command Suiteデータコレクタは、プールボリュームの容量に応じてRAIDグループのサイズを任意に縮小します。そのため、Data Infrastructure InsightsでRAIDグループがまったく報告されない可能性があります。また、作成されたRAIDグループには、Data Infrastructure Insights Web UIには表示されず、Data Infrastructure Insights Data Warehouse（DWH）には表示されるようにフラグが設定されます。これらの決定の目的は、ほとんどのユーザーが気にしないことを UI の混乱から回避することです。 HDS アレイに 50 MB の空きがある RAID グループがある場合は、その空きスペースを有効な結果に使用できない可能性があります。
 
 
 
@@ -124,15 +124,15 @@ HDS ストレージノードのアセットランディングページにある�
 +
 ** Performance Monitor のライセンスが必要です。
 ** 監視スイッチが有効になっている必要があります。
-** エクスポートツール（ Export.exe ）を Cloud Insights AU にコピーする必要があります。
+** エクスポートツール（Export.exe）をData Infrastructure Insights AUにコピーする必要があります。
 ** エクスポートツールのバージョンとターゲットアレイのマイクロコードのバージョンが一致している必要があります。
 
 
 * AMS のパフォーマンス：
 +
-** Cloud Insights でパフォーマンスデータの取得に使用する場合は、 AMS アレイ上に専用のサービスアカウントを作成することを強く推奨します。Storage Navigator では、ユーザーアカウントでアレイへの同時ログインが 1 つだけ許可されています。Cloud Insights で管理スクリプトまたは HiCommand と同じユーザアカウントを使用すると、 1 つのユーザアカウントの同時ログイン制限により、 Cloud Insights 、管理スクリプト、または HiCommand がアレイと通信できなくなることがあります
+** NetAppでは、Data Infrastructure Insightsがパフォーマンスデータの取得に使用する専用のサービスアカウントをAMSアレイに作成することを強く推奨しています。Storage Navigator では、ユーザーアカウントでアレイへの同時ログインが 1 つだけ許可されています。Data Infrastructure Insightsで管理スクリプトまたはHiCommandと同じユーザアカウントを使用すると、1つのユーザアカウントの同時ログイン制限が原因でData Infrastructure Insights、管理スクリプト、またはHiCommandがアレイと通信できなくなることがあります。
 ** Performance Monitor のライセンスが必要です。
-** Storage Navigator Modular 2 （ SNM2 ） CLI ユーティリティが Cloud Insights AU にインストールされている必要があります。
+** Storage Navigator Modular 2（SNM2）CLIユーティリティがData Infrastructure Insights AUにインストールされている必要があります。
 
 
 
@@ -253,14 +253,7 @@ HDS ストレージノードのアセットランディングページにある�
 
 | エラー：
 *エクスポートユーティリティの実行中にエラーが発生しました
-*外部コマンド実行中にエラーが発生しました | *エクスポートユーティリティがCloud Insights Acquisition Unitにインストールされていることを確認します
-*データコレクタ設定でエクスポートユーティリティの場所が正しいことを確認します
-* USP/R600アレイのIPがデータコレクタの設定で正しいことを確認します
-*データコレクタの設定で、ユーザ名とパスワードが正しいことを確認します
-*エクスポートユーティリティのバージョンがストレージアレイのマイクロコードのバージョンと互換性があることを確認してください
-* Cloud Insights Acquisition UnitからCMDプロンプトを開き、次の手順を実行します。
--ディレクトリを設定済みのインストールディレクトリに変更します
--バッチファイルrunWin.batを実行して、設定されているストレージアレイとの接続を試行します 
+*外部コマンド実行中にエラーが発生しました | * Data Infrastructure Insights Acquisition Unitにエクスポートユーティリティがインストールされていることを確認*データコレクタ設定でエクスポートユーティリティの場所が正しいことを確認*データコレクタ設定でUSP/R600アレイのIPが正しいことを確認*データコレクタ設定でユーザ名とパスワードが正しいことを確認* Data Insights Infrastructure Acquisition Unitのインストールディレクトリから次のディレクトリを開きますrunWin.bat。 
 
 
 | エラー：ターゲット IP のエクスポートツールのログインに失敗しました | *ユーザー名/パスワードが正しいことを確認します
@@ -268,8 +261,7 @@ HDS ストレージノードのアセットランディングページにある�
 *このアレイを取得するように他のデータコレクタが設定されていないことを確認します 
 
 
-| エラー：「 Unable to get time range for monitoring 」というメッセージが表示されます。 | * アレイでパフォーマンス監視が有効になっていることを確認します。
-* Cloud Insights の外部でエクスポートツールを起動して、問題が Cloud Insights の外部にあることを確認してください。 
+| エラー：「 Unable to get time range for monitoring 」というメッセージが表示されます。 | * アレイでパフォーマンス監視が有効になっていることを確認します。* Data Infrastructure Insightsの外部でエクスポートツールを呼び出して、問題がData Infrastructure Insightsの外部にあることを確認してください。 
 
 
 | エラー：
@@ -289,13 +281,7 @@ HDS ストレージノードのアセットランディングページにある�
 | エラー：
 *ストレージナビゲータCLIでエラーが発生しました
 * auperformコマンドの実行中にエラーが発生しました
-*外部コマンド実行中にエラーが発生しました | * Cloud Insights Acquisition UnitにStorage Navigator Modular CLIがインストールされていることを確認します
-*データコレクタ設定で、Storage Navigator Modular CLIの場所が正しいことを確認します
-*データコレクタの設定で、WMS/SMS/SMSアレイのIPが正しいことを確認します
-* Storage Navigator Modular CLIバージョンが、データコレクタに設定されたストレージアレイのマイクロコードバージョンと互換性があることを確認してください
-* Cloud Insights Acquisition UnitからCMDプロンプトを開き、次の手順を実行します。
--ディレクトリを設定済みのインストールディレクトリに変更します
--「auunitref.exe」コマンドを実行して、設定済みのストレージアレイとの接続を試行します。 
+*外部コマンド実行中にエラーが発生しました | * Data Infrastructure Insights Acquisition UnitにStorage Navigator Modular CLIがインストールされていることを確認*データコレクタ設定でStorage Navigator Modular CLIの場所が正しいことを確認*データコレクタ設定でWMS/SMS/SMSアレイのIPが正しいことを確認* Storage Navigator Modular CLIバージョンがデータコレクタに設定されているストレージアレイのマイクロコードバージョンと互換性があることを確認* Data Infrastructure Insights Acquisition Unitであることを実行していることを確認していることを確認していることを確認するコマンドを実行します。 
 
 
 | エラー：設定エラー：ストレージアレイがインベントリから報告されません | HiCommand サーバで該当するストレージアレイが設定されているかどうかを確認します 

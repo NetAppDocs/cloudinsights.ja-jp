@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: Cloud Insights のドキュメントポータルへようこそ。 
+summary: Data Infrastructure Insightsのドキュメントポータルへようこそ。 
 keywords:  
 ---
-= Cloud Insights のドキュメント
+= Data Infrastructure Insightsドキュメント
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ keywords:
 
 
 [role="lead"]
-NetApp Cloud Insights は、インフラ全体を可視化できるクラウドインフラ監視ツールです。Cloud Insights を使用すると、パブリッククラウドやプライベートデータセンターなど、すべてのリソースの監視、トラブルシューティング、最適化を行うことができます。
+NetApp Data Infrastructure Insights（旧称Cloud Insights）は、インフラ全体を可視化できるクラウドインフラ監視ツールです。Data Infrastructure Insightsを使用すると、パブリッククラウドやプライベートデータセンターを含む、すべてのリソースの監視、トラブルシューティング、最適化を実行できます。
 
 
 
-== Cloud Insights でできること
+== Data Infrastructure Insightsでできること
 
-Cloud Insights は、ハイブリッドマルチクラウドの監視機能を提供し、インフラとワークロードの完全なスタックの監視を可能にします。
+Data Infrastructure Insightsは、ハイブリッドマルチクラウドを監視し、インフラとワークロードのフルスタックのオブザーバビリティを提供します。
 
 * Kubernetesを含む、異機種混在インフラとワークロード向けのデータコレクタ
 * オープンなTelegrafコレクターとオープンAPIにより、統合が容易になります
@@ -42,7 +42,7 @@ Cloud Insights は、ハイブリッドマルチクラウドの監視機能を�
 
 == はじめに
 
-* どうすればよいですか link:task_cloud_insights_onboarding_1.html["*開始する*"] Cloud Insights を使用する場合は、
+* link:task_cloud_insights_onboarding_1.html["*開始する*"]Data Infrastructure Insightsの使用方法
 * サインアップしています。では、どうすればよいですか？
 link:task_getting_started_with_cloud_insights.html["データの取得"]
 link:concept_user_roles.html["ユーザを設定する"]

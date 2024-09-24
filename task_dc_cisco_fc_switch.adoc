@@ -19,7 +19,7 @@ summary: Cisco MDS Ablic Switch データコレクタの設定。
 
 
 [role="lead"]
-Cloud Insights では、 Cisco MDS ファブリックスイッチデータコレクタを使用して、 Cisco MDS ファブリックスイッチのインベントリ、および FC サービスが有効になっている各種の Cisco Nexus FCoE スイッチを検出します。
+Data Infrastructure Insightsでは、Cisco MDSファブリックスイッチデータコレクタを使用して、Cisco MDSファブリックスイッチおよびFCサービスが有効になっているさまざまなCisco Nexus FCoEスイッチのインベントリを検出します。
 
 また、このデータコレクタを使用して、 NPV モードで実行されている多くのモデルの Cisco デバイスを検出できます。
 
@@ -27,11 +27,11 @@ Cloud Insights では、 Cisco MDS ファブリックスイッチデータコレ
 
 == 用語集
 
-Cloud Insights では、 Cisco FC Switch データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsでは、Cisco FCスイッチデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | スイッチ | スイッチ 
@@ -186,7 +186,7 @@ Cloud Insights では、 Cisco FC Switch データコレクタから次のイン
 •CLIを使用してデバイスにログインします 
 
 
-| エラー： Cloud Insights はスイッチの WWN を取得できません。 | このスイッチは FC スイッチまたは FCoE スイッチではない可能性があり、サポートされていない場合もあります。データソースに設定された IP / FQDN が、本当に FC / FCoE スイッチであることを確認してください。 
+| エラー：Data Infrastructure InsightsがスイッチのWWNを取得できません。 | このスイッチは FC スイッチまたは FCoE スイッチではない可能性があり、サポートされていない場合もあります。データソースに設定された IP / FQDN が、本当に FC / FCoE スイッチであることを確認してください。 
 
 
 | エラー：複数のノードが NPV スイッチポートにログインしています | NPV スイッチの直接取得をディセーブルにします 

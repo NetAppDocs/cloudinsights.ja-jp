@@ -19,7 +19,7 @@ summary: Azure NetApp Files データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、 Azure NetApp Files データコレクタを使用してインベントリとパフォーマンスのデータを収集します。
+Data Infrastructure Insightsは、Azure NetApp Filesデータコレクタを使用してインベントリとパフォーマンスのデータを取得します。
 
 
 
@@ -31,9 +31,9 @@ Cloud Insights は、 Azure NetApp Files データコレクタを使用してイ
 * Azure Management Rest IP （ management.azure.com ）
 * Azure サービスプリンシパルクライアント ID （ユーザアカウント）
 * Azure サービスプリンシパルの認証キー（ユーザパスワード）
-* Cloud Insights 検出用の Azure アカウントを設定する必要があります。
+* Data Infrastructure Insightsの検出用にAzureアカウントを設定する必要があります。
 +
-アカウントを適切に設定し、アプリケーションを Azure に登録すると、 Cloud Insights で Azure インスタンスを検出するために必要なクレデンシャルが付与されます。次のリンクでは、検出用のアカウントを設定する方法について説明します。
+アカウントを適切に設定してAzureにアプリケーションを登録すると、Data Infrastructure InsightsでAzureインスタンスを検出するために必要なクレデンシャルが取得されます。次のリンクでは、検出用のアカウントを設定する方法について説明します。
 
 
 

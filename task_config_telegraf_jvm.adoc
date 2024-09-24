@@ -19,7 +19,7 @@ summary: JVM データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して JVM からメトリックを収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してJVMから指標を収集します。
 
 
 

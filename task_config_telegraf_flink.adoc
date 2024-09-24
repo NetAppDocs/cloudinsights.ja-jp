@@ -19,7 +19,7 @@ summary: Flink データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用してフロークからメトリックを収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してFlinkから指標を収集します。
 
 
 

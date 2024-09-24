@@ -19,13 +19,13 @@ summary: Dell EMC VMAX および PowerMax ファミリのデバイスデータ�
 
 
 [role="lead"]
-Cloud Insights は、 Solutions Enabler symcli コマンドを使用して、環境内の既存の Solutions Enabler サーバと連携して EMC VMAX および PowerMax ストレージアレイを検出します。既存の Solutions Enabler サーバは、ゲートキーパーボリュームへのアクセスを通じて VMAX/PowerMax ストレージアレイに接続できます。
+Data Infrastructure Insightsは、Solutions Enablerのsymcliコマンドと環境内の既存のSolutions Enablerサーバを使用して、EMC VMAXおよびPowerMaxストレージアレイを検出します。既存の Solutions Enabler サーバは、ゲートキーパーボリュームへのアクセスを通じて VMAX/PowerMax ストレージアレイに接続できます。
 
 
 
 == 要件
 
-このデータコレクタを設定 Cloud Insights する前に、既存の Solutions Enabler サーバのポート 2707 への TCP 接続が確立されていることを確認してください。Cloud Insights は ' サーバからの symcfg list の出力で示されているように ' このサーバに対してローカルなすべての Symmetrix アレイを検出します
+このデータコレクタを設定する前に、Data Infrastructure Insightsが既存のSolutions Enablerサーバのポート2707にTCP接続されていることを確認する必要があります。Data Infrastructure Insightsは、このサーバからの「symcfg list」出力に示されるように、このサーバに対して「ローカル」であるすべてのSymmetrixアレイを検出します。
 
 * EMC Solutions Enabler （ CLI ）と SMI-S プロバイダアプリケーションが Acquisition Unit サーバにインストールされている必要があります。 Solutions Enabler サーバで実行されているバージョンと同じかそれよりも前のバージョンが必要です。
 * 適切に設定された {installdir}\EMC\SYMAPI\config\netcnfg ファイルが必要です。このファイルでは、 Solutions Enabler サーバのサービス名とアクセス方法（ SECURE / NOSECURE / ANY ）を定義します。
@@ -58,11 +58,11 @@ cisys storapid <all>
 
 == 用語集
 
-Cloud Insights では、 EMC VMAX/PowerMax データソースから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsでは、EMC VMAX / PowerMaxデータソースから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク | ディスク 
@@ -88,7 +88,7 @@ Cloud Insights では、 EMC VMAX/PowerMax データソースから次のイン�
 
 == 設定
 
-* 注： * SMI-S ユーザー認証が有効になっていない場合、 Cloud Insights データコレクタのデフォルト値は無視されます。
+*注：* SMI-Sユーザ認証が有効になっていない場合、Data Infrastructure Insightsデータコレクタのデフォルト値は無視されます。
 
 [cols="2*"]
 |===
@@ -121,13 +121,7 @@ Cloud Insights では、 EMC VMAX/PowerMax データソースから次のイン�
 | インベントリフィルタデバイスリスト | 対象に含めるか除外するデバイスの ID をカンマで区切ったリスト 
 
 
-| 接続のキャッシュ | 接続のキャッシュ方法を選択：
-
-*LOCALとは、Cloud Insights取得サービスがSolutions Enablerサーバ上で実行されていることを意味します。サーバは検出対象のSymmetrixアレイにファイバチャネルで接続されており、ゲートキーパーボリュームにアクセスできることを意味します。このオプションは、一部の Remote Acquisition Unit （ RAU ）構成で使用されます。
-* REMOTE_CACHED はデフォルトの設定であり、ほとんどの状況でこのオプションを使用します。このオプションでは、 NETCNFG ファイルの設定に基づいて、 IP を使用して Solutions Enabler サーバに接続します。サーバは検出対象の Symmetrix アレイにファイバチャネルで接続されていて、ゲートキーパーボリュームにアクセスできる必要があります。
-* REMOTE_CACHED オプションで CLI コマンドが失敗する場合は、 REMOTE オプションを使用します。データ収集プロセスが遅くなることに注意してください（数時間から場合によっては数日かかることがあります）。検出対象の Symmetrix アレイにファイバチャネルで接続された Solutions Enabler サーバへの IP 接続には、引き続き NETCNFG ファイルの設定が使用されます。
-
-* 注：この設定は 'symcfg list の出力で REMOTE と表示されたアレイに対する Cloud Insights の動作を変更しませんCloud Insights は、このコマンドで LOCAL と表示されたデバイスのデータのみを収集します。 
+| 接続のキャッシュ | 接続キャッシュ方法の選択： * local は 'Solutions Enabler サーバ上で Cloud Insights 取得サービスが実行されていることを意味しますこのサーバは ' 検出対象の Symmetrix アレイにファイバ・チャネルで接続されており ' ゲートキーパー・ボリュームにアクセスできる必要がありますこのオプションは、一部の Remote Acquisition Unit （ RAU ）構成で使用されます。* REMOTE_CACHED はデフォルトの設定であり、ほとんどの状況でこのオプションを使用します。このオプションでは、 NETCNFG ファイルの設定に基づいて、 IP を使用して Solutions Enabler サーバに接続します。サーバは検出対象の Symmetrix アレイにファイバチャネルで接続されていて、ゲートキーパーボリュームにアクセスできる必要があります。* REMOTE_CACHED オプションで CLI コマンドが失敗する場合は、 REMOTE オプションを使用します。データ収集プロセスが遅くなることに注意してください（数時間から場合によっては数日かかることがあります）。検出対象の Symmetrix アレイにファイバチャネルで接続された Solutions Enabler サーバへの IP 接続には、引き続き NETCNFG ファイルの設定が使用されます。*注：*この設定では、「symcfg list」の出力でREMOTEと表示されているアレイに対するData Infrastructure Insightsの動作は変更されません。Data Infrastructure Insightsは、このコマンドでLOCALと表示されているデバイスのデータのみを収集します。 
 
 
 | SMI-S プロトコル | SMI-S プロバイダへの接続に使用するプロトコル。使用されているデフォルトのポートも表示されます。 

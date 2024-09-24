@@ -19,7 +19,7 @@ summary: Brocade Sphereon/Intrepid Switch データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、 Brocade Sphereon/Intrepid Switch （ SNMP ）データコレクタを使用して、 Brocade Sphereon または Intrepid スイッチのインベントリを検出します。
+Data Infrastructure Insightsでは、Brocade Sphereon/Intrepid Switch（SNMP）データコレクタを使用して、Brocade Sphereon/Intrepidスイッチのインベントリを検出します。
 
 
 
@@ -27,7 +27,7 @@ Cloud Insights では、 Brocade Sphereon/Intrepid Switch （ SNMP ）データ�
 
 このデータコレクタを設定するには、次の要件を満たしている必要があります。
 
-* ファブリック内のすべてのスイッチへの IP 接続が必要です。[Discover all switches in the fabric] チェックボックスをオンにすると、 Cloud Insights はファブリック内のすべてのスイッチを識別しますが、これらの追加のスイッチを検出するには、これらのスイッチへの IP 接続が必要です。
+* ファブリック内のすべてのスイッチへのIP接続が確立されている必要があります。[Discover all switches in the fabric]チェックボックスを選択すると、Data Infrastructure Insightsによってファブリック内のすべてのスイッチが識別されますが、検出するにはこれらの追加スイッチへのIP接続が必要です。
 * SNMP V1 または SNMP V2 を使用している場合は、読み取り専用コミュニティストリングが必要です。
 * ゾーニング情報を取得するには、スイッチへの HTTP アクセスが必要です。
 * このスイッチに snmpwalk ユーティリティを実行してアクセスを検証します（ _ <install_path>\bin\_ を参照）。

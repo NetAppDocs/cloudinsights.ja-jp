@@ -19,7 +19,7 @@ summary: AWS S3をストレージデータコレクタとして設定する。
 
 
 [role="lead"]
-Cloud Insights は、AWS S3をストレージデータコレクタとして使用して、インベントリとパフォーマンスのデータをAWS S3インスタンスから取得します。
+Data Infrastructure Insightsは、AWS S3をストレージデータコレクタとして使用して、AWS S3インスタンスからインベントリデータとパフォーマンスデータを取得します。
 
 
 
@@ -63,7 +63,7 @@ AWS S3からストレージデバイスとしてデータを収集するには�
 | AWS IAM Secret Access Key の略 | AWS IAM Secret Access Key を入力します。IAM ロールを使用しない場合は必須です。 
 
 
-| AWS が API 要求を課金することを理解している | このチェックボックスをオンにすると、 Cloud Insights ポーリングで作成された API 要求を AWS から課金することを理解できます。 
+| AWS が API 要求を課金することを理解している | このチェックボックスをオンにすると、Data Infrastructure Insightsのポーリングによって作成されたAPI要求に対してAWSから課金されることを理解しているかどうかを確認できます。 
 |===
 
 
@@ -111,11 +111,11 @@ IAMロール_InstanceS3ReadOnly_をS3インスタンスに接続すると、イ�
 
 
 
-== Amazon タグを Cloud Insights アノテーションにマッピングする
+== AmazonのタグをData Infrastructure Insightsのアノテーションにマッピング
 
-AWS S3 As Storageのデータコレクタには、S3で設定されているタグを使用してCloud Insights のアノテーションを入力するオプションがあります。アノテーションにはAWSのタグとまったく同じ名前を付ける必要があります。Cloud Insights では、常に同じ名前のテキスト型アノテーションが入力され、他の型（数値、ブーリアンなど）のアノテーションの入力が「最良の試行」となります。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。
+AWS S3 as Storageデータコレクタには、S3で設定されたタグを使用してData Infrastructure Insightsのアノテーションを入力できるオプションがあります。アノテーションにはAWSのタグとまったく同じ名前を付ける必要があります。Data Infrastructure Insightsでは、常に同じ名前のテキストタイプのアノテーションが入力され、他のタイプ（数値、ブール値など）のアノテーションが入力されるよう「最善の試み」が行われます。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。
 
-AWS では大文字と小文字が区別され、 Cloud Insights では大文字と小文字が区別されないことに注意してください。したがって、Cloud Insights で「owner」という名前のアノテーションを作成し、S3で「owner」、「Owner」、および「owner」という名前のタグを作成すると、すべてのS3バリエーション「owner」のアノテーションがCloud Insightの「owner」アノテーションにマッピングされます。
+AWSでは大文字と小文字が区別され、Data Infrastructure Insightsでは大文字と小文字が区別されないことに注意してください。そのため、Data Infrastructure Insightsで「owner」という名前のアノテーションを作成し、S3で「owner」、「Owner」、「owner」という名前のタグを作成すると、S3で使用される「owner」のすべてのバリエーションがCloud Insightの「owner」アノテーションにマッピングされます。
 
 
 
@@ -128,17 +128,17 @@ AWS Data Collector * Advanced Configuration * セクションでは、 * Include
 
 == AWS の子アカウントから収集しています
 
-Cloud Insights では、 1 つの AWS データコレクタで AWS の子アカウントの集合がサポートされます。この収集の設定は、 AWS 環境で実行されます。
+Data Infrastructure Insightsでは、1つのAWSデータコレクタ内でAWSの子アカウントを収集できます。この収集の設定は、 AWS 環境で実行されます。
 
 * 各子アカウントにAWSロールを設定して、メインアカウントIDに子アカウントのS3の詳細へのアクセスを許可する必要があります。
 * 各子アカウントには、同じ文字列としてロール名を設定する必要があります。
-* Cloud Insights AWS Data Collector * Advanced Configuration * セクションの * Cross account role * フィールドに、このロール名の文字列を入力します。
+* このロール名の文字列をData Infrastructure Insights AWS Data Collector * Advanced Configuration *セクションの* Cross account role *フィールドに入力します。
 * コレクタがインストールされているアカウントには、_delegateアクセス権administrator_deligate Privilegesが必要です。詳細については、link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["AWSのドキュメント"]を参照してください。
 
 
 ベストプラクティス：AWS Predefined_AmazonS3ReadOnlyAccess_policyをS3メインアカウントに割り当てることを強く推奨します。また、データソースで設定したユーザが AWS に照会するには、少なくとも、 Predefined_AWSOrganizationReadOnlyAccess_policy を割り当てる必要があります。
 
-Cloud Insights が AWS の子アカウントから収集できるように環境を設定する方法については、次のドキュメントを参照してください。
+Data Infrastructure InsightsがAWSの子アカウントからデータを収集できるように環境を構成する方法については、以下を参照してください。
 
 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html["チュートリアル： IAM ロールを使用した AWS アカウント間でのアクセスの委譲"]
 

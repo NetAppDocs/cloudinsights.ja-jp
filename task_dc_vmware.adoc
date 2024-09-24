@@ -19,17 +19,17 @@ summary: VMwareデータコレクタの設定
 
 
 [role="lead"]
-VMware vSphereのデータコレクタは、VMゲストおよびESXiホストのパフォーマンスと構成に関する情報を収集します。vSphere内のすべてのオブジェクトに対して読み取り専用のPrivilegesが必要です。2024年8月以降、vSphereコレクタは、vSphere環境からのログメッセージと一部のVMware固有の指標も取り込みます。Cloud InsightsはvSphere 8.0.1以降の環境からのみVMwareログ情報を取得できます。同様に、ベンダー固有の指標はvSphere 7以降の環境でのみサポートされます。そのため、特定のコレクタが古いvSphereインスタンスを参照している場合は、そのコレクタのログやベンダー固有のメトリックのチェックボックスを無効にすることができます。
+VMware vSphereのデータコレクタは、VMゲストおよびESXiホストのパフォーマンスと構成に関する情報を収集します。vSphere内のすべてのオブジェクトに対して読み取り専用のPrivilegesが必要です。2024年8月以降、vSphereコレクタは、vSphere環境からのログメッセージと一部のVMware固有の指標も取り込みます。Data Infrastructure Insightsは、vSphere 8.0.1以降の環境からのみVMwareログ情報を取得できます。同様に、ベンダー固有の指標はvSphere 7以降の環境でのみサポートされます。そのため、特定のコレクタが古いvSphereインスタンスを参照している場合は、そのコレクタのログやベンダー固有のメトリックのチェックボックスを無効にすることができます。
 
 
 
 == 用語集
 
-Cloud Insights では、 VMware vSphere データコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、VMware vSphereデータコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | 仮想ディスク | ディスク 
@@ -130,26 +130,24 @@ Cloud Insights では、 VMware vSphere データコレクタから次のイン�
 | 通信ポート | デフォルトは443です 
 
 
-| デバイスリストのフィルタ ... | このリストには完全な文字列一致のみが含まれている必要があります。 esx_host でフィルタリングする場合は、 Cloud Insights と vSphere の両方で報告される ESX ホストの正確な「名前」をカンマで区切って指定する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。
-
-クラスタでフィルタリングする場合、 ハイパーバイザーでCIによって報告Cloud Insights されたCloud Insights形式のクラスタ名を使用する- Cloud Insights ではvSphereクラスタ名の先頭にvSphereデータセンター名が付き、フォワードスラッシュ「DC1/clusterA」がデータセンターDC1内のクラスタA内のハイパーバイザーでレポートされるクラスタ名です。 
+| デバイスリストのフィルタ ... | このリストは、完全に一致する文字列で構成されている必要があります。esx_hostでフィルタリングする場合は、Data Infrastructure InsightsとvSphereの両方で報告されたESXホストの正確な「名前」をカンマで区切って作成する必要があります。「名前」には、 IP アドレス、単純なホスト名、または Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を指定できます。この名前は、これらのホストが vSphere に最初に追加されたときの命名方法によって決まります。クラスタでフィルタリングする場合は、ハイパーバイザーのCIによって報告されるData Infrastructure Insights形式のクラスタ名を使用します。Data Infrastructure Insightsでは、vSphereクラスタ名の前にvSphereデータセンター名が付加され、スラッシュが付きます。「DC1/clusterA」は、Data Infrastructure InsightsがデータセンターDC1内のclusterAのハイパーバイザーについて報告するクラスタ名です。 
 
 
 | パフォーマンスのポーリング間隔（秒） | デフォルト値は 300 です 
 |===
 
 
-== Cloud InsightsアノテーションへのVMwareタグのマッピング
+== VMwareのタグとData Infrastructure Insightsのアノテーションのマッピング
 
-VMwareデータコレクタを使用すると、VMwareで設定されているタグをCloud Insightsのアノテーションに入力できます。アノテーションにはVMwareタグとまったく同じ名前を付ける必要があります。Cloud Insights では、常に同じ名前のテキスト型アノテーションが入力され、他の型（数値、ブーリアンなど）のアノテーションの入力が「最良の試行」となります。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。
+VMwareデータコレクタを使用すると、VMwareで設定されているタグを使用してData Infrastructure Insightsのアノテーションを入力できます。アノテーションにはVMwareタグとまったく同じ名前を付ける必要があります。Data Infrastructure Insightsでは、常に同じ名前のテキストタイプのアノテーションが入力され、他のタイプ（数値、ブール値など）のアノテーションが入力されるよう「最善の試み」が行われます。アノテーションのタイプが異なるためにデータコレクタにデータを入力できない場合は、アノテーションを削除してテキストタイプで再作成する必要があります。
 
-VMwareタグでは大文字と小文字が区別されますが、Cloud Insightsタグでは大文字と小文字が区別されません。そのため、Cloud Insightsで「owner」という名前のアノテーションを作成し、VMwareで「owner」、「Owner」、「owner」という名前のタグを作成すると、これらの「owner」のバリエーションはすべてCloud Insightの「owner」アノテーションにマッピングされます。
+VMwareタグでは大文字と小文字が区別され、Data Infrastructure Insightsタグでは大文字と小文字が区別されないことに注意してください。そのため、Data Infrastructure Insightsで「owner」という名前のアノテーションを作成し、VMwareで「owner」、「Owner」、「owner」という名前のタグを作成すると、これらすべての「owner」の変化形がCloud Insightの「owner」アノテーションにマッピングされます。
 
 次の事項に注意してください。
 
-* Cloud Insightsは現在、NetAppデバイスのサポート情報のみを自動公開しています。
+* 現在のところ、Data Infrastructure Insightsでは、NetAppデバイスのサポート情報を自動で公開するだけです。
 * このサポート情報はアノテーション形式で保持されているため、クエリを実行したり、ダッシュボードで使用したりできます。
-* ユーザがアノテーション値を上書きまたは空にした場合は、Cloud Insightsでアノテーションが更新されると再び値が自動入力されます。更新は1日に1回行われます。
+* ユーザがアノテーション値を上書きまたは空にした場合、Data Infrastructure Insightsでアノテーションが更新されると再び値が自動入力されます。更新は1日に1回行われます。
 
 
 

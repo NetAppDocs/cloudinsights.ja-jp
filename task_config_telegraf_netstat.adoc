@@ -19,7 +19,7 @@ summary: netstat データコレクタ設定です
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して netstat 指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してnetstat指標を収集します。
 
 
 

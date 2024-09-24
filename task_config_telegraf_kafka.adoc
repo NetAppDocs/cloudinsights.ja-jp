@@ -19,7 +19,7 @@ summary: Kafka データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して Kafka から指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してKafkaから指標データを収集します。
 
 
 

@@ -80,7 +80,7 @@ keywords: data collector, NetApp, Cloud, ONTAP
 | パフォーマンス同時スレッド数 | 同時スレッド数。 
 
 
-| 高度なカウンタデータ収集 | Cloud Insights が以下のリストから詳細な指標を収集するように設定するには、このチェックボックスをオンにします。 
+| 高度なカウンタデータ収集 | このチェックボックスをオンにすると、Data Infrastructure Insightsが以下のリストから高度な指標を収集します。 
 |===
 
 

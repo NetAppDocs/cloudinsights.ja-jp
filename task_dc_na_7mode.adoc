@@ -25,14 +25,14 @@ Data ONTAP 7-Mode を使用するストレージシステムでは、 7-Mode の
 
 == 用語集
 
-Cloud Insights では、 NetApp 7-Mode データコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsでは、NetApp 7-Modeデータコレクタから次のインベントリ情報を取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 
 NOTE: このデータコレクタはです link:task_getting_started_with_cloud_insights.html#useful-definitions["非推奨"]。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク | ディスク 
@@ -138,12 +138,12 @@ NOTE: このデータコレクタはです link:task_getting_started_with_cloud_
 
 * 次のコマンドで、ユーザロールの機能を定義します。
 +
-** 「 api- * 」：すべてのネットアップストレージ API コマンドの実行を Cloud Insights に許可します。
+** 「api-*」：すべてのNetAppストレージAPIコマンドをData Infrastructure Insightsで実行できるようにする場合に使用します。
 +
 このコマンドは、 ZAPI を使用する場合は必須です。
 
-** 「 login-http-admin 」： HTTP 経由で Cloud Insights がネットアップストレージに接続できるようにします。このコマンドは、 ZAPI を使用する場合は必須です。
-** 「 security-api-vfiler 」： vFiler ユニットの情報を取得する NetApp ストレージ API コマンドの実行を Cloud Insights に許可します。
+** 「login-http-admin」：Data Infrastructure InsightsがHTTP経由でNetAppストレージに接続できるようにする場合に使用します。このコマンドは、 ZAPI を使用する場合は必須です。
+** "security-api-vfiler"：Data Infrastructure InsightsがNetAppストレージAPIコマンドを実行してvFilerユニット情報を取得できるようにする場合に使用します。
 ** 「 cli-options 」：「 options 」コマンドで、パートナーの IP と有効なライセンスを取得するために使用されます。
 ** 「 cli-lun 」： LUN 管理用コマンドにアクセスします。指定した LUN または LUN のクラスのステータス（ LUN のパス、サイズ、オンライン / オフライン状態、共有状態）が表示されます。
 ** 「 cli-df 」：「 df -s 」、「 df -r 」、「 df -A -r 」コマンドで、空きスペースを表示するために使用されます。
@@ -181,18 +181,7 @@ cli-date または cli-snap の権限が付与されていない場合、デー�
 | 401 HTTP 応答または 13003 ZAPI エラーコードを受信し、 ZAPI から「 Insufficient privileges 」または「 Not authorized for this command 」が返される | ユーザ名とパスワード、およびユーザの権限と権限を確認してください。 
 
 
-| 「コマンドの実行に失敗しました」エラー | ユーザーがデバイスに対して次の権限を持っているかどうかを確認します。
-•API-*
-•cli-date
-•cli-df
-•cli-ifconfig
-•CLI - LUN
-•CLI操作
-•cli-rdfile
-•CLIスナップ
-•login-http-admin
-•security-api-vfiler
-また、ONTAPバージョンがCloud Insightsでサポートされているかどうかを確認し、使用するクレデンシャルがデバイスのクレデンシャルと一致するかどうかを確認します 
+| 「コマンドの実行に失敗しました」エラー | ユーザがデバイスに対する次の権限を持っているかどうかを確認します。•api-*•cli-date•cli-df•cli-ifconfig•cli-lun•cli-operations•cli-rdfile•cli-snap•login-http-admin•security-api-vfiler ONTAPバージョンがData Infrastructure Insightsでサポートされているかどうかを確認し、使用されたクレデンシャルがデバイスのクレデンシャルと一致するかどうかを確認します。 
 
 
 | クラスタバージョンが 8.1 より前である必要があります | クラスタでサポートされる最小バージョンは 8.1 です。サポートされる最小バージョンにアップグレードしてください。 

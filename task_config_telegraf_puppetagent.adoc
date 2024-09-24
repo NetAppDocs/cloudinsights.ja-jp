@@ -19,7 +19,7 @@ summary: Puppet データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して Puppet Agent から指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してPuppet Agentから指標を収集します。
 
 
 

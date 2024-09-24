@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, agent, telegraf agent 
-summary: Cloud Insights は統合データの収集のためのエージェントとしてTelegrafをサポートしており、WindowsまたはLinux上で設定できます。 
+summary: Data Infrastructure Insightsは、統合データ収集のエージェントとしてTelegrafをサポートしており、WindowsまたはLinux上で構成できます。 
 ---
 = データを収集するためのエージェントの設定(Windows/Linux)
 :toc: macro
@@ -19,9 +19,9 @@ summary: Cloud Insights は統合データの収集のためのエージェン�
 
 
 [role="lead"]
-Cloud Insights ではを使用します link:https://docs.influxdata.com/telegraf["Tegraf"] 統合データを収集するエージェントとして。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集した指標、イベント、およびログをエージェントから Cloud Insights に送信するために使用します。
+Data Infrastructure Insightsは、link:https://docs.influxdata.com/telegraf["Tegraf"]統合データ収集のエージェントとしてを使用します。Telegraf はプラグインベースのサーバエージェントで、指標、イベント、ログの収集とレポートに使用できます。入力プラグインは、システム /OS に直接アクセスするか、サードパーティ API を呼び出すか、設定されたストリームをリスニングすることによって、エージェントに必要な情報を収集するために使用されます（例：） Kafka や StatsD など）を参照してください。出力プラグインは、収集されたメトリック、イベント、ログをエージェントからData Infrastructure Insightsに送信するために使用されます。
 
-Cloud Insights の現在のTelegrafバージョンは*1.24.0 *です。
+Data Infrastructure Insightsの現在のTelegrafバージョンは* 1.24.0 *です。
 
 Kubernetesへのインストールの詳細については、を参照してください。 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] ページ
 
@@ -45,7 +45,7 @@ NOTE: エージェントをインストールする前にインストールフ�
 エージェントをインストールするには、使用しているプラットフォームに関係なく、まず次の手順を実行する必要があります。
 
 . エージェントに使用するホストにログインします。
-. Cloud Insights環境にログインし、*オブザーバビリティ> Collectors *に移動します。
+. Data Infrastructure Insights環境にログインし、*オブザーバビリティ>コレクタ*に移動します。
 . [*+Data Collector* ] をクリックして、インストールするデータコレクタを選択します。
 . ホストに適したプラットフォームを選択（Windows、Linux）
 . プラットフォームごとに、残りの手順を実行します。
@@ -55,7 +55,7 @@ NOTE: エージェントをインストールする前にインストールフ�
 NOTE: ホストにエージェントをインストールしたら、そのホストに再度エージェントをインストールする必要はありません。
 
 
-TIP: サーバ /VM にエージェントをインストールすると、 Cloud Insights は、設定したデータコレクタからの収集に加えて、そのシステムからメトリックを収集します。これらの指標は、のように収集されます link:task_config_telegraf_node.html["「ノード」指標"]。
+TIP: サーバ/ VMにエージェントをインストールすると、Data Infrastructure Insightsは、設定したデータコレクタからの収集に加えて、そのシステムから指標を収集します。これらの指標はとして収集されlink:task_config_telegraf_node.html["「ノード」指標"]ます。
 
 
 NOTE: プロキシを使用している場合は、 Tegraf エージェントをインストールする前に、お使いのプラットフォームのプロキシの手順をお読みください。
@@ -366,7 +366,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 == チェックサムを検証する
 
-Cloud Insights エージェントのインストーラで整合性チェックが実行されますが、ダウンロードしたアーティファクトのインストールまたは適用前に独自の検証を実行したいユーザもいます。これを行うには、インストーラをダウンロードしてダウンロードしたパッケージのチェックサムを生成し、チェックサムをインストール手順に示されている値と比較します。
+Data Infrastructure Insightsエージェントインストーラは整合性チェックを実行しますが、ダウンロードしたアーティファクトをインストールまたは適用する前に独自の検証を実行することもできます。これを行うには、インストーラをダウンロードしてダウンロードしたパッケージのチェックサムを生成し、チェックサムをインストール手順に示されている値と比較します。
 
 
 
@@ -403,7 +403,7 @@ Windows の場合
  !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
-download-only コマンドを使用すると、必要なアーティファクトがすべて Cloud Insights から作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
+download-onlyコマンドを実行すると、必要なすべてのアーティファクトがData Infrastructure Insightsから作業ディレクトリにダウンロードされます。アーティファクトには次のものがありますが、これらに限定することはできません。
 
 * インストールスクリプト
 * 環境ファイル
@@ -472,9 +472,9 @@ Windows の場合
 | 古いインストールでインストーラスクリプトを実行したが、エージェントがデータを送信していない | テレグラムエージェントをアンインストールし、インストールスクリプトを再実行します。お使いのプラットフォームに応じて、このページの*エージェントのアップグレード*の手順を実行します。 
 
 
-| すでに Cloud Insights を使用してエージェントをインストールしました | ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。 
+| Data Infrastructure Insightsを使用してエージェントをインストール済み | ホスト /VM にエージェントがすでにインストールされている場合は、エージェントを再度インストールする必要はありません。この場合は、 Agent Installation （エージェントのインストール）画面で適切な Platform and Key （プラットフォームとキー）を選択し、 * Continue * （続行）または * Finish （完了） * をクリックします。 
 
 
-| すでにエージェントをインストールしていますが、 Cloud Insights インストーラを使用してインストールしていません | 前のエージェントを削除し、 Cloud Insights エージェントのインストールを実行して、適切なデフォルト設定ファイルを設定します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。 
+| エージェントはすでにインストールされているが、Data Infrastructure Insightsインストーラを使用していない | 以前のエージェントを削除し、Data Infrastructure Insights Agentのインストールを実行して、デフォルトの構成ファイルが正しく設定されていることを確認します。完了したら、 [* Continue * （続行） ] または [* Finish （完了） ] をクリックします。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
-summary: 無料トライアル期間中は、いつでも Cloud Insights に登録できます。 
+summary: 無償トライアルの期間中は、いつでもData Infrastructure Insightsにサブスクライブできます。 
 keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation, pricing, meter, metering 
 ---
-= Cloud Insights に登録しています
+= Data Infrastructure Insightsのサブスクライブ
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,62 +19,72 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 
 
 [role="lead"]
-Cloud Insights の導入は、次の 3 つの簡単な手順で簡単に行えます。
+Data Infrastructure Insightsは、次の3つの簡単なステップで開始できます。
 
 * でアカウントに登録します link:https://bluexp.netapp.com//["* NetApp BlueXP *"] ネットアップのクラウドサービスをすべて利用できるようになります。
-* に登録します link:https://cloud.netapp.com/cloud-insights["* 無償トライアル *"] 使用可能な機能を調べるための Cloud Insights の。
-* * Cloud Insights に登録すると、データへの継続的な無停止アクセスが実現します link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"] 直接または link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]。
+* link:https://cloud.netapp.com/cloud-insights["* 無償トライアル *"]Data Infrastructure Insightsのに登録して、利用可能な機能を確認してください。
+* * Data Infrastructure Insightsにサブスクライブ*すると、link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["ネットアップの営業担当者"]直接または経由でデータに中断なく継続的にアクセスできます。link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]
 
 
-登録プロセスでは、 Cloud Insights 環境をホストするグローバルリージョンを選択できます。
-詳細については、「 Cloud Insights について」を参照してください link:security_information_and_region.html["情報と地域"]。
+登録プロセスでは、Data Infrastructure Insights環境をホストするグローバルリージョンを選択できます。詳細については、『Data Infrastructure Insights』をご覧link:security_information_and_region.html["情報と地域"]ください。
 
-Cloud Insightsベーシックエディションとプレミアムエディションで利用可能な機能の完全な比較については、link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Cloud Insightsの価格設定"]ページを参照してください。
+Data Infrastructure InsightsのBasicエディションとPremiumエディションで使用できる機能の完全な比較については、link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["データインフラ分析情報の価格設定"]ページを参照してください。
 
 
-WARNING: 非アクティブな Cloud Insights Basic Edition 環境が削除され、そのリソースが再利用されます。連続する 30 日間のユーザアクティビティがない場合、 7 日間にわたってデータが取り込まれていない場合、環境は非アクティブとみなされます。Cloud Insights は通知を送信し、環境が削除される 4 日前の猶予期間を提供します。
+WARNING: Inactive Data Infrastructure Insights Basic Edition環境が削除され、そのリソースが再利用されます。連続する 30 日間のユーザアクティビティがない場合、 7 日間にわたってデータが取り込まれていない場合、環境は非アクティブとみなされます。Data Infrastructure Insightsは、環境が削除される4日前に通知を送信し、猶予期間を設定します。
 
-Cloud Insightsの使用中に南京錠のアイコンが表示された場合は image:padlock.png["南京錠"]、その機能が現在のサブスクリプションで利用できないか、限定された形式で利用できることを意味します。フルアクセスのためにその機能を購読してください。一部の機能は、サブスクライブする前にとして使用でき <<module-evaluation,モジュールの評価>> ます。
+Data Infrastructure Insightsの使用中に南京錠のアイコンが表示された場合はimage:padlock.png["南京錠"]、現在のサブスクリプションでその機能を利用できないか、限定された形式で利用できないことを意味します。フルアクセスのためにその機能を購読してください。一部の機能は、サブスクライブする前にとして使用でき <<module-evaluation,モジュールの評価>> ます。
 
 
 
 == 試用版
 
-Cloud Insights に登録して環境がアクティブになったら、 Cloud Insights の 30 日間の無償トライアルにご参加ください。このトライアルでは、Cloud Insights が提供する機能をお客様の環境で確認できます。
+Data Infrastructure Insightsにサインアップして、環境がアクティブであれば、Data Infrastructure Insightsの30日間無償トライアルに参加できます。このトライアルでは、Data Infrastructure Insightsがお客様の環境で提供する機能を確認できます。
 
-試用期間中はいつでも Cloud Insights に登録できます。Cloud Insights に登録すると、データへの中断のないアクセスと拡張されたアクセスが保証されます link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 製品サポート *"] オプション（ Options ）
+試用期間中は、いつでもData Infrastructure Insightsにサブスクライブできます。Data Infrastructure Insightsにサブスクライブすると、データへの中断のないアクセスと幅広いlink:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 製品サポート *"]オプションが保証されます。
 
-無料トライアルがまもなく終了すると、 Cloud Insights にバナーが表示されますそのバナー内に_View Subscription_linkがあり、* Admin -> Subscription *ページが開きます。管理者以外のユーザにはバナーが表示されますが、サブスクリプションページに移動することはできません。
+Data Infrastructure Insightsの無償トライアルが終了間近になると、バナーが表示されます。そのバナー内に_View Subscription_linkがあり、* Admin -> Subscription *ページが開きます。管理者以外のユーザにはバナーが表示されますが、サブスクリプションページに移動することはできません。
 
 
-NOTE: Cloud Insights の評価にさらに時間が必要で、トライアルの有効期限が 4 日以下に設定されている場合は、さらに 30 日間試用期間を延長できます。トライアルを延長できるのは 1 回だけです。トライアルの期限が切れている場合は延長できません。
+NOTE: Data Infrastructure Insightsの評価期間が4日以内に終了するように設定されていて、試用期間をさらに30日間延長できます。トライアルを延長できるのは 1 回だけです。トライアルの期限が切れている場合は延長できません。
 
 
 
 === AWS Marketplaceで試用
 
-また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、33日間の試用期間でCloud Insightsにアクセスでき、最大499（MU）まで利用でき <<observability-metering,管理ユニット>> ます。
+また、AWS Marketplaceで無料トライアルに登録することもできます。AWS Marketplaceの無償トライアルでは、33日間の試用期間でData Infrastructure Insightsにアクセスでき、最大499<<observability-metering,管理ユニット>>（MU）まで利用できます。
 
-注：499 MUを超える値を設定すると、「違反」状態になります。トライアルが違反状態になっている間は、違反が解決されるまで、設定されているMU数を減らすか、またはCloud Insights にサブスクライブするまで、一部のCloud Insights 機能にアクセスできなくなります。
+注：499 MUを超える値を設定すると、「違反」状態になります。トライアルが違反状態の間は、違反が解決されるまで、設定されているMUの数を減らすか、Data Infrastructure Insightsにサブスクライブすることで、一部のData Infrastructure Insights機能にアクセスできなくなります。
 
-AWS Marketplaceの無償トライアルを延長することはできません。試用期間中はいつでも、*管理->サブスクリプション*ページにアクセスして、Cloud Insightsベーシックエディションのサブスクリプションにダウングレードしたり、有料のCloud Insightsサブスクリプションに変更したりできます。
+AWS Marketplaceの無償トライアルを延長することはできません。試用期間中はいつでも、* Admin -> Subscription *ページからData Infrastructure Insights Basic Editionサブスクリプションにダウングレードしたり、Data Infrastructure Insightsの有料サブスクリプションに変更したりできます。
 
 
 
 === トライアル期間が終了した場合はどうなりますか？
 
-無料トライアルの期限が切れていて、 Cloud Insights にまだ登録していない場合は、登録するまで機能が制限されます。データの取り込みが中止される場合があり、数週間後にデータ保持ポリシーに従ってデータが削除されます。
+無償トライアルの有効期限が切れていて、Data Infrastructure Insightsにまだサブスクライブしていない場合は、サブスクライブするまで機能が制限されます。データの取り込みが中止される場合があり、数週間後にデータ保持ポリシーに従ってデータが削除されます。
 
 
 
 == サブスクリプションの有効期限が切れた場合はどうなりますか？
 
-Cloud Insightsのサブスクリプションをお持ちで、そのサブスクリプションの有効期限が切れている場合は、サブスクリプションを更新するために5日間の猶予期間が与えられます。この猶予期間中は、すべてのCloud Insights機能がアクティブのままになります。
+Data Infrastructure Insightsのサブスクリプションをお持ちで、そのサブスクリプションの有効期限が切れている場合は、サブスクリプションを更新するために5日間の猶予期間が与えられます。Data Infrastructure Insightsのすべての機能は、この猶予期間中もアクティブなままです。
 
-猶予期間が経過すると、Cloud Insights機能は更新するまで一時停止されます。更新については、*[Admin]>[Subscription]*ページを参照するか、NetAppセールスにお問い合わせください。
+猶予期間が経過すると、更新するまでData Infrastructure Insightsの機能は一時停止されます。更新については、*[Admin]>[Subscription]*ページを参照するか、NetAppセールスにお問い合わせください。
 
 
-NOTE: 猶予期間終了までに収集されたCloud Insightsデータは、猶予期間後30日間はそのまま維持されます。この時間内にサブスクリプションを更新すると、猶予期間が経過するまでのすべてのデータが利用可能になります。
+NOTE: 猶予期間終了までに収集されたData Infrastructure Insightsデータは、猶予期間後30日間はそのまま維持されます。この時間内にサブスクリプションを更新すると、猶予期間が経過するまでのすべてのデータが利用可能になります。
+
+
+
+== サブスクリプション*の有効期限が切れた場合はどうなりますか？
+
+Data Infrastructure Insightsのサブスクリプションをお持ちで、そのサブスクリプションの有効期限が切れている場合は、サブスクリプションを更新するために5日間の猶予期間が与えられます。Data Infrastructure Insightsのすべての機能は、この猶予期間中もアクティブなままです。
+
+猶予期間が経過すると、更新するまでData Infrastructure Insightsの機能は一時停止されます。更新については、*[Admin]>[Subscription]*ページを参照するか、NetAppセールスにお問い合わせください。
+
+
+NOTE: Data Infrastructure Insightsのデータは、猶予期間後30日間そのまま維持されます。この時間内にサブスクリプションを更新すると、猶予期間が経過するまでのすべてのデータが利用可能になります。
 
 
 
@@ -90,7 +100,7 @@ NOTE: 評価後に新しいManaged Unit（MU）の使用料が請求されるこ
 image:Module_Trials_UsageTab.png["[MU Usage]画面"]
 
 
-NOTE: A_Module Evaluation_は_トライアルではありません_-当社は、お客様にCloud Insightsサービスを使用した無料トライアル期間を提供し、購入可能であることを確認する場合に、タームトライアルを使用します。モジュールの評価方法が異なります。これは、有料サブスクリプションの最近数カ月間に使用していないCloud Insightsモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。
+NOTE: A_Module Evaluation_は_トライアルではありません_- Data Infrastructure Insightsサービスの無償トライアル期間をお客様に提供して、適切で購入可能であることを確認する場合は、タームトライアルを使用します。モジュールの評価方法は異なります。これは、有料サブスクリプションの直近数カ月間に使用していないData Infrastructure Insightsのモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。
 
 
 
@@ -116,7 +126,7 @@ Estimatorでは、現在のサブスクリプション期間を維持してラ�
 
 === オブザーバビリティ計測
 
-Cloud InsightsインフラのオブザーバビリティとKubernetesのオブザーバビリティは、* Managed Unit *単位で計測されます。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。
+データインフラの分析インフラのオブザーバビリティとKubernetesのオブザーバビリティは、* Managed Unit *ごとに計測されます。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。
 
 * 1 台の管理対象ユニット = 2 台のホスト（任意の仮想マシンまたは物理マシン）
 * 1 管理ユニット = 物理ディスクまたは仮想ディスクのフォーマットされていない容量の 4TiB
@@ -141,7 +151,7 @@ Cloud InsightsインフラのオブザーバビリティとKubernetesのオブ�
 image:ws_metering_example_page.png["'Admin> Subscription> Workload Security（管理>サブスクリプション>ワークロードセキュリティ）タブには、ハイエンド、ミッドレンジ、エントリレベルのノード数が表示されます。'"]
 
 
-NOTE: 既存のワークロードセキュリティサブスクリプションでは、ノードの使用量がManaged Unitを消費しないように、MU使用量が調整されます。Cloud Insightsは、ライセンスされた使用量に準拠するために使用量を測定します。
+NOTE: 既存のワークロードセキュリティサブスクリプションでは、ノードの使用量がManaged Unitを消費しないように、MU使用量が調整されます。Data Infrastructure Insightsは、使用量を測定して、ライセンスされた使用量に確実に準拠します。
 
 
 
@@ -155,20 +165,20 @@ NOTE: 既存のワークロードセキュリティサブスクリプション�
 
 予想される管理ユニット数が 1,000 以上の場合は、をクリックします link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 販売担当者 * にお問い合わせください"] ボタンをクリックして、ネットアップ営業チームに登録してください。
 
-Cloud Insights * シリアル番号 * をネットアップの営業担当者にご連絡いただき、 Cloud Insights 環境に有料サブスクリプションを適用できるようにしてください。シリアル番号は、 Cloud Insights トライアル環境を一意に識別します。シリアル番号は、 [*Admin] > [Subscription*] ページにあります。
+有償のサブスクリプションをデータインフラ分析環境に適用できるように、Data Infrastructure Insights *のシリアル番号*をNetApp営業担当者に提出する必要があります。シリアル番号は、Data Infrastructure Insightsのトライアル環境を一意に識別するもので、*[Admin]>[Subscription]*ページで確認できます。
 
 
 
 === AWS Marketplace でセルフサブスクライブ
 
 
-NOTE: 既存の Cloud Insights トライアルアカウントに AWS Marketplace のサブスクリプションを適用するには、アカウント所有者または管理者である必要があります。さらに、 Amazon Web Services （ AWS ）アカウントが必要です。
+NOTE: AWS Marketplaceサブスクリプションを既存のData Infrastructure Insightsトライアルアカウントに適用するには、アカウント所有者または管理者である必要があります。さらに、 Amazon Web Services （ AWS ）アカウントが必要です。
 
-Amazon Marketplaceのリンクをクリックすると、AWSが開きます https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights の機能です"] サブスクリプションページ。サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。
+Amazon Marketplaceのリンクをクリックすると、AWS https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["データインフラの分析情報"]サブスクリプションページが開き、サブスクリプションを完了できます。このページでは、計算ツールで入力した値が AWS のサブスクリプションページに入力されていないことに注意してください。管理対象ユニットの総数を入力する必要があります。
 
 管理対象ユニットの総数を入力し、 12 か月または 36 か月のサブスクリプション期間を選択したら、「 * アカウントの設定 * 」をクリックしてサブスクリプションプロセスを終了します。
 
-AWS の登録プロセスが完了すると、 Cloud Insights 環境に戻ります。または、環境がアクティブでなくなった場合（ログアウトした場合など）は、NetApp BlueXPのサインインページに移動します。Cloud Insights に再度サインインすると、サブスクリプションがアクティブになります。
+AWSのサブスクリプションプロセスが完了すると、現在のData Infrastructure Insights環境に戻ります。または、環境がアクティブでなくなった場合（ログアウトした場合など）は、NetApp BlueXPのサインインページに移動します。Data Infrastructure Insightsに再度サインインすると、お客様のサブスクリプションが有効になります。
 
 
 NOTE: AWS Marketplace のページで「 * アカウントの設定 * 」をクリックしてから、 AWS サブスクリプションの手続きを 1 時間以内に完了する必要があります。1 時間以内に完了しない場合は、もう一度「 * アカウントの設定 * 」をクリックして処理を完了する必要があります。
@@ -249,4 +259,14 @@ NOTE: 管理対象ユニットの合計は、サマリセクションのデー�
 
 == 直接購読して、トライアルをスキップしてください
 
-から直接 Cloud Insights に登録することもできます https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]最初に試用環境を作成する必要はありません。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。
+Data Infrastructure Insightsは https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]、最初に試用環境を作成することなく、から直接サブスクライブすることもできます。サブスクリプションが完了し、環境がセットアップされると、すぐにサブスクライブされます。
+
+
+
+== エンタイトルメント ID の追加
+
+Data Infrastructure Insightsにバンドルされている有効なNetApp製品を所有している場合は、その製品のシリアル番号を既存のData Infrastructure Insightsサブスクリプションに追加できます。たとえば、NetApp Astra Control Centerを購入した場合、Astra Control Centerライセンスのシリアル番号を使用してData Infrastructure Insightsでサブスクリプションを識別できます。Data Infrastructure Insightsでは、このエンタイトルメントID _を参照しています。
+
+Data Infrastructure Insightsサブスクリプションに使用権IDを追加するには、*[Admin]>[Subscription]*ページで、[+Entitlement ID_]をクリックします。
+
+image:Subscription_AddEntitlementID.png["サブスクリプションにエンタイトルメント ID を追加します"]

@@ -19,7 +19,7 @@ summary: HTTPデータコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して ActiveMQ からのメトリックを収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してActiveMQから指標を収集します。
 
 
 

@@ -19,7 +19,7 @@ summary: Dell EMC XC シリーズデータコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して、 Dell EMC XC シリーズストレージアレイのインベントリおよびパフォーマンス情報を検出します。
+Data Infrastructure Insightsは、このデータコレクタを使用して、Dell EMC XCシリーズストレージアレイのインベントリとパフォーマンスの情報を検出します。
 
 
 

@@ -19,7 +19,7 @@ summary: Kibana データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して Kibana から指標を収集します。
+Data Infrastructure Insightsでは、このデータコレクタを使用してKibanaから指標データを収集します。
 
 
 

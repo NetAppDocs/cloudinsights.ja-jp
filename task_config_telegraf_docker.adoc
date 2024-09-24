@@ -19,7 +19,7 @@ summary: Docker データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して Docker から指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してDockerから指標を収集します。
 
 
 
@@ -80,7 +80,7 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-Kubernetes プラットフォーム用に提供されている Cloud Insights インストーラは、このマッピングを自動的に処理します。
+Kubernetesプラットフォーム用に提供されているData Infrastructure Insightsインストーラがこのマッピングを自動的に処理します。
 
 
 
@@ -403,7 +403,7 @@ VCSタイプ
 | 問題 | 次の操作を実行します 
 
 
-| 設定ページの手順に従っても、 Cloud Insights に Docker 指標が表示されない。 | Telegrafエージェントログで、次のエラーが報告されているかどうかを確認します。
+| 設定ページの手順に従っても、Data Infrastructure InsightsにDocker指標が表示されません。 | Telegrafエージェントログで、次のエラーが報告されているかどうかを確認します。
 
  来い! プラグイン[inputs.docker]のエラー：Dockerデーモンソケットに接続しようとしているときに権限が拒否されました
 

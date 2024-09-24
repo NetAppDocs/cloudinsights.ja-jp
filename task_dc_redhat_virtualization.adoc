@@ -19,17 +19,17 @@ summary: Red Hat Virtualization データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、 Red Hat 仮想化データコレクタを使用して、仮想化された Linux および Microsoft Windows のワークロードからインベントリデータを収集します。
+Data Infrastructure Insightsは、Red Hat Virtualizationデータコレクタを使用して、仮想化されたLinuxおよびMicrosoft Windowsのワークロードからインベントリデータを収集します。
 
 
 
 == 用語集
 
-Cloud Insights では、アセットのタイプごとに、アセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsで取得したアセットタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク | 仮想ディスク 

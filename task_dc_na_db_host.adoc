@@ -22,7 +22,7 @@ summary: 汎用DBホストリゾルバコレクタ
 
 == 用語集
 
-Cloud Insightsはこのコレクタからインベントリを取得します。
+Data Infrastructure Insightsは、このコレクタからインベントリを取得します。
 
 
 

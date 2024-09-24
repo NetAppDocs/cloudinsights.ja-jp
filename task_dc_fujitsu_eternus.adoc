@@ -25,11 +25,11 @@ Fujitsu Eternus データコレクタは、管理者レベルのストレージ�
 
 == 用語集
 
-Cloud Insights では、 Fujitsu ETERNUS ストレージから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、Fujitsu ETERNUSストレージから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク | ディスク 

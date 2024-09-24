@@ -62,7 +62,7 @@ image:ADMonitor_blurb.png["異常検出モニタは、スパイクやドロッ�
 
 異常を警告するには、*[Observability]>[Alerts]>[+Monitor]*に移動してモニタを作成します。モニタタイプとして[_Anomaly Detection Monitor_]を選択します。
 
-image:Anomaly Detection Monitor Choice.png["モニタ作成時の異常検出の選択、width=480"]
+image:AnomalyDetectionMonitorChoice.png["モニタ作成時の異常検出の選択、width=480"]
 
 監視するオブジェクトと指標を選択します。他のタイプのモニタと同様に、フィルタとグループ化を設定できます。
 
@@ -74,7 +74,7 @@ image:Anomaly Detection Monitor Choice.png["モニタ作成時の異常検出の
 * 必要に応じて、異常が_ignored_になる値を設定します。これはノイズを減らすのに役立ちます。この値は、サンプルグラフに破線で示されています。
 
 
-image:Anomaly Detection Monitor Conditions.png["異常検出モニタの条件の設定"]
+image:AnomalyDetectionMonitorConditions.png["異常検出モニタの条件の設定"]
 
 最後に、アラートの配信方法（Eメール、Webhook、またはその両方）を設定したり、オプションの説明または修正アクションをモニタに指定したり、必要に応じてモニタをカスタムグループに追加したりできます。
 

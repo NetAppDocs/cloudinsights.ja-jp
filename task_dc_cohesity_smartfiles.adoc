@@ -19,7 +19,7 @@ summary: Cohesity SmartFilesデータコレクタの構成。
 
 
 [role="lead"]
-このREST APIベースのコヒリティ・クラスターを取得し、「ビュー」（Cloud Insights 内部ボリュームとして）、さまざまなノードを検出し、パフォーマンスメトリックを収集します。
+このREST APIベースのコレクタはCohesityクラスタを取得し、「ビュー」（Data Infrastructure Insightsの内部ボリューム）、各種ノードを検出し、パフォーマンス指標を収集します。
 
 
 

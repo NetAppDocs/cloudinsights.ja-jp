@@ -19,7 +19,7 @@ summary: 絶縁データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して、総領事からのメトリックを収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してConsulから指標を収集します。
 
 
 

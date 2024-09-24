@@ -19,17 +19,17 @@ summary: HDS NAS （ HNAS ）データコレクタの設定。
 
 
 [role="lead"]
-Hitachi Vantara NASデータコレクタは、HDS NASクラスタの検出をサポートするインベントリおよび設定データコレクタです。Cloud Insights では、 NFS 共有と CIFS 共有、ファイルシステム（内部ボリューム）、 SPAN （ストレージプール）の検出がサポートされます。
+Hitachi Vantara NAS データコレクタは、 HDS NAS クラスタの検出をサポートするインベントリおよび設定データコレクタです。Data Infrastructure Insightsは、NFS共有とCIFS共有、ファイルシステム（内部ボリューム）、スパン（ストレージプール）の検出をサポートします。
 
 
 
 == 用語集
 
-Cloud Insights では、 HNAS データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、HNASデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | 階層 | ディスクグループ 

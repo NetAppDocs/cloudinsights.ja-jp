@@ -19,7 +19,7 @@ summary: nginx のデータコレクタ設定
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して Nginx からメトリックを収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してNginxから指標を収集します。
 
 
 

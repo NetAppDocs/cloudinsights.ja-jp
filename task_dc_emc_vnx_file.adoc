@@ -25,11 +25,11 @@ summary: Dell EMC Celerra データコレクタの設定
 
 == 用語集
 
-Cloud Insights は、 VNX File データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、VNX Fileデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | Celerra Network Server/Celerra ストレージ・プール | ストレージプール 

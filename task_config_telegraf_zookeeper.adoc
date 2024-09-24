@@ -19,7 +19,7 @@ summary: Apache Zookeeper データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して Apache Zookeeper から指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してApache Zookeeperから指標を収集します。
 
 
 

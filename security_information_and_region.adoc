@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_information_and_region.html 
-summary: Cloud Insights は、リリースライフサイクル全体を通じてセキュリティのベストプラクティスに従います。 
+summary: Data Infrastructure Insightsは、リリースのライフサイクル全体を通じてセキュリティのベストプラクティスに準拠しています。 
 keywords: security, risk, protection 
 ---
 = 情報と地域
@@ -19,13 +19,13 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-ネットアップでは、お客様の情報のセキュリティを非常に重視しています。ここでは、 Cloud Insights がお客様の情報をどこにどのように保存するかを示します
+ネットアップでは、お客様の情報のセキュリティを非常に重視しています。Data Infrastructure Insightsで情報を保存する方法と場所をご紹介します。
 
 
 
-== Cloud Insights にはどのような情報が保存されますか
+== Data Infrastructure Insightsにはどのような情報が保存されますか？
 
-Cloud Insights は次の情報を保存します。
+Data Infrastructure Insightsには次の情報が格納されます。
 
 * パフォーマンスデータ
 +
@@ -41,7 +41,7 @@ Cloud Insights は次の情報を保存します。
 
 * 秘密
 +
-シークレットは、 Cloud Insights Acquisition Unit で顧客のデバイスやサービスにアクセスするために使用されるクレデンシャルで構成されます。これらのクレデンシャルは強力な非対称暗号化を使用して暗号化され、秘密鍵はAcquisition Unitにのみ格納され、お客様の環境から離れることはありません。この設計により、 Privileged Cloud Insights SRE でもプレーンテキストで顧客シークレットにアクセスできません。
+シークレットは、Data Infrastructure Insights Acquisition Unitがお客様のデバイスやサービスにアクセスするために使用するクレデンシャルで構成されます。これらのクレデンシャルは強力な非対称暗号化を使用して暗号化され、秘密鍵はAcquisition Unitにのみ格納され、お客様の環境から離れることはありません。Privileged Data Infrastructure InsightsのSREであっても、この設計により、プレーンテキストで顧客シークレットにアクセスできません。
 
 * 機能データ
 +
@@ -49,7 +49,7 @@ Cloud Insights は次の情報を保存します。
 
 * ユーザーアクセスデータ
 +
-NetApp BlueXPが地域のCloud Insightsサイトと通信するための認証とアクセスに関する情報（ユーザの承認に関連するデータなど）。
+NetApp BlueXP  が各地域のData Infrastructure Insightsサイトと通信できるようにする認証およびアクセス情報（ユーザの承認に関連するデータなど）。
 
 * ストレージワークロードのセキュリティユーザディレクトリデータ
 +
@@ -58,35 +58,35 @@ NetApp BlueXPが地域のCloud Insightsサイトと通信するための認証�
 
 
 
-NOTE: ユーザディレクトリデータとは、Cloud Insights /ワークロードセキュリティ自体のユーザに関するデータではなく、ワークロードセキュリティユーザディレクトリのデータコレクタによって収集されたユーザディレクトリ情報のことです。
+NOTE: ユーザディレクトリデータとは、ワークロードセキュリティユーザディレクトリデータコレクタによって収集されたユーザディレクトリ情報であり、データインフラインサイト/ワークロードセキュリティのユーザ自身に関するデータではありません。
 
 * 明示的な個人データは一切ありません。 * インフラストラクチャとサービスのリソースから収集されます。収集される情報は、パフォーマンス指標、設定情報、インフラメタデータのみで構成され、ネットアップの自動サポートや ActiveIQ など、多くのベンダーの電話ホームと同様です。ただし、お客様の命名規則に応じて、共有、ボリューム、 VM 、 qtree のデータ アプリケーションなどには、個人を特定できる情報が含まれる場合があります。
 
-ワークロードのセキュリティが有効になっている場合、システムはさらに、個人を特定可能な情報を含むSMBまたはその他の共有上のファイル名とディレクトリ名を調べます。ワークロードセキュリティユーザディレクトリコレクタ（基本的にはWindows SIDをActive Directory経由でユーザ名にマッピング）を有効にすると、表示名、企業の電子メールアドレス、および選択したその他の属性がCloud Insights によって収集され、保存されます。
+ワークロードのセキュリティが有効になっている場合、システムはさらに、個人を特定可能な情報を含むSMBまたはその他の共有上のファイル名とディレクトリ名を調べます。お客様がWorkload Security User Directory Collector（Active Directoryを介してWindows SIDをユーザ名にマッピングする）を有効にした場合、表示名、企業のEメールアドレス、および選択したその他の属性がData Infrastructure Insightsによって収集され、保存されます。
 
-また、 Cloud Insights へのアクセスログも維持され、サービスへのログインに使用するユーザの IP アドレスと E メールアドレスが記録されます。
+さらに、Data Infrastructure Insightsへのアクセスログは維持され、サービスへのログインに使用されたユーザのIPアドレスとEメールアドレスが記録されます。
 
 
 
 == 情報はどこに保存されますか？
 
-Cloud Insights では、環境が作成された地域に応じて情報が格納されます。
+Data Infrastructure Insightsには、環境が作成されたリージョンに基づいて情報が格納されます。
 
 ホスト領域には、次の情報が格納されます。
 
 * カウンタやパフォーマンス指標などの計測情報と資産 / オブジェクト情報
 * Acquisition Unit の情報
 * 機能データ
-* Cloud Insights 内のユーザアクティビティに関する監査情報
+* Data Infrastructure Insights内のユーザアクティビティに関する情報を監査
 * ワークロードセキュリティActive Directoryの情報
 * ワークロードのセキュリティ監査情報
 
 
-Cloud Insights 環境をホストしている地域に関係なく、次の情報は米国にあります。
+以下の情報は、Data Infrastructure Insights環境をホストしているリージョンに関係なく、米国内に存在します。
 
 * サイト / アカウント所有者などの環境サイト（「テナント」とも呼ばれる）情報。
-* NetApp BlueXPが地域のCloud Insightsサイトと通信するための情報（ユーザ認証に関連する情報を含む）。
-* Cloud Insights ユーザとテナントとの関係に関連する情報。
+* NetApp BlueXP  が各地域のData Infrastructure Insightsサイトと通信できるようにするための情報（ユーザの承認に関連する情報を含む）。
+* Data Infrastructure Insightsのユーザとテナントの関係に関連する情報。
 
 
 

@@ -27,11 +27,11 @@ SolidFire データコレクタでは、 SolidFire REST API を使用します�
 
 == 用語集
 
-Cloud Insights では、 NetApp SolidFire All-Flash Array データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsでは、NetApp SolidFireオールフラッシュアレイデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ドライブ | ディスク 
@@ -108,7 +108,7 @@ Cloud Insights では、 NetApp SolidFire All-Flash Array データコレクタ�
 
 == トラブルシューティング
 
-SolidFire からエラーが報告されると、 Cloud Insights に次のように表示されます。
+SolidFireからエラーが報告されると、Data Infrastructure Insightsに次のように表示されます。
 
 データの取得中に SolidFire デバイスからエラーメッセージを受信しました。呼び出しは <method> （ <parameterString> ）でした。デバイスからのエラーメッセージは次のとおりです（デバイスマニュアルを確認してください）。 <message>_
 

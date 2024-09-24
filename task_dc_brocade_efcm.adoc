@@ -19,7 +19,7 @@ summary: Brocade データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、 Brocade Enterprise Fabric Connectivity Manager （ EFCM ）データコレクタを使用して、 Brocade EFCM スイッチのインベントリを検出します。Cloud InsightsはEFCMバージョン9.5、9.6、および9.7をサポートしています。
+Data Infrastructure Insightsは、Brocade Enterprise Fabric Connectivity Manager（EFCM）データコレクタを使用して、Brocade EFCMスイッチのインベントリを検出します。Data Infrastructure Insightsは、EFCMバージョン9.5、9.6、9.7をサポートしています。
 
 
 
@@ -29,7 +29,7 @@ Cloud Insights では、 Brocade Enterprise Fabric Connectivity Manager （ EFCM
 * EFCM のバージョンは 9.5 、 9.6 、または 9.7 である必要があります
 * EFCM サーバの IP アドレス
 * EFCM サーバに対する読み取り専用のユーザ名とパスワード
-* 読み取り専用のユーザ名とパスワードを使用して、 Cloud Insights サーバから Connectrix スイッチへのポート 51512 を介した Telnet アクセスを検証しました
+* ポート51512を介した読み取り専用のユーザ名とパスワードを使用して'Data Infrastructure InsightsサーバからConnectrixスイッチへのTelnetアクセスを検証
 
 
 
@@ -82,7 +82,7 @@ Cloud Insights では、 Brocade Enterprise Fabric Connectivity Manager （ EFCM
 | デバイスを除外します | ポーリングの対象に含めるか除外するユニットの名前をカンマで区切ったリスト 
 
 
-| EFCM スイッチのニックネームをスイッチ名として使用します | EFCM スイッチのニックネームを Cloud Insights スイッチ名として使用する場合に選択します。 
+| EFCM スイッチのニックネームをスイッチ名として使用します | EFCMスイッチのニックネームをData Infrastructure Insightsのスイッチ名として使用する場合に選択します。 
 
 
 | パフォーマンスポーリング間隔（秒） | パフォーマンスのポーリング間隔デフォルトは300秒です。 

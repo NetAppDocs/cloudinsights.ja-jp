@@ -19,17 +19,17 @@ summary: Oracle ZFS データコレクタを設定しています
 
 
 [role="lead"]
-Cloud Insights では、 Oracle ZFS Storage Appliance データコレクタを使用してインベントリとパフォーマンスのデータを収集します。
+Data Infrastructure Insightsは、Oracle ZFS Storage Applianceデータコレクタを使用してインベントリとパフォーマンスのデータを収集します。
 
 
 
 == 用語集
 
-Cloud Insights は 'Oracle ZFS データコレクタを使用してインベントリ情報を取得しますCloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、Oracle ZFSデータコレクタを使用してインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク（SSD） | ディスク 
@@ -67,7 +67,7 @@ Cloud Insights は 'Oracle ZFS データコレクタを使用してインベン�
 
 == 必要なパフォーマンス指標
 
-Oracle ZFSアプライアンスを使用すると、ストレージ管理者はパフォーマンス統計をキャプチャするための柔軟性を大幅に高めることができます。Cloud Insights では、次の指標を収集するように設定されたハイアベイラビリティペアの各コントローラについて、_Each _が必要です。
+Oracle ZFSアプライアンスを使用すると、ストレージ管理者はパフォーマンス統計をキャプチャするための柔軟性を大幅に高めることができます。Data Infrastructure Insightsでは、次の指標を取得するようにハイアベイラビリティペアの_each_controllerを設定する必要があります。
 
 * smb2。ops [共有]
 * nfs3.ops [共有]
@@ -75,7 +75,7 @@ Oracle ZFSアプライアンスを使用すると、ストレージ管理者は�
 * nfs4-1.ops [共有]
 
 
-これらのいずれかまたはすべてのコントローラをキャプチャしないと、「内部ボリューム」のワークロードにCloud Insights が対応していないかレポートが作成されない可能性があります。
+コントローラがこれらの一部またはすべてをキャプチャしていないと、「内部ボリューム」のワークロードがData Infrastructure Insightsに含まれていないか、アンダーレポートになる可能性があります。
 
 
 

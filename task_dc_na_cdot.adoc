@@ -25,11 +25,11 @@ summary: ONTAP データコレクタ
 
 == 用語集
 
-Cloud Insights は、 ONTAP データコレクタからインベントリデータとパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、ONTAPデータコレクタからインベントリとパフォーマンスのデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク | ディスク 
@@ -68,9 +68,8 @@ ONTAP データ管理ストレージのアセットランディングページ�
 * IP –一般に、データソースで設定されている IP またはホスト名です。
 * マイクロコードバージョン–ファームウェア。
 * raw 容量–システム内のすべての物理ディスクの合計 2 進数で、役割に関係なく加算されます。
-* レイテンシ–読み取りと書き込みの両方について、ワークロードが直面しているホストの状況が表示されます。Cloud Insights がこの値を直接調達するのが理想的ですが、これは多くの場合ではありません。Cloud Insights は、このアップを提供するアレイの代わりに、通常、個々の内部ボリュームの統計情報から導出される IOPS 加重計算を実行します。
-* スループット–内部ボリュームから集約されたもの。
-管理–デバイスの管理インターフェイスのハイパーリンクが含まれている可能性があります。Cloud Insights データソースによって、インベントリレポートの一部としてプログラムによって作成されます。
+* レイテンシ–読み取りと書き込みの両方について、ワークロードが直面しているホストの状況が表示されます。理想的なのは、Data Infrastructure Insightsがこの価値を直接提供していることですが、そうではないことがよくあります。Data Infrastructure Insightsでは、この機能を提供するアレイの代わりに、個 々 の内部ボリュームの統計に基づいてIOPSの加重計算を実行します。
+* スループット–内部ボリュームから集約されたもの。管理–デバイスの管理インターフェイスのハイパーリンクが含まれている可能性があります。インベントリレポートの一部として、Data Infrastructure Insightsデータソースによってプログラムによって作成されます。
 
 
 
@@ -134,7 +133,7 @@ Throughput –このストレージプールの容量の要因となっている
 
 === ONTAPスイッチメトリックを収集するための権限要件
 
-Cloud Insightsでは、コレクタのオプションとしてONTAPクラスタスイッチのデータを収集できます。 <<advanced-configuration,詳細設定>> 設定：Cloud Insightsコレクタでこれを有効にするだけでなく、次の機能を提供するようにONTAPシステム自体を設定する必要があります。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"]、およびが正しいことを確認します。 <<a-note-about-permissions,権限>> は、スイッチデータをCloud Insightsに送信できるように設定されています。
+Data Infrastructure Insightsでは、コレクタ<<advanced-configuration,詳細設定>>設定のオプションとして、ONTAPクラスタスイッチのデータを収集できます。Data Infrastructure Insightsコレクタでこれを有効にするだけでなく、link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"]<<a-note-about-permissions,権限>>スイッチデータをData Infrastructure Insightsに送信できるように、ONTAPシステム自体を構成して提供し、正しい設定を確認する必要があります。
 
 
 
@@ -192,13 +191,13 @@ Cloud Insightsでは、コレクタのオプションとしてONTAPクラスタ�
 | 高度なカウンタデータ収集 | ONTAP の統合を有効にします。ONTAP 詳細カウンタデータをポーリングに含める場合に選択します。リストから目的のカウンタを選択します。 
 
 
-| クラスタスイッチ指標 | Cloud Insightsでクラスタスイッチのデータを収集できるようにします。Cloud Insights側でこれを有効にするだけでなく、次の機能を提供するようにONTAPシステムを設定する必要があります。 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"]、およびが正しいことを確認します。 <<a-note-about-permissions,権限>> は、スイッチデータをCloud Insightsに送信できるように設定されています。下記の「権限に関する注意事項」を参照してください。 
+| クラスタスイッチ指標 | Data Infrastructure Insightsでクラスタスイッチのデータを収集Data Infrastructure Insights側でこれを有効にするだけでなく、link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["スイッチ情報"]<<a-note-about-permissions,権限>>スイッチのデータがData Infrastructure Insightsに送信されるように、ONTAPシステムで提供するように設定し、正しい設定が行われていることを確認する必要があります。下記の「権限に関する注意事項」を参照してください。 
 |===
 
 
 == ONTAPの電力メトリック
 
-いくつかのONTAPモデルは、監視やアラートに使用できるCloud Insightsの電力メトリックを提供します。以下のサポートされているモデルとサポートされていないモデルのリストは包括的ではありませんが、いくつかのガイダンスを提供する必要があります。一般的に、モデルがリストのものと同じファミリーに属している場合、サポートは同じである必要があります。
+いくつかのONTAPモデルは、監視やアラートに使用できるデータインフラインサイトの電力指標を提供します。以下のサポートされているモデルとサポートされていないモデルのリストは包括的ではありませんが、いくつかのガイダンスを提供する必要があります。一般的に、モデルがリストのものと同じファミリーに属している場合、サポートは同じである必要があります。
 
 サポートされるモデル：
 
@@ -239,11 +238,11 @@ FAS / AFF 8080
 
 == アクセス権に関する注意事項
 
-多くの Cloud Insights の ONTAP ダッシュボードは高度な ONTAP カウンタに依存するため、データコレクタの詳細設定セクションで * 高度なカウンタデータ収集 * を有効にする必要があります。
+Data Infrastructure InsightsのONTAPダッシュボードの多くは、高度なONTAPカウンタに依存しているため、データコレクタの高度な設定セクションで*高度なカウンタデータ収集*を有効にする必要があります。
 
 また、 ONTAP API への書き込み権限が有効になっていることも確認する必要があります。通常は、必要な権限を持つアカウントがクラスタレベルで必要になります。
 
-クラスタレベルで Cloud Insights のローカルアカウントを作成するには、クラスタ管理者のユーザ名とパスワードを使用して ONTAP にログインし、 ONTAP サーバで次のコマンドを実行します。
+クラスタレベルでData Infrastructure Insights用のローカルアカウントを作成するには、クラスタ管理者のユーザ名とパスワードを使用してONTAPにログインし、ONTAPサーバで次のコマンドを実行します。
 
 . 作業を開始する前に、 _Administrator_account および _diagnostic-level コマンド _ を使用して ONTAP にサインインする必要があります。
 . 次のコマンドを使用して、読み取り専用ロールを作成します。
@@ -282,7 +281,7 @@ UserName    Application   Method      Role Name      Locked
 ci_user     ontapi      password    ci_readonly   no
 ....
 
-NOTE: ONTAPアクセス制御が正しく設定されていないと、Cloud Insights REST呼び出しが失敗し、デバイスのデータにギャップが生じる可能性があります。  たとえば、Cloud Insightsコレクタで有効にしていて、ONTAPで権限を設定していない場合、取得は失敗します。  また、ロールが以前にONTAPで定義されていて、残りのAPI機能を追加する場合は、_http_がロールに追加されていることを確認してください。
+NOTE: ONTAPアクセス制御が正しく設定されていないと、Data Infrastructure InsightsのREST呼び出しが失敗し、デバイスのデータにギャップが生じる可能性があります。たとえば、Data Infrastructure Insightsコレクタでこの機能を有効にしていて、ONTAPに対する権限が設定されていない場合、データの取得は失敗します。また、ロールが以前にONTAPで定義されていて、残りのAPI機能を追加する場合は、_http_がロールに追加されていることを確認してください。
 
 
 

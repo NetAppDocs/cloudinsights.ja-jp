@@ -16,7 +16,7 @@ summary: Kubernetes向けデータコレクタ
 
 
 [role="lead"]
-Cloud Insights は、このデータコレクタを使用して Kubernetes ポッド、ノード、コンテナの指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してKubernetesポッド、ノード、コンテナの指標を収集します。
 
 
 

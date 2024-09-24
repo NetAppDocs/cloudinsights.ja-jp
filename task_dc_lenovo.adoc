@@ -19,7 +19,7 @@ summary: Lenovo データコレクタの設定。
 
 
 [role="lead"]
-Cloud Insights は 'Lenovo のデータコレクタを使用して 'Lenovo HX ストレージ・システムのインベントリとパフォーマンス・データを検出します
+Data Infrastructure Insightsは、Lenovoデータコレクタを使用して、Lenovo HXストレージシステムのインベントリデータとパフォーマンスデータを検出します。
 
 注：これらは一般的な用語の対応のみを示したものであり、このデータコレクタのすべてのケースを表しているわけではありません。
 

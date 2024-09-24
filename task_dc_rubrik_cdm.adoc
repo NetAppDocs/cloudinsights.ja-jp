@@ -19,17 +19,17 @@ summary: Rubrik CDMデータコレクタを設定しています。
 
 
 [role="lead"]
-Cloud Insights では、Rubrikデータコレクタを使用して、Rubrikストレージアプライアンスからインベントリデータとパフォーマンスデータを取得します。
+Data Infrastructure Insightsは、Rubrikのデータコレクタを使用して、Rubrikストレージアプライアンスからインベントリとパフォーマンスのデータを取得します。
 
 
 
 == 用語集
 
-Cloud Insights では、Rubrikデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsでは、Rubrikのデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | クラスタ | ストレージ、ストレージプール 
@@ -48,7 +48,7 @@ Cloud Insights では、Rubrikデータコレクタから次のインベント�
 
 このデータコレクタを設定するには、次のものが必要です。
 
-* Cloud Insights Acquisition Unitは、TCPポート443からRubrikクラスタへの接続を開始します。クラスタごとに1つのコレクタ。
+* Data Infrastructure Insights Acquisition Unitは、RubrikクラスタへのTCPポート443への接続を開始します。クラスタごとに1つのコレクタ。
 * RubrikクラスタのIPアドレス。
 * クラスタのユーザ名とパスワード。
 * RubrikクラスタのIPアドレスまたはホスト名。

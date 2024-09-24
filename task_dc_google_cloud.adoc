@@ -19,7 +19,7 @@ keywords: data collector, queries, create
 
 
 [role="lead"]
-このデータコレクタは、 Google Compute クラウドプラットフォーム構成からのインベントリとパフォーマンスの収集をサポートします。このコレクタは、 1 つの Google 組織内のすべてのプロジェクト内のすべてのコンピューティングリソースを検出しようとします。Cloud Insights で検出したい Google 組織が複数ある場合は、組織ごとに 1 つの Cloud Insights コレクタを導入します。
+このデータコレクタは、 Google Compute クラウドプラットフォーム構成からのインベントリとパフォーマンスの収集をサポートします。このコレクタは、 1 つの Google 組織内のすべてのプロジェクト内のすべてのコンピューティングリソースを検出しようとします。Data Infrastructure Insightsで検出したいGoogle組織が複数ある場合は、組織ごとにData Infrastructure Insightsコレクタを1つ導入します。
 
 
 
@@ -33,7 +33,7 @@ keywords: data collector, queries, create
 | 組織 ID | このコレクタで検出する組織 ID 。サービスアカウントが複数の組織を表示できる場合は、このフィールドが必要です 
 
 
-| GCP プロジェクトを ID でフィルタリングするには、 [ 除外 ] または [ 含める ] を選択します | Cloud Insights に移行するプロジェクトのリソースを制限する場合 
+| GCP プロジェクトを ID でフィルタリングするには、 [ 除外 ] または [ 含める ] を選択します | Data Infrastructure Insightsに取り込むプロジェクトのリソースを制限する場合は、 
 
 
 | プロジェクト ID | 「除外する」値の値に応じて、フィルタするプロジェクト ID または検出から除外するプロジェクト ID のリスト。デフォルトリストは空です 

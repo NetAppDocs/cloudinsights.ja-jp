@@ -19,20 +19,20 @@ summary: NetApp ONTAP Data Collector 向けの Amazon FSX
 
 
 [role="lead"]
-このデータコレクタは、 Amazon FSX for NetApp ONTAP からインベントリデータとパフォーマンスデータを取得します。このデータコレクタは、 Cloud Insights サービスリージョン全体で段階的に利用可能になります。Cloud Insights 環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。
+このデータコレクタは、 Amazon FSX for NetApp ONTAP からインベントリデータとパフォーマンスデータを取得します。このデータコレクタは、Data Infrastructure Insightsサービスのリージョン全体で段階的に利用できるようになります。Data Infrastructure Insights環境にこのコレクタのアイコンが表示されない場合は、営業担当者にお問い合わせください。
 
 
-NOTE: このCloud Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。AWSを確認してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["ロールとルール"] 使用可能なオプションのマニュアル。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Cloud Insightsコレクタに使用する適切なロールです。また、ユーザには、http、ontapi、sshの3つのアプリケーションすべてが割り当てられている必要があります。
+NOTE: このData Infrastructure Insightsコレクタには、_Filesystem-Scoped_roleを持つONTAPユーザが必要です。link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["ロールとルール"]使用可能なオプションについては、AWSのドキュメントを参照してください。現時点では、AWSはFilesystem Scopeを使用するユーザロールの1種類（_fsxadmin_）のみをサポートしています。これは、Data Infrastructure Insightsコレクタに使用する適切なロールです。また、ユーザには、http、ontapi、sshの3つのアプリケーションすべてが割り当てられている必要があります。
 
 
 
 == 用語集
 
-Cloud Insights は、 FSx-NetApp データコレクタからインベントリデータとパフォーマンスデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、FSx - NetAppデータコレクタからインベントリとパフォーマンスのデータを取得します。取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | クラスタ | ストレージ 
@@ -58,9 +58,8 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 * Serial Number –アレイのシリアル番号。
 * IP –一般に、データソースで設定されている IP またはホスト名です。
 * 物理容量–FSXファイルシステムに割り当てられているすべてのSSDストレージの2つの合計。
-* レイテンシ–読み取りと書き込みの両方について、ワークロードが直面しているホストの状況が表示されます。Cloud Insights がこの値を直接調達するのが理想的ですが、これは多くの場合ではありません。Cloud Insights は、このアップを提供するアレイの代わりに、通常、個々の内部ボリュームの統計情報から導出される IOPS 加重計算を実行します。
-* スループット–内部ボリュームから集約されたもの。
-管理–デバイスの管理インターフェイスのハイパーリンクが含まれている可能性があります。Cloud Insights データソースによって、インベントリレポートの一部としてプログラムによって作成されます。
+* レイテンシ–読み取りと書き込みの両方について、ワークロードが直面しているホストの状況が表示されます。理想的なのは、Data Infrastructure Insightsがこの価値を直接提供していることですが、そうではないことがよくあります。Data Infrastructure Insightsでは、この機能を提供するアレイの代わりに、個 々 の内部ボリュームの統計に基づいてIOPSの加重計算を実行します。
+* スループット–内部ボリュームから集約されたもの。管理–デバイスの管理インターフェイスのハイパーリンクが含まれている可能性があります。インベントリレポートの一部として、Data Infrastructure Insightsデータソースによってプログラムによって作成されます。
 
 
 
@@ -121,7 +120,7 @@ FSx-NetApp ストレージアセットランディングページにあるオブ
 * Workload _volume
 
 
-FSx CLIコマンドとAPIコマンドは、Cloud Insights ZAPIで収集されない一部の容量値を取得するため、Cloud Insightsでは特定の容量値（ストレージプールの値など）がFSx自体の容量値と異なる場合があることに注意してください。
+FSx CLIコマンドとAPIコマンドは、Data Infrastructure Insights ZAPIで収集されない一部の容量値を取得するため、Data Infrastructure Insightsでは特定の容量値（ストレージプールの値など）がFSx自体と異なる場合があることに注意してください。
 
 
 

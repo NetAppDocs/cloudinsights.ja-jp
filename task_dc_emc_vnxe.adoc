@@ -19,7 +19,7 @@ summary: VNXe データコレクタを構成しています。
 
 
 [role="lead"]
-Dell EMC VNXe データコレクタは、 VNXe ユニファイドストレージアレイのインベントリサポートを提供します。Cloud Insights は現在、 iSCSI プロトコルと NAS プロトコルをサポートしています。
+Dell EMC VNXe データコレクタは、 VNXe ユニファイドストレージアレイのインベントリサポートを提供します。Data Infrastructure Insightsは現在、iSCSIプロトコルとNASプロトコルをサポートしています。
 
 
 
@@ -31,18 +31,18 @@ Dell EMC VNXe データコレクタは、 VNXe ユニファイドストレージ
 * データコレクタで使用するためには、読み取り専用ユーザが少なくとも 1 人必要です。
 * 管理用 Solutions Enabler サーバの IP アドレス
 * ポート 443 での HTTPS が必要です
-* EMC VNXe データコレクタは、 NAS と iSCSI でインベントリをサポートしています。ファイバチャネルボリュームは検出されますが、 Cloud Insights では FC マッピング、マスキング、ストレージポートについてはレポートされません。
+* EMC VNXeデータコレクタは、NASおよびiSCSIによるインベントリのサポートを提供します。ファイバチャネルボリュームは検出されますが、Data Infrastructure InsightsはFCマッピング、マスキング、ストレージポートについてはレポートしません。
 
 
 
 
 == 用語集
 
-Cloud Insights は、 VNXe データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、VNXeデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスク | ディスク 
@@ -119,9 +119,6 @@ Cloud Insights は、 VNXe データコレクタから次のインベントリ�
 | 問題 | 次の操作を実行します 
 
 
-| 「 Failed to execute external utility 」というエラーメッセージが表示され、「 Failed to find Unisphere executable uemcli 」 | * IPアドレス、ユーザ名、パスワードが正しいことを確認します
-*Unisphere CLIがCloud Insights Acquisition Unitにインストールされていることを確認します
-*データソース構成でUnisphere CLIのインストールディレクトリが正しいことを確認します
-* VNXeのIPがデータソースの構成で正しいことを確認します。Cloud Insights Acquisition Unit から CMD を開き、設定したインストールディレクトリに移動します。 $ ｛ INSTALLDIR.次のように入力して、 VNXe デバイスとの接続を試みます。 uemcli -d <your ip>-u <your ID>/sys/general show 
+| 「 Failed to execute external utility 」というエラーメッセージが表示され、「 Failed to find Unisphere executable uemcli 」 | *正しいIPアドレス、ユーザー名、パスワードを確認します。* Unisphere CLIがData Infrastructure Insights Acquisition Unitにインストールされていることを確認します。*データソース構成でUnisphere CLIのインストールディレクトリが正しいことを確認します。*データソースの構成でVNXeのIPが正しいことを確認します。Data Infrastructure Insights Acquisition UnitでCMDを開き、設定されているインストールディレクトリ$｛INSTALLDIRに移動します。次のように入力して、 VNXe デバイスとの接続を試みます。 uemcli -d <your ip>-u <your ID>/sys/general show 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

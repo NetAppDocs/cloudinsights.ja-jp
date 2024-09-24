@@ -19,17 +19,17 @@ summary: Nutanix のデータコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、 Nutanix データコレクタを使用して、 Nutanix NX ストレージシステムのインベントリとパフォーマンスのデータを検出します。
+Data Infrastructure Insightsは、Nutanixデータコレクタを使用して、Nutanix NXストレージシステムのインベントリデータとパフォーマンスデータを検出します。
 
 
 
 == 用語集
 
-Cloud Insights は、 Nutanix データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、Nutanixデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ストレージプール | ストレージプール 

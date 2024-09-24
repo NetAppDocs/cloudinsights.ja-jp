@@ -21,17 +21,17 @@ summary: System Storage DS8000 シリーズデータコレクタの設定
 [role="lead"]
 IBM DS （ CLI ）データコレクタは、 DS6xxx および DS8xxx のデバイスのインベントリデータとパフォーマンスデータの収集をサポートします。
 
-DS3xxx 、 DS4xxx 、および DS5xxx デバイスは、でサポートされています link:task_dc_na_eseries.html["NetApp E シリーズのデータコレクタ"]。サポートされるモデルとファームウェアバージョンについては、 Cloud Insights のサポートマトリックスを参照してください。
+DS3xxx、DS4xxx、およびDS5xxxデバイスはでサポートされていますlink:task_dc_na_eseries.html["NetApp E シリーズのデータコレクタ"]。サポートされるモデルとファームウェアバージョンについては、Data Infrastructure Insightsサポートマトリックスを参照してください。
 
 
 
 == 用語集
 
-Cloud Insightsは、IBM DSデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、IBM DSデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ディスクドライブモジュール | ディスク 
@@ -58,7 +58,7 @@ Cloud Insightsは、IBM DSデータコレクタから次のインベントリ情
 
 * 各 DS アレイの IP アドレス
 * 各 DS アレイの読み取り専用のユーザ名とパスワード
-* Cloud Insights AU にサードパーティ製ソフトウェア IBM_dscli_ がインストールされている
+* サードパーティ製ソフトウェアをData Infrastructure Insights AUにインストール：ibm_dscli_
 * アクセスの検証：ユーザ名とパスワードを使用して Run_dscli _ コマンドを実行します
 * ポートの要件： 80 、 443 、および 1750
 
@@ -130,10 +130,6 @@ Cloud Insightsは、IBM DSデータコレクタから次のインベントリ情
 
 | エラー：
 *プログラムを実行できません
-*コマンドの実行エラー | * Cloud Insights Acquisition UnitからCMDを開きます
-* CLIのホームディレクトリ/libでcli.cfgファイルを開き'プロパティjava_installを確認して'環境に合わせて値を編集します
-*このマシンにインストールされているJavaのバージョンを表示します。「java-version」と入力します。
-* CLIコマンドで指定されたIBMストレージデバイスのIPアドレスにpingを実行します。
-* 上記のすべてが正常に動作した場合は、 CLI コマンドを手動で実行します 
+*コマンドの実行エラー | * Data Infrastructure Insights Acquisition UnitからCMD* CLIのホームディレクトリ/libでCLI.CFGファイルを開き、プロパティJAVA_INSTALLを確認し、環境に合わせて値を編集します。*「java-version」と入力して、このマシンにインストールされているJavaバージョンを表示します。* CLIコマンドで指定したIBMストレージデバイスのIPアドレスをpingします。* 上記のすべてが正常に動作した場合は、 CLI コマンドを手動で実行します 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。

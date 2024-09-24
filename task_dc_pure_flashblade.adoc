@@ -19,17 +19,17 @@ summary: Pure Storage データコレクタの設定
 
 
 [role="lead"]
-Cloud Insightsは、Pure Storage FlashBladeデータコレクタを使用して、REST APIのバージョン2を公開するFlashBladeクラスタからインベントリとパフォーマンスのデータを収集します。
+Data Infrastructure Insightsは、Pure Storage FlashBladeデータコレクタを使用して、REST APIのバージョン2を公開するFlashBladeクラスタからインベントリとパフォーマンスのデータを収集します。
 
 
 
 == 用語集
 
-Cloud Insights では、アセットのタイプごとに、アセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsで取得したアセットタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ドライブ（ SSD ） | ディスク 
@@ -72,7 +72,7 @@ Cloud Insights では、アセットのタイプごとに、アセットに使�
 | FlashBladeホストのIPアドレス | ストレージシステムの IP アドレス 
 
 
-| ユーザ名 | Cloud Insights管理者が自分のAPIトークンが属するユーザを記憶できるようにするためのユーザ名 
+| ユーザ名 | Data Infrastructure Insightsの管理者が自分のAPIトークンが属するユーザを覚えやすくするためのユーザ名 
 
 
 | API トークン | API トークン 

@@ -19,7 +19,7 @@ summary: IBM Cleversafe データコレクタの設定。
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して IBM Cleversafe ストレージシステムのインベントリデータとパフォーマンスデータを検出します。
+Data Infrastructure Insightsは、このデータコレクタを使用して、IBM Cleversafeストレージシステムのインベントリデータとパフォーマンスデータを検出します。
 
 
 NOTE: IBM Cleversafeは、管理ユニットに対して異なるRaw TBで測定されています。フォーマットされていないIBM Cleversafeの容量は40TBごとに1が充電されます link:concept_subscribing_to_cloud_insights.html#pricing["管理ユニット (MU)"]。
@@ -28,11 +28,11 @@ NOTE: IBM Cleversafeは、管理ユニットに対して異なるRaw TBで測定
 
 == 用語集
 
-Cloud Insights では、 IBM Cleversafe データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、IBM Cleversafeデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ストレージプール | ストレージプール 

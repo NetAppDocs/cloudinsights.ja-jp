@@ -19,17 +19,17 @@ summary: Brocade BNA コレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、 Brocade Network Advisor データコレクタを使用して、 Brocade スイッチからインベントリとパフォーマンスのデータを取得します。
+Data Infrastructure Insightsは、Brocadeネットワークアドバイザのデータコレクタを使用して、Brocadeスイッチからインベントリとパフォーマンスのデータを取得します。
 
 
 
 == 用語集
 
-Cloud Insights では、 Brocade Network Advisor データコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、Brocadeネットワークアドバイザのデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | スイッチ | スイッチ 
@@ -51,7 +51,7 @@ Cloud Insights では、 Brocade Network Advisor データコレクタから次�
 
 このデータコレクタを設定するには、次のものが必要です。
 
-* Cloud Insights Acquisition Unit は、 BNA サーバの TCP ポート 443 への接続を初期化します。BNA サーバはバージョン 14.2.1 以降を実行している必要があります。
+* Data Infrastructure Insights Acquisition Unitは、BNAサーバのTCPポート443への接続を開始します。BNA サーバはバージョン 14.2.1 以降を実行している必要があります。
 * Brocade Network Advisor サーバの IP アドレス
 * 管理者アカウントのユーザ名とパスワード
 * ポート要件： HTTP / HTTPS 443

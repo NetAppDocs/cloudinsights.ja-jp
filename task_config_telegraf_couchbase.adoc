@@ -19,7 +19,7 @@ summary: Couchbase データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、このデータコレクタを使用して Couchbase から指標を収集します。
+Data Infrastructure Insightsは、このデータコレクタを使用してCouchbaseから指標データを収集します。
 
 
 

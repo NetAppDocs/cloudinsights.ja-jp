@@ -19,17 +19,17 @@ summary: HUAWEI OceanStor （ REST / HTTPS ）データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights では、 Huawei OceanStor （ REST/HTTPS ）データコレクタを使用して、 Huawei OceanStor および OceanStor Dorado ストレージのインベントリとパフォーマンスを検出します。
+Data Infrastructure Insightsでは、Huawei OceanStor（REST / HTTPS）データコレクタを使用して、Huawei OceanStorおよびOceanStor Doradoストレージのインベントリとパフォーマンスを検出します。
 
 
 
 == 用語集
 
-Cloud Insights は、 Huawei OceanStor から次のインベントリ情報とパフォーマンス情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、Huawei OceanStorから次のインベントリ情報とパフォーマンス情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
-| ベンダー / モデルの用語 | Cloud Insights の用語 
+| ベンダー / モデルの用語 | Data Infrastructure Insightsの用語 
 
 
 | ストレージプール | ストレージプール 

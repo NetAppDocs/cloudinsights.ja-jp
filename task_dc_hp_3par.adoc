@@ -19,13 +19,13 @@ summary: HP Enterprise Alletra 9000/Primera （旧 3PAR ）データコレクタ
 
 
 [role="lead"]
-Cloud Insightsは、HP Enterprise Alletra 9000/HP Enterprise Primera（以前の3PAR）データコレクタを使用して、インベントリとパフォーマンスを検出します。
+Data Infrastructure Insightsは、HP Enterprise Alletra 9000/HP Enterprise Primera（以前の3PAR）データコレクタを使用してインベントリとパフォーマンスを検出します。
 
 
 
 == 用語集
 
-Cloud Insights では、このデータコレクタから次のインベントリ情報を取得します。Cloud Insights では、取得したアセットのタイプごとに、そのアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
+Data Infrastructure Insightsは、このデータコレクタから次のインベントリ情報を取得します。Data Infrastructure Insightsで取得したアセットタイプごとに、このアセットに使用される最も一般的な用語が表示されます。このデータコレクタを表示またはトラブルシューティングするときは、次の用語に注意してください。
 
 [cols="2*"]
 |===
@@ -136,7 +136,7 @@ Cloud Insights では、このデータコレクタから次のインベント�
 | SMI-S ユーザが設定されていますが、ドメインがありません | 構成した SMI-S ユーザに適切なドメイン権限を付与します 
 
 
-| Cloud Insights は、 SMI-S サービスに接続 / ログインできないと表示しています。 | CI AU とアレイの間に、 CI AU と TCP 接続をブロックするファイアウォールがないことを確認します。
+| Data Infrastructure Insightsでは、SMI-Sサービスに接続/ログインできないと報告されています。 | CI AU とアレイの間に、 CI AU と TCP 接続をブロックするファイアウォールがないことを確認します。
 これが完了し、ファイアウォールがないことを確認したら、アレイに SSH 接続し、「 showcim 」コマンドを使用して確認する必要があります。
 
 以下を確認します。

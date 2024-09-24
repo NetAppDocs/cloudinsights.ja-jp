@@ -19,7 +19,7 @@ summary: Flink データコレクタの設定
 
 
 [role="lead"]
-Cloud Insights は、エージェントをインストールするノードからメトリックを収集します。
+Data Infrastructure Insightsは、エージェントをインストールしたノードから指標を収集します。
 
 
 
