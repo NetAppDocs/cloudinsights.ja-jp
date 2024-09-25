@@ -11359,7 +11359,6 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">ワイルドカード文字列には引用符は含まれていません。例： searchtext 、 \* searchtext * は、 'earchtext ' を含む文字列をフィルタします。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">プレフィックスが付いた文字列、たとえば searchtext* は、「 earchtext 」で始まる文字列を検索します。</block>
   <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">フォレンジックアクティビティ履歴データのソート</block>
-  <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">アクティビティ履歴データは、_Time、User、Source IP、Activity、Path_and_Entity Type _でソートできます。デフォルトでは、テーブルは descending _Time_order でソートされます。つまり、最新のデータが最初に表示されます。_Device_Field と _Protocol_fields に対してソートが無効になっています。</block>
   <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">すべてのアクティビティの列を選択します</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">すべての activity テーブルには ' デフォルトで SELECT カラムが表示されます列を追加、削除、または変更するには、テーブルの右側にある歯車アイコンをクリックし、使用可能な列のリストから選択します。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">アクティビティセレクタ、幅 = 30%</block>
@@ -15527,7 +15526,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">*新しいフォレンジックアクティビティAPI *</block>
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">フォレンジックアクティビティ <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> に新しいバージョンが追加されました。Forensics ActivityのAPIを呼び出す場合は、* cloudsecure_forensics.activities._v2_* APIを使用します。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">このAPIに複数の呼び出しを行う場合、最良の結果を得るためには、呼び出しが並列ではなく順番に実行されるようにしてください。複数の並行呼び出しが発生すると、APIがタイムアウトする可能性があります。</block>
-  <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、_/opt/netapp/cloudsecure/agent/export-script/_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP Autonomous Ransomware Protectionの権限とONTAPへのアクセス拒否</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">および <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">SVM Data Collectorで、ONTAP 9.151以降の* NFS 4.1 *までのNFSバージョンがサポートされるようになりました。</block>
@@ -16201,10 +16199,8 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="3a6b9b02361ff37889bb4453f5ce5933" category="doc">Data Infrastructure Insightsのデータコレクタリスト</block>
   <block id="4a67aaff87a4b62a93d49b26e8eab486" category="paragraph">Data Infrastructure Insightsは、多数のベンダーやサービスが提供するさまざまなデータコレクタをサポートしています。</block>
   <block id="0469e242e5d1ebfd7553d7a981ac63a5" category="paragraph">Data Infrastructure Insightsでサポートされているデータコレクタのアルファベット順リスト：</block>
-  <block id="5988d58aa29664a0117f2c6b8e13d96b" category="list-text">アクティビティを実行しているユーザーの*ドメイン*。フィルタするには、* exact domain *を指定する必要があります。部分ドメイン、または部分ドメインの先頭または末尾にワイルドカード()'*')が付いている部分ドメインを検索することはできません。_None_を指定すると、見つからないドメインを検索できます。</block>
   <block id="28894211649d8f9f99c54dc12f77784e" category="list-text">*エンティティタイプ*（エンティティ（ファイル）拡張子を使用）-引用符で正確なエンティティタイプを指定することをお勧めします。例：「txt」_。</block>
   <block id="cfacc3a890c7b76e916de509a258355f" category="list-text">*エンティティのパス*-ディレクトリパスフィルタ（/で終わるパス文字列）のパス*は、より高速な結果を得るために、最大4つのディレクトリの深さが推奨されます。例：_/home/userX/nested1/nested2/_or_"/home/userX/nested1/nested2/"_。詳細については、次の表を参照してください。</block>
-  <block id="b8859d75b29f26c843546ce2c6d19fbd" category="list-text">*ユーザー*アクティビティの実行-引用符で正確なユーザーを指定することをお勧めします。例：_"管理者"_。</block>
   <block id="98979e670bd293d9570a2b24562e08a2" category="section-title">アクティビティフォレンジックフィルタの例：</block>
   <block id="0930b50f995b3a6af46dc5f205e5c2be" category="cell">ユーザが適用したフィルタ式</block>
   <block id="13876d45cb0b459833e4aebb72877939" category="cell">予想される結果</block>
@@ -16267,4 +16263,8 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="2c000eb53a0410e6ec55bf0a669d2f86" category="list-text">[Data Infrastructure Insights]メニューで、*[Observability]&gt;[Collectors]*をクリックします。</block>
   <block id="b23f93b206dc7149eff63aba0082e7bc" category="list-text">[Data Infrastructure Insights]メニューで、*[Observability]&gt;[Collectors]*をクリックして、インストールされているデータコレクタのリストを開きます。</block>
   <block id="50356cf9fa0a08b9ec2e7091b8a2923c" category="list-text">[Data Infrastructure Insights]メニューで、*[Observability]&gt;[Collectors]*をクリックします。</block>
+  <block id="3a6aae5bc174d27a503441e1d24d0c68" category="list-text">アクティビティを実行しているユーザーの*ドメイン*。フィルタするには、* exact domain *を指定する必要があります。部分ドメイン、または部分ドメインの先頭または末尾にワイルドカード('*')が付いている部分ドメインを検索することはできません。_None_を指定すると、見つからないドメインを検索できます。</block>
+  <block id="0d97b222b080d69a549c4eb4a4bfe399" category="list-text">*ユーザー*アクティビティの実行-引用符で正確なユーザーを指定することをお勧めします。たとえば、_"Administrator"_などです。</block>
+  <block id="95389b3cb82b7172ea6147fa876a9ffa" category="paragraph">アクティビティ履歴データは、_Time、User、Source IP、Activity、_and_Entity Type _でソートできます。デフォルトでは、テーブルは descending _Time_order でソートされます。つまり、最新のデータが最初に表示されます。_Device_Field と _Protocol_fields に対してソートが無効になっています。</block>
+  <block id="f61af81d2b9edda67ad225742bd8e959" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、NetAppエージェントの_/ opt/apl/cloudsecure/agent/export-script /_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
 </blocks>
