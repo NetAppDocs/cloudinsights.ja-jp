@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_getting_started_with_cloud_insights.html 
-summary: Cloud Insights での作業の開始 
+summary: Data Infrastructure Insightsの導入 
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = データの収集を開始しています
@@ -19,11 +19,11 @@ keywords: invite, roles, data collector, acquisition unit, AU
 
 
 [role="lead"]
-Cloud Insights に登録して初めて環境にログインしたあと、以下の手順に従ってデータの収集と管理を開始します。
+Data Infrastructure Insightsに登録して初めて環境にログインすると、次の手順に従ってデータの収集と管理を開始します。
 
 データコレクタによって、ストレージデバイス、ネットワークスイッチ、仮想マシンなどのデータソースから情報が検出されます。収集された情報は、分析、検証、監視、およびトラブルシューティングに使用されます。
 
-Cloud Insights には、次の3種類のデータコレクタがあります。
+Data Infrastructure Insightsには、次の3種類のデータコレクタがあります。
 
 * インフラ（ストレージデバイス、ネットワークスイッチ、コンピューティングインフラ）
 * オペレーティングシステム（VMwareやWindowsなど）
@@ -36,7 +36,7 @@ Cloud Insights には、次の3種類のデータコレクタがあります。
 
 == Acquisition Unit をインストールする
 
-Infrastructure_data コレクタを選択した場合、 Cloud Insights にデータを注入するには Acquisition Unit が必要です。収集対象のデータセンターにあるサーバまたはVMにAcquisition Unitソフトウェアをダウンロードしてインストールする必要があります。1 つの Acquisition Unit を複数のデータコレクタに使用できます。
+_Infrastructure_dataコレクタを選択した場合は、Data Infrastructure Insightsにデータを挿入するためにAcquisition Unitが必要です。収集対象のデータセンターにあるサーバまたはVMにAcquisition Unitソフトウェアをダウンロードしてインストールする必要があります。1 つの Acquisition Unit を複数のデータコレクタに使用できます。
 
 image:NewLinuxAUInstall.png["Linux AU の手順"]
 
@@ -69,9 +69,7 @@ _Infrastructure_data コレクタの場合は、表示されるデータコレ�
 
 === オペレーティングシステム
 
-Operating System_dataコレクタの場合は、Cloud Insights エージェントをインストールするプラットフォーム（Linux、Windows）を選択します。
-サービスからデータを収集するには、少なくとも 1 人のエージェントが必要です。
-エージェントは、 Cloud Insights で使用するために、ホスト自体からもデータを収集します。このデータは、ウィジェットなどでは「ノード」データに分類されます
+Operating System_dataコレクタの場合は、プラットフォーム（Linux、Windows）を選択してData Infrastructure Insights Agentをインストールします。サービスからデータを収集するには、少なくとも 1 人のエージェントが必要です。また、エージェントはホスト自体からデータを収集し、Data Infrastructure Insightsで使用します。このデータは、ウィジェットなどでは「ノード」データに分類されます
 
 * エージェントホストまたは VM でターミナルまたはコマンドウィンドウを開き、表示されたコマンドを貼り付けてエージェントをインストールします。
 * インストールが完了したら、 [* Complete Setup* （セットアップの完了） ] をクリックします。
@@ -94,7 +92,7 @@ _Service_data コレクタの場合は、タイルをクリックして、その
 
 == ダッシュボードを追加します
 
-設定対象として選択した初期データコレクタのタイプ（ストレージ、スイッチなど）に応じて、関連するダッシュボードが 1 つ以上インポートされます。たとえば、ストレージデータコレクタを設定すると、ストレージ関連のダッシュボードのセットがインポートされ、 Cloud Insights のホームページとして設定されます。ホームページは、 [ ダッシュボード（ *Dashboards ） ]>[ すべてのダッシュボードを表示（ Show All Dashboards ） ] リストから変更できます。
+設定対象として選択した初期データコレクタのタイプ（ストレージ、スイッチなど）に応じて、関連するダッシュボードが 1 つ以上インポートされます。たとえば、ストレージデータコレクタを設定している場合、ストレージ関連の一連のダッシュボードがインポートされ、そのダッシュボードがData Infrastructure Insightsのホームページとして設定されます。ホームページは、 [ ダッシュボード（ *Dashboards ） ]>[ すべてのダッシュボードを表示（ Show All Dashboards ） ] リストから変更できます。
 
 追加のダッシュボードは、あとからインポートすることも、インポートすることもでき link:concept_dashboards_overview.html["自分で作成します"]。
 
@@ -115,7 +113,7 @@ _Service_data コレクタの場合は、タイルをクリックして、その
 
 == 便利な定義
 
-Cloud Insights データコレクタまたは機能について説明する場合は、次の定義が役立ちます。
+Data Infrastructure Insightsのデータコレクタや機能について説明する際には、次の定義が役立ちます。
 
 * コレクタのライフサイクル:コレクタは'ライフサイクルの次のいずれかの状態に属します
 +

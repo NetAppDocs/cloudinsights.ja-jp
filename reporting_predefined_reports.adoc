@@ -19,12 +19,12 @@ keywords: reporting, cognos, data warehouse, dwh, pre-defined
 
 
 [role="lead"]
-Cloud Insights レポートには、レポートに求められる代表的な要件に対処する事前定義済みのレポートが含まれており、関係者はストレージインフラに関して十分な情報に基づいた意思決定を行うために必要な重要な情報を得ることができます。
+Data Infrastructure Insights Reportingには、レポート作成に関する一般的な要件に対処する事前定義済みのレポートが含まれており、関係者がストレージインフラに関する十分な情報に基づいて意思決定を下すために必要な重要な分析情報を提供します。
 
 
-NOTE: レポート機能は Cloud Insights で使用できます link:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]。
+NOTE: レポート機能はData Infrastructure Insightsで使用できlink:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]ます。
 
-Cloud Insights レポートポータルから事前定義済みのレポートを生成したり、他のユーザにレポートを E メールで送信したり、レポートを変更したりできます。複数のレポートを使用して、デバイス、ビジネスエンティティ、または階層でフィルタリングできます。このレポートツールは、 IBM Cognos をベースとしたツールで、さまざまなデータ表示オプションが用意されています。
+Data Infrastructure Insights Reporting Portalから事前定義済みのレポートを生成したり、他のユーザにEメールで送信したり、変更したりできます。複数のレポートを使用して、デバイス、ビジネスエンティティ、または階層でフィルタリングできます。このレポートツールは、 IBM Cognos をベースとしたツールで、さまざまなデータ表示オプションが用意されています。
 
 事前定義済みのレポートには、インベントリ、ストレージ容量、チャージバック、パフォーマンス、ストレージ効率、 クラウドコストのデータを活用できます。これらの事前定義済みレポートを変更して、変更内容を保存できます。
 
@@ -34,7 +34,7 @@ HTML 、 PDF 、 CSV 、 XML などのさまざまな形式でレポートを生
 
 == 事前定義済みレポートに移動します
 
-Reporting Portal を開くと、 _Team Content_folder が Cloud Insights レポートに必要な情報のタイプを選択するための出発点となります。
+Reportingポータルを開くと、Data Infrastructure Insightsのレポートに必要な情報のタイプを選択するための出発点として_Team Content_フォルダが使用されます。
 
 . 左側のナビゲーションペインで、*コンテンツ>チームコンテンツ*を選択します。
 . 事前定義済みのレポートにアクセスするには、*[レポート]*を選択します。
@@ -122,7 +122,7 @@ NetApp Capacity and Performance レポートには、割り当て済み容量、
 
 === スコアカード
 
-スコアカードレポートには、 Cloud Insights が取得したすべてのアセットの概要と一般的なステータスが表示されます。ステータスは、緑色、黄色、赤色のフラグで示されます。
+スコアカードレポートには、Data Infrastructure Insightsで取得したすべての資産の概要と全般的なステータスが表示されます。ステータスは、緑色、黄色、赤色のフラグで示されます。
 
 * 緑は正常な状態を示します
 * 黄色は、環境内に潜在的な問題があることを示します

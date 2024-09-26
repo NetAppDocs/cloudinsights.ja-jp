@@ -67,7 +67,7 @@ keywords: NetApp, root volume, high I/O,
 「 High I/O Density 」レポートから除外するルートアグリゲートをすべて特定しておく必要があります。
 
 .手順
-. Cloud Insights メニューで、 * Manage > Annotations * をクリックします
+. [Data Infrastructure Insights]メニューで、*[Manage]>[Annotations]*をクリックします。
 . [ 追加（ Add ） ] をクリックします。
 +
 .. アノテーションの名前として「 * RootAggr 」と入力します
@@ -88,7 +88,7 @@ keywords: NetApp, root volume, high I/O,
 特定したNetAppルートアグリゲートを特定するクエリを作成して保存しておく必要があります。
 
 .手順
-. Cloud Insightsツールバーで、*[管理]>[アノテーションルール]*をクリックします。
+. [Data Infrastructure Insights ]ツールバーで、*[管理]>[アノテーションルール]*をクリックします。
 . [追加]*をクリックします。[Add Rule]ダイアログが表示されます。
 +
 .. [Name]ボックスに、ルールを説明する一意の名前「*"RootAggrExclude"*」を入力します

@@ -27,10 +27,10 @@ image:Device_Resolution_IP.png["IP デバイス解決"]
 
 == IP デバイスを手動で追加する
 
-IP 識別画面で使用可能な手動追加機能を使用して、 IP デバイスを Cloud Insights に手動で追加できます。
+[IP Identify]画面の手動追加機能を使用して、IPデバイスをData Infrastructure Insightsに手動で追加できます。
 
 .手順
-. Cloud Insights Web UI にログインします。
+. Data Infrastructure Insights Web UIにログインします。
 . [*Manage] > [Device resolution*] をクリックします
 . [IP Address identify *] タブをクリックします。
 . [ * 追加（ Add * ） ] ボタンをクリックします。
@@ -74,7 +74,7 @@ NOTE: ベストプラクティスとして、まず IP アドレス識別情報�
 
 == IP デバイス識別情報の .csv ファイルへのエクスポート
 
-Cloud Insights デバイス解決機能から、既存の IP デバイスの識別情報を .csv ファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更して Cloud Insights に再びインポートすることで、最初にエクスポートした識別情報と類似するデバイスの識別に使用できます。
+Data Infrastructure Insightsのデバイス解決機能から、既存のIPデバイスの識別情報を.csvファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更してData Infrastructure Insightsに再度インポートすると、最初に識別情報をエクスポートしたデバイスと類似したデバイスの識別に使用できます。
 
 .このタスクについて
 。
@@ -88,7 +88,7 @@ IP デバイスの識別情報を .csv ファイルにエクスポートする�
 | 住所 | IP | 名前 
 |===
 .手順
-. Cloud Insights Web UI にログインします。
+. Data Infrastructure Insights Web UIにログインします。
 . [*Manage] > [Device Resolution*] をクリックします
 . [IP Address identify *] タブを選択します。
 . 識別情報をエクスポートする IP デバイスを選択します。

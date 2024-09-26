@@ -5,23 +5,20 @@ keywords: webhook, notification, slack, integration
 summary: パフォーマンスまたはインベントリのしきい値をアラートするためのモニタを作成する 
 ---
 = webhook を使用した通知
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 Webhook を使用すると、ユーザーはカスタマイズされた webhook チャネルを使用して、さまざまなアプリケーションにアラート通知を送信できます。
 
-多くの商用アプリケーションでは、標準入力インターフェイスとして Webhook がサポートされています。たとえば、 Slack 、 PagerDuty 、 Teams 、および Discord は、すべてのウェブフックをサポートしています。Cloud Insights は、汎用のカスタマイズ可能なウェブフックチャネルをサポートすることで、これらの配信チャネルの多くをサポートできます。Web フックの情報は、これらのアプリケーション Web サイトに掲載されています。たとえば、 Slack で提供されます link:https://api.slack.com/messaging/webhooks["この便利なガイドです"]。
+多くの商用アプリケーションでは、標準入力インターフェイスとして Webhook がサポートされています。たとえば、 Slack 、 PagerDuty 、 Teams 、および Discord は、すべてのウェブフックをサポートしています。Data Infrastructure Insightsは、カスタマイズ可能な汎用Webhookチャネルをサポートすることで、これらの配信チャネルの多くをサポートできます。Web フックの情報は、これらのアプリケーション Web サイトに掲載されています。たとえば、Slackにはlink:https://api.slack.com/messaging/webhooks["この便利なガイドです"]次のような機能があります。
 
 複数の Web フックチャネルを作成できます。各チャネルは異なる目的に合わせて、アプリケーションや受信者などを個別に指定できます
 
@@ -54,7 +51,7 @@ webhook チャネルインスタンスは、次の要素で構成されていま
 
 == Webhook の作成
 
-Cloud Insights ウェブフックを作成するには、 [*Admin] > [Notifications] に移動し、 [*webhooks] タブを選択します。
+Data Infrastructure InsightsのWebhookを作成するには、* Admin > Notifications *に移動し、* Webhooks *タブを選択します。
 
 次の図は、 Slack 用に設定された webhook の例を示しています。
 
@@ -64,9 +61,9 @@ image:Webhook_Example_Slack.png["webhook の例"]
 
 また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。
 
-Cloud Insights ウェブフックは、いくつかのデフォルトパラメータで構成されています。また、独自のカスタムパラメータまたはシークレットを作成することもできます。
+Data Infrastructure InsightsのWebhookは、多数のデフォルトパラメータで構成されています。また、独自のカスタムパラメータまたはシークレットを作成することもできます。
 
-image:Webhook_Default_Parameters.png["Cloud Insights のデフォルトの Webhook パラメータ"]
+image:Webhook_Default_Parameters.png["Data Infrastructure InsightsのデフォルトのWebhookパラメータ"]
 
 
 

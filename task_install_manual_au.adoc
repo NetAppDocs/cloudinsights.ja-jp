@@ -2,26 +2,23 @@
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
 keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
-summary: Cloud Insightsは、AUソフトウェアを手動で更新するように構成できます。これにより、環境にインストールされているソフトウェアをより詳細に制御できます。 
+summary: Data Infrastructure Insightsでは、AUソフトウェアを手動で更新するように設定できるため、環境にインストールされているソフトウェアをより細かく制御できます。 
 ---
 = Acquisition Unitソフトウェアを手動でインストールする
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-デフォルトでは、Cloud Insightsは更新が導入されるとAcquisition Unit（AU）ソフトウェアを自動的に更新します。ただし、安全に管理された環境では、自動更新が不可能または望まれない場合があります。  このような場合は、AUソフトウェアを手動で更新するようにCloud Insightsを設定できます。これにより、環境にインストールされているソフトウェアをより詳細に制御できます。
+デフォルトでは、Data Infrastructure Insightsは、更新が導入されるとAcquisition Unit（AU）ソフトウェアを自動的に更新します。ただし、安全に管理された環境では、自動更新が不可能または望まれない場合があります。このような場合は、AUソフトウェアを手動で更新するようにData Infrastructure Insightsを設定して、環境にインストールされているソフトウェアをより細かく制御できます。
 
-AUソフトウェアを手動でダウンロードしてインストールするには、次の手順に従います。Cloud Insightsには、これらの手順の多くに役立つSwaggerのドキュメントページが用意されています。このページでは、独自のAPIスクリプト/コマンドを使用することもできます。[Admin]>[API Access]に移動し、[API Documentation]リンクをクリックします。
+AUソフトウェアを手動でダウンロードしてインストールするには、次の手順に従います。Data Infrastructure Insightsには、これらの手順の多くに役立つSwaggerのドキュメントページが用意されています。また、独自のAPIスクリプト/コマンドを使用することもできます。[Admin]>[API Access]に移動し、[API Documentation]リンクをクリックします。
 
 このプロセスは、LinuxとWindowsで同様です。
 
@@ -29,7 +26,7 @@ AUソフトウェアを手動でダウンロードしてインストールする
 
 == Linuxでの新規AUインストールの実行：
 
-. Cloud InsightsでAPIトークンを作成します。
+. Data Infrastructure Insightsで、APIトークンを作成します。
 +
 .. [Admin]>[API Access]*に移動し、*[+API Access Token]*を選択します。
 +
@@ -47,7 +44,7 @@ AUソフトウェアを手動でダウンロードしてインストールする
 
 image:Manual_AU_Create_API_Token.png["APIトークンの作成"]
 
-. Swagger（[Admin]>[API Access]>[API Documentation]）で、トークンを使用してCloud Insights APIを許可します
+. Swagger（[Admin]>[API Access]>[API Documentation]）で、トークンを使用してData Infrastructure Insights APIを許可
 +
 .. Swagger画面の右上にある[_Authorize]をクリックします
 .. 上からコピーしたトークンを[Customer apiKey]フィールドに貼り付けます
@@ -82,7 +79,7 @@ NOTE: 最新バージョンをダウンロードしない場合は、NetAppで�
 
 IMPORTANT: 次の手順では、一時トークンを使用する必要があります。上記で作成したAPIアクセストークンは使用しないでください。
 
-. Cloud Insights API Swaggerで、_/ au/oneTimeToken_APIを使用してワンタイムトークンを作成します。
+. Data Infrastructure Insights API Swaggerで、_/ au/oneTimeToken_APIを使用してワンタイムトークンを作成します。
 +
 .. 結果のワンユーストークンをコピーします。
 
@@ -151,7 +148,7 @@ drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version
 +
 注:別のカスタムユーザーを使用してをインストールする場合は、所有者とグループの両方に対して、グループ権限が読み取りと書き込みに設定されていることを確認してください(chmod 660…)。
 
-. AUを再起動します。Cloud Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
+. AUを再起動します。Data Infrastructure Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
 
 
 
@@ -194,7 +191,7 @@ drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
 +
 注:別のカスタムユーザーを使用してをインストールする場合は、所有者とグループの両方に対して、グループ権限が読み取りと書き込みに設定されていることを確認してください(chmod 660…)。
 
-. AUを再起動します。Cloud Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
+. AUを再起動します。Data Infrastructure Insightsで、[Observability]>[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。
 
 
 
@@ -203,7 +200,7 @@ drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
 
 UNIXシェルスクリプトを指定すると、Acquisition Unitによって実行され、キー管理システムから*秘密鍵*と*公開鍵*を取得できます。
 
-キーを取得するために、Cloud Insightsはスクリプトを実行し、_key id_and_key type_という2つのパラメータを渡します。キーID _は、キー管理システム内のキーを識別するために使用できます。_Key type _には、「public」または「private」を指定します。キータイプが「public」の場合、スクリプトは公開鍵を返す必要があります。キータイプが「private」の場合は、秘密鍵を返す必要があります。
+キーを取得するために、Data Infrastructure Insightsはスクリプトを実行し、_key id_と_key type_の2つのパラメータを渡します。キーID _は、キー管理システム内のキーを識別するために使用できます。_Key type _には、「public」または「private」を指定します。キータイプが「public」の場合、スクリプトは公開鍵を返す必要があります。キータイプが「private」の場合は、秘密鍵を返す必要があります。
 
 Acquisition Unitにキーを戻すには、標準出力にキーを出力する必要があります。スクリプトは、標準出力にキーをprint_only_theで出力する必要があります。他のテキストは標準出力に出力しないでください。要求されたキーが標準出力に出力されると、スクリプトは終了コード0で終了する必要があります。その他の戻りコードはエラーと見なされます。
 

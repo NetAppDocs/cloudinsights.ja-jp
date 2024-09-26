@@ -2,27 +2,24 @@
 sidebar: sidebar 
 permalink: task_annotation_import.html 
 keywords: annotations, import, api 
-summary: アノテーションとアプリケーションは、Cloud Insights APIを使用してインポートできます。 
+summary: Data Infrastructure Insights APIを使用して、アノテーションとアプリケーションをインポートできます。 
 ---
 = アノテーションのインポート
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-Cloud Insights には、 CSV ファイルからアノテーションやアプリケーションをインポートして、指定したオブジェクトに割り当てるための API が用意されています。
+Data Infrastructure Insightsには、CSVファイルからアノテーションやアプリケーションをインポートし、指定したオブジェクトに割り当てるためのAPIが含まれています。
 
 
-NOTE: Cloud Insights API は、 * Cloud Insights プレミアムエディション * で利用できます。
+NOTE: Data Infrastructure Insights APIは、* Data Infrastructure Insights Premium Edition *で利用できます。
 
 
 

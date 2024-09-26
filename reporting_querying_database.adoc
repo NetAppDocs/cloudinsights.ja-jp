@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_querying_database.html 
-summary: Cloud Insights API を使用して Reporting DB を直接照会する。 
+summary: Data Infrastructure InsightsのAPIを使用して、Reporting DBに直接クエリを実行 
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = API 経由で Reporting Database にアクセスします
@@ -19,29 +19,28 @@ keywords: reporting, cognos, data warehouse, dwh, API
 
 
 [role="lead"]
-Cloud Insights の強力な API を使用すると、 Cognos Reporting 環境を介さずに、 Cloud Insights Reporting データベースを直接照会できます。
+Data Infrastructure Insightsの強力なAPIを使用すると、Cognos Reporting環境を介さずに、Data Infrastructure Insights Reportingデータベースに直接クエリを実行できます。
 
 
-NOTE: このドキュメントでは、Cloud Insightsプレミアムエディションで使用できるCloud Insightsレポート機能について説明します。
+NOTE: このドキュメントでは、Data Infrastructure Insights Premiumエディションで利用できるData Infrastructure Insightsのレポート機能について説明します。
 
 
 
 == OData
 
-Cloud Insights レポート API は、に従います link:https://www.odata.org/["OData v4 の"] （ Open Data Protocol ）レポートデータベースの照会の標準。
-詳細や詳細については、をご覧ください link:https://www.odata.org/getting-started/basic-tutorial/["このチュートリアルでは"] OData の場合。
+Data Infrastructure Insights Reporting APIは、（Open Data Protocol）標準に従ってlink:https://www.odata.org/["OData v4 の"]Reportingデータベースを照会します。詳細または詳細については、ODataをご覧くださいlink:https://www.odata.org/getting-started/basic-tutorial/["このチュートリアルでは"]。
 
-すべての要求はURL _\ https：//<Cloud Insights URL>/rest /v1/dwh-management/odata_で始まります
+すべての要求は、URL_\https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata_で始まります。
 
 
 
 == apiKey を生成します
 
-詳細については、をご覧ください link:API_Overview.html["Cloud Insights APIs の略"]。
+詳細については、をご覧くださいlink:API_Overview.html["データインフラ分析情報API"]。
 
 API キーを生成するには、次の手順を実行します。
 
-* Cloud Insights 環境にログインし、 * Admin > API Access * を選択します。
+* Data Infrastructure Insights環境にログインし、*[Admin]>[API Access]*を選択します。
 * [+API Access Token] をクリックします。
 * 名前と概要を入力します。
 * タイプには、 Data Warehouse _ を選択します。
@@ -56,14 +55,14 @@ APIkeysはに適しています <<synchronous-or-asynchronous,同期または非
 
 == テーブルの直接クエリ
 
-API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長いURLは\https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/ではなく\https://.../odata/に簡略化して表示することもできます
+API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長いURLは、\https://<Data Infrastructure Insightsの完全なURL >/rest/v1/dwh-management/odata/ではなく、表示目的で\https://.../odata/に単純化できます。
 
 次のような簡単なクエリを試してください
 
-* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_custom
-* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_inventory
-* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_inventory/storage
-* \https：//<Cloud Insights URL>/rest /v1/dwh-management/odata/dwh_inventory/disk
+* \https://<Dataインフラ分析情報のURL>/reset/v1/dwh-management/odata/dwh_custom
+* \https://<Dataインフラ分析情報のURL>/rest /v1/dwh-management/odata/dwh_inventory
+* \https://<Dataインフラ分析情報のURL>/rest /v1/dwh-management/odata/dwh_inventory/storage
+* \https://<Dataインフラ分析情報のURL>/rest /v1/dwh-management/odata/dwh_inventory/disk
 * \https://.../odata/dwh_custom/custom_queries
 
 
@@ -71,12 +70,12 @@ API キーを配置した状態で、 Reporting データベースの直接ク�
 
 == REST API の例
 
-すべての呼び出しのURLは、_\ https：//<Cloud Insights URL>/rest /v1/dwh-management/odata_です。
+すべての呼び出しのURLは_\https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata_です。
 
 * get/{schema}/**-レポートデータベースからデータを取得します。
 
 
-形式は、_\https：//<Cloud Insights URL>/rest <schema_name>/<query>_です
+形式：_\https://<Data Infrastructure Insights <schema_name>/<query>_
 
 例
 
@@ -135,7 +134,7 @@ Reporting API クエリを使用する場合は、次の点に注意してくだ
 
 
 
-API キーは Cloud Insights 環境に固有です。
+APIキーは、お客様のData Infrastructure Insights環境に固有のものです。
 
 
 
@@ -148,7 +147,7 @@ API キーは Cloud Insights 環境に固有です。
 ....
 Status Code: 202 (which means ACCEPTED)
 preference-applied: respond-async
-location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
+location: https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
 ....
 ロケーションURLを照会すると、応答の準備ができていない場合は同じヘッダーが返され、応答の準備ができている場合はステータス200が返されます。応答コンテンツのタイプはtextで、元のクエリのhttpステータスとメタデータが含まれ、その後に元のクエリの結果が続きます。
 
@@ -162,15 +161,15 @@ HTTP/1.1 200 OK
 ....
 すべての非同期クエリのリストと、準備ができているものを表示するには、次のコマンドを使用します。
 
- GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
+ GET https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
 応答の形式は次のとおりです。
 
 ....
 {
    "queries" : [
        {
-           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
-           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
+           "Query": "https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
+           "Location": "https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
            "Finished": false
        }
    ]

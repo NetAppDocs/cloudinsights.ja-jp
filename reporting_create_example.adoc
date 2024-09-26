@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_create_example.html 
-summary: この手順を使用して、事前定義済みの Cloud Insights レポートを使用してレポートを作成します。 
+summary: 事前定義済みのData Infrastructure Insightsレポートを使用してレポートを作成するには、次の手順を実行します。 
 keywords: reporting, cognos, data warehouse, dwh, create, report 
 ---
 = レポートの作成（例）

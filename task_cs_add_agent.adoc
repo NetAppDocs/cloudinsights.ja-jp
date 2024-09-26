@@ -27,7 +27,7 @@ summary: ワークロードセキュリティエージェントの追加
 
 * インストール、スクリプトの実行、アンインストールには sudo 権限が必要です。
 * エージェントのインストール中に、ローカルのuser_cssys_とローカルのgroup_cssys_がマシン上に作成されます。権限設定でローカルユーザの作成が許可されておらず、Active Directoryが必要な場合は、Active Directoryサーバにusername_csys_という名前のユーザを作成する必要があります。
-* Cloud Insightsのセキュリティについては、 link:security_overview.html["こちらをご覧ください"]。
+* Data Infrastructure Insightsのセキュリティについてはlink:security_overview.html["こちらをご覧ください"]、こちらをご覧ください。
 
 
 
@@ -94,7 +94,7 @@ image::new-agent-detect.png[エージェントのインストールが成功し�
 
 == 現在のバージョンでエージェントを「固定」する
 
-デフォルトでは、Cloud Insightsワークロードセキュリティはエージェントを自動的に更新します。お客様によっては、自動更新を一時停止したい場合があります。これにより、次のいずれかが発生するまで、Agentは現在のバージョンのままになります。
+デフォルトでは、Data Infrastructure Insights Workload Securityはエージェントを自動的に更新します。お客様によっては、自動更新を一時停止したい場合があります。これにより、次のいずれかが発生するまで、Agentは現在のバージョンのままになります。
 
 * カスタマーはエージェントの自動更新を再開します。
 * 30日が過ぎました。30日間は、エージェントが一時停止された日ではなく、最新のエージェント更新の日に開始されます。
@@ -171,7 +171,7 @@ image:ws_agent_version.png["エージェントテーブルに表示されるWS�
 4.インストールを続行できるはずです。 
 
 
-| エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insights のシリアル番号を入力してケースをオープンし、メモしておいたケースにログを添付します。 | ログをケースに添付するには、次の手順に従います。
+| エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Data Infrastructure Insightsのシリアル番号を提供してケースをオープンし、記録したとおりにログをケースに添付します。 | ログをケースに添付するには、次の手順に従います。
  1. root権限で以下のスクリプトを実行し、出力ファイル(cloudsecure-agent-symptions.zip)を共有します。
     A	/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh
  以下のコマンドをroot権限で1つずつ実行し、出力を共有します。

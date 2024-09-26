@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_data_retention.html 
-summary: レポート用の Cloud Insights データ保持 
+summary: レポート作成のためのData Infrastructure Insightsのデータ保持 
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = レポート用に履歴データを保持する方法
@@ -19,7 +19,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 
 
 [role="lead"]
-Cloud Insights では、次の表に示すように、データマートおよびデータの単位に基づいて Reporting で使用される履歴データが保持されます。
+Data Infrastructure Insightsでは、次の表に示すように、履歴データが保持され、データマートおよびデータの単位に基づいてReportingで使用されます。
 
 |===
 

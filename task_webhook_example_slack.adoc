@@ -33,14 +33,14 @@ NOTE: このページでは、変更される可能性があるサードパー�
 image:Webhooks_Slack_Create_Webhook.png["Slack Webhook を作成します"]
 
 * 受信したウェブフックに移動し、 [on_Activate incoming webhooks] 、 [Request to _Add New Webhook_] の順にクリックして、投稿するチャネルを選択します。
-* Webhook URL をコピーします。これを Cloud Insights webhook 設定に貼り付ける必要があります。
+* Webhook URL をコピーします。この設定をData Infrastructure InsightsのWebhook設定に貼り付ける必要があります。
 
 
 
 
-== Cloud Insights Webhook を作成します。
+== データインフラに関するインサイトを作成Webhook：
 
-. Cloud Insights で、 [*Admin] > [Notifications] に移動し、 [*webhook *] タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。
+. Data Infrastructure Insightsで、* Admin > Notifications *に移動し、* Webhooks *タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。
 . Web フックに「 Slack Webhook 」などのわかりやすい名前を付けます。
 . [ テンプレートタイプ _ （ _Template Type_） ] ドロップダウンで、 [ * Slack * （ * Slack * ） ] を選択する。
 . 上の URL を _url_field に貼り付けます。
@@ -52,7 +52,7 @@ image:Webhooks-Slack_example.png["Slack webhook テンプレート"]
 
 == Webhook で通知します
 
-webhook を使用してイベントを通知するには、 Cloud Insights で [*Alerts] > [Monitors *] の順に選択し、 [*+ Monitor*] をクリックして新しいイベントを作成します link:task_create_monitor.html["モニタ"]。
+Webhookでイベントを通知するには、[Data Infrastructure Insights ]で*[Alerts]>[Monitors]*に移動し、*[+Monitor]*をクリックして新しいを作成しlink:task_create_monitor.html["モニタ"]ます。
 
 * メトリックを選択し、モニタの条件を定義します。
 * チーム通知の設定（ _Set up team notification(s) ）で、 * Webhook * 配信方法を選択します。

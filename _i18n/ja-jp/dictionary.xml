@@ -259,8 +259,6 @@ _csuser_を使用せず、クラスタレベルのadminユーザを使用して�
   <block id="52f190ea0e2468504f68afdff42e9e4a" category="paragraph">水平の積み上げ棒は許容範囲を示します。グレーの色が暗くなるほど、許容できない状況になります。実際の状況は、孤立している実際の容量を示す細いブロンズバーとともに表示されます。</block>
   <block id="d5b17477309e32977641d3e796c399fa" category="paragraph">階層をクリックすると、 Orphaned Storage Details レポートを表示できます。このレポートには、選択した階層について、設定およびパフォーマンスが原因で孤立していると特定されたすべてのボリュームが表示されます。このレポート内のいずれかのストレージ、ストレージプール、またはボリュームをクリックすると、リソースの現在の状態をまとめたアセットページが表示されます。</block>
   <block id="ef3aa6b9d2f782f33da5b73b27fa7356" category="summary">Reporting で使用する Data Warehouse スキーマの図とテーブル</block>
-  <block id="813a56890a4533afc3bcfe8afcb993b9" category="doc">レポート作成用の Cloud Insights スキーマ</block>
-  <block id="37027f0e1c5a6324ee414a6d53995364" category="paragraph">これらのスキーマテーブルと図は、 Cloud Insights レポート作成の参考資料として提供されています。</block>
   <block id="68c06a3aaa437cbc889730a84299608a" category="inline-link-macro">* スキーマテーブル *</block>
   <block id="b87490ec259e802346f5e7df5b91062a" category="paragraph"><block ref="73132d77bb27426db0a42572dd9db4fb" category="inline-link-macro-rx"></block> .pdf 形式で指定します。リンクをクリックして開くか、右クリックして「 _ 名前を付けて保存 ..._ 」を選択してダウンロードします。</block>
   <block id="4d96a583eb48d3637742ec104f386477" category="inline-link-macro">* スキーマ図 *</block>
@@ -454,14 +452,12 @@ API ドキュメントは Swagger ベースです。 API の簡単な概要情�
   <block id="7eb410d92e2a18ab21dc72d9c0d990b0" category="summary">作成されたクエリを表示します</block>
   <block id="0a1aca0ce8e56ded0adb600f66ec2de7" category="doc">クエリを表示する</block>
   <block id="1fc205cf7c624c62075df4662909d53d" category="paragraph">アセットの監視に使用するクエリを表示して、アセットに関するデータの表示方法を変更できます。</block>
-  <block id="84cc49941f2160736a9dccb1be858a03" category="list-text">Cloud Insights テナントにログインします。</block>
   <block id="312b02ceebedb57357854deed0127398" category="list-text">[ * クエリ * ] をクリックし、 [ * すべてのクエリを表示 * ] を選択します。
 クエリの表示方法は次のいずれかの方法で変更できます。</block>
   <block id="d4cc08b1b6376cdc52281fccf8a163b7" category="list-text">フィルタボックスにテキストを入力すると、検索して特定のクエリを表示できます。</block>
   <block id="a0d1f1cd90b97eb951e193ad01d6679d" category="list-text">列見出しで矢印をクリックすると、クエリの表内の列のソート順序を昇順（上矢印）または降順（下矢印）に変更できます。</block>
   <block id="fa2a3440e30dd958c3218bca7dd89b7f" category="list-text">列のサイズを変更するには、列見出しの上にカーソルを合わせ、青いバーが表示されるまで動かします。バーの上にマウスを置き、左右にドラッグします。</block>
   <block id="98ec2214f277d84c29261f104a024f01" category="list-text">列を移動するには、列ヘッダーをクリックし、左右にドラッグします。</block>
-  <block id="db34aef9a8c0b8612fe136bf81640834" category="paragraph">クエリ結果をスクロールすると、 Cloud Insights がデータコレクタを自動的にポーリングするため、結果が変わる可能性があります。これにより、一部の項目が表示されなくなったり、ソート方法によっては一部の項目が順序どおりに表示されない場合があります。</block>
   <block id="cda933c18fbb578a3f0d2e4907aaa572" category="summary">AWS S3をストレージデータコレクタとして設定する。</block>
   <block id="77420e0a789b610e7581918e246f925d" category="doc">AWS S3をストレージデータコレクタとして設定します</block>
   <block id="7e4af3fb09f891d46f65e6fe7eaf79b4" category="paragraph">AWS S3からストレージデバイスとしてデータを収集するには、次の情報が必要です。</block>
@@ -513,8 +509,6 @@ API ドキュメントは Swagger ベースです。 API の簡単な概要情�
   <block id="94c40ee234b0010adb864fb9bf373a5b" category="paragraph">IP の識別画面には、自動デバイス解決または手動デバイス解決によって識別された iSCSI 共有と CIFS 共有または NFS 共有が表示されます。また、未識別のデバイスも表示されます。画面には、デバイスの IP アドレス、名前、ステータス、 iSCSI ノード、および共有名が表示されます。識別に成功したデバイスの割合も表示されます。</block>
   <block id="e63b461ab7abed846867f3bfde06b84e" category="paragraph"><block ref="e63b461ab7abed846867f3bfde06b84e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddfea7655f217319cf066be88a21647b" category="section-title">IP デバイスを手動で追加する</block>
-  <block id="340358d7a1c5a91c395409e357cf3ae9" category="paragraph">IP 識別画面で使用可能な手動追加機能を使用して、 IP デバイスを Cloud Insights に手動で追加できます。</block>
-  <block id="3a6f9027c953859234ecbdb77a61d92a" category="list-text">Cloud Insights Web UI にログインします。</block>
   <block id="34836837453ae6c915e6ea1bacf0ecf0" category="list-text">[*Manage] &gt; [Device resolution*] をクリックします</block>
   <block id="e3026ab2905c6a7e620d929bc0ba2972" category="list-text">[IP Address identify *] タブをクリックします。</block>
   <block id="5d7a0f50bad2d7a4210e151120bbcc85" category="paragraph">Add Device ダイアログが表示されます</block>
@@ -526,7 +520,6 @@ API ドキュメントは Swagger ベースです。 API の簡単な概要情�
   <block id="dd7bf230fde8d4836917806aff6a6b27" category="cell">住所</block>
   <block id="4ba34f8864262ff0b0fb1bf67a651a6f" category="admonition">ベストプラクティスとして、まず IP アドレス識別情報を .csv ファイルにエクスポートし、そのファイルに必要な変更を加えてから、そのファイルを IP アドレス識別にインポートすることをお勧めします。これにより、必要な列が適切な順序で配置されます。</block>
   <block id="97cc3e013b9e4fd3cc0daafd35ed86c6" category="section-title">IP デバイス識別情報の .csv ファイルへのエクスポート</block>
-  <block id="3bcee228c72ceec200f0cc2403bf260a" category="paragraph">Cloud Insights デバイス解決機能から、既存の IP デバイスの識別情報を .csv ファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更して Cloud Insights に再びインポートすることで、最初にエクスポートした識別情報と類似するデバイスの識別に使用できます。</block>
   <block id="43366dfe5d3eefd1cb24a74384bc5dba" category="paragraph">。
 このシナリオは、 .csv ファイルで簡単に編集できる属性がデバイスに似ている場合に使用し、その後システムにインポートし直すことができます。</block>
   <block id="d208bc48ca9e6fe4b4936dce12add557" category="paragraph">IP デバイスの識別情報を .csv ファイルにエクスポートすると、次の情報がこの順序でファイルに格納されます。</block>
@@ -584,7 +577,6 @@ API ドキュメントは Swagger ベースです。 API の簡単な概要情�
   <block id="25c90ccdccf440be40d0382cdd38edf8" category="doc">webhook を使用した通知</block>
   <block id="9c4196469ee8f7193233b70aa5a0dc44" category="paragraph">Webhook を使用すると、ユーザーはカスタマイズされた webhook チャネルを使用して、さまざまなアプリケーションにアラート通知を送信できます。</block>
   <block id="b9f902dfe89e09f64a027250c7e50936" category="inline-link-macro">この便利なガイドです</block>
-  <block id="ec700280fe7a8bda0dd4a2b50dbfbfca" category="paragraph">多くの商用アプリケーションでは、標準入力インターフェイスとして Webhook がサポートされています。たとえば、 Slack 、 PagerDuty 、 Teams 、および Discord は、すべてのウェブフックをサポートしています。Cloud Insights は、汎用のカスタマイズ可能なウェブフックチャネルをサポートすることで、これらの配信チャネルの多くをサポートできます。Web フックの情報は、これらのアプリケーション Web サイトに掲載されています。たとえば、 Slack で提供されます <block ref="467ef0b7b93a9b44aaca1d16165eef1f" category="inline-link-macro-rx"></block>。</block>
   <block id="553794115ee060778357aac0683824c9" category="paragraph">複数の Web フックチャネルを作成できます。各チャネルは異なる目的に合わせて、アプリケーションや受信者などを個別に指定できます</block>
   <block id="41ed3e981c410d59707000ffa598f01b" category="paragraph">webhook チャネルインスタンスは、次の要素で構成されています。</block>
   <block id="76aeab63a36298ab54940aa1b9114b6a" category="cell">一意の名前</block>
@@ -600,15 +592,11 @@ API ドキュメントは Swagger ベースです。 API の簡単な概要情�
   <block id="522bdbeef72a248eea58f9b2ea372d3a" category="cell">カスタムパラメータとシークレット</block>
   <block id="a8b35bb0698c4c3c6aaa64f69a9044e8" category="cell">カスタムパラメータとシークレットを使用すると、一意のパラメータとパスワードなどのセキュアな要素を追加できます</block>
   <block id="7e41b44b2e53358e55862406c09c9e8e" category="section-title">Webhook の作成</block>
-  <block id="bf128dde6feec035470fe18ad560de45" category="paragraph">Cloud Insights ウェブフックを作成するには、 [*Admin] &gt; [Notifications] に移動し、 [*webhooks] タブを選択します。</block>
   <block id="1cd20922aa7fdc300decc5f2d241ce78" category="paragraph">次の図は、 Slack 用に設定された webhook の例を示しています。</block>
   <block id="e134e42c43873dec9a5eb26e91ead132" category="inline-image-macro">webhook の例</block>
   <block id="9de0108c717ae7dc36b9f6a326c48778" category="paragraph"><block ref="9de0108c717ae7dc36b9f6a326c48778" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">各フィールドに適切な情報を入力し、完了したら[保存]をクリックします。</block>
   <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">また、[ Webフックのテスト]ボタンをクリックして、接続をテストすることもできます。これにより、選択されたメソッドに従って、定義されたURLに「Message Body」（置換なし）が送信されます。</block>
-  <block id="682c4fa22b4013cbc7b23ccf6ce7dd27" category="paragraph">Cloud Insights ウェブフックは、いくつかのデフォルトパラメータで構成されています。また、独自のカスタムパラメータまたはシークレットを作成することもできます。</block>
-  <block id="1d70765e2894fddba3487f839b8b7b30" category="inline-image-macro">Cloud Insights のデフォルトの Webhook パラメータ</block>
-  <block id="0f85580ce6e6d044094ef0c2641ecb3a" category="paragraph"><block ref="0f85580ce6e6d044094ef0c2641ecb3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148ae64fb8adbd43176cf285dcc8110f" category="section-title">パラメータ：パラメータとは何ですか？また、パラメータの使用方法を教えてください。</block>
   <block id="f5733c88893536362c2727d1d77f6f0b" category="paragraph">アラートパラメータは、アラートごとに動的に設定される値です。たとえば、 %%TriggeredOn%% の _Parameter はアラートがトリガーされたオブジェクトで置き換えられます。</block>
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">このセクションでは、置換は「Test Webhook」ボタンをクリックしたときに_not_performedになります。このボタンは、_%_substitionsを示すペイロードを送信しますが、これらをデータに置き換えません。</block>
@@ -1225,15 +1213,11 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
 リクエスト
 待機中です
 書くこと</block>
-  <block id="a5dfaed67b2749f907deb26db5abcb10" category="summary">Cloud Insights の一般的なトラブルシューティングのヒント。</block>
-  <block id="38bbcd866205b5ab858be293ea3a1f1f" category="doc">Cloud Insights の一般的な問題のトラブルシューティング</block>
-  <block id="ac9d70899fcbb0d147ded44ff92e7ce8" category="paragraph">ここでは、 Cloud Insights のトラブルシューティングに関する推奨事項を示します。</block>
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">Linux Acquisition Unit の問題のトラブルシューティング</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Windows Acquisition Unit の問題のトラブルシューティング</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">も参照してください <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> および <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">ログインの問題</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">ネットアップサポート</block>
-  <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">Cloud Insights に招待されましたが、「認証されていません」というメッセージが表示されます。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">数日後に自動的にログアウトされました。</block>
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">「ログインを許可されていません」というエラーメッセージが表示されます。</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">その他のログインエラーです</block>
@@ -1246,12 +1230,9 @@ ONTAP で特定のLIFを有効にし、ワークロードセキュリティか�
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">設定されたクォータとして表示されるのは、手動で設定するかTridentで設定したハードクォータのみです。ハードクォータを指定しない場合、qtreeの容量は内部ボリュームの容量になります。</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">同じqtreeにソフトクォータとハードクォータの両方を手動で設定していますが、表示される合計容量はハードクォータです。Is that correct？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">○（ハードクォータが指定されている場合は、合計容量として表示されます）</block>
-  <block id="8e4250e46b39cafa83925c4406214353" category="paragraph">アクティブな Cloud Insights サブスクリプションがある場合は、次のサポートオプションを使用できます。</block>
   <block id="0af89698bf5d1150026d4fcbbcf784a6" category="inline-link-macro">サポートチケット</block>
   <block id="b0441ab0b89b994706e83faa77bbe107" category="paragraph"><block ref="5924baf98227cb4c4a870a2369035bbd" category="inline-link-macro-rx"></block>
 <block ref="de1cde84399fb2a6056b099cf302293f" category="inline-link-macro-rx"></block></block>
-  <block id="b1dcce069d63ced71a6dcf2e76c2ac23" category="inline-link">Cloud Insights サポートドキュメント</block>
-  <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">詳細については、を参照してください<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="f30d2e6043c16e3a8d1b7d67f0e576e5" category="summary">VNXe データコレクタを構成しています。</block>
   <block id="906bdf6e1913623ff0ebebcdddc8b715" category="doc">EMC Unity データコレクタの設定</block>
   <block id="1106d1ad56cfcc6fe8a3aab5d25b76dd" category="list-text">Unity データコレクタは CLI ベースです。 VNXe データコレクタが存在する Acquisition Unit に Unisphere for Unity CLI （ uemcli.exe ）をインストールする必要があります。</block>
@@ -2592,11 +2573,9 @@ ONTAP SVM データコレクタを編集し、許可されたプロトコルと�
   <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">エージェント</block>
   <block id="4e49d105e5ecfd95da78eb980f698488" category="cell">オペレータがインストールできるすべてのコンポーネントに共通の設定オプション。これらは「グローバル」オプションと見なすことができます。</block>
   <block id="286bec770910c4da609323e21222e283" category="cell">dockerrepo</block>
-  <block id="73a46ab7157abd31c3ea3ef600cb7798" category="cell">Cloud Insights Dockerリポジトリと比較して、お客様のプライベートDockerリポジトリからイメージをプルするためのdockerRepoオーバーライド。デフォルトはCloud Insights Dockerリポジトリです</block>
   <block id="994be3a18bf7e0a16ab2be2d5c1643ae" category="cell">dockerImagePullSecretの略</block>
   <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">オプション:顧客のプライベートリポジトリのシークレット</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">クラスタ名</block>
-  <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Cloud Insights テナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">オペレータのTelegrafインストールをカスタマイズできる設定オプション</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">collectionInterval</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">指標収集間隔（秒）（最大=60秒）</block>
@@ -2776,7 +2755,6 @@ Time Filebucketの略
   <block id="b476f138570162c042a088beeeccec15" category="list-text">「 A_Name_ 」と入力し、「 _ 」を選択して API を直接使用します _ 。  [ サービスの追加 ] をクリックします。</block>
   <block id="87f2841c34802570db42ed259a72659f" category="inline-image-macro">PagerDuty 画面</block>
   <block id="db788963e43859ced84fd2d54c4a1826" category="paragraph"><block ref="db788963e43859ced84fd2d54c4a1826" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="59e1175daa8d01582631928c502e92a8" category="list-text">[Integrations_] タブをクリックして、 * 統合キー * を表示します。このキーは、次の Cloud Insights ウェブフックを作成するときに必要になります。</block>
   <block id="14b1b977a367efc00b3c3c2a27dd9df6" category="list-text">[ インシデント *] または [ サービス *] に移動して、アラートを表示します。</block>
   <block id="38cd2297d6a0d6ebf34eba2cd7a08ed5" category="inline-image-macro">PagerDuty スクリーン</block>
   <block id="583d30680a45f7d79eafed1816002071" category="paragraph"><block ref="583d30680a45f7d79eafed1816002071" category="inline-image-macro-rx" type="image"></block></block>
@@ -2786,8 +2764,6 @@ Time Filebucketの略
   <block id="04e4dd6181e90fa263943b8e61bb499d" category="inline-image-macro">ルーティングキーの設定</block>
   <block id="5a013c53b72c2edc0446ec52e8f4cec1" category="paragraph"><block ref="5a013c53b72c2edc0446ec52e8f4cec1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1a9d0f94095cef87bc886d12fbea8395" category="paragraph">この手順を繰り返して、解決済みイベントの "PagerDuty Resolve" ウェブフックを作成します。</block>
-  <block id="44d009af6b9380d0b37fb797cd7e56d5" category="section-title">PagerDuty から Cloud Insights へのフィールドマッピング</block>
-  <block id="f2a882088431bfa33a90643a9340a9e8" category="paragraph">次の表と画像は、 PagerDuty と Cloud Insights の間のフィールドのマッピングを示しています。</block>
   <block id="93bf0778f1ee03829356ae4553d91947" category="cell">アラートキー</block>
   <block id="d52ec35b5e512df6a2ae980b72783d2a" category="cell">アラート ID</block>
   <block id="06a60416970521e6a9066f15b8aba438" category="cell">でトリガされます</block>
@@ -3694,9 +3670,6 @@ VMDK です
   <block id="28068b4914fd700011975ba0b1b872b8" category="cell">Cohesityクラスタに使用するパスワード</block>
   <block id="1d5447258f93b47e09976cc68c7f86d9" category="cell">CohesityクラスタとのTCP通信に使用するポート</block>
   <block id="0896c34e1c20bc67d7328f53f406276d" category="cell">パフォーマンスのポーリング間隔デフォルトは900秒です。</block>
-  <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">アノテーションとアプリケーションは、Cloud Insights APIを使用してインポートできます。</block>
-  <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">Cloud Insights には、 CSV ファイルからアノテーションやアプリケーションをインポートして、指定したオブジェクトに割り当てるための API が用意されています。</block>
-  <block id="6ea19b77fdbbe887a195870f5398f21f" category="admonition">Cloud Insights API は、 * Cloud Insights プレミアムエディション * で利用できます。</block>
   <block id="cd804333d16ac675a7605cf03f787ec6" category="section-title">インポート中です</block>
   <block id="b623fda16b48571007a60f6e83884335" category="paragraph">[*Admin] &gt; [API Access] リンクには、が含まれています <block ref="7ca2fbd7e8058fe79351af73cabdb729" category="inline-link-macro-rx"></block> * Assets / Import * API の場合。このドキュメントでは、 .csv ファイルの形式について説明しています。</block>
   <block id="2e0711d74eade65fc253221f9264e160" category="inline-image-macro">API をインポートします</block>
@@ -3767,19 +3740,9 @@ VMDK です
 * HTTPSポートは5989にする必要があります
 
 その場合は、「stopcim」を実行してから「startcim」を実行してCIM（SMI-Sサービスなど）を再起動します。</block>
-  <block id="29b0e1bb2381801d4265a78527e6ea22" category="summary">Cloud Insights を使用して、データの事前定義およびカスタムレポートを作成できます。</block>
-  <block id="e597f313c194b3080587aaf8e1fbb2c8" category="doc">Cloud Insights レポート概要</block>
-  <block id="e6c80af8f4cc9c714980fc1bb28ff631" category="paragraph">Cloud Insights Reporting は、事前定義済みのレポートを表示したりカスタムレポートを作成したりできる、ビジネスインテリジェンスツールです。</block>
-  <block id="27276e52e42f7dabd54f8098186a0c88" category="paragraph">Cloud Insights レポートを使用すると、次のタスクを実行できます。</block>
   <block id="bab0e2556d5acdaa28e033e088a861b3" category="list-text">レポートの形式と配信方法をカスタマイズする</block>
-  <block id="3714e6d6cf8b80c9988ff389105e543c" category="section-title">Cloud Insights レポートにアクセスしています</block>
-  <block id="b1c6484956adbf6f06fcde9ba959816a" category="paragraph">メニューの [*Reports] リンクをクリックすると、 Cloud Insights レポートにアクセスできます。</block>
-  <block id="5ad69c2277563fc580296910106cfd2f" category="paragraph">Reporting インターフェイスに移動します。Cloud Insights では、レポート作成エンジンに IBM Cognos Analytics を使用しています。</block>
   <block id="ae5c20191cb62f32246efcf9d57ec771" category="section-title">ETL とは</block>
-  <block id="ed3737df147bb5e0883ec9917bb6de42" category="paragraph">Reporting では、「 Data Warehouse 」と「 ETL 」という用語が使用されます。  ETL は、「抽出、変換、読み込み」の略です。ETL プロセスでは、 Cloud Insights で収集されたデータが取得されて、レポート用の形式に変換されます。「 Data Warehouse 」は、レポートに使用できる収集データを表します。</block>
   <block id="59cfd65b8b6dc724aca0f9d1c7d41298" category="paragraph">ETL プロセスは、次の個別プロセスで構成されます。</block>
-  <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">* 抽出 *: Cloud Insights からデータを取得します。</block>
-  <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* Transform * ： Cloud Insights から抽出されたデータにビジネスロジックのルールまたは関数を適用します。</block>
   <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">* ロード *: 変換されたデータをデータウェアハウスに保存して、レポート作成に使用します。</block>
   <block id="aa660f33d4c20ae2b92aa73acb4c5828" category="summary">NetApp Cloud Volume Services for AWS データコレクタを設定します</block>
   <block id="6d719c7976115879cdcafb7922e7e5fd" category="doc">NetApp Cloud Volume Services for AWS データコレクタ</block>
@@ -3815,17 +3778,7 @@ VMDK です
   <block id="ecefe7e91f1e9114514898fe968f408a" category="cell">/opt/netapp/cloudinsights/acq/logs（Linux）からacq.logを収集します。
 取得サービスを再起動します。sudo cloudinsights-service.sh acquisitionを再起動します</block>
   <block id="4bd0e92479e9098e707d736717b11911" category="cell">データ収集の問題：</block>
-  <block id="6e4c29de7b0692c9da0969f477a1456a" category="cell">Acquisition Unit （ AU ）は、リースを更新するために 60 秒ごとに Cloud Insights にハートビートを送信します。ネットワーク問題または Cloud Insights が応答しないためにハートビートコールが失敗した場合、 AU のリース時間は更新されません。AU のリース期限が切れると、 Cloud Insights に「 Heartbeat Failed 」というステータスが表示されます。
-
-トラブルシューティングの手順：
-
-Acquisition UnitサーバとCloudInsightsの間のネットワーク接続を確認します。
-Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。
-Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）でエラーがないかどうかを確認します。</block>
   <block id="4c53b2b4dd616949881fa030804a1f3e" category="list-text">まず、組織はデフォルトでアクセスをブロックしていますか。また、特定の Web サイト / ドメインへのアクセスのみを例外として許可していますか。その場合は、次のドメインを例外リストに追加する必要があります。</block>
-  <block id="1b7a599da7c6e7218ebb1a79ae00905e" category="paragraph">プロキシがトラフィック検査用に設定されている場合は、プロキシ設定の例外リストに Cloud Insights 環境を追加する必要があります。この例外リストの形式と設定は、プロキシ環境とツールによって異なりますが、通常は、 AU がこれらのサーバと適切に通信できるようにするために、 Cloud Insights サーバの URL をこの例外リストに追加する必要があります。</block>
-  <block id="e7fe695987fdade550f1dbee18c561f8" category="paragraph">最も簡単な方法は、 Cloud Insights ドメイン自体を例外リストに追加することです。</block>
-  <block id="6332753e57d451d8b39622c30281027b" category="paragraph">プロキシがトラフィック検査用に設定されていない場合は、例外リストが必要な場合と必要でない場合があります。例外リストに Cloud Insights を追加する必要があるかどうか不明な場合、またはプロキシやファイアウォールの設定が原因で Cloud Insights のインストールや実行に問題がある場合は、プロキシ管理チームに問い合わせて、プロキシの SSL 代行受信の処理を設定してください。</block>
   <block id="36d33d9f788712f837a1b7b78bd38df7" category="doc">ダッシュボードの概要</block>
   <block id="4445b92d47c6064291aa06a6396a0733" category="admonition">これらのセクションの例は、説明のみを目的としたものであり、想定されるすべてのシナリオを網羅しているわけではありません。ここに記載されている概念や手順を参考にしながら、実際のニーズに応じたデータ用のダッシュボードを作成してください。</block>
   <block id="1da60b5bc1bcd40bbbacad066fdf2da8" category="paragraph">新しいダッシュボードは次のどちらかの場所に作成します。</block>
@@ -3869,12 +3822,9 @@ Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）で�
   <block id="21383d1a6375f071dadd8d05e3e6f6ba" category="list-text">リストからダッシュボードをクリックして、ダッシュボードを開きます。上部コーナーのドロップダウンメニューをクリックし、 * ホームページに設定 * を選択します。</block>
   <block id="73a9192b6872be0497b0ba9032e8a3ad" category="summary">事前定義済みレポートの概要</block>
   <block id="3a0db2fa371f31d3fdf2d89981a1afcb" category="doc">事前定義済みのレポートを簡単に作成</block>
-  <block id="64feabb5605878d5638d9117e8c71d0f" category="paragraph">Cloud Insights レポートには、レポートに求められる代表的な要件に対処する事前定義済みのレポートが含まれており、関係者はストレージインフラに関して十分な情報に基づいた意思決定を行うために必要な重要な情報を得ることができます。</block>
-  <block id="7763c9fa2859f8488ecf4ca4e1d308f8" category="paragraph">Cloud Insights レポートポータルから事前定義済みのレポートを生成したり、他のユーザにレポートを E メールで送信したり、レポートを変更したりできます。複数のレポートを使用して、デバイス、ビジネスエンティティ、または階層でフィルタリングできます。このレポートツールは、 IBM Cognos をベースとしたツールで、さまざまなデータ表示オプションが用意されています。</block>
   <block id="f13a0434c5849a238ccd2c5e877c77d1" category="paragraph">事前定義済みのレポートには、インベントリ、ストレージ容量、チャージバック、パフォーマンス、ストレージ効率、 クラウドコストのデータを活用できます。これらの事前定義済みレポートを変更して、変更内容を保存できます。</block>
   <block id="4dac91112aeb8c34052a1e9c79e6cdf4" category="paragraph">HTML 、 PDF 、 CSV 、 XML などのさまざまな形式でレポートを生成できます。 Excel などです。</block>
   <block id="88c37d058635eec215d68739ac39dc69" category="section-title">事前定義済みレポートに移動します</block>
-  <block id="bf88a0d937dfcacb00859fb5c0c922bd" category="paragraph">Reporting Portal を開くと、 _Team Content_folder が Cloud Insights レポートに必要な情報のタイプを選択するための出発点となります。</block>
   <block id="27daabf1c454d33595dbe589aefcd6e0" category="list-text">左側のナビゲーションペインで、*コンテンツ&gt;チームコンテンツ*を選択します。</block>
   <block id="4049f6107bd22bd909a404599ebeacd6" category="list-text">事前定義済みのレポートにアクセスするには、*[レポート]*を選択します。</block>
   <block id="ee3a0672263c3995fe8e38b6cfe439c4" category="inline-image-macro">[Reporting]メニュー</block>
@@ -3907,7 +3857,6 @@ Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）で�
   <block id="daf3ce05098a091b8229c9cc464deca8" category="section-title">ネットアップの容量とパフォーマンス</block>
   <block id="8d0eab5c05649c9cd03653b85f3ccf85" category="paragraph">NetApp Capacity and Performance レポートには、割り当て済み容量、使用済み容量、コミット済み容量のグローバルデータ、および容量のトレンドとパフォーマンスデータが表示されます。</block>
   <block id="788a99842290310a17b1339348951c8b" category="section-title">スコアカード</block>
-  <block id="a3abb41f95d7890c5f419c48c25b7abd" category="paragraph">スコアカードレポートには、 Cloud Insights が取得したすべてのアセットの概要と一般的なステータスが表示されます。ステータスは、緑色、黄色、赤色のフラグで示されます。</block>
   <block id="5deca4e6a48246d50758245d91fc8585" category="list-text">緑は正常な状態を示します</block>
   <block id="64f1f39267f68160e0286668550d456c" category="list-text">黄色は、環境内に潜在的な問題があることを示します</block>
   <block id="c0b4e892f2286311bd9c4ecd2d3e3b1a" category="list-text">赤は、注意が必要な問題を示します</block>
@@ -3993,7 +3942,6 @@ Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）で�
 2.そのディレクトリに移動します。
 3.完全な「トークン=………」をコピーして貼り付けます。 … ./cloudsecure-agent-install.sh "インストールコマンドを入力し、Enterキーを押します。
 4.インストールを続行できるはずです。</block>
-  <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Cloud Insights のシリアル番号を入力してケースをオープンし、メモしておいたケースにログを添付します。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">ログをケースに添付するには、次の手順に従います。
  1. root権限で以下のスクリプトを実行し、出力ファイル(cloudsecure-agent-symptions.zip)を共有します。
     A	/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh
@@ -4071,7 +4019,6 @@ AGENT_PROXY_PASSWORD = pass1234
 sudo systemctl restart cloudsecure-agent.service</block>
   <block id="5865d512ef44ce9af5c898e3838da358" category="summary">Kubernetes のランディングページで</block>
   <block id="e069a872dd6153588f1350dd2d1c2289" category="doc">Kubernetes クラスタの概要</block>
-  <block id="d9ade118c1e64b59921edda821b7e351" category="paragraph">Cloud Insights Kubernetes エクスプローラは、 Kubernetes クラスタの全体的な健常性と使用状況を表示する強力なツールで、調査対象の領域に簡単にドリルダウンできます。</block>
   <block id="a1801a3f5b06f28912e5d6d300bf2760" category="paragraph">[Dashboards]&gt;[Kubernetes Explorer]をクリックすると、[Kubernetes Cluster]リストページが開きます。この概要ページには、環境内のKubernetesクラスタの表が含まれています。</block>
   <block id="33e8a05c91ebabc5e5949786e43cd0d4" category="inline-image-macro">Kubernetesリストページ</block>
   <block id="c05ca31df34e47f888e486bfaeb3d6a2" category="paragraph"><block ref="c05ca31df34e47f888e486bfaeb3d6a2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4842,7 +4789,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">システムのサイジング</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">イベントレートチェッカー</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">を参照してください <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> サイジングに関する情報のドキュメント</block>
-  <block id="8b91cb352f837187391eccc1bbd95135" category="summary">Cloud Insights オブジェクトアイコンリファレンスです。</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">オブジェクトアイコンリファレンス</block>
   <block id="5a4b4eed429420789b0c3c343b565829" category="summary">Azure コンピューティングデータコレクタの設定</block>
   <block id="b9f971877c119683ae01bf78224fdfe8" category="doc">Azure コンピューティングデータコレクタの設定</block>
@@ -4917,19 +4863,14 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="ebe11f389d67e77cfd3d461ac635ac57" category="cell">「 Configuration error 」と表示され、「 Policy does not allow 」または「 You are not authorized 」というエラーメッセージが表示されます。</block>
   <block id="98a8b66b2a474494c50e1594ce9331b1" category="cell">* IPアドレスを確認します
 *ユーザー名とパスワードを確認してください</block>
-  <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">Cloud Insightsは、AUソフトウェアを手動で更新するように構成できます。これにより、環境にインストールされているソフトウェアをより詳細に制御できます。</block>
   <block id="a7c522a068ca75556dee476101135cc4" category="doc">Acquisition Unitソフトウェアを手動でインストールする</block>
-  <block id="8b01a0d5e9fc950e10c5789185b76fab" category="paragraph">デフォルトでは、Cloud Insightsは更新が導入されるとAcquisition Unit（AU）ソフトウェアを自動的に更新します。ただし、安全に管理された環境では、自動更新が不可能または望まれない場合があります。  このような場合は、AUソフトウェアを手動で更新するようにCloud Insightsを設定できます。これにより、環境にインストールされているソフトウェアをより詳細に制御できます。</block>
-  <block id="7fa388dd2c2240646539be23019e8d18" category="paragraph">AUソフトウェアを手動でダウンロードしてインストールするには、次の手順に従います。Cloud Insightsには、これらの手順の多くに役立つSwaggerのドキュメントページが用意されています。このページでは、独自のAPIスクリプト/コマンドを使用することもできます。[Admin]&gt;[API Access]に移動し、[API Documentation]リンクをクリックします。</block>
   <block id="39d5d5a9880f1ad19fe6d2c1a8b95da4" category="paragraph">このプロセスは、LinuxとWindowsで同様です。</block>
   <block id="f7c4249be54645abe9d6bbb85ffd95e3" category="section-title">Linuxでの新規AUインストールの実行：</block>
-  <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">Cloud InsightsでAPIトークンを作成します。</block>
   <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">[Admin]&gt;[API Access]*に移動し、*[+API Access Token]*を選択します。</block>
   <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">識別しやすい* Name *と*概要*を設定します</block>
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">権限：*読み取り/書き込み*</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">目的の*有効期限*および*自動更新*の値を選択します</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">生成されたAPIアクセストークンをコピーします。この手順は、ウィンドウを閉じる前に実行する必要があります。</block>
-  <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">Swagger（[Admin]&gt;[API Access]&gt;[API Documentation]）で、トークンを使用してCloud Insights APIを許可します</block>
   <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">Swagger画面の右上にある[_Authorize]をクリックします</block>
   <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">上からコピーしたトークンを[Customer apiKey]フィールドに貼り付けます</block>
   <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">[承認]*をクリックします</block>
@@ -4944,7 +4885,6 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="07b7a71211b83fdb6affc9516bd8c884" category="list-text">また、AUシステムでcurlコマンドを実行することもできます。</block>
   <block id="1786f7c932f739c573815e056569419d" category="list-text">この時点で、インストーラファイルがAUシステムに存在している必要があります。</block>
   <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">次の手順では、一時トークンを使用する必要があります。上記で作成したAPIアクセストークンは使用しないでください。</block>
-  <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">Cloud Insights API Swaggerで、_/ au/oneTimeToken_APIを使用してワンタイムトークンを作成します。</block>
   <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">結果のワンユーストークンをコピーします。</block>
   <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">AUをインストールするマシンで、ダウンロードしたインストーラファイルが格納されているフォルダに移動します。次のコマンドを実行するには、ユーザにroot権限が必要です。</block>
   <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">インストーラファイルを解凍します</block>
@@ -5706,9 +5646,7 @@ Replica Managerの下のReplicated Partitions（レプリケーションパー�
   <block id="d40435902e9d2aff211851b4be9e2a25" category="paragraph">ダッシュボードのウィジェットでは、凡例を表示または非表示にできます。</block>
   <block id="82908db5a2e57cb0c3c9c7daae713304" category="paragraph">ダッシュボードを表示するときは、ウィジェットの * オプション * ボタンをクリックし、メニューから * 凡例を表示 * を選択することで、ウィジェットの凡例のオン / オフを切り替えることができます。</block>
   <block id="1ca8bb723c638279d7c5ddb2b353ea54" category="paragraph">凡例が表示されているときに、凡例が示すアセットのランディングページにアクセス可能な場合は、凡例がそのアセットページへのリンクとして表示されます。</block>
-  <block id="46efc414194691d6d05bcfff35e65c5d" category="summary">レポート用の Cloud Insights データ保持</block>
   <block id="d0453d6ddb7253123e56e1ba49d51ea3" category="doc">レポート用に履歴データを保持する方法</block>
-  <block id="b42726067594c081ca1c1e9790ef5aee" category="paragraph">Cloud Insights では、次の表に示すように、データマートおよびデータの単位に基づいて Reporting で使用される履歴データが保持されます。</block>
   <block id="e810ef0d38aadd1a4adb0e61cd5d9532" category="cell">データマート</block>
   <block id="22ccc755b98e449e061dba9da3ea7671" category="cell">測定されたオブジェクト</block>
   <block id="5cb5a6f3a6c30a6c8da73145904919bb" category="cell">精度</block>
@@ -5947,7 +5885,6 @@ Zノード数</block>
 書き換えを要求します</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">WindowsおよびLinuxでのAcquisition Unitのインストール、アンインストール、プロキシのサポートの設定などがあります。</block>
   <block id="28c0e15f579689e243a880b6944ddfb5" category="doc">Acquisition Unit の設定</block>
-  <block id="b720107699679aedfb92e18f61b7cd45" category="paragraph">Cloud Insights は、ローカルサーバにインストールされている Acquisition Unit を使用してデバイスデータを収集します。各 Acquisition Unit では、複数のデータコレクタをホストできます。これらのコレクタは、分析のためにデバイスメトリックを Cloud Insights に送信</block>
   <block id="e548e3ee764a7dc701df28014b0530f7" category="paragraph">ここでは、 Acquisition Unit を追加する方法と、プロキシを使用する環境で必要な追加の手順について説明します。</block>
   <block id="95daeb54f7a6f1925add5849715872ad" category="section-title">Linux Acquisition Unit の追加</block>
   <block id="958f097fe9ccbb38e85c88ca82a73170" category="list-text">プロキシを使用するシステムの場合は、 Acquisition Unit をインストールする前にプロキシ環境変数を設定する必要があります。詳細については、を参照してください <block ref="cc8b2258e67f4301c61077ad43e8ce8b" category="inline-xref-macro-rx"></block>。</block>
@@ -5970,8 +5907,6 @@ Zノード数</block>
   <block id="52226506bf1b4a5452e672e84cbf0104" category="list-text">Bash シェルを使用して、端末で編集したコマンドを実行します。</block>
   <block id="ba9f9aaef47dd85056af2cb7cd6951a1" category="list-text">Acquisition Unit ソフトウェアをインストールします。</block>
   <block id="51ef8dfe8b9bebdc12ed8da57cb6ef1e" category="section-title">プロキシ設定：</block>
-  <block id="68e1bece4463d16fdc69a636c53b3be3" category="paragraph">Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証を使用します。認証するには、クライアント証明書を Cloud Insights サーバに渡す必要があります。これを実現するには、 HTTPS 要求をデータを復号化せずに Cloud Insights サーバに転送するようにプロキシを設定する必要があります。</block>
-  <block id="dc12da455058889e6c0847cd6818f17c" category="paragraph">最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。</block>
   <block id="7011d12128c7027c0a5ef0db2c274300" category="admonition">ワイルドカードにアスタリスク（ * ）を使用するのは一般的ですが、プロキシ / ファイアウォールの設定では異なる形式を使用することがあります。プロキシのドキュメントで、ワイルドカードを正しく指定できることを確認してください。</block>
   <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">ナレッジベース（Knowledgbase）</block>
   <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">プロキシ設定の詳細については、ネットアップのを参照してください <block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>。</block>
@@ -5981,7 +5916,6 @@ Zノード数</block>
   <block id="0d31b3a0d757ebb26d553352a08cb4e5" category="section-title">Windows Acquisition Unit の追加</block>
   <block id="7bb8dc49e894513db639873cb06911d4" category="list-title">Windows Acquisition Unit のインストールの手順</block>
   <block id="d859eb4ae30b9eae60ffbcb09db52be6" category="list-text">管理者権限を持つユーザとして Acquisition Unit サーバ / VM にログインします。</block>
-  <block id="3cf3030bbe5a24323447cf60440415e7" category="list-text">そのサーバーで、ブラウザウィンドウを開き、管理者またはアカウント所有者として Cloud Insights 環境にログインします。</block>
   <block id="0c3a3bd2ed0dc5c611332312485e427f" category="paragraph">[Install Acquisition Unit_Dialog] が表示されます。Windows を選択します。</block>
   <block id="ec97136c856287bb07ca7148194c98e6" category="image-alt">Windows AU のインストール</block>
   <block id="0ddeb8dc3872cd6d88bd4c549ed99742" category="list-text">サーバでサポートされているバージョンの Windows が実行されていることを確認します。サポートされているバージョンのリストについては、「サポートされている OS バージョン」（ i ）をクリックしてください。</block>
@@ -5996,7 +5930,6 @@ Zノード数</block>
   <block id="13ab672acb3e71f05c0d486286dd0ed0" category="paragraph">Acquisition Unit ソフトウェアをアンインストールするには、次の手順を実行します。</block>
   <block id="f5a70d474e688b68084d86124d0be01a" category="paragraph">* Windows ： *</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Windows * Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
-  <block id="4b929bbd6fcc37c08ab4612028287ca3" category="list-text">Acquisition Unit のサーバー /VM で、 Control Panel を開いて、「プログラムのアンインストール」を選択します。Cloud Insights Acquisition Unit プログラムを選択して削除します。</block>
   <block id="cb7b4826c08bc306e5cff077dfba5dd7" category="list-text">[ アンインストール ] をクリックし、画面の指示に従います。</block>
   <block id="abf0b3ef23b5557422e33977a6ac3fbf" category="paragraph">* Linux ： *</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Linux* Acquisition Unitをアンインストールする場合は、次の手順を実行します。</block>
@@ -6033,19 +5966,11 @@ Zノード数</block>
   <block id="31be054ef32957d0b09e260052ca7194" category="paragraph"><block ref="31be054ef32957d0b09e260052ca7194" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a16ab7a0e2729553abea3c5bef941286" category="paragraph">データコレクタごとに、 [Three dots] メニューをクリックして、データコレクタの複製、編集、ポーリング、または削除を実行できます。このリストで複数のデータコレクタを選択して、それらに対して一括操作を実行することもできます。</block>
   <block id="ea88145436c3d93ffad8cb3aaa3f29d2" category="paragraph">Acquisition Unit を再起動するには、ページ上部の「 * Restart * 」ボタンをクリックします。接続に問題が発生した場合に、このボタンをドロップダウンして、 AU への * 接続の復元 * を試行します。</block>
-  <block id="0899fcc28c04aa81ead738e68e460060" category="summary">Cloud Insights API を使用して Reporting DB を直接照会する。</block>
-  <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">Cloud Insights の強力な API を使用すると、 Cognos Reporting 環境を介さずに、 Cloud Insights Reporting データベースを直接照会できます。</block>
   <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4 の</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">このチュートリアルでは</block>
-  <block id="b82b439fceeed91eb6cf1e17ac845ee4" category="paragraph">Cloud Insights レポート API は、に従います <block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block> （ Open Data Protocol ）レポートデータベースの照会の標準。
-詳細や詳細については、をご覧ください <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block> OData の場合。</block>
-  <block id="3577e510a3f1c74a7bb3874de14515b5" category="paragraph">すべての要求はURL _\ https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata_で始まります</block>
   <block id="125afb495c1f31ea312e38a98946b3a3" category="section-title">apiKey を生成します</block>
-  <block id="75fecb4e276dfa405fa92b53630b1a6c" category="inline-link-macro">Cloud Insights APIs の略</block>
-  <block id="f35f47be5754883ff13c19633478e116" category="paragraph">詳細については、をご覧ください <block ref="b08969031f7130627c2547d43f65cf8d" category="inline-link-macro-rx"></block>。</block>
   <block id="3033424387de8a8ff6a929d95d0520cf" category="paragraph">API キーを生成するには、次の手順を実行します。</block>
-  <block id="daac61be276185790d79d2f7a9326d42" category="list-text">Cloud Insights 環境にログインし、 * Admin &gt; API Access * を選択します。</block>
   <block id="1af9f192377d89a75177427725293c59" category="list-text">[+API Access Token] をクリックします。</block>
   <block id="e7db5ae96f31544fc1ce8098ba62749d" category="list-text">名前と概要を入力します。</block>
   <block id="2376f0f686e8de0393e5e1ddaeb4f7b6" category="list-text">タイプには、 Data Warehouse _ を選択します。</block>
@@ -6053,17 +5978,10 @@ Zノード数</block>
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">要望の有効期限を設定します。</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">[ 保存 ] をクリックし、 * キーをコピーして安全な場所に保存します。あとでフルキーにアクセスすることはできません。</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">テーブルの直接クエリ</block>
-  <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長いURLは\https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata/ではなく\https://.../odata/に簡略化して表示することもできます</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">次のような簡単なクエリを試してください</block>
-  <block id="a46f2ca5771aa079cc7e5856afeaa757" category="list-text">\https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata/dwh_custom</block>
-  <block id="0d34a983260a100641ecd9e249496394" category="list-text">\https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata/dwh_inventory</block>
-  <block id="03ebeceea5ea916ef7b51a3a95a49d11" category="list-text">\https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata/dwh_inventory/storage</block>
-  <block id="2ab0f9fbf7fd8c1c02b31fa8c169136a" category="list-text">\https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata/dwh_inventory/disk</block>
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">REST API の例</block>
-  <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">すべての呼び出しのURLは、_\ https：//&lt;Cloud Insights URL&gt;/rest /v1/dwh-management/odata_です。</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">get/{schema}/**-レポートデータベースからデータを取得します。</block>
-  <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">形式は、_\https：//&lt;Cloud Insights URL&gt;/rest &lt;schema_name&gt;/&lt;query&gt;_です</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">結果</block>
   <block id="9d0a9858786cdf7480d0249e4c00b68b" category="section-title">役に立つヒント</block>
   <block id="622cc3cd255274a9efa2b5fab43cefab" category="paragraph">Reporting API クエリを使用する場合は、次の点に注意してください。</block>
@@ -6077,7 +5995,6 @@ Zノード数</block>
   <block id="0d6642fdc7f58abaa6abe00db247d66a" category="list-text">2 つのヘッダーが必要です。</block>
   <block id="a06751273618aaa2a3136426034f3331" category="list-text">「 X-CloudInsights - apiKey 」という名前を付けます。</block>
   <block id="f07ffec998a0d91a573274ae4a20cba9" category="list-text">属性値「 &lt;apiKey&gt; 」</block>
-  <block id="5455308b1c7692a68b58d6059d1af0fe" category="paragraph">API キーは Cloud Insights 環境に固有です。</block>
   <block id="c13fb1b2303d8e94acc9569811c7a5b8" category="summary">Dell EMC Celerra データコレクタの設定</block>
   <block id="8d466f056da16c035c31b6b6000a2e84" category="doc">Dell EMC VNX File （旧 Celerra Unified Storage System ）データコレクタ</block>
   <block id="00c5255410bf979adee5cc69b58e6d81" category="paragraph">このデータコレクタは、 VNX File Storage System からインベントリ情報を取得します。このデータコレクタを設定するには、ストレージプロセッサの IP アドレス、および読み取り専用のユーザ名とパスワードが必要です。</block>
@@ -6104,16 +6021,11 @@ Zノード数</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">ワークロードのセキュリティに関する通知（旧称Cloud Secure ）</block>
   <block id="0f5492284173d31c1ded406c4349113a" category="summary">アノテーションルールを作成して、複数のアセットにアノテーションを自動的に適用します。</block>
-  <block id="c892f3821b67f474b3303e3e931aee18" category="paragraph">アノテーションルールを使用すると、定義した条件に基づいて複数のアセットにアノテーションを自動的に適用できます。それらのルールに基づいて、アセットにアノテーションが割り当てられます。 Cloud Insights個々のアセットページで手動で設定したアノテーションは、 Cloud Insight でアノテーションルールが評価されるときにルールベースのアノテーションよりも優先されます。</block>
-  <block id="331078c822aba58cecbe90d52f83043f" category="list-text">Cloud Insights メニューで、 * Manage &gt; Annotation rules * の順にクリックします。</block>
   <block id="1384d05c5b2f49754a143afa35e964c0" category="list-text">新しいアノテーションルールを追加するには、「 * + ルール * 」をクリックします。</block>
   <block id="70192b2ae4313f0ebcccd624b70dbf32" category="paragraph">[Add Rule] ダイアログが表示されます。</block>
   <block id="810a96701d4418e132e260585dd2738a" category="paragraph">名前がアノテーションルールページに表示されます。</block>
-  <block id="2eaf46778660e7d2b4d5f1f1bd09a57c" category="list-text">クエリ * をクリックし、アノテーション環境でアセットを識別するために Cloud Insights で使用するクエリを選択します。</block>
-  <block id="c0d3b231c163713327796ae7de8286ac" category="admonition">大規模な Cloud Insights 環境では、アノテーションルールの実行が完了するまでに時間がかかるように見えることがあります。これは、インデクサが最初に実行され、ルールを実行する前に完了する必要があるためです。インデクサは、 Cloud Insights がデータ内の新規または更新されたオブジェクトやカウンタを検索またはフィルタリングできるようにする機能です。ルールエンジンは、インデクサが更新を完了するまで待機してから、ルールを適用します。</block>
   <block id="c5bda9cb58b1bb0e70cd02e4a6e2b16a" category="section-title">アノテーションルールの変更</block>
   <block id="c5daaafb7e903bc1954d900fd3e0e4be" category="paragraph">アノテーションルールについて、ルールの名前、そのアノテーション、アノテーションの値、ルールに関連付けられているクエリを変更することができます。</block>
-  <block id="578fb7e63366cebbe5c7cb9d699191e9" category="list-text">Cloud Insights メニューで、 * Manage &gt; Annotation rules * の順にクリックします。</block>
   <block id="a788a59807525d1bd70eb6d9b14854a9" category="list-text">変更するアノテーションルールを選択します。</block>
   <block id="ca08f0e34ea8f7c9ff5b715fcfff9ea5" category="paragraph">アノテーションルールは、フィルタボックスに値を入力してフィルタすることも、ページ番号をクリックして各ページで参照することもできます。</block>
   <block id="ef7f3ec8b4f342a58f076b2cf5cf9ff7" category="list-text">変更するルールのメニューアイコンをクリックします。</block>
@@ -6500,8 +6412,6 @@ Qcache空きブロック
   <block id="4f29fd9657915b51e00ee112dd495873" category="inline-image-macro">フィルタリングが表示された Kubernetes Node Detail ページ</block>
   <block id="ff9dcb7868c4ad1ee30492b12c57b9d3" category="paragraph"><block ref="ff9dcb7868c4ad1ee30492b12c57b9d3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9a8035e121122e74ece696f921ab7d6" category="section-title">ノードのポッドと永続的ボリュームの確認</block>
-  <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">Cloud Insights を使用すると、 Kubernetes 環境のバックエンドストレージを可視化し、 Kubernetes ポッドと永続的ボリューム（ PVS ）を把握できます。IOPS 、レイテンシ、スループットなどの PV カウンタは、単一ポッドでの使用量から PV カウンター、 PV 、バックエンドストレージデバイスへのすべての方法で追跡できます。</block>
-  <block id="4f199152407556f59fa94af499f084e0" category="paragraph">PV レベルで Cloud Insights は、バックエンド（ PV タイプに応じて内部ボリュームまたはボリューム）の容量情報（合計、使用済み、使用済みの割合）および内部ボリュームの Snapshot 数が収集されます。ポッドからストレージレベルでは、バックエンドの容量と内部ボリュームの Snapshot 数を収集します。</block>
   <block id="aae3edef1483f0838d4754d553d09e68" category="paragraph">ボリュームまたは内部ボリュームのランディングページには、次の 2 つのテーブルが表示されます。</block>
   <block id="284075285dd76711665ac6ae13149b3a" category="inline-image-macro">Kubernetes PV テーブル</block>
   <block id="64241ba8e504ff6664efe0d6ae70ba72" category="inline-image-macro">Kubernetes ポッドテーブル</block>
@@ -7256,7 +7166,6 @@ VCSタイプ
   <block id="5813234f9a5bd764a03739c8b7797a1b" category="list-text">Reader へのアクセスによってパフォーマンス収集が失敗する場合は、リソースグループレベルで貢献者アクセスを許可してみてください。</block>
   <block id="16418fb6362362bf39641dbe5e3e3d86" category="summary">アノテーションを使用してデータを追跡する。</block>
   <block id="9dc3af007802cbac94fe854e8f0c4117" category="doc">アノテーションの定義</block>
-  <block id="a4fc68910b46a271a6cd312a5c66e1bb" category="paragraph">Cloud Insights をカスタマイズして会社の要件に合わせてデータを追跡するときは、アノテーションと呼ばれる特殊な注釈を定義してアセットに割り当てることができます。</block>
   <block id="407dc792025a10c7ad65e372a7704eb6" category="paragraph">アセットの終了日、データセンター、建物の場所、ストレージ階層、ボリュームのサービスレベルなどの情報をアノテーションに割り当てることができます。</block>
   <block id="f6eb613205b7046179443e69f786e6cf" category="paragraph">環境の監視にアノテーションを使用すると、次の作業に役立ちます。</block>
   <block id="4be7c0a355ff7c759d71d14912b19e43" category="list-text">すべてのアノテーションタイプの定義を作成または編集する。</block>
@@ -7265,13 +7174,11 @@ VCSタイプ
   <block id="7c50bfbfec88094b0c41ddcffe11d14e" category="list-text">ルールを作成して、同じタイプの複数のアセットにアノテーションを自動的に適用する。</block>
   <block id="52362c79490256900d2feb9634e7ac2f" category="list-text">アノテーションに基づいてアセットをフィルタする。</block>
   <block id="79a3a2ee4b3da0303e320f07bf5f5342" category="section-title">デフォルトのアノテーションタイプ</block>
-  <block id="7f542c2e8ebc57461622cd3e29202ccd" category="paragraph">Cloud Insights にはデフォルトのアノテーションタイプがいくつか用意されますこれらのアノテーションを使用して、データをフィルタまたはグループ化できます。</block>
   <block id="e85bf4eccb3fbc3b4be60a32951bbb3f" category="paragraph">次のようなデフォルトのアノテーションタイプをアセットに関連付けることができます。</block>
   <block id="17e3ba5665482119b302fbb2edcb9a0f" category="list-text">アセットのライフサイクル：開始日、停止日、終了日など</block>
   <block id="c3be6f202a2052ae03477927c477becb" category="list-text">デバイスの場所の情報。データセンター、建物、フロアなど</block>
   <block id="e846669395bb9de98e3d06b417a23b14" category="list-text">品質（階層）、接続デバイス（スイッチレベル）、サービスレベルなどのアセットの分類</block>
   <block id="1239f94772abec81a3de981223170236" category="list-text">ステータス（ホット（高利用率）など）</block>
-  <block id="2e8cafbc0e649cf2e9666cc8afa750af" category="paragraph">次の表に、 Cloud Insights が提供するアノテーションタイプを示します。</block>
   <block id="f177b25109656150504412ea2b5d3121" category="cell">アノテーションタイプ</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">を入力します</block>
   <block id="effdb9ce6c5d44df31b89d7069c8e0fb" category="cell">エイリアス</block>
@@ -7301,8 +7208,6 @@ VCSタイプ
   <block id="34c0c2c5a3a24bf63af1919806d5cc0d" category="cell">違反（ホストポートの欠落や冗長性の欠如など）のランク（例： Major ）。重要度の高い順に階層化されています。</block>
   <block id="b87860ab0dc061b503ef8df718421f44" category="admonition">エイリアス、データセンター、ホット、サービスレベル、サンセット、 [Switch Level]、[Tier]、および[Violation Severity]はシステムレベルのアノテーションで、削除や名前変更はできません。変更できるのは割り当てられている値のみです。</block>
   <block id="5f1e3307a64cd09f6f6b66948ee50fa2" category="section-title">カスタムアノテーションの作成</block>
-  <block id="c297094789fc5d11c8bf3bf3b759ede2" category="paragraph">アノテーションを使用すると、ビジネスニーズに合わせて、ビジネス固有のカスタムデータをアセットに追加できます。Cloud Insights には一連のデフォルトアノテーションが用意されていますが、ほかにもさまざまな方法でデータを表示できます。カスタムアノテーションのデータは、ストレージのメーカー、ボリューム数、パフォーマンス統計など、すでに収集されたデバイスの補足データになります。アノテーションを使用して追加したデータは Cloud Insights で検出されません。</block>
-  <block id="a16b947dcd816055d4b841ab554f90c3" category="list-text">Cloud Insights メニューで、 * Manage &gt; Annotations * をクリックします</block>
   <block id="f01810502aa8f2235ddc84956231d8b8" category="paragraph">アノテーションページにアノテーションのリストが表示されます。</block>
   <block id="e3beb7476a6fa72962d535fe82ed0c9d" category="list-text">「 * + 追加」をクリックします。</block>
   <block id="49dac8e94cf3a894a33bf2ff0051828c" category="list-text">アノテーションの * Name * と * 概要 * を入力します。</block>
@@ -7332,17 +7237,11 @@ VCSタイプ
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">パフォーマンスやインベントリのしきい値、およびメトリックやログの条件に関するアラートを生成するモニタを作成します。</block>
   <block id="b1268076894d71bd79285945ea54cad5" category="doc">モニタとのアラート</block>
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">監視を作成して、ネットワーク内のリソースに関連する問題についてユーザに通知するアラートをトリガーするしきい値を設定します。たとえば、多数のプロトコルのいずれかに対して _node write latency _ に対してアラートを送信するモニタを作成できます。</block>
-  <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">モニタとアラートはすべてのCloud Insightsエディションで使用できますが、Basicエディションには次の条件があります。
-*一度にアクティブにできるカスタムモニターは最大5つまでです。5台を超えるモニタは、_Paused _状態に作成または移動されます。
-* VMDK、仮想マシン、ホスト、データストアのメトリックモニタはサポートされていません。これらのメトリック用に作成されたモニタは一時停止され、Basic Editionにダウングレードすると再開できません。</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監視を使用すると、ストレージ、 VM 、 EC2 、ポートなどの「インフラ」オブジェクトによって生成される指標や、 Kubernetes 、 ONTAP の高度な指標、 Telegraf プラグイン用に収集されたデータなどの「統合」データに対してしきい値を設定できます。これらの _ は、警告レベルまたは重大レベルのしきい値を超えたときにアラートを監視します。</block>
   <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">また、警告レベル、重大レベル、または情報レベルのアラートをトリガーするモニタを作成して、指定された _ ログイベント _ が検出されたときに生成することもできます。</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">システム定義のモニター</block>
-  <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">Cloud Insights には、いくつかの機能があります <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> また、環境に応じて異なります。</block>
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">セキュリティのベストプラクティス</block>
-  <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights アラートは、環境内のデータポイントや傾向を強調するように設計されており、Cloud Insights では、有効なEメールアドレスをアラートの受信者として入力できます。セキュアな環境で作業する場合は、通知を受け取っているユーザ、またはアラートへのアクセス権があるユーザを特に意識してください。</block>
   <block id="4712a61ef2a234a93ba9db41c631d5b8" category="section-title">メトリックまたはログモニタ</block>
-  <block id="4dacc229b0bc4d687a0aceeaa94b8095" category="list-text">Cloud Insights メニューで、 * Alerts &gt; Manage Monitors * をクリックします</block>
   <block id="7a4d7843cd0dfc634c2485f99960f485" category="paragraph">[ モニタ ] リストページが表示され、現在設定されているモニタが表示されます。</block>
   <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">既存のモニタを変更するには、リストでモニタ名をクリックします。</block>
   <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">モニタを追加するには、 *+ モニタ * をクリックします。</block>
@@ -7415,13 +7314,9 @@ VCSタイプ
   <block id="f9014555d08521285ca544350f9dc25a" category="paragraph">次のモニタグループが表示されます。グループ名の横には、グループに含まれるモニタの数が表示されます。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">* すべてのモニタ * にすべてのモニタが一覧表示されます。</block>
   <block id="d9e85911262ba37a5d999e863491d888" category="list-text">* カスタムモニター * には、ユーザーが作成したすべてのモニターが一覧表示されます。</block>
-  <block id="70d96c6a41afb254c16b7b9540d18895" category="list-text">* サスペンドされたモニタ * には、 Cloud Insights によってサスペンドされたすべてのシステムモニタが表示されます。</block>
   <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">システム定義のモニタ</block>
-  <block id="69a8fd4125eb679015842f32069fd971" category="list-text">Cloud Insights には、いくつかの * システム・モニター・グループ * が表示されます。このグループには、の 1 つ以上のグループが表示されます <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>ONTAP インフラストラクチャおよびワークロードモニタを含む。</block>
   <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">カスタムモニタは、一時停止、再開、削除、または別のグループへの移動が可能です。システム定義のモニタは一時停止および再開できますが、削除または移動することはできません。</block>
   <block id="c3c2ba86297c67abf1cd56f0d77e8cac" category="section-title">一時停止したモニタ</block>
-  <block id="1f4408604ff975de8817060ea3a7330a" category="paragraph">このグループは、 Cloud Insights が 1 つ以上のモニタを一時停止している場合にのみ表示されます。モニタが過度のアラートまたは継続的なアラートを生成している場合、モニタが一時停止することがあります。モニタがカスタムモニタの場合は、継続的なアラートの発生を防止する条件を変更してから、モニタを再開します。問題 がサスペンションを引き起こしている状態が解消されると、モニタはサスペンド状態のモニタグループから削除されます。</block>
-  <block id="5f8a706a9be7411e7b652c8139cb2a37" category="paragraph">これらのグループには、モニタに必要なデバイスやログが環境に含まれている限り、 Cloud Insights が提供するモニタが表示されます。</block>
   <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">システム定義のモニタは、変更、別のグループへの移動、または削除できません。ただし、システムモニタを複製して、複製を変更または移動することはできます。</block>
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">システムモニタには、 ONTAP インフラストラクチャ（ストレージ、ボリュームなど）のモニタ、ワークロード（ログモニタなど）、またはその他のグループが含まれます。ネットアップでは、お客様のニーズと製品の機能を常に評価しており、必要に応じてシステムの監視やグループの更新や追加を行います。</block>
   <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">カスタムモニタグループ</block>
@@ -7433,14 +7328,10 @@ VCSタイプ
   <block id="850550000a544306e2d25d5b4ee17d9e" category="inline-image-macro">グループに関連付けます</block>
   <block id="e2bc4bcf0670da96e21e208bf6bcc766" category="paragraph"><block ref="e2bc4bcf0670da96e21e208bf6bcc766" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">モニタを削除するには、グループをクリックし、メニューから「 _ グループから削除」を選択します。モニタを _all Monitors _ または _Custom Monitors _ グループから削除することはできませんこれらのグループからモニタを削除するには、モニタ自体を削除する必要があります。</block>
-  <block id="e30c931a1dd5474d9e4ca4e7c88580c7" category="admonition">グループからモニタを削除しても、モニタは Cloud Insights から削除されません。モニタを完全に削除するには、モニタを選択し、 _Delete_( 削除 ) をクリックします。これにより、その所有者であるグループからも削除され、どのユーザからも使用できなくなります。</block>
   <block id="cdd3916c98efbf8a767744185462ffec" category="paragraph">同様にモニタを別のグループに移動するには '_Move to Group_ を選択します</block>
   <block id="9f69190cb4874f8723dbc78ca0008d65" category="paragraph">グループ内のすべてのモニタを一度に一時停止または再開するには、グループのメニューを選択し、 _Pause_or_Resume_を クリックします。</block>
-  <block id="c5cc340934b797d2f0bbc7777b820964" category="paragraph">同じメニューを使用して、グループの名前変更または削除を行います。グループを削除しても、 Cloud Insights からモニタは削除されません。これらのモニタは、 _ALL Monitors で使用できます。</block>
   <block id="6af18ae8f301c79fa391e8e18308336c" category="inline-image-macro">グループを一時停止します</block>
   <block id="da61284a90b4338613015a46e7ac0c53" category="paragraph"><block ref="da61284a90b4338613015a46e7ac0c53" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="556db0fcb03373ffd4b535662a23642d" category="paragraph">Cloud Insights には、指標とログの両方を監視するシステム定義のモニタが多数含まれています。使用可能なシステムモニタは、環境内にあるデータコレクタによって異なります。そのため、 Cloud Insights で使用できるモニタは、データコレクタが追加されたり、設定が変更されたりすると変更される可能性があります。</block>
-  <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">を表示します <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> Cloud Insights に含まれるモニタの説明については、ページを参照してください。</block>
   <block id="18206c5add24b8898426959c811b779b" category="section-title">詳細情報</block>
   <block id="b724fba8ffec757b004a0fd1f0662764" category="inline-link-macro">アラートの表示と非表示</block>
   <block id="24b2e6934ffdb3b416b798e02d2fca63" category="list-text"><block ref="24b2e6934ffdb3b416b798e02d2fca63" category="inline-link-macro-rx"></block></block>
@@ -7502,9 +7393,6 @@ VCSタイプ
   <block id="6e59b3ea9b5a17d079cc21aa45569754" category="section-title">ディスコード設定：</block>
   <block id="d6460550fabe2c86f510df98309044ac" category="list-text">Discord （コード解除）でサーバーを選択し、 Text Channels （テキストチャンネル）で Edit Channel （チャネルの編集）（歯車アイコン）を選択します。</block>
   <block id="d083fbadf222aa43d7af1327fac5b3bd" category="list-text">「統合」＞「 Web フックの表示」と選択し、「新規 Webhook 」をクリックします</block>
-  <block id="0013ae9f410fbeff3ff135b116ef8a3d" category="list-text">Webhook URL をコピーします。これを Cloud Insights webhook 設定に貼り付ける必要があります。</block>
-  <block id="f6125c8823d9c9db8cca6dd37d20404c" category="section-title">Cloud Insights Webhook を作成します。</block>
-  <block id="38aae62e48756f1502c56440fabd6129" category="list-text">Cloud Insights で、 [*Admin] &gt; [Notifications] に移動し、 [*webhook *] タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。</block>
   <block id="19843c64b2bd32cd834615d1be49a9df" category="list-text">Web フックに「 Discord 」などのわかりやすい名前を付けます。</block>
   <block id="02e70c1e6a3310929da3a63a7d520f1a" category="list-text">[_Template Type_] ドロップダウンで、 [* Discore] を選択します。</block>
   <block id="aa82dcce6448dc6d4ac62cf4c783aab6" category="list-text">上の URL を _url_field に貼り付けます。</block>
@@ -7513,7 +7401,6 @@ VCSタイプ
   <block id="f38218520b173d0bcc9785b39fdd695c" category="admonition">Webhookをテストするには、メッセージ本文のhttps://netapp.com_)値を任意の有効なURL（_など）に一時的に置き換えてから、_Test Webhook_ボタンをクリックします。テストが完了したら、必ずメッセージの本文を元に戻してください。</block>
   <block id="3b5980ac41b3f66758bcd5a2f32e2726" category="section-title">Webhook で通知します</block>
   <block id="08b5411f848a2581a41672a759c87380" category="inline-link-macro">モニタ</block>
-  <block id="0736bd7cc7d3492f8e90719c5118b979" category="paragraph">webhook を使用してイベントを通知するには、 Cloud Insights で [*Alerts] &gt; [Monitors *] の順に選択し、 [*+ Monitor*] をクリックして新しいイベントを作成します <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>。</block>
   <block id="2ff2419ae6f1f87f71f3a728a52ed205" category="list-text">メトリックを選択し、モニタの条件を定義します。</block>
   <block id="aa56e9ef744dcb116cc7b3de9afd9c69" category="list-text">チーム通知の設定（ _Set up team notification(s) ）で、 * Webhook * 配信方法を選択します。</block>
   <block id="61af0e7885b3d07748159728a44e4ad9" category="list-text">目的のイベント（クリティカル、警告、解決済み）の「コード解除」ウェブフックを選択します。</block>
@@ -7566,8 +7453,6 @@ VCSタイプ
   <block id="aa41ad191e6340c80490ee23b9051f65" category="doc">カスタムレポートの作成</block>
   <block id="e807d7ecb04956a12f412e95bc2629ec" category="paragraph">レポートオーサリングツールを使用してカスタムレポートを作成できます。作成したレポートは、保存して定期的に実行できます。レポートの結果は、自分や他のユーザに E メールで自動送信できます。</block>
   <block id="1e2b97b9f5693b80ed092b9f3c74335d" category="inline-link-macro">Premium Edition の場合</block>
-  <block id="bfba88cab5fe0c8e05d19989f8032cfa" category="admonition">レポート機能は Cloud Insights で使用できます <block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>。</block>
-  <block id="20939bc3b866b0c10542314c489e2cc9" category="paragraph">このセクションの例では、次のプロセスについて説明します。このプロセスは、 Cloud Insights レポート作成のすべてのデータモデルに使用できます。</block>
   <block id="37980d6bf105278fa11a69dd84f9d337" category="list-text">レポートで回答する質問を特定しています</block>
   <block id="0605b010dbf07d2fcd7632d7dde8fefd" category="list-text">結果をサポートするために必要なデータを決定する</block>
   <block id="2055f8e291a98a48e02cd162c80cddcd" category="list-text">レポートのデータ要素を選択しています</block>
@@ -7576,7 +7461,6 @@ VCSタイプ
   <block id="7faab9011298e33397155b0e5021232e" category="paragraph">レポートを設計する前に、次の作業を完了してください。</block>
   <block id="a757b06cbcf40569f4970cd41ee13a89" category="inline-link-macro">データコレクタ</block>
   <block id="59a0f541e2cb0ed4c6451d586dfed66e" category="list-text">すべてを設定します <block ref="0cc749161eff54dbabd5ae7d48f6e988" category="inline-link-macro-rx"></block> 適切です。</block>
-  <block id="05c61fe4b339c446f7e2667fa42d42cb" category="list-text">環境内のデバイスとリソースにアノテーション（階層、データセンター、ビジネスユニットなど）を入力します。Cloud Insights レポートでは履歴情報が収集されるため、レポートの生成前にアノテーションを確定しておくことを推奨します。</block>
   <block id="edefef767d4520c1143d327c0101bb86" category="section-title">レポート作成プロセス</block>
   <block id="ae0324c6fe8c43f6538de50c1305fcc8" category="paragraph">カスタム（「アドホック」とも呼ばれる）レポートを作成するプロセスには、いくつかのタスクが含まれます。</block>
   <block id="47cc9306e616c552a7fd3d3af3690a52" category="list-text">レポートの結果を計画します。</block>
@@ -7603,12 +7487,9 @@ VCSタイプ
   <block id="ce7c7690e8c4c9587790e235bb672ace" category="section-title">レポートの設計に関するヒント</block>
   <block id="32a93c6368c97106645d404b40f25ce7" category="paragraph">レポートを設計するときは、いくつかのヒントが役立つことがあります。</block>
   <block id="69182ea2bf1ddafbe0d6816b2cd30a08" category="list-text">現在のデータと履歴データのどちらを使用する必要があるかを判断します。</block>
-  <block id="cb15686a7bb93cbffdf7f940881ba600" category="paragraph">ほとんどのレポートでは、 Cloud Insights で使用可能な最新のデータについてのみレポートする必要があります。</block>
-  <block id="4cb1d05f29754931c9301d9378b29f39" category="list-text">Cloud Insights レポートには、容量とパフォーマンスに関する履歴情報は表示されますが、インベントリに関する履歴情報は表示されません。</block>
   <block id="8fa72dc28e358eb51194c8c007150d80" category="list-text">すべてのユーザにすべてのデータが表示されますが、データを特定のユーザに制限しなければならない場合もあります。</block>
   <block id="754f81e32542951bf093d0cdb32c3f7b" category="paragraph">ユーザごとに情報を分割するには、レポートを作成し、レポートにアクセス権限を設定します。</block>
   <block id="1a8a67814bc9972fe58b5f3314c9d00f" category="section-title">レポートデータモデル</block>
-  <block id="04e577cbbf130a8ab128acbccd425391" category="paragraph">Cloud Insights には複数のデータモデルが含まれており、事前定義済みのレポートを選択するか、または独自のカスタムレポートを作成することができます。</block>
   <block id="efc8210eb11247f37fcf2897dc53263a" category="paragraph">各データモデルにはシンプルなデータマートと高度なデータマートが含まれています。</block>
   <block id="a5aa36c6fb09127a07213f5b381bbdb2" category="list-text">シンプルなデータマートを使用すると、最もよく使用されるデータ要素に簡単にアクセスできます。このデータマートには、 Data Warehouse データの最新の Snapshot だけが含まれており、履歴データは含まれていません。</block>
   <block id="407f210e68fe30cea4ef4dea554d0fd0" category="list-text">高度なデータマートは、シンプルなデータマートに含まれるすべての値と詳細を提供し、履歴データ値へのアクセスを含みます。</block>
@@ -7655,7 +7536,6 @@ VCSタイプ
   <block id="8523adfe9d84b8f0c5cead785b646877" category="list-text">VM で使用されていない容量、およびそのうちの空き容量、孤立している容量、その他の状態の容量</block>
   <block id="4f033638284bdc65427ff0720e386152" category="list-text">消費傾向に基づいて何を購入する必要がありますか？</block>
   <block id="584e7d2a7be54ed12a208870c6467bc6" category="list-text">ストレージのシンプロビジョニングと重複排除のテクノロジを使用することで達成される Storage Efficiency による削減効果</block>
-  <block id="de511d9ab61d6a65896049b3f332558a" category="paragraph">VM Capacity データモデルの容量は、仮想ディスク（ VMDK ）から取得されます。つまり、 VM Capacity データモデルを使用した場合の VM のプロビジョニング済みサイズは、その VM の仮想ディスクのサイズです。これは、 Cloud Insights の仮想マシンビューでプロビジョニングされている容量とは異なります。プロビジョニングされている容量には、 VM 自体のプロビジョニングサイズが表示されます。</block>
   <block id="912faacd906314c217ff0489c23cf738" category="section-title">Volume Capacity データモデル</block>
   <block id="f4460f90b2881fb180e0abbc851010ab" category="paragraph">環境内のボリュームのすべての要素を分析し、ベンダー、モデル、階層、サービスレベル、およびデータセンター別にデータを整理できます。</block>
   <block id="c3a378fc543313d37550bcc8bcc2660a" category="paragraph">孤立ボリューム、未使用ボリューム、および保護ボリューム（レプリケーションに使用）に関連する容量を表示できます。また、さまざまなボリュームテクノロジ（ iSCSI または FC ）を表示したり、アレイの仮想化の問題について仮想ボリュームと非仮想ボリュームを比較したりすることもできます。</block>
@@ -7721,7 +7601,6 @@ VCSタイプ
   <block id="fa190610b8f76820a6b6e115ed614e33" category="list-text">異なるデータストアにマッピングされた VM から報告されたパフォーマンスを使用して、階層化の再決定を行うにはどうすればよいですか。</block>
   <block id="7bb67d7cac958172b0a1f84a2484325b" category="paragraph">パフォーマンスデータモデルには、階層の妥当性、アプリケーション用のストレージの構成ミス、およびボリュームと内部ボリュームの最終アクセス時刻を特定するための情報が含まれています。このデータモデルは、応答時間、 IOPS 、スループット、保留中の書き込み数、アクセスステータスなどのデータを提供します。</block>
   <block id="34a85b274df0ba2a7b21cb67b74e64ed" category="section-title">Storage Efficiency データモデル</block>
-  <block id="d8516f21f7132265ce3594e3d13a0c1c" category="paragraph">一定期間にわたるストレージの削減率と可能性を追跡できます。このデータモデルには、プロビジョニング済み容量のデータだけでなく、使用済みまたは消費済みの容量（物理的な測定値）も格納されます。たとえば、シンプロビジョニングが有効になっている場合、 Cloud Insights はデバイスから取得された容量を示します。また、このモデルを使用して、重複排除が有効な場合の効率を判断することもできます。Storage Efficiency データマートを使用すると、回答に関するさまざまな情報を確認できます。</block>
   <block id="4ecc18a7bb515a117578d6175c08e9f4" category="list-text">シンプロビジョニングと重複排除を実装した場合の Storage Efficiency による削減効果</block>
   <block id="b12ee56745ae4a1efb7a3e89ebaf1a8c" category="list-text">データセンター全体でのストレージ削減量</block>
   <block id="388fc5e67ad22c4a51f83be7224fa51d" category="list-text">過去の容量のトレンドに基づいて、ストレージを追加購入する必要があるのはいつですか？</block>
@@ -7877,7 +7756,6 @@ process_count（float）</block>
   <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">* ONTAP インフラストラクチャ * は、 ONTAP クラスタのインフラストラクチャ関連の問題を監視します。</block>
   <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">* ONTAP ワークロードの例 * には、ワークロード関連の問題のモニターが含まれています。</block>
   <block id="141e31818558b2f9c106f51987380a29" category="list-text">両方のグループのモニタのデフォルトは _Paused _ state です。</block>
-  <block id="1d383faadaa1e0469de5520853eab991" category="paragraph">Cloud Insights に現在搭載されているシステムモニタは次のとおりです。</block>
   <block id="8ee82de7c36b7a2ab1b954c4886db271" category="section-title">メトリックモニタ</block>
   <block id="007cc9547ae8884ad597cd92ba505422" category="cell">重大度</block>
   <block id="72abf8aec41374681348ca7f6c410986" category="cell">概要を監視します</block>
@@ -8303,11 +8181,9 @@ WAFL readdir notice show ...ディレクトリがスパースとして表示さ�
   <block id="7177a13bcf2c1f14bff3599bdff189af" category="cell">このメッセージは、Storage Virtual Machineが変更された場合に表示されます。</block>
   <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">データ収集モニタ</block>
   <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">Acquisition Unit のシャットダウン</block>
-  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">Cloud Insights Acquisition Unitは、新機能を導入するためのアップグレードの一環として定期的に再起動します。これは、一般的な環境で月に1回以下の頻度で発生します。新たに再起動したAcquisition UnitでCloud Insights への登録が完了したことを示すResolutionを通知するまで、Acquisition Unitがシャットダウンした場合は、すぐに警告アラートが表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</block>
   <block id="c1e22147316e85ab61d0419eba630d75" category="cell">このアラートが頻繁に発生する場合や15分以上続く場合は、Acquisition Unit、ネットワーク、およびAUをインターネットに接続するプロキシをホストしているシステムの動作を確認してください。</block>
   <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">コレクタでエラーが</block>
   <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">データコレクタのポーリングで予期しない障害が発生しました。</block>
-  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">Cloud Insights のデータコレクタのページにアクセスして、その状況の詳細を確認してください。</block>
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">コレクタ警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">このアラートは通常、データコレクタまたはターゲットシステムの設定に誤りがある場合に発生します。今後のアラートを防止するために、設定を再確認してください。また、データコレクタがすべてのデータを収集した、完了していないデータの取得が原因の可能性もあります。これは、データ収集中に状況が変化した場合に発生します（データ収集の開始時に存在する仮想マシンが、データ収集の実行中とキャプチャの前に削除された場合など）。</block>
   <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">データコレクタまたはターゲットシステムの設定を確認します。
@@ -8691,10 +8567,6 @@ Aデバイスから。この画面で実行できる操作には、次のもの�
   <block id="72238c7fba52a89cb558ec81f9614e14" category="list-text">変更するデータコレクタの左側にあるチェックボックスをオンにします。</block>
   <block id="7160ed89dc0c3f9785f3ac5000cec931" category="list-text">右側のオプションメニューで、実行するオプションをクリックします。</block>
   <block id="2b50467575ea0e31ee278faf3e0f67a9" category="paragraph">選択した操作がデータコレクタで実行されます。データコレクタを削除するように選択すると、アクションを適合させる必要があるダイアログが表示されます。</block>
-  <block id="744c2e5e8de0fb5e62601edf855530ea" category="summary">Cloud Insights レポートで実行できる操作は、ユーザロールによって異なります。</block>
-  <block id="5744208be0ebea9c32cfe68a9d9fc35f" category="doc">Cloud Insights レポートユーザーの役割</block>
-  <block id="495b7380d463ce01575913a6ea6968e5" category="paragraph">Cloud Insights Premium Edition と Reporting を使用している場合は、環境内のすべての Cloud Insights ユーザに、 Reporting アプリケーションへのシングルサインオン（ SSO ）ログイン（など）が付与されます Cognos ）を参照してくださいメニューの * Reports * リンクをクリックすると、自動的に Reporting にログインします。</block>
-  <block id="0b6413006c2d6207ef366743605b0759" category="paragraph">Cloud Insights でのユーザロールによって、 Reporting ユーザのロールが決まります。</block>
   <block id="210c0b904b6b1f746ab7f14f0e0fdd6c" category="cell">Cloud Insights ロール</block>
   <block id="c906dae70d1c1dad249f312ca9792346" category="cell">Reporting ロール</block>
   <block id="25db8815b630aaafb84ec33f9c0ddcaa" category="cell">レポート権限</block>
@@ -8724,7 +8596,6 @@ Aデバイスから。この画面で実行できる操作には、次のもの�
   <block id="0ed4affcca91dbb422c531b626279fe7" category="cell">カスタムSQLを追加/編集します</block>
   <block id="37394ad048cccadcb8fadc6b50055f50" category="cell">カスタムSQLを使用してレポートを実行します</block>
   <block id="654a32ee33803fd11261b8d650858744" category="section-title">Reporting （ Cognos ） E メールの設定</block>
-  <block id="17ea205c242f02ff29a6c35d09220094" category="admonition">Cloud Insights Reporting （ Cognos アプリケーション）でユーザの E メール設定を変更した場合、それらの設定は現在のセッション _ に対してのみアクティブになります。Cognos からログアウトして再度ログインすると、 E メールの設定がリセットされます。</block>
   <block id="64e8aee8ab5bbf42a82844d113285456" category="section-title">SSO を有効にするために既存の環境を準備するには、どのような手順を実行する必要がありますか。</block>
   <block id="30cf09810334fcbe4d4ece63c4a34c1f" category="paragraph">レポートを確実に保持するには、次の手順を使用して、 _My Content_to _Team Content_ からすべてのレポートを移行します。この作業は、環境で SSO を有効にする前に行う必要があります。</block>
   <block id="b3ac02e1033cf67cbcd4dfd278c25e00" category="list-text">[メニュー]&gt;[コンテンツ]*に移動します</block>
@@ -8737,28 +8608,9 @@ Aデバイスから。この画面で実行できる操作には、次のもの�
   <block id="78b7fdcf94cd0a9b4abc26fa93d01881" category="list-text">メニューの右上隅で、 [ コピーまたは移動 ] を選択します。</block>
   <block id="971d8b720bc397978b6c7c380d73071a" category="list-text">_Team Content_ で新しく作成したフォルダに移動します</block>
   <block id="988def7e9ecdc3ce4afd14c8ab0318e2" category="list-text">[ コピー先 ] または [ 移動先 ] ボタンを使用して、新しく作成したフォルダにレポートを貼り付けます</block>
-  <block id="dd8a0eed4294a931eb1aea4dbf2d479d" category="list-text">Cognos で SSO を有効にしたら、アカウントの作成に使用した E メールアドレスで Cloud Insights にログインします。</block>
   <block id="e67b4314bdf84e8fa0c01d2a41ab7449" category="list-text">Cognos 内の _Team Content_folder に移動し、以前に保存したレポートを _My Content_ にコピーまたは移動します。</block>
   <block id="b33554a1697b5000df418d400a57bdd1" category="doc">構成とサポートされるデバイス</block>
-  <block id="572067bb227ce5c78f69ce716a35af5e" category="paragraph">この FAQ では、 Cloud Insights 構成とサポートされているデバイスに関する一般的な質問に回答しています</block>
-  <block id="2e43d8ffe77f394a83fdbdd6269eeb96" category="section-title">Cloud Insights で環境が変更されていませんか？</block>
-  <block id="b89b64d6d7021ce49e3d67925b3eb3f4" category="paragraph">いいえCloud Insights は、環境に関する情報を収集する読み取り専用ツールです。Cloud Insights では、アセットや構成を一切変更することはありません。</block>
-  <block id="2557561fb1daad259d69a2eff7767f9a" category="section-title">Cloud Insights でデバイスに必要な権限レベルのアクセス権は何ですか。</block>
   <block id="b74af5a9ece7cdf67ec6e4e272d7c116" category="paragraph">デバイスがサポートしている場合、ほとんどの場合、読み取り専用アクセスが必要です。読み取り専用アクセスを許可しないソリューションもあるため、適切な昇格されたアクセス許可が必要になります。</block>
-  <block id="b6e4757a4fed24ae14490ad102cfc2d8" category="section-title">Cloud Insights はどれくらいの頻度で情報を収集しますか。</block>
-  <block id="ff6f4b330e92d1228f84fcb98d25274c" category="paragraph">Cloud Insights は通常、パフォーマンスデータを 5 分ごとに収集し、論理構成と物理構成を 30 分ごとに検出しますCloud Insights では、推奨されるベストプラクティスや拡張性に基づいてデフォルトのポーリング間隔が設定されますが、それらの間隔についてはユーザが完全に制御することができます。</block>
-  <block id="7f3fae8bcffd39410a8caca4210f5f21" category="section-title">Cloud Insightsが環境に与える影響</block>
-  <block id="c21b8a2a80e57ca923413b1aa8daa2d0" category="paragraph">Cloud Insights のエージェントレス、アウトオブバンド、パッシブ IP 通信により、セットアップ、メンテナンス、データセンターエコシステムへの影響を最小限に抑えることができます。Cloud Insights のパフォーマンス開発チームは、データセンターのパフォーマンスへの影響を最小限に抑えるために、パフォーマンスの監視というアクティビティで大きな効果を発揮します。通常の運用環境では影響はごくわずかで、利用率の高いテクノロジプラットフォームやパフォーマンスの低いテクノロジプラットフォームで、リラックスした状態や強化が可能です。詳細については、『 Cloud Insights インストールガイド』を参照してください。</block>
-  <block id="cf1e9c3fd6c6dda4ce691bf7e1cfbaef" category="section-title">Cloud Insights ですべてのホスト / VM を一覧表示するにはどうすればよいですか。</block>
-  <block id="c63925f7ddebcf8bf216776c93dc34ab" category="paragraph">Cloud Insights は、ウィジェットとクエリリスト機能を補完するもので、データセンター資産のインベントリスタイルリストを提供します。スピンドルとその間に配置されたさまざまな構成要素を仮想マシンで一覧表示することができ、クエリ、ウィジェット、ダッシュボード、データウェアハウスレポートにアクセスできます。 RESTful API からアクセスできます。</block>
-  <block id="7e98d66dfbd4c45775ba23fbd7012694" category="section-title">Cloud Insights は、関連する非ハイパーバイザーホスト（物理サーバ）に対して同じタイプのサポートを提供しますか。</block>
-  <block id="007f1aeb22ce240cda7a086fbebadca5" category="paragraph">VMware などのハイパーバイザーは、 ESXi ホストとその仮想マシン（ VM ）に関する詳細情報を提供します。物理サーバの場合、 Cloud Insights はホスト HBA までの指標を収集します。Cloud Insights は、特許出願中のテクノロジを使用して物理サーバを検出する独自の方法を採用しています。ストレージやスイッチが検出されると、物理サーバのホスト名がファブリックエイリアス情報に含まれます。Cloud Insights は、これらのホスト名を選択し、 DNS に一致させて、ホストを自動的に Cloud Insights に割り当てます。この方法により、手動での入力更新やツールインベントリのメンテナンスが必要なくなります。</block>
-  <block id="bb70ba9aae987c31ba17072142dd69e7" category="section-title">Cloud Insights では、異機種混在環境全体で同じデバイスのメトリック深度（パリティ）が提供されますか。</block>
-  <block id="b994d75c0a79a39d9acb5a498320c41e" category="paragraph">サードパーティのプラットフォームとベンダーのテクノロジ全体で、標準化、共通性、および命名方法にはさまざまなレベルがあります。Cloud Insights は、容量とパフォーマンスの情報を一貫したフレームワークに正規化しようとします。容量やパフォーマンスの一部の指標は、 IOPS 、レイテンシ、物理容量など、デバイスのカウンタからネイティブに提供されます。カウンタを指定しない場合、 Cloud Insights は値を集計できます（たとえば、基盤となるボリュームの IOPS または容量を合計するなど）。どちらも使用できない場合は、 Cloud Insights はさまざまな計算アルゴリズムを通じて指標値の算出を試みます。Cloud Insights には、 Cloud Insights が現在収集していない指標を追加で組み込むための、汎用的な SNMP 統合機能があります。</block>
-  <block id="e885abb4ab92f6610661428455d3f5e7" category="section-title">Cloud Insights はファイバチャネルスイッチをサポートしていますか。</block>
-  <block id="425ecea49bf7aad828d3bf87e9318ea2" category="paragraph">はい。お客様のストレージ資産からデータを収集するだけでなく、 Cloud Insights はお客様の環境内の Cisco 、 Brocade 、 QLogic スイッチからインベントリデータとパフォーマンスデータも取得します。</block>
-  <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">インフラ全体のトポロジビューは使用できますか。Cloud Insights には「エンドツーエンドの可視性」が表示されますか。</block>
-  <block id="82976cdea05b7eb7fbe896786a79f35b" category="paragraph">はい。 Cloud Insights は、論理構成要素と物理構成要素を動的に検出してマッピングし、コンピューティング、ファブリック、仮想化、バックエンドストレージに関するエンドツーエンドのトポロジビューを対話型で提供します。トポロジアイコンを使用すると、影響を受けるリソースへのクイック起動ナビゲーションが可能になり、共有ストレージ環境でのワークロードや違反の特定に役立ちます。</block>
   <block id="1914b55914b6ee44bc0dcd84cc7caeb3" category="summary">Apache データコレクタの設定</block>
   <block id="a2c447b19901c50472d86c46b78e4269" category="doc">Apache Data Collector</block>
   <block id="7f9a66bbf7786386f3da129eb0ca4ce8" category="paragraph">このデータコレクタを使用すると、環境内の Apache サーバからデータを収集できます。</block>
@@ -8825,7 +8677,6 @@ CPUユーザ
   <block id="de8c15fa89e8678b9bf3103b3af983de" category="summary">クエリの結果を .csv ファイルにエクスポートする方法</block>
   <block id="d33a32a045d2f8fd982e5d3bf3425615" category="doc">クエリ結果を .csv ファイルにエクスポートしています</block>
   <block id="a28f8ea31869026f095819f05219285b" category="paragraph">クエリの結果を .csv ファイルにエクスポートして、データを分析したり、別のアプリケーションにインポートしたりできます。</block>
-  <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">Cloud Insights にログインします。</block>
   <block id="6bf988d25784231143b4418f8b3276c3" category="list-text">[ * クエリ * ] をクリックし、 [ * すべてのクエリを表示 * ] を選択します。</block>
   <block id="7b0f16b1eaee6aaf03ec5ce23ac38204" category="paragraph">[ クエリ ] ページが表示されます。</block>
   <block id="5c60159997a43283a73239576226151a" category="list-text">クエリをクリックします。</block>
@@ -9052,8 +8903,6 @@ Outgoing Byte Rateの略
   <block id="2e846daa38d7e7ac9350b703448d2886" category="summary">モニタによってトリガーされたアラートを表示する</block>
   <block id="f00316e5ead98cd18800712fd32c80d3" category="doc">モニタからのアラートの表示と管理</block>
   <block id="599031b826edb36138668c214857c5ee" category="inline-link-macro">監視対象のしきい値</block>
-  <block id="7175b0a435baf1ba17f00b97c6cf5d14" category="paragraph">Cloud Insights には、アラートが表示されます <block ref="6237c321048ea1332593fdb4bbfce320" category="inline-link-macro-rx"></block> 超過しています。</block>
-  <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">モニタとアラートは、 Cloud Insights Standard Edition 以降で使用できます。</block>
   <block id="66c4a1617e80afeb2335f5c047465edb" category="section-title">アラートの表示と管理</block>
   <block id="c2c8a0c7eb9ee3eecc0a42c64bcb2046" category="paragraph">アラートを表示および管理するには、次の手順を実行します。</block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">[* Alerts] &gt; [All Alerts] * ページに移動します。</block>
@@ -9078,16 +8927,13 @@ Outgoing Byte Rateの略
   <block id="b254b175b71c2c7dca19ba0dcbc5da07" category="paragraph">Alert Detail ページには ' アラートの詳細情報が表示されますこれには 'a_Summary_'a_Expert View_Showing Graphs related to the object' any_related Assets_'_Comments_entered by alert 博士が含まれます</block>
   <block id="1b489429111564ed0ac0109b22575d28" category="paragraph"><block ref="1b489429111564ed0ac0109b22575d28" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dc88092036f29d0c951123c9b9f932e" category="section-title">データが見つからない場合に警告します</block>
-  <block id="525a57ad5c1f150ce2c13c4797278523" category="paragraph">Cloud Insights などのリアルタイムシステムでは、監視の分析をトリガしてアラートを生成する必要があるかどうかを判断するために、次の2つのうちのいずれかに依存します。</block>
   <block id="9f76cab36d38af05dce74499497c7b3b" category="list-text">次のデータポイントに到達します</block>
   <block id="7b007d3b8d88462a6ae312862d2e1a99" category="list-text">データポイントがなく、十分な時間を待っているときに起動するタイマー</block>
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">データ到着が遅い場合や、データ到着がない場合と同様に、タイマーメカニズムを引き継ぐ必要があります。これは、「リアルタイム」でアラートをトリガーするためのデータ到着率が不十分であるためです。 そのため、質問は「分析ウィンドウを閉じて、何を確認するまでにどれくらい待つか」ということが一般的です。 待機時間が長すぎると、アラートを生成するのに十分な時間がかかります。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">長期的なデータ損失が発生する前の最後のデータポイントによって条件が違反されていることを通知する30分のウィンドウを備えたモニタがある場合、 この状態が持続していることをモニタが確認するために使用する他の情報を受信しなかったため、アラートが生成されます。</block>
   <block id="910ba96085a400a51981e26de1f1777c" category="section-title">「 Permanently Active 」アラート</block>
   <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">監視対象オブジェクトでは、条件を「常に * 」にするようにモニタを設定できます。たとえば、 IOPS&gt;1 や Latency &gt;0 などです。これらは頻繁に「テスト」モニターとして作成され、そして忘れられる。このような監視を実行すると、コンスティチュエントオブジェクトを永続的に開いたままにするアラートが作成されます。これにより、原因システムにかかる負荷や安定性の問題が時間の経過に</block>
-  <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">これを回避するために、 Cloud Insights は 7 日後に「 permanently active 」アラートを自動的に閉じます。基本的なモニタ状態が ( おそらく ) 継続して存在し、新しいアラートがほぼ即座に発行されることに注意してください。しかし、この「常時アクティブ」アラートを閉じることで、他の状況で発生する可能性のあるシステム負荷が軽減されます。</block>
   <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">レポートスキーマの図</block>
-  <block id="6674395fa1826fa5008d38849347faea" category="doc">Cloud Insights レポートスキーマの図</block>
   <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">スキーマテーブル</block>
   <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">このドキュメントでは、 Reporting Database のスキーマ図を示します。を含むファイルをダウンロードすることもできます <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">Inventory Datamart のサービスです</block>
@@ -9381,7 +9227,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="c7ddb198b304e6105825a061afe57109" category="list-text">削除する 1 つ以上のアプリケーションを選択します。</block>
   <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">[ 削除（ Delete ） ] をクリックします。</block>
   <block id="f15a825eae4d7211f1b9f849387b4133" category="paragraph">新しく割り当てたアプリケーションは、別のアセットから派生したアプリケーションよりも優先されます。たとえば、ホストから継承したアプリケーションがあるボリュームに新しいアプリケーションを割り当てた場合、派生したアプリケーションよりも新しいアプリケーションが優先されます。</block>
-  <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">一括削除アクションの _Save_on または _Remove_on をクリックすると、 Cloud Insights はアクションにしばらく時間がかかることを通知します。このメッセージは無視してもかまいません。操作はバックグラウンドで続行されます。</block>
   <block id="46152eb4e0d7febe5ed5ec5aa51b068f" category="admonition">関連するアセットが大量にある環境では、それらのアセットへのアプリケーションの割り当ての継承に数分かかることがあります。関連するアセットが多数ある場合は、継承の時間を長くしてください。</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">MDM （ Meta Data Manager ）クラスタ</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">デバイス</block>
@@ -9396,7 +9241,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">環境で実行されている特定のアプリケーションに関連付けられているデータを追跡するには、 Cloud Insights でアプリケーションを定義します。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">アプリケーションをビジネスエンティティに関連付ける場合は、アプリケーションを定義する前にビジネスエンティティを作成する必要があります。</block>
   <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">Cloud Insights を使用すると、アプリケーションに関連付けられているアセットのデータを追跡して、使用状況やコストレポートなどの情報を確認できます。</block>
-  <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">Cloud Insights メニューで、 * Manage &gt; Applications * の順にクリックします。</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">[アプリケーションの追加]ダイアログボックスが表示されます。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">アプリケーションの一意の名前を入力します。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">アプリケーションの優先度を選択します。</block>
@@ -9495,7 +9339,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="7bc9ce79d1161a4ae8d99d8fbb0200fe" category="cell">パフォーマンスのポーリング間隔（秒）</block>
   <block id="86afb40fc9bbcc4cc0e8479077f8544f" category="summary">デバイス解決は、環境内のパフォーマンスとインベントリを正確に追跡するのに役立ちます。</block>
   <block id="8123ff51cbfc7a2239546029a7501579" category="doc">デバイス解決ルール</block>
-  <block id="55f00e3a5c97bfc6881b5ab7d0599c78" category="paragraph">Cloud Insights で現在は自動的に識別されないホスト、ストレージ、およびテープを識別するためのデバイス解決ルールを作成します。作成したルールにより、環境内の既存のデバイスが識別されるほか、環境に追加された同様のデバイスも識別されます。</block>
   <block id="79a22b422d36a31a0a668444b08df08e" category="section-title">デバイス解決ルールの作成</block>
   <block id="9148697ee5b5960ccb3b3f75bc164fff" category="paragraph">ルールを作成するときは、最初に、ルールの実行対象となる情報のソース、情報の抽出に使用する方法、およびルールの結果に DNS ルックアップを適用するかどうかを特定します。</block>
   <block id="f7c91d9723fa01311e72a7dfb9d9f509" category="cell">デバイスの識別に使用するソース</block>
@@ -9518,11 +9361,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="855f2226dfcee82d4271ec6fbb53c8df" category="list-text">[* タイプ ] リストで、識別するデバイスを選択します。</block>
   <block id="80a615ce8fab0fb80b3b82f83fe8f061" category="paragraph">ホストまたはテープを選択できます。</block>
   <block id="cd9215b1fe4cac2ca101604d111e20e2" category="list-text">[ * ソース * ] リストで、ホストの識別に使用するソースを選択します。</block>
-  <block id="83e794253b9e049a8bcf101f95e15b56" category="paragraph">選択したソースに応じて、 Cloud Insights は次の応答を表示します。</block>
-  <block id="367e46d1b7635ba8ebfba10293781c7c" category="list-text">* ゾーン * には、 Cloud Insights で識別する必要があるゾーンおよび WWN がリストされています。</block>
-  <block id="54163e5af92a1a604470188e9af4c02a" category="list-text">*SRM * には、 Cloud Insights で識別する必要がある未識別のエイリアスがリストされています</block>
-  <block id="6f1c44139289209cda4a00b2dd892114" category="list-text">* ストレージ・エイリアス * には、 Cloud Insights で識別する必要があるストレージ・エイリアスおよび WWN がリストされています</block>
-  <block id="f7eec9ffbfca58801bdb533f553f416b" category="list-text">* Switch alias * には、 Cloud Insights で識別する必要があるスイッチエイリアスを示します</block>
   <block id="25f925a75096967a52ae9902aa1908ac" category="list-text">メソッド * リストで、ホストの識別に使用する方法を選択します。</block>
   <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">ソース</block>
   <block id="4c3880bb027f159e801041b1021e88e8" category="cell">メソッド</block>
@@ -9532,8 +9370,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="09a3caa30ebff1e54599f2aad82a55a1" category="cell">デリミタ、正規表現</block>
   <block id="47026f11c7cdb05d8b757fe20ea9b45b" category="cell">スイッチエイリアス</block>
   <block id="dad1f8d794ee0dd7753fe75e73b78f31" category="cell">ゾーン</block>
-  <block id="a0926b1623d5a866ee38b5fc4adbb937" category="list-text">Delimiters を使用するルールの場合は、デリミタとホスト名の最小文字数を指定する必要があります。
-ホスト名の最小文字数は、 Cloud Insights がホストの識別に使用する文字数です。Cloud Insights は、この文字数以上のホスト名に対してのみ DNS ルックアップを実行します。</block>
   <block id="0084c33ae0ff893ab69b573ecb9ac68e" category="paragraph">delimiters を使用するルールの場合、入力文字列は区切り文字でトークン化され、ホスト名候補のリストは、隣接するトークンを複数組み合わせて作成されます。リストは、最大から最小にソートされます。たとえば '_vipsnq03_hba3_emc3_12ep0_ の入力 sring の場合 ' リストは次のようになります</block>
   <block id="d4bb7421cba1adf9cad0ad58bb0aff54" category="list-text">vipsnq03_hba3_emc3_12ep0</block>
   <block id="7c60ca20090d1e0c171fd996ff88689b" category="list-text">vipsnq03_hba3_emc3</block>
@@ -9550,7 +9386,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="f5d37dace9a539d56f93b2e2c32704d5" category="paragraph">ルールの実行結果は、 * FC identify * タブに表示されます。</block>
   <block id="c2c94fa68f8065fa325aff6c260bebfb" category="section-title">自動デバイス解決の更新を開始しています</block>
   <block id="d9260b21611ad1011984d923ac0c6cdd" category="paragraph">デバイス解決の更新では、前回の完全な自動デバイス解決の実行後に手動で行った変更がコミットされます。更新を実行すると、デバイス解決設定に対する新しい手動のエントリのみをコミットして実行できます。完全なデバイス解決は実行されません。</block>
-  <block id="4244e4390dde5d14ae81d1e2f0df74fb" category="list-text">Cloud Insights Web UI にログインします。</block>
   <block id="602d036606a01b8cb35e0ed21b974ab3" category="list-text">[ * デバイス解決 * ] 画面で、 [* AR の実行 ] ボタンの下矢印をクリックします。</block>
   <block id="52c9729645742b2b209ecc6c5b334f51" category="list-text">アップデートを開始するには、 * アップデート * をクリックします。</block>
   <block id="81a6221108b147eb7e04636ee26720f9" category="section-title">ルールに基づく手動識別</block>
@@ -9565,7 +9400,6 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="156188a7e93cbfebbc784963fbd79ec1" category="list-text">ルールの順序を、ニーズに合った順序に変更します。</block>
   <block id="7aef684ed3b8256ac0eb77c22e5de55b" category="paragraph">ルールの順序は識別画面で変更されますが、グローバルには変更されません。</block>
   <block id="3e6a6e204935e5560fba5d2fbe05a425" category="list-text">ニーズに合った方法を選択します。</block>
-  <block id="1c32d3f40cb344f9734f6fc50f5a37d4" category="paragraph">Cloud Insights は、上から順に表示された方法に従ってホスト解決プロセスを実行します。</block>
   <block id="ef134b9e133b3a5eb7b3017bb03532e8" category="paragraph">適用されるルールが検出されると、ルールの名前がルールの列に表示され、手動で識別されます。</block>
   <block id="cedb6bfb2c5af175876524057d816fcc" category="inline-link-macro">ファイバチャネルのデバイス解決</block>
   <block id="59e65bbfaed88fdc4556d4496b080ede" category="inline-link-macro">IP デバイス解決</block>
@@ -9984,14 +9818,11 @@ IDを確認します
   <block id="e793f33e22dc68617d81d95ccdb1bab3" category="summary">アノテーションの作成方法</block>
   <block id="edd98807c01d4ddff35c7ee77abafc4b" category="doc">アノテーションの使用</block>
   <block id="3d0643c815127de3318400aed36e518e" category="paragraph">アノテーションを作成し、監視対象のアセットに割り当てる。アノテーションは、物理的な場所、終了日、ストレージ階層、ボリュームのサービスレベルなど、アセットに関する情報を提供するメモです。</block>
-  <block id="8588f2251c92b7b2199a57ed05315da0" category="paragraph">アノテーションを使用すると、ビジネスニーズに合わせて、ビジネス固有のカスタムデータをアセットに追加できます。Cloud Insights には、アセットのライフサイクル（開始日や終了日）、建物やデータセンターの場所、階層などの一連のアノテーションがデフォルトで用意されていますが、他の方法でデータを表示することもできます。</block>
-  <block id="4fb410d11105f6876e135054407064be" category="paragraph">カスタムアノテーションのデータは、スイッチのメーカー、ポートの数、パフォーマンス統計など、すでに収集されたデバイスの補足データになります。アノテーションを使用して追加したデータは Cloud Insights で検出されません。</block>
   <block id="8d84228028613aa40d29263036d4812f" category="list-text">環境のデータを関連付ける必要がある業界固有の用語をリストします。</block>
   <block id="1c1c16b59c04d83c1d011069ab1af1a2" category="list-text">環境のデータを関連付ける必要がある会社固有の用語をリストします。</block>
   <block id="5bc4d7747292890d65b6219e6d50ab2c" category="list-text">使用できるデフォルトのアノテーションタイプがないかどうかを特定します。</block>
   <block id="8cdb0f38168bb0b837e9fb13d6ec5ec9" category="list-text">作成する必要があるカスタムアノテーションを特定します。アセットに割り当てる前に、アノテーションを作成する必要があります。</block>
   <block id="3aad7f909aef1b421fc64a00f8a648e8" category="paragraph">アノテーションを作成するには、次の手順を実行します。</block>
-  <block id="8d9c681869c01295953453519607171e" category="list-text">Cloud Insights メニューで、 * Manage &gt; Annotations * をクリックします</block>
   <block id="371e31a3d5e49ce4aef0026fa352ba82" category="list-text">[ * + 注釈 * （ * + Annotation * ） ] をクリックして、新しい注釈を作成する。</block>
   <block id="4d28bcf6fd64320dd1c41f87eeb2a384" category="list-text">名前（ Name ）、アノテートアイテム（概要）を入力し、新しいアノテートアイテムに入力します。</block>
   <block id="28b6a289c5678d9fbba48da859f8bbc3" category="paragraph">たとえば、次のように入力して、データセンター 4 のアセットの物理的な場所を定義するテキストアノテーションを作成します。</block>
@@ -10001,7 +9832,6 @@ IDを確認します
   <block id="3a3a0bbbd46aee8c1de13c716dec0a87" category="section-title">アセットへのアノテーションの手動割り当て</block>
   <block id="17432f8f5e0722d4d1ea44f040917cc1" category="paragraph">アセットにアノテーションを割り当てると、アセットをビジネスに関連付けてソート、グループ化、レポートするのに役立ちます。アノテーションルールを使用して特定のタイプのアセットにアノテーションを自動的に割り当てることができますが、アセットページを使用して個々のアセットにアノテーションを割り当てることができます。</block>
   <block id="bfe926bd2c64c9ad496bbca9a4a786f5" category="list-text">割り当てるアノテーションを作成しておく必要があります。</block>
-  <block id="693c7981a83d47e6d94b61d6cec856a1" category="list-text">Cloud Insights 環境にログインします。</block>
   <block id="b68523b004e8cdbbb23ea12bb69a9932" category="list-text">アノテーションを適用するアセットを選択します。</block>
   <block id="48f70cd5c81d1867d12144bf33d2414e" category="list-text">アセットを検索するには、クエリ、ダッシュボードウィジェットから選択、または検索します。目的のアセットが見つかったら、リンクをクリックしてアセットのランディングページを開きます。</block>
   <block id="63f4026fad5aab1373988d282ff074f2" category="list-text">アセットページの [ ユーザーデータ ] セクションで、 [*+Annotation*] をクリックします。</block>
@@ -10009,7 +9839,6 @@ IDを確認します
   <block id="7b41ba856422d0e1256509588b698bfc" category="paragraph">アノテーションを割り当てたあとに値を変更する場合は、アノテーションフィールドをクリックして別の値を選択します。
 fly_option で _Add 新規値を選択したリストタイプのアノテーションの場合は ' 既存の値を選択するだけでなく ' 新しい値を入力できます</block>
   <block id="7035ae0718ec28aa3b80eb15a7b23c00" category="section-title">アノテーションルールを使用してアノテーションを割り当てる</block>
-  <block id="15b225e998c8330236a38d1593961f9c" category="paragraph">定義した条件に基づいてアセットにアノテーションを自動的に割り当てるには、アノテーションルールを設定します。それらのルールに基づいて、アセットにアノテーションが割り当てられます。 Cloud InsightsCloud Insights には、デフォルトのアノテーションルールも 2 つ用意されています。これらのルールは、ニーズに合わせて変更することができ、不要な場合は削除することもできます。</block>
   <block id="8447ce78b2828f5afe95b0662ae31bda" category="section-title">アノテーションルールの作成</block>
   <block id="953ce98a8e686f7367bc456b242d829f" category="paragraph">アノテーションを個々のアセットに手動で適用する代わりに、アノテーションルールを使用して複数のアセットに自動的にアノテーションを適用することができます。個々のアセットページで手動で設定したアノテーションは、 Insight でアノテーションルールが評価されるときにルールベースのアノテーションよりも優先されます。</block>
   <block id="f49369ccd397836d0ae7da95e0676314" category="paragraph">アノテーションルールのクエリを作成しておく必要があります。</block>
@@ -10048,7 +9877,6 @@ fly_option で _Add 新規値を選択したリストタイプのアノテーシ
   <block id="e24a1d497706260167f8a13cf71db79a" category="list-text">YUM パッケージマネージャを使用して、必要な Linux パッケージをインストールします。</block>
   <block id="76857222b6ed7c427dc152c9014fa1db" category="list-text">Linux パッケージのインストール _wget_or_unzip_native 。</block>
   <block id="9661d643a1d7bcdfae7260083848fe7c" category="section-title">ワークロードセキュリティエージェントをインストールします</block>
-  <block id="af3e8f1c899e4154e0ef2755c159cbf4" category="list-text">Cloud Insights 環境に管理者またはアカウント所有者としてログインします。</block>
   <block id="154f1ab497a09601cd1fb9b781495c52" category="list-text">[*+Agent] をクリックし、ターゲットプラットフォームとして RHEL を指定します。</block>
   <block id="1958a7c94a832d37f7a96957c47d39f9" category="list-text">[ エージェントインストール ] コマンドをコピーします。</block>
   <block id="6b40ad8e187509b794c6e9b5ead388c5" category="inline-link-macro">エージェントの前提条件</block>
@@ -10896,16 +10724,13 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="55704bfa757d6e25076487b4c57e8de5" category="list-text">SRM エイリアス</block>
   <block id="e6701626042f4cdbbf1f1c07c89b1577" category="list-text">ユーザ定義</block>
   <block id="7b987fc6b52ecc9f781af4a92c464c0a" category="section-title">ファイバチャネルデバイスを手動で追加する</block>
-  <block id="f72ccbf2540b53d0663992d8c260aaf9" category="paragraph">デバイス解決の Fibre Channel Identify タブで使用可能な _Manual Add_feature を使用して、ファイバチャネルデバイスを Cloud Insights に手動で追加できます。このプロセスは、今後検出されることが予想されるデバイスの事前識別に使用される場合があります。</block>
   <block id="0304d2acc1856c0570677f6f1211d036" category="paragraph">システムにデバイス識別情報を追加するには、 WWN または IP アドレスとデバイス名を確認しておく必要があります。</block>
   <block id="c2760977611d73e73d5fadf661851083" category="paragraph">ホスト、ストレージ、テープ、または不明なファイバチャネルデバイスを手動で追加できます。</block>
-  <block id="e3106c5632694af76539eecf4c0c14d0" category="list-text">Cloud Insights Web UI にログインします</block>
   <block id="b703441185bbc8f9edbbe92cffff457f" category="list-text">[ * 追加（ Add * ） ] ボタンをクリックします。</block>
   <block id="bc487f956d8c9d975829a3e7d4a91f28" category="paragraph">[ * デバイスの追加 * ] ダイアログが表示されます</block>
   <block id="de78b7c4d12954faa4a777214bc95a67" category="list-text">WWN または IP アドレスとデバイス名を入力し、デバイスタイプを選択します。</block>
   <block id="d45a448601de236c101d9139128549fe" category="paragraph">入力したデバイスは、 Fibre Channel identify タブのデバイスのリストに追加されます。ルールは _Manual_ と指定されます。</block>
   <block id="8270fd152228faf9926074f629f0b1ef" category="section-title">.csv ファイルからファイバチャネルデバイスの識別情報をインポートしています</block>
-  <block id="c54be16d9b6f3590f43c0d4d63ac456e" category="paragraph">.csv ファイル内のデバイスのリストを使用して、ファイバチャネルデバイスの識別情報を Cloud Insights デバイスの解決に手動でインポートできます。</block>
   <block id="fd1ae388d2854f7357f46b3cd5d1de57" category="paragraph">デバイスの識別情報をデバイス解決に直接インポートするには、正しい形式の .csv ファイルが必要です。ファイバチャネルデバイスの .csv ファイルには、次の情報が必要です。</block>
   <block id="bb26d2a52501e96da7234e7a1681ef37" category="paragraph">データフィールドは、次の例に示すように、引用符で囲む必要があります。</block>
   <block id="23daea2345cff1ef2d70005318ec6cc3" category="admonition">ベストプラクティスとして、最初にファイバチャネル識別情報を .csv ファイルにエクスポートし、そのファイルに必要な変更を加えてから、ファイルをファイバチャネル識別情報にインポートすることを推奨します。これにより、必要な列が適切な順序で配置されます。</block>
@@ -10915,7 +10740,6 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="63b910ede4415a393f88530c601633f4" category="list-text">インポートする .csv ファイルが格納されているフォルダに移動し、目的のファイルを選択します。</block>
   <block id="0c17f01689433d061a314c6df013e6f0" category="paragraph">入力したデバイスは、ファイバチャネル識別タブのデバイスのリストに追加されます。「規則」は「手動」と識別されます。</block>
   <block id="e75b0aa40e133ca1c44995aa9a074aeb" category="section-title">.csv ファイルへのファイバチャネルデバイス識別情報のエクスポート</block>
-  <block id="66f79162a6412fc8a675f71f28db4173" category="paragraph">Cloud Insights デバイス解決機能から、既存のファイバチャネルデバイスの識別情報を .csv ファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更して Cloud Insights に再びインポートすることで、最初にエクスポートした識別情報と類似するデバイスの識別に使用できます。</block>
   <block id="a9bf74b26ee4b38e5dbb74fb19c8abef" category="paragraph">このシナリオは、 .csv ファイルで簡単に編集できる属性がデバイスに似ている場合に使用し、その後システムにインポートし直すことができます。</block>
   <block id="20bf5c31616eac18746c551892188b95" category="paragraph">ファイバチャネルデバイスの識別情報を .csv ファイルにエクスポートすると、次の情報がこの順序でファイルに格納されます。</block>
   <block id="fc5482f286ef5daafd6a8d85c7885c03" category="list-text">識別情報をエクスポートする 1 つ以上のファイバチャネルデバイスを選択します。</block>
@@ -10927,7 +10751,6 @@ https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-inst
   <block id="dee5cfb5319806eabd9b28296b26207a" category="summary">ワークロードセキュリティActive Directoryユーザーディレクトリコレクタの設定</block>
   <block id="0352c19ca21d40072aea36bf372abc1d" category="doc">Active Directory （ AD ）ユーザディレクトリコレクタの設定</block>
   <block id="8dccebe9a8725eed9d49bcce51664895" category="paragraph">ワークロードセキュリティは、Active Directoryサーバからユーザ属性を収集するように設定できます。</block>
-  <block id="0fc244ec65c5541551b1c439ffac1ee7" category="list-text">このタスクを実行するには、 Cloud Insights 管理者またはアカウント所有者である必要があります。</block>
   <block id="ae955d02a07f9a58ed0029e3854c3705" category="list-text">Active Directory サーバをホストしているサーバの IP アドレスを確認しておく必要があります。</block>
   <block id="9893d16b892001ac527b5dd093663300" category="list-text">ユーザディレクトリコネクタを設定する前に、エージェントを設定する必要があります。</block>
   <block id="b9674de27144ea13a735da22fe1380a9" category="list-title">ユーザーディレクトリコレクタの設定手順</block>
@@ -11202,7 +11025,6 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="23911ec6737c5f573a24c330a412e271" category="cell"><block ref="23911ec6737c5f573a24c330a412e271" category="inline-link-macro-rx"></block></block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">このガイドを参照してください</block>
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">ワークロードセキュリティは、他のツールとも統合できます。  例： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> Splunkと統合し、</block>
-  <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Tegraf</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">前提条件</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">プロキシ</block>
@@ -11211,13 +11033,10 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">展開したオペレータのバージョンがAgentConfigurationをサポートしているかどうかを確認するには、次のコマンドを実行します。</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">「Error from server (NotFound)」というメッセージが表示された場合は、AgentConfigurationを使用する前にオペレータをアップグレードする必要があります。</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">プロキシサポートを設定しています</block>
-  <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">プロキシは、インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをCloud Insights 環境に接続するために必要です</block>
-  <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">ターゲットのKubernetesクラスタがCloud Insights 環境と通信するために必要なプロキシ</block>
   <block id="b28d80fd10a0256acc49b263b43162c6" category="list-text">現在のユーザの _https_proxy_ 変数と _http_proxy_environment 変数を設定します。</block>
   <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">セットアップするプロキシに認証（ユーザ名/パスワード）がない場合は、次のコマンドを実行します。</block>
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">セットアップするプロキシに認証（ユーザ名/パスワード）が設定されている場合は、次のコマンドを実行します。</block>
   <block id="ba5a4399ff89e39d6d73b55b320d32dc" category="section-title">カスタムまたはプライベートのDockerリポジトリを使用する</block>
-  <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">NetApp Monitoring Operatorのインストールタイルから[Image Pull Snippet]を実行します。このコマンドは、Cloud Insights リポジトリにログインし、オペレータのすべてのイメージ依存関係をプルして、Cloud Insights リポジトリからログアウトします。プロンプトが表示されたら、指定したリポジトリの一時パスワードを入力します。このコマンドは、オプション機能を含む、オペレータが使用するすべてのイメージをダウンロードします。これらの画像がどの機能に使用されるかについては、以下を参照してください。</block>
   <block id="e353fb1c241718a57c3f1ebea2f2eda2" category="paragraph">Core Operator Functionality and Kubernetes Monitoringの略</block>
   <block id="aadb900c6eaeed8ade58660fe972acec" category="list-text">ネットアップによる監視</block>
   <block id="58af01fce51ad07206150454f8b829be" category="list-text">kube-state-metricsの略</block>
@@ -11226,7 +11045,6 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="f8dcd7540ab5947fed469158330013cc" category="paragraph">イベントログ</block>
   <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">ネットワークのパフォーマンスとマップ</block>
   <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">ci-net-observerの略</block>
-  <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのイメージタグとディレクトリパスが、Cloud Insights リポジトリ内のイメージタグとディレクトリパスと一致していることを確認します。</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">operator-config.yamlのAgentConfigurationを編集して、新しいDockerリポジトリの場所を反映します。プライベートリポジトリ用に新しいimagePullSecretを作成します。詳細については、_ https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_を参照してください</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift の手順</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">OpenShift 4.6以降で実行している場合は、_runPrivileged_settingを有効にするには、_operator-config.yaml_でAgentConfigurationを編集する必要があります。</block>
@@ -11267,7 +11085,6 @@ bind-DN 入力が常に uid=ldapuser,cn=Users,cn=account,dc=domain,dc=companynam
   <block id="ce2ce538c48e429c8dc98553649f3bbd" category="paragraph">レポートの出力形式と配信のカスタマイズ、レポートのプロパティまたはスケジュールの設定、およびレポートの電子メール送信を行うことができます。</block>
   <block id="b4c2efa32144f8c7f6fa5513ac1c7e55" category="section-title">レポートの出力形式と配信方法のカスタマイズ</block>
   <block id="8bee38bef7beb0158135e68890b6cc17" category="paragraph">レポートの形式と配信方法をカスタマイズできます。</block>
-  <block id="e47829d1e83392ea564ddf977764e821" category="list-text">Cloud Insights レポートポータルで、*[メニュー]&gt;[コンテンツ]&gt;[マイコンテンツ/チームコンテンツ]*に移動します。カスタマイズするレポートの上にマウスを置き、「3つのドット」メニューを開きます。</block>
   <block id="56b45e214ba24df2bd22f30c8daa395b" category="inline-image-macro">レポートの出力と配信</block>
   <block id="9ec7fe14283d298932f96b5a7faecee5" category="paragraph"><block ref="9ec7fe14283d298932f96b5a7faecee5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a650cac6a2306a551f953daeb286482a" category="list-text">[ プロパティ ] 、 [ スケジュール ] の順にクリックします</block>
@@ -11826,16 +11643,12 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="086277cff14c76660393830e836d297a" category="cell">PowerScale クラスタのパスワード</block>
   <block id="9f956bf45dbca135e64b6aca59d593be" category="cell">SSHポート</block>
   <block id="232094a7e5aa55b6c772e1cd66d100a2" category="cell">SSH サービスポートデフォルトは22です。</block>
-  <block id="72d6283da69c57ead27d8e06fc12710c" category="summary">Cloud Insights での作業の開始</block>
   <block id="5f519de4ae11d5d3a6674c85a3029a81" category="doc">データの収集を開始しています</block>
-  <block id="059cc7c7dfcad8104bd312a68d9e0c4d" category="paragraph">Cloud Insights に登録して初めて環境にログインしたあと、以下の手順に従ってデータの収集と管理を開始します。</block>
   <block id="b6070479612983d59fa5a6e72f7051b4" category="paragraph">データコレクタによって、ストレージデバイス、ネットワークスイッチ、仮想マシンなどのデータソースから情報が検出されます。収集された情報は、分析、検証、監視、およびトラブルシューティングに使用されます。</block>
-  <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">Cloud Insights には、次の3種類のデータコレクタがあります。</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">インフラ（ストレージデバイス、ネットワークスイッチ、コンピューティングインフラ）</block>
   <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">サービス（Kafkaなど）</block>
   <block id="06795a6787cf0dba942c7227d6c27d2d" category="paragraph">サポートされているベンダーとモデルから最初のデータコレクタを選択してください。あとでデータコレクタを簡単に追加できます。</block>
   <block id="5774c882dad1ebd6e046b3a9fdfae618" category="section-title">Acquisition Unit をインストールする</block>
-  <block id="3e3d1f4256fe73b88a0ea758b3951eb9" category="paragraph">Infrastructure_data コレクタを選択した場合、 Cloud Insights にデータを注入するには Acquisition Unit が必要です。収集対象のデータセンターにあるサーバまたはVMにAcquisition Unitソフトウェアをダウンロードしてインストールする必要があります。1 つの Acquisition Unit を複数のデータコレクタに使用できます。</block>
   <block id="53940e3b856f2e1c626138e2f7682793" category="inline-image-macro">Linux AU の手順</block>
   <block id="38501232d98de5e611cc0c9ca2418a61" category="paragraph"><block ref="38501232d98de5e611cc0c9ca2418a61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link-macro">手順</block>
@@ -11852,9 +11665,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="c8d85f57956f127cf15ceb0dd0f01a67" category="paragraph">あとで追加のデータコレクタを設定できます。</block>
   <block id="38842479851f6bd610129b076a042485" category="section-title">Data Collector の設定 - オペレーティングシステムとサービス</block>
   <block id="0f0f84cb9775a6f4ad6b4796bfcedfe9" category="section-title">オペレーティングシステム</block>
-  <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">Operating System_dataコレクタの場合は、Cloud Insights エージェントをインストールするプラットフォーム（Linux、Windows）を選択します。
-サービスからデータを収集するには、少なくとも 1 人のエージェントが必要です。
-エージェントは、 Cloud Insights で使用するために、ホスト自体からもデータを収集します。このデータは、ウィジェットなどでは「ノード」データに分類されます</block>
   <block id="3016defc353ac1d6c8fb67380dc453a9" category="list-text">エージェントホストまたは VM でターミナルまたはコマンドウィンドウを開き、表示されたコマンドを貼り付けてエージェントをインストールします。</block>
   <block id="4307f095d2e3c10914861e3d0b27520b" category="list-text">インストールが完了したら、 [* Complete Setup* （セットアップの完了） ] をクリックします。</block>
   <block id="e12a120ad94d5830be5f08ee0c2e792d" category="paragraph">_Service_data コレクタの場合は、タイルをクリックして、そのサービスの指示ページを開きます。</block>
@@ -11864,7 +11674,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="d32473e42c46d22acc41317860a18c66" category="list-text">指示に従ってデータコレクタを設定します。</block>
   <block id="b8902c68dd65721bc4d101971940d8eb" category="list-text">設定が完了したら、 [* Complete Setup* （セットアップの完了） ] をクリックします。</block>
   <block id="3ca7dcc67a0a5082a6d55b440d8a48ca" category="section-title">ダッシュボードを追加します</block>
-  <block id="ef484ddf1fa70f0f7e6e12c5ec398fd0" category="paragraph">設定対象として選択した初期データコレクタのタイプ（ストレージ、スイッチなど）に応じて、関連するダッシュボードが 1 つ以上インポートされます。たとえば、ストレージデータコレクタを設定すると、ストレージ関連のダッシュボードのセットがインポートされ、 Cloud Insights のホームページとして設定されます。ホームページは、 [ ダッシュボード（ *Dashboards ） ]&gt;[ すべてのダッシュボードを表示（ Show All Dashboards ） ] リストから変更できます。</block>
   <block id="884c68aa76be99399251cf49057f5089" category="inline-link-macro">自分で作成します</block>
   <block id="30ac9f66beb1edda1ef095e871e96e65" category="paragraph">追加のダッシュボードは、あとからインポートすることも、インポートすることもでき <block ref="d9f1bed19a893c2599f38f8ee38e7f25" category="inline-link-macro-rx"></block>。</block>
   <block id="2c8315992b66ae0480f26fe69cea1579" category="section-title">これで終了です</block>
@@ -11874,7 +11683,6 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="34ae1a7b1b914e59ce0a8fde553aaca7" category="list-text">プロンプトが表示されたら、 Agent または Acquisition Unit をインストールします</block>
   <block id="5e80381d4063fd3519fda3181ce1160c" category="list-text">Data Collector を設定します</block>
   <block id="6b290024189e0c4e1b4dfcdf7383e010" category="section-title">便利な定義</block>
-  <block id="684e976accba59790f5593505086fd7a" category="paragraph">Cloud Insights データコレクタまたは機能について説明する場合は、次の定義が役立ちます。</block>
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">コレクタのライフサイクル:コレクタは'ライフサイクルの次のいずれかの状態に属します</block>
   <block id="5e4f18167064639e23a7d876eabb697a" category="inline-link-macro">フィーチャーをプレビューします</block>
   <block id="d9501a665dbf4f495431fcca37973166" category="list-text">*プレビュー*：限定された容量または限定された視聴者に提供されます。 <block ref="1e732bee0ba13f7cae2a07a19dd93ab4" category="inline-link-macro-rx"></block> データコレクタは、プレビュー期間後にGAになる予定です。プレビュー期間は、対象者や機能によって異なります。</block>
@@ -11927,18 +11735,11 @@ Throughput –このストレージプールの容量の要因となっている
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要件</block>
   <block id="da332091bd88d039b97a281cf8c545c1" category="cell">Acquisition Unit サーバまたは VM が次の条件を満たしていることを確認します <block ref="e5b1973153b9956f66244f44dc226837" category="inline-link-macro-rx"></block></block>
   <block id="ec520aa097684a7ef9fbc8e5932bce5b" category="cell">ネットワーク要件が満たされていません</block>
-  <block id="e8260fddde00adfa272f3bc4a2799c40" category="cell">Acquisition Unit のサーバ / VM から、ポート 443 経由で SSL 接続経由で Cloud Insights 環境（ &lt;environment-name&gt; .c01.cloudinsights.netapp.com ）にアクセスできることを確認します。次のコマンドを実行します。
-
- _ping &lt;environment-name&gt;.c01.cloudinsights.netapp.com_
-_traceroute &lt;environment-name&gt;.c01.cloudinsights.netapp.com_
-_curl \https://&lt;environment-name&gt;.c01.cloudinsights.netapp.com_
-_wget\https://&lt;environment-name&gt;.c01.cloudinsights.netapp.com_</block>
   <block id="0598f9e3c81145f1690df5b4ae51dafe" category="cell">プロキシサーバが正しく設定されていません</block>
   <block id="fdc0bbea67649674651e9ebb0cbfa3f3" category="cell">プロキシの設定を確認し、必要に応じて Acquisition Unit ソフトウェアをアンインストールして再インストールして、正しいプロキシの設定を入力します。
 
 1. 「カール」を試してみます。  プロキシに関する "man curl " 情報 / ドキュメントを参照してください -- preproxy 、 --proxy-* (curl では多数のプロキシ設定がサポートされているため、これはワイルドカード "*" です ) 。
 2. 「 wget 」を試します。  プロキシオプションについては、ドキュメントを参照してください。</block>
-  <block id="afe8a88f99c05a0a5baf48c34d5a39ce" category="cell">Acquisition Unit のインストールが Cloud Insights で失敗しました。 Acquisition Service の開始時にクレデンシャルエラーが発生し、 acq.log に表示されます。</block>
   <block id="a290bda041e4dee345a20a39b11eaaef" category="cell">これは、プロキシのクレデンシャルに特殊文字が含まれていることが原因で発生することがあります。AU （ _sudo cloudInsights - uninstall.sh ）をアンインストールし、特殊文字を使用せずに再インストールします。</block>
   <block id="d9b7b613ccbafa22115fdadb257189d5" category="cell">権限の問題</block>
   <block id="92a3422e5997b3b7ed860b7d01f51063" category="cell">管理者権限を持つユーザとしてログインしていることを確認してください</block>
@@ -11948,20 +11749,9 @@ Windows サービスを使用して取得を再開します</block>
   <block id="53b3bedf13d3e807ef34008234bae7e3" category="cell">データ収集の問題：</block>
   <block id="23d2b614165a02dae994ad1dee7de394" category="cell">Data Collector のランディングページで [Send Error Report] ボタンをクリックして、エラーレポートを送信します</block>
   <block id="8e67452398a9be9d5950b42f336fb8e5" category="cell">ステータス：ハートビート失敗</block>
-  <block id="0fe795cbd34bb3dbf98b6171a8effb44" category="cell">Acquisition Unit （ AU ）は、リースを更新するために 60 秒ごとに Cloud Insights にハートビートを送信します。ネットワーク問題または Cloud Insights が応答しないためにハートビートコールが失敗した場合、 AU のリース時間は更新されません。AU のリース期限が切れると、 Cloud Insights に「 Heartbeat Failed 」というステータスが表示されます。
-
-トラブルシューティングの手順：
-
-* Acquisition UnitサーバとCloudInsights間のネットワーク接続を確認します。
-* Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。
-* Acquisition Unit のログ（ &lt;Install dir&gt; ： \Program Files\Cloud Insights \Acquisition Unit \log\acq.log ）でエラーがないかどうかを確認します。</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">「 Heartbeat Error: message 」が表示されています</block>
-  <block id="e2284f166fb986bff4a211a1598659c8" category="cell">このエラーは、ネットワークの中断によって Acquisition Unit と Cloud Insights 環境の間の通信が 1 分以上中断された場合に発生することがあります。AU と Cloud Insights の間の接続が安定し、アクティブであることを確認します。</block>
   <block id="502a82b638ebddf48572103e556b289c" category="section-title">プロキシとファイアウォールに関する考慮事項</block>
-  <block id="c2b48d9abfe2f21fdabae7853b104c9b" category="paragraph">組織でインターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシ動作を理解し、 Cloud Insights が機能するように特定の例外を要求する必要があります。次の事項に注意してください。</block>
   <block id="6e90dd5dac99151aee13bc1464af1a6c" category="list-text">まず、組織はデフォルトでアクセスをブロックしていますか。また、特定の Web サイト / ドメインへのアクセスのみを例外として許可していますか。その場合は、次のドメインを例外リストに追加する必要があります。</block>
-  <block id="f34ad9827119fbc0e1d60a2cd58bf152" category="paragraph">Cloud Insights Acquisition Unit は、 Cloud Insights を使用して Web ブラウザで操作した場合にも、そのドメイン名を持つホストにアクセスされます。</block>
-  <block id="379569df69e56e52fbf21bb6f81ae744" category="list-text">次に、一部のプロキシは、ネットアップから生成されたものではないデジタル証明書を使用して Cloud Insights Web サイトを偽装し、 TLS/SSL インスペクションを実行しようとします。Cloud Insights Acquisition Unit のセキュリティモデルは、これらのテクノロジと基本的に互換性がありません。Cloud Insights Acquisition Unit に正常 Cloud Insights にログインしてデータを検出するには、この機能以外のドメイン名も必要になります。</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">プロキシエンドポイントの表示</block>
   <block id="2cdbeeb863ed7a8522ac9190b6294a61" category="paragraph">プロキシエンドポイントを表示するには、オンボーディング中にデータコレクタを選択するときに * Proxy Settings * リンクをクリックするか、 * Help &gt; Support * ページの _Proxy Settings__ のリンクをクリックします。次のようなテーブルが表示されます。ワークロードセキュリティを使用している環境では、設定済みのエンドポイントURLもこのリストに表示されます。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">プロキシエンドポイントテーブル</block>
@@ -11969,7 +11759,6 @@ Windows サービスを使用して取得を再開します</block>
   <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="section-title">リソース</block>
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">ネットアップナレッジベース</block>
   <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">その他のトラブルシューティングのヒントについては、を参照してください <block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block> （サポートサインインが必要です）。</block>
-  <block id="aae5f077ba03e56d1d16eaba111b41fa" category="paragraph">その他のサポート情報については、 Cloud Insights を参照してください <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ページ</block>
   <block id="fb4625dae0cbdbfc4f7cc563d8eb154e" category="summary">HDSデータコレクタの設定</block>
   <block id="18df56ebf0e124f64450bede16fcbbbb" category="doc">Hitachi HCP データコレクタ</block>
   <block id="70751eb50dc631e5b8d4123b7b34e201" category="paragraph">このデータコレクタは、 HCP 管理 API を使用して、 Hitachi Content Platform （ HCP ）をサポートします。</block>
@@ -12021,7 +11810,6 @@ Windows サービスを使用して取得を再開します</block>
 暗号化ファイルのグラフには、ARP解決策 によってボリューム暗号化アクティビティが検出されたタイムスタンプが示されます。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
   <block id="56684562f1f82eb99e69650845acd6ad" category="paragraph">SVMがワークロードセキュリティで監視されていないものの、ONTAP によって生成されたARPイベントがある場合、ワークロードセキュリティはイベントを受信して表示します。ただし、アラートに関連するフォレンジック情報およびユーザーマッピングはキャプチャまたは表示されません。</block>
-  <block id="e15fca67cd8338997729ad4099343915" category="summary">この手順を使用して、事前定義済みの Cloud Insights レポートを使用してレポートを作成します。</block>
   <block id="8dff98a51b599d1388a5c2eaff15bfbd" category="doc">レポートの作成（例）</block>
   <block id="d4bcce6f1018e3844c63df7e66d7890d" category="paragraph">この例の手順を使用して、複数のデータセンター内のストレージプールとストレージプールの物理容量に関するシンプルなレポートを生成します。</block>
   <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">[メニュー]&gt;[コンテンツ]&gt;[チームコンテンツ]&gt;[レポート]*に移動します</block>
@@ -14288,8 +14076,6 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">[Observability]&gt;[Collectors]&gt;[Acquisition Units]*をクリックして、Acquisition Unitのステータスを確認します。</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">[Observability]&gt;[Collectors]&gt;[Acquisition Units]&gt;[+Acquisition Unit]</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">[Observability]&gt;[Collectors]&gt;[Acquisition Units]*をクリックして、Acquisition Unitのステータスを確認します。</block>
-  <block id="b61c07e7a0fb367b275d84c4f406ea62" category="list-text">Cloud Insightsで、*[Observability]&gt;[Collectors]に移動し、*[Acquisition Units]*タブを選択します。</block>
-  <block id="3fca9907aed6b150137f898d0280fff6" category="list-text">Cloud Insights環境にログインし、*オブザーバビリティ&gt;コレクタ*に移動します。</block>
   <block id="be73cc0144104fdc76d1908fc25c13b8" category="list-text">すべてのデータコレクタを一時的なAcquisition Unitに移動したら、*[Observability]&gt;[Collectors]*に移動し、*[Acquisition Units]*タブを選択します。</block>
   <block id="fa754fd7176d2dbf75086e702bb8e0ba" category="cell">考えられる原因は次のとおりです。
 1.ユーザディレクトリコレクタがまだ設定されていません。追加するには、*[ワークロードセキュリティ]&gt;[コレクタ]&gt;[ユーザディレクトリコレクタ]*に移動し、*[+ユーザディレクトリコレクタ]*をクリックします。Active Directory_or_LDAP ディレクトリサーバー _ を選択します。
@@ -14357,7 +14143,6 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
   <block id="5edf51309b0e54b161dde9f3f2dbe815" category="paragraph">datasources.warの/var/lib/netapp/cloudinsights/acq/downloadディレクトリに移動し、zipファイルを確認します。</block>
   <block id="ed7dc5789cb36687315d95140bf88b49" category="list-text">次の手順を実行します。</block>
   <block id="60b0ec4bd2a387eb3da948b9a799f786" category="paragraph">注:別のカスタムユーザーを使用してをインストールする場合は、所有者とグループの両方に対して、グループ権限が読み取りと書き込みに設定されていることを確認してください(chmod 660…)。</block>
-  <block id="9acc35fb262bf83f278335070c7ea2f2" category="list-text">AUを再起動します。Cloud Insightsで、[Observability]&gt;[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。</block>
   <block id="57858de47985c55285f0cbb5890decfc" category="section-title">パッチのダウンロード</block>
   <block id="fc5e990e77fa1bad66c2b07f217c85ab" category="paragraph">/collector/patch/file/｛version｝APIを使用してパッチをダウンロードします。</block>
   <block id="be2277f73c347adaa72509bcb1829517" category="inline-image-macro">パッチを取得するAPI</block>
@@ -14389,7 +14174,6 @@ CHE：権限が拒否されました。無視\n" func="gosnowflake.(*defaultLogg
   <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">エージェントが切断されている場合、コレクタを_Paused_stateに変更することはできません。コレクタが_stopped_stateになり、Pauseボタンが無効になります。</block>
   <block id="cd5c932f5b2fa2206673bc29c081fa55" category="section-title">外部キーの取得</block>
   <block id="7e344aed2e1990843db0c81944cc6f38" category="paragraph">UNIXシェルスクリプトを指定すると、Acquisition Unitによって実行され、キー管理システムから*秘密鍵*と*公開鍵*を取得できます。</block>
-  <block id="76a8209497c46ce429a432b8cd7aba35" category="paragraph">キーを取得するために、Cloud Insightsはスクリプトを実行し、_key id_and_key type_という2つのパラメータを渡します。キーID _は、キー管理システム内のキーを識別するために使用できます。_Key type _には、「public」または「private」を指定します。キータイプが「public」の場合、スクリプトは公開鍵を返す必要があります。キータイプが「private」の場合は、秘密鍵を返す必要があります。</block>
   <block id="09ca0fd15a1c6d7b2fe73ff5dea10c81" category="paragraph">Acquisition Unitにキーを戻すには、標準出力にキーを出力する必要があります。スクリプトは、標準出力にキーをprint_only_theで出力する必要があります。他のテキストは標準出力に出力しないでください。要求されたキーが標準出力に出力されると、スクリプトは終了コード0で終了する必要があります。その他の戻りコードはエラーと見なされます。</block>
   <block id="33290e9f863a844a70f389349e2d213c" category="paragraph">スクリプトはSecurityAdminツールを使用してAcquisition Unitに登録する必要があります。このツールでは、Acquisition Unitとともにスクリプトが実行されます。スクリプトには、rootおよび"cisys"ユーザに対する_read_and_execute_permissionが必要です。登録後にシェルスクリプトを変更した場合は、変更したシェルスクリプトをAcquisition Unitに再登録する必要があります。</block>
   <block id="c88fd792d889fe7e2f25a6da9c770e73" category="cell">入力パラメータ:キーID</block>
@@ -14502,8 +14286,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">Kubernetes Change Analyticsを表示するには、* Kubernetes &gt; Change Analysis *に移動します。</block>
   <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubernetes Change Analyticsのメイン画面。警告と重大なアラート、成功した導入と失敗した導入、アラートをトリガーする上位3つのワークロードが表示されます。</block>
   <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="a9ac2dc1ccf01db5959d4e16563a6bba" category="paragraph">ページは、現在選択されているCloud Insights時間範囲に基づいて自動的に更新されます。  時間範囲が小さいほど、画面の更新頻度が高くなります。</block>
-  <block id="11dc88e059709832ab0f8280cc54eecf" category="paragraph">Cloud Insightsのすべての機能と同様に、変更リストは直感的にフィルタできます。ページ上部で、Kubernetesクラスタ、ネームスペース、ワークロードの値を入力または選択するか、｛[+]ボタンを選択して独自のフィルタを追加します。</block>
   <block id="3dec7ee4035d7384095c6f5a0454b2a8" category="paragraph">特定のクラスタ、ネームスペース、ワークロードにフィルタを適用して（設定した他のフィルタと一緒に）、そのクラスタ上のそのネームスペース内のそのワークロードに対する導入とアラートのタイムラインが表示されます。さらに拡大するには、グラフをクリックしてドラッグし、より具体的な時間範囲にフォーカスします。</block>
   <block id="aa8e7ddd32230c18cfcb5371423cb0d3" category="inline-image-macro">ワークロードタイムラインの例</block>
   <block id="b7cab2994bcbd4be950a067ce498791c" category="paragraph"><block ref="b7cab2994bcbd4be950a067ce498791c" category="inline-image-macro-rx" type="image"></block></block>
@@ -14525,8 +14307,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhookリストページ</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Webhookのリストページには、Name、Created By、Created On、Status、Secure、 およびLast Reportedフィールド。</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMBプロトコルバージョン3.1以前。</block>
-  <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">Cloud Insightsのセキュリティについては、 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
-  <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">Cloud Insightsのセキュリティについて読む <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetAppセキュリティアドバイザリ</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">ネットアップが提供しているセキュリティアドバイザリを表示できます。 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">必要に応じて、環境内のアセットに適用するアプリケーションを定義します。</block>
@@ -14824,14 +14604,7 @@ Red Hat OpenShift のサービスです
 Rancher Kubernetes Engine （ RKE ）
 VMware Tanzu の</block>
   <block id="793d284bad68b41cca09ce8e8b200352" category="cell">Linux OS</block>
-  <block id="798e5a5c88d188ba67f7f5a17b2ce32b" category="cell">Cloud Insightsは、Arm64アーキテクチャで実行されているノードをサポートしていません。
-
-ネットワーク監視：Linuxカーネルバージョン4.18.0以上を実行している必要があります。Photon OSはサポートされていません。</block>
   <block id="3ad6cb6100190c8f81e99fd52debf7ef" category="cell">ラベル</block>
-  <block id="5fb045ef41992286f9d611596ce27dfe" category="cell">Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。
-
-Kubernetes v1.20以上：kubernetes.io/os=Linux
-Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフォームとして使用：cattle.io / os = Linux</block>
   <block id="b0c7368729c7094129da2a9003691e56" category="cell">curlコマンドとkubectlコマンドが使用可能である必要があります。;最良の結果を得るには、これらのコマンドをパスに追加してください。</block>
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">接続性</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">APIトークン</block>
@@ -14927,31 +14700,9 @@ Storage Virtual Machine：RESTでは、「data」以外のタイプのSVM（「c
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">すべての非同期クエリのリストと、準備ができているものを表示するには、次のコマンドを使用します。</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">応答の形式は次のとおりです。</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">BlueXPアカウントを持っていますが、BlueXPにログインできません。</block>
-  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">からチケットを開きます<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。カテゴリ「blueXP.netapp.com」&gt;「Account/Login Issues」または「bluexp.netapp.com」&gt;「Federation Issues」を選択します。  これらは、BlueXPの問題や質問に特化したものです。
-Cloud Insights のその他のテクニカル・サポート問題については、を参照してください <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
-  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">BlueXPアカウントにサインアップしたこと、またはBlueXPでSSOログインを使用していることを確認します。
-
-BlueXPプロファイルのEメールアドレスが、Cloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認します。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
-  <block id="1b58998adf7a89d496bd43804045852f" category="cell">BlueXPからログアウトし、Cloud Insightsから自動的にログアウトしました。</block>
-  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">NetAppクラウドサービス全体のシングルサインオン（SSO）は、すべてのCloud Insightsセッションをログアウトします。複数の Cloud Insights アカウントへのアクセス権がある場合、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。</block>
   <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloudアカウントでは、数日ごとに再認証が必要です（現在のBlueXPの設定は7日です）。ログインし直して、アカウントにアクセスします。</block>
-  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">アカウント管理者に連絡して、 Cloud Insights へのアクセスを確認してください。
-BlueXPプロファイルのEメールアドレスがCloud InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認する</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">例：_User * Tony Lavoie * 10.1.120.15 *、ユーザエージェント* Mozilla/5.0（Windows NT 10.0、Win64、x64）AppleWebKit/537.36（KHTML、Geckoなど）Chrome/85.0.4183.121 Safari/537.36 *、ログイン方法* BlueXP Portal Login_*</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理およびその他のタスク</block>
-  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insightsは6時間ごとに自動的にログアウト</block>
-  <block id="125d2f260a38158435c7e7d5900894da" category="cell">これは、ブラウザのサードパーティのCookieが無効になっているためです。ユーザーは、すべてのサードパーティのCookieを有効にするようにブラウザを設定するか、より狭い例外リストを使用してCloud InsightsのCookieを有効にすることができます。
-
-例
-ブラウザの設定を開く
-
-「すべてのCookieを許可」オプションを選択します。
-*または*
-[Block third-party cookies]を選択し、_[\*.] auth0.com _および_[*.] netapp.com _に例外を追加します。
-
-Microsoft Edgeでは、Chromeと同じ形式の例外が適用されます。
-
-Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指定されます。</block>
   <block id="8bfda936be946f758536df68a230dfab" category="paragraph">Subscription * Summary *タブには、次のような情報が表示されます。</block>
   <block id="9b7f10f52064c80bcec17905afd00559" category="list-text">現在のMUエンタイトルメント</block>
   <block id="f02a81449f4e8c1806fe657044887b30" category="paragraph">[* Usage]タブには、現在のMUの使用状況と、その使用状況がデータコレクタ別に表示されます。</block>
@@ -14977,12 +14728,9 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">を使用してを実行する場合 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>を使用してください <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>またはを使用している <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>を参照してください。</block>
   <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">また、 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。</block>
-  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMから、Cloud Insightsにアクセスし、Cloud Insightsからバイナリをダウンロードできるようにする必要があります。</block>
   <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります</block>
   <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">変数を設定するには、NetApp Kubernetes Monitoring Operatorをインストールする前に、システムで次の手順を実行します。</block>
-  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。</block>
   <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">NetApp Kubernetes Monitoring Operatorを導入する前に、operator-config.yamlでAgentConfigurationのプロキシセクションを設定します。</block>
-  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">デフォルトでは、NetApp Kubernetes Monitoring OperatorはCloud Insights リポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。</block>
   <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">kube-rbac-proxyの略</block>
   <block id="bb84790255aac66744320e4417143dd8" category="list-text">Fluent-bit</block>
   <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">kubernetes-event-exporterの略</block>
@@ -15102,16 +14850,10 @@ Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指�
   <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">ワンタイム使用APIトークンの応答例</block>
   <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
 <block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88624c8c7afb5c98f1c473e14dcbf963" category="cell">kubectl CLIはターゲットのKubernetesクラスタと通信するように設定し、Cloud Insights環境にインターネット接続できるようにしておきます。
-
-インストール中にプロキシの背後にいる場合は、 <block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block> Operatorインストールのセクション。
-
-監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。</block>
   <block id="7c32e6404e015057fc5db282b24077f0" category="cell">OpenShift 4.6以降を実行している場合は、 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> さらに、これらの前提条件が満たされていることを確認します。</block>
   <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">AWS の AU で取得した場合にのみ使用します。の詳細については、以下を参照してください <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>。</block>
   <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">で webhook 通知を選択します <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>をクリックして、 [* Alerts] &gt; [Manage Monitors * （モニタの管理） ] に移動し、目的のモニタを選択するか、新しいモニタを追加します。[ チーム通知の設定 ] セクションで、配信方法として [_Webhook_] を選択します。警告レベル（重大、警告、解決済み）を選択し、目的のウェブフックを選択します。</block>
   <block id="4123cf4f6521073cef46192908207644" category="cell">SELinuxを有効にして強制すると、TelegrafポッドがKubernetesノードの/proc/1/mountstatsファイルにアクセスできなくなる可能性があります。この制限を克服するには、agentconfigurationを編集し、runPrivileged設定を有効にします。詳細については、 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>。</block>
-  <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">このドキュメントでは、Cloud Insightsプレミアムエディションで使用できるCloud Insightsレポート機能について説明します。</block>
   <block id="f09f88f2a0cd4d59d1c5dc91fdce034b" category="cell">*コマンドプロンプトを開き、設定したパスにディレクトリを変更します
 *「SET=STONAVM_HOME=」コマンドを実行します。
 *「auunitref」コマンドを実行します。
@@ -15447,7 +15189,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">ダッシュボードをグループ化すると、必要な可視性をすばやく簡単に取得できます。新しいナビゲーションメニューを使用すると、場所を失うことなく異なるダッシュボード間を移動できるため、インフラの探索や管理が簡単になります。ダッシュボードグループを運用ランブックに合わせて調整し、エクスペリエンスをさらに向上させます。</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">ドロップダウンをクリックして、現在のダッシュボードと同じグループ内の別のダッシュボードを選択します。</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insightsで使用されるオブジェクトアイコン。</block>
   <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">インフラストラクチャアイコン：</block>
   <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">インフラストラクチャアイコン参照</block>
@@ -15459,7 +15200,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes Network Performance Monitoring and Map、width=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">特定したNetAppルートアグリゲートを特定するクエリを作成して保存しておく必要があります。</block>
-  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">Cloud Insightsツールバーで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
   <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">[追加]*をクリックします。[Add Rule]ダイアログが表示されます。</block>
   <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">[Name]ボックスに、ルールを説明する一意の名前「*"RootAggrExclude"*」を入力します</block>
   <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">[Query]をクリックし、アノテーションルールを適用するためにInsightで使用するクエリ*「Aggregate0」*を選択します</block>
@@ -15638,7 +15378,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">時間に基づくアラートの解決</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aacf7c114a34df5c220f4e375bcd0f6c" category="section-title">現在のバージョンでエージェントを「固定」する</block>
-  <block id="a9c7e2aeb7f9f9d656ca872f21bc9a3a" category="paragraph">デフォルトでは、Cloud Insightsワークロードセキュリティはエージェントを自動的に更新します。お客様によっては、自動更新を一時停止したい場合があります。これにより、次のいずれかが発生するまで、Agentは現在のバージョンのままになります。</block>
   <block id="dea8f428de371d2483508970ea18bd9c" category="list-text">カスタマーはエージェントの自動更新を再開します。</block>
   <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">このエラーは、エージェントのブートストラップ中に発生します。ロガーが初期化される前に発生するため、エラーはログファイルに記録されません。エラーは標準出力にリダイレクトされ、<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>コマンドを使用してサービスログに表示されます。このコマンドは、問題の詳細なトラブルシューティングに使用できます。est</block>
   <block id="6170d8ef618bd7f0badc437283eafda2" category="section-title">ローカルルートSVMユーザアクティビティの変更</block>
@@ -16267,4 +16006,215 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="0d97b222b080d69a549c4eb4a4bfe399" category="list-text">*ユーザー*アクティビティの実行-引用符で正確なユーザーを指定することをお勧めします。たとえば、_"Administrator"_などです。</block>
   <block id="95389b3cb82b7172ea6147fa876a9ffa" category="paragraph">アクティビティ履歴データは、_Time、User、Source IP、Activity、_and_Entity Type _でソートできます。デフォルトでは、テーブルは descending _Time_order でソートされます。つまり、最新のデータが最初に表示されます。_Device_Field と _Protocol_fields に対してソートが無効になっています。</block>
   <block id="f61af81d2b9edda67ad225742bd8e959" category="paragraph">APIを介してフォレンジックデータを抽出するサンプルスクリプトは、NetAppエージェントの_/ opt/apl/cloudsecure/agent/export-script /_にあります。スクリプトの詳細については、この場所にあるreadmeを参照してください。</block>
+  <block id="c20c853d46783b4e2e2c99d4f7100988" category="paragraph">このFAQでは、Data Infrastructure Insightsの構成とサポート対象デバイスに関する一般的な質問に回答します。</block>
+  <block id="afeb548cda0a56b9f61559376e4c221d" category="section-title">Data Infrastructure Insightsによって環境に変更が加えられているか？</block>
+  <block id="2cbbd4d79a9a939fe04fc8047ec749f7" category="paragraph">いいえ。Data Infrastructure Insightsは、環境に関する情報を収集する読み取り専用ツールです。Data Infrastructure Insightsは、資産や構成に一切変更を加えることはありません。</block>
+  <block id="b0c9cb130482ca3ab3846baa39611164" category="section-title">Data Infrastructure Insightsでデバイスに必要な権限レベルのアクセス権を教えてください。</block>
+  <block id="ada0c07ffbb24e7b5483d2e1c71b4b6b" category="section-title">Data Infrastructure Insightsはどのくらいの頻度で情報を収集しますか？</block>
+  <block id="c785c609c57af0849d28d46261a09c43" category="paragraph">Data Infrastructure Insightsは通常、パフォーマンスデータを5分ごとに収集し、論理構成と物理構成の検出を0.5時間ごとに実行します。Data Infrastructure Insightsでは、推奨されるベストプラクティスと拡張性に従ってデフォルトのポーリング間隔が設定されますが、ユーザはこれらの間隔を完全に制御できます。</block>
+  <block id="5bb7272f4faec1be783887c0eceaea7b" category="section-title">Data Infrastructure Insightsが環境に与える影響</block>
+  <block id="4d4c38e6a19737e597afc3448bf54284" category="paragraph">Data Infrastructure Insightsのエージェントレス、アウトオブバンド、パッシブIP通信は、セットアップ、メンテナンス、データセンターエコシステムへの影響を最小限に抑えます。Data Infrastructure Insightsのパフォーマンス開発チームは、パフォーマンス自体の監視アクティビティにおけるデータセンターのパフォーマンスへの影響を最小限に抑えるために、優れた対策を講じています。通常の運用環境では影響はごくわずかで、利用率の高いテクノロジプラットフォームやパフォーマンスの低いテクノロジプラットフォームで、リラックスした状態や強化が可能です。詳細については、『Data Infrastructure Insights Installation Guide』を参照してください。</block>
+  <block id="73544d67a5aff73d0084ec4f5d3c4125" category="section-title">Data Infrastructure Insightsにすべてのホスト/ VMを表示するにはどうすればよいですか？</block>
+  <block id="1263c8eb77f3328b130c07d1db3edc08" category="paragraph">Data Infrastructure Insightsは、ウィジェットやクエリリスト機能を補完する機能を備えており、データセンターアセットのインベントリ形式のリストを提供できます。スピンドルとその間に配置されたさまざまな構成要素を仮想マシンで一覧表示することができ、クエリ、ウィジェット、ダッシュボード、データウェアハウスレポートにアクセスできます。 RESTful API からアクセスできます。</block>
+  <block id="32b48cab2a41b63e6148ac2adb1807d7" category="section-title">Data Infrastructure Insightsは、関連するハイパーバイザー以外のホスト（物理サーバなど）に対して同じタイプのサポートを提供しますか。</block>
+  <block id="ad391273474f988435eeacd01790d960" category="paragraph">VMware などのハイパーバイザーは、 ESXi ホストとその仮想マシン（ VM ）に関する詳細情報を提供します。物理サーバについては、Data Infrastructure InsightsがホストHBAまでの指標を収集します。Data Infrastructure Insightsでは、特許出願中のテクノロジを使用して物理サーバを検出する独自の方法を採用しています。ストレージやスイッチが検出されると、物理サーバのホスト名がファブリックエイリアス情報に含まれます。Data Infrastructure Insightsは、これらのホスト名を選択してDNSで一致させ、ホストをData Infrastructure Insightsに自動的に取り込みます。この方法により、手動での入力更新やツールインベントリのメンテナンスが必要なくなります。</block>
+  <block id="93b5eaf8149f32f98a26bfb3f32ae441" category="section-title">Data Infrastructure Insightsは、異機種混在環境全体で同じデバイスのメトリック深度（パリティ）を提供しますか？</block>
+  <block id="9ee33708a7a177f5160078e8b57daf5a" category="paragraph">サードパーティのプラットフォームとベンダーのテクノロジ全体で、標準化、共通性、および命名方法にはさまざまなレベルがあります。Data Infrastructure Insightsは、容量とパフォーマンスの情報を一貫したフレームワークに標準化しようとします。容量やパフォーマンスの一部の指標は、 IOPS 、レイテンシ、物理容量など、デバイスのカウンタからネイティブに提供されます。カウンタが指定されていない場合、Data Infrastructure Insightsは値を要約しようとします（たとえば、基盤となるボリュームのIOPSや容量の合計など）。どちらも使用できない場合、Data Infrastructure Insightsはさまざまな計算アルゴリズムを使用して指標値を取得しようとします。Data Infrastructure Insightsは、一般的なSNMP統合機能を提供し、現在Data Infrastructure Insightsで収集されていない追加の指標を組み込むことができます。</block>
+  <block id="0d90100157679f2a726d3eddc56c1d9e" category="section-title">Data Infrastructure Insightsはファイバチャネルスイッチをサポートしていますか。</block>
+  <block id="bfb70ffac4b42a0aae27604bd9dc57a7" category="paragraph">はい。Data Infrastructure Insightsは、ストレージ資産からデータを収集するだけでなく、環境内のCisco、Brocade、QLogicスイッチからインベントリとパフォーマンスのデータも取得します。</block>
+  <block id="6a7e0326a24d65d0e286d9e3cb8a66d0" category="section-title">インフラ全体のトポロジビューは使用できますか。Data Infrastructure Insightsは「エンドツーエンドの可視化」を示していますか？</block>
+  <block id="c6248d859952e1d2efa24f81140407a3" category="paragraph">はい。Data Infrastructure Insightsは、論理構成と物理構成を動的に検出してマッピングし、コンピューティング、ファブリック、仮想化、バックエンドストレージのエンドツーエンドのトポロジビューをインタラクティブに表示します。トポロジアイコンを使用すると、影響を受けるリソースへのクイック起動ナビゲーションが可能になり、共有ストレージ環境でのワークロードや違反の特定に役立ちます。</block>
+  <block id="d6958d8d6d148fcb3b8bd4c6df947acf" category="paragraph">このページは、現在選択されているData Infrastructure Insightsの期間に基づいて自動的に更新されます。時間範囲が小さいほど、画面の更新頻度が高くなります。</block>
+  <block id="9c5978cac8d08eb3c8b5b7d03ed9b082" category="paragraph">Data Infrastructure Insightsのすべての機能と同様に、変更リストは直感的にフィルタリングできます。ページ上部で、Kubernetesクラスタ、ネームスペース、ワークロードの値を入力または選択したり、[+]ボタンを選択して独自のフィルタを追加したりできます。</block>
+  <block id="a5dfb8ae3c2cad871042ab987d30639c" category="paragraph">Data Infrastructure Insights Kubernetes Explorerは、Kubernetesクラスタの全体的な健全性と使用状況を表示するための強力なツールであり、調査領域に簡単にドリルダウンできます。</block>
+  <block id="68c7a855281b3c6ca14219c6e40b7af3" category="paragraph">Data Infrastructure Insightsは、Kubernetes環境のバックエンドストレージを可視化し、Kubernetesポッドと永続的ボリューム（PV）に関する分析情報を提供します。IOPS 、レイテンシ、スループットなどの PV カウンタは、単一ポッドでの使用量から PV カウンター、 PV 、バックエンドストレージデバイスへのすべての方法で追跡できます。</block>
+  <block id="7222decec6c98afc3b3afda47d9bae31" category="paragraph">PVレベルでは、Data Infrastructure Insightsがバックエンド（PVタイプに応じて内部ボリュームまたはボリューム）の容量情報（合計、使用済み、使用率）と内部ボリュームのSnapshot数を収集します。ポッドからストレージレベルでは、バックエンドの容量と内部ボリュームの Snapshot 数を収集します。</block>
+  <block id="22b8195d3fe355c08b9615502988d05a" category="summary">Data Infrastructure Insightsは、Kubernetes上で統合データを収集するエージェントとしてTelegrafをサポートしています。</block>
+  <block id="641ef33eed16744abbfa95e1f8fafd4b" category="cell">Data Infrastructure Insightsでは、Arm64アーキテクチャで実行されているノードはサポートされません。ネットワーク監視：Linuxカーネルバージョン4.18.0以上を実行している必要があります。Photon OSはサポートされていません。</block>
+  <block id="e75a57b8345f70b1a0cd663056e9ffcb" category="cell">Data Infrastructure Insightsは、Kubernetesノードセレクタを指定して、これらのプラットフォームで次のKubernetesラベルを検索することで、Linuxを実行しているKubernetesノードの監視をサポートします。Kubernetes v1.20以降：Kubernetes .io/os=linux Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフォーム：cattle.io/os=linux</block>
+  <block id="698629847acfa00a372b3a3663f1763f" category="cell">kubectl CLIはターゲットのKubernetesクラスタと通信するように設定されており、Data Infrastructure Insights環境にインターネット接続されています。インストール中にプロキシの背後にいる場合は、「オペレータのインストール」のセクションに記載されている手順に従ってください<block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block>。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。</block>
+  <block id="919e755c8b94c3ca8b589d3ed232cc9c" category="paragraph">これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、まずプロキシがデータインフラストラクチャインサイト環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMからData Infrastructure Insightsにアクセスし、Data Infrastructure Insightsからバイナリをダウンロードできるようにする必要があります。</block>
+  <block id="34506193d0ecf6adac97e6003ad5dcd7" category="paragraph">KubernetesクラスタがData Infrastructure Insights環境と通信するために使用するプロキシの場合は、これらの手順をすべて読んでからNetApp Kubernetes監視オペレータをインストールします。</block>
+  <block id="8c86d59406363508c597285e9a7389bd" category="paragraph">デフォルトでは、NetApp Kubernetes監視オペレータは、データインフラのインサイトリポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。</block>
+  <block id="24c6e4919dff2cb10e3846052329bd9e" category="summary">Data Infrastructure Insightsオブジェクトアイコン</block>
+  <block id="2be34822e35afdce904c5fafed6cf826" category="paragraph">Data Infrastructure Insightsで使用されるオブジェクトアイコン。</block>
+  <block id="868ca7ff0a3ea94cc065e46e777bd1fe" category="doc">レポート作成のためのデータインフラ分析情報スキーマ</block>
+  <block id="985a16c17a2f18f7ef3d4d062e921104" category="paragraph">ここでは、Data Infrastructure Insightsのレポート作成の参考として、スキーマの表と図を示します。</block>
+  <block id="064b9bf9161e77d5021baa839568d72f" category="admonition">レポート機能はData Infrastructure Insightsで使用でき<block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="0b9304249ee74bce06fd227d0491e15c" category="summary">事前定義済みのData Infrastructure Insightsレポートを使用してレポートを作成するには、次の手順を実行します。</block>
+  <block id="ca0d41d58bb67ec29a5c7e716e8bbc28" category="paragraph">このセクションの例では、次のプロセスを示します。これらのプロセスは、Data Infrastructure Insights Reportingデータモデルで使用できます。</block>
+  <block id="eee9198f85a10bd9aaa2e7f425fd50dc" category="list-text">環境内のデバイスとリソースにアノテーション（階層、データセンター、ビジネスユニットなど）を入力します。Data Infrastructure Insights Reportingでは履歴情報が収集されるため、レポートを生成する前にアノテーションを安定させておくと便利です。</block>
+  <block id="250000ca19e0e712a53098439ca8b111" category="paragraph">ほとんどのレポートでは、Data Infrastructure Insightsで利用可能な最新データに関するレポートのみを作成する必要があります。</block>
+  <block id="fcb54a6c1994dcdc6348ac3815ba3752" category="list-text">Data Infrastructure Insights Reportingでは、容量とパフォーマンスに関する履歴情報は提供されますが、インベントリに関する情報は提供されません。</block>
+  <block id="6faebb373a83d43ab22e47438f3d1982" category="paragraph">Data Infrastructure Insightsには複数のデータモデルが含まれており、事前定義されたレポートを選択することも、独自のカスタムレポートを作成することもできます。</block>
+  <block id="7537259fa11092f7e72a1bab3b2fd0c8" category="paragraph">VM Capacity データモデルの容量は、仮想ディスク（ VMDK ）から取得されます。つまり、 VM Capacity データモデルを使用した場合の VM のプロビジョニング済みサイズは、その VM の仮想ディスクのサイズです。これは、Data Infrastructure Insightsの[Virtual Machines]ビューに表示されるプロビジョニング済み容量とは異なります。この容量には、VM自体のプロビジョニング済みサイズが表示されます。</block>
+  <block id="34aab023a0ab3d9b2295201317c9b5af" category="paragraph">一定期間にわたるストレージの削減率と可能性を追跡できます。このデータモデルには、プロビジョニング済み容量のデータだけでなく、使用済みまたは消費済みの容量（物理的な測定値）も格納されます。たとえば、シンプロビジョニングが有効な場合、Data Infrastructure Insightsにはデバイスから消費された容量が表示されます。また、このモデルを使用して、重複排除が有効な場合の効率を判断することもできます。Storage Efficiency データマートを使用すると、回答に関するさまざまな情報を確認できます。</block>
+  <block id="e1495134ca48de52bb3c81e09980c66f" category="summary">レポート作成のためのData Infrastructure Insightsのデータ保持</block>
+  <block id="7a6ac1c94cd81a9d191bcc896314ea80" category="paragraph">Data Infrastructure Insightsでは、次の表に示すように、履歴データが保持され、データマートおよびデータの単位に基づいてReportingで使用されます。</block>
+  <block id="cd732311f740440758a6bfe8572cb42b" category="list-text">Data Infrastructure Insights Reportingポータルで、*[メニュー]&gt;[コンテンツ]&gt;[マイコンテンツ/チームコンテンツ]*に移動します。カスタマイズするレポートの上にマウスを置き、「3つのドット」メニューを開きます。</block>
+  <block id="3bb236712dbe63452c495629e7a8ff66" category="summary">Data Infrastructure Insightsを使用して、事前定義されたカスタムレポートを作成できます。</block>
+  <block id="47608d629a1f0832a3b47c68e88bfbab" category="doc">Data Infrastructure Insightsレポートの概要</block>
+  <block id="730aa400f49ccecaf31a285f8c351df9" category="paragraph">Data Infrastructure Insightsのレポート機能は、事前定義済みのレポートを表示したり、カスタムレポートを作成したりできるビジネスインテリジェンスツールです。</block>
+  <block id="37f1f4df47a4764ec44c63f0d1b98f59" category="paragraph">Data Infrastructure Insightsのレポート作成機能では、次のタスクを実行できます。</block>
+  <block id="e9a1d960dce625e88deb5cd974c49d97" category="paragraph">Data Infrastructure Insights Reportingでは、チャージバック、消費分析、予測などの領域に関するカスタムレポートを生成でき、次のような質問に対する回答に役立ちます。</block>
+  <block id="5c7dc73b3b0bdc7057c35fedf57e670d" category="section-title">データインフラの分析情報レポートへのアクセス</block>
+  <block id="ba88d7c4bda7e904877086c3650d93f2" category="paragraph">Data Infrastructure Insights Reportingにアクセスするには、メニューの*[レポート]*リンクをクリックします。</block>
+  <block id="cf8a157a7b0c29471b767059e29da356" category="paragraph">Reporting インターフェイスに移動します。Data Infrastructure Insightsでは、レポートエンジンにIBM Cognos Analyticsを使用しています。</block>
+  <block id="86fff14a2c70b3162c2f415134664d85" category="paragraph">Reporting では、「 Data Warehouse 」と「 ETL 」という用語が使用されます。ETL は、「抽出、変換、読み込み」の略です。ETLプロセスでは、Data Infrastructure Insightsで収集されたデータが取得され、レポートで使用する形式に変換されます。「 Data Warehouse 」は、レポートに使用できる収集データを表します。</block>
+  <block id="610651a6e0857a0a0e39fa544c2cc542" category="list-text">* Extract *：Data Infrastructure Insightsからデータを取得</block>
+  <block id="c71c83f3e6508e840b0d42f052a17db1" category="list-text">*変換*：Data Infrastructure Insightsから抽出されるデータにビジネスロジックのルールや機能を適用します。</block>
+  <block id="10d22fd372b38a1331c01cba0b0b659b" category="paragraph">Data Infrastructure Insights Reportingには、レポート作成に関する一般的な要件に対処する事前定義済みのレポートが含まれており、関係者がストレージインフラに関する十分な情報に基づいて意思決定を下すために必要な重要な分析情報を提供します。</block>
+  <block id="7fbd554221861c2ca35f7c6c76776d57" category="paragraph">Data Infrastructure Insights Reporting Portalから事前定義済みのレポートを生成したり、他のユーザにEメールで送信したり、変更したりできます。複数のレポートを使用して、デバイス、ビジネスエンティティ、または階層でフィルタリングできます。このレポートツールは、 IBM Cognos をベースとしたツールで、さまざまなデータ表示オプションが用意されています。</block>
+  <block id="1895d14378cce9b7ee1ef54781153a76" category="paragraph">Reportingポータルを開くと、Data Infrastructure Insightsのレポートに必要な情報のタイプを選択するための出発点として_Team Content_フォルダが使用されます。</block>
+  <block id="b14d282751399e519c9aa2c10c4caacc" category="paragraph">スコアカードレポートには、Data Infrastructure Insightsで取得したすべての資産の概要と全般的なステータスが表示されます。ステータスは、緑色、黄色、赤色のフラグで示されます。</block>
+  <block id="1da2f66b50b1308792b663513a421880" category="summary">Data Infrastructure InsightsのAPIを使用して、Reporting DBに直接クエリを実行</block>
+  <block id="266675e88801512a731359823fa8e305" category="paragraph">Data Infrastructure Insightsの強力なAPIを使用すると、Cognos Reporting環境を介さずに、Data Infrastructure Insights Reportingデータベースに直接クエリを実行できます。</block>
+  <block id="a34e29a0686800d882e09161ffc71235" category="admonition">このドキュメントでは、Data Infrastructure Insights Premiumエディションで利用できるData Infrastructure Insightsのレポート機能について説明します。</block>
+  <block id="ba7d10bf45b2219942c55c6b6ffbd3d4" category="paragraph">Data Infrastructure Insights Reporting APIは、（Open Data Protocol）標準に従って<block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block>Reportingデータベースを照会します。詳細または詳細については、ODataをご覧ください<block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6346ef36a30feacef7c837238fa5e2ce" category="paragraph">すべての要求は、URL_\https://&lt;Data Infrastructure Insights URL&gt;/rest/v1/dwh-management/odata_で始まります。</block>
+  <block id="79077b8c217f63ad257dd00c00fd1223" category="inline-link-macro">データインフラ分析情報API</block>
+  <block id="686f74d4286b7f69969bf89852c66563" category="paragraph">詳細については、をご覧ください<block ref="7c22ad77b3a65c520b1a6747074ab8d5" category="inline-link-macro-rx"></block>。</block>
+  <block id="9cc0b9495b07998ec406eabcf17528de" category="list-text">Data Infrastructure Insights環境にログインし、*[Admin]&gt;[API Access]*を選択します。</block>
+  <block id="0d46078f0efb08d53f3ab1780f67e0b3" category="paragraph">API キーを配置した状態で、 Reporting データベースの直接クエリを実行できるようになりました。長いURLは、\https://&lt;Data Infrastructure Insightsの完全なURL &gt;/rest/v1/dwh-management/odata/ではなく、表示目的で\https://.../odata/に単純化できます。</block>
+  <block id="13da55453cef5959a05d2e185ff8c857" category="list-text">\https://&lt;Dataインフラ分析情報のURL&gt;/reset/v1/dwh-management/odata/dwh_custom</block>
+  <block id="64fe34c4ffee853c441c0885b5f610f3" category="list-text">\https://&lt;Dataインフラ分析情報のURL&gt;/rest /v1/dwh-management/odata/dwh_inventory</block>
+  <block id="eaaceda8293b044be5e7cb9b09967498" category="list-text">\https://&lt;Dataインフラ分析情報のURL&gt;/rest /v1/dwh-management/odata/dwh_inventory/storage</block>
+  <block id="b4fc2221859c99959bcd75d4bd2f932d" category="list-text">\https://&lt;Dataインフラ分析情報のURL&gt;/rest /v1/dwh-management/odata/dwh_inventory/disk</block>
+  <block id="b01a6829652cdd2c6fcbe5e47c16f698" category="paragraph">すべての呼び出しのURLは_\https://&lt;Data Infrastructure Insights URL&gt;/rest/v1/dwh-management/odata_です。</block>
+  <block id="29ed3828a02e5dd0797598a14a0f63a9" category="paragraph">形式：_\https://&lt;Data Infrastructure Insights &lt;schema_name&gt;/&lt;query&gt;_</block>
+  <block id="453b047100278d0cb55ea191c8e3fef3" category="paragraph">APIキーは、お客様のData Infrastructure Insights環境に固有のものです。</block>
+  <block id="d1faf51eb9187865439a19b56e1f0f35" category="doc">Data Infrastructure Insightsのレポートスキーマ図</block>
+  <block id="86a5f96c8b65c81ac37422a6777619a3" category="summary">Data Infrastructure Insights Reportingでできることは、ユーザロールによって異なります。</block>
+  <block id="1c576a953caa77247b606ffba38db484" category="doc">Data Infrastructure Insights Reportingのユーザロール</block>
+  <block id="296917b8fa808798eedaf6f784e3d436" category="paragraph">Data Infrastructure Insights Premium Edition with Reportingを使用している場合は、環境内のすべてのData Infrastructure Insightsユーザが、レポートアプリケーション（Cognosなど）へのシングルサインオン（SSO）ログインも利用できます。メニューの * Reports * リンクをクリックすると、自動的に Reporting にログインします。</block>
+  <block id="8dae4251e88795189abf6e15ae2454a0" category="paragraph">Reportingユーザのロールは、Data Infrastructure Insightsのユーザロールによって決まります。</block>
+  <block id="57d5623b4f43a74cce00c65bcda0be51" category="cell">Data Infrastructure Insightsロール</block>
+  <block id="85765729958b6c9f995f2143d5af4417" category="admonition">Data Infrastructure Insights Reporting（Cognosアプリケーション）でユーザのEメール設定を変更した場合、それらの設定は現在のセッション_のACTIVE_ONLYになります。Cognos からログアウトして再度ログインすると、 E メールの設定がリセットされます。</block>
+  <block id="9bfdfa883642ad7b8e5eecc1c748cb08" category="list-text">CognosでSSOが有効になったら、アカウントの作成に使用したEメールアドレスでData Infrastructure Insightsにログインします。</block>
+  <block id="943ad74a0fd793229b9e03b31583927b" category="summary">Data Infrastructure Insights APIを使用して、アノテーションとアプリケーションをインポートできます。</block>
+  <block id="5b78efec071d0544b297fe57d9b6a0e5" category="paragraph">Data Infrastructure Insightsには、CSVファイルからアノテーションやアプリケーションをインポートし、指定したオブジェクトに割り当てるためのAPIが含まれています。</block>
+  <block id="c0724b194b6a3186935a85af014c39e0" category="admonition">Data Infrastructure Insights APIは、* Data Infrastructure Insights Premium Edition *で利用できます。</block>
+  <block id="c186f80cd765682d22369bf19bf653d2" category="list-text">このタスクを実行するには、Data Infrastructure Insightsの管理者またはアカウント所有者である必要があります。</block>
+  <block id="d6f772b4da65633c1dcba6e1cccf18a0" category="paragraph">Data Infrastructure Insightsは、ローカルサーバにインストールされている1つ以上のAcquisition Unitを使用してデバイスデータを収集します。各Acquisition Unitは複数のデータコレクタをホストでき、データコレクタはデバイスメトリックをData Infrastructure Insightsに送信して分析します。</block>
+  <block id="3c3ff06a5b224118074215ef96c62682" category="paragraph">Data Infrastructure Insightsのセキュリティについては<block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>、こちらをご覧ください。</block>
+  <block id="911d7bf1b4a6a6ae5c7053f84b824df3" category="paragraph">Acquisition Unitは、双方向認証と相互認証を使用してData Infrastructure Insightsサーバに接続します。認証するには、クライアント証明書をData Infrastructure Insightsサーバに渡す必要があります。そのためには、データを復号化せずにHTTPS要求をData Infrastructure Insightsサーバに転送するようにプロキシを設定する必要があります。</block>
+  <block id="3fde2c923d9dcbf8f73ec0e80dc74d75" category="paragraph">これを行う最も簡単な方法は、Data Infrastructure Insightsと通信するためにプロキシ/ファイアウォールでワイルドカード設定を指定することです。次に例を示します。</block>
+  <block id="2b3de7104d3f2ae443b66d1f6ffd79b0" category="list-text">そのサーバで、ブラウザウィンドウを開き、管理者またはアカウント所有者としてData Infrastructure Insights環境にログインします。</block>
+  <block id="660e2b29c081e6a83bd499b570adbe24" category="list-text">Acquisition Unit のサーバー /VM で、 Control Panel を開いて、「プログラムのアンインストール」を選択します。削除するData Infrastructure Insights Acquisition Unitプログラムを選択します。</block>
+  <block id="917a1f34353f71aec7044c54befff0e0" category="list-text">Data Infrastructure Insightsで、*[Observability]&gt;[Collectors]に移動し、*[Acquisition Units]*タブを選択します。</block>
+  <block id="4926cd0f8c768e36d9e2b5841be78f04" category="list-text">Data Infrastructure Insights環境にログインし、*オブザーバビリティ&gt;コレクタ*に移動します。</block>
+  <block id="9f9ecd713cb9cd6766aff38da4b58190" category="paragraph">アノテーションを使用すると、ビジネスニーズに合わせて、ビジネス固有のカスタムデータをアセットに追加できます。Data Infrastructure Insightsには、アセットのライフサイクル（開始日や終了日）、建物やデータセンターの場所、階層など、一連のデフォルトのアノテーションが用意されていますが、別の方法でデータを表示したい場合もあります。</block>
+  <block id="e6e22110e3d25fc52606f57ffc55e58f" category="paragraph">カスタムアノテーションのデータは、スイッチのメーカー、ポートの数、パフォーマンス統計など、すでに収集されたデバイスの補足データになります。アノテーションを使用して追加したデータは、Data Infrastructure Insightsでは検出されません。</block>
+  <block id="93a8717a22d46017d35d105b54e89a92" category="list-text">[Data Infrastructure Insights]メニューで、*[Observability]&gt;[Enrich]&gt;[Annotations]*をクリックします。</block>
+  <block id="4a10b0dfdb0d7666a24649ef65f2d756" category="list-text">Data Infrastructure Insights環境にログインします。</block>
+  <block id="4f0e63e9d127e8f3e465a9e3f35bcf5f" category="paragraph">定義した条件に基づいてアセットにアノテーションを自動的に割り当てるには、アノテーションルールを設定します。Data Infrastructure Insightsは、これらのルールに基づいてアセットにアノテーションを割り当てます。Data Infrastructure Insightsには、2つのデフォルトのアノテーションルールも用意されています。これらのルールは、ニーズに合わせて変更したり、不要な場合は削除したりできます。</block>
+  <block id="a9ac45d46390c434574d0092c1a11483" category="paragraph">アノテーションルールを使用すると、定義した条件に基づいて複数のアセットにアノテーションを自動的に適用できます。Data Infrastructure Insightsは、これらのルールに基づいてアセットにアノテーションを割り当てます。個々のアセットページで手動で設定したアノテーションは、 Cloud Insight でアノテーションルールが評価されるときにルールベースのアノテーションよりも優先されます。</block>
+  <block id="4f4df7311a5c009339d057b316a5c877" category="list-text">[Data Infrastructure Insights ]メニューで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
+  <block id="429e5ff0d154ea9f0d8b69e75866a8b4" category="list-text">[Query]*をクリックし、Data Infrastructure Insightsがアノテーションを適用するアセットを特定するために使用するクエリを選択します。</block>
+  <block id="a1301e0af88fd655ae64d39d2d7a0e93" category="admonition">大規模なData Infrastructure Insights環境で、アノテーションルールの実行に時間がかかることがあります。これは、インデクサが最初に実行され、ルールを実行する前に完了する必要があるためです。インデクサは、データ内の新規または更新されたオブジェクトやカウンタを検索またはフィルタリングする機能をData Infrastructure Insightsに提供します。ルールエンジンは、インデクサが更新を完了するまで待機してから、ルールを適用します。</block>
+  <block id="df92eb52ff49723465239116d2f4aed4" category="list-text">[Data Infrastructure Insights ]メニューで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
+  <block id="0809c964b790df4295890dec5b75e498" category="list-text">Cloud Insightsメニューで、* Observability &gt; Enrich &gt; Applications *をクリックします。選択</block>
+  <block id="bd49848e16630c106919628a09948a9c" category="admonition">モニタとアラートはData Infrastructure Insightsのすべてのエディションで使用できますが、Basicエディションには次の条件が適用されます。*一度にアクティブにできるカスタムモニタは最大5つまでです。5台を超えるモニタは、_Paused _状態に作成または移動されます。* VMDK、仮想マシン、ホスト、データストアのメトリックモニタはサポートされていません。これらのメトリック用に作成されたモニタは一時停止され、Basic Editionにダウングレードすると再開できません。</block>
+  <block id="80645013d90d9d1449dffdd829fc24a4" category="paragraph">Data Infrastructure Insightsには、環境に応じて多数の機能もあり<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="a46093383ff280c45e2e0a8cf945ef64" category="paragraph">Data Infrastructure Insightsのアラートは、環境内のデータポイントやトレンドを特定するように設計されており、Data Infrastructure Insightsでは、アラート受信者として有効なEメールアドレスを入力できます。セキュアな環境で作業する場合は、通知を受け取っているユーザ、またはアラートへのアクセス権があるユーザを特に意識してください。</block>
+  <block id="708ed1fbe5fde0184ee1b8685b622687" category="list-text">[Data Infrastructure Insights]メニューで、*[Alerts]&gt;[Manage Monitors]*をクリックします。</block>
+  <block id="5ade8d0bf5a3ee54fb9a278a493d3df1" category="list-text">*一時停止中のモニター*には、Data Infrastructure Insightsによって一時停止されたシステムモニターが表示されます。</block>
+  <block id="b7d1d1c26220af5f1a6a0ea2ecbc6685" category="list-text">Data Infrastructure Insightsには複数の*システム監視グループ*も表示され、<block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>ONTAPインフラ監視やワークロード監視など、の1つ以上のグループが表示されます。</block>
+  <block id="a10322ddb12a9cefc1049b4e438337e7" category="paragraph">このグループは、Data Infrastructure Insightsが1つ以上のモニタを一時停止している場合にのみ表示されます。モニタが過度のアラートまたは継続的なアラートを生成している場合、モニタが一時停止することがあります。モニタがカスタムモニタの場合は、継続的なアラートの発生を防止する条件を変更してから、モニタを再開します。問題 がサスペンションを引き起こしている状態が解消されると、モニタはサスペンド状態のモニタグループから削除されます。</block>
+  <block id="3147ae68bc8e688f6ffbffc9f33366ef" category="paragraph">これらのグループには、監視に必要なデバイスやログの可用性が環境に含まれている限り、Data Infrastructure Insightsが提供する監視が表示されます。</block>
+  <block id="66e1ee842e3ece3d374ca365bb086128" category="admonition">グループからモニタを削除しても、そのモニタがData Infrastructure Insightsから削除されることはありません。モニタを完全に削除するには、モニタを選択し、 _Delete_( 削除 ) をクリックします。これにより、その所有者であるグループからも削除され、どのユーザからも使用できなくなります。</block>
+  <block id="7e6c94357f78302055159d73f5574c21" category="paragraph">同じメニューを使用して、グループの名前変更または削除を行います。グループを削除しても、Data Infrastructure Insightsからモニタは削除されません。モニタは「_すべてのモニタ_」で引き続き使用できます。</block>
+  <block id="9f105fc05a9d269ab004b7fcb204ce40" category="paragraph">Data Infrastructure Insightsには、指標とログの両方について、システム定義の監視が多数含まれています。使用可能なシステムモニタは、環境内にあるデータコレクタによって異なります。そのため、Data Infrastructure Insightsで使用できるモニタは、データコレクタの追加や設定の変更に応じて変更される場合があります。</block>
+  <block id="81620819ff61f392cb05937161de6a10" category="paragraph">ページを表示して、Data Infrastructure Insightsに含まれるモニタの説明を確認<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>します。</block>
+  <block id="9e7d5e0642bda2f21ba3d6ceca8bb4c2" category="paragraph">多くの商用アプリケーションでは、標準入力インターフェイスとして Webhook がサポートされています。たとえば、 Slack 、 PagerDuty 、 Teams 、および Discord は、すべてのウェブフックをサポートしています。Data Infrastructure Insightsは、カスタマイズ可能な汎用Webhookチャネルをサポートすることで、これらの配信チャネルの多くをサポートできます。Web フックの情報は、これらのアプリケーション Web サイトに掲載されています。たとえば、Slackには<block ref="467ef0b7b93a9b44aaca1d16165eef1f" category="inline-link-macro-rx"></block>次のような機能があります。</block>
+  <block id="0a97104e642d8eff7e924020b632ad1c" category="paragraph">Data Infrastructure InsightsのWebhookを作成するには、* Admin &gt; Notifications *に移動し、* Webhooks *タブを選択します。</block>
+  <block id="ca45ae1d38c18fde42b8e63a51dc8c41" category="paragraph">Data Infrastructure InsightsのWebhookは、多数のデフォルトパラメータで構成されています。また、独自のカスタムパラメータまたはシークレットを作成することもできます。</block>
+  <block id="426f409719daf9b12e51ea7620dd65cc" category="inline-image-macro">Data Infrastructure InsightsのデフォルトのWebhookパラメータ</block>
+  <block id="a413deb78a976ef85a92449013d13acd" category="paragraph"><block ref="a413deb78a976ef85a92449013d13acd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bac72f43adf1b3cc10ff0028305b93cf" category="list-text">Data Infrastructure Insightsのセキュリティについては<block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>、こちらをご覧ください。</block>
+  <block id="00732ddd2197605977d4595c13a4420d" category="paragraph">デフォルトでは、Data Infrastructure Insights Workload Securityはエージェントを自動的に更新します。お客様によっては、自動更新を一時停止したい場合があります。これにより、次のいずれかが発生するまで、Agentは現在のバージョンのままになります。</block>
+  <block id="b5d6f9f2acdf79398c17700d62b103ea" category="cell">エージェントがまだ SaaS に接続できない場合は、ネットアップサポートでケースをオープンしてください。Data Infrastructure Insightsのシリアル番号を提供してケースをオープンし、記録したとおりにログをケースに添付します。</block>
+  <block id="25d7e5698aba7e130a2b0da07a8635ed" category="paragraph">Data Infrastructure Insightsでデータの追跡方法を企業の要件に合わせてカスタマイズするときは、アノテーションと呼ばれる特殊なメモを定義してアセットに割り当てることができます。</block>
+  <block id="98e1d8f28dd7852b18ad13e4d9d0127c" category="paragraph">Data Infrastructure Insightsには、デフォルトのアノテーションタイプがいくつかあります。これらのアノテーションを使用して、データをフィルタまたはグループ化できます。</block>
+  <block id="35312bc76c7408a11b876f51238b9e40" category="paragraph">次の表に、Data Infrastructure Insightsが提供するアノテーションタイプを示します。</block>
+  <block id="adc16f9bee699a3b015a38321d0c9cee" category="paragraph">アノテーションを使用すると、ビジネスニーズに合わせて、ビジネス固有のカスタムデータをアセットに追加できます。Data Infrastructure Insightsには一連のアノテーションがデフォルトで用意されていますが、別の方法でデータを表示したい場合もあります。カスタムアノテーションのデータは、ストレージのメーカー、ボリューム数、パフォーマンス統計など、すでに収集されたデバイスの補足データになります。アノテーションを使用して追加したデータは、Data Infrastructure Insightsでは検出されません。</block>
+  <block id="84ec1a20b4e3f52996fa59ae944a6700" category="list-text">[Data Infrastructure Insights ]メニューで、*[管理]&gt;[アノテーション]*をクリックします。</block>
+  <block id="c554249defbcbcdc5fc731cb35168b60" category="paragraph">Data Infrastructure Insightsにファイバチャネルデバイスを手動で追加するには、デバイス解決の[Fibre Channel Identify]タブにある_Manual Add_機能を使用します。このプロセスは、今後検出されることが予想されるデバイスの事前識別に使用される場合があります。</block>
+  <block id="7522a8967a791fea5a45cc4781654a23" category="list-text">Data Infrastructure Insights Web UIにログイン</block>
+  <block id="468b9f0aefa7e48b08779c2699753574" category="paragraph">ファイバチャネルデバイスの識別情報は、.csvファイルのデバイスのリストを使用して、Data Infrastructure Insightsのデバイス解決に手動でインポートできます。</block>
+  <block id="263bede5848bcfdbb38e652271dec041" category="list-text">Data Infrastructure Insights Web UIにログインします。</block>
+  <block id="cccb6ec9262e66159001a08528cc0695" category="paragraph">Data Infrastructure Insightsのデバイス解決機能から、ファイバチャネルデバイスの既存の識別情報を.csvファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更してData Infrastructure Insightsに再度インポートすると、最初に識別情報をエクスポートしたデバイスと類似したデバイスの識別に使用できます。</block>
+  <block id="3bb91786c2296254a1fbad8c87c88b0f" category="paragraph">[IP Identify]画面の手動追加機能を使用して、IPデバイスをData Infrastructure Insightsに手動で追加できます。</block>
+  <block id="ac8840e1b516f4ddd258e842fa90a6dd" category="list-text">Data Infrastructure Insights Web UIにログインします。</block>
+  <block id="d86f5ac6dcdc30e749eac92d1fab2aca" category="paragraph">Data Infrastructure Insightsのデバイス解決機能から、既存のIPデバイスの識別情報を.csvファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更してData Infrastructure Insightsに再度インポートすると、最初に識別情報をエクスポートしたデバイスと類似したデバイスの識別に使用できます。</block>
+  <block id="0efa6f7d5b47b24b7845d82ccd990e93" category="paragraph">Data Infrastructure Insightsで現在自動識別されていないホスト、ストレージ、テープを識別するためのデバイス解決ルールを作成します。作成したルールにより、環境内の既存のデバイスが識別されるほか、環境に追加された同様のデバイスも識別されます。</block>
+  <block id="dd20c09466cd2021cfd6399fb3c75ddd" category="paragraph">選択したソースに応じて、Data Infrastructure Insightsには次の応答が表示されます。</block>
+  <block id="b6f4fc57f50e862f2ca2dda3226208aa" category="list-text">*ゾーン*には、Data Infrastructure Insightsで識別する必要があるゾーンとWWNを示します。</block>
+  <block id="358b401c5dae22f464d8dea0084cf5f0" category="list-text">* SRM *には、Data Infrastructure Insightsで識別する必要がある未識別のエイリアスが一覧表示されます。</block>
+  <block id="1082db4ccb1ae077157f0f7803f2eea8" category="list-text">*ストレージエイリアス*には、Data Infrastructure Insightsで識別する必要があるストレージエイリアスとWWNが表示されます。</block>
+  <block id="90b78671040dce8160821c90767f284c" category="list-text">*スイッチのエイリアス*には、Data Infrastructure Insightsで識別する必要があるスイッチのエイリアスが表示されます。</block>
+  <block id="52e078a264a75cd12a6c902cdd7849a4" category="list-text">Delimiters を使用するルールの場合は、デリミタとホスト名の最小文字数を指定する必要があります。ホスト名の最小文字数は、Data Infrastructure Insightsがホストを識別するために使用する文字数です。Data Infrastructure Insightsでは、これ以上長いホスト名に対してのみDNSルックアップが実行されます。</block>
+  <block id="d58aecd7040e7d513c5340e479099d22" category="paragraph">Data Infrastructure Insightsでは、ホスト解決プロセスが表示されている順序（上部から順に）で実行されます。</block>
+  <block id="cfd855569d59b48c5e78ad3ea5b91555" category="list-text">Data Infrastructure Insightsにログインします。</block>
+  <block id="88289b3eaad67bb429653fdbbbb57553" category="summary">Data Infrastructure Insightsの導入</block>
+  <block id="fea527b093407870cdb8d4b91d0555c3" category="paragraph">Data Infrastructure Insightsに登録して初めて環境にログインすると、次の手順に従ってデータの収集と管理を開始します。</block>
+  <block id="c9fa6cc61ed6982cb8f0a44a57d1c70a" category="paragraph">Data Infrastructure Insightsには、次の3種類のデータコレクタがあります。</block>
+  <block id="b484e0d9e79b19240c5e3e82c1b05cad" category="paragraph">_Infrastructure_dataコレクタを選択した場合は、Data Infrastructure Insightsにデータを挿入するためにAcquisition Unitが必要です。収集対象のデータセンターにあるサーバまたはVMにAcquisition Unitソフトウェアをダウンロードしてインストールする必要があります。1 つの Acquisition Unit を複数のデータコレクタに使用できます。</block>
+  <block id="0eda65e0fd92af1dcd2c0cb93618cc43" category="paragraph">Operating System_dataコレクタの場合は、プラットフォーム（Linux、Windows）を選択してData Infrastructure Insights Agentをインストールします。サービスからデータを収集するには、少なくとも 1 人のエージェントが必要です。また、エージェントはホスト自体からデータを収集し、Data Infrastructure Insightsで使用します。このデータは、ウィジェットなどでは「ノード」データに分類されます</block>
+  <block id="f007654ef2b9e94534efc8fa3cd4df38" category="paragraph">設定対象として選択した初期データコレクタのタイプ（ストレージ、スイッチなど）に応じて、関連するダッシュボードが 1 つ以上インポートされます。たとえば、ストレージデータコレクタを設定している場合、ストレージ関連の一連のダッシュボードがインポートされ、そのダッシュボードがData Infrastructure Insightsのホームページとして設定されます。ホームページは、 [ ダッシュボード（ *Dashboards ） ]&gt;[ すべてのダッシュボードを表示（ Show All Dashboards ） ] リストから変更できます。</block>
+  <block id="8f6ef79621b6e18c6769f235a6366db4" category="paragraph">Data Infrastructure Insightsのデータコレクタや機能について説明する際には、次の定義が役立ちます。</block>
+  <block id="92b9e8a46330658a1b72284905d7d1a4" category="summary">Data Infrastructure Insightsでは、AUソフトウェアを手動で更新するように設定できるため、環境にインストールされているソフトウェアをより細かく制御できます。</block>
+  <block id="81bc38d5cc49916906929be0dafd8980" category="paragraph">デフォルトでは、Data Infrastructure Insightsは、更新が導入されるとAcquisition Unit（AU）ソフトウェアを自動的に更新します。ただし、安全に管理された環境では、自動更新が不可能または望まれない場合があります。このような場合は、AUソフトウェアを手動で更新するようにData Infrastructure Insightsを設定して、環境にインストールされているソフトウェアをより細かく制御できます。</block>
+  <block id="261649481dbf9a5fd9765a5240244344" category="paragraph">AUソフトウェアを手動でダウンロードしてインストールするには、次の手順に従います。Data Infrastructure Insightsには、これらの手順の多くに役立つSwaggerのドキュメントページが用意されています。また、独自のAPIスクリプト/コマンドを使用することもできます。[Admin]&gt;[API Access]に移動し、[API Documentation]リンクをクリックします。</block>
+  <block id="7f6548579b1ae394861943440b9beab0" category="list-text">Data Infrastructure Insightsで、APIトークンを作成します。</block>
+  <block id="fad8a96ac6878526c57740aca3e6222e" category="list-text">Swagger（[Admin]&gt;[API Access]&gt;[API Documentation]）で、トークンを使用してData Infrastructure Insights APIを許可</block>
+  <block id="88adfaa220eda68cf65400388d6180d6" category="list-text">Data Infrastructure Insights API Swaggerで、_/ au/oneTimeToken_APIを使用してワンタイムトークンを作成します。</block>
+  <block id="7d5751de11a52f1697f899c405327b9d" category="list-text">AUを再起動します。Data Infrastructure Insightsで、[Observability]&gt;[Collectors]に移動し、[Acquisition Units]タブを選択します。AUの右側にある「Three Dots」メニューから「Restart」を選択します。</block>
+  <block id="9d6e645b9e44ed405eea48819c323d14" category="list-text">[Data Infrastructure Insights]メニューで、*[Manage]&gt;[Annotations]*をクリックします。</block>
+  <block id="0624722beef3254720337beec932c9a7" category="list-text">[Data Infrastructure Insights ]ツールバーで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
+  <block id="2c022c29b5e95da3740220bcbdc30296" category="paragraph">一括追加の場合は_Save_(保存)、一括削除の場合は_Remove_(削除)をクリックすると、処理に時間がかかることがData Infrastructure Insightsから通知されます。このメッセージは無視してもかまいません。操作はバックグラウンドで続行されます。</block>
+  <block id="b69fb0739dff5542fa058e258ebc7fb7" category="paragraph">現在Data Infrastructure Insightsに含まれているシステム監視は次のとおりです。</block>
+  <block id="199af9ce8ab16e33e98a26add2f43fda" category="cell">Data Infrastructure Insights Acquisition Unitは、アップグレードの一環として定期的に再起動し、新機能を導入します。これは、一般的な環境で月に1回以下の頻度で発生します。Acquisition Unitがシャットダウンしたという警告アラートのすぐ後に、新しく再起動したAcquisition UnitがData Infrastructure Insightsへの登録を完了したことを示す解決策が表示されます。通常、このシャットダウンと登録のサイクルには5～15分かかります。</block>
+  <block id="b76f1f2b697d772825753e542f17de1d" category="cell">Data Infrastructure Insightsのデータコレクタページにアクセスして、状況の詳細を確認してください。</block>
+  <block id="69a63098ed91fbe0cfcab6202296a804" category="summary">データインフラに関する分析情報に関する全般的なトラブルシューティングのヒント。</block>
+  <block id="c97a47674c3fd0dd5a9c720ee9f41f48" category="doc">Data Infrastructure Insightsの一般的な問題のトラブルシューティング</block>
+  <block id="e3d8c673fea34a21f2e56ce7c9b5aabe" category="paragraph">ここでは、Data Infrastructure Insightsのトラブルシューティングに関する推奨事項を紹介します。</block>
+  <block id="8f85ee65b3485bb4199931404085584c" category="cell">Data Infrastructure Insightsは6時間ごとに自動的にログアウト</block>
+  <block id="39595915536b739d06f4c02735749d51" category="cell">これは、ブラウザのサードパーティのCookieが無効になっているためです。ユーザーは、ブラウザを設定してすべてのサードパーティのCookieを有効にするか、より狭い例外リストを使用してData Infrastructure Insights用のCookieを有効にすることができます。例:ブラウザの設定を開く[すべてのCookieを許可する]オプションを選択します。*または*[サードパーティクッキーをブロック]を選択し、_[\*.] auth0.com _および_[*.] NetApp .com _に例外を追加します。Microsoft Edgeでは、Chromeと同じ形式の例外が適用されます。Firefoxでは、Cookie例外は単に_auth0.comおよび_netapp.comとして指定されます。</block>
+  <block id="6fbdc7276d4f79696070dabc0205c452" category="cell">からチケットを開き<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>ます。カテゴリ「blueXP.netapp.com」&gt;「Account/Login Issues」または「bluexp.netapp.com」&gt;「Federation Issues」を選択します。これらは、BlueXPの問題や質問に特化したものです。Data Infrastructure Insightsテクニカルサポートのその他の問題については、にお問い合わせください<block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="7bb58e74fa35bd90237db949c52cec82" category="cell">Data Infrastructure Insightsに招待されましたが、「権限がありません」というメッセージが表示されます。</block>
+  <block id="ab1561bb6c52df24635b2b2ff6194a94" category="cell">BlueXPアカウントにサインアップしたこと、またはBlueXPでSSOログインを使用していることを確認します。BlueXP  プロファイルのEメールアドレスが、Data Infrastructure InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認します。E メールが一致しない場合は、正しい E メールアドレスで新しい招待状をリクエストします。</block>
+  <block id="3a1e8ff9b6dee2eb5f1881fa4a0710e7" category="cell">BlueXP  からログアウトし、Data Infrastructure Insightsから自動的にログアウトしました。</block>
+  <block id="b6497315eac7548893fe9df9a3a4e133" category="cell">NetAppクラウドサービス全体でシングルサインオン（SSO）を実行すると、Data Infrastructure Insightsのすべてのセッションがログアウトされます。複数のData Infrastructure Insightsアカウントにアクセスできる場合は、いずれかのアカウントからログアウトすると、アクティブなセッションがすべてログアウトされます。ログインし直して、アカウントにアクセスします。</block>
+  <block id="1b51f17425f84d494f4007c3f9ae163b" category="cell">アカウント管理者に問い合わせて、Data Infrastructure Insightsへのアクセス権を確認してください。BlueXP  プロファイルのEメールアドレスが、Data Infrastructure InsightsのようこそEメールに表示されているEメールアドレスと一致していることを確認する</block>
+  <block id="5b54c3b04831265b1d859da4050ad35f" category="paragraph">その他のサポート情報については、Data Infrastructure Insightsのページを参照して<block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="90c8925e0cc3bad3ddb84b5af67af65a" category="paragraph">Data Infrastructure Insightsのアクティブなサブスクリプションをお持ちの場合は、次のサポートオプションをご利用いただけます。</block>
+  <block id="d51985e049703c2b8608d2bdcb0a3479" category="inline-link">Data Infrastructure Insightsサポートドキュメント</block>
+  <block id="e7611d76087ecbbfabb3ffdc7d9b6c93" category="paragraph">詳細については、を参照して<block ref="e02ff98dd704948b513a359b140be8d8" category="inline-link-rx"></block>ください。</block>
+  <block id="8c4bd711b7fe143e6ba54e95872f1c4f" category="cell">Acquisition Unitサーバ/ VMが、NetAppポート443経由で&lt;environment-name&gt;接続を介してData Infrastructure Insights環境（ssl.c01.cloudinsights.ssl.com）にアクセスできることを確認します。次のコマンドを試してみてください。_ping &lt;environment-name&gt; NetApp NetApp &lt;environment-name&gt;.c01.cloudinsights.cloudinsights.c01.cloudinsights.c01.cloudinsights.c01.cloudinsights.c01.cloudinsights.c01.cloudinsights.com_&lt;environment-name&gt;&lt;environment-name&gt; NetApp NetApp</block>
+  <block id="f0ab3792dda9e2a3fae5b0129cc207ac" category="cell">Acquisition Serviceの開始中にCredentialエラーが発生し、Data Infrastructure InsightsでAcquisition Unitのインストールが失敗しました（acq.logに表示されます）。</block>
+  <block id="e467d9b04f6bf31dc4004028603c87c7" category="cell">Acquisition Unit（AU）は、リースを更新するために60秒ごとにハートビートをData Infrastructure Insightsに送信します。ネットワークの問題やData Infrastructure Insightsの応答がないためにハートビートコールが失敗した場合、AUのリース時間は更新されません。AUのリース期限が切れると、Data Infrastructure Insightsのステータスは「Heartbeat Failed」と表示されます。トラブルシューティングの手順： Acquisition Unit サーバと CloudInsights 間のネットワーク接続を確認します。Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。Acquisition Unit のログ（ /var/log/netapp/cloudInsights /acq/acq.log ）でエラーがないかどうかを確認します。</block>
+  <block id="b1260e2bc601bf885eaa981883335e26" category="cell">このエラーは、ネットワークの中断によってAcquisition UnitとData Infrastructure Insights環境の間の通信が1分以上中断される場合に発生することがあります。AUとData Infrastructure Insightsの間の接続が安定してアクティブであることを確認します。</block>
+  <block id="894d604192ab58e12d0ea71847fa1a56" category="paragraph">インターネットアクセスにプロキシを使用する必要がある場合は、組織のプロキシの動作を理解し、Data Infrastructure Insightsが機能するために特定の例外を探す必要があります。次の事項に注意してください。</block>
+  <block id="4f0373fcf0dc18b5fa439fffaa7e1a4c" category="paragraph">Data Infrastructure Insights Acquisition Unitのほか、WebブラウザでのData Infrastructure Insightsの操作はすべて、そのドメイン名を持つホストに送信されます。</block>
+  <block id="5dee7c81bca2a10fa3e100f4c6bbfe98" category="list-text">次に、一部のプロキシは、NetAppから生成されないデジタル証明書でデータインフラストラクチャインサイトのWebサイトを偽装することで、TLS/SSL検査を実行しようとします。Data Infrastructure Insights Acquisition Unitのセキュリティモデルは、これらのテクノロジと根本的に互換性がありません。Data Infrastructure Insights Acquisition UnitがData Infrastructure Insightsに正常にログインしてデータ検出を行えるようにするには、この機能以外の上記のドメイン名も必要です。</block>
+  <block id="f755527ee3baf9129b51d65b128caa93" category="paragraph">トラフィック検査用にプロキシが設定されている場合は、プロキシ構成の例外リストにData Infrastructure Insights環境を追加する必要があります。この例外リストの形式と設定は、プロキシの環境やツールによって異なりますが、一般に、AUがこれらのサーバと適切に通信できるように、Data Infrastructure InsightsサーバのURLをこの例外リストに追加する必要があります。</block>
+  <block id="a43cc84e7ebd92afd50bb8df5abbf439" category="paragraph">最も簡単な方法は、Data Infrastructure Insightsドメイン自体を例外リストに追加することです。</block>
+  <block id="ad41a8b6a64bd565d4da11ec15f80d03" category="paragraph">プロキシがトラフィック検査用に設定されていない場合は、例外リストが必要な場合と必要でない場合があります。Data Infrastructure Insightsを例外リストに追加する必要があるかどうかわからない場合、またはプロキシやファイアウォールの構成が原因でData Infrastructure Insightsのインストールや実行に問題がある場合は、プロキシ管理チームに相談して、プロキシによるSSL代行受信の処理を設定してください。</block>
+  <block id="77a4a027afad6284613622be97013f92" category="cell">Acquisition Unit（AU）は、リースを更新するために60秒ごとにハートビートをData Infrastructure Insightsに送信します。ネットワークの問題やData Infrastructure Insightsの応答がないためにハートビートコールが失敗した場合、AUのリース時間は更新されません。AUのリース期限が切れると、Data Infrastructure Insightsのステータスは「Heartbeat Failed」と表示されます。トラブルシューティングの手順： * Acquisition Unit サーバと CloudInsights 間のネットワーク接続を確認します。* Acquisition Unit サービスが実行されているかどうかを確認します。サービスが実行されていない場合は、サービスを開始します。* Acquisition Unit のログ（ &lt;Install dir&gt; ： \Program Files\Cloud Insights \Acquisition Unit \log\acq.log ）でエラーがないかどうかを確認します。</block>
+  <block id="4bc54e27677238cd1e39c4bdda865d7f" category="paragraph">Data Infrastructure Insightsには、超過した場合にアラートが表示され<block ref="6237c321048ea1332593fdb4bbfce320" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="fe7eee9a8f76b65098fb97bbadfb999a" category="admonition">監視とアラートは、Data Infrastructure Insights Standard Edition以上で利用できます。</block>
+  <block id="ffbb059fbd1b72fd858ad1db288acd16" category="paragraph">Data Infrastructure Insightsなどのリアルタイムシステムでは、監視の分析をトリガーしてアラートを生成するかどうかを判断するには、次の2つの要素のいずれかを使用します。</block>
+  <block id="4ab8aaf86bc2a850fc1d9deb5157240b" category="paragraph">これを回避するために、Data Infrastructure Insightsは「永続的にアクティブな」アラートを7日後に自動的に閉じます。基本的なモニタ状態が ( おそらく ) 継続して存在し、新しいアラートがほぼ即座に発行されることに注意してください。しかし、この「常時アクティブ」アラートを閉じることで、他の状況で発生する可能性のあるシステム負荷が軽減されます。</block>
+  <block id="dfd32f627ae209fae0647c664a4c742a" category="list-text">Data Infrastructure Insightsテナントにログインします。</block>
+  <block id="7ff77bf6f123aa17e08bbc89c8477c9e" category="paragraph">クエリ結果をスクロールするときは、Data Infrastructure Insightsが自動的にデータコレクタにポーリングを行うため、結果が変わる可能性があることに注意してください。これにより、一部の項目が表示されなくなったり、ソート方法によっては一部の項目が順序どおりに表示されない場合があります。</block>
+  <block id="0ee4a305dd2347838f35598e16c97c78" category="list-text">Webhook URL をコピーします。この設定をData Infrastructure InsightsのWebhook設定に貼り付ける必要があります。</block>
+  <block id="4d0fecf8d03c2d4c7411b9f6f2355d59" category="section-title">データインフラに関するインサイトを作成Webhook：</block>
+  <block id="5568d321987f45b590964c423dbd5874" category="list-text">Data Infrastructure Insightsで、* Admin &gt; Notifications *に移動し、* Webhooks *タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。</block>
+  <block id="2fbc7e19fa765e792924946b883c7d7c" category="paragraph">Webhookでイベントを通知するには、[Data Infrastructure Insights ]で*[Alerts]&gt;[Monitors]*に移動し、*[+Monitor]*をクリックして新しいを作成し<block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="b59bb2be40103d441711440903e77391" category="list-text">[Integrations_] タブをクリックして、 * 統合キー * を表示します。このキーは、以下のData Infrastructure Insights Webフックを作成する際に必要になります。</block>
+  <block id="50a2ccfea77457258a47f8f7608e5924" category="section-title">PagerDutyとData Infrastructure Insightsのフィールドマッピング</block>
+  <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">次の表と画像は、PagerDutyとData Infrastructure Insightsの間のフィールドのマッピングを示しています。</block>
+  <block id="55f37f5127b4085cc0881e89df336196" category="cell">Data Infrastructure Insights Dockerリポジトリと比較して、お客様のプライベートDockerリポジトリからイメージを取得するためのdockerRepoオーバーライド。デフォルトはData Infrastructure Insights Dockerリポジトリ</block>
+  <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Data Infrastructure Insightsのテナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します</block>
 </blocks>

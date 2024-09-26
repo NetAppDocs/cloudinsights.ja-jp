@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: pre-requisites_for_k8s_operator.html 
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
-summary: Cloud Insights は、 Kubernetes で統合データを収集するエージェントとして Telegraf をサポートしています。 
+summary: Data Infrastructure Insightsは、Kubernetes上で統合データを収集するエージェントとしてTelegrafをサポートしています。 
 ---
 = NetApp Kubernetes監視オペレータをインストールまたはアップグレードする前に
 :toc: macro
@@ -36,25 +36,16 @@ Rancher Kubernetes Engine （ RKE ）
 VMware Tanzu の 
 
 
-| Linux OS | Cloud Insightsは、Arm64アーキテクチャで実行されているノードをサポートしていません。
-
-ネットワーク監視：Linuxカーネルバージョン4.18.0以上を実行している必要があります。Photon OSはサポートされていません。 
+| Linux OS | Data Infrastructure Insightsでは、Arm64アーキテクチャで実行されているノードはサポートされません。ネットワーク監視：Linuxカーネルバージョン4.18.0以上を実行している必要があります。Photon OSはサポートされていません。 
 
 
-| ラベル | Cloud Insights では、 Linux を実行している Kubernetes ノードの監視をサポートしています。 Kubernetes ノードセレクタを指定して、これらのプラットフォームで次の Kubernetes ラベルを検索します。
-
-Kubernetes v1.20以上：kubernetes.io/os=Linux
-Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフォームとして使用：cattle.io / os = Linux 
+| ラベル | Data Infrastructure Insightsは、Kubernetesノードセレクタを指定して、これらのプラットフォームで次のKubernetesラベルを検索することで、Linuxを実行しているKubernetesノードの監視をサポートします。Kubernetes v1.20以降：Kubernetes .io/os=linux Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフォーム：cattle.io/os=linux 
 
 
 | コマンド | curlコマンドとkubectlコマンドが使用可能である必要があります。;最良の結果を得るには、これらのコマンドをパスに追加してください。 
 
 
-| 接続性 | kubectl CLIはターゲットのKubernetesクラスタと通信するように設定し、Cloud Insights環境にインターネット接続できるようにしておきます。
-
-インストール中にプロキシの背後にいる場合は、 link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["プロキシサポートを設定しています"] Operatorインストールのセクション。
-
-監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。 
+| 接続性 | kubectl CLIはターゲットのKubernetesクラスタと通信するように設定されており、Data Infrastructure Insights環境にインターネット接続されています。インストール中にプロキシの背後にいる場合は、「オペレータのインストール」のセクションに記載されている手順に従ってくださいlink:task_config_telegraf_agent_k8s.html#configuring-proxy-support["プロキシサポートを設定しています"]。監査およびデータレポートを正確に作成するには、Network Time Protocol（NTP；ネットワークタイムプロトコル）またはSimple Network Time Protocol（SNTP；簡易ネットワークタイムプロトコル）を使用してAgentマシンの時刻を同期します。 
 
 
 | その他 | OpenShift 4.6以降を実行している場合は、 link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift の手順"] さらに、これらの前提条件が満たされていることを確認します。 
@@ -76,11 +67,11 @@ Rancher + cattle.ioをオーケストレーション/ Kubernetesプラットフ�
 
 環境にプロキシを使用してNetApp Kubernetes Monitoring Operatorをインストールする方法は2つあります。同じプロキシシステムでも、別のプロキシシステムでもかまいません。
 
-* プロキシは、インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをCloud Insights 環境に接続するために必要です
-* ターゲットのKubernetesクラスタがCloud Insights 環境と通信するために必要なプロキシ
+* インストールコードスニペット（「curl」を使用）の実行中に、スニペットが実行されるシステムをData Infrastructure Insights環境に接続するために必要なプロキシ
+* ターゲットのKubernetesクラスタがData Infrastructure Insights環境と通信するために必要なプロキシ
 
 
-これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、最初にプロキシがCloud Insights環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMから、Cloud Insightsにアクセスし、Cloud Insightsからバイナリをダウンロードできるようにする必要があります。
+これらのいずれかまたは両方にプロキシを使用する場合、NetApp Kubernetesオペレーティングモニタをインストールするには、まずプロキシがデータインフラストラクチャインサイト環境との良好な通信を許可するように設定されていることを確認する必要があります。たとえば、Operatorをインストールするサーバ/ VMからData Infrastructure Insightsにアクセスし、Data Infrastructure Insightsからバイナリをダウンロードできるようにする必要があります。
 
 NetApp Kubernetes Operating Monitorのインストールに使用するプロキシとして、オペレータをインストールする前に、_http_proxy/https_proxy_environment変数を設定します。一部のプロキシ環境では'_no_proxy環境変数も設定する必要があります
 
@@ -98,7 +89,7 @@ NetApp Kubernetes Operating Monitorのインストールに使用するプロキ
 
 
 
-KubernetesクラスタがCloud Insights 環境と通信するために使用するプロキシについては、以下の手順をすべて読み、NetApp Kubernetes Monitoring Operatorをインストールします。
+KubernetesクラスタがData Infrastructure Insights環境と通信するために使用するプロキシの場合は、これらの手順をすべて読んでからNetApp Kubernetes監視オペレータをインストールします。
 
 NetApp Kubernetes Monitoring Operatorを導入する前に、operator-config.yamlでAgentConfigurationのプロキシセクションを設定します。
 
@@ -128,9 +119,9 @@ agent:
 
 === カスタムまたはプライベートのDockerリポジトリを使用する
 
-デフォルトでは、NetApp Kubernetes Monitoring OperatorはCloud Insights リポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。
+デフォルトでは、NetApp Kubernetes監視オペレータは、データインフラのインサイトリポジトリからコンテナイメージを取得します。監視のターゲットとして使用されているKubernetesクラスタがあり、カスタムまたはプライベートのDockerリポジトリまたはコンテナレジストリからのみコンテナイメージを取得するようにそのクラスタが設定されている場合は、NetApp Kubernetes Monitoring Operatorで必要なコンテナへのアクセスを設定する必要があります。
 
-NetApp Monitoring Operatorのインストールタイルから[Image Pull Snippet]を実行します。このコマンドは、Cloud Insights リポジトリにログインし、オペレータのすべてのイメージ依存関係をプルして、Cloud Insights リポジトリからログアウトします。プロンプトが表示されたら、指定したリポジトリの一時パスワードを入力します。このコマンドは、オプション機能を含む、オペレータが使用するすべてのイメージをダウンロードします。これらの画像がどの機能に使用されるかについては、以下を参照してください。
+NetApp Monitoring Operatorのインストールタイルから[Image Pull Snippet]を実行します。このコマンドを実行すると、Data Infrastructure Insightsリポジトリにログインし、オペレータが必要とするすべてのイメージを取得して、Data Infrastructure Insightsリポジトリからログアウトします。プロンプトが表示されたら、指定したリポジトリの一時パスワードを入力します。このコマンドは、オプション機能を含む、オペレータが使用するすべてのイメージをダウンロードします。これらの画像がどの機能に使用されるかについては、以下を参照してください。
 
 Core Operator Functionality and Kubernetes Monitoringの略
 
@@ -152,7 +143,7 @@ Core Operator Functionality and Kubernetes Monitoringの略
 * ci-net-observerの略
 
 
-社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのイメージタグとディレクトリパスが、Cloud Insights リポジトリ内のイメージタグとディレクトリパスと一致していることを確認します。
+社内のポリシーに従って、オペレータ用の Docker イメージをプライベート / ローカル / エンタープライズ Docker リポジトリにプッシュします。リポジトリ内のこれらのイメージへのイメージタグとディレクトリパスが、Data Infrastructure Insightsリポジトリ内のイメージタグとディレクトリパスと一致していることを確認します。
 
 operator-deployment.yamlでmonitoring-operatorデプロイメントを編集し、プライベートDockerリポジトリを使用するようにすべてのイメージ参照を変更します。
 

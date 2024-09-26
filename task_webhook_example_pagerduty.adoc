@@ -33,7 +33,7 @@ NOTE: このページでは、変更される可能性があるサードパー�
 +
 image:Webhooks_PagerDutyScreen1.png["PagerDuty 画面"]
 
-. [Integrations_] タブをクリックして、 * 統合キー * を表示します。このキーは、次の Cloud Insights ウェブフックを作成するときに必要になります。
+. [Integrations_] タブをクリックして、 * 統合キー * を表示します。このキーは、以下のData Infrastructure Insights Webフックを作成する際に必要になります。
 
 
 . [ インシデント *] または [ サービス *] に移動して、アラートを表示します。
@@ -44,9 +44,9 @@ image:Webhooks_PagerDutyScreen2.png["PagerDuty スクリーン"]
 
 
 
-== Cloud Insights Webhook を作成します。
+== データインフラに関するインサイトを作成Webhook：
 
-. Cloud Insights で、 [*Admin] > [Notifications] に移動し、 [*webhook *] タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。
+. Data Infrastructure Insightsで、* Admin > Notifications *に移動し、* Webhooks *タブを選択します。[*+Webhook* ] をクリックして、新しい Web フックを作成します。
 . Webhook に "PagerDuty Trigger" などのわかりやすい名前を付けます。このウェブフックは、クリティカルレベルおよび警告レベルのイベントに使用します。
 . _ テンプレートタイプ _ ドロップダウンで * PagerDuty * を選択します。
 
@@ -61,13 +61,13 @@ image:Webhooks_Custom_Secret_Routing_Key.png["ルーティングキーの設定"
 
 
 
-== PagerDuty から Cloud Insights へのフィールドマッピング
+== PagerDutyとData Infrastructure Insightsのフィールドマッピング
 
-次の表と画像は、 PagerDuty と Cloud Insights の間のフィールドのマッピングを示しています。
+次の表と画像は、PagerDutyとData Infrastructure Insightsの間のフィールドのマッピングを示しています。
 
 [cols="<,<"]
 |===
-| PagerDuty | Cloud Insights の機能です 
+| PagerDuty | データインフラの分析情報 
 
 
 | アラートキー | アラート ID 
@@ -90,7 +90,7 @@ image:Webhooks-PagerDuty_Fields.png["CI の PagerDuty フィールド"]
 
 == Webhook で通知します
 
-webhook を使用してイベントを通知するには、 Cloud Insights で [*Alerts] > [Monitors *] の順に選択し、 [*+ Monitor*] をクリックして新しいイベントを作成します link:task_create_monitor.html["モニタ"]。
+Webhookでイベントを通知するには、[Data Infrastructure Insights ]で*[Alerts]>[Monitors]*に移動し、*[+Monitor]*をクリックして新しいを作成しlink:task_create_monitor.html["モニタ"]ます。
 
 * メトリックを選択し、モニタの条件を定義します。
 * チーム通知の設定（ _Set up team notification(s) ）で、 * Webhook * 配信方法を選択します。

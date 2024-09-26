@@ -31,13 +31,13 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 | エージェント |  | オペレータがインストールできるすべてのコンポーネントに共通の設定オプション。これらは「グローバル」オプションと見なすことができます。 
 
 
-|  | dockerrepo | Cloud Insights Dockerリポジトリと比較して、お客様のプライベートDockerリポジトリからイメージをプルするためのdockerRepoオーバーライド。デフォルトはCloud Insights Dockerリポジトリです 
+|  | dockerrepo | Data Infrastructure Insights Dockerリポジトリと比較して、お客様のプライベートDockerリポジトリからイメージを取得するためのdockerRepoオーバーライド。デフォルトはData Infrastructure Insights Dockerリポジトリ 
 
 
 |  | dockerImagePullSecretの略 | オプション:顧客のプライベートリポジトリのシークレット 
 
 
-|  | クラスタ名 | すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Cloud Insights テナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します 
+|  | クラスタ名 | すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Data Infrastructure Insightsのテナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します 
 
 
 |  | プロキシ
@@ -273,10 +273,10 @@ spec:
   # #   To update them, uncomment the line, change the value, and apply the updated AgentConfiguration.
   agent:
     # # [Required Field] A uniquely identifiable user-friendly clustername.
-    # # clusterName must be unique across all clusters in your Cloud Insights environment.
+    # # clusterName must be unique across all clusters in your Data Infrastructure Insights environment.
     clusterName: "my_cluster"
 
-    # # Proxy settings. The proxy that the operator should use to send metrics to Cloud Insights.
+    # # Proxy settings. The proxy that the operator should use to send metrics to Data Infrastructure Insights.
     # # Please see documentation here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#configuring-proxy-support
     # proxy:
     #   server:

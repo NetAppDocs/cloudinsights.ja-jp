@@ -19,7 +19,7 @@ summary: Kubernetes のランディングページで
 
 
 [role="lead"]
-Cloud Insights Kubernetes エクスプローラは、 Kubernetes クラスタの全体的な健常性と使用状況を表示する強力なツールで、調査対象の領域に簡単にドリルダウンできます。
+Data Infrastructure Insights Kubernetes Explorerは、Kubernetesクラスタの全体的な健全性と使用状況を表示するための強力なツールであり、調査領域に簡単にドリルダウンできます。
 
 [Dashboards]>[Kubernetes Explorer]をクリックすると、[Kubernetes Cluster]リストページが開きます。この概要ページには、環境内のKubernetesクラスタの表が含まれています。
 

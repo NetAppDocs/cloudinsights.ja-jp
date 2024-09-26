@@ -4,7 +4,7 @@ permalink: reporting_schema_diagrams.html
 keywords: Schema, DB Schema, premium, dwh, data warehouse 
 summary: レポートスキーマの図 
 ---
-= Cloud Insights レポートスキーマの図
+= Data Infrastructure Insightsのレポートスキーマ図
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -21,7 +21,7 @@ summary: レポートスキーマの図
 このドキュメントでは、 Reporting Database のスキーマ図を示します。を含むファイルをダウンロードすることもできます link:ci_reporting_database_schema.pdf["スキーマテーブル"]。
 
 
-NOTE: レポート機能は Cloud Insights で使用できます link:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]。
+NOTE: レポート機能はData Infrastructure Insightsで使用できlink:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]ます。
 
 
 

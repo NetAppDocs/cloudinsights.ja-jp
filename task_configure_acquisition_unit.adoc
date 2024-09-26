@@ -19,14 +19,14 @@ summary: WindowsおよびLinuxでのAcquisition Unitのインストール、ア�
 
 
 [role="lead"]
-Cloud Insights は、ローカルサーバにインストールされている Acquisition Unit を使用してデバイスデータを収集します。各 Acquisition Unit では、複数のデータコレクタをホストできます。これらのコレクタは、分析のためにデバイスメトリックを Cloud Insights に送信
+Data Infrastructure Insightsは、ローカルサーバにインストールされている1つ以上のAcquisition Unitを使用してデバイスデータを収集します。各Acquisition Unitは複数のデータコレクタをホストでき、データコレクタはデバイスメトリックをData Infrastructure Insightsに送信して分析します。
 
 ここでは、 Acquisition Unit を追加する方法と、プロキシを使用する環境で必要な追加の手順について説明します。
 
 
 NOTE: 正確な監査およびデータレポートを作成するためには、 * Network Time Protocol （ NTP ；ネットワークタイムプロトコル） * または * Simple Network Time Protocol （ SNTP ） * を使用して Acquisition Unit マシンの時間を同期することを強く推奨します。
 
-Cloud Insightsのセキュリティについて読む link:security_overview.html["こちらをご覧ください"]。
+Data Infrastructure Insightsのセキュリティについてはlink:security_overview.html["こちらをご覧ください"]、こちらをご覧ください。
 
 
 
@@ -37,7 +37,7 @@ Cloud Insightsのセキュリティについて読む link:security_overview.htm
 
 
 .Linux Acquisition Unit のインストール手順
-. Cloud Insights 環境に管理者またはアカウント所有者としてログインします。
+. Data Infrastructure Insights環境に管理者またはアカウント所有者としてログインします。
 . [Observability]>[Collectors]>[Acquisition Units]>[+Acquisition Unit]
 +
 [Install Acquisition Unit_Dialog] が表示されます。Linux を選択します。
@@ -87,9 +87,9 @@ image:NewLinuxAUInstall.png["Linux AU の手順"]
 
 === プロキシ設定：
 
-Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証を使用します。認証するには、クライアント証明書を Cloud Insights サーバに渡す必要があります。これを実現するには、 HTTPS 要求をデータを復号化せずに Cloud Insights サーバに転送するようにプロキシを設定する必要があります。
+Acquisition Unitは、双方向認証と相互認証を使用してData Infrastructure Insightsサーバに接続します。認証するには、クライアント証明書をData Infrastructure Insightsサーバに渡す必要があります。そのためには、データを復号化せずにHTTPS要求をData Infrastructure Insightsサーバに転送するようにプロキシを設定する必要があります。
 
-最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。
+これを行う最も簡単な方法は、Data Infrastructure Insightsと通信するためにプロキシ/ファイアウォールでワイルドカード設定を指定することです。次に例を示します。
 
  *.cloudinsights.netapp.com
 
@@ -113,7 +113,7 @@ image:ProxyEndpoints_NewTable.png["プロキシエンドポイントテーブル
 
 .Windows Acquisition Unit のインストールの手順
 . 管理者権限を持つユーザとして Acquisition Unit サーバ / VM にログインします。
-. そのサーバーで、ブラウザウィンドウを開き、管理者またはアカウント所有者として Cloud Insights 環境にログインします。
+. そのサーバで、ブラウザウィンドウを開き、管理者またはアカウント所有者としてData Infrastructure Insights環境にログインします。
 . [Observability]>[Collectors]>[Acquisition Units]>[+Acquisition Unit]
 +
 [Install Acquisition Unit_Dialog] が表示されます。Windows を選択します。
@@ -143,9 +143,9 @@ image::NewWindowsAUInstall.png[Windows AU のインストール]
 
 === プロキシ設定：
 
-Acquisition Unit は、 Cloud Insights サーバへの接続に双方向認証を使用します。認証するには、クライアント証明書を Cloud Insights サーバに渡す必要があります。これを実現するには、 HTTPS 要求をデータを復号化せずに Cloud Insights サーバに転送するようにプロキシを設定する必要があります。
+Acquisition Unitは、双方向認証と相互認証を使用してData Infrastructure Insightsサーバに接続します。認証するには、クライアント証明書をData Infrastructure Insightsサーバに渡す必要があります。そのためには、データを復号化せずにHTTPS要求をData Infrastructure Insightsサーバに転送するようにプロキシを設定する必要があります。
 
-最も簡単な方法は、プロキシまたはファイアウォールでワイルドカード設定を指定して Cloud Insights と通信することです。次に例を示します。
+これを行う最も簡単な方法は、Data Infrastructure Insightsと通信するためにプロキシ/ファイアウォールでワイルドカード設定を指定することです。次に例を示します。
 
  *.cloudinsights.netapp.com
 
@@ -174,7 +174,7 @@ Acquisition Unit ソフトウェアをアンインストールするには、次
 
 Windows * Acquisition Unitをアンインストールする場合は、次の手順を実行します。
 
-. Acquisition Unit のサーバー /VM で、 Control Panel を開いて、「プログラムのアンインストール」を選択します。Cloud Insights Acquisition Unit プログラムを選択して削除します。
+. Acquisition Unit のサーバー /VM で、 Control Panel を開いて、「プログラムのアンインストール」を選択します。削除するData Infrastructure Insights Acquisition Unitプログラムを選択します。
 . [ アンインストール ] をクリックし、画面の指示に従います。
 
 
@@ -196,7 +196,7 @@ Linux* Acquisition Unitをアンインストールする場合は、次の手順
 
 * AUのアンインストール後：
 
-. Cloud Insightsで、*[Observability]>[Collectors]に移動し、*[Acquisition Units]*タブを選択します。
+. Data Infrastructure Insightsで、*[Observability]>[Collectors]に移動し、*[Acquisition Units]*タブを選択します。
 . アンインストールする Acquisition Unit の右側にある Options ボタンをクリックし、 _Delete_を 選択します。Acquisition Unit は、その Acquisition Unit にデータコレクタが割り当てられていない場合にのみ削除できます。
 
 
@@ -218,7 +218,7 @@ Acquisition Unit を再インストールするには、あらかじめ別のサ
 
 .手順
 . Acquisition Unit サーバ /VM にログインし、 AU ソフトウェアをアンインストールします。
-. Cloud Insights環境にログインし、*オブザーバビリティ>コレクタ*に移動します。
+. Data Infrastructure Insights環境にログインし、*オブザーバビリティ>コレクタ*に移動します。
 . 各データコレクタについて、右側の [ オプション ] メニューをクリックし、 _Edit_ を選択します。一時収集ユニットにデータコレクタを割り当て、 * 保存 * をクリックします。
 +
 同じタイプの複数のデータコレクタを選択し、 * 一括アクション * ボタンをクリックすることもできます。_Edit_ を選択し、データコレクタを一時 Acquisition Unit に割り当てます。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference_object_icons.html 
-summary: Cloud Insights オブジェクトアイコンリファレンスです。 
+summary: Data Infrastructure Insightsオブジェクトアイコン 
 keywords: icons, assets, objects, reference, map 
 ---
 = オブジェクトアイコンリファレンス
@@ -9,7 +9,7 @@ keywords: icons, assets, objects, reference, map
 
 
 [role="lead"]
-Cloud Insightsで使用されるオブジェクトアイコン。
+Data Infrastructure Insightsで使用されるオブジェクトアイコン。
 
 
 

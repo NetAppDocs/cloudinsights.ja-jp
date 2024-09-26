@@ -38,7 +38,7 @@ _Total Coverage_link には、特定されたデバイスの数、または構�
 
 == ファイバチャネルデバイスを手動で追加する
 
-デバイス解決の Fibre Channel Identify タブで使用可能な _Manual Add_feature を使用して、ファイバチャネルデバイスを Cloud Insights に手動で追加できます。このプロセスは、今後検出されることが予想されるデバイスの事前識別に使用される場合があります。
+Data Infrastructure Insightsにファイバチャネルデバイスを手動で追加するには、デバイス解決の[Fibre Channel Identify]タブにある_Manual Add_機能を使用します。このプロセスは、今後検出されることが予想されるデバイスの事前識別に使用される場合があります。
 
 .作業を開始する前に
 システムにデバイス識別情報を追加するには、 WWN または IP アドレスとデバイス名を確認しておく必要があります。
@@ -47,7 +47,7 @@ _Total Coverage_link には、特定されたデバイスの数、または構�
 ホスト、ストレージ、テープ、または不明なファイバチャネルデバイスを手動で追加できます。
 
 .手順
-. Cloud Insights Web UI にログインします
+. Data Infrastructure Insights Web UIにログイン
 . [*Manage] > [Device Resolution*] をクリックします
 . Fibre Channel identify * タブをクリックします。
 . [ * 追加（ Add * ） ] ボタンをクリックします。
@@ -64,7 +64,7 @@ _Total Coverage_link には、特定されたデバイスの数、または構�
 
 == .csv ファイルからファイバチャネルデバイスの識別情報をインポートしています
 
-.csv ファイル内のデバイスのリストを使用して、ファイバチャネルデバイスの識別情報を Cloud Insights デバイスの解決に手動でインポートできます。
+ファイバチャネルデバイスの識別情報は、.csvファイルのデバイスのリストを使用して、Data Infrastructure Insightsのデバイス解決に手動でインポートできます。
 
 . 作業を開始する前に
 
@@ -89,7 +89,7 @@ NOTE: ベストプラクティスとして、最初にファイバチャネル�
 
 ファイバ・チャネル識別情報をインポートするには ' 次の手順
 
-. Cloud Insights Web UI にログインします。
+. Data Infrastructure Insights Web UIにログインします。
 . [*Manage] > [Device Resolution*] をクリックします
 . Fibre Channel identify * タブを選択します。
 . [ 識別 ]>[ ファイルから識別 ] ボタンをクリックします。
@@ -103,7 +103,7 @@ NOTE: ベストプラクティスとして、最初にファイバチャネル�
 
 == .csv ファイルへのファイバチャネルデバイス識別情報のエクスポート
 
-Cloud Insights デバイス解決機能から、既存のファイバチャネルデバイスの識別情報を .csv ファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更して Cloud Insights に再びインポートすることで、最初にエクスポートした識別情報と類似するデバイスの識別に使用できます。
+Data Infrastructure Insightsのデバイス解決機能から、ファイバチャネルデバイスの既存の識別情報を.csvファイルにエクスポートできます。エクスポートしたデバイス識別情報を変更してData Infrastructure Insightsに再度インポートすると、最初に識別情報をエクスポートしたデバイスと類似したデバイスの識別に使用できます。
 
 .このタスクについて
 このシナリオは、 .csv ファイルで簡単に編集できる属性がデバイスに似ている場合に使用し、その後システムにインポートし直すことができます。
@@ -116,7 +116,7 @@ Cloud Insights デバイス解決機能から、既存のファイバチャネ�
 | WWN | IP | 名前 | を入力します 
 |===
 .手順
-. Cloud Insights Web UI にログインします。
+. Data Infrastructure Insights Web UIにログインします。
 . [*Manage] > [Device Resolution*] をクリックします
 . Fibre Channel identify * タブを選択します。
 . 識別情報をエクスポートする 1 つ以上のファイバチャネルデバイスを選択します。

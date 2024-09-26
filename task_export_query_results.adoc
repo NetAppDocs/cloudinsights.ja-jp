@@ -22,7 +22,7 @@ keywords: query, queries, export, csv
 クエリの結果を .csv ファイルにエクスポートして、データを分析したり、別のアプリケーションにインポートしたりできます。
 
 .手順
-. Cloud Insights にログインします。
+. Data Infrastructure Insightsにログインします。
 . [ * クエリ * ] をクリックし、 [ * すべてのクエリを表示 * ] を選択します。
 +
 [ クエリ ] ページが表示されます。

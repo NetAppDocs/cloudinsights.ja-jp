@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, smd, storage manager dashboard
 Storage Manager Dashboard では、一定期間のリソース使用量をまとめて表示し、許容範囲および過去何日間かのアクティビティと比較することができます。ストレージサービスの主要なパフォーマンス指標だけが表示されるため、データセンターの管理方法についての決定を下すことができます。
 
 
-NOTE: レポート機能は Cloud Insights で使用できます link:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]。
+NOTE: レポート機能はData Infrastructure Insightsで使用できlink:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]ます。
 
 
 

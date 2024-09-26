@@ -5,17 +5,14 @@ summary: 必要に応じて、環境内のアセットに適用するアプリ�
 keywords: application, create application, 
 ---
 = アプリケーションの作成
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -28,7 +25,7 @@ keywords: application, create application,
 Cloud Insights を使用すると、アプリケーションに関連付けられているアセットのデータを追跡して、使用状況やコストレポートなどの情報を確認できます。
 
 .手順
-. Cloud Insights メニューで、 * Manage > Applications * の順にクリックします。
+. Cloud Insightsメニューで、* Observability > Enrich > Applications *をクリックします。選択
 +
 [アプリケーションの追加]ダイアログボックスが表示されます。
 

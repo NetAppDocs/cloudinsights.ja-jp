@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 レポートの出力形式と配信のカスタマイズ、レポートのプロパティまたはスケジュールの設定、およびレポートの電子メール送信を行うことができます。
 
 
-NOTE: レポート機能は Cloud Insights で使用できます link:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]。
+NOTE: レポート機能はData Infrastructure Insightsで使用できlink:concept_subscribing_to_cloud_insights.html["Premium Edition の場合"]ます。
 
 
 
@@ -30,7 +30,7 @@ NOTE: レポート機能は Cloud Insights で使用できます link:concept_su
 
 レポートの形式と配信方法をカスタマイズできます。
 
-. Cloud Insights レポートポータルで、*[メニュー]>[コンテンツ]>[マイコンテンツ/チームコンテンツ]*に移動します。カスタマイズするレポートの上にマウスを置き、「3つのドット」メニューを開きます。
+. Data Infrastructure Insights Reportingポータルで、*[メニュー]>[コンテンツ]>[マイコンテンツ/チームコンテンツ]*に移動します。カスタマイズするレポートの上にマウスを置き、「3つのドット」メニューを開きます。
 
 
 image:Reporting_Output_and_Delivery.png["レポートの出力と配信"]
