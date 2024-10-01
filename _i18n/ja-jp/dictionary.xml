@@ -2440,8 +2440,6 @@ SVM IPを使用して追加する場合のオプションは次のとおりで�
   <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">ONTAP 送信バッファサイズを設定します</block>
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">ONTAP FPolicy 送信バッファのサイズを設定します。9.8p7 より前のバージョンの ONTAP を使用していて、 Performance 問題が表示された場合、 ONTAP 送信バッファサイズを変更して ONTAP のパフォーマンスを向上させることができます。このオプションが表示されない場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="82d21a2ba2528e048a25848fe767072e" category="list-text">Installed Data Collectors ページで、各コレクタの右側にあるオプションメニューを使用してデータコレクタを編集します。データコレクタを再起動したり、データコレクタ設定の属性を編集したりできます。</block>
-  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Metro Clusterの推奨構成</block>
-  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Metro Clusterの推奨事項は次のとおりです。</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">2つのデータコレクタをソースSVMに、別のデータコレクタをデスティネーションSVMに接続します。</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">データコレクタは、_Cluster IP_.によって接続する必要があります。</block>
   <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">あるデータコレクタを実行する必要がある時点であれば、別のデータコレクタでエラーが発生します。</block>
@@ -16217,4 +16215,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">次の表と画像は、PagerDutyとData Infrastructure Insightsの間のフィールドのマッピングを示しています。</block>
   <block id="55f37f5127b4085cc0881e89df336196" category="cell">Data Infrastructure Insights Dockerリポジトリと比較して、お客様のプライベートDockerリポジトリからイメージを取得するためのdockerRepoオーバーライド。デフォルトはData Infrastructure Insights Dockerリポジトリ</block>
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Data Infrastructure Insightsのテナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します</block>
+  <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">MetroClusterの推奨構成</block>
+  <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">MetroClusterの推奨事項は次のとおりです。</block>
 </blocks>
