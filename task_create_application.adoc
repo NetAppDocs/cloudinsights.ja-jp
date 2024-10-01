@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: 必要に応じて、環境内のアセットに適用するアプリケーションを定義します。 
+summary: アプリケーションを定義し、必要に応じて環境内のアセットに適用します。 
 keywords: application, create application, 
 ---
 = アプリケーションの作成
@@ -16,16 +16,16 @@ keywords: application, create application,
 
 
 [role="lead"]
-環境で実行されている特定のアプリケーションに関連付けられているデータを追跡するには、 Cloud Insights でアプリケーションを定義します。
+環境で実行されている特定のアプリケーションに関連するデータを追跡するには、Data Infrastructure Insightsでアプリケーションを定義します。
 
 .作業を開始する前に
 アプリケーションをビジネスエンティティに関連付ける場合は、アプリケーションを定義する前にビジネスエンティティを作成する必要があります。
 
 .このタスクについて
-Cloud Insights を使用すると、アプリケーションに関連付けられているアセットのデータを追跡して、使用状況やコストレポートなどの情報を確認できます。
+Data Infrastructure Insightsを使用すると、アプリケーションに関連付けられたアセットのデータを追跡し、使用状況やコストレポートなどを作成できます。
 
 .手順
-. Cloud Insightsメニューで、* Observability > Enrich > Applications *をクリックします。選択
+. [Data Infrastructure Insights ]メニューで、*[Observability]>[Enrich]>[Applications]*をクリックします。選択
 +
 [アプリケーションの追加]ダイアログボックスが表示されます。
 

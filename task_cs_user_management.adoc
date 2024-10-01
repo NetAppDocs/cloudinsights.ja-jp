@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_cs_user_management.html 
 keywords: Workload Security, User, Login, account, cloud secure 
-summary: ワークロードセキュリティユーザーアカウントは、Cloud Insights ユーザー管理によって管理されます 
+summary: ワークロードのセキュリティユーザアカウントはData Infrastructure Insightsのユーザ管理で管理 
 ---
 = ユーザ管理
 :hardbreaks:
@@ -16,9 +16,9 @@ summary: ワークロードセキュリティユーザーアカウントは、Cl
 
 
 [role="lead"]
-ワークロードセキュリティユーザアカウントは、Cloud Insights を使用して管理されます。
+ワークロードセキュリティユーザアカウントは、Data Infrastructure Insightsを通じて管理されます。
 
-Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントレベルがあります。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次のいずれかのワークロードセキュリティロールを割り当てることができます。
+Data Infrastructure Insightsには、アカウント所有者、管理者、ユーザ、ゲストの4つのユーザアカウントレベルが用意されています。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次のいずれかのワークロードセキュリティロールを割り当てることができます。
 
 |===
 
@@ -39,11 +39,11 @@ Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲ�
 . Workload Securityにログインします
 . メニューで、 [*Admin] > [User Management] をクリックします
 +
-Cloud Insights の User Management ページに転送されます。
+Data Infrastructure Insightsのユーザ管理ページに移動します。
 
 . 各ユーザに必要なロールを選択します。
 
 
 新しいユーザを追加する際には、目的のロール（通常はユーザまたはゲスト）を選択します。
 
-ユーザアカウントとロールの詳細については、 Cloud Insights を参照してください link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["ユーザロール"] ドキュメント
+ユーザアカウントとロールの詳細については、Data Infrastructure Insightsのドキュメントを参照してlink:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["ユーザロール"]ください。

@@ -9236,9 +9236,7 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="5fdb13066473bd6f58da638bc9c08a77" category="cell">デフォルトは60です。</block>
   <block id="f5246cc263393dd5ccd5be3435aec78d" category="cell">接続タイムアウト（秒）</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">アプリケーションの作成</block>
-  <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">環境で実行されている特定のアプリケーションに関連付けられているデータを追跡するには、 Cloud Insights でアプリケーションを定義します。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">アプリケーションをビジネスエンティティに関連付ける場合は、アプリケーションを定義する前にビジネスエンティティを作成する必要があります。</block>
-  <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">Cloud Insights を使用すると、アプリケーションに関連付けられているアセットのデータを追跡して、使用状況やコストレポートなどの情報を確認できます。</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">[アプリケーションの追加]ダイアログボックスが表示されます。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">アプリケーションの一意の名前を入力します。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">アプリケーションの優先度を選択します。</block>
@@ -9447,10 +9445,7 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="43fec6a9d63b3d82445b98703f087383" category="list-text">過去 7 日間のアクティビティの総数。</block>
   <block id="60cf8e04c47a7705ce07f2d0a3244a2a" category="inline-link-macro">アクティビティ履歴</block>
   <block id="1f24e0feac1342d8f35a49c9b98224e8" category="paragraph">[ アクティビティの詳細を表示（ View Activity Detail ） ] をクリックしてにアクセスします <block ref="d61797bb6c27515ec1bccae4d136d0a1" category="inline-link-macro-rx"></block> 調査中のユーザーのうち、</block>
-  <block id="1e66f3ea1e335e37bed1a50e1a8bb94c" category="summary">ワークロードセキュリティユーザーアカウントは、Cloud Insights ユーザー管理によって管理されます</block>
   <block id="92726ab5faeb2cb9208eaac9af0346bd" category="doc">ユーザ管理</block>
-  <block id="b6ddb5866df8e3256ac245cbce10a9a2" category="paragraph">ワークロードセキュリティユーザアカウントは、Cloud Insights を使用して管理されます。</block>
-  <block id="c407c269e51ab79aa3aca330eca9d8ee" category="paragraph">Cloud Insights には、アカウント所有者、管理者、ユーザ、ゲストの 4 つのユーザアカウントレベルがあります。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次のいずれかのワークロードセキュリティロールを割り当てることができます。</block>
   <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">ロール</block>
   <block id="b77a904f25ddc84b77fcb809d8f2f86b" category="cell">ワークロードセキュリティアクセス</block>
   <block id="e234e3c5cb64670391b843b3fc72500e" category="cell">アラート、フォレンジック、データコレクタ、自動応答ポリシー、ワークロードセキュリティ用APIなど、すべてのワークロードセキュリティ機能を実行できます。
@@ -9459,11 +9454,9 @@ ZAPIエラーコードが14007で、応答に「Node is not healthy」が含ま�
   <block id="0807462d8fba61c18f849a8f66cf58d7" category="cell">アラートおよびフォレンジックを表示できます。ゲストロールは、アラートステータスの変更、メモの追加、スナップショットの手動作成、ユーザーアクセスの制限を行うことはできません。</block>
   <block id="5a26acadc0fa5b833d36974bd6536459" category="list-text">Workload Securityにログインします</block>
   <block id="d40cbac53e949a73a04e1b3c9429ce6d" category="list-text">メニューで、 [*Admin] &gt; [User Management] をクリックします</block>
-  <block id="6ebd484a6c09e27c3b5f9d6a61ad9a6a" category="paragraph">Cloud Insights の User Management ページに転送されます。</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">各ユーザに必要なロールを選択します。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新しいユーザを追加する際には、目的のロール（通常はユーザまたはゲスト）を選択します。</block>
   <block id="7bc31a95e4a1ee6f8948af20440df0c6" category="inline-link-macro">ユーザロール</block>
-  <block id="faac345f3f122d78da73c0bf89c5d9f3" category="paragraph">ユーザアカウントとロールの詳細については、 Cloud Insights を参照してください <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> ドキュメント</block>
   <block id="5f2b31bafb888e1e6aa37602d2dd9751" category="summary">Kubernetes の詳細ページには、トラブルシューティングや計画に役立つ情報と詳細が記載されています。</block>
   <block id="e3971bbebca9b2f849e520ba01a2f593" category="doc">Kubernetes クラスタの詳細ページ</block>
   <block id="3398e3f6b2ecd1ae749962d864235c59" category="paragraph">Kubernetesクラスタの詳細ページには、Kubernetesクラスタの概要が表示されます。</block>
@@ -14307,7 +14300,6 @@ Linuxの場合は、次の方法でディスクスペースを割り当てる必
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMBプロトコルバージョン3.1以前。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetAppセキュリティアドバイザリ</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">ネットアップが提供しているセキュリティアドバイザリを表示できます。 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
-  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">必要に応じて、環境内のアセットに適用するアプリケーションを定義します。</block>
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">event-exporterポッドの名前を取得します。</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">「netapp-ci-event-exporter」または「event-exporter」のいずれかにする必要があります。  次に、監視エージェントを編集します。<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>をクリックし、log_fileの値を設定して、前の手順で見つけた適切なイベントエクスポータポッド名を反映します。  具体的には、log_fileは「/var/log/containers/netapp-ci-event-exporter.log」または「/var/log/containers/event-exporter *。log」のいずれかに設定する必要があります。</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">秘密に関する注意事項</block>
@@ -16111,7 +16103,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="429e5ff0d154ea9f0d8b69e75866a8b4" category="list-text">[Query]*をクリックし、Data Infrastructure Insightsがアノテーションを適用するアセットを特定するために使用するクエリを選択します。</block>
   <block id="a1301e0af88fd655ae64d39d2d7a0e93" category="admonition">大規模なData Infrastructure Insights環境で、アノテーションルールの実行に時間がかかることがあります。これは、インデクサが最初に実行され、ルールを実行する前に完了する必要があるためです。インデクサは、データ内の新規または更新されたオブジェクトやカウンタを検索またはフィルタリングする機能をData Infrastructure Insightsに提供します。ルールエンジンは、インデクサが更新を完了するまで待機してから、ルールを適用します。</block>
   <block id="df92eb52ff49723465239116d2f4aed4" category="list-text">[Data Infrastructure Insights ]メニューで、*[管理]&gt;[アノテーションルール]*をクリックします。</block>
-  <block id="0809c964b790df4295890dec5b75e498" category="list-text">Cloud Insightsメニューで、* Observability &gt; Enrich &gt; Applications *をクリックします。選択</block>
   <block id="bd49848e16630c106919628a09948a9c" category="admonition">モニタとアラートはData Infrastructure Insightsのすべてのエディションで使用できますが、Basicエディションには次の条件が適用されます。*一度にアクティブにできるカスタムモニタは最大5つまでです。5台を超えるモニタは、_Paused _状態に作成または移動されます。* VMDK、仮想マシン、ホスト、データストアのメトリックモニタはサポートされていません。これらのメトリック用に作成されたモニタは一時停止され、Basic Editionにダウングレードすると再開できません。</block>
   <block id="80645013d90d9d1449dffdd829fc24a4" category="paragraph">Data Infrastructure Insightsには、環境に応じて多数の機能もあり<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>ます。</block>
   <block id="a46093383ff280c45e2e0a8cf945ef64" category="paragraph">Data Infrastructure Insightsのアラートは、環境内のデータポイントやトレンドを特定するように設計されており、Data Infrastructure Insightsでは、アラート受信者として有効なEメールアドレスを入力できます。セキュアな環境で作業する場合は、通知を受け取っているユーザ、またはアラートへのアクセス権があるユーザを特に意識してください。</block>
@@ -16217,4 +16208,13 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">すべてのお客様のクラスタ間でクラスタを一意に識別するフリーテキストフィールド。これは、Data Infrastructure Insightsのテナント全体で一意である必要があります。デフォルトでは、UIで[Cluster Name]フィールドに入力します</block>
   <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">MetroClusterの推奨構成</block>
   <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">MetroClusterの推奨事項は次のとおりです。</block>
+  <block id="f80f3d49464581261837031819491342" category="summary">アプリケーションを定義し、必要に応じて環境内のアセットに適用します。</block>
+  <block id="b13c7fc8e7d731532637ee70388e60c6" category="paragraph">環境で実行されている特定のアプリケーションに関連するデータを追跡するには、Data Infrastructure Insightsでアプリケーションを定義します。</block>
+  <block id="ba52eab802a385ced7d6e9782614bf0b" category="paragraph">Data Infrastructure Insightsを使用すると、アプリケーションに関連付けられたアセットのデータを追跡し、使用状況やコストレポートなどを作成できます。</block>
+  <block id="91ee28fc3faa982ecdc71598fe7ce8b9" category="list-text">[Data Infrastructure Insights ]メニューで、*[Observability]&gt;[Enrich]&gt;[Applications]*をクリックします。選択</block>
+  <block id="90fbffa9ff3e21a719cc9451531fc673" category="summary">ワークロードのセキュリティユーザアカウントはData Infrastructure Insightsのユーザ管理で管理</block>
+  <block id="6afa550edbd038252585482045e7d48e" category="paragraph">ワークロードセキュリティユーザアカウントは、Data Infrastructure Insightsを通じて管理されます。</block>
+  <block id="02598d7e3c811d7e921678ae0729a2a6" category="paragraph">Data Infrastructure Insightsには、アカウント所有者、管理者、ユーザ、ゲストの4つのユーザアカウントレベルが用意されています。各アカウントには、特定の権限レベルが割り当てられます。管理者権限を持つユーザアカウントは、ユーザを作成または変更し、各ユーザに次のいずれかのワークロードセキュリティロールを割り当てることができます。</block>
+  <block id="de07c612d573c4710cb7e561e6de98b4" category="paragraph">Data Infrastructure Insightsのユーザ管理ページに移動します。</block>
+  <block id="1c823102aa56424a5f80a9b5c5c2fdff" category="paragraph">ユーザアカウントとロールの詳細については、Data Infrastructure Insightsのドキュメントを参照して<block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block>ください。</block>
 </blocks>
