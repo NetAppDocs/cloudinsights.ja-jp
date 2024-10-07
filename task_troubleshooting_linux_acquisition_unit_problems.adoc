@@ -44,7 +44,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | サーバ要件が満たされていません | Acquisition Unit サーバまたは VM が次の条件を満たしていることを確認します  link:concept_acquisition_unit_requirements.html["要件"] 
 
 
-| ネットワーク要件が満たされていません | Acquisition Unitサーバ/ VMが、NetAppポート443経由で<environment-name>接続を介してData Infrastructure Insights環境（ssl.c01.cloudinsights.ssl.com）にアクセスできることを確認します。次のコマンドを試してみてください。_ping <environment-name> NetApp NetApp <environment-name>.c01.cloudinsights.cloudinsights.c01.cloudinsights.c01.cloudinsights.c01.cloudinsights.c01.cloudinsights.c01.cloudinsights.com_<environment-name><environment-name> NetApp NetApp 
+| ネットワーク要件が満たされていません | Acquisition Unitサーバ/ VMが、NetAppポート443経由で<environment-name>接続を介してData Infrastructure Insights環境（ssl.c01.cloudinsights.ssl.com）にアクセスできることを確認します。次のコマンドを実行してみてください。_ping <environment-name> insight.c01.cloudinsights.au com__traceroute <environment-name> NetApp NetApp .c01.cloudinsights.au com__curl\https：// NetApp <environment-name><environment-name> NetApp .c01.cloudinsights.auからの「アウトバウンドインフラストラクチャ」に、ポート443を開く必要があることに注意してください。 
 
 
 | プロキシサーバが正しく設定されていません | プロキシの設定を確認し、必要に応じて Acquisition Unit ソフトウェアをアンインストールして再インストールして、正しいプロキシの設定を入力します。
