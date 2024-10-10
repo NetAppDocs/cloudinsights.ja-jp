@@ -14703,7 +14703,6 @@ Storage Virtual Machine：RESTでは、「data」以外のタイプのSVM（「c
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">モジュールの評価</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">また、*モジュール評価*もご利用いただけます。たとえば、インフラオブザーバビリティにすでにサブスクライブしていて、Kubernetesを環境に追加する場合は、NetApp Kubernetes監視オペレータのインストール時から、Kubernetesオブザーバビリティの30日間の評価が自動的に行われます。評価期間の終了時に、Kubernetes Observability Managed Unitの使用料金のみが請求されます。</block>
   <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">評価後に新しいManaged Unit（MU）の使用料が請求されることに注意してください。そのため、適切な計画を立ててください。モジュールの評価が終了すると、サービスの中断を回避するためにMUを追加する必要があるかどうかが通知されます。</block>
-  <block id="8fe818ace86e2479958161998bd57015" category="paragraph">モジュール評価中に、モジュールで消費されるリソースのMU使用量は変更されません。 ただし、(_Summary_tabの)* Estimator *を開いて、評価後にMUがどのように課金されるかを確認したり、将来必要になる可能性のあるMU数の「What if」シナリオでプレイしたりすることができます。Estimatorを終了して数値をリセットします。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">モジュール評価の対象となるのは、サブスクリプションごとに1回のみです。</block>
   <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">* Count * ：指定した期間内にデータが報告されたオブジェクトの _count_of を表示します。ダッシュボードの時間範囲によって決定される_Entire Time Window_を選択できます。</block>
@@ -15425,7 +15424,6 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="267ff18a74a9df19266142dc71925a29" category="section-title">サブスクリプション*の有効期限が切れた場合はどうなりますか？</block>
   <block id="5ee83dda0a980eba56098446eee3b5e4" category="admonition">Data Infrastructure Insightsのデータは、猶予期間後30日間そのまま維持されます。この時間内にサブスクリプションを更新すると、猶予期間が経過するまでのすべてのデータが利用可能になります。</block>
   <block id="ed1fbcb7f668aa56f9f3d98fe312ea0c" category="admonition">A_Module Evaluation_は_トライアルではありません_- Data Infrastructure Insightsサービスの無償トライアル期間をお客様に提供して、適切で購入可能であることを確認する場合は、タームトライアルを使用します。モジュールの評価方法は異なります。これは、有料サブスクリプションの直近数カ月間に使用していないData Infrastructure Insightsのモジュールを有料のお客様が試すことを許可する場合です。評価がアクティブな場合、新しく構成されたモジュールの料金だけが免除されます。お客様の作業環境はまだサブスクリプション期間中であり、無償トライアルに復帰していません。サブスクリプションは変更されていません。</block>
-  <block id="8155adb227486698b8e777b82a8fc369" category="paragraph">データインフラの分析インフラのオブザーバビリティとKubernetesのオブザーバビリティは、* Managed Unit *ごとに計測されます。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
   <block id="daba1c6ff8590913bcb10d43d3bfcf13" category="admonition">既存のワークロードセキュリティサブスクリプションでは、ノードの使用量がManaged Unitを消費しないように、MU使用量が調整されます。Data Infrastructure Insightsは、使用量を測定して、ライセンスされた使用量に確実に準拠します。</block>
   <block id="0313fe3f07d732172e3b8700c1cea6f1" category="paragraph">有償のサブスクリプションをデータインフラ分析環境に適用できるように、Data Infrastructure Insights *のシリアル番号*をNetApp営業担当者に提出する必要があります。シリアル番号は、Data Infrastructure Insightsのトライアル環境を一意に識別するもので、*[Admin]&gt;[Subscription]*ページで確認できます。</block>
   <block id="75df7bd83cb6391af3c2bb23c74cb72d" category="admonition">AWS Marketplaceサブスクリプションを既存のData Infrastructure Insightsトライアルアカウントに適用するには、アカウント所有者または管理者である必要があります。さらに、 Amazon Web Services （ AWS ）アカウントが必要です。</block>
@@ -16220,4 +16218,16 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">Telegrafから次のような警告メッセージが表示されます。[inputs.diskio]「vdc」のディスク名を収集できません：/dev/vdcの読み取り中にエラーが発生しました：該当するファイルまたはディレクトリがありません_</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">オペレータの設定オプション</block>
   <block id="9de6368f45ca30e61d7d6eb11d0da5a5" category="cell">Kubernetes Monitoring Operatorの場合、これらの警告メッセージは問題なく無視してかまいません。または、AgentConfigurationでtelegrafセクションを編集し、runPrivilegedをtrueに設定します。詳細については、を参照して<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="c2a794ea709fc6031fad37bbb11353ed" category="paragraph">モジュール評価中は、モジュールで消費されたリソースのMU使用量は課金されませんが、* Estimator *（_Summary_tab）を開いて、評価後のMUの課金方法を確認したり、将来必要となるMU数の「What if」シナリオを使用したりできます。Estimatorを終了して数値をリセットします。</block>
+  <block id="6b3c6b1f0dcfdec2952b9d7ebe9ff11f" category="paragraph">Data Infrastructure Insightsのオブザーバビリティは、次の2つの方法のいずれかで計測されます。</block>
+  <block id="5e787d0212aa58a0466b454df1baca59" category="list-text">容量の計測</block>
+  <block id="662fe1d2a1a3efd75d89fbc577bfbc93" category="list-text">Managed Unit Metering（レガシー）</block>
+  <block id="507a2c5714efe8c42af4cb4e8c6a1db9" category="paragraph">サブスクリプションは、既存のサブスクリプションを持っているか、新しいサブスクリプションを開始するかに応じて、いずれかの方法で計測されます。</block>
+  <block id="45dfbbe96d29f311a340f91e2da71bef" category="paragraph">Data Infrastructure Insightsのオブザーバビリティは、環境内のストレージの階層に応じて使用量を測定します。次のカテゴリに分類されるストレージがある場合があります。</block>
+  <block id="6e52566e82d306ca143ec27c3c65784e" category="list-text">プライマリ物理容量</block>
+  <block id="c3a44b5ae4d0db1da47414cf32828287" category="list-text">物理オブジェクト</block>
+  <block id="49a22ea7d938494c1ed0f89b1259e69d" category="list-text">クラウド消費</block>
+  <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">各ティアは異なるレートで計測され、全体が合計されて_Effectiveエンタイトルメント_が付与されます。実効使用量の計算式は次のとおりです。</block>
+  <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">管理対象ユニットの合計は、サマリセクションのデータコレクタ数とは若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。サマリセクションには、サブスクリプションの実際の管理ユニット数が表示されます。これを容易にするために、DIIは、_ subscribed_quantitiesに基づいて1つの*実効使用権*数を計算し、_ discovered_storageに基づいて同じ数を計算し、検出された実効容量が実効使用権より大きい場合にのみ違反を宣言します。これにより、検出されたストレージの合計が、サブスクライブされた有効なエンタイトルメント内にある限り、階層ごとにサブスクライブされた金額とは異なる数量を柔軟に監視できます。</block>
+  <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">Data Infrastructure InsightsインフラオブザーバビリティとKubernetesオブザーバビリティメーターの使用量（* Managed Unit *あたり）。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
 </blocks>
