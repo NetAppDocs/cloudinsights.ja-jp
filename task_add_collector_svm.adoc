@@ -253,7 +253,7 @@ MetroClusterの推奨事項は次のとおりです。
 
 == サービスポリシー
 
-ONTAP バージョン9.9..1のサービスポリシーを使用してData Source Collectorに接続するには、Data Service_data-NFS_、および/or _data-cifs_が 必要です。
+ONTAP *バージョン9.9.1以降*でサービスポリシーを使用している場合、データソースコレクタに接続するには、データservice_data-nfs_、および/または_data-cifs_とともに_data-fpolicy-client_serviceが必要です。
 
 例
 

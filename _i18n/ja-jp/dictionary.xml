@@ -2448,7 +2448,6 @@ SVM IPを使用して追加する場合のオプションは次のとおりで�
   <block id="6d1fbd196541e759b0a79fdf2b671bcd" category="list-text">スイッチオーバーが発生すると、データコレクタの状態が「Running」から「Error」に変わり、その逆も同様です。</block>
   <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">データコレクタがError状態からRunning状態に移行するまでに最大2分かかります。</block>
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">サービスポリシー</block>
-  <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">ONTAP バージョン9.9..1のサービスポリシーを使用してData Source Collectorに接続するには、Data Service_data-NFS_、および/or _data-cifs_が 必要です。</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">例</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">9.6.1より前のバージョンのONTAP では、_data -fpolicy-client_need not be set」を実行します。</block>
   <block id="4b3fbac9b531aa2660d41834f330998e" category="paragraph">エラーの場合は、 _Status_column で _more detail_ をクリックしてエラーの詳細を確認します。</block>
@@ -16230,4 +16229,5 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">各ティアは異なるレートで計測され、全体が合計されて_Effectiveエンタイトルメント_が付与されます。実効使用量の計算式は次のとおりです。</block>
   <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">管理対象ユニットの合計は、サマリセクションのデータコレクタ数とは若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。サマリセクションには、サブスクリプションの実際の管理ユニット数が表示されます。これを容易にするために、DIIは、_ subscribed_quantitiesに基づいて1つの*実効使用権*数を計算し、_ discovered_storageに基づいて同じ数を計算し、検出された実効容量が実効使用権より大きい場合にのみ違反を宣言します。これにより、検出されたストレージの合計が、サブスクライブされた有効なエンタイトルメント内にある限り、階層ごとにサブスクライブされた金額とは異なる数量を柔軟に監視できます。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">Data Infrastructure InsightsインフラオブザーバビリティとKubernetesオブザーバビリティメーターの使用量（* Managed Unit *あたり）。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
+  <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">ONTAP *バージョン9.9.1以降*でサービスポリシーを使用している場合、データソースコレクタに接続するには、データservice_data-nfs_、および/または_data-cifs_とともに_data-fpolicy-client_serviceが必要です。</block>
 </blocks>
