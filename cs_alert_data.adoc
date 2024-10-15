@@ -4,13 +4,12 @@ permalink: cs_alert_data.html
 keywords: alert, attack, ransomware, activity, security, abnormal 
 summary: 'ワークロードセキュリティは、ユーザのアクティビティが異常な場合や攻撃の可能性がある場合にアラートを生成します。[ アラート ] ページには、これらのアクティビティが一覧表示され、すばやく簡単に調査できます。' 
 ---
-= アラート
-:hardbreaks:
+= アラート：ハードブレイク：
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

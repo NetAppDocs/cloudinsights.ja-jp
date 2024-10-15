@@ -5,17 +5,14 @@ keywords: data collector, VMware,
 summary: VMwareデータコレクタの設定 
 ---
 = VMware vSphere データコレクタの設定
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

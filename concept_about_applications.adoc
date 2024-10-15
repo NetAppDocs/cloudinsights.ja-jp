@@ -5,13 +5,18 @@ keywords: applications, asset, cost
 summary: 会社の環境で使用されているアプリケーションを把握しておくと、アセットの使用状況やコストを追跡しやすくなります。 
 ---
 = アプリケーションごとにアセットの使用状況を追跡する
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:revdate: Understanding the applications used in your company's environment helps you to keep track of asset usage and cost.
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
+
+[role="lead"]
+会社の環境で使用されているアプリケーションを把握しておくと、アセットの使用状況やコストを追跡しやすくなります。
 
 環境で実行されているアプリケーションに関連付けられているデータを追跡するには、まずそれらのアプリケーションを定義し、適切なアセットに関連付ける必要があります。アプリケーションを関連付けることができるアセットは、ホスト、仮想マシン、ボリューム、内部ボリューム、 qtree 、 共有、ハイパーバイザー：
 

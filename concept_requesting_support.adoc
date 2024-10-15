@@ -5,17 +5,14 @@ summary: サポートをリクエストする方法については、技術情�
 keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = サポートをリクエストしています
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 

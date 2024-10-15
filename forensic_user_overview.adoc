@@ -4,8 +4,7 @@ permalink: forensic_user_overview.html
 keywords: Forensic, user, user, activity 
 summary: フォレンジックユーザーの詳細 
 ---
-= Forensic User の概要
-:hardbreaks:
+= フォレンジックユーザの概要：ハードブレーク：
 :allow-uri-read: 
 :nofooter: 
 :icons: font

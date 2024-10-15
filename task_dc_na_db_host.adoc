@@ -4,8 +4,7 @@ permalink: task_dc_na_db_host.html
 keywords: data collector, generic db 
 summary: 汎用DBホストリゾルバコレクタ 
 ---
-= NetApp汎用DBホストリゾルバ
-:hardbreaks:
+= NetApp汎用DBホストリゾルバ：ハードブレーク：
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2
