@@ -16288,4 +16288,5 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp汎用DBホストリゾルバ：ハードブレーク：</block>
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP RESTデータコレクタ：ハードブレーク：</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">Workload Security AgentおよびCollectorの手動インストール：ハードブレーク：</block>
+  <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">レポートの権限やセキュリティを変更する前に、「マイコンテンツ」レポートを「チームコンテンツ」フォルダにコピーして、レポートを確実に保存する必要があります。</block>
 </blocks>
