@@ -75,9 +75,11 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 == サポート情報の入手方法
 
-NetAppは、データインフラの分析情報をさまざまな方法でサポートします。ナレッジベース（ KB ）記事やネットアップコミュニティなど、幅広いセルフサポートオプションを 24 時間 365 日ご利用いただけます。Data Infrastructure Insightsのいずれかのエディション（Basic *、Standard、Premium）に登録しているユーザは、電話またはWebチケット発行を通じてテクニカルサポートを利用できます。Web チケットとケース管理には、NetApp Support Site（ NSS ）の SSO アカウントが必要です。
+NetAppは、データインフラの分析情報をさまざまな方法でサポートします。ナレッジベース（ KB ）記事やネットアップコミュニティなど、幅広いセルフサポートオプションを 24 時間 365 日ご利用いただけます。Data Infrastructure Insightsにサブスクライブしている*ユーザは、電話またはWebチケット発行を通じてテクニカルサポートを利用できます。Web チケットとケース管理には、NetApp Support Site（ NSS ）の SSO アカウントが必要です。
 
 *すべてのネットアップストレージシステムが少なくともPremiumサポートレベル以上であれば、Basicエディションでサポートを利用できます。
+
+多くのNetAppサービスには、パッケージにData Infrastructure Insights Basicエディションが含まれています。Premium Editionへのアップグレードをご希望の場合は、営業担当者にお問い合わせください。
 
 
 
