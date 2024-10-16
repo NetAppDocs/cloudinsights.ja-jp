@@ -4,7 +4,8 @@ permalink: task_config_telegraf_kubernetes.html
 keywords: telegraf 
 summary: Kubernetes向けデータコレクタ 
 ---
-= Data Collector：Kubernetes：ハードブレーク：
+= データコレクタ：Kubernetes
+:hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
 :toclevels: 1

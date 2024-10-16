@@ -4,7 +4,8 @@ permalink: ws_manually_installing_agent_and_collector.html
 keywords: install, configure, agent, collector, workload, security, cloud secure 
 summary: ワークロードセキュリティエージェントは手動でインストールまたは更新できるため、環境にインストールされているソフトウェアをより詳細に制御できます。 
 ---
-= Workload Security AgentおよびCollectorの手動インストール：ハードブレーク：
+= Workload Security AgentおよびCollectorの手動インストール
+:hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

@@ -5,12 +5,7 @@ keywords: workload security, cloud secure, include list, allowed, file types, ra
 summary: 警告を減らすために、許可されたファイルタイプリストにファイル拡張子を追加します。 
 ---
 = 許可されたファイルタイプポリシー
-:hardbreaks:
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

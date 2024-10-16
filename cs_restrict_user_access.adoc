@@ -4,12 +4,13 @@ permalink: cs_restrict_user_access.html
 keywords: alert, snapshot,  attack 
 summary: ワークロードセキュリティを使用すると、破壊の疑いがある場合にユーザーアクセスを制限できます 
 ---
-= ユーザアクセスのブロック：ハードブレーク：
+= ユーザアクセスをブロックしています
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ./media
 
 
 [role="lead"]

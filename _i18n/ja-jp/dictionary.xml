@@ -16220,72 +16220,14 @@ SELinuxを使用している場合は、Acquisition Unitシステムで次のコ
   <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">管理対象ユニットの合計は、サマリセクションのデータコレクタ数とは若干異なる場合があります。これは、管理対象ユニットの数が最も近い管理対象ユニットに切り上げられるためです。データコレクタリストのこれらの数値の合計は、ステータスセクションの管理対象ユニットの合計よりも少し高くなる場合があります。サマリセクションには、サブスクリプションの実際の管理ユニット数が表示されます。これを容易にするために、DIIは、_ subscribed_quantitiesに基づいて1つの*実効使用権*数を計算し、_ discovered_storageに基づいて同じ数を計算し、検出された実効容量が実効使用権より大きい場合にのみ違反を宣言します。これにより、検出されたストレージの合計が、サブスクライブされた有効なエンタイトルメント内にある限り、階層ごとにサブスクライブされた金額とは異なる数量を柔軟に監視できます。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">Data Infrastructure InsightsインフラオブザーバビリティとKubernetesオブザーバビリティメーターの使用量（* Managed Unit *あたり）。管理対象ユニットの使用量は、 * ホストまたは仮想マシン * の数と、インフラ環境で管理されている * フォーマットされていない容量 * の量に基づいて計算されます。</block>
   <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">ONTAP *バージョン9.9.1以降*でサービスポリシーを使用している場合、データソースコレクタに接続するには、データservice_data-nfs_、および/または_data-cifs_とともに_data-fpolicy-client_serviceが必要です。</block>
-  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">会社の環境で使用されているアプリケーションを把握しておくと、アセットの使用状況やコストを追跡しやすくなります。</block>
-  <block id="159323715ecc1d8fcad837d9c9c4d406" category="doc">ワークロードセキュリティAPI：ハードブレーク：</block>
-  <block id="48e1b88553e176ff4b0d72847caa479e" category="doc">アラート：ハードブレイク：</block>
-  <block id="32cefbb29da0cc11665c898601ad0126" category="doc">自動応答ポリシー：ハードブレイク：</block>
-  <block id="04b7ceed12fc64983e08bfb1ca5c75c8" category="doc">ユーザアクセスのブロック：ハードブレーク：</block>
-  <block id="0fbc3e2fe123644bc4fb286ec3eba14e" category="doc">フォレンジックユーザの概要：ハードブレーク：</block>
-  <block id="a6a9e422cc6712614bdeb1c7c082055f" category="summary">Cloud Insightsは、分析とトラブルシューティングを容易にするために、インフラストラクチャの変更を追跡します。</block>
-  <block id="d649532ab115aad7a384e236d1028844" category="doc">インフラ変更分析</block>
-  <block id="997466d044b252bcf172645985a47372" category="paragraph">インフラ変更分析では、環境内のインフラ（ストレージ、スイッチなど）に対する最近の変更を、オールインワンビューで確認できます。Change Analyticsを使用すると、構成の変更を追跡し、予想される問題と予期しない問題の両方を掘り下げることができます。</block>
-  <block id="2309f522d85e82b60b3b59f8e753778b" category="section-title">インフラの変更分析はどのように役立ちますか？</block>
-  <block id="3216da7ed32569fc5fa15ade122a1b26" category="paragraph">どのような環境でも、構成ミスや停電などにより、ストレージやデバイスの変更が発生する可能性があります。Change Analyticsは、デバイスの正常性を表示し、停止や予定されている変更と関連付けるための単一のペインを提供することで、これを支援します。変更は、（新しいコレクタに対する最初のポーリングの後に）各インベントリポーリングで計算されます。</block>
-  <block id="1c6509b652f7545660bff48c66566fec" category="paragraph">インフラの変更を分析するには、*オブザーバビリティ&gt;変更分析*に移動します。現在の期間のアラートと設定変更が表示されます。[Alert]行には、現在のアラートステータス（ActiveまたはResolved）が表示されます。</block>
-  <block id="48bbecb173ed1c0caf1522961ed271c1" category="inline-image-macro">Infrastructure Change Analyticsメイン画面</block>
-  <block id="06d8bb0704add4e2715c22018e610f73" category="paragraph"><block ref="197eeda000b01cb315c8b2c17a24ba41" category="inline-image-macro-rx" type="image"></block>です。</block>
-  <block id="f20ff884eb3f78de6a242bafa4e10807" category="paragraph">リスト内のアイテムを選択すると、アラートまたは変更に関する詳細を示すスライドアウトペインが開きます。</block>
-  <block id="87349240d4ace40c54355981baaf30a6" category="inline-image-macro">設定変更の詳細ペインの例</block>
-  <block id="3e1b7ed4f9a6d715199155e12807fd85" category="paragraph"><block ref="3e1b7ed4f9a6d715199155e12807fd85" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4c492a69b6ced7c7862c68bf201a27f8" category="paragraph">Cloud Insightsのすべての機能と同様に、変更リストは直感的にフィルタリングできます。ページ上部で、特定のアセットタイプ（_triggered on：type_）でフィルタリングするか、必要に応じて特定の名前を持つアセットのみでフィルタリングするか（_triggered on：name_）、[+]ボタンを選択して独自のフィルタを追加できます。</block>
-  <block id="3d18ed1b0765c3ff3a8b70a5e01f1145" category="inline-image-macro">[Infrastructure Change Filtering]ドロップダウン</block>
-  <block id="39aef14303366c760b69423a359db8c5" category="paragraph"><block ref="39aef14303366c760b69423a359db8c5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c23c4d2f8805d5407d1c75a5768fb8a" category="paragraph">また、フィルタ設定の下にあるステータスセクションから[Key Alerts]または[Changes]に直接移動することもできます。これには、アラート数が最も多い現在の上位3つのリソースも含まれます。</block>
-  <block id="25f02ce36b100468e64ed54f3c3363ee" category="inline-image-macro">ステータスとアラートや変更へのクイックリンク</block>
-  <block id="882b696f70983281eeb19bc55ebc780c" category="paragraph"><block ref="882b696f70983281eeb19bc55ebc780c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="50bcf8de16583b6a1faf9be5623c2cba" category="section-title">変更のために分析されるオブジェクト</block>
-  <block id="f7ebe84da89ad9a2837d074c206d9a87" category="paragraph">次の表に、インフラの変更分析に含まれるオブジェクトと属性を示します。</block>
-  <block id="f2eefee9325c4a73a639ac4e71a791da" category="cell">拡張属性</block>
-  <block id="4d0789af18c097c73fcd9996c209e1e6" category="cell">disksize.total isVirtual diskGroup speed type location SerialNumber役割ステータスベンダーモデルstorage.name storagePools.name name</block>
-  <block id="a9986c0a5945531e535ac282c2a8121e" category="cell">isEncrypted（暗号化）</block>
-  <block id="e391f3304128a83d3518a1c4e35d2608" category="cell">datasources.name family ip isActive microcodeVersionモデル名プロトコルSerialNumberベンダー</block>
-  <block id="198133b0776d728b17d5105bbb0ac5aa" category="cell">Name storage.name nodeVersion model SerialNumber Number OfProcessors state partner.name cache memory</block>
-  <block id="af00b3e9fc6ed83402400634fffcef0d" category="cell">managementIpAddresses parentSerialNumber SiteName</block>
-  <block id="e1f85d77e8208d60c3c781157f81a728" category="cell">名前タイプisAutoTiering isVirtual redundancy vendorTier使用FlashPools storage.vendor storage.ip storage.model storage.family storage.name storageNodes.name capacity.total（動的属性）</block>
-  <block id="4e5fc0aadbf1d8d41eb0ae9e5c6f422a" category="cell">isCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer</block>
-  <block id="5eb77d34ea21d5e1cf90033426998666" category="cell">datasources.name securityStyle isOplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name internalVolume.virtualStorage simpleName statusText nameと入力します。</block>
-  <block id="d6aba08882d71471c2b6b52815ea184f" category="cell">StorageVirtualMachine</block>
-  <block id="5c3f6a7f7c6fdff5f1351a9949951514" category="cell">Name storage.name state type IPspace protocols internalVolumeLimitコメント</block>
-  <block id="ab85afd2efdf6ae9720b28e9649513d8" category="cell">名前simpleNameラベルタイプstorage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioned diskGroup isMeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name storagePools.usesFlashPools internalVolume.virtualStorage storageNodes.name storageNodes.partner.name storageVirtualMachine.name StoragePools.minDiskSize.total StoragePools.minDiskSpeed StoragePools.minDiskType storagePools.name StoragePools.</block>
-  <block id="07d55762b61402e9f236688ff661747d" category="cell">storageGroups isEncrypted isCompressionEnabled qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS QOSPolicy qosLimitRaw</block>
-  <block id="c756c59e28aa8e347b00a3bd0fe08bd9" category="cell">flashPoolEligibility name simpleName spaceGuarantee status type virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name StoragePool.disksize.total storage.name storage.vendor storage.ip storage.model storage.family StoragePool.disks.speed storageVirtualMachine.name StoragePool.redundancy storagePool.name StoragePool.disks.type storagePool.usesFlashPools capacity.isThinProvisioned</block>
-  <block id="1d7292d0a7e1e47f2ee3b03c79eebdf8" category="cell">QOSPolicy qosLimitRaw qosLimitIOPS qosLimitMBPSコメントisEncrypted adaptiveQosPolicy junctionPath objectStoreTieringPolicy階層MinimumCoolingDays</block>
-  <block id="0775662a98ec14ff846583c9cd6761a5" category="cell">名前dnsName ip os memory processors guestState PowerState host.name host.clusterName host.ip host.os datastore.name</block>
-  <block id="cdae133139543d7031e5fa681b3189c6" category="cell">InstanceType publicIps securityGroups virtualCenterIp</block>
-  <block id="825c5fc312927882b716b6c2da3b816d" category="cell">データストア</block>
-  <block id="26b3b9ba946886eaef175c67e9696e69" category="cell">名前virtualCenterIp</block>
-  <block id="599dcce2998a6b40b1e38e8c6006cb0a" category="cell">タイプ</block>
-  <block id="b4a606c5f87b63f4f7157dc4fb92c30b" category="cell">名前モデルip isActive OSメーカーcpuCountメモリisHypervisor clusterName</block>
-  <block id="b794217d3ee3c8ed6935fef3569befb9" category="cell">virtualCenterIp</block>
-  <block id="8bcb15bb664a03c6a9d894c33fe5f07c" category="cell">VMDK（VirtualMachineDisk）</block>
-  <block id="12ac32cb82500ccb5cd4fac54ef6d4d8" category="cell">名前タイプdatastore.name isRdm virtualMachine.host.name virtualMachine.name</block>
-  <block id="930b37d278565ffa7ba9e1e20ed02df4" category="cell">isSnapshot</block>
-  <block id="44b32834b64ca3490fec05e69b5b0897" category="cell">name isActive WWN type portIndex blade speed gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.wwn controller device.name device.type fabrics.name fabrics.vsanId nodeWwn</block>
-  <block id="67daf92c833c41c95db874e18fcb2786" category="cell">製品説明</block>
-  <block id="aa4237e942403057a55c170360da8347" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD Data Infrastructure Insightsには、次のログに対して作成されたアラートと変更が一覧表示されます。</block>
-  <block id="9d8153be52deeed49e78d2a079b21fe5" category="paragraph">Data Infrastructure Insightsには、次のログに対して作成されたアラートと変更が表示されます。&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2d5e94be3615a400bce1e7a050d2d523cc06b5b8</block>
-  <block id="09a1f59ca2813556e3c9cc6b5d8ec1a1" category="list-text">logs.vmware.events</block>
-  <block id="32e5b85eb2266a4723d9c5067a92e3d0" category="list-text">ログ.logs.ems NetApp</block>
-  <block id="a1a1048ea48921a7bd280fbc92eebf07" category="paragraph">メトリックモニターは、上のリストにあるオブジェクトと属性についても監視されます。モニターで、Change Analyticsがそれらを追跡するには、_Group by_optionでこれらを選択する必要があります。</block>
-  <block id="1e3299dcf38c1e3bb2a16a39942989bb" category="doc">Kubernetes Monitoring Operatorのインストールと設定：ハードブレーク：</block>
-  <block id="3e021c6004e444ced45e08a6ac9e1e61" category="paragraph">変更分析</block>
-  <block id="25a317566de430ddfd2c6f4b3fdea612" category="list-text">ci-k8s-change-observer</block>
-  <block id="a21e71e8b6b5d3e4af611be860082f95" category="doc">Data Collector：Kubernetes：ハードブレーク：</block>
-  <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp汎用DBホストリゾルバ：ハードブレーク：</block>
-  <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP RESTデータコレクタ：ハードブレーク：</block>
-  <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">Workload Security AgentおよびCollectorの手動インストール：ハードブレーク：</block>
   <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">レポートの権限やセキュリティを変更する前に、「マイコンテンツ」レポートを「チームコンテンツ」フォルダにコピーして、レポートを確実に保存する必要があります。</block>
   <block id="7d18259ee7e2ef822cedec281a19a33d" category="paragraph">、Data Infrastructure Insightsが<block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block>どのAPIにアクセスできるかは判断します。ユーザロールとゲストロールの権限は、管理者ロールよりも少なくなります。たとえば、 Monitor と Optimize で Administrator ロールを割り当てていても、 Reporting で User ロールを割り当てている場合は、 Data Warehouse を除くすべての API タイプを管理できます。</block>
   <block id="1f3c67de4e7c07c414ec4689b1724561" category="paragraph">NetAppは、データインフラの分析情報をさまざまな方法でサポートします。ナレッジベース（ KB ）記事やネットアップコミュニティなど、幅広いセルフサポートオプションを 24 時間 365 日ご利用いただけます。Data Infrastructure Insightsにサブスクライブしている*ユーザは、電話またはWebチケット発行を通じてテクニカルサポートを利用できます。Web チケットとケース管理には、NetApp Support Site（ NSS ）の SSO アカウントが必要です。</block>
   <block id="3b2314bf0168715cc6642c0246916477" category="paragraph">多くのNetAppサービスには、パッケージにData Infrastructure Insights Basicエディションが含まれています。Premium Editionへのアップグレードをご希望の場合は、営業担当者にお問い合わせください。</block>
+  <block id="0165cb96455a1e606acc88df8cbdf5ca" category="doc">Forensic User の概要</block>
+  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes Monitoring Operatorのインストールと設定</block>
+  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">データコレクタ：Kubernetes</block>
+  <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp汎用DBホストリゾルバ</block>
+  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP RESTデータコレクタ</block>
+  <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">Workload Security AgentおよびCollectorの手動インストール</block>
 </blocks>
