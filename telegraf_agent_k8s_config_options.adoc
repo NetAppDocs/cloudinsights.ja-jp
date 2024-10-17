@@ -87,7 +87,7 @@ summary: NetApp Kubernetes Monitoring Operatorには、設定可能なオプシ�
 |  | rsMemRequest | テレグラフRSのメモリ要求 
 
 
-|  | runPrivileged | 特権モードでTelegrafコンテナを実行します。KubernetesノードでSELinuxが有効になっている場合は、このをtrueに設定します 
+|  | runPrivileged | 特権モードでtelegrafデーモンセットの_telegraf-mountstats-poller_containerを実行します。KubernetesノードでSELinuxが有効になっている場合は、このパラメータをtrueに設定します。 
 
 
 |  | バッチサイズ | を参照してください link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf設定ドキュメント"] 
@@ -181,7 +181,10 @@ persistentvolumeclaims=[*]、persistentvolumes=[*]、pods=[*]、ReplicaSets=[*]�
 |  | runPrivileged | Fluent Bitの起動に失敗し、データベースのオープン/作成を試みた場合は、runPrivilegedをtrueに設定します。 
 
 
-| ワークロードマップ |  | 作業負荷マップの収集とオペレータのインストールをカスタマイズできる設定オプション 
+|  | runDsPrivileged | 特権モードでtelegraf DaemonSetのtelegrafコンテナを実行するには、runDsPrivilegedをtrueに設定します。 
+
+
+| ワークロードマップ |  | 作業負荷マップの収集とオペレータのインストールをカスタマイズできる設定オプション。 
 
 
 |  | cpuLimit | ネットオブザーバーDSのCPU制限 

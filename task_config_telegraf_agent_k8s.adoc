@@ -560,6 +560,6 @@ fluent-bit:
 | Telegrafが警告するか、ロック可能なメモリが不足しているためにクラッシュします。 | 基盤となるオペレーティングシステム/ノードでTelegrafのロック可能メモリの制限を増やしてみてください。制限値を増やすことができない場合は'NKMOエージェントの構成を変更して'_unprotected_to_true_に設定します  これにより、Telegrafはロックされたメモリページを予約しないように指示します。復号化されたシークレットがディスクにスワップアウトされる可能性があるため、セキュリティリスクが発生する可能性がありますが、ロックされたメモリを予約できない環境では実行できます。_unprotected_configurationオプションの詳細については、 link:telegraf_agent_k8s_config_options.html["設定オプション"] ページ 
 
 
-| Telegrafから次のような警告メッセージが表示されます。[inputs.diskio]「vdc」のディスク名を収集できません：/dev/vdcの読み取り中にエラーが発生しました：該当するファイルまたはディレクトリがありません_ | Kubernetes Monitoring Operatorの場合、これらの警告メッセージは問題なく無視してかまいません。または、AgentConfigurationでtelegrafセクションを編集し、runPrivilegedをtrueに設定します。詳細については、を参照してlink:telegraf_agent_k8s_config_options.html["オペレータの設定オプション"]ください。 
+| Telegrafから次のような警告メッセージが表示されます。[inputs.diskio]「vdc」のディスク名を収集できません：/dev/vdcの読み取り中にエラーが発生しました：該当するファイルまたはディレクトリがありません_ | Kubernetes Monitoring Operatorの場合、これらの警告メッセージは問題なく無視してかまいません。  または、AgentConfigurationでtelegrafセクションを編集し、_runDsPrivileged_をtrueに設定します。詳細については、を参照してlink:telegraf_agent_k8s_config_options.html["オペレータの設定オプション"]ください。 
 |===
 追加情報はから入手できます link:concept_requesting_support.html["サポート"] ページまたはを参照してください link:reference_data_collector_support_matrix.html["Data Collector サポートマトリックス"]。
